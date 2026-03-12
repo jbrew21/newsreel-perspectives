@@ -352,15 +352,15 @@
       <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:#FF6343; text-transform:uppercase; letter-spacing:1.2px; font-weight:700;">Perspectives</div>
     </div>
     <div>
-      <a href="search" class="nav-link" style="font-family:monospace; font-size:11px; color:#FF6343; text-decoration:none; margin-left:16px;">Search</a>
-      <a href="voices" class="nav-link" style="font-family:monospace; font-size:11px; color:#808080; text-decoration:none; margin-left:16px;">Voices</a>
+      <a class="nav-link" data-page="search" style="font-family:monospace; font-size:11px; color:#FF6343; text-decoration:none; margin-left:16px;">Search</a>
+      <a class="nav-link" data-page="voices" style="font-family:monospace; font-size:11px; color:#808080; text-decoration:none; margin-left:16px;">Voices</a>
     </div>
   </div>
 </div>
 
 <div class="hero">
   <h1>Step outside your algorithm<br>into <span>others</span></h1>
-  <p>Type any headline. See how <a href="voices" class="nav-link" style="color:#FF6343; text-decoration:none;">78 voices</a> across the political spectrum are talking about it.</p>
+  <p>Type any headline. See how <a class="nav-link" data-page="voices" style="color:#FF6343; text-decoration:none;">78 voices</a> across the political spectrum are talking about it.</p>
 
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Paste a headline or describe a story..." autofocus>
@@ -399,6 +399,8 @@ const statsDiv = document.getElementById('stats');
 // Load trending topics
 // Detect base path (works on both localhost and newsreel.co/perspectives)
 const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+const PAGES = { search: BASE || '/search', voices: BASE + '/voices' };
+document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
 
 fetch(BASE + '/api/topics')
   .then(r => r.json())
