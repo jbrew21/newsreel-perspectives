@@ -1,0 +1,13 @@
+{
+  "name": "newsreel-perspectives",
+  "version": "1.0.0",
+  "description": "Newsreel Perspectives — RSS feed aggregation + AI-powered reaction matching",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-feeds.js",
+    "match": "node scripts/match-stories.js",
+    "refresh": "node scripts/refresh.js",
+    "refresh:dry": "node scripts/fetch-feeds.js && echo 'Feeds fetched. Run match manually with --headline and --summary.'"
+  },
+  "dependencies": {}
+}

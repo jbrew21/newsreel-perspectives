@@ -1,0 +1,27 @@
+# Environment and secrets
+.env
+*.env
+accounts.db
+.x_cookies*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Caches
+data/search_cache.json
+data/transcript_cache.json
+
+# Skills / research
+skills/

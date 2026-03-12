@@ -1,0 +1,3 @@
+# No external dependencies needed for the web server.
+# The app uses only Python stdlib (http.server, json, urllib, subprocess).
+# lookup.py calls the Anthropic API via urllib.request (no SDK needed).

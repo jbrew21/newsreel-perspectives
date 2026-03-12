@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perspectives — Newsreel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --lead: #1F1F1F;
+    --iron: #333333;
+    --steel: #555555;
+    --ash: #808080;
+    --silver: #B0B0B0;
+    --smoke: #C8C8C8;
+    --white: #FFFFFF;
+    --red: #FF6343;
+    --yellow: #EDBD1F;
+    --green: #1AAD17;
+    --blue: #4A9EFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Header */
+  .header {
+    padding: 24px 0 16px;
+    border-bottom: 1px solid var(--iron);
+    margin-bottom: 24px;
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-logo {
+    font-family: 'Bree Serif', Georgia, serif;
+    font-size: 22px;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .header-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .header-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ash);
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .header-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--silver);
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+
+  /* ─── STORY LIST VIEW ─── */
+  .story-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .story-list-card {
+    background: var(--lead);
+    border: 1px solid var(--iron);
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .story-list-card:hover {
+    border-color: var(--red);
+    transform: translateY(-1px);
+  }
+
+  .story-list-headline {
+    font-family: 'Bree Serif', Georgia, serif;
+    font-size: 18px;
+    color: var(--white);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .story-list-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .story-stat {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ash);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .story-stat strong {
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .cluster-mini-pills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .cluster-mini {
+    padding: 3px 10px;
+    background: var(--iron);
+    border-radius: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--silver);
+  }
+
+  /* ─── STORY DETAIL VIEW ─── */
+  .story-detail { display: none; }
+  .story-detail.active { display: block; }
+  .story-list-view { display: block; }
+  .story-list-view.hidden { display: none; }
+
+  .back-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--ash);
+    background: none;
+    border: 1px solid var(--iron);
+    border-radius: 6px;
+    padding: 6px 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.15s ease;
+  }
+  .back-btn:hover {
+    color: var(--white);
+    border-color: var(--steel);
+  }
+
+  /* Story Card */
+  .story-card {
+    background: var(--lead);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid var(--iron);
+  }
+  .story-headline {
+    font-family: 'Bree Serif', Georgia, serif;
+    font-size: 24px;
+    color: var(--white);
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+  .story-summary {
+    font-size: 15px;
+    color: var(--silver);
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+  .story-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ash);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .story-meta span { color: var(--red); font-weight: 600; }
+
+  /* Cluster Spectrum Bar */
+  .spectrum-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .spectrum-segment {
+    transition: flex 0.3s ease;
+  }
+
+  /* Cluster Filters */
+  .clusters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .cluster-pill {
+    padding: 8px 16px;
+    background: var(--lead);
+    border: 1px solid var(--iron);
+    border-radius: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--silver);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+    position: relative;
+  }
+  .cluster-pill:hover {
+    border-color: var(--steel);
+    color: var(--white);
+  }
+  .cluster-pill.active {
+    background: var(--red);
+    border-color: var(--red);
+    color: var(--white);
+    font-weight: 600;
+  }
+  .cluster-count {
+    opacity: 0.7;
+    margin-left: 4px;
+  }
+
+  /* Voice Cards Grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .voice-card {
+    background: var(--lead);
+    border: 1px solid var(--iron);
+    border-radius: 12px;
+    padding: 20px;
+    transition: border-color 0.2s ease;
+  }
+  .voice-card:hover { border-color: var(--red); }
+
+  .voice-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .voice-photo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--iron);
+    flex-shrink: 0;
+  }
+  .voice-info { flex: 1; min-width: 0; }
+  .voice-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .voice-followers {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--ash);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+  }
+  .platform-icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+
+  .voice-lens {
+    font-size: 12px;
+    color: var(--ash);
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--iron);
+  }
+
+  .voice-quote {
+    font-size: 15px;
+    color: var(--white);
+    line-height: 1.55;
+    padding-left: 14px;
+    border-left: 3px solid var(--red);
+    margin-bottom: 12px;
+  }
+
+  .voice-source {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--steel);
+    letter-spacing: 0.3px;
+  }
+  .voice-source a { color: var(--ash); text-decoration: underline; }
+
+  .voice-cluster-tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 32px 0;
+    border-top: 1px solid var(--iron);
+    text-align: center;
+  }
+  .footer-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--ash);
+  }
+  .footer-text a { color: var(--silver); text-decoration: underline; }
+  .footer-brand {
+    font-family: 'Bree Serif', Georgia, serif;
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .no-reactions {
+    text-align: center;
+    padding: 48px 24px;
+    color: var(--ash);
+    font-size: 14px;
+  }
+
+  @media (max-width: 640px) {
+    .cards-grid { grid-template-columns: 1fr; }
+    .story-headline { font-size: 20px; }
+    .story-list-headline { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <a href="/" class="header-logo">newsreel</a>
+      <span class="header-label">Perspectives</span>
+    </div>
+    <div class="header-date" id="header-date"></div>
+    <div class="header-subtitle">
+      How the internet's biggest voices reacted to today's stories. Not left vs. right. Just what they actually said.
+    </div>
+  </header>
+
+  <!-- Story List View -->
+  <div class="story-list-view" id="story-list-view">
+    <div class="story-list" id="story-list"></div>
+  </div>
+
+  <!-- Story Detail View -->
+  <div class="story-detail" id="story-detail">
+    <button class="back-btn" id="back-btn">&larr; All Stories</button>
+
+    <div class="story-card">
+      <h1 class="story-headline" id="story-headline"></h1>
+      <p class="story-summary" id="story-summary"></p>
+      <div class="story-meta">
+        <span id="reaction-count"></span> voices reacted out of 20 tracked
+      </div>
+    </div>
+
+    <!-- Spectrum Bar -->
+    <div class="spectrum-bar" id="spectrum-bar"></div>
+
+    <!-- Cluster Filters -->
+    <div class="clusters" id="clusters"></div>
+
+    <!-- Voice Cards -->
+    <div class="cards-grid" id="cards-grid"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">newsreel</div>
+    <div class="footer-text">
+      Clarity over clicks. <a href="https://newsreel.co">Open the app</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+const PLATFORM_ICONS = {
+  x: `<svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
+  youtube: `<svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`,
+  bluesky: `<svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.6 3.476 6.152 3.228-3.796.521-6.451 1.794-4.044 6.293C5.087 23.676 9.08 19.644 12 16.428c2.92 3.216 6.166 6.7 9.268 3.34 2.407-4.5-.248-5.772-4.044-6.293 2.553.248 5.367-.601 6.152-3.228C23.622 9.418 24 4.458 24 3.768c0-.69-.139-1.861-.902-2.203-.659-.299-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>`,
+  instagram: `<svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>`,
+  tiktok: `<svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>`,
+  web: `<svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`,
+  podcast: `<svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon"><path d="M12 1a9 9 0 0 0-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7a9 9 0 0 0-9-9z"/></svg>`,
+  truthsocial: `<svg viewBox="0 0 24 24" fill="currentColor" class="platform-icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>`,
+};
+
+const CLUSTER_COLORS = ['#FF6343','#4A9EFF','#EDBD1F','#1AAD17','#E066FF','#FF8C42','#00CED1','#FF69B4'];
+
+let allStories = [];
+let voicesMap = {};
+let currentStory = null;
+let activeCluster = 'all';
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr + 'T12:00:00');
+  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  return `${days[d.getDay()]}, ${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+}
+
+function formatTime(ts) {
+  const d = new Date(ts);
+  if (isNaN(d)) return '';
+  const h = d.getHours(), m = d.getMinutes();
+  return `${h % 12 || 12}:${String(m).padStart(2, '0')} ${h >= 12 ? 'PM' : 'AM'}`;
+}
+
+// ─── STORY LIST ───
+
+function renderStoryList() {
+  const el = document.getElementById('story-list');
+
+  if (allStories.length === 0) {
+    el.innerHTML = '<div class="no-reactions">No stories found. Run the search pipeline first.</div>';
+    return;
+  }
+
+  el.innerHTML = allStories.map((story, i) => {
+    const clusters = story.argumentClusters || [];
+    const reactions = story.reactions || [];
+
+    return `
+      <a class="story-list-card" href="?story=${story.storyId}" onclick="event.preventDefault(); showStory(${i})">
+        <div class="story-list-headline">${story.headline}</div>
+        <div class="story-list-meta">
+          <div class="story-stat"><strong>${reactions.length}</strong> reactions</div>
+          <div class="story-stat"><strong>${clusters.length}</strong> arguments</div>
+          <div class="story-stat">${countPlatforms(reactions)} platforms</div>
+        </div>
+        <div class="cluster-mini-pills">
+          ${clusters.slice(0, 4).map((c, ci) => `<span class="cluster-mini" style="border-left: 3px solid ${CLUSTER_COLORS[ci % CLUSTER_COLORS.length]}">${c.label}</span>`).join('')}
+          ${clusters.length > 4 ? `<span class="cluster-mini">+${clusters.length - 4} more</span>` : ''}
+        </div>
+      </a>
+    `;
+  }).join('');
+}
+
+function countPlatforms(reactions) {
+  return new Set(reactions.map(r => r.platform)).size;
+}
+
+// ─── STORY DETAIL ───
+
+function showStory(index) {
+  currentStory = allStories[index];
+  activeCluster = 'all';
+
+  document.getElementById('story-list-view').classList.add('hidden');
+  const detail = document.getElementById('story-detail');
+  detail.classList.add('active');
+
+  document.getElementById('story-headline').textContent = currentStory.headline;
+  document.getElementById('story-summary').textContent = currentStory.summary;
+  document.getElementById('reaction-count').textContent = currentStory.reactions.length;
+
+  history.pushState(null, '', `?story=${currentStory.storyId}`);
+
+  renderSpectrum();
+  renderClusters();
+  renderCards();
+  window.scrollTo(0, 0);
+}
+
+function showList() {
+  document.getElementById('story-list-view').classList.remove('hidden');
+  document.getElementById('story-detail').classList.remove('active');
+  history.pushState(null, '', '/');
+}
+
+function renderSpectrum() {
+  const bar = document.getElementById('spectrum-bar');
+  const clusters = currentStory.argumentClusters || [];
+  const total = clusters.reduce((s, c) => s + c.count, 0) || 1;
+
+  bar.innerHTML = clusters.map((c, i) =>
+    `<div class="spectrum-segment" style="flex:${c.count / total};background:${CLUSTER_COLORS[i % CLUSTER_COLORS.length]}" title="${c.label}: ${c.count}"></div>`
+  ).join('');
+}
+
+function renderClusters() {
+  const el = document.getElementById('clusters');
+  const clusters = currentStory.argumentClusters || [];
+
+  let html = `<button class="cluster-pill ${activeCluster === 'all' ? 'active' : ''}" data-cluster="all">All voices<span class="cluster-count">${currentStory.reactions.length}</span></button>`;
+
+  for (let i = 0; i < clusters.length; i++) {
+    const c = clusters[i];
+    const color = CLUSTER_COLORS[i % CLUSTER_COLORS.length];
+    const isActive = activeCluster === c.id;
+    html += `<button class="cluster-pill ${isActive ? 'active' : ''}" data-cluster="${c.id}" style="${isActive ? `background:${color};border-color:${color}` : `border-left: 3px solid ${color}`}">${c.label}<span class="cluster-count">${c.count}</span></button>`;
+  }
+
+  el.innerHTML = html;
+
+  el.querySelectorAll('.cluster-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeCluster = btn.dataset.cluster;
+      renderClusters();
+      renderCards();
+    });
+  });
+}
+
+function renderCards() {
+  const grid = document.getElementById('cards-grid');
+  let reactions = currentStory.reactions;
+  const clusters = currentStory.argumentClusters || [];
+
+  if (activeCluster !== 'all') {
+    const cluster = clusters.find(c => c.id === activeCluster);
+    if (cluster) {
+      reactions = reactions.filter(r =>
+        r.argumentCluster === cluster.id ||
+        r.argumentCluster === cluster.label ||
+        r.argumentCluster.toLowerCase().replace(/[^a-z0-9]+/g, '-') === cluster.id
+      );
+    }
+  }
+
+  if (reactions.length === 0) {
+    grid.innerHTML = '<div class="no-reactions">No reactions in this category.</div>';
+    return;
+  }
+
+  reactions.sort((a, b) => {
+    const va = voicesMap[a.voiceId];
+    const vb = voicesMap[b.voiceId];
+    return (vb?.followers || 0) - (va?.followers || 0);
+  });
+
+  grid.innerHTML = reactions.map(r => {
+    const voice = voicesMap[r.voiceId];
+    if (!voice) return '';
+    const icon = PLATFORM_ICONS[r.platform] || PLATFORM_ICONS.web;
+    const clusterIdx = clusters.findIndex(c => c.id === r.argumentCluster || c.label === r.argumentCluster);
+    const color = clusterIdx >= 0 ? CLUSTER_COLORS[clusterIdx % CLUSTER_COLORS.length] : '#555';
+    const clusterLabel = (clusters.find(c => c.id === r.argumentCluster) || {}).label || r.argumentCluster;
+
+    return `
+      <div class="voice-card">
+        <div class="voice-header">
+          <img class="voice-photo" src="${voice.photo}" alt="${voice.name}" onerror="this.style.display='none'">
+          <div class="voice-info">
+            <div class="voice-name">${voice.name} ${icon}</div>
+            <div class="voice-followers">${voice.followersDisplay} followers</div>
+          </div>
+        </div>
+        <div class="voice-lens">${voice.lens}</div>
+        <div class="voice-quote">${r.quote}</div>
+        <div class="voice-source">
+          <a href="${r.sourceUrl}" target="_blank">View on ${r.platform}</a> ${r.timestamp ? '· ' + formatTime(r.timestamp) : ''}
+        </div>
+        <span class="voice-cluster-tag" style="background:${color}22;color:${color};border:1px solid ${color}44">${clusterLabel}</span>
+      </div>
+    `;
+  }).join('');
+}
+
+// ─── LOAD DATA ───
+
+async function loadData() {
+  try {
+    const voicesRes = await fetch('data/voices.json');
+    const voices = await voicesRes.json();
+    for (const v of voices) voicesMap[v.id] = v;
+
+    // Load all story files
+    const storiesDir = 'data/stories/';
+    // Try to load story from URL param first
+    const urlStory = new URLSearchParams(window.location.search).get('story');
+
+    // Discover available stories by trying known files
+    const storyFiles = [];
+    // Check index or try common patterns
+    try {
+      const resp = await fetch(storiesDir);
+      const html = await resp.text();
+      const matches = html.match(/href="([^"]+\.json)"/g) || [];
+      for (const m of matches) {
+        const file = m.replace('href="', '').replace('"', '');
+        storyFiles.push(file);
+      }
+    } catch (e) {}
+
+    // Load each story
+    for (const file of storyFiles) {
+      try {
+        const res = await fetch(storiesDir + file);
+        const story = await res.json();
+        if (story.reactions && story.reactions.length > 0) {
+          allStories.push(story);
+        }
+      } catch (e) {}
+    }
+
+    // Sort by date descending
+    allStories.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+    // Set date
+    const today = new Date();
+    document.getElementById('header-date').textContent = formatDate(today.toISOString().split('T')[0]);
+
+    // If URL has a story param, show it directly
+    if (urlStory) {
+      const idx = allStories.findIndex(s => s.storyId === urlStory);
+      if (idx >= 0) {
+        renderStoryList();
+        showStory(idx);
+        return;
+      }
+    }
+
+    renderStoryList();
+
+  } catch (err) {
+    console.error('Failed to load data:', err);
+    document.getElementById('story-list').innerHTML = '<div class="no-reactions">Failed to load data. Make sure you\'re running from a local server.</div>';
+  }
+}
+
+document.getElementById('back-btn').addEventListener('click', showList);
+window.addEventListener('popstate', () => {
+  const urlStory = new URLSearchParams(window.location.search).get('story');
+  if (urlStory) {
+    const idx = allStories.findIndex(s => s.storyId === urlStory);
+    if (idx >= 0) showStory(idx);
+  } else {
+    showList();
+  }
+});
+
+loadData();
+</script>
+
+</body>
+</html>
