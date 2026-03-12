@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: newsreel-perspectives
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python serve.py
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false  # set manually in Render dashboard
+      - key: PYTHON_VERSION
+        value: "3.11.6"

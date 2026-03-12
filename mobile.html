@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Perspectives — Newsreel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --lead: #1F1F1F;
+    --iron: #333333;
+    --steel: #555555;
+    --ash: #808080;
+    --silver: #B0B0B0;
+    --smoke: #C8C8C8;
+    --white: #FFFFFF;
+    --red: #FF6343;
+    --yellow: #EDBD1F;
+    --green: #1AAD17;
+    --font-headline: 'Bree Serif', Georgia, 'Times New Roman', serif;
+    --font-body: 'DM Sans', Helvetica, Arial, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--font-body);
+    max-width: 390px;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 72px; /* space for tab bar */
+  }
+
+  /* ── Status bar ── */
+  .status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px 4px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--ash);
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px 16px;
+    border-bottom: 1px solid var(--iron);
+  }
+  .header-title {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+  }
+  .header-date {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--ash);
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Story headline card ── */
+  .story-card {
+    margin: 16px 16px 0;
+    padding: 20px;
+    background: var(--lead);
+    border-radius: 14px;
+    border: 1px solid var(--iron);
+  }
+  .story-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .story-headline {
+    font-family: var(--font-headline);
+    font-size: 22px;
+    color: var(--white);
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+  .story-summary {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--silver);
+    line-height: 1.5;
+  }
+  .reaction-count {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 10px;
+    background: var(--iron);
+    border-radius: 20px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--smoke);
+    font-weight: 600;
+  }
+
+  /* ── Cluster filter pills ── */
+  .cluster-bar {
+    display: flex;
+    gap: 8px;
+    padding: 16px 16px 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .cluster-bar::-webkit-scrollbar { display: none; }
+  .cluster-pill {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: var(--iron);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--smoke);
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    user-select: none;
+  }
+  .cluster-pill.active {
+    background: var(--red);
+    color: var(--white);
+    border-color: var(--red);
+  }
+  .cluster-pill .pill-count {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 1px 5px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 8px;
+    font-size: 9px;
+  }
+
+  /* ── Section label ── */
+  .section-label {
+    padding: 12px 20px 8px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+  }
+
+  /* ── Voice reaction cards ── */
+  .voices-list {
+    padding: 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .voice-card {
+    background: var(--lead);
+    border-radius: 14px;
+    padding: 16px;
+    border: 1px solid var(--iron);
+    transition: transform 0.15s ease;
+  }
+  .voice-card:active {
+    transform: scale(0.98);
+  }
+
+  .voice-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .voice-photo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--iron);
+    flex-shrink: 0;
+  }
+  .voice-info { flex: 1; min-width: 0; }
+  .voice-name-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .voice-name {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+  }
+  .voice-platform {
+    font-size: 13px;
+  }
+  .voice-meta {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--ash);
+    margin-top: 1px;
+  }
+  .voice-lens {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--ash);
+    font-style: italic;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .voice-quote {
+    border-left: 3px solid var(--red);
+    padding-left: 12px;
+    margin-bottom: 12px;
+  }
+  .voice-quote p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--smoke);
+    line-height: 1.5;
+  }
+  .voice-cluster-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--iron);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  /* ── Bottom tab bar ── */
+  .tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 390px;
+    background: var(--lead);
+    border-top: 1px solid var(--iron);
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0 20px; /* 20px for home indicator */
+    z-index: 100;
+  }
+  .tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--steel);
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  .tab-item.active { color: var(--red); }
+  .tab-icon { font-size: 20px; line-height: 1; }
+
+  /* ── Utility ── */
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<!-- Status bar -->
+<div class="status-bar">
+  <span>9:41</span>
+  <span>newsreel</span>
+  <span>&#x1F50B; 87%</span>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <div class="header-title">Perspectives</div>
+  <div class="header-date" id="headerDate"></div>
+</div>
+
+<!-- Story headline card -->
+<div class="story-card" id="storyCard">
+  <div class="story-label">Today's Story</div>
+  <h1 class="story-headline" id="storyHeadline"></h1>
+  <p class="story-summary" id="storySummary"></p>
+  <span class="reaction-count" id="reactionCount"></span>
+</div>
+
+<!-- Cluster filter pills -->
+<div class="cluster-bar" id="clusterBar"></div>
+
+<!-- Section label -->
+<div class="section-label">How the internet reacted</div>
+
+<!-- Voice cards -->
+<div class="voices-list" id="voicesList"></div>
+
+<!-- Bottom tab bar -->
+<div class="tab-bar">
+  <div class="tab-item">
+    <span class="tab-icon">&#x1F3E0;</span>
+    <span>Home</span>
+  </div>
+  <div class="tab-item">
+    <span class="tab-icon">&#x1F50D;</span>
+    <span>Search</span>
+  </div>
+  <div class="tab-item active">
+    <span class="tab-icon">&#x1F4AC;</span>
+    <span>Perspectives</span>
+  </div>
+  <div class="tab-item">
+    <span class="tab-icon">&#x1F464;</span>
+    <span>Profile</span>
+  </div>
+</div>
+
+<script>
+const PLATFORM_ICONS = {
+  youtube: '\u{1F4FA}',
+  x: '\uD835\uDD4F',
+  instagram: '\u{1F4F7}',
+  tiktok: '\u{1F3B5}',
+  podcast: '\u{1F3A7}',
+};
+const PLATFORM_NAMES = {
+  youtube: 'YouTube',
+  x: 'X',
+  instagram: 'Instagram',
+  tiktok: 'TikTok',
+  podcast: 'Podcast',
+};
+
+let storyData = null;
+let voicesMap = {};
+let activeCluster = null; // null = "All"
+
+async function init() {
+  try {
+    const [storyRes, voicesRes] = await Promise.all([
+      fetch('./data/stories/iran-war-2026-03-10.json'),
+      fetch('./data/voices.json'),
+    ]);
+    storyData = await storyRes.json();
+    const voicesArr = await voicesRes.json();
+    voicesArr.forEach(v => { voicesMap[v.id] = v; });
+    render();
+  } catch (err) {
+    console.error('Failed to load data:', err);
+    document.getElementById('storyHeadline').textContent = 'Error loading data. Make sure JSON files are accessible.';
+  }
+}
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr + 'T12:00:00');
+  const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+}
+
+function render() {
+  // Header
+  document.getElementById('headerDate').textContent = formatDate(storyData.date);
+
+  // Story card
+  document.getElementById('storyHeadline').textContent = storyData.headline;
+  document.getElementById('storySummary').textContent = storyData.summary;
+  document.getElementById('reactionCount').textContent =
+    `${storyData.reactions.length} voices reacted`;
+
+  // Cluster pills
+  renderClusters();
+
+  // Voice cards
+  renderVoices();
+}
+
+function renderClusters() {
+  const bar = document.getElementById('clusterBar');
+  bar.innerHTML = '';
+
+  // "All" pill
+  const allPill = document.createElement('div');
+  allPill.className = 'cluster-pill' + (activeCluster === null ? ' active' : '');
+  allPill.innerHTML = `All <span class="pill-count">${storyData.reactions.length}</span>`;
+  allPill.addEventListener('click', () => { activeCluster = null; renderClusters(); renderVoices(); });
+  bar.appendChild(allPill);
+
+  // Cluster pills
+  (storyData.argumentClusters || []).forEach(c => {
+    const pill = document.createElement('div');
+    pill.className = 'cluster-pill' + (activeCluster === c.label ? ' active' : '');
+    pill.innerHTML = `${c.label} <span class="pill-count">${c.count}</span>`;
+    pill.addEventListener('click', () => {
+      activeCluster = activeCluster === c.label ? null : c.label;
+      renderClusters();
+      renderVoices();
+    });
+    bar.appendChild(pill);
+  });
+}
+
+function renderVoices() {
+  const list = document.getElementById('voicesList');
+  list.innerHTML = '';
+
+  const filtered = activeCluster
+    ? storyData.reactions.filter(r => r.argumentCluster === activeCluster)
+    : storyData.reactions;
+
+  filtered.forEach(reaction => {
+    const voice = voicesMap[reaction.voiceId] || {};
+    const card = document.createElement('div');
+    card.className = 'voice-card';
+
+    const platformIcon = PLATFORM_ICONS[reaction.platform] || '';
+    const platformName = PLATFORM_NAMES[reaction.platform] || reaction.platform;
+    const photo = voice.photo || '';
+    const name = voice.name || reaction.voiceId;
+    const followers = voice.followersDisplay || '';
+    const lens = voice.lens || '';
+
+    card.innerHTML = `
+      <div class="voice-header">
+        <img class="voice-photo" src="${photo}" alt="${name}" onerror="this.style.background='var(--iron)'; this.alt='${name.charAt(0)}';">
+        <div class="voice-info">
+          <div class="voice-name-row">
+            <span class="voice-name">${name}</span>
+            <span class="voice-platform">${platformIcon}</span>
+          </div>
+          <div class="voice-meta">${followers} &middot; ${platformName}</div>
+        </div>
+      </div>
+      <div class="voice-lens">${lens}</div>
+      <div class="voice-quote">
+        <p>&ldquo;${reaction.quote}&rdquo;</p>
+      </div>
+      <span class="voice-cluster-tag">${reaction.argumentCluster}</span>
+    `;
+    list.appendChild(card);
+  });
+}
+
+init();
+</script>
+</body>
+</html>

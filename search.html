@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perspectives — Step Outside Your Algorithm</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    min-height: 100vh;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .hero h1 span { color: #FF6343; }
+
+  .hero p {
+    font-size: 1.1em;
+    color: #888;
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+
+  .search-box {
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 18px 24px;
+    font-size: 1.1em;
+    font-family: 'DM Sans', sans-serif;
+    border: 2px solid #333;
+    border-radius: 12px;
+    background: #1a1a1a;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .search-box input:focus {
+    border-color: #FF6343;
+  }
+
+  .search-box input::placeholder {
+    color: #555;
+  }
+
+  .search-box button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding: 10px 24px;
+    font-size: 1em;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    background: #FF6343;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .search-box button:hover { background: #e5553a; }
+  .search-box button:disabled { background: #555; cursor: not-allowed; }
+
+  .stats {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 0.9em;
+  }
+
+  .stats span { color: #FF6343; font-weight: 600; }
+
+  .loading {
+    text-align: center;
+    padding: 60px;
+    color: #888;
+    font-size: 1.1em;
+    display: none;
+  }
+
+  .loading.active { display: block; }
+
+  .loading .spinner {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #333;
+    border-top-color: #FF6343;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .results {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  .results-header {
+    text-align: center;
+    padding: 20px 0 30px;
+  }
+
+  .results-header h2 {
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+  .results-header .topics {
+    color: #888;
+    font-size: 0.9em;
+  }
+
+  .results-header .topics .tag {
+    display: inline-block;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin: 2px;
+    font-size: 0.85em;
+  }
+
+  .voice-card {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+
+  .voice-card:hover { border-color: #FF6343; }
+
+  .voice-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .voice-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #333;
+  }
+
+  .voice-name {
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .voice-lean {
+    font-size: 0.8em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .lean-left { background: #1a2a4a; color: #5b9bd5; }
+  .lean-right { background: #4a1a1a; color: #d55b5b; }
+  .lean-center { background: #2a2a1a; color: #c5b358; }
+  .lean-libertarian { background: #1a3a1a; color: #5bd55b; }
+
+  .cluster-label {
+    background: rgba(255, 99, 67, 0.15);
+    color: #FF6343;
+    border: 1px solid rgba(255, 99, 67, 0.3);
+  }
+
+  .cluster-tag {
+    display: inline-block;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #ccc;
+    font-size: 0.85em;
+  }
+
+  .voice-topics {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  .voice-topics .tag {
+    font-size: 0.75em;
+    background: rgba(255, 99, 67, 0.15);
+    color: #FF6343;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .quote {
+    margin-bottom: 12px;
+    padding-left: 14px;
+    border-left: 3px solid #333;
+  }
+
+  .quote-platform {
+    font-size: 0.75em;
+    color: #666;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .quote-text {
+    font-size: 0.95em;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+
+  .quote-link {
+    font-size: 0.8em;
+    color: #FF6343;
+    text-decoration: none;
+  }
+
+  .quote-link:hover { text-decoration: underline; }
+
+  .trending {
+    max-width: 900px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+  }
+
+  .trending h3 {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .trending-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .trending-topic {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #ccc;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .trending-topic:hover {
+    border-color: #FF6343;
+    color: #FF6343;
+  }
+
+  .trending-topic .count {
+    color: #666;
+    font-size: 0.85em;
+    margin-left: 4px;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 60px;
+    color: #666;
+  }
+
+  .example-queries {
+    max-width: 680px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .example-query {
+    font-size: 0.85em;
+    color: #666;
+    background: #1a1a1a;
+    border: 1px solid #222;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .example-query:hover {
+    color: #FF6343;
+    border-color: #FF6343;
+  }
+</style>
+</head>
+<body>
+
+<div style="max-width:900px; margin:0 auto; padding:0 20px;">
+  <div style="padding:20px 0; border-bottom:1px solid #222; display:flex; justify-content:space-between; align-items:center;">
+    <div style="display:flex; align-items:center; gap:12px;">
+      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel" style="height:24px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:#FF6343; text-transform:uppercase; letter-spacing:1.2px; font-weight:700;">Perspectives</div>
+    </div>
+    <div>
+      <a href="/search" style="font-family:monospace; font-size:11px; color:#FF6343; text-decoration:none; margin-left:16px;">Search</a>
+      <a href="/voices" style="font-family:monospace; font-size:11px; color:#808080; text-decoration:none; margin-left:16px;">Voices</a>
+    </div>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>Step outside your algorithm<br>into <span>others</span></h1>
+  <p>Type any headline. See how <a href="/voices" style="color:#FF6343; text-decoration:none;">78 voices</a> across the political spectrum are talking about it.</p>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Paste a headline or describe a story..." autofocus>
+    <button id="searchBtn" onclick="doSearch()">Search</button>
+  </div>
+
+  <div class="example-queries" id="exampleQueries">
+    <div class="example-query" onclick="setQuery(this)">Pentagon probe points to U.S. missile hitting Iranian school</div>
+    <div class="example-query" onclick="setQuery(this)">Epstein files released to the public</div>
+    <div class="example-query" onclick="setQuery(this)">Trump tariffs cause stock market crash</div>
+    <div class="example-query" onclick="setQuery(this)">AI replacing jobs</div>
+  </div>
+</div>
+
+<div class="stats" id="stats"></div>
+
+<div class="trending" id="trendingSection" style="display:none">
+  <h3>Trending topics across all voices today</h3>
+  <div class="trending-topics" id="trendingTopics"></div>
+</div>
+
+<div class="loading" id="loading">
+  <span class="spinner"></span>
+  Searching 78 voices across X, YouTube, Bluesky, TikTok, and Instagram...
+</div>
+
+<div class="results" id="results"></div>
+
+<script>
+const input = document.getElementById('searchInput');
+const btn = document.getElementById('searchBtn');
+const loading = document.getElementById('loading');
+const resultsDiv = document.getElementById('results');
+const statsDiv = document.getElementById('stats');
+
+// Load trending topics
+fetch('/api/topics')
+  .then(r => r.json())
+  .then(topics => {
+    const sorted = Object.entries(topics)
+      .filter(([k, v]) => k !== 'uncategorized' && [...new Set(v.map(e => e.voiceName))].length >= 3)
+      .sort((a, b) => b[1].length - a[1].length)
+      .slice(0, 15);
+
+    if (sorted.length > 0) {
+      const section = document.getElementById('trendingSection');
+      const container = document.getElementById('trendingTopics');
+      section.style.display = 'block';
+      sorted.forEach(([topic, entries]) => {
+        const voices = [...new Set(entries.map(e => e.voiceName))].length;
+        const el = document.createElement('div');
+        el.className = 'trending-topic';
+        el.innerHTML = `${topic.replace(/-/g, ' ')} <span class="count">${voices} voices</span>`;
+        el.onclick = () => { input.value = topic.replace(/-/g, ' '); doSearch(); };
+        container.appendChild(el);
+      });
+      statsDiv.innerHTML = `<span>${Object.values(topics).flat().length}</span> posts from <span>${new Set(Object.values(topics).flat().map(e => e.voiceId)).size}</span> voices across <span>${sorted.length}+</span> topics`;
+    }
+  })
+  .catch(() => {});
+
+input.addEventListener('keydown', e => {
+  if (e.key === 'Enter') doSearch();
+});
+
+function setQuery(el) {
+  input.value = el.textContent;
+  doSearch();
+}
+
+async function doSearch() {
+  const query = input.value.trim();
+  if (!query) return;
+
+  btn.disabled = true;
+  loading.classList.add('active');
+  resultsDiv.innerHTML = '';
+  document.getElementById('exampleQueries').style.display = 'none';
+
+  try {
+    const resp = await fetch(`/api/lookup?q=${encodeURIComponent(query)}`);
+    const data = await resp.json();
+
+    if (data.error) {
+      resultsDiv.innerHTML = `<div class="no-results">${data.error}</div>`;
+    } else {
+      renderResults(data);
+    }
+  } catch (err) {
+    resultsDiv.innerHTML = `<div class="no-results">Search failed: ${err.message}</div>`;
+  }
+
+  btn.disabled = false;
+  loading.classList.remove('active');
+}
+
+function renderResults(data) {
+  if (!data.voices || data.voices.length === 0) {
+    resultsDiv.innerHTML = '<div class="no-results">No voices found talking about this story yet.</div>';
+    return;
+  }
+
+  // Sort by number of quotes (most relevant first)
+  data.voices.sort((a, b) => b.quotes.length - a.quotes.length);
+
+  let html = `
+    <div class="results-header">
+      <h2>${data.voices.length} voices on this story</h2>
+      <div class="topics">
+        ${data.matchedTopics.map(t => `<span class="tag">${t}</span>`).join('')}
+      </div>
+    </div>
+  `;
+
+  // Group voices by argument cluster
+  const clusterGroups = {};
+  for (const voice of data.voices) {
+    const cluster = voice.argumentCluster || 'uncategorized';
+    if (!clusterGroups[cluster]) clusterGroups[cluster] = [];
+    clusterGroups[cluster].push(voice);
+  }
+
+  // Show cluster overview
+  if (Object.keys(clusterGroups).length > 1 || !clusterGroups['uncategorized']) {
+    const clusterTags = Object.keys(clusterGroups)
+      .filter(c => c !== 'uncategorized')
+      .map(c => `<span class="cluster-tag">${c} <span style="opacity:0.6">${clusterGroups[c].length}</span></span>`)
+      .join('');
+    if (clusterTags) {
+      html += `<div style="text-align:center; margin-bottom:24px;">
+        <div style="color:#888; font-size:0.85em; margin-bottom:8px;">Argument clusters on this story</div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">${clusterTags}</div>
+      </div>`;
+    }
+  }
+
+  for (const voice of data.voices) {
+    const clusterLabel = voice.argumentCluster
+      ? `<span class="voice-lean cluster-label">${voice.argumentCluster}</span>`
+      : '';
+
+    const photoUrl = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=333&color=fff&size=96`;
+    const lensHtml = voice.lens ? `<div style="font-size:0.8em; color:#888; margin-top:2px; line-height:1.3;">${escapeHtml(voice.lens)}</div>` : '';
+
+    html += `
+      <div class="voice-card">
+        <div class="voice-header">
+          <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=333&color=fff&size=96'">
+          <div>
+            <div class="voice-name">${voice.voiceName} ${clusterLabel}</div>
+            ${lensHtml}
+          </div>
+        </div>
+        <div class="voice-topics">
+          ${voice.topics.map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+        ${voice.quotes.slice(0, 3).map(q => {
+          const platformLabel = {x: 'X/Twitter', youtube: 'YouTube', bluesky: 'Bluesky'}[q.platform] || q.platform;
+          const timeAgo = q.timestamp ? formatTimeAgo(q.timestamp) : '';
+          return `
+            <div class="quote">
+              <div class="quote-platform">${platformLabel}${timeAgo ? ` · ${timeAgo}` : ''}</div>
+              <div class="quote-text">"${escapeHtml(q.quote.substring(0, 250))}"</div>
+              <a class="quote-link" href="${q.sourceUrl}" target="_blank">View original</a>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
+  resultsDiv.innerHTML = html;
+}
+
+function formatTimeAgo(ts) {
+  try {
+    const date = new Date(ts);
+    const now = new Date();
+    const diffMs = now - date;
+    const diffHrs = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+    if (diffDays > 30) return date.toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
+    if (diffDays > 0) return `${diffDays}d ago`;
+    if (diffHrs > 0) return `${diffHrs}h ago`;
+    return 'just now';
+  } catch { return ''; }
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+</script>
+
+</body>
+</html>

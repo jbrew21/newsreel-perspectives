@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perspectives — Trump Says Iran War Could End Very Soon</title>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#000; color:#fff;
+    font-family:'DM Sans',Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .container { max-width:640px; margin:0 auto; padding:0 20px; }
+
+  /* Header */
+  .header {
+    padding:20px 0;
+    border-bottom:1px solid #222;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .header img { height:24px; }
+  .header-label { font-family:'IBM Plex Mono',monospace; font-size:10px; color:#FF6343; text-transform:uppercase; letter-spacing:1.2px; font-weight:700; }
+
+  /* Hero */
+  .hero { padding:32px 0 28px; border-bottom:1px solid #222; }
+  .hero-label { font-family:'IBM Plex Mono',monospace; font-size:9px; color:#808080; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:12px; }
+  .hero h1 { font-family:'Bree Serif',Georgia,serif; font-size:28px; font-weight:normal; line-height:1.25; margin-bottom:10px; }
+  .hero-meta { font-size:13px; color:#808080; }
+  .hero-meta strong { color:#B0B0B0; }
+
+  /* Cluster section */
+  .cluster {
+    padding:28px 0;
+    border-bottom:1px solid #1a1a1a;
+  }
+  .cluster-header {
+    display:flex; align-items:center; gap:12px;
+    margin-bottom:20px; cursor:pointer;
+  }
+  .cluster-bar {
+    width:4px; height:24px; border-radius:2px; flex-shrink:0;
+  }
+  .cluster-title {
+    font-size:18px; font-weight:600; flex:1;
+  }
+  .cluster-count {
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:#808080;
+    background:#1a1a1a; padding:4px 10px; border-radius:20px;
+  }
+
+  /* Voice cards */
+  .voices { display:flex; flex-direction:column; gap:12px; }
+
+  .voice-card {
+    display:flex; gap:14px; padding:16px;
+    background:#111; border-radius:12px;
+    cursor:pointer; transition:all 0.2s ease;
+    border:1px solid transparent;
+  }
+  .voice-card:hover {
+    background:#1a1a1a; border-color:#333;
+    transform:translateY(-1px);
+  }
+  .voice-card.expanded {
+    background:#1a1a1a; border-color:#333;
+  }
+
+  .voice-photo {
+    width:48px; height:48px; border-radius:50%; flex-shrink:0;
+    object-fit:cover;
+    filter:grayscale(100%) contrast(1.1);
+    transition:filter 0.3s ease;
+  }
+  .voice-card:hover .voice-photo,
+  .voice-card.expanded .voice-photo {
+    filter:grayscale(0%);
+  }
+
+  .voice-info { flex:1; min-width:0; }
+  .voice-name { font-size:15px; font-weight:600; margin-bottom:2px; }
+  .voice-platform {
+    font-family:'IBM Plex Mono',monospace; font-size:10px; color:#808080;
+    text-transform:uppercase; letter-spacing:0.5px;
+  }
+
+  .voice-quote {
+    display:none; margin-top:12px;
+    font-size:14px; color:#C8C8C8; line-height:1.5;
+    padding-left:14px;
+    border-left:2px solid #333;
+  }
+  .voice-card.expanded .voice-quote { display:block; }
+
+  .voice-link {
+    display:none; margin-top:10px;
+  }
+  .voice-card.expanded .voice-link { display:block; }
+  .voice-link a {
+    font-family:'IBM Plex Mono',monospace; font-size:11px;
+    color:#FF6343; text-decoration:none;
+    display:inline-flex; align-items:center; gap:4px;
+  }
+  .voice-link a:hover { text-decoration:underline; }
+
+  .expand-hint {
+    font-size:11px; color:#555; margin-top:2px;
+    transition:color 0.2s;
+  }
+  .voice-card:hover .expand-hint { color:#808080; }
+  .voice-card.expanded .expand-hint { display:none; }
+
+  /* Summary bar */
+  .summary-bar {
+    display:flex; height:6px; border-radius:3px; overflow:hidden;
+    margin:24px 0 8px; gap:2px;
+  }
+  .summary-segment { border-radius:3px; transition:flex 0.3s ease; }
+
+  .summary-labels {
+    display:flex; justify-content:space-between;
+    font-size:11px; color:#808080; margin-bottom:32px;
+  }
+
+  /* Footer */
+  .footer {
+    padding:32px 0;
+    border-top:1px solid #222;
+    text-align:center;
+  }
+  .footer-logo { height:20px; margin-bottom:8px; opacity:0.5; }
+  .footer p { font-size:12px; color:#555; }
+  .footer a { color:#FF6343; text-decoration:none; }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity:0; transform:translateY(8px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+  .cluster { animation: fadeIn 0.4s ease both; }
+  .cluster:nth-child(2) { animation-delay:0.1s; }
+  .cluster:nth-child(3) { animation-delay:0.2s; }
+  .cluster:nth-child(4) { animation-delay:0.3s; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
+    <div class="header-label">&#9679; Perspectives</div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-label">IRAN WAR &middot; MAR 11, 2026</div>
+    <h1>Should the U.S. continue military strikes in Iran?</h1>
+    <p class="hero-meta">
+      <strong>16 voices</strong> weighed in &middot; <strong>4 arguments</strong> emerged
+    </p>
+  </div>
+
+  <!-- Summary Bar -->
+  <div class="summary-bar">
+    <div class="summary-segment" style="flex:2; background:#EF4444;"></div>
+    <div class="summary-segment" style="flex:9; background:#3B82F6;"></div>
+    <div class="summary-segment" style="flex:3; background:#F59E0B;"></div>
+    <div class="summary-segment" style="flex:2; background:#A855F7;"></div>
+  </div>
+  <div class="summary-labels">
+    <span>4 arguments</span>
+    <span>16 voices total</span>
+  </div>
+
+
+  <!-- ── CLUSTER 1 ── -->
+  <div class="cluster">
+    <div class="cluster-header">
+      <div class="cluster-bar" style="background:#EF4444;"></div>
+      <div class="cluster-title">Yes, finish the job.</div>
+      <div class="cluster-count">2 voices</div>
+    </div>
+    <div class="voices">
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/IwzYq-xS_iXyxcilUGmrrhP2AMTAi1F2siYICQVvE_35j-BX657pww-fZk1baN8TyyTtn6Zg=s176-c-k-c0x00ffffff-no-rj" alt="Shapiro">
+        <div class="voice-info">
+          <div class="voice-name">Ben Shapiro</div>
+          <div class="voice-platform">X &middot; 25M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;Trump orders U.S. strikes on Iranian military targets, world leaders react, and the Middle East braces for what comes next. Iran's nuclear ambitions must be stopped.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/ycVbP7UoRIBq1ZlvfiEK61lRx_nffBfqaSeACcK69cq5xsixPoWHz6s9O-6xNsjbjtlSeoPU_A=s176-c-k-c0x00ffffff-no-rj" alt="Bongino">
+        <div class="voice-info">
+          <div class="voice-name">Dan Bongino</div>
+          <div class="voice-platform">Bluesky &middot; 12.9M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;If something in the USA and/or Israel explodes, before you rush to the Mossad false flag conspiracy, remember Iran has been funding terror worldwide for decades.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ── CLUSTER 2 ── -->
+  <div class="cluster">
+    <div class="cluster-header">
+      <div class="cluster-bar" style="background:#3B82F6;"></div>
+      <div class="cluster-title">No, there's no plan and no exit.</div>
+      <div class="cluster-count">9 voices</div>
+    </div>
+    <div class="voices">
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/osqbOk1S4CLNdEaNd1E1KcQVbain12MeWh1mj7Xwtv2F712-HP3C6palx0tToM4ExoWLrUxnkw=s176-c-k-c0x00ffffff-no-rj" alt="Stewart">
+        <div class="voice-info">
+          <div class="voice-name">Jon Stewart</div>
+          <div class="voice-platform">Bluesky &middot; 10M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;With polls decidedly against a war with Iran, insiders suggest that Trump is attempting to declare victory and wind things down before the political cost becomes unbearable.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/pobf1Nd5mBgyFfJVYGdhEEBfHxMMf2o_5IT795v-Ej1xmdae8Adw1DvMnimbYhy7Uh3tRsGtipY=s176-c-k-c0x00ffffff-no-rj" alt="Pakman">
+        <div class="voice-info">
+          <div class="voice-name">David Pakman</div>
+          <div class="voice-platform">Bluesky &middot; 5M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;Despite Agent Orange claiming the Iran war is "complete," it appears they're about to expand operations. The Peace President has launched a war. The affordability President is seeing historically high gas prices.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/P49fez73t1RPPGWT9ZWx_LSho_O8i49XrcpVwxRk3GQfzEQBTUs3gH0ZLUHdzuNxQpRYuLAfSQ=s176-c-k-c0x00ffffff-no-rj" alt="BTC">
+        <div class="voice-info">
+          <div class="voice-name">Brian Tyler Cohen</div>
+          <div class="voice-platform">Bluesky &middot; 5M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;Trump admin: IT'S THE DEPARTMENT OF WAR NOW. WE ARE NOT AFRAID OF WAR. THE DAYS OF DIPLOMACY ARE OVER. Also Trump admin: Why is everyone calling us warmongers?&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/EjQNRQGTldnH7kUHaRRWa_yOa6Po-GODJN0xqJEmsji96cAVBdLggAgHlw2DbKSvomyo3xm2CX0=s176-c-k-c0x00ffffff-no-rj" alt="Tucker">
+        <div class="voice-info">
+          <div class="voice-name">Tucker Carlson</div>
+          <div class="voice-platform">X &middot; 13.9M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;Col. Douglas Macgregor on how this war ends. I don't think the administration has any idea what they've started or how to finish it.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ── CLUSTER 3 ── -->
+  <div class="cluster">
+    <div class="cluster-header">
+      <div class="cluster-bar" style="background:#F59E0B;"></div>
+      <div class="cluster-title">This is crushing the economy.</div>
+      <div class="cluster-count">3 voices</div>
+    </div>
+    <div class="voices">
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/clBZ7D-wYk_ysfU_X0U2GAN3lAxkP5drwADfpuqvSrbPzkcemCXx9XQV8XEXqjSK3uMYiReJPQ=s176-c-k-c0x00ffffff-no-rj" alt="Trevor Noah">
+        <div class="voice-info">
+          <div class="voice-name">Theo Von</div>
+          <div class="voice-platform">YouTube &middot; 22.3M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;Trump's lost Theo Von. The MAGA base is speaking out against this war in Iran and what it's doing to gas prices and the markets.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/GaZdiTH19-g6JFMUkh2UzeulwgtnSiz-4fRbgrEW2tSFzFUUyTFFNrPChP5Ens5v5f-JpTybAg=s176-c-k-c0x00ffffff-no-rj" alt="TYT">
+        <div class="voice-info">
+          <div class="voice-name">The Young Turks</div>
+          <div class="voice-platform">YouTube &middot; 12M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;DEVASTATING economic news rattles Trump administration amid Iran war. Gas at $5/gallon, markets in freefall, and they still can't explain why we're there.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/RBbqOo9eDutEBNxybXwTJ_aIY_gq9LNdzOlEdrbaV3xf1Zi9porxzm1XkxoI4g-U5Z_4UhmIGQ=s176-c-k-c0x00ffffff-no-rj" alt="Breakfast Club">
+        <div class="voice-info">
+          <div class="voice-name">The Breakfast Club</div>
+          <div class="voice-platform">YouTube &middot; 11.4M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;Trump contradicts himself on when the war with Iran will end. Strikes lead to soaring gas prices. People are hurting and nobody in DC seems to care.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ── CLUSTER 4 ── -->
+  <div class="cluster">
+    <div class="cluster-header">
+      <div class="cluster-bar" style="background:#A855F7;"></div>
+      <div class="cluster-title">War is never the answer.</div>
+      <div class="cluster-count">2 voices</div>
+    </div>
+    <div class="voices">
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/A5JWZ-yCo7O39ezx7A2Ci02kavExbg3qBKFaVWRBIJpeHzeRoBXSnSy6CIfiMqlbv10J03UWfAQ=s176-c-k-c0x00ffffff-no-rj" alt="Stephen A">
+        <div class="voice-info">
+          <div class="voice-name">Stephen A. Smith</div>
+          <div class="voice-platform">Bluesky &middot; 5M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;Every gun that is made, every warship launched, every rocket fired signifies, in the final sense, a theft from those who hunger and are not fed.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card" onclick="this.classList.toggle('expanded')">
+        <img class="voice-photo" src="https://yt3.googleusercontent.com/ytc/AIdro_n5ebqncYr_RQi6dwWsZ_oZtI4M6MsC7d_jjCNYpp5Et68=s176-c-k-c0x00ffffff-no-rj" alt="HasanAbi">
+        <div class="voice-info">
+          <div class="voice-name">HasanAbi</div>
+          <div class="voice-platform">YouTube &middot; 5.5M followers</div>
+          <div class="expand-hint">Tap to see quote</div>
+          <div class="voice-quote">
+            &ldquo;Trump's Iran war is going TERRIBLY. Iran won't surrender to Trump. This could be the start of something much worse than anyone in the White House is admitting.&rdquo;
+          </div>
+          <div class="voice-link">
+            <a href="#">View original post &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <img class="footer-logo" src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel"><br>
+    <p style="margin-top:8px;">Perspectives powered by <a href="https://newsreel.co">Newsreel</a></p>
+    <p style="margin-top:4px;">Sources scraped from X, Bluesky, YouTube, TikTok &middot; <a href="#">How this works</a></p>
+  </div>
+
+</div>
+
+</body>
+</html>

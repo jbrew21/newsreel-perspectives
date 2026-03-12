@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perspectives — Voice Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#000; color:#fff;
+    font-family:'DM Sans',Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .container { max-width:900px; margin:0 auto; padding:0 20px; }
+
+  /* Header */
+  .header {
+    padding:20px 0;
+    border-bottom:1px solid #222;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .header-left { display:flex; align-items:center; gap:12px; }
+  .header img { height:24px; }
+  .header-label { font-family:'IBM Plex Mono',monospace; font-size:10px; color:#FF6343; text-transform:uppercase; letter-spacing:1.2px; font-weight:700; }
+  .header-nav a {
+    font-family:'IBM Plex Mono',monospace; font-size:11px;
+    color:#808080; text-decoration:none; margin-left:16px;
+    transition: color 0.2s;
+  }
+  .header-nav a:hover, .header-nav a.active { color:#FF6343; }
+
+  /* Search */
+  .search-bar {
+    padding:20px 0;
+    border-bottom:1px solid #222;
+    display:flex; gap:12px;
+  }
+  .search-bar input {
+    flex:1; padding:12px 16px;
+    background:#111; color:#fff; border:1px solid #333; border-radius:8px;
+    font-family:'DM Sans',sans-serif; font-size:14px;
+  }
+  .search-bar input:focus { outline:none; border-color:#FF6343; }
+  .search-bar input::placeholder { color:#555; }
+
+  .search-bar button {
+    padding:12px 24px;
+    background:#FF6343; color:#fff; border:none; border-radius:8px;
+    font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600;
+    cursor:pointer; transition: opacity 0.2s;
+  }
+  .search-bar button:hover { opacity:0.9; }
+
+  /* Stats banner */
+  .stats-banner {
+    padding:16px 0;
+    border-bottom:1px solid #222;
+    display:flex; gap:32px;
+    font-family:'IBM Plex Mono',monospace; font-size:12px; color:#808080;
+  }
+  .stats-banner strong { color:#FF6343; }
+
+  /* Voice grid */
+  .voice-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap:16px;
+    padding:24px 0;
+  }
+
+  .voice-tile {
+    background:#111; border-radius:12px;
+    padding:20px;
+    border:1px solid #222;
+    cursor:pointer;
+    transition: all 0.2s ease;
+  }
+  .voice-tile:hover {
+    border-color:#FF6343;
+    transform:translateY(-2px);
+  }
+  .voice-tile.expanded {
+    grid-column: 1 / -1;
+    border-color:#FF6343;
+  }
+
+  .tile-header {
+    display:flex; gap:12px; align-items:center;
+    margin-bottom:14px;
+  }
+  .tile-photo {
+    width:44px; height:44px; border-radius:50%;
+    object-fit:cover; filter:grayscale(100%);
+    transition: filter 0.3s;
+    background:#222;
+  }
+  .voice-tile:hover .tile-photo { filter:grayscale(0%); }
+
+  .tile-name { font-size:16px; font-weight:600; }
+  .tile-meta {
+    font-family:'IBM Plex Mono',monospace; font-size:10px;
+    color:#808080; text-transform:uppercase; letter-spacing:0.5px;
+  }
+
+  /* Topic tags */
+  .topic-tags {
+    display:flex; flex-wrap:wrap; gap:6px;
+    margin-bottom:12px;
+  }
+  .topic-tag {
+    font-family:'IBM Plex Mono',monospace; font-size:10px;
+    padding:4px 10px; border-radius:20px;
+    background:#1a1a1a; color:#808080;
+    border:1px solid #333;
+    transition: all 0.2s;
+  }
+  .topic-tag:hover { color:#FF6343; border-color:#FF6343; }
+  .topic-tag .tag-count {
+    color:#FF6343; font-weight:700; margin-left:4px;
+  }
+
+  /* Expanded voice detail */
+  .voice-detail { display:none; margin-top:16px; }
+  .voice-tile.expanded .voice-detail { display:block; }
+
+  .topic-section {
+    margin-bottom:16px;
+    padding-bottom:16px;
+    border-bottom:1px solid #1a1a1a;
+  }
+  .topic-section:last-child { border-bottom:none; }
+
+  .topic-name {
+    font-family:'IBM Plex Mono',monospace; font-size:11px;
+    color:#FF6343; text-transform:uppercase; letter-spacing:1px;
+    margin-bottom:10px;
+  }
+
+  .quote-card {
+    padding:12px 16px;
+    background:#0a0a0a; border-radius:8px;
+    margin-bottom:8px;
+    border-left:3px solid #333;
+  }
+  .quote-text {
+    font-size:14px; color:#C8C8C8; line-height:1.5;
+    margin-bottom:6px;
+  }
+  .quote-meta {
+    font-family:'IBM Plex Mono',monospace; font-size:10px; color:#555;
+  }
+  .quote-meta a { color:#FF6343; text-decoration:none; }
+  .quote-meta a:hover { text-decoration:underline; }
+
+  /* Lens description */
+  .tile-lens {
+    font-size:12px; color:#666; line-height:1.4;
+    margin-bottom:10px;
+  }
+
+  .tile-stat {
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:#555;
+  }
+
+  .tile-socials {
+    display:flex; gap:10px; margin-bottom:10px;
+  }
+  .tile-socials a {
+    font-family:'IBM Plex Mono',monospace; font-size:10px;
+    color:#666; text-decoration:none;
+    padding:3px 8px; border-radius:4px;
+    background:#1a1a1a; border:1px solid #2a2a2a;
+    transition: all 0.2s;
+  }
+  .tile-socials a:hover { color:#FF6343; border-color:#FF6343; }
+
+  /* Loading */
+  .loading { text-align:center; padding:60px; color:#808080; }
+  .loading .spinner {
+    width:24px; height:24px; border:2px solid #333; border-top-color:#FF6343;
+    border-radius:50%; animation:spin 0.8s linear infinite;
+    margin:0 auto 12px;
+  }
+  @keyframes spin { to { transform:rotate(360deg); } }
+
+  /* Empty */
+  .empty { text-align:center; padding:60px 20px; color:#555; }
+  .empty h2 { font-family:'Bree Serif',serif; font-size:22px; color:#808080; margin-bottom:8px; }
+
+  /* Footer */
+  .footer {
+    padding:32px 0;
+    border-top:1px solid #222;
+    text-align:center;
+  }
+  .footer p { font-size:12px; color:#555; }
+  .footer a { color:#FF6343; text-decoration:none; }
+
+  @keyframes fadeIn {
+    from { opacity:0; transform:translateY(8px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+  .voice-tile { animation: fadeIn 0.3s ease both; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
+      <div class="header-label">Perspectives</div>
+    </div>
+    <div class="header-nav">
+      <a href="/search">Search</a>
+      <a href="/voices" class="active">Voices</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div style="padding:32px 0 24px; border-bottom:1px solid #222;">
+    <h1 style="font-size:1.8em; font-weight:700; margin-bottom:8px;">The voices we track</h1>
+    <p style="color:#999; line-height:1.6; max-width:650px; margin-bottom:16px;">
+      We monitor commentators, creators, and journalists across the political spectrum — people with large audiences who regularly shape how millions understand the news. Inclusion isn't endorsement. The goal is to show you how the same story looks through different lenses, so you can think for yourself.
+    </p>
+    <p style="color:#666; font-size:0.85em; line-height:1.5; max-width:650px; margin-bottom:24px;">
+      <strong style="color:#999;">Criteria:</strong> 500K+ followers on at least one platform, regularly comments on current events, represents a distinct perspective not already covered. We pull from X, YouTube, Bluesky, TikTok, and Instagram daily.
+    </p>
+
+    <details style="max-width:650px; cursor:pointer;">
+      <summary style="color:#FF6343; font-size:0.9em; font-weight:600; margin-bottom:12px;">How it works</summary>
+      <div style="color:#888; font-size:0.85em; line-height:1.7; padding:16px; background:#111; border-radius:8px; border:1px solid #222; margin-top:8px;">
+        <p style="margin-bottom:12px;"><strong style="color:#ccc;">Daily collection.</strong> Every day, we pull recent posts from each voice across 5 platforms: X, YouTube, Bluesky, TikTok, and Instagram. No content is altered or editorialized — quotes flow directly from the source.</p>
+
+        <p style="margin-bottom:12px;"><strong style="color:#ccc;">Topic categorization.</strong> AI reads each post and tags it with a news topic (e.g. "iran-war", "ai-policy", "immigration"). This lets us match voices to stories when you search.</p>
+
+        <p style="margin-bottom:12px;"><strong style="color:#ccc;">Argument clusters, not left/right.</strong> When you search a story, we don't slap a "left" or "right" label on each voice. Instead, AI analyzes what each person is actually saying and groups them into 4-6 argument clusters — like "anti-war right", "pro-intervention hawk", or "accountability focused." This reveals the real fractures: two people on the same political "side" often take very different positions on the same story.</p>
+
+        <p style="margin-bottom:12px;"><strong style="color:#ccc;">Why this matters.</strong> Most media tools sort voices into a left/right binary. But that flattens reality. Tucker Carlson and Ben Shapiro are both conservative — but on Iran, one is anti-war and the other is pro-intervention. That difference is the insight. Our clusters show you what people actually think, not which team they're on.</p>
+
+        <p><strong style="color:#ccc;">Inclusion isn't endorsement.</strong> We track voices across the full spectrum, including some you may strongly disagree with. The goal is not to amplify any particular viewpoint — it's to make sure you're not only hearing one side.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search voices or topics..." oninput="filterVoices(this.value)">
+    <button onclick="document.getElementById('searchInput').value=''; filterVoices('')">Clear</button>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-banner" id="stats">Loading...</div>
+
+  <!-- Voice Grid -->
+  <div class="voice-grid" id="voiceGrid">
+    <div class="loading"><div class="spinner"></div>Loading voices...</div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Perspectives by <a href="https://newsreel.co">Newsreel</a></p>
+    <p style="margin-top:4px;">Step outside your algorithm.</p>
+  </div>
+
+</div>
+
+<script>
+let VOICES = {};
+let VOICE_POSTS = {};
+const TOPIC_COLORS = {
+  'iran-war':'#EF4444', 'trump-politics':'#F59E0B', 'ai-technology':'#3B82F6',
+  'economy':'#10B981', 'campus-protests':'#A855F7', 'immigration':'#F472B6',
+  'terrorism':'#EF4444', 'media-criticism':'#6366F1', 'foreign-policy':'#14B8A6',
+};
+
+function getTopicColor(topic) {
+  if (TOPIC_COLORS[topic]) return TOPIC_COLORS[topic];
+  // Generate consistent color from topic string
+  let hash = 0;
+  for (let i = 0; i < topic.length; i++) hash = topic.charCodeAt(i) + ((hash << 5) - hash);
+  const hue = Math.abs(hash) % 360;
+  return `hsl(${hue}, 60%, 55%)`;
+}
+
+async function init() {
+  // Load voices
+  try {
+    const resp = await fetch('data/voices.json');
+    const voices = await resp.json();
+    voices.forEach(v => VOICES[v.id] = v);
+  } catch(e) {
+    console.warn('Could not load voices.json');
+  }
+
+  // Load today's posts for each voice
+  const today = new Date().toISOString().split('T')[0];
+  let totalPosts = 0;
+  let totalTopics = new Set();
+  let voicesWithData = 0;
+
+  for (const [id, voice] of Object.entries(VOICES)) {
+    try {
+      const resp = await fetch(`data/posts/${id}/${today}.json`);
+      if (resp.ok) {
+        const data = await resp.json();
+        VOICE_POSTS[id] = data;
+        totalPosts += (data.posts || []).length;
+        Object.keys(data.topicSummary || {}).forEach(t => totalTopics.add(t));
+        voicesWithData++;
+      }
+    } catch(e) {}
+  }
+
+  // Stats
+  document.getElementById('stats').innerHTML = `
+    <span><strong>${Object.keys(VOICES).length}</strong> voices tracked</span>
+    <span><strong>${voicesWithData}</strong> collected today</span>
+    <span><strong>${totalPosts}</strong> posts</span>
+    <span><strong>${totalTopics.size}</strong> topics</span>
+  `;
+
+  renderGrid();
+}
+
+function renderGrid(filter = '') {
+  const grid = document.getElementById('voiceGrid');
+  const filterLower = filter.toLowerCase();
+
+  // Sort: voices with data first, then by followers
+  const sorted = Object.values(VOICES).sort((a, b) => {
+    const aHas = VOICE_POSTS[a.id] ? 1 : 0;
+    const bHas = VOICE_POSTS[b.id] ? 1 : 0;
+    if (aHas !== bHas) return bHas - aHas;
+    return (b.followers || 0) - (a.followers || 0);
+  });
+
+  let html = '';
+  let shown = 0;
+
+  for (const voice of sorted) {
+    const data = VOICE_POSTS[voice.id];
+    const topics = data ? Object.keys(data.topicSummary || {}) : [];
+    const postCount = data ? (data.posts || []).length : 0;
+
+    // Filter
+    if (filterLower) {
+      const matchName = voice.name.toLowerCase().includes(filterLower);
+      const matchTopic = topics.some(t => t.includes(filterLower));
+      const matchLens = (voice.lens || '').toLowerCase().includes(filterLower);
+      if (!matchName && !matchTopic && !matchLens) continue;
+    }
+
+    shown++;
+    const delay = Math.min(shown * 0.03, 0.5);
+
+    html += `
+      <div class="voice-tile" id="tile-${voice.id}" onclick="toggleVoice('${voice.id}')" style="animation-delay:${delay}s">
+        <div class="tile-header">
+          <img class="tile-photo" src="${voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=222&color=fff&size=96`}" alt="${voice.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=222&color=fff&size=96'">
+          <div>
+            <div class="tile-name">${voice.name}</div>
+          </div>
+        </div>
+        <div class="tile-lens">${voice.lens || ''}</div>
+        ${buildSocialLinks(voice)}
+    `;
+
+    if (postCount > 0) {
+      html += `<div class="tile-stat">${postCount} recent posts across ${Object.keys(voice.handles || {}).filter(h => voice.handles[h]).length} platforms</div>`;
+    }
+
+    // Expanded detail
+    html += '<div class="voice-detail">';
+    if (data && data.topicSummary) {
+      for (const [topic, quotes] of Object.entries(data.topicSummary)) {
+        html += `<div class="topic-section">`;
+        html += `<div class="topic-name" style="color:${getTopicColor(topic)}">${topic}</div>`;
+        for (const q of quotes) {
+          html += `
+            <div class="quote-card" style="border-left-color:${getTopicColor(topic)}">
+              <div class="quote-text">"${(q.quote || '').replace(/</g, '&lt;')}"</div>
+              <div class="quote-meta">
+                ${q.platform} &middot;
+                ${q.timestamp ? new Date(q.timestamp).toLocaleDateString() : ''} &middot;
+                <a href="${q.sourceUrl}" target="_blank">View source</a>
+              </div>
+            </div>
+          `;
+        }
+        html += '</div>';
+      }
+    }
+    html += '</div>';
+
+    html += '</div>';
+  }
+
+  if (shown === 0) {
+    html = '<div class="empty"><h2>No matches</h2><p>Try a different search term.</p></div>';
+  }
+
+  grid.innerHTML = html;
+}
+
+function toggleVoice(id) {
+  const tile = document.getElementById('tile-' + id);
+  const wasExpanded = tile.classList.contains('expanded');
+
+  // Close all
+  document.querySelectorAll('.voice-tile.expanded').forEach(t => t.classList.remove('expanded'));
+
+  // Toggle this one
+  if (!wasExpanded) {
+    tile.classList.add('expanded');
+    tile.scrollIntoView({ behavior:'smooth', block:'nearest' });
+  }
+}
+
+function buildSocialLinks(voice) {
+  const h = voice.handles || {};
+  let links = [];
+  if (h.x) links.push(`<a href="https://x.com/${h.x}" target="_blank">X</a>`);
+  if (h.youtube) links.push(`<a href="https://youtube.com/${h.youtube.includes('/') ? h.youtube : '@' + h.youtube}" target="_blank">YT</a>`);
+  if (h.bluesky) links.push(`<a href="https://bsky.app/profile/${h.bluesky}" target="_blank">BS</a>`);
+  if (h.tiktok) links.push(`<a href="https://tiktok.com/@${h.tiktok}" target="_blank">TT</a>`);
+  if (h.instagram) links.push(`<a href="https://instagram.com/${h.instagram}" target="_blank">IG</a>`);
+  return links.length ? `<div class="tile-socials">${links.join('')}</div>` : '';
+}
+
+function filterVoices(val) {
+  renderGrid(val);
+}
+
+init();
+</script>
+
+</body>
+</html>
