@@ -208,6 +208,10 @@
     font-size: 0.85em;
   }
 
+  .cluster-filter { cursor: pointer; transition: all 0.2s; }
+  .cluster-filter:hover { border-color: #FF6343; color: #FF6343; }
+  .cluster-filter.active { background: rgba(255,99,67,0.15); border-color: #FF6343; color: #FF6343; }
+
   .voice-topics {
     display: flex;
     gap: 6px;
@@ -488,19 +492,26 @@ function renderResults(data) {
     clusterGroups[cluster].push(voice);
   }
 
-  // Show cluster overview
-  if (Object.keys(clusterGroups).length > 1 || !clusterGroups['uncategorized']) {
-    const clusterTags = Object.keys(clusterGroups)
-      .filter(c => c !== 'uncategorized')
-      .map(c => `<span class="cluster-tag">${c} <span style="opacity:0.6">${clusterGroups[c].length}</span></span>`)
+  // Show cluster overview as clickable filters
+  let activeCluster = null;
+  const clusters = Object.keys(clusterGroups).filter(c => c !== 'uncategorized');
+
+  if (clusters.length > 1) {
+    const clusterTags = clusters
+      .sort((a, b) => clusterGroups[b].length - clusterGroups[a].length)
+      .map(c => `<span class="cluster-tag cluster-filter" data-cluster="${c}" onclick="filterByCluster('${c.replace(/'/g, "\\'")}')">${c} <span style="opacity:0.6">${clusterGroups[c].length}</span></span>`)
       .join('');
-    if (clusterTags) {
-      html += `<div style="text-align:center; margin-bottom:24px;">
-        <div style="color:#888; font-size:0.85em; margin-bottom:8px;">Argument clusters on this story</div>
-        <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">${clusterTags}</div>
-      </div>`;
-    }
+    html += `<div id="clusterFilters" style="text-align:center; margin-bottom:24px;">
+      <div style="color:#888; font-size:0.85em; margin-bottom:8px;">Filter by perspective</div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+        <span class="cluster-tag cluster-filter active" onclick="filterByCluster(null)">All <span style="opacity:0.6">${data.voices.length}</span></span>
+        ${clusterTags}
+      </div>
+    </div>`;
   }
+
+  // Store data globally for filtering
+  window._resultsData = data;
 
   for (const voice of data.voices) {
     const clusterLabel = voice.argumentCluster
@@ -511,7 +522,7 @@ function renderResults(data) {
     const lensHtml = voice.lens ? `<div style="font-size:0.8em; color:#888; margin-top:2px; line-height:1.3;">${escapeHtml(voice.lens)}</div>` : '';
 
     html += `
-      <div class="voice-card">
+      <div class="voice-card" data-cluster="${(voice.argumentCluster || '').replace(/"/g, '&quot;')}">
         <div class="voice-header">
           <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=333&color=fff&size=96'">
           <div>
@@ -558,6 +569,33 @@ function escapeHtml(text) {
   const div = document.createElement('div');
   div.textContent = text;
   return div.innerHTML;
+}
+
+function filterByCluster(cluster) {
+  // Update active state on filter buttons
+  document.querySelectorAll('.cluster-filter').forEach(el => {
+    el.classList.remove('active');
+    if (cluster === null && !el.dataset.cluster) el.classList.add('active');
+    if (el.dataset.cluster === cluster) el.classList.add('active');
+  });
+
+  // Show/hide voice cards
+  document.querySelectorAll('.voice-card').forEach(card => {
+    if (!cluster || card.dataset.cluster === cluster) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  // Update count in header
+  const visible = document.querySelectorAll('.voice-card:not([style*="display: none"])').length;
+  const header = document.querySelector('.results-header h2');
+  if (header) {
+    header.textContent = cluster
+      ? `${visible} voices — ${cluster}`
+      : `${window._resultsData.voices.length} voices on this story`;
+  }
 }
 </script>
 
