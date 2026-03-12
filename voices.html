@@ -230,8 +230,8 @@
       <div class="header-label">Perspectives</div>
     </div>
     <div class="header-nav">
-      <a href="search" class="nav-link">Search</a>
-      <a href="voices" class="nav-link" class="active">Voices</a>
+      <a class="nav-link" data-page="search">Search</a>
+      <a class="nav-link" data-page="voices" class="active">Voices</a>
     </div>
   </div>
 
@@ -305,6 +305,8 @@ async function init() {
   // Load voices
   try {
     const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+    const PAGES = { search: BASE || '/search', voices: BASE + '/voices' };
+    document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
     const resp = await fetch(BASE + '/data/voices.json');
     const voices = await resp.json();
     voices.forEach(v => VOICES[v.id] = v);
