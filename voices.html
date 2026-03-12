@@ -216,8 +216,8 @@
       <div class="header-label">Perspectives</div>
     </div>
     <div class="header-nav">
-      <a href="/search">Search</a>
-      <a href="/voices" class="active">Voices</a>
+      <a href="search" class="nav-link">Search</a>
+      <a href="voices" class="nav-link" class="active">Voices</a>
     </div>
   </div>
 
@@ -290,7 +290,8 @@ function getTopicColor(topic) {
 async function init() {
   // Load voices
   try {
-    const resp = await fetch('data/voices.json');
+    const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+    const resp = await fetch(BASE + '/data/voices.json');
     const voices = await resp.json();
     voices.forEach(v => VOICES[v.id] = v);
   } catch(e) {
@@ -305,7 +306,7 @@ async function init() {
 
   for (const [id, voice] of Object.entries(VOICES)) {
     try {
-      const resp = await fetch(`data/posts/${id}/${today}.json`);
+      const resp = await fetch(`${BASE}/data/posts/${id}/${today}.json`);
       if (resp.ok) {
         const data = await resp.json();
         VOICE_POSTS[id] = data;
