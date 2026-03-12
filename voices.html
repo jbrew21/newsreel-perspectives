@@ -203,6 +203,20 @@
     to { opacity:1; transform:translateY(0); }
   }
   .voice-tile { animation: fadeIn 0.3s ease both; }
+
+  @media (max-width: 600px) {
+    .container { padding: 0 12px; }
+    .header { padding: 14px 0; }
+    .voice-grid { grid-template-columns: 1fr; gap: 12px; }
+    .search-bar input { font-size: 13px; padding: 10px 12px; }
+    .search-bar button { padding: 10px 16px; }
+    .stats-banner { gap: 16px; font-size: 11px; flex-wrap: wrap; }
+    .tile-header { gap: 10px; }
+    .tile-photo { width: 38px; height: 38px; }
+    .tile-name { font-size: 14px; }
+    .tile-lens { font-size: 11px; }
+    .quote-text { font-size: 13px; }
+  }
 </style>
 </head>
 <body>
