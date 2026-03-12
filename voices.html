@@ -164,6 +164,20 @@
     font-family:'IBM Plex Mono',monospace; font-size:11px; color:#555;
   }
 
+  .tile-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 10px;
+  }
+  .position-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: rgba(255, 99, 67, 0.1);
+    color: #FF6343;
+    border: 1px solid rgba(255, 99, 67, 0.2);
+  }
+
   .tile-socials {
     display:flex; gap:10px; margin-bottom:10px;
   }
@@ -384,6 +398,7 @@ function renderGrid(filter = '') {
           </div>
         </div>
         <div class="tile-lens">${voice.lens || ''}</div>
+        ${voice.tags && voice.tags.length ? `<div class="tile-tags">${voice.tags.map(t => `<span class="position-tag">${t}</span>`).join('')}</div>` : ''}
         ${buildSocialLinks(voice)}
     `;
 
