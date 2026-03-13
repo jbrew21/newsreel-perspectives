@@ -115,13 +115,25 @@ Bad insight examples (too generic):
 - "Voices disagree on this topic"
 - "There are different perspectives"
 
+4. HEADLINE: Write a short, specific news headline (under 12 words) summarizing WHAT is actually happening in the news right now on this topic. This should ground the reader in the current story, not describe the debate.
+
+Good headline examples:
+- "U.S. airstrikes on Iran enter second week"
+- "New Epstein documents released by federal court"
+- "AI companies announce mass layoffs amid bubble fears"
+
+Bad headline examples (too vague):
+- "Iran war continues"
+- "People discuss Epstein"
+
 Return ONLY this JSON:
 {{
   "clusters": {{
     "cluster name": ["Voice Name 1", "Voice Name 2"],
     "cluster name 2": ["Voice Name 3", "Voice Name 4"]
   }},
-  "insight": "The punchy one-liner"
+  "insight": "The punchy one-liner",
+  "headline": "The specific news headline"
 }}"""
 
     try:
@@ -221,6 +233,7 @@ def compute_fractures(date=None):
         fracture = {
             'topic': topic_name,
             'topicDisplay': topic_name.replace('-', ' ').title(),
+            'headline': result.get('headline', ''),
             'voiceCount': len(voices),
             'clusterCount': len(cluster_list),
             'insight': result.get('insight', ''),

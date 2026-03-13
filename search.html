@@ -119,10 +119,18 @@
     box-shadow: 0 8px 32px rgba(0,0,0,0.3);
   }
   .fracture-card:active { transform: translateY(0); }
+  .fracture-card.expanded {
+    border-color: var(--border-default);
+  }
+
+  .fracture-headline {
+    font-size: 1.1em; font-weight: 600; color: var(--text-primary);
+    line-height: 1.35; margin-bottom: 8px; letter-spacing: -0.01em;
+  }
 
   .fracture-meta {
     display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .fracture-topic-chip {
     display: inline-flex; padding: 4px 10px; border-radius: 100px;
@@ -134,9 +142,27 @@
   }
 
   .fracture-insight {
-    font-size: 1.15em; font-weight: 600; color: var(--text-primary);
-    line-height: 1.35; margin-bottom: 20px; letter-spacing: -0.01em;
+    font-size: 0.85em; font-weight: 500; color: var(--accent);
+    line-height: 1.4; margin-bottom: 12px;
   }
+
+  /* Collapsed: hide clusters and footer details */
+  .fracture-card .cluster-groups { display: none; }
+  .fracture-card .fracture-footer-expanded { display: none; }
+  .fracture-card.expanded .cluster-groups { display: flex; flex-direction: column; gap: 0; }
+  .fracture-card.expanded .fracture-footer-expanded { display: flex; }
+  .fracture-card.expanded .fracture-footer-collapsed { display: none; }
+
+  .fracture-search-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 10px 20px; margin-top: 12px;
+    background: var(--accent); color: #fff;
+    border: none; border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .fracture-search-btn:hover { background: #e5553a; }
 
   /* CLUSTER GROUPS */
   .cluster-groups {
@@ -418,10 +444,10 @@ fetch(BASE + '/api/fractures')
     fractures.forEach((fracture, fi) => {
       const card = document.createElement('div');
       card.className = 'fracture-card';
-      card.onclick = () => {
-        input.value = fracture.topic.replace(/-/g, ' ');
-        doSearch();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      card.onclick = (e) => {
+        // Don't toggle if clicking the search button
+        if (e.target.closest('.fracture-search-btn')) return;
+        card.classList.toggle('expanded');
       };
 
       // Topic chip color
@@ -480,19 +506,29 @@ fetch(BASE + '/api/fractures')
 
       const remainingClusters = fracture.clusterCount - maxClusters;
 
+      const headline = fracture.headline || fracture.topicDisplay;
+
       card.innerHTML = `
         <div class="fracture-meta">
           <div class="fracture-topic-chip" style="background: ${chipColor}15; color: ${chipColor};">${escapeHtml(fracture.topicDisplay)}</div>
           <div class="fracture-voices-count">${fracture.voiceCount} voices</div>
         </div>
+        <div class="fracture-headline">${escapeHtml(headline)}</div>
         <div class="fracture-insight">${escapeHtml(fracture.insight)}</div>
-        <div class="cluster-groups">${clustersHtml}</div>
-        <div class="fracture-footer">
-          <div class="fracture-footer-left">${fracture.clusterCount} clusters${remainingClusters > 0 ? ` · ${remainingClusters} more` : ''}</div>
+        <div class="fracture-footer fracture-footer-collapsed" style="display:flex;">
+          <div class="fracture-footer-left">${fracture.clusterCount} clusters</div>
           <div class="fracture-explore">
-            Explore
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            See the split
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </div>
+        </div>
+        <div class="cluster-groups">${clustersHtml}</div>
+        <div class="fracture-footer fracture-footer-expanded">
+          <div class="fracture-footer-left">${fracture.clusterCount} clusters${remainingClusters > 0 ? ` · ${remainingClusters} more` : ''}</div>
+          <button class="fracture-search-btn" onclick="event.stopPropagation(); document.getElementById('searchInput').value='${fracture.topic.replace(/-/g, ' ')}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
+            Search full story
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
         </div>
       `;
 
