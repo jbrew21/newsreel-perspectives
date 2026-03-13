@@ -445,7 +445,7 @@ fetch(BASE + '/api/fractures')
 
         let avatarsHtml = shown.map(v => {
           const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64`;
-          return `<img class="cluster-avatar" src="${photo}" alt="${escapeHtml(v.voiceName)}" title="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64'">`;
+          return `<a href="${BASE}/voice/${v.voiceId}" onclick="event.stopPropagation();" title="${escapeHtml(v.voiceName)}" style="display:inline-block;"><img class="cluster-avatar" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64'"></a>`;
         }).join('');
 
         if (overflow > 0) {
