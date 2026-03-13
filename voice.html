@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perspectives — Voice Profile</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg-base: #0a0a0b;
+    --bg-surface: #141416;
+    --bg-surface-2: #1c1c1f;
+    --bg-elevated: #252528;
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-tertiary: #71717a;
+    --text-muted: #52525b;
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-default: rgba(255, 255, 255, 0.1);
+    --accent: #FF6343;
+    --accent-bg: rgba(255, 99, 67, 0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-base);
+    color: var(--text-secondary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  .nav { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  .nav-inner {
+    padding: 14px 0; border-bottom: 1px solid var(--border-subtle);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-brand { display: flex; align-items: center; gap: 10px; }
+  .nav-brand img { height: 22px; }
+  .nav-label { font-size: 10px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+  .nav-links a { font-family: monospace; font-size: 11px; text-decoration: none; margin-left: 16px; color: var(--text-muted); }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* PROFILE HEADER */
+  .profile-header {
+    text-align: center;
+    padding: 32px 20px 24px;
+    max-width: 900px; margin: 0 auto;
+  }
+  .profile-avatar {
+    width: 80px; height: 80px; border-radius: 50%;
+    object-fit: cover; border: 3px solid var(--bg-elevated);
+    margin-bottom: 16px; background: var(--bg-elevated);
+  }
+  .profile-name {
+    font-size: 1.6em; font-weight: 700; color: var(--text-primary);
+    letter-spacing: -0.02em; margin-bottom: 4px;
+  }
+  .profile-lens {
+    font-size: 0.9em; color: var(--text-tertiary);
+    line-height: 1.5; max-width: 500px; margin: 0 auto 16px;
+  }
+
+  /* TAGS */
+  .profile-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    justify-content: center; margin-bottom: 16px;
+  }
+  .profile-tag {
+    font-size: 11px; font-weight: 600;
+    padding: 4px 12px; border-radius: 100px;
+    background: var(--accent-bg); color: var(--accent);
+    border: 1px solid rgba(255, 99, 67, 0.15);
+  }
+
+  /* SOCIAL LINKS */
+  .profile-socials {
+    display: flex; gap: 8px; justify-content: center; margin-bottom: 20px;
+  }
+  .profile-social {
+    font-size: 11px; font-weight: 600;
+    padding: 5px 12px; border-radius: 8px;
+    background: var(--bg-surface); border: 1px solid var(--border-subtle);
+    color: var(--text-tertiary); text-decoration: none;
+    transition: all 0.2s;
+  }
+  .profile-social:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* STAT PILLS */
+  .profile-stats {
+    display: flex; gap: 8px; justify-content: center; margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .stat-pill {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 10px 16px; background: var(--bg-surface);
+    border-radius: 12px; border: 1px solid var(--border-subtle);
+    min-width: 80px;
+  }
+  .stat-number { font-size: 1.2em; font-weight: 700; color: var(--text-primary); }
+  .stat-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px; }
+
+  /* TABS */
+  .profile-tabs {
+    display: flex; gap: 0; max-width: 900px; margin: 0 auto;
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 0 20px;
+  }
+  .profile-tab {
+    padding: 12px 20px; font-size: 13px; font-weight: 600;
+    color: var(--text-muted); cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  .profile-tab:hover { color: var(--text-secondary); }
+  .profile-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* TAB CONTENT */
+  .tab-content { max-width: 900px; margin: 0 auto; padding: 20px; display: none; }
+  .tab-content.active { display: block; }
+
+  /* POSITION CARDS */
+  .position-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px; padding: 16px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s;
+  }
+  .position-card:hover { border-color: var(--border-default); }
+
+  .position-topic {
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+  .position-cluster {
+    display: inline-flex; padding: 3px 10px;
+    border-radius: 6px; font-size: 12px; font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .position-quote {
+    font-size: 14px; color: var(--text-secondary);
+    line-height: 1.5; font-style: italic;
+    margin-bottom: 10px; padding-left: 12px;
+    border-left: 2px solid var(--bg-elevated);
+  }
+  .position-meta {
+    font-size: 11px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .position-meta a { color: var(--accent); text-decoration: none; }
+  .position-meta a:hover { text-decoration: underline; }
+
+  /* ALLIES SECTION */
+  .allies-section {
+    margin-bottom: 20px;
+  }
+  .allies-label {
+    font-size: 11px; font-weight: 700; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    margin-bottom: 10px;
+  }
+  .ally-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px; background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px; margin-bottom: 8px;
+    transition: border-color 0.2s;
+    cursor: pointer;
+  }
+  .ally-row:hover { border-color: var(--border-default); }
+  .ally-avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    object-fit: cover; background: var(--bg-elevated);
+  }
+  .ally-info { flex: 1; }
+  .ally-name { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+  .ally-detail { font-size: 12px; color: var(--text-tertiary); }
+  .ally-badge {
+    font-size: 11px; font-weight: 600; padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  /* CLUSTER CONTEXT */
+  .cluster-context {
+    margin-top: 10px; padding: 10px 14px;
+    background: var(--bg-surface-2); border-radius: 10px;
+  }
+  .cluster-context-label {
+    font-size: 11px; color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+  .cluster-context-avatars {
+    display: flex; align-items: center; gap: 0;
+  }
+  .cluster-context-avatar {
+    width: 24px; height: 24px; border-radius: 50%;
+    object-fit: cover; border: 2px solid var(--bg-surface-2);
+    margin-left: -6px; background: var(--bg-elevated);
+  }
+  .cluster-context-avatar:first-child { margin-left: 0; }
+  .cluster-context-names {
+    font-size: 11px; color: var(--text-tertiary);
+    margin-left: 8px;
+  }
+
+  /* TIMELINE */
+  .timeline-item {
+    display: flex; gap: 12px; padding: 14px 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-platform {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: var(--bg-surface); display: flex;
+    align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 700; color: var(--text-muted);
+    flex-shrink: 0;
+  }
+  .timeline-body { flex: 1; min-width: 0; }
+  .timeline-topic {
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.04em; margin-bottom: 4px;
+  }
+  .timeline-text {
+    font-size: 14px; color: var(--text-secondary);
+    line-height: 1.5; margin-bottom: 4px;
+    display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .timeline-meta { font-size: 11px; color: var(--text-muted); }
+  .timeline-meta a { color: var(--accent); text-decoration: none; }
+
+  /* LOADING / EMPTY */
+  .loading-state {
+    text-align: center; padding: 60px 20px; color: var(--text-tertiary);
+  }
+  .loading-state .spinner {
+    width: 20px; height: 20px; border: 2px solid var(--bg-elevated);
+    border-top-color: var(--accent); border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 12px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .not-found { text-align: center; padding: 80px 20px; }
+  .not-found h2 { font-size: 1.3em; color: var(--text-primary); margin-bottom: 8px; }
+  .not-found p { color: var(--text-tertiary); }
+  .not-found a { color: var(--accent); text-decoration: none; }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    .profile-header { padding: 24px 16px 20px; }
+    .profile-avatar { width: 64px; height: 64px; }
+    .profile-name { font-size: 1.3em; }
+    .profile-lens { font-size: 0.85em; }
+    .profile-stats { gap: 6px; }
+    .stat-pill { padding: 8px 12px; min-width: 70px; }
+    .stat-number { font-size: 1em; }
+    .profile-tabs { padding: 0 16px; }
+    .profile-tab { padding: 10px 14px; font-size: 12px; }
+    .tab-content { padding: 16px; }
+    .position-card { padding: 14px; }
+    .ally-row { padding: 8px 12px; gap: 10px; }
+    .ally-avatar { width: 32px; height: 32px; }
+    .timeline-item { gap: 10px; padding: 12px 0; }
+    .nav { padding: 0 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
+      <div class="nav-label">Perspectives</div>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" data-page="search">Search</a>
+      <a class="nav-link" data-page="voices">Voices</a>
+    </div>
+  </div>
+</div>
+
+<div id="profileContent">
+  <div class="loading-state"><div class="spinner"></div>Loading profile...</div>
+</div>
+
+<script>
+const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+const PAGES = { search: BASE || '/search', voices: BASE + '/voices' };
+document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
+
+// Cluster colors
+const CLUSTER_COLORS = ['#60A5FA','#F87171','#FBBF24','#A78BFA','#4ADE80','#22D3EE','#F472B6','#FB923C'];
+function topicColor(topic) {
+  let hash = 0;
+  for (let i = 0; i < topic.length; i++) hash = topic.charCodeAt(i) + ((hash << 5) - hash);
+  return `hsl(${Math.abs(hash) % 360}, 55%, 55%)`;
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text || '';
+  return div.innerHTML;
+}
+
+function platformLabel(p) {
+  return {x:'X', youtube:'YT', bluesky:'BS', tiktok:'TT', instagram:'IG'}[p] || p;
+}
+
+function timeAgo(ts) {
+  if (!ts) return '';
+  const d = new Date(ts), now = new Date();
+  const days = Math.floor((now - d) / 86400000);
+  if (days > 30) return d.toLocaleDateString('en-US', {month:'short', day:'numeric'});
+  if (days > 0) return `${days}d ago`;
+  const hrs = Math.floor((now - d) / 3600000);
+  if (hrs > 0) return `${hrs}h ago`;
+  return 'just now';
+}
+
+async function loadProfile() {
+  const container = document.getElementById('profileContent');
+
+  // Get voice ID from URL
+  const path = location.pathname;
+  const voiceId = path.split('/voice/').pop()?.replace(/\/$/, '') || path.split('/').pop();
+
+  if (!voiceId) {
+    container.innerHTML = '<div class="not-found"><h2>No voice specified</h2><p><a href="' + PAGES.voices + '">Browse all voices</a></p></div>';
+    return;
+  }
+
+  // Load voice metadata
+  let voices = [], voice = null;
+  try {
+    const resp = await fetch(BASE + '/data/voices.json');
+    voices = await resp.json();
+    voice = voices.find(v => v.id === voiceId);
+  } catch(e) {}
+
+  if (!voice) {
+    container.innerHTML = `<div class="not-found"><h2>Voice not found</h2><p>"${escapeHtml(voiceId)}" isn't in our database.</p><p><a href="${PAGES.voices}">Browse all voices</a></p></div>`;
+    return;
+  }
+
+  document.title = `${voice.name} — Perspectives`;
+
+  // Load posts (try today and yesterday)
+  const now = new Date();
+  const dates = [
+    now.toISOString().split('T')[0],
+    new Date(now - 86400000).toISOString().split('T')[0],
+    new Date(now - 172800000).toISOString().split('T')[0],
+  ];
+  let postData = null;
+  for (const date of dates) {
+    try {
+      const resp = await fetch(`${BASE}/data/posts/${voiceId}/${date}.json`);
+      if (resp.ok) { postData = await resp.json(); break; }
+    } catch(e) {}
+  }
+
+  // Load fractures for cluster context
+  let fractures = [];
+  try {
+    const resp = await fetch(BASE + '/api/fractures');
+    fractures = await resp.json();
+  } catch(e) {}
+
+  // Find which fracture clusters this voice is in
+  const voiceFractures = [];
+  for (const f of fractures) {
+    for (const cluster of f.clusters) {
+      const inCluster = cluster.voices.find(v => v.voiceId === voiceId);
+      if (inCluster) {
+        voiceFractures.push({
+          topic: f.topicDisplay,
+          topicSlug: f.topic,
+          cluster: cluster.name,
+          allies: cluster.voices.filter(v => v.voiceId !== voiceId),
+          allClusters: f.clusters,
+          insight: f.insight,
+        });
+        break;
+      }
+    }
+  }
+
+  // Build profile
+  const posts = postData?.posts || [];
+  const topics = Object.keys(postData?.topicSummary || {});
+  const platforms = [...new Set(posts.map(p => p.platform))];
+
+  const photoUrl = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=252528&color=a1a1aa&size=160`;
+
+  // Social links
+  const h = voice.handles || {};
+  let socialsHtml = '';
+  if (h.x) socialsHtml += `<a class="profile-social" href="https://x.com/${h.x}" target="_blank">X</a>`;
+  if (h.youtube) socialsHtml += `<a class="profile-social" href="https://youtube.com/${h.youtube.includes('/') ? h.youtube : '@'+h.youtube}" target="_blank">YouTube</a>`;
+  if (h.bluesky) socialsHtml += `<a class="profile-social" href="https://bsky.app/profile/${h.bluesky}" target="_blank">Bluesky</a>`;
+  if (h.tiktok) socialsHtml += `<a class="profile-social" href="https://tiktok.com/@${h.tiktok}" target="_blank">TikTok</a>`;
+  if (h.instagram) socialsHtml += `<a class="profile-social" href="https://instagram.com/${h.instagram}" target="_blank">Instagram</a>`;
+
+  // Tags
+  const tagsHtml = (voice.tags || []).map(t => `<span class="profile-tag">${escapeHtml(t)}</span>`).join('');
+
+  // Build positions tab (topics with cluster context where available)
+  let positionsHtml = '';
+
+  // First: topics that appear in fractures (richest data)
+  for (const vf of voiceFractures) {
+    const color = CLUSTER_COLORS[voiceFractures.indexOf(vf) % CLUSTER_COLORS.length];
+    const topicQuotes = (postData?.topicSummary || {})[vf.topicSlug] || [];
+    const bestQuote = topicQuotes[0]?.quote || '';
+
+    // Allies avatars
+    let alliesHtml = '';
+    if (vf.allies.length > 0) {
+      const avatars = vf.allies.slice(0, 5).map(a => {
+        const photo = a.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(a.voiceName)}&background=252528&color=a1a1aa&size=48`;
+        return `<img class="cluster-context-avatar" src="${photo}" alt="${escapeHtml(a.voiceName)}" title="${escapeHtml(a.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(a.voiceName)}&background=252528&color=a1a1aa&size=48'">`;
+      }).join('');
+      const names = vf.allies.slice(0, 3).map(a => a.voiceName.split(' ').pop()).join(', ');
+      const more = vf.allies.length > 3 ? ` +${vf.allies.length - 3}` : '';
+
+      alliesHtml = `
+        <div class="cluster-context">
+          <div class="cluster-context-label">Also in this cluster:</div>
+          <div style="display:flex; align-items:center;">
+            <div class="cluster-context-avatars">${avatars}</div>
+            <div class="cluster-context-names">${escapeHtml(names)}${more}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    positionsHtml += `
+      <div class="position-card">
+        <div class="position-topic" style="color: ${color};">${escapeHtml(vf.topic)}</div>
+        <div class="position-cluster" style="background: ${color}15; color: ${color};">${escapeHtml(vf.cluster)}</div>
+        ${bestQuote ? `<div class="position-quote">"${escapeHtml(bestQuote.substring(0, 250))}"</div>` : ''}
+        ${alliesHtml}
+      </div>
+    `;
+  }
+
+  // Then: remaining topics not in fractures
+  const fractureTopicSlugs = new Set(voiceFractures.map(vf => vf.topicSlug));
+  for (const topic of topics) {
+    if (fractureTopicSlugs.has(topic)) continue;
+    const quotes = (postData?.topicSummary || {})[topic] || [];
+    if (quotes.length === 0) continue;
+
+    const color = topicColor(topic);
+    positionsHtml += `
+      <div class="position-card">
+        <div class="position-topic" style="color: ${color};">${escapeHtml(topic.replace(/-/g, ' '))}</div>
+        <div class="position-quote">"${escapeHtml((quotes[0].quote || '').substring(0, 250))}"</div>
+        <div class="position-meta">
+          <span>${platformLabel(quotes[0].platform)}</span>
+          <span>${timeAgo(quotes[0].timestamp)}</span>
+          <a href="${quotes[0].sourceUrl}" target="_blank">View source</a>
+        </div>
+      </div>
+    `;
+  }
+
+  if (!positionsHtml) {
+    positionsHtml = '<div style="text-align:center; padding:40px; color:var(--text-muted);">No recent positions found. Check back after the next daily collection.</div>';
+  }
+
+  // Build alliances tab
+  let alliancesHtml = '';
+  if (voiceFractures.length > 0) {
+    // Count how often each voice appears in the same cluster
+    const allyCount = {};
+    for (const vf of voiceFractures) {
+      for (const ally of vf.allies) {
+        if (!allyCount[ally.voiceId]) {
+          allyCount[ally.voiceId] = { ...ally, count: 0, topics: [] };
+        }
+        allyCount[ally.voiceId].count++;
+        allyCount[ally.voiceId].topics.push(vf.topic);
+      }
+    }
+
+    const sortedAllies = Object.values(allyCount).sort((a, b) => b.count - a.count);
+
+    if (sortedAllies.length > 0) {
+      alliancesHtml += '<div class="allies-section"><div class="allies-label">Most aligned with</div>';
+      for (const ally of sortedAllies.slice(0, 8)) {
+        const photo = ally.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(ally.voiceName)}&background=252528&color=a1a1aa&size=72`;
+        alliancesHtml += `
+          <div class="ally-row" onclick="window.location.href='${BASE}/voice/${ally.voiceId}'">
+            <img class="ally-avatar" src="${photo}" alt="${escapeHtml(ally.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(ally.voiceName)}&background=252528&color=a1a1aa&size=72'">
+            <div class="ally-info">
+              <div class="ally-name">${escapeHtml(ally.voiceName)}</div>
+              <div class="ally-detail">Agree on: ${ally.topics.join(', ')}</div>
+            </div>
+            <div class="ally-badge" style="background: rgba(74, 222, 128, 0.12); color: #4ADE80;">${ally.count}/${voiceFractures.length}</div>
+          </div>
+        `;
+      }
+      alliancesHtml += '</div>';
+    }
+  }
+
+  if (!alliancesHtml) {
+    alliancesHtml = '<div style="text-align:center; padding:40px; color:var(--text-muted);">Alliance data builds up as more topics are analyzed. Check back soon.</div>';
+  }
+
+  // Build timeline tab
+  let timelineHtml = '';
+  const sortedPosts = [...posts].sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0));
+  for (const post of sortedPosts.slice(0, 20)) {
+    const color = topicColor(post.topic || 'default');
+    timelineHtml += `
+      <div class="timeline-item">
+        <div class="timeline-platform">${platformLabel(post.platform)}</div>
+        <div class="timeline-body">
+          <div class="timeline-topic" style="color: ${color};">${escapeHtml((post.topic || 'uncategorized').replace(/-/g, ' '))}</div>
+          <div class="timeline-text">${escapeHtml((post.text || post.quote || '').substring(0, 300))}</div>
+          <div class="timeline-meta">
+            ${timeAgo(post.timestamp)}
+            ${post.sourceUrl ? ` · <a href="${post.sourceUrl}" target="_blank">View source</a>` : ''}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  if (!timelineHtml) {
+    timelineHtml = '<div style="text-align:center; padding:40px; color:var(--text-muted);">No recent posts collected.</div>';
+  }
+
+  // Render the full profile
+  container.innerHTML = `
+    <div class="profile-header">
+      <img class="profile-avatar" src="${photoUrl}" alt="${escapeHtml(voice.name)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=252528&color=a1a1aa&size=160'">
+      <div class="profile-name">${escapeHtml(voice.name)}</div>
+      <div class="profile-lens">${escapeHtml(voice.lens || '')}</div>
+      ${tagsHtml ? `<div class="profile-tags">${tagsHtml}</div>` : ''}
+      ${socialsHtml ? `<div class="profile-socials">${socialsHtml}</div>` : ''}
+      <div class="profile-stats">
+        <div class="stat-pill"><div class="stat-number">${topics.length}</div><div class="stat-label">Topics</div></div>
+        <div class="stat-pill"><div class="stat-number">${posts.length}</div><div class="stat-label">Posts</div></div>
+        <div class="stat-pill"><div class="stat-number">${platforms.length}</div><div class="stat-label">Platforms</div></div>
+        ${voiceFractures.length > 0 ? `<div class="stat-pill"><div class="stat-number">${voiceFractures.length}</div><div class="stat-label">Fractures</div></div>` : ''}
+      </div>
+    </div>
+
+    <div class="profile-tabs">
+      <div class="profile-tab active" data-tab="positions" onclick="switchTab('positions')">Positions</div>
+      <div class="profile-tab" data-tab="alliances" onclick="switchTab('alliances')">Alliances</div>
+      <div class="profile-tab" data-tab="timeline" onclick="switchTab('timeline')">Timeline</div>
+    </div>
+
+    <div class="tab-content active" id="tab-positions">${positionsHtml}</div>
+    <div class="tab-content" id="tab-alliances">${alliancesHtml}</div>
+    <div class="tab-content" id="tab-timeline">${timelineHtml}</div>
+  `;
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.profile-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.toggle('active', c.id === 'tab-' + tab));
+}
+
+loadProfile();
+</script>
+
+</body>
+</html>

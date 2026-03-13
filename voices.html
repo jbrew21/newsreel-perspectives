@@ -395,8 +395,9 @@ function renderGrid(filter = '') {
     shown++;
     const delay = Math.min(shown * 0.03, 0.5);
 
+    const VOICE_BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
     html += `
-      <div class="voice-tile" id="tile-${voice.id}" onclick="toggleVoice('${voice.id}')" style="animation-delay:${delay}s">
+      <div class="voice-tile" id="tile-${voice.id}" onclick="window.location.href='${VOICE_BASE}/voice/${voice.id}'" style="animation-delay:${delay}s">
         <div class="tile-header">
           <img class="tile-photo" src="${voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=222&color=fff&size=96`}" alt="${voice.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=222&color=fff&size=96'">
           <div>
