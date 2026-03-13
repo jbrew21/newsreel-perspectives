@@ -173,7 +173,9 @@ def enrich_transcripts(posts):
     """Add transcript text to YouTube posts (free)."""
     try:
         from youtube_transcript_api import YouTubeTranscriptApi
+        from youtube_transcript_api._errors import IpBlocked
     except ImportError:
+        print("    ⚠ youtube-transcript-api not installed, skipping transcripts")
         return posts
 
     # Load cache
@@ -186,6 +188,7 @@ def enrich_transcripts(posts):
 
     ytt_api = YouTubeTranscriptApi()
     fetched_new = 0
+    ip_blocked = False
 
     for p in posts:
         if p['platform'] != 'youtube':
@@ -203,8 +206,8 @@ def enrich_transcripts(posts):
                 p['type'] = 'video_transcript'
             continue
 
-        # Fetch fresh
-        if fetched_new >= 100:  # cap per run
+        # Stop fetching if IP blocked or hit cap
+        if ip_blocked or fetched_new >= 100:
             continue
         try:
             import time
@@ -212,7 +215,7 @@ def enrich_transcripts(posts):
             transcript = ytt_api.fetch(video_id, languages=['en'])
             text_parts = []
             for snippet in transcript.snippets:
-                if snippet.start > 180:  # first 3 min
+                if snippet.start > 300:  # first 5 min
                     break
                 text_parts.append(snippet.text)
             if text_parts:
@@ -223,12 +226,16 @@ def enrich_transcripts(posts):
                 fetched_new += 1
             else:
                 cache[video_id] = ''
+        except IpBlocked:
+            print("    ⚠ YouTube IP rate limited — will retry next run")
+            ip_blocked = True
         except:
             cache[video_id] = ''
 
     # Save cache
     TRANSCRIPT_CACHE.write_text(json.dumps(cache))
-    print(f"    Transcripts: {fetched_new} new, {sum(1 for v in cache.values() if v)} cached total")
+    cached_total = sum(1 for v in cache.values() if v)
+    print(f"    Transcripts: {fetched_new} new, {cached_total} cached total")
     return posts
 
 
