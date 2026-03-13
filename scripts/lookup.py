@@ -48,6 +48,36 @@ def get_latest_topic_index():
     return date, json.loads(index_files[0].read_text())
 
 
+def get_merged_topic_index(max_days=3):
+    """Merge topic indices from the last N days for broader coverage."""
+    index_files = sorted(POSTS_DIR.glob('topic-index-*.json'), reverse=True)[:max_days]
+    if not index_files:
+        return None, {}
+    latest_date = index_files[0].stem.replace('topic-index-', '')
+
+    merged = {}
+    seen_urls = set()  # dedup across days
+    for f in index_files:
+        data = json.loads(f.read_text())
+        for topic, entries in data.items():
+            if topic not in merged:
+                merged[topic] = []
+            for e in entries:
+                url = e.get('sourceUrl', '')
+                if url and url in seen_urls:
+                    continue
+                seen_urls.add(url)
+                merged[topic].append(e)
+
+    return latest_date, merged
+
+
+def get_all_dates():
+    """Return sorted list of available dates (most recent first)."""
+    index_files = sorted(POSTS_DIR.glob('topic-index-*.json'), reverse=True)
+    return [f.stem.replace('topic-index-', '') for f in index_files]
+
+
 def get_all_voice_posts(date):
     """Load all voice post files for a given date."""
     all_posts = {}
@@ -77,13 +107,19 @@ def match_story_to_topics(headline, available_topics):
     prompt = f"""Given this news headline:
 "{headline}"
 
-Which of these topic tags are relevant? Include specific topics that directly relate to this story. Do NOT include vague/generic topics like "politics", "international-politics", "social-issues", "american-politics", "culture-social", "political-commentary", "religion", "entertainment-news", "media-criticism".
+Which of these topic tags are DIRECTLY relevant to this specific story? Be strict.
+
+RULES:
+- Only include topics where posts tagged with it would clearly be about THIS story
+- Do NOT include generic topics (politics, social-issues, media-criticism, etc.)
+- Do NOT include topics that share a keyword but are about something else (e.g. "war-on-christmas" is not about actual war, "iran-womens-soccer" is not about Iran military)
+- Maximum 8 topics. Quality over quantity.
 
 Available topics:
 {topics_list}
 
-Return a JSON array of matching topic strings, ordered from most specific to most broad.
-Example for "Pentagon probe points to U.S. missile hitting Iranian school": ["iran-war", "military-casualties", "trump-foreign-policy", "iran-israel-conflict"]"""
+Return a JSON array of matching topic strings, most specific first. Max 8.
+Example: ["iran-war", "iran-military-strike", "trump-iran", "military-casualties"]"""
 
     try:
         req = urllib.request.Request(
@@ -106,10 +142,8 @@ Example for "Pentagon probe points to U.S. missile hitting Iranian school": ["ir
         json_match = re.search(r'\[[\s\S]*?\]', result_text)
         if json_match:
             claude_topics = json.loads(json_match.group())
-            # Merge with keyword fallback so we never miss obvious matches
-            keyword_topics = _keyword_match(headline, available_topics)
-            merged = list(dict.fromkeys(claude_topics + keyword_topics))  # dedup, preserve order
-            return merged
+            # Trust Claude's selection — don't merge with keyword flood
+            return claude_topics[:8]
     except Exception as e:
         print(f"  Warning: Claude matching failed ({e}), using keyword fallback")
 
@@ -143,9 +177,9 @@ def _keyword_match(headline, available_topics):
     return matches
 
 
-def fulltext_search(headline, date):
-    """Search ALL post text for keywords from the headline. Returns matching voices."""
-    # Extract meaningful keywords from headline (skip stop words)
+def fulltext_search(headline, dates):
+    """Search ALL post text for keywords from the headline across multiple dates.
+    Returns matching voices with quality-ranked quotes."""
     STOP_WORDS = {
         'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
         'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
@@ -168,48 +202,72 @@ def fulltext_search(headline, date):
     if not keywords:
         return {}
 
+    if isinstance(dates, str):
+        dates = [dates]
+
     voices_found = {}
+    seen_urls = set()
 
     for voice_dir in POSTS_DIR.iterdir():
         if not voice_dir.is_dir():
             continue
-        post_file = voice_dir / f'{date}.json'
-        if not post_file.exists():
-            continue
 
-        data = json.loads(post_file.read_text())
-        for p in data.get('posts', []):
-            text_lower = p.get('text', '').lower()
-            # Count how many keywords appear in this post
-            matched_words = [w for w in keywords if w in text_lower]
-            # Require multiple keyword matches to reduce noise
-            # For short queries (2-3 keywords), require ALL keywords present
-            # For longer queries, require 50%+ overlap
-            if len(keywords) <= 3:
-                if len(matched_words) < len(keywords):
-                    continue
-            else:
-                match_ratio = len(matched_words) / len(keywords)
-                if match_ratio < 0.5:
+        for date in dates:
+            post_file = voice_dir / f'{date}.json'
+            if not post_file.exists():
+                continue
+
+            data = json.loads(post_file.read_text())
+            for p in data.get('posts', []):
+                url = p.get('sourceUrl', '')
+                if url in seen_urls:
                     continue
 
-            vid = voice_dir.name
-            if vid not in voices_found:
-                voices_found[vid] = {
-                    'voiceName': data.get('voiceName', vid),
-                    'topics': [],
-                    'quotes': [],
-                    '_match_score': 0,
-                }
-            voices_found[vid]['topics'].append(p.get('topic', 'matched'))
-            voices_found[vid]['quotes'].append({
-                'topic': p.get('topic', 'matched'),
-                'quote': p.get('quote', p['text'][:300]),
-                'sourceUrl': p.get('sourceUrl', ''),
-                'platform': p.get('platform', ''),
-                'timestamp': p.get('timestamp', ''),
-            })
-            voices_found[vid]['_match_score'] += len(matched_words)
+                text_lower = p.get('text', '').lower()
+                matched_words = [w for w in keywords if w in text_lower]
+
+                if len(keywords) <= 3:
+                    if len(matched_words) < len(keywords):
+                        continue
+                else:
+                    match_ratio = len(matched_words) / len(keywords)
+                    if match_ratio < 0.5:
+                        continue
+
+                seen_urls.add(url)
+                vid = voice_dir.name
+                if vid not in voices_found:
+                    voices_found[vid] = {
+                        'voiceName': data.get('voiceName', vid),
+                        'topics': [],
+                        'quotes': [],
+                        '_match_score': 0,
+                    }
+
+                # Score this individual quote for ranking
+                quote_score = len(matched_words)
+                # Bonus for transcripts (richer content)
+                if p.get('type') == 'video_transcript':
+                    quote_score += 3
+                # Bonus for longer quotes (more substance)
+                quote_text = p.get('quote', p['text'][:300])
+                if len(quote_text) > 100:
+                    quote_score += 1
+
+                voices_found[vid]['topics'].append(p.get('topic', 'matched'))
+                voices_found[vid]['quotes'].append({
+                    'topic': p.get('topic', 'matched'),
+                    'quote': quote_text,
+                    'sourceUrl': url,
+                    'platform': p.get('platform', ''),
+                    'timestamp': p.get('timestamp', ''),
+                    '_quote_score': quote_score,
+                })
+                voices_found[vid]['_match_score'] += quote_score
+
+    # Sort quotes within each voice by quality (best first)
+    for vid, data in voices_found.items():
+        data['quotes'].sort(key=lambda q: -q.get('_quote_score', 0))
 
     return voices_found
 
@@ -292,12 +350,14 @@ Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention 
 
 def lookup_story(headline):
     """Main lookup: find all voices talking about a story."""
-    date, topic_index = get_latest_topic_index()
+    # Use merged topic index (last 3 days) for broader coverage
+    date, topic_index = get_merged_topic_index(max_days=3)
     if not topic_index:
         print("  No collected data found. Run: python scripts/collect.py")
         return
 
-    print(f"\n  Searching voice database ({date})...")
+    available_dates = get_all_dates()[:3]
+    print(f"\n  Searching voice database ({', '.join(available_dates)})...")
     print(f"  Story: \"{headline}\"")
 
     # Strategy 1: Match headline to topic tags
@@ -309,9 +369,15 @@ def lookup_story(headline):
 
     # Collect voices from topic matches
     voices_found = {}
+    seen_urls = set()
     for topic in matching_topics:
         entries = topic_index.get(topic, [])
         for entry in entries:
+            url = entry.get('sourceUrl', '')
+            if url in seen_urls:
+                continue
+            seen_urls.add(url)
+
             vid = entry['voiceId']
             if vid not in voices_found:
                 voices_found[vid] = {
@@ -319,17 +385,26 @@ def lookup_story(headline):
                     'topics': [],
                     'quotes': [],
                 }
+            # Score: transcripts and longer quotes rank higher
+            quote_text = entry.get('quote', '')
+            quote_score = 1
+            if len(quote_text) > 100:
+                quote_score += 1
+            if entry.get('platform') == 'youtube' and len(quote_text) > 150:
+                quote_score += 3  # likely transcript
+
             voices_found[vid]['topics'].append(topic)
             voices_found[vid]['quotes'].append({
                 'topic': topic,
-                'quote': entry.get('quote', ''),
-                'sourceUrl': entry.get('sourceUrl', ''),
+                'quote': quote_text,
+                'sourceUrl': url,
                 'platform': entry.get('platform', ''),
                 'timestamp': entry.get('timestamp', ''),
+                '_quote_score': quote_score,
             })
 
-    # Strategy 2: Full-text search across ALL posts
-    text_matches = fulltext_search(headline, date)
+    # Strategy 2: Full-text search across ALL posts (multiple days)
+    text_matches = fulltext_search(headline, available_dates)
     for vid, data in text_matches.items():
         if vid not in voices_found:
             voices_found[vid] = data
@@ -345,12 +420,33 @@ def lookup_story(headline):
         print(f"\n  No voices found for these topics.")
         return
 
-    # Score voices: more quotes + specific topic matches + text matches = better
+    # Sort quotes within each voice (best first) and deduplicate similar quotes
+    for vid, data in voices_found.items():
+        data['quotes'].sort(key=lambda q: -q.get('_quote_score', 0))
+        # Deduplicate: skip quotes that share 80%+ of their words with a previous one
+        seen_quote_words = []
+        deduped = []
+        for q in data['quotes']:
+            q_words = set(re.findall(r'[a-z]+', q['quote'].lower()))
+            is_dup = False
+            for prev_words in seen_quote_words:
+                if q_words and prev_words:
+                    overlap = len(q_words & prev_words) / min(len(q_words), len(prev_words))
+                    if overlap > 0.8:
+                        is_dup = True
+                        break
+            if not is_dup:
+                deduped.append(q)
+                seen_quote_words.append(q_words)
+        data['quotes'] = deduped
+
+    # Score voices: more quotes + quality + topic specificity = better
     topic_rank = {t: i for i, t in enumerate(matching_topics)} if matching_topics else {}
     for vid, data in voices_found.items():
         best_rank = min((topic_rank.get(t, 999) for t in data['topics']), default=999)
-        text_bonus = data.get('_match_score', 0) * 2  # text matches weighted heavily
-        data['_score'] = -(len(data['quotes']) + text_bonus) + (best_rank * 0.1)
+        text_bonus = data.get('_match_score', 0) * 2
+        quote_quality = sum(q.get('_quote_score', 0) for q in data['quotes'][:3])
+        data['_score'] = -(len(data['quotes']) + text_bonus + quote_quality) + (best_rank * 0.1)
 
     # Load voice metadata for photos/lean
     voices_meta = {}
@@ -401,7 +497,7 @@ def lookup_story(headline):
             'lens': meta.get('lens', ''),
             'photo': meta.get('photo', ''),
             'topics': list(set(data['topics'])),
-            'quotes': data['quotes'],
+            'quotes': [{k: v for k, v in q.items() if not k.startswith('_')} for q in data['quotes']],
         })
 
     # Save result
