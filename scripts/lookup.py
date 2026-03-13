@@ -244,15 +244,13 @@ def fulltext_search(headline, dates):
                         '_match_score': 0,
                     }
 
-                # Score this individual quote for ranking
-                quote_score = len(matched_words)
-                # Bonus for transcripts (richer content)
-                if p.get('type') == 'video_transcript':
-                    quote_score += 3
-                # Bonus for longer quotes (more substance)
+                # Score by keyword density — how much of this quote is ABOUT the story
                 quote_text = p.get('quote', p['text'][:300])
-                if len(quote_text) > 100:
-                    quote_score += 1
+                quote_score = len(matched_words)
+                # Keyword density: a 20-word tweet with 3 keyword hits > a 200-word transcript with 3
+                word_count = max(len(quote_text.split()), 1)
+                keyword_density = len(matched_words) / word_count
+                quote_score += keyword_density * 10
 
                 voices_found[vid]['topics'].append(p.get('topic', 'matched'))
                 voices_found[vid]['quotes'].append({
@@ -385,13 +383,9 @@ def lookup_story(headline):
                     'topics': [],
                     'quotes': [],
                 }
-            # Score: transcripts and longer quotes rank higher
+            # Score by how topic-specific this quote is (not by length)
             quote_text = entry.get('quote', '')
             quote_score = 1
-            if len(quote_text) > 100:
-                quote_score += 1
-            if entry.get('platform') == 'youtube' and len(quote_text) > 150:
-                quote_score += 3  # likely transcript
 
             voices_found[vid]['topics'].append(topic)
             voices_found[vid]['quotes'].append({
@@ -440,7 +434,7 @@ def lookup_story(headline):
                 seen_quote_words.append(q_words)
         data['quotes'] = deduped
 
-    # Score voices: more quotes + quality + topic specificity = better
+    # Score voices: keyword relevance + topic specificity (not quote count or length)
     topic_rank = {t: i for i, t in enumerate(matching_topics)} if matching_topics else {}
     for vid, data in voices_found.items():
         best_rank = min((topic_rank.get(t, 999) for t in data['topics']), default=999)
