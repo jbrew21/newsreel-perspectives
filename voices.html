@@ -328,23 +328,29 @@ async function init() {
     console.warn('Could not load voices.json');
   }
 
-  // Load today's posts for each voice
-  const today = new Date().toISOString().split('T')[0];
+  // Load latest posts for each voice (try today and yesterday to handle timezone gaps)
+  const now = new Date();
+  const today = now.toISOString().split('T')[0];
+  const yesterday = new Date(now - 86400000).toISOString().split('T')[0];
+  const datesToTry = [today, yesterday];
   let totalPosts = 0;
   let totalTopics = new Set();
   let voicesWithData = 0;
 
   for (const [id, voice] of Object.entries(VOICES)) {
-    try {
-      const resp = await fetch(`${BASE}/data/posts/${id}/${today}.json`);
-      if (resp.ok) {
-        const data = await resp.json();
-        VOICE_POSTS[id] = data;
-        totalPosts += (data.posts || []).length;
-        Object.keys(data.topicSummary || {}).forEach(t => totalTopics.add(t));
-        voicesWithData++;
-      }
-    } catch(e) {}
+    for (const date of datesToTry) {
+      try {
+        const resp = await fetch(`${BASE}/data/posts/${id}/${date}.json`);
+        if (resp.ok) {
+          const data = await resp.json();
+          VOICE_POSTS[id] = data;
+          totalPosts += (data.posts || []).length;
+          Object.keys(data.topicSummary || {}).forEach(t => totalTopics.add(t));
+          voicesWithData++;
+          break; // found data, stop trying dates
+        }
+      } catch(e) {}
+    }
   }
 
   // Stats
