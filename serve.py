@@ -63,7 +63,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             try:
                 result = subprocess.run(
                     [sys.executable, os.path.join(ROOT, 'scripts', 'lookup.py'), headline],
-                    capture_output=True, text=True, timeout=30, cwd=ROOT
+                    capture_output=True, text=True, timeout=60, cwd=ROOT
                 )
                 # Find the saved result file
                 slug = re.sub(r'[^a-z0-9]+', '-', headline.lower())[:50]
