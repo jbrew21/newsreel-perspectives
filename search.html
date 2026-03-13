@@ -152,6 +152,29 @@
     transition: transform 0.2s; color: var(--text-muted);
   }
 
+  /* Quote tooltip on avatar tap */
+  .quote-tip {
+    position: absolute; bottom: calc(100% + 8px); left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-elevated); border: 1px solid var(--border-default);
+    border-radius: 10px; padding: 10px 12px;
+    width: 240px; z-index: 20;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    animation: tip-pop 0.15s ease-out;
+  }
+  .quote-tip::after {
+    content: ''; position: absolute; top: 100%; left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent; border-top-color: var(--bg-elevated);
+  }
+  @keyframes tip-pop {
+    from { opacity: 0; transform: translateX(-50%) translateY(4px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+  /* Prevent tip from going off-screen left/right */
+  .avatar-wrap:first-child .quote-tip { left: 0; transform: none; }
+  .avatar-wrap:first-child .quote-tip::after { left: 16px; transform: none; }
+
   .fracture-search-btn {
     display: inline-flex; align-items: center; gap: 6px;
     padding: 8px 16px; margin-top: 4px;
@@ -445,7 +468,20 @@ fetch(BASE + '/api/fractures')
 
         let avatarsHtml = shown.map(v => {
           const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64`;
-          return `<a href="${BASE}/voice/${v.voiceId}" onclick="event.stopPropagation();" title="${escapeHtml(v.voiceName)}" style="display:inline-block;"><img class="cluster-avatar" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64'"></a>`;
+          const quote = (v.quote || '').substring(0, 140);
+          const platform = v.platform ? ({x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'IG', tiktok:'TikTok'}[v.platform] || v.platform) : '';
+          return `<div class="avatar-wrap" onclick="event.stopPropagation(); toggleQuoteTip(this);" style="display:inline-block; position:relative; cursor:pointer;">
+            <img class="cluster-avatar" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64'">
+            <div class="quote-tip" style="display:none;">
+              <div style="font-weight:600; color:var(--text-primary); margin-bottom:4px;">${escapeHtml(v.voiceName)}</div>
+              ${quote ? `<div style="font-size:12px; color:var(--text-secondary); line-height:1.4; font-style:italic;">"${escapeHtml(quote)}"</div>` : ''}
+              <div style="display:flex; gap:8px; margin-top:6px; font-size:11px;">
+                ${platform ? `<span style="color:var(--text-muted);">${platform}</span>` : ''}
+                ${v.sourceUrl ? `<a href="${v.sourceUrl}" target="_blank" style="color:var(--accent); text-decoration:none;" onclick="event.stopPropagation();">View source</a>` : ''}
+                <a href="${BASE}/voice/${v.voiceId}" style="color:var(--text-muted); text-decoration:none;" onclick="event.stopPropagation();">Profile</a>
+              </div>
+            </div>
+          </div>`;
         }).join('');
 
         if (overflow > 0) {
@@ -659,6 +695,21 @@ function escapeHtml(text) {
   div.textContent = text;
   return div.innerHTML;
 }
+
+function toggleQuoteTip(el) {
+  const tip = el.querySelector('.quote-tip');
+  if (!tip) return;
+  const wasVisible = tip.style.display !== 'none';
+  // Close all other tips
+  document.querySelectorAll('.quote-tip').forEach(t => t.style.display = 'none');
+  tip.style.display = wasVisible ? 'none' : 'block';
+}
+// Close tips on outside click
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.avatar-wrap')) {
+    document.querySelectorAll('.quote-tip').forEach(t => t.style.display = 'none');
+  }
+});
 
 function filterByCluster(cluster) {
   document.querySelectorAll('.cluster-filter').forEach(el => {
