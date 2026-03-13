@@ -490,6 +490,7 @@ def lookup_story(headline):
             'lean': meta.get('lean', ''),
             'lens': meta.get('lens', ''),
             'photo': meta.get('photo', ''),
+            'tags': meta.get('tags', []),
             'topics': list(set(data['topics'])),
             'quotes': [{k: v for k, v in q.items() if not k.startswith('_')} for q in data['quotes']],
         })
