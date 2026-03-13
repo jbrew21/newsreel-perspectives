@@ -364,19 +364,14 @@
 
 <div class="hero">
   <h1>Step outside your algorithm<br>into <span>others</span></h1>
-  <p>Type any headline. See how <a class="nav-link" data-page="voices" style="color:#FF6343; text-decoration:none;">78 voices</a> across the political spectrum are talking about it.</p>
+  <p>Type any headline. See how <a class="nav-link" data-page="voices" style="color:#FF6343; text-decoration:none;" id="voiceCount">112 voices</a> across the political spectrum are talking about it.</p>
 
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Paste a headline or describe a story..." autofocus>
     <button id="searchBtn" onclick="doSearch()">Search</button>
   </div>
 
-  <div class="example-queries" id="exampleQueries">
-    <div class="example-query" onclick="setQuery(this)">Pentagon probe points to U.S. missile hitting Iranian school</div>
-    <div class="example-query" onclick="setQuery(this)">Epstein files released to the public</div>
-    <div class="example-query" onclick="setQuery(this)">Trump tariffs cause stock market crash</div>
-    <div class="example-query" onclick="setQuery(this)">AI replacing jobs</div>
-  </div>
+  <div class="example-queries" id="exampleQueries"></div>
 </div>
 
 <div class="stats" id="stats"></div>
@@ -406,6 +401,14 @@ const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
 const PAGES = { search: BASE || '/search', voices: BASE + '/voices' };
 document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
 
+// Dynamic voice count
+fetch(BASE + '/data/voices.json').then(r => r.json()).then(v => {
+  const el = document.getElementById('voiceCount');
+  if (el) el.textContent = v.length + ' voices';
+  const ld = document.getElementById('loading');
+  if (ld) ld.querySelector('p').textContent = `Searching ${v.length} voices across X, YouTube, Bluesky, TikTok, and Instagram...`;
+}).catch(() => {});
+
 fetch(BASE + '/api/topics')
   .then(r => r.json())
   .then(topics => {
@@ -415,6 +418,16 @@ fetch(BASE + '/api/topics')
       .slice(0, 15);
 
     if (sorted.length > 0) {
+      // Populate example queries from top 4 trending topics
+      const examplesDiv = document.getElementById('exampleQueries');
+      sorted.slice(0, 4).forEach(([topic]) => {
+        const el = document.createElement('div');
+        el.className = 'example-query';
+        el.textContent = topic.replace(/-/g, ' ');
+        el.onclick = () => setQuery(el);
+        examplesDiv.appendChild(el);
+      });
+
       const section = document.getElementById('trendingSection');
       const container = document.getElementById('trendingTopics');
       section.style.display = 'block';
