@@ -534,12 +534,14 @@ function renderResults(data) {
           ${voice.topics.map(t => `<span class="tag">${t}</span>`).join('')}
         </div>
         ${voice.quotes.slice(0, 3).map(q => {
-          const platformLabel = {x: 'X/Twitter', youtube: 'YouTube', bluesky: 'Bluesky'}[q.platform] || q.platform;
+          const platformLabel = {x: 'X/Twitter', youtube: 'YouTube', bluesky: 'Bluesky', instagram: 'Instagram', tiktok: 'TikTok'}[q.platform] || q.platform;
           const timeAgo = q.timestamp ? formatTimeAgo(q.timestamp) : '';
+          const isTranscript = q.quote && q.quote.length > 150 && q.platform === 'youtube';
+          const quoteText = isTranscript ? q.quote.substring(0, 350) : q.quote.substring(0, 250);
           return `
             <div class="quote">
-              <div class="quote-platform">${platformLabel}${timeAgo ? ` · ${timeAgo}` : ''}</div>
-              <div class="quote-text">"${escapeHtml(q.quote.substring(0, 250))}"</div>
+              <div class="quote-platform">${platformLabel}${isTranscript ? ' (transcript)' : ''}${timeAgo ? ` · ${timeAgo}` : ''}</div>
+              <div class="quote-text">"${escapeHtml(quoteText)}"</div>
               <a class="quote-link" href="${q.sourceUrl}" target="_blank">View original</a>
             </div>
           `;
