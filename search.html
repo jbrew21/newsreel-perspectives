@@ -142,6 +142,16 @@
     line-height: 1.4; margin-bottom: 12px;
   }
 
+  /* Collapsed: hide clusters */
+  .fracture-card .cluster-groups { display: none; }
+  .fracture-card .fracture-search-btn { display: none; }
+  .fracture-card.expanded .cluster-groups { display: flex !important; }
+  .fracture-card.expanded .fracture-search-btn { display: inline-flex; }
+  .fracture-card.expanded .fracture-chevron { transform: rotate(180deg); }
+  .fracture-chevron {
+    transition: transform 0.2s; color: var(--text-muted);
+  }
+
   .fracture-search-btn {
     display: inline-flex; align-items: center; gap: 6px;
     padding: 8px 16px; margin-top: 4px;
@@ -412,7 +422,10 @@ fetch(BASE + '/api/fractures')
     fractures.forEach((fracture, fi) => {
       const card = document.createElement('div');
       card.className = 'fracture-card';
-      card.style.cursor = 'default';
+      card.onclick = (e) => {
+        if (e.target.closest('.fracture-search-btn')) return;
+        card.classList.toggle('expanded');
+      };
 
       // Topic chip color
       const chipColor = getClusterColor(fi);
@@ -464,14 +477,15 @@ fetch(BASE + '/api/fractures')
           <div class="fracture-voices-count">${fracture.voiceCount} voices</div>
         </div>
         <div class="fracture-headline">${escapeHtml(headline)}</div>
-        <div class="fracture-insight">${escapeHtml(fracture.insight)}</div>
-        <div class="cluster-groups" style="display:flex; flex-direction:column; gap:0; margin-bottom:12px;">${clustersHtml}</div>
-        <div>
-          <button class="fracture-search-btn" onclick="document.getElementById('searchInput').value='${fracture.topic.replace(/-/g, ' ')}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
-            See all ${fracture.voiceCount} voices
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </button>
+        <div style="display:flex; align-items:center; justify-content:space-between;">
+          <div class="fracture-insight">${escapeHtml(fracture.insight)}</div>
+          <svg class="fracture-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
         </div>
+        <div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">${clustersHtml}</div>
+        <button class="fracture-search-btn" onclick="event.stopPropagation(); document.getElementById('searchInput').value='${fracture.topic.replace(/-/g, ' ')}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
+          See all ${fracture.voiceCount} voices
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
       `;
 
       container.appendChild(card);
