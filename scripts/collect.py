@@ -37,12 +37,14 @@ UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
 
 # Load env
 def load_env():
-    if ENV_PATH.exists():
-        for line in ENV_PATH.read_text().splitlines():
-            line = line.strip()
-            if line and not line.startswith('#'):
-                key, _, val = line.partition('=')
-                os.environ[key.strip()] = val.strip()
+    for env_path in [ROOT / ".env", ENV_PATH]:
+        if env_path.exists():
+            for line in env_path.read_text().splitlines():
+                line = line.strip()
+                if line and not line.startswith('#'):
+                    key, _, val = line.partition('=')
+                    if key.strip() not in os.environ:
+                        os.environ[key.strip()] = val.strip()
 
 load_env()
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
