@@ -108,6 +108,28 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 self.wfile.write(b'{}')
             return
 
+        # API: fractures (pre-computed daily)
+        if self.path == '/api/fractures':
+            posts_dir = os.path.join(ROOT, 'data', 'posts')
+            fracture_files = sorted(
+                [f for f in os.listdir(posts_dir) if f.startswith('fractures-')],
+                reverse=True
+            )
+            if fracture_files:
+                data = open(os.path.join(posts_dir, fracture_files[0])).read()
+                self.send_response(200)
+                self.send_header('Content-type', 'application/json')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                self.wfile.write(data.encode())
+            else:
+                self.send_response(200)
+                self.send_header('Content-type', 'application/json')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                self.wfile.write(b'[]')
+            return
+
         # Serve search page
         if self.path == '/search' or self.path.startswith('/search?'):
             self.send_response(200)

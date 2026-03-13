@@ -5,385 +5,369 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Perspectives — Step Outside Your Algorithm</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg-base: #0a0a0b;
+    --bg-surface: #141416;
+    --bg-surface-2: #1c1c1f;
+    --bg-elevated: #252528;
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-tertiary: #71717a;
+    --text-muted: #52525b;
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-default: rgba(255, 255, 255, 0.1);
+    --accent: #FF6343;
+    --accent-bg: rgba(255, 99, 67, 0.12);
+    --cluster-blue: #60A5FA;
+    --cluster-coral: #F87171;
+    --cluster-amber: #FBBF24;
+    --cluster-violet: #A78BFA;
+    --cluster-green: #4ADE80;
+    --cluster-cyan: #22D3EE;
+  }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    font-family: 'DM Sans', sans-serif;
-    background: #0a0a0a;
-    color: #e0e0e0;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-base);
+    color: var(--text-secondary);
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
   }
 
-  .hero {
-    text-align: center;
-    padding: 80px 20px 40px;
-  }
+  /* NAV */
+  .nav { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  .nav-inner { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { display: flex; align-items: center; gap: 10px; }
+  .nav-brand img { height: 22px; }
+  .nav-label { font-family: 'DM Sans', monospace; font-size: 10px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+  .nav-links a { font-family: monospace; font-size: 11px; text-decoration: none; margin-left: 16px; }
 
-  .hero h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 8px;
-  }
+  /* HERO */
+  .hero { text-align: center; padding: 48px 20px 32px; }
+  .hero h1 { font-size: 2.2em; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .hero h1 span { color: var(--accent); }
+  .hero p { font-size: 1em; color: var(--text-tertiary); max-width: 460px; margin: 0 auto 32px; line-height: 1.5; }
+  .hero p a { color: var(--accent); text-decoration: none; }
 
-  .hero h1 span { color: #FF6343; }
-
-  .hero p {
-    font-size: 1.1em;
-    color: #888;
-    max-width: 500px;
-    margin: 0 auto 40px;
-  }
-
-  .search-box {
-    max-width: 680px;
-    margin: 0 auto;
-    position: relative;
-  }
-
+  /* SEARCH */
+  .search-box { max-width: 640px; margin: 0 auto; position: relative; }
   .search-box input {
-    width: 100%;
-    padding: 18px 24px;
-    font-size: 1.1em;
-    font-family: 'DM Sans', sans-serif;
-    border: 2px solid #333;
-    border-radius: 12px;
-    background: #1a1a1a;
-    color: #fff;
-    outline: none;
-    transition: border-color 0.2s;
+    width: 100%; padding: 16px 20px; padding-right: 90px;
+    font-size: 1em; font-family: 'DM Sans', sans-serif;
+    border: 1px solid var(--border-default); border-radius: 14px;
+    background: var(--bg-surface); color: var(--text-primary);
+    outline: none; transition: border-color 0.2s;
   }
-
-  .search-box input:focus {
-    border-color: #FF6343;
-  }
-
-  .search-box input::placeholder {
-    color: #555;
-  }
-
+  .search-box input:focus { border-color: var(--accent); }
+  .search-box input::placeholder { color: var(--text-muted); }
   .search-box button {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    padding: 10px 24px;
-    font-size: 1em;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    background: #FF6343;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.2s;
+    position: absolute; right: 6px; top: 6px;
+    padding: 10px 20px; font-size: 0.9em; font-family: 'DM Sans', sans-serif;
+    font-weight: 600; background: var(--accent); color: #fff;
+    border: none; border-radius: 10px; cursor: pointer; transition: background 0.2s;
   }
-
   .search-box button:hover { background: #e5553a; }
   .search-box button:disabled { background: #555; cursor: not-allowed; }
 
-  .stats {
-    text-align: center;
+  .example-queries { max-width: 640px; margin: 16px auto 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+  .example-query {
+    font-size: 0.8em; color: var(--text-muted); background: var(--bg-surface);
+    border: 1px solid var(--border-subtle); border-radius: 100px;
+    padding: 5px 12px; cursor: pointer; transition: all 0.2s;
+  }
+  .example-query:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* FRACTURES SECTION */
+  .fractures { max-width: 900px; margin: 0 auto; padding: 32px 20px 0; }
+  .fractures-header {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 20px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .fractures-title {
+    font-size: 0.7em; font-weight: 700; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .fractures-live {
+    width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 0.4; box-shadow: 0 0 0 0 rgba(255, 99, 67, 0.4); }
+    50% { opacity: 1; box-shadow: 0 0 0 4px rgba(255, 99, 67, 0); }
+  }
+
+  /* FRACTURE CARD */
+  .fracture-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
     padding: 20px;
-    color: #555;
-    font-size: 0.9em;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  .fracture-card:hover {
+    border-color: var(--border-default);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  }
+  .fracture-card:active { transform: translateY(0); }
+
+  .fracture-meta {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .fracture-topic-chip {
+    display: inline-flex; padding: 4px 10px; border-radius: 100px;
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .fracture-voices-count {
+    font-size: 12px; color: var(--text-muted); font-weight: 500;
   }
 
-  .stats span { color: #FF6343; font-weight: 600; }
-
-  .loading {
-    text-align: center;
-    padding: 60px;
-    color: #888;
-    font-size: 1.1em;
-    display: none;
+  .fracture-insight {
+    font-size: 1.15em; font-weight: 600; color: var(--text-primary);
+    line-height: 1.35; margin-bottom: 20px; letter-spacing: -0.01em;
   }
 
+  /* CLUSTER GROUPS */
+  .cluster-groups {
+    display: flex; flex-direction: column; gap: 0;
+  }
+
+  .cluster-group {
+    padding: 14px;
+    border-radius: 12px;
+    position: relative;
+  }
+  .cluster-group-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .cluster-name {
+    font-size: 13px; font-weight: 600; color: var(--text-primary);
+  }
+  .cluster-count {
+    font-size: 11px; color: var(--text-muted); font-weight: 500;
+  }
+
+  .cluster-avatars {
+    display: flex; align-items: center; margin-bottom: 8px;
+  }
+  .cluster-avatar {
+    width: 32px; height: 32px; border-radius: 50%;
+    object-fit: cover; border: 2px solid var(--bg-surface);
+    margin-left: -8px; position: relative;
+    background: var(--bg-elevated);
+    transition: transform 0.2s;
+  }
+  .cluster-avatar:first-child { margin-left: 0; }
+  .cluster-avatar:hover { transform: scale(1.15); z-index: 2; }
+  .cluster-avatar-overflow {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--bg-elevated); border: 2px solid var(--bg-surface);
+    margin-left: -8px; display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 600; color: var(--text-tertiary);
+  }
+
+  .cluster-quote {
+    font-size: 13px; color: var(--text-tertiary); line-height: 1.45;
+    font-style: italic; display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+  .cluster-names {
+    font-size: 11px; color: var(--text-muted); margin-top: 6px;
+  }
+
+  /* FRACTURE LINE */
+  .fracture-line {
+    height: 1px; margin: 4px 14px;
+    background: linear-gradient(90deg, transparent 0%, var(--line-color-a, #60A5FA) 30%, var(--line-color-b, #F87171) 70%, transparent 100%);
+    opacity: 0.4;
+    position: relative;
+  }
+  .fracture-line::after {
+    content: '';
+    position: absolute; top: -2px; left: 0; right: 0; height: 5px;
+    background: inherit; filter: blur(4px); opacity: 0.5;
+  }
+
+  /* Animated fracture for high-voice stories */
+  .fracture-line.animated {
+    animation: fracture-glow 3s ease-in-out infinite;
+  }
+  @keyframes fracture-glow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+  }
+
+  .fracture-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: 16px; padding-top: 12px;
+    border-top: 1px solid var(--border-subtle);
+  }
+  .fracture-footer-left {
+    font-size: 12px; color: var(--text-muted);
+  }
+  .fracture-explore {
+    font-size: 12px; font-weight: 600; color: var(--accent);
+    display: flex; align-items: center; gap: 4px;
+  }
+  .fracture-explore svg { transition: transform 0.2s; }
+  .fracture-card:hover .fracture-explore svg { transform: translateX(2px); }
+
+  /* STATS */
+  .stats { text-align: center; padding: 16px 20px; color: var(--text-muted); font-size: 0.85em; }
+  .stats span { color: var(--accent); font-weight: 600; }
+
+  /* TRENDING */
+  .trending { max-width: 900px; margin: 8px auto 40px; padding: 0 20px; }
+  .trending h3 { font-size: 0.7em; color: var(--text-muted); margin-bottom: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; }
+  .trending-topics { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+  .trending-topic {
+    background: var(--bg-surface); border: 1px solid var(--border-subtle);
+    border-radius: 100px; padding: 6px 14px; color: var(--text-tertiary);
+    font-size: 0.8em; cursor: pointer; transition: all 0.2s;
+  }
+  .trending-topic:hover { border-color: var(--accent); color: var(--accent); }
+  .trending-topic .count { color: var(--text-muted); font-size: 0.85em; margin-left: 4px; }
+
+  /* LOADING */
+  .loading { text-align: center; padding: 60px; color: var(--text-tertiary); font-size: 1em; display: none; }
   .loading.active { display: block; }
-
   .loading .spinner {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border: 3px solid #333;
-    border-top-color: #FF6343;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    margin-right: 8px;
-    vertical-align: middle;
+    display: inline-block; width: 20px; height: 20px;
+    border: 2px solid var(--bg-elevated); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+    margin-right: 8px; vertical-align: middle;
   }
-
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  .results {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px 60px;
-  }
-
-  .results-header {
-    text-align: center;
-    padding: 20px 0 30px;
-  }
-
-  .results-header h2 {
-    font-size: 1.4em;
-    color: #fff;
-    margin-bottom: 4px;
-  }
-
-  .results-header .topics {
-    color: #888;
-    font-size: 0.9em;
-  }
-
+  /* RESULTS */
+  .results { max-width: 900px; margin: 0 auto; padding: 0 20px 60px; }
+  .results-header { text-align: center; padding: 20px 0 24px; }
+  .results-header h2 { font-size: 1.3em; color: var(--text-primary); margin-bottom: 4px; }
+  .results-header .topics { color: var(--text-tertiary); font-size: 0.85em; }
   .results-header .topics .tag {
-    display: inline-block;
-    background: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 4px;
-    padding: 2px 8px;
-    margin: 2px;
-    font-size: 0.85em;
+    display: inline-block; background: var(--bg-surface); border: 1px solid var(--border-subtle);
+    border-radius: 4px; padding: 2px 8px; margin: 2px; font-size: 0.85em;
   }
 
   .voice-card {
-    background: #141414;
-    border: 1px solid #222;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 16px;
+    background: var(--bg-surface); border: 1px solid var(--border-subtle);
+    border-radius: 14px; padding: 18px; margin-bottom: 12px;
     transition: border-color 0.2s;
   }
+  .voice-card:hover { border-color: var(--border-default); }
 
-  .voice-card:hover { border-color: #FF6343; }
-
-  .voice-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 14px;
-  }
-
-  .voice-photo {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    background: #333;
-  }
-
-  .voice-name {
-    font-size: 1.15em;
-    font-weight: 700;
-    color: #fff;
-  }
-
-  .voice-lean {
-    font-size: 0.8em;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: 500;
-  }
-
-  .lean-left { background: #1a2a4a; color: #5b9bd5; }
-  .lean-right { background: #4a1a1a; color: #d55b5b; }
-  .lean-center { background: #2a2a1a; color: #c5b358; }
-  .lean-libertarian { background: #1a3a1a; color: #5bd55b; }
-
-  .cluster-label {
-    background: rgba(255, 99, 67, 0.15);
-    color: #FF6343;
-    border: 1px solid rgba(255, 99, 67, 0.3);
-  }
+  .voice-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .voice-photo { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; background: var(--bg-elevated); }
+  .voice-name { font-size: 1.05em; font-weight: 700; color: var(--text-primary); }
+  .voice-lean { font-size: 0.75em; padding: 2px 8px; border-radius: 6px; font-weight: 600; }
+  .cluster-label { background: var(--accent-bg); color: var(--accent); border: 1px solid rgba(255, 99, 67, 0.2); }
 
   .cluster-tag {
-    display: inline-block;
-    background: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 6px;
-    padding: 6px 12px;
-    color: #ccc;
-    font-size: 0.85em;
+    display: inline-block; background: var(--bg-surface);
+    border: 1px solid var(--border-subtle); border-radius: 6px;
+    padding: 6px 12px; color: var(--text-tertiary); font-size: 0.85em;
   }
-
   .cluster-filter { cursor: pointer; transition: all 0.2s; }
-  .cluster-filter:hover { border-color: #FF6343; color: #FF6343; }
-  .cluster-filter.active { background: rgba(255,99,67,0.15); border-color: #FF6343; color: #FF6343; }
+  .cluster-filter:hover { border-color: var(--accent); color: var(--accent); }
+  .cluster-filter.active { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
 
-  .voice-topics {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 12px;
-  }
+  .voice-topics { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+  .voice-topics .tag { font-size: 0.72em; background: var(--accent-bg); color: var(--accent); padding: 2px 8px; border-radius: 4px; }
 
-  .voice-topics .tag {
-    font-size: 0.75em;
-    background: rgba(255, 99, 67, 0.15);
-    color: #FF6343;
-    padding: 2px 8px;
-    border-radius: 4px;
-  }
-
-  .quote {
-    margin-bottom: 12px;
-    padding-left: 14px;
-    border-left: 3px solid #333;
-  }
-
-  .quote-platform {
-    font-size: 0.75em;
-    color: #666;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-
-  .quote-text {
-    font-size: 0.95em;
-    color: #ccc;
-    line-height: 1.5;
-    margin-bottom: 4px;
-  }
-
-  .quote-link {
-    font-size: 0.8em;
-    color: #FF6343;
-    text-decoration: none;
-  }
-
+  .quote { margin-bottom: 12px; padding-left: 14px; border-left: 3px solid var(--bg-elevated); }
+  .quote-platform { font-size: 0.72em; color: var(--text-muted); font-weight: 600; text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.03em; }
+  .quote-text { font-size: 0.92em; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+  .quote-link { font-size: 0.78em; color: var(--accent); text-decoration: none; }
   .quote-link:hover { text-decoration: underline; }
 
-  .trending {
-    max-width: 900px;
-    margin: 20px auto 40px;
-    padding: 0 20px;
-  }
+  .no-results { text-align: center; padding: 60px; color: var(--text-muted); }
 
-  .trending h3 {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 12px;
-    text-align: center;
-  }
-
-  .trending-topics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-  }
-
-  .trending-topic {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 8px 16px;
-    color: #ccc;
-    font-size: 0.9em;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .trending-topic:hover {
-    border-color: #FF6343;
-    color: #FF6343;
-  }
-
-  .trending-topic .count {
-    color: #666;
-    font-size: 0.85em;
-    margin-left: 4px;
-  }
-
-  .no-results {
-    text-align: center;
-    padding: 60px;
-    color: #666;
-  }
-
-  .example-queries {
-    max-width: 680px;
-    margin: 20px auto 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-  }
-
-  .example-query {
-    font-size: 0.85em;
-    color: #666;
-    background: #1a1a1a;
-    border: 1px solid #222;
-    border-radius: 6px;
-    padding: 6px 12px;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .example-query:hover {
-    color: #FF6343;
-    border-color: #FF6343;
-  }
-
+  /* MOBILE */
   @media (max-width: 600px) {
-    .hero { padding: 40px 16px 24px; }
-    .hero h1 { font-size: 1.6em; }
-    .hero p { font-size: 0.95em; margin-bottom: 24px; }
-    .search-box input { padding: 14px 16px; font-size: 1em; padding-right: 80px; }
-    .search-box button { padding: 8px 16px; font-size: 0.9em; }
+    .hero { padding: 32px 16px 24px; }
+    .hero h1 { font-size: 1.5em; }
+    .hero p { font-size: 0.9em; margin-bottom: 24px; }
+    .search-box input { padding: 14px 16px; padding-right: 80px; font-size: 0.95em; border-radius: 12px; }
+    .search-box button { padding: 8px 16px; font-size: 0.85em; border-radius: 8px; }
+    .fractures { padding: 24px 16px 0; }
+    .fracture-card { padding: 16px; border-radius: 14px; }
+    .fracture-insight { font-size: 1.05em; }
+    .cluster-group { padding: 12px; }
+    .cluster-avatar { width: 28px; height: 28px; margin-left: -6px; }
+    .cluster-avatar:first-child { margin-left: 0; }
+    .cluster-avatar-overflow { width: 28px; height: 28px; margin-left: -6px; font-size: 9px; }
     .results { padding: 0 12px 40px; }
-    .voice-card { padding: 16px; }
-    .voice-header { gap: 10px; }
-    .voice-photo { width: 40px; height: 40px; }
-    .voice-name { font-size: 1em; }
-    .trending-topics { gap: 6px; }
-    .trending-topic { padding: 6px 10px; font-size: 0.8em; }
-    .example-queries { gap: 6px; }
-    .example-query { font-size: 0.8em; padding: 5px 10px; }
+    .voice-card { padding: 14px; }
+    .voice-photo { width: 38px; height: 38px; }
+    .voice-name { font-size: 0.95em; }
+    .trending { padding: 0 16px; }
+    .trending-topics { gap: 4px; }
+    .trending-topic { padding: 5px 10px; font-size: 0.75em; }
+    .example-queries { gap: 4px; }
+    .example-query { font-size: 0.75em; padding: 4px 10px; }
+    .nav { padding: 0 16px; }
   }
 </style>
 </head>
 <body>
 
-<div style="max-width:900px; margin:0 auto; padding:0 20px;">
-  <div style="padding:20px 0; border-bottom:1px solid #222; display:flex; justify-content:space-between; align-items:center;">
-    <div style="display:flex; align-items:center; gap:12px;">
-      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel" style="height:24px;">
-      <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:#FF6343; text-transform:uppercase; letter-spacing:1.2px; font-weight:700;">Perspectives</div>
+<div class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
+      <div class="nav-label">Perspectives</div>
     </div>
     <div>
-      <a class="nav-link" data-page="search" style="font-family:monospace; font-size:11px; color:#FF6343; text-decoration:none; margin-left:16px;">Search</a>
-      <a class="nav-link" data-page="voices" style="font-family:monospace; font-size:11px; color:#808080; text-decoration:none; margin-left:16px;">Voices</a>
+      <a class="nav-link" data-page="search" style="color:var(--accent);">Search</a>
+      <a class="nav-link" data-page="voices" style="color:var(--text-muted);">Voices</a>
     </div>
   </div>
 </div>
 
 <div class="hero">
   <h1>Step outside your algorithm<br>into <span>others</span></h1>
-  <p>Type any headline. See how <a class="nav-link" data-page="voices" style="color:#FF6343; text-decoration:none;" id="voiceCount">112 voices</a> across the political spectrum are talking about it.</p>
+  <p>See how <a class="nav-link" data-page="voices" id="voiceCount">112 voices</a> across the political spectrum react to the same story. Not left vs right. Actual positions.</p>
 
   <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Paste a headline or describe a story..." autofocus>
+    <input type="text" id="searchInput" placeholder="Search any story..." autofocus>
     <button id="searchBtn" onclick="doSearch()">Search</button>
   </div>
 
   <div class="example-queries" id="exampleQueries"></div>
 </div>
 
+<!-- TODAY'S FRACTURES -->
+<div class="fractures" id="fracturesSection" style="display:none">
+  <div class="fractures-header">
+    <div class="fractures-live"></div>
+    <div class="fractures-title">Today's Fractures</div>
+  </div>
+  <div id="fractureCards"></div>
+</div>
+
 <div class="stats" id="stats"></div>
 
 <div class="trending" id="trendingSection" style="display:none">
-  <h3>Trending topics across all voices today</h3>
+  <h3>All trending topics</h3>
   <div class="trending-topics" id="trendingTopics"></div>
 </div>
 
 <div class="loading" id="loading">
   <span class="spinner"></span>
-  Searching 112 voices across X, YouTube, Bluesky, TikTok, and Instagram...
+  Searching across X, YouTube, Bluesky, TikTok, and Instagram...
 </div>
 
 <div class="results" id="results"></div>
@@ -395,20 +379,129 @@ const loading = document.getElementById('loading');
 const resultsDiv = document.getElementById('results');
 const statsDiv = document.getElementById('stats');
 
-// Load trending topics
-// Detect base path (works on both localhost and newsreel.co/perspectives)
 const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
 const PAGES = { search: BASE || '/search', voices: BASE + '/voices' };
 document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
+
+// Cluster color palette (not red/blue political — multi-hue)
+const CLUSTER_COLORS = [
+  '#60A5FA', // blue
+  '#F87171', // coral
+  '#FBBF24', // amber
+  '#A78BFA', // violet
+  '#4ADE80', // green
+  '#22D3EE', // cyan
+  '#F472B6', // pink
+  '#FB923C', // orange
+];
+
+function getClusterColor(index) {
+  return CLUSTER_COLORS[index % CLUSTER_COLORS.length];
+}
 
 // Dynamic voice count
 fetch(BASE + '/data/voices.json').then(r => r.json()).then(v => {
   const el = document.getElementById('voiceCount');
   if (el) el.textContent = v.length + ' voices';
-  const ld = document.getElementById('loading');
-  if (ld) ld.querySelector('p').textContent = `Searching ${v.length} voices across X, YouTube, Bluesky, TikTok, and Instagram...`;
 }).catch(() => {});
 
+// LOAD FRACTURES
+fetch(BASE + '/api/fractures')
+  .then(r => r.json())
+  .then(fractures => {
+    if (!fractures || fractures.length === 0) return;
+
+    const section = document.getElementById('fracturesSection');
+    const container = document.getElementById('fractureCards');
+    section.style.display = 'block';
+
+    fractures.forEach((fracture, fi) => {
+      const card = document.createElement('div');
+      card.className = 'fracture-card';
+      card.onclick = () => {
+        input.value = fracture.topic.replace(/-/g, ' ');
+        doSearch();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
+      // Topic chip color
+      const chipColor = getClusterColor(fi);
+
+      // Build cluster HTML
+      let clustersHtml = '';
+      const maxClusters = 3; // Show top 3 clusters on card
+      const shownClusters = fracture.clusters.slice(0, maxClusters);
+
+      shownClusters.forEach((cluster, ci) => {
+        const color = getClusterColor(ci);
+        const bgColor = color + '0F'; // 6% opacity
+
+        // Stacked avatars
+        const maxAvatars = 4;
+        const shown = cluster.voices.slice(0, maxAvatars);
+        const overflow = cluster.voiceCount - maxAvatars;
+
+        let avatarsHtml = shown.map(v => {
+          const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64`;
+          return `<img class="cluster-avatar" src="${photo}" alt="${escapeHtml(v.voiceName)}" title="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64'">`;
+        }).join('');
+
+        if (overflow > 0) {
+          avatarsHtml += `<div class="cluster-avatar-overflow">+${overflow}</div>`;
+        }
+
+        // Names list
+        const names = cluster.voices.slice(0, 4).map(v => v.voiceName.split(' ').pop()).join(', ');
+        const moreNames = cluster.voiceCount > 4 ? ` +${cluster.voiceCount - 4}` : '';
+
+        // Best quote
+        const bestQuote = cluster.voices[0]?.quote || '';
+        const quoteSnippet = bestQuote.length > 100 ? bestQuote.substring(0, 100) + '...' : bestQuote;
+
+        clustersHtml += `
+          <div class="cluster-group" style="background: ${bgColor}; border-left: 2px solid ${color};">
+            <div class="cluster-group-header">
+              <div class="cluster-name" style="color: ${color};">${escapeHtml(cluster.name)}</div>
+              <div class="cluster-count">${cluster.voiceCount} voices</div>
+            </div>
+            <div class="cluster-avatars">${avatarsHtml}</div>
+            ${quoteSnippet ? `<div class="cluster-quote">"${escapeHtml(quoteSnippet)}"</div>` : ''}
+            <div class="cluster-names">${escapeHtml(names)}${moreNames}</div>
+          </div>
+        `;
+
+        // Add fracture line between clusters (not after last)
+        if (ci < shownClusters.length - 1) {
+          const nextColor = getClusterColor(ci + 1);
+          const animated = fracture.voiceCount > 20 ? ' animated' : '';
+          clustersHtml += `<div class="fracture-line${animated}" style="--line-color-a: ${color}; --line-color-b: ${nextColor};"></div>`;
+        }
+      });
+
+      const remainingClusters = fracture.clusterCount - maxClusters;
+
+      card.innerHTML = `
+        <div class="fracture-meta">
+          <div class="fracture-topic-chip" style="background: ${chipColor}15; color: ${chipColor};">${escapeHtml(fracture.topicDisplay)}</div>
+          <div class="fracture-voices-count">${fracture.voiceCount} voices</div>
+        </div>
+        <div class="fracture-insight">${escapeHtml(fracture.insight)}</div>
+        <div class="cluster-groups">${clustersHtml}</div>
+        <div class="fracture-footer">
+          <div class="fracture-footer-left">${fracture.clusterCount} clusters${remainingClusters > 0 ? ` · ${remainingClusters} more` : ''}</div>
+          <div class="fracture-explore">
+            Explore
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  })
+  .catch(e => console.log('Fractures not available:', e));
+
+// Load trending topics
 fetch(BASE + '/api/topics')
   .then(r => r.json())
   .then(topics => {
@@ -418,7 +511,6 @@ fetch(BASE + '/api/topics')
       .slice(0, 15);
 
     if (sorted.length > 0) {
-      // Populate example queries from top 4 trending topics
       const examplesDiv = document.getElementById('exampleQueries');
       sorted.slice(0, 4).forEach(([topic]) => {
         const el = document.createElement('div');
@@ -435,23 +527,18 @@ fetch(BASE + '/api/topics')
         const voices = [...new Set(entries.map(e => e.voiceName))].length;
         const el = document.createElement('div');
         el.className = 'trending-topic';
-        el.innerHTML = `${topic.replace(/-/g, ' ')} <span class="count">${voices} voices</span>`;
+        el.innerHTML = `${topic.replace(/-/g, ' ')} <span class="count">${voices}</span>`;
         el.onclick = () => { input.value = topic.replace(/-/g, ' '); doSearch(); };
         container.appendChild(el);
       });
-      statsDiv.innerHTML = `<span>${Object.values(topics).flat().length}</span> posts from <span>${new Set(Object.values(topics).flat().map(e => e.voiceId)).size}</span> voices across <span>${sorted.length}+</span> topics`;
+      statsDiv.innerHTML = `<span>${Object.values(topics).flat().length}</span> posts from <span>${new Set(Object.values(topics).flat().map(e => e.voiceId)).size}</span> voices across <span>${sorted.length}+</span> topics today`;
     }
   })
   .catch(() => {});
 
-input.addEventListener('keydown', e => {
-  if (e.key === 'Enter') doSearch();
-});
+input.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
 
-function setQuery(el) {
-  input.value = el.textContent;
-  doSearch();
-}
+function setQuery(el) { input.value = el.textContent; doSearch(); }
 
 async function doSearch() {
   const query = input.value.trim();
@@ -460,12 +547,15 @@ async function doSearch() {
   btn.disabled = true;
   loading.classList.add('active');
   resultsDiv.innerHTML = '';
+  // Hide fractures and examples when searching
+  document.getElementById('fracturesSection').style.display = 'none';
   document.getElementById('exampleQueries').style.display = 'none';
+  document.getElementById('trendingSection').style.display = 'none';
+  statsDiv.style.display = 'none';
 
   try {
     const resp = await fetch(`${BASE}/api/lookup?q=${encodeURIComponent(query)}`);
     const data = await resp.json();
-
     if (data.error) {
       resultsDiv.innerHTML = `<div class="no-results">${data.error}</div>`;
     } else {
@@ -485,19 +575,16 @@ function renderResults(data) {
     return;
   }
 
-  // Sort by number of quotes (most relevant first)
   data.voices.sort((a, b) => b.quotes.length - a.quotes.length);
 
   let html = `
     <div class="results-header">
       <h2>${data.voices.length} voices on this story</h2>
-      <div class="topics">
-        ${data.matchedTopics.map(t => `<span class="tag">${t}</span>`).join('')}
-      </div>
+      <div class="topics">${data.matchedTopics.map(t => `<span class="tag">${t}</span>`).join('')}</div>
     </div>
   `;
 
-  // Group voices by argument cluster
+  // Group by cluster
   const clusterGroups = {};
   for (const voice of data.voices) {
     const cluster = voice.argumentCluster || 'uncategorized';
@@ -505,49 +592,42 @@ function renderResults(data) {
     clusterGroups[cluster].push(voice);
   }
 
-  // Show cluster overview as clickable filters
-  let activeCluster = null;
   const clusters = Object.keys(clusterGroups).filter(c => c !== 'uncategorized');
 
   if (clusters.length > 1) {
     const clusterTags = clusters
       .sort((a, b) => clusterGroups[b].length - clusterGroups[a].length)
-      .map(c => `<span class="cluster-tag cluster-filter" data-cluster="${c}" onclick="filterByCluster('${c.replace(/'/g, "\\'")}')">${c} <span style="opacity:0.6">${clusterGroups[c].length}</span></span>`)
+      .map(c => `<span class="cluster-tag cluster-filter" data-cluster="${c}" onclick="filterByCluster('${c.replace(/'/g, "\\'")}')">${c} <span style="opacity:0.5">${clusterGroups[c].length}</span></span>`)
       .join('');
-    html += `<div id="clusterFilters" style="text-align:center; margin-bottom:24px;">
-      <div style="color:#888; font-size:0.85em; margin-bottom:8px;">Filter by perspective</div>
-      <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
-        <span class="cluster-tag cluster-filter active" onclick="filterByCluster(null)">All <span style="opacity:0.6">${data.voices.length}</span></span>
+    html += `<div id="clusterFilters" style="text-align:center; margin-bottom:20px;">
+      <div style="color:var(--text-muted); font-size:0.8em; margin-bottom:8px;">Filter by position</div>
+      <div style="display:flex; flex-wrap:wrap; gap:6px; justify-content:center;">
+        <span class="cluster-tag cluster-filter active" onclick="filterByCluster(null)">All <span style="opacity:0.5">${data.voices.length}</span></span>
         ${clusterTags}
       </div>
     </div>`;
   }
 
-  // Store data globally for filtering
   window._resultsData = data;
 
   for (const voice of data.voices) {
     const clusterLabel = voice.argumentCluster
-      ? `<span class="voice-lean cluster-label">${voice.argumentCluster}</span>`
-      : '';
+      ? `<span class="voice-lean cluster-label">${voice.argumentCluster}</span>` : '';
 
-    const photoUrl = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=333&color=fff&size=96`;
+    const photoUrl = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96`;
     const tagsHtml = voice.tags && voice.tags.length
-      ? `<div style="margin-top:4px;">${voice.tags.map(t => `<span style="display:inline-block; font-size:0.7em; color:#aaa; border:1px solid #444; border-radius:10px; padding:1px 8px; margin-right:4px;">${escapeHtml(t)}</span>`).join('')}</div>`
-      : '';
+      ? `<div style="margin-top:4px;">${voice.tags.map(t => `<span style="display:inline-block; font-size:0.68em; color:var(--text-tertiary); border:1px solid var(--border-subtle); border-radius:100px; padding:1px 8px; margin-right:3px;">${escapeHtml(t)}</span>`).join('')}</div>` : '';
 
     html += `
       <div class="voice-card" data-cluster="${(voice.argumentCluster || '').replace(/"/g, '&quot;')}">
         <div class="voice-header">
-          <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=333&color=fff&size=96'">
+          <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96'">
           <div>
             <div class="voice-name">${voice.voiceName} ${clusterLabel}</div>
             ${tagsHtml}
           </div>
         </div>
-        <div class="voice-topics">
-          ${voice.topics.map(t => `<span class="tag">${t}</span>`).join('')}
-        </div>
+        <div class="voice-topics">${voice.topics.map(t => `<span class="tag">${t}</span>`).join('')}</div>
         ${voice.quotes.slice(0, 3).map(q => {
           const platformLabel = {x: 'X/Twitter', youtube: 'YouTube', bluesky: 'Bluesky', instagram: 'Instagram', tiktok: 'TikTok'}[q.platform] || q.platform;
           const timeAgo = q.timestamp ? formatTimeAgo(q.timestamp) : '';
@@ -589,23 +669,16 @@ function escapeHtml(text) {
 }
 
 function filterByCluster(cluster) {
-  // Update active state on filter buttons
   document.querySelectorAll('.cluster-filter').forEach(el => {
     el.classList.remove('active');
     if (cluster === null && !el.dataset.cluster) el.classList.add('active');
     if (el.dataset.cluster === cluster) el.classList.add('active');
   });
 
-  // Show/hide voice cards
   document.querySelectorAll('.voice-card').forEach(card => {
-    if (!cluster || card.dataset.cluster === cluster) {
-      card.style.display = '';
-    } else {
-      card.style.display = 'none';
-    }
+    card.style.display = (!cluster || card.dataset.cluster === cluster) ? '' : 'none';
   });
 
-  // Update count in header
   const visible = document.querySelectorAll('.voice-card:not([style*="display: none"])').length;
   const header = document.querySelector('.results-header h2');
   if (header) {
