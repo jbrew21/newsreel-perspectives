@@ -139,6 +139,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(html.encode())
             return
 
+        # Serve voice profile page
+        if self.path.startswith('/voice/'):
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            html = open(os.path.join(ROOT, 'voice.html')).read()
+            self.wfile.write(html.encode())
+            return
+
         # Serve voices dashboard
         if self.path == '/voices' or self.path.startswith('/voices?'):
             self.send_response(200)
