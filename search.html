@@ -634,12 +634,10 @@ async function loadConversation() {
         <div class="fracture-voices-count">${story.voiceCount} voices</div>
       </div>
       <div class="fracture-headline">${escapeHtml(story.headline)}</div>
-      ${counterHtml}
       <div style="display:flex; align-items:center; justify-content:space-between;">
-        <div class="fracture-insight">${escapeHtml(story.summary || '')}</div>
+        <div></div>
         <svg class="fracture-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
       </div>
-      ${bestQuoteHtml}
       <div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">${clustersHtml}</div>
       <button class="fracture-search-btn" onclick="event.stopPropagation(); document.getElementById('searchInput').value='${escapeHtml(story.headline)}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
         Search this story
