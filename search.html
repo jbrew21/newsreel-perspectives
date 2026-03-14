@@ -279,6 +279,12 @@
   }
   .cluster-voice-link:hover { text-decoration: underline; }
 
+  /* Collapsible clusters */
+  .cluster-collapsible { display: none; }
+  .cluster-open .cluster-collapsible { display: flex; }
+  .cluster-open .cluster-chevron { transform: rotate(180deg); }
+  .cluster-header-row:hover { opacity: 0.85; }
+
 
   /* FRACTURE LINE */
   .fracture-line {
@@ -593,13 +599,14 @@ async function loadConversation() {
       }
 
       clustersHtml += `
-        <div style="margin-bottom:16px;">
-          <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-            <div style="width:4px; height:18px; border-radius:2px; background:${color};"></div>
-            <div class="cluster-name" style="color:${color};">${escapeHtml(cluster.name)}</div>
+        <div style="margin-bottom:4px;">
+          <div class="cluster-header-row" onclick="event.stopPropagation(); this.parentElement.classList.toggle('cluster-open');" style="display:flex; align-items:center; gap:8px; padding:10px 0; cursor:pointer;">
+            <div style="width:4px; height:18px; border-radius:2px; background:${color}; flex-shrink:0;"></div>
+            <div class="cluster-name" style="color:${color}; flex:1;">${escapeHtml(cluster.name)}</div>
             <span class="cluster-count">${cluster.voiceCount} voices</span>
+            <svg class="cluster-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition:transform 0.2s; flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
           </div>
-          <div class="cluster-voices-list">${voicesHtml}</div>
+          <div class="cluster-voices-list cluster-collapsible">${voicesHtml}</div>
         </div>
       `;
     });
