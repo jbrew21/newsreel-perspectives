@@ -489,6 +489,18 @@ def fetch_substack_posts(voice):
             if not title:
                 continue
 
+            # Check for actual author (multi-author publications like Free Press)
+            author_match = re.search(r'<dc:creator><!\[CDATA\[(.*?)\]\]></dc:creator>', item)
+            if not author_match:
+                author_match = re.search(r'<dc:creator>(.*?)</dc:creator>', item)
+            if not author_match:
+                author_match = re.search(r'<author>(.*?)</author>', item)
+            actual_author = author_match.group(1).strip() if author_match else None
+
+            # If a different person wrote it, prefix the title
+            if actual_author and actual_author.lower() != voice['name'].lower():
+                title = f"{title} (by {actual_author})"
+
             # Combine title + preview for richer text
             text = title
             if desc_text and len(desc_text) > 50:
