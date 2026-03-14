@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology — Newsreel Perspectives</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --bg-base: #0a0a0b;
+    --bg-surface: #141416;
+    --bg-surface-2: #1c1c1f;
+    --bg-elevated: #252528;
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-tertiary: #71717a;
+    --text-muted: #52525b;
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-default: rgba(255, 255, 255, 0.1);
+    --accent: #FF6343;
+    --accent-bg: rgba(255, 99, 67, 0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-base);
+    color: var(--text-secondary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV — matches search.html */
+  .nav { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  .nav-inner { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { display: flex; align-items: center; gap: 10px; }
+  .nav-brand img { height: 22px; }
+  .nav-label { font-family: 'DM Sans', monospace; font-size: 10px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+  .nav-links a { font-family: monospace; font-size: 11px; text-decoration: none; color: var(--text-muted); margin-left: 16px; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text-secondary); }
+  .nav-links a.active { color: var(--accent); }
+
+  /* PAGE HEADER */
+  .page-header {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 20px 40px;
+    text-align: center;
+  }
+  .page-header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .page-header p {
+    font-size: 1em;
+    color: var(--text-tertiary);
+    line-height: 1.6;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* CONTENT */
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+  }
+
+  .section-number {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+
+  .section h2 {
+    font-size: 1.35em;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+
+  .section p {
+    font-size: 0.95em;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .section strong {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--border-subtle);
+    margin: 48px 0;
+  }
+
+  /* CALLOUT BOX */
+  .callout {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+
+  .callout-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .callout p {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  /* EXAMPLE PAIR */
+  .example-pair {
+    display: flex;
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  .example-box {
+    flex: 1;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 0.88em;
+    line-height: 1.5;
+  }
+
+  .example-box.good {
+    background: rgba(74, 222, 128, 0.08);
+    border: 1px solid rgba(74, 222, 128, 0.15);
+    color: #4ADE80;
+  }
+
+  .example-box.bad {
+    background: rgba(248, 113, 113, 0.08);
+    border: 1px solid rgba(248, 113, 113, 0.15);
+    color: #F87171;
+  }
+
+  .example-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    opacity: 0.7;
+  }
+
+  /* SCORE BREAKDOWN */
+  .score-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+
+  .score-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+
+  .score-item-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+  }
+
+  .score-item-desc {
+    font-size: 0.82em;
+    color: var(--text-tertiary);
+    line-height: 1.45;
+  }
+
+  /* PLATFORM LIST */
+  .platform-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .platform-chip {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 100px;
+    padding: 6px 14px;
+  }
+
+  /* NOT LIST */
+  .not-list {
+    list-style: none;
+    margin: 14px 0;
+  }
+
+  .not-list li {
+    font-size: 0.92em;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .not-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 8px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 1px;
+  }
+
+  /* FOOTER */
+  .page-footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    border-top: 1px solid var(--border-subtle);
+    text-align: center;
+  }
+
+  .page-footer p {
+    font-size: 0.82em;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .page-footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .page-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    .page-header { padding: 40px 16px 32px; }
+    .page-header h1 { font-size: 1.5em; }
+    .content { padding: 0 16px 60px; }
+    .nav { padding: 0 16px; }
+    .example-pair { flex-direction: column; }
+    .score-grid { grid-template-columns: 1fr; }
+    .section h2 { font-size: 1.2em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+        <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
+        <div class="nav-label">Perspectives</div>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/search">Search</a>
+      <a href="/voices">Voices</a>
+      <a href="/methodology" class="active">Methodology</a>
+    </div>
+  </div>
+</div>
+
+<div class="page-header">
+  <h1>How Perspectives Works</h1>
+  <p>Our methodology for tracking 232 voices across the political spectrum and grouping them by what they actually say, not who they are.</p>
+</div>
+
+<div class="content">
+
+  <!-- 1. HOW IT WORKS -->
+  <div class="section">
+    <div class="section-number">01</div>
+    <h2>How It Works</h2>
+    <p>Every day, we collect public posts from <strong>232 voices</strong> across <strong>7 platforms</strong>. Politicians, creators, journalists, podcasters, policy experts. We pull their posts, categorize each one by topic, then group voices into argument clusters for every story.</p>
+    <p>The result: for any story in the news, you can see who is talking about it and what they are actually saying, organized not by party or ideology but by the specific argument they are making.</p>
+    <div class="platform-grid">
+      <span class="platform-chip">X</span>
+      <span class="platform-chip">YouTube</span>
+      <span class="platform-chip">Bluesky</span>
+      <span class="platform-chip">Instagram</span>
+      <span class="platform-chip">TikTok</span>
+      <span class="platform-chip">Substack</span>
+      <span class="platform-chip">Podcasts</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 2. WHY NO LEFT/RIGHT -->
+  <div class="section">
+    <div class="section-number">02</div>
+    <h2>Why No Left/Right Labels</h2>
+    <p>We do not slap a permanent "left" or "right" label on anyone. That framing is reductive, and it is often wrong.</p>
+    <p>Instead, our AI analyzes what each person is <strong>actually saying</strong> on each story and groups them into <strong>4-6 argument clusters</strong>. A voice might land in "Military Supporters" on one story and "Government Skeptics" on another. That is not inconsistency. That is how real people think.</p>
+    <p>Positions are fluid, not tribal. Our system reflects that.</p>
+    <div class="callout">
+      <div class="callout-label">Example</div>
+      <p>On a defense spending story, a senator might cluster with "Deterrence Advocates." On a surveillance bill the next day, that same senator clusters with "Civil Liberties Defenders." Both are accurate. A permanent label would miss one of them.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 3. HOW CLUSTERS ARE NAMED -->
+  <div class="section">
+    <div class="section-number">03</div>
+    <h2>How Clusters Are Named</h2>
+    <p>Every cluster name is generated using language its <strong>members would use to describe themselves</strong>, not language their opponents would use. This is enforced in the AI prompt and reviewable by editors.</p>
+    <p>The goal is descriptive accuracy, not editorial spin. If someone in the cluster would object to the name, the name is wrong.</p>
+    <div class="example-pair">
+      <div class="example-box good">
+        <div class="example-label">We use</div>
+        Deterrence Advocates<br>
+        Reproductive Rights Defenders<br>
+        Fiscal Conservatives<br>
+        Immigration Reform Supporters
+      </div>
+      <div class="example-box bad">
+        <div class="example-label">Never</div>
+        War Hawks<br>
+        Baby Killers<br>
+        Heartless Budget Cutters<br>
+        Open Borders Activists
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 4. EDITORIAL REVIEW -->
+  <div class="section">
+    <div class="section-number">04</div>
+    <h2>Editorial Review</h2>
+    <p>AI does the first pass. Humans have the final say.</p>
+    <p>Every story goes through an <strong>editorial review dashboard</strong> where human editors can:</p>
+    <ul class="not-list">
+      <li>Flag biased or loaded cluster names</li>
+      <li>Override cluster names with better alternatives</li>
+      <li>Flag unfair counter-narratives</li>
+      <li>Add editorial notes for context</li>
+    </ul>
+    <p>These overrides feed back into the pipeline, improving future AI output. The system learns from editorial corrections over time.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 5. HEAT SCORE -->
+  <div class="section">
+    <div class="section-number">05</div>
+    <h2>Heat Score</h2>
+    <p>Stories are ranked 0-100 using a composite <strong>heat score</strong> that measures how much meaningful disagreement a story is generating. It is not just volume. A story with 50 voices all saying the same thing scores lower than one with 20 voices split across opposing arguments.</p>
+    <div class="score-grid">
+      <div class="score-item">
+        <div class="score-item-name">Voice Count</div>
+        <div class="score-item-desc">How many voices are discussing this story, weighted on a log scale so early voices matter more.</div>
+      </div>
+      <div class="score-item">
+        <div class="score-item-name">Disagreement</div>
+        <div class="score-item-desc">Shannon entropy across clusters. Higher when voices are evenly spread across multiple positions.</div>
+      </div>
+      <div class="score-item">
+        <div class="score-item-name">Cross-Pollination</div>
+        <div class="score-item-desc">When ideological opposites land in the same cluster, something interesting is happening.</div>
+      </div>
+      <div class="score-item">
+        <div class="score-item-name">Quote Directness</div>
+        <div class="score-item-desc">Voices making direct, specific claims score higher than vague commentary.</div>
+      </div>
+      <div class="score-item">
+        <div class="score-item-name">AI Confidence</div>
+        <div class="score-item-desc">How confident the categorization model is in its topic matching and cluster assignments.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 6. WHAT WE TRACK -->
+  <div class="section">
+    <div class="section-number">06</div>
+    <h2>What We Track</h2>
+    <p><strong>232 voices</strong> across politicians, creators, journalists, podcasters, and policy experts. All public content. No private messages. Nothing behind paywalls.</p>
+    <p>Collection runs daily. Each voice is monitored across all platforms where they have a public presence. A single voice might have posts from X, a YouTube video, and a Substack article, all on the same story, all surfaced together.</p>
+    <div class="callout">
+      <div class="callout-label">Sources</div>
+      <p>X (via RSS), YouTube (RSS + transcripts), Bluesky (API), Instagram, TikTok, Substack, and podcast transcripts. Everything is public and linkable back to the original post.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 7. WHAT THIS IS NOT -->
+  <div class="section">
+    <div class="section-number">07</div>
+    <h2>What This Is Not</h2>
+    <p>Perspectives is a tool for seeing the full conversation around a story. It is not a replacement for judgment.</p>
+    <ul class="not-list">
+      <li><strong>Not a fact-checker.</strong> We show what people are saying. We do not verify whether what they are saying is true.</li>
+      <li><strong>Not a bias rater.</strong> We do not score outlets or voices on a bias scale. We group arguments, not people.</li>
+      <li><strong>Not Ground News.</strong> We do not rate news sources as left, center, or right. We track individual voices and their actual positions, story by story.</li>
+    </ul>
+    <p>We show what people are actually saying, grouped by argument, so you can see the full conversation. What you do with that is up to you.</p>
+  </div>
+
+</div>
+
+<div class="page-footer">
+  <p>Questions about our methodology? Reach out at <a href="mailto:jack@newsreel.co">jack@newsreel.co</a></p>
+</div>
+
+</body>
+</html>
