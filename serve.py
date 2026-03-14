@@ -177,6 +177,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(html.encode())
             return
 
+        # Serve methodology page
+        if self.path == '/methodology' or self.path.startswith('/methodology?'):
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            html = open(os.path.join(ROOT, 'methodology.html')).read()
+            self.wfile.write(html.encode())
+            return
+
         return super().do_GET()
 
     def do_POST(self):
