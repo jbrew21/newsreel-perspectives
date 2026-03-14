@@ -31,7 +31,16 @@ ROOT = Path(__file__).parent.parent
 VOICES_PATH = ROOT / "data" / "voices.json"
 POSTS_DIR = ROOT / "data" / "posts"
 TRANSCRIPT_CACHE = ROOT / "data" / "transcript_cache.json"
+TAXONOMY_PATH = ROOT / "data" / "taxonomy.json"
+USAGE_LOG_PATH = ROOT / "data" / "usage-log.json"
 ENV_PATH = ROOT.parent / "newsletter" / ".env"
+
+# Cost tracking globals (accumulated during categorization)
+_usage_stats = {
+    'claude_calls': 0,
+    'total_input_chars': 0,
+    'total_output_tokens_est': 0,
+}
 
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
 
@@ -56,81 +65,168 @@ def load_voices():
 
 # ─── X/TWITTER VIA NITTER RSS ────────────────────────────────────────────────
 
-NITTER_INSTANCE = 'https://nitter.net'
+NITTER_INSTANCES = [
+    'https://nitter.net',
+    'https://nitter.privacydev.net',
+    'https://nitter.poast.org',
+    'https://nitter.esmailelbob.xyz',
+]
+
+
+def _parse_rssapp_json(voice, data):
+    """Parse rss.app JSON format into standard post objects."""
+    x_handle = voice.get('handles', {}).get('x', '').lstrip('@')
+    posts = []
+    for item in data.get('items', [])[:20]:
+        text = item.get('title', '')
+        if not text or len(text) < 15:
+            continue
+
+        source_url = item.get('url', '')
+
+        # Skip retweets
+        if text.startswith('RT by @') or text.startswith('RT @'):
+            continue
+
+        # Skip reposts
+        if source_url and x_handle and x_handle.lower() not in source_url.lower():
+            continue
+
+        # Parse date
+        timestamp = ''
+        date_str = item.get('date_published', '')
+        if date_str:
+            try:
+                from email.utils import parsedate_to_datetime
+                dt = parsedate_to_datetime(date_str)
+                timestamp = dt.isoformat()
+            except:
+                timestamp = date_str
+
+        posts.append({
+            'voiceId': voice['id'],
+            'voiceName': voice['name'],
+            'platform': 'x',
+            'text': text[:500],
+            'sourceUrl': source_url,
+            'timestamp': timestamp,
+            'type': 'tweet',
+        })
+    return posts
+
+
+def _parse_nitter_rss(voice, rss, nitter_host):
+    """Parse Nitter RSS XML into standard post objects."""
+    x_handle = voice.get('handles', {}).get('x', '').lstrip('@')
+    posts = []
+
+    items = re.findall(r'<item>(.*?)</item>', rss, re.DOTALL)
+    for item in items[:20]:  # last 20 tweets
+        # Get tweet text from description (cleaner than title)
+        desc_match = re.search(r'<description><!\[CDATA\[(.*?)\]\]></description>', item, re.DOTALL)
+        title_match = re.search(r'<title>(.*?)</title>', item)
+        link_match = re.search(r'<link>(.*?)</link>', item)
+        pub_match = re.search(r'<pubDate>(.*?)</pubDate>', item)
+
+        text = ''
+        if desc_match:
+            # Strip HTML tags from description
+            text = re.sub(r'<[^>]+>', '', desc_match.group(1)).strip()
+        elif title_match:
+            text = title_match.group(1)
+
+        if not text or len(text) < 15:
+            continue
+
+        # Convert nitter URL to x.com URL
+        source_url = ''
+        if link_match:
+            source_url = link_match.group(1).replace(nitter_host, 'x.com')
+            # Remove #m anchor
+            source_url = re.sub(r'#m$', '', source_url)
+
+        # Skip retweets (they start with "RT by @handle:")
+        if text.startswith('RT by @'):
+            continue
+
+        # Skip reposts: if the URL doesn't contain this user's handle, it's someone else's tweet
+        if source_url and x_handle.lower() not in source_url.lower():
+            continue
+
+        # Parse pubDate to ISO format
+        timestamp = ''
+        if pub_match:
+            try:
+                from email.utils import parsedate_to_datetime
+                dt = parsedate_to_datetime(pub_match.group(1))
+                timestamp = dt.isoformat()
+            except:
+                timestamp = pub_match.group(1)
+
+        posts.append({
+            'voiceId': voice['id'],
+            'voiceName': voice['name'],
+            'platform': 'x',
+            'text': text[:500],
+            'sourceUrl': source_url,
+            'timestamp': timestamp,
+            'type': 'tweet',
+        })
+
+    return posts
+
+
+# Track X/Twitter collection failures for monitoring
+_x_failures = {'rssapp': 0, 'nitter': 0, 'total_attempts': 0, 'successes': 0, 'failed_voices': []}
+
 
 def fetch_x_posts(voice):
-    """Pull recent tweets from X/Twitter via Nitter RSS (free, no auth)."""
+    """Pull recent tweets from X/Twitter via rss.app (if configured) or Nitter RSS (free, no auth)."""
     x_handle = voice.get('handles', {}).get('x')
     if not x_handle:
         return []
 
     # Strip @ if present
     x_handle = x_handle.lstrip('@')
+    _x_failures['total_attempts'] += 1
 
-    posts = []
-    try:
-        url = f'{NITTER_INSTANCE}/{x_handle}/rss'
-        req = urllib.request.Request(url, headers={'User-Agent': UA})
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            rss = resp.read().decode('utf-8')
+    # Try rss.app feed first if configured
+    rssapp_url = voice.get('feeds', {}).get('x', '')
+    if rssapp_url and 'rss.app' in rssapp_url:
+        try:
+            req = urllib.request.Request(rssapp_url, headers={'User-Agent': UA})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
+            posts = _parse_rssapp_json(voice, data)
+            if posts:
+                _x_failures['successes'] += 1
+                return posts
+        except Exception:
+            _x_failures['rssapp'] += 1
 
-        items = re.findall(r'<item>(.*?)</item>', rss, re.DOTALL)
-        for item in items[:20]:  # last 20 tweets
-            # Get tweet text from description (cleaner than title)
-            desc_match = re.search(r'<description><!\[CDATA\[(.*?)\]\]></description>', item, re.DOTALL)
-            title_match = re.search(r'<title>(.*?)</title>', item)
-            link_match = re.search(r'<link>(.*?)</link>', item)
-            pub_match = re.search(r'<pubDate>(.*?)</pubDate>', item)
+    # Try each Nitter instance in order
+    for instance in NITTER_INSTANCES:
+        try:
+            url = f'{instance}/{x_handle}/rss'
+            req = urllib.request.Request(url, headers={'User-Agent': UA})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                rss = resp.read().decode('utf-8')
 
-            text = ''
-            if desc_match:
-                # Strip HTML tags from description
-                text = re.sub(r'<[^>]+>', '', desc_match.group(1)).strip()
-            elif title_match:
-                text = title_match.group(1)
+            # Extract the hostname for URL replacement (e.g. "nitter.net")
+            nitter_host = instance.replace('https://', '').replace('http://', '')
+            posts = _parse_nitter_rss(voice, rss, nitter_host)
+            if posts:
+                _x_failures['successes'] += 1
+                return posts
+        except Exception as e:
+            if '404' in str(e):
+                break  # user doesn't exist, no point trying other instances
+            continue  # instance down, try next
 
-            if not text or len(text) < 15:
-                continue
-
-            # Convert nitter URL to x.com URL
-            source_url = ''
-            if link_match:
-                source_url = link_match.group(1).replace('nitter.net', 'x.com')
-                # Remove #m anchor
-                source_url = re.sub(r'#m$', '', source_url)
-
-            # Skip retweets (they start with "RT by @handle:")
-            if text.startswith('RT by @'):
-                continue
-
-            # Skip reposts: if the URL doesn't contain this user's handle, it's someone else's tweet
-            if source_url and x_handle.lower() not in source_url.lower():
-                continue
-
-            # Parse pubDate to ISO format
-            timestamp = ''
-            if pub_match:
-                try:
-                    from email.utils import parsedate_to_datetime
-                    dt = parsedate_to_datetime(pub_match.group(1))
-                    timestamp = dt.isoformat()
-                except:
-                    timestamp = pub_match.group(1)
-
-            posts.append({
-                'voiceId': voice['id'],
-                'voiceName': voice['name'],
-                'platform': 'x',
-                'text': text[:500],
-                'sourceUrl': source_url,
-                'timestamp': timestamp,
-                'type': 'tweet',
-            })
-    except Exception as e:
-        if '404' not in str(e):
-            print(f"    ⚠ X fetch failed for @{x_handle}: {e}")
-
-    return posts
+    # All methods failed for this voice
+    _x_failures['nitter'] += 1
+    _x_failures['failed_voices'].append(voice['name'])
+    return []
 
 
 # ─── YOUTUBE RSS ──────────────────────────────────────────────────────────────
@@ -170,6 +266,53 @@ def fetch_youtube_posts(voice):
 
 
 # ─── YOUTUBE TRANSCRIPTS ─────────────────────────────────────────────────────
+
+def _ytdlp_transcript(video_id):
+    """Fallback: fetch YouTube transcript via yt-dlp when API is IP blocked.
+    Tries with Chrome cookies first (higher rate limit), then without."""
+    import subprocess
+    import tempfile
+
+    for use_cookies in [True, False]:
+        try:
+            with tempfile.TemporaryDirectory() as tmpdir:
+                cmd = [
+                    'yt-dlp',
+                    f'https://www.youtube.com/watch?v={video_id}',
+                    '--write-auto-sub', '--sub-lang', 'en',
+                    '--skip-download', '--no-warnings',
+                    '-o', f'{tmpdir}/%(id)s.%(ext)s',
+                ]
+                if use_cookies:
+                    cmd += ['--cookies-from-browser', 'chrome']
+                result = subprocess.run(
+                    cmd, capture_output=True, text=True, timeout=30,
+                )
+                # Look for .vtt file
+                import glob
+                vtt_files = glob.glob(f'{tmpdir}/*.vtt')
+                if not vtt_files:
+                    continue  # try next cookie option
+                vtt_text = Path(vtt_files[0]).read_text()
+                # Parse VTT: strip timestamps and metadata, keep text
+                lines = []
+                for line in vtt_text.split('\n'):
+                    line = line.strip()
+                    if not line or line.startswith('WEBVTT') or line.startswith('Kind:') or line.startswith('Language:'):
+                        continue
+                    if re.match(r'^\d{2}:\d{2}', line) or re.match(r'^\d+$', line):
+                        continue
+                    # Strip VTT tags like <c> </c>
+                    line = re.sub(r'<[^>]+>', '', line)
+                    if line and line not in lines[-1:]:  # deduplicate consecutive
+                        lines.append(line)
+                return ' '.join(lines[:200])  # ~first 5 min worth
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            return ''
+        except Exception:
+            continue  # try without cookies
+    return ''
+
 
 def enrich_transcripts(posts):
     """Add transcript text to YouTube posts (free)."""
@@ -229,10 +372,35 @@ def enrich_transcripts(posts):
             else:
                 cache[video_id] = ''
         except IpBlocked:
-            print("    ⚠ YouTube IP rate limited — will retry next run")
+            print("    ⚠ YouTube IP rate limited — falling back to yt-dlp")
             ip_blocked = True
         except:
             cache[video_id] = ''
+
+    # Fallback: use yt-dlp for any remaining uncached videos when IP blocked
+    if ip_blocked:
+        ytdlp_fetched = 0
+        for p in posts:
+            if p['platform'] != 'youtube':
+                continue
+            vid_match = re.search(r'(?:watch\?v=|youtu\.be/)([\w-]+)', p['sourceUrl'])
+            if not vid_match:
+                continue
+            video_id = vid_match.group(1)
+            if video_id in cache:
+                continue
+            if ytdlp_fetched >= 50:
+                break
+            transcript_text = _ytdlp_transcript(video_id)
+            if transcript_text:
+                cache[video_id] = transcript_text[:800]
+                p['text'] = f"[VIDEO: {p['text'][:100]}] {transcript_text[:800]}"
+                p['type'] = 'video_transcript'
+                ytdlp_fetched += 1
+            else:
+                cache[video_id] = ''
+        if ytdlp_fetched:
+            print(f"    yt-dlp fallback: {ytdlp_fetched} transcripts recovered")
 
     # Save cache
     TRANSCRIPT_CACHE.write_text(json.dumps(cache))
@@ -278,6 +446,76 @@ def fetch_bluesky_posts(voice):
             })
     except:
         pass
+
+    return posts
+
+
+# ─── SUBSTACK / NEWSLETTER RSS ───────────────────────────────────────────────
+
+def fetch_substack_posts(voice):
+    """Pull recent articles from Substack/newsletter RSS feed (free, no auth)."""
+    feed_url = voice.get('feeds', {}).get('substack')
+    if not feed_url:
+        return []
+
+    posts = []
+    try:
+        req = urllib.request.Request(feed_url, headers={'User-Agent': UA})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            rss = resp.read().decode('utf-8')
+
+        items = re.findall(r'<item>(.*?)</item>', rss, re.DOTALL)
+        for item in items[:15]:  # last 15 articles
+            title_match = re.search(r'<title><!\[CDATA\[(.*?)\]\]></title>', item)
+            if not title_match:
+                title_match = re.search(r'<title>(.*?)</title>', item)
+            link_match = re.search(r'<link>(.*?)</link>', item)
+            pub_match = re.search(r'<pubDate>(.*?)</pubDate>', item)
+
+            # Get article preview text from description
+            desc_match = re.search(r'<description><!\[CDATA\[(.*?)\]\]></description>', item, re.DOTALL)
+            desc_text = ''
+            if desc_match:
+                # Strip HTML tags, get first ~500 chars as preview
+                desc_text = re.sub(r'<[^>]+>', '', desc_match.group(1)).strip()
+                # Unescape HTML entities
+                import html
+                desc_text = html.unescape(desc_text)
+                desc_text = desc_text[:500]
+
+            title = title_match.group(1) if title_match else ''
+            if not title:
+                continue
+
+            # Combine title + preview for richer text
+            text = title
+            if desc_text and len(desc_text) > 50:
+                text = f"{title}. {desc_text}"
+
+            source_url = link_match.group(1) if link_match else ''
+
+            # Parse pubDate to ISO format
+            timestamp = ''
+            if pub_match:
+                try:
+                    from email.utils import parsedate_to_datetime
+                    dt = parsedate_to_datetime(pub_match.group(1))
+                    timestamp = dt.isoformat()
+                except:
+                    timestamp = pub_match.group(1)
+
+            posts.append({
+                'voiceId': voice['id'],
+                'voiceName': voice['name'],
+                'platform': 'substack',
+                'text': text[:500],
+                'sourceUrl': source_url,
+                'timestamp': timestamp,
+                'type': 'article',
+            })
+    except Exception as e:
+        if '404' not in str(e):
+            print(f"    ⚠ Substack fetch failed: {e}")
 
     return posts
 
@@ -429,7 +667,193 @@ def fetch_tiktok_posts(voice):
     return posts
 
 
+# ─── PODCAST RSS ─────────────────────────────────────────────────────────────
+
+def fetch_podcast_posts(voice):
+    """Pull recent episodes from podcast RSS feed (free, no auth)."""
+    feed_url = voice.get('feeds', {}).get('podcast')
+    if not feed_url:
+        return []
+
+    posts = []
+    try:
+        req = urllib.request.Request(feed_url, headers={'User-Agent': UA})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            rss = resp.read().decode('utf-8')
+
+        items = re.findall(r'<item>(.*?)</item>', rss, re.DOTALL)
+        for item in items[:10]:  # last 10 episodes
+            title_match = re.search(r'<title><!\[CDATA\[(.*?)\]\]></title>', item)
+            if not title_match:
+                title_match = re.search(r'<title>(.*?)</title>', item)
+            link_match = re.search(r'<link>(.*?)</link>', item)
+            pub_match = re.search(r'<pubDate>(.*?)</pubDate>', item)
+
+            # Try itunes:summary first, then description
+            desc_match = re.search(r'<itunes:summary><!\[CDATA\[(.*?)\]\]></itunes:summary>', item, re.DOTALL)
+            if not desc_match:
+                desc_match = re.search(r'<itunes:summary>(.*?)</itunes:summary>', item, re.DOTALL)
+            if not desc_match:
+                desc_match = re.search(r'<description><!\[CDATA\[(.*?)\]\]></description>', item, re.DOTALL)
+            if not desc_match:
+                desc_match = re.search(r'<description>(.*?)</description>', item, re.DOTALL)
+
+            title = title_match.group(1) if title_match else ''
+            if not title:
+                continue
+
+            # Build text from title + description preview
+            desc_text = ''
+            if desc_match:
+                desc_text = re.sub(r'<[^>]+>', '', desc_match.group(1)).strip()
+                import html
+                desc_text = html.unescape(desc_text)
+                desc_text = desc_text[:300]
+
+            text = title
+            if desc_text and len(desc_text) > 30:
+                text = f"{title}. {desc_text}"
+
+            source_url = link_match.group(1) if link_match else ''
+
+            # Parse pubDate to ISO format
+            timestamp = ''
+            if pub_match:
+                try:
+                    from email.utils import parsedate_to_datetime
+                    dt = parsedate_to_datetime(pub_match.group(1))
+                    timestamp = dt.isoformat()
+                except:
+                    timestamp = pub_match.group(1)
+
+            posts.append({
+                'voiceId': voice['id'],
+                'voiceName': voice['name'],
+                'platform': 'podcast',
+                'text': text[:500],
+                'sourceUrl': source_url,
+                'timestamp': timestamp,
+                'type': 'episode',
+            })
+    except Exception as e:
+        if '404' not in str(e):
+            print(f"    ⚠ Podcast fetch failed: {e}")
+
+    return posts
+
+
 # ─── CATEGORIZE WITH CLAUDE ─────────────────────────────────────────────────
+
+def load_taxonomy():
+    """Load the fixed topic taxonomy."""
+    if TAXONOMY_PATH.exists():
+        taxonomy = json.loads(TAXONOMY_PATH.read_text())
+        return taxonomy.get('topics', [])
+    return []
+
+
+def get_taxonomy_slug_list():
+    """Return a formatted string of valid taxonomy slugs for the Claude prompt."""
+    topics = load_taxonomy()
+    if not topics:
+        return ""
+    lines = []
+    for t in topics:
+        lines.append(f'  - "{t["slug"]}" — {t["description"]}')
+    return "\n".join(lines)
+
+
+def enforce_taxonomy(topic_slug):
+    """Map any topic slug to a canonical taxonomy slug. Fixes Claude inventing slugs."""
+    topics = load_taxonomy()
+    if not topics:
+        return topic_slug
+
+    # Build lookup: all valid slugs and aliases -> canonical slug
+    canonical = {}
+    for t in topics:
+        canonical[t['slug']] = t['slug']
+        for alias in t.get('aliases', []):
+            canonical[alias] = t['slug']
+
+    # Direct match (slug or alias)
+    if topic_slug in canonical:
+        return canonical[topic_slug]
+
+    # Fuzzy: match on distinctive words (skip generic ones)
+    GENERIC = {'politics', 'policy', 'news', 'general', 'trump', 'biden', 'war', 'media', 'culture', 'social', 'political'}
+    slug_parts = set(topic_slug.split('-'))
+    distinctive_parts = slug_parts - GENERIC
+
+    # First try: match on distinctive words only
+    if distinctive_parts:
+        best_match = None
+        best_overlap = 0
+        for alias, canon in canonical.items():
+            if canon == 'other':
+                continue
+            alias_parts = set(alias.split('-'))
+            overlap = len(distinctive_parts & alias_parts)
+            if overlap > best_overlap:
+                best_overlap = overlap
+                best_match = canon
+        if best_overlap >= 1:
+            return best_match
+
+    # Second try: match on all words but require 2+ overlap
+    best_match = None
+    best_overlap = 0
+    for alias, canon in canonical.items():
+        if canon == 'other':
+            continue
+        alias_parts = set(alias.split('-'))
+        overlap = len(slug_parts & alias_parts)
+        if overlap > best_overlap:
+            best_overlap = overlap
+            best_match = canon
+    if best_overlap >= 2:
+        return best_match
+
+    # No local match — ask Claude to map it (one cheap call)
+    topics = load_taxonomy()
+    slug_list = [t['slug'] for t in topics if t['slug'] != 'other']
+    descriptions = {t['slug']: t['description'] for t in topics if t['slug'] != 'other'}
+    desc_block = '\n'.join(f'  - "{s}": {descriptions[s]}' for s in slug_list)
+
+    try:
+        prompt = f"""Map this topic slug to the single best canonical slug from the list below.
+
+Unknown slug: "{topic_slug}"
+
+Canonical slugs:
+{desc_block}
+
+If none fit, respond with "other".
+Respond with ONLY the canonical slug, nothing else."""
+
+        req = urllib.request.Request(
+            'https://api.anthropic.com/v1/messages',
+            data=json.dumps({
+                'model': 'claude-haiku-3-5-20241022',
+                'max_tokens': 32,
+                'messages': [{'role': 'user', 'content': prompt}],
+            }).encode(),
+            headers={
+                'x-api-key': ANTHROPIC_API_KEY,
+                'anthropic-version': '2023-06-01',
+                'content-type': 'application/json',
+            },
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode())
+        mapped = data.get('content', [{}])[0].get('text', '').strip().strip('"').lower()
+        if mapped in {t['slug'] for t in topics}:
+            return mapped
+    except Exception:
+        pass
+
+    return 'other'
+
 
 def categorize_posts(voice_name, posts):
     """Use Claude to categorize posts by news topic and filter garbage."""
@@ -440,22 +864,40 @@ def categorize_posts(voice_name, posts):
     for i, p in enumerate(posts):
         posts_text += f"\n[{i}] ({p['platform']}) {p['text'][:300]}\n"
 
-    prompt = f"""Here are recent posts/videos from {voice_name}. For each one:
-1. Assign a topic tag (e.g. "iran-war", "ai-technology", "trump-tariffs", "campus-protests", "epstein", "personal", "promo")
-2. Rate relevance to current news: "high" (clearly about a news story), "medium" (tangentially related), "low" (personal, promo, entertainment only)
+    taxonomy_list = get_taxonomy_slug_list()
 
-CRITICAL: Do NOT make up or paraphrase quotes. Use the EXACT text from the post. If it's a video title, just use the title. If it includes a transcript, pull a real sentence from the transcript. Never invent words they didn't say.
+    prompt = f"""Here are recent posts/videos from {voice_name}. For each one:
+1. Assign a topic slug from the FIXED TAXONOMY below. You MUST use one of these exact slugs — do NOT invent new ones.
+2. Rate relevance to current news: "high" (clearly about a news story), "medium" (tangentially related), "low" (personal, promo, entertainment only)
+3. Rate stance: Does this person EXPRESS or IMPLY a clear position, reaction, or argument?
+   - "strong" = clear opinion, argument, criticism, praise, or call to action
+   - "lean" = position is implied or can be inferred from framing/tone, even if not stated outright
+   - "neutral" = purely informational summary, both-sides reporting, or no discernible position
+
+FIXED TAXONOMY (use ONLY these slugs):
+{taxonomy_list}
+
+CRITICAL RULES:
+- You MUST pick the single best-matching slug from the list above. Never create a new slug.
+- If nothing fits well, use "other".
+- Do NOT make up or paraphrase quotes. Use the EXACT text from the post.
+- If it's a video title, just use the title. If it includes a transcript, pull a real sentence from the transcript. Never invent words they didn't say.
+- For stance: we want voices who are REACTING, not just reporting. A newsletter summarizing "here's what happened" with no opinion = "neutral". A tweet saying "this is insane" = "strong". An article that frames an issue in a way that clearly favors one side = "lean".
 
 POSTS:
 {posts_text}
 
 Return JSON array:
 [
-  {{"index": 0, "topic": "iran-war", "relevance": "high"}},
+  {{"index": 0, "topic": "iran-conflict", "relevance": "high", "stance": "strong"}},
   ...
 ]
 
 Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal stuff, and entertainment-only content. When in doubt, include it — we want coverage."""
+
+    # Track usage for cost estimation
+    _usage_stats['claude_calls'] += 1
+    _usage_stats['total_input_chars'] += len(prompt)
 
     try:
         req = urllib.request.Request(
@@ -475,14 +917,22 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
             data = json.loads(resp.read().decode())
 
         result_text = data.get('content', [{}])[0].get('text', '')
+        # Track output tokens from API response if available
+        usage = data.get('usage', {})
+        if usage.get('output_tokens'):
+            _usage_stats['total_output_tokens_est'] += usage['output_tokens']
+        else:
+            _usage_stats['total_output_tokens_est'] += 500  # rough estimate per call
         json_match = re.search(r'\[[\s\S]*\]', result_text)
         if json_match:
             categorized = json.loads(json_match.group())
             for item in categorized:
                 idx = item.get('index', -1)
                 if 0 <= idx < len(posts):
-                    posts[idx]['topic'] = item.get('topic', 'uncategorized')
+                    raw_topic = item.get('topic', 'uncategorized')
+                    posts[idx]['topic'] = enforce_taxonomy(raw_topic)
                     posts[idx]['relevance'] = item.get('relevance', 'low')
+                    posts[idx]['stance'] = item.get('stance', 'neutral')
                     # Use REAL text, never AI-generated quotes
                     original = posts[idx]['text']
                     if original.startswith('[VIDEO: ') and '] ' in original:
@@ -492,8 +942,10 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
                         # Use the actual post/title text
                         posts[idx]['quote'] = original[:300]
 
-            # Filter to only high/medium relevance
-            return [p for p in posts if p.get('relevance') in ('high', 'medium')]
+            # Filter: must be relevant AND taking a position
+            return [p for p in posts
+                    if p.get('relevance') in ('high', 'medium')
+                    and p.get('stance') in ('strong', 'lean')]
 
     except Exception as e:
         print(f"    ⚠ Claude categorization failed: {e}")
@@ -527,6 +979,12 @@ def collect_voice(voice):
         print(f"    Bluesky: {len(bsky_posts)} posts")
     all_posts.extend(bsky_posts)
 
+    # Substack / Newsletter
+    sub_posts = fetch_substack_posts(voice)
+    if sub_posts:
+        print(f"    Substack: {len(sub_posts)} articles")
+    all_posts.extend(sub_posts)
+
     # Instagram
     ig_posts = fetch_instagram_posts(voice)
     if ig_posts:
@@ -539,11 +997,57 @@ def collect_voice(voice):
         print(f"    TikTok: {len(tt_posts)} videos")
     all_posts.extend(tt_posts)
 
+    # Podcast
+    pod_posts = fetch_podcast_posts(voice)
+    if pod_posts:
+        print(f"    Podcast: {len(pod_posts)} episodes")
+    all_posts.extend(pod_posts)
+
     if not all_posts:
         print(f"    No posts found")
         return []
 
     return all_posts
+
+
+def log_usage(voices_collected, posts_collected):
+    """Append today's usage stats to data/usage-log.json for cost monitoring."""
+    date = datetime.now().strftime('%Y-%m-%d')
+
+    # Estimate tokens: ~4 chars per token for input
+    est_input_tokens = _usage_stats['total_input_chars'] // 4
+    est_output_tokens = _usage_stats['total_output_tokens_est']
+
+    # Sonnet pricing: $3/M input, $15/M output
+    est_cost = (est_input_tokens / 1_000_000 * 3.0) + (est_output_tokens / 1_000_000 * 15.0)
+
+    entry = {
+        'date': date,
+        'voices_collected': voices_collected,
+        'posts_collected': posts_collected,
+        'claude_calls': _usage_stats['claude_calls'],
+        'estimated_input_tokens': est_input_tokens,
+        'estimated_output_tokens': est_output_tokens,
+        'estimated_cost_usd': round(est_cost, 2),
+        'x_health': {
+            'attempts': _x_failures['total_attempts'],
+            'successes': _x_failures['successes'],
+            'success_rate': round(_x_failures['successes'] / max(_x_failures['total_attempts'], 1) * 100),
+            'failed_voices': _x_failures['failed_voices'][:20],
+        },
+    }
+
+    # Load existing log or start fresh
+    log = []
+    if USAGE_LOG_PATH.exists():
+        try:
+            log = json.loads(USAGE_LOG_PATH.read_text())
+        except Exception:
+            log = []
+
+    log.append(entry)
+    USAGE_LOG_PATH.write_text(json.dumps(log, indent=2))
+    print(f"\n  💰 Usage: {_usage_stats['claude_calls']} Claude calls, ~{est_input_tokens:,} input tokens, ~{est_output_tokens:,} output tokens, ~${est_cost:.2f}")
 
 
 def main():
@@ -612,6 +1116,9 @@ def main():
             import time
             time.sleep(1)  # rate limit Claude calls
 
+        # Log usage after categorization
+        log_usage(len(all_voice_posts), total_posts)
+
     # Phase 4: Save organized posts
     date = datetime.now().strftime('%Y-%m-%d')
     for vid, data in all_voice_posts.items():
@@ -643,16 +1150,45 @@ def main():
         out_path.write_text(json.dumps(output, indent=2))
 
     # Phase 5: Build topic index (all voices, all topics)
+    # Load transcript cache so YouTube quotes use real excerpts, not titles
+    yt_cache = {}
+    if TRANSCRIPT_CACHE.exists():
+        try:
+            yt_cache = json.loads(TRANSCRIPT_CACHE.read_text())
+        except:
+            pass
+
     topic_index = {}
+    uncategorized_fixed = 0
     for vid, data in all_voice_posts.items():
         for p in data['posts']:
             topic = p.get('topic', 'uncategorized')
+
+            # Safety net: enforce taxonomy on every topic slug
+            if topic and topic != 'uncategorized':
+                topic = enforce_taxonomy(topic)
+            elif topic == 'uncategorized' or not topic:
+                # Post was never categorized — skip it from the index
+                # (it adds noise and dilutes story matching)
+                continue
+
+            if topic == 'other':
+                continue  # skip catch-all bucket
+
             if topic not in topic_index:
                 topic_index[topic] = []
+
+            # For YouTube posts with only a title, try transcript cache
+            quote = p.get('quote', p['text'][:200])
+            if p['platform'] == 'youtube' and p.get('type') == 'video_title':
+                vid_match = re.search(r'(?:watch\?v=|youtu\.be/)([\w-]+)', p.get('sourceUrl', ''))
+                if vid_match and vid_match.group(1) in yt_cache and yt_cache[vid_match.group(1)]:
+                    quote = yt_cache[vid_match.group(1)][:300]
+
             topic_index[topic].append({
                 'voiceId': vid,
                 'voiceName': data['voice']['name'],
-                'quote': p.get('quote', p['text'][:200]),
+                'quote': quote,
                 'sourceUrl': p['sourceUrl'],
                 'platform': p['platform'],
                 'timestamp': p['timestamp'],
@@ -666,6 +1202,17 @@ def main():
     for topic, posts in sorted(topic_index.items(), key=lambda x: -len(x[1])):
         names = list(set(p['voiceName'] for p in posts))[:5]
         print(f"    [{len(posts)}] {topic}: {', '.join(names)}")
+
+    # X/Twitter health report
+    if _x_failures['total_attempts'] > 0:
+        success_rate = _x_failures['successes'] / _x_failures['total_attempts'] * 100
+        print(f"\n  X/Twitter Health: {_x_failures['successes']}/{_x_failures['total_attempts']} voices collected ({success_rate:.0f}%)")
+        if _x_failures['failed_voices']:
+            print(f"  ⚠ Failed voices ({len(_x_failures['failed_voices'])}): {', '.join(_x_failures['failed_voices'][:10])}")
+            if len(_x_failures['failed_voices']) > 10:
+                print(f"    ... and {len(_x_failures['failed_voices']) - 10} more")
+        if success_rate < 50:
+            print(f"  🚨 CRITICAL: X collection below 50%. Nitter may be down. Consider rss.app migration.")
 
     print(f"\n  Done!\n")
 

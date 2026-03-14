@@ -1,0 +1,253 @@
+{
+  "version": "1.0",
+  "created": "2026-03-13",
+  "description": "Fixed topic taxonomy for Newsreel Perspectives. All posts must be categorized using one of these slugs.",
+  "topics": [
+    {
+      "slug": "iran-conflict",
+      "display": "Iran Conflict",
+      "description": "U.S.-Iran war, military strikes, sanctions, oil disruption, IRGC, Kurdish forces, Iran nuclear program",
+      "aliases": ["iran-war", "iran-us", "iran-oil", "iran-strikes", "iran-drone-threat", "iran-war-politics", "iran-trump", "iran-politics", "iran-news", "iran-leadership", "iran-war-polling", "iran-inflation", "iran-imprisonment", "iran-human-rights", "iran-women", "iran-latin-america", "iran-usaid", "ai-iran", "dubai-iran", "pentagon-kuwait", "pentagon-casualties", "trump-iran", "trump-operation", "iran-strikes"]
+    },
+    {
+      "slug": "israel-palestine",
+      "display": "Israel & Palestine",
+      "description": "Israel-Hamas war, Gaza, West Bank, Palestinian rights, Israeli politics, Hezbollah, Lebanon conflict",
+      "aliases": ["israel-palestine", "palestine-israel", "israel-hamas", "israel-war", "israel-conflict", "israel-lebanon", "lebanon-israel", "lebanon-bombing", "gaza-war", "gaza-palestine", "gaza-media", "gaza-misinformation", "israel-aid", "israel-policy", "israel-criticism", "israel", "west-bank-settlements", "israel-olympics", "turkey-israel", "south-africa-israel", "ted-cruz-israel", "trump-israel", "unrwa", "israel-baal", "israel-lobby", "pro-israel-press", "aipac-campaign"]
+    },
+    {
+      "slug": "terrorism",
+      "display": "Terrorism & Security",
+      "description": "Terrorist attacks, domestic terrorism, security incidents, bomb plots, mass violence events",
+      "aliases": ["terrorism", "terror-attack", "terror-attacks", "terrorism-attacks", "terrorism-nyc", "nyc-terrorism", "domestic-terrorism", "synagogue-attack", "synagogue-shooting", "hate-crime-hoax", "dhs-shooting", "violence-security", "security-incident", "austin-shooting"]
+    },
+    {
+      "slug": "trump-administration",
+      "display": "Trump Administration",
+      "description": "Trump White House actions, executive orders, cabinet picks, firings, pardons, appointments, DOGE",
+      "aliases": ["trump-administration", "trump-admin", "trump-cabinet", "trump-appointments", "trump-pardons", "kristi-noem", "noem", "kash-patel", "hegseth-confirmation", "hegseth-defense", "hegseth", "trump-general", "trump", "trump-news-conference", "trump-response", "confirmation-hearing", "trump-promises", "administration-transparency", "fbi-administration"]
+    },
+    {
+      "slug": "trump-policy",
+      "display": "Trump Policy & Agenda",
+      "description": "Trump domestic and foreign policy positions, speeches, rallies, campaign agenda",
+      "aliases": ["trump-policy", "trump-politics", "trump-presidency", "trump-campaign", "trump-speech", "trump-rallies", "trump-rally", "trump-support", "trump-supporters", "trump-patriotism", "america-first", "trump-advice", "trump-inappropriate", "trump-analysis", "trump-criticism", "trump-mental-fitness", "trump-warning", "trump-third-term", "trump-autocracy", "trump-corruption", "trump-media", "trump-protests", "trump-violence", "trump-war", "trump-oil", "trump-oil-policy", "trump-sanctions", "trump-middle-east", "trump-foreign-policy", "trump-polls", "trump-health", "trump-biden", "trump-massie", "trump-epstein", "trump-family-division"]
+    },
+    {
+      "slug": "elections",
+      "display": "Elections & Campaigns",
+      "description": "Federal, state, and local elections, polling, campaigns, voter issues, redistricting",
+      "aliases": ["elections", "election", "election-polling", "election-coverage", "election-security", "election-integrity", "election-subversion", "election-investigation", "politics-election", "midterm-elections", "midterms", "voter-fraud", "voting-rights", "redistricting", "trump-redistricting", "trump-election", "campaign-finance", "ohio-campaign", "ohio-endorsement", "aoc-2028"]
+    },
+    {
+      "slug": "congress-legislation",
+      "display": "Congress & Legislation",
+      "description": "Congressional actions, bills, government shutdowns, political parties, legislative battles",
+      "aliases": ["government-shutdown", "government-spending", "save-act", "farm-bill", "federal-debt", "republican-party", "republican-politics", "republican-governance", "democrat-party", "democrat-politics", "democratic-politics", "democratic-strategy", "democrats", "democratic-governors", "leftist-politics", "bernie-sanders-politics", "stephen-miller", "marjorie-taylor-greene", "lindsey-graham", "marco-rubio", "rubio-corruption", "maga-infighting", "political-endorsements", "kevin-kiley", "hillary-clinton", "jd-vance", "vance-family", "state-of-union", "snap-politics"]
+    },
+    {
+      "slug": "immigration",
+      "display": "Immigration",
+      "description": "Immigration policy, ICE enforcement, deportation, border security, DACA, asylum",
+      "aliases": ["immigration", "immigration-politics", "immigration-policy", "immigration-ice", "immigration-healthcare", "immigration-naturalization", "immigration-personal", "ice-enforcement", "ice-operations", "ice-immigration", "ice-cbp", "ice-cbp-reform", "ice-barbie", "deportation-policy", "migration-politics", "national-guard"]
+    },
+    {
+      "slug": "economy-trade",
+      "display": "Economy & Trade",
+      "description": "Economic policy, tariffs, inflation, jobs, GDP, trade wars, stock market, federal reserve",
+      "aliases": ["economy", "economics", "economic-policy", "economics-politics", "economy-unemployment", "economy-interview", "trump-economy", "trump-tariffs", "tariffs", "inflation", "inflation-economy", "inflation-costs", "taxes", "tax-policy", "taxes-direct-file", "taxes-irs", "oil-prices", "oil-reserves", "gas-prices", "biden-economy", "china-economy", "china-business", "stock-market-regulation", "credit-card-rates", "prediction-markets"]
+    },
+    {
+      "slug": "supreme-court-legal",
+      "display": "Supreme Court & Legal",
+      "description": "Supreme Court rulings, federal courts, DOJ investigations, constitutional law, legal cases",
+      "aliases": ["scotus", "supreme-court-trump", "supreme-court-tariffs", "federal-courts", "legal-prosecution", "legal-constitutional", "doj-investigation", "justice-system", "political-prosecutions", "macron-lawsuit", "media-lawsuit", "murder-trial"]
+    },
+    {
+      "slug": "abortion-reproductive",
+      "display": "Abortion & Reproductive Rights",
+      "description": "Abortion policy, reproductive rights, Planned Parenthood, state abortion bans",
+      "aliases": ["abortion", "abortion-rights", "abortion-politics", "abortion-plannedparenthood", "abortion-religion", "abortion-activism"]
+    },
+    {
+      "slug": "healthcare",
+      "display": "Healthcare",
+      "description": "Healthcare policy, insurance, drug prices, mental health policy, public health, Medicare/Medicaid",
+      "aliases": ["healthcare", "healthcare-policy", "healthcare-reform", "healthcare-antitrust", "healthcare-fraud", "health-nutrition", "personal-health", "health-cancer", "ai-health", "mental-health", "mental-health-policy", "mental-health-politics", "behavioral-health", "adhd-health", "obesity-health", "surgeon-general", "disability-benefits", "hospice", "medicaid-fraud", "medicare-fraud", "military-health"]
+    },
+    {
+      "slug": "covid-pandemic",
+      "display": "COVID & Pandemic",
+      "description": "COVID-19, pandemic response, lockdowns, vaccine policy, vaccine mandates",
+      "aliases": ["covid", "covid-healthcare", "covid-vaccines", "covid-politics", "covid-relief", "covid-education", "vaccine-policy", "vaccines"]
+    },
+    {
+      "slug": "climate-environment",
+      "display": "Climate & Environment",
+      "description": "Climate change, environmental policy, EPA, energy transition, natural disasters, wildfires",
+      "aliases": ["climate-change", "climate-policy", "epa-policy", "california-environment", "offshore-drilling", "energy-policy", "la-fires", "volcano-eruption", "hawaii", "space-debris"]
+    },
+    {
+      "slug": "education",
+      "display": "Education",
+      "description": "K-12 and higher education policy, school choice, student loans, campus issues",
+      "aliases": ["education", "education-policy", "education-unions", "school-lunch", "student-loans", "dei-education", "campus-protests", "campus-culture", "campus-violence", "campus-events", "academic-censorship"]
+    },
+    {
+      "slug": "gun-policy",
+      "display": "Guns & Gun Policy",
+      "description": "Gun control, Second Amendment, mass shootings, gun violence legislation",
+      "aliases": ["gun-violence", "gun-control"]
+    },
+    {
+      "slug": "housing-infrastructure",
+      "display": "Housing & Infrastructure",
+      "description": "Housing policy, homelessness, infrastructure, government contracting, FEMA",
+      "aliases": ["housing-policy", "homelessness", "infrastructure-regulation", "government-contracting", "fema-funding", "childcare", "datacenter-policy"]
+    },
+    {
+      "slug": "criminal-justice",
+      "display": "Criminal Justice & Policing",
+      "description": "Policing, police reform, prisons, criminal justice reform, sentencing, January 6",
+      "aliases": ["crime", "crime-legislation", "crime-technology", "police-reform", "police-shooting", "police-incident", "police-body-cams", "police-traffic-stops", "police-funding", "january-6th", "january-6", "sex-crimes", "child-abuse", "drug-violence", "cartels", "mexico-cartels", "mexico-violence", "mexico-security", "predator-catching", "fraud-scandal"]
+    },
+    {
+      "slug": "civil-rights-race",
+      "display": "Civil Rights & Race",
+      "description": "Racial justice, civil rights, DEI, discrimination, reparations, policing disparities",
+      "aliases": ["racism", "race-politics", "racial-inequality", "civil-rights", "dei-politics", "dei-policies", "social-justice", "jesse-jackson", "jesse-jackson-obituary", "jesse-jackson-tribute", "john-lewis", "republican-racism", "discrimination-technology"]
+    },
+    {
+      "slug": "gender-lgbtq",
+      "display": "Gender & LGBTQ+",
+      "description": "Transgender rights, gender policy, LGBTQ+ issues, marriage equality, Title IX",
+      "aliases": ["transgender", "transgender-sports", "gender-policy", "gender-politics", "gender-issues", "gender-apartheid", "marriage-equality", "lgbt-religion", "masculinity", "masculinity-feminism", "masculinity-society", "men-issues", "manosphere", "media-masculinity", "body-positivity"]
+    },
+    {
+      "slug": "ai-technology",
+      "display": "AI & Technology",
+      "description": "Artificial intelligence, tech industry, social media platforms, self-driving, EVs, privacy",
+      "aliases": ["ai-technology", "ai-jobs", "ai-economics", "ai-markets", "ai-defense", "ai-authoritarianism", "ai-altman", "trump-ai", "tech-fascism", "tech-depression", "technology-society", "self-driving-cars", "ev-technology", "digital-currency", "crypto-economics", "social-media-tech", "social-media", "social-media-platform", "tiktok-ban", "big-tech", "privacy-tech", "age-verification", "pentagon-anthropic", "sec-regulation"]
+    },
+    {
+      "slug": "media-press",
+      "display": "Media & Press",
+      "description": "Media criticism, journalism ethics, press freedom, media consolidation, media bias",
+      "aliases": ["media", "media-criticism", "media-bias", "media-censorship", "media-consolidation", "media-ownership", "media-acquisition", "media-journalism", "media-politics", "media-debate", "media-conflicts", "media-attacks", "media-coverage", "media-analysis", "media-propaganda", "media-authoritarianism", "media-psychology", "media-truth", "media-platforms", "journalism-media", "journalism-ethics", "press-freedom", "media-careers", "news-analysis", "pentagon-media", "oligarchy-media", "white-house-social-media"]
+    },
+    {
+      "slug": "free-speech-censorship",
+      "display": "Free Speech & Censorship",
+      "description": "First Amendment, cancel culture, deplatforming, government censorship, content moderation",
+      "aliases": ["free-speech", "free-speech-government", "censorship", "cancel-culture", "government-surveillance", "information-war", "whistleblower-intel"]
+    },
+    {
+      "slug": "foreign-policy-diplomacy",
+      "display": "Foreign Policy & Diplomacy",
+      "description": "U.S. foreign policy, diplomacy, international relations, sanctions, USAID, NATO",
+      "aliases": ["foreign-policy", "foreign-influence", "war-foreign-policy", "war-politics", "war-propaganda", "war-coverage", "war-resistance", "interventionism", "imperialism", "peace-diplomacy", "china-diplomacy", "china-relations", "us-china-relations", "usaid", "world-war", "world-war-three", "global-instability", "geopolitics", "venezuela-war", "cuba-venezuela", "cuba-politics", "brazil-politics", "greenland-visit", "nobel-prize-diplomacy", "qatar-propaganda"]
+    },
+    {
+      "slug": "military-defense",
+      "display": "Military & Defense",
+      "description": "U.S. military, defense spending, veterans, military operations, nuclear weapons, Pentagon",
+      "aliases": ["military-spending", "military-casualties", "military-strikes", "military-technology", "military-history", "military-honors", "military-draft", "military-media", "defense-policy", "defense-spending", "american-military-readiness", "nuclear-weapons", "nuclear-doctrine", "trump-military", "veterans", "veterans-protests", "psychedelics-veterans", "school-bombing"]
+    },
+    {
+      "slug": "religion-faith",
+      "display": "Religion & Faith",
+      "description": "Christianity, Islam, religious liberty, church-state separation, religious culture debates",
+      "aliases": ["religion-politics", "religion-culture", "religion-debate", "religious-politics", "religious-culture", "religious-event", "religious-tensions", "christianity-culture", "christian-persecution", "church-state", "islam-west", "islamophobia", "antisemitism", "antisemitism-debate"]
+    },
+    {
+      "slug": "culture-war",
+      "display": "Culture War",
+      "description": "Culture war debates, political correctness, woke politics, identity politics, social norms",
+      "aliases": ["culture-war", "culture-politics", "politics-culture", "political-culture", "social-culture", "social-discourse", "social-issues", "social-change", "social-commentary", "social-trends", "society-beliefs", "western-values", "american-identity", "political-polarization", "political-division", "political-civility", "political-maturity", "political-philosophy", "political-norms", "political-conversion", "political-discourse", "dating-culture", "family-culture", "christmas-culture", "divorce-rates", "columbus-day", "george-washington", "hollywood-culture", "corporate-activism", "corporate-politics", "target-boycott", "corporate-boycott", "corporate-boycotts", "adidas-controversy"]
+    },
+    {
+      "slug": "uk-world-politics",
+      "display": "UK & World Politics",
+      "description": "UK politics, European politics, international elections, global political events",
+      "aliases": ["uk-politics", "uk-parliament", "liz-truss-interview", "canada-maid", "finland-happiness", "saudi-arabia-rights", "kurdish-politics"]
+    },
+    {
+      "slug": "sports",
+      "display": "Sports",
+      "description": "NBA, NFL, WNBA, college sports, Olympics, boxing, team trades, records, MVPs",
+      "aliases": ["sports", "sports-media", "sports-commentary", "sports-entertainment", "sports-mvp", "sports-scandal", "sports-tribute", "nba-news", "nba-knicks", "nba-records", "nba-jaylen-brown", "nba-changes", "nba-magic-city", "nba-scoring-record", "nba-scoring", "nba-mvp", "nba-jayson-tatum", "team-usa-basketball", "nfl-trades", "nfl-offseason", "nfl-ravens", "nfl-free-agency", "wnba-cba", "college-basketball", "college-sports", "boxing-dana-white", "olympics", "winter-olympics"]
+    },
+    {
+      "slug": "celebrity-entertainment",
+      "display": "Celebrity & Entertainment",
+      "description": "Celebrity news, entertainment industry, pop culture, controversies, deaths",
+      "aliases": ["entertainment", "business-entertainment", "celebrity-controversy", "celebrity-conspiracy", "celebrity-death", "celebrity-arrest", "taylor-swift", "jackson-family", "harvey-weinstein", "lively-reynolds", "political-comedy"]
+    },
+    {
+      "slug": "epstein-scandal",
+      "display": "Epstein Scandal",
+      "description": "Jeffrey Epstein case, client list, related investigations, cover-up allegations",
+      "aliases": ["epstein", "epstein-corruption", "charlie-assassination", "charlie-assassination-epstein"]
+    },
+    {
+      "slug": "ufo-paranormal",
+      "display": "UFOs & Paranormal",
+      "description": "UFO disclosure, UAPs, alien contact, government secrecy about extraterrestrials",
+      "aliases": ["ufo-disclosure", "ufo-ai-technology", "aliens-ufo", "aliens-space"]
+    },
+    {
+      "slug": "science-space",
+      "display": "Science & Space",
+      "description": "NASA, space exploration, scientific research, nature, ancient history, discoveries",
+      "aliases": ["space-science", "space-nasa", "nasa-space", "plant-communication", "ancient-civilizations", "neil-tyson-interview", "alex-honnold-interview", "annie-jacobsen-interview"]
+    },
+    {
+      "slug": "food-agriculture",
+      "display": "Food & Agriculture",
+      "description": "Food safety, agriculture policy, pesticides, farming, food supply chain",
+      "aliases": ["food-safety", "food-policy", "pesticide-liability", "fertilizer-shortage"]
+    },
+    {
+      "slug": "drugs-addiction",
+      "display": "Drugs & Addiction",
+      "description": "Drug policy, opioid crisis, addiction, substance abuse, drug legalization, psychedelics",
+      "aliases": ["drug-policy", "addiction", "personal-sobriety"]
+    },
+    {
+      "slug": "state-local-politics",
+      "display": "State & Local Politics",
+      "description": "State governors, mayors, city politics, state legislation",
+      "aliases": ["california-politics", "texas-politics", "iowa-politics", "sf-politics", "nyc-politics", "nyc-mayor", "utah-politics", "michigan-senate", "local-politics", "newsom-politics"]
+    },
+    {
+      "slug": "media-personalities",
+      "display": "Media Personalities & Feuds",
+      "description": "Feuds between commentators, podcaster drama, media figure controversies",
+      "aliases": ["media-feud", "tucker-interview", "tucker-support", "biden-interview", "blackrock-interview", "rfk-jr", "rfk-health-policy", "charlie-kirk-politics", "plagiarism", "personal-attacks", "political-harassment", "pronunciation-correction"]
+    },
+    {
+      "slug": "billionaires-wealth",
+      "display": "Billionaires & Wealth",
+      "description": "Billionaire influence, wealth inequality, Elon Musk, corporate power, CEO politics",
+      "aliases": ["billionaire-politics", "billionaire-influence", "billionaire-inequality", "billionaire-tax", "musk-business", "tesla-business", "ceo-democracy", "amazon-subsidies", "corporate-capture"]
+    },
+    {
+      "slug": "protests-activism",
+      "display": "Protests & Activism",
+      "description": "Street protests, political demonstrations, activist movements, boycotts",
+      "aliases": ["protests", "anti-war-groups", "political-violence", "political-extremism", "political-crisis", "political-attacks", "political-tribute", "political-response", "political-strategy", "political-accountability", "political-rhetoric"]
+    },
+    {
+      "slug": "refugees-humanitarian",
+      "display": "Refugees & Humanitarian",
+      "description": "Refugee crises, humanitarian aid, asylum seekers, international aid organizations",
+      "aliases": ["refugees", "middle-east-spending", "elderly-spending", "pension-policy"]
+    },
+    {
+      "slug": "other",
+      "display": "Other",
+      "description": "Topics that don't fit any other category",
+      "aliases": ["uncategorized", "general-politics", "general-news", "general-warning", "politics", "politics-general", "political-general", "political", "political-commentary", "political-criticism", "american-politics", "america-politics", "politics-opinion", "politics-buttigieg", "politics-vance", "breaking-news", "news-roundup", "personal", "promo", "podcast-promo", "cia-arrest", "melania", "historical-investigations", "inauguration", "shipping-crisis", "cults", "freud-controversy", "thomas-sowell-birthday", "obituary", "plane-crashes", "biden", "biden-admin", "biden-administration", "autism-awareness", "autism-trends", "faith-outreach", "compatible-left", "media-truth", "trump-polls"]
+    }
+  ]
+}

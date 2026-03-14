@@ -346,17 +346,56 @@ Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention 
     return {}
 
 
-def lookup_story(headline):
-    """Main lookup: find all voices talking about a story."""
-    # Use merged topic index (last 3 days) for broader coverage
-    date, topic_index = get_merged_topic_index(max_days=3)
+def lookup_story(headline, days=None):
+    """Main lookup: find all voices talking about a story.
+
+    Time strategy (Option 4 — auto-expand + user override):
+    - If days is set: use exactly that window
+    - If days is None: auto-expand until enough voices found
+      Start with 1 day, then 3, then 7, then 14, then all
+      Stop expanding when we find 5+ voices
+    """
+    MIN_VOICES = 5  # minimum before we stop expanding
+
+    if days is not None:
+        # User specified — use exactly that window
+        time_windows = [days]
+    else:
+        # Auto-expand: try increasingly wider windows
+        time_windows = [1, 3, 7, 14, 30]
+
+    topic_index = None
+    available_dates = []
+    voices_found = {}
+    time_window_used = None
+
+    for window in time_windows:
+        date, topic_index = get_merged_topic_index(max_days=window)
+        if not topic_index:
+            continue
+        available_dates = get_all_dates()[:window]
+
+        # Quick count: how many voices match via topic index?
+        available_topics = list(topic_index.keys())
+        test_topics = match_story_to_topics(headline, available_topics)
+        voice_count = len(set(
+            e['voiceId']
+            for t in test_topics
+            for e in topic_index.get(t, [])
+        ))
+
+        time_window_used = f"{window}d" if window < 30 else "all"
+
+        if voice_count >= MIN_VOICES or window == time_windows[-1]:
+            print(f"\n  Searching voice database (window: {time_window_used}, {len(available_dates)} days)...")
+            print(f"  Story: \"{headline}\"")
+            if len(time_windows) > 1 and window > 1:
+                print(f"  Auto-expanded to {window} days ({voice_count} voices found)")
+            break
+
     if not topic_index:
         print("  No collected data found. Run: python scripts/collect.py")
         return
-
-    available_dates = get_all_dates()[:3]
-    print(f"\n  Searching voice database ({', '.join(available_dates)})...")
-    print(f"  Story: \"{headline}\"")
 
     # Strategy 1: Match headline to topic tags
     available_topics = list(topic_index.keys())
@@ -473,11 +512,44 @@ def lookup_story(headline):
             print(f"    [{platform_icon}] \"{quote_text}\"")
             print(f"        {q['sourceUrl']}")
 
+    # ── Match precision detection ──
+    # Check if any voice's quotes actually contain the user's specific query terms
+    STOP_WORDS = {
+        'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+        'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+        'should', 'may', 'might', 'shall', 'can', 'to', 'of', 'in', 'for',
+        'on', 'with', 'at', 'by', 'from', 'as', 'into', 'about', 'after',
+        'and', 'but', 'or', 'nor', 'not', 'so', 'yet', 'both', 'either',
+        'that', 'this', 'these', 'those', 'it', 'its', 'his', 'her', 'he',
+        'she', 'they', 'them', 'we', 'us', 'you', 'your', 'our', 'their',
+        'says', 'said', 'new', 'also', 'just',
+    }
+    query_words = [w for w in re.findall(r'[a-z]+', headline.lower()) if w not in STOP_WORDS and len(w) >= 3]
+    direct_match_count = 0
+    for vid, data in voices_found.items():
+        for q in data['quotes']:
+            quote_lower = q['quote'].lower()
+            if all(w in quote_lower for w in query_words):
+                direct_match_count += 1
+                break
+
+    if direct_match_count > 0:
+        match_precision = 'direct'
+        broadening_note = None
+    else:
+        match_precision = 'broadened'
+        topic_display = ', '.join(t.replace('-', ' ') for t in matching_topics[:3])
+        broadening_note = f"No voices specifically mention \"{headline}\" yet, but {len(voices_found)} voices are discussing {topic_display}"
+
     # Also output as JSON for the viewer
     output = {
         'headline': headline,
         'date': date,
+        'timeWindow': time_window_used or '14d',
+        'datesSearched': available_dates,
         'matchedTopics': matching_topics,
+        'matchPrecision': match_precision,
+        'broadeningNote': broadening_note,
         'voices': [],
     }
 
@@ -532,8 +604,16 @@ def main():
         list_topics()
         return
 
+    # Parse --days flag
+    days = None
+    if '--days' in args:
+        idx = args.index('--days')
+        if idx + 1 < len(args):
+            days = int(args[idx + 1])
+            args = args[:idx] + args[idx + 2:]
+
     headline = ' '.join(args)
-    lookup_story(headline)
+    lookup_story(headline, days=days)
 
 
 if __name__ == '__main__':
