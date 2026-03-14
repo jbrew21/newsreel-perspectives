@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perspectives — Story</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg-base: #0a0a0b;
+    --bg-surface: #141416;
+    --bg-surface-2: #1c1c1f;
+    --bg-elevated: #252528;
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-tertiary: #71717a;
+    --text-muted: #52525b;
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-default: rgba(255, 255, 255, 0.1);
+    --accent: #FF6343;
+    --accent-bg: rgba(255, 99, 67, 0.12);
+    --cluster-blue: #60A5FA;
+    --cluster-coral: #F87171;
+    --cluster-amber: #FBBF24;
+    --cluster-violet: #A78BFA;
+    --cluster-green: #4ADE80;
+    --cluster-cyan: #22D3EE;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-base);
+    color: var(--text-secondary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  .nav { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  .nav-inner {
+    padding: 14px 0; border-bottom: 1px solid var(--border-subtle);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav-brand img { height: 22px; }
+  .nav-label { font-size: 10px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+  .nav-links a { font-family: monospace; font-size: 11px; text-decoration: none; margin-left: 16px; color: var(--text-muted); }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* BACK LINK */
+  .back-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--text-muted); text-decoration: none;
+    margin-top: 20px; transition: color 0.2s;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  /* STORY HEADER */
+  .story-header {
+    max-width: 900px; margin: 0 auto; padding: 0 20px;
+  }
+  .story-meta {
+    display: flex; align-items: center; gap: 8px; margin-top: 20px; flex-wrap: wrap;
+  }
+
+  /* Story type badge */
+  .story-type-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.06em; padding: 3px 8px; border-radius: 4px;
+  }
+  .story-type-badge.split { background: rgba(248,113,113,0.15); color: #F87171; }
+  .story-type-badge.spectrum { background: rgba(251,191,36,0.15); color: #FBBF24; }
+  .story-type-badge.consensus { background: rgba(74,222,128,0.15); color: #4ADE80; }
+  .story-type-badge.reaction { background: rgba(96,165,250,0.15); color: #60A5FA; }
+  .story-type-badge.editorial { background: rgba(255,99,67,0.12); color: var(--accent); }
+
+  /* Heat badge */
+  .heat-badge {
+    font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    padding: 2px 8px; border-radius: 10px;
+  }
+  .heat-badge.hot { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+  .heat-badge.warm { background: rgba(251, 191, 36, 0.12); color: #fbbf24; }
+
+  .voice-count-badge {
+    font-size: 12px; color: var(--text-muted); font-weight: 500;
+  }
+
+  .story-headline {
+    font-size: 1.8em; font-weight: 700; color: var(--text-primary);
+    line-height: 1.2; margin-top: 16px; letter-spacing: -0.02em;
+  }
+
+  .story-summary {
+    font-size: 1em; font-weight: 500; color: var(--accent);
+    line-height: 1.5; margin-top: 12px; max-width: 700px;
+  }
+
+  /* CMS cover image */
+  .story-cover {
+    width: 100%; max-height: 300px; object-fit: cover;
+    border-radius: 12px; margin-top: 20px;
+  }
+
+  /* ACTIONS */
+  .story-actions {
+    display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap;
+  }
+  .action-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 16px;
+    background: var(--bg-surface); color: var(--text-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s;
+    text-decoration: none;
+  }
+  .action-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .action-btn.primary {
+    background: var(--accent); color: #fff; border-color: var(--accent);
+  }
+  .action-btn.primary:hover { background: #e5553a; }
+  .share-toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    background: var(--bg-elevated); color: var(--text-primary);
+    border: 1px solid var(--border-default);
+    padding: 10px 20px; border-radius: 10px;
+    font-size: 13px; font-weight: 600;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    z-index: 999; display: none;
+    animation: toast-in 0.2s ease-out;
+  }
+  @keyframes toast-in {
+    from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  /* CLUSTERS SECTION */
+  .clusters-section {
+    max-width: 900px; margin: 0 auto; padding: 32px 20px 60px;
+  }
+  .clusters-title {
+    font-size: 0.7em; font-weight: 700; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 16px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .cluster-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .cluster-header-row {
+    display: flex; align-items: center; gap: 10px;
+    padding: 16px 20px; cursor: pointer;
+    transition: background 0.15s;
+  }
+  .cluster-header-row:hover { background: rgba(255,255,255,0.02); }
+  .cluster-bar {
+    width: 4px; height: 22px; border-radius: 2px; flex-shrink: 0;
+  }
+  .cluster-name {
+    font-size: 14px; font-weight: 600; flex: 1;
+  }
+  .cluster-count {
+    font-size: 12px; color: var(--text-muted); font-weight: 500;
+  }
+  .cluster-chevron {
+    transition: transform 0.2s; flex-shrink: 0;
+  }
+
+  .cluster-voices-list {
+    display: none; flex-direction: column; gap: 6px;
+    padding: 0 16px 16px;
+  }
+  .cluster-card.cluster-open .cluster-voices-list { display: flex; }
+  .cluster-card.cluster-open .cluster-chevron { transform: rotate(180deg); }
+
+  .cluster-voice-row {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 12px; background: var(--bg-surface-2);
+    border-radius: 10px; transition: background 0.15s;
+  }
+  .cluster-voice-row:hover { background: var(--bg-elevated); }
+  .cluster-voice-photo {
+    width: 40px; height: 40px; border-radius: 50%;
+    object-fit: cover; background: var(--bg-elevated); flex-shrink: 0;
+  }
+  .cluster-voice-body { flex: 1; min-width: 0; }
+  .cluster-voice-name {
+    font-size: 13px; font-weight: 600; color: var(--text-primary);
+    text-decoration: none;
+  }
+  .cluster-voice-name:hover { color: var(--accent); }
+  .cluster-voice-platform {
+    font-size: 10px; color: var(--text-muted); text-transform: uppercase;
+    letter-spacing: 0.5px; margin-left: 6px;
+  }
+  .cluster-voice-quote {
+    font-size: 12px; color: var(--text-secondary); line-height: 1.45;
+    margin-top: 4px;
+  }
+  .cluster-voice-link {
+    font-size: 11px; color: var(--accent); text-decoration: none;
+    margin-top: 4px; display: inline-block;
+  }
+  .cluster-voice-link:hover { text-decoration: underline; }
+
+  /* ERROR STATE */
+  .error-state {
+    text-align: center; padding: 80px 20px;
+    max-width: 500px; margin: 0 auto;
+  }
+  .error-state h2 {
+    font-size: 1.4em; color: var(--text-primary); margin-bottom: 12px;
+  }
+  .error-state p {
+    color: var(--text-tertiary); margin-bottom: 24px; line-height: 1.5;
+  }
+
+  /* LOADING */
+  .loading {
+    text-align: center; padding: 80px 20px; color: var(--text-tertiary);
+  }
+  .spinner {
+    display: inline-block; width: 20px; height: 20px;
+    border: 2px solid var(--bg-elevated); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+    margin-right: 8px; vertical-align: middle;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    .story-headline { font-size: 1.4em; }
+    .story-summary { font-size: 0.9em; }
+    .story-cover { max-height: 200px; border-radius: 10px; }
+    .story-header { padding: 0 16px; }
+    .clusters-section { padding: 24px 16px 40px; }
+    .cluster-header-row { padding: 14px 16px; }
+    .cluster-voice-photo { width: 34px; height: 34px; }
+    .cluster-voice-row { padding: 8px 10px; }
+    .cluster-voice-quote { font-size: 11px; }
+    .nav { padding: 0 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/" id="homeLink">
+      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
+      <div class="nav-label">Perspectives</div>
+    </a>
+    <div class="nav-links">
+      <a href="/search" id="searchLink">Search</a>
+      <a href="/voices" id="voicesLink">Voices</a>
+    </div>
+  </div>
+</div>
+
+<div class="story-header" id="storyHeader" style="display:none;">
+  <a class="back-link" href="/" id="backLink">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    Back to stories
+  </a>
+  <div class="story-meta" id="storyMeta"></div>
+  <h1 class="story-headline" id="storyHeadline"></h1>
+  <p class="story-summary" id="storySummary"></p>
+  <div id="storyCover"></div>
+  <div class="story-actions" id="storyActions"></div>
+</div>
+
+<div class="clusters-section" id="clustersSection" style="display:none;">
+  <div class="clusters-title" id="clustersTitle">Argument clusters</div>
+  <div id="clusterCards"></div>
+</div>
+
+<div class="loading" id="loading">
+  <span class="spinner"></span>
+  Loading story...
+</div>
+
+<div id="errorState"></div>
+
+<div class="share-toast" id="shareToast">Link copied to clipboard</div>
+
+<script>
+const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+const PAGES = { home: BASE || '/', search: BASE + '/search', voices: BASE + '/voices' };
+
+// Fix nav links
+document.getElementById('homeLink').href = PAGES.home;
+document.getElementById('backLink').href = PAGES.home;
+document.getElementById('searchLink').href = PAGES.search;
+document.getElementById('voicesLink').href = PAGES.voices;
+
+const CLUSTER_COLORS = [
+  '#60A5FA', '#F87171', '#FBBF24', '#A78BFA',
+  '#4ADE80', '#22D3EE', '#F472B6', '#FB923C',
+];
+
+const PLATFORM_LABELS = {
+  x: 'X', youtube: 'YouTube', bluesky: 'Bluesky',
+  instagram: 'Instagram', tiktok: 'TikTok',
+  substack: 'Substack', podcast: 'Podcast'
+};
+
+function slugify(text) {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').substring(0, 60);
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+function getSlugFromPath() {
+  const path = window.location.pathname;
+  const match = path.match(/\/story\/(.+)/);
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+async function loadStory() {
+  const slug = getSlugFromPath();
+  if (!slug) {
+    showError('No story specified', 'The URL is missing a story slug.');
+    return;
+  }
+
+  try {
+    const resp = await fetch(BASE + '/api/stories');
+    const stories = await resp.json();
+
+    if (!stories || stories.length === 0) {
+      showError('No stories available', 'There are no stories loaded right now.');
+      return;
+    }
+
+    // Find story matching slug
+    const story = stories.find(s => slugify(s.headline) === slug);
+
+    if (!story) {
+      showError('Story not found', `We couldn't find a story matching "${slug.replace(/-/g, ' ')}". It may have rotated out of today's feed.`);
+      return;
+    }
+
+    renderStory(story);
+  } catch (err) {
+    showError('Failed to load', 'Something went wrong loading the story data. Please try again.');
+    console.error(err);
+  }
+}
+
+function renderStory(story) {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('storyHeader').style.display = 'block';
+  document.getElementById('clustersSection').style.display = 'block';
+
+  // Page title
+  document.title = `${story.headline} — Perspectives`;
+
+  // Meta badges
+  const storyType = story.type || 'spectrum';
+  const typeLabels = { split: 'Split', spectrum: 'Spectrum', consensus: 'Consensus', reaction: 'Reaction' };
+  const typeLabel = typeLabels[storyType] || storyType;
+
+  const heat = story.heatScore || 0;
+  const heatLabel = heat >= 70 ? 'Hot' : heat >= 40 ? 'Warm' : '';
+
+  let metaHtml = '';
+  if (story.source === 'editorial') {
+    metaHtml += '<span class="story-type-badge editorial">Newsreel</span>';
+  }
+  metaHtml += `<span class="story-type-badge ${storyType}">${typeLabel}</span>`;
+  if (heatLabel) {
+    metaHtml += `<span class="heat-badge ${heatLabel.toLowerCase()}">${heatLabel}</span>`;
+  }
+  metaHtml += `<span class="voice-count-badge">${story.voiceCount} voices</span>`;
+
+  document.getElementById('storyMeta').innerHTML = metaHtml;
+  document.getElementById('storyHeadline').textContent = story.headline;
+
+  if (story.summary) {
+    document.getElementById('storySummary').textContent = story.summary;
+  } else {
+    document.getElementById('storySummary').style.display = 'none';
+  }
+
+  // Cover image
+  if (story.coverUrl) {
+    document.getElementById('storyCover').innerHTML =
+      `<img class="story-cover" src="${story.coverUrl}" alt="" onerror="this.style.display='none'">`;
+  }
+
+  // Action buttons
+  const storySlug = slugify(story.headline);
+  const storyUrl = window.location.origin + BASE + '/story/' + storySlug;
+
+  document.getElementById('storyActions').innerHTML = `
+    <a class="action-btn primary" href="${PAGES.search}" onclick="sessionStorage.setItem('searchQuery','${escapeHtml(story.headline)}'); return true;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      Search this story
+    </a>
+    <button class="action-btn" onclick="shareStory()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      Share
+    </button>
+  `;
+
+  // Clusters
+  const clusters = story.clusters || [];
+  document.getElementById('clustersTitle').textContent =
+    `${clusters.length} argument cluster${clusters.length !== 1 ? 's' : ''}`;
+
+  const container = document.getElementById('clusterCards');
+
+  clusters.forEach((cluster, ci) => {
+    const color = CLUSTER_COLORS[ci % CLUSTER_COLORS.length];
+    const card = document.createElement('div');
+    card.className = 'cluster-card';
+
+    // Build voice rows
+    const voices = cluster.voices || [];
+    const shown = voices.slice(0, 10);
+    const overflow = (cluster.voiceCount || voices.length) - shown.length;
+
+    let voicesHtml = shown.map(v => {
+      const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
+      const quote = (v.quote || '').substring(0, 250);
+      const platformLabel = PLATFORM_LABELS[v.platform] || v.platform || '';
+
+      return `<div class="cluster-voice-row">
+        <img class="cluster-voice-photo" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
+        <div class="cluster-voice-body">
+          <div>
+            <a href="${BASE}/voice/${v.voiceId}" class="cluster-voice-name">${escapeHtml(v.voiceName)}</a>
+            <span class="cluster-voice-platform">${platformLabel}</span>
+          </div>
+          ${quote ? `<div class="cluster-voice-quote">"${escapeHtml(quote)}"</div>` : ''}
+          ${v.sourceUrl ? `<a class="cluster-voice-link" href="${v.sourceUrl}" target="_blank">View source &rarr;</a>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+
+    if (overflow > 0) {
+      voicesHtml += `<div style="font-size:11px; color:var(--text-muted); padding:4px 12px;">+ ${overflow} more voices</div>`;
+    }
+
+    card.innerHTML = `
+      <div class="cluster-header-row" onclick="this.parentElement.classList.toggle('cluster-open')">
+        <div class="cluster-bar" style="background:${color}"></div>
+        <div class="cluster-name" style="color:${color}">${escapeHtml(cluster.name)}</div>
+        <span class="cluster-count">${cluster.voiceCount || voices.length} voices</span>
+        <svg class="cluster-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+      <div class="cluster-voices-list">${voicesHtml}</div>
+    `;
+
+    container.appendChild(card);
+  });
+
+  // Auto-expand first cluster
+  if (clusters.length > 0) {
+    container.querySelector('.cluster-card').classList.add('cluster-open');
+  }
+}
+
+function showError(title, message) {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('errorState').innerHTML = `
+    <div class="error-state">
+      <h2>${escapeHtml(title)}</h2>
+      <p>${escapeHtml(message)}</p>
+      <a class="action-btn" href="${PAGES.home}">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Back to homepage
+      </a>
+    </div>
+  `;
+}
+
+function shareStory() {
+  const url = window.location.href;
+  navigator.clipboard.writeText(url).then(() => {
+    const toast = document.getElementById('shareToast');
+    toast.style.display = 'block';
+    setTimeout(() => { toast.style.display = 'none'; }, 2000);
+  }).catch(() => {
+    // Fallback
+    prompt('Copy this link:', url);
+  });
+}
+
+loadStory();
+</script>
+
+</body>
+</html>

@@ -159,6 +159,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(html.encode())
             return
 
+        # Serve story permalink page
+        if self.path.startswith('/story/'):
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            html = open(os.path.join(ROOT, 'story.html')).read()
+            self.wfile.write(html.encode())
+            return
+
         # Serve editorial review dashboard
         if self.path == '/review' or self.path.startswith('/review?'):
             self.send_response(200)
