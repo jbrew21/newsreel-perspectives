@@ -328,35 +328,41 @@ async function init() {
     console.warn('Could not load voices.json');
   }
 
-  // Load latest posts for each voice (try today and yesterday to handle timezone gaps)
-  const now = new Date();
-  const today = now.toISOString().split('T')[0];
-  const yesterday = new Date(now - 86400000).toISOString().split('T')[0];
-  const datesToTry = [today, yesterday];
+  // Load topic index (single file with all voice data) instead of 232 individual requests
   let totalPosts = 0;
   let totalTopics = new Set();
-  let voicesWithData = 0;
+  let voicesWithData = new Set();
 
-  for (const [id, voice] of Object.entries(VOICES)) {
-    for (const date of datesToTry) {
-      try {
-        const resp = await fetch(`${BASE}/data/posts/${id}/${date}.json`);
-        if (resp.ok) {
-          const data = await resp.json();
-          VOICE_POSTS[id] = data;
-          totalPosts += (data.posts || []).length;
-          Object.keys(data.topicSummary || {}).forEach(t => totalTopics.add(t));
-          voicesWithData++;
-          break; // found data, stop trying dates
+  try {
+    const topicsResp = await fetch(BASE + '/api/topics');
+    const topicIndex = await topicsResp.json();
+    for (const [topic, entries] of Object.entries(topicIndex)) {
+      totalTopics.add(topic);
+      for (const entry of entries) {
+        totalPosts++;
+        voicesWithData.add(entry.voiceId);
+        if (!VOICE_POSTS[entry.voiceId]) {
+          VOICE_POSTS[entry.voiceId] = { posts: [], topicSummary: {} };
         }
-      } catch(e) {}
+        if (!VOICE_POSTS[entry.voiceId].topicSummary[topic]) {
+          VOICE_POSTS[entry.voiceId].topicSummary[topic] = [];
+        }
+        VOICE_POSTS[entry.voiceId].topicSummary[topic].push({
+          quote: entry.quote,
+          sourceUrl: entry.sourceUrl,
+          platform: entry.platform,
+        });
+        VOICE_POSTS[entry.voiceId].posts.push(entry);
+      }
     }
+  } catch(e) {
+    console.warn('Could not load topic index:', e);
   }
 
   // Stats
   document.getElementById('stats').innerHTML = `
     <span><strong>${Object.keys(VOICES).length}</strong> voices tracked</span>
-    <span><strong>${voicesWithData}</strong> collected today</span>
+    <span><strong>${voicesWithData.size}</strong> collected today</span>
     <span><strong>${totalPosts}</strong> posts</span>
     <span><strong>${totalTopics.size}</strong> topics</span>
   `;
