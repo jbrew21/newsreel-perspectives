@@ -20,29 +20,12 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=ROOT, **kwargs)
 
     def do_GET(self):
-        # Serve viewer.html with injected story manifest
+        # Serve index.html (homepage)
         if self.path == '/' or self.path.startswith('/?'):
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-
-            html = open(os.path.join(ROOT, 'viewer.html')).read()
-
-            # Get story files
-            story_files = []
-            if os.path.isdir(STORIES_DIR):
-                story_files = sorted(
-                    [f for f in os.listdir(STORIES_DIR) if f.endswith('.json')],
-                    reverse=True
-                )
-
-            # Inject story file list
-            manifest = f'const STORY_FILES = {json.dumps(story_files)};'
-            html = html.replace(
-                'const STORY_FILES = [];',
-                manifest
-            )
-
+            html = open(os.path.join(ROOT, 'index.html')).read()
             self.wfile.write(html.encode())
             return
 
