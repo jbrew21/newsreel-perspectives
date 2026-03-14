@@ -1,0 +1,66 @@
+name: Daily Perspectives Pipeline
+
+on:
+  schedule:
+    # 11:00 UTC = 6:00 AM ET
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+
+env:
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  collect-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install yt-dlp
+        run: pip install yt-dlp
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect posts from all voices
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/collect.py
+
+      - name: Enrich YouTube transcripts
+        continue-on-error: true
+        run: python scripts/enrich_transcripts.py
+
+      - name: Build stories with argument clustering
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/stories.py
+
+      - name: Commit and push data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posts/*.json data/cluster-history.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Daily pipeline: $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Trigger Render deploy
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        run: |
+          curl -s -X POST \
+            "https://api.render.com/v1/services/srv-d6pitsmuk2gs73fhkj70/deploys" \
+            -H "Authorization: Bearer $RENDER_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{}'
