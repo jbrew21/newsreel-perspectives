@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editorial Review — Perspectives</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+  :root {
+    --bg-base: #0a0a0b; --bg-surface: #141416; --bg-elevated: #1c1c1f;
+    --text-primary: #fafafa; --text-secondary: #a1a1aa; --text-muted: #71717a;
+    --border-subtle: rgba(255,255,255,0.06); --accent: #FF6343;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'DM Sans',sans-serif; background:var(--bg-base); color:var(--text-secondary); min-height:100vh; }
+  .container { max-width:800px; margin:0 auto; padding:20px; }
+  h1 { color:var(--text-primary); font-size:1.4em; margin-bottom:4px; }
+  .subtitle { color:var(--text-muted); font-size:0.85em; margin-bottom:8px; }
+  .progress { font-size:0.85em; color:var(--accent); margin-bottom:20px; }
+  .story-card { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:12px; padding:20px; margin-bottom:16px; }
+  .story-card.reviewed { opacity:0.6; border-color:rgba(74,222,128,0.3); }
+  .story-card.reviewed .story-headline::after { content:' (reviewed)'; color:#4ADE80; font-size:0.7em; font-weight:400; }
+  .story-headline { color:var(--text-primary); font-size:1.1em; font-weight:600; margin-bottom:8px; }
+  .story-meta { display:flex; gap:12px; font-size:0.8em; color:var(--text-muted); margin-bottom:12px; flex-wrap:wrap; }
+  .story-meta span { background:var(--bg-elevated); padding:2px 8px; border-radius:6px; }
+  .heat-hot { color:#ef4444; } .heat-warm { color:#fbbf24; }
+  .cluster-review { margin:12px 0; padding:12px; background:var(--bg-elevated); border-radius:8px; }
+  .cluster-name { font-weight:600; color:var(--text-primary); font-size:0.95em; margin-bottom:4px; }
+  .cluster-voices { font-size:0.8em; color:var(--text-muted); }
+  .counter-banner { background:rgba(255,99,67,0.08); border-left:2px solid var(--accent); padding:8px 12px; margin:8px 0; border-radius:0 6px 6px 0; font-size:0.85em; color:var(--text-primary); }
+  .review-question { margin-top:12px; padding-top:12px; border-top:1px solid var(--border-subtle); }
+  .review-question label { font-size:0.85em; color:var(--text-muted); display:block; margin-bottom:6px; }
+  .radio-group { display:flex; gap:8px; flex-wrap:wrap; }
+  .radio-btn { background:var(--bg-elevated); border:1px solid var(--border-subtle); color:var(--text-secondary); padding:6px 14px; border-radius:20px; cursor:pointer; font-size:0.8em; font-family:inherit; }
+  .radio-btn:hover { border-color:var(--accent); color:var(--text-primary); }
+  .radio-btn.selected { background:rgba(255,99,67,0.15); border-color:var(--accent); color:var(--accent); }
+  .override-input { width:100%; background:var(--bg-elevated); border:1px solid var(--border-subtle); color:var(--text-primary); padding:6px 10px; border-radius:6px; font-family:inherit; font-size:0.8em; margin-top:6px; }
+  .override-input::placeholder { color:var(--text-muted); }
+  .flag-input { width:100%; background:var(--bg-elevated); border:1px solid var(--border-subtle); color:var(--text-primary); padding:8px 12px; border-radius:8px; font-family:inherit; font-size:0.85em; margin-top:8px; resize:none; }
+  .btn-row { display:flex; gap:10px; margin-top:16px; align-items:center; }
+  .save-btn { background:var(--accent); color:white; border:none; padding:10px 24px; border-radius:8px; cursor:pointer; font-family:inherit; font-weight:600; font-size:0.9em; }
+  .save-btn:hover { opacity:0.9; }
+  .approve-btn { background:transparent; color:#4ADE80; border:1px solid rgba(74,222,128,0.3); padding:10px 24px; border-radius:8px; cursor:pointer; font-family:inherit; font-weight:600; font-size:0.9em; }
+  .approve-btn:hover { background:rgba(74,222,128,0.1); }
+  .saved-msg { color:#4ADE80; font-size:0.85em; display:none; }
+  .x-health { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:12px; padding:16px; margin-bottom:20px; }
+  .x-health h3 { color:var(--text-primary); font-size:0.95em; margin-bottom:8px; }
+  .health-bar { height:8px; background:var(--bg-elevated); border-radius:4px; overflow:hidden; margin:8px 0; }
+  .health-fill { height:100%; border-radius:4px; }
+  .no-data { text-align:center; padding:40px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Editorial Review</h1>
+  <p class="subtitle">Review AI-generated cluster names and counter-narratives. Overrides are saved server-side and applied to future pipeline runs.</p>
+  <div class="progress" id="progressBar"></div>
+
+  <div id="healthSection"></div>
+  <div id="storiesSection"><div class="no-data">Loading stories...</div></div>
+</div>
+
+<script>
+const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+let _existingReviews = [];
+
+async function loadReview() {
+  // Load existing reviews to show state
+  try {
+    const rResp = await fetch(BASE + '/data/editorial-reviews.json');
+    _existingReviews = await rResp.json();
+  } catch(e) { _existingReviews = []; }
+
+  const today = new Date().toISOString().split('T')[0];
+  const todayReviews = _existingReviews.filter(r => r.date === today);
+  const reviewedHeadlines = new Set(todayReviews.map(r => r.headline));
+
+  // Load stories
+  let stories = [];
+  try {
+    const resp = await fetch(BASE + '/api/stories');
+    stories = await resp.json();
+  } catch(e) { }
+
+  const section = document.getElementById('storiesSection');
+  if (!stories || stories.length === 0) {
+    section.innerHTML = '<div class="no-data">No stories found for today. Run the pipeline first.</div>';
+    return;
+  }
+
+  // Progress
+  const reviewed = stories.filter(s => reviewedHeadlines.has(s.headline)).length;
+  document.getElementById('progressBar').textContent = `${reviewed} of ${stories.length} stories reviewed today`;
+
+  let html = '';
+  stories.forEach((story, si) => {
+    const isReviewed = reviewedHeadlines.has(story.headline);
+    const heat = story.heatScore || 0;
+    const heatClass = heat >= 70 ? 'heat-hot' : heat >= 40 ? 'heat-warm' : '';
+    const heatLabel = heat >= 70 ? 'Hot' : heat >= 40 ? 'Warm' : 'Cool';
+
+    html += `<div class="story-card${isReviewed ? ' reviewed' : ''}" id="story-${si}">
+      <div class="story-headline">${esc(story.headline)}</div>
+      <div class="story-meta">
+        <span>${story.type}</span>
+        <span>${story.voiceCount} voices</span>
+        <span>${story.clusterCount} clusters</span>
+        <span class="${heatClass}">Heat: ${heat}/100 (${heatLabel})</span>
+        <span>Confidence: ${story.confidence || '?'}/10</span>
+      </div>
+      <div style="font-size:0.9em; color:var(--accent); margin-bottom:12px;">${esc(story.summary || '')}</div>`;
+
+    // Counter-narrative
+    if (story.counterNarrative) {
+      html += `<div class="counter-banner">${esc(story.counterNarrative.tension)}</div>
+        <div class="review-question">
+          <label>Is this counter-narrative fair and accurate?</label>
+          <div class="radio-group" data-group="cn-${si}">
+            <button class="radio-btn" onclick="selectRadio(this)">Accurate</button>
+            <button class="radio-btn" onclick="selectRadio(this)">Biased framing</button>
+            <button class="radio-btn" onclick="selectRadio(this)">Wrong tension axis</button>
+            <button class="radio-btn" onclick="selectRadio(this)">Remove</button>
+          </div>
+        </div>`;
+    }
+
+    // Clusters
+    (story.clusters || []).forEach((cluster, ci) => {
+      const voiceNames = cluster.voices.map(v => v.voiceName).join(', ');
+      const bestQ = cluster.bestQuote;
+      html += `<div class="cluster-review" data-cluster="${ci}">
+        <div class="cluster-name">${esc(cluster.name)} (${cluster.voiceCount})</div>
+        <div class="cluster-voices">${esc(voiceNames)}</div>
+        ${bestQ ? `<div style="font-style:italic; font-size:0.8em; color:var(--text-secondary); margin-top:6px;">"${esc(bestQ.quote.substring(0,150))}" — ${esc(bestQ.voiceName)}</div>` : ''}
+        <div class="review-question">
+          <label>Cluster name fair?</label>
+          <div class="radio-group" data-group="cl-${si}-${ci}">
+            <button class="radio-btn" onclick="selectRadio(this)">Fair</button>
+            <button class="radio-btn" onclick="selectRadio(this)">Pejorative</button>
+            <button class="radio-btn" onclick="selectRadio(this)">Misassigned voices</button>
+          </div>
+          <input class="override-input" placeholder="Better name? (e.g. 'Deterrence Advocates' instead of 'War Hawks')" data-override="cl-${si}-${ci}">
+        </div>
+      </div>`;
+    });
+
+    html += `<div class="review-question">
+      <label>General notes:</label>
+      <textarea class="flag-input" rows="2" placeholder="Any other issues with this story's presentation"></textarea>
+    </div>
+    <div class="btn-row">
+      <button class="save-btn" onclick="saveReview(${si}, false)">Save with Flags</button>
+      <button class="approve-btn" onclick="saveReview(${si}, true)">Approve as-is</button>
+      <span class="saved-msg" id="saved-${si}">Saved</span>
+    </div>
+    </div>`;
+  });
+
+  section.innerHTML = html;
+  window._stories = stories;
+}
+
+function selectRadio(el) {
+  // Radio-style: only one selected per group
+  const group = el.parentElement;
+  group.querySelectorAll('.radio-btn').forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s || '';
+  return d.innerHTML;
+}
+
+async function saveReview(si, approved) {
+  const card = document.getElementById('story-' + si);
+  const story = window._stories[si];
+
+  // Collect radio selections
+  const flags = {};
+  card.querySelectorAll('.radio-group').forEach(g => {
+    const sel = g.querySelector('.radio-btn.selected');
+    if (sel) flags[g.dataset.group] = sel.textContent;
+  });
+
+  // Collect override names
+  const overrides = {};
+  card.querySelectorAll('.override-input').forEach(inp => {
+    if (inp.value.trim()) {
+      const clusterIdx = inp.dataset.override;
+      overrides[clusterIdx] = inp.value.trim();
+    }
+  });
+
+  // Build cluster name overrides for pipeline feedback
+  const clusterOverrides = {};
+  (story.clusters || []).forEach((cluster, ci) => {
+    const key = `cl-${si}-${ci}`;
+    if (overrides[key]) {
+      clusterOverrides[cluster.name] = overrides[key];
+    }
+  });
+
+  const notes = card.querySelector('.flag-input')?.value || '';
+
+  const review = {
+    date: new Date().toISOString().split('T')[0],
+    timestamp: new Date().toISOString(),
+    headline: story.headline,
+    approved: approved,
+    flags: flags,
+    notes: notes,
+    overrides: Object.keys(clusterOverrides).length > 0 ? clusterOverrides : null,
+    reviewer: 'jack',
+  };
+
+  try {
+    const resp = await fetch(BASE + '/api/review', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(review),
+    });
+    const result = await resp.json();
+    if (result.ok) {
+      card.classList.add('reviewed');
+      const msg = document.getElementById('saved-' + si);
+      msg.textContent = approved ? 'Approved' : 'Flags saved';
+      msg.style.display = 'inline';
+      // Update progress
+      const total = window._stories.length;
+      const done = document.querySelectorAll('.story-card.reviewed').length;
+      document.getElementById('progressBar').textContent = `${done} of ${total} stories reviewed today`;
+    }
+  } catch(e) {
+    alert('Save failed: ' + e.message);
+  }
+}
+
+// Load X health
+async function loadHealth() {
+  try {
+    const resp = await fetch(BASE + '/data/usage-log.json');
+    const log = await resp.json();
+    if (!log || log.length === 0) return;
+    const latest = log[log.length - 1];
+    const xh = latest.x_health;
+    if (!xh) return;
+    const pct = xh.success_rate;
+    const color = pct >= 80 ? '#4ADE80' : pct >= 50 ? '#FBBF24' : '#ef4444';
+    document.getElementById('healthSection').innerHTML = `<div class="x-health">
+      <h3>X/Twitter Collection Health (${latest.date})</h3>
+      <div style="font-size:0.85em;">${xh.successes}/${xh.attempts} voices collected (${pct}%)</div>
+      <div class="health-bar"><div class="health-fill" style="width:${pct}%; background:${color};"></div></div>
+      ${xh.failed_voices?.length > 0 ? `<div style="font-size:0.75em; color:var(--text-muted); margin-top:4px;">Failed: ${xh.failed_voices.slice(0,8).join(', ')}${xh.failed_voices.length > 8 ? ' +' + (xh.failed_voices.length-8) + ' more' : ''}</div>` : ''}
+    </div>`;
+  } catch(e) {}
+}
+
+loadHealth();
+loadReview();
+</script>
+</body>
+</html>

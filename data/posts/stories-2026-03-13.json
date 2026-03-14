@@ -1,11 +1,18 @@
 [
   {
-    "topic": "iran-conflict",
-    "topicDisplay": "Iran Conflict",
     "headline": "Voices React to Iran War Escalation and Rising Gas Prices",
+    "summary": "Iran war coverage splits predictably along ideological lines with economic concerns cutting across camps",
+    "type": "split",
+    "source": "editorial",
+    "coverUrl": "https://ajdxfupqveqypicealpw.supabase.co/storage/v1/object/public/story-media/stories/4882356d-6846-4630-b5ef-89db8a012db3/cover/6018fa7b-6130-45a5-99c7-ae98d61d7ecc.mp4",
+    "storyType": "Breaking",
+    "topicSlugs": [
+      "iran-conflict",
+      "foreign-policy-diplomacy",
+      "economy-trade"
+    ],
     "voiceCount": 53,
     "clusterCount": 5,
-    "insight": "Iran war coverage splits predictably along ideological lines with economic concerns cutting across camps",
     "clusters": [
       {
         "name": "War Critics",
@@ -237,15 +244,28 @@
         ],
         "voiceCount": 3
       }
-    ]
+    ],
+    "confidence": 6,
+    "relevance": {
+      "direct": 12,
+      "related": 15,
+      "unrelated": 3
+    }
   },
   {
-    "topic": "trump-policy",
-    "topicDisplay": "Trump Policy",
     "headline": "Trump Shifts to Tariffs After Supreme Court Loss Sparks Economic Debate",
+    "summary": "Critics focus on Trump profiting from higher prices while supporters defend his strategy",
+    "type": "split",
+    "source": "editorial",
+    "coverUrl": "https://ajdxfupqveqypicealpw.supabase.co/storage/v1/object/public/story-media/stories/fbb9c2fc-e8be-47a4-bca4-1319aa13c4ce/cover/5e8ff5ec-bd27-4b1f-89af-13967cbd8753.jpg",
+    "storyType": "Politics",
+    "topicSlugs": [
+      "trump-policy",
+      "supreme-court-legal",
+      "economy-trade"
+    ],
     "voiceCount": 32,
     "clusterCount": 5,
-    "insight": "Critics focus on Trump profiting from higher prices while supporters defend his strategy",
     "clusters": [
       {
         "name": "Broader Politics",
@@ -517,15 +537,27 @@
         ],
         "voiceCount": 2
       }
-    ]
+    ],
+    "confidence": 4,
+    "relevance": {
+      "direct": 6,
+      "related": 18,
+      "unrelated": 2
+    }
   },
   {
-    "topic": "terrorism",
-    "topicDisplay": "Terrorism",
     "headline": "Armed Man Rams Michigan Synagogue, Killed by Security",
+    "summary": "Conservatives emphasize immigration concerns while Democrats focus on condemning antisemitism",
+    "type": "split",
+    "source": "editorial",
+    "coverUrl": "https://ajdxfupqveqypicealpw.supabase.co/storage/v1/object/public/story-media/stories/0e4a5585-17de-4843-9505-cf81968026af/cover/8bca29aa-ad9a-4d3d-b075-dc740a698d2f.webp",
+    "storyType": "Breaking",
+    "topicSlugs": [
+      "terrorism",
+      "religion-faith"
+    ],
     "voiceCount": 29,
     "clusterCount": 5,
-    "insight": "Conservatives emphasize immigration concerns while Democrats focus on condemning antisemitism",
     "clusters": [
       {
         "name": "Tangential Commentary",
@@ -789,15 +821,26 @@
         ],
         "voiceCount": 4
       }
-    ]
+    ],
+    "confidence": 6,
+    "relevance": {
+      "direct": 12,
+      "related": 10,
+      "unrelated": 8
+    }
   },
   {
-    "topic": "epstein-scandal",
-    "topicDisplay": "Epstein Scandal",
     "headline": "Epstein Files Release Sparks Calls for Transparency, Political Accusations",
+    "summary": "Voices split between demanding Epstein accountability and claiming the scandal is being used to distract from other issues",
+    "type": "spectrum",
+    "source": "voices",
+    "coverUrl": "",
+    "storyType": "",
+    "topicSlugs": [
+      "epstein-scandal"
+    ],
     "voiceCount": 16,
     "clusterCount": 4,
-    "insight": "Voices split between demanding Epstein accountability and claiming the scandal is being used to distract from other issues",
     "clusters": [
       {
         "name": "General Commentary",
@@ -951,15 +994,26 @@
         ],
         "voiceCount": 3
       }
-    ]
+    ],
+    "confidence": 6,
+    "relevance": {
+      "direct": 9,
+      "related": 4,
+      "unrelated": 2
+    }
   },
   {
-    "topic": "israel-palestine",
-    "topicDisplay": "Israel Palestine",
     "headline": "Israel Drops Charges Against Soldiers in Palestinian Rape Case",
+    "summary": "Unusual bipartisan criticism of Israel emerges with some conservative voices joining progressive condemnation",
+    "type": "spectrum",
+    "source": "voices",
+    "coverUrl": "",
+    "storyType": "",
+    "topicSlugs": [
+      "israel-palestine"
+    ],
     "voiceCount": 14,
     "clusterCount": 3,
-    "insight": "Unusual bipartisan criticism of Israel emerges with some conservative voices joining progressive condemnation",
     "clusters": [
       {
         "name": "Condemning Israeli Actions",
@@ -1091,6 +1145,12 @@
         ],
         "voiceCount": 2
       }
-    ]
+    ],
+    "confidence": 6,
+    "relevance": {
+      "direct": 6,
+      "related": 8,
+      "unrelated": 0
+    }
   }
 ]

@@ -394,7 +394,8 @@
     "lens": "Former Secret Service agent and NYPD officer. Brings a law enforcement perspective to conservative commentary.",
     "feeds": {
       "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVStvibG0gkwMU_WM42TSjA",
-      "x": "https://rss.app/feeds/v1.1/twitter/dbongino.json"
+      "x": "https://rss.app/feeds/v1.1/twitter/dbongino.json",
+      "podcast": "https://feeds.megaphone.fm/WWO3519750118"
     },
     "handles": {
       "youtube": "BonginoReport",
@@ -888,7 +889,7 @@
     ],
     "lens": "Daily Wire host. Socially conservative, culture war focused. 'What Is a Woman?' documentary maker. Blunt, provocative style.",
     "feeds": {
-      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnQC_G5Xsjhp9fEJKuIcrSw"
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCO01ytfzgXYy4glnPJm4PPQ"
     },
     "handles": {
       "youtube": "MattWalsh",
@@ -914,7 +915,7 @@
     ],
     "lens": "Daily Wire host. Catholic conservative. Culture and policy from a traditional values perspective.",
     "feeds": {
-      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCL_f53ZEJxp8TtlOkHwMV9Q"
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCr4kgAUTFkGIwlWSodg43QA"
     },
     "handles": {
       "youtube": "MichaelKnowles",
@@ -1011,11 +1012,13 @@
     "followersDisplay": "2M",
     "platforms": [
       "x",
-      "podcast"
+      "podcast",
+      "substack"
     ],
     "lens": "The Free Press founder. Left the NYT over 'illiberalism.' Center-left turned heterodox. Free speech, anti-censorship, pro-debate.",
     "feeds": {
-      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSRRURbKlPf1HwPUhjmufTg"
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSRRURbKlPf1HwPUhjmufTg",
+      "substack": "https://www.thefp.com/feed"
     },
     "handles": {
       "x": "baborariweiss"
@@ -1187,11 +1190,13 @@
     "followersDisplay": "3.5M",
     "platforms": [
       "youtube",
-      "x"
+      "x",
+      "substack"
     ],
     "lens": "Journalist, Snowden story breaker. Former left, now anti-establishment independent. Focuses on civil liberties, surveillance, media criticism.",
     "feeds": {
-      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbnlBWwMBiECBrExsBJMB7w"
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbnlBWwMBiECBrExsBJMB7w",
+      "substack": "https://greenwald.substack.com/feed"
     },
     "handles": {
       "youtube": "GlennGreenwald",
@@ -1286,10 +1291,13 @@
     "followers": 2500000,
     "followersDisplay": "2.5M",
     "platforms": [
-      "x"
+      "x",
+      "substack"
     ],
     "lens": "Investigative journalist. Twitter Files reporter. Former Rolling Stone. Anti-censorship, skeptical of institutions from both left and right.",
-    "feeds": {},
+    "feeds": {
+      "substack": "https://www.racket.news/feed"
+    },
     "handles": {
       "x": "mtaibbi"
     },
@@ -1533,7 +1541,8 @@
     ],
     "lens": "NYT opinion columnist and podcaster. Policy wonk. Deep structural analysis of politics. Reaches educated progressives and centrists.",
     "feeds": {
-      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnxuOd8obvLLtf5_-YKFbiQ"
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnxuOd8obvLLtf5_-YKFbiQ",
+      "podcast": "https://feeds.simplecast.com/82FI35Px"
     },
     "handles": {
       "x": "ezraklein",
@@ -1983,9 +1992,9 @@
   {
     "id": "all-in-podcast",
     "name": "All-In Podcast",
-    "photo": "",
-    "followers": 0,
-    "followersDisplay": "",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a5/All-In_Podcast_logo.jpg/330px-All-In_Podcast_logo.jpg",
+    "followers": 1025000,
+    "followersDisplay": "1M",
     "platforms": [
       "youtube",
       "x",
@@ -2009,8 +2018,8 @@
     "id": "rfk-jr",
     "name": "Robert F. Kennedy Jr.",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Robert_F._Kennedy_Jr.%2C_official_portrait_%282025%29_%28cropped_3-4%29.jpg/330px-Robert_F._Kennedy_Jr.%2C_official_portrait_%282025%29_%28cropped_3-4%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 6000000,
+    "followersDisplay": "6M",
     "platforms": [
       "youtube",
       "x"
@@ -2035,8 +2044,8 @@
     "id": "meidastouch",
     "name": "MeidasTouch",
     "photo": "https://upload.wikimedia.org/wikipedia/en/4/4c/MediasTouch_logo.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 5900000,
+    "followersDisplay": "5.9M",
     "platforms": [
       "youtube",
       "x"
@@ -2061,8 +2070,8 @@
     "id": "mehdi-hasan",
     "name": "Mehdi Hasan",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mehdi_Hasan_portrait_%28cropped%29_%28edited%29.jpg/330px-Mehdi_Hasan_portrait_%28cropped%29_%28edited%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 1900000,
+    "followersDisplay": "1.9M",
     "platforms": [
       "youtube",
       "x"
@@ -2088,13 +2097,16 @@
     "id": "nate-silver",
     "name": "Nate Silver",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nate_silver_poker.jpg/330px-Nate_silver_poker.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 3600000,
+    "followersDisplay": "3.6M",
     "platforms": [
-      "x"
+      "x",
+      "substack"
     ],
     "lens": "Data journalist and election forecaster; now writes Silver Bulletin with a contrarian, probabilistic worldview.",
-    "feeds": {},
+    "feeds": {
+      "substack": "https://www.natesilver.net/feed"
+    },
     "handles": {
       "x": "NateSilver538",
       "bluesky": "natesilver538.bsky.social"
@@ -2109,13 +2121,16 @@
     "id": "matt-yglesias",
     "name": "Matt Yglesias",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Matthew_Yglesias_cropped.jpg/330px-Matthew_Yglesias_cropped.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 554000,
+    "followersDisplay": "554K",
     "platforms": [
-      "x"
+      "x",
+      "substack"
     ],
     "lens": "Liberal policy wonk and Slow Boring author who champions YIMBY housing, immigration, and economic growth from a center-left perspective.",
-    "feeds": {},
+    "feeds": {
+      "substack": "https://www.slowboring.com/feed"
+    },
     "handles": {
       "x": "mattyglesias",
       "bluesky": "mattyglesias.bsky.social"
@@ -2130,8 +2145,8 @@
     "id": "van-jones",
     "name": "Van Jones",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Senate_Democrats%2C_Environmental_Advocates_to_Demand_Senate_GOP_Move_Forward_on_Supreme_Court_Nomination_%2826054905273%29_%28cropped%29.jpg/330px-Senate_Democrats%2C_Environmental_Advocates_to_Demand_Senate_GOP_Move_Forward_on_Supreme_Court_Nomination_%2826054905273%29_%28cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 1086000,
+    "followersDisplay": "1.1M",
     "platforms": [
       "x"
     ],
@@ -2150,8 +2165,8 @@
     "id": "joy-reid",
     "name": "Joy Reid",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Joy_Reid_2.jpg/250px-Joy_Reid_2.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 1900000,
+    "followersDisplay": "1.9M",
     "platforms": [
       "youtube",
       "x"
@@ -2174,8 +2189,8 @@
     "id": "jake-tapper",
     "name": "Jake Tapper",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/JakeTapper-byPhilipRomano.jpg/330px-JakeTapper-byPhilipRomano.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 2600000,
+    "followersDisplay": "2.6M",
     "platforms": [
       "x"
     ],
@@ -2195,8 +2210,8 @@
     "id": "ron-desantis",
     "name": "Ron DeSantis",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ron_DeSantis_official_photo.jpg/330px-Ron_DeSantis_official_photo.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 6000000,
+    "followersDisplay": "6M",
     "platforms": [
       "x"
     ],
@@ -2216,8 +2231,8 @@
     "id": "gavin-newsom",
     "name": "Gavin Newsom",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Governor_Gavin_Newsom_in_2025.jpg/330px-Governor_Gavin_Newsom_in_2025.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 3700000,
+    "followersDisplay": "3.7M",
     "platforms": [
       "youtube",
       "x"
@@ -2241,8 +2256,8 @@
     "id": "ted-cruz",
     "name": "Ted Cruz",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Ted_Cruz_official_116th_portrait_%283x4_cropped%29.jpg/330px-Ted_Cruz_official_116th_portrait_%283x4_cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 7000000,
+    "followersDisplay": "7M",
     "platforms": [
       "youtube",
       "x"
@@ -2266,8 +2281,8 @@
     "id": "elizabeth-warren",
     "name": "Elizabeth Warren",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Elizabeth-warren-2022_%28cropped%29.jpg/330px-Elizabeth-warren-2022_%28cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 6500000,
+    "followersDisplay": "6.5M",
     "platforms": [
       "x"
     ],
@@ -2289,8 +2304,8 @@
     "id": "marjorie-taylor-greene",
     "name": "Marjorie Taylor Greene",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Marjorie_Taylor_Greene_%28cropped%29.jpg/330px-Marjorie_Taylor_Greene_%28cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 5300000,
+    "followersDisplay": "5.3M",
     "platforms": [
       "youtube",
       "x"
@@ -2314,8 +2329,8 @@
     "id": "jd-vance",
     "name": "JD Vance",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/January_2025_Official_Vice_Presidential_Portrait_of_JD_Vance.jpg/330px-January_2025_Official_Vice_Presidential_Portrait_of_JD_Vance.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 4700000,
+    "followersDisplay": "4.7M",
     "platforms": [
       "x"
     ],
@@ -2334,9 +2349,9 @@
   {
     "id": "roland-martin",
     "name": "Roland Martin",
-    "photo": "",
-    "followers": 0,
-    "followersDisplay": "",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Roland_Martin_by_Gage_Skidmore.jpg/330px-Roland_Martin_by_Gage_Skidmore.jpg",
+    "followers": 1890000,
+    "followersDisplay": "1.9M",
     "platforms": [
       "youtube",
       "x"
@@ -2360,8 +2375,8 @@
     "id": "ana-navarro",
     "name": "Ana Navarro",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ana_Navarro.jpg/330px-Ana_Navarro.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 1800000,
+    "followersDisplay": "1.8M",
     "platforms": [
       "x"
     ],
@@ -2380,9 +2395,9 @@
   {
     "id": "jorge-ramos",
     "name": "Jorge Ramos",
-    "photo": "",
-    "followers": 0,
-    "followersDisplay": "",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jorge_Ramos_in_Iowa_%28cropped%29.jpg/330px-Jorge_Ramos_in_Iowa_%28cropped%29.jpg",
+    "followers": 3500000,
+    "followersDisplay": "3.5M",
     "platforms": [
       "x"
     ],
@@ -2401,9 +2416,9 @@
   {
     "id": "chris-williamson",
     "name": "Chris Williamson",
-    "photo": "",
-    "followers": 0,
-    "followersDisplay": "",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chris_Williamson_at_Podcast_Movement_2023_%28cropped%29.jpg/330px-Chris_Williamson_at_Podcast_Movement_2023_%28cropped%29.jpg",
+    "followers": 4100000,
+    "followersDisplay": "4.1M",
     "platforms": [
       "youtube",
       "x",
@@ -2427,9 +2442,9 @@
   {
     "id": "shawn-ryan-show",
     "name": "Shawn Ryan Show",
-    "photo": "",
-    "followers": 0,
-    "followersDisplay": "",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Shawn_Ryan_%28Navy_SEAL%29.jpg/330px-Shawn_Ryan_%28Navy_SEAL%29.jpg",
+    "followers": 5850000,
+    "followersDisplay": "5.9M",
     "platforms": [
       "youtube",
       "x",
@@ -2455,8 +2470,8 @@
     "id": "mrbeast",
     "name": "MrBeast",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/MrBeast_2023_%28cropped%29.jpg/330px-MrBeast_2023_%28cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 470000000,
+    "followersDisplay": "470M",
     "platforms": [
       "youtube",
       "x"
@@ -2481,8 +2496,8 @@
     "id": "ethan-klein",
     "name": "Ethan Klein",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/H3h3Productions_logo_new.png/330px-H3h3Productions_logo_new.png",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 5700000,
+    "followersDisplay": "5.7M",
     "platforms": [
       "youtube",
       "x"
@@ -2507,8 +2522,8 @@
     "id": "lincoln-project",
     "name": "Lincoln Project",
     "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/The_Lincoln_Project_logo.svg/330px-The_Lincoln_Project_logo.svg.png",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 2700000,
+    "followersDisplay": "2.7M",
     "platforms": [
       "youtube",
       "x"
@@ -2533,8 +2548,8 @@
     "id": "killer-mike",
     "name": "Killer Mike",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Killer_Mike_The_Circus_2017.png/330px-Killer_Mike_The_Circus_2017.png",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 2000000,
+    "followersDisplay": "2M",
     "platforms": [
       "x"
     ],
@@ -2555,8 +2570,8 @@
     "id": "adam-schiff",
     "name": "Adam Schiff",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Schiff_Adam_119th_Congress.jpg/330px-Schiff_Adam_119th_Congress.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 3300000,
+    "followersDisplay": "3.3M",
     "platforms": [
       "x"
     ],
@@ -2577,8 +2592,8 @@
     "id": "pete-buttigieg",
     "name": "Pete Buttigieg",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pete_Buttigieg%2C_Secretary_of_Transportation.jpg/330px-Pete_Buttigieg%2C_Secretary_of_Transportation.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 3700000,
+    "followersDisplay": "3.7M",
     "platforms": [
       "x"
     ],
@@ -2599,14 +2614,17 @@
   {
     "id": "noah-smith",
     "name": "Noah Smith",
-    "photo": "",
-    "followers": 0,
-    "followersDisplay": "",
+    "photo": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3c1f7092-a127-4e0b-b2f2-6e03e67c18ea_600x600.png",
+    "followers": 441000,
+    "followersDisplay": "441K",
     "platforms": [
-      "x"
+      "x",
+      "substack"
     ],
     "lens": "Economist and Noahpinion author writing about industrial policy, immigration, and geopolitics from a pragmatic center-left perspective.",
-    "feeds": {},
+    "feeds": {
+      "substack": "https://www.noahpinion.blog/feed"
+    },
     "handles": {
       "x": "Noahpinion",
       "bluesky": "smithnoah.bsky.social"
@@ -2620,9 +2638,9 @@
   {
     "id": "scott-galloway",
     "name": "Scott Galloway",
-    "photo": "",
-    "followers": 0,
-    "followersDisplay": "",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Scott_Galloway_photo.jpg/330px-Scott_Galloway_photo.jpg",
+    "followers": 2000000,
+    "followersDisplay": "2M",
     "platforms": [
       "youtube",
       "x",
@@ -2649,8 +2667,8 @@
     "id": "fareed-zakaria",
     "name": "Fareed Zakaria",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Fareed_Zakaria%2C_Peabody_Awards_%282012%29_%28cropped%29.jpg/330px-Fareed_Zakaria%2C_Peabody_Awards_%282012%29_%28cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 1100000,
+    "followersDisplay": "1.1M",
     "platforms": [
       "x"
     ],
@@ -2670,8 +2688,8 @@
     "id": "krystal-ball",
     "name": "Krystal Ball",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/The_Cycle_%28TV_program%29%2C_Krystal_Ball_%28cropped%29.jpg/330px-The_Cycle_%28TV_program%29%2C_Krystal_Ball_%28cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 954000,
+    "followersDisplay": "954K",
     "platforms": [
       "youtube",
       "x"
@@ -2695,13 +2713,16 @@
     "id": "chris-hedges",
     "name": "Chris Hedges",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Chris_hedges_blur.jpg/250px-Chris_hedges_blur.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 287000,
+    "followersDisplay": "287K",
     "platforms": [
-      "x"
+      "x",
+      "substack"
     ],
     "lens": "Pulitzer Prize-winning journalist offering radical left critiques of corporate power, militarism, and American empire.",
-    "feeds": {},
+    "feeds": {
+      "substack": "https://chrishedges.substack.com/feed"
+    },
     "handles": {
       "x": "ChrisLynnHedges",
       "instagram": "the.chris.hedges.report"
@@ -2716,8 +2737,8 @@
     "id": "cornel-west",
     "name": "Cornel West",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Cornel_West_%2839223875064%29_%28cropped%29.jpg/330px-Cornel_West_%2839223875064%29_%28cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 1058000,
+    "followersDisplay": "1.1M",
     "platforms": [
       "x"
     ],
@@ -2737,8 +2758,8 @@
     "id": "bret-baier",
     "name": "Bret Baier",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Bret_Baier_headshot.jpg/330px-Bret_Baier_headshot.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 1700000,
+    "followersDisplay": "1.7M",
     "platforms": [
       "x"
     ],
@@ -2759,8 +2780,8 @@
     "id": "martha-maccallum",
     "name": "Martha MacCallum",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/MarthaMacCallum_accepting_Commitment_to_Service_Award_2014_%28cropped%29.jpg/330px-MarthaMacCallum_accepting_Commitment_to_Service_Award_2014_%28cropped%29.jpg",
-    "followers": 0,
-    "followersDisplay": "",
+    "followers": 865000,
+    "followersDisplay": "865K",
     "platforms": [
       "x"
     ],
@@ -2775,5 +2796,2350 @@
       "Fox News",
       "traditional media"
     ]
+  },
+  {
+    "id": "judd-legum",
+    "name": "Judd Legum",
+    "photo": "https://ui-avatars.com/api/?name=Judd%20Legum&size=300&background=1a1a2e&color=fff",
+    "followers": 520000,
+    "followersDisplay": "520K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Investigative journalist who tracks corporate accountability, dark money in politics, and the gap between what companies say publicly and what they fund privately. Founded Popular Information to follow the money behind political influence campaigns.",
+    "feeds": {
+      "substack": "https://popular.info/feed"
+    },
+    "handles": {
+      "x": "JuddLegum",
+      "bluesky": "juddlegum.bsky.social"
+    },
+    "tags": [
+      "corporate accountability",
+      "dark money",
+      "investigative"
+    ]
+  },
+  {
+    "id": "david-sirota",
+    "name": "David Sirota",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/David_Sirota.jpg/330px-David_Sirota.jpg",
+    "followers": 770000,
+    "followersDisplay": "770K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky",
+      "podcast"
+    ],
+    "lens": "Investigative journalist and founder of The Lever, focused on how corporate power and money in politics shape policy outcomes. Former Bernie Sanders speechwriter who applies an insider's understanding of political machinery to accountability reporting.",
+    "feeds": {
+      "substack": "https://www.levernews.com/feed",
+      "podcast": "https://feeds.megaphone.fm/lever-time"
+    },
+    "handles": {
+      "x": "davidsirota",
+      "bluesky": "davidsirota.com",
+      "instagram": "davidsirota"
+    },
+    "tags": [
+      "corporate power",
+      "money in politics",
+      "investigative"
+    ]
+  },
+  {
+    "id": "isaac-saul",
+    "name": "Isaac Saul",
+    "photo": "https://ui-avatars.com/api/?name=Isaac%20Saul&size=300&background=1a1a2e&color=fff",
+    "followers": 325000,
+    "followersDisplay": "325K",
+    "platforms": [
+      "substack",
+      "x"
+    ],
+    "lens": "Founder of Tangle, a nonpartisan daily newsletter that presents the strongest arguments from left, right, and center on the day's top political story. Focuses on steelmanning opposing views rather than advocating for a particular side.",
+    "feeds": {
+      "substack": "https://tangle.substack.com/feed"
+    },
+    "handles": {
+      "x": "Ike_Saul",
+      "instagram": "tangle.news"
+    },
+    "tags": [
+      "nonpartisan",
+      "bridge-building",
+      "daily news"
+    ]
+  },
+  {
+    "id": "ryan-grim",
+    "name": "Ryan Grim",
+    "photo": "https://ui-avatars.com/api/?name=Ryan%20Grim&size=300&background=1a1a2e&color=fff",
+    "followers": 480000,
+    "followersDisplay": "480K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky",
+      "youtube"
+    ],
+    "lens": "Co-founder of Drop Site News and former Washington bureau chief of The Intercept. Investigative reporter covering progressive politics, Capitol Hill power dynamics, and the internal battles shaping the Democratic Party.",
+    "feeds": {
+      "substack": "https://www.dropsitenews.com/feed",
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBMrOkjg3AbvLS5g1MhtlRQ"
+    },
+    "handles": {
+      "x": "ryangrim",
+      "bluesky": "ryangrim.bsky.social",
+      "tiktok": "ryanwgrim",
+      "youtube": "DropSiteNews"
+    },
+    "tags": [
+      "investigative",
+      "congressional politics",
+      "progressive movement"
+    ]
+  },
+  {
+    "id": "jeremy-scahill",
+    "name": "Jeremy Scahill",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Jeremy_Scahill.jpg/330px-Jeremy_Scahill.jpg",
+    "followers": 690000,
+    "followersDisplay": "690K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky",
+      "youtube"
+    ],
+    "lens": "Co-founder of Drop Site News and author of Blackwater and Dirty Wars. One of the foremost reporters on U.S. covert operations, drone warfare, and the national security state. Brings deep sourcing in military and intelligence communities.",
+    "feeds": {
+      "substack": "https://www.dropsitenews.com/feed",
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBMrOkjg3AbvLS5g1MhtlRQ"
+    },
+    "handles": {
+      "x": "jeremyscahill",
+      "bluesky": "jeremyscahill.com",
+      "youtube": "DropSiteNews"
+    },
+    "tags": [
+      "national security",
+      "war reporting",
+      "investigative"
+    ]
+  },
+  {
+    "id": "jennifer-rubin",
+    "name": "Jennifer Rubin",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jennifer_Rubin_2019.jpg/330px-Jennifer_Rubin_2019.jpg",
+    "followers": 2400000,
+    "followersDisplay": "2.4M",
+    "platforms": [
+      "substack",
+      "bluesky"
+    ],
+    "lens": "Former Washington Post columnist who left corporate media to co-found The Contrarian with Norm Eisen. Evolved from conservative to democracy-focused commentator analyzing threats to rule of law, judicial independence, and democratic institutions.",
+    "feeds": {
+      "substack": "https://contrarian.substack.com/feed"
+    },
+    "handles": {
+      "x": "JRubinBlogger",
+      "bluesky": "jenrubin.bsky.social"
+    },
+    "tags": [
+      "democracy",
+      "rule of law",
+      "institutional analysis"
+    ]
+  },
+  {
+    "id": "adam-tooze",
+    "name": "Adam Tooze",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Adam_Tooze_FT_Weekend_2021_%28cropped%29.jpg/330px-Adam_Tooze_FT_Weekend_2021_%28cropped%29.jpg",
+    "followers": 560000,
+    "followersDisplay": "560K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Columbia University historian and author of Crashed and Shutdown. Writes Chartbook, connecting global economic data, geopolitical shifts, and historical patterns to explain how financial systems and power structures actually work.",
+    "feeds": {
+      "substack": "https://adamtooze.substack.com/feed"
+    },
+    "handles": {
+      "x": "adam_tooze",
+      "bluesky": "adamtooze.bsky.social"
+    },
+    "tags": [
+      "global economics",
+      "geopolitics",
+      "economic history"
+    ]
+  },
+  {
+    "id": "robert-reich",
+    "name": "Robert Reich",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Robert_Reich_at_the_UT_Liz_Carpenter_Lecture_2015_%28cropped%29.jpg/330px-Robert_Reich_at_the_UT_Liz_Carpenter_Lecture_2015_%28cropped%29.jpg",
+    "followers": 5200000,
+    "followersDisplay": "5.2M",
+    "platforms": [
+      "substack",
+      "youtube",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Former U.S. Secretary of Labor and UC Berkeley professor. Analyzes economic inequality, labor rights, and corporate concentration of power through the lens of decades of policymaking experience. Over one million Substack subscribers.",
+    "feeds": {
+      "substack": "https://robertreich.substack.com/feed",
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuDv5p8E-evaRSh542hDV5g"
+    },
+    "handles": {
+      "x": "RBReich",
+      "bluesky": "rbreich.bsky.social",
+      "youtube": "rbreich",
+      "instagram": "rbreich",
+      "tiktok": "rbreich"
+    },
+    "tags": [
+      "economic inequality",
+      "labor rights",
+      "public policy"
+    ]
+  },
+  {
+    "id": "paul-krugman",
+    "name": "Paul Krugman",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Paul_Krugman-press_conference_Dec_07th%2C_2008-8.jpg/330px-Paul_Krugman-press_conference_Dec_07th%2C_2008-8.jpg",
+    "followers": 4500000,
+    "followersDisplay": "4.5M",
+    "platforms": [
+      "substack",
+      "bluesky"
+    ],
+    "lens": "Nobel Prize-winning economist and former New York Times columnist. Brings rigorous macroeconomic analysis to fiscal policy, trade, inequality, and the political economy of misinformation. Now writes independently on Substack after leaving the Times.",
+    "feeds": {
+      "substack": "https://paulkrugman.substack.com/feed"
+    },
+    "handles": {
+      "x": "paulkrugman",
+      "bluesky": "pkrugman.bsky.social"
+    },
+    "tags": [
+      "economics",
+      "fiscal policy",
+      "trade"
+    ]
+  },
+  {
+    "id": "radley-balko",
+    "name": "Radley Balko",
+    "photo": "https://ui-avatars.com/api/?name=Radley%20Balko&size=300&background=1a1a2e&color=fff",
+    "followers": 250000,
+    "followersDisplay": "250K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Investigative journalist and author of Rise of the Warrior Cop. Writes The Watch, focused on police accountability, criminal justice reform, forensic science failures, and civil liberties. Uses deep case reporting to expose systemic problems in law enforcement.",
+    "feeds": {
+      "substack": "https://radleybalko.substack.com/feed"
+    },
+    "handles": {
+      "x": "radleybalko",
+      "bluesky": "radleybalko.bsky.social"
+    },
+    "tags": [
+      "police accountability",
+      "civil liberties",
+      "criminal justice"
+    ]
+  },
+  {
+    "id": "joyce-vance",
+    "name": "Joyce Vance",
+    "photo": "https://ui-avatars.com/api/?name=Joyce%20Vance&size=300&background=1a1a2e&color=fff",
+    "followers": 1300000,
+    "followersDisplay": "1.3M",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Former U.S. Attorney for the Northern District of Alabama and MSNBC legal analyst. Writes Civil Discourse, translating complex federal legal proceedings, DOJ operations, and constitutional questions into accessible analysis grounded in prosecutorial experience.",
+    "feeds": {
+      "substack": "https://joycevance.substack.com/feed"
+    },
+    "handles": {
+      "x": "JoyceWhiteVance",
+      "bluesky": "joycewhitevance.bsky.social",
+      "instagram": "joyce_white_vance"
+    },
+    "tags": [
+      "legal analysis",
+      "DOJ",
+      "constitutional law"
+    ]
+  },
+  {
+    "id": "emily-atkin",
+    "name": "Emily Atkin",
+    "photo": "https://ui-avatars.com/api/?name=Emily%20Atkin&size=300&background=1a1a2e&color=fff",
+    "followers": 149000,
+    "followersDisplay": "149K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Founder of HEATED, an accountability-focused climate newsletter. Tracks who is responsible for the climate crisis and who is blocking action, with a focus on fossil fuel industry influence, greenwashing, and the politics of climate policy.",
+    "feeds": {
+      "substack": "https://heated.world/feed"
+    },
+    "handles": {
+      "x": "emorwee",
+      "bluesky": "emorwee.bsky.social"
+    },
+    "tags": [
+      "climate accountability",
+      "fossil fuel industry",
+      "environmental policy"
+    ]
+  },
+  {
+    "id": "spencer-ackerman",
+    "name": "Spencer Ackerman",
+    "photo": "https://ui-avatars.com/api/?name=Spencer%20Ackerman&size=300&background=1a1a2e&color=fff",
+    "followers": 240000,
+    "followersDisplay": "240K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "National security journalist and author of Reign of Terror, which traced the through-line from the War on Terror to domestic authoritarianism. Writes Forever Wars, analyzing how U.S. security policy, surveillance, and militarism shape politics at home and abroad.",
+    "feeds": {
+      "substack": "https://www.forever-wars.com/feed"
+    },
+    "handles": {
+      "x": "attackerman",
+      "bluesky": "attackerman.bsky.social"
+    },
+    "tags": [
+      "national security",
+      "War on Terror",
+      "surveillance state"
+    ]
+  },
+  {
+    "id": "pablo-manriquez",
+    "name": "Pablo Manriquez",
+    "photo": "https://ui-avatars.com/api/?name=Pablo%20Manriquez&size=300&background=1a1a2e&color=fff",
+    "followers": 42000,
+    "followersDisplay": "42K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Editor of Migrant Insider, a daily immigration newsletter covering ICE, Border Patrol, USCIS, deportations, and immigration court from Capitol Hill. Brings bilingual, on-the-ground reporting that connects policy decisions to real enforcement outcomes.",
+    "feeds": {
+      "substack": "https://migrantinsider.com/feed"
+    },
+    "handles": {
+      "x": "PabloReports",
+      "bluesky": "pabloreports.bsky.social",
+      "instagram": "pabloreports",
+      "tiktok": "pabloreports"
+    },
+    "tags": [
+      "immigration policy",
+      "border enforcement",
+      "congressional reporting"
+    ]
+  },
+  {
+    "id": "austin-kocher",
+    "name": "Austin Kocher",
+    "photo": "https://ui-avatars.com/api/?name=Austin%20Kocher&size=300&background=1a1a2e&color=fff",
+    "followers": 35000,
+    "followersDisplay": "35K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Syracuse University researcher and founder of the Deportation Data Project. Uses FOIA requests and data analysis to make immigration enforcement transparent, tracking ICE detention numbers, deportation trends, and the gap between government claims and empirical reality.",
+    "feeds": {
+      "substack": "https://austinkocher.substack.com/feed"
+    },
+    "handles": {
+      "x": "ackocher",
+      "bluesky": "austinkocher.com",
+      "instagram": "austinkocher"
+    },
+    "tags": [
+      "immigration data",
+      "enforcement transparency",
+      "FOIA"
+    ]
+  },
+  {
+    "id": "matt-pearce",
+    "name": "Matt Pearce",
+    "photo": "https://ui-avatars.com/api/?name=Matt%20Pearce&size=300&background=1a1a2e&color=fff",
+    "followers": 128000,
+    "followersDisplay": "128K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "Former LA Times reporter and president of Media Guild of the West. Writes about the media industry's structural collapse, newsroom labor fights, and how the business model crisis in journalism affects what stories get told and which don't.",
+    "feeds": {
+      "substack": "https://mattdpearce.substack.com/feed"
+    },
+    "handles": {
+      "x": "mattdpearce",
+      "bluesky": "mattdpearce.com",
+      "instagram": "mattdpearce"
+    },
+    "tags": [
+      "media industry",
+      "journalism labor",
+      "press freedom"
+    ]
+  },
+  {
+    "id": "yascha-mounk",
+    "name": "Yascha Mounk",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Yascha_Mounk.jpg/330px-Yascha_Mounk.jpg",
+    "followers": 238000,
+    "followersDisplay": "238K",
+    "platforms": [
+      "substack",
+      "x",
+      "podcast"
+    ],
+    "lens": "Johns Hopkins political scientist and founder of Persuasion. Studies democratic backsliding, identity politics, and liberal institutional resilience. Author of The Identity Trap, arguing that a new ideology threatens the foundations of pluralist democracy.",
+    "feeds": {
+      "substack": "https://www.persuasion.community/feed",
+      "podcast": "https://feeds.megaphone.fm/thegoodfight"
+    },
+    "handles": {
+      "x": "Yascha_Mounk",
+      "instagram": "yaschamounk"
+    },
+    "tags": [
+      "democracy",
+      "liberalism",
+      "identity politics"
+    ]
+  },
+  {
+    "id": "ruy-teixeira",
+    "name": "Ruy Teixeira",
+    "photo": "https://ui-avatars.com/api/?name=Ruy%20Teixeira&size=300&background=1a1a2e&color=fff",
+    "followers": 75000,
+    "followersDisplay": "75K",
+    "platforms": [
+      "substack",
+      "x",
+      "podcast"
+    ],
+    "lens": "AEI senior fellow and co-author of Where Have All the Democrats Gone. Writes The Liberal Patriot, analyzing Democratic coalition dynamics, working-class voter realignment, and why center-left parties keep losing ground on cultural issues.",
+    "feeds": {
+      "substack": "https://www.liberalpatriot.com/feed",
+      "podcast": "https://api.substack.com/feed/podcast/239058/s/113740.rss"
+    },
+    "handles": {
+      "x": "ruyteixeira1"
+    },
+    "tags": [
+      "electoral strategy",
+      "working-class politics",
+      "Democratic coalition"
+    ]
+  },
+  {
+    "id": "tom-bonier",
+    "name": "Tom Bonier",
+    "photo": "https://ui-avatars.com/api/?name=Tom%20Bonier&size=300&background=1a1a2e&color=fff",
+    "followers": 310000,
+    "followersDisplay": "310K",
+    "platforms": [
+      "substack",
+      "x",
+      "bluesky"
+    ],
+    "lens": "CEO of The TARA Group and former TargetSmart senior advisor. Writes The Data Dive, analyzing voter registration trends, early vote patterns, and demographic shifts using granular data rather than punditry. Known for spotting the post-Dobbs registration surge early.",
+    "feeds": {
+      "substack": "https://tombonier.substack.com/feed"
+    },
+    "handles": {
+      "x": "tbonier",
+      "bluesky": "tbonier.bsky.social"
+    },
+    "tags": [
+      "voter data",
+      "elections",
+      "political data"
+    ]
+  },
+  {
+    "id": "merrill-goozner",
+    "name": "Merrill Goozner",
+    "photo": "https://ui-avatars.com/api/?name=Merrill%20Goozner&size=300&background=1a1a2e&color=fff",
+    "followers": 12000,
+    "followersDisplay": "12K",
+    "platforms": [
+      "substack",
+      "x"
+    ],
+    "lens": "Veteran healthcare journalist and former editor-in-chief of Modern Healthcare. Writes GoozNews, providing informed commentary on drug pricing, insurance markets, public health policy, and the structural forces driving U.S. healthcare costs.",
+    "feeds": {
+      "substack": "https://gooznews.substack.com/feed"
+    },
+    "handles": {
+      "x": "_GoozNews"
+    },
+    "tags": [
+      "healthcare policy",
+      "drug pricing",
+      "public health"
+    ]
+  },
+  {
+    "id": "under-the-desk-news",
+    "name": "Under the Desk News (V Spehar)",
+    "photo": "https://pbs.twimg.com/profile_images/underthedesknews.jpg",
+    "followers": 3800000,
+    "followersDisplay": "3.8M",
+    "platforms": [
+      "tiktok",
+      "instagram",
+      "substack"
+    ],
+    "lens": "TikTok journalist who delivers daily news briefings from under a desk, breaking complex current events into digestible 60-second segments. Brings an accessible, LGBTQ+-affirming perspective that centers social justice and representation in news coverage.",
+    "feeds": {
+      "substack": "https://underthedesknews.substack.com/feed"
+    },
+    "handles": {
+      "tiktok": "underthedesknews",
+      "instagram": "underthedesknews",
+      "bluesky": "underthedesknews.bsky.social"
+    },
+    "tags": [
+      "accessible news",
+      "LGBTQ+ rights",
+      "social justice",
+      "Gen Z media"
+    ]
+  },
+  {
+    "id": "jessica-yellin",
+    "name": "Jessica Yellin",
+    "photo": "https://pbs.twimg.com/profile_images/jessicayellin.jpg",
+    "followers": 2700000,
+    "followersDisplay": "2.7M",
+    "platforms": [
+      "instagram",
+      "substack",
+      "tiktok"
+    ],
+    "lens": "Former CNN Chief White House Correspondent who founded News Not Noise to deliver clear, non-partisan news explanation. Focuses on cutting through media noise and political spin to help audiences understand what actually matters in policy and politics.",
+    "feeds": {
+      "substack": "https://newsnotnoisejessicayellin.substack.com/feed"
+    },
+    "handles": {
+      "x": "JessicaYellin",
+      "instagram": "jessicayellin",
+      "tiktok": "newsnotnoise"
+    },
+    "tags": [
+      "non-partisan news",
+      "media literacy",
+      "policy explainer",
+      "independent journalism"
+    ]
+  },
+  {
+    "id": "lisa-remillard",
+    "name": "Lisa Remillard",
+    "photo": "https://pbs.twimg.com/profile_images/lisaremillard.jpg",
+    "followers": 4100000,
+    "followersDisplay": "4.1M",
+    "platforms": [
+      "tiktok",
+      "instagram"
+    ],
+    "lens": "Former TV news anchor who transitioned to TikTok as 'The News Girl,' delivering daily national news in 60-second fast-fact segments. Brings a traditional broadcast journalism lens to short-form social media, prioritizing factual reporting over opinion.",
+    "feeds": {
+      "substack": "https://lisaremillard.substack.com/feed"
+    },
+    "handles": {
+      "x": "LisaRemillard",
+      "tiktok": "lisaremillard",
+      "instagram": "lisa.remillard",
+      "bluesky": "lisaremillard.bsky.social"
+    },
+    "tags": [
+      "broadcast journalism",
+      "news explainer",
+      "TikTok news",
+      "factual reporting"
+    ]
+  },
+  {
+    "id": "ari-melber",
+    "name": "Ari Melber",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ari_Melber_2022.jpg/300px-Ari_Melber_2022.jpg",
+    "followers": 898000,
+    "followersDisplay": "899K",
+    "platforms": [
+      "x",
+      "tiktok",
+      "instagram",
+      "substack"
+    ],
+    "lens": "MSNBC host and licensed attorney who blends legal analysis, political reporting, and cultural commentary. Brings a constitutional law perspective to breaking political news, frequently connecting hip-hop culture and legal precedent in his analysis.",
+    "feeds": {
+      "substack": "https://arimelber.substack.com/feed"
+    },
+    "handles": {
+      "x": "AriMelber",
+      "tiktok": "arimelber",
+      "instagram": "arimelber",
+      "bluesky": "arimelber.bsky.social"
+    },
+    "tags": [
+      "legal analysis",
+      "constitutional law",
+      "political reporting",
+      "MSNBC"
+    ]
+  },
+  {
+    "id": "jessica-valenti",
+    "name": "Jessica Valenti",
+    "photo": "https://pbs.twimg.com/profile_images/jessicavalenti.jpg",
+    "followers": 338000,
+    "followersDisplay": "338K",
+    "platforms": [
+      "substack",
+      "tiktok",
+      "instagram",
+      "x"
+    ],
+    "lens": "Feminist columnist and author who reports daily on abortion rights in the United States through her Substack 'Abortion, Every Day.' Brings a reproductive rights and gender equity lens to policy, tracking every legal and legislative development affecting bodily autonomy.",
+    "feeds": {
+      "substack": "https://jessica.substack.com/feed"
+    },
+    "handles": {
+      "x": "JessicaValenti",
+      "tiktok": "auntiekilljoy",
+      "instagram": "jessicavalenti",
+      "bluesky": "jessicavalenti.bsky.social"
+    },
+    "tags": [
+      "reproductive rights",
+      "feminist analysis",
+      "abortion policy",
+      "gender equity"
+    ]
+  },
+  {
+    "id": "the-law-says-what",
+    "name": "The Law Says What",
+    "photo": "https://pbs.twimg.com/profile_images/thelawsayswhat.jpg",
+    "followers": 1200000,
+    "followersDisplay": "1.2M",
+    "platforms": [
+      "tiktok",
+      "instagram",
+      "youtube"
+    ],
+    "lens": "Harvard-trained attorneys Maclen and Ashleigh Stanley who break down legal news and court cases for a general audience. Bring a non-partisan legal education lens, making constitutional law, Supreme Court rulings, and everyday legal concepts accessible.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "the.law.says.what",
+      "instagram": "the.law.says.what"
+    },
+    "tags": [
+      "legal explainer",
+      "constitutional law",
+      "Supreme Court",
+      "non-partisan"
+    ]
+  },
+  {
+    "id": "gregory-price",
+    "name": "Gregory Price",
+    "photo": "https://pbs.twimg.com/profile_images/greg_price11.jpg",
+    "followers": 523000,
+    "followersDisplay": "523K",
+    "platforms": [
+      "x",
+      "tiktok",
+      "instagram"
+    ],
+    "lens": "Conservative political commentator and former Deputy Rapid Response Director for Trump's 2024 campaign. Brings an insider's perspective on Republican strategy and messaging, framing news through a pro-Trump, rapid-response political lens.",
+    "feeds": {},
+    "handles": {
+      "x": "greg_price11",
+      "tiktok": "greg_price11",
+      "instagram": "greg.price11"
+    },
+    "tags": [
+      "conservative",
+      "Trump campaign",
+      "Republican strategy",
+      "rapid response"
+    ]
+  },
+  {
+    "id": "isabel-brown",
+    "name": "Isabel Brown",
+    "photo": "https://pbs.twimg.com/profile_images/theisabelb.jpg",
+    "followers": 1200000,
+    "followersDisplay": "1.2M",
+    "platforms": [
+      "instagram",
+      "tiktok",
+      "youtube",
+      "x"
+    ],
+    "lens": "Gen Z conservative commentator, author, and Turning Point USA contributor who breaks down politics and culture for a young audience. Frames issues through a traditionalist, free-market perspective with a focus on reaching younger voters.",
+    "feeds": {},
+    "handles": {
+      "x": "theisabelb",
+      "tiktok": "theisabelbrown",
+      "instagram": "theisabelbrown",
+      "youtube": "theisabelbrown"
+    },
+    "tags": [
+      "Gen Z conservative",
+      "culture commentary",
+      "Turning Point USA",
+      "youth outreach"
+    ]
+  },
+  {
+    "id": "bogdan-laurentiu",
+    "name": "Bogdan Laurentiu",
+    "photo": "https://pbs.twimg.com/profile_images/immi_grateful.jpg",
+    "followers": 150000,
+    "followersDisplay": "150K",
+    "platforms": [
+      "tiktok",
+      "instagram",
+      "substack"
+    ],
+    "lens": "Romanian immigrant and conservative content creator who founded Immigrants for Liberty. Brings a pro-legal-immigration, pro-America perspective that challenges the assumption that immigrant communities lean left, advocating for assimilation and lawful pathways.",
+    "feeds": {
+      "substack": "https://immigrateful.substack.com/feed"
+    },
+    "handles": {
+      "x": "immi_grateful",
+      "tiktok": "immi.grateful",
+      "instagram": "immi.grateful"
+    },
+    "tags": [
+      "conservative immigrant",
+      "legal immigration",
+      "pro-America",
+      "immigrant perspective"
+    ]
+  },
+  {
+    "id": "joey-contino",
+    "name": "Joey Contino",
+    "photo": "https://pbs.twimg.com/profile_images/joeycontino.jpg",
+    "followers": 925000,
+    "followersDisplay": "925K",
+    "platforms": [
+      "tiktok",
+      "instagram",
+      "x",
+      "youtube"
+    ],
+    "lens": "Executive audio producer at iHeartMedia who covers global events on TikTok, with deep expertise in the war in Ukraine and international conflicts. Prioritizes factual, neutral reporting while bringing a unique international affairs lens and documentary-making background.",
+    "feeds": {},
+    "handles": {
+      "x": "joeycontino",
+      "tiktok": "joeycontino2",
+      "instagram": "joeycontino",
+      "bluesky": "joeycontino.bsky.social"
+    },
+    "tags": [
+      "international affairs",
+      "Ukraine conflict",
+      "factual reporting",
+      "iHeartMedia"
+    ]
+  },
+  {
+    "id": "so-informed",
+    "name": "So Informed (Jess Natale)",
+    "photo": "https://pbs.twimg.com/profile_images/soinformed.jpg",
+    "followers": 3200000,
+    "followersDisplay": "3.2M",
+    "platforms": [
+      "instagram",
+      "tiktok",
+      "x",
+      "substack",
+      "youtube"
+    ],
+    "lens": "Brooklyn-based solo political explainer who delivers infographic-driven breakdowns of politics and social issues across six platforms. Brings a progressive, policy-focused lens born out of grassroots campaign work, emphasizing accessible civic education.",
+    "feeds": {
+      "substack": "https://soinformed.substack.com/feed"
+    },
+    "handles": {
+      "x": "_soinformed",
+      "tiktok": "so.informed",
+      "instagram": "so.informed",
+      "bluesky": "soinformed.bsky.social"
+    },
+    "tags": [
+      "civic education",
+      "political explainer",
+      "infographic journalism",
+      "progressive policy"
+    ]
+  },
+  {
+    "id": "stacey-abrams",
+    "name": "Stacey Abrams",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Stacey_Abrams_2023.jpg/300px-Stacey_Abrams_2023.jpg",
+    "followers": 2400000,
+    "followersDisplay": "2.4M",
+    "platforms": [
+      "x",
+      "instagram",
+      "substack",
+      "tiktok"
+    ],
+    "lens": "Politician, lawyer, and voting rights activist who founded Fair Fight Action and is widely credited with expanding voter turnout in Georgia. Brings a voting rights, democratic access, and racial equity lens to every political issue, drawing on direct legislative experience.",
+    "feeds": {
+      "substack": "https://staceyabrams.substack.com/feed"
+    },
+    "handles": {
+      "x": "staceyabrams",
+      "tiktok": "staceyabrams",
+      "instagram": "staceyabrams",
+      "bluesky": "staceyabrams.bsky.social"
+    },
+    "tags": [
+      "voting rights",
+      "democratic access",
+      "racial equity",
+      "Georgia politics"
+    ]
+  },
+  {
+    "id": "motaz-azaiza",
+    "name": "Motaz Azaiza",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Motaz_Azaiza_2024.jpg/300px-Motaz_Azaiza_2024.jpg",
+    "followers": 18000000,
+    "followersDisplay": "18M",
+    "platforms": [
+      "instagram",
+      "x"
+    ],
+    "lens": "Palestinian photojournalist from Gaza whose powerful images of the conflict brought human suffering under siege to global attention. Brings a firsthand, on-the-ground perspective from a conflict zone where foreign press access is restricted, filling a critical media void.",
+    "feeds": {},
+    "handles": {
+      "x": "motaboread",
+      "instagram": "motaz_azaiza"
+    },
+    "tags": [
+      "photojournalism",
+      "Palestine",
+      "conflict reporting",
+      "humanitarian"
+    ]
+  },
+  {
+    "id": "taylor-lorenz",
+    "name": "Taylor Lorenz",
+    "photo": "https://pbs.twimg.com/profile_images/taylorlorenz.jpg",
+    "followers": 167000,
+    "followersDisplay": "167K",
+    "platforms": [
+      "instagram",
+      "substack",
+      "tiktok",
+      "x"
+    ],
+    "lens": "Internet culture journalist and former Washington Post reporter who launched User Mag on Substack. Brings a tech-and-creator-economy lens to politics, tracking how platforms, algorithms, and online influence shape public discourse and power.",
+    "feeds": {
+      "substack": "https://www.usermag.co/feed"
+    },
+    "handles": {
+      "x": "TaylorLorenz",
+      "tiktok": "taylorlorenz",
+      "instagram": "taylorlorenz",
+      "bluesky": "taylorlorenz.bsky.social"
+    },
+    "tags": [
+      "internet culture",
+      "creator economy",
+      "platform power",
+      "tech journalism"
+    ]
+  },
+  {
+    "id": "jonah-goldberg",
+    "name": "Jonah Goldberg",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jonah_Goldberg_by_Gage_Skidmore.jpg/300px-Jonah_Goldberg_by_Gage_Skidmore.jpg",
+    "followers": 377000,
+    "followersDisplay": "377K",
+    "platforms": [
+      "x",
+      "podcast"
+    ],
+    "lens": "Editor-in-chief and co-founder of The Dispatch, a center-right newsmagazine. A conservative who resigned from Fox News over concerns about misinformation, bringing a traditional-conservative, institutionalist lens that frequently critiques populism from the right.",
+    "feeds": {},
+    "handles": {
+      "x": "JonahDispatch",
+      "bluesky": "jonahg.bsky.social"
+    },
+    "tags": [
+      "center-right",
+      "anti-populist conservative",
+      "institutionalist",
+      "The Dispatch"
+    ]
+  },
+  {
+    "id": "jim-sciutto",
+    "name": "Jim Sciutto",
+    "photo": "https://pbs.twimg.com/profile_images/jimsciutto.jpg",
+    "followers": 532000,
+    "followersDisplay": "532K",
+    "platforms": [
+      "x",
+      "instagram"
+    ],
+    "lens": "CNN Chief National Security Analyst and former ABC News correspondent with deep expertise in intelligence, defense, and foreign policy. Brings a national security lens shaped by years covering China, the Middle East, and U.S. intelligence operations.",
+    "feeds": {},
+    "handles": {
+      "x": "jimsciutto",
+      "instagram": "jimsciutto"
+    },
+    "tags": [
+      "national security",
+      "intelligence",
+      "foreign policy",
+      "CNN"
+    ]
+  },
+  {
+    "id": "joe-concha",
+    "name": "Joe Concha",
+    "photo": "https://pbs.twimg.com/profile_images/joeconchatv.jpg",
+    "followers": 307000,
+    "followersDisplay": "307K",
+    "platforms": [
+      "x",
+      "instagram"
+    ],
+    "lens": "Conservative media critic, political columnist, and Fox News contributor. Brings a right-leaning media criticism lens, analyzing how mainstream outlets cover politics and challenging what he sees as liberal bias in news coverage.",
+    "feeds": {},
+    "handles": {
+      "x": "JoeConchaTV",
+      "instagram": "concha.joe"
+    },
+    "tags": [
+      "media criticism",
+      "conservative",
+      "Fox News",
+      "political commentary"
+    ]
+  },
+  {
+    "id": "jill-filipovic",
+    "name": "Jill Filipovic",
+    "photo": "https://pbs.twimg.com/profile_images/jillfilipovic.jpg",
+    "followers": 143000,
+    "followersDisplay": "143K",
+    "platforms": [
+      "x",
+      "substack",
+      "instagram"
+    ],
+    "lens": "Attorney, freelance journalist, and author who writes on gender equity, reproductive rights, and law. Brings a feminist legal lens to politics, combining her legal training with international reporting experience to analyze how policy affects women's rights.",
+    "feeds": {
+      "substack": "https://jill.substack.com/feed"
+    },
+    "handles": {
+      "x": "JillFilipovic",
+      "instagram": "jillfilipovic",
+      "bluesky": "jillfilipovic.bsky.social"
+    },
+    "tags": [
+      "feminist legal analysis",
+      "reproductive rights",
+      "gender equity",
+      "international law"
+    ]
+  },
+  {
+    "id": "alaina-wood",
+    "name": "Alaina Wood",
+    "photo": "https://pbs.twimg.com/profile_images/thegarbagequeen.jpg",
+    "followers": 406000,
+    "followersDisplay": "406K",
+    "platforms": [
+      "tiktok",
+      "instagram",
+      "substack",
+      "youtube"
+    ],
+    "lens": "Award-winning climate communicator and sustainability scientist who fights climate doomism with her 'Good Climate News' series. Brings a solutions-oriented environmental lens, highlighting corporate accountability while countering eco-anxiety with evidence-based optimism.",
+    "feeds": {
+      "substack": "https://goodclimatenews.substack.com/feed"
+    },
+    "handles": {
+      "tiktok": "thegarbagequeen",
+      "instagram": "itsthegarbagequeen",
+      "bluesky": "thegarbagequeen.bsky.social"
+    },
+    "tags": [
+      "climate accountability",
+      "sustainability science",
+      "environmental justice",
+      "anti-doomism"
+    ]
+  },
+  {
+    "id": "hazel-thayer",
+    "name": "Hazel Thayer",
+    "photo": "https://pbs.twimg.com/profile_images/hazelisonline.jpg",
+    "followers": 151000,
+    "followersDisplay": "151K",
+    "platforms": [
+      "tiktok",
+      "instagram",
+      "youtube",
+      "x"
+    ],
+    "lens": "Canadian-based climate and politics creator with an economics degree who uses biting humor to simplify sustainability and environmental economics. Brings a climate-economics lens, connecting fossil fuel policy, greenwashing, and political decisions to their environmental consequences.",
+    "feeds": {},
+    "handles": {
+      "x": "hazelis_online",
+      "tiktok": "hazelisonline",
+      "instagram": "hazelisonline"
+    },
+    "tags": [
+      "climate economics",
+      "greenwash busting",
+      "environmental policy",
+      "political satire"
+    ]
+  },
+  {
+    "id": "chuck-schumer",
+    "name": "Chuck Schumer",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Sen._Chuck_Schumer_official_photo.jpg/300px-Sen._Chuck_Schumer_official_photo.jpg",
+    "followers": 7200000,
+    "followersDisplay": "7.2M",
+    "platforms": ["x"],
+    "lens": "Senate Democratic Leader from New York. Frames issues through pragmatic coalition-building and New York constituency interests. Key voice on spending, immigration, and judicial confirmations.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenSchumer.json"
+    },
+    "handles": {
+      "x": "SenSchumer"
+    },
+    "tags": ["Democratic leadership", "Senate strategy", "New York politics"]
+  },
+  {
+    "id": "mitch-mcconnell",
+    "name": "Mitch McConnell",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Mitch_McConnell_2016_official_photo_%28cropped%29.jpg/300px-Mitch_McConnell_2016_official_photo_%28cropped%29.jpg",
+    "followers": 3100000,
+    "followersDisplay": "3.1M",
+    "platforms": ["x"],
+    "lens": "Longtime Senate Republican leader from Kentucky and institutional strategist. Approaches politics through procedural mastery and judicial appointments. Often at odds with populist wing of his own party.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/LeaderMcConnell.json"
+    },
+    "handles": {
+      "x": "LeaderMcConnell"
+    },
+    "tags": ["Republican establishment", "Senate institutionalist", "judicial strategy"]
+  },
+  {
+    "id": "john-fetterman",
+    "name": "John Fetterman",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/John_Fetterman_official_Senate_photo.jpg/300px-John_Fetterman_official_Senate_photo.jpg",
+    "followers": 2100000,
+    "followersDisplay": "2.1M",
+    "platforms": ["x"],
+    "lens": "Pennsylvania senator known for breaking with progressive orthodoxy on issues like Israel and immigration. Blue-collar populist style with an irreverent social media presence that defies easy categorization.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenFettermanPA.json"
+    },
+    "handles": {
+      "x": "SenFettermanPA"
+    },
+    "tags": ["populist Democrat", "heterodox", "working-class politics"]
+  },
+  {
+    "id": "tim-scott",
+    "name": "Tim Scott",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tim_Scott%2C_official_portrait%2C_113th_Congress.jpg/300px-Tim_Scott%2C_official_portrait%2C_113th_Congress.jpg",
+    "followers": 2500000,
+    "followersDisplay": "2.5M",
+    "platforms": ["x"],
+    "lens": "Republican senator from South Carolina and former presidential candidate. Frames conservative policies through opportunity and optimism. Notable voice on race, economic mobility, and faith.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenatorTimScott.json"
+    },
+    "handles": {
+      "x": "SenatorTimScott"
+    },
+    "tags": ["opportunity conservatism", "faith-based", "economic mobility"]
+  },
+  {
+    "id": "mitt-romney",
+    "name": "Mitt Romney",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mitt_Romney_official_US_Senate_portrait.jpg/300px-Mitt_Romney_official_US_Senate_portrait.jpg",
+    "followers": 5600000,
+    "followersDisplay": "5.6M",
+    "platforms": ["x"],
+    "lens": "Former presidential nominee and Utah senator known for breaking with his party on Trump-era issues. Represents traditional Republican values of fiscal conservatism and institutional norms.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/MittRomney.json"
+    },
+    "handles": {
+      "x": "MittRomney"
+    },
+    "tags": ["traditional conservative", "institutionalist", "anti-Trump Republican"]
+  },
+  {
+    "id": "cory-booker",
+    "name": "Cory Booker",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Cory_Booker%2C_official_portrait%2C_114th_Congress.jpg/300px-Cory_Booker%2C_official_portrait%2C_114th_Congress.jpg",
+    "followers": 5400000,
+    "followersDisplay": "5.4M",
+    "platforms": ["x"],
+    "lens": "New Jersey senator known for impassioned rhetoric on justice, community, and moral leadership. Frames policy through empathy, civil rights, and grassroots organizing.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/CoryBooker.json"
+    },
+    "handles": {
+      "x": "CoryBooker"
+    },
+    "tags": ["progressive", "civil rights", "moral leadership"]
+  },
+  {
+    "id": "lindsey-graham",
+    "name": "Lindsey Graham",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Lindsey_Graham%2C_official_photo%2C_113th_Congress.jpg/300px-Lindsey_Graham%2C_official_photo%2C_113th_Congress.jpg",
+    "followers": 3200000,
+    "followersDisplay": "3.2M",
+    "platforms": ["x"],
+    "lens": "South Carolina senator and senior Judiciary Committee member. Hawkish on foreign policy, particularly on Iran and defense. Known for shifting alliances between establishment and Trump-aligned positions.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/LindseyGrahamSC.json"
+    },
+    "handles": {
+      "x": "LindseyGrahamSC"
+    },
+    "tags": ["foreign policy hawk", "defense", "pragmatic Republican"]
+  },
+  {
+    "id": "josh-hawley",
+    "name": "Josh Hawley",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Josh_Hawley_official_portrait_%28cropped%29.jpg/300px-Josh_Hawley_official_portrait_%28cropped%29.jpg",
+    "followers": 1800000,
+    "followersDisplay": "1.8M",
+    "platforms": ["x"],
+    "lens": "Missouri senator and prominent voice in the populist-conservative movement. Champions anti-Big Tech regulation, economic nationalism, and working-class conservatism. Frequent critic of corporate America.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/HawleyMO.json"
+    },
+    "handles": {
+      "x": "HawleyMO"
+    },
+    "tags": ["populist conservative", "anti-Big Tech", "economic nationalism"]
+  },
+  {
+    "id": "katie-britt",
+    "name": "Katie Britt",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sen._Katie_Britt_official_portrait%2C_118th_Congress.jpg/300px-Sen._Katie_Britt_official_portrait%2C_118th_Congress.jpg",
+    "followers": 520000,
+    "followersDisplay": "520K",
+    "platforms": ["x"],
+    "lens": "Alabama's youngest-ever female senator. Rising Republican voice on family policy, immigration enforcement, and economic issues. Gained national attention for her State of the Union response.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenKatieBritt.json"
+    },
+    "handles": {
+      "x": "SenKatieBritt"
+    },
+    "tags": ["rising Republican", "family policy", "immigration enforcement"]
+  },
+  {
+    "id": "mark-kelly",
+    "name": "Mark Kelly",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mark_Kelly%2C_official_portrait%2C_117th_Congress.jpg/300px-Mark_Kelly%2C_official_portrait%2C_117th_Congress.jpg",
+    "followers": 2800000,
+    "followersDisplay": "2.8M",
+    "platforms": ["x"],
+    "lens": "Arizona senator, Navy combat veteran, and retired NASA astronaut. Brings a national security and pragmatic centrist lens. Leading voice on gun safety reform after the shooting of his wife Gabby Giffords.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenMarkKelly.json"
+    },
+    "handles": {
+      "x": "SenMarkKelly"
+    },
+    "tags": ["national security", "gun safety", "pragmatic centrist"]
+  },
+  {
+    "id": "raphael-warnock",
+    "name": "Raphael Warnock",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Raphael_Warnock_official_photo.jpg/300px-Raphael_Warnock_official_photo.jpg",
+    "followers": 1500000,
+    "followersDisplay": "1.5M",
+    "platforms": ["x"],
+    "lens": "Georgia senator and senior pastor at Ebenezer Baptist Church. Frames policy through moral and faith-based arguments, particularly on voting rights, healthcare, and economic justice.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenatorWarnock.json"
+    },
+    "handles": {
+      "x": "SenatorWarnock"
+    },
+    "tags": ["faith and politics", "voting rights", "economic justice"]
+  },
+  {
+    "id": "chris-murphy",
+    "name": "Chris Murphy",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Chris_Murphy%2C_official_portrait%2C_113th_Congress.jpg/300px-Chris_Murphy%2C_official_portrait%2C_113th_Congress.jpg",
+    "followers": 1700000,
+    "followersDisplay": "1.7M",
+    "platforms": ["x"],
+    "lens": "Connecticut senator and the Senate's most vocal advocate for gun control since Sandy Hook. Also a leading voice on foreign policy restraint and rebuilding the progressive movement.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/ChrisMurphyCT.json"
+    },
+    "handles": {
+      "x": "ChrisMurphyCT"
+    },
+    "tags": ["gun reform", "foreign policy restraint", "progressive populist"]
+  },
+  {
+    "id": "marco-rubio",
+    "name": "Marco Rubio",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Marco_Rubio%2C_Official_Portrait%2C_112th_Congress.jpg/300px-Marco_Rubio%2C_Official_Portrait%2C_112th_Congress.jpg",
+    "followers": 5100000,
+    "followersDisplay": "5.1M",
+    "platforms": ["x"],
+    "lens": "72nd U.S. Secretary of State and former Florida senator. Hawkish on China, Cuba, and Venezuela. Brings a foreign policy and national security lens as the top diplomat in the Trump administration.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SecRubio.json"
+    },
+    "handles": {
+      "x": "SecRubio"
+    },
+    "tags": ["foreign policy hawk", "China hawk", "national security"]
+  },
+  {
+    "id": "tom-cotton",
+    "name": "Tom Cotton",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tom_Cotton_official_Senate_photo.jpg/300px-Tom_Cotton_official_Senate_photo.jpg",
+    "followers": 1600000,
+    "followersDisplay": "1.6M",
+    "platforms": ["x"],
+    "lens": "Arkansas senator and Army veteran. Hardline conservative on immigration, national defense, and China policy. Known for aggressive stances on law enforcement and military intervention.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/TomCottonAR.json"
+    },
+    "handles": {
+      "x": "TomCottonAR"
+    },
+    "tags": ["defense hawk", "immigration hardliner", "China hawk"]
+  },
+  {
+    "id": "tammy-duckworth",
+    "name": "Tammy Duckworth",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Tammy_Duckworth%2C_official_portrait%2C_115th_Congress.jpg/300px-Tammy_Duckworth%2C_official_portrait%2C_115th_Congress.jpg",
+    "followers": 1200000,
+    "followersDisplay": "1.2M",
+    "platforms": ["x"],
+    "lens": "Illinois senator, Purple Heart veteran, and double amputee who lost her legs in Iraq. Advocates for veterans, disability rights, and military readiness. First Thai-American senator.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenDuckworth.json"
+    },
+    "handles": {
+      "x": "SenDuckworth"
+    },
+    "tags": ["veterans affairs", "disability rights", "military readiness"]
+  },
+  {
+    "id": "hakeem-jeffries",
+    "name": "Hakeem Jeffries",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Hakeem_Jeffries_117th_Congress_portrait.jpg/300px-Hakeem_Jeffries_117th_Congress_portrait.jpg",
+    "followers": 1900000,
+    "followersDisplay": "1.9M",
+    "platforms": ["x"],
+    "lens": "House Democratic Leader from Brooklyn. First Black leader of a major U.S. congressional party. Frames issues through institutional opposition to Republican agenda and coalition management.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepJeffries.json"
+    },
+    "handles": {
+      "x": "RepJeffries"
+    },
+    "tags": ["Democratic leadership", "House strategy", "institutional opposition"]
+  },
+  {
+    "id": "mike-johnson",
+    "name": "Mike Johnson",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Speaker_Johnson_official_portrait_%28cropped%29.jpg/300px-Speaker_Johnson_official_portrait_%28cropped%29.jpg",
+    "followers": 1100000,
+    "followersDisplay": "1.1M",
+    "platforms": ["x"],
+    "lens": "Speaker of the House from Louisiana. Constitutional lawyer by background. Frames policy through evangelical Christianity and strict constitutional interpretation.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SpeakerJohnson.json"
+    },
+    "handles": {
+      "x": "SpeakerJohnson"
+    },
+    "tags": ["House Republican leadership", "constitutional conservative", "evangelical"]
+  },
+  {
+    "id": "jim-jordan",
+    "name": "Jim Jordan",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Jim_Jordan_117th_Congress_portrait.jpg/300px-Jim_Jordan_117th_Congress_portrait.jpg",
+    "followers": 4200000,
+    "followersDisplay": "4.2M",
+    "platforms": ["x"],
+    "lens": "Ohio representative and House Judiciary Committee chair. Leading Republican voice on government oversight, weaponization of federal agencies, and free speech. Combative hearing style.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/Jim_Jordan.json"
+    },
+    "handles": {
+      "x": "Jim_Jordan"
+    },
+    "tags": ["government oversight", "free speech", "MAGA conservative"]
+  },
+  {
+    "id": "jamie-raskin",
+    "name": "Jamie Raskin",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Jamie_Raskin_117th_Congress_portrait.jpg/300px-Jamie_Raskin_117th_Congress_portrait.jpg",
+    "followers": 1400000,
+    "followersDisplay": "1.4M",
+    "platforms": ["x"],
+    "lens": "Maryland representative and constitutional law professor. Led Trump's second impeachment. Known for impassioned constitutional arguments and defense of democratic institutions.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepRaskin.json"
+    },
+    "handles": {
+      "x": "RepRaskin"
+    },
+    "tags": ["constitutional law", "democratic institutions", "oversight"]
+  },
+  {
+    "id": "ilhan-omar",
+    "name": "Ilhan Omar",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ilhan_Omar_official_portrait.jpg/300px-Ilhan_Omar_official_portrait.jpg",
+    "followers": 3200000,
+    "followersDisplay": "3.2M",
+    "platforms": ["x"],
+    "lens": "Minnesota representative and one of the first Muslim women in Congress. Somali refugee who brings an immigration, anti-war, and progressive foreign policy perspective.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/IlhanMN.json"
+    },
+    "handles": {
+      "x": "IlhanMN"
+    },
+    "tags": ["progressive foreign policy", "immigration", "anti-war"]
+  },
+  {
+    "id": "ro-khanna",
+    "name": "Ro Khanna",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Ro_Khanna_117th_Congress_portrait.jpg/300px-Ro_Khanna_117th_Congress_portrait.jpg",
+    "followers": 980000,
+    "followersDisplay": "980K",
+    "platforms": ["x"],
+    "lens": "Silicon Valley representative who bridges progressive politics and the tech industry. Advocates for industrial policy, tech regulation, and bringing manufacturing back to America.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RoKhanna.json"
+    },
+    "handles": {
+      "x": "RoKhanna"
+    },
+    "tags": ["tech policy", "progressive economics", "industrial policy"]
+  },
+  {
+    "id": "matt-gaetz",
+    "name": "Matt Gaetz",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Matt_Gaetz_117th_Congress_portrait.jpg/300px-Matt_Gaetz_117th_Congress_portrait.jpg",
+    "followers": 3600000,
+    "followersDisplay": "3.6M",
+    "platforms": ["x"],
+    "lens": "Former Florida representative and Trump loyalist. Provocative MAGA voice who challenged Republican leadership. Nominated for Attorney General before withdrawing.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/mattgaetz.json"
+    },
+    "handles": {
+      "x": "mattgaetz"
+    },
+    "tags": ["MAGA populist", "anti-establishment", "provocateur"]
+  },
+  {
+    "id": "byron-donalds",
+    "name": "Byron Donalds",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Byron_Donalds_117th_Congress_portrait.jpg/300px-Byron_Donalds_117th_Congress_portrait.jpg",
+    "followers": 1100000,
+    "followersDisplay": "1.1M",
+    "platforms": ["x"],
+    "lens": "Florida representative and rising Black conservative star. Challenges conventional identity politics narratives. Vocal on fiscal conservatism, deregulation, and school choice.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/ByronDonalds.json"
+    },
+    "handles": {
+      "x": "ByronDonalds"
+    },
+    "tags": ["Black conservative", "fiscal conservatism", "school choice"]
+  },
+  {
+    "id": "jasmine-crockett",
+    "name": "Jasmine Crockett",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Jasmine_Crockett_118th_Congress_portrait.jpg/300px-Jasmine_Crockett_118th_Congress_portrait.jpg",
+    "followers": 680000,
+    "followersDisplay": "680K",
+    "platforms": ["x"],
+    "lens": "Texas representative and civil rights attorney. Gained viral fame for sharp exchanges in committee hearings. Voices on racial justice, voting rights, and holding Republicans accountable.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepJasmine.json"
+    },
+    "handles": {
+      "x": "RepJasmine"
+    },
+    "tags": ["racial justice", "voting rights", "viral communicator"]
+  },
+  {
+    "id": "nancy-mace",
+    "name": "Nancy Mace",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Nancy_Mace_117th_Congress_portrait.jpg/300px-Nancy_Mace_117th_Congress_portrait.jpg",
+    "followers": 890000,
+    "followersDisplay": "890K",
+    "platforms": ["x"],
+    "lens": "South Carolina representative and first woman to graduate from The Citadel. Positions herself as a maverick Republican, vocal on transgender issues and government spending. Unpredictable voting record.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepNancyMace.json"
+    },
+    "handles": {
+      "x": "RepNancyMace"
+    },
+    "tags": ["maverick Republican", "culture war", "government spending"]
+  },
+  {
+    "id": "chip-roy",
+    "name": "Chip Roy",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Chip_Roy_117th_Congress_portrait.jpg/300px-Chip_Roy_117th_Congress_portrait.jpg",
+    "followers": 520000,
+    "followersDisplay": "520K",
+    "platforms": ["x"],
+    "lens": "Texas representative and Freedom Caucus member. Staunch fiscal conservative and border hawk who has clashed with his own party's leadership on spending bills.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/chiproytx.json"
+    },
+    "handles": {
+      "x": "chiproytx"
+    },
+    "tags": ["Freedom Caucus", "fiscal conservative", "border hawk"]
+  },
+  {
+    "id": "dean-withers",
+    "name": "Dean Withers",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Dean_Withers_photo.jpg/300px-Dean_Withers_photo.jpg",
+    "followers": 2100000,
+    "followersDisplay": "2.1M",
+    "platforms": ["tiktok", "instagram", "x"],
+    "lens": "Liberal TikTok debater from Colorado who shifted from conservative to progressive after January 6th. Known for confrontational political debates and live streams that draw millions of young viewers.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/itsdeaann.json"
+    },
+    "handles": {
+      "x": "itsdeaann",
+      "tiktok": "itsdeaann",
+      "instagram": "deanwithrs"
+    },
+    "tags": ["Gen Z debater", "progressive", "political conversion"]
+  },
+  {
+    "id": "damon-imani",
+    "name": "Damon Imani",
+    "photo": "https://pbs.twimg.com/profile_images/damonimani.jpg",
+    "followers": 1600000,
+    "followersDisplay": "1.6M",
+    "platforms": ["x", "tiktok", "instagram", "youtube"],
+    "lens": "Iran-born, Denmark-based satirical commentator and content creator. Right-wing provocateur who uses humor and viral clips to critique mainstream media and progressive policies.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/damonimani.json",
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDamonImani"
+    },
+    "handles": {
+      "x": "damonimani",
+      "tiktok": "damonimani",
+      "instagram": "damonimani"
+    },
+    "tags": ["right-wing satire", "anti-media", "immigrant conservative"]
+  },
+  {
+    "id": "matteo-il-pazzeo",
+    "name": "Matteo il Pazzeo",
+    "photo": "https://pbs.twimg.com/profile_images/matteo_il_pazzeo.jpg",
+    "followers": 420000,
+    "followersDisplay": "420K",
+    "platforms": ["tiktok", "instagram"],
+    "lens": "Italian-American constitutional law explainer who breaks down Supreme Court rulings and executive actions in rapid-fire TikToks. Self-described constitutional expert with a left-leaning perspective.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "matteo_il_pazzeo",
+      "instagram": "matteo_il_pazzeo"
+    },
+    "tags": ["constitutional law", "legal explainer", "progressive legal analysis"]
+  },
+  {
+    "id": "claudio-vallejo",
+    "name": "Claudio Vallejo",
+    "photo": "https://pbs.twimg.com/profile_images/supermexican.jpg",
+    "followers": 350000,
+    "followersDisplay": "350K",
+    "platforms": ["tiktok", "x", "instagram", "youtube", "substack"],
+    "lens": "Texas-based progressive fact-checker and political commentator originally from California. Uses his platform for media literacy and has filed voting rights lawsuits. Self-described liberal.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/supermexican.json",
+      "substack": "https://whatsupcv.substack.com/feed"
+    },
+    "handles": {
+      "x": "supermexican",
+      "tiktok": "whatsupcv",
+      "instagram": "whatsup_cv"
+    },
+    "tags": ["fact-checking", "voting rights", "media literacy"]
+  },
+  {
+    "id": "endeavorance",
+    "name": "Endeavorance",
+    "photo": "https://pbs.twimg.com/profile_images/endeavorance.jpg",
+    "followers": 380000,
+    "followersDisplay": "380K",
+    "platforms": ["tiktok", "instagram", "youtube", "bluesky"],
+    "lens": "Creator who produces current events skits and runs the 'Stuff Keeps Happening' newsletter and podcast. Uses humor and satire to cover politics and tech from a left-leaning perspective.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "endeavorance",
+      "instagram": "im_endeavorance",
+      "bluesky": "endeavorance.camp"
+    },
+    "tags": ["current events satire", "political comedy", "newsletter creator"]
+  },
+  {
+    "id": "kenneth-walden",
+    "name": "Kenneth Walden (2RawTooReal)",
+    "photo": "https://pbs.twimg.com/profile_images/2RawTooReal.jpg",
+    "followers": 310000,
+    "followersDisplay": "310K",
+    "platforms": ["tiktok", "x", "instagram", "bluesky"],
+    "lens": "Satirical political commentator credentialed at the 2024 DNC. Known for sharp takes on politics, law, race, and culture from a progressive perspective.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/2RawTooReal.json"
+    },
+    "handles": {
+      "x": "2RawTooReal",
+      "tiktok": "2rawtooreal2",
+      "instagram": "2rawtooreal",
+      "bluesky": "2rawtooreal.bsky.social"
+    },
+    "tags": ["political satire", "race and identity", "progressive commentary"]
+  },
+  {
+    "id": "andra-berghoff",
+    "name": "Andra Berghoff",
+    "photo": "https://pbs.twimg.com/profile_images/andraberghoff.jpg",
+    "followers": 290000,
+    "followersDisplay": "290K",
+    "platforms": ["tiktok", "instagram", "youtube", "bluesky"],
+    "lens": "Minnesota-based news and pop culture commentator with a digital design background. Covers politics, culture, and race from a self-described left-leaning perspective.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "hopeyoufindyourdad",
+      "instagram": "andraberghoff",
+      "bluesky": "andraberghoff.bsky.social"
+    },
+    "tags": ["Minnesota politics", "pop culture", "progressive commentary"]
+  },
+  {
+    "id": "catherine-cannon",
+    "name": "Catherine Cannon",
+    "photo": "https://pbs.twimg.com/profile_images/cannonsfodder.jpg",
+    "followers": 260000,
+    "followersDisplay": "260K",
+    "platforms": ["tiktok", "instagram", "youtube", "bluesky", "substack"],
+    "lens": "Florida-based educator and politics explainer with 15+ years teaching experience. Self-described leftist who produces accessible political commentary and hosts the 'Just Buy Less Coffee' podcast.",
+    "feeds": {
+      "substack": "https://cannonsfodder.substack.com/feed"
+    },
+    "handles": {
+      "tiktok": "cannonsfodder",
+      "instagram": "cannonsfodder_ig",
+      "bluesky": "cannonsfodder.bsky.social"
+    },
+    "tags": ["educator perspective", "Florida politics", "political explainer"]
+  },
+  {
+    "id": "kevin-roberts",
+    "name": "Kevin Roberts (Heritage Foundation)",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Kevin_Roberts_Heritage.jpg/300px-Kevin_Roberts_Heritage.jpg",
+    "followers": 560000,
+    "followersDisplay": "560K",
+    "platforms": ["x"],
+    "lens": "President of the Heritage Foundation and architect of Project 2025. Leading voice in the conservative policy establishment pushing for sweeping government restructuring.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/KevinRobertsTX.json"
+    },
+    "handles": {
+      "x": "KevinRobertsTX"
+    },
+    "tags": ["Project 2025", "conservative policy", "government restructuring"]
+  },
+  {
+    "id": "brookings-institution",
+    "name": "Brookings Institution",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Brookings_seal.svg/300px-Brookings_seal.svg.png",
+    "followers": 860000,
+    "followersDisplay": "860K",
+    "platforms": ["x"],
+    "lens": "Centrist-to-center-left think tank producing independent research on governance, economics, and foreign policy. One of the most cited policy research organizations in Washington.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/BrookingsInst.json"
+    },
+    "handles": {
+      "x": "BrookingsInst"
+    },
+    "tags": ["policy research", "centrist analysis", "institutional expertise"]
+  },
+  {
+    "id": "cato-institute",
+    "name": "Cato Institute",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Cato_Institute.svg/300px-Cato_Institute.svg.png",
+    "followers": 650000,
+    "followersDisplay": "650K",
+    "platforms": ["x"],
+    "lens": "Libertarian think tank promoting individual liberty, free markets, and limited government. Critiques both progressive overreach and conservative authoritarianism.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/CatoInstitute.json"
+    },
+    "handles": {
+      "x": "CatoInstitute"
+    },
+    "tags": ["libertarian", "free markets", "civil liberties"]
+  },
+  {
+    "id": "center-for-american-progress",
+    "name": "Center for American Progress",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Center_for_American_Progress_logo.svg/300px-Center_for_American_Progress_logo.svg.png",
+    "followers": 420000,
+    "followersDisplay": "420K",
+    "platforms": ["x"],
+    "lens": "Progressive think tank closely aligned with the Democratic establishment. Produces policy research on healthcare, climate, economy, and social justice that often shapes Democratic legislative priorities.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/amprog.json"
+    },
+    "handles": {
+      "x": "amprog"
+    },
+    "tags": ["progressive policy", "Democratic establishment", "policy research"]
+  },
+  {
+    "id": "manhattan-institute",
+    "name": "Manhattan Institute",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Manhattan_Institute_logo.svg/300px-Manhattan_Institute_logo.svg.png",
+    "followers": 210000,
+    "followersDisplay": "210K",
+    "platforms": ["x"],
+    "lens": "Conservative/free-market think tank focused on urban policy, education, energy, and economic opportunity. Influential on policing, housing, and anti-DEI policy debates.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/ManhattanInst.json"
+    },
+    "handles": {
+      "x": "ManhattanInst"
+    },
+    "tags": ["free-market policy", "urban policy", "anti-DEI"]
+  },
+  {
+    "id": "american-enterprise-institute",
+    "name": "American Enterprise Institute",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/AEI_logo.svg/300px-AEI_logo.svg.png",
+    "followers": 380000,
+    "followersDisplay": "380K",
+    "platforms": ["x"],
+    "lens": "Center-right think tank focused on government, economics, and foreign/defense policy. Home to prominent neoconservative and center-right scholars.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/AEI.json"
+    },
+    "handles": {
+      "x": "AEI"
+    },
+    "tags": ["center-right policy", "defense policy", "economic research"]
+  },
+  {
+    "id": "christiane-amanpour",
+    "name": "Christiane Amanpour",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Christiane_Amanpour_2023.jpg/300px-Christiane_Amanpour_2023.jpg",
+    "followers": 3100000,
+    "followersDisplay": "3.1M",
+    "platforms": ["x"],
+    "lens": "CNN's chief international anchor and the most recognized name in international journalism. Brings decades of war reporting and a global, human-rights-oriented perspective to U.S. foreign policy debates.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/amanpour.json"
+    },
+    "handles": {
+      "x": "amanpour"
+    },
+    "tags": ["international journalism", "human rights", "war correspondence"]
+  },
+  {
+    "id": "richard-engel",
+    "name": "Richard Engel",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Richard_Engel_2014.jpg/300px-Richard_Engel_2014.jpg",
+    "followers": 1200000,
+    "followersDisplay": "1.2M",
+    "platforms": ["x"],
+    "lens": "NBC News chief foreign correspondent who has covered every major conflict since the Iraq War. Provides ground-level reporting from war zones and authoritarian states that adds depth to foreign policy debates.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RichardEngel.json"
+    },
+    "handles": {
+      "x": "RichardEngel"
+    },
+    "tags": ["foreign correspondent", "conflict reporting", "Middle East"]
+  },
+  {
+    "id": "bret-stephens",
+    "name": "Bret Stephens",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Bret_Stephens_2019.jpg/300px-Bret_Stephens_2019.jpg",
+    "followers": 320000,
+    "followersDisplay": "320K",
+    "platforms": ["x"],
+    "lens": "New York Times conservative columnist and former Wall Street Journal editor. Neoconservative on foreign policy, center-right on domestic issues. Frequent critic of both Trump populism and progressive overreach.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/BretStephen_NYT.json"
+    },
+    "handles": {
+      "x": "BretStephen_NYT"
+    },
+    "tags": ["neoconservative", "center-right", "foreign policy"]
+  },
+  {
+    "id": "thomas-friedman",
+    "name": "Thomas Friedman",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Thomas_L._Friedman_2012.jpg/300px-Thomas_L._Friedman_2012.jpg",
+    "followers": 1700000,
+    "followersDisplay": "1.7M",
+    "platforms": ["x"],
+    "lens": "Three-time Pulitzer Prize-winning NYT foreign affairs columnist. Frames geopolitics through globalization, technology, and energy. Influential voice on Middle East peace, China, and climate economics.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/tomfriedman.json"
+    },
+    "handles": {
+      "x": "tomfriedman"
+    },
+    "tags": ["globalization", "Middle East", "climate economics"]
+  },
+  {
+    "id": "ian-bremmer",
+    "name": "Ian Bremmer",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ian_Bremmer_2019.jpg/300px-Ian_Bremmer_2019.jpg",
+    "followers": 810000,
+    "followersDisplay": "810K",
+    "platforms": ["x"],
+    "lens": "Founder of Eurasia Group and GZERO Media. Leading political risk analyst who frames global events through geopolitical risk and the erosion of the global liberal order.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/ianbremmer.json"
+    },
+    "handles": {
+      "x": "ianbremmer"
+    },
+    "tags": ["geopolitical risk", "global order", "political science"]
+  },
+  {
+    "id": "casey-newton",
+    "name": "Casey Newton",
+    "photo": "https://pbs.twimg.com/profile_images/caseynewton.jpg",
+    "followers": 320000,
+    "followersDisplay": "320K",
+    "platforms": ["x", "substack", "bluesky"],
+    "lens": "Founder of Platformer and NYT Hard Fork podcast co-host. Leading voice on how social media platforms shape democracy, content moderation, and the tech industry's political power.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/CaseyNewton.json"
+    },
+    "handles": {
+      "x": "CaseyNewton",
+      "bluesky": "caseynewton.bsky.social"
+    },
+    "tags": ["tech platforms", "content moderation", "tech democracy"]
+  },
+  {
+    "id": "kevin-roose",
+    "name": "Kevin Roose",
+    "photo": "https://pbs.twimg.com/profile_images/kevinroose.jpg",
+    "followers": 460000,
+    "followersDisplay": "460K",
+    "platforms": ["x"],
+    "lens": "NYT tech columnist and Hard Fork podcast co-host. Covers AI, social media, and the human consequences of technology. Known for his viral Bing AI conversation that raised alarms about AI alignment.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/kevinroose.json"
+    },
+    "handles": {
+      "x": "kevinroose"
+    },
+    "tags": ["AI policy", "tech journalism", "social media"]
+  },
+  {
+    "id": "tristan-harris",
+    "name": "Tristan Harris",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Tristan_Harris_2019.jpg/300px-Tristan_Harris_2019.jpg",
+    "followers": 390000,
+    "followersDisplay": "390K",
+    "platforms": ["x"],
+    "lens": "Co-founder of the Center for Humane Technology and star of The Social Dilemma. Frames tech through the lens of attention manipulation and existential AI risk. Testifies frequently before Congress.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/tristanharris.json"
+    },
+    "handles": {
+      "x": "tristanharris"
+    },
+    "tags": ["humane tech", "AI risk", "attention economy"]
+  },
+  {
+    "id": "timnit-gebru",
+    "name": "Timnit Gebru",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Timnit_Gebru_2018.jpg/300px-Timnit_Gebru_2018.jpg",
+    "followers": 250000,
+    "followersDisplay": "250K",
+    "platforms": ["x"],
+    "lens": "AI researcher and founder of the DAIR Institute. Fired from Google for research on large language model bias. Leading critic of AI industry from an ethics, racial justice, and labor perspective.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/timnitGebru.json"
+    },
+    "handles": {
+      "x": "timnitGebru"
+    },
+    "tags": ["AI ethics", "racial justice in tech", "corporate accountability"]
+  },
+  {
+    "id": "gary-marcus",
+    "name": "Gary Marcus",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Gary_Marcus_2019.jpg/300px-Gary_Marcus_2019.jpg",
+    "followers": 380000,
+    "followersDisplay": "380K",
+    "platforms": ["x", "substack"],
+    "lens": "NYU professor emeritus and prominent AI skeptic. Challenges hype around large language models with cognitive science arguments. Vocal on AI regulation, safety, and the gap between AI marketing and reality.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/GaryMarcus.json",
+      "substack": "https://garymarcus.substack.com/feed"
+    },
+    "handles": {
+      "x": "GaryMarcus"
+    },
+    "tags": ["AI skeptic", "cognitive science", "AI regulation"]
+  },
+  {
+    "id": "rand-paul",
+    "name": "Rand Paul",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Rand_Paul%2C_official_portrait%2C_112th_Congress_alternate.jpg/300px-Rand_Paul%2C_official_portrait%2C_112th_Congress_alternate.jpg",
+    "followers": 4200000,
+    "followersDisplay": "4.2M",
+    "platforms": ["x"],
+    "lens": "Kentucky senator and libertarian-leaning Republican. Ophthalmologist by training. Champions civil liberties, non-interventionist foreign policy, and fiscal restraint. Frequent critic of government spending from both parties.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RandPaul.json"
+    },
+    "handles": {
+      "x": "RandPaul"
+    },
+    "tags": ["libertarian", "non-interventionist", "fiscal restraint"]
+  },
+  {
+    "id": "john-kennedy",
+    "name": "John Kennedy",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/John_Kennedy%2C_official_photo%2C_115th_Congress.jpg/300px-John_Kennedy%2C_official_photo%2C_115th_Congress.jpg",
+    "followers": 1500000,
+    "followersDisplay": "1.5M",
+    "platforms": ["x"],
+    "lens": "Louisiana senator known for folksy one-liners and viral committee hearing moments. Frames complex policy through memorable Southern wit. A Republican who bridges populist and establishment styles.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenJohnKennedy.json"
+    },
+    "handles": {
+      "x": "SenJohnKennedy"
+    },
+    "tags": ["viral communicator", "Southern conservative", "committee hearings"]
+  },
+  {
+    "id": "john-thune",
+    "name": "John Thune",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/John_Thune%2C_official_portrait%2C_116th_Congress.jpg/300px-John_Thune%2C_official_portrait%2C_116th_Congress.jpg",
+    "followers": 680000,
+    "followersDisplay": "680K",
+    "platforms": ["x"],
+    "lens": "Senate Majority Leader from South Dakota. Represents the Republican establishment's governing wing. Key voice on agriculture, tech regulation, and infrastructure.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenJohnThune.json"
+    },
+    "handles": {
+      "x": "SenJohnThune"
+    },
+    "tags": ["Republican leadership", "agriculture", "Senate governance"]
+  },
+  {
+    "id": "amy-klobuchar",
+    "name": "Amy Klobuchar",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Amy_Klobuchar%2C_official_portrait%2C_113th_Congress.jpg/300px-Amy_Klobuchar%2C_official_portrait%2C_113th_Congress.jpg",
+    "followers": 2100000,
+    "followersDisplay": "2.1M",
+    "platforms": ["x"],
+    "lens": "Minnesota senator and leading antitrust advocate. Pragmatic centrist Democrat who champions Big Tech regulation, competition policy, and Midwestern economic issues.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/amyklobuchar.json"
+    },
+    "handles": {
+      "x": "amyklobuchar"
+    },
+    "tags": ["antitrust", "tech regulation", "Midwestern pragmatist"]
+  },
+  {
+    "id": "sheldon-whitehouse",
+    "name": "Sheldon Whitehouse",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sheldon_Whitehouse_Official_Photo.jpg/300px-Sheldon_Whitehouse_Official_Photo.jpg",
+    "followers": 520000,
+    "followersDisplay": "520K",
+    "platforms": ["x"],
+    "lens": "Rhode Island senator and relentless crusader against dark money in politics and climate denial. Known for his weekly Senate floor speeches on climate change and Supreme Court ethics reform.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenWhitehouse.json"
+    },
+    "handles": {
+      "x": "SenWhitehouse"
+    },
+    "tags": ["dark money", "climate advocacy", "Supreme Court reform"]
+  },
+  {
+    "id": "mike-lee",
+    "name": "Mike Lee",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mike_Lee_official_portrait_%28cropped%29.jpg/300px-Mike_Lee_official_portrait_%28cropped%29.jpg",
+    "followers": 1200000,
+    "followersDisplay": "1.2M",
+    "platforms": ["x"],
+    "lens": "Utah senator and constitutional originalist. Champions limited government, states' rights, and deregulation. Among the Senate's most ideologically consistent conservatives.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenMikeLee.json"
+    },
+    "handles": {
+      "x": "SenMikeLee"
+    },
+    "tags": ["constitutional originalist", "states rights", "limited government"]
+  },
+  {
+    "id": "pete-ricketts",
+    "name": "Pete Ricketts",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Sen._Pete_Ricketts_official_portrait%2C_118th_Congress.jpg/300px-Sen._Pete_Ricketts_official_portrait%2C_118th_Congress.jpg",
+    "followers": 320000,
+    "followersDisplay": "320K",
+    "platforms": ["x"],
+    "lens": "Nebraska senator and former governor. Business-oriented Republican from the Ameritrade family. Focuses on agriculture, trade, and Midwestern economic interests.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/SenatorRicketts.json"
+    },
+    "handles": {
+      "x": "SenatorRicketts"
+    },
+    "tags": ["business Republican", "agriculture", "trade"]
+  },
+  {
+    "id": "cori-bush",
+    "name": "Cori Bush",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cori_Bush_117th_Congress_portrait.jpg/300px-Cori_Bush_117th_Congress_portrait.jpg",
+    "followers": 890000,
+    "followersDisplay": "890K",
+    "platforms": ["x"],
+    "lens": "Former Missouri representative and activist from the Ferguson uprising. One of the most progressive voices in Congress on racial justice, defunding police, and Palestine.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/CoriBush.json"
+    },
+    "handles": {
+      "x": "CoriBush"
+    },
+    "tags": ["racial justice", "progressive activist", "Palestine solidarity"]
+  },
+  {
+    "id": "maxwell-frost",
+    "name": "Maxwell Frost",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Maxwell_Frost_118th_Congress_portrait.jpg/300px-Maxwell_Frost_118th_Congress_portrait.jpg",
+    "followers": 480000,
+    "followersDisplay": "480K",
+    "platforms": ["x"],
+    "lens": "First Gen Z member of Congress from Florida. Former March for Our Lives organizer. Brings a youth-first perspective on gun violence, climate, and housing affordability.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/MaxwellFrostFL.json"
+    },
+    "handles": {
+      "x": "MaxwellFrostFL"
+    },
+    "tags": ["Gen Z politics", "gun reform", "youth organizing"]
+  },
+  {
+    "id": "anna-paulina-luna",
+    "name": "Anna Paulina Luna",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Anna_Paulina_Luna_118th_Congress_portrait.jpg/300px-Anna_Paulina_Luna_118th_Congress_portrait.jpg",
+    "followers": 980000,
+    "followersDisplay": "980K",
+    "platforms": ["x"],
+    "lens": "Florida representative and Air Force veteran. Rising MAGA star who brings a Latina and military perspective to conservative messaging. Vocal on border security and veterans issues.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepLuna.json"
+    },
+    "handles": {
+      "x": "RepLuna"
+    },
+    "tags": ["MAGA conservative", "Latina conservative", "military veteran"]
+  },
+  {
+    "id": "thomas-massie",
+    "name": "Thomas Massie",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Thomas_Massie_117th_Congress_portrait.jpg/300px-Thomas_Massie_117th_Congress_portrait.jpg",
+    "followers": 1100000,
+    "followersDisplay": "1.1M",
+    "platforms": ["x"],
+    "lens": "Kentucky representative and MIT-educated engineer. The House's most independent Republican, voting against his own party on spending, surveillance, and foreign aid. Libertarian streak on civil liberties.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepThomasMassie.json"
+    },
+    "handles": {
+      "x": "RepThomasMassie"
+    },
+    "tags": ["libertarian Republican", "anti-surveillance", "fiscal independence"]
+  },
+  {
+    "id": "pramila-jayapal",
+    "name": "Pramila Jayapal",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Pramila_Jayapal_official_photo.jpg/300px-Pramila_Jayapal_official_photo.jpg",
+    "followers": 720000,
+    "followersDisplay": "720K",
+    "platforms": ["x"],
+    "lens": "Washington state representative and chair of the Congressional Progressive Caucus. Immigrant from India who leads on Medicare for All, immigration reform, and workers' rights.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepJayapal.json"
+    },
+    "handles": {
+      "x": "RepJayapal"
+    },
+    "tags": ["progressive caucus", "Medicare for All", "immigration reform"]
+  },
+  {
+    "id": "michael-mccaul",
+    "name": "Michael McCaul",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Michael_McCaul_117th_Congress_portrait.jpg/300px-Michael_McCaul_117th_Congress_portrait.jpg",
+    "followers": 340000,
+    "followersDisplay": "340K",
+    "platforms": ["x"],
+    "lens": "Texas representative and House Foreign Affairs Committee chair. Leading Republican voice on China competition, Ukraine support, and national security. Represents the internationalist wing of the GOP.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepMcCaul.json"
+    },
+    "handles": {
+      "x": "RepMcCaul"
+    },
+    "tags": ["foreign affairs", "China competition", "national security"]
+  },
+  {
+    "id": "ritchie-torres",
+    "name": "Ritchie Torres",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ritchie_Torres_117th_Congress_portrait.jpg/300px-Ritchie_Torres_117th_Congress_portrait.jpg",
+    "followers": 560000,
+    "followersDisplay": "560K",
+    "platforms": ["x"],
+    "lens": "Bronx representative and one of the first openly gay Afro-Latino members of Congress. Centrist Democrat who breaks with progressives on Israel and housing policy. Voice for working-class urban communities.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepRitchie.json"
+    },
+    "handles": {
+      "x": "RepRitchie"
+    },
+    "tags": ["centrist Democrat", "pro-Israel", "urban policy"]
+  },
+  {
+    "id": "lauren-boebert",
+    "name": "Lauren Boebert",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Lauren_Boebert_117th_Congress_portrait.jpg/300px-Lauren_Boebert_117th_Congress_portrait.jpg",
+    "followers": 2800000,
+    "followersDisplay": "2.8M",
+    "platforms": ["x"],
+    "lens": "Colorado representative and gun-rights firebrand. Provocative MAGA voice who frames issues through Second Amendment absolutism, anti-government regulation, and culture war battles.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/laurenboebert.json"
+    },
+    "handles": {
+      "x": "laurenboebert"
+    },
+    "tags": ["Second Amendment", "MAGA firebrand", "culture warrior"]
+  },
+  {
+    "id": "greg-abbott",
+    "name": "Greg Abbott",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Greg_Abbott_2024.jpg/300px-Greg_Abbott_2024.jpg",
+    "followers": 2400000,
+    "followersDisplay": "2.4M",
+    "platforms": ["x"],
+    "lens": "Texas governor and leading voice on border security. Has bused migrants to Democratic cities and deployed state troops to the border. Key figure in the states' rights versus federal authority debate.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/GregAbbott_TX.json"
+    },
+    "handles": {
+      "x": "GregAbbott_TX"
+    },
+    "tags": ["border security", "states rights", "Texas politics"]
+  },
+  {
+    "id": "gretchen-whitmer",
+    "name": "Gretchen Whitmer",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Gretchen_Whitmer_2024.jpg/300px-Gretchen_Whitmer_2024.jpg",
+    "followers": 2200000,
+    "followersDisplay": "2.2M",
+    "platforms": ["x"],
+    "lens": "Michigan governor and rising Democratic star. Pragmatic moderate who won in a swing state. Focuses on manufacturing, infrastructure, and reproductive rights. Potential future presidential contender.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/graboretchen.json"
+    },
+    "handles": {
+      "x": "graboretchen"
+    },
+    "tags": ["swing state Democrat", "manufacturing", "reproductive rights"]
+  },
+  {
+    "id": "wes-moore",
+    "name": "Wes Moore",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Governor_Wes_Moore_Official_Portrait_%28cropped%29.jpg/300px-Governor_Wes_Moore_Official_Portrait_%28cropped%29.jpg",
+    "followers": 680000,
+    "followersDisplay": "680K",
+    "platforms": ["x"],
+    "lens": "Maryland governor, combat veteran, and bestselling author. First Black governor of Maryland. Frames policy through economic opportunity, service, and bridging partisan divides.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/GovWesMoore.json"
+    },
+    "handles": {
+      "x": "GovWesMoore"
+    },
+    "tags": ["rising Democrat", "economic opportunity", "veteran leadership"]
+  },
+  {
+    "id": "rand-corporation",
+    "name": "RAND Corporation",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RAND_Corporation_logo.svg/300px-RAND_Corporation_logo.svg.png",
+    "followers": 290000,
+    "followersDisplay": "290K",
+    "platforms": ["x"],
+    "lens": "Nonpartisan research institution providing objective analysis on national security, defense, education, and health. Known for data-driven policy analysis that informs both parties.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RANDCorporation.json"
+    },
+    "handles": {
+      "x": "RANDCorporation"
+    },
+    "tags": ["nonpartisan research", "defense analysis", "data-driven policy"]
+  },
+  {
+    "id": "heritage-foundation",
+    "name": "Heritage Foundation",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Heritage_Foundation_logo.svg/300px-Heritage_Foundation_logo.svg.png",
+    "followers": 1200000,
+    "followersDisplay": "1.2M",
+    "platforms": ["x"],
+    "lens": "Leading conservative think tank behind Project 2025. Produces policy research and frameworks on government reform, deregulation, defense, and traditional values that shape Republican governance.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/Heritage.json"
+    },
+    "handles": {
+      "x": "Heritage"
+    },
+    "tags": ["conservative policy", "Project 2025", "government reform"]
+  },
+  {
+    "id": "nessadiosdado",
+    "name": "Nessa Diosdado",
+    "photo": "https://pbs.twimg.com/profile_images/nessadiosdado.jpg",
+    "followers": 310000,
+    "followersDisplay": "310K",
+    "platforms": ["tiktok", "instagram", "x", "youtube"],
+    "lens": "Texas-based Mexican-born progressive creator for Gen-Z for Change. Amplifies immigrant rights, reproductive justice, and LatinX identity from a first-generation political perspective.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/nessadiosdado.json"
+    },
+    "handles": {
+      "x": "nessadiosdado",
+      "tiktok": "nessadiosdado",
+      "instagram": "nessadiosdado"
+    },
+    "tags": ["immigrant rights", "LatinX identity", "Gen Z activism"]
+  },
+  {
+    "id": "tyler-fischer",
+    "name": "Tyler Fischer",
+    "photo": "https://pbs.twimg.com/profile_images/TyTheFisch.jpg",
+    "followers": 420000,
+    "followersDisplay": "420K",
+    "platforms": ["tiktok", "instagram", "youtube", "x"],
+    "lens": "Comedian and actor who produces satirical political skits. Openly left the Democratic Party and now critiques progressive policies through comedy from a right-leaning perspective.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/TyTheFisch.json"
+    },
+    "handles": {
+      "x": "TyTheFisch",
+      "tiktok": "tythefisch",
+      "instagram": "tythefisch"
+    },
+    "tags": ["political comedy", "party switcher", "conservative satire"]
+  },
+  {
+    "id": "ed-choi",
+    "name": "Ed Choi",
+    "photo": "https://pbs.twimg.com/profile_images/etchaskej.jpg",
+    "followers": 280000,
+    "followersDisplay": "280K",
+    "platforms": ["tiktok", "instagram", "youtube", "x"],
+    "lens": "Asian-American content creator and podcaster covering news, trends, and cultural identity. Co-hosts the 'What in the Shibal' podcast and brings an Asian-American lens to current events.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/etchaskej.json"
+    },
+    "handles": {
+      "x": "etchaskej",
+      "tiktok": "etchaskej",
+      "instagram": "etchaskej"
+    },
+    "tags": ["Asian-American identity", "culture commentary", "progressive"]
+  },
+  {
+    "id": "deja-foxx",
+    "name": "Deja Foxx",
+    "photo": "https://pbs.twimg.com/profile_images/dejafoxx.jpg",
+    "followers": 390000,
+    "followersDisplay": "390K",
+    "platforms": ["tiktok", "instagram"],
+    "lens": "Gen Z political activist, digital strategist, and founder of Gen Z Girl Gang. One of the youngest-ever campaign staffers on Kamala Harris's 2020 run. Advocates for abortion rights, voter mobilization, and social justice.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "deja_foxx",
+      "instagram": "dejafoxx"
+    },
+    "tags": ["Gen Z activism", "reproductive rights", "voter mobilization"]
+  },
+  {
+    "id": "alex-haraus",
+    "name": "Alex Haraus",
+    "photo": "https://pbs.twimg.com/profile_images/alexharaus.jpg",
+    "followers": 320000,
+    "followersDisplay": "320K",
+    "platforms": ["tiktok", "instagram"],
+    "lens": "Environmental activist and content creator who has met with Biden administration climate advisers. Campaigns against oil drilling and gas terminals while promoting sustainable living.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "alex.haraus",
+      "instagram": "alex.haraus"
+    },
+    "tags": ["climate activism", "environmental policy", "sustainable living"]
+  },
+  {
+    "id": "bo-loudon",
+    "name": "Bo Loudon",
+    "photo": "https://pbs.twimg.com/profile_images/boloudon.jpg",
+    "followers": 280000,
+    "followersDisplay": "280K",
+    "platforms": ["tiktok", "instagram"],
+    "lens": "Young conservative content creator with close ties to the Trump family, particularly Barron Trump. Son of conservative media figures. Produces Gen Z-targeted right-wing commentary.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "boloudon",
+      "instagram": "boloudon"
+    },
+    "tags": ["Gen Z conservative", "Trump ally", "youth right-wing"]
+  },
+  {
+    "id": "seth-thomas",
+    "name": "Seth Thomas",
+    "photo": "https://pbs.twimg.com/profile_images/zethdafer.jpg",
+    "followers": 210000,
+    "followersDisplay": "210K",
+    "platforms": ["tiktok", "instagram", "x"],
+    "lens": "Harvard PhD ecology student and National Wildlife Federation fellow. Wildlife biologist who creates evidence-based climate and conservation content from an academic perspective.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/zethdafer.json"
+    },
+    "handles": {
+      "x": "zethdafer",
+      "tiktok": "zethdafer",
+      "instagram": "zethdafer"
+    },
+    "tags": ["wildlife conservation", "climate science", "academic expertise"]
+  },
+  {
+    "id": "george-sedberry",
+    "name": "George Sedberry Jr. (White George)",
+    "photo": "https://pbs.twimg.com/profile_images/whitegeorge.jpg",
+    "followers": 340000,
+    "followersDisplay": "340K",
+    "platforms": ["tiktok", "instagram"],
+    "lens": "White Southerner turned anti-racist educator who taught himself Black history while incarcerated. Travels to HBCUs to spotlight their legacy. Confronts his own racist upbringing publicly.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "whitegeorge",
+      "instagram": "thewhitgeorge"
+    },
+    "tags": ["anti-racism education", "HBCU advocacy", "racial reconciliation"]
+  },
+  {
+    "id": "john-walsh-comedian",
+    "name": "John Walsh",
+    "photo": "https://pbs.twimg.com/profile_images/itsjohnwalsh.jpg",
+    "followers": 250000,
+    "followersDisplay": "250K",
+    "platforms": ["tiktok", "instagram"],
+    "lens": "Comedian and writer who produced content for the Harris for President campaign. Creates political parodies and skits that satirize Trump and Republican politics.",
+    "feeds": {},
+    "handles": {
+      "tiktok": "itsjohnwalsh",
+      "instagram": "itsjohnwalsh"
+    },
+    "tags": ["political satire", "Democratic media", "comedy"]
+  },
+  {
+    "id": "brent-maclerie",
+    "name": "Brent MacLerie",
+    "photo": "https://pbs.twimg.com/profile_images/expatriarch.jpg",
+    "followers": 180000,
+    "followersDisplay": "180K",
+    "platforms": ["tiktok", "x", "instagram"],
+    "lens": "British-born anti-misogyny educator and men's mental health advocate. Creates content promoting healthy masculinity and relationship dynamics, pushing back against far-right gender narratives.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/expatriarch_uk.json"
+    },
+    "handles": {
+      "x": "expatriarch_uk",
+      "tiktok": "expatriarch",
+      "instagram": "ex.patriarch"
+    },
+    "tags": ["healthy masculinity", "anti-misogyny", "men's mental health"]
   }
 ]

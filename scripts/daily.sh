@@ -72,13 +72,19 @@ else
   send_alert "Transcript enrichment failed (non-fatal)" ":yellow_circle:"
 fi
 
-# Phase 3: Compute fractures
+# Phase 3: Build unified stories feed (CMS + voice-driven)
 echo ""
-echo "--- Phase 3: Computing fractures ---"
-if $PYTHON scripts/fractures.py 2>&1; then
-  echo "  Fractures computed"
+echo "--- Phase 3: Building stories feed ---"
+if $PYTHON scripts/stories.py 2>&1; then
+  echo "  Stories feed built"
 else
-  send_alert "Fracture computation failed (non-fatal)" ":yellow_circle:"
+  # Fallback to old fractures.py if stories.py fails
+  echo "  Stories failed, falling back to fractures.py..."
+  if $PYTHON scripts/fractures.py 2>&1; then
+    echo "  Fractures computed (fallback)"
+  else
+    send_alert "Both stories and fractures computation failed" ":yellow_circle:"
+  fi
 fi
 
 # Phase 4: Health check
@@ -121,11 +127,14 @@ elif [ "$UNCAT_PCT" -gt 50 ]; then
   send_alert "High uncategorized rate: ${UNCAT_PCT}% posts uncategorized (likely API key issue)"
 fi
 
-# Check fractures
+# Check stories/fractures
+STORIES_FILE="$PROJECT_DIR/data/posts/stories-${DATE}.json"
 FRACTURES="$PROJECT_DIR/data/posts/fractures-${DATE}.json"
-FRACTURE_COUNT=0
-if [ -f "$FRACTURES" ]; then
-  FRACTURE_COUNT=$($PYTHON -c "import json; print(len(json.load(open('$FRACTURES'))))")
+STORY_COUNT=0
+if [ -f "$STORIES_FILE" ]; then
+  STORY_COUNT=$($PYTHON -c "import json; print(len(json.load(open('$STORIES_FILE'))))")
+elif [ -f "$FRACTURES" ]; then
+  STORY_COUNT=$($PYTHON -c "import json; print(len(json.load(open('$FRACTURES'))))")
 fi
 
 # Phase 5: Trigger Render deploy
@@ -158,7 +167,7 @@ fi
 END_TIME=$(date '+%H:%M:%S')
 TOTAL_TIME=$(( $(date +%s) - COLLECT_START ))
 
-send_success "$POSTS posts from $VOICES voices across $TOPICS topics. $FRACTURE_COUNT fractures. Took ${TOTAL_TIME}s."
+send_success "$POSTS posts from $VOICES voices across $TOPICS topics. $STORY_COUNT stories. Took ${TOTAL_TIME}s."
 
 echo ""
 echo "=========================================="

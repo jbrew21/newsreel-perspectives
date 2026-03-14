@@ -73,6 +73,10 @@
   .search-box button:hover { background: #e5553a; }
   .search-box button:disabled { background: #555; cursor: not-allowed; }
 
+  .time-btn { background: #2a2a2d; color: #999; border: 1px solid #3a3a3d; padding: 4px 12px; border-radius: 16px; font-size: 0.75em; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+  .time-btn:hover { border-color: #666; color: #ccc; }
+  .time-btn.active { background: #d94a33; color: #fff; border-color: #d94a33; }
+
   .example-queries { max-width: 640px; margin: 16px auto 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
   .example-query {
     font-size: 0.8em; color: var(--text-muted); background: var(--bg-surface);
@@ -81,7 +85,7 @@
   }
   .example-query:hover { color: var(--accent); border-color: var(--accent); }
 
-  /* FRACTURES SECTION */
+  /* CONVERSATION SECTION */
   .fractures { max-width: 900px; margin: 0 auto; padding: 32px 20px 0; }
   .fractures-header {
     display: flex; align-items: center; gap: 8px;
@@ -99,6 +103,27 @@
   @keyframes pulse-dot {
     0%, 100% { opacity: 0.4; box-shadow: 0 0 0 0 rgba(255, 99, 67, 0.4); }
     50% { opacity: 1; box-shadow: 0 0 0 4px rgba(255, 99, 67, 0); }
+  }
+
+  /* Story type badge */
+  .story-type-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.06em; padding: 3px 8px; border-radius: 4px;
+  }
+  .story-type-badge.split { background: rgba(248,113,113,0.15); color: #F87171; }
+  .story-type-badge.spectrum { background: rgba(251,191,36,0.15); color: #FBBF24; }
+  .story-type-badge.consensus { background: rgba(74,222,128,0.15); color: #4ADE80; }
+  .story-type-badge.reaction { background: rgba(96,165,250,0.15); color: #60A5FA; }
+  .story-type-badge.editorial { background: rgba(255,99,67,0.12); color: var(--accent); }
+
+  /* CMS cover image */
+  .story-cover {
+    width: 100%; height: 140px; object-fit: cover;
+    border-radius: 10px; margin-bottom: 12px;
+  }
+  @media (max-width: 600px) {
+    .story-cover { height: 100px; border-radius: 8px; }
   }
 
   /* FRACTURE CARD */
@@ -142,6 +167,43 @@
     line-height: 1.4; margin-bottom: 12px;
   }
 
+  /* Heat badge */
+  .heat-badge {
+    font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    padding: 2px 8px; border-radius: 10px;
+  }
+  .heat-badge.hot {
+    background: rgba(239, 68, 68, 0.15); color: #ef4444;
+  }
+  .heat-badge.warm {
+    background: rgba(251, 191, 36, 0.12); color: #fbbf24;
+  }
+
+  /* Broadening note — match precision transparency */
+  .broadening-note {
+    font-size: 13px; line-height: 1.5; color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-subtle);
+    padding: 10px 14px; margin: 8px 0 12px; border-radius: 8px; text-align: center;
+  }
+
+  /* Counter-narrative banner */
+  .counter-narrative {
+    font-size: 12px; line-height: 1.5; color: var(--text-primary);
+    background: rgba(255, 99, 67, 0.08); border-left: 2px solid var(--accent);
+    padding: 8px 12px; margin: 8px 0 4px; border-radius: 0 6px 6px 0;
+  }
+
+  /* Best quote pull-quote */
+  .best-quote {
+    margin: 4px 0 8px; padding: 0;
+  }
+  .best-quote-text {
+    font-size: 13px; font-style: italic; color: var(--text-secondary); line-height: 1.5;
+  }
+  .best-quote-attr {
+    font-size: 11px; color: var(--text-muted); margin-left: 6px;
+  }
+
   /* Collapsed: hide clusters */
   .fracture-card .cluster-groups { display: none; }
   .fracture-card .fracture-search-btn { display: none; }
@@ -154,26 +216,17 @@
 
   /* Quote tooltip on avatar tap */
   .quote-tip {
-    position: absolute; bottom: calc(100% + 8px); left: 50%;
-    transform: translateX(-50%);
+    position: fixed; z-index: 100;
     background: var(--bg-elevated); border: 1px solid var(--border-default);
-    border-radius: 10px; padding: 10px 12px;
-    width: 240px; z-index: 20;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    border-radius: 12px; padding: 12px 14px;
+    width: min(280px, 85vw);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
     animation: tip-pop 0.15s ease-out;
   }
-  .quote-tip::after {
-    content: ''; position: absolute; top: 100%; left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent; border-top-color: var(--bg-elevated);
-  }
   @keyframes tip-pop {
-    from { opacity: 0; transform: translateX(-50%) translateY(4px); }
-    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
   }
-  /* Prevent tip from going off-screen left/right */
-  .avatar-wrap:first-child .quote-tip { left: 0; transform: none; }
-  .avatar-wrap:first-child .quote-tip::after { left: 16px; transform: none; }
 
   .fracture-search-btn {
     display: inline-flex; align-items: center; gap: 6px;
@@ -372,15 +425,23 @@
     <input type="text" id="searchInput" placeholder="Search any story..." autofocus>
     <button id="searchBtn" onclick="doSearch()">Search</button>
   </div>
+  <div class="time-filter" style="display:flex;gap:6px;justify-content:center;margin-top:8px;flex-wrap:wrap;">
+    <button class="time-btn active" data-days="" onclick="setTimeFilter(this)">Auto</button>
+    <button class="time-btn" data-days="1" onclick="setTimeFilter(this)">Today</button>
+    <button class="time-btn" data-days="3" onclick="setTimeFilter(this)">3 days</button>
+    <button class="time-btn" data-days="7" onclick="setTimeFilter(this)">Week</button>
+    <button class="time-btn" data-days="14" onclick="setTimeFilter(this)">2 weeks</button>
+    <button class="time-btn" data-days="30" onclick="setTimeFilter(this)">Month</button>
+  </div>
 
   <div class="example-queries" id="exampleQueries"></div>
 </div>
 
-<!-- TODAY'S FRACTURES -->
+<!-- THE CONVERSATION -->
 <div class="fractures" id="fracturesSection" style="display:none">
   <div class="fractures-header">
     <div class="fractures-live"></div>
-    <div class="fractures-title">Where voices split today</div>
+    <div class="fractures-title">The Conversation</div>
   </div>
   <div id="fractureCards"></div>
 </div>
@@ -432,102 +493,157 @@ fetch(BASE + '/data/voices.json').then(r => r.json()).then(v => {
   if (el) el.textContent = v.length + ' voices';
 }).catch(() => {});
 
-// LOAD FRACTURES
-fetch(BASE + '/api/fractures')
-  .then(r => r.json())
-  .then(fractures => {
-    if (!fractures || fractures.length === 0) return;
+// LOAD STORIES (unified feed — falls back to fractures)
+async function loadConversation() {
+  let stories = [];
+  try {
+    let resp = await fetch(BASE + '/api/stories');
+    stories = await resp.json();
+    // Fallback to fractures endpoint if stories is empty
+    if (!stories || stories.length === 0) {
+      resp = await fetch(BASE + '/api/fractures');
+      const fractures = await resp.json();
+      // Map fracture format to story format
+      stories = (fractures || []).map(f => ({
+        headline: f.headline || f.topicDisplay,
+        summary: f.insight || '',
+        type: 'split',
+        source: 'voices',
+        coverUrl: '',
+        storyType: '',
+        topicSlugs: [f.topic],
+        voiceCount: f.voiceCount,
+        clusterCount: f.clusterCount,
+        clusters: f.clusters,
+      }));
+    }
+  } catch (e) {
+    console.log('Stories not available:', e);
+    return;
+  }
 
-    const section = document.getElementById('fracturesSection');
-    const container = document.getElementById('fractureCards');
-    section.style.display = 'block';
+  if (!stories || stories.length === 0) return;
 
-    fractures.forEach((fracture, fi) => {
-      const card = document.createElement('div');
-      card.className = 'fracture-card';
-      card.onclick = (e) => {
-        if (e.target.closest('.fracture-search-btn')) return;
-        card.classList.toggle('expanded');
-      };
+  const section = document.getElementById('fracturesSection');
+  const container = document.getElementById('fractureCards');
+  section.style.display = 'block';
 
-      // Topic chip color
-      const chipColor = getClusterColor(fi);
+  stories.forEach((story, si) => {
+    const card = document.createElement('div');
+    card.className = 'fracture-card';
+    card.onclick = (e) => {
+      if (e.target.closest('.fracture-search-btn')) return;
+      card.classList.toggle('expanded');
+    };
 
-      // Build cluster HTML
-      let clustersHtml = '';
-      const maxClusters = 3; // Show top 3 clusters on card
-      const shownClusters = fracture.clusters.slice(0, maxClusters);
+    // Type badge
+    const storyType = story.type || 'spectrum';
+    const typeLabels = { split: 'Split', spectrum: 'Spectrum', consensus: 'Consensus', reaction: 'Reaction' };
+    const typeLabel = typeLabels[storyType] || storyType;
 
-      shownClusters.forEach((cluster, ci) => {
-        const color = getClusterColor(ci);
+    // Source badge for editorial stories
+    const sourceBadge = story.source === 'editorial'
+      ? '<span class="story-type-badge editorial">Newsreel</span> '
+      : '';
 
-        // Stacked avatars — show up to 6
-        const maxAvatars = 6;
-        const shown = cluster.voices.slice(0, maxAvatars);
-        const overflow = cluster.voiceCount - maxAvatars;
+    // Cover image for CMS stories
+    const coverHtml = story.coverUrl
+      ? `<img class="story-cover" src="${story.coverUrl}" alt="" onerror="this.style.display='none'">`
+      : '';
 
-        let avatarsHtml = shown.map(v => {
-          const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64`;
-          const quote = (v.quote || '').substring(0, 140);
-          const platform = v.platform ? ({x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'IG', tiktok:'TikTok'}[v.platform] || v.platform) : '';
-          return `<div class="avatar-wrap" onclick="event.stopPropagation(); toggleQuoteTip(this);" style="display:inline-block; position:relative; cursor:pointer;">
-            <img class="cluster-avatar" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64'">
-            <div class="quote-tip" style="display:none;">
-              <div style="font-weight:600; color:var(--text-primary); margin-bottom:4px;">${escapeHtml(v.voiceName)}</div>
-              ${quote ? `<div style="font-size:12px; color:var(--text-secondary); line-height:1.4; font-style:italic;">"${escapeHtml(quote)}"</div>` : ''}
-              <div style="display:flex; gap:8px; margin-top:6px; font-size:11px;">
-                ${platform ? `<span style="color:var(--text-muted);">${platform}</span>` : ''}
-                ${v.sourceUrl ? `<a href="${v.sourceUrl}" target="_blank" style="color:var(--accent); text-decoration:none;" onclick="event.stopPropagation();">View source</a>` : ''}
-                <a href="${BASE}/voice/${v.voiceId}" style="color:var(--text-muted); text-decoration:none;" onclick="event.stopPropagation();">Profile</a>
-              </div>
+    // Cluster rendering (same proven UX from before)
+    let clustersHtml = '';
+    const shownClusters = (story.clusters || []).slice(0, 4);
+
+    shownClusters.forEach((cluster, ci) => {
+      const color = getClusterColor(ci);
+      const maxAvatars = 6;
+      const shown = cluster.voices.slice(0, maxAvatars);
+      const overflow = cluster.voiceCount - maxAvatars;
+
+      let avatarsHtml = shown.map(v => {
+        const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64`;
+        const quote = (v.quote || '').substring(0, 140);
+        const platform = v.platform ? ({x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'IG', tiktok:'TikTok'}[v.platform] || v.platform) : '';
+        return `<div class="avatar-wrap" onclick="event.stopPropagation(); toggleQuoteTip(this);" style="display:inline-block; position:relative; cursor:pointer;">
+          <img class="cluster-avatar" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=64'">
+          <div class="quote-tip" style="display:none;">
+            <div style="font-weight:600; color:var(--text-primary); margin-bottom:4px;">${escapeHtml(v.voiceName)}</div>
+            ${quote ? `<div style="font-size:12px; color:var(--text-secondary); line-height:1.4; font-style:italic;">&ldquo;${escapeHtml(quote)}&rdquo;</div>` : ''}
+            <div style="display:flex; gap:8px; margin-top:6px; font-size:11px;">
+              ${platform ? `<span style="color:var(--text-muted);">${platform}</span>` : ''}
+              ${v.sourceUrl ? `<a href="${v.sourceUrl}" target="_blank" style="color:var(--accent); text-decoration:none;" onclick="event.stopPropagation();">View source</a>` : ''}
+              <a href="${BASE}/voice/${v.voiceId}" style="color:var(--text-muted); text-decoration:none;" onclick="event.stopPropagation();">Profile</a>
             </div>
-          </div>`;
-        }).join('');
-
-        if (overflow > 0) {
-          avatarsHtml += `<div class="cluster-avatar-overflow">+${overflow}</div>`;
-        }
-
-        clustersHtml += `
-          <div class="cluster-group" style="display:flex; align-items:center; gap:12px; padding:8px 0;">
-            <div class="cluster-name" style="color:${color}; min-width:120px; font-size:12px;">${escapeHtml(cluster.name)}</div>
-            <div class="cluster-avatars" style="margin-bottom:0;">${avatarsHtml}</div>
           </div>
-        `;
+        </div>`;
+      }).join('');
 
-        // Add fracture line between clusters (not after last)
-        if (ci < shownClusters.length - 1) {
-          const nextColor = getClusterColor(ci + 1);
-          const animated = fracture.voiceCount > 20 ? ' animated' : '';
-          clustersHtml += `<div class="fracture-line${animated}" style="--line-color-a: ${color}; --line-color-b: ${nextColor};"></div>`;
-        }
-      });
+      if (overflow > 0) {
+        avatarsHtml += `<div class="cluster-avatar-overflow">+${overflow}</div>`;
+      }
 
-      const remainingClusters = fracture.clusterCount - maxClusters;
-
-      const headline = fracture.headline || fracture.topicDisplay;
-
-      card.innerHTML = `
-        <div class="fracture-meta">
-          <div class="fracture-topic-chip" style="background: ${chipColor}15; color: ${chipColor};">${escapeHtml(fracture.topicDisplay)}</div>
-          <div class="fracture-voices-count">${fracture.voiceCount} voices</div>
+      clustersHtml += `
+        <div class="cluster-group" style="display:flex; align-items:center; gap:12px; padding:8px 0;">
+          <div class="cluster-name" style="color:${color}; min-width:120px; font-size:12px;">${escapeHtml(cluster.name)}</div>
+          <div class="cluster-avatars" style="margin-bottom:0;">${avatarsHtml}</div>
         </div>
-        <div class="fracture-headline">${escapeHtml(headline)}</div>
-        <div style="display:flex; align-items:center; justify-content:space-between;">
-          <div class="fracture-insight">${escapeHtml(fracture.insight)}</div>
-          <svg class="fracture-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </div>
-        <div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">${clustersHtml}</div>
-        <button class="fracture-search-btn" onclick="event.stopPropagation(); document.getElementById('searchInput').value='${fracture.topic.replace(/-/g, ' ')}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
-          See all ${fracture.voiceCount} voices
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </button>
       `;
 
-      container.appendChild(card);
+      if (ci < shownClusters.length - 1) {
+        const nextColor = getClusterColor(ci + 1);
+        const animated = story.voiceCount > 20 ? ' animated' : '';
+        clustersHtml += `<div class="fracture-line${animated}" style="--line-color-a: ${color}; --line-color-b: ${nextColor};"></div>`;
+      }
     });
-  })
-  .catch(e => console.log('Fractures not available:', e));
+
+    const topicSlug = (story.topicSlugs || [''])[0];
+
+    // Heat badge
+    const heat = story.heatScore || 0;
+    const heatLabel = heat >= 70 ? 'Hot' : heat >= 40 ? 'Warm' : '';
+    const heatBadge = heatLabel ? `<span class="heat-badge ${heatLabel.toLowerCase()}">${heatLabel}</span>` : '';
+
+    // Counter-narrative banner
+    const cn = story.counterNarrative;
+    const counterHtml = cn ? `<div class="counter-narrative">${escapeHtml(cn.tension)}</div>` : '';
+
+    // Best quote from dominant cluster
+    const bestCluster = (story.clusters || [])[0];
+    const bestQuote = bestCluster?.bestQuote;
+    const bestQuoteHtml = bestQuote ? `<div class="best-quote">
+      <span class="best-quote-text">"${escapeHtml(bestQuote.quote.substring(0, 160))}"</span>
+      <span class="best-quote-attr">— ${escapeHtml(bestQuote.voiceName)}</span>
+    </div>` : '';
+
+    card.innerHTML = `
+      ${coverHtml}
+      <div class="fracture-meta">
+        <div style="display:flex; gap:6px; align-items:center;">
+          ${sourceBadge}
+          <span class="story-type-badge ${storyType}">${typeLabel}</span>
+          ${heatBadge}
+        </div>
+        <div class="fracture-voices-count">${story.voiceCount} voices</div>
+      </div>
+      <div class="fracture-headline">${escapeHtml(story.headline)}</div>
+      ${counterHtml}
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div class="fracture-insight">${escapeHtml(story.summary || '')}</div>
+        <svg class="fracture-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+      ${bestQuoteHtml}
+      <div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">${clustersHtml}</div>
+      <button class="fracture-search-btn" onclick="event.stopPropagation(); document.getElementById('searchInput').value='${escapeHtml(story.headline)}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
+        Search this story
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </button>
+    `;
+
+    container.appendChild(card);
+  });
+}
+loadConversation();
 
 // Load trending topics
 fetch(BASE + '/api/topics')
@@ -568,6 +684,15 @@ input.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
 
 function setQuery(el) { input.value = el.textContent; doSearch(); }
 
+let selectedDays = ''; // '' = auto
+function setTimeFilter(el) {
+  document.querySelectorAll('.time-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  selectedDays = el.dataset.days;
+  // Re-search if there's a query
+  if (input.value.trim()) doSearch();
+}
+
 async function doSearch() {
   const query = input.value.trim();
   if (!query) return;
@@ -582,7 +707,9 @@ async function doSearch() {
   statsDiv.style.display = 'none';
 
   try {
-    const resp = await fetch(`${BASE}/api/lookup?q=${encodeURIComponent(query)}`);
+    let url = `${BASE}/api/lookup?q=${encodeURIComponent(query)}`;
+    if (selectedDays) url += `&days=${selectedDays}`;
+    const resp = await fetch(url);
     const data = await resp.json();
     if (data.error) {
       resultsDiv.innerHTML = `<div class="no-results">${data.error}</div>`;
@@ -599,15 +726,28 @@ async function doSearch() {
 
 function renderResults(data) {
   if (!data.voices || data.voices.length === 0) {
-    resultsDiv.innerHTML = '<div class="no-results">No voices found talking about this story yet.</div>';
+    resultsDiv.innerHTML = '<div class="no-results">No voices in our database are discussing this topic yet. We track 232+ voices across X, YouTube, Bluesky, Substack, Instagram, TikTok, and podcasts.</div>';
     return;
   }
 
   data.voices.sort((a, b) => b.quotes.length - a.quotes.length);
 
+  const windowLabel = data.timeWindow === '1d' ? 'today' :
+    data.timeWindow === '3d' ? 'last 3 days' :
+    data.timeWindow === '7d' ? 'last week' :
+    data.timeWindow === '14d' ? 'last 2 weeks' :
+    data.timeWindow === '30d' ? 'last month' : data.timeWindow || '';
+  const windowNote = windowLabel ? `<span style="color:#888;font-size:0.8em;margin-left:8px;">${windowLabel}</span>` : '';
+
+  // Broadening note — transparency about match precision
+  const broadeningHtml = data.broadeningNote
+    ? `<div class="broadening-note">${escapeHtml(data.broadeningNote)}</div>`
+    : '';
+
   let html = `
     <div class="results-header">
-      <h2>${data.voices.length} voices on this story</h2>
+      <h2>${data.voices.length} voices on this story${windowNote}</h2>
+      ${broadeningHtml}
       <div class="topics">${data.matchedTopics.map(t => `<span class="tag">${t}</span>`).join('')}</div>
     </div>
   `;
@@ -702,14 +842,29 @@ function toggleQuoteTip(el) {
   const wasVisible = tip.style.display !== 'none';
   // Close all other tips
   document.querySelectorAll('.quote-tip').forEach(t => t.style.display = 'none');
-  tip.style.display = wasVisible ? 'none' : 'block';
+  if (wasVisible) { tip.style.display = 'none'; return; }
+  // Position using fixed coords relative to the avatar
+  const rect = el.getBoundingClientRect();
+  tip.style.display = 'block';
+  // Place above the avatar, centered
+  let left = rect.left + rect.width / 2 - 140;
+  let top = rect.top - tip.offsetHeight - 8;
+  // Keep on screen
+  if (left < 8) left = 8;
+  if (left + 280 > window.innerWidth) left = window.innerWidth - 288;
+  if (top < 8) { top = rect.bottom + 8; } // flip below if no room above
+  tip.style.left = left + 'px';
+  tip.style.top = top + 'px';
 }
-// Close tips on outside click
+// Close tips on outside click or scroll
 document.addEventListener('click', (e) => {
   if (!e.target.closest('.avatar-wrap')) {
     document.querySelectorAll('.quote-tip').forEach(t => t.style.display = 'none');
   }
 });
+document.addEventListener('scroll', () => {
+  document.querySelectorAll('.quote-tip').forEach(t => t.style.display = 'none');
+}, true);
 
 function filterByCluster(cluster) {
   document.querySelectorAll('.cluster-filter').forEach(el => {
