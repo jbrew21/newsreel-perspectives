@@ -11,6 +11,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 PYTHON="/opt/homebrew/bin/python3"
+export PYTHONUNBUFFERED=1
 LOG="/tmp/perspectives-daily.log"
 DATE=$(date +%Y-%m-%d)
 
@@ -62,12 +63,29 @@ cd "$PROJECT_DIR"
 echo ""
 echo "--- Phase 1: Collecting posts ---"
 COLLECT_START=$(date +%s)
-if $PYTHON scripts/collect.py 2>&1; then
+# Run with 20-minute watchdog to prevent indefinite hangs
+$PYTHON scripts/collect.py 2>&1 &
+COLLECT_PID=$!
+WATCHDOG=1200  # 20 minutes
+while kill -0 $COLLECT_PID 2>/dev/null; do
+  ELAPSED=$(( $(date +%s) - COLLECT_START ))
+  if [ $ELAPSED -gt $WATCHDOG ]; then
+    kill $COLLECT_PID 2>/dev/null
+    sleep 2
+    kill -9 $COLLECT_PID 2>/dev/null
+    send_alert "Collection TIMED OUT after 20 minutes. Killed."
+    exit 1
+  fi
+  sleep 5
+done
+wait $COLLECT_PID
+COLLECT_EXIT=$?
+if [ $COLLECT_EXIT -eq 0 ]; then
   COLLECT_END=$(date +%s)
   COLLECT_TIME=$((COLLECT_END - COLLECT_START))
   echo "  Collection completed in ${COLLECT_TIME}s"
 else
-  send_alert "Collection FAILED. Check /tmp/perspectives-daily.log"
+  send_alert "Collection FAILED (exit $COLLECT_EXIT). Check /tmp/perspectives-daily.log"
   exit 1
 fi
 
@@ -83,10 +101,22 @@ fi
 # Phase 3: Build unified stories feed (CMS + voice-driven)
 echo ""
 echo "--- Phase 3: Building stories feed ---"
-if $PYTHON scripts/stories.py 2>&1; then
+STORIES_START=$(date +%s)
+$PYTHON scripts/stories.py 2>&1 &
+STORIES_PID=$!
+while kill -0 $STORIES_PID 2>/dev/null; do
+  ELAPSED=$(( $(date +%s) - STORIES_START ))
+  if [ $ELAPSED -gt 600 ]; then
+    kill $STORIES_PID 2>/dev/null; sleep 2; kill -9 $STORIES_PID 2>/dev/null
+    send_alert "Stories TIMED OUT after 10 minutes" ":yellow_circle:"
+    break
+  fi
+  sleep 5
+done
+wait $STORIES_PID 2>/dev/null
+if [ $? -eq 0 ]; then
   echo "  Stories feed built"
 else
-  # Fallback to old fractures.py if stories.py fails
   echo "  Stories failed, falling back to fractures.py..."
   if $PYTHON scripts/fractures.py 2>&1; then
     echo "  Fractures computed (fallback)"
