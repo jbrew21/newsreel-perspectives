@@ -676,17 +676,7 @@ fetch(BASE + '/api/topics')
         examplesDiv.appendChild(el);
       });
 
-      const section = document.getElementById('trendingSection');
-      const container = document.getElementById('trendingTopics');
-      section.style.display = 'block';
-      sorted.forEach(([topic, entries]) => {
-        const voices = [...new Set(entries.map(e => e.voiceName))].length;
-        const el = document.createElement('div');
-        el.className = 'trending-topic';
-        el.innerHTML = `${topic.replace(/-/g, ' ')} <span class="count">${voices}</span>`;
-        el.onclick = () => { input.value = topic.replace(/-/g, ' '); doSearch(); };
-        container.appendChild(el);
-      });
+      // Trending section removed — example chips + story cards are enough
       statsDiv.innerHTML = `<span>${Object.values(topics).flat().length}</span> posts from <span>${new Set(Object.values(topics).flat().map(e => e.voiceId)).size}</span> voices across <span>${sorted.length}+</span> topics today`;
     }
   })
