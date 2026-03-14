@@ -20,12 +20,12 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=ROOT, **kwargs)
 
     def do_GET(self):
-        # Serve index.html (homepage)
+        # Serve search.html as homepage
         if self.path == '/' or self.path.startswith('/?'):
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-            html = open(os.path.join(ROOT, 'index.html')).read()
+            html = open(os.path.join(ROOT, 'search.html')).read()
             self.wfile.write(html.encode())
             return
 
