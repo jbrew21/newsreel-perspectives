@@ -585,7 +585,7 @@ async function loadConversation() {
           <img class="cluster-voice-photo" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
           <div class="cluster-voice-body">
             <div>
-              <span class="cluster-voice-name">${escapeHtml(v.voiceName)}</span>
+              <a href="/voice/${v.voiceId}" class="cluster-voice-name" style="text-decoration:none; color:var(--text-primary);" onclick="event.stopPropagation();">${escapeHtml(v.voiceName)}</a>
               <span class="cluster-voice-platform">${platformLabel}</span>
             </div>
             ${quote ? `<div class="cluster-voice-quote">"${escapeHtml(quote)}"</div>` : ''}
@@ -627,7 +627,7 @@ async function loadConversation() {
     const bestQuote = bestCluster?.bestQuote;
     const bestQuoteHtml = bestQuote ? `<div class="best-quote">
       <span class="best-quote-text">"${escapeHtml(bestQuote.quote.substring(0, 160))}"</span>
-      <span class="best-quote-attr">— ${escapeHtml(bestQuote.voiceName)}</span>
+      <a class="best-quote-attr" href="/voice/${bestQuote.voiceId}" style="text-decoration:none; color:var(--text-muted);" onclick="event.stopPropagation();">— ${escapeHtml(bestQuote.voiceName)}</a>
     </div>` : '';
 
     card.innerHTML = `
