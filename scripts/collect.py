@@ -273,7 +273,8 @@ def _ytdlp_transcript(video_id):
     import subprocess
     import tempfile
 
-    for use_cookies in [True, False]:
+    # Skip cookies — can hang on macOS Keychain prompts in automated runs
+    for use_cookies in [False]:
         try:
             with tempfile.TemporaryDirectory() as tmpdir:
                 cmd = [
@@ -283,10 +284,8 @@ def _ytdlp_transcript(video_id):
                     '--skip-download', '--no-warnings',
                     '-o', f'{tmpdir}/%(id)s.%(ext)s',
                 ]
-                if use_cookies:
-                    cmd += ['--cookies-from-browser', 'chrome']
                 result = subprocess.run(
-                    cmd, capture_output=True, text=True, timeout=30,
+                    cmd, capture_output=True, text=True, timeout=20,
                 )
                 # Look for .vtt file
                 import glob
@@ -377,9 +376,12 @@ def enrich_transcripts(posts):
         except:
             cache[video_id] = ''
 
-    # Fallback: use yt-dlp for any remaining uncached videos when IP blocked
+    # Fallback: use yt-dlp for a small batch of uncached videos when IP blocked
+    # Cap at 10 videos and 3 minutes total to prevent pipeline hangs
     if ip_blocked:
+        import time as _time
         ytdlp_fetched = 0
+        ytdlp_start = _time.time()
         for p in posts:
             if p['platform'] != 'youtube':
                 continue
@@ -389,7 +391,7 @@ def enrich_transcripts(posts):
             video_id = vid_match.group(1)
             if video_id in cache:
                 continue
-            if ytdlp_fetched >= 50:
+            if ytdlp_fetched >= 10 or (_time.time() - ytdlp_start) > 180:
                 break
             transcript_text = _ytdlp_transcript(video_id)
             if transcript_text:
