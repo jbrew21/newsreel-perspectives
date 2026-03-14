@@ -17,6 +17,14 @@ DATE=$(date +%Y-%m-%d)
 # Ensure PATH includes homebrew and yt-dlp
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 
+# Source .env for API keys (ANTHROPIC_API_KEY, RENDER_API_KEY, etc.)
+ENV_FILE="$PROJECT_DIR/.env"
+if [ -f "$ENV_FILE" ]; then
+  set -a
+  source "$ENV_FILE"
+  set +a
+fi
+
 # Slack webhook (set in .env or export before running)
 SLACK_WEBHOOK="${PERSPECTIVES_SLACK_WEBHOOK:-}"
 
