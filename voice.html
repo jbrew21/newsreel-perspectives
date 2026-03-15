@@ -76,15 +76,19 @@
     border: 1px solid rgba(255, 99, 67, 0.15);
   }
 
-  /* PLATFORMS LINE */
+  /* PLATFORM PILLS */
   .profile-platforms {
-    font-size: 12px; color: var(--text-muted); margin-bottom: 16px;
+    display: flex; flex-wrap: wrap; gap: 6px;
+    justify-content: center; margin-bottom: 16px;
   }
-  .profile-platforms a {
+  .platform-pill {
+    font-size: 11px; font-weight: 600;
+    padding: 5px 14px; border-radius: 100px;
+    background: var(--bg-surface); border: 1px solid var(--border-subtle);
     color: var(--text-tertiary); text-decoration: none;
-    transition: color 0.2s;
+    transition: all 0.2s;
   }
-  .profile-platforms a:hover { color: var(--accent); }
+  .platform-pill:hover { color: var(--accent); border-color: var(--accent); }
 
   /* SECTION HEADERS */
   .section-header {
@@ -376,19 +380,19 @@ async function loadProfile() {
   const h = voice.handles || {};
   const feeds = voice.feeds || {};
   let platformLinks = [];
-  if (h.x) platformLinks.push(`<a href="https://x.com/${h.x}" target="_blank">X</a>`);
+  if (h.x) platformLinks.push(`<a class="platform-pill" href="https://x.com/${h.x}" target="_blank">X</a>`);
   if (h.youtube) {
     const yt = h.youtube.startsWith('@') ? h.youtube : (h.youtube.includes('/') ? h.youtube : '@'+h.youtube);
-    platformLinks.push(`<a href="https://youtube.com/${yt}" target="_blank">YouTube</a>`);
+    platformLinks.push(`<a class="platform-pill" href="https://youtube.com/${yt}" target="_blank">YouTube</a>`);
   }
-  if (h.bluesky) platformLinks.push(`<a href="https://bsky.app/profile/${h.bluesky}" target="_blank">Bluesky</a>`);
-  if (h.tiktok) platformLinks.push(`<a href="https://tiktok.com/@${h.tiktok}" target="_blank">TikTok</a>`);
-  if (h.instagram) platformLinks.push(`<a href="https://instagram.com/${h.instagram}" target="_blank">Instagram</a>`);
-  if (feeds.substack) platformLinks.push(`<a href="${feeds.substack.replace(/\/feed\/?$/, '')}" target="_blank">Substack</a>`);
-  if (feeds.podcast) platformLinks.push(`<span>Podcast</span>`);
+  if (h.bluesky) platformLinks.push(`<a class="platform-pill" href="https://bsky.app/profile/${h.bluesky}" target="_blank">Bluesky</a>`);
+  if (h.tiktok) platformLinks.push(`<a class="platform-pill" href="https://tiktok.com/@${h.tiktok}" target="_blank">TikTok</a>`);
+  if (h.instagram) platformLinks.push(`<a class="platform-pill" href="https://instagram.com/${h.instagram}" target="_blank">Instagram</a>`);
+  if (feeds.substack) platformLinks.push(`<a class="platform-pill" href="${feeds.substack.replace(/\/feed\/?$/, '')}" target="_blank">Substack</a>`);
+  if (feeds.podcast) platformLinks.push(`<span class="platform-pill">Podcast</span>`);
 
   const platformsHtml = platformLinks.length > 0
-    ? `<div class="profile-platforms">Active on ${platformLinks.join(' · ')}</div>`
+    ? `<div class="profile-platforms">${platformLinks.join('')}</div>`
     : '';
 
   // Tags
@@ -494,7 +498,7 @@ async function loadProfile() {
             <div class="ally-name">${escapeHtml(ally.voiceName)}</div>
             <div class="ally-detail">${ally.topics.join(', ')}</div>
           </div>
-          <div class="ally-badge" style="background: rgba(74, 222, 128, 0.12); color: #4ADE80;">${ally.count}/${totalStories}</div>
+          ${totalStories > 1 ? `<div class="ally-badge" style="background: rgba(74, 222, 128, 0.12); color: #4ADE80;">${ally.count}/${totalStories}</div>` : ''}
         </a>
       `;
     }

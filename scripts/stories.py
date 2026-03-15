@@ -20,6 +20,7 @@ import math
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -28,6 +29,17 @@ ROOT = Path(__file__).parent.parent
 POSTS_DIR = ROOT / "data" / "posts"
 VOICES_PATH = ROOT / "data" / "voices.json"
 CMS_API = "https://newsreel-cms.onrender.com/api"
+
+
+def get_voice_photo(meta, voice_name):
+    """Get photo URL from voice metadata, falling back to ui-avatars only if no real photo exists."""
+    photo = meta.get('photo', '') if meta else ''
+    # Use the real photo if it exists and isn't already a ui-avatars fallback
+    if photo and 'ui-avatars.com' not in photo:
+        return photo
+    # Fallback: generate a ui-avatars URL from the voice name
+    encoded = urllib.parse.quote(voice_name)
+    return f"https://ui-avatars.com/api/?name={encoded}&background=252528&color=a1a1aa&size=96"
 
 
 def load_env():
@@ -510,7 +522,7 @@ def build_stories(date=None):
                         voice_obj = {
                             'voiceId': vid,
                             'voiceName': entry_name,
-                            'photo': meta.get('photo', ''),
+                            'photo': get_voice_photo(meta, entry_name),
                             'quote': entry.get('quote', entry.get('text', ''))[:200],
                             'sourceUrl': entry.get('sourceUrl', ''),
                             'platform': entry.get('platform', ''),
