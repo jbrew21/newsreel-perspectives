@@ -443,8 +443,8 @@ def build_stories(date=None):
     # Sort by voice count
     candidates.sort(key=lambda c: -c['voice_count'])
 
-    # Take top 6
-    candidates = candidates[:6]
+    # Take top 14
+    candidates = candidates[:14]
 
     print(f"\n  Analyzing {len(candidates)} candidates:")
     for c in candidates:
