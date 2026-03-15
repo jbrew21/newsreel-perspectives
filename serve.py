@@ -196,6 +196,25 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(json.dumps(all_posts).encode())
             return
 
+        # Serve cached voice photos
+        if self.path.startswith('/photos/'):
+            filename = self.path.split('/photos/')[1]
+            photo_path = os.path.join(ROOT, 'data', 'photos', filename)
+            if os.path.exists(photo_path):
+                content_type = 'image/png' if filename.endswith('.png') else 'image/jpeg'
+                self.send_response(200)
+                self.send_header('Content-type', content_type)
+                self.send_header('Cache-Control', 'public, max-age=604800')  # 7 day cache
+                self.end_headers()
+                with open(photo_path, 'rb') as f:
+                    self.wfile.write(f.read())
+            else:
+                self.send_response(404)
+                self.send_header('Content-type', 'text/plain')
+                self.end_headers()
+                self.wfile.write(b'Photo not found')
+            return
+
         # Serve search page
         if self.path == '/search' or self.path.startswith('/search?'):
             self.send_response(200)
