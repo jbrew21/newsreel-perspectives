@@ -440,6 +440,102 @@
 
   .no-results { text-align: center; padding: 60px; color: var(--text-muted); }
 
+  /* EDITION HEADER */
+  .edition-header {
+    font-size: 0.8rem; color: #888; letter-spacing: 0.05em;
+    text-transform: uppercase; text-align: center;
+    margin-bottom: 16px;
+  }
+
+  /* TOP STORY */
+  .fracture-card.tier-top { padding: 28px; }
+  .fracture-card.tier-top .fracture-headline { font-size: 1.5rem; }
+  .fracture-card.tier-top .cluster-faces { display: flex !important; }
+
+  /* OPPOSING BLOCKQUOTE PAIR */
+  .opposing-quotes {
+    display: flex; gap: 16px; margin: 16px 0 8px;
+  }
+  .opposing-quote {
+    flex: 1; padding: 14px 16px; font-size: 14px; font-style: italic;
+    color: var(--text-secondary); line-height: 1.5;
+    border-radius: 8px; background: rgba(255,255,255,0.03);
+  }
+  .opposing-quote-attr {
+    display: flex; align-items: center; gap: 8px; margin-top: 10px;
+    font-style: normal; font-size: 12px; color: var(--text-muted);
+  }
+  .opposing-quote-attr img {
+    width: 24px; height: 24px; border-radius: 50%; object-fit: cover;
+  }
+
+  /* MEDIUM CARDS (stories 2-3) */
+  .cluster-summary-line {
+    font-size: 12px; color: var(--text-muted); margin-bottom: 8px;
+  }
+
+  /* COMPACT CARDS (stories 4+) */
+  .also-today-divider {
+    font-size: 0.7rem; font-weight: 700; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin: 24px 0 12px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .fracture-card.tier-compact { padding: 16px; }
+  .fracture-card.tier-compact .fracture-headline { font-size: 0.95rem; }
+  .fracture-card.tier-compact .cluster-faces { display: none !important; }
+
+  /* THE WIRE */
+  .wire-section {
+    max-width: 900px; margin: 0 auto; padding: 32px 20px 60px;
+  }
+  .wire-header {
+    margin-bottom: 16px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .wire-title {
+    font-size: 0.7em; font-weight: 700; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .wire-subtitle {
+    font-size: 13px; color: var(--text-muted); margin-top: 4px;
+  }
+  .wire-note {
+    font-size: 11px; color: var(--text-tertiary); margin-top: 4px;
+  }
+  .wire-feed {
+    max-height: 600px; overflow-y: auto;
+  }
+  .wire-entry {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    transition: background 0.15s;
+  }
+  .wire-entry:hover { background: rgba(255,255,255,0.03); }
+  .wire-entry:last-child { border-bottom: none; }
+  .wire-photo {
+    width: 28px; height: 28px; border-radius: 50%; object-fit: cover;
+    background: var(--bg-elevated); flex-shrink: 0;
+  }
+  .wire-name {
+    font-size: 12px; font-weight: 600; color: var(--text-primary);
+    text-decoration: none; white-space: nowrap;
+  }
+  .wire-name:hover { color: var(--accent); }
+  .wire-platform {
+    font-size: 10px; font-weight: 600; padding: 2px 6px;
+    border-radius: 100px; white-space: nowrap; flex-shrink: 0;
+  }
+  .wire-text {
+    font-size: 12px; color: #aaa; flex: 1; min-width: 0;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .wire-time {
+    font-size: 11px; color: #666; white-space: nowrap; flex-shrink: 0;
+  }
+
   /* MOBILE */
   @media (max-width: 600px) {
     .hero { padding: 32px 16px 24px; }
@@ -450,6 +546,7 @@
     .fractures { padding: 24px 16px 0; }
     .fracture-card { padding: 16px; border-radius: 14px; }
     .fracture-headline { font-size: 1em; }
+    .fracture-card.tier-top .fracture-headline { font-size: 1.3rem; }
     .fracture-insight { font-size: 0.9em; }
     .cluster-face { width: 30px; height: 30px; margin-left: -8px; }
     .cluster-face:first-child { margin-left: 0; }
@@ -470,6 +567,20 @@
     .example-query { font-size: 0.75em; padding: 4px 10px; }
     .nav { padding: 0 16px; }
     .fracture-search-btn { font-size: 11px; padding: 6px 12px; }
+    .edition-header { font-size: 0.7rem; }
+    .opposing-quotes { flex-direction: column; gap: 10px; }
+    .fracture-card.tier-compact { padding: 12px 16px; }
+    .also-today-divider { margin: 16px 0 8px; }
+    .wire-feed { max-height: 400px; }
+    .wire-entry {
+      flex-wrap: wrap; gap: 6px;
+    }
+    .wire-text {
+      width: 100%; flex: none; white-space: normal;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      overflow: hidden; text-overflow: ellipsis;
+      padding-left: 38px;
+    }
   }
 </style>
 </head>
@@ -522,6 +633,16 @@
 <div class="trending" id="trendingSection" style="display:none">
   <h3>All trending topics</h3>
   <div class="trending-topics" id="trendingTopics"></div>
+</div>
+
+<!-- THE WIRE -->
+<div class="wire-section" id="wireSection" style="display:none">
+  <div class="wire-header">
+    <div class="wire-title">The Wire</div>
+    <div class="wire-subtitle" id="wireSubtitle">What voices are saying right now</div>
+    <div class="wire-note">When enough voices converge on a topic, we analyze it above.</div>
+  </div>
+  <div class="wire-feed" id="wireFeed"></div>
 </div>
 
 <div class="loading" id="loading">
@@ -599,9 +720,35 @@ async function loadConversation() {
   const container = document.getElementById('fractureCards');
   section.style.display = 'block';
 
+  // Edition header
+  const totalVoices = new Set();
+  stories.forEach(s => {
+    (s.clusters || []).forEach(c => {
+      (c.voices || []).forEach(v => totalVoices.add(v.voiceId || v.voiceName));
+    });
+  });
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  const edHeader = document.createElement('div');
+  edHeader.className = 'edition-header';
+  edHeader.textContent = `${dateStr} | ${stories.length} stories analyzed from ${totalVoices.size} voices across 7 platforms`;
+  section.insertBefore(edHeader, container);
+
   stories.forEach((story, si) => {
+    // "Also today" divider before story 4
+    if (si === 3) {
+      const divider = document.createElement('div');
+      divider.className = 'also-today-divider';
+      divider.textContent = 'Also today';
+      container.appendChild(divider);
+    }
+
     const card = document.createElement('div');
-    card.className = 'fracture-card';
+    // Tier classes
+    if (si === 0) card.className = 'fracture-card tier-top expanded';
+    else if (si <= 2) card.className = 'fracture-card tier-medium';
+    else card.className = 'fracture-card tier-compact';
+
     card.onclick = (e) => {
       if (e.target.closest('.fracture-search-btn')) return;
       card.classList.toggle('expanded');
@@ -677,8 +824,9 @@ async function loadConversation() {
 
       const seeAllBtn = allVoices.length > 1 ? `<button class="cluster-see-all" onclick="event.stopPropagation(); var el=document.getElementById('${clusterId}'); el.classList.toggle('cluster-voices-hidden'); this.textContent = el.classList.contains('cluster-voices-hidden') ? 'See all ${cluster.voiceCount || allVoices.length} voices' : 'Hide voices';">See all ${cluster.voiceCount || allVoices.length} voices</button>` : '';
 
+      const autoOpen = (si === 0) ? ' cluster-open' : '';
       clustersHtml += `
-        <div style="margin-bottom:4px;">
+        <div style="margin-bottom:4px;" class="${autoOpen}">
           <div class="cluster-header-row" onclick="event.stopPropagation(); this.parentElement.classList.toggle('cluster-open');" style="display:flex; align-items:center; gap:8px; padding:10px 0; cursor:pointer;">
             <div style="width:4px; height:18px; border-radius:2px; background:${color}; flex-shrink:0;"></div>
             <div class="cluster-name" style="color:${color}; flex:1;">${escapeHtml(cluster.name)}</div>
@@ -714,6 +862,35 @@ async function loadConversation() {
       <a class="best-quote-attr" href="/voice/${bestQuote.voiceId}" style="text-decoration:none; color:var(--text-muted);" onclick="event.stopPropagation();">— ${escapeHtml(bestQuote.voiceName)}</a>
     </div>` : '';
 
+    // Opposing blockquote pair for top story
+    let opposingQuotesHtml = '';
+    if (si === 0 && shownClusters.length >= 2) {
+      const getQuote = (cluster, ci) => {
+        const bq = cluster.bestQuote || (cluster.voices && cluster.voices.length > 0 ? (() => {
+          const best = [...cluster.voices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
+          return { voiceName: best.voiceName, quote: best.quote, voiceId: best.voiceId, photo: best.photo };
+        })() : null);
+        if (!bq || !bq.quote) return '';
+        const color = getClusterColor(ci);
+        const photo = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
+        return `<div class="opposing-quote" style="border-left:3px solid ${color};">
+          "${escapeHtml(bq.quote.substring(0, 200))}"
+          <div class="opposing-quote-attr">
+            <img src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
+            ${escapeHtml(bq.voiceName)} &middot; ${escapeHtml(cluster.name)}
+          </div>
+        </div>`;
+      };
+      opposingQuotesHtml = `<div class="opposing-quotes">${getQuote(shownClusters[0], 0)}${getQuote(shownClusters[1], 1)}</div>`;
+    }
+
+    // Cluster summary line for medium cards
+    let clusterSummaryHtml = '';
+    if (si === 1 || si === 2) {
+      const names = shownClusters.slice(0, 3).map(c => c.name);
+      clusterSummaryHtml = `<div class="cluster-summary-line">${shownClusters.length} clusters: ${names.join(' vs ')}</div>`;
+    }
+
     card.innerHTML = `
       ${coverHtml}
       <div class="fracture-meta">
@@ -725,10 +902,12 @@ async function loadConversation() {
         <div class="fracture-voices-count">${story.voiceCount} voices</div>
       </div>
       <div class="fracture-headline">${escapeHtml(story.headline)}</div>
+      ${clusterSummaryHtml}
       <div style="display:flex; align-items:center; justify-content:space-between;">
         <div class="fracture-insight">${escapeHtml(story.summary || '')}</div>
         <svg class="fracture-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
       </div>
+      ${opposingQuotesHtml}
       <div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">${clustersHtml}</div>
       <button class="fracture-search-btn" onclick="event.stopPropagation(); document.getElementById('searchInput').value='${escapeHtml(story.headline)}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
         Search this story
@@ -744,6 +923,56 @@ async function loadConversation() {
   });
 }
 loadConversation();
+
+// Load The Wire
+const WIRE_PLATFORM_COLORS = {
+  x: '#1DA1F2', youtube: '#FF0000', substack: '#FF6719',
+  bluesky: '#0085FF', instagram: '#E1306C', tiktok: '#00F2EA', podcast: '#9B59B6'
+};
+function wireTimeAgo(ts) {
+  try {
+    const diff = Date.now() - new Date(ts).getTime();
+    const h = Math.floor(diff / 3600000);
+    const d = Math.floor(diff / 86400000);
+    if (d > 0) return d + 'd ago';
+    if (h > 0) return h + 'h ago';
+    const m = Math.floor(diff / 60000);
+    if (m > 0) return m + 'm ago';
+    return 'just now';
+  } catch { return ''; }
+}
+fetch(BASE + '/api/wire').then(r => r.json()).then(entries => {
+  if (!entries || entries.length === 0) return;
+  const wireSection = document.getElementById('wireSection');
+  const wireFeed = document.getElementById('wireFeed');
+  wireSection.style.display = 'block';
+
+  // Update subtitle with count
+  const voiceSet = new Set(entries.map(e => e.voiceId || e.voiceName));
+  document.getElementById('wireSubtitle').textContent = `What ${voiceSet.size} voices are saying right now`;
+
+  const platformLabels = {x:'X', youtube:'YouTube', substack:'Substack', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', podcast:'Podcast'};
+
+  entries.slice(0, 50).forEach(entry => {
+    const photo = entry.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(entry.voiceName || '')}&background=252528&color=a1a1aa&size=56`;
+    const platform = (entry.platform || '').toLowerCase();
+    const pColor = WIRE_PLATFORM_COLORS[platform] || '#888';
+    const pLabel = platformLabels[platform] || platform;
+    const text = (entry.text || entry.quote || '').substring(0, 120);
+    const time = wireTimeAgo(entry.timestamp || entry.date);
+
+    const row = document.createElement('div');
+    row.className = 'wire-entry';
+    row.innerHTML = `
+      <img class="wire-photo" src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(entry.voiceName || '')}&background=252528&color=a1a1aa&size=56'">
+      <a class="wire-name" href="/voice/${entry.voiceId || ''}">${escapeHtml(entry.voiceName || '')}</a>
+      <span class="wire-platform" style="background:${pColor}22; color:${pColor};">${pLabel}</span>
+      <span class="wire-text">${escapeHtml(text)}</span>
+      <span class="wire-time">${time}</span>
+    `;
+    wireFeed.appendChild(row);
+  });
+}).catch(() => {});
 
 // Load trending topics
 fetch(BASE + '/api/topics')

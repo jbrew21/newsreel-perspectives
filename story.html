@@ -264,6 +264,29 @@
   }
   .cluster-voice-link:hover { text-decoration: underline; }
 
+  /* OPPOSING BLOCKQUOTE PAIR */
+  .opposing-quotes {
+    display: flex; gap: 16px; margin: 20px 0 8px;
+  }
+  .opposing-quote {
+    flex: 1; padding: 14px 16px; font-size: 14px; font-style: italic;
+    color: var(--text-secondary); line-height: 1.5;
+    border-radius: 8px; background: rgba(255,255,255,0.03);
+  }
+  .opposing-quote-attr {
+    display: flex; align-items: center; gap: 8px; margin-top: 10px;
+    font-style: normal; font-size: 12px; color: var(--text-muted);
+  }
+  .opposing-quote-attr img {
+    width: 24px; height: 24px; border-radius: 50%; object-fit: cover;
+  }
+
+  /* EDITION STATS */
+  .story-stats-line {
+    font-size: 0.8rem; color: #888; letter-spacing: 0.05em;
+    text-transform: uppercase; margin-top: 16px;
+  }
+
   /* ERROR STATE */
   .error-state {
     text-align: center; padding: 80px 20px;
@@ -310,6 +333,8 @@
     .nav { padding: 0 16px; }
     .nav-links a { font-size: 10px; margin-left: 10px; }
     .share-toast { font-size: 12px; padding: 8px 16px; }
+    .opposing-quotes { flex-direction: column; gap: 10px; }
+    .story-stats-line { font-size: 0.7rem; }
   }
 </style>
 </head>
@@ -451,6 +476,16 @@ function renderStory(story) {
   metaHtml += `<span class="voice-count-badge">${story.voiceCount} voices</span>`;
 
   document.getElementById('storyMeta').innerHTML = metaHtml;
+
+  // Stats line: voice count + platform count
+  const allPlatforms = new Set();
+  (story.clusters || []).forEach(c => {
+    (c.voices || []).forEach(v => { if (v.platform) allPlatforms.add(v.platform); });
+  });
+  const statsLine = document.createElement('div');
+  statsLine.className = 'story-stats-line';
+  statsLine.textContent = `${story.voiceCount} voices across ${allPlatforms.size || 7} platforms`;
+  document.getElementById('storyMeta').parentElement.insertBefore(statsLine, document.getElementById('storyHeadline'));
   document.getElementById('storyHeadline').textContent = story.headline;
 
   if (story.summary) {
@@ -484,6 +519,30 @@ function renderStory(story) {
   const clusters = story.clusters || [];
   document.getElementById('clustersTitle').textContent =
     `${clusters.length} argument cluster${clusters.length !== 1 ? 's' : ''}`;
+
+  // Opposing blockquote pair
+  if (clusters.length >= 2) {
+    const getQuote = (cluster, ci) => {
+      const bq = cluster.bestQuote || (cluster.voices && cluster.voices.length > 0 ? (() => {
+        const best = [...cluster.voices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
+        return { voiceName: best.voiceName, quote: best.quote, voiceId: best.voiceId, photo: best.photo };
+      })() : null);
+      if (!bq || !bq.quote) return '';
+      const color = CLUSTER_COLORS[ci % CLUSTER_COLORS.length];
+      const photo = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
+      return `<div class="opposing-quote" style="border-left:3px solid ${color};">
+        "${escapeHtml(bq.quote.substring(0, 200))}"
+        <div class="opposing-quote-attr">
+          <img src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
+          ${escapeHtml(bq.voiceName)} &middot; ${escapeHtml(cluster.name)}
+        </div>
+      </div>`;
+    };
+    const oqDiv = document.createElement('div');
+    oqDiv.className = 'opposing-quotes';
+    oqDiv.innerHTML = getQuote(clusters[0], 0) + getQuote(clusters[1], 1);
+    document.getElementById('clustersSection').insertBefore(oqDiv, document.getElementById('clustersTitle').nextSibling);
+  }
 
   const container = document.getElementById('clusterCards');
 
