@@ -275,6 +275,59 @@
   }
   .cluster-face-link:hover .cluster-face-tooltip { display: block; }
 
+  /* Selected face state */
+  .cluster-face.selected {
+    border-color: var(--cluster-color, #60A5FA) !important;
+    transform: scale(1.15);
+    z-index: 10;
+    box-shadow: 0 0 0 2px var(--cluster-color, #60A5FA);
+  }
+
+  /* Quote card revealed on face click */
+  .cluster-selected-quote {
+    background: rgba(255,255,255,0.04);
+    border-radius: 12px;
+    padding: 16px;
+    margin: 12px 12px 8px;
+    border-left: 4px solid var(--cluster-color, #60A5FA);
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    animation: slideDown 0.2s ease;
+  }
+  .cluster-selected-quote img.csq-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .cluster-selected-quote .csq-body { flex: 1; min-width: 0; }
+  .cluster-selected-quote .csq-name {
+    font-size: 14px; font-weight: 700; color: var(--text-primary);
+  }
+  .cluster-selected-quote .csq-platform {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    padding: 2px 8px; border-radius: 100px; margin-left: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    background: rgba(255,255,255,0.08); color: var(--text-muted);
+  }
+  .cluster-selected-quote .csq-quote {
+    font-size: 14px; color: var(--text-secondary); line-height: 1.5;
+    margin-top: 6px;
+  }
+  .cluster-selected-quote .csq-profile-link {
+    font-size: 13px; color: var(--accent); text-decoration: none;
+    margin-top: 8px; display: inline-block; min-height: 44px;
+    line-height: 44px;
+  }
+  .cluster-selected-quote .csq-profile-link:hover { text-decoration: underline; }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   .cluster-best-quote {
     padding: 8px 12px; margin-top: 4px;
   }
@@ -778,13 +831,13 @@ async function loadConversation() {
       const allVoices = cluster.voices || [];
       const shown = allVoices.slice(0, 10);
 
-      // Face bubbles (always visible)
-      const faceBubblesHtml = allVoices.map(v => {
+      // Face bubbles (always visible, clickable to reveal quote)
+      const faceBubblesHtml = allVoices.map((v, vi) => {
         const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
-        return `<a href="/voice/${v.voiceId}" class="cluster-face-link" onclick="event.stopPropagation();">
+        return `<div class="cluster-face-link" data-cluster-idx="${si}-${ci}" data-voice-idx="${vi}" data-voice-id="${v.voiceId}" data-voice-name="${escapeHtml(v.voiceName)}" data-voice-photo="${photo}" data-voice-quote="${escapeHtml(v.quote || '')}" data-voice-platform="${v.platform || ''}" data-source-url="${v.sourceUrl || ''}" onclick="event.stopPropagation(); handleFaceClick(this);">
           <span class="cluster-face-tooltip">${escapeHtml(v.voiceName)}</span>
           <img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
-        </a>`;
+        </div>`;
       }).join('');
 
       // Best quote (pick from bestQuote field or first voice with longest quote)
@@ -833,7 +886,8 @@ async function loadConversation() {
             <span class="cluster-count">${cluster.voiceCount || allVoices.length} voices</span>
             <svg class="cluster-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition:transform 0.2s; flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
           </div>
-          <div class="cluster-faces">${faceBubblesHtml}</div>
+          <div class="cluster-faces" style="--cluster-color:${color};">${faceBubblesHtml}</div>
+          <div class="cluster-selected-quote-container" id="csq-container-${si}-${ci}" style="--cluster-color:${color};"></div>
           <div class="cluster-collapsible">
             ${bestQuoteHtml}
             ${seeAllBtn}
@@ -1155,6 +1209,50 @@ function escapeHtml(text) {
   const div = document.createElement('div');
   div.textContent = text;
   return div.innerHTML;
+}
+
+const PLATFORM_LABELS_GLOBAL = {x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'};
+
+function handleFaceClick(faceEl) {
+  const ci = faceEl.dataset.clusterIdx;
+  const container = document.getElementById('csq-container-' + ci);
+  const img = faceEl.querySelector('.cluster-face');
+  const voiceId = faceEl.dataset.voiceId;
+  const voiceName = faceEl.dataset.voiceName;
+  const photo = faceEl.dataset.voicePhoto;
+  const quote = faceEl.dataset.voiceQuote;
+  const platform = faceEl.dataset.voicePlatform;
+
+  const platformLabel = PLATFORM_LABELS_GLOBAL[platform] || platform || '';
+  const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+
+  // If this face is already selected, toggle off
+  if (img.classList.contains('selected')) {
+    img.classList.remove('selected');
+    container.innerHTML = '';
+    return;
+  }
+
+  // Deselect any other selected face in this cluster
+  const facesRow = faceEl.closest('.cluster-faces');
+  facesRow.querySelectorAll('.cluster-face.selected').forEach(f => f.classList.remove('selected'));
+
+  // Select this face
+  img.classList.add('selected');
+
+  // Build quote card
+  const fallbackPhoto = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(voiceName) + '&background=252528&color=a1a1aa&size=80';
+  container.innerHTML = '<div class="cluster-selected-quote">' +
+    '<img class="csq-photo" src="' + photo + '" alt="" onerror="this.src=\'' + fallbackPhoto + '\'">' +
+    '<div class="csq-body">' +
+      '<div>' +
+        '<span class="csq-name">' + voiceName + '</span>' +
+        (platformLabel ? '<span class="csq-platform">' + platformLabel + '</span>' : '') +
+      '</div>' +
+      (quote ? '<div class="csq-quote">"' + quote + '"</div>' : '<div class="csq-quote" style="color:var(--text-muted); font-style:italic;">No quote available</div>') +
+      '<a class="csq-profile-link" href="' + BASE + '/voice/' + voiceId + '" onclick="event.stopPropagation();">View profile &rarr;</a>' +
+    '</div>' +
+  '</div>';
 }
 
 function toggleQuoteTip(el) {
