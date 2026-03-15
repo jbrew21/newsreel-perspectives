@@ -179,12 +179,60 @@
     transition: transform 0.2s; flex-shrink: 0;
   }
 
-  .cluster-voices-list {
-    display: none; flex-direction: column; gap: 6px;
-    padding: 0 16px 16px;
+  /* Face bubbles row */
+  .cluster-faces {
+    display: flex; align-items: center; flex-wrap: wrap;
+    padding: 4px 16px 8px; gap: 2px 0;
   }
-  .cluster-card.cluster-open .cluster-voices-list { display: flex; }
+  .cluster-face {
+    width: 36px; height: 36px; border-radius: 50%;
+    object-fit: cover; background: var(--bg-elevated);
+    border: 2px solid var(--bg-surface);
+    margin-left: -10px; position: relative;
+    transition: transform 0.15s, z-index 0.15s;
+    cursor: pointer;
+  }
+  .cluster-face:first-child { margin-left: 0; }
+  .cluster-face:hover { transform: scale(1.1); z-index: 10; }
+  .cluster-face-link { text-decoration: none; position: relative; }
+  .cluster-face-link:first-child .cluster-face { margin-left: 0; }
+  .cluster-face-link .cluster-face-tooltip {
+    display: none; position: absolute; bottom: 100%; left: 50%;
+    transform: translateX(-50%); white-space: nowrap;
+    background: var(--bg-elevated); color: var(--text-primary);
+    font-size: 11px; font-weight: 600; padding: 4px 8px;
+    border-radius: 6px; pointer-events: none; z-index: 20;
+    margin-bottom: 4px; border: 1px solid var(--border-default);
+  }
+  .cluster-face-link:hover .cluster-face-tooltip { display: block; }
+
+  .cluster-best-quote {
+    padding: 8px 16px; margin-top: 4px;
+  }
+  .cluster-best-quote-text {
+    font-size: 13px; font-style: italic; color: var(--text-secondary); line-height: 1.5;
+  }
+  .cluster-best-quote-attr {
+    font-size: 11px; color: var(--text-muted); margin-left: 4px;
+  }
+
+  .cluster-see-all {
+    font-size: 12px; color: var(--accent); cursor: pointer;
+    padding: 4px 16px; margin-top: 4px;
+    background: none; border: none; font-family: inherit;
+    text-align: left;
+  }
+  .cluster-see-all:hover { text-decoration: underline; }
+
+  .cluster-collapsible { display: none; }
+  .cluster-card.cluster-open .cluster-collapsible { display: block; }
   .cluster-card.cluster-open .cluster-chevron { transform: rotate(180deg); }
+
+  .cluster-voices-list {
+    display: flex; flex-direction: column; gap: 6px;
+    padding: 4px 16px 16px;
+  }
+  .cluster-voices-list.cluster-voices-hidden { display: none; }
 
   .cluster-voice-row {
     display: flex; align-items: flex-start; gap: 10px;
@@ -246,12 +294,22 @@
     .story-summary { font-size: 0.9em; }
     .story-cover { max-height: 200px; border-radius: 10px; }
     .story-header { padding: 0 16px; }
+    .story-actions { gap: 6px; }
+    .action-btn { font-size: 12px; padding: 8px 12px; }
     .clusters-section { padding: 24px 16px 40px; }
     .cluster-header-row { padding: 14px 16px; }
+    .cluster-face { width: 30px; height: 30px; margin-left: -8px; }
+    .cluster-face:first-child { margin-left: 0; }
+    .cluster-faces { padding: 4px 12px 8px; }
+    .cluster-best-quote { padding: 6px 12px; }
+    .cluster-best-quote-text { font-size: 12px; }
     .cluster-voice-photo { width: 34px; height: 34px; }
     .cluster-voice-row { padding: 8px 10px; }
     .cluster-voice-quote { font-size: 11px; }
+    .cluster-voices-list { padding: 4px 12px 12px; }
     .nav { padding: 0 16px; }
+    .nav-links a { font-size: 10px; margin-left: 10px; }
+    .share-toast { font-size: 12px; padding: 8px 16px; }
   }
 </style>
 </head>
@@ -266,6 +324,7 @@
     <div class="nav-links">
       <a href="/search" id="searchLink">Search</a>
       <a href="/voices" id="voicesLink">Voices</a>
+      <a href="/methodology" id="methodologyLink">Methodology</a>
     </div>
   </div>
 </div>
@@ -298,13 +357,14 @@
 
 <script>
 const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
-const PAGES = { home: BASE || '/', search: BASE + '/search', voices: BASE + '/voices' };
+const PAGES = { home: BASE || '/', search: BASE + '/search', voices: BASE + '/voices', methodology: BASE + '/methodology' };
 
 // Fix nav links
 document.getElementById('homeLink').href = PAGES.home;
 document.getElementById('backLink').href = PAGES.home;
 document.getElementById('searchLink').href = PAGES.search;
 document.getElementById('voicesLink').href = PAGES.voices;
+document.getElementById('methodologyLink').href = PAGES.methodology;
 
 const CLUSTER_COLORS = [
   '#60A5FA', '#F87171', '#FBBF24', '#A78BFA',
@@ -432,16 +492,36 @@ function renderStory(story) {
     const card = document.createElement('div');
     card.className = 'cluster-card';
 
-    // Build voice rows
     const voices = cluster.voices || [];
     const shown = voices.slice(0, 10);
     const overflow = (cluster.voiceCount || voices.length) - shown.length;
+    const voiceTotal = cluster.voiceCount || voices.length;
 
+    // Face bubbles (always visible)
+    const faceBubblesHtml = voices.map(v => {
+      const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
+      return `<a href="${BASE}/voice/${v.voiceId}" class="cluster-face-link">
+        <span class="cluster-face-tooltip">${escapeHtml(v.voiceName)}</span>
+        <img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
+      </a>`;
+    }).join('');
+
+    // Best quote
+    const bq = cluster.bestQuote || (voices.length > 0 ? (() => {
+      const best = [...voices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
+      return { voiceName: best.voiceName, quote: best.quote, platform: best.platform, voiceId: best.voiceId };
+    })() : null);
+    const bestQuoteHtml = bq && bq.quote ? `<div class="cluster-best-quote">
+      <span class="cluster-best-quote-text">"${escapeHtml(bq.quote.substring(0, 250))}"</span>
+      <a class="cluster-best-quote-attr" href="${BASE}/voice/${bq.voiceId || ''}" style="text-decoration:none; color:var(--text-muted);">— ${escapeHtml(bq.voiceName)}${bq.platform ? ' on ' + (PLATFORM_LABELS[bq.platform] || bq.platform) : ''}</a>
+    </div>` : '';
+
+    // Full voice list
+    const clusterId = `story-cluster-voices-${ci}`;
     let voicesHtml = shown.map(v => {
       const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
       const quote = (v.quote || '').substring(0, 250);
       const platformLabel = PLATFORM_LABELS[v.platform] || v.platform || '';
-
       return `<div class="cluster-voice-row">
         <img class="cluster-voice-photo" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
         <div class="cluster-voice-body">
@@ -459,14 +539,21 @@ function renderStory(story) {
       voicesHtml += `<div style="font-size:11px; color:var(--text-muted); padding:4px 12px;">+ ${overflow} more voices</div>`;
     }
 
+    const seeAllBtn = voices.length > 1 ? `<button class="cluster-see-all" onclick="var el=document.getElementById('${clusterId}'); el.classList.toggle('cluster-voices-hidden'); this.textContent = el.classList.contains('cluster-voices-hidden') ? 'See all ${voiceTotal} voices' : 'Hide voices';">See all ${voiceTotal} voices</button>` : '';
+
     card.innerHTML = `
       <div class="cluster-header-row" onclick="this.parentElement.classList.toggle('cluster-open')">
         <div class="cluster-bar" style="background:${color}"></div>
         <div class="cluster-name" style="color:${color}">${escapeHtml(cluster.name)}</div>
-        <span class="cluster-count">${cluster.voiceCount || voices.length} voices</span>
+        <span class="cluster-count">${voiceTotal} voices</span>
         <svg class="cluster-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
       </div>
-      <div class="cluster-voices-list">${voicesHtml}</div>
+      <div class="cluster-faces">${faceBubblesHtml}</div>
+      <div class="cluster-collapsible">
+        ${bestQuoteHtml}
+        ${seeAllBtn}
+        <div id="${clusterId}" class="cluster-voices-list cluster-voices-hidden">${voicesHtml}</div>
+      </div>
     `;
 
     container.appendChild(card);
