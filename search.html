@@ -248,9 +248,56 @@
     font-size: 11px; color: var(--text-muted); font-weight: 500;
   }
 
+  /* Face bubbles row */
+  .cluster-faces {
+    display: flex; align-items: center; flex-wrap: wrap;
+    padding: 4px 0 4px 12px; gap: 2px 0;
+  }
+  .cluster-face {
+    width: 36px; height: 36px; border-radius: 50%;
+    object-fit: cover; background: var(--bg-elevated);
+    border: 2px solid var(--bg-surface);
+    margin-left: -10px; position: relative;
+    transition: transform 0.15s, z-index 0.15s;
+    cursor: pointer;
+  }
+  .cluster-face:first-child { margin-left: 0; }
+  .cluster-face:hover { transform: scale(1.1); z-index: 10; }
+  .cluster-face-link { text-decoration: none; position: relative; }
+  .cluster-face-link:first-child .cluster-face { margin-left: 0; }
+  .cluster-face-link .cluster-face-tooltip {
+    display: none; position: absolute; bottom: 100%; left: 50%;
+    transform: translateX(-50%); white-space: nowrap;
+    background: var(--bg-elevated); color: var(--text-primary);
+    font-size: 11px; font-weight: 600; padding: 4px 8px;
+    border-radius: 6px; pointer-events: none; z-index: 20;
+    margin-bottom: 4px; border: 1px solid var(--border-default);
+  }
+  .cluster-face-link:hover .cluster-face-tooltip { display: block; }
+
+  .cluster-best-quote {
+    padding: 8px 12px; margin-top: 4px;
+  }
+  .cluster-best-quote-text {
+    font-size: 13px; font-style: italic; color: var(--text-secondary); line-height: 1.5;
+  }
+  .cluster-best-quote-attr {
+    font-size: 11px; color: var(--text-muted); margin-left: 4px;
+  }
+
+  .cluster-see-all {
+    font-size: 12px; color: var(--accent); cursor: pointer;
+    padding: 4px 12px; margin-top: 4px;
+    background: none; border: none; font-family: inherit;
+    text-align: left;
+  }
+  .cluster-see-all:hover { text-decoration: underline; }
+
   .cluster-voices-list {
     display: flex; flex-direction: column; gap: 8px; flex: 1;
+    padding: 4px 12px 8px;
   }
+  .cluster-voices-list.cluster-voices-hidden { display: none; }
   .cluster-voice-row {
     display: flex; align-items: flex-start; gap: 10px;
     padding: 10px 12px; background: var(--bg-surface-2);
@@ -281,7 +328,7 @@
 
   /* Collapsible clusters */
   .cluster-collapsible { display: none; }
-  .cluster-open .cluster-collapsible { display: flex; }
+  .cluster-open .cluster-collapsible { display: block; }
   .cluster-open .cluster-chevron { transform: rotate(180deg); }
   .cluster-header-row:hover { opacity: 0.85; }
 
@@ -397,15 +444,21 @@
   @media (max-width: 600px) {
     .hero { padding: 32px 16px 24px; }
     .hero h1 { font-size: 1.5em; }
-    .hero p { font-size: 0.9em; margin-bottom: 24px; }
+    .hero p { font-size: 0.9em; margin-bottom: 24px; max-width: 100%; }
     .search-box input { padding: 14px 16px; padding-right: 80px; font-size: 0.95em; border-radius: 12px; }
     .search-box button { padding: 8px 16px; font-size: 0.85em; border-radius: 8px; }
     .fractures { padding: 24px 16px 0; }
     .fracture-card { padding: 16px; border-radius: 14px; }
-    .fracture-insight { font-size: 1.05em; }
+    .fracture-headline { font-size: 1em; }
+    .fracture-insight { font-size: 0.9em; }
+    .cluster-face { width: 30px; height: 30px; margin-left: -8px; }
+    .cluster-face:first-child { margin-left: 0; }
+    .cluster-faces { padding: 4px 0 4px 8px; }
     .cluster-voice-photo { width: 34px; height: 34px; }
     .cluster-voice-row { padding: 8px 10px; }
     .cluster-voice-quote { font-size: 11px; }
+    .cluster-best-quote { padding: 6px 8px; }
+    .cluster-best-quote-text { font-size: 12px; }
     .results { padding: 0 12px 40px; }
     .voice-card { padding: 14px; }
     .voice-photo { width: 38px; height: 38px; }
@@ -416,6 +469,7 @@
     .example-queries { gap: 4px; }
     .example-query { font-size: 0.75em; padding: 4px 10px; }
     .nav { padding: 0 16px; }
+    .fracture-search-btn { font-size: 11px; padding: 6px 12px; }
   }
 </style>
 </head>
@@ -574,13 +628,35 @@ async function loadConversation() {
 
     shownClusters.forEach((cluster, ci) => {
       const color = getClusterColor(ci);
-      const shown = cluster.voices.slice(0, 5);
-      const overflow = cluster.voiceCount - 5;
+      const allVoices = cluster.voices || [];
+      const shown = allVoices.slice(0, 10);
 
+      // Face bubbles (always visible)
+      const faceBubblesHtml = allVoices.map(v => {
+        const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
+        return `<a href="/voice/${v.voiceId}" class="cluster-face-link" onclick="event.stopPropagation();">
+          <span class="cluster-face-tooltip">${escapeHtml(v.voiceName)}</span>
+          <img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
+        </a>`;
+      }).join('');
+
+      // Best quote (pick from bestQuote field or first voice with longest quote)
+      const bq = cluster.bestQuote || (allVoices.length > 0 ? (() => {
+        const best = [...allVoices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
+        return { voiceName: best.voiceName, quote: best.quote, platform: best.platform, voiceId: best.voiceId };
+      })() : null);
+      const platformLabels = {x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'};
+      const bestQuoteHtml = bq && bq.quote ? `<div class="cluster-best-quote">
+        <span class="cluster-best-quote-text">"${escapeHtml(bq.quote.substring(0, 180))}"</span>
+        <a class="cluster-best-quote-attr" href="/voice/${bq.voiceId || ''}" style="text-decoration:none; color:var(--text-muted);" onclick="event.stopPropagation();">— ${escapeHtml(bq.voiceName)}${bq.platform ? ' on ' + (platformLabels[bq.platform] || bq.platform) : ''}</a>
+      </div>` : '';
+
+      // Full voice list (hidden by default, toggled by "See all")
+      const clusterId = `cluster-voices-${si}-${ci}`;
       let voicesHtml = shown.map(v => {
         const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
         const quote = (v.quote || '').substring(0, 180);
-        const platformLabel = v.platform ? ({x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'}[v.platform] || v.platform) : '';
+        const platformLabel = v.platform ? (platformLabels[v.platform] || v.platform) : '';
         return `<div class="cluster-voice-row" onclick="event.stopPropagation();">
           <img class="cluster-voice-photo" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
           <div class="cluster-voice-body">
@@ -594,19 +670,27 @@ async function loadConversation() {
         </div>`;
       }).join('');
 
+      const overflow = (cluster.voiceCount || allVoices.length) - shown.length;
       if (overflow > 0) {
         voicesHtml += `<div style="font-size:11px; color:var(--text-muted); padding:4px 12px;">+ ${overflow} more voices</div>`;
       }
+
+      const seeAllBtn = allVoices.length > 1 ? `<button class="cluster-see-all" onclick="event.stopPropagation(); var el=document.getElementById('${clusterId}'); el.classList.toggle('cluster-voices-hidden'); this.textContent = el.classList.contains('cluster-voices-hidden') ? 'See all ${cluster.voiceCount || allVoices.length} voices' : 'Hide voices';">See all ${cluster.voiceCount || allVoices.length} voices</button>` : '';
 
       clustersHtml += `
         <div style="margin-bottom:4px;">
           <div class="cluster-header-row" onclick="event.stopPropagation(); this.parentElement.classList.toggle('cluster-open');" style="display:flex; align-items:center; gap:8px; padding:10px 0; cursor:pointer;">
             <div style="width:4px; height:18px; border-radius:2px; background:${color}; flex-shrink:0;"></div>
             <div class="cluster-name" style="color:${color}; flex:1;">${escapeHtml(cluster.name)}</div>
-            <span class="cluster-count">${cluster.voiceCount} voices</span>
+            <span class="cluster-count">${cluster.voiceCount || allVoices.length} voices</span>
             <svg class="cluster-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition:transform 0.2s; flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
           </div>
-          <div class="cluster-voices-list cluster-collapsible">${voicesHtml}</div>
+          <div class="cluster-faces">${faceBubblesHtml}</div>
+          <div class="cluster-collapsible">
+            ${bestQuoteHtml}
+            ${seeAllBtn}
+            <div id="${clusterId}" class="cluster-voices-list cluster-voices-hidden">${voicesHtml}</div>
+          </div>
         </div>
       `;
     });
