@@ -654,10 +654,6 @@ function renderStory(story) {
   const storyUrl = window.location.origin + BASE + '/story/' + storySlug;
 
   document.getElementById('storyActions').innerHTML = `
-    <a class="action-btn primary" href="${PAGES.search}" onclick="sessionStorage.setItem('searchQuery','${escapeHtml(story.headline)}'); return true;">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      Search this story
-    </a>
     <button class="action-btn" onclick="shareStory()">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
       Share
@@ -788,7 +784,7 @@ function handleFaceClick(faceEl) {
         ${platformLabel ? '<span class="csq-platform">' + platformLabel + '</span>' : ''}
       </div>
       ${quote ? '<div class="csq-quote">"' + quote + '"</div>' : '<div class="csq-quote" style="color:var(--text-muted); font-style:italic;">No quote available</div>'}
-      <a class="csq-profile-link" href="${BASE}/voice/${voiceId}">View profile &rarr;</a>
+      <a class="csq-profile-link" href="${sourceUrl || BASE + '/voice/' + voiceId}"${sourceUrl ? ' target="_blank"' : ''}>View source &rarr;</a>
     </div>
   </div>`;
 }
