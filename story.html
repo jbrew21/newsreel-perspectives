@@ -15,7 +15,7 @@
     --text-primary: #fafafa;
     --text-secondary: #a1a1aa;
     --text-tertiary: #71717a;
-    --text-muted: #52525b;
+    --text-muted: #71717a;
     --border-subtle: rgba(255, 255, 255, 0.06);
     --border-default: rgba(255, 255, 255, 0.1);
     --accent: #FF6343;
@@ -46,8 +46,8 @@
   }
   .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
   .nav-brand img { height: 22px; }
-  .nav-label { font-size: 10px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
-  .nav-links a { font-family: monospace; font-size: 11px; text-decoration: none; margin-left: 16px; color: var(--text-muted); }
+  .nav-label { font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+  .nav-links a { font-family: monospace; font-size: 13px; text-decoration: none; margin-left: 16px; color: var(--text-muted); }
   .nav-links a:hover { color: var(--accent); }
 
   /* BACK LINK */
@@ -69,7 +69,7 @@
   /* Story type badge */
   .story-type-badge {
     display: inline-flex; align-items: center; gap: 4px;
-    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.06em; padding: 3px 8px; border-radius: 4px;
   }
   .story-type-badge.split { background: rgba(248,113,113,0.15); color: #F87171; }
@@ -80,7 +80,7 @@
 
   /* Heat badge */
   .heat-badge {
-    font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
     padding: 2px 8px; border-radius: 10px;
   }
   .heat-badge.hot { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
@@ -143,7 +143,7 @@
 
   /* CLUSTERS SECTION */
   .clusters-section {
-    max-width: 900px; margin: 0 auto; padding: 32px 20px 60px;
+    max-width: 900px; margin: 0 auto; padding: 48px 20px 60px;
   }
   .clusters-title {
     font-size: 0.7em; font-weight: 700; color: var(--text-muted);
@@ -173,7 +173,7 @@
     font-size: 14px; font-weight: 600; flex: 1;
   }
   .cluster-count {
-    font-size: 12px; color: var(--text-muted); font-weight: 500;
+    font-size: 13px; color: var(--text-muted); font-weight: 500; line-height: 1.5;
   }
   .cluster-chevron {
     transition: transform 0.2s; flex-shrink: 0;
@@ -210,10 +210,10 @@
     padding: 8px 16px; margin-top: 4px;
   }
   .cluster-best-quote-text {
-    font-size: 13px; font-style: italic; color: var(--text-secondary); line-height: 1.5;
+    font-size: 14px; font-style: italic; color: var(--text-secondary); line-height: 1.5;
   }
   .cluster-best-quote-attr {
-    font-size: 11px; color: var(--text-muted); margin-left: 4px;
+    font-size: 13px; color: var(--text-muted); margin-left: 4px;
   }
 
   .cluster-see-all {
@@ -246,20 +246,20 @@
   }
   .cluster-voice-body { flex: 1; min-width: 0; }
   .cluster-voice-name {
-    font-size: 13px; font-weight: 600; color: var(--text-primary);
+    font-size: 14px; font-weight: 600; color: var(--text-primary);
     text-decoration: none;
   }
   .cluster-voice-name:hover { color: var(--accent); }
   .cluster-voice-platform {
-    font-size: 10px; color: var(--text-muted); text-transform: uppercase;
+    font-size: 12px; color: var(--text-muted); text-transform: uppercase;
     letter-spacing: 0.5px; margin-left: 6px;
   }
   .cluster-voice-quote {
-    font-size: 12px; color: var(--text-secondary); line-height: 1.45;
+    font-size: 14px; color: var(--text-secondary); line-height: 1.5;
     margin-top: 4px;
   }
   .cluster-voice-link {
-    font-size: 11px; color: var(--accent); text-decoration: none;
+    font-size: 13px; color: var(--accent); text-decoration: none;
     margin-top: 4px; display: inline-block;
   }
   .cluster-voice-link:hover { text-decoration: underline; }
@@ -283,7 +283,7 @@
 
   /* EDITION STATS */
   .story-stats-line {
-    font-size: 0.8rem; color: #888; letter-spacing: 0.05em;
+    font-size: 0.85rem; color: #aaa; letter-spacing: 0.05em;
     text-transform: uppercase; margin-top: 16px;
   }
 
@@ -321,20 +321,18 @@
     .action-btn { font-size: 12px; padding: 8px 12px; }
     .clusters-section { padding: 24px 16px 40px; }
     .cluster-header-row { padding: 14px 16px; }
-    .cluster-face { width: 30px; height: 30px; margin-left: -8px; }
+    .cluster-face { width: 36px; height: 36px; margin-left: -8px; }
     .cluster-face:first-child { margin-left: 0; }
     .cluster-faces { padding: 4px 12px 8px; }
     .cluster-best-quote { padding: 6px 12px; }
-    .cluster-best-quote-text { font-size: 12px; }
     .cluster-voice-photo { width: 34px; height: 34px; }
     .cluster-voice-row { padding: 8px 10px; }
-    .cluster-voice-quote { font-size: 11px; }
     .cluster-voices-list { padding: 4px 12px 12px; }
     .nav { padding: 0 16px; }
-    .nav-links a { font-size: 10px; margin-left: 10px; }
+    .nav-links a { font-size: 13px; margin-left: 10px; }
     .share-toast { font-size: 12px; padding: 8px 16px; }
     .opposing-quotes { flex-direction: column; gap: 10px; }
-    .story-stats-line { font-size: 0.7rem; }
+    .story-stats-line { font-size: 0.85rem; }
   }
 </style>
 </head>
@@ -530,8 +528,9 @@ function renderStory(story) {
       if (!bq || !bq.quote) return '';
       const color = CLUSTER_COLORS[ci % CLUSTER_COLORS.length];
       const photo = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
+      const truncQuote = bq.quote.length > 140 ? bq.quote.substring(0, 140) + '...' : bq.quote;
       return `<div class="opposing-quote" style="border-left:3px solid ${color};">
-        "${escapeHtml(bq.quote.substring(0, 200))}"
+        "${escapeHtml(truncQuote)}"
         <div class="opposing-quote-attr">
           <img src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
           ${escapeHtml(bq.voiceName)} &middot; ${escapeHtml(cluster.name)}

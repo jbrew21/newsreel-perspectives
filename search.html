@@ -15,7 +15,7 @@
     --text-primary: #fafafa;
     --text-secondary: #a1a1aa;
     --text-tertiary: #71717a;
-    --text-muted: #52525b;
+    --text-muted: #71717a;
     --border-subtle: rgba(255, 255, 255, 0.06);
     --border-default: rgba(255, 255, 255, 0.1);
     --accent: #FF6343;
@@ -43,8 +43,8 @@
   .nav-inner { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; }
   .nav-brand { display: flex; align-items: center; gap: 10px; }
   .nav-brand img { height: 22px; }
-  .nav-label { font-family: 'DM Sans', monospace; font-size: 10px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
-  .nav-links a { font-family: monospace; font-size: 11px; text-decoration: none; margin-left: 16px; }
+  .nav-label { font-family: 'DM Sans', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+  .nav-links a { font-family: monospace; font-size: 13px; text-decoration: none; margin-left: 16px; }
 
   /* HERO */
   .hero { text-align: center; padding: 48px 20px 32px; }
@@ -74,7 +74,7 @@
   .search-box button:disabled { background: #555; cursor: not-allowed; }
 
   .time-btn { background: #2a2a2d; color: #999; border: 1px solid #3a3a3d; padding: 4px 12px; border-radius: 16px; font-size: 0.75em; cursor: pointer; font-family: inherit; transition: all 0.15s; }
-  .time-btn:hover { border-color: #666; color: #ccc; }
+  .time-btn:hover { border-color: #999; color: #ccc; }
   .time-btn.active { background: #d94a33; color: #fff; border-color: #d94a33; }
 
   .example-queries { max-width: 640px; margin: 16px auto 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
@@ -86,7 +86,7 @@
   .example-query:hover { color: var(--accent); border-color: var(--accent); }
 
   /* CONVERSATION SECTION */
-  .fractures { max-width: 900px; margin: 0 auto; padding: 32px 20px 0; }
+  .fractures { max-width: 900px; margin: 0 auto; padding: 48px 20px 0; }
   .fractures-header {
     display: flex; align-items: center; gap: 8px;
     margin-bottom: 20px; padding-bottom: 12px;
@@ -108,7 +108,7 @@
   /* Story type badge */
   .story-type-badge {
     display: inline-flex; align-items: center; gap: 4px;
-    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.06em; padding: 3px 8px; border-radius: 4px;
   }
   .story-type-badge.split { background: rgba(248,113,113,0.15); color: #F87171; }
@@ -132,7 +132,7 @@
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
     padding: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -169,7 +169,7 @@
 
   /* Heat badge */
   .heat-badge {
-    font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
     padding: 2px 8px; border-radius: 10px;
   }
   .heat-badge.hot {
@@ -242,10 +242,10 @@
 
   /* CLUSTER GROUPS */
   .cluster-name {
-    font-size: 13px; font-weight: 600; color: var(--text-primary);
+    font-size: 14px; font-weight: 600; color: var(--text-primary);
   }
   .cluster-count {
-    font-size: 11px; color: var(--text-muted); font-weight: 500;
+    font-size: 13px; color: var(--text-muted); font-weight: 500; line-height: 1.5;
   }
 
   /* Face bubbles row */
@@ -279,10 +279,10 @@
     padding: 8px 12px; margin-top: 4px;
   }
   .cluster-best-quote-text {
-    font-size: 13px; font-style: italic; color: var(--text-secondary); line-height: 1.5;
+    font-size: 14px; font-style: italic; color: var(--text-secondary); line-height: 1.5;
   }
   .cluster-best-quote-attr {
-    font-size: 11px; color: var(--text-muted); margin-left: 4px;
+    font-size: 13px; color: var(--text-muted); margin-left: 4px;
   }
 
   .cluster-see-all {
@@ -310,18 +310,18 @@
   }
   .cluster-voice-body { flex: 1; min-width: 0; }
   .cluster-voice-name {
-    font-size: 13px; font-weight: 600; color: var(--text-primary);
+    font-size: 14px; font-weight: 600; color: var(--text-primary);
   }
   .cluster-voice-platform {
-    font-size: 10px; color: var(--text-muted); text-transform: uppercase;
+    font-size: 12px; color: var(--text-muted); text-transform: uppercase;
     letter-spacing: 0.5px; margin-left: 6px;
   }
   .cluster-voice-quote {
-    font-size: 12px; color: var(--text-secondary); line-height: 1.45;
+    font-size: 14px; color: var(--text-secondary); line-height: 1.5;
     margin-top: 4px;
   }
   .cluster-voice-link {
-    font-size: 11px; color: var(--accent); text-decoration: none;
+    font-size: 13px; color: var(--accent); text-decoration: none;
     margin-top: 4px; display: inline-block;
   }
   .cluster-voice-link:hover { text-decoration: underline; }
@@ -442,7 +442,7 @@
 
   /* EDITION HEADER */
   .edition-header {
-    font-size: 0.8rem; color: #888; letter-spacing: 0.05em;
+    font-size: 0.85rem; color: #aaa; letter-spacing: 0.05em;
     text-transform: uppercase; text-align: center;
     margin-bottom: 16px;
   }
@@ -478,7 +478,7 @@
   .also-today-divider {
     font-size: 0.7rem; font-weight: 700; color: var(--text-muted);
     text-transform: uppercase; letter-spacing: 0.1em;
-    margin: 24px 0 12px; padding-bottom: 8px;
+    margin: 40px 0 12px; padding-bottom: 8px;
     border-bottom: 1px solid var(--border-subtle);
   }
   .fracture-card.tier-compact { padding: 16px; }
@@ -487,7 +487,7 @@
 
   /* THE WIRE */
   .wire-section {
-    max-width: 900px; margin: 0 auto; padding: 32px 20px 60px;
+    max-width: 900px; margin: 0 auto; padding: 56px 20px 60px;
   }
   .wire-header {
     margin-bottom: 16px; padding-bottom: 12px;
@@ -512,6 +512,7 @@
     padding: 10px 0;
     border-bottom: 1px solid rgba(255,255,255,0.06);
     transition: background 0.15s;
+    line-height: 1.5;
   }
   .wire-entry:hover { background: rgba(255,255,255,0.03); }
   .wire-entry:last-child { border-bottom: none; }
@@ -520,20 +521,20 @@
     background: var(--bg-elevated); flex-shrink: 0;
   }
   .wire-name {
-    font-size: 12px; font-weight: 600; color: var(--text-primary);
+    font-size: 14px; font-weight: 600; color: var(--text-primary);
     text-decoration: none; white-space: nowrap;
   }
   .wire-name:hover { color: var(--accent); }
   .wire-platform {
-    font-size: 10px; font-weight: 600; padding: 2px 6px;
+    font-size: 12px; font-weight: 600; padding: 2px 6px;
     border-radius: 100px; white-space: nowrap; flex-shrink: 0;
   }
   .wire-text {
-    font-size: 12px; color: #aaa; flex: 1; min-width: 0;
+    font-size: 14px; color: #aaa; flex: 1; min-width: 0;
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
   .wire-time {
-    font-size: 11px; color: #666; white-space: nowrap; flex-shrink: 0;
+    font-size: 13px; color: #999; white-space: nowrap; flex-shrink: 0;
   }
 
   /* MOBILE */
@@ -548,29 +549,28 @@
     .fracture-headline { font-size: 1em; }
     .fracture-card.tier-top .fracture-headline { font-size: 1.3rem; }
     .fracture-insight { font-size: 0.9em; }
-    .cluster-face { width: 30px; height: 30px; margin-left: -8px; }
+    .cluster-face { width: 36px; height: 36px; margin-left: -8px; }
     .cluster-face:first-child { margin-left: 0; }
     .cluster-faces { padding: 4px 0 4px 8px; }
     .cluster-voice-photo { width: 34px; height: 34px; }
     .cluster-voice-row { padding: 8px 10px; }
-    .cluster-voice-quote { font-size: 11px; }
     .cluster-best-quote { padding: 6px 8px; }
-    .cluster-best-quote-text { font-size: 12px; }
     .results { padding: 0 12px 40px; }
     .voice-card { padding: 14px; }
     .voice-photo { width: 38px; height: 38px; }
     .voice-name { font-size: 0.95em; }
     .trending { padding: 0 16px; }
     .trending-topics { gap: 4px; }
-    .trending-topic { padding: 5px 10px; font-size: 0.75em; }
+    .trending-topic { min-height: 44px; padding: 10px 14px; font-size: 0.8em; }
     .example-queries { gap: 4px; }
-    .example-query { font-size: 0.75em; padding: 4px 10px; }
+    .example-query { min-height: 44px; padding: 10px 14px; font-size: 0.8em; }
+    .time-btn { min-height: 44px; padding: 10px 16px; }
     .nav { padding: 0 16px; }
-    .fracture-search-btn { font-size: 11px; padding: 6px 12px; }
-    .edition-header { font-size: 0.7rem; }
+    .fracture-search-btn { font-size: 12px; padding: 6px 12px; }
+    .edition-header { font-size: 0.85rem; }
     .opposing-quotes { flex-direction: column; gap: 10px; }
     .fracture-card.tier-compact { padding: 12px 16px; }
-    .also-today-divider { margin: 16px 0 8px; }
+    .also-today-divider { margin: 32px 0 8px; }
     .wire-feed { max-height: 400px; }
     .wire-entry {
       flex-wrap: wrap; gap: 6px;
@@ -731,7 +731,7 @@ async function loadConversation() {
   const dateStr = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   const edHeader = document.createElement('div');
   edHeader.className = 'edition-header';
-  edHeader.textContent = `${dateStr} | ${stories.length} stories analyzed from ${totalVoices.size} voices across 7 platforms`;
+  edHeader.textContent = `${dateStr} | Today: ${stories.length} stories, ${totalVoices.size} voices, 7 platforms`;
   section.insertBefore(edHeader, container);
 
   stories.forEach((story, si) => {
@@ -873,8 +873,9 @@ async function loadConversation() {
         if (!bq || !bq.quote) return '';
         const color = getClusterColor(ci);
         const photo = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
+        const truncQuote = bq.quote.length > 140 ? bq.quote.substring(0, 140) + '...' : bq.quote;
         return `<div class="opposing-quote" style="border-left:3px solid ${color};">
-          "${escapeHtml(bq.quote.substring(0, 200))}"
+          "${escapeHtml(truncQuote)}"
           <div class="opposing-quote-attr">
             <img src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
             ${escapeHtml(bq.voiceName)} &middot; ${escapeHtml(cluster.name)}
@@ -888,7 +889,7 @@ async function loadConversation() {
     let clusterSummaryHtml = '';
     if (si === 1 || si === 2) {
       const names = shownClusters.slice(0, 3).map(c => c.name);
-      clusterSummaryHtml = `<div class="cluster-summary-line">${shownClusters.length} clusters: ${names.join(' vs ')}</div>`;
+      clusterSummaryHtml = `<div class="cluster-summary-line">${names.join(' vs ')}</div>`;
     }
 
     card.innerHTML = `
@@ -956,7 +957,7 @@ fetch(BASE + '/api/wire').then(r => r.json()).then(entries => {
   entries.slice(0, 50).forEach(entry => {
     const photo = entry.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(entry.voiceName || '')}&background=252528&color=a1a1aa&size=56`;
     const platform = (entry.platform || '').toLowerCase();
-    const pColor = WIRE_PLATFORM_COLORS[platform] || '#888';
+    const pColor = WIRE_PLATFORM_COLORS[platform] || '#aaa';
     const pLabel = platformLabels[platform] || platform;
     const text = (entry.text || entry.quote || '').substring(0, 120);
     const time = wireTimeAgo(entry.timestamp || entry.date);
@@ -1056,7 +1057,7 @@ function renderResults(data) {
     data.timeWindow === '7d' ? 'last week' :
     data.timeWindow === '14d' ? 'last 2 weeks' :
     data.timeWindow === '30d' ? 'last month' : data.timeWindow || '';
-  const windowNote = windowLabel ? `<span style="color:#888;font-size:0.8em;margin-left:8px;">${windowLabel}</span>` : '';
+  const windowNote = windowLabel ? `<span style="color:#aaa;font-size:0.8em;margin-left:8px;">${windowLabel}</span>` : '';
 
   // Broadening note — transparency about match precision
   const broadeningHtml = data.broadeningNote
