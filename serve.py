@@ -225,6 +225,30 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(html.encode())
             return
 
+        # Serve perspective profile page
+        if self.path.startswith('/profile/'):
+            user_id = self.path.split('/profile/')[1].split('?')[0].strip('/')
+            # Validate UUID format
+            if re.match(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', user_id):
+                profile_path = os.path.join(ROOT, 'data', 'profiles', f'{user_id}.html')
+                if os.path.exists(profile_path):
+                    self.send_response(200)
+                    self.send_header('Content-type', 'text/html')
+                    self.end_headers()
+                    with open(profile_path) as f:
+                        self.wfile.write(f.read().encode())
+                else:
+                    self.send_response(404)
+                    self.send_header('Content-type', 'text/html')
+                    self.end_headers()
+                    self.wfile.write(b'<h1>Profile not found</h1>')
+            else:
+                self.send_response(400)
+                self.send_header('Content-type', 'text/html')
+                self.end_headers()
+                self.wfile.write(b'<h1>Invalid profile ID</h1>')
+            return
+
         # Serve voice profile page
         if self.path.startswith('/voice/'):
             self.send_response(200)
