@@ -276,13 +276,14 @@
 
 <div class="nav">
   <div class="nav-inner">
-    <div class="nav-brand">
+    <a class="nav-brand" href="/" style="text-decoration:none;">
       <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
       <div class="nav-label">Perspectives</div>
-    </div>
+    </a>
     <div class="nav-links">
       <a class="nav-link" data-page="search">Search</a>
       <a class="nav-link" data-page="voices">Voices</a>
+      <a class="nav-link" data-page="methodology">Methodology</a>
     </div>
   </div>
 </div>
@@ -293,8 +294,9 @@
 
 <script>
 const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
-const PAGES = { search: BASE || '/search', voices: BASE + '/voices' };
+const PAGES = { search: BASE || '/', voices: BASE + '/voices', methodology: BASE + '/methodology' };
 document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
+document.querySelector('.nav-brand').href = PAGES.search;
 
 // Cluster colors
 const CLUSTER_COLORS = ['#60A5FA','#F87171','#FBBF24','#A78BFA','#4ADE80','#22D3EE','#F472B6','#FB923C'];
@@ -367,24 +369,45 @@ async function loadProfile() {
     } catch(e) {}
   }
 
-  // Load fractures for cluster context
-  let fractures = [];
+  // Build photo lookup from voices.json for better ally photos
+  const voicePhotoMap = {};
+  for (const v of voices) { voicePhotoMap[v.id] = v.photo; }
+
+  // Load stories for cluster context (fallback to fractures)
+  let storyItems = [];
   try {
-    const resp = await fetch(BASE + '/api/fractures');
-    fractures = await resp.json();
+    let resp = await fetch(BASE + '/api/stories');
+    storyItems = await resp.json();
+    if (!storyItems || storyItems.length === 0) {
+      resp = await fetch(BASE + '/api/fractures');
+      storyItems = await resp.json();
+    }
   } catch(e) {}
 
-  // Find which fracture clusters this voice is in
+  // Normalize: stories use topicSlugs[], fractures use topic string
+  const normalizedStories = (storyItems || []).map(s => ({
+    topicDisplay: s.headline || s.topicDisplay || '',
+    topicSlug: (s.topicSlugs || [])[0] || s.topic || '',
+    clusters: s.clusters || [],
+    insight: s.summary || s.insight || '',
+  }));
+
+  // Find which story clusters this voice is in
   const voiceFractures = [];
-  for (const f of fractures) {
+  for (const f of normalizedStories) {
     for (const cluster of f.clusters) {
       const inCluster = cluster.voices.find(v => v.voiceId === voiceId);
       if (inCluster) {
+        // Use voices.json photos for allies instead of cluster data
+        const allies = cluster.voices.filter(v => v.voiceId !== voiceId).map(a => ({
+          ...a,
+          photo: voicePhotoMap[a.voiceId] || a.photo,
+        }));
         voiceFractures.push({
           topic: f.topicDisplay,
-          topicSlug: f.topic,
+          topicSlug: f.topicSlug,
           cluster: cluster.name,
-          allies: cluster.voices.filter(v => v.voiceId !== voiceId),
+          allies,
           allClusters: f.clusters,
           insight: f.insight,
         });
@@ -404,10 +427,19 @@ async function loadProfile() {
   const h = voice.handles || {};
   let socialsHtml = '';
   if (h.x) socialsHtml += `<a class="profile-social" href="https://x.com/${h.x}" target="_blank">X</a>`;
-  if (h.youtube) socialsHtml += `<a class="profile-social" href="https://youtube.com/${h.youtube.includes('/') ? h.youtube : '@'+h.youtube}" target="_blank">YouTube</a>`;
+  if (h.youtube) {
+    const ytHandle = h.youtube.startsWith('@') ? h.youtube : (h.youtube.includes('/') ? h.youtube : '@'+h.youtube);
+    socialsHtml += `<a class="profile-social" href="https://youtube.com/${ytHandle}" target="_blank">YouTube</a>`;
+  }
   if (h.bluesky) socialsHtml += `<a class="profile-social" href="https://bsky.app/profile/${h.bluesky}" target="_blank">Bluesky</a>`;
   if (h.tiktok) socialsHtml += `<a class="profile-social" href="https://tiktok.com/@${h.tiktok}" target="_blank">TikTok</a>`;
   if (h.instagram) socialsHtml += `<a class="profile-social" href="https://instagram.com/${h.instagram}" target="_blank">Instagram</a>`;
+  // Check feeds for Substack
+  const feeds = voice.feeds || {};
+  if (feeds.substack) {
+    const substackUrl = feeds.substack.replace(/\/feed\/?$/, '');
+    socialsHtml += `<a class="profile-social" href="${substackUrl}" target="_blank">Substack</a>`;
+  }
 
   // Tags
   const tagsHtml = (voice.tags || []).map(t => `<span class="profile-tag">${escapeHtml(t)}</span>`).join('');
@@ -426,7 +458,7 @@ async function loadProfile() {
     if (vf.allies.length > 0) {
       const avatars = vf.allies.slice(0, 5).map(a => {
         const photo = a.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(a.voiceName)}&background=252528&color=a1a1aa&size=48`;
-        return `<img class="cluster-context-avatar" src="${photo}" alt="${escapeHtml(a.voiceName)}" title="${escapeHtml(a.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(a.voiceName)}&background=252528&color=a1a1aa&size=48'">`;
+        return `<a href="${BASE}/voice/${a.voiceId}" title="${escapeHtml(a.voiceName)}"><img class="cluster-context-avatar" src="${photo}" alt="${escapeHtml(a.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(a.voiceName)}&background=252528&color=a1a1aa&size=48'"></a>`;
       }).join('');
       const names = vf.allies.slice(0, 3).map(a => a.voiceName.split(' ').pop()).join(', ');
       const more = vf.allies.length > 3 ? ` +${vf.allies.length - 3}` : '';
@@ -499,14 +531,14 @@ async function loadProfile() {
       for (const ally of sortedAllies.slice(0, 8)) {
         const photo = ally.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(ally.voiceName)}&background=252528&color=a1a1aa&size=72`;
         alliancesHtml += `
-          <div class="ally-row" onclick="window.location.href='${BASE}/voice/${ally.voiceId}'">
+          <a class="ally-row" href="${BASE}/voice/${ally.voiceId}" style="text-decoration:none; color:inherit;">
             <img class="ally-avatar" src="${photo}" alt="${escapeHtml(ally.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(ally.voiceName)}&background=252528&color=a1a1aa&size=72'">
             <div class="ally-info">
               <div class="ally-name">${escapeHtml(ally.voiceName)}</div>
               <div class="ally-detail">Agree on: ${ally.topics.join(', ')}</div>
             </div>
             <div class="ally-badge" style="background: rgba(74, 222, 128, 0.12); color: #4ADE80;">${ally.count}/${voiceFractures.length}</div>
-          </div>
+          </a>
         `;
       }
       alliancesHtml += '</div>';
@@ -546,14 +578,14 @@ async function loadProfile() {
     <div class="profile-header">
       <img class="profile-avatar" src="${photoUrl}" alt="${escapeHtml(voice.name)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=252528&color=a1a1aa&size=160'">
       <div class="profile-name">${escapeHtml(voice.name)}</div>
-      <div class="profile-lens">${escapeHtml(voice.lens || '')}</div>
+      ${voice.lens ? `<div class="profile-lens">${escapeHtml(voice.lens)}</div>` : ''}
       ${tagsHtml ? `<div class="profile-tags">${tagsHtml}</div>` : ''}
       ${socialsHtml ? `<div class="profile-socials">${socialsHtml}</div>` : ''}
       <div class="profile-stats">
         <div class="stat-pill"><div class="stat-number">${topics.length}</div><div class="stat-label">Topics</div></div>
         <div class="stat-pill"><div class="stat-number">${posts.length}</div><div class="stat-label">Posts</div></div>
         <div class="stat-pill"><div class="stat-number">${platforms.length}</div><div class="stat-label">Platforms</div></div>
-        ${voiceFractures.length > 0 ? `<div class="stat-pill"><div class="stat-number">${voiceFractures.length}</div><div class="stat-label">Fractures</div></div>` : ''}
+        ${voiceFractures.length > 0 ? `<div class="stat-pill"><div class="stat-number">${voiceFractures.length}</div><div class="stat-label">Stories</div></div>` : ''}
       </div>
     </div>
 
