@@ -322,22 +322,100 @@
   }
   .cluster-voice-link:hover { text-decoration: underline; color: var(--accent); }
 
-  /* OPPOSING BLOCKQUOTE PAIR */
-  .opposing-quotes {
-    display: flex; gap: 16px; margin: 20px 0 8px;
+  /* OPPOSING BLOCKQUOTE PAIR (legacy, hidden) */
+  .opposing-quotes { display: none; }
+
+  /* HORIZONTAL CLUSTER CARDS */
+  .cluster-cards-row {
+    display: flex; gap: 12px; margin-top: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; scroll-snap-type: x mandatory;
+    position: relative; padding-bottom: 4px;
   }
-  .opposing-quote {
-    flex: 1; padding: 14px 16px; font-size: var(--text-body); font-style: italic;
-    color: var(--text-secondary); line-height: 1.5;
-    border-radius: 8px; background: rgba(255,255,255,0.03);
+  .cluster-cards-row::-webkit-scrollbar { display: none; }
+
+  .cluster-card-box {
+    background: rgba(255,255,255,0.04); border-radius: 12px;
+    padding: 14px; min-width: 160px; flex: 1;
+    border-top: 4px solid var(--card-cluster-color, #60A5FA);
+    cursor: pointer; transition: background 0.15s, transform 0.15s;
+    scroll-snap-align: start;
   }
-  .opposing-quote-attr {
-    display: flex; align-items: center; gap: 8px; margin-top: 10px;
-    font-style: normal; font-size: var(--text-caption); color: var(--text-muted);
+  .cluster-card-box:hover {
+    background: rgba(255,255,255,0.07); transform: translateY(-2px);
   }
-  .opposing-quote-attr img {
-    width: 24px; height: 24px; border-radius: 50%; object-fit: cover;
+  .cluster-card-box.selected {
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 0 0 1px var(--card-cluster-color, #60A5FA);
   }
+  .cluster-card-box-name {
+    font-size: var(--text-body); font-weight: 600;
+    color: var(--card-cluster-color, #60A5FA);
+  }
+  .cluster-card-box-count {
+    font-size: var(--text-caption); color: var(--text-muted);
+    margin-left: 6px; font-weight: 600;
+  }
+  .cluster-card-box-faces {
+    display: flex; align-items: center; flex-wrap: wrap;
+    margin-top: 8px; gap: 2px 0;
+  }
+  .cluster-card-box-faces .cluster-face {
+    width: 36px; height: 36px; border-radius: 50%;
+    object-fit: cover; background: var(--bg-elevated);
+    border: 2px solid rgba(255,255,255,0.06);
+    margin-left: -8px; position: relative; cursor: default;
+  }
+  .cluster-card-box-faces .cluster-face:first-child { margin-left: 0; }
+
+  .cluster-cards-row-wrapper { position: relative; }
+  .cluster-cards-row-wrapper::after {
+    content: ''; position: absolute; top: 0; right: 0; bottom: 4px;
+    width: 40px; pointer-events: none;
+    background: linear-gradient(to right, transparent, var(--bg-base));
+    border-radius: 0 12px 12px 0;
+    opacity: 0; transition: opacity 0.2s;
+  }
+  .cluster-cards-row-wrapper.has-scroll::after { opacity: 1; }
+
+  .cluster-expand-panel {
+    background: rgba(255,255,255,0.03); border-radius: 12px;
+    padding: 20px; margin-top: 12px;
+    animation: slideDown 0.2s ease;
+    border-left: 4px solid var(--panel-cluster-color, #60A5FA);
+  }
+  .cluster-expand-panel-header {
+    font-size: var(--text-body); font-weight: 700;
+    color: var(--panel-cluster-color, #60A5FA);
+    margin-bottom: 14px;
+  }
+  .cluster-expand-panel .cluster-voice-row {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 12px; background: var(--bg-surface-2);
+    border-radius: 10px; transition: background 0.15s; margin-bottom: 6px;
+  }
+  .cluster-expand-panel .cluster-voice-row:hover { background: var(--bg-elevated); }
+  .cluster-expand-panel .cluster-voice-photo {
+    width: 36px; height: 36px; border-radius: 50%;
+    object-fit: cover; background: var(--bg-elevated); flex-shrink: 0;
+  }
+  .cluster-expand-panel .cluster-voice-body { flex: 1; min-width: 0; }
+  .cluster-expand-panel .cluster-voice-name {
+    font-size: var(--text-body); font-weight: 600; color: var(--text-primary); text-decoration: none;
+  }
+  .cluster-expand-panel .cluster-voice-name:hover { color: var(--accent); }
+  .cluster-expand-panel .cluster-voice-platform {
+    font-size: var(--text-caption); color: var(--text-muted); text-transform: uppercase;
+    letter-spacing: 0.05em; margin-left: 6px;
+  }
+  .cluster-expand-panel .cluster-voice-quote {
+    font-size: var(--text-body); color: var(--text-secondary); line-height: 1.5; margin-top: 4px;
+  }
+  .cluster-expand-panel .cluster-voice-link {
+    font-size: var(--text-caption); color: var(--text-secondary); text-decoration: none;
+    margin-top: 4px; display: inline-block; transition: color 0.2s;
+  }
+  .cluster-expand-panel .cluster-voice-link:hover { text-decoration: underline; color: var(--accent); }
 
   /* EDITION STATS */
   .story-stats-line {
@@ -401,7 +479,11 @@
     .nav { padding: 0 16px; }
     .nav-links a { margin-left: 10px; }
     .share-toast { padding: 8px 16px; }
-    .opposing-quotes { flex-direction: column; gap: 10px; }
+    .cluster-card-box { min-width: 140px; padding: 12px; }
+    .cluster-card-box-faces .cluster-face { width: 28px; height: 28px; margin-left: -6px; }
+    .cluster-card-box-faces .cluster-face:first-child { margin-left: 0; }
+    .cluster-expand-panel { padding: 16px; }
+    .cluster-expand-panel .cluster-voice-photo { width: 32px; height: 32px; }
   }
 </style>
 </head>
@@ -582,137 +664,57 @@ function renderStory(story) {
     </button>
   `;
 
-  // Clusters
+  // Clusters - horizontal card layout
   const clusters = story.clusters || [];
   document.getElementById('clustersTitle').textContent =
     `${clusters.length} argument cluster${clusters.length !== 1 ? 's' : ''}`;
 
-  // Opposing blockquote pair
-  if (clusters.length >= 2) {
-    const getQuote = (cluster, ci) => {
-      const bq = cluster.bestQuote || (cluster.voices && cluster.voices.length > 0 ? (() => {
-        const best = [...cluster.voices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
-        return { voiceName: best.voiceName, quote: best.quote, voiceId: best.voiceId, photo: best.photo };
-      })() : null);
-      if (!bq || !bq.quote) return '';
-      const color = CLUSTER_COLORS[ci % CLUSTER_COLORS.length];
-      const photo = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
-      const truncQuote = bq.quote.length > 140 ? bq.quote.substring(0, 140) + '...' : bq.quote;
-      return `<div class="opposing-quote" style="border-left:3px solid ${color};">
-        "${escapeHtml(truncQuote)}"
-        <div class="opposing-quote-attr">
-          <img src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
-          ${escapeHtml(bq.voiceName)} &middot; ${escapeHtml(cluster.name)}
-        </div>
-      </div>`;
-    };
-    const oqDiv = document.createElement('div');
-    oqDiv.className = 'opposing-quotes';
-    oqDiv.innerHTML = getQuote(clusters[0], 0) + getQuote(clusters[1], 1);
-    document.getElementById('clustersSection').insertBefore(oqDiv, document.getElementById('clustersTitle').nextSibling);
-  }
-
   const container = document.getElementById('clusterCards');
 
+  // Build horizontal cluster cards
+  let cardsHtml = '';
   clusters.forEach((cluster, ci) => {
     const color = CLUSTER_COLORS[ci % CLUSTER_COLORS.length];
-    const card = document.createElement('div');
-    card.className = 'cluster-card';
-
     const voices = cluster.voices || [];
-    const shown = voices.slice(0, 10);
-    const overflow = (cluster.voiceCount || voices.length) - shown.length;
     const voiceTotal = cluster.voiceCount || voices.length;
-
-    // Face bubbles (always visible, clickable to reveal quote)
-    const faceBubblesHtml = voices.map((v, vi) => {
+    const facesHtml = voices.slice(0, 8).map(v => {
       const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
-      return `<div class="cluster-face-link" data-cluster-idx="${ci}" data-voice-idx="${vi}" data-voice-id="${v.voiceId}" data-voice-name="${escapeHtml(v.voiceName)}" data-voice-photo="${photo}" data-voice-quote="${escapeHtml(v.quote || '')}" data-voice-platform="${v.platform || ''}" data-source-url="${v.sourceUrl || ''}">
-        <span class="cluster-face-tooltip">${escapeHtml(v.voiceName)}</span>
-        <img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
-      </div>`;
+      return `<img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">`;
     }).join('');
 
-    // Best quote
-    const bq = cluster.bestQuote || (voices.length > 0 ? (() => {
-      const best = [...voices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
-      return { voiceName: best.voiceName, quote: best.quote, platform: best.platform, voiceId: best.voiceId };
-    })() : null);
-    const bestQuoteHtml = bq && bq.quote ? `<div class="cluster-best-quote">
-      <span class="cluster-best-quote-text">"${escapeHtml(bq.quote.substring(0, 250))}"</span>
-      <a class="cluster-best-quote-attr" href="${BASE}/voice/${bq.voiceId || ''}" style="text-decoration:none; color:var(--text-muted);">— ${escapeHtml(bq.voiceName)}${bq.platform ? ' on ' + (PLATFORM_LABELS[bq.platform] || bq.platform) : ''}</a>
-    </div>` : '';
-
-    // Full voice list
-    const clusterId = `story-cluster-voices-${ci}`;
-    let voicesHtml = shown.map(v => {
-      const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
-      const quote = (v.quote || '').substring(0, 250);
-      const platformLabel = PLATFORM_LABELS[v.platform] || v.platform || '';
-      return `<div class="cluster-voice-row">
-        <img class="cluster-voice-photo" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
-        <div class="cluster-voice-body">
-          <div>
-            <a href="${BASE}/voice/${v.voiceId}" class="cluster-voice-name">${escapeHtml(v.voiceName)}</a>
-            <span class="cluster-voice-platform">${platformLabel}</span>
-          </div>
-          ${quote ? `<div class="cluster-voice-quote">"${escapeHtml(quote)}"</div>` : ''}
-          ${v.sourceUrl ? `<a class="cluster-voice-link" href="${v.sourceUrl}" target="_blank">View source &rarr;</a>` : ''}
-        </div>
-      </div>`;
-    }).join('');
-
-    if (overflow > 0) {
-      voicesHtml += `<div style="font-size:11px; color:var(--text-muted); padding:4px 12px;">+ ${overflow} more voices</div>`;
-    }
-
-    const seeAllBtn = voices.length > 1 ? `<button class="cluster-see-all" onclick="var el=document.getElementById('${clusterId}'); el.classList.toggle('cluster-voices-hidden'); this.textContent = el.classList.contains('cluster-voices-hidden') ? 'See all ${voiceTotal} voices' : 'Hide voices';">See all ${voiceTotal} voices</button>` : '';
-
-    card.innerHTML = `
-      <div class="cluster-header-row" onclick="this.parentElement.classList.toggle('cluster-open')">
-        <div class="cluster-bar" style="background:${color}"></div>
-        <div class="cluster-name" style="color:${color}">${escapeHtml(cluster.name)}</div>
-        <span class="cluster-count">${voiceTotal} voices</span>
-        <svg class="cluster-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    cardsHtml += `<div class="cluster-card-box" style="--card-cluster-color:${color};" data-cluster-idx="${ci}" onclick="toggleStoryClusterPanel(${ci});">
+      <div>
+        <span class="cluster-card-box-name" style="color:${color};">${escapeHtml(cluster.name)}</span>
+        <span class="cluster-card-box-count">${voiceTotal}</span>
       </div>
-      <div class="cluster-faces" data-cluster-idx="${ci}" style="--cluster-color:${color};">${faceBubblesHtml}</div>
-      <div class="cluster-selected-quote-container" id="csq-container-${ci}" style="--cluster-color:${color};"></div>
-      <div class="cluster-collapsible">
-        ${bestQuoteHtml}
-        ${seeAllBtn}
-        <div id="${clusterId}" class="cluster-voices-list cluster-voices-hidden">${voicesHtml}</div>
-      </div>
-    `;
+      <div class="cluster-card-box-faces">${facesHtml}</div>
+    </div>`;
+  });
 
-    container.appendChild(card);
+  container.innerHTML = `<div class="cluster-cards-row-wrapper" id="cluster-cards-wrapper">
+    <div class="cluster-cards-row" id="cluster-cards-row">${cardsHtml}</div>
+  </div>
+  <div id="cluster-expand-container"></div>`;
 
-    // Add face bubble click handlers for this cluster
-    card.querySelectorAll('.cluster-face-link[data-cluster-idx="' + ci + '"]').forEach(faceEl => {
-      faceEl.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        handleFaceClick(this);
+  // Store story data for panel rendering
+  window._storyData = story;
+
+  // Check scroll hint
+  requestAnimationFrame(() => {
+    const wrapper = document.getElementById('cluster-cards-wrapper');
+    const row = document.getElementById('cluster-cards-row');
+    if (wrapper && row && row.scrollWidth > row.clientWidth) {
+      wrapper.classList.add('has-scroll');
+      row.addEventListener('scroll', () => {
+        const atEnd = row.scrollLeft + row.clientWidth >= row.scrollWidth - 10;
+        wrapper.classList.toggle('has-scroll', !atEnd);
       });
-    });
+    }
   });
 
   // Auto-expand first cluster
   if (clusters.length > 0) {
-    container.querySelector('.cluster-card').classList.add('cluster-open');
-
-    // Add face bubble onboarding hint to first cluster
-    if (!localStorage.getItem('faces-discovered')) {
-      const firstFacesRow = container.querySelector('.cluster-faces');
-      if (firstFacesRow) {
-        const hint = document.createElement('div');
-        hint.className = 'face-onboarding-hint';
-        hint.textContent = 'Tap a face to see their take';
-        firstFacesRow.parentElement.insertBefore(hint, firstFacesRow.nextSibling);
-
-        const firstFace = firstFacesRow.querySelector('.cluster-face');
-        if (firstFace) firstFace.classList.add('face-pulse');
-      }
-    }
+    requestAnimationFrame(() => toggleStoryClusterPanel(0));
   }
 }
 
@@ -788,6 +790,82 @@ function handleFaceClick(faceEl) {
       ${quote ? '<div class="csq-quote">"' + quote + '"</div>' : '<div class="csq-quote" style="color:var(--text-muted); font-style:italic;">No quote available</div>'}
       <a class="csq-profile-link" href="${BASE}/voice/${voiceId}">View profile &rarr;</a>
     </div>
+  </div>`;
+}
+
+let _activeStoryCluster = null;
+
+function toggleStoryClusterPanel(ci) {
+  const container = document.getElementById('cluster-expand-container');
+  const cards = document.querySelectorAll('.cluster-card-box');
+
+  if (_activeStoryCluster === ci) {
+    container.innerHTML = '';
+    cards.forEach(c => c.classList.remove('selected'));
+    _activeStoryCluster = null;
+    return;
+  }
+
+  cards.forEach(c => c.classList.remove('selected'));
+  const activeCard = document.querySelector('.cluster-card-box[data-cluster-idx="' + ci + '"]');
+  if (activeCard) activeCard.classList.add('selected');
+  _activeStoryCluster = ci;
+
+  const story = window._storyData;
+  if (!story) return;
+  const cluster = (story.clusters || [])[ci];
+  if (!cluster) return;
+
+  const color = CLUSTER_COLORS[ci % CLUSTER_COLORS.length];
+  const allVoices = cluster.voices || [];
+
+  const bq = cluster.bestQuote || (allVoices.length > 0 ? (() => {
+    const best = [...allVoices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
+    return { voiceName: best.voiceName, quote: best.quote, platform: best.platform, voiceId: best.voiceId, photo: best.photo };
+  })() : null);
+
+  let bestQuoteHtml = '';
+  if (bq && bq.quote) {
+    const bqPhoto = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
+    const bqPlatform = PLATFORM_LABELS[bq.platform] || bq.platform || '';
+    bestQuoteHtml = `<div class="cluster-voice-row" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);">
+      <img class="cluster-voice-photo" src="${bqPhoto}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
+      <div class="cluster-voice-body">
+        <div>
+          <a href="${BASE}/voice/${bq.voiceId || ''}" class="cluster-voice-name">${escapeHtml(bq.voiceName)}</a>
+          ${bqPlatform ? '<span class="cluster-voice-platform">' + bqPlatform + '</span>' : ''}
+        </div>
+        <div class="cluster-voice-quote">"${escapeHtml(bq.quote.substring(0, 250))}"</div>
+      </div>
+    </div>`;
+  }
+
+  let voicesHtml = allVoices.slice(0, 10).map(v => {
+    if (bq && v.voiceId === bq.voiceId) return '';
+    const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
+    const quote = (v.quote || '').substring(0, 250);
+    const pLabel = PLATFORM_LABELS[v.platform] || v.platform || '';
+    return `<div class="cluster-voice-row">
+      <img class="cluster-voice-photo" src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
+      <div class="cluster-voice-body">
+        <div>
+          <a href="${BASE}/voice/${v.voiceId}" class="cluster-voice-name">${escapeHtml(v.voiceName)}</a>
+          <span class="cluster-voice-platform">${pLabel}</span>
+        </div>
+        ${quote ? '<div class="cluster-voice-quote">"' + escapeHtml(quote) + '"</div>' : ''}
+        ${v.sourceUrl ? '<a class="cluster-voice-link" href="' + v.sourceUrl + '" target="_blank">View source &rarr;</a>' : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  const voiceTotal = cluster.voiceCount || allVoices.length;
+  const overflow = voiceTotal - Math.min(allVoices.length, 10);
+
+  container.innerHTML = `<div class="cluster-expand-panel" style="--panel-cluster-color:${color}; border-left-color:${color};">
+    <div class="cluster-expand-panel-header" style="color:${color};">${escapeHtml(cluster.name)} &middot; ${voiceTotal} voices</div>
+    ${bestQuoteHtml}
+    ${voicesHtml}
+    ${overflow > 0 ? '<div style="font-size:11px; color:var(--text-muted); padding:4px 12px; margin-top:4px;">+ ' + overflow + ' more voices</div>' : ''}
   </div>`;
 }
 
