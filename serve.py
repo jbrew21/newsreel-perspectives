@@ -205,6 +205,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 self.send_response(200)
                 self.send_header('Content-type', content_type)
                 self.send_header('Cache-Control', 'public, max-age=604800')  # 7 day cache
+                self.send_header('Access-Control-Allow-Origin', '*')
                 self.end_headers()
                 with open(photo_path, 'rb') as f:
                     self.wfile.write(f.read())
