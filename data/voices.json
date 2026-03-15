@@ -154,12 +154,11 @@
     "lens": "Entertainment brand that interviews political figures. Appeals to young men. Blurs the line between comedy and political commentary.",
     "feeds": {
       "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwMDFutAGCTTb-wUMVwXKDg",
-      "x": "https://rss.app/feeds/v1.1/twitter/fullabortsend.json",
-      "instagram": "https://rss.app/feeds/v1.1/instagram/fullsend.json"
+      "x": "https://rss.app/feeds/v1.1/twitter/nelkboys.json"
     },
     "handles": {
       "youtube": "FULLSENDPODCAST",
-      "x": "fullabortsend",
+      "x": "nelkboys",
       "instagram": "fullsend"
     },
     "tags": [
@@ -3627,9 +3626,11 @@
       "x"
     ],
     "lens": "Palestinian photojournalist from Gaza whose powerful images of the conflict brought human suffering under siege to global attention. Brings a firsthand, on-the-ground perspective from a conflict zone where foreign press access is restricted, filling a critical media void.",
-    "feeds": {},
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/azaizamotaz9.json"
+    },
     "handles": {
-      "x": "motaboread",
+      "x": "azaizamotaz9",
       "instagram": "motaz_azaiza"
     },
     "tags": [
@@ -3717,7 +3718,7 @@
   {
     "id": "joe-concha",
     "name": "Joe Concha",
-    "photo": "https://pbs.twimg.com/profile_images/joeconchatv.jpg",
+    "photo": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/01/1200/675/Joe-Concha-headshot.jpg",
     "followers": 307000,
     "followersDisplay": "307K",
     "platforms": [
@@ -3725,7 +3726,9 @@
       "instagram"
     ],
     "lens": "Conservative media critic, political columnist, and Fox News contributor. Brings a right-leaning media criticism lens, analyzing how mainstream outlets cover politics and challenging what he sees as liberal bias in news coverage.",
-    "feeds": {},
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/JoeConchaTV.json"
+    },
     "handles": {
       "x": "JoeConchaTV",
       "instagram": "concha.joe"
@@ -4897,14 +4900,17 @@
     "followers": 390000,
     "followersDisplay": "390K",
     "platforms": [
-      "x"
+      "x",
+      "youtube"
     ],
     "lens": "Co-founder of the Center for Humane Technology and star of The Social Dilemma. Frames tech through the lens of attention manipulation and existential AI risk. Testifies frequently before Congress.",
     "feeds": {
-      "x": "https://rss.app/feeds/v1.1/twitter/tristanharris.json"
+      "x": "https://rss.app/feeds/v1.1/twitter/tristanharris.json",
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFECM-p3CF81Tp_l2sJsiyg"
     },
     "handles": {
-      "x": "tristanharris"
+      "x": "tristanharris",
+      "youtube": "HumaneTech"
     },
     "tags": [
       "humane tech",
@@ -5321,10 +5327,10 @@
     ],
     "lens": "Michigan governor and rising Democratic star. Pragmatic moderate who won in a swing state. Focuses on manufacturing, infrastructure, and reproductive rights. Potential future presidential contender.",
     "feeds": {
-      "x": "https://rss.app/feeds/v1.1/twitter/graboretchen.json"
+      "x": "https://rss.app/feeds/v1.1/twitter/GovWhitmer.json"
     },
     "handles": {
-      "x": "graboretchen"
+      "x": "GovWhitmer"
     },
     "tags": [
       "swing state Democrat",
@@ -5526,16 +5532,20 @@
   {
     "id": "bo-loudon",
     "name": "Bo Loudon",
-    "photo": "https://pbs.twimg.com/profile_images/boloudon.jpg",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bo_Loudon_at_CPAC_2024.jpg/300px-Bo_Loudon_at_CPAC_2024.jpg",
     "followers": 280000,
     "followersDisplay": "280K",
     "platforms": [
+      "x",
       "tiktok",
       "instagram"
     ],
     "lens": "Young conservative content creator with close ties to the Trump family, particularly Barron Trump. Son of conservative media figures. Produces Gen Z-targeted right-wing commentary.",
-    "feeds": {},
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/BoLoudon.json"
+    },
     "handles": {
+      "x": "BoLoudon",
       "tiktok": "boloudon",
       "instagram": "boloudon"
     },
@@ -5661,6 +5671,605 @@
       "heterodox",
       "free speech",
       "anti-censorship"
+    ]
+  },
+  {
+    "id": "maria-elena-salinas",
+    "name": "María Elena Salinas",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Mar%C3%ADa_Elena_Salinas_2014.jpg/300px-Mar%C3%ADa_Elena_Salinas_2014.jpg",
+    "followers": 540000,
+    "followersDisplay": "540K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Pioneering Latina journalist known as the 'Voice of Hispanic America.' Former Univision anchor who covered immigration, elections, and U.S.-Latin America relations for 36 years.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/MariaESalinas.json"
+    },
+    "handles": {
+      "x": "MariaESalinas",
+      "instagram": "mariaesalinas"
+    },
+    "tags": [
+      "Latina journalism",
+      "immigration",
+      "U.S.-Latin America"
+    ]
+  },
+  {
+    "id": "julio-ricardo-varela",
+    "name": "Julio Ricardo Varela",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Julio_Ricardo_Varela.jpg/300px-Julio_Ricardo_Varela.jpg",
+    "followers": 68000,
+    "followersDisplay": "68K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Founder of Latino Rebels and president of Futuro Media. Harvard grad who built one of the most influential Latino digital media platforms. Sharp critic of mainstream media's Latino coverage gaps.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/julito77.json"
+    },
+    "handles": {
+      "x": "julito77"
+    },
+    "tags": [
+      "Latino media",
+      "progressive",
+      "media criticism"
+    ]
+  },
+  {
+    "id": "cristina-tzintzun-ramirez",
+    "name": "Cristina Tzintzún Ramirez",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Cristina_Tzintz%C3%BAn_Ramirez.jpg/300px-Cristina_Tzintz%C3%BAn_Ramirez.jpg",
+    "followers": 42000,
+    "followersDisplay": "42K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Former president of NextGen America, focused on mobilizing young voters and Latino political power. Texas labor organizer turned national political strategist.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/cristinanextgen.json"
+    },
+    "handles": {
+      "x": "cristinanextgen"
+    },
+    "tags": [
+      "youth mobilization",
+      "Latino politics",
+      "progressive organizing"
+    ]
+  },
+  {
+    "id": "robert-garcia",
+    "name": "Robert Garcia",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Robert_Garcia_118th_Congress_portrait.jpg/300px-Robert_Garcia_118th_Congress_portrait.jpg",
+    "followers": 380000,
+    "followersDisplay": "380K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "First openly gay immigrant elected to Congress. California congressman, former Long Beach mayor. Immigrant from Peru who became a U.S. citizen. Outspoken on LGBTQ+ rights, immigration, and tech accountability.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepRobertGarcia.json"
+    },
+    "handles": {
+      "x": "RepRobertGarcia",
+      "instagram": "RepRobertGarcia",
+      "tiktok": "robertgarcia"
+    },
+    "tags": [
+      "Latino politics",
+      "LGBTQ+",
+      "immigration reform",
+      "tech accountability"
+    ]
+  },
+  {
+    "id": "lalo-alcaraz",
+    "name": "Lalo Alcaraz",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Lalo_Alcaraz_2019.jpg/300px-Lalo_Alcaraz_2019.jpg",
+    "followers": 120000,
+    "followersDisplay": "120K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Political cartoonist, creator of La Cucaracha comic strip, and TV writer-producer. Two-time Pulitzer finalist and Herblock Prize winner. Uses satire to challenge anti-Latino narratives.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/laloalcaraz.json"
+    },
+    "handles": {
+      "x": "laloalcaraz",
+      "instagram": "laboralcaraz"
+    },
+    "tags": [
+      "political satire",
+      "Latino culture",
+      "visual commentary"
+    ]
+  },
+  {
+    "id": "ted-lieu",
+    "name": "Ted Lieu",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ted_Lieu_116th_Congress_portrait.jpg/300px-Ted_Lieu_116th_Congress_portrait.jpg",
+    "followers": 2400000,
+    "followersDisplay": "2.4M",
+    "platforms": [
+      "x"
+    ],
+    "lens": "California congressman, former Air Force JAG officer. Taiwanese-American immigrant. Known for sharp, viral posts challenging political opponents. Focused on tech regulation, civil rights, and foreign policy.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/RepTedLieu.json"
+    },
+    "handles": {
+      "x": "RepTedLieu",
+      "instagram": "reptedlieu"
+    },
+    "tags": [
+      "Asian-American politics",
+      "tech regulation",
+      "military veteran",
+      "progressive"
+    ]
+  },
+  {
+    "id": "viet-thanh-nguyen",
+    "name": "Viet Thanh Nguyen",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Viet_Thanh_Nguyen_2019_%28cropped%29.jpg/300px-Viet_Thanh_Nguyen_2019_%28cropped%29.jpg",
+    "followers": 120000,
+    "followersDisplay": "120K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Pulitzer Prize-winning author of The Sympathizer. Vietnamese-American refugee who writes about war, memory, and identity. USC professor. Vocal on refugee rights and Asian-American representation.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/Viet_T_Nguyen.json"
+    },
+    "handles": {
+      "x": "Viet_T_Nguyen",
+      "instagram": "viet_t_nguyen"
+    },
+    "tags": [
+      "Asian-American identity",
+      "refugee experience",
+      "literary voice",
+      "anti-war"
+    ]
+  },
+  {
+    "id": "jay-caspian-kang",
+    "name": "Jay Caspian Kang",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Jay_Caspian_Kang_2022.jpg/300px-Jay_Caspian_Kang_2022.jpg",
+    "followers": 160000,
+    "followersDisplay": "160K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "New Yorker staff writer and Pulitzer finalist. Korean-American who challenges mainstream narratives about Asian-American identity. Provocative essayist on race, class, and the limits of progressive politics.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/jaycaspiankang.json"
+    },
+    "handles": {
+      "x": "jaycaspiankang"
+    },
+    "tags": [
+      "Asian-American identity",
+      "race and class",
+      "contrarian",
+      "literary journalism"
+    ]
+  },
+  {
+    "id": "michelle-ye-hee-lee",
+    "name": "Michelle Ye Hee Lee",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Michelle_Ye_Hee_Lee.jpg/300px-Michelle_Ye_Hee_Lee.jpg",
+    "followers": 56000,
+    "followersDisplay": "56K",
+    "platforms": [
+      "x",
+      "bluesky"
+    ],
+    "lens": "Washington Post Tokyo bureau chief covering Japan and the Korean Peninsula. Korean-American journalist known for meticulous fact-checking and deep sourcing on Asian affairs and political accountability.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/myhlee.json"
+    },
+    "handles": {
+      "x": "myhlee",
+      "bluesky": "myhlee.bsky.social"
+    },
+    "tags": [
+      "Asian affairs",
+      "fact-checking",
+      "investigative journalism",
+      "East Asia"
+    ]
+  },
+  {
+    "id": "karim-sadjadpour",
+    "name": "Karim Sadjadpour",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Karim_Sadjadpour.jpg/300px-Karim_Sadjadpour.jpg",
+    "followers": 280000,
+    "followersDisplay": "280K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Carnegie Endowment senior fellow and leading Iran analyst. Iranian-American who has covered the Islamic Republic for two decades. Go-to expert for U.S. policymakers on Iran's internal dynamics and nuclear program.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/ksadjadpour.json"
+    },
+    "handles": {
+      "x": "ksadjadpour"
+    },
+    "tags": [
+      "Iran expert",
+      "foreign policy",
+      "Middle East",
+      "nuclear proliferation"
+    ]
+  },
+  {
+    "id": "trita-parsi",
+    "name": "Trita Parsi",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Trita_Parsi_in_2019.jpg/300px-Trita_Parsi_in_2019.jpg",
+    "followers": 190000,
+    "followersDisplay": "190K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Co-founder of the Quincy Institute for Responsible Statecraft and founder of NIAC. Iranian-born Swedish-American scholar who advocates for diplomacy over military intervention in the Middle East.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/tparsi.json"
+    },
+    "handles": {
+      "x": "tparsi"
+    },
+    "tags": [
+      "Iran diplomacy",
+      "anti-interventionist",
+      "Middle East policy",
+      "restraint"
+    ]
+  },
+  {
+    "id": "fiona-hill",
+    "name": "Fiona Hill",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Fiona_Hill_%28cropped%29.jpg/300px-Fiona_Hill_%28cropped%29.jpg",
+    "followers": 420000,
+    "followersDisplay": "420K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Former NSC senior director for Europe and Russia. Brookings senior fellow. British-American intelligence expert who testified in Trump's first impeachment. Author of 'There Is Nothing for You Here.'",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/FionaHillBrook.json"
+    },
+    "handles": {
+      "x": "FionaHillBrook"
+    },
+    "tags": [
+      "Russia expert",
+      "foreign policy",
+      "national security",
+      "transatlantic"
+    ]
+  },
+  {
+    "id": "masih-alinejad",
+    "name": "Masih Alinejad",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Masih_Alinejad_in_2018.jpg/300px-Masih_Alinejad_in_2018.jpg",
+    "followers": 780000,
+    "followersDisplay": "780K",
+    "platforms": [
+      "x",
+      "youtube",
+      "instagram"
+    ],
+    "lens": "Iranian-American journalist and activist targeted by Iran's regime for assassination. Founded My Stealthy Freedom movement against compulsory hijab. Voice of America Persian presenter. Relentless advocate for Iranian women's rights.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/AlinejadMasih.json",
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCRAyI6Ofz89qJa80MofaluA"
+    },
+    "handles": {
+      "x": "AlinejadMasih",
+      "youtube": "masihalinejad",
+      "instagram": "masih.alinejad"
+    },
+    "tags": [
+      "Iranian diaspora",
+      "women's rights",
+      "regime critic",
+      "activist journalism"
+    ]
+  },
+  {
+    "id": "holly-dagres",
+    "name": "Holly Dagres",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Holly_Dagres.jpg/300px-Holly_Dagres.jpg",
+    "followers": 50000,
+    "followersDisplay": "50K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Iranian-American analyst and curator of The Iranist newsletter. Washington Institute senior fellow covering Iranian politics, society, and digital activism. Key voice bridging Iranian diaspora perspectives with U.S. policy circles.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/hdagres.json"
+    },
+    "handles": {
+      "x": "hdagres",
+      "instagram": "hdagres"
+    },
+    "tags": [
+      "Iranian diaspora",
+      "Iran analyst",
+      "digital activism",
+      "Middle East"
+    ]
+  },
+  {
+    "id": "negar-mortazavi",
+    "name": "Negar Mortazavi",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Negar_Mortazavi.jpg/300px-Negar_Mortazavi.jpg",
+    "followers": 120000,
+    "followersDisplay": "120K",
+    "platforms": [
+      "x",
+      "podcast"
+    ],
+    "lens": "Iranian-American journalist and host of The Iran Podcast. DC-based analyst who appears on CNN, BBC, NPR to contextualize Iranian politics for Western audiences. Bridges the gap between diaspora perspectives and policy discourse.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/NegarMortazavi.json",
+      "podcast": "https://anchor.fm/s/22c24fc8/podcast/rss"
+    },
+    "handles": {
+      "x": "NegarMortazavi",
+      "instagram": "negarmortazavi"
+    },
+    "tags": [
+      "Iranian diaspora",
+      "Iran podcast",
+      "U.S.-Iran relations",
+      "journalist"
+    ]
+  },
+  {
+    "id": "heather-long",
+    "name": "Heather Long",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Heather_Long.jpg/300px-Heather_Long.jpg",
+    "followers": 95000,
+    "followersDisplay": "95K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Former Washington Post economics correspondent and editorial board member. Award-winning journalist who makes economic data accessible. Now chief economist at Navy Federal. Data-driven lens on jobs, inflation, and inequality.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/byHeatherLong.json"
+    },
+    "handles": {
+      "x": "byHeatherLong"
+    },
+    "tags": [
+      "economics",
+      "data-driven",
+      "labor markets",
+      "inequality"
+    ]
+  },
+  {
+    "id": "austan-goolsbee",
+    "name": "Austan Goolsbee",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Austan_Goolsbee_official_portrait.jpg/300px-Austan_Goolsbee_official_portrait.jpg",
+    "followers": 310000,
+    "followersDisplay": "310K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "President of the Chicago Federal Reserve and former Obama economic adviser. Chicago Booth professor who brings accessible wit to monetary policy debates. Key voice on interest rates, inflation, and economic strategy.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/Austan_Goolsbee.json"
+    },
+    "handles": {
+      "x": "Austan_Goolsbee"
+    },
+    "tags": [
+      "Federal Reserve",
+      "monetary policy",
+      "economics",
+      "centrist"
+    ]
+  },
+  {
+    "id": "sarah-jaffe",
+    "name": "Sarah Jaffe",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sarah_Jaffe_journalist.jpg/300px-Sarah_Jaffe_journalist.jpg",
+    "followers": 75000,
+    "followersDisplay": "75K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Labor journalist and author of 'Work Won't Love You Back.' Co-hosts the Belabored podcast on labor movements. Covers strikes, unions, and worker power with a lens that centers the working class.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/sarahljaffe.json"
+    },
+    "handles": {
+      "x": "sarahljaffe"
+    },
+    "tags": [
+      "labor movement",
+      "worker power",
+      "progressive economics",
+      "unions"
+    ]
+  },
+  {
+    "id": "maggie-haberman",
+    "name": "Maggie Haberman",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Maggie_Haberman.jpg/300px-Maggie_Haberman.jpg",
+    "followers": 3200000,
+    "followersDisplay": "3.2M",
+    "platforms": [
+      "x"
+    ],
+    "lens": "New York Times White House correspondent and CNN analyst. The definitive Trump reporter, author of 'Confidence Man.' Known for sourcing that rivals anyone in political journalism. Real-time narrator of the presidency.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/maggieNYT.json"
+    },
+    "handles": {
+      "x": "maggieNYT"
+    },
+    "tags": [
+      "White House reporter",
+      "Trump beat",
+      "investigative",
+      "political journalism"
+    ]
+  },
+  {
+    "id": "wesley-lowery",
+    "name": "Wesley Lowery",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Wesley_Lowery_2016.jpg/300px-Wesley_Lowery_2016.jpg",
+    "followers": 420000,
+    "followersDisplay": "420K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Pulitzer Prize-winning journalist who led the Washington Post's 'Fatal Force' project tracking police killings. CBS News correspondent. Covers race, policing, and criminal justice with deep data and sourcing.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/WesleyLowery.json"
+    },
+    "handles": {
+      "x": "WesleyLowery",
+      "instagram": "wesleylowery"
+    },
+    "tags": [
+      "police accountability",
+      "race and justice",
+      "data journalism",
+      "Pulitzer winner"
+    ]
+  },
+  {
+    "id": "nikole-hannah-jones",
+    "name": "Nikole Hannah-Jones",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nikole_Hannah-Jones_in_2019_%28cropped%29.jpg/300px-Nikole_Hannah-Jones_in_2019_%28cropped%29.jpg",
+    "followers": 690000,
+    "followersDisplay": "690K",
+    "platforms": [
+      "x"
+    ],
+    "lens": "Pulitzer Prize-winning creator of the 1619 Project. Investigative journalist who reframed American history through the lens of slavery's lasting impact. Howard University faculty. Tireless advocate for educational equity and reparations.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/naborannahjones.json"
+    },
+    "handles": {
+      "x": "nhannahjones"
+    },
+    "tags": [
+      "racial justice",
+      "1619 Project",
+      "education equity",
+      "investigative journalism"
+    ]
+  },
+  {
+    "id": "leeja-miller",
+    "name": "Leeja Miller",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Leeja_Miller.jpg/300px-Leeja_Miller.jpg",
+    "followers": 670000,
+    "followersDisplay": "670K",
+    "platforms": [
+      "youtube",
+      "x"
+    ],
+    "lens": "Attorney turned YouTube creator who breaks down legal cases, political events, and social issues for a Gen Z audience. Over 670K subscribers. Makes constitutional law and policy accessible without dumbing it down.",
+    "feeds": {
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCb3cDvWiHwRzQaK81PrISbg",
+      "x": "https://rss.app/feeds/v1.1/twitter/LeejaMiller.json"
+    },
+    "handles": {
+      "youtube": "LeejaMiller",
+      "x": "LeejaMiller",
+      "tiktok": "leejamiller"
+    },
+    "tags": [
+      "Gen Z",
+      "legal explainer",
+      "progressive",
+      "YouTube creator"
+    ]
+  },
+  {
+    "id": "dylan-page",
+    "name": "Dylan Page",
+    "photo": "https://yt3.googleusercontent.com/dylan-page-news-daddy.jpg",
+    "followers": 17900000,
+    "followersDisplay": "17.9M",
+    "platforms": [
+      "tiktok",
+      "x"
+    ],
+    "lens": "UK-based 'News Daddy' who runs the largest news channel on TikTok with 17.9M followers. Delivers breaking news, politics, and pop culture in rapid-fire, personality-driven clips up to 20 times a day.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/dylanpage910.json"
+    },
+    "handles": {
+      "x": "dylanpage910",
+      "tiktok": "dylan.page"
+    },
+    "tags": [
+      "Gen Z",
+      "TikTok news",
+      "breaking news",
+      "UK-based"
+    ]
+  },
+  {
+    "id": "kara-dennison",
+    "name": "Kara Dennison",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Hank_Green_VidCon_2014.jpg/300px-Hank_Green_VidCon_2014.jpg",
+    "followers": 250000,
+    "followersDisplay": "250K",
+    "platforms": [
+      "tiktok",
+      "x"
+    ],
+    "lens": "Gen Z political commentator who covers elections, policy, and civic engagement on TikTok. Makes government processes understandable for young voters and pushes for youth political participation.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/karadennison.json"
+    },
+    "handles": {
+      "x": "karadennison",
+      "tiktok": "karadennison"
+    },
+    "tags": [
+      "Gen Z",
+      "civic engagement",
+      "youth politics",
+      "TikTok creator"
+    ]
+  },
+  {
+    "id": "paola-ramos",
+    "name": "Paola Ramos",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Paola_Ramos.jpg/300px-Paola_Ramos.jpg",
+    "followers": 85000,
+    "followersDisplay": "85K",
+    "platforms": [
+      "x",
+      "instagram"
+    ],
+    "lens": "MSNBC contributor, Vice News correspondent, and author of 'Finding Latinx.' Covers the evolving Latino electorate and identity politics. Former Biden and Clinton campaign staffer turned journalist.",
+    "feeds": {
+      "x": "https://rss.app/feeds/v1.1/twitter/PaolaRamos.json"
+    },
+    "handles": {
+      "x": "PaolaRamos",
+      "instagram": "paola"
+    },
+    "tags": [
+      "Latina journalism",
+      "Latino electorate",
+      "identity politics",
+      "MSNBC"
     ]
   }
 ]
