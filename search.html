@@ -370,8 +370,8 @@
   .voice-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
   .voice-photo { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; background: var(--bg-elevated); }
   .voice-name { font-size: 1.05em; font-weight: 700; color: var(--text-primary); }
-  .voice-lean { font-size: 0.75em; padding: 2px 8px; border-radius: 6px; font-weight: 600; }
-  .cluster-label { background: var(--accent-bg); color: var(--accent); border: 1px solid rgba(255, 99, 67, 0.2); }
+  .voice-lean { font-size: 0.78em; padding: 3px 10px; border-radius: 6px; font-weight: 600; }
+  .cluster-label { background: rgba(255, 255, 255, 0.08); color: var(--text-secondary); border: 1px solid var(--border-default); }
 
   .cluster-tag {
     display: inline-block; background: var(--bg-surface);
@@ -790,14 +790,15 @@ function renderResults(data) {
 
     const photoUrl = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96`;
     const tagsHtml = voice.tags && voice.tags.length
-      ? `<div style="margin-top:4px;">${voice.tags.map(t => `<span style="display:inline-block; font-size:0.68em; color:var(--text-tertiary); border:1px solid var(--border-subtle); border-radius:100px; padding:1px 8px; margin-right:3px;">${escapeHtml(t)}</span>`).join('')}</div>` : '';
+      ? `<div style="margin-top:4px; display:flex; flex-wrap:wrap; gap:4px;">${voice.tags.map(t => `<span style="display:inline-block; font-size:0.72em; color:var(--text-secondary); background:var(--bg-surface-2); border:1px solid var(--border-default); border-radius:100px; padding:2px 10px;">${escapeHtml(t)}</span>`).join('')}</div>` : '';
 
     html += `
       <div class="voice-card" data-cluster="${(voice.argumentCluster || '').replace(/"/g, '&quot;')}">
         <div class="voice-header">
           <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96'">
           <div>
-            <div class="voice-name">${voice.voiceName} ${clusterLabel}</div>
+            <div class="voice-name"><a href="/voice/${voice.voiceId}" style="color:var(--text-primary); text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-primary)'">${voice.voiceName}</a></div>
+            ${clusterLabel ? `<div style="margin-top:4px;">${clusterLabel}</div>` : ''}
             ${tagsHtml}
           </div>
         </div>
