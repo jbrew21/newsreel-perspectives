@@ -1162,10 +1162,6 @@ async function loadConversation() {
       </div>
       ${si === 0 ? topStoryClusterCardsHtml : ''}
       ${si !== 0 ? '<div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">' + clustersHtml + '</div>' : ''}
-      <button class="fracture-search-btn" onclick="event.stopPropagation(); document.getElementById('searchInput').value='${escapeHtml(story.headline)}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
-        Search this story
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </button>
       <a class="fracture-search-btn" href="/story/${escapeHtml(story.headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').substring(0, 60))}" onclick="event.stopPropagation();" style="text-decoration:none;">
         View story
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -1702,6 +1698,7 @@ function handleFaceClick(faceEl) {
   const photo = faceEl.dataset.voicePhoto;
   const quote = faceEl.dataset.voiceQuote;
   const platform = faceEl.dataset.voicePlatform;
+  const sourceUrl = faceEl.dataset.sourceUrl;
 
   const platformLabel = PLATFORM_LABELS_GLOBAL[platform] || platform || '';
   const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
@@ -1737,7 +1734,7 @@ function handleFaceClick(faceEl) {
         (platformLabel ? '<span class="csq-platform">' + platformLabel + '</span>' : '') +
       '</div>' +
       (quote ? '<div class="csq-quote">"' + quote + '"</div>' : '<div class="csq-quote" style="color:var(--text-muted); font-style:italic;">No quote available</div>') +
-      '<a class="csq-profile-link" href="' + BASE + '/voice/' + voiceId + '" onclick="event.stopPropagation();">View profile &rarr;</a>' +
+      '<a class="csq-profile-link" href="' + (sourceUrl || BASE + '/voice/' + voiceId) + '"' + (sourceUrl ? ' target="_blank"' : '') + ' onclick="event.stopPropagation();">View source &rarr;</a>' +
     '</div>' +
   '</div>';
 }
