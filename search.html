@@ -510,7 +510,7 @@
   .fracture-card.tier-top .fracture-headline { font-size: var(--text-display); font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; }
   .fracture-card.tier-top .cluster-faces { display: flex !important; }
 
-  /* OPPOSING BLOCKQUOTE PAIR */
+  /* OPPOSING BLOCKQUOTE PAIR (kept for non-top stories if needed) */
   .opposing-quotes {
     display: flex; gap: 16px; margin: 16px 0 8px;
   }
@@ -526,6 +526,106 @@
   .opposing-quote-attr img {
     width: 24px; height: 24px; border-radius: 50%; object-fit: cover;
   }
+
+  /* HORIZONTAL CLUSTER CARDS (top story) */
+  .cluster-cards-row {
+    display: flex; gap: 12px; margin-top: 16px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; scroll-snap-type: x mandatory;
+    position: relative; padding-bottom: 4px;
+  }
+  .cluster-cards-row::-webkit-scrollbar { display: none; }
+
+  .cluster-card-box {
+    background: rgba(255,255,255,0.04); border-radius: 12px;
+    padding: 14px; min-width: 160px; flex: 1;
+    border-top: 4px solid var(--card-cluster-color, #60A5FA);
+    cursor: pointer; transition: background 0.15s, transform 0.15s;
+    scroll-snap-align: start;
+  }
+  .cluster-card-box:hover {
+    background: rgba(255,255,255,0.07); transform: translateY(-2px);
+  }
+  .cluster-card-box.selected {
+    background: rgba(255,255,255,0.08);
+    border-top-width: 4px;
+    box-shadow: 0 0 0 1px var(--card-cluster-color, #60A5FA);
+  }
+  .cluster-card-box-name {
+    font-size: var(--text-body); font-weight: 600;
+    color: var(--card-cluster-color, #60A5FA);
+  }
+  .cluster-card-box-count {
+    font-size: var(--text-caption); color: var(--text-muted);
+    margin-left: 6px; font-weight: 600;
+  }
+  .cluster-card-box-faces {
+    display: flex; align-items: center; flex-wrap: wrap;
+    margin-top: 8px; gap: 2px 0;
+  }
+  .cluster-card-box-faces .cluster-face {
+    width: 36px; height: 36px; border-radius: 50%;
+    object-fit: cover; background: var(--bg-elevated);
+    border: 2px solid rgba(255,255,255,0.06);
+    margin-left: -8px; position: relative;
+    cursor: default;
+  }
+  .cluster-card-box-faces .cluster-face:first-child { margin-left: 0; }
+
+  /* Scroll fade hint */
+  .cluster-cards-row-wrapper {
+    position: relative;
+  }
+  .cluster-cards-row-wrapper::after {
+    content: ''; position: absolute; top: 0; right: 0; bottom: 4px;
+    width: 40px; pointer-events: none;
+    background: linear-gradient(to right, transparent, var(--bg-surface));
+    border-radius: 0 12px 12px 0;
+    opacity: 0; transition: opacity 0.2s;
+  }
+  .cluster-cards-row-wrapper.has-scroll::after { opacity: 1; }
+
+  /* Cluster expand panel */
+  .cluster-expand-panel {
+    background: rgba(255,255,255,0.03); border-radius: 12px;
+    padding: 20px; margin-top: 12px;
+    animation: slideDown 0.2s ease;
+    border-left: 4px solid var(--panel-cluster-color, #60A5FA);
+  }
+  .cluster-expand-panel-header {
+    font-size: var(--text-body); font-weight: 700;
+    color: var(--panel-cluster-color, #60A5FA);
+    margin-bottom: 14px;
+  }
+  .cluster-expand-panel .cluster-voice-row {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 12px; background: var(--bg-surface-2);
+    border-radius: 10px; transition: background 0.15s; margin-bottom: 6px;
+  }
+  .cluster-expand-panel .cluster-voice-row:hover { background: var(--bg-elevated); }
+  .cluster-expand-panel .cluster-voice-photo {
+    width: 36px; height: 36px; border-radius: 50%;
+    object-fit: cover; background: var(--bg-elevated); flex-shrink: 0;
+  }
+  .cluster-expand-panel .cluster-voice-body { flex: 1; min-width: 0; }
+  .cluster-expand-panel .cluster-voice-name {
+    font-size: var(--text-body); font-weight: 600; color: var(--text-primary);
+    text-decoration: none;
+  }
+  .cluster-expand-panel .cluster-voice-name:hover { color: var(--accent); }
+  .cluster-expand-panel .cluster-voice-platform {
+    font-size: var(--text-caption); color: var(--text-muted); text-transform: uppercase;
+    letter-spacing: 0.05em; margin-left: 6px;
+  }
+  .cluster-expand-panel .cluster-voice-quote {
+    font-size: var(--text-body); color: var(--text-secondary); line-height: 1.5;
+    margin-top: 4px;
+  }
+  .cluster-expand-panel .cluster-voice-link {
+    font-size: var(--text-caption); color: var(--text-secondary); text-decoration: none;
+    margin-top: 4px; display: inline-block; transition: color 0.2s;
+  }
+  .cluster-expand-panel .cluster-voice-link:hover { text-decoration: underline; color: var(--accent); }
 
   /* MEDIUM CARDS (stories 2-3) */
   .cluster-summary-line {
@@ -720,6 +820,12 @@
       overflow: hidden; text-overflow: ellipsis;
       padding-left: 38px;
     }
+    /* Horizontal cluster cards mobile */
+    .cluster-card-box { min-width: 140px; padding: 12px; }
+    .cluster-card-box-faces .cluster-face { width: 28px; height: 28px; margin-left: -6px; }
+    .cluster-card-box-faces .cluster-face:first-child { margin-left: 0; }
+    .cluster-expand-panel { padding: 16px; }
+    .cluster-expand-panel .cluster-voice-photo { width: 32px; height: 32px; }
   }
 </style>
 </head>
@@ -855,6 +961,8 @@ async function loadConversation() {
   }
 
   if (!stories || stories.length === 0) return;
+
+  _storiesData = stories;
 
   const section = document.getElementById('fracturesSection');
   const container = document.getElementById('fractureCards');
@@ -1003,27 +1111,30 @@ async function loadConversation() {
       <a class="best-quote-attr" href="/voice/${bestQuote.voiceId}" style="text-decoration:none; color:var(--text-muted);" onclick="event.stopPropagation();">— ${escapeHtml(bestQuote.voiceName)}</a>
     </div>` : '';
 
-    // Opposing blockquote pair for top story
-    let opposingQuotesHtml = '';
-    if (si === 0 && shownClusters.length >= 2) {
-      const getQuote = (cluster, ci) => {
-        const bq = cluster.bestQuote || (cluster.voices && cluster.voices.length > 0 ? (() => {
-          const best = [...cluster.voices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
-          return { voiceName: best.voiceName, quote: best.quote, voiceId: best.voiceId, photo: best.photo };
-        })() : null);
-        if (!bq || !bq.quote) return '';
+    // Horizontal cluster cards for top story (replaces opposing blockquotes)
+    let topStoryClusterCardsHtml = '';
+    if (si === 0 && shownClusters.length >= 1) {
+      let cardsHtml = '';
+      shownClusters.forEach((cluster, ci) => {
         const color = getClusterColor(ci);
-        const photo = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
-        const truncQuote = bq.quote.length > 140 ? bq.quote.substring(0, 140) + '...' : bq.quote;
-        return `<div class="opposing-quote" style="border-left:3px solid ${color};">
-          "${escapeHtml(truncQuote)}"
-          <div class="opposing-quote-attr">
-            <img src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
-            ${escapeHtml(bq.voiceName)} &middot; ${escapeHtml(cluster.name)}
+        const allVoices = cluster.voices || [];
+        const facesHtml = allVoices.slice(0, 8).map(v => {
+          const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
+          return `<img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">`;
+        }).join('');
+        const voiceTotal = cluster.voiceCount || allVoices.length;
+        cardsHtml += `<div class="cluster-card-box" style="--card-cluster-color:${color};" data-top-cluster-idx="${ci}" data-story-idx="${si}" onclick="event.stopPropagation(); toggleTopClusterPanel(${si}, ${ci});">
+          <div>
+            <span class="cluster-card-box-name" style="color:${color};">${escapeHtml(cluster.name)}</span>
+            <span class="cluster-card-box-count">${voiceTotal}</span>
           </div>
+          <div class="cluster-card-box-faces">${facesHtml}</div>
         </div>`;
-      };
-      opposingQuotesHtml = `<div class="opposing-quotes">${getQuote(shownClusters[0], 0)}${getQuote(shownClusters[1], 1)}</div>`;
+      });
+      topStoryClusterCardsHtml = `<div class="cluster-cards-row-wrapper" id="cluster-cards-wrapper-${si}">
+        <div class="cluster-cards-row" id="cluster-cards-row-${si}">${cardsHtml}</div>
+      </div>
+      <div class="cluster-expand-panel-container" id="cluster-expand-${si}"></div>`;
     }
 
     // Cluster summary line for medium cards
@@ -1049,8 +1160,8 @@ async function loadConversation() {
         <div class="fracture-insight">${escapeHtml(story.summary || '')}</div>
         <svg class="fracture-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
       </div>
-      ${opposingQuotesHtml}
-      <div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">${clustersHtml}</div>
+      ${si === 0 ? topStoryClusterCardsHtml : ''}
+      ${si !== 0 ? '<div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">' + clustersHtml + '</div>' : ''}
       <button class="fracture-search-btn" onclick="event.stopPropagation(); document.getElementById('searchInput').value='${escapeHtml(story.headline)}'; doSearch(); window.scrollTo({top:0, behavior:'smooth'});">
         Search this story
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -1063,8 +1174,8 @@ async function loadConversation() {
 
     container.appendChild(card);
 
-    // Add face bubble onboarding hint to first cluster of first story
-    if (si === 0 && !localStorage.getItem('faces-discovered')) {
+    // Add face bubble onboarding hint to first cluster of first story (only for non-top stories now)
+    if (si !== 0 && si === 1 && !localStorage.getItem('faces-discovered')) {
       const firstFacesRow = card.querySelector('.cluster-faces');
       if (firstFacesRow) {
         const hint = document.createElement('div');
@@ -1072,13 +1183,31 @@ async function loadConversation() {
         hint.textContent = 'Tap a face to see their take';
         firstFacesRow.parentElement.insertBefore(hint, firstFacesRow.nextSibling);
 
-        // Add pulse to first face bubble
         const firstFace = firstFacesRow.querySelector('.cluster-face');
         if (firstFace) firstFace.classList.add('face-pulse');
       }
     }
+
+    // Check scroll hint for horizontal cluster cards
+    if (si === 0) {
+      requestAnimationFrame(() => {
+        const wrapper = document.getElementById('cluster-cards-wrapper-' + si);
+        const row = document.getElementById('cluster-cards-row-' + si);
+        if (wrapper && row && row.scrollWidth > row.clientWidth) {
+          wrapper.classList.add('has-scroll');
+          row.addEventListener('scroll', () => {
+            const atEnd = row.scrollLeft + row.clientWidth >= row.scrollWidth - 10;
+            wrapper.classList.toggle('has-scroll', !atEnd);
+          });
+        }
+      });
+    }
   });
 }
+
+// Store stories data for panel rendering
+let _storiesData = [];
+
 loadConversation();
 
 // Load The Wire
@@ -1611,6 +1740,89 @@ function handleFaceClick(faceEl) {
       '<a class="csq-profile-link" href="' + BASE + '/voice/' + voiceId + '" onclick="event.stopPropagation();">View profile &rarr;</a>' +
     '</div>' +
   '</div>';
+}
+
+let _activeTopCluster = {}; // { storyIdx: clusterIdx }
+
+function toggleTopClusterPanel(si, ci) {
+  const container = document.getElementById('cluster-expand-' + si);
+  const cards = document.querySelectorAll('.cluster-card-box[data-story-idx="' + si + '"]');
+
+  // If same cluster clicked, close
+  if (_activeTopCluster[si] === ci) {
+    container.innerHTML = '';
+    cards.forEach(c => c.classList.remove('selected'));
+    delete _activeTopCluster[si];
+    return;
+  }
+
+  // Select this card, deselect others
+  cards.forEach(c => c.classList.remove('selected'));
+  const activeCard = document.querySelector('.cluster-card-box[data-story-idx="' + si + '"][data-top-cluster-idx="' + ci + '"]');
+  if (activeCard) activeCard.classList.add('selected');
+  _activeTopCluster[si] = ci;
+
+  const story = _storiesData[si];
+  if (!story) return;
+  const cluster = (story.clusters || [])[ci];
+  if (!cluster) return;
+
+  const color = getClusterColor(ci);
+  const allVoices = cluster.voices || [];
+  const platformLabels = {x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'};
+  const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+
+  // Best quote first
+  const bq = cluster.bestQuote || (allVoices.length > 0 ? (() => {
+    const best = [...allVoices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
+    return { voiceName: best.voiceName, quote: best.quote, platform: best.platform, voiceId: best.voiceId, photo: best.photo };
+  })() : null);
+
+  let bestQuoteHtml = '';
+  if (bq && bq.quote) {
+    const bqPhoto = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
+    const bqPlatform = platformLabels[bq.platform] || bq.platform || '';
+    bestQuoteHtml = `<div class="cluster-voice-row" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);">
+      <img class="cluster-voice-photo" src="${bqPhoto}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
+      <div class="cluster-voice-body">
+        <div>
+          <a href="${BASE}/voice/${bq.voiceId || ''}" class="cluster-voice-name" onclick="event.stopPropagation();">${escapeHtml(bq.voiceName)}</a>
+          ${bqPlatform ? '<span class="cluster-voice-platform">' + bqPlatform + '</span>' : ''}
+        </div>
+        <div class="cluster-voice-quote">"${escapeHtml(bq.quote.substring(0, 250))}"</div>
+      </div>
+    </div>`;
+  }
+
+  // All voices
+  let voicesHtml = allVoices.slice(0, 10).map(v => {
+    // Skip best quote voice if already shown
+    if (bq && v.voiceId === bq.voiceId) return '';
+    const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
+    const quote = (v.quote || '').substring(0, 200);
+    const pLabel = platformLabels[v.platform] || v.platform || '';
+    return `<div class="cluster-voice-row">
+      <img class="cluster-voice-photo" src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
+      <div class="cluster-voice-body">
+        <div>
+          <a href="${BASE}/voice/${v.voiceId}" class="cluster-voice-name" onclick="event.stopPropagation();">${escapeHtml(v.voiceName)}</a>
+          <span class="cluster-voice-platform">${pLabel}</span>
+        </div>
+        ${quote ? '<div class="cluster-voice-quote">"' + escapeHtml(quote) + '"</div>' : ''}
+        ${v.sourceUrl ? '<a class="cluster-voice-link" href="' + v.sourceUrl + '" target="_blank" onclick="event.stopPropagation();">View source &rarr;</a>' : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  const voiceTotal = cluster.voiceCount || allVoices.length;
+  const overflow = voiceTotal - Math.min(allVoices.length, 10);
+
+  container.innerHTML = `<div class="cluster-expand-panel" style="--panel-cluster-color:${color}; border-left-color:${color};">
+    <div class="cluster-expand-panel-header" style="color:${color};">${escapeHtml(cluster.name)} &middot; ${voiceTotal} voices</div>
+    ${bestQuoteHtml}
+    ${voicesHtml}
+    ${overflow > 0 ? '<div style="font-size:11px; color:var(--text-muted); padding:4px 12px; margin-top:4px;">+ ' + overflow + ' more voices</div>' : ''}
+  </div>`;
 }
 
 function toggleQuoteTip(el) {
