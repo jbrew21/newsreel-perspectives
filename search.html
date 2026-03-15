@@ -596,6 +596,67 @@
     font-size: var(--text-caption); color: #999; white-space: nowrap; flex-shrink: 0;
   }
 
+  /* WIRE FILTER PILLS */
+  .wire-filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .wire-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+  .wire-filter-row-label {
+    font-size: var(--text-caption);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin-right: 4px;
+    min-width: fit-content;
+  }
+  .wire-filter-pill {
+    font-size: var(--text-caption);
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+  .wire-filter-pill:hover {
+    border-color: rgba(255,255,255,0.25);
+    color: var(--text-primary);
+  }
+  .wire-filter-pill.active {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  /* Platform-specific active colors */
+  .wire-filter-pill.active[data-platform="x"] { background: rgba(29,161,242,0.15); border-color: rgba(29,161,242,0.4); }
+  .wire-filter-pill.active[data-platform="youtube"] { background: rgba(255,0,0,0.15); border-color: rgba(255,0,0,0.4); }
+  .wire-filter-pill.active[data-platform="substack"] { background: rgba(255,103,25,0.15); border-color: rgba(255,103,25,0.4); }
+  .wire-filter-pill.active[data-platform="bluesky"] { background: rgba(0,133,255,0.15); border-color: rgba(0,133,255,0.4); }
+  .wire-filter-pill.active[data-platform="instagram"] { background: rgba(225,48,108,0.15); border-color: rgba(225,48,108,0.4); }
+  .wire-filter-pill.active[data-platform="tiktok"] { background: rgba(0,242,234,0.15); border-color: rgba(0,242,234,0.4); }
+  .wire-filter-pill.active[data-platform="podcast"] { background: rgba(155,89,182,0.15); border-color: rgba(155,89,182,0.4); }
+
+  /* Search result category filter bar */
+  .search-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    margin: 12px 0 16px;
+  }
+
   /* MOBILE */
   /* Face bubble onboarding */
   .face-onboarding-hint {
@@ -640,6 +701,8 @@
     .opposing-quotes { flex-direction: column; gap: 10px; }
     .fracture-card.tier-compact { padding: 12px 16px; }
     .also-today-divider { margin: 32px 0 8px; }
+    .wire-filter-pill { min-height: 36px; display: inline-flex; align-items: center; }
+    .wire-filter-row-label { display: none; }
     .wire-feed { max-height: 400px; }
     .wire-entry {
       flex-wrap: wrap; gap: 6px;
@@ -711,6 +774,7 @@
     <div class="wire-subtitle" id="wireSubtitle">What voices are saying right now</div>
     <div class="wire-note">When enough voices converge on a topic, we analyze it above.</div>
   </div>
+  <div class="wire-filter-bar" id="wireFilterBar" style="display:none"></div>
   <div class="wire-feed" id="wireFeed"></div>
 </div>
 
@@ -1015,6 +1079,18 @@ const WIRE_PLATFORM_COLORS = {
   x: '#1DA1F2', youtube: '#FF0000', substack: '#FF6719',
   bluesky: '#0085FF', instagram: '#E1306C', tiktok: '#00F2EA', podcast: '#9B59B6'
 };
+const WIRE_PLATFORM_LABELS = {x:'X', youtube:'YouTube', substack:'Substack', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', podcast:'Podcast'};
+const WIRE_CATEGORY_LABELS = {
+  politician:'Politicians', commentator:'Commentators', journalist:'Journalists',
+  creator:'Creators', 'think-tank':'Think Tanks', activist:'Activists',
+  economist:'Economists', satirist:'Satirists'
+};
+
+let _wireAllEntries = [];
+let _voiceCategoryMap = {};
+let _wirePlatformFilters = new Set();
+let _wireCategoryFilters = new Set();
+
 function wireTimeAgo(ts) {
   try {
     const diff = Date.now() - new Date(ts).getTime();
@@ -1027,26 +1103,21 @@ function wireTimeAgo(ts) {
     return 'just now';
   } catch { return ''; }
 }
-fetch(BASE + '/api/wire').then(r => r.json()).then(entries => {
-  if (!entries || entries.length === 0) return;
-  const wireSection = document.getElementById('wireSection');
+
+function renderWireEntries(entries) {
   const wireFeed = document.getElementById('wireFeed');
-  wireSection.style.display = 'block';
-
-  // Update subtitle with count
-  const voiceSet = new Set(entries.map(e => e.voiceId || e.voiceName));
-  document.getElementById('wireSubtitle').textContent = `What ${voiceSet.size} voices are saying right now`;
-
-  const platformLabels = {x:'X', youtube:'YouTube', substack:'Substack', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', podcast:'Podcast'};
-
+  wireFeed.innerHTML = '';
+  if (entries.length === 0) {
+    wireFeed.innerHTML = '<div style="padding:20px 0;color:var(--text-muted);font-size:var(--text-body);text-align:center;">No posts match these filters</div>';
+    return;
+  }
   entries.slice(0, 50).forEach(entry => {
     const photo = entry.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(entry.voiceName || '')}&background=252528&color=a1a1aa&size=56`;
     const platform = (entry.platform || '').toLowerCase();
     const pColor = WIRE_PLATFORM_COLORS[platform] || '#aaa';
-    const pLabel = platformLabels[platform] || platform;
+    const pLabel = WIRE_PLATFORM_LABELS[platform] || platform;
     const text = (entry.text || entry.quote || '').substring(0, 120);
     const time = wireTimeAgo(entry.timestamp || entry.date);
-
     const row = document.createElement('div');
     row.className = 'wire-entry';
     row.innerHTML = `
@@ -1058,7 +1129,111 @@ fetch(BASE + '/api/wire').then(r => r.json()).then(entries => {
     `;
     wireFeed.appendChild(row);
   });
-}).catch(() => {});
+}
+
+function applyWireFilters() {
+  let filtered = _wireAllEntries;
+  if (_wirePlatformFilters.size > 0) {
+    filtered = filtered.filter(e => _wirePlatformFilters.has((e.platform || '').toLowerCase()));
+  }
+  if (_wireCategoryFilters.size > 0) {
+    filtered = filtered.filter(e => {
+      const cat = _voiceCategoryMap[e.voiceId] || '';
+      return _wireCategoryFilters.has(cat);
+    });
+  }
+  renderWireEntries(filtered);
+}
+
+function buildWireFilterBar() {
+  const bar = document.getElementById('wireFilterBar');
+  bar.style.display = 'flex';
+
+  // Platform row
+  const platformRow = document.createElement('div');
+  platformRow.className = 'wire-filter-row';
+  platformRow.innerHTML = '<span class="wire-filter-row-label">Platform</span>';
+  const platforms = ['all','x','youtube','substack','bluesky','instagram','tiktok','podcast'];
+  const platformDisplayNames = {all:'All', x:'X', youtube:'YouTube', substack:'Substack', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', podcast:'Podcast'};
+  platforms.forEach(p => {
+    const pill = document.createElement('span');
+    pill.className = 'wire-filter-pill' + (p === 'all' ? ' active' : '');
+    pill.textContent = platformDisplayNames[p];
+    if (p !== 'all') pill.dataset.platform = p;
+    pill.addEventListener('click', () => {
+      if (p === 'all') {
+        _wirePlatformFilters.clear();
+        platformRow.querySelectorAll('.wire-filter-pill').forEach(el => el.classList.remove('active'));
+        pill.classList.add('active');
+      } else {
+        const allPill = platformRow.querySelector('.wire-filter-pill:first-of-type');
+        allPill.classList.remove('active');
+        pill.classList.toggle('active');
+        if (pill.classList.contains('active')) {
+          _wirePlatformFilters.add(p);
+        } else {
+          _wirePlatformFilters.delete(p);
+        }
+        if (_wirePlatformFilters.size === 0) allPill.classList.add('active');
+      }
+      applyWireFilters();
+    });
+    platformRow.appendChild(pill);
+  });
+  bar.appendChild(platformRow);
+
+  // Category row
+  const categoryRow = document.createElement('div');
+  categoryRow.className = 'wire-filter-row';
+  categoryRow.innerHTML = '<span class="wire-filter-row-label">Type</span>';
+  const categories = ['all','politician','commentator','journalist','creator','think-tank','activist','economist','satirist'];
+  const catDisplayNames = {all:'All', ...WIRE_CATEGORY_LABELS};
+  categories.forEach(c => {
+    const pill = document.createElement('span');
+    pill.className = 'wire-filter-pill' + (c === 'all' ? ' active' : '');
+    pill.textContent = catDisplayNames[c];
+    pill.addEventListener('click', () => {
+      if (c === 'all') {
+        _wireCategoryFilters.clear();
+        categoryRow.querySelectorAll('.wire-filter-pill').forEach(el => el.classList.remove('active'));
+        pill.classList.add('active');
+      } else {
+        const allPill = categoryRow.querySelector('.wire-filter-pill:first-of-type');
+        allPill.classList.remove('active');
+        pill.classList.toggle('active');
+        if (pill.classList.contains('active')) {
+          _wireCategoryFilters.add(c);
+        } else {
+          _wireCategoryFilters.delete(c);
+        }
+        if (_wireCategoryFilters.size === 0) allPill.classList.add('active');
+      }
+      applyWireFilters();
+    });
+    categoryRow.appendChild(pill);
+  });
+  bar.appendChild(categoryRow);
+}
+
+// Fetch voices for category lookup, then load wire
+fetch(BASE + '/data/voices.json').then(r => r.json()).then(voices => {
+  if (Array.isArray(voices)) {
+    voices.forEach(v => { _voiceCategoryMap[v.id] = v.category || ''; });
+  }
+}).catch(() => {}).finally(() => {
+  fetch(BASE + '/api/wire').then(r => r.json()).then(entries => {
+    if (!entries || entries.length === 0) return;
+    _wireAllEntries = entries;
+    const wireSection = document.getElementById('wireSection');
+    wireSection.style.display = 'block';
+
+    const voiceSet = new Set(entries.map(e => e.voiceId || e.voiceName));
+    document.getElementById('wireSubtitle').textContent = `What ${voiceSet.size} voices are saying right now`;
+
+    buildWireFilterBar();
+    renderWireEntries(entries);
+  }).catch(() => {});
+});
 
 // Load trending topics
 fetch(BASE + '/api/topics')
@@ -1149,12 +1324,19 @@ function renderResults(data) {
     ? `<div class="broadening-note">${escapeHtml(data.broadeningNote)}</div>`
     : '';
 
+  // Build search category filter bar
+  const searchCatLabels = {all:'All', politician:'Politicians', commentator:'Commentators', journalist:'Journalists', creator:'Creators', 'think-tank':'Think Tanks', activist:'Activists'};
+  const searchCatPills = Object.entries(searchCatLabels).map(([key, label]) =>
+    `<span class="wire-filter-pill search-cat-filter${key === 'all' ? ' active' : ''}" data-search-cat="${key}">${label}</span>`
+  ).join('');
+
   let html = `
     <div class="results-header">
       <h2>${data.voices.length} voices on this story${windowNote}</h2>
       ${broadeningHtml}
       <div class="topics">${data.matchedTopics.map(t => `<span class="tag">${t}</span>`).join('')}</div>
     </div>
+    <div class="search-filter-bar" id="searchCategoryBar">${searchCatPills}</div>
   `;
 
   // Group by cluster
@@ -1191,8 +1373,9 @@ function renderResults(data) {
     const tagsHtml = voice.tags && voice.tags.length
       ? `<div style="margin-top:4px; display:flex; flex-wrap:wrap; gap:4px;">${voice.tags.map(t => `<span style="display:inline-block; font-size:0.72em; color:var(--text-secondary); background:var(--bg-surface-2); border:1px solid var(--border-default); border-radius:100px; padding:2px 10px;">${escapeHtml(t)}</span>`).join('')}</div>` : '';
 
+    const voiceCategory = _voiceCategoryMap[voice.voiceId] || '';
     html += `
-      <div class="voice-card" data-cluster="${(voice.argumentCluster || '').replace(/"/g, '&quot;')}">
+      <div class="voice-card" data-cluster="${(voice.argumentCluster || '').replace(/"/g, '&quot;')}" data-category="${voiceCategory}">
         <div class="voice-header">
           <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96'">
           <div>
@@ -1220,6 +1403,33 @@ function renderResults(data) {
   }
 
   resultsDiv.innerHTML = html;
+
+  // Bind search category filter handlers
+  let _searchCatFilter = null;
+  document.querySelectorAll('.search-cat-filter').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const cat = pill.dataset.searchCat;
+      document.querySelectorAll('.search-cat-filter').forEach(p => p.classList.remove('active'));
+      if (cat === 'all') {
+        _searchCatFilter = null;
+        pill.classList.add('active');
+      } else {
+        _searchCatFilter = cat;
+        pill.classList.add('active');
+      }
+      document.querySelectorAll('.voice-card').forEach(card => {
+        const cardCat = card.dataset.category || '';
+        card.style.display = (!_searchCatFilter || cardCat === _searchCatFilter) ? '' : 'none';
+      });
+      const visible = document.querySelectorAll('.voice-card:not([style*="display: none"])').length;
+      const header = document.querySelector('.results-header h2');
+      if (header && window._resultsData) {
+        header.innerHTML = _searchCatFilter
+          ? `${visible} voices on this story${windowNote}`
+          : `${window._resultsData.voices.length} voices on this story${windowNote}`;
+      }
+    });
+  });
 }
 
 function formatTimeAgo(ts) {
