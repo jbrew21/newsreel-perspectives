@@ -648,6 +648,13 @@
   .wire-filter-pill.active[data-platform="tiktok"] { background: rgba(0,242,234,0.15); border-color: rgba(0,242,234,0.4); }
   .wire-filter-pill.active[data-platform="podcast"] { background: rgba(155,89,182,0.15); border-color: rgba(155,89,182,0.4); }
 
+  /* Approach-specific active colors */
+  .wire-filter-pill.active[data-approach="investigates"] { background: rgba(74,222,128,0.15); border-color: rgba(74,222,128,0.4); }
+  .wire-filter-pill.active[data-approach="explains"] { background: rgba(96,165,250,0.15); border-color: rgba(96,165,250,0.4); }
+  .wire-filter-pill.active[data-approach="argues"] { background: rgba(248,113,113,0.15); border-color: rgba(248,113,113,0.4); }
+  .wire-filter-pill.active[data-approach="reports"] { background: rgba(161,161,170,0.15); border-color: rgba(161,161,170,0.4); }
+  .wire-filter-pill.active[data-approach="entertains"] { background: rgba(251,191,36,0.15); border-color: rgba(251,191,36,0.4); }
+
   /* Search result category filter bar */
   .search-filter-bar {
     display: flex;
@@ -1081,15 +1088,31 @@ const WIRE_PLATFORM_COLORS = {
 };
 const WIRE_PLATFORM_LABELS = {x:'X', youtube:'YouTube', substack:'Substack', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', podcast:'Podcast'};
 const WIRE_CATEGORY_LABELS = {
-  politician:'Politicians', commentator:'Commentators', journalist:'Journalists',
-  creator:'Creators', 'think-tank':'Think Tanks', activist:'Activists',
-  economist:'Economists', satirist:'Satirists'
+  'reporters':'Reporters', 'commentators':'Commentators', 'creators':'Creators',
+  'elected-officials':'Elected Officials', 'policy-experts':'Policy Experts',
+  'activists':'Activists', 'satirists':'Satirists'
+};
+// Maps display filter keys to actual category values in voices.json
+const WIRE_CATEGORY_MAP = {
+  'reporters': ['journalist'],
+  'commentators': ['commentator'],
+  'creators': ['creator', 'entrepreneur'],
+  'elected-officials': ['politician'],
+  'policy-experts': ['think-tank', 'economist', 'legal'],
+  'activists': ['activist'],
+  'satirists': ['satirist']
+};
+const WIRE_APPROACH_LABELS = {
+  investigates:'Investigates', explains:'Explains', argues:'Argues',
+  reports:'Reports', entertains:'Entertains'
 };
 
 let _wireAllEntries = [];
 let _voiceCategoryMap = {};
+let _voiceApproachMap = {};
 let _wirePlatformFilters = new Set();
 let _wireCategoryFilters = new Set();
+let _wireApproachFilters = new Set();
 
 function wireTimeAgo(ts) {
   try {
@@ -1139,7 +1162,17 @@ function applyWireFilters() {
   if (_wireCategoryFilters.size > 0) {
     filtered = filtered.filter(e => {
       const cat = _voiceCategoryMap[e.voiceId] || '';
-      return _wireCategoryFilters.has(cat);
+      for (const filterKey of _wireCategoryFilters) {
+        const matchCats = WIRE_CATEGORY_MAP[filterKey] || [];
+        if (matchCats.includes(cat)) return true;
+      }
+      return false;
+    });
+  }
+  if (_wireApproachFilters.size > 0) {
+    filtered = filtered.filter(e => {
+      const approach = _voiceApproachMap[e.voiceId] || '';
+      return _wireApproachFilters.has(approach);
     });
   }
   renderWireEntries(filtered);
@@ -1182,11 +1215,11 @@ function buildWireFilterBar() {
   });
   bar.appendChild(platformRow);
 
-  // Category row
+  // Category row (merged categories per Reuters Institute terminology)
   const categoryRow = document.createElement('div');
   categoryRow.className = 'wire-filter-row';
   categoryRow.innerHTML = '<span class="wire-filter-row-label">Type</span>';
-  const categories = ['all','politician','commentator','journalist','creator','think-tank','activist','economist','satirist'];
+  const categories = ['all','reporters','commentators','creators','elected-officials','policy-experts','activists','satirists'];
   const catDisplayNames = {all:'All', ...WIRE_CATEGORY_LABELS};
   categories.forEach(c => {
     const pill = document.createElement('span');
@@ -1213,12 +1246,48 @@ function buildWireFilterBar() {
     categoryRow.appendChild(pill);
   });
   bar.appendChild(categoryRow);
+
+  // Approach row
+  const approachRow = document.createElement('div');
+  approachRow.className = 'wire-filter-row';
+  approachRow.innerHTML = '<span class="wire-filter-row-label">Approach</span>';
+  const approaches = ['all','investigates','explains','argues','reports','entertains'];
+  const approachDisplayNames = {all:'All', ...WIRE_APPROACH_LABELS};
+  approaches.forEach(a => {
+    const pill = document.createElement('span');
+    pill.className = 'wire-filter-pill' + (a === 'all' ? ' active' : '');
+    pill.textContent = approachDisplayNames[a];
+    if (a !== 'all') pill.dataset.approach = a;
+    pill.addEventListener('click', () => {
+      if (a === 'all') {
+        _wireApproachFilters.clear();
+        approachRow.querySelectorAll('.wire-filter-pill').forEach(el => el.classList.remove('active'));
+        pill.classList.add('active');
+      } else {
+        const allPill = approachRow.querySelector('.wire-filter-pill:first-of-type');
+        allPill.classList.remove('active');
+        pill.classList.toggle('active');
+        if (pill.classList.contains('active')) {
+          _wireApproachFilters.add(a);
+        } else {
+          _wireApproachFilters.delete(a);
+        }
+        if (_wireApproachFilters.size === 0) allPill.classList.add('active');
+      }
+      applyWireFilters();
+    });
+    approachRow.appendChild(pill);
+  });
+  bar.appendChild(approachRow);
 }
 
 // Fetch voices for category lookup, then load wire
 fetch(BASE + '/data/voices.json').then(r => r.json()).then(voices => {
   if (Array.isArray(voices)) {
-    voices.forEach(v => { _voiceCategoryMap[v.id] = v.category || ''; });
+    voices.forEach(v => {
+      _voiceCategoryMap[v.id] = v.category || '';
+      _voiceApproachMap[v.id] = v.approach || '';
+    });
   }
 }).catch(() => {}).finally(() => {
   fetch(BASE + '/api/wire').then(r => r.json()).then(entries => {
@@ -1324,10 +1393,16 @@ function renderResults(data) {
     ? `<div class="broadening-note">${escapeHtml(data.broadeningNote)}</div>`
     : '';
 
-  // Build search category filter bar
-  const searchCatLabels = {all:'All', politician:'Politicians', commentator:'Commentators', journalist:'Journalists', creator:'Creators', 'think-tank':'Think Tanks', activist:'Activists'};
+  // Build search category filter bar (merged categories)
+  const searchCatLabels = {all:'All', reporters:'Reporters', commentators:'Commentators', creators:'Creators', 'elected-officials':'Elected Officials', 'policy-experts':'Policy Experts', activists:'Activists', satirists:'Satirists'};
   const searchCatPills = Object.entries(searchCatLabels).map(([key, label]) =>
     `<span class="wire-filter-pill search-cat-filter${key === 'all' ? ' active' : ''}" data-search-cat="${key}">${label}</span>`
+  ).join('');
+
+  // Build search approach filter bar
+  const searchApproachLabels = {all:'All', investigates:'Investigates', explains:'Explains', argues:'Argues', reports:'Reports', entertains:'Entertains'};
+  const searchApproachPills = Object.entries(searchApproachLabels).map(([key, label]) =>
+    `<span class="wire-filter-pill search-approach-filter${key === 'all' ? ' active' : ''}" data-search-approach="${key}"${key !== 'all' ? ` data-approach="${key}"` : ''}>${label}</span>`
   ).join('');
 
   let html = `
@@ -1337,6 +1412,7 @@ function renderResults(data) {
       <div class="topics">${data.matchedTopics.map(t => `<span class="tag">${t}</span>`).join('')}</div>
     </div>
     <div class="search-filter-bar" id="searchCategoryBar">${searchCatPills}</div>
+    <div class="search-filter-bar" id="searchApproachBar">${searchApproachPills}</div>
   `;
 
   // Group by cluster
@@ -1374,8 +1450,9 @@ function renderResults(data) {
       ? `<div style="margin-top:4px; display:flex; flex-wrap:wrap; gap:4px;">${voice.tags.map(t => `<span style="display:inline-block; font-size:0.72em; color:var(--text-secondary); background:var(--bg-surface-2); border:1px solid var(--border-default); border-radius:100px; padding:2px 10px;">${escapeHtml(t)}</span>`).join('')}</div>` : '';
 
     const voiceCategory = _voiceCategoryMap[voice.voiceId] || '';
+    const voiceApproach = _voiceApproachMap[voice.voiceId] || '';
     html += `
-      <div class="voice-card" data-cluster="${(voice.argumentCluster || '').replace(/"/g, '&quot;')}" data-category="${voiceCategory}">
+      <div class="voice-card" data-cluster="${(voice.argumentCluster || '').replace(/"/g, '&quot;')}" data-category="${voiceCategory}" data-approach="${voiceApproach}">
         <div class="voice-header">
           <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96'">
           <div>
@@ -1404,8 +1481,35 @@ function renderResults(data) {
 
   resultsDiv.innerHTML = html;
 
-  // Bind search category filter handlers
+  // Shared filter state for search results
   let _searchCatFilter = null;
+  let _searchApproachFilter = null;
+
+  function applySearchFilters() {
+    document.querySelectorAll('.voice-card').forEach(card => {
+      const cardCat = card.dataset.category || '';
+      const cardApproach = card.dataset.approach || '';
+      let catMatch = true;
+      let approachMatch = true;
+      if (_searchCatFilter) {
+        const matchCats = WIRE_CATEGORY_MAP[_searchCatFilter] || [];
+        catMatch = matchCats.includes(cardCat);
+      }
+      if (_searchApproachFilter) {
+        approachMatch = cardApproach === _searchApproachFilter;
+      }
+      card.style.display = (catMatch && approachMatch) ? '' : 'none';
+    });
+    const visible = document.querySelectorAll('.voice-card:not([style*="display: none"])').length;
+    const header = document.querySelector('.results-header h2');
+    if (header && window._resultsData) {
+      header.innerHTML = (_searchCatFilter || _searchApproachFilter)
+        ? `${visible} voices on this story${windowNote}`
+        : `${window._resultsData.voices.length} voices on this story${windowNote}`;
+    }
+  }
+
+  // Bind search category filter handlers
   document.querySelectorAll('.search-cat-filter').forEach(pill => {
     pill.addEventListener('click', () => {
       const cat = pill.dataset.searchCat;
@@ -1417,17 +1521,23 @@ function renderResults(data) {
         _searchCatFilter = cat;
         pill.classList.add('active');
       }
-      document.querySelectorAll('.voice-card').forEach(card => {
-        const cardCat = card.dataset.category || '';
-        card.style.display = (!_searchCatFilter || cardCat === _searchCatFilter) ? '' : 'none';
-      });
-      const visible = document.querySelectorAll('.voice-card:not([style*="display: none"])').length;
-      const header = document.querySelector('.results-header h2');
-      if (header && window._resultsData) {
-        header.innerHTML = _searchCatFilter
-          ? `${visible} voices on this story${windowNote}`
-          : `${window._resultsData.voices.length} voices on this story${windowNote}`;
+      applySearchFilters();
+    });
+  });
+
+  // Bind search approach filter handlers
+  document.querySelectorAll('.search-approach-filter').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const approach = pill.dataset.searchApproach;
+      document.querySelectorAll('.search-approach-filter').forEach(p => p.classList.remove('active'));
+      if (approach === 'all') {
+        _searchApproachFilter = null;
+        pill.classList.add('active');
+      } else {
+        _searchApproachFilter = approach;
+        pill.classList.add('active');
       }
+      applySearchFilters();
     });
   });
 }
