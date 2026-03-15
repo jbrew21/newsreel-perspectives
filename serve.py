@@ -141,6 +141,61 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 self.wfile.write(b'[]')
             return
 
+        # API: wire — today's voice activity feed
+        if self.path == '/api/wire':
+            from datetime import date
+            today = date.today().isoformat()
+            posts_dir = os.path.join(ROOT, 'data', 'posts')
+            voices_path = os.path.join(ROOT, 'data', 'voices.json')
+
+            # Load voice metadata
+            voice_meta = {}
+            try:
+                with open(voices_path) as f:
+                    for v in json.loads(f.read()):
+                        voice_meta[v['id']] = v
+            except Exception:
+                pass
+
+            all_posts = []
+            try:
+                for voice_dir in os.listdir(posts_dir):
+                    day_file = os.path.join(posts_dir, voice_dir, f'{today}.json')
+                    if not os.path.isfile(day_file):
+                        continue
+                    try:
+                        with open(day_file) as f:
+                            data = json.loads(f.read())
+                    except Exception:
+                        continue
+                    posts = data.get('posts', []) if isinstance(data, dict) else data
+                    meta = voice_meta.get(voice_dir, {})
+                    for p in posts:
+                        text = (p.get('text') or '').strip()
+                        if len(text) < 30:
+                            continue
+                        all_posts.append({
+                            'voiceId': voice_dir,
+                            'voiceName': meta.get('name', p.get('voiceName', voice_dir)),
+                            'photo': meta.get('photo', ''),
+                            'platform': p.get('platform', ''),
+                            'text': text[:200],
+                            'sourceUrl': p.get('sourceUrl', ''),
+                            'timestamp': p.get('timestamp', ''),
+                        })
+            except Exception:
+                pass
+
+            all_posts.sort(key=lambda x: x.get('timestamp', ''), reverse=True)
+            all_posts = all_posts[:100]
+
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps(all_posts).encode())
+            return
+
         # Serve search page
         if self.path == '/search' or self.path.startswith('/search?'):
             self.send_response(200)
