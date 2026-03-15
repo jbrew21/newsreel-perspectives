@@ -23,59 +23,15 @@ PROFILES_DIR = ROOT / "data" / "profiles"
 # ─── Load data ────────────────────────────────────────────────────────────────
 
 def load_users():
-    """Top 50 users from Supabase."""
-    return [
-        {"id":"bc462c42-b880-40ee-aebe-ec8562053fd5","first_name":"Jack","email":"jack@newsreel.co","polls_answered_count":330,"compass_position":0.4728},
-        {"id":"37adcf17-1cd7-4870-9731-15b331ef5864","first_name":"Brijesh","email":"brijesh@newsreel.co","polls_answered_count":252,"compass_position":0.4994},
-        {"id":"74f451e5-142d-464d-b002-5efacc24e535","first_name":"Wyatt","email":"wyatt.feist6@gmail.com","polls_answered_count":241,"compass_position":0.5056},
-        {"id":"bfee7de0-0b1c-4b9f-9e74-c98d2729bb13","first_name":"Nadya","email":"nadya@newsreel.co","polls_answered_count":203,"compass_position":0.4088},
-        {"id":"6bac9f37-ebdc-429b-b2f8-a5958e7c3d7d","first_name":"maddox","email":"mkl5973@psu.edu","polls_answered_count":200,"compass_position":0.5262},
-        {"id":"98953a98-4cd5-499c-9ca8-a529b63d4333","first_name":"Conor","email":"conor.doonan@student.fairfield.edu","polls_answered_count":199,"compass_position":0.3251},
-        {"id":"013e085e-6e2c-4726-a9f8-6901da8e5f25","first_name":"Uddhab","email":"uddhabk@nycstudents.net","polls_answered_count":185,"compass_position":0.4667},
-        {"id":"ee80861c-de3d-4a90-ac33-e3269edc5e5d","first_name":"Edward","email":"eddieee.an@gmail.com","polls_answered_count":180,"compass_position":0.4280},
-        {"id":"362c450c-a4e4-4154-97c1-e50ecc39db41","first_name":"John","email":"jcc9903@nyu.edu","polls_answered_count":175,"compass_position":0.4056},
-        {"id":"bdf6c938-5a55-4d27-a9cd-93b02fb8e9b3","first_name":"Michael","email":"mah7574@psu.edu","polls_answered_count":161,"compass_position":0.4625},
-        {"id":"0038c204-dfe9-4de1-8f83-50d239f119f7","first_name":"Ann","email":"ale5425@psu.edu","polls_answered_count":161,"compass_position":0.3651},
-        {"id":"e3bcc1a2-342a-4269-8f93-fb85ac74914b","first_name":"Phoebe","email":"ple5081@psu.edu","polls_answered_count":161,"compass_position":0.3421},
-        {"id":"cd3875d6-e0ea-4f09-8006-157477416084","first_name":"Talia","email":"talia.scarpa@student.fairfield.edu","polls_answered_count":160,"compass_position":0.4416},
-        {"id":"4c181c77-1524-4a7f-bd8c-8f5656368720","first_name":"Jack ","email":"john.mcandrew1@student.fairfield.edu","polls_answered_count":158,"compass_position":0.3840},
-        {"id":"1a18b8a5-4a4a-4c37-b7aa-dcf1bb0f2532","first_name":"Alma","email":"alma6525@hotmail.com","polls_answered_count":157,"compass_position":0.4172},
-        {"id":"34237418-428f-453b-856c-2bf5e75eafd2","first_name":"Crystal","email":"cs6866@nyu.edu","polls_answered_count":156,"compass_position":0.4739},
-        {"id":"eebcdab4-5ef7-49a2-a7d6-87a9027ecd09","first_name":"Olivia","email":"olivia.marceda@student.fairfield.edu","polls_answered_count":156,"compass_position":0.4907},
-        {"id":"341a2b18-5f48-4070-820a-2695abece01e","first_name":"TJ","email":"tjr6173@psu.edu","polls_answered_count":154,"compass_position":0.4939},
-        {"id":"0fe06258-d319-4874-b0c0-28954c2b9020","first_name":"Vernessa","email":"vernessabeharry16@gmail.com","polls_answered_count":152,"compass_position":0.4388},
-        {"id":"4b2699cc-0bcc-42b4-9f7c-8d7487f4852f","first_name":"Rebecca","email":"rls10050@nyu.edu","polls_answered_count":149,"compass_position":0.2979},
-        {"id":"003fa5ed-dab0-4e56-ad98-542872ed8ead","first_name":"Jane","email":"jane.doe@highered.edu","polls_answered_count":144,"compass_position":0.4522},
-        {"id":"9bba321a-dfd7-427f-9af8-da0d5e977afd","first_name":"James","email":"jpconstant53@gmail.com","polls_answered_count":143,"compass_position":0.5178},
-        {"id":"1dc091a0-e89e-44db-8918-e310d2b2549a","first_name":"Colvin","email":"colvin.iorio@comcast.net","polls_answered_count":141,"compass_position":0.3508},
-        {"id":"34651b7c-3fbf-4ad4-a33d-a51c3dce7c1a","first_name":"Mya","email":"mer9743@nyu.edu","polls_answered_count":134,"compass_position":0.5171},
-        {"id":"92d9713f-9fdf-4f32-9b30-775297e40fb3","first_name":"Makayla","email":"msp9431@nyu.edu","polls_answered_count":129,"compass_position":0.4952},
-        {"id":"ba7fcf0a-bcb7-40d0-9aca-cc1b2e8c2ba3","first_name":"Hannah","email":"hannahhkarp@gmail.com","polls_answered_count":128,"compass_position":0.4982},
-        {"id":"05ffae7a-d4ce-4cec-96cc-83ee1a9def94","first_name":"Brenna","email":"brenna.belasco@student.fairfield.edu","polls_answered_count":127,"compass_position":0.4033},
-        {"id":"d4c2d05f-4ff5-4994-9e45-37de44767ab3","first_name":"Michele ","email":"mmicheleschultz@gmail.com","polls_answered_count":125,"compass_position":0.5032},
-        {"id":"8014d99e-ea49-4842-b08b-953a21b90254","first_name":"Julian","email":"marfman62@gmail.com","polls_answered_count":123,"compass_position":0.3795},
-        {"id":"ebc85b1d-4c9c-4c28-8d48-0762f37ff752","first_name":"mia","email":"mia23reyna23@gmail.com","polls_answered_count":122,"compass_position":0.4944},
-        {"id":"ec0b563a-bb53-4ab5-99a0-defb61a7b2a4","first_name":"Mason","email":"mason.chowaniec@student.fairfield.edu","polls_answered_count":121,"compass_position":0.4613},
-        {"id":"955833d3-1087-4187-a5cb-68d18972743c","first_name":"Eleanor","email":"eleanor.myers@student.fairfield.edu","polls_answered_count":121,"compass_position":0.3911},
-        {"id":"b8b1af32-a029-4be3-8721-2cd77fe4d82e","first_name":"Greta","email":"margaret.sommer@student.fairfield.edu","polls_answered_count":121,"compass_position":0.5095},
-        {"id":"64b70ce0-d327-4713-984a-b2158775c711","first_name":"Evie","email":"ebaser2006@gmail.com","polls_answered_count":121,"compass_position":0.4240},
-        {"id":"4730deaa-1c60-4a15-be44-de1e66908a50","first_name":"Tasruba","email":"tasrubam2607@gmail.com","polls_answered_count":121,"compass_position":0.4958},
-        {"id":"33a2a79a-16bb-46ad-ba69-2fb0edc07739","first_name":"Tiana","email":"tlp5644@psu.edu","polls_answered_count":119,"compass_position":0.4973},
-        {"id":"50734ccc-8d1b-44aa-baa1-422a6393fcb7","first_name":"Julia","email":"julia.now1489@gmail.com","polls_answered_count":115,"compass_position":0.4871},
-        {"id":"81865d00-7a8a-415b-838e-c702fd12806e","first_name":"Liam","email":"ltb9907@nyu.edu","polls_answered_count":114,"compass_position":0.3592},
-        {"id":"34801763-809f-4a65-b854-7ed536878358","first_name":"DJ","email":"djancin14@gmail.com","polls_answered_count":114,"compass_position":0.4477},
-        {"id":"b7cad51f-04db-43eb-b8ab-d664bb996305","first_name":"Corinne","email":"cak6417@psu.edu","polls_answered_count":113,"compass_position":0.4003},
-        {"id":"b516feb3-faec-4ddb-87ce-ce08ba002fb8","first_name":"Xavia","email":"xlo201@nyu.edu","polls_answered_count":111,"compass_position":0.3532},
-        {"id":"1c28a7b7-f29c-478d-b70a-3bcddcc4d23c","first_name":"Daryna","email":"darinkalankina15@gmail.com","polls_answered_count":111,"compass_position":0.4943},
-        {"id":"20b25172-7dcf-4ea4-9fbb-649dd0626e71","first_name":"Sara","email":"srb6371@psu.edu","polls_answered_count":110,"compass_position":0.4322},
-        {"id":"1db01615-4aeb-4e7f-be97-fbfb24a71f30","first_name":"Yuxin","email":"ypm5151@psu.edu","polls_answered_count":110,"compass_position":0.5014},
-        {"id":"ff9f580e-4e50-41f0-9cc7-785e4cc307e1","first_name":"Yehia","email":"yha2010@nyu.edu","polls_answered_count":109,"compass_position":0.4585},
-        {"id":"7755cded-7ca6-41cd-b8b0-3eafde4b0b19","first_name":"Kris","email":"kxv5157@psu.edu","polls_answered_count":109,"compass_position":0.4185},
-        {"id":"476b6835-982a-457d-b0d9-a923c7ca4a95","first_name":"Brooke","email":"bpg5491@psu.edu","polls_answered_count":108,"compass_position":0.3975},
-        {"id":"90679dfc-d0a3-4e1f-8248-be5e7c5439a1","first_name":"Aidan","email":"aidankaffl@gmail.com","polls_answered_count":108,"compass_position":0.5369},
-        {"id":"4b9146ca-90a4-4a60-9e08-d583ed68af4c","first_name":"Sangeeta","email":"sxb6361@psu.edu","polls_answered_count":108,"compass_position":0.3525},
-        {"id":"ce3d2a8a-897d-4947-9e4b-8cf645d2f7ff","first_name":"Betania","email":"bs5019@nyu.edu","polls_answered_count":107,"compass_position":0.3810},
-    ]
+    """Top 50 users from data/mirror-users.json (gitignored, contains PII)."""
+    users_path = ROOT / "data" / "mirror-users.json"
+    if not users_path.exists():
+        raise FileNotFoundError("data/mirror-users.json not found. Export from Supabase first.")
+    return json.loads(users_path.read_text())
+
+def _REMOVED_hardcoded_users():
+    """REMOVED: User data moved to gitignored file. Original had:"""
+    return []  # Data removed — was exposing user PII. Load from data/mirror-users.json instead.
 
 
 def load_poll_responses():
