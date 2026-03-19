@@ -917,7 +917,7 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-sonnet-4-20250514',
+                'model': 'claude-haiku-4-5-20251001',
                 'max_tokens': 2048,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
@@ -1033,7 +1033,7 @@ def log_usage(voices_collected, posts_collected):
     est_output_tokens = _usage_stats['total_output_tokens_est']
 
     # Sonnet pricing: $3/M input, $15/M output
-    est_cost = (est_input_tokens / 1_000_000 * 3.0) + (est_output_tokens / 1_000_000 * 15.0)
+    est_cost = (est_input_tokens / 1_000_000 * 0.80) + (est_output_tokens / 1_000_000 * 4.0)
 
     entry = {
         'date': date,

@@ -575,19 +575,52 @@ async function loadStory() {
   }
 
   try {
-    const resp = await fetch(BASE + '/api/stories');
-    const stories = await resp.json();
+    // Try today's stories first
+    let resp = await fetch(BASE + '/api/stories');
+    let stories = await resp.json();
 
-    if (!stories || stories.length === 0) {
-      showError('No stories available', 'There are no stories loaded right now.');
-      return;
+    let story = (stories || []).find(s => slugify(s.headline) === slug);
+
+    // If not found, try a search lookup as fallback
+    if (!story && slug) {
+      const query = slug.replace(/-/g, ' ');
+      try {
+        const lookupResp = await fetch(BASE + '/api/lookup?q=' + encodeURIComponent(query));
+        const lookupData = await lookupResp.json();
+        if (lookupData && lookupData.voices && lookupData.voices.length > 0) {
+          // Build a synthetic story from lookup results
+          const clusterGroups = {};
+          for (const v of lookupData.voices) {
+            const c = v.argumentCluster || 'Other';
+            if (!clusterGroups[c]) clusterGroups[c] = [];
+            clusterGroups[c].push({
+              voiceId: v.voiceId,
+              voiceName: v.voiceName,
+              photo: v.photo,
+              platform: v.quotes[0]?.platform || '',
+              quote: v.quotes[0]?.quote || '',
+              sourceUrl: v.quotes[0]?.sourceUrl || '',
+            });
+          }
+          story = {
+            headline: lookupData.headline,
+            summary: lookupData.broadeningNote || '',
+            type: 'spectrum',
+            voiceCount: lookupData.voices.length,
+            clusters: Object.entries(clusterGroups).map(([name, voices]) => ({
+              name,
+              voices,
+              voiceCount: voices.length,
+            })),
+          };
+        }
+      } catch (e) { console.log('Lookup fallback failed:', e); }
     }
 
-    // Find story matching slug
-    const story = stories.find(s => slugify(s.headline) === slug);
-
     if (!story) {
-      showError('Story not found', `We couldn't find a story matching "${slug.replace(/-/g, ' ')}". It may have rotated out of today's feed.`);
+      const searchQuery = slug.replace(/-/g, ' ');
+      const searchUrl = PAGES.search + '?q=' + encodeURIComponent(searchQuery);
+      showErrorWithSearch('Story not found', `We couldn't find a story matching "${searchQuery}". It may have rotated out.`, searchQuery, searchUrl);
       return;
     }
 
@@ -712,6 +745,24 @@ function renderStory(story) {
   if (clusters.length > 0) {
     requestAnimationFrame(() => toggleStoryClusterPanel(0));
   }
+}
+
+function showErrorWithSearch(title, message, query, searchUrl) {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('errorState').innerHTML = `
+    <div class="error-state">
+      <h2>${escapeHtml(title)}</h2>
+      <p>${escapeHtml(message)}</p>
+      <a class="action-btn primary" href="${searchUrl}">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        Search for "${escapeHtml(query.substring(0, 40))}"
+      </a>
+      <a class="action-btn" href="${PAGES.home}" style="margin-top:8px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Back to homepage
+      </a>
+    </div>
+  `;
 }
 
 function showError(title, message) {
