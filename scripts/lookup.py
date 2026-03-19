@@ -26,6 +26,22 @@ POSTS_DIR = ROOT / "data" / "posts"
 VOICES_PATH = ROOT / "data" / "voices.json"
 
 
+# Content safety: filter triggering content from search results
+CONTENT_SAFETY_TERMS = [
+    'pedophil', 'child abuse', 'child porn', 'child sex', 'sexual assault on minor',
+    'rape of', 'molest', 'grooming children', 'sex traffick',
+]
+
+
+def is_content_safe(text):
+    """Check if text contains potentially triggering content that should be flagged."""
+    text_lower = text.lower()
+    for term in CONTENT_SAFETY_TERMS:
+        if term in text_lower:
+            return False
+    return True
+
+
 def get_voice_photo(meta, voice_name):
     """Get photo URL from voice metadata, falling back to ui-avatars only if no real photo exists."""
     photo = meta.get('photo', '') if meta else ''
@@ -139,7 +155,7 @@ Example: ["iran-war", "iran-military-strike", "trump-iran", "military-casualties
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-sonnet-4-20250514',
+                'model': 'claude-haiku-4-5-20251001',
                 'max_tokens': 512,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
@@ -165,7 +181,7 @@ Example: ["iran-war", "iran-military-strike", "trump-iran", "military-casualties
 
 
 def _keyword_match(headline, available_topics):
-    """Simple keyword matching, filtering generic topics."""
+    """Keyword matching with synonym expansion, filtering generic topics."""
     GENERIC_TOPICS = {
         'politics', 'american-politics', 'international-politics', 'global-politics',
         'social-issues', 'culture-social', 'social-commentary', 'political-commentary',
@@ -173,11 +189,60 @@ def _keyword_match(headline, available_topics):
         'government-tech', 'crime-media', 'religion', 'entertainment-news',
         'conspiracy-predictions', 'occult-conspiracy', 'propaganda-media',
     }
+
+    # Synonym/concept expansion: map common search terms to topic slugs
+    CONCEPT_MAP = {
+        'black lives matter': ['racial-justice', 'police-accountability', 'criminal-justice', 'race-politics', 'blm', 'protests', 'civil-rights'],
+        'blm': ['racial-justice', 'police-accountability', 'criminal-justice', 'race-politics', 'protests', 'civil-rights'],
+        'police brutality': ['police-accountability', 'criminal-justice', 'racial-justice', 'civil-rights', 'law-enforcement'],
+        'police': ['police-accountability', 'criminal-justice', 'law-enforcement', 'crime'],
+        'reproductive rights': ['abortion', 'reproductive-rights', 'womens-rights', 'roe-wade', 'supreme-court'],
+        'abortion': ['abortion', 'reproductive-rights', 'womens-rights', 'roe-wade', 'supreme-court'],
+        'voting': ['elections', 'voting-rights', 'voter-fraud', 'election-integrity', 'democracy'],
+        'housing': ['housing', 'housing-policy', 'homelessness', 'affordable-housing', 'economy'],
+        'education': ['education', 'education-policy', 'school-choice', 'dei-education', 'higher-education'],
+        'climate': ['climate', 'climate-change', 'environment', 'energy-policy', 'green-energy'],
+        'guns': ['gun-control', 'gun-rights', 'second-amendment', 'mass-shootings'],
+        'gun control': ['gun-control', 'gun-rights', 'second-amendment', 'mass-shootings'],
+        'healthcare': ['healthcare', 'health-policy', 'medicare', 'public-health'],
+        'lgbtq': ['lgbtq', 'lgbtq-rights', 'trans-rights', 'gender-identity'],
+        'trans': ['trans-rights', 'lgbtq-rights', 'gender-identity'],
+        'racism': ['racial-justice', 'race-politics', 'civil-rights', 'dei'],
+        'immigration': ['immigration', 'border-security', 'deportation', 'ice', 'asylum'],
+        'defund the police': ['police-accountability', 'criminal-justice', 'racial-justice', 'law-enforcement', 'protests'],
+        'racial profiling': ['police-accountability', 'racial-justice', 'criminal-justice', 'civil-rights'],
+        'stop and frisk': ['police-accountability', 'criminal-justice', 'racial-justice', 'civil-rights'],
+        'affirmative action': ['racial-justice', 'dei', 'education', 'supreme-court', 'civil-rights'],
+        'critical race theory': ['education', 'racial-justice', 'culture-war', 'dei'],
+        'school to prison pipeline': ['criminal-justice', 'education', 'racial-justice'],
+        'mass incarceration': ['criminal-justice', 'racial-justice', 'prison-reform'],
+        'voter suppression': ['voting-rights', 'elections', 'racial-justice', 'democracy'],
+        'gerrymandering': ['elections', 'voting-rights', 'redistricting', 'democracy'],
+        'student debt': ['education', 'economic-inequality', 'student-loans'],
+        'minimum wage': ['labor', 'economic-inequality', 'economy'],
+        'universal healthcare': ['healthcare', 'health-policy', 'medicare', 'progressive'],
+        'book bans': ['education', 'censorship', 'culture-war', 'free-speech'],
+        'dei': ['dei', 'racial-justice', 'affirmative-action', 'culture-war'],
+        'reparations': ['racial-justice', 'economic-inequality', 'civil-rights'],
+        'redlining': ['housing', 'racial-justice', 'economic-inequality', 'civil-rights'],
+        'food desert': ['public-health', 'economic-inequality', 'racial-justice', 'urban-policy'],
+        'title ix': ['education', 'gender-equity', 'womens-rights', 'sports'],
+        'intersectionality': ['racial-justice', 'gender-equity', 'civil-rights', 'social-justice'],
+    }
+
     headline_lower = headline.lower()
     headline_words = set(re.findall(r'[a-z]+', headline_lower))
     matches = []
+
+    # Check concept map first
+    for concept, related_topics in CONCEPT_MAP.items():
+        if concept in headline_lower:
+            for t in related_topics:
+                if t in available_topics and t not in matches:
+                    matches.append(t)
+
     for topic in available_topics:
-        if topic in GENERIC_TOPICS:
+        if topic in GENERIC_TOPICS or topic in matches:
             continue
         topic_words = topic.replace('-', ' ').split()
         # Match if any topic word (3+ chars) appears in headline
@@ -237,15 +302,24 @@ def fulltext_search(headline, dates):
                 if url in seen_urls:
                     continue
 
-                text_lower = p.get('text', '').lower()
+                post_text = p.get('text', '')
+                # Skip content that may be triggering
+                if not is_content_safe(post_text):
+                    continue
+                text_lower = post_text.lower()
                 matched_words = [w for w in keywords if w in text_lower]
 
-                if len(keywords) <= 3:
+                if len(keywords) <= 2:
+                    # For short queries (1-2 words), require all keywords
                     if len(matched_words) < len(keywords):
+                        continue
+                elif len(keywords) <= 4:
+                    # For medium queries, require at least half
+                    if len(matched_words) < max(1, len(keywords) // 2):
                         continue
                 else:
                     match_ratio = len(matched_words) / len(keywords)
-                    if match_ratio < 0.5:
+                    if match_ratio < 0.4:
                         continue
 
                 seen_urls.add(url)
@@ -321,6 +395,8 @@ RULES:
 - Show fractures within sides: e.g. both Tucker Carlson and Ben Shapiro are right-wing, but might be in different clusters ("anti-war right" vs "pro-intervention hawk")
 - If a voice's quotes don't clearly relate to the story, put them in a cluster called "tangential"
 - Aim for 4-6 clusters with 2-8 voices each
+- ALWAYS include a "Media Criticism" cluster if any voices are critiquing how the story is being covered (use exactly "Media Criticism", not "Media Coverage Critique" or other variants)
+- Use consistent, plain-language cluster names. Avoid jargon.
 
 Return ONLY a JSON object mapping voice name to cluster label.
 Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention hawk", "Dan Crenshaw": "pro-intervention hawk", "Jon Stewart": "anti-war left", "Pod Save America": "anti-war left"}}"""
@@ -430,6 +506,10 @@ def lookup_story(headline, days=None):
             seen_urls.add(url)
 
             vid = entry['voiceId']
+            # Content safety filter
+            quote_text = entry.get('quote', '')
+            if not is_content_safe(quote_text):
+                continue
             if vid not in voices_found:
                 voices_found[vid] = {
                     'voiceName': entry['voiceName'],
@@ -437,7 +517,6 @@ def lookup_story(headline, days=None):
                     'quotes': [],
                 }
             # Score by how topic-specific this quote is (not by length)
-            quote_text = entry.get('quote', '')
             quote_score = 1
 
             voices_found[vid]['topics'].append(topic)

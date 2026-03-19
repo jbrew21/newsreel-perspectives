@@ -157,6 +157,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             except Exception:
                 pass
 
+            # Content safety terms to filter from wire feed
+            safety_terms = ['pedophil', 'child abuse', 'child porn', 'child sex', 'molest', 'sex traffick']
+
             all_posts = []
             try:
                 for voice_dir in os.listdir(posts_dir):
@@ -173,6 +176,10 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     for p in posts:
                         text = (p.get('text') or '').strip()
                         if len(text) < 30:
+                            continue
+                        # Content safety filter
+                        text_lower = text.lower()
+                        if any(term in text_lower for term in safety_terms):
                             continue
                         all_posts.append({
                             'voiceId': voice_dir,
