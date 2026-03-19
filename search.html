@@ -1031,8 +1031,10 @@ async function loadConversation() {
       // Face bubbles (always visible, clickable to reveal quote)
       const faceBubblesHtml = allVoices.map((v, vi) => {
         const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
+        const faceLens = getVoiceLens(v.voiceId);
+        const faceTooltip = faceLens ? escapeHtml(v.voiceName) + ' · ' + escapeHtml(faceLens).substring(0, 60) : escapeHtml(v.voiceName);
         return `<div class="cluster-face-link" data-cluster-idx="${si}-${ci}" data-voice-idx="${vi}" data-voice-id="${v.voiceId}" data-voice-name="${escapeHtml(v.voiceName)}" data-voice-photo="${photo}" data-voice-quote="${escapeHtml(v.quote || '')}" data-voice-platform="${v.platform || ''}" data-source-url="${v.sourceUrl || ''}" onclick="event.stopPropagation(); handleFaceClick(this);">
-          <span class="cluster-face-tooltip">${escapeHtml(v.voiceName)}</span>
+          <span class="cluster-face-tooltip">${faceTooltip}</span>
           <img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
         </div>`;
       }).join('');
@@ -1610,6 +1612,7 @@ function renderResults(data) {
           <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96'">
           <div>
             <div class="voice-name"><a href="/voice/${voice.voiceId}" style="color:var(--text-primary); text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-primary)'">${voice.voiceName}</a></div>
+            ${voice.lens ? `<div style="font-size:12px;color:var(--text-muted);margin-top:2px;line-height:1.4;">${escapeHtml(voice.lens)}</div>` : ''}
             ${clusterLabel ? `<div style="margin-top:4px;">${clusterLabel}</div>` : ''}
             ${tagsHtml}
           </div>
@@ -1717,6 +1720,13 @@ function escapeHtml(text) {
 
 const PLATFORM_LABELS_GLOBAL = {x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'};
 
+// Voice lens lookup
+let _voiceLensMap = {};
+fetch(BASE + '/data/voices.json').then(r => r.json()).then(voices => {
+  for (const v of voices) _voiceLensMap[v.id] = v.lens || '';
+}).catch(() => {});
+function getVoiceLens(voiceId) { return _voiceLensMap[voiceId] || ''; }
+
 // Tag glossary for tooltips
 const TAG_GLOSSARY = {
   'hawkish': 'Favors strong military action or aggressive foreign policy',
@@ -1779,6 +1789,7 @@ function handleFaceClick(faceEl) {
   img.classList.add('selected');
 
   // Build quote card
+  const voiceLens = getVoiceLens(voiceId);
   const fallbackPhoto = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(voiceName) + '&background=252528&color=a1a1aa&size=80';
   container.innerHTML = '<div class="cluster-selected-quote">' +
     '<img class="csq-photo" src="' + photo + '" alt="" onerror="this.src=\'' + fallbackPhoto + '\'">' +
@@ -1787,6 +1798,7 @@ function handleFaceClick(faceEl) {
         '<span class="csq-name">' + voiceName + '</span>' +
         (platformLabel ? '<span class="csq-platform">' + platformLabel + '</span>' : '') +
       '</div>' +
+      (voiceLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(voiceLens) + '</div>' : '') +
       (quote ? '<div class="csq-quote">"' + quote + '"</div>' : '<div class="csq-quote" style="color:var(--text-muted); font-style:italic;">No quote available</div>') +
       '<a class="csq-profile-link" href="' + (sourceUrl || BASE + '/voice/' + voiceId) + '"' + (sourceUrl ? ' target="_blank"' : '') + ' onclick="event.stopPropagation();">View source &rarr;</a>' +
     '</div>' +
@@ -1833,6 +1845,7 @@ function toggleTopClusterPanel(si, ci) {
   if (bq && bq.quote) {
     const bqPhoto = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
     const bqPlatform = platformLabels[bq.platform] || bq.platform || '';
+    const bqLens = getVoiceLens(bq.voiceId);
     bestQuoteHtml = `<div class="cluster-voice-row" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);">
       <img class="cluster-voice-photo" src="${bqPhoto}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
       <div class="cluster-voice-body">
@@ -1840,6 +1853,7 @@ function toggleTopClusterPanel(si, ci) {
           <a href="${BASE}/voice/${bq.voiceId || ''}" class="cluster-voice-name" onclick="event.stopPropagation();">${escapeHtml(bq.voiceName)}</a>
           ${bqPlatform ? '<span class="cluster-voice-platform">' + bqPlatform + '</span>' : ''}
         </div>
+        ${bqLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(bqLens) + '</div>' : ''}
         <div class="cluster-voice-quote">"${escapeHtml(bq.quote.substring(0, 250))}"</div>
       </div>
     </div>`;
@@ -1852,6 +1866,7 @@ function toggleTopClusterPanel(si, ci) {
     const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
     const quote = (v.quote || '').substring(0, 200);
     const pLabel = platformLabels[v.platform] || v.platform || '';
+    const vLens = getVoiceLens(v.voiceId);
     return `<div class="cluster-voice-row">
       <img class="cluster-voice-photo" src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
       <div class="cluster-voice-body">
@@ -1859,6 +1874,7 @@ function toggleTopClusterPanel(si, ci) {
           <a href="${BASE}/voice/${v.voiceId}" class="cluster-voice-name" onclick="event.stopPropagation();">${escapeHtml(v.voiceName)}</a>
           <span class="cluster-voice-platform">${pLabel}</span>
         </div>
+        ${vLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(vLens) + '</div>' : ''}
         ${quote ? '<div class="cluster-voice-quote">"' + escapeHtml(quote) + '"</div>' : ''}
         ${v.sourceUrl ? '<a class="cluster-voice-link" href="' + v.sourceUrl + '" target="_blank" onclick="event.stopPropagation();">View source &rarr;</a>' : ''}
       </div>
