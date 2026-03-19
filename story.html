@@ -545,6 +545,17 @@ const CLUSTER_COLORS = [
   '#4ADE80', '#22D3EE', '#F472B6', '#FB923C',
 ];
 
+// Voice metadata lookup (lens, tags)
+let _voiceMeta = {};
+fetch(BASE + '/data/voices.json').then(r => r.json()).then(voices => {
+  for (const v of voices) _voiceMeta[v.id] = v;
+}).catch(() => {});
+
+function getVoiceLens(voiceId) {
+  const m = _voiceMeta[voiceId];
+  return m ? m.lens || '' : '';
+}
+
 const PLATFORM_LABELS = {
   x: 'X', youtube: 'YouTube', bluesky: 'Bluesky',
   instagram: 'Instagram', tiktok: 'TikTok',
@@ -826,6 +837,7 @@ function handleFaceClick(faceEl) {
   img.classList.add('selected');
 
   // Build quote card
+  const voiceLens = getVoiceLens(voiceId);
   const fallbackPhoto = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(voiceName) + '&background=252528&color=a1a1aa&size=80';
   container.innerHTML = `<div class="cluster-selected-quote">
     <img class="csq-photo" src="${photo}" alt="" onerror="this.src='${fallbackPhoto}'">
@@ -834,6 +846,7 @@ function handleFaceClick(faceEl) {
         <span class="csq-name">${voiceName}</span>
         ${platformLabel ? '<span class="csq-platform">' + platformLabel + '</span>' : ''}
       </div>
+      ${voiceLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(voiceLens) + '</div>' : ''}
       ${quote ? '<div class="csq-quote">"' + quote + '"</div>' : '<div class="csq-quote" style="color:var(--text-muted); font-style:italic;">No quote available</div>'}
       <a class="csq-profile-link" href="${sourceUrl || BASE + '/voice/' + voiceId}"${sourceUrl ? ' target="_blank"' : ''}>View source &rarr;</a>
     </div>
@@ -875,6 +888,7 @@ function toggleStoryClusterPanel(ci) {
   if (bq && bq.quote) {
     const bqPhoto = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
     const bqPlatform = PLATFORM_LABELS[bq.platform] || bq.platform || '';
+    const bqLens = getVoiceLens(bq.voiceId);
     bestQuoteHtml = `<div class="cluster-voice-row" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);">
       <img class="cluster-voice-photo" src="${bqPhoto}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
       <div class="cluster-voice-body">
@@ -882,6 +896,7 @@ function toggleStoryClusterPanel(ci) {
           <a href="${BASE}/voice/${bq.voiceId || ''}" class="cluster-voice-name">${escapeHtml(bq.voiceName)}</a>
           ${bqPlatform ? '<span class="cluster-voice-platform">' + bqPlatform + '</span>' : ''}
         </div>
+        ${bqLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(bqLens) + '</div>' : ''}
         <div class="cluster-voice-quote">"${escapeHtml(bq.quote.substring(0, 250))}"</div>
       </div>
     </div>`;
@@ -892,6 +907,7 @@ function toggleStoryClusterPanel(ci) {
     const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
     const quote = (v.quote || '').substring(0, 250);
     const pLabel = PLATFORM_LABELS[v.platform] || v.platform || '';
+    const vLens = getVoiceLens(v.voiceId);
     return `<div class="cluster-voice-row">
       <img class="cluster-voice-photo" src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
       <div class="cluster-voice-body">
@@ -899,6 +915,7 @@ function toggleStoryClusterPanel(ci) {
           <a href="${BASE}/voice/${v.voiceId}" class="cluster-voice-name">${escapeHtml(v.voiceName)}</a>
           <span class="cluster-voice-platform">${pLabel}</span>
         </div>
+        ${vLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(vLens) + '</div>' : ''}
         ${quote ? '<div class="cluster-voice-quote">"' + escapeHtml(quote) + '"</div>' : ''}
         ${v.sourceUrl ? '<a class="cluster-voice-link" href="' + v.sourceUrl + '" target="_blank">View source &rarr;</a>' : ''}
       </div>
