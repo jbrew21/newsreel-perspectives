@@ -287,18 +287,20 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_json(health)
             return
 
-        # ── Rate limit check ──
-        if is_rate_limited(ip, RATE_LIMIT_GENERAL):
-            self.send_json({'error': 'Rate limited. Try again in a minute.'}, status=429)
-            return
-
-        # ── API: Search/Lookup ──
+        # ── Rate limits ──
+        # Search gets its own tighter bucket; we skip the general bucket for lookup
+        # so a search request doesn't burn two slots.
         if self.path.startswith('/api/lookup'):
-            # Additional rate limit for search (costs money)
             if is_rate_limited(ip, RATE_LIMIT_SEARCH):
                 self.send_json({'error': 'Search rate limited. Max 10 per minute.'}, status=429)
                 return
+        else:
+            if is_rate_limited(ip, RATE_LIMIT_GENERAL):
+                self.send_json({'error': 'Rate limited. Try again in a minute.'}, status=429)
+                return
 
+        # ── API: Search/Lookup ──
+        if self.path.startswith('/api/lookup'):
             parsed = urlparse(self.path)
             params = parse_qs(parsed.query)
             raw_query = params.get('q', [''])[0]
@@ -417,15 +419,20 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # ── Photos (with caching headers) ──
         if self.path.startswith('/photos/'):
             filename = self.path.split('/photos/')[1].split('?')[0]
-            # Sanitize filename
-            if '/' in filename or '..' in filename:
+            # Strict filename sanitization: only allow safe image filenames
+            ALLOWED_PHOTO_EXTS = {'.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
+                                   '.png': 'image/png', '.webp': 'image/webp', '.gif': 'image/gif'}
+            if '/' in filename or '\\' in filename or '..' in filename:
+                self.send_error(400)
+                return
+            ext = os.path.splitext(filename)[1].lower()
+            if ext not in ALLOWED_PHOTO_EXTS:
                 self.send_error(400)
                 return
             photo_path = os.path.join(ROOT, 'data', 'photos', filename)
             if os.path.exists(photo_path):
-                content_type = 'image/png' if filename.endswith('.png') else 'image/jpeg'
                 self.send_response(200)
-                self.send_header('Content-Type', content_type)
+                self.send_header('Content-Type', ALLOWED_PHOTO_EXTS[ext])
                 self.send_header('Cache-Control', 'public, max-age=604800')
                 self.send_header('Access-Control-Allow-Origin', '*')
                 self.send_header('X-Content-Type-Options', 'nosniff')
@@ -488,9 +495,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             body = self.rfile.read(content_length).decode()
             try:
                 review = json.loads(body)
+                if not isinstance(review, dict):
+                    self.send_json({'error': 'Review must be a JSON object'}, status=400)
+                    return
 
                 reviews_path = os.path.join(ROOT, 'data', 'editorial-reviews.json')
                 existing = load_json_file(reviews_path) or []
+                # Cap stored reviews to prevent unbounded disk growth
+                existing = existing[-999:]
                 existing.append(review)
                 with open(reviews_path, 'w') as f:
                     f.write(json.dumps(existing, indent=2))
@@ -499,7 +511,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     overrides_path = os.path.join(ROOT, 'data', 'editorial-overrides.json')
                     overrides = load_json_file(overrides_path) or {}
                     headline = review.get('headline', '')
-                    if headline:
+                    # Validate headline is a non-empty string within reasonable length
+                    if headline and isinstance(headline, str) and len(headline) <= 500:
                         overrides[headline] = review['overrides']
                         with open(overrides_path, 'w') as f:
                             f.write(json.dumps(overrides, indent=2))

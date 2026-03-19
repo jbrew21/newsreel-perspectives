@@ -193,6 +193,22 @@
 </footer>
 
 <script>
+/* Delegated image fallback — avoids unsafe inline onerror */
+document.addEventListener('error', function(e) {
+  const el = e.target;
+  if (el.tagName !== 'IMG' || el.dataset.fallbackApplied) return;
+  el.dataset.fallbackApplied = 'true';
+  const name = el.dataset.fallbackName || el.alt || 'User';
+  el.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name) + '&background=1c1c1f&color=a1a1aa&size=80';
+}, true);
+
+function safeHref(url) {
+  if (!url || typeof url !== 'string') return '#';
+  const t = url.trim();
+  if (/^javascript:/i.test(t)) return '#';
+  return t;
+}
+
 const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
 const PAGES = { home: BASE || '/', search: BASE + '/search', voices: BASE + '/voices', methodology: BASE + '/methodology' };
 document.getElementById('homeLink').href = PAGES.home;
@@ -202,6 +218,29 @@ document.getElementById('voicesLink').href = PAGES.voices;
 
 const COLORS = ['#60A5FA','#F87171','#FBBF24','#A78BFA','#4ADE80','#22D3EE','#F472B6','#FB923C'];
 const PLATFORM = {x:'X',youtube:'YouTube',bluesky:'Bluesky',instagram:'Instagram',tiktok:'TikTok',substack:'Substack',podcast:'Podcast'};
+
+/* Delegated share button — replaces inline onclick */
+document.addEventListener('click', function(e) {
+  if (e.target.closest('#shareBtn')) shareStory();
+});
+
+/* Delegated accordion handler — replaces inline onclick */
+document.addEventListener('click', function(e) {
+  const header = e.target.closest('[data-cluster-toggle]');
+  if (!header) return;
+  const card = header.parentElement;
+  const isOpen = card.classList.toggle('open');
+  header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  const header = e.target.closest('[data-cluster-toggle]');
+  if (!header) return;
+  e.preventDefault();
+  const card = header.parentElement;
+  const isOpen = card.classList.toggle('open');
+  header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
 
 let _voiceMeta = {};
 fetch(BASE + '/data/voices.json').then(r=>r.json()).then(voices => {
@@ -223,6 +262,7 @@ async function loadStory() {
 
   try {
     const resp = await fetch(BASE + '/api/stories');
+    if (!resp.ok) throw new Error('API returned ' + resp.status);
     const stories = await resp.json();
     let story = (stories||[]).find(s => slugify(s.headline) === slug);
 
@@ -298,7 +338,7 @@ function renderStory(story) {
       const quote = (v.quote || '').substring(0, 280);
 
       return `<div class="voice-row">
-        <img class="voice-row-photo" src="${photo}" alt="${esc(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=1c1c1f&color=a1a1aa&size=80'">
+        <img class="voice-row-photo" src="${photo}" alt="${esc(v.voiceName)}" data-fallback-name="${esc(v.voiceName)}">
         <div class="voice-row-body">
           <div>
             <a href="${BASE}/voice/${v.voiceId}" class="voice-row-name">${esc(v.voiceName)}</a>
@@ -306,7 +346,7 @@ function renderStory(story) {
           </div>
           ${lens ? `<div class="voice-row-lens">${esc(lens)}</div>` : ''}
           ${quote ? `<div class="voice-row-quote">"${esc(quote)}"</div>` : ''}
-          ${v.sourceUrl ? `<a class="voice-row-source" href="${v.sourceUrl}" target="_blank">View source &rarr;</a>` : ''}
+          ${v.sourceUrl ? `<a class="voice-row-source" href="${safeHref(v.sourceUrl)}" target="_blank">View source &rarr;</a>` : ''}
         </div>
       </div>`;
     }).join('');
@@ -314,7 +354,7 @@ function renderStory(story) {
     const overflow = count - Math.min(voices.length, 12);
 
     clustersHtml += `<div class="cluster-card${isFirst ? ' open' : ''}" style="--cluster-color:${color};">
-      <div class="cluster-header" onclick="this.parentElement.classList.toggle('open')">
+      <div class="cluster-header" role="button" tabindex="0" aria-expanded="${isFirst ? 'true' : 'false'}" data-cluster-toggle>
         <div class="cluster-name" style="color:${color};">${esc(cluster.name)}</div>
         <div class="cluster-count">${count} voices</div>
         <svg class="cluster-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
@@ -331,7 +371,7 @@ function renderStory(story) {
       <div class="story-meta">${totalVoices} voices &middot; ${clusters.length} positions &middot; ${allPlatforms.size || 7} platforms</div>
       <h1 class="story-headline">${esc(story.headline)}</h1>
       ${story.summary ? `<p class="story-summary">${esc(story.summary)}</p>` : ''}
-      <button class="share-btn" onclick="shareStory()">
+      <button class="share-btn" id="shareBtn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
         Share
       </button>
@@ -354,9 +394,22 @@ function showError(title, msg) {
 }
 
 function showErrorWithSearch(title, msg, query, searchUrl) {
-  document.getElementById('content').innerHTML = `<div class="error-state"><h2>${esc(title)}</h2><p>${esc(msg)}</p>
-    <a class="error-btn error-btn-primary" href="${searchUrl}">Search for "${esc(query.substring(0,40))}"</a>
-    <br><a class="error-btn error-btn-secondary" href="${PAGES.home}">Back to stories</a></div>`;
+  const div = document.createElement('div');
+  div.className = 'error-state';
+  div.innerHTML = `<h2>${esc(title)}</h2><p>${esc(msg)}</p>`;
+  const a1 = document.createElement('a');
+  a1.className = 'error-btn error-btn-primary';
+  a1.href = searchUrl; // searchUrl is built from PAGES.search + encodeURIComponent, safe
+  a1.textContent = `Search for "${query.substring(0,40)}"`;
+  div.appendChild(a1);
+  div.appendChild(document.createElement('br'));
+  const a2 = document.createElement('a');
+  a2.className = 'error-btn error-btn-secondary';
+  a2.href = PAGES.home;
+  a2.textContent = 'Back to stories';
+  div.appendChild(a2);
+  document.getElementById('content').innerHTML = '';
+  document.getElementById('content').appendChild(div);
 }
 
 function shareStory() {
