@@ -10,313 +10,613 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
+  /* ================================================================
+     DESIGN TOKENS
+     8px grid. Intentional gray ramp (Linear/Vercel style).
+     ================================================================ */
   :root {
-    --bg-base: #0a0a0b;
-    --bg-card: #141416;
-    --bg-elevated: #1c1c1f;
-    --bg-hover: #252528;
+    /* Surface ramp -- each step is intentional */
+    --bg-base: #09090b;
+    --bg-subtle: #0f0f12;
+    --bg-card: #141417;
+    --bg-elevated: #1a1a1f;
+    --bg-hover: #222228;
+    --bg-active: #2a2a32;
+
+    /* Text ramp */
     --text-primary: #fafafa;
     --text-secondary: #a1a1aa;
-    --text-muted: #8b8b96;
-    --text-dim: #6e6e7a;
+    --text-muted: #71717a;
+    --text-dim: #52525b;
+
+    /* Borders */
     --border: rgba(255,255,255,0.06);
+    --border-hover: rgba(255,255,255,0.12);
+    --border-focus: rgba(255,99,67,0.5);
+
+    /* Accent */
     --accent: #FF6343;
-    --accent-bg: rgba(255,99,67,0.12);
+    --accent-hover: #e5553a;
+    --accent-bg: rgba(255,99,67,0.10);
+    --accent-bg-hover: rgba(255,99,67,0.16);
+
+    /* Spacing (8px grid) */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 32px;
+    --space-8: 40px;
+    --space-9: 48px;
+    --space-10: 64px;
+
+    /* Typography scale */
+    --text-xs: 11px;
+    --text-sm: 13px;
+    --text-base: 15px;
+    --text-lg: 17px;
+    --text-xl: 20px;
+    --text-2xl: 28px;
+    --text-3xl: 36px;
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --radius-full: 100px;
+
+    /* Transitions */
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-fast: 150ms;
+    --duration-normal: 200ms;
+    --duration-slow: 300ms;
   }
 
-  * { margin:0; padding:0; box-sizing:border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
   /* ── SKIP LINK ── */
   .skip-link {
-    position:absolute; top:-100%; left:16px; z-index:100;
-    background:var(--accent); color:#fff; padding:12px 24px;
-    border-radius:0 0 8px 8px; font-weight:600; font-size:14px;
-    text-decoration:none; transition:top 0.2s;
+    position: absolute; top: -100%; left: var(--space-4); z-index: 100;
+    background: var(--accent); color: #fff;
+    padding: var(--space-3) var(--space-6);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    font-weight: 600; font-size: var(--text-sm);
+    text-decoration: none; transition: top var(--duration-normal);
   }
-  .skip-link:focus { top:0; }
+  .skip-link:focus { top: 0; }
 
   body {
-    font-family: 'DM Sans', -apple-system, sans-serif;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: var(--bg-base);
     color: var(--text-secondary);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  :focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
-  :focus:not(:focus-visible) { outline:none; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  :focus:not(:focus-visible) { outline: none; }
 
   /* ── NAV ── */
-  .nav { max-width:680px; margin:0 auto; padding:20px 20px 0; display:flex; justify-content:space-between; align-items:center; }
-  .nav-brand { display:flex; align-items:baseline; gap:0; text-decoration:none; }
-  .nav-brand-text { font-size:1.6em; font-weight:700; color:var(--text-primary); letter-spacing:-0.03em; }
-  .nav-brand-accent { color:var(--accent); }
-  .nav-tagline { font-size:12px; color:var(--text-muted); margin-top:2px; letter-spacing:0.02em; }
-  .nav-actions { display:flex; align-items:center; gap:8px; }
+  .nav {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-5) var(--space-5) 0;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-brand {
+    display: flex; align-items: baseline; gap: 0; text-decoration: none;
+    transition: opacity var(--duration-fast);
+  }
+  .nav-brand:hover { opacity: 0.85; }
+  .nav-brand:active { opacity: 0.7; }
+  .nav-brand-text {
+    font-size: var(--text-xl); font-weight: 700;
+    color: var(--text-primary); letter-spacing: -0.03em;
+  }
+  .nav-brand-accent { color: var(--accent); }
+  .nav-tagline {
+    font-size: var(--text-xs); color: var(--text-dim);
+    margin-top: 2px; letter-spacing: 0.02em;
+  }
+  .nav-actions { display: flex; align-items: center; gap: var(--space-2); }
   .nav-method-btn {
-    font-size:13px; font-weight:500; color:var(--text-muted);
-    text-decoration:none; padding:8px 12px; transition:color 0.2s;
+    font-size: var(--text-sm); font-weight: 500; color: var(--text-muted);
+    text-decoration: none; padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    transition: color var(--duration-fast), background var(--duration-fast);
   }
-  .nav-method-btn:hover { color:var(--text-primary); }
+  .nav-method-btn:hover { color: var(--text-primary); background: var(--bg-elevated); }
   .nav-voices-btn {
-    font-size:13px; font-weight:600; color:var(--text-secondary);
-    background:var(--bg-elevated); border:1px solid var(--border);
-    border-radius:20px; padding:8px 16px; text-decoration:none;
-    transition:all 0.2s;
+    font-size: var(--text-sm); font-weight: 600; color: var(--text-secondary);
+    background: var(--bg-elevated); border: 1px solid var(--border);
+    border-radius: var(--radius-full); padding: var(--space-2) var(--space-4);
+    text-decoration: none;
+    transition: all var(--duration-normal) var(--ease-out);
   }
-  .nav-voices-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .nav-voices-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
+  .nav-voices-btn:active { transform: scale(0.97); }
 
   /* ── HERO ── */
-  .hero-section { max-width:680px; margin:0 auto; padding:32px 20px 8px; text-align:center; }
+  .hero-section {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-7) var(--space-5) var(--space-2);
+    text-align: center;
+  }
   .hero-title {
-    font-size:2em; font-weight:700; color:var(--text-primary);
-    letter-spacing:-0.03em; line-height:1.2; margin-bottom:8px;
+    font-size: var(--text-2xl); font-weight: 700;
+    color: var(--text-primary); letter-spacing: -0.03em;
+    line-height: 1.2; margin-bottom: var(--space-2);
   }
   .hero-subtitle {
-    font-size:15px; color:var(--text-muted); line-height:1.5; max-width:480px; margin:0 auto;
+    font-size: var(--text-base); color: var(--text-muted);
+    line-height: 1.6; max-width: 480px; margin: 0 auto;
   }
-  .hero-subtitle strong { color:var(--text-primary); font-weight:600; }
+  .hero-subtitle strong { color: var(--text-primary); font-weight: 600; }
 
   /* ── SEARCH ── */
-  .search-section { max-width:680px; margin:0 auto; padding:16px 20px 0; }
-  .search-box { position:relative; }
+  .search-section { max-width: 680px; margin: 0 auto; padding: var(--space-4) var(--space-5) 0; }
+  .search-box { position: relative; }
   .search-box input {
-    width:100%; padding:14px 80px 14px 16px;
-    font-size:15px; font-family:'DM Sans',sans-serif;
-    border:1px solid var(--border); border-radius:12px;
-    background:var(--bg-card); color:var(--text-primary);
-    outline:none; transition:border 0.2s;
+    width: 100%;
+    padding: 14px 84px 14px var(--space-4);
+    font-size: var(--text-base); font-family: inherit;
+    border: 1px solid var(--border); border-radius: var(--radius-lg);
+    background: var(--bg-card); color: var(--text-primary);
+    outline: none;
+    transition: border-color var(--duration-normal), box-shadow var(--duration-normal);
   }
-  .search-box input:focus { border-color:var(--accent); }
-  .search-box input::placeholder { color:var(--text-dim); }
+  .search-box input:hover { border-color: var(--border-hover); }
+  .search-box input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-bg);
+  }
+  .search-box input::placeholder { color: var(--text-dim); }
   .search-box button {
-    position:absolute; right:5px; top:5px;
-    padding:9px 18px; font-size:14px; font-weight:600;
-    background:var(--accent); color:#fff; border:none; border-radius:8px;
-    cursor:pointer; font-family:inherit; transition:background 0.2s;
+    position: absolute; right: 5px; top: 5px;
+    padding: 9px 20px; font-size: var(--text-sm); font-weight: 600;
+    background: var(--accent); color: #fff; border: none;
+    border-radius: var(--radius-md); cursor: pointer; font-family: inherit;
+    transition: background var(--duration-fast), transform var(--duration-fast);
   }
-  .search-box button:hover { background:#e5553a; }
-  .search-box button:disabled { background:var(--bg-hover); color:var(--text-dim); cursor:not-allowed; }
+  .search-box button:hover { background: var(--accent-hover); }
+  .search-box button:active { transform: scale(0.96); }
+  .search-box button:disabled {
+    background: var(--bg-hover); color: var(--text-dim);
+    cursor: not-allowed; transform: none;
+  }
 
-  .search-hints { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; justify-content:center; }
-  .search-hint {
-    font-size:12px; color:var(--text-muted); background:var(--bg-card);
-    border:1px solid var(--border); border-radius:100px;
-    padding:5px 12px; cursor:pointer; transition:all 0.15s;
+  .search-hints {
+    display: flex; flex-wrap: wrap; gap: var(--space-2);
+    margin-top: var(--space-3); justify-content: center;
   }
-  .search-hint:hover { color:var(--text-secondary); border-color:var(--text-muted); }
-  .search-hint.curated { border-style:dashed; }
+  .search-hint {
+    font-size: var(--text-xs); color: var(--text-muted);
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-full); padding: 6px 14px;
+    cursor: pointer;
+    transition: all var(--duration-fast);
+    user-select: none;
+  }
+  .search-hint:hover {
+    color: var(--text-secondary); border-color: var(--border-hover);
+    background: var(--bg-elevated);
+  }
+  .search-hint:active { background: var(--bg-hover); transform: scale(0.97); }
+  .search-hint.curated { border-style: dashed; }
 
   .time-filter {
-    display:none; gap:6px; justify-content:center; margin-top:8px; flex-wrap:wrap;
-    align-items:center;
+    display: none; gap: var(--space-2); justify-content: center;
+    margin-top: var(--space-2); flex-wrap: wrap; align-items: center;
   }
-  .time-label { font-size:11px; color:var(--text-dim); margin-right:4px; }
+  .time-label { font-size: var(--text-xs); color: var(--text-dim); margin-right: var(--space-1); }
   .time-btn {
-    background:var(--bg-elevated); color:var(--text-muted);
-    border:1px solid var(--border); padding:6px 14px;
-    border-radius:100px; font-size:12px; cursor:pointer;
-    font-family:inherit; transition:all 0.15s;
-    min-height:32px; display:inline-flex; align-items:center;
+    background: var(--bg-elevated); color: var(--text-muted);
+    border: 1px solid var(--border); padding: 6px 14px;
+    border-radius: var(--radius-full); font-size: var(--text-xs);
+    cursor: pointer; font-family: inherit;
+    transition: all var(--duration-fast);
+    min-height: 32px; display: inline-flex; align-items: center;
   }
-  .time-btn:hover { border-color:var(--text-muted); color:var(--text-secondary); }
-  .time-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .time-btn:hover { border-color: var(--border-hover); color: var(--text-secondary); background: var(--bg-hover); }
+  .time-btn:active { transform: scale(0.96); }
+  .time-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .time-btn.active:hover { background: var(--accent-hover); }
 
   /* ── STORIES FEED ── */
-  .feed { max-width:680px; margin:0 auto; padding:24px 20px 60px; }
-  .feed-header { font-size:13px; font-weight:600; color:var(--text-muted); letter-spacing:0.02em; margin-bottom:20px; text-align:center; padding-bottom:16px; border-bottom:1px solid var(--border); }
-
-  /* ── STORY CARD (matches app design) ── */
-  .story-card {
-    display:block; text-decoration:none; color:inherit;
-    background:var(--bg-card); border:1px solid var(--border);
-    border-radius:16px; padding:20px; margin-bottom:16px;
-    cursor:pointer; transition:all 0.2s;
+  .feed { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-5) var(--space-10); }
+  .feed-header {
+    font-size: var(--text-sm); font-weight: 600; color: var(--text-muted);
+    letter-spacing: 0.02em; margin-bottom: var(--space-5); text-align: center;
+    padding-bottom: var(--space-4); border-bottom: 1px solid var(--border);
   }
-  .story-card:hover { border-color:rgba(255,255,255,0.12); transform:translateY(-1px); }
-  .story-card:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
-  .story-card:active { transform:translateY(0); }
+
+  /* ── SKELETON LOADING ── */
+  @keyframes shimmer {
+    0% { background-position: -400px 0; }
+    100% { background-position: 400px 0; }
+  }
+  .skeleton {
+    background: linear-gradient(90deg, var(--bg-elevated) 25%, var(--bg-hover) 37%, var(--bg-elevated) 63%);
+    background-size: 800px 100%;
+    animation: shimmer 1.8s ease-in-out infinite;
+    border-radius: var(--radius-sm);
+  }
+  .skeleton-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: var(--space-5); margin-bottom: var(--space-4);
+  }
+  .skeleton-line { height: 14px; margin-bottom: var(--space-3); border-radius: var(--radius-sm); }
+  .skeleton-line.w-full { width: 100%; }
+  .skeleton-line.w-3-4 { width: 75%; }
+  .skeleton-line.w-1-2 { width: 50%; }
+  .skeleton-line.w-1-3 { width: 33%; }
+  .skeleton-line.h-lg { height: 20px; }
+  .skeleton-circle { width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0; }
+  .skeleton-faces {
+    display: flex; justify-content: center; gap: 0;
+    margin: var(--space-4) 0 var(--space-3);
+  }
+  .skeleton-faces .skeleton-circle { margin-left: -10px; }
+  .skeleton-faces .skeleton-circle:first-child { margin-left: 0; }
+  .skeleton-bar {
+    height: 6px; border-radius: 3px; width: 100%;
+    margin-bottom: var(--space-3);
+  }
+  .skeleton-row {
+    display: flex; align-items: center; gap: var(--space-3);
+    padding: var(--space-2) 0; border-bottom: 1px solid var(--border);
+  }
+  .skeleton-row:last-child { border-bottom: none; }
+
+  /* ── STORY CARD ── */
+  .story-card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: var(--space-5);
+    margin-bottom: var(--space-4); cursor: pointer;
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+  .story-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  }
+  .story-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .story-card:active { transform: translateY(0); transition-duration: 80ms; }
 
   .story-headline {
-    font-size:1.25em; font-weight:700; color:var(--text-primary);
-    line-height:1.25; letter-spacing:-0.01em; margin-bottom:6px;
+    font-size: var(--text-xl); font-weight: 700; color: var(--text-primary);
+    line-height: 1.25; letter-spacing: -0.01em; margin-bottom: var(--space-2);
   }
   .story-meta {
-    font-size:13px; color:var(--text-muted); margin-bottom:16px;
+    font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--space-4);
   }
 
   /* VS layout */
   .vs-layout {
-    display:flex; align-items:center; justify-content:center;
-    gap:12px; margin-bottom:16px;
+    display: flex; align-items: center; justify-content: center;
+    gap: var(--space-3); margin-bottom: var(--space-4);
   }
-  .vs-side { display:flex; flex-direction:column; align-items:center; flex:1; min-width:0; }
-  .vs-faces { display:flex; align-items:center; justify-content:center; margin-bottom:8px; }
+  .vs-side {
+    display: flex; flex-direction: column; align-items: center;
+    flex: 1; min-width: 0;
+  }
+  .vs-faces {
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: var(--space-2);
+  }
   .vs-face {
-    width:44px; height:44px; border-radius:50%; object-fit:cover;
-    border:2px solid var(--bg-card); margin-left:-10px;
-    background:var(--bg-elevated); position:relative;
+    width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
+    border: 2px solid var(--bg-card); margin-left: -10px;
+    background: var(--bg-elevated); position: relative;
+    transition: transform var(--duration-fast);
   }
-  .vs-face:first-child { margin-left:0; }
+  .vs-face:first-child { margin-left: 0; }
+  .story-card:hover .vs-face { transform: scale(1.05); }
   .vs-cluster-name {
-    font-size:12px; font-weight:600; text-align:center;
-    line-height:1.3; max-width:140px;
+    font-size: var(--text-xs); font-weight: 600; text-align: center;
+    line-height: 1.3; max-width: 140px;
   }
-  .vs-cluster-count {
-    font-size:12px; color:var(--text-muted); margin-top:2px;
-  }
+  .vs-cluster-count { font-size: var(--text-xs); color: var(--text-muted); margin-top: 2px; }
   .vs-badge {
-    width:36px; height:36px; border-radius:50%;
-    background:var(--bg-elevated); border:1px solid var(--border);
-    display:flex; align-items:center; justify-content:center;
-    font-size:11px; font-weight:700; color:var(--text-muted);
-    flex-shrink:0;
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--bg-elevated); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: var(--text-xs); font-weight: 700; color: var(--text-dim);
+    flex-shrink: 0;
   }
 
   /* Proportion bar */
   .proportion-bar {
-    display:flex; height:6px; border-radius:3px; overflow:hidden;
-    margin-bottom:12px; background:var(--bg-elevated);
+    display: flex; height: 6px; border-radius: 3px; overflow: hidden;
+    margin-bottom: var(--space-3); background: var(--bg-elevated);
   }
-  .proportion-segment { height:100%; transition:width 0.3s; }
+  .proportion-segment {
+    height: 100%;
+    transition: width var(--duration-slow) var(--ease-out);
+  }
 
   /* CTA */
   .story-cta {
-    font-size:13px; font-weight:600; color:var(--accent);
-    text-align:right; display:flex; align-items:center;
-    justify-content:flex-end; gap:4px;
+    font-size: var(--text-sm); font-weight: 600; color: var(--accent);
+    text-align: right; display: flex; align-items: center;
+    justify-content: flex-end; gap: var(--space-1);
   }
-  .story-cta svg { transition:transform 0.2s; }
-  .story-card:hover .story-cta svg { transform:translateX(2px); }
+  .story-cta svg {
+    transition: transform var(--duration-normal) var(--ease-out);
+  }
+  .story-card:hover .story-cta svg { transform: translateX(3px); }
 
   /* ── WIRE ── */
-  .wire-section { max-width:680px; margin:0 auto; padding:0 20px 60px; }
-  .wire-header { margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid var(--border); }
-  .wire-title { font-size:13px; font-weight:700; color:var(--text-secondary); text-transform:uppercase; letter-spacing:0.06em; display:flex; align-items:center; gap:8px; }
-  .wire-subtitle { font-size:13px; color:var(--text-muted); margin-top:4px; }
-  .wire-feed { }
-  .wire-feed.collapsed { max-height:400px; overflow:hidden; position:relative; }
+  .wire-section {
+    max-width: 680px; margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-10);
+  }
+  .wire-header {
+    margin-bottom: var(--space-3);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--border);
+  }
+  .wire-title {
+    font-size: var(--text-sm); font-weight: 700; color: var(--text-secondary);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    display: flex; align-items: center; gap: var(--space-2);
+  }
+  .wire-subtitle { font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-1); }
+  .wire-feed.collapsed { max-height: 400px; overflow: hidden; position: relative; }
   .wire-feed.collapsed::after {
-    content:''; position:absolute; bottom:0; left:0; right:0; height:60px;
-    background:linear-gradient(transparent, var(--bg-base));
-    pointer-events:none;
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 80px;
+    background: linear-gradient(transparent, var(--bg-base));
+    pointer-events: none;
   }
   .wire-show-more {
-    display:block; width:100%; padding:12px; margin-top:8px;
-    font-size:13px; font-weight:600; color:var(--accent);
-    background:var(--bg-card); border:1px solid var(--border);
-    border-radius:12px; cursor:pointer; font-family:inherit;
-    text-align:center; transition:all 0.2s;
+    display: block; width: 100%; padding: var(--space-3); margin-top: var(--space-2);
+    font-size: var(--text-sm); font-weight: 600; color: var(--accent);
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); cursor: pointer; font-family: inherit;
+    text-align: center;
+    transition: all var(--duration-normal);
   }
-  .wire-show-more:hover { border-color:var(--accent); }
+  .wire-show-more:hover { border-color: var(--accent); background: var(--accent-bg); }
+  .wire-show-more:active { transform: scale(0.99); }
   .wire-entry {
-    display:flex; align-items:center; gap:10px;
-    padding:8px 0; border-bottom:1px solid var(--border);
-    font-size:13px; line-height:1.4;
+    display: grid;
+    grid-template-columns: 28px auto auto 1fr auto;
+    align-items: center; gap: var(--space-3);
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--border);
+    font-size: var(--text-sm); line-height: 1.4;
+    transition: background var(--duration-fast);
   }
-  .wire-entry:last-child { border-bottom:none; }
-  .wire-photo { width:28px; height:28px; border-radius:50%; object-fit:cover; background:var(--bg-elevated); flex-shrink:0; }
-  .wire-name { font-weight:600; color:var(--text-primary); text-decoration:none; white-space:nowrap; }
-  .wire-name:hover { color:var(--accent); }
-  .wire-platform { font-size:10px; font-weight:700; padding:2px 6px; border-radius:100px; white-space:nowrap; text-transform:uppercase; letter-spacing:0.05em; flex-shrink:0; }
-  .wire-text { color:var(--text-muted); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .wire-time { font-size:11px; color:var(--text-dim); white-space:nowrap; flex-shrink:0; }
+  .wire-entry:last-child { border-bottom: none; }
+  .wire-entry:hover { background: var(--bg-subtle); }
+  .wire-photo {
+    width: 28px; height: 28px; border-radius: 50%; object-fit: cover;
+    background: var(--bg-elevated); flex-shrink: 0;
+  }
+  .wire-name {
+    font-weight: 600; color: var(--text-primary); text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--duration-fast);
+  }
+  .wire-name:hover { color: var(--accent); }
+  .wire-platform {
+    font-size: 10px; font-weight: 700;
+    padding: 2px 6px; border-radius: var(--radius-full);
+    white-space: nowrap; text-transform: uppercase; letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+  .wire-text {
+    color: var(--text-muted); min-width: 0;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .wire-time {
+    font-size: var(--text-xs); color: var(--text-dim);
+    white-space: nowrap; flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+  }
 
   /* ── SEARCH RESULTS ── */
-  .results { max-width:680px; margin:0 auto; padding:0 20px 60px; }
-  .results-header { text-align:center; padding:20px 0 16px; }
-  .results-header h2 { font-size:1.1em; color:var(--text-primary); margin-bottom:4px; }
-  .results-topics { display:flex; flex-wrap:wrap; gap:4px; justify-content:center; margin-top:8px; }
-  .results-topic-tag { font-size:11px; background:var(--accent-bg); color:var(--accent); padding:2px 8px; border-radius:4px; }
+  .results { max-width: 680px; margin: 0 auto; padding: 0 var(--space-5) var(--space-10); }
+  .results-header { text-align: center; padding: var(--space-5) 0 var(--space-4); }
+  .results-header h2 { font-size: var(--text-lg); color: var(--text-primary); margin-bottom: var(--space-1); font-weight: 600; }
+  .results-topics { display: flex; flex-wrap: wrap; gap: var(--space-1); justify-content: center; margin-top: var(--space-2); }
+  .results-topic-tag {
+    font-size: var(--text-xs); background: var(--accent-bg); color: var(--accent);
+    padding: 2px var(--space-2); border-radius: var(--radius-sm);
+    font-weight: 500;
+  }
+
+  /* Filter bar */
+  .filter-bar {
+    display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--space-3);
+    justify-content: center;
+  }
+  .filter-pill {
+    font-size: var(--text-xs); padding: 5px 12px; border-radius: 100px;
+    border: 1px solid var(--border); background: transparent;
+    color: var(--text-muted); cursor: pointer; font-family: inherit;
+    transition: all var(--duration-fast); white-space: nowrap;
+  }
+  .filter-pill:hover { border-color: var(--text-muted); color: var(--text-secondary); }
+  .filter-pill.active { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
 
   .voice-card {
-    background:var(--bg-card); border:1px solid var(--border);
-    border-radius:16px; padding:16px; margin-bottom:12px;
-    transition:border-color 0.2s;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: var(--space-4); margin-bottom: var(--space-3);
+    transition: border-color var(--duration-normal);
   }
-  .voice-card:hover { border-color:rgba(255,255,255,0.1); }
-  .voice-header { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
-  .voice-photo { width:42px; height:42px; border-radius:50%; object-fit:cover; background:var(--bg-elevated); }
-  .voice-name { font-size:15px; font-weight:700; color:var(--text-primary); text-decoration:none; }
-  .voice-name:hover { color:var(--accent); }
-  .voice-lens { font-size:12px; color:var(--text-muted); margin-top:2px; line-height:1.4; }
+  .voice-card:hover { border-color: var(--border-hover); }
+  .voice-header { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-3); }
+  .voice-photo {
+    width: 42px; height: 42px; border-radius: 50%; object-fit: cover;
+    background: var(--bg-elevated);
+  }
+  .voice-name {
+    font-size: var(--text-base); font-weight: 700; color: var(--text-primary);
+    text-decoration: none; transition: color var(--duration-fast);
+  }
+  .voice-name:hover { color: var(--accent); }
+  .voice-lens { font-size: var(--text-xs); color: var(--text-muted); margin-top: 2px; line-height: 1.4; }
   .voice-cluster-badge {
-    font-size:11px; font-weight:600; padding:3px 10px;
-    border-radius:100px; background:rgba(255,255,255,0.08);
-    color:var(--text-secondary); border:1px solid var(--border);
-    margin-top:4px; display:inline-block;
+    font-size: var(--text-xs); font-weight: 600;
+    padding: 3px 10px; border-radius: var(--radius-full);
+    background: rgba(255,255,255,0.06); color: var(--text-secondary);
+    border: 1px solid var(--border); margin-top: var(--space-1);
+    display: inline-block;
   }
-  .voice-tags { display:flex; flex-wrap:wrap; gap:4px; margin-top:6px; }
+  .voice-tags { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-2); }
   .voice-tag {
-    font-size:11px; color:var(--text-muted); background:var(--bg-elevated);
-    border:1px solid var(--border); border-radius:100px; padding:2px 10px;
+    font-size: var(--text-xs); color: var(--text-muted); background: var(--bg-elevated);
+    border: 1px solid var(--border); border-radius: var(--radius-full);
+    padding: 2px 10px;
   }
-  .quote { margin-bottom:10px; padding-left:12px; border-left:3px solid var(--bg-hover); }
-  .quote-platform { font-size:11px; color:var(--text-dim); font-weight:700; text-transform:uppercase; margin-bottom:3px; letter-spacing:0.05em; }
-  .quote-text { font-size:13px; color:var(--text-secondary); line-height:1.5; margin-bottom:3px; }
-  .quote-link { font-size:11px; color:var(--accent); text-decoration:none; }
-  .quote-link:hover { text-decoration:underline; }
+  .quote {
+    margin-bottom: var(--space-3);
+    padding-left: var(--space-3);
+    border-left: 2px solid var(--bg-hover);
+  }
+  .quote-platform {
+    font-size: var(--text-xs); color: var(--text-dim); font-weight: 700;
+    text-transform: uppercase; margin-bottom: var(--space-1); letter-spacing: 0.05em;
+  }
+  .quote-text {
+    font-size: var(--text-sm); color: var(--text-secondary);
+    line-height: 1.6; margin-bottom: var(--space-1);
+  }
+  .quote-link {
+    font-size: var(--text-xs); color: var(--accent); text-decoration: none;
+    transition: opacity var(--duration-fast);
+  }
+  .quote-link:hover { text-decoration: underline; opacity: 0.85; }
 
-  .no-results { text-align:center; padding:60px; color:var(--text-muted); font-size:14px; }
+  /* ── EMPTY / ERROR STATES ── */
+  .state-message {
+    text-align: center;
+    padding: var(--space-10) var(--space-5);
+    max-width: 400px; margin: 0 auto;
+  }
+  .state-message-icon {
+    font-size: 32px; margin-bottom: var(--space-4);
+    color: var(--text-dim); line-height: 1;
+  }
+  .state-message-title {
+    font-size: var(--text-lg); font-weight: 600;
+    color: var(--text-primary); margin-bottom: var(--space-2);
+  }
+  .state-message-body {
+    font-size: var(--text-sm); color: var(--text-muted);
+    line-height: 1.6; margin-bottom: var(--space-5);
+  }
+  .state-message-action {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    font-size: var(--text-sm); font-weight: 600; color: var(--accent);
+    background: var(--accent-bg); border: 1px solid transparent;
+    border-radius: var(--radius-md); padding: var(--space-2) var(--space-4);
+    cursor: pointer; font-family: inherit;
+    transition: all var(--duration-fast);
+  }
+  .state-message-action:hover { background: var(--accent-bg-hover); border-color: var(--accent); }
+  .state-message-action:active { transform: scale(0.97); }
+
   .back-to-feed {
-    display:block; max-width:680px; margin:0 auto; padding:12px 20px;
-    text-align:center;
+    display: block; max-width: 680px; margin: 0 auto;
+    padding: var(--space-3) var(--space-5); text-align: center;
   }
   .back-to-feed button {
-    font-size:13px; font-weight:600; color:var(--text-muted);
-    background:none; border:1px solid var(--border); border-radius:12px;
-    padding:10px 24px; cursor:pointer; font-family:inherit;
-    transition:all 0.2s;
+    font-size: var(--text-sm); font-weight: 600; color: var(--text-muted);
+    background: none; border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 10px var(--space-6);
+    cursor: pointer; font-family: inherit;
+    transition: all var(--duration-normal);
   }
-  .back-to-feed button:hover { color:var(--text-primary); border-color:var(--text-muted); }
+  .back-to-feed button:hover { color: var(--text-primary); border-color: var(--border-hover); background: var(--bg-elevated); }
+  .back-to-feed button:active { transform: scale(0.98); }
 
-  /* ── LOADING ── */
-  .loading { text-align:center; padding:60px; color:var(--text-muted); font-size:14px; display:none; }
-  .loading.active { display:block; }
-  .spinner { display:inline-block; width:18px; height:18px; border:2px solid var(--bg-elevated); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-right:8px; vertical-align:middle; }
-  @keyframes spin { to{transform:rotate(360deg)} }
+  /* ── LOADING (search) ── */
+  .loading {
+    text-align: center; padding: var(--space-10); color: var(--text-muted);
+    font-size: var(--text-sm); display: none;
+  }
+  .loading.active { display: block; }
+  .search-loading-skeletons { max-width: 680px; margin: 0 auto; padding: 0 var(--space-5); }
+  .search-loading-skeletons .skeleton-card { margin-bottom: var(--space-3); }
 
   /* ── FOOTER ── */
   .site-footer {
-    max-width:680px; margin:0 auto; padding:40px 20px 32px;
-    border-top:1px solid var(--border); text-align:center;
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-8) var(--space-5) var(--space-7);
+    border-top: 1px solid var(--border); text-align: center;
   }
-  .footer-brand { font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:8px; }
-  .footer-brand span { color:var(--accent); }
-  .footer-links { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-bottom:12px; }
+  .footer-brand {
+    font-size: var(--text-sm); font-weight: 700;
+    color: var(--text-primary); margin-bottom: var(--space-2);
+  }
+  .footer-brand span { color: var(--accent); }
+  .footer-links {
+    display: flex; justify-content: center; gap: var(--space-5);
+    flex-wrap: wrap; margin-bottom: var(--space-3);
+  }
   .footer-links a {
-    font-size:13px; color:var(--text-muted); text-decoration:none; transition:color 0.2s;
+    font-size: var(--text-sm); color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--duration-fast);
   }
-  .footer-links a:hover { color:var(--text-primary); }
-  .footer-copy { font-size:12px; color:var(--text-dim); }
+  .footer-links a:hover { color: var(--text-primary); }
+  .footer-copy { font-size: var(--text-xs); color: var(--text-dim); }
 
   /* ── STATS ── */
-  .stats { text-align:center; padding:12px 20px; color:var(--text-dim); font-size:11px; text-transform:uppercase; letter-spacing:0.05em; font-weight:700; }
-  .stats span { color:var(--text-primary); }
+  .stats {
+    text-align: center; padding: var(--space-3) var(--space-5);
+    color: var(--text-dim); font-size: var(--text-xs);
+    text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;
+  }
+  .stats span { color: var(--text-primary); }
 
   /* ── MOBILE ── */
-  @media (max-width:600px) {
-    .nav { padding:16px 16px 0; }
-    .nav-brand-text { font-size:1.3em; }
-    .nav-method-btn { display:none; }
-    .hero-section { padding:24px 16px 4px; }
-    .hero-title { font-size:1.5em; }
-    .hero-subtitle { font-size:14px; }
-    .search-section { padding:12px 16px 0; }
-    .feed { padding:20px 16px 40px; }
-    .story-card { padding:16px; }
-    .story-headline { font-size:1.1em; }
-    .vs-face { width:34px; height:34px; margin-left:-8px; }
-    .vs-badge { width:28px; height:28px; font-size:10px; }
-    .vs-cluster-name { font-size:11px; max-width:100px; }
-    .vs-layout { gap:8px; }
-    .wire-section { padding:0 16px 40px; }
-    .results { padding:0 16px 40px; }
-    .wire-text { white-space:normal; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; padding-left:38px; width:100%; flex:none; }
-    .wire-entry { flex-wrap:wrap; gap:6px; }
-    .search-hint { min-height:44px; display:inline-flex; align-items:center; }
-    .time-btn { min-height:44px; padding:8px 16px; font-size:13px; }
-    .site-footer { padding:32px 16px 24px; }
+  @media (max-width: 600px) {
+    .nav { padding: var(--space-4) var(--space-4) 0; }
+    .nav-brand-text { font-size: var(--text-lg); }
+    .nav-method-btn { display: none; }
+    .hero-section { padding: var(--space-6) var(--space-4) var(--space-1); }
+    .hero-title { font-size: var(--text-xl); }
+    .hero-subtitle { font-size: var(--text-sm); }
+    .search-section { padding: var(--space-3) var(--space-4) 0; }
+    .feed { padding: var(--space-5) var(--space-4) var(--space-8); }
+    .story-card { padding: var(--space-4); }
+    .story-headline { font-size: var(--text-lg); }
+    .vs-face { width: 34px; height: 34px; margin-left: -8px; }
+    .vs-badge { width: 28px; height: 28px; font-size: 10px; }
+    .vs-cluster-name { font-size: var(--text-xs); max-width: 100px; }
+    .vs-layout { gap: var(--space-2); }
+    .wire-section { padding: 0 var(--space-4) var(--space-8); }
+    .results { padding: 0 var(--space-4) var(--space-8); }
+
+    /* Mobile wire: switch to stacked layout, no padding hack */
+    .wire-entry {
+      display: grid;
+      grid-template-columns: 28px 1fr auto;
+      grid-template-rows: auto auto;
+      gap: var(--space-1) var(--space-2);
+      padding: var(--space-3) 0;
+    }
+    .wire-photo { grid-row: 1 / 3; align-self: start; margin-top: 2px; }
+    .wire-name { grid-column: 2; }
+    .wire-platform { grid-column: 3; grid-row: 1; align-self: center; }
+    .wire-text {
+      grid-column: 2 / 4; grid-row: 2;
+      white-space: normal;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .wire-time { grid-column: 3; grid-row: 1; display: none; }
+
+    .search-hint { min-height: 44px; display: inline-flex; align-items: center; }
+    .time-btn { min-height: 44px; padding: var(--space-2) var(--space-4); font-size: var(--text-sm); }
+    .site-footer { padding: var(--space-7) var(--space-4) var(--space-6); }
   }
 </style>
 </head>
@@ -340,25 +640,62 @@
 <main id="main-content">
 
 <div class="hero-section">
-  <h1 class="hero-title">See every side of the story</h1>
-  <p class="hero-subtitle">Tracking <strong id="heroVoiceCount">257</strong> public voices across 7 platforms. Clustered by argument, not left vs. right.</p>
+  <h1 class="hero-title">Step outside your algorithm<br>into <span style="color:var(--accent);">others</span></h1>
+  <p class="hero-subtitle">See how <strong id="heroVoiceCount">257</strong> voices across the political spectrum react to the same story. Not left vs right. Actual positions.</p>
 </div>
 
 <div class="search-section">
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Search any topic or story..." autofocus aria-label="Search voices and stories">
-    <button id="searchBtn" onclick="doSearch()" aria-label="Search">Search</button>
+    <button id="searchBtn" aria-label="Search">Search</button>
   </div>
   <div class="time-filter" id="timeFilter">
     <span class="time-label">Window:</span>
-    <button class="time-btn active" data-days="" onclick="setTimeFilter(this)">Auto</button>
-    <button class="time-btn" data-days="1" onclick="setTimeFilter(this)">Today</button>
-    <button class="time-btn" data-days="3" onclick="setTimeFilter(this)">3d</button>
-    <button class="time-btn" data-days="7" onclick="setTimeFilter(this)">Week</button>
-    <button class="time-btn" data-days="14" onclick="setTimeFilter(this)">2w</button>
-    <button class="time-btn" data-days="30" onclick="setTimeFilter(this)">Month</button>
+    <button class="time-btn active" data-days="">Auto</button>
+    <button class="time-btn" data-days="1">Today</button>
+    <button class="time-btn" data-days="3">3d</button>
+    <button class="time-btn" data-days="7">Week</button>
+    <button class="time-btn" data-days="14">2w</button>
+    <button class="time-btn" data-days="30">Month</button>
   </div>
   <div class="search-hints" id="searchHints"></div>
+</div>
+
+<!-- Feed skeleton (shown while loading) -->
+<div class="feed" id="feedSkeleton" aria-hidden="true">
+  <div class="feed-header" style="visibility:hidden;">Loading</div>
+  <div class="skeleton-card">
+    <div class="skeleton skeleton-line h-lg w-3-4"></div>
+    <div class="skeleton skeleton-line w-1-3"></div>
+    <div class="skeleton-faces">
+      <div class="skeleton skeleton-circle"></div>
+      <div class="skeleton skeleton-circle"></div>
+      <div class="skeleton skeleton-circle"></div>
+    </div>
+    <div class="skeleton skeleton-bar"></div>
+    <div class="skeleton skeleton-line w-1-3" style="margin-left:auto;"></div>
+  </div>
+  <div class="skeleton-card">
+    <div class="skeleton skeleton-line h-lg w-full"></div>
+    <div class="skeleton skeleton-line w-1-3"></div>
+    <div class="skeleton-faces">
+      <div class="skeleton skeleton-circle"></div>
+      <div class="skeleton skeleton-circle"></div>
+    </div>
+    <div class="skeleton skeleton-bar"></div>
+    <div class="skeleton skeleton-line w-1-3" style="margin-left:auto;"></div>
+  </div>
+  <div class="skeleton-card">
+    <div class="skeleton skeleton-line h-lg w-3-4"></div>
+    <div class="skeleton skeleton-line w-1-2"></div>
+    <div class="skeleton-faces">
+      <div class="skeleton skeleton-circle"></div>
+      <div class="skeleton skeleton-circle"></div>
+      <div class="skeleton skeleton-circle"></div>
+    </div>
+    <div class="skeleton skeleton-bar"></div>
+    <div class="skeleton skeleton-line w-1-3" style="margin-left:auto;"></div>
+  </div>
 </div>
 
 <div class="feed" id="feed" style="display:none"></div>
@@ -372,7 +709,45 @@
   <div class="wire-feed" id="wireFeed"></div>
 </div>
 
-<div class="loading" id="loading" role="status" aria-live="polite"><span class="spinner"></span> Searching 257 voices...</div>
+<!-- Search loading: skeleton cards instead of spinner -->
+<div class="loading" id="loading" role="status" aria-live="polite">
+  <div class="search-loading-skeletons">
+    <div class="skeleton-card">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+        <div class="skeleton skeleton-circle" style="width:42px;height:42px;"></div>
+        <div style="flex:1;">
+          <div class="skeleton skeleton-line w-1-2"></div>
+          <div class="skeleton skeleton-line w-1-3"></div>
+        </div>
+      </div>
+      <div class="skeleton skeleton-line w-full"></div>
+      <div class="skeleton skeleton-line w-3-4"></div>
+    </div>
+    <div class="skeleton-card">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+        <div class="skeleton skeleton-circle" style="width:42px;height:42px;"></div>
+        <div style="flex:1;">
+          <div class="skeleton skeleton-line w-1-2"></div>
+          <div class="skeleton skeleton-line w-1-3"></div>
+        </div>
+      </div>
+      <div class="skeleton skeleton-line w-full"></div>
+      <div class="skeleton skeleton-line w-3-4"></div>
+    </div>
+    <div class="skeleton-card">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+        <div class="skeleton skeleton-circle" style="width:42px;height:42px;"></div>
+        <div style="flex:1;">
+          <div class="skeleton skeleton-line w-1-2"></div>
+          <div class="skeleton skeleton-line w-1-3"></div>
+        </div>
+      </div>
+      <div class="skeleton skeleton-line w-full"></div>
+      <div class="skeleton skeleton-line w-1-2"></div>
+    </div>
+  </div>
+  <div style="margin-top:16px;font-size:13px;color:var(--text-dim);">Searching voices...</div>
+</div>
 <div class="results" id="results"></div>
 
 </main>
@@ -389,313 +764,631 @@
 </footer>
 
 <script>
-const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
-const PAGES = { search: BASE || '/', voices: BASE + '/voices', methodology: BASE + '/methodology' };
-document.getElementById('homeLink').href = PAGES.search;
-document.getElementById('voicesBtn').href = PAGES.voices;
-const methodLink = document.querySelector('.nav-method-btn');
-if (methodLink) methodLink.href = PAGES.methodology;
-const footerMethodLink = document.querySelector('.footer-links a[href="/methodology"]');
-if (footerMethodLink) footerMethodLink.href = PAGES.methodology;
-const footerVoicesLink = document.querySelector('.footer-links a[href="/voices"]');
-if (footerVoicesLink) footerVoicesLink.href = PAGES.voices;
+/* ================================================================
+   Perspectives Search -- IIFE to avoid global pollution
+   All state and functions scoped inside.
+   ================================================================ */
+;(function() {
+  'use strict';
 
-const COLORS = ['#60A5FA','#F87171','#FBBF24','#A78BFA','#4ADE80','#22D3EE','#F472B6','#FB923C'];
-const PLATFORM = {x:'X',youtube:'YouTube',bluesky:'Bluesky',instagram:'Instagram',tiktok:'TikTok',substack:'Substack',podcast:'Podcast'};
-const PLATFORM_COLORS = {x:'#1DA1F2',youtube:'#FF0000',substack:'#FF6719',bluesky:'#0085FF',instagram:'#E1306C',tiktok:'#00F2EA',podcast:'#9B59B6'};
+  /* ── ROUTING ── */
+  const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+  const PAGES = {
+    search: BASE || '/',
+    voices: BASE + '/voices',
+    methodology: BASE + '/methodology'
+  };
 
-const TAG_GLOSSARY = {
-  'hawkish':'Favors strong military action','anti-establishment':'Skeptical of institutional power',
-  'contrarian':'Takes positions against consensus','centrist':'Doesn\'t align consistently with either party',
-  'populist':'Frames issues as people vs elites','progressive':'Advocates systemic change',
-  'conservative':'Traditional values, limited government','libertarian-leaning':'Individual freedom, skeptical of government',
-  'constitutionalist':'Frames arguments through constitutional law','digital media':'Reaches audiences via social platforms',
-  'heterodox':'Positions cross left-right lines','pro-Trump':'Supportive of Trump agenda',
-  'anti-Trump':'Critical of Trump/MAGA','MAGA':'Aligned with Make America Great Again',
-  'free speech':'Prioritizes broad speech protections','anti-woke':'Critical of progressive social justice activism',
-  'pro-Israel':'Supports strong U.S.-Israel alliance','anti-war':'Opposes military intervention',
-};
+  document.getElementById('homeLink').href = PAGES.search;
+  document.getElementById('voicesBtn').href = PAGES.voices;
 
-let _voiceLens = {};
-let _voiceCategory = {};
-let _voiceApproach = {};
-fetch(BASE + '/data/voices.json').then(r=>r.json()).then(voices => {
-  document.getElementById('voiceCount').textContent = voices.length;
-  const heroCount = document.getElementById('heroVoiceCount');
-  if (heroCount) heroCount.textContent = voices.length;
-  for (const v of voices) {
-    _voiceLens[v.id] = v.lens || '';
-    _voiceCategory[v.id] = v.category || '';
-    _voiceApproach[v.id] = v.approach || '';
-  }
-}).catch(()=>{});
+  const methodLink = document.querySelector('.nav-method-btn');
+  if (methodLink) methodLink.href = PAGES.methodology;
+  const footerMethodLink = document.querySelector('.footer-links a[href="/methodology"]');
+  if (footerMethodLink) footerMethodLink.href = PAGES.methodology;
+  const footerVoicesLink = document.querySelector('.footer-links a[href="/voices"]');
+  if (footerVoicesLink) footerVoicesLink.href = PAGES.voices;
 
-function esc(t) { const d=document.createElement('div'); d.textContent=t||''; return d.innerHTML; }
-function slugify(t) { return t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').substring(0,60); }
+  /* ── CONSTANTS ── */
+  const COLORS = ['#60A5FA','#F87171','#FBBF24','#A78BFA','#4ADE80','#22D3EE','#F472B6','#FB923C'];
+  const PLATFORM = { x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast' };
+  const PLATFORM_COLORS = { x:'#1DA1F2', youtube:'#FF0000', substack:'#FF6719', bluesky:'#0085FF', instagram:'#E1306C', tiktok:'#00F2EA', podcast:'#9B59B6' };
 
-// ── STORY CARD RENDERER (app design) ──
-function renderStoryCard(story) {
-  const clusters = story.clusters || [];
-  const clusterCount = clusters.length;
-  const totalVoices = story.voiceCount || clusters.reduce((s,c) => s + (c.voiceCount || (c.voices||[]).length), 0);
+  const TAG_GLOSSARY = {
+    'hawkish':'Favors strong military action',
+    'anti-establishment':'Skeptical of institutional power',
+    'contrarian':'Takes positions against consensus',
+    'centrist':'Doesn\'t align consistently with either party',
+    'populist':'Frames issues as people vs elites',
+    'progressive':'Advocates systemic change',
+    'conservative':'Traditional values, limited government',
+    'libertarian-leaning':'Individual freedom, skeptical of government',
+    'constitutionalist':'Frames arguments through constitutional law',
+    'digital media':'Reaches audiences via social platforms',
+    'heterodox':'Positions cross left-right lines',
+    'pro-Trump':'Supportive of Trump agenda',
+    'anti-Trump':'Critical of Trump/MAGA',
+    'MAGA':'Aligned with Make America Great Again',
+    'free speech':'Prioritizes broad speech protections',
+    'anti-woke':'Critical of progressive social justice activism',
+    'pro-Israel':'Supports strong U.S.-Israel alliance',
+    'anti-war':'Opposes military intervention',
+  };
 
-  // Pick two dominant clusters for VS layout
-  const sorted = [...clusters].sort((a,b) => (b.voiceCount||(b.voices||[]).length) - (a.voiceCount||(a.voices||[]).length));
-  const left = sorted[0];
-  const right = sorted[1];
+  /* ── DOM REFS ── */
+  const input = document.getElementById('searchInput');
+  const searchBtn = document.getElementById('searchBtn');
+  const loading = document.getElementById('loading');
+  const resultsDiv = document.getElementById('results');
+  const feedEl = document.getElementById('feed');
+  const feedSkeleton = document.getElementById('feedSkeleton');
+  const wireSection = document.getElementById('wireSection');
+  const statsEl = document.getElementById('stats');
+  const timeFilter = document.getElementById('timeFilter');
+  const searchHints = document.getElementById('searchHints');
 
-  function renderSide(cluster, ci) {
-    if (!cluster) return '';
-    const color = COLORS[ci % COLORS.length];
-    const voices = cluster.voices || [];
-    const count = cluster.voiceCount || voices.length;
-    const faces = voices.slice(0,3).map(v => {
-      const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=1c1c1f&color=a1a1aa&size=88`;
-      return `<img class="vs-face" src="${photo}" alt="${esc(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=1c1c1f&color=a1a1aa&size=88'" title="${esc(v.voiceName)}${_voiceLens[v.voiceId] ? ' · '+_voiceLens[v.voiceId].substring(0,60) : ''}">`;
-    }).join('');
-    return `<div class="vs-side">
-      <div class="vs-faces">${faces}</div>
-      <div class="vs-cluster-name" style="color:${color};">${esc(cluster.name)}</div>
-      <div class="vs-cluster-count">${count}</div>
-    </div>`;
-  }
+  /* ── STATE ── */
+  let _voiceLens = {};
+  let _voiceCategory = {};
+  let _voiceApproach = {};
+  let _storiesData = [];
+  let selectedDays = '';
 
-  // Proportion bar
-  let barHtml = '';
-  if (clusters.length > 0) {
-    const total = clusters.reduce((s,c) => s + (c.voiceCount||(c.voices||[]).length), 0) || 1;
-    barHtml = clusters.map((c,ci) => {
-      const pct = ((c.voiceCount||(c.voices||[]).length) / total * 100).toFixed(1);
-      return `<div class="proportion-segment" style="width:${pct}%;background:${COLORS[ci%COLORS.length]};"></div>`;
-    }).join('');
+  /* ── UTILITIES ── */
+  function esc(t) {
+    const d = document.createElement('div');
+    d.textContent = t || '';
+    return d.innerHTML;
   }
 
-  const slug = slugify(story.headline);
+  function slugify(t) {
+    return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').substring(0, 60);
+  }
 
-  return `<a class="story-card" href="${BASE}/story/${slug}" aria-label="${esc(story.headline)} — ${totalVoices} voices, ${clusterCount} positions">
-    <div class="story-headline">${esc(story.headline)}</div>
-    <div class="story-meta">${totalVoices} voices &middot; ${clusterCount} positions</div>
-    ${left ? `<div class="vs-layout">
-      ${renderSide(left, 0)}
-      <div class="vs-badge">vs</div>
-      ${renderSide(right, 1)}
-    </div>` : ''}
-    <div class="proportion-bar">${barHtml}</div>
-    <div class="story-cta">See ${clusterCount} positions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></div>
-  </a>`;
-}
+  function safeHref(url) {
+    if (!url || typeof url !== 'string') return '#';
+    const trimmed = url.trim();
+    if (/^javascript:/i.test(trimmed)) return '#';
+    return trimmed;
+  }
 
-// ── LOAD STORIES ──
-let _storiesData = [];
-async function loadFeed() {
-  let stories = [];
-  try {
-    let resp = await fetch(BASE + '/api/stories');
-    stories = await resp.json();
-    if (!stories || stories.length === 0) {
-      resp = await fetch(BASE + '/api/fractures');
-      const f = await resp.json();
-      stories = (f||[]).map(x => ({
-        headline: x.headline||x.topicDisplay, summary: x.insight||'',
-        type:'split', voiceCount:x.voiceCount, clusterCount:x.clusterCount, clusters:x.clusters,
-      }));
+  /* ── STATE MESSAGE BUILDER ── */
+  function stateMessage(icon, title, body, actionText, actionFn) {
+    const wrap = document.createElement('div');
+    wrap.className = 'state-message';
+    wrap.setAttribute('role', 'status');
+
+    let html = '';
+    if (icon) html += '<div class="state-message-icon">' + icon + '</div>';
+    if (title) html += '<div class="state-message-title">' + esc(title) + '</div>';
+    if (body) html += '<div class="state-message-body">' + esc(body) + '</div>';
+    wrap.innerHTML = html;
+
+    if (actionText && actionFn) {
+      const btn = document.createElement('button');
+      btn.className = 'state-message-action';
+      btn.textContent = actionText;
+      btn.addEventListener('click', actionFn);
+      wrap.appendChild(btn);
     }
-  } catch(e) { return; }
+    return wrap;
+  }
 
-  if (!stories || stories.length === 0) return;
-  _storiesData = stories;
+  function showFeedError(message) {
+    feedSkeleton.style.display = 'none';
+    feedEl.style.display = 'block';
+    feedEl.innerHTML = '';
+    feedEl.appendChild(
+      stateMessage(
+        '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>',
+        'Unable to load stories',
+        message || 'We could not reach the Perspectives API. This is usually temporary.',
+        'Try again',
+        function() { loadFeed(); }
+      )
+    );
+  }
 
-  const feed = document.getElementById('feed');
-  feed.style.display = 'block';
+  function showEmptyFeed() {
+    feedSkeleton.style.display = 'none';
+    feedEl.style.display = 'block';
+    feedEl.innerHTML = '';
+    feedEl.appendChild(
+      stateMessage(
+        '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>',
+        'No stories yet today',
+        'The pipeline is still processing. Stories usually appear by 7 AM ET.',
+        null, null
+      )
+    );
+  }
 
-  const now = new Date();
-  const dateStr = now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
-  const totalVoices = new Set();
-  stories.forEach(s => (s.clusters||[]).forEach(c => (c.voices||[]).forEach(v => totalVoices.add(v.voiceId))));
+  /* ── STORY CARD RENDERER ── */
+  function renderStoryCard(story) {
+    const clusters = story.clusters || [];
+    const clusterCount = clusters.length;
+    const totalVoices = story.voiceCount || clusters.reduce(function(s, c) { return s + (c.voiceCount || (c.voices || []).length); }, 0);
 
-  feed.innerHTML = `<div class="feed-header">${dateStr} &middot; ${stories.length} stories &middot; ${totalVoices.size} voices</div>` +
-    stories.map(s => renderStoryCard(s)).join('');
-}
-loadFeed();
+    var sorted = clusters.slice().sort(function(a, b) {
+      return (b.voiceCount || (b.voices || []).length) - (a.voiceCount || (a.voices || []).length);
+    });
+    var left = sorted[0];
+    var right = sorted[1];
 
-// ── WIRE ──
-function wireTimeAgo(ts) {
-  try {
-    const d = Date.now() - new Date(ts).getTime();
-    const h = Math.floor(d/3600000), m = Math.floor(d/60000);
-    if (h > 24) return Math.floor(d/86400000)+'d';
-    if (h > 0) return h+'h';
-    if (m > 0) return m+'m';
-    return 'now';
-  } catch { return ''; }
-}
+    function renderSide(cluster, ci) {
+      if (!cluster) return '';
+      var color = COLORS[ci % COLORS.length];
+      var voices = cluster.voices || [];
+      var count = cluster.voiceCount || voices.length;
+      var faces = voices.slice(0, 3).map(function(v) {
+        var photo = v.photo || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(v.voiceName) + '&background=1c1c1f&color=a1a1aa&size=88';
+        var lensText = _voiceLens[v.voiceId] ? ' -- ' + _voiceLens[v.voiceId].substring(0, 60) : '';
+        return '<img class="vs-face" src="' + photo + '" alt="' + esc(v.voiceName) + '" title="' + esc(v.voiceName) + lensText + '">';
+      }).join('');
+      return '<div class="vs-side">' +
+        '<div class="vs-faces">' + faces + '</div>' +
+        '<div class="vs-cluster-name" style="color:' + color + ';">' + esc(cluster.name) + '</div>' +
+        '<div class="vs-cluster-count">' + count + '</div>' +
+        '</div>';
+    }
 
-fetch(BASE + '/api/wire').then(r=>r.json()).then(entries => {
-  if (!entries || entries.length===0) return;
-  document.getElementById('wireSection').style.display = 'block';
-  const voiceSet = new Set(entries.map(e=>e.voiceId));
-  document.getElementById('wireSubtitle').textContent = `What ${voiceSet.size} voices are saying right now`;
-  const feed = document.getElementById('wireFeed');
-  let wireHtml = '';
-  entries.slice(0,50).forEach(e => {
-    const p = (e.platform||'').toLowerCase();
-    const pColor = PLATFORM_COLORS[p]||'#aaa';
-    wireHtml += `<div class="wire-entry">
-      <img class="wire-photo" src="${e.photo||`https://ui-avatars.com/api/?name=${encodeURIComponent(e.voiceName)}&background=1c1c1f&color=a1a1aa&size=56`}" alt="${esc(e.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(e.voiceName)}&background=1c1c1f&color=a1a1aa&size=56'">
-      <a class="wire-name" href="${BASE}/voice/${e.voiceId}">${esc(e.voiceName)}</a>
-      <span class="wire-platform" style="background:${pColor}22;color:${pColor};">${PLATFORM[p]||p}</span>
-      <span class="wire-text">${esc((e.text||'').substring(0,120))}</span>
-      <span class="wire-time">${wireTimeAgo(e.timestamp)}</span>
-    </div>`;
+    var barHtml = '';
+    if (clusters.length > 0) {
+      var total = clusters.reduce(function(s, c) { return s + (c.voiceCount || (c.voices || []).length); }, 0) || 1;
+      barHtml = clusters.map(function(c, ci) {
+        var pct = ((c.voiceCount || (c.voices || []).length) / total * 100).toFixed(1);
+        return '<div class="proportion-segment" style="width:' + pct + '%;background:' + COLORS[ci % COLORS.length] + ';"></div>';
+      }).join('');
+    }
+
+    var slug = slugify(story.headline);
+
+    return '<a class="story-card" href="' + BASE + '/story/' + slug + '" aria-label="' + esc(story.headline) + ' -- ' + totalVoices + ' voices, ' + clusterCount + ' positions">' +
+      '<div class="story-headline">' + esc(story.headline) + '</div>' +
+      '<div class="story-meta">' + totalVoices + ' voices &middot; ' + clusterCount + ' positions</div>' +
+      (left ? '<div class="vs-layout">' +
+        renderSide(left, 0) +
+        '<div class="vs-badge">vs</div>' +
+        renderSide(right, 1) +
+      '</div>' : '') +
+      '<div class="proportion-bar">' + barHtml + '</div>' +
+      '<div class="story-cta">See ' + clusterCount + ' positions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></div>' +
+    '</a>';
+  }
+
+  /* ── IMAGE ERROR HANDLER (replaces inline onerror) ── */
+  document.addEventListener('error', function(e) {
+    var el = e.target;
+    if (el.tagName !== 'IMG') return;
+    if (el.dataset.fallbackApplied) return;
+    el.dataset.fallbackApplied = 'true';
+    var name = el.alt || 'User';
+    el.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name) + '&background=1c1c1f&color=a1a1aa&size=88';
+  }, true);
+
+  /* ── LOAD VOICES ── */
+  fetch(BASE + '/data/voices.json')
+    .then(function(r) {
+      if (!r.ok) throw new Error('Voice data unavailable');
+      return r.json();
+    })
+    .then(function(voices) {
+      document.getElementById('voiceCount').textContent = voices.length;
+      var heroCount = document.getElementById('heroVoiceCount');
+      if (heroCount) heroCount.textContent = voices.length;
+      for (var i = 0; i < voices.length; i++) {
+        var v = voices[i];
+        _voiceLens[v.id] = v.lens || '';
+        _voiceCategory[v.id] = v.category || '';
+        _voiceApproach[v.id] = v.approach || '';
+      }
+    })
+    .catch(function(err) {
+      console.warn('[Perspectives] Could not load voices.json:', err.message);
+    });
+
+  /* ── LOAD STORIES ── */
+  function loadFeed() {
+    feedEl.style.display = 'none';
+    feedSkeleton.style.display = 'block';
+
+    fetch(BASE + '/api/stories')
+      .then(function(r) {
+        if (!r.ok) throw new Error('API returned ' + r.status);
+        return r.json();
+      })
+      .then(function(stories) {
+        if (!stories || stories.length === 0) {
+          return fetch(BASE + '/api/fractures')
+            .then(function(r) {
+              if (!r.ok) throw new Error('Fractures API returned ' + r.status);
+              return r.json();
+            })
+            .then(function(f) {
+              return (f || []).map(function(x) {
+                return {
+                  headline: x.headline || x.topicDisplay,
+                  summary: x.insight || '',
+                  type: 'split',
+                  voiceCount: x.voiceCount,
+                  clusterCount: x.clusterCount,
+                  clusters: x.clusters,
+                };
+              });
+            });
+        }
+        return stories;
+      })
+      .then(function(stories) {
+        feedSkeleton.style.display = 'none';
+
+        if (!stories || stories.length === 0) {
+          showEmptyFeed();
+          return;
+        }
+
+        _storiesData = stories;
+        feedEl.style.display = 'block';
+
+        var now = new Date();
+        var dateStr = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+        var totalVoices = new Set();
+        stories.forEach(function(s) {
+          (s.clusters || []).forEach(function(c) {
+            (c.voices || []).forEach(function(v) {
+              totalVoices.add(v.voiceId);
+            });
+          });
+        });
+
+        feedEl.innerHTML =
+          '<div class="feed-header">' + dateStr + ' &middot; ' + stories.length + ' stories &middot; ' + totalVoices.size + ' voices</div>' +
+          stories.map(function(s) { return renderStoryCard(s); }).join('');
+      })
+      .catch(function(err) {
+        console.error('[Perspectives] Feed load failed:', err);
+        showFeedError('Could not connect to the Perspectives API. Check your connection and try again.');
+      });
+  }
+
+  loadFeed();
+
+  /* ── WIRE ── */
+  function wireTimeAgo(ts) {
+    try {
+      var d = Date.now() - new Date(ts).getTime();
+      var h = Math.floor(d / 3600000);
+      var m = Math.floor(d / 60000);
+      if (h > 24) return Math.floor(d / 86400000) + 'd';
+      if (h > 0) return h + 'h';
+      if (m > 0) return m + 'm';
+      return 'now';
+    } catch(e) { return ''; }
+  }
+
+  fetch(BASE + '/api/wire')
+    .then(function(r) {
+      if (!r.ok) throw new Error('Wire API returned ' + r.status);
+      return r.json();
+    })
+    .then(function(entries) {
+      if (!entries || entries.length === 0) return;
+      wireSection.style.display = 'block';
+      var voiceSet = new Set(entries.map(function(e) { return e.voiceId; }));
+      document.getElementById('wireSubtitle').textContent = 'What ' + voiceSet.size + ' voices are saying right now';
+      var feed = document.getElementById('wireFeed');
+      var wireHtml = '';
+      entries.slice(0, 50).forEach(function(e) {
+        var p = (e.platform || '').toLowerCase();
+        var pColor = PLATFORM_COLORS[p] || '#aaa';
+        wireHtml += '<div class="wire-entry">' +
+          '<img class="wire-photo" src="' + (e.photo || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(e.voiceName) + '&background=1c1c1f&color=a1a1aa&size=56') + '" alt="' + esc(e.voiceName) + '">' +
+          '<a class="wire-name" href="' + BASE + '/voice/' + e.voiceId + '">' + esc(e.voiceName) + '</a>' +
+          '<span class="wire-platform" style="background:' + pColor + '22;color:' + pColor + ';">' + (PLATFORM[p] || p) + '</span>' +
+          '<span class="wire-text">' + esc((e.text || '').substring(0, 120)) + '</span>' +
+          '<span class="wire-time">' + wireTimeAgo(e.timestamp) + '</span>' +
+        '</div>';
+      });
+      feed.innerHTML = wireHtml;
+
+      if (entries.length > 15) {
+        feed.classList.add('collapsed');
+        var btn = document.createElement('button');
+        btn.className = 'wire-show-more';
+        btn.textContent = 'Show all ' + Math.min(entries.length, 50) + ' entries';
+        btn.addEventListener('click', function() {
+          feed.classList.remove('collapsed');
+          btn.remove();
+        });
+        feed.parentNode.appendChild(btn);
+      }
+    })
+    .catch(function(err) {
+      console.warn('[Perspectives] Wire load failed:', err.message);
+      /* Wire is non-critical, fail silently but log */
+    });
+
+  /* ── TOPICS + HINTS ── */
+  fetch(BASE + '/api/topics')
+    .then(function(r) {
+      if (!r.ok) throw new Error('Topics API returned ' + r.status);
+      return r.json();
+    })
+    .then(function(topics) {
+      var sorted = Object.entries(topics)
+        .filter(function(pair) {
+          var k = pair[0], v = pair[1];
+          if (k === 'uncategorized') return false;
+          var unique = new Set(v.map(function(e) { return e.voiceName; }));
+          return unique.size >= 3;
+        })
+        .sort(function(a, b) { return b[1].length - a[1].length; })
+        .slice(0, 15);
+
+      if (sorted.length > 0) {
+        sorted.slice(0, 4).forEach(function(pair) {
+          var topic = pair[0];
+          var el = document.createElement('button');
+          el.className = 'search-hint';
+          el.type = 'button';
+          el.textContent = topic.replace(/-/g, ' ');
+          el.addEventListener('click', function() {
+            input.value = el.textContent;
+            doSearch();
+          });
+          searchHints.appendChild(el);
+        });
+
+        sorted.slice(4, 10).forEach(function(pair) {
+          var topic = pair[0];
+          var el = document.createElement('button');
+          el.className = 'search-hint curated';
+          el.type = 'button';
+          el.textContent = topic.replace(/-/g, ' ');
+          el.addEventListener('click', function() {
+            input.value = el.textContent;
+            doSearch();
+          });
+          searchHints.appendChild(el);
+        });
+
+        var allEntries = Object.values(topics).flat();
+        var uniqueVoices = new Set(allEntries.map(function(e) { return e.voiceId; }));
+        statsEl.innerHTML = '<span>' + allEntries.length + '</span> posts from <span>' + uniqueVoices.size + '</span> voices across <span>' + sorted.length + '+</span> topics';
+      }
+    })
+    .catch(function(err) {
+      console.warn('[Perspectives] Topics load failed:', err.message);
+    });
+
+  /* ── EVENT DELEGATION: SEARCH ── */
+  searchBtn.addEventListener('click', doSearch);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') doSearch();
   });
-  feed.innerHTML = wireHtml;
-  if (entries.length > 15) {
-    feed.classList.add('collapsed');
-    const btn = document.createElement('button');
-    btn.className = 'wire-show-more';
-    btn.textContent = `Show all ${Math.min(entries.length, 50)} entries`;
-    btn.onclick = () => { feed.classList.remove('collapsed'); btn.remove(); };
-    feed.parentNode.appendChild(btn);
+  input.addEventListener('focus', function() {
+    timeFilter.style.display = 'flex';
+  });
+
+  /* ── EVENT DELEGATION: TIME FILTER ── */
+  timeFilter.addEventListener('click', function(e) {
+    var btn = e.target.closest('.time-btn');
+    if (!btn) return;
+    var allBtns = timeFilter.querySelectorAll('.time-btn');
+    for (var i = 0; i < allBtns.length; i++) allBtns[i].classList.remove('active');
+    btn.classList.add('active');
+    selectedDays = btn.dataset.days;
+    if (input.value.trim()) doSearch();
+  });
+
+  /* ── SEARCH ── */
+  function doSearch() {
+    var q = input.value.trim();
+    if (!q) return;
+
+    searchBtn.disabled = true;
+    loading.classList.add('active');
+    resultsDiv.innerHTML = '';
+    feedEl.style.display = 'none';
+    feedSkeleton.style.display = 'none';
+    searchHints.style.display = 'none';
+    wireSection.style.display = 'none';
+    statsEl.style.display = 'none';
+    timeFilter.style.display = 'flex';
+
+    var url = BASE + '/api/lookup?q=' + encodeURIComponent(q);
+    if (selectedDays) url += '&days=' + selectedDays;
+
+    fetch(url)
+      .then(function(r) {
+        if (!r.ok) throw new Error('Search failed (HTTP ' + r.status + ')');
+        return r.json();
+      })
+      .then(function(data) {
+        if (data.error) {
+          resultsDiv.innerHTML = '';
+          resultsDiv.appendChild(
+            stateMessage(
+              '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>',
+              'Search returned an error',
+              data.error,
+              'Back to stories',
+              backToFeed
+            )
+          );
+        } else {
+          renderResults(data);
+        }
+      })
+      .catch(function(err) {
+        console.error('[Perspectives] Search failed:', err);
+        resultsDiv.innerHTML = '';
+        resultsDiv.appendChild(
+          stateMessage(
+            '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.36 5.64a9 9 0 11-12.73 0"/><path d="M12 2v4"/></svg>',
+            'Could not complete search',
+            'The API may be temporarily unavailable. Check your connection and try again.',
+            'Try again',
+            doSearch
+          )
+        );
+      })
+      .finally(function() {
+        searchBtn.disabled = false;
+        loading.classList.remove('active');
+      });
   }
-}).catch(()=>{});
 
-// ── TOPICS + HINTS ──
-fetch(BASE + '/api/topics').then(r=>r.json()).then(topics => {
-  const sorted = Object.entries(topics)
-    .filter(([k,v]) => k!=='uncategorized' && [...new Set(v.map(e=>e.voiceName))].length >= 3)
-    .sort((a,b) => b[1].length - a[1].length).slice(0,15);
-
-  if (sorted.length > 0) {
-    const hints = document.getElementById('searchHints');
-    sorted.slice(0,4).forEach(([topic]) => {
-      const el = document.createElement('div');
-      el.className = 'search-hint';
-      el.textContent = topic.replace(/-/g,' ');
-      el.onclick = () => { input.value = el.textContent; doSearch(); };
-      hints.appendChild(el);
-    });
-
-    // Show additional trending topics (data-driven only, no hardcoded political terms)
-    sorted.slice(4,10).forEach(([topic]) => {
-      const el = document.createElement('div');
-      el.className = 'search-hint curated';
-      el.textContent = topic.replace(/-/g,' ');
-      el.onclick = () => { input.value = el.textContent; doSearch(); };
-      hints.appendChild(el);
-    });
-
-    document.getElementById('stats').innerHTML = `<span>${Object.values(topics).flat().length}</span> posts from <span>${new Set(Object.values(topics).flat().map(e=>e.voiceId)).size}</span> voices across <span>${sorted.length}+</span> topics`;
-  }
-}).catch(()=>{});
-
-// ── SEARCH ──
-const input = document.getElementById('searchInput');
-const loading = document.getElementById('loading');
-const resultsDiv = document.getElementById('results');
-
-input.addEventListener('keydown', e => { if(e.key==='Enter') doSearch(); });
-input.addEventListener('focus', () => { document.getElementById('timeFilter').style.display='flex'; });
-
-let selectedDays = '';
-function setTimeFilter(el) {
-  document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('active'));
-  el.classList.add('active');
-  selectedDays = el.dataset.days;
-  if (input.value.trim()) doSearch();
-}
-
-async function doSearch() {
-  const q = input.value.trim();
-  if (!q) return;
-
-  document.getElementById('searchBtn').disabled = true;
-  loading.classList.add('active');
-  resultsDiv.innerHTML = '';
-  document.getElementById('feed').style.display = 'none';
-  document.getElementById('searchHints').style.display = 'none';
-  document.getElementById('wireSection').style.display = 'none';
-  document.getElementById('stats').style.display = 'none';
-  document.getElementById('timeFilter').style.display = 'flex';
-
-  try {
-    let url = `${BASE}/api/lookup?q=${encodeURIComponent(q)}`;
-    if (selectedDays) url += `&days=${selectedDays}`;
-    const resp = await fetch(url);
-    const data = await resp.json();
-    if (data.error) {
-      resultsDiv.innerHTML = `<div class="no-results">${esc(data.error)}</div>`;
-    } else {
-      renderResults(data);
+  /* ── RENDER RESULTS ── */
+  function renderResults(data) {
+    if (!data.voices || data.voices.length === 0) {
+      resultsDiv.innerHTML = '';
+      resultsDiv.appendChild(
+        stateMessage(
+          '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>',
+          'No voices on this topic yet',
+          'We track 257+ voices across X, YouTube, Bluesky, Substack, Instagram, TikTok, and podcasts. Try a different search or check back later.',
+          'Back to stories',
+          backToFeed
+        )
+      );
+      return;
     }
-  } catch(err) {
-    resultsDiv.innerHTML = `<div class="no-results">Search failed: ${esc(err.message)}</div>`;
+
+    data.voices.sort(function(a, b) { return b.quotes.length - a.quotes.length; });
+
+    var windowLabel = {
+      '1d': 'today', '3d': '3 days', '7d': 'week', '14d': '2 weeks', '30d': 'month'
+    }[data.timeWindow] || data.timeWindow || '';
+
+    var html = '<div class="results-header">' +
+      '<h2>' + data.voices.length + ' voices on this story' +
+      (windowLabel ? ' <span style="color:var(--text-dim);font-size:0.8em;">' + windowLabel + '</span>' : '') +
+      '</h2>' +
+      (data.broadeningNote ? '<div style="font-size:var(--text-sm);color:var(--text-muted);margin-top:var(--space-1);">' + esc(data.broadeningNote) + '</div>' : '') +
+      '<div class="results-topics">' + data.matchedTopics.map(function(t) { return '<span class="results-topic-tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
+    '</div>';
+
+    // Build cluster filter pills
+    var clusterGroups = {};
+    for (var ci = 0; ci < data.voices.length; ci++) {
+      var c = data.voices[ci].argumentCluster || '';
+      if (c) { if (!clusterGroups[c]) clusterGroups[c] = 0; clusterGroups[c]++; }
+    }
+    var clusterNames = Object.keys(clusterGroups).sort(function(a,b) { return clusterGroups[b] - clusterGroups[a]; });
+    if (clusterNames.length > 1) {
+      html += '<div class="filter-bar" id="clusterFilters">' +
+        '<span class="filter-pill active" data-cluster="">All ' + data.voices.length + '</span>' +
+        clusterNames.map(function(c) {
+          return '<span class="filter-pill" data-cluster="' + esc(c) + '">' + esc(c) + ' ' + clusterGroups[c] + '</span>';
+        }).join('') + '</div>';
+    }
+
+    // Build category filter pills
+    var CAT_LABELS = {all:'All',journalist:'Reporters',commentator:'Commentators',creator:'Creators',politician:'Politicians','think-tank':'Policy',activist:'Activists',satirist:'Satirists',economist:'Economists'};
+    html += '<div class="filter-bar" id="catFilters">' +
+      Object.keys(CAT_LABELS).map(function(k) {
+        return '<span class="filter-pill' + (k === 'all' ? ' active' : '') + '" data-cat="' + k + '">' + CAT_LABELS[k] + '</span>';
+      }).join('') + '</div>';
+
+    for (var i = 0; i < data.voices.length; i++) {
+      var voice = data.voices[i];
+      var clusterBadge = voice.argumentCluster ? '<span class="voice-cluster-badge">' + esc(voice.argumentCluster) + '</span>' : '';
+      var photo = voice.photo || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(voice.voiceName) + '&background=1c1c1f&color=a1a1aa&size=84';
+      var lens = voice.lens || _voiceLens[voice.voiceId] || '';
+      var tags = (voice.tags || []).map(function(t) {
+        var tip = TAG_GLOSSARY[t.toLowerCase()];
+        return '<span class="voice-tag"' + (tip ? ' title="' + esc(tip) + '" style="cursor:help;"' : '') + '>' + esc(t) + '</span>';
+      }).join('');
+
+      var vCat = _voiceCategory[voice.voiceId] || '';
+      html += '<div class="voice-card" data-cluster="' + esc(voice.argumentCluster || '') + '" data-cat="' + esc(vCat) + '">' +
+        '<div class="voice-header">' +
+          '<img class="voice-photo" src="' + photo + '" alt="' + esc(voice.voiceName) + '">' +
+          '<div>' +
+            '<a class="voice-name" href="' + BASE + '/voice/' + voice.voiceId + '">' + esc(voice.voiceName) + '</a>' +
+            (lens ? '<div class="voice-lens">' + esc(lens) + '</div>' : '') +
+            clusterBadge +
+          '</div>' +
+        '</div>' +
+        (tags ? '<div class="voice-tags">' + tags + '</div>' : '');
+
+      var quotes = voice.quotes.slice(0, 3);
+      for (var j = 0; j < quotes.length; j++) {
+        var q = quotes[j];
+        var pLabel = PLATFORM[q.platform] || q.platform;
+        var isTranscript = q.quote && q.quote.length > 150 && q.platform === 'youtube';
+        html += '<div class="quote">' +
+          '<div class="quote-platform">' + esc(pLabel) + (isTranscript ? ' (transcript)' : '') + '</div>' +
+          '<div class="quote-text">"' + esc((isTranscript ? q.quote.substring(0, 350) : q.quote.substring(0, 250))) + '"</div>' +
+          '<a class="quote-link" href="' + safeHref(q.sourceUrl) + '" target="_blank" rel="noopener">View original</a>' +
+        '</div>';
+      }
+
+      html += '</div>';
+    }
+
+    resultsDiv.innerHTML = html;
+
+    /* Wire up filter pills */
+    var activeCluster = '';
+    var activeCat = 'all';
+
+    function applyFilters() {
+      var cards = document.querySelectorAll('.voice-card');
+      var visible = 0;
+      for (var k = 0; k < cards.length; k++) {
+        var card = cards[k];
+        var clusterMatch = !activeCluster || card.dataset.cluster === activeCluster;
+        var catMatch = activeCat === 'all' || card.dataset.cat === activeCat;
+        card.style.display = (clusterMatch && catMatch) ? '' : 'none';
+        if (clusterMatch && catMatch) visible++;
+      }
+      var h = document.querySelector('.results-header h2');
+      if (h) h.innerHTML = visible + ' voices on this story' + (windowLabel ? ' <span style="color:var(--text-dim);font-size:0.8em;">' + windowLabel + '</span>' : '');
+    }
+
+    document.querySelectorAll('#clusterFilters .filter-pill').forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        document.querySelectorAll('#clusterFilters .filter-pill').forEach(function(p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        activeCluster = pill.dataset.cluster || '';
+        applyFilters();
+      });
+    });
+
+    document.querySelectorAll('#catFilters .filter-pill').forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        document.querySelectorAll('#catFilters .filter-pill').forEach(function(p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        activeCat = pill.dataset.cat || 'all';
+        applyFilters();
+      });
+    });
+
+    /* Append back button using event listener instead of inline onclick */
+    var backWrap = document.createElement('div');
+    backWrap.className = 'back-to-feed';
+    var backBtn = document.createElement('button');
+    backBtn.textContent = 'Back to today\'s stories';
+    backBtn.addEventListener('click', backToFeed);
+    backWrap.appendChild(backBtn);
+    resultsDiv.appendChild(backWrap);
   }
 
-  document.getElementById('searchBtn').disabled = false;
-  loading.classList.remove('active');
-}
-
-function renderResults(data) {
-  if (!data.voices || data.voices.length === 0) {
-    resultsDiv.innerHTML = '<div class="no-results">No voices discussing this topic yet. We track 257+ voices across X, YouTube, Bluesky, Substack, Instagram, TikTok, and podcasts.</div>';
-    return;
+  /* ── BACK TO FEED ── */
+  function backToFeed() {
+    input.value = '';
+    resultsDiv.innerHTML = '';
+    feedEl.style.display = 'block';
+    searchHints.style.display = '';
+    wireSection.style.display = 'block';
+    statsEl.style.display = '';
+    timeFilter.style.display = 'none';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  data.voices.sort((a,b) => b.quotes.length - a.quotes.length);
-
-  const windowLabel = {
-    '1d':'today','3d':'3 days','7d':'week','14d':'2 weeks','30d':'month'
-  }[data.timeWindow] || data.timeWindow || '';
-
-  let html = `<div class="results-header">
-    <h2>${data.voices.length} voices on this story${windowLabel ? ` <span style="color:var(--text-dim);font-size:0.8em;">${windowLabel}</span>` : ''}</h2>
-    ${data.broadeningNote ? `<div style="font-size:13px;color:var(--text-muted);margin-top:4px;">${esc(data.broadeningNote)}</div>` : ''}
-    <div class="results-topics">${data.matchedTopics.map(t=>`<span class="results-topic-tag">${esc(t)}</span>`).join('')}</div>
-  </div>`;
-
-  for (const voice of data.voices) {
-    const clusterBadge = voice.argumentCluster ? `<span class="voice-cluster-badge">${esc(voice.argumentCluster)}</span>` : '';
-    const photo = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=1c1c1f&color=a1a1aa&size=84`;
-    const lens = voice.lens || _voiceLens[voice.voiceId] || '';
-    const tags = (voice.tags||[]).map(t => {
-      const tip = TAG_GLOSSARY[t.toLowerCase()];
-      return `<span class="voice-tag"${tip ? ` title="${esc(tip)}" style="cursor:help;"` : ''}>${esc(t)}</span>`;
-    }).join('');
-
-    html += `<div class="voice-card">
-      <div class="voice-header">
-        <img class="voice-photo" src="${photo}" alt="${esc(voice.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=1c1c1f&color=a1a1aa&size=84'">
-        <div>
-          <a class="voice-name" href="${BASE}/voice/${voice.voiceId}">${esc(voice.voiceName)}</a>
-          ${lens ? `<div class="voice-lens">${esc(lens)}</div>` : ''}
-          ${clusterBadge}
-        </div>
-      </div>
-      ${tags ? `<div class="voice-tags">${tags}</div>` : ''}
-      ${voice.quotes.slice(0,3).map(q => {
-        const pLabel = PLATFORM[q.platform]||q.platform;
-        const isTranscript = q.quote && q.quote.length > 150 && q.platform === 'youtube';
-        return `<div class="quote">
-          <div class="quote-platform">${esc(pLabel)}${isTranscript?' (transcript)':''}</div>
-          <div class="quote-text">"${esc((isTranscript ? q.quote.substring(0,350) : q.quote.substring(0,250)))}"</div>
-          <a class="quote-link" href="${q.sourceUrl}" target="_blank">View original</a>
-        </div>`;
-      }).join('')}
-    </div>`;
-  }
-
-  resultsDiv.innerHTML = html + `<div class="back-to-feed"><button onclick="backToFeed()">Back to today's stories</button></div>`;
-}
-
-function backToFeed() {
-  input.value = '';
-  resultsDiv.innerHTML = '';
-  document.getElementById('feed').style.display = 'block';
-  document.getElementById('searchHints').style.display = '';
-  document.getElementById('wireSection').style.display = 'block';
-  document.getElementById('stats').style.display = '';
-  document.getElementById('timeFilter').style.display = 'none';
-}
+})();
 </script>
 
 </body>
