@@ -913,22 +913,39 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
     _usage_stats['claude_calls'] += 1
     _usage_stats['total_input_chars'] += len(prompt)
 
+    # Retry logic: 3 attempts with exponential backoff
+    last_error = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                'https://api.anthropic.com/v1/messages',
+                data=json.dumps({
+                    'model': 'claude-haiku-4-5-20251001',
+                    'max_tokens': 2048,
+                    'messages': [{'role': 'user', 'content': prompt}],
+                }).encode(),
+                headers={
+                    'x-api-key': ANTHROPIC_API_KEY,
+                    'anthropic-version': '2023-06-01',
+                    'content-type': 'application/json',
+                },
+            )
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = json.loads(resp.read().decode())
+            break  # success
+        except Exception as e:
+            last_error = e
+            if attempt < 2:
+                wait = (attempt + 1) * 2
+                print(f"    Retry {attempt + 1}/3 after {wait}s: {e}")
+                import time as _t
+                _t.sleep(wait)
+            continue
+    else:
+        print(f"    Claude categorization failed after 3 attempts: {last_error}")
+        return posts
+
     try:
-        req = urllib.request.Request(
-            'https://api.anthropic.com/v1/messages',
-            data=json.dumps({
-                'model': 'claude-haiku-4-5-20251001',
-                'max_tokens': 2048,
-                'messages': [{'role': 'user', 'content': prompt}],
-            }).encode(),
-            headers={
-                'x-api-key': ANTHROPIC_API_KEY,
-                'anthropic-version': '2023-06-01',
-                'content-type': 'application/json',
-            },
-        )
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = json.loads(resp.read().decode())
 
         result_text = data.get('content', [{}])[0].get('text', '')
         # Track output tokens from API response if available
