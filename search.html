@@ -852,7 +852,8 @@
     <input type="text" id="searchInput" placeholder="Search any story..." autofocus>
     <button id="searchBtn" onclick="doSearch()">Search</button>
   </div>
-  <div class="time-filter" style="display:flex;gap:6px;justify-content:center;margin-top:8px;flex-wrap:wrap;">
+  <div class="time-filter" id="timeFilter" style="display:none;gap:6px;justify-content:center;margin-top:8px;flex-wrap:wrap;">
+    <span style="font-size:var(--text-caption);color:var(--text-muted);align-self:center;margin-right:4px;">Search window:</span>
     <button class="time-btn active" data-days="" onclick="setTimeFilter(this)">Auto</button>
     <button class="time-btn" data-days="1" onclick="setTimeFilter(this)">Today</button>
     <button class="time-btn" data-days="3" onclick="setTimeFilter(this)">3 days</button>
@@ -862,6 +863,7 @@
   </div>
 
   <div class="example-queries" id="exampleQueries"></div>
+  <div class="example-queries" id="suggestedTopics" style="margin-top:8px;"></div>
 </div>
 
 <!-- THE CONVERSATION -->
@@ -1450,11 +1452,30 @@ fetch(BASE + '/api/topics')
 
       // Trending section removed — example chips + story cards are enough
       statsDiv.innerHTML = `<span>${Object.values(topics).flat().length}</span> posts from <span>${new Set(Object.values(topics).flat().map(e => e.voiceId)).size}</span> voices across <span>${sorted.length}+</span> topics today`;
+
+      // Add curated topic suggestions for discovery
+      const suggestedDiv = document.getElementById('suggestedTopics');
+      const curated = ['reproductive rights', 'immigration', 'climate change', 'education', 'gun control', 'housing', 'criminal justice', 'voting rights', 'racial justice', 'healthcare', 'LGBTQ rights', 'media literacy'];
+      // Only show curated topics not already in trending chips
+      const trendingSet = new Set(sorted.slice(0, 4).map(([t]) => t.replace(/-/g, ' ').toLowerCase()));
+      const filtered = curated.filter(t => !trendingSet.has(t));
+      filtered.slice(0, 6).forEach(topic => {
+        const el = document.createElement('div');
+        el.className = 'example-query';
+        el.textContent = topic;
+        el.style.borderStyle = 'dashed';
+        el.onclick = () => { input.value = topic; doSearch(); };
+        suggestedDiv.appendChild(el);
+      });
     }
   })
   .catch(() => {});
 
 input.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
+input.addEventListener('focus', () => { document.getElementById('timeFilter').style.display = 'flex'; });
+input.addEventListener('input', () => {
+  if (input.value.trim()) document.getElementById('timeFilter').style.display = 'flex';
+});
 
 function setQuery(el) { input.value = el.textContent; doSearch(); }
 
@@ -1477,7 +1498,9 @@ async function doSearch() {
   // Hide fractures and examples when searching
   document.getElementById('fracturesSection').style.display = 'none';
   document.getElementById('exampleQueries').style.display = 'none';
+  document.getElementById('suggestedTopics').style.display = 'none';
   document.getElementById('trendingSection').style.display = 'none';
+  document.getElementById('timeFilter').style.display = 'flex';
   statsDiv.style.display = 'none';
 
   try {
@@ -1572,7 +1595,12 @@ function renderResults(data) {
 
     const photoUrl = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96`;
     const tagsHtml = voice.tags && voice.tags.length
-      ? `<div style="margin-top:4px; display:flex; flex-wrap:wrap; gap:4px;">${voice.tags.map(t => `<span style="display:inline-block; font-size:0.72em; color:var(--text-secondary); background:var(--bg-surface-2); border:1px solid var(--border-default); border-radius:100px; padding:2px 10px;">${escapeHtml(t)}</span>`).join('')}</div>` : '';
+      ? `<div style="margin-top:4px; display:flex; flex-wrap:wrap; gap:4px;">${voice.tags.map(t => {
+          const tip = TAG_GLOSSARY[t.toLowerCase()];
+          const titleAttr = tip ? ` title="${escapeHtml(tip)}"` : '';
+          const cursor = tip ? 'cursor:help;' : '';
+          return `<span style="display:inline-block; font-size:0.72em; color:var(--text-secondary); background:var(--bg-surface-2); border:1px solid var(--border-default); border-radius:100px; padding:2px 10px;${cursor}"${titleAttr}>${escapeHtml(t)}</span>`;
+        }).join('')}</div>` : '';
 
     const voiceCategory = _voiceCategoryMap[voice.voiceId] || '';
     const voiceApproach = _voiceApproachMap[voice.voiceId] || '';
@@ -1688,6 +1716,32 @@ function escapeHtml(text) {
 }
 
 const PLATFORM_LABELS_GLOBAL = {x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'};
+
+// Tag glossary for tooltips
+const TAG_GLOSSARY = {
+  'hawkish': 'Favors strong military action or aggressive foreign policy',
+  'anti-establishment': 'Skeptical of institutional power, both parties',
+  'contrarian': 'Frequently takes positions against mainstream consensus',
+  'centrist': 'Positions don\'t align consistently with either party',
+  'populist': 'Frames issues as people vs. elites',
+  'libertarian-leaning': 'Prioritizes individual freedom, skeptical of government',
+  'progressive': 'Advocates systemic change on social/economic issues',
+  'constitutionalist': 'Frames arguments through constitutional law',
+  'digital media': 'Primarily reaches audiences through social platforms',
+  'heterodox': 'Positions cross traditional left-right lines',
+  'conservative': 'Aligns with traditional values and limited government',
+  'liberal': 'Favors social progress and government role in equity',
+  'anti-war': 'Opposes military intervention',
+  'pro-Israel': 'Supports strong U.S.-Israel alliance',
+  'anti-Trump': 'Critical of Trump and MAGA movement',
+  'pro-Trump': 'Supportive of Trump and his agenda',
+  'MAGA': 'Aligned with Trump\'s Make America Great Again movement',
+  'free speech': 'Prioritizes broad speech protections',
+  'anti-woke': 'Critical of progressive social justice activism',
+  'democratic socialist': 'Advocates democratic control of economic systems',
+  'neoconservative': 'Hawkish foreign policy, pro-democracy promotion abroad',
+  'fiscal conservative': 'Prioritizes reducing government spending and debt',
+};
 
 function handleFaceClick(faceEl) {
   const ci = faceEl.dataset.clusterIdx;

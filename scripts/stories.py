@@ -82,6 +82,26 @@ def call_claude(prompt, max_tokens=1024):
             return json.loads(json_match.group())
     except Exception as e:
         print(f"  Claude API error: {e}")
+
+
+# Cluster name normalization: standardize synonyms
+CLUSTER_NAME_MAP = {
+    'media coverage critique': 'Media Criticism',
+    'media critique': 'Media Criticism',
+    'media accountability': 'Media Criticism',
+    'press criticism': 'Media Criticism',
+    'anti-media': 'Media Criticism',
+    'media skepticism': 'Media Criticism',
+}
+
+
+def normalize_cluster_name(name):
+    """Normalize cluster name for consistency across stories."""
+    low = name.strip().lower()
+    if low in CLUSTER_NAME_MAP:
+        return CLUSTER_NAME_MAP[low]
+    # Title case
+    return name.strip().title() if name == name.lower() else name.strip()
     return None
 
 
@@ -536,7 +556,7 @@ def build_stories(date=None):
 
             if cluster_voices:
                 cluster_list.append({
-                    'name': cluster_name,
+                    'name': normalize_cluster_name(cluster_name),
                     'voices': cluster_voices,
                     'voiceCount': len(cluster_voices),
                 })
