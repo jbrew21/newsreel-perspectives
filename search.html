@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perspectives -- Step Outside Your Algorithm</title>
+<title>Perspectives by Newsreel -- See Every Side of the Story</title>
+<meta name="description" content="Track 257 public voices across the political spectrum. See how they react to today's biggest stories, clustered by argument -- not left vs. right.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
 
   :root {
     --bg-base: #0a0a0b;
@@ -14,14 +17,23 @@
     --bg-hover: #252528;
     --text-primary: #fafafa;
     --text-secondary: #a1a1aa;
-    --text-muted: #71717a;
-    --text-dim: #52525b;
+    --text-muted: #8b8b96;
+    --text-dim: #6e6e7a;
     --border: rgba(255,255,255,0.06);
     --accent: #FF6343;
     --accent-bg: rgba(255,99,67,0.12);
   }
 
   * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* ── SKIP LINK ── */
+  .skip-link {
+    position:absolute; top:-100%; left:16px; z-index:100;
+    background:var(--accent); color:#fff; padding:12px 24px;
+    border-radius:0 0 8px 8px; font-weight:600; font-size:14px;
+    text-decoration:none; transition:top 0.2s;
+  }
+  .skip-link:focus { top:0; }
 
   body {
     font-family: 'DM Sans', -apple-system, sans-serif;
@@ -31,14 +43,21 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  :focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  :focus:not(:focus-visible) { outline:none; }
+
   /* ── NAV ── */
   .nav { max-width:680px; margin:0 auto; padding:20px 20px 0; display:flex; justify-content:space-between; align-items:center; }
   .nav-brand { display:flex; align-items:baseline; gap:0; text-decoration:none; }
   .nav-brand-text { font-size:1.6em; font-weight:700; color:var(--text-primary); letter-spacing:-0.03em; }
   .nav-brand-accent { color:var(--accent); }
-  .nav-live { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-muted); margin-top:2px; }
-  .nav-live-dot { width:6px; height:6px; border-radius:50%; background:var(--accent); animation:pulse 2s infinite; }
-  @keyframes pulse { 0%,100%{opacity:0.4} 50%{opacity:1} }
+  .nav-tagline { font-size:12px; color:var(--text-muted); margin-top:2px; letter-spacing:0.02em; }
+  .nav-actions { display:flex; align-items:center; gap:8px; }
+  .nav-method-btn {
+    font-size:13px; font-weight:500; color:var(--text-muted);
+    text-decoration:none; padding:8px 12px; transition:color 0.2s;
+  }
+  .nav-method-btn:hover { color:var(--text-primary); }
   .nav-voices-btn {
     font-size:13px; font-weight:600; color:var(--text-secondary);
     background:var(--bg-elevated); border:1px solid var(--border);
@@ -46,6 +65,17 @@
     transition:all 0.2s;
   }
   .nav-voices-btn:hover { border-color:var(--accent); color:var(--accent); }
+
+  /* ── HERO ── */
+  .hero-section { max-width:680px; margin:0 auto; padding:32px 20px 8px; text-align:center; }
+  .hero-title {
+    font-size:2em; font-weight:700; color:var(--text-primary);
+    letter-spacing:-0.03em; line-height:1.2; margin-bottom:8px;
+  }
+  .hero-subtitle {
+    font-size:15px; color:var(--text-muted); line-height:1.5; max-width:480px; margin:0 auto;
+  }
+  .hero-subtitle strong { color:var(--text-primary); font-weight:600; }
 
   /* ── SEARCH ── */
   .search-section { max-width:680px; margin:0 auto; padding:16px 20px 0; }
@@ -66,7 +96,7 @@
     cursor:pointer; font-family:inherit; transition:background 0.2s;
   }
   .search-box button:hover { background:#e5553a; }
-  .search-box button:disabled { background:#555; cursor:not-allowed; }
+  .search-box button:disabled { background:var(--bg-hover); color:var(--text-dim); cursor:not-allowed; }
 
   .search-hints { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; justify-content:center; }
   .search-hint {
@@ -84,24 +114,27 @@
   .time-label { font-size:11px; color:var(--text-dim); margin-right:4px; }
   .time-btn {
     background:var(--bg-elevated); color:var(--text-muted);
-    border:1px solid var(--border); padding:4px 12px;
-    border-radius:16px; font-size:11px; cursor:pointer;
+    border:1px solid var(--border); padding:6px 14px;
+    border-radius:100px; font-size:12px; cursor:pointer;
     font-family:inherit; transition:all 0.15s;
+    min-height:32px; display:inline-flex; align-items:center;
   }
   .time-btn:hover { border-color:var(--text-muted); color:var(--text-secondary); }
   .time-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 
   /* ── STORIES FEED ── */
   .feed { max-width:680px; margin:0 auto; padding:24px 20px 60px; }
-  .feed-header { font-size:11px; font-weight:700; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px; text-align:center; }
+  .feed-header { font-size:13px; font-weight:600; color:var(--text-muted); letter-spacing:0.02em; margin-bottom:20px; text-align:center; padding-bottom:16px; border-bottom:1px solid var(--border); }
 
   /* ── STORY CARD (matches app design) ── */
   .story-card {
+    display:block; text-decoration:none; color:inherit;
     background:var(--bg-card); border:1px solid var(--border);
     border-radius:16px; padding:20px; margin-bottom:16px;
     cursor:pointer; transition:all 0.2s;
   }
   .story-card:hover { border-color:rgba(255,255,255,0.12); transform:translateY(-1px); }
+  .story-card:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
   .story-card:active { transform:translateY(0); }
 
   .story-headline {
@@ -159,9 +192,23 @@
   /* ── WIRE ── */
   .wire-section { max-width:680px; margin:0 auto; padding:0 20px 60px; }
   .wire-header { margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid var(--border); }
-  .wire-title { font-size:11px; font-weight:700; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; display:flex; align-items:center; gap:8px; }
+  .wire-title { font-size:13px; font-weight:700; color:var(--text-secondary); text-transform:uppercase; letter-spacing:0.06em; display:flex; align-items:center; gap:8px; }
   .wire-subtitle { font-size:13px; color:var(--text-muted); margin-top:4px; }
-  .wire-feed { max-height:500px; overflow-y:auto; }
+  .wire-feed { }
+  .wire-feed.collapsed { max-height:400px; overflow:hidden; position:relative; }
+  .wire-feed.collapsed::after {
+    content:''; position:absolute; bottom:0; left:0; right:0; height:60px;
+    background:linear-gradient(transparent, var(--bg-base));
+    pointer-events:none;
+  }
+  .wire-show-more {
+    display:block; width:100%; padding:12px; margin-top:8px;
+    font-size:13px; font-weight:600; color:var(--accent);
+    background:var(--bg-card); border:1px solid var(--border);
+    border-radius:12px; cursor:pointer; font-family:inherit;
+    text-align:center; transition:all 0.2s;
+  }
+  .wire-show-more:hover { border-color:var(--accent); }
   .wire-entry {
     display:flex; align-items:center; gap:10px;
     padding:8px 0; border-bottom:1px solid var(--border);
@@ -184,7 +231,7 @@
 
   .voice-card {
     background:var(--bg-card); border:1px solid var(--border);
-    border-radius:14px; padding:16px; margin-bottom:10px;
+    border-radius:16px; padding:16px; margin-bottom:12px;
     transition:border-color 0.2s;
   }
   .voice-card:hover { border-color:rgba(255,255,255,0.1); }
@@ -195,7 +242,7 @@
   .voice-lens { font-size:12px; color:var(--text-muted); margin-top:2px; line-height:1.4; }
   .voice-cluster-badge {
     font-size:11px; font-weight:600; padding:3px 10px;
-    border-radius:6px; background:rgba(255,255,255,0.08);
+    border-radius:100px; background:rgba(255,255,255,0.08);
     color:var(--text-secondary); border:1px solid var(--border);
     margin-top:4px; display:inline-block;
   }
@@ -211,12 +258,37 @@
   .quote-link:hover { text-decoration:underline; }
 
   .no-results { text-align:center; padding:60px; color:var(--text-muted); font-size:14px; }
+  .back-to-feed {
+    display:block; max-width:680px; margin:0 auto; padding:12px 20px;
+    text-align:center;
+  }
+  .back-to-feed button {
+    font-size:13px; font-weight:600; color:var(--text-muted);
+    background:none; border:1px solid var(--border); border-radius:12px;
+    padding:10px 24px; cursor:pointer; font-family:inherit;
+    transition:all 0.2s;
+  }
+  .back-to-feed button:hover { color:var(--text-primary); border-color:var(--text-muted); }
 
   /* ── LOADING ── */
   .loading { text-align:center; padding:60px; color:var(--text-muted); font-size:14px; display:none; }
   .loading.active { display:block; }
   .spinner { display:inline-block; width:18px; height:18px; border:2px solid var(--bg-elevated); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-right:8px; vertical-align:middle; }
   @keyframes spin { to{transform:rotate(360deg)} }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    max-width:680px; margin:0 auto; padding:40px 20px 32px;
+    border-top:1px solid var(--border); text-align:center;
+  }
+  .footer-brand { font-size:14px; font-weight:700; color:var(--text-primary); margin-bottom:8px; }
+  .footer-brand span { color:var(--accent); }
+  .footer-links { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-bottom:12px; }
+  .footer-links a {
+    font-size:13px; color:var(--text-muted); text-decoration:none; transition:color 0.2s;
+  }
+  .footer-links a:hover { color:var(--text-primary); }
+  .footer-copy { font-size:12px; color:var(--text-dim); }
 
   /* ── STATS ── */
   .stats { text-align:center; padding:12px 20px; color:var(--text-dim); font-size:11px; text-transform:uppercase; letter-spacing:0.05em; font-weight:700; }
@@ -226,37 +298,56 @@
   @media (max-width:600px) {
     .nav { padding:16px 16px 0; }
     .nav-brand-text { font-size:1.3em; }
+    .nav-method-btn { display:none; }
+    .hero-section { padding:24px 16px 4px; }
+    .hero-title { font-size:1.5em; }
+    .hero-subtitle { font-size:14px; }
     .search-section { padding:12px 16px 0; }
     .feed { padding:20px 16px 40px; }
     .story-card { padding:16px; }
     .story-headline { font-size:1.1em; }
-    .vs-face { width:38px; height:38px; margin-left:-8px; }
-    .vs-badge { width:30px; height:30px; font-size:10px; }
-    .vs-cluster-name { font-size:11px; max-width:110px; }
+    .vs-face { width:34px; height:34px; margin-left:-8px; }
+    .vs-badge { width:28px; height:28px; font-size:10px; }
+    .vs-cluster-name { font-size:11px; max-width:100px; }
+    .vs-layout { gap:8px; }
     .wire-section { padding:0 16px 40px; }
     .results { padding:0 16px 40px; }
     .wire-text { white-space:normal; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; padding-left:38px; width:100%; flex:none; }
     .wire-entry { flex-wrap:wrap; gap:6px; }
-    .search-hint { min-height:36px; display:inline-flex; align-items:center; }
+    .search-hint { min-height:44px; display:inline-flex; align-items:center; }
+    .time-btn { min-height:44px; padding:8px 16px; font-size:13px; }
+    .site-footer { padding:32px 16px 24px; }
   }
 </style>
 </head>
 <body>
 
-<div class="nav">
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<nav class="nav" aria-label="Primary navigation">
   <div>
     <a class="nav-brand" id="homeLink" href="/">
       <span class="nav-brand-text">Perspec<span class="nav-brand-accent">tives</span></span>
     </a>
-    <div class="nav-live"><div class="nav-live-dot"></div> Live</div>
+    <div class="nav-tagline">by Newsreel</div>
   </div>
-  <a class="nav-voices-btn" id="voicesBtn" href="/voices"><span id="voiceCount">257</span> Voices &rarr;</a>
+  <div class="nav-actions">
+    <a class="nav-method-btn" href="/methodology">Methodology</a>
+    <a class="nav-voices-btn" id="voicesBtn" href="/voices"><span id="voiceCount">257</span> Voices &rarr;</a>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<div class="hero-section">
+  <h1 class="hero-title">See every side of the story</h1>
+  <p class="hero-subtitle">Tracking <strong id="heroVoiceCount">257</strong> public voices across 7 platforms. Clustered by argument, not left vs. right.</p>
 </div>
 
 <div class="search-section">
   <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search any story..." autofocus>
-    <button id="searchBtn" onclick="doSearch()">Search</button>
+    <input type="text" id="searchInput" placeholder="Search any topic or story..." autofocus aria-label="Search voices and stories">
+    <button id="searchBtn" onclick="doSearch()" aria-label="Search">Search</button>
   </div>
   <div class="time-filter" id="timeFilter">
     <span class="time-label">Window:</span>
@@ -281,14 +372,33 @@
   <div class="wire-feed" id="wireFeed"></div>
 </div>
 
-<div class="loading" id="loading"><span class="spinner"></span> Searching 257 voices...</div>
+<div class="loading" id="loading" role="status" aria-live="polite"><span class="spinner"></span> Searching 257 voices...</div>
 <div class="results" id="results"></div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">Perspec<span>tives</span> by Newsreel</div>
+  <div class="footer-links">
+    <a href="/methodology">Methodology</a>
+    <a href="/voices">All Voices</a>
+    <a href="https://newsreel.co" target="_blank" rel="noopener">Newsreel</a>
+    <a href="mailto:jack@newsreel.co">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Newsreel, Inc. All rights reserved.</div>
+</footer>
 
 <script>
 const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
 const PAGES = { search: BASE || '/', voices: BASE + '/voices', methodology: BASE + '/methodology' };
 document.getElementById('homeLink').href = PAGES.search;
 document.getElementById('voicesBtn').href = PAGES.voices;
+const methodLink = document.querySelector('.nav-method-btn');
+if (methodLink) methodLink.href = PAGES.methodology;
+const footerMethodLink = document.querySelector('.footer-links a[href="/methodology"]');
+if (footerMethodLink) footerMethodLink.href = PAGES.methodology;
+const footerVoicesLink = document.querySelector('.footer-links a[href="/voices"]');
+if (footerVoicesLink) footerVoicesLink.href = PAGES.voices;
 
 const COLORS = ['#60A5FA','#F87171','#FBBF24','#A78BFA','#4ADE80','#22D3EE','#F472B6','#FB923C'];
 const PLATFORM = {x:'X',youtube:'YouTube',bluesky:'Bluesky',instagram:'Instagram',tiktok:'TikTok',substack:'Substack',podcast:'Podcast'};
@@ -311,6 +421,8 @@ let _voiceCategory = {};
 let _voiceApproach = {};
 fetch(BASE + '/data/voices.json').then(r=>r.json()).then(voices => {
   document.getElementById('voiceCount').textContent = voices.length;
+  const heroCount = document.getElementById('heroVoiceCount');
+  if (heroCount) heroCount.textContent = voices.length;
   for (const v of voices) {
     _voiceLens[v.id] = v.lens || '';
     _voiceCategory[v.id] = v.category || '';
@@ -360,7 +472,7 @@ function renderStoryCard(story) {
 
   const slug = slugify(story.headline);
 
-  return `<div class="story-card" onclick="window.location.href='${BASE}/story/${slug}'">
+  return `<a class="story-card" href="${BASE}/story/${slug}" aria-label="${esc(story.headline)} — ${totalVoices} voices, ${clusterCount} positions">
     <div class="story-headline">${esc(story.headline)}</div>
     <div class="story-meta">${totalVoices} voices &middot; ${clusterCount} positions</div>
     ${left ? `<div class="vs-layout">
@@ -370,7 +482,7 @@ function renderStoryCard(story) {
     </div>` : ''}
     <div class="proportion-bar">${barHtml}</div>
     <div class="story-cta">See ${clusterCount} positions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></div>
-  </div>`;
+  </a>`;
 }
 
 // ── LOAD STORIES ──
@@ -424,17 +536,27 @@ fetch(BASE + '/api/wire').then(r=>r.json()).then(entries => {
   const voiceSet = new Set(entries.map(e=>e.voiceId));
   document.getElementById('wireSubtitle').textContent = `What ${voiceSet.size} voices are saying right now`;
   const feed = document.getElementById('wireFeed');
+  let wireHtml = '';
   entries.slice(0,50).forEach(e => {
     const p = (e.platform||'').toLowerCase();
     const pColor = PLATFORM_COLORS[p]||'#aaa';
-    feed.innerHTML += `<div class="wire-entry">
-      <img class="wire-photo" src="${e.photo||`https://ui-avatars.com/api/?name=${encodeURIComponent(e.voiceName)}&background=1c1c1f&color=a1a1aa&size=56`}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(e.voiceName)}&background=1c1c1f&color=a1a1aa&size=56'">
+    wireHtml += `<div class="wire-entry">
+      <img class="wire-photo" src="${e.photo||`https://ui-avatars.com/api/?name=${encodeURIComponent(e.voiceName)}&background=1c1c1f&color=a1a1aa&size=56`}" alt="${esc(e.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(e.voiceName)}&background=1c1c1f&color=a1a1aa&size=56'">
       <a class="wire-name" href="${BASE}/voice/${e.voiceId}">${esc(e.voiceName)}</a>
       <span class="wire-platform" style="background:${pColor}22;color:${pColor};">${PLATFORM[p]||p}</span>
       <span class="wire-text">${esc((e.text||'').substring(0,120))}</span>
       <span class="wire-time">${wireTimeAgo(e.timestamp)}</span>
     </div>`;
   });
+  feed.innerHTML = wireHtml;
+  if (entries.length > 15) {
+    feed.classList.add('collapsed');
+    const btn = document.createElement('button');
+    btn.className = 'wire-show-more';
+    btn.textContent = `Show all ${Math.min(entries.length, 50)} entries`;
+    btn.onclick = () => { feed.classList.remove('collapsed'); btn.remove(); };
+    feed.parentNode.appendChild(btn);
+  }
 }).catch(()=>{});
 
 // ── TOPICS + HINTS ──
@@ -453,13 +575,12 @@ fetch(BASE + '/api/topics').then(r=>r.json()).then(topics => {
       hints.appendChild(el);
     });
 
-    const curated = ['reproductive rights','immigration','climate change','education','gun control','housing','criminal justice','voting rights','racial justice','healthcare','LGBTQ rights','media literacy'];
-    const trendingSet = new Set(sorted.slice(0,4).map(([t])=>t.replace(/-/g,' ').toLowerCase()));
-    curated.filter(t=>!trendingSet.has(t)).slice(0,6).forEach(topic => {
+    // Show additional trending topics (data-driven only, no hardcoded political terms)
+    sorted.slice(4,10).forEach(([topic]) => {
       const el = document.createElement('div');
       el.className = 'search-hint curated';
-      el.textContent = topic;
-      el.onclick = () => { input.value = topic; doSearch(); };
+      el.textContent = topic.replace(/-/g,' ');
+      el.onclick = () => { input.value = el.textContent; doSearch(); };
       hints.appendChild(el);
     });
 
@@ -563,7 +684,17 @@ function renderResults(data) {
     </div>`;
   }
 
-  resultsDiv.innerHTML = html;
+  resultsDiv.innerHTML = html + `<div class="back-to-feed"><button onclick="backToFeed()">Back to today's stories</button></div>`;
+}
+
+function backToFeed() {
+  input.value = '';
+  resultsDiv.innerHTML = '';
+  document.getElementById('feed').style.display = 'block';
+  document.getElementById('searchHints').style.display = '';
+  document.getElementById('wireSection').style.display = 'block';
+  document.getElementById('stats').style.display = '';
+  document.getElementById('timeFilter').style.display = 'none';
 }
 </script>
 
