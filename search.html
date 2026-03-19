@@ -3,1943 +3,567 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perspectives — Step Outside Your Algorithm</title>
+<title>Perspectives -- Step Outside Your Algorithm</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
 
   :root {
     --bg-base: #0a0a0b;
-    --bg-surface: #141416;
-    --bg-surface-2: #1c1c1f;
-    --bg-elevated: #252528;
+    --bg-card: #141416;
+    --bg-elevated: #1c1c1f;
+    --bg-hover: #252528;
     --text-primary: #fafafa;
     --text-secondary: #a1a1aa;
-    --text-tertiary: #71717a;
     --text-muted: #71717a;
-    --border-subtle: rgba(255, 255, 255, 0.06);
-    --border-default: rgba(255, 255, 255, 0.1);
+    --text-dim: #52525b;
+    --border: rgba(255,255,255,0.06);
     --accent: #FF6343;
-    --accent-bg: rgba(255, 99, 67, 0.12);
-    --cluster-blue: #60A5FA;
-    --cluster-coral: #F87171;
-    --cluster-amber: #FBBF24;
-    --cluster-violet: #A78BFA;
-    --cluster-green: #4ADE80;
-    --cluster-cyan: #22D3EE;
-    --text-display: 2rem;
-    --text-title: 1.15rem;
-    --text-body: 0.875rem;
-    --text-label: 0.75rem;
-    --text-caption: 0.6875rem;
+    --accent-bg: rgba(255,99,67,0.12);
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; }
 
   body {
-    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'DM Sans', -apple-system, sans-serif;
     background: var(--bg-base);
     color: var(--text-secondary);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* NAV */
-  .nav { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-  .nav-inner { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; }
-  .nav-brand { display: flex; align-items: center; gap: 10px; }
-  .nav-brand img { height: 22px; }
-  .nav-label { font-family: 'DM Sans', monospace; font-size: var(--text-label); color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
-  .nav-links a { font-family: monospace; font-size: var(--text-body); text-decoration: none; margin-left: 16px; }
+  /* ── NAV ── */
+  .nav { max-width:680px; margin:0 auto; padding:20px 20px 0; display:flex; justify-content:space-between; align-items:center; }
+  .nav-brand { display:flex; align-items:baseline; gap:0; text-decoration:none; }
+  .nav-brand-text { font-size:1.6em; font-weight:700; color:var(--text-primary); letter-spacing:-0.03em; }
+  .nav-brand-accent { color:var(--accent); }
+  .nav-live { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-muted); margin-top:2px; }
+  .nav-live-dot { width:6px; height:6px; border-radius:50%; background:var(--accent); animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:0.4} 50%{opacity:1} }
+  .nav-voices-btn {
+    font-size:13px; font-weight:600; color:var(--text-secondary);
+    background:var(--bg-elevated); border:1px solid var(--border);
+    border-radius:20px; padding:8px 16px; text-decoration:none;
+    transition:all 0.2s;
+  }
+  .nav-voices-btn:hover { border-color:var(--accent); color:var(--accent); }
 
-  /* HERO */
-  .hero { text-align: center; padding: 48px 20px 32px; }
-  .hero h1 { font-size: 2.2em; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; letter-spacing: -0.02em; line-height: 1.15; }
-  .hero h1 span { color: var(--accent); }
-  .hero p { font-size: 1em; color: var(--text-tertiary); max-width: 460px; margin: 0 auto 32px; line-height: 1.5; }
-  .hero p a { color: var(--accent); text-decoration: none; }
-
-  /* SEARCH */
-  .search-box { max-width: 640px; margin: 0 auto; position: relative; }
+  /* ── SEARCH ── */
+  .search-section { max-width:680px; margin:0 auto; padding:16px 20px 0; }
+  .search-box { position:relative; }
   .search-box input {
-    width: 100%; padding: 16px 20px; padding-right: 90px;
-    font-size: 1em; font-family: 'DM Sans', sans-serif;
-    border: 1px solid var(--border-default); border-radius: 14px;
-    background: var(--bg-surface); color: var(--text-primary);
-    outline: none; transition: border-color 0.2s;
+    width:100%; padding:14px 80px 14px 16px;
+    font-size:15px; font-family:'DM Sans',sans-serif;
+    border:1px solid var(--border); border-radius:12px;
+    background:var(--bg-card); color:var(--text-primary);
+    outline:none; transition:border 0.2s;
   }
-  .search-box input:focus { border-color: var(--accent); }
-  .search-box input::placeholder { color: var(--text-muted); }
+  .search-box input:focus { border-color:var(--accent); }
+  .search-box input::placeholder { color:var(--text-dim); }
   .search-box button {
-    position: absolute; right: 6px; top: 6px;
-    padding: 10px 20px; font-size: 0.9em; font-family: 'DM Sans', sans-serif;
-    font-weight: 600; background: var(--accent); color: #fff;
-    border: none; border-radius: 10px; cursor: pointer; transition: background 0.2s;
+    position:absolute; right:5px; top:5px;
+    padding:9px 18px; font-size:14px; font-weight:600;
+    background:var(--accent); color:#fff; border:none; border-radius:8px;
+    cursor:pointer; font-family:inherit; transition:background 0.2s;
   }
-  .search-box button:hover { background: #e5553a; }
-  .search-box button:disabled { background: #555; cursor: not-allowed; }
+  .search-box button:hover { background:#e5553a; }
+  .search-box button:disabled { background:#555; cursor:not-allowed; }
 
-  .time-btn { background: #2a2a2d; color: #999; border: 1px solid #3a3a3d; padding: 4px 12px; border-radius: 16px; font-size: var(--text-label); cursor: pointer; font-family: inherit; transition: all 0.15s; }
-  .time-btn:hover { border-color: #999; color: #ccc; }
-  .time-btn.active { background: #d94a33; color: #fff; border-color: #d94a33; }
+  .search-hints { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; justify-content:center; }
+  .search-hint {
+    font-size:12px; color:var(--text-muted); background:var(--bg-card);
+    border:1px solid var(--border); border-radius:100px;
+    padding:5px 12px; cursor:pointer; transition:all 0.15s;
+  }
+  .search-hint:hover { color:var(--text-secondary); border-color:var(--text-muted); }
+  .search-hint.curated { border-style:dashed; }
 
-  .example-queries { max-width: 640px; margin: 16px auto 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
-  .example-query {
-    font-size: var(--text-body); color: var(--text-muted); background: var(--bg-surface);
-    border: 1px solid var(--border-subtle); border-radius: 100px;
-    padding: 5px 12px; cursor: pointer; transition: all 0.2s;
+  .time-filter {
+    display:none; gap:6px; justify-content:center; margin-top:8px; flex-wrap:wrap;
+    align-items:center;
   }
-  .example-query:hover { color: var(--text-secondary); border-color: var(--text-secondary); }
+  .time-label { font-size:11px; color:var(--text-dim); margin-right:4px; }
+  .time-btn {
+    background:var(--bg-elevated); color:var(--text-muted);
+    border:1px solid var(--border); padding:4px 12px;
+    border-radius:16px; font-size:11px; cursor:pointer;
+    font-family:inherit; transition:all 0.15s;
+  }
+  .time-btn:hover { border-color:var(--text-muted); color:var(--text-secondary); }
+  .time-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 
-  /* CONVERSATION SECTION */
-  .fractures { max-width: 900px; margin: 0 auto; padding: 48px 20px 0; }
-  .fractures-header {
-    display: flex; align-items: center; gap: 8px;
-    margin-bottom: 20px; padding-bottom: 12px;
-    border-bottom: 1px solid var(--border-subtle);
-  }
-  .fractures-title {
-    font-size: var(--text-label); font-weight: 700; color: var(--text-muted);
-    text-transform: uppercase; letter-spacing: 0.05em;
-  }
-  .fractures-live {
-    width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
-    animation: pulse-dot 2s ease-in-out infinite;
-  }
-  @keyframes pulse-dot {
-    0%, 100% { opacity: 0.4; box-shadow: 0 0 0 0 rgba(255, 99, 67, 0.4); }
-    50% { opacity: 1; box-shadow: 0 0 0 4px rgba(255, 99, 67, 0); }
-  }
+  /* ── STORIES FEED ── */
+  .feed { max-width:680px; margin:0 auto; padding:24px 20px 60px; }
+  .feed-header { font-size:11px; font-weight:700; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px; text-align:center; }
 
-  /* Story type badge */
-  .story-type-badge {
-    display: inline-flex; align-items: center; gap: 4px;
-    font-size: var(--text-label); font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.05em; padding: 3px 8px; border-radius: 4px;
+  /* ── STORY CARD (matches app design) ── */
+  .story-card {
+    background:var(--bg-card); border:1px solid var(--border);
+    border-radius:16px; padding:20px; margin-bottom:16px;
+    cursor:pointer; transition:all 0.2s;
   }
-  .story-type-badge.split { background: rgba(248,113,113,0.15); color: #F87171; }
-  .story-type-badge.spectrum { background: rgba(251,191,36,0.15); color: #FBBF24; }
-  .story-type-badge.consensus { background: rgba(74,222,128,0.15); color: #4ADE80; }
-  .story-type-badge.reaction { background: rgba(96,165,250,0.15); color: #60A5FA; }
-  .story-type-badge.editorial { background: rgba(255,99,67,0.12); color: var(--accent); }
+  .story-card:hover { border-color:rgba(255,255,255,0.12); transform:translateY(-1px); }
+  .story-card:active { transform:translateY(0); }
 
-  /* CMS cover image */
-  .story-cover {
-    width: 100%; height: 140px; object-fit: cover;
-    border-radius: 10px; margin-bottom: 12px;
+  .story-headline {
+    font-size:1.25em; font-weight:700; color:var(--text-primary);
+    line-height:1.25; letter-spacing:-0.01em; margin-bottom:6px;
   }
-  @media (max-width: 600px) {
-    .story-cover { height: 100px; border-radius: 8px; }
+  .story-meta {
+    font-size:13px; color:var(--text-muted); margin-bottom:16px;
   }
 
-  /* FRACTURE CARD */
-  .fracture-card {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 24px;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
+  /* VS layout */
+  .vs-layout {
+    display:flex; align-items:center; justify-content:center;
+    gap:12px; margin-bottom:16px;
   }
-  .fracture-card:hover {
-    border-color: var(--border-default);
-    transform: translateY(-1px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  .vs-side { display:flex; flex-direction:column; align-items:center; flex:1; min-width:0; }
+  .vs-faces { display:flex; align-items:center; justify-content:center; margin-bottom:8px; }
+  .vs-face {
+    width:44px; height:44px; border-radius:50%; object-fit:cover;
+    border:2px solid var(--bg-card); margin-left:-10px;
+    background:var(--bg-elevated); position:relative;
   }
-  .fracture-card:active { transform: translateY(0); }
-  .fracture-headline {
-    font-size: var(--text-title); font-weight: 600; color: var(--text-primary);
-    line-height: 1.3; margin-bottom: 8px; letter-spacing: -0.01em;
+  .vs-face:first-child { margin-left:0; }
+  .vs-cluster-name {
+    font-size:12px; font-weight:600; text-align:center;
+    line-height:1.3; max-width:140px;
   }
-
-  .fracture-meta {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 10px;
+  .vs-cluster-count {
+    font-size:12px; color:var(--text-muted); margin-top:2px;
   }
-  .fracture-topic-chip {
-    display: inline-flex; padding: 4px 10px; border-radius: 100px;
-    font-size: var(--text-label); font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .fracture-voices-count {
-    font-size: var(--text-label); color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+  .vs-badge {
+    width:36px; height:36px; border-radius:50%;
+    background:var(--bg-elevated); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center;
+    font-size:11px; font-weight:700; color:var(--text-muted);
+    flex-shrink:0;
   }
 
-  .fracture-insight {
-    font-size: var(--text-body); font-weight: 500; color: var(--text-secondary);
-    line-height: 1.4; margin-bottom: 12px;
+  /* Proportion bar */
+  .proportion-bar {
+    display:flex; height:6px; border-radius:3px; overflow:hidden;
+    margin-bottom:12px; background:var(--bg-elevated);
   }
+  .proportion-segment { height:100%; transition:width 0.3s; }
 
-  /* Heat badge */
-  .heat-badge {
-    font-size: var(--text-label); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
-    padding: 2px 8px; border-radius: 10px;
+  /* CTA */
+  .story-cta {
+    font-size:13px; font-weight:600; color:var(--accent);
+    text-align:right; display:flex; align-items:center;
+    justify-content:flex-end; gap:4px;
   }
-  .heat-badge.hot {
-    background: rgba(239, 68, 68, 0.15); color: #EF4444;
-  }
-  .heat-badge.warm {
-    background: rgba(251, 191, 36, 0.12); color: #fbbf24;
-  }
+  .story-cta svg { transition:transform 0.2s; }
+  .story-card:hover .story-cta svg { transform:translateX(2px); }
 
-  /* Broadening note — match precision transparency */
-  .broadening-note {
-    font-size: var(--text-body); line-height: 1.5; color: var(--text-secondary);
-    background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-subtle);
-    padding: 10px 14px; margin: 8px 0 12px; border-radius: 8px; text-align: center;
+  /* ── WIRE ── */
+  .wire-section { max-width:680px; margin:0 auto; padding:0 20px 60px; }
+  .wire-header { margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid var(--border); }
+  .wire-title { font-size:11px; font-weight:700; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; display:flex; align-items:center; gap:8px; }
+  .wire-subtitle { font-size:13px; color:var(--text-muted); margin-top:4px; }
+  .wire-feed { max-height:500px; overflow-y:auto; }
+  .wire-entry {
+    display:flex; align-items:center; gap:10px;
+    padding:8px 0; border-bottom:1px solid var(--border);
+    font-size:13px; line-height:1.4;
   }
+  .wire-entry:last-child { border-bottom:none; }
+  .wire-photo { width:28px; height:28px; border-radius:50%; object-fit:cover; background:var(--bg-elevated); flex-shrink:0; }
+  .wire-name { font-weight:600; color:var(--text-primary); text-decoration:none; white-space:nowrap; }
+  .wire-name:hover { color:var(--accent); }
+  .wire-platform { font-size:10px; font-weight:700; padding:2px 6px; border-radius:100px; white-space:nowrap; text-transform:uppercase; letter-spacing:0.05em; flex-shrink:0; }
+  .wire-text { color:var(--text-muted); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .wire-time { font-size:11px; color:var(--text-dim); white-space:nowrap; flex-shrink:0; }
 
-  /* Counter-narrative banner */
-  .counter-narrative {
-    font-size: var(--text-body); line-height: 1.5; color: var(--text-primary);
-    background: rgba(184, 145, 122, 0.08); border-left: 2px solid #B8917A;
-    padding: 8px 12px; margin: 8px 0 4px; border-radius: 0 6px 6px 0;
-  }
-
-  /* Best quote pull-quote */
-  .best-quote {
-    margin: 4px 0 8px; padding: 0;
-  }
-  .best-quote-text {
-    font-size: var(--text-body); font-style: italic; color: var(--text-secondary); line-height: 1.5;
-  }
-  .best-quote-attr {
-    font-size: var(--text-caption); color: var(--text-muted); margin-left: 6px;
-  }
-
-  /* Collapsed: hide clusters */
-  .fracture-card .cluster-groups { display: none; }
-  .fracture-card .fracture-search-btn { display: none; }
-  .fracture-card.expanded .cluster-groups { display: flex !important; }
-  .fracture-card.expanded .fracture-search-btn { display: inline-flex; }
-  .fracture-card.expanded .fracture-chevron { transform: rotate(180deg); }
-  .fracture-chevron {
-    transition: transform 0.2s; color: var(--text-muted);
-  }
-
-  /* Quote tooltip on avatar tap */
-  .quote-tip {
-    position: fixed; z-index: 100;
-    background: var(--bg-elevated); border: 1px solid var(--border-default);
-    border-radius: 12px; padding: 12px 14px;
-    width: min(280px, 85vw);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
-    animation: tip-pop 0.15s ease-out;
-  }
-  @keyframes tip-pop {
-    from { opacity: 0; transform: translateY(4px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .fracture-search-btn {
-    display: inline-flex; align-items: center; gap: 6px;
-    padding: 8px 16px; margin-top: 4px;
-    background: var(--bg-surface-2); color: var(--text-secondary);
-    border: 1px solid var(--border-subtle);
-    border-radius: 8px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: var(--text-label); font-weight: 700;
-    cursor: pointer; transition: all 0.2s;
-  }
-  .fracture-search-btn:hover { border-color: var(--accent); color: var(--accent); }
-
-  /* CLUSTER GROUPS */
-  .cluster-name {
-    font-size: var(--text-body); font-weight: 600; color: var(--text-primary);
-  }
-  .cluster-count {
-    font-size: var(--text-label); color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; line-height: 1.5;
-  }
-
-  /* Face bubbles row */
-  .cluster-faces {
-    display: flex; align-items: center; flex-wrap: wrap;
-    padding: 4px 0 4px 12px; gap: 2px 0;
-  }
-  .cluster-face {
-    width: 36px; height: 36px; border-radius: 50%;
-    object-fit: cover; background: var(--bg-elevated);
-    border: 2px solid var(--bg-surface);
-    margin-left: -10px; position: relative;
-    transition: transform 0.15s, z-index 0.15s;
-    cursor: pointer;
-  }
-  .cluster-face:first-child { margin-left: 0; }
-  .cluster-face:hover { transform: scale(1.1); z-index: 10; }
-  .cluster-face-link { text-decoration: none; position: relative; }
-  .cluster-face-link:first-child .cluster-face { margin-left: 0; }
-  .cluster-face-link .cluster-face-tooltip {
-    display: none; position: absolute; bottom: 100%; left: 50%;
-    transform: translateX(-50%); white-space: nowrap;
-    background: var(--bg-elevated); color: var(--text-primary);
-    font-size: var(--text-caption); font-weight: 600; padding: 4px 8px;
-    border-radius: 6px; pointer-events: none; z-index: 20;
-    margin-bottom: 4px; border: 1px solid var(--border-default);
-  }
-  .cluster-face-link:hover .cluster-face-tooltip { display: block; }
-
-  /* Selected face state */
-  .cluster-face.selected {
-    border-color: var(--cluster-color, #60A5FA) !important;
-    transform: scale(1.15);
-    z-index: 10;
-    box-shadow: 0 0 0 2px var(--cluster-color, #60A5FA);
-  }
-
-  /* Quote card revealed on face click */
-  .cluster-selected-quote {
-    background: rgba(255,255,255,0.04);
-    border-radius: 12px;
-    padding: 16px;
-    margin: 12px 12px 8px;
-    border-left: 4px solid var(--cluster-color, #60A5FA);
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    animation: slideDown 0.2s ease;
-  }
-  .cluster-selected-quote img.csq-photo {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-  .cluster-selected-quote .csq-body { flex: 1; min-width: 0; }
-  .cluster-selected-quote .csq-name {
-    font-size: var(--text-body); font-weight: 700; color: var(--text-primary);
-  }
-  .cluster-selected-quote .csq-platform {
-    display: inline-block; font-size: var(--text-label); font-weight: 700;
-    padding: 2px 8px; border-radius: 100px; margin-left: 8px;
-    text-transform: uppercase; letter-spacing: 0.05em;
-    background: rgba(255,255,255,0.08); color: var(--text-muted);
-  }
-  .cluster-selected-quote .csq-quote {
-    font-size: var(--text-body); color: var(--text-secondary); line-height: 1.5;
-    margin-top: 6px;
-  }
-  .cluster-selected-quote .csq-profile-link {
-    font-size: var(--text-caption); color: var(--accent); text-decoration: none;
-    margin-top: 8px; display: inline-block; min-height: 44px;
-    line-height: 44px;
-  }
-  .cluster-selected-quote .csq-profile-link:hover { text-decoration: underline; }
-
-  @keyframes slideDown {
-    from { opacity: 0; transform: translateY(-8px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .cluster-best-quote {
-    padding: 8px 12px; margin-top: 4px;
-  }
-  .cluster-best-quote-text {
-    font-size: var(--text-body); font-style: italic; color: var(--text-secondary); line-height: 1.5;
-  }
-  .cluster-best-quote-attr {
-    font-size: var(--text-caption); color: var(--text-muted); margin-left: 4px;
-  }
-
-  .cluster-see-all {
-    font-size: var(--text-caption); color: var(--text-secondary); cursor: pointer;
-    padding: 4px 12px; margin-top: 4px;
-    background: none; border: none; font-family: inherit;
-    text-align: left; transition: color 0.2s;
-  }
-  .cluster-see-all:hover { text-decoration: underline; color: var(--accent); }
-
-  .cluster-voices-list {
-    display: flex; flex-direction: column; gap: 8px; flex: 1;
-    padding: 4px 12px 8px;
-  }
-  .cluster-voices-list.cluster-voices-hidden { display: none; }
-  .cluster-voice-row {
-    display: flex; align-items: flex-start; gap: 10px;
-    padding: 10px 12px; background: var(--bg-surface-2);
-    border-radius: 10px; transition: background 0.15s;
-  }
-  .cluster-voice-row:hover { background: var(--bg-elevated); }
-  .cluster-voice-photo {
-    width: 40px; height: 40px; border-radius: 50%;
-    object-fit: cover; background: var(--bg-elevated); flex-shrink: 0;
-  }
-  .cluster-voice-body { flex: 1; min-width: 0; }
-  .cluster-voice-name {
-    font-size: var(--text-body); font-weight: 600; color: var(--text-primary);
-  }
-  .cluster-voice-platform {
-    font-size: var(--text-caption); color: var(--text-muted); text-transform: uppercase;
-    letter-spacing: 0.05em; margin-left: 6px;
-  }
-  .cluster-voice-quote {
-    font-size: var(--text-body); color: var(--text-secondary); line-height: 1.5;
-    margin-top: 4px;
-  }
-  .cluster-voice-link {
-    font-size: var(--text-caption); color: var(--text-secondary); text-decoration: none;
-    margin-top: 4px; display: inline-block; transition: color 0.2s;
-  }
-  .cluster-voice-link:hover { text-decoration: underline; color: var(--accent); }
-
-  /* Collapsible clusters */
-  .cluster-collapsible { display: none; }
-  .cluster-open .cluster-collapsible { display: block; }
-  .cluster-open .cluster-chevron { transform: rotate(180deg); }
-  .cluster-header-row:hover { opacity: 0.85; }
-
-
-  /* FRACTURE LINE */
-  .fracture-line {
-    height: 1px; margin: 4px 14px;
-    background: linear-gradient(90deg, transparent 0%, var(--line-color-a, #60A5FA) 30%, var(--line-color-b, #F87171) 70%, transparent 100%);
-    opacity: 0.4;
-    position: relative;
-  }
-  .fracture-line::after {
-    content: '';
-    position: absolute; top: -2px; left: 0; right: 0; height: 5px;
-    background: inherit; filter: blur(4px); opacity: 0.5;
-  }
-
-  /* Animated fracture for high-voice stories */
-  .fracture-line.animated {
-    animation: fracture-glow 3s ease-in-out infinite;
-  }
-  @keyframes fracture-glow {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.7; }
-  }
-
-  .fracture-footer {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-top: 16px; padding-top: 12px;
-    border-top: 1px solid var(--border-subtle);
-  }
-  .fracture-footer-left {
-    font-size: var(--text-caption); color: var(--text-muted);
-  }
-  .fracture-explore {
-    font-size: var(--text-label); font-weight: 700; color: var(--accent);
-    display: flex; align-items: center; gap: 4px; text-transform: uppercase; letter-spacing: 0.05em;
-  }
-  .fracture-explore svg { transition: transform 0.2s; }
-  .fracture-card:hover .fracture-explore svg { transform: translateX(2px); }
-
-  /* STATS */
-  .stats { text-align: center; padding: 16px 20px; color: var(--text-muted); font-size: var(--text-label); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
-  .stats span { color: var(--text-primary); font-weight: 700; }
-
-  /* TRENDING */
-  .trending { max-width: 900px; margin: 8px auto 40px; padding: 0 20px; }
-  .trending h3 { font-size: var(--text-label); color: var(--text-muted); margin-bottom: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
-  .trending-topics { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
-  .trending-topic {
-    background: var(--bg-surface); border: 1px solid var(--border-subtle);
-    border-radius: 100px; padding: 6px 14px; color: var(--text-tertiary);
-    font-size: var(--text-body); cursor: pointer; transition: all 0.2s;
-  }
-  .trending-topic:hover { border-color: var(--text-secondary); color: var(--text-secondary); }
-  .trending-topic .count { color: var(--text-muted); font-size: var(--text-caption); margin-left: 4px; }
-
-  /* LOADING */
-  .loading { text-align: center; padding: 60px; color: var(--text-tertiary); font-size: 1em; display: none; }
-  .loading.active { display: block; }
-  .loading .spinner {
-    display: inline-block; width: 20px; height: 20px;
-    border: 2px solid var(--bg-elevated); border-top-color: var(--accent);
-    border-radius: 50%; animation: spin 0.8s linear infinite;
-    margin-right: 8px; vertical-align: middle;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  /* RESULTS */
-  .results { max-width: 900px; margin: 0 auto; padding: 0 20px 60px; }
-  .results-header { text-align: center; padding: 20px 0 24px; }
-  .results-header h2 { font-size: var(--text-title); color: var(--text-primary); margin-bottom: 4px; }
-  .results-header .topics { color: var(--text-tertiary); font-size: var(--text-body); }
-  .results-header .topics .tag {
-    display: inline-block; background: var(--bg-surface); border: 1px solid var(--border-subtle);
-    border-radius: 4px; padding: 2px 8px; margin: 2px; font-size: var(--text-caption);
-  }
+  /* ── SEARCH RESULTS ── */
+  .results { max-width:680px; margin:0 auto; padding:0 20px 60px; }
+  .results-header { text-align:center; padding:20px 0 16px; }
+  .results-header h2 { font-size:1.1em; color:var(--text-primary); margin-bottom:4px; }
+  .results-topics { display:flex; flex-wrap:wrap; gap:4px; justify-content:center; margin-top:8px; }
+  .results-topic-tag { font-size:11px; background:var(--accent-bg); color:var(--accent); padding:2px 8px; border-radius:4px; }
 
   .voice-card {
-    background: var(--bg-surface); border: 1px solid var(--border-subtle);
-    border-radius: 14px; padding: 18px; margin-bottom: 12px;
-    transition: border-color 0.2s;
+    background:var(--bg-card); border:1px solid var(--border);
+    border-radius:14px; padding:16px; margin-bottom:10px;
+    transition:border-color 0.2s;
   }
-  .voice-card:hover { border-color: var(--border-default); }
+  .voice-card:hover { border-color:rgba(255,255,255,0.1); }
+  .voice-header { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+  .voice-photo { width:42px; height:42px; border-radius:50%; object-fit:cover; background:var(--bg-elevated); }
+  .voice-name { font-size:15px; font-weight:700; color:var(--text-primary); text-decoration:none; }
+  .voice-name:hover { color:var(--accent); }
+  .voice-lens { font-size:12px; color:var(--text-muted); margin-top:2px; line-height:1.4; }
+  .voice-cluster-badge {
+    font-size:11px; font-weight:600; padding:3px 10px;
+    border-radius:6px; background:rgba(255,255,255,0.08);
+    color:var(--text-secondary); border:1px solid var(--border);
+    margin-top:4px; display:inline-block;
+  }
+  .voice-tags { display:flex; flex-wrap:wrap; gap:4px; margin-top:6px; }
+  .voice-tag {
+    font-size:11px; color:var(--text-muted); background:var(--bg-elevated);
+    border:1px solid var(--border); border-radius:100px; padding:2px 10px;
+  }
+  .quote { margin-bottom:10px; padding-left:12px; border-left:3px solid var(--bg-hover); }
+  .quote-platform { font-size:11px; color:var(--text-dim); font-weight:700; text-transform:uppercase; margin-bottom:3px; letter-spacing:0.05em; }
+  .quote-text { font-size:13px; color:var(--text-secondary); line-height:1.5; margin-bottom:3px; }
+  .quote-link { font-size:11px; color:var(--accent); text-decoration:none; }
+  .quote-link:hover { text-decoration:underline; }
 
-  .voice-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
-  .voice-photo { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; background: var(--bg-elevated); }
-  .voice-name { font-size: var(--text-title); font-weight: 700; color: var(--text-primary); }
-  .voice-lean { font-size: var(--text-label); padding: 3px 10px; border-radius: 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-  .cluster-label { background: rgba(255, 255, 255, 0.08); color: var(--text-secondary); border: 1px solid var(--border-default); }
+  .no-results { text-align:center; padding:60px; color:var(--text-muted); font-size:14px; }
 
-  .cluster-tag {
-    display: inline-block; background: var(--bg-surface);
-    border: 1px solid var(--border-subtle); border-radius: 6px;
-    padding: 6px 12px; color: var(--text-tertiary); font-size: var(--text-body);
-  }
-  .cluster-filter { cursor: pointer; transition: all 0.2s; }
-  .cluster-filter:hover { border-color: var(--accent); color: var(--accent); }
-  .cluster-filter.active { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
+  /* ── LOADING ── */
+  .loading { text-align:center; padding:60px; color:var(--text-muted); font-size:14px; display:none; }
+  .loading.active { display:block; }
+  .spinner { display:inline-block; width:18px; height:18px; border:2px solid var(--bg-elevated); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin-right:8px; vertical-align:middle; }
+  @keyframes spin { to{transform:rotate(360deg)} }
 
-  .voice-topics { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
-  .voice-topics .tag { font-size: var(--text-caption); background: var(--accent-bg); color: var(--accent); padding: 2px 8px; border-radius: 4px; }
+  /* ── STATS ── */
+  .stats { text-align:center; padding:12px 20px; color:var(--text-dim); font-size:11px; text-transform:uppercase; letter-spacing:0.05em; font-weight:700; }
+  .stats span { color:var(--text-primary); }
 
-  .quote { margin-bottom: 12px; padding-left: 14px; border-left: 3px solid var(--bg-elevated); }
-  .quote-platform { font-size: var(--text-label); color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em; }
-  .quote-text { font-size: var(--text-body); color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
-  .quote-link { font-size: var(--text-caption); color: var(--accent); text-decoration: none; }
-  .quote-link:hover { text-decoration: underline; }
-
-  .no-results { text-align: center; padding: 60px; color: var(--text-muted); }
-
-  /* EDITION HEADER */
-  .edition-header {
-    font-size: var(--text-label); color: #aaa; letter-spacing: 0.05em;
-    text-transform: uppercase; text-align: center; font-weight: 700;
-    margin-bottom: 16px;
-  }
-
-  /* TOP STORY */
-  .fracture-card.tier-top { padding: 28px; }
-  .fracture-card.tier-top .fracture-headline { font-size: var(--text-display); font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; }
-  .fracture-card.tier-top .cluster-faces { display: flex !important; }
-
-  /* OPPOSING BLOCKQUOTE PAIR (kept for non-top stories if needed) */
-  .opposing-quotes {
-    display: flex; gap: 16px; margin: 16px 0 8px;
-  }
-  .opposing-quote {
-    flex: 1; padding: 14px 16px; font-size: var(--text-body); font-style: italic;
-    color: var(--text-secondary); line-height: 1.5;
-    border-radius: 8px; background: rgba(255,255,255,0.03);
-  }
-  .opposing-quote-attr {
-    display: flex; align-items: center; gap: 8px; margin-top: 10px;
-    font-style: normal; font-size: var(--text-caption); color: var(--text-muted);
-  }
-  .opposing-quote-attr img {
-    width: 24px; height: 24px; border-radius: 50%; object-fit: cover;
-  }
-
-  /* HORIZONTAL CLUSTER CARDS (top story) */
-  .cluster-cards-row {
-    display: flex; gap: 12px; margin-top: 16px;
-    overflow-x: auto; -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; scroll-snap-type: x mandatory;
-    position: relative; padding-bottom: 4px;
-  }
-  .cluster-cards-row::-webkit-scrollbar { display: none; }
-
-  .cluster-card-box {
-    background: rgba(255,255,255,0.04); border-radius: 12px;
-    padding: 14px; min-width: 160px; flex: 1;
-    border-top: 4px solid var(--card-cluster-color, #60A5FA);
-    cursor: pointer; transition: background 0.15s, transform 0.15s;
-    scroll-snap-align: start;
-  }
-  .cluster-card-box:hover {
-    background: rgba(255,255,255,0.07); transform: translateY(-2px);
-  }
-  .cluster-card-box.selected {
-    background: rgba(255,255,255,0.08);
-    border-top-width: 4px;
-    box-shadow: 0 0 0 1px var(--card-cluster-color, #60A5FA);
-  }
-  .cluster-card-box-name {
-    font-size: var(--text-body); font-weight: 600;
-    color: var(--card-cluster-color, #60A5FA);
-  }
-  .cluster-card-box-count {
-    font-size: var(--text-caption); color: var(--text-muted);
-    margin-left: 6px; font-weight: 600;
-  }
-  .cluster-card-box-faces {
-    display: flex; align-items: center; flex-wrap: wrap;
-    margin-top: 8px; gap: 2px 0;
-  }
-  .cluster-card-box-faces .cluster-face {
-    width: 36px; height: 36px; border-radius: 50%;
-    object-fit: cover; background: var(--bg-elevated);
-    border: 2px solid rgba(255,255,255,0.06);
-    margin-left: -8px; position: relative;
-    cursor: default;
-  }
-  .cluster-card-box-faces .cluster-face:first-child { margin-left: 0; }
-
-  /* Scroll fade hint */
-  .cluster-cards-row-wrapper {
-    position: relative;
-  }
-  .cluster-cards-row-wrapper::after {
-    content: ''; position: absolute; top: 0; right: 0; bottom: 4px;
-    width: 40px; pointer-events: none;
-    background: linear-gradient(to right, transparent, var(--bg-surface));
-    border-radius: 0 12px 12px 0;
-    opacity: 0; transition: opacity 0.2s;
-  }
-  .cluster-cards-row-wrapper.has-scroll::after { opacity: 1; }
-
-  /* Cluster expand panel */
-  .cluster-expand-panel {
-    background: rgba(255,255,255,0.03); border-radius: 12px;
-    padding: 20px; margin-top: 12px;
-    animation: slideDown 0.2s ease;
-    border-left: 4px solid var(--panel-cluster-color, #60A5FA);
-  }
-  .cluster-expand-panel-header {
-    font-size: var(--text-body); font-weight: 700;
-    color: var(--panel-cluster-color, #60A5FA);
-    margin-bottom: 14px;
-  }
-  .cluster-expand-panel .cluster-voice-row {
-    display: flex; align-items: flex-start; gap: 10px;
-    padding: 10px 12px; background: var(--bg-surface-2);
-    border-radius: 10px; transition: background 0.15s; margin-bottom: 6px;
-  }
-  .cluster-expand-panel .cluster-voice-row:hover { background: var(--bg-elevated); }
-  .cluster-expand-panel .cluster-voice-photo {
-    width: 36px; height: 36px; border-radius: 50%;
-    object-fit: cover; background: var(--bg-elevated); flex-shrink: 0;
-  }
-  .cluster-expand-panel .cluster-voice-body { flex: 1; min-width: 0; }
-  .cluster-expand-panel .cluster-voice-name {
-    font-size: var(--text-body); font-weight: 600; color: var(--text-primary);
-    text-decoration: none;
-  }
-  .cluster-expand-panel .cluster-voice-name:hover { color: var(--accent); }
-  .cluster-expand-panel .cluster-voice-platform {
-    font-size: var(--text-caption); color: var(--text-muted); text-transform: uppercase;
-    letter-spacing: 0.05em; margin-left: 6px;
-  }
-  .cluster-expand-panel .cluster-voice-quote {
-    font-size: var(--text-body); color: var(--text-secondary); line-height: 1.5;
-    margin-top: 4px;
-  }
-  .cluster-expand-panel .cluster-voice-link {
-    font-size: var(--text-caption); color: var(--text-secondary); text-decoration: none;
-    margin-top: 4px; display: inline-block; transition: color 0.2s;
-  }
-  .cluster-expand-panel .cluster-voice-link:hover { text-decoration: underline; color: var(--accent); }
-
-  /* MEDIUM CARDS (stories 2-3) */
-  .cluster-summary-line {
-    font-size: var(--text-body); color: var(--text-muted); margin-bottom: 8px;
-  }
-
-  /* COMPACT CARDS (stories 4+) */
-  .also-today-divider {
-    font-size: var(--text-label); font-weight: 700; color: var(--text-muted);
-    text-transform: uppercase; letter-spacing: 0.05em;
-    margin: 40px 0 12px; padding-bottom: 8px;
-    border-bottom: 1px solid var(--border-subtle);
-  }
-  .fracture-card.tier-compact { padding: 16px; }
-  .fracture-card.tier-compact .fracture-headline { font-size: var(--text-title); }
-  .fracture-card.tier-compact .cluster-faces { display: none !important; }
-
-  /* THE WIRE */
-  .wire-section {
-    max-width: 900px; margin: 0 auto; padding: 56px 20px 60px;
-  }
-  .wire-header {
-    margin-bottom: 16px; padding-bottom: 12px;
-    border-bottom: 1px solid var(--border-subtle);
-  }
-  .wire-title {
-    font-size: var(--text-label); font-weight: 700; color: var(--text-muted);
-    text-transform: uppercase; letter-spacing: 0.05em;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .wire-subtitle {
-    font-size: var(--text-body); color: var(--text-muted); margin-top: 4px;
-  }
-  .wire-note {
-    font-size: var(--text-caption); color: var(--text-tertiary); margin-top: 4px;
-  }
-  .wire-feed {
-    max-height: 600px; overflow-y: auto;
-  }
-  .wire-entry {
-    display: flex; align-items: center; gap: 10px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    transition: background 0.15s;
-    line-height: 1.5;
-  }
-  .wire-entry:hover { background: rgba(255,255,255,0.03); }
-  .wire-entry:last-child { border-bottom: none; }
-  .wire-photo {
-    width: 28px; height: 28px; border-radius: 50%; object-fit: cover;
-    background: var(--bg-elevated); flex-shrink: 0;
-  }
-  .wire-name {
-    font-size: var(--text-body); font-weight: 600; color: var(--text-primary);
-    text-decoration: none; white-space: nowrap;
-  }
-  .wire-name:hover { color: var(--accent); }
-  .wire-platform {
-    font-size: var(--text-label); font-weight: 700; padding: 2px 6px;
-    border-radius: 100px; white-space: nowrap; flex-shrink: 0;
-    text-transform: uppercase; letter-spacing: 0.05em;
-  }
-  .wire-text {
-    font-size: var(--text-body); color: #aaa; flex: 1; min-width: 0;
-    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-  }
-  .wire-time {
-    font-size: var(--text-caption); color: #999; white-space: nowrap; flex-shrink: 0;
-  }
-
-  /* WIRE FILTER PILLS */
-  .wire-filter-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 16px;
-  }
-  .wire-filter-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    align-items: center;
-  }
-  .wire-filter-row-label {
-    font-size: var(--text-caption);
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 700;
-    margin-right: 4px;
-    min-width: fit-content;
-  }
-  .wire-filter-pill {
-    font-size: var(--text-caption);
-    padding: 4px 10px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.12);
-    background: transparent;
-    color: var(--text-secondary);
-    cursor: pointer;
-    transition: all 0.15s ease;
-    white-space: nowrap;
-  }
-  .wire-filter-pill:hover {
-    border-color: rgba(255,255,255,0.25);
-    color: var(--text-primary);
-  }
-  .wire-filter-pill.active {
-    background: rgba(255,255,255,0.1);
-    border-color: rgba(255,255,255,0.3);
-    color: var(--text-primary);
-    font-weight: 600;
-  }
-  /* Platform-specific active colors */
-  .wire-filter-pill.active[data-platform="x"] { background: rgba(29,161,242,0.15); border-color: rgba(29,161,242,0.4); }
-  .wire-filter-pill.active[data-platform="youtube"] { background: rgba(255,0,0,0.15); border-color: rgba(255,0,0,0.4); }
-  .wire-filter-pill.active[data-platform="substack"] { background: rgba(255,103,25,0.15); border-color: rgba(255,103,25,0.4); }
-  .wire-filter-pill.active[data-platform="bluesky"] { background: rgba(0,133,255,0.15); border-color: rgba(0,133,255,0.4); }
-  .wire-filter-pill.active[data-platform="instagram"] { background: rgba(225,48,108,0.15); border-color: rgba(225,48,108,0.4); }
-  .wire-filter-pill.active[data-platform="tiktok"] { background: rgba(0,242,234,0.15); border-color: rgba(0,242,234,0.4); }
-  .wire-filter-pill.active[data-platform="podcast"] { background: rgba(155,89,182,0.15); border-color: rgba(155,89,182,0.4); }
-
-  /* Approach-specific active colors */
-  .wire-filter-pill.active[data-approach="investigates"] { background: rgba(74,222,128,0.15); border-color: rgba(74,222,128,0.4); }
-  .wire-filter-pill.active[data-approach="explains"] { background: rgba(96,165,250,0.15); border-color: rgba(96,165,250,0.4); }
-  .wire-filter-pill.active[data-approach="argues"] { background: rgba(248,113,113,0.15); border-color: rgba(248,113,113,0.4); }
-  .wire-filter-pill.active[data-approach="reports"] { background: rgba(161,161,170,0.15); border-color: rgba(161,161,170,0.4); }
-  .wire-filter-pill.active[data-approach="entertains"] { background: rgba(251,191,36,0.15); border-color: rgba(251,191,36,0.4); }
-
-  /* Search result category filter bar */
-  .search-filter-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    align-items: center;
-    margin: 12px 0 16px;
-  }
-
-  /* MOBILE */
-  /* Face bubble onboarding */
-  .face-onboarding-hint {
-    font-size: var(--text-caption); color: var(--text-muted); margin-top: 6px;
-    padding-left: 4px; font-style: italic;
-  }
-  @keyframes gentlePulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(255, 99, 67, 0.4); }
-    50% { box-shadow: 0 0 0 6px rgba(255, 99, 67, 0); }
-  }
-  .face-pulse {
-    animation: gentlePulse 2s ease-in-out 3;
-  }
-
-  @media (max-width: 600px) {
-    --text-display: 1.5rem;
-    .hero { padding: 32px 16px 24px; }
-    .hero h1 { font-size: 1.5em; }
-    .hero p { margin-bottom: 24px; max-width: 100%; }
-    .search-box input { padding: 14px 16px; padding-right: 80px; border-radius: 12px; }
-    .search-box button { padding: 8px 16px; border-radius: 8px; }
-    .fractures { padding: 24px 16px 0; }
-    .fracture-card { padding: 16px; border-radius: 14px; }
-    .fracture-card.tier-top .fracture-headline { font-size: 1.5rem; }
-    .cluster-face { width: 36px; height: 36px; margin-left: -8px; }
-    .cluster-face:first-child { margin-left: 0; }
-    .cluster-faces { padding: 4px 0 4px 8px; }
-    .cluster-voice-photo { width: 34px; height: 34px; }
-    .cluster-voice-row { padding: 8px 10px; }
-    .cluster-best-quote { padding: 6px 8px; }
-    .results { padding: 0 12px 40px; }
-    .voice-card { padding: 14px; }
-    .voice-photo { width: 38px; height: 38px; }
-    .trending { padding: 0 16px; }
-    .trending-topics { gap: 4px; }
-    .trending-topic { min-height: 44px; padding: 10px 14px; }
-    .example-queries { gap: 4px; }
-    .example-query { min-height: 44px; padding: 10px 14px; }
-    .time-btn { min-height: 44px; padding: 10px 16px; }
-    .nav { padding: 0 16px; }
-    .fracture-search-btn { padding: 6px 12px; }
-    .opposing-quotes { flex-direction: column; gap: 10px; }
-    .fracture-card.tier-compact { padding: 12px 16px; }
-    .also-today-divider { margin: 32px 0 8px; }
-    .wire-filter-pill { min-height: 36px; display: inline-flex; align-items: center; }
-    .wire-filter-row-label { display: none; }
-    .wire-feed { max-height: 400px; }
-    .wire-entry {
-      flex-wrap: wrap; gap: 6px;
-    }
-    .wire-text {
-      width: 100%; flex: none; white-space: normal;
-      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-      overflow: hidden; text-overflow: ellipsis;
-      padding-left: 38px;
-    }
-    /* Horizontal cluster cards mobile */
-    .cluster-card-box { min-width: 140px; padding: 12px; }
-    .cluster-card-box-faces .cluster-face { width: 28px; height: 28px; margin-left: -6px; }
-    .cluster-card-box-faces .cluster-face:first-child { margin-left: 0; }
-    .cluster-expand-panel { padding: 16px; }
-    .cluster-expand-panel .cluster-voice-photo { width: 32px; height: 32px; }
+  /* ── MOBILE ── */
+  @media (max-width:600px) {
+    .nav { padding:16px 16px 0; }
+    .nav-brand-text { font-size:1.3em; }
+    .search-section { padding:12px 16px 0; }
+    .feed { padding:20px 16px 40px; }
+    .story-card { padding:16px; }
+    .story-headline { font-size:1.1em; }
+    .vs-face { width:38px; height:38px; margin-left:-8px; }
+    .vs-badge { width:30px; height:30px; font-size:10px; }
+    .vs-cluster-name { font-size:11px; max-width:110px; }
+    .wire-section { padding:0 16px 40px; }
+    .results { padding:0 16px 40px; }
+    .wire-text { white-space:normal; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; padding-left:38px; width:100%; flex:none; }
+    .wire-entry { flex-wrap:wrap; gap:6px; }
+    .search-hint { min-height:36px; display:inline-flex; align-items:center; }
   }
 </style>
 </head>
 <body>
 
 <div class="nav">
-  <div class="nav-inner">
-    <div class="nav-brand">
-      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
-      <div class="nav-label">Perspectives</div>
-    </div>
-    <div>
-      <a class="nav-link" data-page="search" style="color:var(--accent);">Search</a>
-      <a class="nav-link" data-page="voices" style="color:var(--text-muted);">Voices</a>
-    </div>
+  <div>
+    <a class="nav-brand" id="homeLink" href="/">
+      <span class="nav-brand-text">Perspec<span class="nav-brand-accent">tives</span></span>
+    </a>
+    <div class="nav-live"><div class="nav-live-dot"></div> Live</div>
   </div>
+  <a class="nav-voices-btn" id="voicesBtn" href="/voices"><span id="voiceCount">257</span> Voices &rarr;</a>
 </div>
 
-<div class="hero">
-  <h1>Step outside your algorithm<br>into <span>others</span></h1>
-  <p>See how <a class="nav-link" data-page="voices" id="voiceCount">112 voices</a> across the political spectrum react to the same story. Not left vs right. Actual positions.</p>
-
+<div class="search-section">
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Search any story..." autofocus>
     <button id="searchBtn" onclick="doSearch()">Search</button>
   </div>
-  <div class="time-filter" id="timeFilter" style="display:none;gap:6px;justify-content:center;margin-top:8px;flex-wrap:wrap;">
-    <span style="font-size:var(--text-caption);color:var(--text-muted);align-self:center;margin-right:4px;">Search window:</span>
+  <div class="time-filter" id="timeFilter">
+    <span class="time-label">Window:</span>
     <button class="time-btn active" data-days="" onclick="setTimeFilter(this)">Auto</button>
     <button class="time-btn" data-days="1" onclick="setTimeFilter(this)">Today</button>
-    <button class="time-btn" data-days="3" onclick="setTimeFilter(this)">3 days</button>
+    <button class="time-btn" data-days="3" onclick="setTimeFilter(this)">3d</button>
     <button class="time-btn" data-days="7" onclick="setTimeFilter(this)">Week</button>
-    <button class="time-btn" data-days="14" onclick="setTimeFilter(this)">2 weeks</button>
+    <button class="time-btn" data-days="14" onclick="setTimeFilter(this)">2w</button>
     <button class="time-btn" data-days="30" onclick="setTimeFilter(this)">Month</button>
   </div>
-
-  <div class="example-queries" id="exampleQueries"></div>
-  <div class="example-queries" id="suggestedTopics" style="margin-top:8px;"></div>
+  <div class="search-hints" id="searchHints"></div>
 </div>
 
-<!-- THE CONVERSATION -->
-<div class="fractures" id="fracturesSection" style="display:none">
-  <div class="fractures-header">
-    <div class="fractures-live"></div>
-    <div class="fractures-title">The Conversation</div>
-  </div>
-  <div id="fractureCards"></div>
-</div>
-
+<div class="feed" id="feed" style="display:none"></div>
 <div class="stats" id="stats"></div>
 
-<div class="trending" id="trendingSection" style="display:none">
-  <h3>All trending topics</h3>
-  <div class="trending-topics" id="trendingTopics"></div>
-</div>
-
-<!-- THE WIRE -->
 <div class="wire-section" id="wireSection" style="display:none">
   <div class="wire-header">
     <div class="wire-title">The Wire</div>
     <div class="wire-subtitle" id="wireSubtitle">What voices are saying right now</div>
-    <div class="wire-note">When enough voices converge on a topic, we analyze it above.</div>
   </div>
-  <div class="wire-filter-bar" id="wireFilterBar" style="display:none"></div>
   <div class="wire-feed" id="wireFeed"></div>
 </div>
 
-<div class="loading" id="loading">
-  <span class="spinner"></span>
-  Searching across X, YouTube, Bluesky, TikTok, and Instagram...
-</div>
-
+<div class="loading" id="loading"><span class="spinner"></span> Searching 257 voices...</div>
 <div class="results" id="results"></div>
 
 <script>
-const input = document.getElementById('searchInput');
-const btn = document.getElementById('searchBtn');
-const loading = document.getElementById('loading');
-const resultsDiv = document.getElementById('results');
-const statsDiv = document.getElementById('stats');
-
 const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
-const PAGES = { search: BASE || '/search', voices: BASE + '/voices' };
-document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
+const PAGES = { search: BASE || '/', voices: BASE + '/voices', methodology: BASE + '/methodology' };
+document.getElementById('homeLink').href = PAGES.search;
+document.getElementById('voicesBtn').href = PAGES.voices;
 
-// Cluster color palette (not red/blue political — multi-hue)
-const CLUSTER_COLORS = [
-  '#60A5FA', // blue
-  '#F87171', // coral
-  '#FBBF24', // amber
-  '#A78BFA', // violet
-  '#4ADE80', // green
-  '#22D3EE', // cyan
-  '#F472B6', // pink
-  '#FB923C', // orange
-];
+const COLORS = ['#60A5FA','#F87171','#FBBF24','#A78BFA','#4ADE80','#22D3EE','#F472B6','#FB923C'];
+const PLATFORM = {x:'X',youtube:'YouTube',bluesky:'Bluesky',instagram:'Instagram',tiktok:'TikTok',substack:'Substack',podcast:'Podcast'};
+const PLATFORM_COLORS = {x:'#1DA1F2',youtube:'#FF0000',substack:'#FF6719',bluesky:'#0085FF',instagram:'#E1306C',tiktok:'#00F2EA',podcast:'#9B59B6'};
 
-function getClusterColor(index) {
-  return CLUSTER_COLORS[index % CLUSTER_COLORS.length];
+const TAG_GLOSSARY = {
+  'hawkish':'Favors strong military action','anti-establishment':'Skeptical of institutional power',
+  'contrarian':'Takes positions against consensus','centrist':'Doesn\'t align consistently with either party',
+  'populist':'Frames issues as people vs elites','progressive':'Advocates systemic change',
+  'conservative':'Traditional values, limited government','libertarian-leaning':'Individual freedom, skeptical of government',
+  'constitutionalist':'Frames arguments through constitutional law','digital media':'Reaches audiences via social platforms',
+  'heterodox':'Positions cross left-right lines','pro-Trump':'Supportive of Trump agenda',
+  'anti-Trump':'Critical of Trump/MAGA','MAGA':'Aligned with Make America Great Again',
+  'free speech':'Prioritizes broad speech protections','anti-woke':'Critical of progressive social justice activism',
+  'pro-Israel':'Supports strong U.S.-Israel alliance','anti-war':'Opposes military intervention',
+};
+
+let _voiceLens = {};
+let _voiceCategory = {};
+let _voiceApproach = {};
+fetch(BASE + '/data/voices.json').then(r=>r.json()).then(voices => {
+  document.getElementById('voiceCount').textContent = voices.length;
+  for (const v of voices) {
+    _voiceLens[v.id] = v.lens || '';
+    _voiceCategory[v.id] = v.category || '';
+    _voiceApproach[v.id] = v.approach || '';
+  }
+}).catch(()=>{});
+
+function esc(t) { const d=document.createElement('div'); d.textContent=t||''; return d.innerHTML; }
+function slugify(t) { return t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').substring(0,60); }
+
+// ── STORY CARD RENDERER (app design) ──
+function renderStoryCard(story) {
+  const clusters = story.clusters || [];
+  const clusterCount = clusters.length;
+  const totalVoices = story.voiceCount || clusters.reduce((s,c) => s + (c.voiceCount || (c.voices||[]).length), 0);
+
+  // Pick two dominant clusters for VS layout
+  const sorted = [...clusters].sort((a,b) => (b.voiceCount||(b.voices||[]).length) - (a.voiceCount||(a.voices||[]).length));
+  const left = sorted[0];
+  const right = sorted[1];
+
+  function renderSide(cluster, ci) {
+    if (!cluster) return '';
+    const color = COLORS[ci % COLORS.length];
+    const voices = cluster.voices || [];
+    const count = cluster.voiceCount || voices.length;
+    const faces = voices.slice(0,3).map(v => {
+      const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=1c1c1f&color=a1a1aa&size=88`;
+      return `<img class="vs-face" src="${photo}" alt="${esc(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=1c1c1f&color=a1a1aa&size=88'" title="${esc(v.voiceName)}${_voiceLens[v.voiceId] ? ' · '+_voiceLens[v.voiceId].substring(0,60) : ''}">`;
+    }).join('');
+    return `<div class="vs-side">
+      <div class="vs-faces">${faces}</div>
+      <div class="vs-cluster-name" style="color:${color};">${esc(cluster.name)}</div>
+      <div class="vs-cluster-count">${count}</div>
+    </div>`;
+  }
+
+  // Proportion bar
+  let barHtml = '';
+  if (clusters.length > 0) {
+    const total = clusters.reduce((s,c) => s + (c.voiceCount||(c.voices||[]).length), 0) || 1;
+    barHtml = clusters.map((c,ci) => {
+      const pct = ((c.voiceCount||(c.voices||[]).length) / total * 100).toFixed(1);
+      return `<div class="proportion-segment" style="width:${pct}%;background:${COLORS[ci%COLORS.length]};"></div>`;
+    }).join('');
+  }
+
+  const slug = slugify(story.headline);
+
+  return `<div class="story-card" onclick="window.location.href='${BASE}/story/${slug}'">
+    <div class="story-headline">${esc(story.headline)}</div>
+    <div class="story-meta">${totalVoices} voices &middot; ${clusterCount} positions</div>
+    ${left ? `<div class="vs-layout">
+      ${renderSide(left, 0)}
+      <div class="vs-badge">vs</div>
+      ${renderSide(right, 1)}
+    </div>` : ''}
+    <div class="proportion-bar">${barHtml}</div>
+    <div class="story-cta">See ${clusterCount} positions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></div>
+  </div>`;
 }
 
-// Dynamic voice count
-fetch(BASE + '/data/voices.json').then(r => r.json()).then(v => {
-  const el = document.getElementById('voiceCount');
-  if (el) el.textContent = v.length + ' voices';
-}).catch(() => {});
-
-// LOAD STORIES (unified feed — falls back to fractures)
-async function loadConversation() {
+// ── LOAD STORIES ──
+let _storiesData = [];
+async function loadFeed() {
   let stories = [];
   try {
     let resp = await fetch(BASE + '/api/stories');
     stories = await resp.json();
-    // Fallback to fractures endpoint if stories is empty
     if (!stories || stories.length === 0) {
       resp = await fetch(BASE + '/api/fractures');
-      const fractures = await resp.json();
-      // Map fracture format to story format
-      stories = (fractures || []).map(f => ({
-        headline: f.headline || f.topicDisplay,
-        summary: f.insight || '',
-        type: 'split',
-        source: 'voices',
-        coverUrl: '',
-        storyType: '',
-        topicSlugs: [f.topic],
-        voiceCount: f.voiceCount,
-        clusterCount: f.clusterCount,
-        clusters: f.clusters,
+      const f = await resp.json();
+      stories = (f||[]).map(x => ({
+        headline: x.headline||x.topicDisplay, summary: x.insight||'',
+        type:'split', voiceCount:x.voiceCount, clusterCount:x.clusterCount, clusters:x.clusters,
       }));
     }
-  } catch (e) {
-    console.log('Stories not available:', e);
-    return;
-  }
+  } catch(e) { return; }
 
   if (!stories || stories.length === 0) return;
-
   _storiesData = stories;
 
-  const section = document.getElementById('fracturesSection');
-  const container = document.getElementById('fractureCards');
-  section.style.display = 'block';
+  const feed = document.getElementById('feed');
+  feed.style.display = 'block';
 
-  // Edition header
-  const totalVoices = new Set();
-  stories.forEach(s => {
-    (s.clusters || []).forEach(c => {
-      (c.voices || []).forEach(v => totalVoices.add(v.voiceId || v.voiceName));
-    });
-  });
   const now = new Date();
-  const dateStr = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-  const edHeader = document.createElement('div');
-  edHeader.className = 'edition-header';
-  edHeader.textContent = `${dateStr} | Today: ${stories.length} stories, ${totalVoices.size} voices, 7 platforms`;
-  section.insertBefore(edHeader, container);
+  const dateStr = now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+  const totalVoices = new Set();
+  stories.forEach(s => (s.clusters||[]).forEach(c => (c.voices||[]).forEach(v => totalVoices.add(v.voiceId))));
 
-  stories.forEach((story, si) => {
-    // "Also today" divider before story 4
-    if (si === 3) {
-      const divider = document.createElement('div');
-      divider.className = 'also-today-divider';
-      divider.textContent = 'Also today';
-      container.appendChild(divider);
-    }
-
-    const card = document.createElement('div');
-    // Tier classes
-    if (si === 0) card.className = 'fracture-card tier-top expanded';
-    else if (si <= 2) card.className = 'fracture-card tier-medium';
-    else card.className = 'fracture-card tier-compact';
-
-    card.onclick = (e) => {
-      if (e.target.closest('.fracture-search-btn')) return;
-      card.classList.toggle('expanded');
-    };
-
-    // Type badge
-    const storyType = story.type || 'spectrum';
-    const typeLabels = { split: 'Split', spectrum: 'Spectrum', consensus: 'Consensus', reaction: 'Reaction' };
-    const typeLabel = typeLabels[storyType] || storyType;
-
-    // Source badge for editorial stories
-    const sourceBadge = story.source === 'editorial'
-      ? '<span class="story-type-badge editorial">Newsreel</span> '
-      : '';
-
-    // Cover image for CMS stories
-    const coverHtml = story.coverUrl
-      ? `<img class="story-cover" src="${story.coverUrl}" alt="" onerror="this.style.display='none'">`
-      : '';
-
-    // Cluster rendering (same proven UX from before)
-    let clustersHtml = '';
-    const shownClusters = (story.clusters || []).slice(0, 4);
-
-    shownClusters.forEach((cluster, ci) => {
-      const color = getClusterColor(ci);
-      const allVoices = cluster.voices || [];
-      const shown = allVoices.slice(0, 10);
-
-      // Face bubbles (always visible, clickable to reveal quote)
-      const faceBubblesHtml = allVoices.map((v, vi) => {
-        const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
-        const faceLens = getVoiceLens(v.voiceId);
-        const faceTooltip = faceLens ? escapeHtml(v.voiceName) + ' · ' + escapeHtml(faceLens).substring(0, 60) : escapeHtml(v.voiceName);
-        return `<div class="cluster-face-link" data-cluster-idx="${si}-${ci}" data-voice-idx="${vi}" data-voice-id="${v.voiceId}" data-voice-name="${escapeHtml(v.voiceName)}" data-voice-photo="${photo}" data-voice-quote="${escapeHtml(v.quote || '')}" data-voice-platform="${v.platform || ''}" data-source-url="${v.sourceUrl || ''}" onclick="event.stopPropagation(); handleFaceClick(this);">
-          <span class="cluster-face-tooltip">${faceTooltip}</span>
-          <img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
-        </div>`;
-      }).join('');
-
-      // Best quote (pick from bestQuote field or first voice with longest quote)
-      const bq = cluster.bestQuote || (allVoices.length > 0 ? (() => {
-        const best = [...allVoices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
-        return { voiceName: best.voiceName, quote: best.quote, platform: best.platform, voiceId: best.voiceId };
-      })() : null);
-      const platformLabels = {x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'};
-      const bestQuoteHtml = bq && bq.quote ? `<div class="cluster-best-quote">
-        <span class="cluster-best-quote-text">"${escapeHtml(bq.quote.substring(0, 180))}"</span>
-        <a class="cluster-best-quote-attr" href="/voice/${bq.voiceId || ''}" style="text-decoration:none; color:var(--text-muted);" onclick="event.stopPropagation();">— ${escapeHtml(bq.voiceName)}${bq.platform ? ' on ' + (platformLabels[bq.platform] || bq.platform) : ''}</a>
-      </div>` : '';
-
-      // Full voice list (hidden by default, toggled by "See all")
-      const clusterId = `cluster-voices-${si}-${ci}`;
-      let voicesHtml = shown.map(v => {
-        const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
-        const quote = (v.quote || '').substring(0, 180);
-        const platformLabel = v.platform ? (platformLabels[v.platform] || v.platform) : '';
-        return `<div class="cluster-voice-row" onclick="event.stopPropagation();">
-          <img class="cluster-voice-photo" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
-          <div class="cluster-voice-body">
-            <div>
-              <a href="/voice/${v.voiceId}" class="cluster-voice-name" style="text-decoration:none; color:var(--text-primary);" onclick="event.stopPropagation();">${escapeHtml(v.voiceName)}</a>
-              <span class="cluster-voice-platform">${platformLabel}</span>
-            </div>
-            ${quote ? `<div class="cluster-voice-quote">"${escapeHtml(quote)}"</div>` : ''}
-            ${v.sourceUrl ? `<a class="cluster-voice-link" href="${v.sourceUrl}" target="_blank" onclick="event.stopPropagation();">View source &rarr;</a>` : ''}
-          </div>
-        </div>`;
-      }).join('');
-
-      const overflow = (cluster.voiceCount || allVoices.length) - shown.length;
-      if (overflow > 0) {
-        voicesHtml += `<div style="font-size:11px; color:var(--text-muted); padding:4px 12px;">+ ${overflow} more voices</div>`;
-      }
-
-      const seeAllBtn = allVoices.length > 1 ? `<button class="cluster-see-all" onclick="event.stopPropagation(); var el=document.getElementById('${clusterId}'); el.classList.toggle('cluster-voices-hidden'); this.textContent = el.classList.contains('cluster-voices-hidden') ? 'See all ${cluster.voiceCount || allVoices.length} voices' : 'Hide voices';">See all ${cluster.voiceCount || allVoices.length} voices</button>` : '';
-
-      const autoOpen = (si === 0) ? ' cluster-open' : '';
-      clustersHtml += `
-        <div style="margin-bottom:4px;" class="${autoOpen}">
-          <div class="cluster-header-row" onclick="event.stopPropagation(); this.parentElement.classList.toggle('cluster-open');" style="display:flex; align-items:center; gap:8px; padding:10px 0; cursor:pointer;">
-            <div style="width:4px; height:18px; border-radius:2px; background:${color}; flex-shrink:0;"></div>
-            <div class="cluster-name" style="color:${color}; flex:1;">${escapeHtml(cluster.name)}</div>
-            <span class="cluster-count">${cluster.voiceCount || allVoices.length} voices</span>
-            <svg class="cluster-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition:transform 0.2s; flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-          <div class="cluster-faces" style="--cluster-color:${color};">${faceBubblesHtml}</div>
-          <div class="cluster-selected-quote-container" id="csq-container-${si}-${ci}" style="--cluster-color:${color};"></div>
-          <div class="cluster-collapsible">
-            ${bestQuoteHtml}
-            ${seeAllBtn}
-            <div id="${clusterId}" class="cluster-voices-list cluster-voices-hidden">${voicesHtml}</div>
-          </div>
-        </div>
-      `;
-    });
-
-    const topicSlug = (story.topicSlugs || [''])[0];
-
-    // Heat badge
-    const heat = story.heatScore || 0;
-    const heatLabel = heat >= 70 ? 'Hot' : heat >= 40 ? 'Warm' : '';
-    const heatBadge = heatLabel ? `<span class="heat-badge ${heatLabel.toLowerCase()}">${heatLabel}</span>` : '';
-
-    // Counter-narrative banner
-    const cn = story.counterNarrative;
-    const counterHtml = cn ? `<div class="counter-narrative">${escapeHtml(cn.tension)}</div>` : '';
-
-    // Best quote from dominant cluster
-    const bestCluster = (story.clusters || [])[0];
-    const bestQuote = bestCluster?.bestQuote;
-    const bestQuoteHtml = bestQuote ? `<div class="best-quote">
-      <span class="best-quote-text">"${escapeHtml(bestQuote.quote.substring(0, 160))}"</span>
-      <a class="best-quote-attr" href="/voice/${bestQuote.voiceId}" style="text-decoration:none; color:var(--text-muted);" onclick="event.stopPropagation();">— ${escapeHtml(bestQuote.voiceName)}</a>
-    </div>` : '';
-
-    // Horizontal cluster cards for top story (replaces opposing blockquotes)
-    let topStoryClusterCardsHtml = '';
-    if (si === 0 && shownClusters.length >= 1) {
-      let cardsHtml = '';
-      shownClusters.forEach((cluster, ci) => {
-        const color = getClusterColor(ci);
-        const allVoices = cluster.voices || [];
-        const facesHtml = allVoices.slice(0, 8).map(v => {
-          const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
-          return `<img class="cluster-face" src="${photo}" alt="${escapeHtml(v.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">`;
-        }).join('');
-        const voiceTotal = cluster.voiceCount || allVoices.length;
-        cardsHtml += `<div class="cluster-card-box" style="--card-cluster-color:${color};" data-top-cluster-idx="${ci}" data-story-idx="${si}" onclick="event.stopPropagation(); toggleTopClusterPanel(${si}, ${ci});">
-          <div>
-            <span class="cluster-card-box-name" style="color:${color};">${escapeHtml(cluster.name)}</span>
-            <span class="cluster-card-box-count">${voiceTotal}</span>
-          </div>
-          <div class="cluster-card-box-faces">${facesHtml}</div>
-        </div>`;
-      });
-      topStoryClusterCardsHtml = `<div class="cluster-cards-row-wrapper" id="cluster-cards-wrapper-${si}">
-        <div class="cluster-cards-row" id="cluster-cards-row-${si}">${cardsHtml}</div>
-      </div>
-      <div class="cluster-expand-panel-container" id="cluster-expand-${si}"></div>`;
-    }
-
-    // Cluster summary line for medium cards
-    let clusterSummaryHtml = '';
-    if (si === 1 || si === 2) {
-      const names = shownClusters.slice(0, 3).map(c => c.name);
-      clusterSummaryHtml = `<div class="cluster-summary-line">${names.join(' vs ')}</div>`;
-    }
-
-    card.innerHTML = `
-      ${coverHtml}
-      <div class="fracture-meta">
-        <div style="display:flex; gap:6px; align-items:center;">
-          ${sourceBadge}
-          <span class="story-type-badge ${storyType}">${typeLabel}</span>
-          ${heatBadge}
-        </div>
-        <div class="fracture-voices-count">${story.voiceCount} voices</div>
-      </div>
-      <div class="fracture-headline">${escapeHtml(story.headline)}</div>
-      ${clusterSummaryHtml}
-      <div style="display:flex; align-items:center; justify-content:space-between;">
-        <div class="fracture-insight">${escapeHtml(story.summary || '')}</div>
-        <svg class="fracture-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-      </div>
-      ${si === 0 ? topStoryClusterCardsHtml : ''}
-      ${si !== 0 ? '<div class="cluster-groups" style="flex-direction:column; gap:0; margin-top:12px; margin-bottom:12px;">' + clustersHtml + '</div>' : ''}
-      <a class="fracture-search-btn" href="/story/${escapeHtml(story.headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').substring(0, 60))}" onclick="event.stopPropagation();" style="text-decoration:none;">
-        View story
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      </a>
-    `;
-
-    container.appendChild(card);
-
-    // Add face bubble onboarding hint to first cluster of first story (only for non-top stories now)
-    if (si !== 0 && si === 1 && !localStorage.getItem('faces-discovered')) {
-      const firstFacesRow = card.querySelector('.cluster-faces');
-      if (firstFacesRow) {
-        const hint = document.createElement('div');
-        hint.className = 'face-onboarding-hint';
-        hint.textContent = 'Tap a face to see their take';
-        firstFacesRow.parentElement.insertBefore(hint, firstFacesRow.nextSibling);
-
-        const firstFace = firstFacesRow.querySelector('.cluster-face');
-        if (firstFace) firstFace.classList.add('face-pulse');
-      }
-    }
-
-    // Check scroll hint for horizontal cluster cards
-    if (si === 0) {
-      requestAnimationFrame(() => {
-        const wrapper = document.getElementById('cluster-cards-wrapper-' + si);
-        const row = document.getElementById('cluster-cards-row-' + si);
-        if (wrapper && row && row.scrollWidth > row.clientWidth) {
-          wrapper.classList.add('has-scroll');
-          row.addEventListener('scroll', () => {
-            const atEnd = row.scrollLeft + row.clientWidth >= row.scrollWidth - 10;
-            wrapper.classList.toggle('has-scroll', !atEnd);
-          });
-        }
-      });
-    }
-  });
+  feed.innerHTML = `<div class="feed-header">${dateStr} &middot; ${stories.length} stories &middot; ${totalVoices.size} voices</div>` +
+    stories.map(s => renderStoryCard(s)).join('');
 }
+loadFeed();
 
-// Store stories data for panel rendering
-let _storiesData = [];
-
-loadConversation();
-
-// Load The Wire
-const WIRE_PLATFORM_COLORS = {
-  x: '#1DA1F2', youtube: '#FF0000', substack: '#FF6719',
-  bluesky: '#0085FF', instagram: '#E1306C', tiktok: '#00F2EA', podcast: '#9B59B6'
-};
-const WIRE_PLATFORM_LABELS = {x:'X', youtube:'YouTube', substack:'Substack', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', podcast:'Podcast'};
-const WIRE_CATEGORY_LABELS = {
-  'reporters':'Reporters', 'commentators':'Commentators', 'creators':'Creators',
-  'elected-officials':'Elected Officials', 'policy-experts':'Policy Experts',
-  'activists':'Activists', 'satirists':'Satirists'
-};
-// Maps display filter keys to actual category values in voices.json
-const WIRE_CATEGORY_MAP = {
-  'reporters': ['journalist'],
-  'commentators': ['commentator'],
-  'creators': ['creator', 'entrepreneur'],
-  'elected-officials': ['politician'],
-  'policy-experts': ['think-tank', 'economist', 'legal'],
-  'activists': ['activist'],
-  'satirists': ['satirist']
-};
-const WIRE_APPROACH_LABELS = {
-  investigates:'Investigates', explains:'Explains', argues:'Argues',
-  reports:'Reports', entertains:'Entertains'
-};
-
-let _wireAllEntries = [];
-let _voiceCategoryMap = {};
-let _voiceApproachMap = {};
-let _wirePlatformFilters = new Set();
-let _wireCategoryFilters = new Set();
-let _wireApproachFilters = new Set();
-
+// ── WIRE ──
 function wireTimeAgo(ts) {
   try {
-    const diff = Date.now() - new Date(ts).getTime();
-    const h = Math.floor(diff / 3600000);
-    const d = Math.floor(diff / 86400000);
-    if (d > 0) return d + 'd ago';
-    if (h > 0) return h + 'h ago';
-    const m = Math.floor(diff / 60000);
-    if (m > 0) return m + 'm ago';
-    return 'just now';
+    const d = Date.now() - new Date(ts).getTime();
+    const h = Math.floor(d/3600000), m = Math.floor(d/60000);
+    if (h > 24) return Math.floor(d/86400000)+'d';
+    if (h > 0) return h+'h';
+    if (m > 0) return m+'m';
+    return 'now';
   } catch { return ''; }
 }
 
-function renderWireEntries(entries) {
-  const wireFeed = document.getElementById('wireFeed');
-  wireFeed.innerHTML = '';
-  if (entries.length === 0) {
-    wireFeed.innerHTML = '<div style="padding:20px 0;color:var(--text-muted);font-size:var(--text-body);text-align:center;">No posts match these filters</div>';
-    return;
-  }
-  entries.slice(0, 50).forEach(entry => {
-    const photo = entry.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(entry.voiceName || '')}&background=252528&color=a1a1aa&size=56`;
-    const platform = (entry.platform || '').toLowerCase();
-    const pColor = WIRE_PLATFORM_COLORS[platform] || '#aaa';
-    const pLabel = WIRE_PLATFORM_LABELS[platform] || platform;
-    const text = (entry.text || entry.quote || '').substring(0, 120);
-    const time = wireTimeAgo(entry.timestamp || entry.date);
-    const row = document.createElement('div');
-    row.className = 'wire-entry';
-    row.innerHTML = `
-      <img class="wire-photo" src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(entry.voiceName || '')}&background=252528&color=a1a1aa&size=56'">
-      <a class="wire-name" href="/voice/${entry.voiceId || ''}">${escapeHtml(entry.voiceName || '')}</a>
-      <span class="wire-platform" style="background:${pColor}22; color:${pColor};">${pLabel}</span>
-      <span class="wire-text">${escapeHtml(text)}</span>
-      <span class="wire-time">${time}</span>
-    `;
-    wireFeed.appendChild(row);
+fetch(BASE + '/api/wire').then(r=>r.json()).then(entries => {
+  if (!entries || entries.length===0) return;
+  document.getElementById('wireSection').style.display = 'block';
+  const voiceSet = new Set(entries.map(e=>e.voiceId));
+  document.getElementById('wireSubtitle').textContent = `What ${voiceSet.size} voices are saying right now`;
+  const feed = document.getElementById('wireFeed');
+  entries.slice(0,50).forEach(e => {
+    const p = (e.platform||'').toLowerCase();
+    const pColor = PLATFORM_COLORS[p]||'#aaa';
+    feed.innerHTML += `<div class="wire-entry">
+      <img class="wire-photo" src="${e.photo||`https://ui-avatars.com/api/?name=${encodeURIComponent(e.voiceName)}&background=1c1c1f&color=a1a1aa&size=56`}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(e.voiceName)}&background=1c1c1f&color=a1a1aa&size=56'">
+      <a class="wire-name" href="${BASE}/voice/${e.voiceId}">${esc(e.voiceName)}</a>
+      <span class="wire-platform" style="background:${pColor}22;color:${pColor};">${PLATFORM[p]||p}</span>
+      <span class="wire-text">${esc((e.text||'').substring(0,120))}</span>
+      <span class="wire-time">${wireTimeAgo(e.timestamp)}</span>
+    </div>`;
   });
-}
+}).catch(()=>{});
 
-function applyWireFilters() {
-  let filtered = _wireAllEntries;
-  if (_wirePlatformFilters.size > 0) {
-    filtered = filtered.filter(e => _wirePlatformFilters.has((e.platform || '').toLowerCase()));
+// ── TOPICS + HINTS ──
+fetch(BASE + '/api/topics').then(r=>r.json()).then(topics => {
+  const sorted = Object.entries(topics)
+    .filter(([k,v]) => k!=='uncategorized' && [...new Set(v.map(e=>e.voiceName))].length >= 3)
+    .sort((a,b) => b[1].length - a[1].length).slice(0,15);
+
+  if (sorted.length > 0) {
+    const hints = document.getElementById('searchHints');
+    sorted.slice(0,4).forEach(([topic]) => {
+      const el = document.createElement('div');
+      el.className = 'search-hint';
+      el.textContent = topic.replace(/-/g,' ');
+      el.onclick = () => { input.value = el.textContent; doSearch(); };
+      hints.appendChild(el);
+    });
+
+    const curated = ['reproductive rights','immigration','climate change','education','gun control','housing','criminal justice','voting rights','racial justice','healthcare','LGBTQ rights','media literacy'];
+    const trendingSet = new Set(sorted.slice(0,4).map(([t])=>t.replace(/-/g,' ').toLowerCase()));
+    curated.filter(t=>!trendingSet.has(t)).slice(0,6).forEach(topic => {
+      const el = document.createElement('div');
+      el.className = 'search-hint curated';
+      el.textContent = topic;
+      el.onclick = () => { input.value = topic; doSearch(); };
+      hints.appendChild(el);
+    });
+
+    document.getElementById('stats').innerHTML = `<span>${Object.values(topics).flat().length}</span> posts from <span>${new Set(Object.values(topics).flat().map(e=>e.voiceId)).size}</span> voices across <span>${sorted.length}+</span> topics`;
   }
-  if (_wireCategoryFilters.size > 0) {
-    filtered = filtered.filter(e => {
-      const cat = _voiceCategoryMap[e.voiceId] || '';
-      for (const filterKey of _wireCategoryFilters) {
-        const matchCats = WIRE_CATEGORY_MAP[filterKey] || [];
-        if (matchCats.includes(cat)) return true;
-      }
-      return false;
-    });
-  }
-  if (_wireApproachFilters.size > 0) {
-    filtered = filtered.filter(e => {
-      const approach = _voiceApproachMap[e.voiceId] || '';
-      return _wireApproachFilters.has(approach);
-    });
-  }
-  renderWireEntries(filtered);
-}
+}).catch(()=>{});
 
-function buildWireFilterBar() {
-  const bar = document.getElementById('wireFilterBar');
-  bar.style.display = 'flex';
+// ── SEARCH ──
+const input = document.getElementById('searchInput');
+const loading = document.getElementById('loading');
+const resultsDiv = document.getElementById('results');
 
-  // Platform row
-  const platformRow = document.createElement('div');
-  platformRow.className = 'wire-filter-row';
-  platformRow.innerHTML = '<span class="wire-filter-row-label">Platform</span>';
-  const platforms = ['all','x','youtube','substack','bluesky','instagram','tiktok','podcast'];
-  const platformDisplayNames = {all:'All', x:'X', youtube:'YouTube', substack:'Substack', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', podcast:'Podcast'};
-  platforms.forEach(p => {
-    const pill = document.createElement('span');
-    pill.className = 'wire-filter-pill' + (p === 'all' ? ' active' : '');
-    pill.textContent = platformDisplayNames[p];
-    if (p !== 'all') pill.dataset.platform = p;
-    pill.addEventListener('click', () => {
-      if (p === 'all') {
-        _wirePlatformFilters.clear();
-        platformRow.querySelectorAll('.wire-filter-pill').forEach(el => el.classList.remove('active'));
-        pill.classList.add('active');
-      } else {
-        const allPill = platformRow.querySelector('.wire-filter-pill:first-of-type');
-        allPill.classList.remove('active');
-        pill.classList.toggle('active');
-        if (pill.classList.contains('active')) {
-          _wirePlatformFilters.add(p);
-        } else {
-          _wirePlatformFilters.delete(p);
-        }
-        if (_wirePlatformFilters.size === 0) allPill.classList.add('active');
-      }
-      applyWireFilters();
-    });
-    platformRow.appendChild(pill);
-  });
-  bar.appendChild(platformRow);
+input.addEventListener('keydown', e => { if(e.key==='Enter') doSearch(); });
+input.addEventListener('focus', () => { document.getElementById('timeFilter').style.display='flex'; });
 
-  // Category row (merged categories per Reuters Institute terminology)
-  const categoryRow = document.createElement('div');
-  categoryRow.className = 'wire-filter-row';
-  categoryRow.innerHTML = '<span class="wire-filter-row-label">Type</span>';
-  const categories = ['all','reporters','commentators','creators','elected-officials','policy-experts','activists','satirists'];
-  const catDisplayNames = {all:'All', ...WIRE_CATEGORY_LABELS};
-  categories.forEach(c => {
-    const pill = document.createElement('span');
-    pill.className = 'wire-filter-pill' + (c === 'all' ? ' active' : '');
-    pill.textContent = catDisplayNames[c];
-    pill.addEventListener('click', () => {
-      if (c === 'all') {
-        _wireCategoryFilters.clear();
-        categoryRow.querySelectorAll('.wire-filter-pill').forEach(el => el.classList.remove('active'));
-        pill.classList.add('active');
-      } else {
-        const allPill = categoryRow.querySelector('.wire-filter-pill:first-of-type');
-        allPill.classList.remove('active');
-        pill.classList.toggle('active');
-        if (pill.classList.contains('active')) {
-          _wireCategoryFilters.add(c);
-        } else {
-          _wireCategoryFilters.delete(c);
-        }
-        if (_wireCategoryFilters.size === 0) allPill.classList.add('active');
-      }
-      applyWireFilters();
-    });
-    categoryRow.appendChild(pill);
-  });
-  bar.appendChild(categoryRow);
-
-  // Approach row
-  const approachRow = document.createElement('div');
-  approachRow.className = 'wire-filter-row';
-  approachRow.innerHTML = '<span class="wire-filter-row-label">Approach</span>';
-  const approaches = ['all','investigates','explains','argues','reports','entertains'];
-  const approachDisplayNames = {all:'All', ...WIRE_APPROACH_LABELS};
-  approaches.forEach(a => {
-    const pill = document.createElement('span');
-    pill.className = 'wire-filter-pill' + (a === 'all' ? ' active' : '');
-    pill.textContent = approachDisplayNames[a];
-    if (a !== 'all') pill.dataset.approach = a;
-    pill.addEventListener('click', () => {
-      if (a === 'all') {
-        _wireApproachFilters.clear();
-        approachRow.querySelectorAll('.wire-filter-pill').forEach(el => el.classList.remove('active'));
-        pill.classList.add('active');
-      } else {
-        const allPill = approachRow.querySelector('.wire-filter-pill:first-of-type');
-        allPill.classList.remove('active');
-        pill.classList.toggle('active');
-        if (pill.classList.contains('active')) {
-          _wireApproachFilters.add(a);
-        } else {
-          _wireApproachFilters.delete(a);
-        }
-        if (_wireApproachFilters.size === 0) allPill.classList.add('active');
-      }
-      applyWireFilters();
-    });
-    approachRow.appendChild(pill);
-  });
-  bar.appendChild(approachRow);
-}
-
-// Fetch voices for category lookup, then load wire
-fetch(BASE + '/data/voices.json').then(r => r.json()).then(voices => {
-  if (Array.isArray(voices)) {
-    voices.forEach(v => {
-      _voiceCategoryMap[v.id] = v.category || '';
-      _voiceApproachMap[v.id] = v.approach || '';
-    });
-  }
-}).catch(() => {}).finally(() => {
-  fetch(BASE + '/api/wire').then(r => r.json()).then(entries => {
-    if (!entries || entries.length === 0) return;
-    _wireAllEntries = entries;
-    const wireSection = document.getElementById('wireSection');
-    wireSection.style.display = 'block';
-
-    const voiceSet = new Set(entries.map(e => e.voiceId || e.voiceName));
-    document.getElementById('wireSubtitle').textContent = `What ${voiceSet.size} voices are saying right now`;
-
-    buildWireFilterBar();
-    renderWireEntries(entries);
-  }).catch(() => {});
-});
-
-// Load trending topics
-fetch(BASE + '/api/topics')
-  .then(r => r.json())
-  .then(topics => {
-    const sorted = Object.entries(topics)
-      .filter(([k, v]) => k !== 'uncategorized' && [...new Set(v.map(e => e.voiceName))].length >= 3)
-      .sort((a, b) => b[1].length - a[1].length)
-      .slice(0, 15);
-
-    if (sorted.length > 0) {
-      const examplesDiv = document.getElementById('exampleQueries');
-      sorted.slice(0, 4).forEach(([topic]) => {
-        const el = document.createElement('div');
-        el.className = 'example-query';
-        el.textContent = topic.replace(/-/g, ' ');
-        el.onclick = () => setQuery(el);
-        examplesDiv.appendChild(el);
-      });
-
-      // Trending section removed — example chips + story cards are enough
-      statsDiv.innerHTML = `<span>${Object.values(topics).flat().length}</span> posts from <span>${new Set(Object.values(topics).flat().map(e => e.voiceId)).size}</span> voices across <span>${sorted.length}+</span> topics today`;
-
-      // Add curated topic suggestions for discovery
-      const suggestedDiv = document.getElementById('suggestedTopics');
-      const curated = ['reproductive rights', 'immigration', 'climate change', 'education', 'gun control', 'housing', 'criminal justice', 'voting rights', 'racial justice', 'healthcare', 'LGBTQ rights', 'media literacy'];
-      // Only show curated topics not already in trending chips
-      const trendingSet = new Set(sorted.slice(0, 4).map(([t]) => t.replace(/-/g, ' ').toLowerCase()));
-      const filtered = curated.filter(t => !trendingSet.has(t));
-      filtered.slice(0, 6).forEach(topic => {
-        const el = document.createElement('div');
-        el.className = 'example-query';
-        el.textContent = topic;
-        el.style.borderStyle = 'dashed';
-        el.onclick = () => { input.value = topic; doSearch(); };
-        suggestedDiv.appendChild(el);
-      });
-    }
-  })
-  .catch(() => {});
-
-input.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
-input.addEventListener('focus', () => { document.getElementById('timeFilter').style.display = 'flex'; });
-input.addEventListener('input', () => {
-  if (input.value.trim()) document.getElementById('timeFilter').style.display = 'flex';
-});
-
-function setQuery(el) { input.value = el.textContent; doSearch(); }
-
-let selectedDays = ''; // '' = auto
+let selectedDays = '';
 function setTimeFilter(el) {
-  document.querySelectorAll('.time-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('active'));
   el.classList.add('active');
   selectedDays = el.dataset.days;
-  // Re-search if there's a query
   if (input.value.trim()) doSearch();
 }
 
 async function doSearch() {
-  const query = input.value.trim();
-  if (!query) return;
+  const q = input.value.trim();
+  if (!q) return;
 
-  btn.disabled = true;
+  document.getElementById('searchBtn').disabled = true;
   loading.classList.add('active');
   resultsDiv.innerHTML = '';
-  // Hide fractures and examples when searching
-  document.getElementById('fracturesSection').style.display = 'none';
-  document.getElementById('exampleQueries').style.display = 'none';
-  document.getElementById('suggestedTopics').style.display = 'none';
-  document.getElementById('trendingSection').style.display = 'none';
+  document.getElementById('feed').style.display = 'none';
+  document.getElementById('searchHints').style.display = 'none';
+  document.getElementById('wireSection').style.display = 'none';
+  document.getElementById('stats').style.display = 'none';
   document.getElementById('timeFilter').style.display = 'flex';
-  statsDiv.style.display = 'none';
 
   try {
-    let url = `${BASE}/api/lookup?q=${encodeURIComponent(query)}`;
+    let url = `${BASE}/api/lookup?q=${encodeURIComponent(q)}`;
     if (selectedDays) url += `&days=${selectedDays}`;
     const resp = await fetch(url);
     const data = await resp.json();
     if (data.error) {
-      resultsDiv.innerHTML = `<div class="no-results">${data.error}</div>`;
+      resultsDiv.innerHTML = `<div class="no-results">${esc(data.error)}</div>`;
     } else {
       renderResults(data);
     }
-  } catch (err) {
-    resultsDiv.innerHTML = `<div class="no-results">Search failed: ${err.message}</div>`;
+  } catch(err) {
+    resultsDiv.innerHTML = `<div class="no-results">Search failed: ${esc(err.message)}</div>`;
   }
 
-  btn.disabled = false;
+  document.getElementById('searchBtn').disabled = false;
   loading.classList.remove('active');
 }
 
 function renderResults(data) {
   if (!data.voices || data.voices.length === 0) {
-    resultsDiv.innerHTML = '<div class="no-results">No voices in our database are discussing this topic yet. We track 232+ voices across X, YouTube, Bluesky, Substack, Instagram, TikTok, and podcasts.</div>';
+    resultsDiv.innerHTML = '<div class="no-results">No voices discussing this topic yet. We track 257+ voices across X, YouTube, Bluesky, Substack, Instagram, TikTok, and podcasts.</div>';
     return;
   }
 
-  data.voices.sort((a, b) => b.quotes.length - a.quotes.length);
+  data.voices.sort((a,b) => b.quotes.length - a.quotes.length);
 
-  const windowLabel = data.timeWindow === '1d' ? 'today' :
-    data.timeWindow === '3d' ? 'last 3 days' :
-    data.timeWindow === '7d' ? 'last week' :
-    data.timeWindow === '14d' ? 'last 2 weeks' :
-    data.timeWindow === '30d' ? 'last month' : data.timeWindow || '';
-  const windowNote = windowLabel ? `<span style="color:#aaa;font-size:0.8em;margin-left:8px;">${windowLabel}</span>` : '';
+  const windowLabel = {
+    '1d':'today','3d':'3 days','7d':'week','14d':'2 weeks','30d':'month'
+  }[data.timeWindow] || data.timeWindow || '';
 
-  // Broadening note — transparency about match precision
-  const broadeningHtml = data.broadeningNote
-    ? `<div class="broadening-note">${escapeHtml(data.broadeningNote)}</div>`
-    : '';
-
-  // Build search category filter bar (merged categories)
-  const searchCatLabels = {all:'All', reporters:'Reporters', commentators:'Commentators', creators:'Creators', 'elected-officials':'Elected Officials', 'policy-experts':'Policy Experts', activists:'Activists', satirists:'Satirists'};
-  const searchCatPills = Object.entries(searchCatLabels).map(([key, label]) =>
-    `<span class="wire-filter-pill search-cat-filter${key === 'all' ? ' active' : ''}" data-search-cat="${key}">${label}</span>`
-  ).join('');
-
-  // Build search approach filter bar
-  const searchApproachLabels = {all:'All', investigates:'Investigates', explains:'Explains', argues:'Argues', reports:'Reports', entertains:'Entertains'};
-  const searchApproachPills = Object.entries(searchApproachLabels).map(([key, label]) =>
-    `<span class="wire-filter-pill search-approach-filter${key === 'all' ? ' active' : ''}" data-search-approach="${key}"${key !== 'all' ? ` data-approach="${key}"` : ''}>${label}</span>`
-  ).join('');
-
-  let html = `
-    <div class="results-header">
-      <h2>${data.voices.length} voices on this story${windowNote}</h2>
-      ${broadeningHtml}
-      <div class="topics">${data.matchedTopics.map(t => `<span class="tag">${t}</span>`).join('')}</div>
-    </div>
-    <div class="search-filter-bar" id="searchCategoryBar">${searchCatPills}</div>
-    <div class="search-filter-bar" id="searchApproachBar">${searchApproachPills}</div>
-  `;
-
-  // Group by cluster
-  const clusterGroups = {};
-  for (const voice of data.voices) {
-    const cluster = voice.argumentCluster || 'uncategorized';
-    if (!clusterGroups[cluster]) clusterGroups[cluster] = [];
-    clusterGroups[cluster].push(voice);
-  }
-
-  const clusters = Object.keys(clusterGroups).filter(c => c !== 'uncategorized');
-
-  if (clusters.length > 1) {
-    const clusterTags = clusters
-      .sort((a, b) => clusterGroups[b].length - clusterGroups[a].length)
-      .map(c => `<span class="cluster-tag cluster-filter" data-cluster="${c}" onclick="filterByCluster('${c.replace(/'/g, "\\'")}')">${c} <span style="opacity:0.5">${clusterGroups[c].length}</span></span>`)
-      .join('');
-    html += `<div id="clusterFilters" style="text-align:center; margin-bottom:20px;">
-      <div style="color:var(--text-muted); font-size:0.8em; margin-bottom:8px;">Filter by position</div>
-      <div style="display:flex; flex-wrap:wrap; gap:6px; justify-content:center;">
-        <span class="cluster-tag cluster-filter active" onclick="filterByCluster(null)">All <span style="opacity:0.5">${data.voices.length}</span></span>
-        ${clusterTags}
-      </div>
-    </div>`;
-  }
-
-  window._resultsData = data;
+  let html = `<div class="results-header">
+    <h2>${data.voices.length} voices on this story${windowLabel ? ` <span style="color:var(--text-dim);font-size:0.8em;">${windowLabel}</span>` : ''}</h2>
+    ${data.broadeningNote ? `<div style="font-size:13px;color:var(--text-muted);margin-top:4px;">${esc(data.broadeningNote)}</div>` : ''}
+    <div class="results-topics">${data.matchedTopics.map(t=>`<span class="results-topic-tag">${esc(t)}</span>`).join('')}</div>
+  </div>`;
 
   for (const voice of data.voices) {
-    const clusterLabel = voice.argumentCluster
-      ? `<span class="voice-lean cluster-label">${voice.argumentCluster}</span>` : '';
+    const clusterBadge = voice.argumentCluster ? `<span class="voice-cluster-badge">${esc(voice.argumentCluster)}</span>` : '';
+    const photo = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=1c1c1f&color=a1a1aa&size=84`;
+    const lens = voice.lens || _voiceLens[voice.voiceId] || '';
+    const tags = (voice.tags||[]).map(t => {
+      const tip = TAG_GLOSSARY[t.toLowerCase()];
+      return `<span class="voice-tag"${tip ? ` title="${esc(tip)}" style="cursor:help;"` : ''}>${esc(t)}</span>`;
+    }).join('');
 
-    const photoUrl = voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96`;
-    const tagsHtml = voice.tags && voice.tags.length
-      ? `<div style="margin-top:4px; display:flex; flex-wrap:wrap; gap:4px;">${voice.tags.map(t => {
-          const tip = TAG_GLOSSARY[t.toLowerCase()];
-          const titleAttr = tip ? ` title="${escapeHtml(tip)}"` : '';
-          const cursor = tip ? 'cursor:help;' : '';
-          return `<span style="display:inline-block; font-size:0.72em; color:var(--text-secondary); background:var(--bg-surface-2); border:1px solid var(--border-default); border-radius:100px; padding:2px 10px;${cursor}"${titleAttr}>${escapeHtml(t)}</span>`;
-        }).join('')}</div>` : '';
-
-    const voiceCategory = _voiceCategoryMap[voice.voiceId] || '';
-    const voiceApproach = _voiceApproachMap[voice.voiceId] || '';
-    html += `
-      <div class="voice-card" data-cluster="${(voice.argumentCluster || '').replace(/"/g, '&quot;')}" data-category="${voiceCategory}" data-approach="${voiceApproach}">
-        <div class="voice-header">
-          <img class="voice-photo" src="${photoUrl}" alt="${voice.voiceName}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=252528&color=a1a1aa&size=96'">
-          <div>
-            <div class="voice-name"><a href="/voice/${voice.voiceId}" style="color:var(--text-primary); text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-primary)'">${voice.voiceName}</a></div>
-            ${voice.lens ? `<div style="font-size:12px;color:var(--text-muted);margin-top:2px;line-height:1.4;">${escapeHtml(voice.lens)}</div>` : ''}
-            ${clusterLabel ? `<div style="margin-top:4px;">${clusterLabel}</div>` : ''}
-            ${tagsHtml}
-          </div>
+    html += `<div class="voice-card">
+      <div class="voice-header">
+        <img class="voice-photo" src="${photo}" alt="${esc(voice.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.voiceName)}&background=1c1c1f&color=a1a1aa&size=84'">
+        <div>
+          <a class="voice-name" href="${BASE}/voice/${voice.voiceId}">${esc(voice.voiceName)}</a>
+          ${lens ? `<div class="voice-lens">${esc(lens)}</div>` : ''}
+          ${clusterBadge}
         </div>
-        <div class="voice-topics">${voice.topics.map(t => `<span class="tag">${t}</span>`).join('')}</div>
-        ${voice.quotes.slice(0, 3).map(q => {
-          const platformLabel = {x: 'X/Twitter', youtube: 'YouTube', bluesky: 'Bluesky', instagram: 'Instagram', tiktok: 'TikTok'}[q.platform] || q.platform;
-          const timeAgo = q.timestamp ? formatTimeAgo(q.timestamp) : '';
-          const isTranscript = q.quote && q.quote.length > 150 && q.platform === 'youtube';
-          const quoteText = isTranscript ? q.quote.substring(0, 350) : q.quote.substring(0, 250);
-          return `
-            <div class="quote">
-              <div class="quote-platform">${platformLabel}${isTranscript ? ' (transcript)' : ''}${timeAgo ? ` · ${timeAgo}` : ''}</div>
-              <div class="quote-text">"${escapeHtml(quoteText)}"</div>
-              <a class="quote-link" href="${q.sourceUrl}" target="_blank">View original</a>
-            </div>
-          `;
-        }).join('')}
       </div>
-    `;
+      ${tags ? `<div class="voice-tags">${tags}</div>` : ''}
+      ${voice.quotes.slice(0,3).map(q => {
+        const pLabel = PLATFORM[q.platform]||q.platform;
+        const isTranscript = q.quote && q.quote.length > 150 && q.platform === 'youtube';
+        return `<div class="quote">
+          <div class="quote-platform">${esc(pLabel)}${isTranscript?' (transcript)':''}</div>
+          <div class="quote-text">"${esc((isTranscript ? q.quote.substring(0,350) : q.quote.substring(0,250)))}"</div>
+          <a class="quote-link" href="${q.sourceUrl}" target="_blank">View original</a>
+        </div>`;
+      }).join('')}
+    </div>`;
   }
 
   resultsDiv.innerHTML = html;
-
-  // Shared filter state for search results
-  let _searchCatFilter = null;
-  let _searchApproachFilter = null;
-
-  function applySearchFilters() {
-    document.querySelectorAll('.voice-card').forEach(card => {
-      const cardCat = card.dataset.category || '';
-      const cardApproach = card.dataset.approach || '';
-      let catMatch = true;
-      let approachMatch = true;
-      if (_searchCatFilter) {
-        const matchCats = WIRE_CATEGORY_MAP[_searchCatFilter] || [];
-        catMatch = matchCats.includes(cardCat);
-      }
-      if (_searchApproachFilter) {
-        approachMatch = cardApproach === _searchApproachFilter;
-      }
-      card.style.display = (catMatch && approachMatch) ? '' : 'none';
-    });
-    const visible = document.querySelectorAll('.voice-card:not([style*="display: none"])').length;
-    const header = document.querySelector('.results-header h2');
-    if (header && window._resultsData) {
-      header.innerHTML = (_searchCatFilter || _searchApproachFilter)
-        ? `${visible} voices on this story${windowNote}`
-        : `${window._resultsData.voices.length} voices on this story${windowNote}`;
-    }
-  }
-
-  // Bind search category filter handlers
-  document.querySelectorAll('.search-cat-filter').forEach(pill => {
-    pill.addEventListener('click', () => {
-      const cat = pill.dataset.searchCat;
-      document.querySelectorAll('.search-cat-filter').forEach(p => p.classList.remove('active'));
-      if (cat === 'all') {
-        _searchCatFilter = null;
-        pill.classList.add('active');
-      } else {
-        _searchCatFilter = cat;
-        pill.classList.add('active');
-      }
-      applySearchFilters();
-    });
-  });
-
-  // Bind search approach filter handlers
-  document.querySelectorAll('.search-approach-filter').forEach(pill => {
-    pill.addEventListener('click', () => {
-      const approach = pill.dataset.searchApproach;
-      document.querySelectorAll('.search-approach-filter').forEach(p => p.classList.remove('active'));
-      if (approach === 'all') {
-        _searchApproachFilter = null;
-        pill.classList.add('active');
-      } else {
-        _searchApproachFilter = approach;
-        pill.classList.add('active');
-      }
-      applySearchFilters();
-    });
-  });
-}
-
-function formatTimeAgo(ts) {
-  try {
-    const date = new Date(ts);
-    const now = new Date();
-    const diffMs = now - date;
-    const diffHrs = Math.floor(diffMs / 3600000);
-    const diffDays = Math.floor(diffMs / 86400000);
-    if (diffDays > 30) return date.toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
-    if (diffDays > 0) return `${diffDays}d ago`;
-    if (diffHrs > 0) return `${diffHrs}h ago`;
-    return 'just now';
-  } catch { return ''; }
-}
-
-function escapeHtml(text) {
-  const div = document.createElement('div');
-  div.textContent = text;
-  return div.innerHTML;
-}
-
-const PLATFORM_LABELS_GLOBAL = {x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'};
-
-// Voice lens lookup
-let _voiceLensMap = {};
-fetch(BASE + '/data/voices.json').then(r => r.json()).then(voices => {
-  for (const v of voices) _voiceLensMap[v.id] = v.lens || '';
-}).catch(() => {});
-function getVoiceLens(voiceId) { return _voiceLensMap[voiceId] || ''; }
-
-// Tag glossary for tooltips
-const TAG_GLOSSARY = {
-  'hawkish': 'Favors strong military action or aggressive foreign policy',
-  'anti-establishment': 'Skeptical of institutional power, both parties',
-  'contrarian': 'Frequently takes positions against mainstream consensus',
-  'centrist': 'Positions don\'t align consistently with either party',
-  'populist': 'Frames issues as people vs. elites',
-  'libertarian-leaning': 'Prioritizes individual freedom, skeptical of government',
-  'progressive': 'Advocates systemic change on social/economic issues',
-  'constitutionalist': 'Frames arguments through constitutional law',
-  'digital media': 'Primarily reaches audiences through social platforms',
-  'heterodox': 'Positions cross traditional left-right lines',
-  'conservative': 'Aligns with traditional values and limited government',
-  'liberal': 'Favors social progress and government role in equity',
-  'anti-war': 'Opposes military intervention',
-  'pro-Israel': 'Supports strong U.S.-Israel alliance',
-  'anti-Trump': 'Critical of Trump and MAGA movement',
-  'pro-Trump': 'Supportive of Trump and his agenda',
-  'MAGA': 'Aligned with Trump\'s Make America Great Again movement',
-  'free speech': 'Prioritizes broad speech protections',
-  'anti-woke': 'Critical of progressive social justice activism',
-  'democratic socialist': 'Advocates democratic control of economic systems',
-  'neoconservative': 'Hawkish foreign policy, pro-democracy promotion abroad',
-  'fiscal conservative': 'Prioritizes reducing government spending and debt',
-};
-
-function handleFaceClick(faceEl) {
-  const ci = faceEl.dataset.clusterIdx;
-  const container = document.getElementById('csq-container-' + ci);
-  const img = faceEl.querySelector('.cluster-face');
-  const voiceId = faceEl.dataset.voiceId;
-  const voiceName = faceEl.dataset.voiceName;
-  const photo = faceEl.dataset.voicePhoto;
-  const quote = faceEl.dataset.voiceQuote;
-  const platform = faceEl.dataset.voicePlatform;
-  const sourceUrl = faceEl.dataset.sourceUrl;
-
-  const platformLabel = PLATFORM_LABELS_GLOBAL[platform] || platform || '';
-  const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
-
-  // Hide onboarding hints on first face click
-  if (!localStorage.getItem('faces-discovered')) {
-    localStorage.setItem('faces-discovered', 'true');
-    document.querySelectorAll('.face-onboarding-hint').forEach(h => h.style.display = 'none');
-    document.querySelectorAll('.face-pulse').forEach(f => f.classList.remove('face-pulse'));
-  }
-
-  // If this face is already selected, toggle off
-  if (img.classList.contains('selected')) {
-    img.classList.remove('selected');
-    container.innerHTML = '';
-    return;
-  }
-
-  // Deselect any other selected face in this cluster
-  const facesRow = faceEl.closest('.cluster-faces');
-  facesRow.querySelectorAll('.cluster-face.selected').forEach(f => f.classList.remove('selected'));
-
-  // Select this face
-  img.classList.add('selected');
-
-  // Build quote card
-  const voiceLens = getVoiceLens(voiceId);
-  const fallbackPhoto = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(voiceName) + '&background=252528&color=a1a1aa&size=80';
-  container.innerHTML = '<div class="cluster-selected-quote">' +
-    '<img class="csq-photo" src="' + photo + '" alt="" onerror="this.src=\'' + fallbackPhoto + '\'">' +
-    '<div class="csq-body">' +
-      '<div>' +
-        '<span class="csq-name">' + voiceName + '</span>' +
-        (platformLabel ? '<span class="csq-platform">' + platformLabel + '</span>' : '') +
-      '</div>' +
-      (voiceLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(voiceLens) + '</div>' : '') +
-      (quote ? '<div class="csq-quote">"' + quote + '"</div>' : '<div class="csq-quote" style="color:var(--text-muted); font-style:italic;">No quote available</div>') +
-      '<a class="csq-profile-link" href="' + (sourceUrl || BASE + '/voice/' + voiceId) + '"' + (sourceUrl ? ' target="_blank"' : '') + ' onclick="event.stopPropagation();">View source &rarr;</a>' +
-    '</div>' +
-  '</div>';
-}
-
-let _activeTopCluster = {}; // { storyIdx: clusterIdx }
-
-function toggleTopClusterPanel(si, ci) {
-  const container = document.getElementById('cluster-expand-' + si);
-  const cards = document.querySelectorAll('.cluster-card-box[data-story-idx="' + si + '"]');
-
-  // If same cluster clicked, close
-  if (_activeTopCluster[si] === ci) {
-    container.innerHTML = '';
-    cards.forEach(c => c.classList.remove('selected'));
-    delete _activeTopCluster[si];
-    return;
-  }
-
-  // Select this card, deselect others
-  cards.forEach(c => c.classList.remove('selected'));
-  const activeCard = document.querySelector('.cluster-card-box[data-story-idx="' + si + '"][data-top-cluster-idx="' + ci + '"]');
-  if (activeCard) activeCard.classList.add('selected');
-  _activeTopCluster[si] = ci;
-
-  const story = _storiesData[si];
-  if (!story) return;
-  const cluster = (story.clusters || [])[ci];
-  if (!cluster) return;
-
-  const color = getClusterColor(ci);
-  const allVoices = cluster.voices || [];
-  const platformLabels = {x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast'};
-  const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
-
-  // Best quote first
-  const bq = cluster.bestQuote || (allVoices.length > 0 ? (() => {
-    const best = [...allVoices].sort((a, b) => (b.quoteQuality || 0) - (a.quoteQuality || 0) || (b.quote || '').length - (a.quote || '').length)[0];
-    return { voiceName: best.voiceName, quote: best.quote, platform: best.platform, voiceId: best.voiceId, photo: best.photo };
-  })() : null);
-
-  let bestQuoteHtml = '';
-  if (bq && bq.quote) {
-    const bqPhoto = bq.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80`;
-    const bqPlatform = platformLabels[bq.platform] || bq.platform || '';
-    const bqLens = getVoiceLens(bq.voiceId);
-    bestQuoteHtml = `<div class="cluster-voice-row" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);">
-      <img class="cluster-voice-photo" src="${bqPhoto}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(bq.voiceName)}&background=252528&color=a1a1aa&size=80'">
-      <div class="cluster-voice-body">
-        <div>
-          <a href="${BASE}/voice/${bq.voiceId || ''}" class="cluster-voice-name" onclick="event.stopPropagation();">${escapeHtml(bq.voiceName)}</a>
-          ${bqPlatform ? '<span class="cluster-voice-platform">' + bqPlatform + '</span>' : ''}
-        </div>
-        ${bqLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(bqLens) + '</div>' : ''}
-        <div class="cluster-voice-quote">"${escapeHtml(bq.quote.substring(0, 250))}"</div>
-      </div>
-    </div>`;
-  }
-
-  // All voices
-  let voicesHtml = allVoices.slice(0, 10).map(v => {
-    // Skip best quote voice if already shown
-    if (bq && v.voiceId === bq.voiceId) return '';
-    const photo = v.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80`;
-    const quote = (v.quote || '').substring(0, 200);
-    const pLabel = platformLabels[v.platform] || v.platform || '';
-    const vLens = getVoiceLens(v.voiceId);
-    return `<div class="cluster-voice-row">
-      <img class="cluster-voice-photo" src="${photo}" alt="" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(v.voiceName)}&background=252528&color=a1a1aa&size=80'">
-      <div class="cluster-voice-body">
-        <div>
-          <a href="${BASE}/voice/${v.voiceId}" class="cluster-voice-name" onclick="event.stopPropagation();">${escapeHtml(v.voiceName)}</a>
-          <span class="cluster-voice-platform">${pLabel}</span>
-        </div>
-        ${vLens ? '<div style="font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4;">' + escapeHtml(vLens) + '</div>' : ''}
-        ${quote ? '<div class="cluster-voice-quote">"' + escapeHtml(quote) + '"</div>' : ''}
-        ${v.sourceUrl ? '<a class="cluster-voice-link" href="' + v.sourceUrl + '" target="_blank" onclick="event.stopPropagation();">View source &rarr;</a>' : ''}
-      </div>
-    </div>`;
-  }).join('');
-
-  const voiceTotal = cluster.voiceCount || allVoices.length;
-  const overflow = voiceTotal - Math.min(allVoices.length, 10);
-
-  container.innerHTML = `<div class="cluster-expand-panel" style="--panel-cluster-color:${color}; border-left-color:${color};">
-    <div class="cluster-expand-panel-header" style="color:${color};">${escapeHtml(cluster.name)} &middot; ${voiceTotal} voices</div>
-    ${bestQuoteHtml}
-    ${voicesHtml}
-    ${overflow > 0 ? '<div style="font-size:11px; color:var(--text-muted); padding:4px 12px; margin-top:4px;">+ ' + overflow + ' more voices</div>' : ''}
-  </div>`;
-}
-
-function toggleQuoteTip(el) {
-  const tip = el.querySelector('.quote-tip');
-  if (!tip) return;
-  const wasVisible = tip.style.display !== 'none';
-  // Close all other tips
-  document.querySelectorAll('.quote-tip').forEach(t => t.style.display = 'none');
-  if (wasVisible) { tip.style.display = 'none'; return; }
-  // Position using fixed coords relative to the avatar
-  const rect = el.getBoundingClientRect();
-  tip.style.display = 'block';
-  // Place above the avatar, centered
-  let left = rect.left + rect.width / 2 - 140;
-  let top = rect.top - tip.offsetHeight - 8;
-  // Keep on screen
-  if (left < 8) left = 8;
-  if (left + 280 > window.innerWidth) left = window.innerWidth - 288;
-  if (top < 8) { top = rect.bottom + 8; } // flip below if no room above
-  tip.style.left = left + 'px';
-  tip.style.top = top + 'px';
-}
-// Close tips on outside click or scroll
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('.avatar-wrap')) {
-    document.querySelectorAll('.quote-tip').forEach(t => t.style.display = 'none');
-  }
-});
-document.addEventListener('scroll', () => {
-  document.querySelectorAll('.quote-tip').forEach(t => t.style.display = 'none');
-}, true);
-
-function filterByCluster(cluster) {
-  document.querySelectorAll('.cluster-filter').forEach(el => {
-    el.classList.remove('active');
-    if (cluster === null && !el.dataset.cluster) el.classList.add('active');
-    if (el.dataset.cluster === cluster) el.classList.add('active');
-  });
-
-  document.querySelectorAll('.voice-card').forEach(card => {
-    card.style.display = (!cluster || card.dataset.cluster === cluster) ? '' : 'none';
-  });
-
-  const visible = document.querySelectorAll('.voice-card:not([style*="display: none"])').length;
-  const header = document.querySelector('.results-header h2');
-  if (header) {
-    header.textContent = cluster
-      ? `${visible} voices — ${cluster}`
-      : `${window._resultsData.voices.length} voices on this story`;
-  }
 }
 </script>
 
