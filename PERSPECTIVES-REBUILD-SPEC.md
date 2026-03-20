@@ -31,125 +31,33 @@ A working prototype at `newsreel.co/perspectives` that:
 
 ### Database (Supabase Postgres)
 
-```sql
--- Core tables
-voices (
-  id text PRIMARY KEY,           -- 'joe-rogan'
-  name text NOT NULL,
-  photo_url text,
-  bio text,                      -- the lens/description
-  category text,                 -- journalist, commentator, creator, politician, etc.
-  approach text,                 -- investigates, explains, argues, reports, entertains
-  tags text[],
-  handles jsonb,                 -- {x: 'joerogan', youtube: 'joerogan', ...}
-  feeds jsonb,                   -- {youtube: 'https://...', x: 'https://rss.app/...'}
-  followers_display text,        -- '39.9M'
-  created_at timestamptz DEFAULT now(),
-  updated_at timestamptz DEFAULT now()
-);
+**Full schema:** See `SUPABASE-SCHEMA.sql` (production-ready SQL with all tables, indexes, RLS, functions, and views).
+**Architecture decisions:** See `SUPABASE-ARCHITECTURE.md` (explains every design choice with performance estimates).
+**Migration plan:** See `SUPABASE-MIGRATION-PLAN.sql` (step-by-step data migration from JSON files).
 
-posts (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  voice_id text REFERENCES voices(id),
-  platform text NOT NULL,        -- x, youtube, bluesky, tiktok, instagram, substack, podcast
-  text text NOT NULL,
-  quote text,                    -- extracted best quote (may differ from full text for transcripts)
-  source_url text,
-  topic text,                    -- from taxonomy: 'iran-conflict', 'immigration', etc.
-  relevance text,                -- high, medium, low
-  stance text,                   -- strong, lean, neutral
-  collected_date date NOT NULL,
-  published_at timestamptz,
-  created_at timestamptz DEFAULT now()
-);
-CREATE INDEX idx_posts_voice_date ON posts(voice_id, collected_date);
-CREATE INDEX idx_posts_topic_date ON posts(topic, collected_date);
+Summary of tables:
+- `voices` -- 257 rows, static profiles
+- `topics` -- 40-50 rows, controlled taxonomy (enforced via FK)
+- `posts` -- raw firehose, ~5000/day, **monthly range-partitioned** by collected_date
+- `stories` -- ~10/day, the editorial output
+- `clusters` -- 4-6 per story, argument positions (NOT left/right)
+- `cluster_voices` -- junction table, denormalized with story_id for fast queries
+- `mv_voice_alignments` -- materialized view, refreshed daily after pipeline
+- `content_flags`, `editorial_overrides`, `pipeline_runs` -- operational tables
 
-stories (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  headline text NOT NULL,
-  summary text,
-  slug text UNIQUE NOT NULL,
-  story_type text,               -- split, spectrum, consensus, reaction
-  source text,                   -- 'voices' (auto-detected) or 'editorial' (CMS)
-  heat_score integer DEFAULT 0,
-  voice_count integer DEFAULT 0,
-  cluster_count integer DEFAULT 0,
-  cover_url text,
-  topic_slugs text[],
-  story_date date NOT NULL,
-  created_at timestamptz DEFAULT now()
-);
-CREATE INDEX idx_stories_date ON stories(story_date DESC);
+Key functions:
+- `get_voice_positions(voice_id, days)` -- voice profile page
+- `get_voice_alignments(voice_id, days)` -- "who agrees with this person?"
+- `refresh_alignments()` -- called after daily pipeline
 
-clusters (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  story_id uuid REFERENCES stories(id) ON DELETE CASCADE,
-  name text NOT NULL,             -- 'Anti-War Coalition', 'Military Supporters'
-  voice_count integer DEFAULT 0,
-  sort_order integer DEFAULT 0,
-  best_quote_voice_id text,
-  best_quote_text text,
-  best_quote_platform text
-);
-
-cluster_voices (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  cluster_id uuid REFERENCES clusters(id) ON DELETE CASCADE,
-  voice_id text REFERENCES voices(id),
-  quote text,
-  source_url text,
-  platform text,
-  quote_quality integer DEFAULT 5,  -- 1-10 fit score from validation
-  UNIQUE(cluster_id, voice_id)
-);
-CREATE INDEX idx_cluster_voices_voice ON cluster_voices(voice_id);
-
--- For the "aligned voices" feature on profiles
--- Materialized or computed: which voices end up in the same cluster most often
-voice_alignments (
-  voice_a text REFERENCES voices(id),
-  voice_b text REFERENCES voices(id),
-  shared_clusters integer DEFAULT 0,
-  total_stories integer DEFAULT 0,
-  alignment_score float DEFAULT 0,  -- shared_clusters / total_stories
-  updated_at timestamptz DEFAULT now(),
-  PRIMARY KEY(voice_a, voice_b)
-);
-
--- Taxonomy
-topics (
-  slug text PRIMARY KEY,
-  display_name text NOT NULL,
-  description text,
-  aliases text[]
-);
-
--- Content safety
-content_flags (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  post_id uuid REFERENCES posts(id),
-  flag_type text,                -- 'safety', 'bias', 'accuracy'
-  reason text,
-  flagged_at timestamptz DEFAULT now()
-);
-
--- Editorial overrides (from review dashboard)
-editorial_overrides (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  story_id uuid REFERENCES stories(id),
-  override_type text,            -- 'cluster_rename', 'voice_remove', 'cluster_merge'
-  old_value text,
-  new_value text,
-  editor text,
-  created_at timestamptz DEFAULT now()
-);
-```
+Key views:
+- `v_story_cards` -- homepage: stories with nested cluster + voice JSON
+- `v_trending_topics` -- 7-day topic trends
 
 ### Row Level Security
-- Public read on: voices, stories, clusters, cluster_voices, topics
-- Authenticated write on: editorial_overrides, content_flags
-- Service role only: posts (pipeline writes)
+- `anon` (public): SELECT on all content. Stories filtered to is_published=TRUE. Posts filtered to categorized only.
+- `authenticated` (editorial): SELECT on everything + INSERT on flags/overrides
+- `service_role` (pipeline): bypasses RLS for all writes. NEVER exposed in frontend.
 
 ---
 
