@@ -267,7 +267,7 @@ def main():
         ok = run_step(
             "Collect posts from 257 voices",
             [python, str(SCRIPTS / "collect.py")],
-            timeout_sec=1200,
+            timeout_sec=1800,
             required=True,
         )
         if not ok:
