@@ -35,9 +35,9 @@
 
   /* Nav */
   .nav { max-width:680px; margin:0 auto; padding:20px 20px 0; display:flex; justify-content:space-between; align-items:center; }
-  .nav-brand { display:flex; align-items:baseline; text-decoration:none; }
-  .nav-brand-text { font-size:1.6em; font-weight:700; color:var(--text-primary); letter-spacing:-0.03em; }
-  .nav-brand-accent { color:var(--accent); }
+  .nav-brand { display:flex; align-items:center; gap:10px; text-decoration:none; }
+  .nav-brand img { height:22px; }
+  .nav-brand-label { font-size:11px; font-weight:700; color:var(--accent); text-transform:uppercase; letter-spacing:0.05em; }
   .nav-tagline { font-size:12px; color:var(--text-muted); margin-top:2px; }
   .nav-back {
     font-size:13px; font-weight:600; color:var(--text-muted);
@@ -73,8 +73,11 @@
   .proportion-bar { display:flex; height:8px; border-radius:4px; overflow:hidden; background:var(--bg-elevated); }
   .proportion-segment { height:100%; }
   .proportion-legend { display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; }
-  .legend-item { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-muted); }
+  .legend-item { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-muted); cursor:pointer; transition:color 0.15s; }
+  .legend-item:hover { color:var(--text-primary); }
   .legend-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .proportion-segment { cursor:pointer; transition:opacity 0.15s; }
+  .proportion-segment:hover { opacity:0.8; }
 
   /* Cluster cards */
   .clusters { max-width:680px; margin:0 auto; padding:20px 20px 60px; }
@@ -147,7 +150,7 @@
 
   @media (max-width:600px) {
     .nav { padding:16px 16px 0; }
-    .nav-brand-text { font-size:1.3em; }
+    .nav-brand img { height:18px; }
     .story-header { padding:20px 16px 0; }
     .story-headline { font-size:1.4em; }
     .story-proportion { padding:16px 16px 0; }
@@ -165,9 +168,9 @@
 <nav class="nav">
   <div>
     <a class="nav-brand" href="/" id="homeLink">
-      <span class="nav-brand-text">Perspec<span class="nav-brand-accent">tives</span></span>
+      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
+      <span class="nav-brand-label">Perspectives</span>
     </a>
-    <div class="nav-tagline">by Newsreel</div>
   </div>
   <a class="nav-back" href="/" id="backLink">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -224,13 +227,33 @@ document.addEventListener('click', function(e) {
   if (e.target.closest('#shareBtn')) shareStory();
 });
 
-/* Delegated accordion handler — replaces inline onclick */
+/* Delegated accordion handler */
 document.addEventListener('click', function(e) {
   const header = e.target.closest('[data-cluster-toggle]');
   if (!header) return;
   const card = header.parentElement;
   const isOpen = card.classList.toggle('open');
   header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+
+/* Scroll-to-cluster from proportion bar and legend */
+document.addEventListener('click', function(e) {
+  const el = e.target.closest('[data-scroll-cluster]');
+  if (!el) return;
+  const idx = el.dataset.scrollCluster;
+  const card = document.getElementById('cluster-' + idx);
+  if (!card) return;
+  // Open the cluster if closed
+  if (!card.classList.contains('open')) {
+    card.classList.add('open');
+    const header = card.querySelector('[data-cluster-toggle]');
+    if (header) header.setAttribute('aria-expanded', 'true');
+  }
+  // Scroll to it
+  card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Briefly highlight
+  card.style.borderColor = 'var(--accent)';
+  setTimeout(function() { card.style.borderColor = ''; }, 2000);
 });
 document.addEventListener('keydown', function(e) {
   if (e.key !== 'Enter' && e.key !== ' ') return;
@@ -309,12 +332,12 @@ function renderStory(story) {
   const total = clusters.reduce((s,c) => s + (c.voiceCount||(c.voices||[]).length), 0) || 1;
   const barHtml = clusters.map((c,ci) => {
     const pct = ((c.voiceCount||(c.voices||[]).length) / total * 100).toFixed(1);
-    return `<div class="proportion-segment" style="width:${pct}%;background:${COLORS[ci%COLORS.length]};"></div>`;
+    return `<div class="proportion-segment" style="width:${pct}%;background:${COLORS[ci%COLORS.length]};cursor:pointer;" data-scroll-cluster="${ci}" title="${esc(c.name)}"></div>`;
   }).join('');
 
   const legendHtml = clusters.map((c,ci) => {
     const count = c.voiceCount || (c.voices||[]).length;
-    return `<div class="legend-item"><div class="legend-dot" style="background:${COLORS[ci%COLORS.length]};"></div>${esc(c.name)} (${count})</div>`;
+    return `<div class="legend-item" style="cursor:pointer;" data-scroll-cluster="${ci}"><div class="legend-dot" style="background:${COLORS[ci%COLORS.length]};"></div>${esc(c.name)} (${count})</div>`;
   }).join('');
 
   // Cluster cards
@@ -353,7 +376,7 @@ function renderStory(story) {
 
     const overflow = count - Math.min(voices.length, 12);
 
-    clustersHtml += `<div class="cluster-card${isFirst ? ' open' : ''}" style="--cluster-color:${color};">
+    clustersHtml += `<div class="cluster-card${isFirst ? ' open' : ''}" style="--cluster-color:${color};" id="cluster-${ci}">
       <div class="cluster-header" role="button" tabindex="0" aria-expanded="${isFirst ? 'true' : 'false'}" data-cluster-toggle>
         <div class="cluster-name" style="color:${color};">${esc(cluster.name)}</div>
         <div class="cluster-count">${count} voices</div>

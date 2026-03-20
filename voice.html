@@ -263,6 +263,16 @@
 </div>
 
 <script>
+/* Delegated image fallback — replaces unsafe inline onerror attributes */
+document.addEventListener('error', function(e) {
+  const el = e.target;
+  if (el.tagName !== 'IMG' || el.dataset.fallbackApplied) return;
+  el.dataset.fallbackApplied = 'true';
+  const name = el.dataset.fallbackName || el.alt || 'User';
+  const size = el.dataset.fallbackSize || '80';
+  el.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name) + '&background=252528&color=a1a1aa&size=' + size;
+}, true);
+
 const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
 const PAGES = { search: BASE || '/', voices: BASE + '/voices', methodology: BASE + '/methodology' };
 document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
@@ -273,6 +283,13 @@ function topicColor(topic) {
   let hash = 0;
   for (let i = 0; i < topic.length; i++) hash = topic.charCodeAt(i) + ((hash << 5) - hash);
   return CLUSTER_COLORS[Math.abs(hash) % CLUSTER_COLORS.length];
+}
+
+function safeHref(url) {
+  if (!url || typeof url !== 'string') return '#';
+  const t = url.trim();
+  if (/^javascript:/i.test(t)) return '#';
+  return t;
 }
 
 function escapeHtml(text) {
@@ -439,7 +456,7 @@ async function loadProfile() {
     const platformName = fullPlatformName(bestQuote.platform);
     const time = timeAgo(bestQuote.timestamp);
     const sourceLink = bestQuote.sourceUrl
-      ? `<a href="${bestQuote.sourceUrl}" target="_blank">View on ${platformName} &rarr;</a>`
+      ? `<a href="${safeHref(bestQuote.sourceUrl)}" target="_blank">View on ${platformName} &rarr;</a>`
       : `<span>${platformName}</span>`;
 
     // Cluster allies context (if in a story)
@@ -447,7 +464,7 @@ async function loadProfile() {
     if (cluster && cluster.allies.length > 0) {
       const avatars = cluster.allies.slice(0, 5).map(a => {
         const photo = a.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(a.voiceName)}&background=252528&color=a1a1aa&size=48`;
-        return `<a href="${BASE}/voice/${a.voiceId}" title="${escapeHtml(a.voiceName)}"><img class="cluster-context-avatar" src="${photo}" alt="${escapeHtml(a.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(a.voiceName)}&background=252528&color=a1a1aa&size=48'"></a>`;
+        return `<a href="${BASE}/voice/${a.voiceId}" title="${escapeHtml(a.voiceName)}"><img class="cluster-context-avatar" src="${photo}" alt="${escapeHtml(a.voiceName)}" data-fallback-name="${escapeHtml(a.voiceName)}" data-fallback-size="48"></a>`;
       }).join('');
       const names = cluster.allies.slice(0, 3).map(a => a.voiceName).join(', ');
       const more = cluster.allies.length > 3 ? ` +${cluster.allies.length - 3} more` : '';
@@ -504,7 +521,7 @@ async function loadProfile() {
       const photo = ally.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(ally.voiceName)}&background=252528&color=a1a1aa&size=72`;
       alignedHtml += `
         <a class="ally-row" href="${BASE}/voice/${ally.voiceId}" style="text-decoration:none; color:inherit;">
-          <img class="ally-avatar" src="${photo}" alt="${escapeHtml(ally.voiceName)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(ally.voiceName)}&background=252528&color=a1a1aa&size=72'">
+          <img class="ally-avatar" src="${photo}" alt="${escapeHtml(ally.voiceName)}" data-fallback-name="${escapeHtml(ally.voiceName)}" data-fallback-size="72">
           <div class="ally-info">
             <div class="ally-name">${escapeHtml(ally.voiceName)}</div>
             <div class="ally-detail">${ally.topics.join(', ')}</div>
@@ -518,7 +535,7 @@ async function loadProfile() {
   // Render
   container.innerHTML = `
     <div class="profile-header">
-      <img class="profile-avatar" src="${photoUrl}" alt="${escapeHtml(voice.name)}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=252528&color=a1a1aa&size=160'">
+      <img class="profile-avatar" src="${photoUrl}" alt="${escapeHtml(voice.name)}" data-fallback-name="${escapeHtml(voice.name)}" data-fallback-size="160">
       <div class="profile-name">${escapeHtml(voice.name)}</div>
       ${voice.lens ? `<div class="profile-lens">${escapeHtml(voice.lens)}</div>` : ''}
       ${tagsHtml ? `<div class="profile-tags">${tagsHtml}</div>` : ''}
