@@ -174,17 +174,27 @@ def do_search(query, days=None):
 
     lookup = get_lookup()
     if not lookup:
-        return {'error': 'Search unavailable'}
+        # Fallback: check for cached result file
+        slug = re.sub(r'[^a-z0-9]+', '-', query.lower())[:50]
+        result_path = os.path.join(ROOT, 'data', 'results', f'{slug}.json')
+        if os.path.exists(result_path):
+            return load_json_file(result_path)
+        return {'error': 'Search temporarily unavailable. Try again in a moment.'}
 
     try:
         result = lookup.lookup_story(query, days=int(days) if days else None)
         if result:
             cache_set(cache_key, result, CACHE_TTL_SEARCH)
             return result
-        return {'error': 'No results found'}
+        return {'error': 'No results found for this topic yet. We track 257 voices -- try a broader term.'}
     except Exception as e:
         log.error(f"Search error: {e}")
-        return {'error': 'Search failed'}
+        # Fallback: check for cached result file
+        slug = re.sub(r'[^a-z0-9]+', '-', query.lower())[:50]
+        result_path = os.path.join(ROOT, 'data', 'results', f'{slug}.json')
+        if os.path.exists(result_path):
+            return load_json_file(result_path)
+        return {'error': 'Search failed. Please try again.'}
 
 
 # ─── HANDLER ─────────────────────────────────────────────────────────────────
