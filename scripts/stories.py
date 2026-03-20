@@ -392,41 +392,58 @@ def build_stories(date=None):
     except Exception:
         pass
 
-    # 1. Get CMS stories and voice topics
+    # 1. Try embedding-based story detection (enterprise), fall back to topic counting
     cms_stories = get_cms_stories(date)
-    voice_topics, topic_index = get_voice_topics(date, min_voices=4)
-
     print(f"  CMS stories: {len(cms_stories)}")
+
+    embedding_candidates = []
+    try:
+        from detect_stories import build_story_candidates
+        print(f"\n  Using BERTopic embedding-based story detection...")
+        embedding_stories = build_story_candidates(date, min_voices=4)
+        for es in embedding_stories:
+            embedding_candidates.append({
+                'headline': es['headline'],
+                'cover_url': '',
+                'story_type': '',
+                'source': 'voices',
+                'topic_slugs': es.get('topicSlugs', []),
+                'voices': es['voices'],
+                'voice_count': es['voiceCount'],
+            })
+        print(f"  BERTopic detected {len(embedding_candidates)} stories")
+    except ImportError:
+        print(f"  BERTopic not installed, using topic-tag fallback")
+    except Exception as e:
+        print(f"  BERTopic failed ({e}), using topic-tag fallback")
+
+    # Fallback: topic counting (if BERTopic didn't find enough)
+    voice_topics, topic_index = get_voice_topics(date, min_voices=4)
     print(f"  Voice topics (4+ voices): {len(voice_topics)}")
 
-    if not voice_topics:
-        print("  No voice topics found. Exiting.")
+    if not voice_topics and not embedding_candidates:
+        print("  No stories found. Exiting.")
         return
 
-    # 2. Match CMS stories to voice topics
-    cms_matches = {}
-    if cms_stories:
-        print(f"\n  Matching CMS stories to voice data...")
-        cms_matches = match_cms_to_voices(cms_stories, voice_topics)
-        for headline, topics in cms_matches.items():
-            print(f"    {headline[:60]}... -> {topics}")
+    # Build candidate list
+    candidates = list(embedding_candidates)  # start with embedding results
+    used_headlines = {c['headline'] for c in candidates}
 
-    # 3. Build candidate list (CMS stories with voice matches + pure voice topics)
-    candidates = []
-    used_topics = set()
-
-    # CMS stories that matched voice topics
-    # Skip overly broad categories that would pull in unrelated voices
+    # Add CMS stories matched to voice topics
     BROAD_TOPICS = {'other', 'culture-war', 'media-press', 'celebrity-entertainment'}
+    cms_matches = {}
+    if cms_stories and voice_topics:
+        cms_matches = match_cms_to_voices(cms_stories, voice_topics)
 
+    used_topics = set()
     for story in cms_stories:
+        if story['headline'] in used_headlines:
+            continue
         matched_topics = cms_matches.get(story['headline'], [])
-        # Filter out broad catch-all topics
         matched_topics = [t for t in matched_topics if t not in BROAD_TOPICS]
         if not matched_topics:
             continue
 
-        # Merge voice data from all matched topics
         merged_voices = {}
         for topic_slug in matched_topics:
             if topic_slug in voice_topics:
@@ -443,27 +460,26 @@ def build_stories(date=None):
                 'voices': merged_voices,
                 'voice_count': len(merged_voices),
             })
+            used_headlines.add(story['headline'])
 
-    # Voice-only topics (not already used by CMS stories)
-    # Also skip broad catch-all topics for voice-driven stories
-    VOICE_SKIP = BROAD_TOPICS | {'sports', 'education', 'healthcare'}
-    for topic, voices in voice_topics.items():
-        if topic in used_topics or topic in VOICE_SKIP:
-            continue
-        candidates.append({
-            'headline': topic.replace('-', ' ').title(),  # placeholder, Claude will rewrite
-            'cover_url': '',
-            'story_type': '',
-            'source': 'voices',
-            'topic_slugs': [topic],
-            'voices': voices,
-            'voice_count': len(voices),
-        })
+    # Add voice-only topics not covered by embedding or CMS
+    if not embedding_candidates:
+        VOICE_SKIP = BROAD_TOPICS | {'sports', 'education', 'healthcare'}
+        for topic, voices in voice_topics.items():
+            if topic in used_topics or topic in VOICE_SKIP:
+                continue
+            candidates.append({
+                'headline': topic.replace('-', ' ').title(),
+                'cover_url': '',
+                'story_type': '',
+                'source': 'voices',
+                'topic_slugs': [topic],
+                'voices': voices,
+                'voice_count': len(voices),
+                })
 
-    # Sort by voice count
+    # Sort by voice count, take top 14
     candidates.sort(key=lambda c: -c['voice_count'])
-
-    # Take top 14
     candidates = candidates[:14]
 
     print(f"\n  Analyzing {len(candidates)} candidates:")
