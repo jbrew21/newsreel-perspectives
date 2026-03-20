@@ -112,7 +112,37 @@ def load_todays_posts(date_str):
     return posts
 
 
-def cluster_posts(posts, min_voices=4):
+def split_oversized_cluster(cluster_posts, embeddings, max_posts=40, min_voices=4):
+    """Recursively split clusters that are too large using k-means."""
+    from sklearn.cluster import KMeans
+    import numpy as np
+
+    if len(cluster_posts) <= max_posts:
+        return [cluster_posts]
+
+    # Split into 2-4 sub-clusters based on size
+    n_splits = min(4, max(2, len(cluster_posts) // max_posts + 1))
+    emb_array = np.array(embeddings)
+
+    kmeans = KMeans(n_clusters=n_splits, random_state=42, n_init=10)
+    labels = kmeans.fit_predict(emb_array)
+
+    sub_clusters = []
+    for label in range(n_splits):
+        sub = [cluster_posts[i] for i in range(len(cluster_posts)) if labels[i] == label]
+        sub_emb = [embeddings[i] for i in range(len(cluster_posts)) if labels[i] == label]
+        unique_voices = set(p['voice_id'] for p in sub)
+        if len(unique_voices) >= min_voices:
+            # Recursively split if still too large
+            if len(sub) > max_posts:
+                sub_clusters.extend(split_oversized_cluster(sub, sub_emb, max_posts, min_voices))
+            else:
+                sub_clusters.append(sub)
+
+    return sub_clusters
+
+
+def cluster_posts(posts, min_voices=4, max_cluster_posts=40):
     """Use BERTopic to find natural story clusters in posts."""
     if len(posts) < 10:
         log.warning(f'Only {len(posts)} posts, too few to cluster')
@@ -126,46 +156,77 @@ def cluster_posts(posts, min_voices=4):
     # Use a small, fast model that runs on CPU
     embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
+    # Embed first (we need raw embeddings for splitting)
+    texts = [p['text'] for p in posts]
+    embeddings = embedding_model.encode(texts, show_progress_bar=False)
+
     # Configure BERTopic
     model = BERTopic(
         embedding_model=embedding_model,
-        min_topic_size=min_voices,      # minimum posts per cluster
-        nr_topics='auto',               # let HDBSCAN decide
+        min_topic_size=min_voices,
+        nr_topics='auto',
         verbose=False,
     )
 
-    texts = [p['text'] for p in posts]
-    topics, probs = model.fit_transform(texts)
+    topics, probs = model.fit_transform(texts, embeddings)
 
-    log.info(f'Found {len(set(topics)) - (1 if -1 in topics else 0)} story clusters')
+    log.info(f'Found {len(set(topics)) - (1 if -1 in topics else 0)} initial clusters')
 
-    # Group posts by cluster
-    clusters = defaultdict(list)
+    # Group posts + embeddings by cluster
+    raw_clusters = defaultdict(lambda: {'posts': [], 'embeddings': []})
     for i, topic_id in enumerate(topics):
         if topic_id == -1:
-            continue  # noise / one-off posts
-        clusters[topic_id].append(posts[i])
-
-    # Filter: only keep clusters with min_voices unique voices
-    story_candidates = []
-    for topic_id, cluster_posts in sorted(clusters.items(), key=lambda x: -len(x[1])):
-        unique_voices = set(p['voice_id'] for p in cluster_posts)
-        if len(unique_voices) < min_voices:
             continue
+        raw_clusters[topic_id]['posts'].append(posts[i])
+        raw_clusters[topic_id]['embeddings'].append(embeddings[i].tolist())
 
-        # Get BERTopic's auto-generated topic keywords
-        topic_info = model.get_topic(topic_id)
-        keywords = [word for word, score in (topic_info or [])[:5]]
+    # Split oversized clusters and collect final candidates
+    story_candidates = []
+    split_count = 0
 
-        story_candidates.append({
-            'topic_id': topic_id,
-            'posts': cluster_posts,
-            'voice_count': len(unique_voices),
-            'post_count': len(cluster_posts),
-            'keywords': keywords,
-            'voices': list(unique_voices),
-        })
+    for topic_id, data in sorted(raw_clusters.items(), key=lambda x: -len(x[1]['posts'])):
+        cluster_posts_list = data['posts']
+        cluster_embeddings = data['embeddings']
 
+        if len(cluster_posts_list) > max_cluster_posts:
+            sub_clusters = split_oversized_cluster(
+                cluster_posts_list, cluster_embeddings,
+                max_posts=max_cluster_posts, min_voices=min_voices
+            )
+            split_count += 1
+            log.info(f'  Split cluster ({len(cluster_posts_list)} posts) into {len(sub_clusters)} sub-stories')
+        else:
+            sub_clusters = [cluster_posts_list]
+
+        for sub in sub_clusters:
+            unique_voices = set(p['voice_id'] for p in sub)
+            if len(unique_voices) < min_voices:
+                continue
+
+            # Get keywords from most common words
+            from collections import Counter
+            all_words = ' '.join(p['text'][:200].lower() for p in sub).split()
+            stop = {'the','a','an','is','are','was','were','be','been','to','of','in','for',
+                    'on','with','at','by','from','as','and','but','or','not','this','that',
+                    'it','he','she','they','we','you','his','her','its','our','my','your',
+                    'has','have','had','do','does','did','will','would','can','could','may',
+                    'just','about','up','out','so','if','what','who','how','when','where',
+                    'no','all','more','than','very','new','also','like','get','one','two',
+                    'said','says','now','https','http','com','amp','rt'}
+            word_counts = Counter(w for w in all_words if len(w) > 2 and w not in stop)
+            keywords = [w for w, c in word_counts.most_common(5)]
+
+            story_candidates.append({
+                'topic_id': topic_id,
+                'posts': sub,
+                'voice_count': len(unique_voices),
+                'post_count': len(sub),
+                'keywords': keywords,
+                'voices': list(unique_voices),
+            })
+
+    if split_count:
+        log.info(f'Split {split_count} oversized clusters')
     log.info(f'{len(story_candidates)} stories with {min_voices}+ voices')
     return story_candidates
 
@@ -187,14 +248,19 @@ def generate_headline(candidate):
 
     samples_text = '\n'.join(samples)
 
-    prompt = f"""These posts from different public commentators are all about the same news story. Generate:
-1. A headline (max 12 words, newspaper style, factual not editorial)
-2. A one-sentence summary of what the story is about
+    prompt = f"""These {len(samples)} posts from different public commentators are all about the same news story.
 
 Posts:
 {samples_text}
 
-Return ONLY JSON: {{"headline": "...", "summary": "..."}}"""
+Generate:
+1. A headline (max 12 words, newspaper style, factual not editorial)
+2. A one-sentence summary
+3. A confidence score (1-10): how confident are you that these posts are ALL about the SAME specific story? 10 = clearly one event. 1 = posts are about different things lumped together.
+
+If confidence is below 5, the posts are probably about a broad topic (like "Iran" or "politics") rather than a specific story. In that case, identify the MOST SPECIFIC story that the majority of posts are about and write the headline for THAT.
+
+Return ONLY JSON: {{"headline": "...", "summary": "...", "confidence": 8}}"""
 
     try:
         req = urllib.request.Request(
@@ -217,7 +283,14 @@ Return ONLY JSON: {{"headline": "...", "summary": "..."}}"""
         match = re.search(r'\{[\s\S]*\}', text)
         if match:
             result = json.loads(match.group())
-            return result.get('headline', 'Unnamed Story'), result.get('summary', '')
+            headline = result.get('headline', 'Unnamed Story')
+            summary = result.get('summary', '')
+            confidence = result.get('confidence', 5)
+
+            if confidence < 5:
+                log.info(f'    Low confidence ({confidence}/10), headline may be imprecise: "{headline}"')
+
+            return headline, summary
     except Exception as e:
         log.warning(f'Headline generation failed: {e}')
 
