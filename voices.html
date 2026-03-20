@@ -1,488 +1,1033 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Perspectives — Voice Dashboard</title>
-<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perspectives -- All Voices</title>
+<meta name="description" content="Browse all voices tracked by Perspectives. 257+ commentators, creators, and journalists across the political spectrum.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
+
+  /* ================================================================
+     DESIGN TOKENS
+     8px grid. Intentional gray ramp (Linear/Vercel style).
+     Matches search.html / story.html token system exactly.
+     ================================================================ */
+  :root {
+    /* Surface ramp -- each step is intentional */
+    --bg-base: #09090b;
+    --bg-subtle: #0f0f12;
+    --bg-card: #141417;
+    --bg-elevated: #1a1a1f;
+    --bg-hover: #222228;
+    --bg-active: #2a2a32;
+
+    /* Text ramp */
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-muted: #71717a;
+    --text-dim: #52525b;
+
+    /* Borders */
+    --border: rgba(255,255,255,0.06);
+    --border-hover: rgba(255,255,255,0.12);
+    --border-focus: rgba(255,99,67,0.5);
+
+    /* Accent */
+    --accent: #FF6343;
+    --accent-hover: #e5553a;
+    --accent-bg: rgba(255,99,67,0.10);
+    --accent-bg-hover: rgba(255,99,67,0.16);
+
+    /* Spacing (8px grid) */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 32px;
+    --space-8: 40px;
+    --space-9: 48px;
+    --space-10: 64px;
+
+    /* Typography scale */
+    --text-xs: 11px;
+    --text-sm: 13px;
+    --text-base: 15px;
+    --text-lg: 17px;
+    --text-xl: 20px;
+    --text-2xl: 28px;
+    --text-3xl: 36px;
+
+    /* Line heights */
+    --leading-tight: 1.2;
+    --leading-snug: 1.35;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.6;
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --radius-full: 100px;
+
+    /* Transitions */
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-fast: 150ms;
+    --duration-normal: 200ms;
+    --duration-slow: 300ms;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* -- SKIP LINK -- */
+  .skip-link {
+    position: absolute; top: -100%; left: var(--space-4); z-index: 100;
+    background: var(--accent); color: #fff;
+    padding: var(--space-3) var(--space-6);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    font-weight: 600; font-size: var(--text-sm);
+    text-decoration: none; transition: top var(--duration-normal);
+  }
+  .skip-link:focus { top: 0; }
+
   body {
-    background:#000; color:#fff;
-    font-family:'DM Sans',Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg-base); color: var(--text-secondary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  .container { max-width:900px; margin:0 auto; padding:0 20px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  :focus:not(:focus-visible) { outline: none; }
 
-  /* Header */
-  .header {
-    padding:20px 0;
-    border-bottom:1px solid #222;
-    display:flex; justify-content:space-between; align-items:center;
+  /* -- NAV -- */
+  .nav {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-5) var(--space-5) 0;
+    display: flex; justify-content: space-between; align-items: center;
   }
-  .header-left { display:flex; align-items:center; gap:12px; }
-  .header img { height:24px; }
-  .header-label { font-family:'IBM Plex Mono',monospace; font-size:10px; color:#FF6343; text-transform:uppercase; letter-spacing:1.2px; font-weight:700; }
-  .header-nav a {
-    font-family:'IBM Plex Mono',monospace; font-size:11px;
-    color:#808080; text-decoration:none; margin-left:16px;
-    transition: color 0.2s;
+  .nav-brand {
+    display: flex; align-items: baseline; gap: 0; text-decoration: none;
+    transition: opacity var(--duration-fast);
   }
-  .header-nav a:hover, .header-nav a.active { color:#FF6343; }
+  .nav-brand:hover { opacity: 0.85; }
+  .nav-brand:active { opacity: 0.7; }
+  .nav-brand img { height: 22px; }
+  .nav-brand-label {
+    font-size: var(--text-xs); font-weight: 700; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .nav-back {
+    font-size: var(--text-sm); font-weight: 600; color: var(--text-muted);
+    text-decoration: none; display: inline-flex; align-items: center; gap: var(--space-1);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    transition: color var(--duration-fast), background var(--duration-fast);
+  }
+  .nav-back:hover { color: var(--text-primary); background: var(--bg-elevated); }
+  .nav-back:active { background: var(--bg-hover); }
 
-  /* Search */
-  .search-bar {
-    padding:20px 0;
-    border-bottom:1px solid #222;
-    display:flex; gap:12px;
+  /* -- PAGE HEADER -- */
+  .page-header {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-7) var(--space-5) 0;
   }
-  .search-bar input {
-    flex:1; padding:12px 16px;
-    background:#111; color:#fff; border:1px solid #333; border-radius:8px;
-    font-family:'DM Sans',sans-serif; font-size:14px;
+  .page-headline {
+    font-size: var(--text-2xl); font-weight: 700; color: var(--text-primary);
+    line-height: var(--leading-tight); letter-spacing: -0.02em;
+    margin-bottom: var(--space-3);
   }
-  .search-bar input:focus { outline:none; border-color:#FF6343; }
-  .search-bar input::placeholder { color:#555; }
+  .page-description {
+    font-size: var(--text-base); color: var(--text-muted);
+    line-height: var(--leading-relaxed);
+    max-width: 600px; margin-bottom: var(--space-4);
+  }
 
-  .search-bar button {
-    padding:12px 24px;
-    background:#FF6343; color:#fff; border:none; border-radius:8px;
-    font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600;
-    cursor:pointer; transition: opacity 0.2s;
+  /* -- METHODOLOGY DISCLOSURE -- */
+  .methodology-toggle {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    font-size: var(--text-sm); font-weight: 600; color: var(--accent);
+    background: none; border: none; cursor: pointer;
+    padding: var(--space-2) 0; font-family: inherit;
+    transition: opacity var(--duration-fast);
   }
-  .search-bar button:hover { opacity:0.9; }
-
-  /* Stats banner */
-  .stats-banner {
-    padding:16px 0;
-    border-bottom:1px solid #222;
-    display:flex; gap:32px;
-    font-family:'IBM Plex Mono',monospace; font-size:12px; color:#808080;
+  .methodology-toggle:hover { opacity: 0.8; }
+  .methodology-toggle-chevron {
+    transition: transform var(--duration-normal) var(--ease-out);
+    flex-shrink: 0;
   }
-  .stats-banner strong { color:#FF6343; }
+  .methodology-toggle[aria-expanded="true"] .methodology-toggle-chevron {
+    transform: rotate(180deg);
+  }
+  .methodology-body {
+    display: grid; grid-template-rows: 0fr;
+    transition: grid-template-rows var(--duration-slow) var(--ease-out);
+  }
+  .methodology-body.open { grid-template-rows: 1fr; }
+  .methodology-body-inner { overflow: hidden; }
+  .methodology-content {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5); margin-top: var(--space-3);
+  }
+  .methodology-content p {
+    font-size: var(--text-sm); color: var(--text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+  .methodology-content p:last-child { margin-bottom: 0; }
+  .methodology-content strong {
+    color: var(--text-secondary); font-weight: 600;
+  }
 
-  /* Voice grid */
+  /* -- SEARCH BAR -- */
+  .search-section {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-5) var(--space-5) 0;
+  }
+  .search-row {
+    display: flex; gap: var(--space-3);
+  }
+  .search-input {
+    flex: 1; padding: var(--space-3) var(--space-4);
+    background: var(--bg-card); color: var(--text-primary);
+    border: 1px solid var(--border); border-radius: var(--radius-md);
+    font-family: inherit; font-size: var(--text-sm);
+    transition: border-color var(--duration-fast);
+  }
+  .search-input:focus { border-color: var(--border-focus); }
+  .search-input::placeholder { color: var(--text-dim); }
+  .search-clear {
+    padding: var(--space-3) var(--space-5);
+    background: var(--bg-card); color: var(--text-muted);
+    border: 1px solid var(--border); border-radius: var(--radius-md);
+    font-family: inherit; font-size: var(--text-sm); font-weight: 600;
+    cursor: pointer;
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+  .search-clear:hover { border-color: var(--border-hover); color: var(--text-primary); background: var(--bg-elevated); }
+  .search-clear:active { transform: scale(0.97); }
+
+  /* -- FILTER CHIPS -- */
+  .filter-section {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-4) var(--space-5) 0;
+  }
+  .filter-row {
+    display: flex; flex-wrap: wrap; gap: var(--space-2);
+  }
+  .filter-label {
+    font-size: var(--text-xs); font-weight: 600; color: var(--text-dim);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    padding: var(--space-2) 0;
+    margin-right: var(--space-2);
+    align-self: center;
+  }
+  .filter-chip {
+    font-size: var(--text-xs); font-weight: 600;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    background: var(--bg-card); color: var(--text-muted);
+    border: 1px solid var(--border);
+    cursor: pointer; font-family: inherit;
+    transition: all var(--duration-fast);
+  }
+  .filter-chip:hover { border-color: var(--border-hover); color: var(--text-primary); }
+  .filter-chip.active {
+    background: var(--accent-bg); color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* -- STATS BANNER -- */
+  .stats-section {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-4) var(--space-5) 0;
+  }
+  .stats-row {
+    display: flex; flex-wrap: wrap; gap: var(--space-5);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-item {
+    font-size: var(--text-xs); color: var(--text-muted); font-weight: 500;
+  }
+  .stat-value {
+    color: var(--accent); font-weight: 700;
+  }
+
+  /* -- VOICE GRID -- */
+  .voices-section {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-5) var(--space-5) var(--space-10);
+  }
   .voice-grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap:16px;
-    padding:24px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
   }
 
+  /* -- VOICE TILE -- */
   .voice-tile {
-    background:#111; border-radius:12px;
-    padding:20px;
-    border:1px solid #222;
-    cursor:pointer;
-    transition: all 0.2s ease;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none; display: block;
+    transition: all var(--duration-normal) var(--ease-out);
   }
   .voice-tile:hover {
-    border-color:#FF6343;
-    transform:translateY(-2px);
+    border-color: var(--border-hover);
+    background: var(--bg-elevated);
   }
-  .voice-tile.expanded {
-    grid-column: 1 / -1;
-    border-color:#FF6343;
-  }
+  .voice-tile:active { background: var(--bg-hover); }
 
   .tile-header {
-    display:flex; gap:12px; align-items:center;
-    margin-bottom:14px;
+    display: flex; gap: var(--space-3); align-items: center;
   }
   .tile-photo {
-    width:44px; height:44px; border-radius:50%;
-    object-fit:cover; filter:grayscale(100%);
-    transition: filter 0.3s;
-    background:#222;
+    width: var(--space-9); height: var(--space-9);
+    border-radius: 50%; object-fit: cover;
+    background: var(--bg-hover); flex-shrink: 0;
+    filter: grayscale(100%);
+    transition: filter var(--duration-slow) var(--ease-out);
   }
-  .voice-tile:hover .tile-photo { filter:grayscale(0%); }
-
-  .tile-name { font-size:16px; font-weight:600; }
-  .tile-meta {
-    font-family:'IBM Plex Mono',monospace; font-size:10px;
-    color:#808080; text-transform:uppercase; letter-spacing:0.5px;
+  .voice-tile:hover .tile-photo { filter: grayscale(0%); }
+  .tile-info { flex: 1; min-width: 0; }
+  .tile-name {
+    font-size: var(--text-base); font-weight: 600;
+    color: var(--text-primary); line-height: var(--leading-snug);
   }
-
-  /* Topic tags */
-  .topic-tags {
-    display:flex; flex-wrap:wrap; gap:6px;
-    margin-bottom:12px;
+  .tile-platform {
+    font-size: 10px; color: var(--text-dim);
+    text-transform: uppercase; letter-spacing: 0.05em;
+    font-weight: 700; margin-top: var(--space-1);
   }
-  .topic-tag {
-    font-family:'IBM Plex Mono',monospace; font-size:10px;
-    padding:4px 10px; border-radius:20px;
-    background:#1a1a1a; color:#808080;
-    border:1px solid #333;
-    transition: all 0.2s;
-  }
-  .topic-tag:hover { color:#FF6343; border-color:#FF6343; }
-  .topic-tag .tag-count {
-    color:#FF6343; font-weight:700; margin-left:4px;
-  }
-
-  /* Expanded voice detail */
-  .voice-detail { display:none; margin-top:16px; }
-  .voice-tile.expanded .voice-detail { display:block; }
-
-  .topic-section {
-    margin-bottom:16px;
-    padding-bottom:16px;
-    border-bottom:1px solid #1a1a1a;
-  }
-  .topic-section:last-child { border-bottom:none; }
-
-  .topic-name {
-    font-family:'IBM Plex Mono',monospace; font-size:11px;
-    color:#FF6343; text-transform:uppercase; letter-spacing:1px;
-    margin-bottom:10px;
-  }
-
-  .quote-card {
-    padding:12px 16px;
-    background:#0a0a0a; border-radius:8px;
-    margin-bottom:8px;
-    border-left:3px solid #333;
-  }
-  .quote-text {
-    font-size:14px; color:#C8C8C8; line-height:1.5;
-    margin-bottom:6px;
-  }
-  .quote-meta {
-    font-family:'IBM Plex Mono',monospace; font-size:10px; color:#555;
-  }
-  .quote-meta a { color:#FF6343; text-decoration:none; }
-  .quote-meta a:hover { text-decoration:underline; }
-
-  /* Lens description */
   .tile-lens {
-    font-size:12px; color:#666; line-height:1.4;
-    margin-bottom:10px;
+    font-size: var(--text-xs); color: var(--text-muted);
+    line-height: var(--leading-snug);
+    margin-top: var(--space-2);
   }
-
-  .tile-stat {
-    font-family:'IBM Plex Mono',monospace; font-size:11px; color:#555;
-  }
-
   .tile-tags {
-    display: flex; flex-wrap: wrap; gap: 6px;
-    margin-bottom: 10px;
+    display: flex; flex-wrap: wrap; gap: var(--space-1);
+    margin-top: var(--space-3);
   }
-  .position-tag {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    padding: 3px 8px;
-    border-radius: 4px;
-    background: rgba(255, 99, 67, 0.1);
-    color: #FF6343;
-    border: 1px solid rgba(255, 99, 67, 0.2);
+  .tile-tag {
+    font-size: 10px; font-weight: 600;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    background: var(--accent-bg); color: var(--accent);
   }
-
   .tile-socials {
-    display:flex; gap:10px; margin-bottom:10px;
+    display: flex; gap: var(--space-2); margin-top: var(--space-3);
   }
-  .tile-socials a {
-    font-family:'IBM Plex Mono',monospace; font-size:10px;
-    color:#666; text-decoration:none;
-    padding:3px 8px; border-radius:4px;
-    background:#1a1a1a; border:1px solid #2a2a2a;
-    transition: all 0.2s;
+  .tile-social-link {
+    font-size: 10px; font-weight: 600; color: var(--text-dim);
+    text-decoration: none;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    background: var(--bg-elevated); border: 1px solid var(--border);
+    text-transform: uppercase; letter-spacing: 0.04em;
+    transition: all var(--duration-fast);
   }
-  .tile-socials a:hover { color:#FF6343; border-color:#FF6343; }
-
-  /* Loading */
-  .loading { text-align:center; padding:60px; color:#808080; }
-  .loading .spinner {
-    width:24px; height:24px; border:2px solid #333; border-top-color:#FF6343;
-    border-radius:50%; animation:spin 0.8s linear infinite;
-    margin:0 auto 12px;
+  .tile-social-link:hover { color: var(--accent); border-color: var(--accent); }
+  .tile-stat {
+    font-size: var(--text-xs); color: var(--text-dim); font-weight: 500;
+    margin-top: var(--space-3);
   }
-  @keyframes spin { to { transform:rotate(360deg); } }
-
-  /* Empty */
-  .empty { text-align:center; padding:60px 20px; color:#555; }
-  .empty h2 { font-family:'Bree Serif',serif; font-size:22px; color:#808080; margin-bottom:8px; }
-
-  /* Footer */
-  .footer {
-    padding:32px 0;
-    border-top:1px solid #222;
-    text-align:center;
+  .tile-arrow {
+    flex-shrink: 0; color: var(--text-dim);
+    transition: color var(--duration-fast), transform var(--duration-fast);
   }
-  .footer p { font-size:12px; color:#555; }
-  .footer a { color:#FF6343; text-decoration:none; }
-
-  @keyframes fadeIn {
-    from { opacity:0; transform:translateY(8px); }
-    to { opacity:1; transform:translateY(0); }
+  .voice-tile:hover .tile-arrow {
+    color: var(--accent); transform: translateX(2px);
   }
-  .voice-tile { animation: fadeIn 0.3s ease both; }
 
+  /* -- SKELETON LOADING -- */
+  @keyframes shimmer {
+    0% { background-position: -400px 0; }
+    100% { background-position: 400px 0; }
+  }
+  .skeleton {
+    background: linear-gradient(90deg, var(--bg-elevated) 25%, var(--bg-hover) 37%, var(--bg-elevated) 63%);
+    background-size: 800px 100%;
+    animation: shimmer 1.8s ease-in-out infinite;
+    border-radius: var(--radius-sm);
+  }
+  .skeleton-header {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-7) var(--space-5) 0;
+  }
+  .skeleton-line { height: 14px; margin-bottom: var(--space-3); }
+  .skeleton-line.h-lg { height: 24px; }
+  .skeleton-line.h-xl { height: 32px; }
+  .skeleton-line.w-full { width: 100%; }
+  .skeleton-line.w-3-4 { width: 75%; }
+  .skeleton-line.w-1-2 { width: 50%; }
+  .skeleton-line.w-1-3 { width: 33%; }
+  .skeleton-line.w-1-4 { width: 25%; }
+  .skeleton-search {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-5) var(--space-5) 0;
+  }
+  .skeleton-search-bar {
+    height: 42px; border-radius: var(--radius-md); width: 100%;
+  }
+  .skeleton-stats {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-4) var(--space-5) 0;
+  }
+  .skeleton-stats-inner {
+    display: flex; gap: var(--space-5);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border);
+  }
+  .skeleton-grid {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-5) var(--space-5);
+  }
+  .skeleton-tile {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-5);
+    margin-bottom: var(--space-3);
+    display: flex; gap: var(--space-3); align-items: center;
+  }
+  .skeleton-avatar {
+    width: var(--space-9); height: var(--space-9);
+    border-radius: 50%; flex-shrink: 0;
+  }
+  .skeleton-tile-lines { flex: 1; }
+
+  /* -- ERROR / EMPTY STATES -- */
+  .state-message {
+    text-align: center;
+    padding: var(--space-10) var(--space-5);
+    max-width: 400px; margin: 0 auto;
+  }
+  .state-message-icon {
+    margin-bottom: var(--space-4);
+    color: var(--text-dim); line-height: 1;
+  }
+  .state-message-title {
+    font-size: var(--text-lg); font-weight: 600;
+    color: var(--text-primary); margin-bottom: var(--space-2);
+  }
+  .state-message-body {
+    font-size: var(--text-sm); color: var(--text-muted);
+    line-height: var(--leading-relaxed); margin-bottom: var(--space-5);
+  }
+
+  /* -- FOOTER -- */
+  .site-footer {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-8) var(--space-5) var(--space-7);
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer-brand {
+    font-size: var(--text-sm); font-weight: 700;
+    color: var(--text-primary); margin-bottom: var(--space-2);
+  }
+  .footer-brand span { color: var(--accent); }
+  .footer-links {
+    display: flex; justify-content: center; gap: var(--space-5);
+    flex-wrap: wrap; margin-bottom: var(--space-3);
+  }
+  .footer-links a {
+    font-size: var(--text-sm); color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--duration-fast);
+  }
+  .footer-links a:hover { color: var(--text-primary); }
+  .footer-copy { font-size: var(--text-xs); color: var(--text-dim); }
+
+  /* -- MOBILE -- */
   @media (max-width: 600px) {
-    .container { padding: 0 12px; }
-    .header { padding: 14px 0; }
-    .voice-grid { grid-template-columns: 1fr; gap: 12px; }
-    .search-bar input { font-size: 13px; padding: 10px 12px; }
-    .search-bar button { padding: 10px 16px; }
-    .stats-banner { gap: 16px; font-size: 11px; flex-wrap: wrap; }
-    .tile-header { gap: 10px; }
-    .tile-photo { width: 38px; height: 38px; }
-    .tile-name { font-size: 14px; }
-    .tile-lens { font-size: 11px; }
-    .quote-text { font-size: 13px; }
+    .nav { padding: var(--space-4) var(--space-4) 0; }
+    .nav-brand img { height: 18px; }
+    .page-header { padding: var(--space-6) var(--space-4) 0; }
+    .page-headline { font-size: var(--text-xl); }
+    .search-section { padding: var(--space-4) var(--space-4) 0; }
+    .filter-section { padding: var(--space-3) var(--space-4) 0; }
+    .stats-section { padding: var(--space-3) var(--space-4) 0; }
+    .voices-section { padding: var(--space-4) var(--space-4) var(--space-8); }
+    .voice-tile { padding: var(--space-3) var(--space-4); }
+    .tile-photo { width: 40px; height: 40px; }
+    .tile-name { font-size: var(--text-sm); }
+    .skeleton-header { padding: var(--space-6) var(--space-4) 0; }
+    .skeleton-search { padding: var(--space-4) var(--space-4) 0; }
+    .skeleton-stats { padding: var(--space-3) var(--space-4) 0; }
+    .skeleton-grid { padding: var(--space-4) var(--space-4); }
+    .site-footer { padding: var(--space-7) var(--space-4) var(--space-6); }
   }
 </style>
 </head>
 <body>
 
-<div class="container">
+<a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- Header -->
-  <div class="header">
-    <div class="header-left">
-      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel">
-      <div class="header-label">Perspectives</div>
-    </div>
-    <div class="header-nav">
-      <a class="nav-link" data-page="search">Search</a>
-      <a class="nav-link" data-page="voices" class="active">Voices</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div>
+    <a class="nav-brand" href="/" id="homeLink">
+      <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="newsreel" style="height:22px;">
+      <span class="nav-brand-label">Perspectives</span>
+    </a>
+  </div>
+  <a class="nav-back" href="/" id="backLink" aria-label="Back to all stories">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+    All stories
+  </a>
+</nav>
+
+<main id="main-content">
+
+<!-- Skeleton loading state -->
+<div id="skeleton" aria-hidden="true">
+  <div class="skeleton-header">
+    <div class="skeleton skeleton-line h-xl w-1-2"></div>
+    <div class="skeleton skeleton-line w-3-4" style="margin-top:var(--space-2);"></div>
+  </div>
+  <div class="skeleton-search">
+    <div class="skeleton skeleton-search-bar"></div>
+  </div>
+  <div class="skeleton-stats">
+    <div class="skeleton-stats-inner">
+      <div class="skeleton skeleton-line w-1-4" style="height:10px;"></div>
+      <div class="skeleton skeleton-line w-1-4" style="height:10px;"></div>
+      <div class="skeleton skeleton-line w-1-4" style="height:10px;"></div>
     </div>
   </div>
-
-  <!-- About -->
-  <div style="padding:32px 0 24px; border-bottom:1px solid #222;">
-    <h1 style="font-size:1.8em; font-weight:700; margin-bottom:8px;">The voices we track</h1>
-    <p style="color:#999; line-height:1.6; max-width:650px; margin-bottom:16px;">
-      We monitor commentators, creators, and journalists across the political spectrum — people with large audiences who regularly shape how millions understand the news. Inclusion isn't endorsement. The goal is to show you how the same story looks through different lenses, so you can think for yourself.
-    </p>
-    <p style="color:#666; font-size:0.85em; line-height:1.5; max-width:650px; margin-bottom:24px;">
-      <strong style="color:#999;">Criteria:</strong> 500K+ followers on at least one platform, regularly comments on current events, represents a distinct perspective not already covered. We pull from X, YouTube, Bluesky, TikTok, and Instagram daily.
-    </p>
-
-    <details style="max-width:650px; cursor:pointer;">
-      <summary style="color:#FF6343; font-size:0.9em; font-weight:600; margin-bottom:12px;">How it works</summary>
-      <div style="color:#888; font-size:0.85em; line-height:1.7; padding:16px; background:#111; border-radius:8px; border:1px solid #222; margin-top:8px;">
-        <p style="margin-bottom:12px;"><strong style="color:#ccc;">Daily collection.</strong> Every day, we pull recent posts from each voice across 5 platforms: X, YouTube, Bluesky, TikTok, and Instagram. No content is altered or editorialized — quotes flow directly from the source.</p>
-
-        <p style="margin-bottom:12px;"><strong style="color:#ccc;">Topic categorization.</strong> AI reads each post and tags it with a news topic (e.g. "iran-war", "ai-policy", "immigration"). This lets us match voices to stories when you search.</p>
-
-        <p style="margin-bottom:12px;"><strong style="color:#ccc;">Argument clusters, not left/right.</strong> When you search a story, we don't slap a "left" or "right" label on each voice. Instead, AI analyzes what each person is actually saying and groups them into 4-6 argument clusters — like "anti-war right", "pro-intervention hawk", or "accountability focused." This reveals the real fractures: two people on the same political "side" often take very different positions on the same story.</p>
-
-        <p style="margin-bottom:12px;"><strong style="color:#ccc;">Why this matters.</strong> Most media tools sort voices into a left/right binary. But that flattens reality. Tucker Carlson and Ben Shapiro are both conservative — but on Iran, one is anti-war and the other is pro-intervention. That difference is the insight. Our clusters show you what people actually think, not which team they're on.</p>
-
-        <p><strong style="color:#ccc;">Inclusion isn't endorsement.</strong> We track voices across the full spectrum, including some you may strongly disagree with. The goal is not to amplify any particular viewpoint — it's to make sure you're not only hearing one side.</p>
+  <div class="skeleton-grid">
+    <div class="skeleton-tile">
+      <div class="skeleton skeleton-avatar"></div>
+      <div class="skeleton-tile-lines">
+        <div class="skeleton skeleton-line h-lg w-1-2"></div>
+        <div class="skeleton skeleton-line w-3-4"></div>
       </div>
-    </details>
+    </div>
+    <div class="skeleton-tile">
+      <div class="skeleton skeleton-avatar"></div>
+      <div class="skeleton-tile-lines">
+        <div class="skeleton skeleton-line h-lg w-1-3"></div>
+        <div class="skeleton skeleton-line w-1-2"></div>
+      </div>
+    </div>
+    <div class="skeleton-tile">
+      <div class="skeleton skeleton-avatar"></div>
+      <div class="skeleton-tile-lines">
+        <div class="skeleton skeleton-line h-lg w-1-2"></div>
+        <div class="skeleton skeleton-line w-3-4"></div>
+      </div>
+    </div>
+    <div class="skeleton-tile">
+      <div class="skeleton skeleton-avatar"></div>
+      <div class="skeleton-tile-lines">
+        <div class="skeleton skeleton-line h-lg w-1-4"></div>
+        <div class="skeleton skeleton-line w-1-2"></div>
+      </div>
+    </div>
+    <div class="skeleton-tile">
+      <div class="skeleton skeleton-avatar"></div>
+      <div class="skeleton-tile-lines">
+        <div class="skeleton skeleton-line h-lg w-1-3"></div>
+        <div class="skeleton skeleton-line w-3-4"></div>
+      </div>
+    </div>
   </div>
-
-  <!-- Search -->
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search voices or topics..." oninput="filterVoices(this.value)">
-    <button onclick="document.getElementById('searchInput').value=''; filterVoices('')">Clear</button>
-  </div>
-
-  <!-- Stats -->
-  <div class="stats-banner" id="stats">Loading...</div>
-
-  <!-- Voice Grid -->
-  <div class="voice-grid" id="voiceGrid">
-    <div class="loading"><div class="spinner"></div>Loading voices...</div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer">
-    <p>Perspectives by <a href="https://newsreel.co">Newsreel</a></p>
-    <p style="margin-top:4px;">Step outside your algorithm.</p>
-  </div>
-
 </div>
 
+<!-- Rendered content injected here -->
+<div id="content" style="display:none;"></div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">Perspec<span>tives</span> by Newsreel</div>
+  <div class="footer-links">
+    <a href="/methodology" id="methodLink">Methodology</a>
+    <a href="/voices" id="voicesLink">All Voices</a>
+    <a href="https://newsreel.co" target="_blank" rel="noopener">Newsreel</a>
+    <a href="mailto:jack@newsreel.co">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Newsreel, Inc. All rights reserved.</div>
+</footer>
+
 <script>
-let VOICES = {};
-let VOICE_POSTS = {};
-const TOPIC_COLORS = {
-  'iran-war':'#EF4444', 'trump-politics':'#F59E0B', 'ai-technology':'#3B82F6',
-  'economy':'#10B981', 'campus-protests':'#A855F7', 'immigration':'#F472B6',
-  'terrorism':'#EF4444', 'media-criticism':'#6366F1', 'foreign-policy':'#14B8A6',
-};
+/* ================================================================
+   Perspectives Voice Directory -- IIFE to avoid global pollution
+   All state and functions scoped inside.
+   ================================================================ */
+;(function() {
+  'use strict';
 
-function getTopicColor(topic) {
-  if (TOPIC_COLORS[topic]) return TOPIC_COLORS[topic];
-  // Generate consistent color from topic string
-  let hash = 0;
-  for (let i = 0; i < topic.length; i++) hash = topic.charCodeAt(i) + ((hash << 5) - hash);
-  const hue = Math.abs(hash) % 360;
-  return `hsl(${hue}, 60%, 55%)`;
-}
+  /* -- ROUTING -- */
+  var BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
+  var PAGES = {
+    home: BASE || '/',
+    search: BASE + '/search',
+    voices: BASE + '/voices',
+    methodology: BASE + '/methodology'
+  };
 
-async function init() {
-  // Load voices
-  try {
-    const BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
-    const PAGES = { search: BASE || '/search', voices: BASE + '/voices' };
-    document.querySelectorAll('.nav-link').forEach(a => { a.href = PAGES[a.dataset.page] || '#'; });
-    const resp = await fetch(BASE + '/data/voices.json');
-    const voices = await resp.json();
-    voices.forEach(v => VOICES[v.id] = v);
-  } catch(e) {
-    console.warn('Could not load voices.json');
+  document.getElementById('homeLink').href = PAGES.home;
+  document.getElementById('backLink').href = PAGES.home;
+  document.getElementById('methodLink').href = PAGES.methodology;
+  document.getElementById('voicesLink').href = PAGES.voices;
+
+  /* -- PLATFORM LABELS -- */
+  var PLATFORM = {
+    x: 'X', youtube: 'YouTube', bluesky: 'Bluesky',
+    instagram: 'Instagram', tiktok: 'TikTok',
+    substack: 'Substack', podcast: 'Podcast'
+  };
+
+  /* -- DOM REFS -- */
+  var skeletonEl = document.getElementById('skeleton');
+  var contentEl = document.getElementById('content');
+
+  /* -- STATE -- */
+  var _voices = {};
+  var _voicePosts = {};
+  var _currentFilter = '';
+  var _activeCategory = '';
+  var _activePlatform = '';
+
+  /* -- UTILITIES -- */
+  function esc(t) {
+    var d = document.createElement('div');
+    d.textContent = t || '';
+    return d.innerHTML;
   }
 
-  // Load topic index (single file with all voice data) instead of 232 individual requests
-  let totalPosts = 0;
-  let totalTopics = new Set();
-  let voicesWithData = new Set();
+  function safeHref(url) {
+    if (!url || typeof url !== 'string') return '#';
+    var trimmed = url.trim();
+    if (/^javascript:/i.test(trimmed)) return '#';
+    return trimmed;
+  }
 
-  try {
-    const topicsResp = await fetch(BASE + '/api/topics');
-    const topicIndex = await topicsResp.json();
-    for (const [topic, entries] of Object.entries(topicIndex)) {
-      totalTopics.add(topic);
-      for (const entry of entries) {
-        totalPosts++;
-        voicesWithData.add(entry.voiceId);
-        if (!VOICE_POSTS[entry.voiceId]) {
-          VOICE_POSTS[entry.voiceId] = { posts: [], topicSummary: {} };
-        }
-        if (!VOICE_POSTS[entry.voiceId].topicSummary[topic]) {
-          VOICE_POSTS[entry.voiceId].topicSummary[topic] = [];
-        }
-        VOICE_POSTS[entry.voiceId].topicSummary[topic].push({
-          quote: entry.quote,
-          sourceUrl: entry.sourceUrl,
-          platform: entry.platform,
-        });
-        VOICE_POSTS[entry.voiceId].posts.push(entry);
-      }
+  /* -- DELEGATED IMAGE FALLBACK -- */
+  document.addEventListener('error', function(e) {
+    var el = e.target;
+    if (el.tagName !== 'IMG' || el.dataset.fallbackApplied) return;
+    el.dataset.fallbackApplied = 'true';
+    var name = el.dataset.fallbackName || el.alt || 'User';
+    el.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name) + '&background=1a1a1f&color=a1a1aa&size=96';
+  }, true);
+
+  /* -- DELEGATED CLICK HANDLERS -- */
+  document.addEventListener('click', function(e) {
+    // Voice tile navigation
+    var tile = e.target.closest('[data-voice-href]');
+    if (tile) {
+      // Don't navigate if clicking a social link inside the tile
+      if (e.target.closest('.tile-social-link')) return;
+      e.preventDefault();
+      location.href = tile.dataset.voiceHref;
+      return;
     }
-  } catch(e) {
-    console.warn('Could not load topic index:', e);
-  }
 
-  // Stats
-  document.getElementById('stats').innerHTML = `
-    <span><strong>${Object.keys(VOICES).length}</strong> voices tracked</span>
-    <span><strong>${voicesWithData.size}</strong> collected today</span>
-    <span><strong>${totalPosts}</strong> posts</span>
-    <span><strong>${totalTopics.size}</strong> topics</span>
-  `;
+    // Clear search
+    if (e.target.closest('[data-action="clear-search"]')) {
+      e.preventDefault();
+      var input = document.getElementById('searchInput');
+      if (input) {
+        input.value = '';
+        _currentFilter = '';
+        renderGrid();
+      }
+      return;
+    }
 
-  renderGrid();
-}
+    // Category filter chip
+    var catChip = e.target.closest('[data-filter-category]');
+    if (catChip) {
+      e.preventDefault();
+      var cat = catChip.dataset.filterCategory;
+      _activeCategory = (_activeCategory === cat) ? '' : cat;
+      updateFilterChips();
+      renderGrid();
+      return;
+    }
 
-function renderGrid(filter = '') {
-  const grid = document.getElementById('voiceGrid');
-  const filterLower = filter.toLowerCase();
+    // Platform filter chip
+    var platChip = e.target.closest('[data-filter-platform]');
+    if (platChip) {
+      e.preventDefault();
+      var plat = platChip.dataset.filterPlatform;
+      _activePlatform = (_activePlatform === plat) ? '' : plat;
+      updateFilterChips();
+      renderGrid();
+      return;
+    }
 
-  // Sort: voices with data first, then by followers
-  const sorted = Object.values(VOICES).sort((a, b) => {
-    const aHas = VOICE_POSTS[a.id] ? 1 : 0;
-    const bHas = VOICE_POSTS[b.id] ? 1 : 0;
-    if (aHas !== bHas) return bHas - aHas;
-    return (b.followers || 0) - (a.followers || 0);
+    // Methodology toggle
+    var methToggle = e.target.closest('[data-action="toggle-methodology"]');
+    if (methToggle) {
+      e.preventDefault();
+      var isOpen = methToggle.getAttribute('aria-expanded') === 'true';
+      methToggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      var body = document.getElementById('methodologyBody');
+      if (body) {
+        body.classList.toggle('open');
+        body.setAttribute('aria-hidden', isOpen ? 'true' : 'false');
+      }
+      return;
+    }
   });
 
-  let html = '';
-  let shown = 0;
-
-  for (const voice of sorted) {
-    const data = VOICE_POSTS[voice.id];
-    const topics = data ? Object.keys(data.topicSummary || {}) : [];
-    const postCount = data ? (data.posts || []).length : 0;
-
-    // Filter
-    if (filterLower) {
-      const matchName = voice.name.toLowerCase().includes(filterLower);
-      const matchTopic = topics.some(t => t.includes(filterLower));
-      const matchLens = (voice.lens || '').toLowerCase().includes(filterLower);
-      if (!matchName && !matchTopic && !matchLens) continue;
+  /* -- DELEGATED SEARCH INPUT -- */
+  document.addEventListener('input', function(e) {
+    if (e.target.id === 'searchInput') {
+      _currentFilter = e.target.value;
+      renderGrid();
     }
+  });
 
-    shown++;
-    const delay = Math.min(shown * 0.03, 0.5);
-
-    const VOICE_BASE = location.pathname.includes('/perspectives') ? '/perspectives' : '';
-    html += `
-      <div class="voice-tile" id="tile-${voice.id}" onclick="window.location.href='${VOICE_BASE}/voice/${voice.id}'" style="animation-delay:${delay}s">
-        <div class="tile-header">
-          <img class="tile-photo" src="${voice.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=222&color=fff&size=96`}" alt="${voice.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(voice.name)}&background=222&color=fff&size=96'">
-          <div>
-            <div class="tile-name">${voice.name}</div>
-          </div>
-        </div>
-        <div class="tile-lens">${voice.lens || ''}</div>
-        ${voice.tags && voice.tags.length ? `<div class="tile-tags">${voice.tags.map(t => `<span class="position-tag">${t}</span>`).join('')}</div>` : ''}
-        ${buildSocialLinks(voice)}
-    `;
-
-    if (postCount > 0) {
-      html += `<div class="tile-stat">${postCount} recent posts across ${Object.keys(voice.handles || {}).filter(h => voice.handles[h]).length} platforms</div>`;
+  /* -- UPDATE FILTER CHIP STATES -- */
+  function updateFilterChips() {
+    var chips = document.querySelectorAll('[data-filter-category]');
+    for (var i = 0; i < chips.length; i++) {
+      if (chips[i].dataset.filterCategory === _activeCategory) {
+        chips[i].classList.add('active');
+      } else {
+        chips[i].classList.remove('active');
+      }
     }
+    var platChips = document.querySelectorAll('[data-filter-platform]');
+    for (var j = 0; j < platChips.length; j++) {
+      if (platChips[j].dataset.filterPlatform === _activePlatform) {
+        platChips[j].classList.add('active');
+      } else {
+        platChips[j].classList.remove('active');
+      }
+    }
+  }
 
-    // Expanded detail
-    html += '<div class="voice-detail">';
-    if (data && data.topicSummary) {
-      for (const [topic, quotes] of Object.entries(data.topicSummary)) {
-        html += `<div class="topic-section">`;
-        html += `<div class="topic-name" style="color:${getTopicColor(topic)}">${topic}</div>`;
-        for (const q of quotes) {
-          html += `
-            <div class="quote-card" style="border-left-color:${getTopicColor(topic)}">
-              <div class="quote-text">"${(q.quote || '').replace(/</g, '&lt;')}"</div>
-              <div class="quote-meta">
-                ${q.platform} &middot;
-                ${q.timestamp ? new Date(q.timestamp).toLocaleDateString() : ''} &middot;
-                <a href="${q.sourceUrl}" target="_blank">View source</a>
-              </div>
-            </div>
-          `;
+  /* -- SOCIAL LINKS BUILDER -- */
+  function buildSocialLinks(voice) {
+    var h = voice.handles || {};
+    var links = [];
+    if (h.x) links.push('<a class="tile-social-link" href="https://x.com/' + esc(h.x) + '" target="_blank" rel="noopener" aria-label="' + esc(voice.name) + ' on X">X</a>');
+    if (h.youtube) {
+      var ytPath = (h.youtube.indexOf('/') !== -1) ? h.youtube : '@' + h.youtube;
+      links.push('<a class="tile-social-link" href="https://youtube.com/' + esc(ytPath) + '" target="_blank" rel="noopener" aria-label="' + esc(voice.name) + ' on YouTube">YT</a>');
+    }
+    if (h.bluesky) links.push('<a class="tile-social-link" href="https://bsky.app/profile/' + esc(h.bluesky) + '" target="_blank" rel="noopener" aria-label="' + esc(voice.name) + ' on Bluesky">BS</a>');
+    if (h.tiktok) links.push('<a class="tile-social-link" href="https://tiktok.com/@' + esc(h.tiktok) + '" target="_blank" rel="noopener" aria-label="' + esc(voice.name) + ' on TikTok">TT</a>');
+    if (h.instagram) links.push('<a class="tile-social-link" href="https://instagram.com/' + esc(h.instagram) + '" target="_blank" rel="noopener" aria-label="' + esc(voice.name) + ' on Instagram">IG</a>');
+    return links.length ? '<div class="tile-socials">' + links.join('') + '</div>' : '';
+  }
+
+  /* -- COUNT PLATFORMS FOR A VOICE -- */
+  function countPlatforms(voice) {
+    var h = voice.handles || {};
+    var count = 0;
+    var keys = Object.keys(h);
+    for (var i = 0; i < keys.length; i++) {
+      if (h[keys[i]]) count++;
+    }
+    return count;
+  }
+
+  /* -- GET ALL UNIQUE CATEGORIES FROM VOICES -- */
+  function getCategories() {
+    var cats = {};
+    var ids = Object.keys(_voices);
+    for (var i = 0; i < ids.length; i++) {
+      var v = _voices[ids[i]];
+      var tags = v.tags || [];
+      for (var j = 0; j < tags.length; j++) {
+        cats[tags[j]] = (cats[tags[j]] || 0) + 1;
+      }
+    }
+    // Sort by count descending
+    var sorted = Object.keys(cats).sort(function(a, b) { return cats[b] - cats[a]; });
+    return sorted.slice(0, 12);
+  }
+
+  /* -- GET ALL UNIQUE PLATFORMS FROM VOICES -- */
+  function getPlatforms() {
+    var plats = {};
+    var ids = Object.keys(_voices);
+    for (var i = 0; i < ids.length; i++) {
+      var h = _voices[ids[i]].handles || {};
+      var keys = Object.keys(h);
+      for (var j = 0; j < keys.length; j++) {
+        if (h[keys[j]]) {
+          plats[keys[j]] = (plats[keys[j]] || 0) + 1;
+        }
+      }
+    }
+    return Object.keys(plats).sort(function(a, b) { return plats[b] - plats[a]; });
+  }
+
+  /* -- RENDER GRID -- */
+  function renderGrid() {
+    var gridEl = document.getElementById('voiceGrid');
+    var countEl = document.getElementById('shownCount');
+    if (!gridEl) return;
+
+    var filterLower = (_currentFilter || '').toLowerCase();
+    var voices = Object.values(_voices);
+
+    // Sort: voices with post data first, then by follower count
+    voices.sort(function(a, b) {
+      var aHas = _voicePosts[a.id] ? 1 : 0;
+      var bHas = _voicePosts[b.id] ? 1 : 0;
+      if (aHas !== bHas) return bHas - aHas;
+      return (b.followers || 0) - (a.followers || 0);
+    });
+
+    var html = '';
+    var shown = 0;
+
+    for (var i = 0; i < voices.length; i++) {
+      var voice = voices[i];
+      var data = _voicePosts[voice.id];
+      var topics = data ? Object.keys(data.topicSummary || {}) : [];
+      var postCount = data ? (data.posts || []).length : 0;
+
+      // Text filter
+      if (filterLower) {
+        var matchName = voice.name.toLowerCase().indexOf(filterLower) !== -1;
+        var matchLens = (voice.lens || '').toLowerCase().indexOf(filterLower) !== -1;
+        var matchTopic = false;
+        for (var t = 0; t < topics.length; t++) {
+          if (topics[t].indexOf(filterLower) !== -1) { matchTopic = true; break; }
+        }
+        var matchTag = false;
+        var voiceTags = voice.tags || [];
+        for (var g = 0; g < voiceTags.length; g++) {
+          if (voiceTags[g].toLowerCase().indexOf(filterLower) !== -1) { matchTag = true; break; }
+        }
+        if (!matchName && !matchLens && !matchTopic && !matchTag) continue;
+      }
+
+      // Category filter
+      if (_activeCategory) {
+        var hasCat = false;
+        var cTags = voice.tags || [];
+        for (var c = 0; c < cTags.length; c++) {
+          if (cTags[c] === _activeCategory) { hasCat = true; break; }
+        }
+        if (!hasCat) continue;
+      }
+
+      // Platform filter
+      if (_activePlatform) {
+        var h = voice.handles || {};
+        if (!h[_activePlatform]) continue;
+      }
+
+      shown++;
+
+      var photo = voice.photo || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(voice.name) + '&background=1a1a1f&color=a1a1aa&size=96';
+      var platformCount = countPlatforms(voice);
+      var platformLabel = platformCount + ' platform' + (platformCount !== 1 ? 's' : '');
+
+      html += '<a class="voice-tile" href="' + BASE + '/voice/' + esc(voice.id) + '" data-voice-href="' + BASE + '/voice/' + esc(voice.id) + '" aria-label="View ' + esc(voice.name) + ' profile">' +
+        '<div class="tile-header">' +
+          '<img class="tile-photo" src="' + photo + '" alt="" data-fallback-name="' + esc(voice.name) + '" loading="lazy">' +
+          '<div class="tile-info">' +
+            '<div class="tile-name">' + esc(voice.name) + '</div>' +
+            '<div class="tile-platform">' + esc(platformLabel) + '</div>' +
+          '</div>' +
+          '<svg class="tile-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>' +
+        '</div>' +
+        (voice.lens ? '<div class="tile-lens">' + esc(voice.lens) + '</div>' : '');
+
+      // Tags
+      var tags = voice.tags || [];
+      if (tags.length > 0) {
+        html += '<div class="tile-tags">';
+        for (var ti = 0; ti < tags.length && ti < 4; ti++) {
+          html += '<span class="tile-tag">' + esc(tags[ti]) + '</span>';
+        }
+        if (tags.length > 4) {
+          html += '<span class="tile-tag">+' + (tags.length - 4) + '</span>';
         }
         html += '</div>';
       }
+
+      // Social links
+      html += buildSocialLinks(voice);
+
+      // Post stat
+      if (postCount > 0) {
+        html += '<div class="tile-stat">' + postCount + ' recent post' + (postCount !== 1 ? 's' : '') + ' collected</div>';
+      }
+
+      html += '</a>';
     }
-    html += '</div>';
 
-    html += '</div>';
+    if (shown === 0) {
+      html = '<div class="state-message" role="status">' +
+        '<div class="state-message-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>' +
+        '<div class="state-message-title">No voices match</div>' +
+        '<div class="state-message-body">Try a different search term or clear your filters.</div>' +
+      '</div>';
+    }
+
+    gridEl.innerHTML = html;
+    if (countEl) countEl.textContent = shown + ' shown';
   }
 
-  if (shown === 0) {
-    html = '<div class="empty"><h2>No matches</h2><p>Try a different search term.</p></div>';
+  /* -- RENDER FULL PAGE -- */
+  function renderPage(stats) {
+    skeletonEl.style.display = 'none';
+    contentEl.style.display = 'block';
+
+    var categories = getCategories();
+    var platforms = getPlatforms();
+
+    var catChips = '';
+    for (var i = 0; i < categories.length; i++) {
+      catChips += '<button class="filter-chip" type="button" data-filter-category="' + esc(categories[i]) + '">' + esc(categories[i]) + '</button>';
+    }
+
+    var platChips = '';
+    for (var j = 0; j < platforms.length; j++) {
+      var label = PLATFORM[platforms[j]] || platforms[j];
+      platChips += '<button class="filter-chip" type="button" data-filter-platform="' + esc(platforms[j]) + '">' + esc(label) + '</button>';
+    }
+
+    contentEl.innerHTML =
+      '<header class="page-header">' +
+        '<h1 class="page-headline">The voices we track</h1>' +
+        '<p class="page-description">Commentators, creators, and journalists across the political spectrum. Inclusion is not endorsement. The goal is to show you how the same story looks through different lenses.</p>' +
+        '<button class="methodology-toggle" type="button" data-action="toggle-methodology" aria-expanded="false" aria-controls="methodologyBody">' +
+          'How it works' +
+          '<svg class="methodology-toggle-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>' +
+        '</button>' +
+        '<div class="methodology-body" id="methodologyBody" aria-hidden="true">' +
+          '<div class="methodology-body-inner">' +
+            '<div class="methodology-content">' +
+              '<p><strong>Daily collection.</strong> Every day, we pull recent posts from each voice across 5 platforms: X, YouTube, Bluesky, TikTok, and Instagram. No content is altered or editorialized.</p>' +
+              '<p><strong>Topic categorization.</strong> AI reads each post and tags it with a news topic. This lets us match voices to stories when you search.</p>' +
+              '<p><strong>Argument clusters, not left/right.</strong> When you search a story, we don\'t slap a "left" or "right" label on each voice. Instead, AI analyzes what each person is actually saying and groups them into 4-6 argument clusters. This reveals the real fractures: two people on the same political "side" often take very different positions on the same story.</p>' +
+              '<p><strong>Why this matters.</strong> Most media tools sort voices into a left/right binary. But that flattens reality. Tucker Carlson and Ben Shapiro are both conservative, but on Iran, one is anti-war and the other is pro-intervention. That difference is the insight.</p>' +
+              '<p><strong>Criteria.</strong> 500K+ followers on at least one platform, regularly comments on current events, represents a distinct perspective not already covered.</p>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</header>' +
+
+      '<section class="search-section" aria-label="Search voices">' +
+        '<div class="search-row">' +
+          '<input class="search-input" type="text" id="searchInput" placeholder="Search voices, topics, or tags..." aria-label="Search voices">' +
+          '<button class="search-clear" type="button" data-action="clear-search">Clear</button>' +
+        '</div>' +
+      '</section>' +
+
+      (catChips || platChips ?
+        '<section class="filter-section" aria-label="Filter voices">' +
+          (platChips ? '<div class="filter-row"><span class="filter-label">Platform</span>' + platChips + '</div>' : '') +
+          (catChips ? '<div class="filter-row" style="margin-top:var(--space-2);"><span class="filter-label">Category</span>' + catChips + '</div>' : '') +
+        '</section>' : '') +
+
+      '<section class="stats-section" aria-label="Voice statistics">' +
+        '<div class="stats-row">' +
+          '<span class="stat-item"><span class="stat-value">' + stats.voiceCount + '</span> voices tracked</span>' +
+          '<span class="stat-item"><span class="stat-value">' + stats.collectedCount + '</span> collected today</span>' +
+          '<span class="stat-item"><span class="stat-value">' + stats.postCount + '</span> posts</span>' +
+          '<span class="stat-item"><span class="stat-value">' + stats.topicCount + '</span> topics</span>' +
+          '<span class="stat-item" id="shownCount"></span>' +
+        '</div>' +
+      '</section>' +
+
+      '<section class="voices-section" aria-label="Voice directory">' +
+        '<div class="voice-grid" id="voiceGrid" role="list"></div>' +
+      '</section>';
+
+    renderGrid();
   }
 
-  grid.innerHTML = html;
-}
-
-function toggleVoice(id) {
-  const tile = document.getElementById('tile-' + id);
-  const wasExpanded = tile.classList.contains('expanded');
-
-  // Close all
-  document.querySelectorAll('.voice-tile.expanded').forEach(t => t.classList.remove('expanded'));
-
-  // Toggle this one
-  if (!wasExpanded) {
-    tile.classList.add('expanded');
-    tile.scrollIntoView({ behavior:'smooth', block:'nearest' });
+  /* -- SHOW ERROR -- */
+  function showError(title, msg) {
+    skeletonEl.style.display = 'none';
+    contentEl.style.display = 'block';
+    contentEl.innerHTML =
+      '<div class="state-message" role="status">' +
+        '<div class="state-message-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg></div>' +
+        '<div class="state-message-title">' + esc(title) + '</div>' +
+        '<div class="state-message-body">' + esc(msg) + '</div>' +
+      '</div>';
   }
-}
 
-function buildSocialLinks(voice) {
-  const h = voice.handles || {};
-  let links = [];
-  if (h.x) links.push(`<a href="https://x.com/${h.x}" target="_blank">X</a>`);
-  if (h.youtube) links.push(`<a href="https://youtube.com/${h.youtube.includes('/') ? h.youtube : '@' + h.youtube}" target="_blank">YT</a>`);
-  if (h.bluesky) links.push(`<a href="https://bsky.app/profile/${h.bluesky}" target="_blank">BS</a>`);
-  if (h.tiktok) links.push(`<a href="https://tiktok.com/@${h.tiktok}" target="_blank">TT</a>`);
-  if (h.instagram) links.push(`<a href="https://instagram.com/${h.instagram}" target="_blank">IG</a>`);
-  return links.length ? `<div class="tile-socials">${links.join('')}</div>` : '';
-}
+  /* -- INIT -- */
+  function init() {
+    var voicesLoaded = fetch(BASE + '/data/voices.json')
+      .then(function(r) {
+        if (!r.ok) throw new Error('Voice data unavailable');
+        return r.json();
+      })
+      .then(function(voices) {
+        for (var i = 0; i < voices.length; i++) {
+          _voices[voices[i].id] = voices[i];
+        }
+      });
 
-function filterVoices(val) {
-  renderGrid(val);
-}
+    var totalPosts = 0;
+    var totalTopics = {};
+    var voicesWithData = {};
 
-init();
+    var topicsLoaded = fetch(BASE + '/api/topics')
+      .then(function(r) {
+        if (!r.ok) throw new Error('Topics unavailable');
+        return r.json();
+      })
+      .then(function(topicIndex) {
+        var topicKeys = Object.keys(topicIndex);
+        for (var t = 0; t < topicKeys.length; t++) {
+          var topic = topicKeys[t];
+          totalTopics[topic] = true;
+          var entries = topicIndex[topic];
+          for (var e = 0; e < entries.length; e++) {
+            var entry = entries[e];
+            totalPosts++;
+            voicesWithData[entry.voiceId] = true;
+            if (!_voicePosts[entry.voiceId]) {
+              _voicePosts[entry.voiceId] = { posts: [], topicSummary: {} };
+            }
+            if (!_voicePosts[entry.voiceId].topicSummary[topic]) {
+              _voicePosts[entry.voiceId].topicSummary[topic] = [];
+            }
+            _voicePosts[entry.voiceId].topicSummary[topic].push({
+              quote: entry.quote,
+              sourceUrl: entry.sourceUrl,
+              platform: entry.platform
+            });
+            _voicePosts[entry.voiceId].posts.push(entry);
+          }
+        }
+      })
+      .catch(function(err) {
+        console.warn('[Perspectives] Could not load topic index:', err.message);
+      });
+
+    Promise.all([voicesLoaded, topicsLoaded])
+      .then(function() {
+        renderPage({
+          voiceCount: Object.keys(_voices).length,
+          collectedCount: Object.keys(voicesWithData).length,
+          postCount: totalPosts,
+          topicCount: Object.keys(totalTopics).length
+        });
+      })
+      .catch(function(err) {
+        console.error('[Perspectives] Init failed:', err);
+        showError('Failed to load voices', 'Something went wrong loading voice data. Please try again.');
+      });
+  }
+
+  init();
+
+})();
 </script>
-
 </body>
 </html>
