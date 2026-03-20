@@ -200,9 +200,10 @@
     font-size: var(--text-xs); color: var(--text-muted); font-weight: 500;
     cursor: pointer; padding: var(--space-1) var(--space-2);
     border-radius: var(--radius-sm);
-    transition: color var(--duration-fast), background var(--duration-fast);
+    border: none; background: none; font-family: inherit;
+    transition: color var(--duration-fast);
   }
-  .legend-item:hover { color: var(--text-primary); background: var(--bg-elevated); }
+  .legend-item:hover { color: var(--text-primary); }
   .legend-dot {
     width: var(--space-2); height: var(--space-2);
     border-radius: 50%; flex-shrink: 0;
