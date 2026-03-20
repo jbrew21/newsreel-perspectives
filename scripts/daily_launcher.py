@@ -158,7 +158,7 @@ def main():
     log("=" * 50)
 
     # Phase 1: Collect
-    ok, _ = run_step("Phase 1: Collect posts", [PYTHON, str(SCRIPTS_DIR / "collect.py")], timeout_sec=1200)
+    ok, _ = run_step("Phase 1: Collect posts", [PYTHON, str(SCRIPTS_DIR / "collect.py")], timeout_sec=1800)
     if not ok:
         send_slack("Collection FAILED. Check /tmp/perspectives-daily.log")
         sys.exit(1)
