@@ -1145,7 +1145,7 @@ def main():
                 print(f"    {data['voice']['name']}: {len(categorized)} relevant posts — {', '.join(topics)}")
 
             import time
-            time.sleep(1)  # rate limit Claude calls
+            time.sleep(0.5)  # rate limit Claude calls (Haiku handles this)
 
         # Log usage after categorization
         log_usage(len(all_voice_posts), total_posts)
