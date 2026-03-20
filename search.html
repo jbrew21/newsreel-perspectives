@@ -187,21 +187,34 @@
   .search-hints {
     display: flex; flex-wrap: wrap; gap: var(--space-2);
     margin-top: var(--space-3); justify-content: center;
+    max-height: 80px; overflow: hidden;
+    transition: max-height var(--duration-slow) var(--ease-out);
   }
+  .search-hints.expanded { max-height: 400px; }
   .search-hint {
     font-size: var(--text-xs); color: var(--text-muted);
     background: var(--bg-card); border: 1px solid var(--border);
-    border-radius: var(--radius-full); padding: 6px 14px;
+    border-radius: var(--radius-full); padding: var(--space-2) var(--space-3);
     cursor: pointer;
     transition: all var(--duration-fast);
-    user-select: none;
+    user-select: none; white-space: nowrap;
   }
   .search-hint:hover {
     color: var(--text-secondary); border-color: var(--border-hover);
     background: var(--bg-elevated);
   }
   .search-hint:active { background: var(--bg-hover); transform: scale(0.97); }
-  .search-hint.curated { border-style: dashed; }
+  .search-hints-toggle {
+    display: none; width: 100%; text-align: center;
+    margin-top: var(--space-2);
+  }
+  .search-hints-toggle button {
+    font-size: var(--text-xs); color: var(--text-dim);
+    background: none; border: none; cursor: pointer;
+    font-family: inherit; padding: var(--space-1) var(--space-3);
+    transition: color var(--duration-fast);
+  }
+  .search-hints-toggle button:hover { color: var(--text-muted); }
 
   .time-filter {
     display: none; gap: var(--space-2); justify-content: center;
@@ -610,7 +623,10 @@
     }
     .wire-time { grid-column: 3; grid-row: 1; display: none; }
 
-    .search-hint { min-height: 44px; display: inline-flex; align-items: center; }
+    .search-hint { min-height: 38px; display: inline-flex; align-items: center; font-size: 11px; padding: var(--space-2) var(--space-3); }
+    .search-hints { max-height: 44px; }
+    .search-hints.expanded { max-height: 300px; }
+    .search-hints-toggle { display: block; }
     .time-btn { min-height: 44px; padding: var(--space-2) var(--space-4); font-size: var(--text-sm); }
     .site-footer { padding: var(--space-7) var(--space-4) var(--space-6); }
   }
@@ -655,6 +671,7 @@
     <button class="time-btn" data-days="30">Month</button>
   </div>
   <div class="search-hints" id="searchHints"></div>
+  <div class="search-hints-toggle" id="hintsToggle"><button type="button">Show more topics</button></div>
 </div>
 
 <!-- Feed skeleton (shown while loading) -->
@@ -822,6 +839,13 @@
   const statsEl = document.getElementById('stats');
   const timeFilter = document.getElementById('timeFilter');
   const searchHints = document.getElementById('searchHints');
+  const hintsToggle = document.getElementById('hintsToggle');
+
+  /* Hints toggle for mobile */
+  hintsToggle.querySelector('button').addEventListener('click', function() {
+    var expanded = searchHints.classList.toggle('expanded');
+    this.textContent = expanded ? 'Show fewer topics' : 'Show more topics';
+  });
 
   /* ── STATE ── */
   let _voiceLens = {};
@@ -1138,7 +1162,7 @@
         sorted.slice(4, 10).forEach(function(pair) {
           var topic = pair[0];
           var el = document.createElement('button');
-          el.className = 'search-hint curated';
+          el.className = 'search-hint';
           el.type = 'button';
           el.textContent = topic.replace(/-/g, ' ');
           el.addEventListener('click', function() {
@@ -1188,6 +1212,7 @@
     feedEl.style.display = 'none';
     feedSkeleton.style.display = 'none';
     searchHints.style.display = 'none';
+    hintsToggle.style.display = 'none';
     wireSection.style.display = 'none';
     statsEl.style.display = 'none';
     timeFilter.style.display = 'flex';
@@ -1378,6 +1403,7 @@
     resultsDiv.innerHTML = '';
     feedEl.style.display = 'block';
     searchHints.style.display = '';
+    hintsToggle.style.display = '';
     wireSection.style.display = 'block';
     statsEl.style.display = '';
     timeFilter.style.display = 'none';
