@@ -1,0 +1,193 @@
+-- ============================================================================
+-- MIGRATION PLAN: JSON Files -> Supabase Postgres
+-- ============================================================================
+-- Run these AFTER the schema in SUPABASE-SCHEMA.sql is applied.
+-- Each section is idempotent and can be re-run safely.
+-- ============================================================================
+
+
+-- ============================================================================
+-- STEP 1: Migrate voices.json -> voices table
+-- ============================================================================
+-- Source: data/voices.json (257 entries)
+-- Method: Read JSON, transform, INSERT
+--
+-- In the migration script (Node.js or Python), do:
+--
+--   const voices = JSON.parse(fs.readFileSync('data/voices.json'));
+--   for (const v of voices) {
+--     await supabase.from('voices').upsert({
+--       id: v.id,
+--       name: v.name,
+--       photo_url: v.photo ? `https://wsrv.nl/?url=newsreel.co/perspectives${v.photo}` : v.photoSource,
+--       bio: v.lens,
+--       category: v.category,
+--       approach: v.approach,
+--       tags: v.tags || [],
+--       handles: v.handles || {},
+--       feeds: v.feeds || {},
+--       followers: v.followers || 0,
+--       followers_display: v.followersDisplay || null,
+--       platforms: v.platforms || [],
+--       is_active: true
+--     }, { onConflict: 'id' });
+--   }
+
+
+-- ============================================================================
+-- STEP 2: Migrate taxonomy.json -> topics table
+-- ============================================================================
+-- Source: data/taxonomy.json (40-50 topics)
+--
+--   const taxonomy = JSON.parse(fs.readFileSync('data/taxonomy.json'));
+--   for (const topic of taxonomy.topics) {
+--     await supabase.from('topics').upsert({
+--       slug: topic.slug,
+--       display_name: topic.display,
+--       description: topic.description,
+--       aliases: topic.aliases || [],
+--       is_active: true
+--     }, { onConflict: 'slug' });
+--   }
+
+
+-- ============================================================================
+-- STEP 3: Migrate posts (data/posts/*/YYYY-MM-DD.json)
+-- ============================================================================
+-- Source: ~272 voice directories, each with date-stamped JSON files
+-- Each file has: voiceId, posts[] with platform, text, sourceUrl, timestamp, topic, relevance
+--
+-- IMPORTANT: Use topic-mapping.json to normalize legacy topic slugs
+-- to the controlled taxonomy before inserting.
+--
+--   const topicMapping = JSON.parse(fs.readFileSync('data/topic-mapping.json'));
+--
+--   for (const voiceDir of fs.readdirSync('data/posts/')) {
+--     for (const dateFile of fs.readdirSync(`data/posts/${voiceDir}/`)) {
+--       const data = JSON.parse(fs.readFileSync(`data/posts/${voiceDir}/${dateFile}`));
+--       const collectedDate = dateFile.replace('.json', '');
+--
+--       for (const post of data.posts || []) {
+--         // Normalize topic to controlled taxonomy
+--         const normalizedTopic = topicMapping[post.topic] || post.topic;
+--         // Only use topic if it exists in our taxonomy
+--         const topicSlug = await topicExists(normalizedTopic) ? normalizedTopic : null;
+--
+--         await supabase.from('posts').upsert({
+--           voice_id: post.voiceId,
+--           platform: post.platform,
+--           post_type: post.type || 'post',
+--           text: post.text,
+--           quote: post.quote || post.text?.slice(0, 300),
+--           source_url: post.sourceUrl,
+--           external_id: extractExternalId(post.sourceUrl),  // parse tweet ID, video ID, etc.
+--           topic_slug: topicSlug,
+--           relevance: post.relevance || 'medium',
+--           published_at: post.timestamp,
+--           collected_date: collectedDate
+--         }, {
+--           onConflict: 'voice_id,platform,external_id',
+--           ignoreDuplicates: true
+--         });
+--       }
+--     }
+--   }
+
+
+-- ============================================================================
+-- STEP 4: Migrate stories (data/stories/*.json)
+-- ============================================================================
+-- Source: 15 story JSON files with reactions and argumentClusters
+--
+--   for (const storyFile of fs.readdirSync('data/stories/')) {
+--     const story = JSON.parse(fs.readFileSync(`data/stories/${storyFile}`));
+--
+--     // Insert story
+--     const { data: storyRow } = await supabase.from('stories').upsert({
+--       slug: story.storyId,
+--       headline: story.headline,
+--       summary: story.summary,
+--       story_date: story.date,
+--       voice_count: story.reactions?.length || 0,
+--       cluster_count: story.argumentClusters?.length || 0,
+--       topic_slugs: detectTopics(story),  // extract from reactions' topics
+--       is_published: (story.reactions?.length || 0) > 0
+--     }, { onConflict: 'slug,story_date' }).select().single();
+--
+--     if (!storyRow || !story.argumentClusters?.length) continue;
+--
+--     // Insert clusters
+--     for (let i = 0; i < story.argumentClusters.length; i++) {
+--       const ac = story.argumentClusters[i];
+--       const clusterReactions = story.reactions.filter(r => r.argumentCluster === ac.id);
+--       const bestQuote = clusterReactions[0];
+--
+--       const { data: clusterRow } = await supabase.from('clusters').insert({
+--         story_id: storyRow.id,
+--         name: ac.label,
+--         slug: ac.id,
+--         voice_count: ac.count,
+--         sort_order: i,
+--         best_quote_voice_id: bestQuote?.voiceId,
+--         best_quote_text: bestQuote?.quote,
+--         best_quote_platform: bestQuote?.platform
+--       }).select().single();
+--
+--       // Insert cluster_voices
+--       for (const reaction of clusterReactions) {
+--         await supabase.from('cluster_voices').upsert({
+--           cluster_id: clusterRow.id,
+--           story_id: storyRow.id,
+--           voice_id: reaction.voiceId,
+--           quote: reaction.quote,
+--           source_url: reaction.sourceUrl,
+--           platform: reaction.platform
+--         }, { onConflict: 'cluster_id,voice_id' });
+--       }
+--     }
+--   }
+
+
+-- ============================================================================
+-- STEP 5: Migrate cluster-history.json -> cluster_voices (historical)
+-- ============================================================================
+-- Source: data/cluster-history.json
+-- Structure: { "voice-id": { "topic-slug": [{ date, cluster, headline, fit }] } }
+-- This requires creating stories + clusters for historical entries that
+-- don't already exist as story JSON files.
+--
+-- For each entry in cluster-history:
+--   1. Find or create a story for that headline + date
+--   2. Find or create a cluster for that cluster name within the story
+--   3. Upsert a cluster_voice entry
+--
+-- This is the most complex migration step. Recommend doing it as a
+-- separate script after the core migration is verified.
+
+
+-- ============================================================================
+-- STEP 6: Compute initial alignment scores
+-- ============================================================================
+
+-- After all data is loaded:
+REFRESH MATERIALIZED VIEW mv_voice_alignments;
+
+
+-- ============================================================================
+-- STEP 7: Verify migration
+-- ============================================================================
+
+-- Quick sanity checks:
+-- SELECT COUNT(*) FROM voices;                          -- expect 257
+-- SELECT COUNT(*) FROM topics;                          -- expect 40-50
+-- SELECT COUNT(*) FROM posts;                           -- expect ~2000+
+-- SELECT COUNT(*) FROM stories WHERE is_published;      -- expect ~10-15
+-- SELECT COUNT(*) FROM clusters;                        -- expect ~50+
+-- SELECT COUNT(*) FROM cluster_voices;                  -- expect ~100+
+-- SELECT COUNT(*) FROM mv_voice_alignments;             -- expect pairs with 3+ co-occurrences
+--
+-- Key query tests:
+-- SELECT * FROM get_voice_positions('ben-shapiro', 30);
+-- SELECT * FROM get_voice_alignments('tucker-carlson', 90);
+-- SELECT * FROM v_story_cards WHERE story_date = CURRENT_DATE;
+-- SELECT * FROM v_trending_topics;
