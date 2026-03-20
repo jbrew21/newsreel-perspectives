@@ -179,8 +179,81 @@ def trigger_deploy():
         return True
 
 
+def sync_to_supabase():
+    """Sync today's data to Supabase (single source of truth)."""
+    log("Supabase: Starting sync")
+    try:
+        from supabase import create_client
+    except ImportError:
+        log("Supabase: supabase package not installed, skipping")
+        return False
+
+    url = os.environ.get('SUPABASE_URL', '')
+    key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '')
+    if not url or not key:
+        log("Supabase: No credentials, skipping")
+        return False
+
+    try:
+        client = create_client(url, key)
+
+        # Import and run migration (idempotent -- deterministic UUIDs)
+        sys.path.insert(0, str(SCRIPTS))
+        from migrate_to_supabase import (
+            migrate_topics, migrate_voices, migrate_posts,
+            migrate_stories, refresh_views, connect
+        )
+
+        # Override the module's connect to reuse our client
+        import migrate_to_supabase as mig
+        mig.DRY_RUN = False
+
+        valid_slugs = migrate_topics(client)
+        valid_voices = migrate_voices(client)
+        migrate_posts(client, valid_slugs, valid_voices)
+        migrate_stories(client, valid_voices)
+        refresh_views(client)
+
+        log("Supabase: Sync complete")
+        return True
+    except Exception as e:
+        log(f"Supabase: Sync failed (non-fatal): {e}")
+        return False
+
+
+def record_pipeline_run(status, stats=None, errors=None):
+    """Write to pipeline_runs table in Supabase for monitoring."""
+    url = os.environ.get('SUPABASE_URL', '')
+    key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '')
+    if not url or not key:
+        return
+
+    try:
+        from supabase import create_client
+        client = create_client(url, key)
+
+        elapsed = int(time.time() - START)
+        row = {
+            'run_date': DATE,
+            'started_at': datetime.fromtimestamp(START).isoformat(),
+            'finished_at': datetime.now().isoformat(),
+            'status': status,
+            'posts_collected': (stats or {}).get('posts', 0),
+            'posts_categorized': (stats or {}).get('categorized', 0),
+            'stories_created': (stats or {}).get('stories', 0),
+            'clusters_created': (stats or {}).get('clusters', 0),
+            'errors': errors or [],
+            'cost_usd': (stats or {}).get('cost', 0),
+        }
+        client.table('pipeline_runs').insert(row).execute()
+        log(f"Monitoring: Pipeline run recorded ({status}, {elapsed}s)")
+    except Exception as e:
+        log(f"Monitoring: Failed to record run: {e}")
+
+
 def main():
     skip_collect = '--skip-collect' in sys.argv
+    errors = []
 
     print(f"\n  Perspectives Daily Pipeline")
     print(f"  Date: {DATE}")
@@ -194,37 +267,67 @@ def main():
         ok = run_step(
             "Collect posts from 257 voices",
             [python, str(SCRIPTS / "collect.py")],
-            timeout_sec=1200,  # 20 min max
+            timeout_sec=1200,
             required=True,
         )
         if not ok:
             log("ABORT: Collection failed")
+            errors.append("Collection failed")
+            record_pipeline_run('failed', errors=errors)
             sys.exit(1)
     else:
         log("Skipping collection (--skip-collect)")
 
     # Step 2: Build stories
-    run_step(
+    ok = run_step(
         "Build stories feed",
         [python, str(SCRIPTS / "stories.py")],
-        timeout_sec=600,  # 10 min max
-        required=False,  # stories failure shouldn't block data push
+        timeout_sec=600,
+        required=False,
     )
+    if not ok:
+        errors.append("Stories build failed")
 
     # Step 3: Health check
     healthy = health_check()
 
-    # Step 4: Git push
+    # Step 4: Sync to Supabase (single source of truth)
+    supabase_ok = sync_to_supabase()
+    if not supabase_ok:
+        errors.append("Supabase sync failed")
+
+    # Step 5: Git push
     git_push()
 
-    # Step 5: Deploy
+    # Step 6: Deploy
     trigger_deploy()
+
+    # Step 7: Record pipeline run
+    stats = None
+    topic_index = POSTS_DIR / f"topic-index-{DATE}.json"
+    if topic_index.exists():
+        ti = json.loads(topic_index.read_text())
+        stories_path = POSTS_DIR / f"stories-{DATE}.json"
+        story_count = 0
+        cluster_count = 0
+        if stories_path.exists():
+            stories = json.loads(stories_path.read_text())
+            story_count = len(stories)
+            cluster_count = sum(len(s.get('clusters', [])) for s in stories)
+        stats = {
+            'posts': sum(len(v) for v in ti.values()),
+            'categorized': sum(len(v) for v in ti.values()),
+            'stories': story_count,
+            'clusters': cluster_count,
+        }
+
+    status = "completed" if healthy and not errors else "degraded" if healthy else "failed"
+    record_pipeline_run(status, stats=stats, errors=errors)
 
     # Summary
     elapsed = int(time.time() - START)
-    status = "OK" if healthy else "DEGRADED"
     print(f"\n  {'='*40}")
-    print(f"  Pipeline {status} in {elapsed}s")
+    print(f"  Pipeline {status.upper()} in {elapsed}s")
     print(f"  Completed: {datetime.now().strftime('%H:%M:%S')}\n")
 
     sys.exit(0 if healthy else 1)
