@@ -11,7 +11,11 @@
       "text": "Well that's an escalation..",
       "sourceUrl": "https://www.youtube.com/watch?v=5-7y1TQUuTg",
       "timestamp": "2026-03-20T06:00:06+00:00",
-      "type": "video_title"
+      "type": "video_title",
+      "topic": "israel-palestine",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "Well that's an escalation.."
     },
     {
       "voiceId": "hasanabi",
@@ -20,16 +24,11 @@
       "text": "the US is lifting sanctions on Iran to keep gas prices down",
       "sourceUrl": "https://www.youtube.com/shorts/Qoib1Ta5NEI",
       "timestamp": "2026-03-20T02:18:17+00:00",
-      "type": "video_title"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "everybody PANIC now!!!",
-      "sourceUrl": "https://www.youtube.com/watch?v=4i98GMlhPcc",
-      "timestamp": "2026-03-20T00:46:03+00:00",
-      "type": "video_title"
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "the US is lifting sanctions on Iran to keep gas prices down"
     },
     {
       "voiceId": "hasanabi",
@@ -38,7 +37,11 @@
       "text": "\u201c\ud83d\ude2c we didn\u2019t know Israel was gonna do that\u201d",
       "sourceUrl": "https://www.youtube.com/shorts/6cH5vl76eUQ",
       "timestamp": "2026-03-19T22:00:42+00:00",
-      "type": "video_title"
+      "type": "video_title",
+      "topic": "israel-palestine",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "\u201c\ud83d\ude2c we didn\u2019t know Israel was gonna do that\u201d"
     },
     {
       "voiceId": "hasanabi",
@@ -47,7 +50,11 @@
       "text": "Don't fall for this propaganda...",
       "sourceUrl": "https://www.youtube.com/watch?v=I8hc8hIEvKU",
       "timestamp": "2026-03-19T21:05:49+00:00",
-      "type": "video_title"
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "Don't fall for this propaganda..."
     },
     {
       "voiceId": "hasanabi",
@@ -56,7 +63,11 @@
       "text": "the death of US empire",
       "sourceUrl": "https://www.youtube.com/shorts/0EY72Nx0-k4",
       "timestamp": "2026-03-19T20:50:28+00:00",
-      "type": "video_title"
+      "type": "video_title",
+      "topic": "foreign-policy-diplomacy",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "the death of US empire"
     },
     {
       "voiceId": "hasanabi",
@@ -65,16 +76,11 @@
       "text": "the US military is officially cooked",
       "sourceUrl": "https://www.youtube.com/shorts/I77-3cy9Qpc",
       "timestamp": "2026-03-19T19:00:29+00:00",
-      "type": "video_title"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "It's Absolutely Cooked...",
-      "sourceUrl": "https://www.youtube.com/watch?v=GXByqc1mpbk",
-      "timestamp": "2026-03-19T13:15:05+00:00",
-      "type": "video_title"
+      "type": "video_title",
+      "topic": "military-defense",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "the US military is officially cooked"
     },
     {
       "voiceId": "hasanabi",
@@ -83,20 +89,15 @@
       "text": "three idiots to describe america",
       "sourceUrl": "https://www.youtube.com/shorts/tkpCUr8G1OU",
       "timestamp": "2026-03-19T02:43:24+00:00",
-      "type": "video_title"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "THIS IS A CULT!",
-      "sourceUrl": "https://www.youtube.com/watch?v=YpvjP-_5Mxs",
-      "timestamp": "2026-03-19T01:34:41+00:00",
-      "type": "video_title"
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "three idiots to describe america"
     }
   ],
   "topicSummary": {
-    "uncategorized": [
+    "israel-palestine": [
       {
         "quote": "Well that's an escalation..",
         "sourceUrl": "https://www.youtube.com/watch?v=5-7y1TQUuTg",
@@ -104,58 +105,50 @@
         "timestamp": "2026-03-20T06:00:06+00:00"
       },
       {
-        "quote": "the US is lifting sanctions on Iran to keep gas prices down",
-        "sourceUrl": "https://www.youtube.com/shorts/Qoib1Ta5NEI",
-        "platform": "youtube",
-        "timestamp": "2026-03-20T02:18:17+00:00"
-      },
-      {
-        "quote": "everybody PANIC now!!!",
-        "sourceUrl": "https://www.youtube.com/watch?v=4i98GMlhPcc",
-        "platform": "youtube",
-        "timestamp": "2026-03-20T00:46:03+00:00"
-      },
-      {
         "quote": "\u201c\ud83d\ude2c we didn\u2019t know Israel was gonna do that\u201d",
         "sourceUrl": "https://www.youtube.com/shorts/6cH5vl76eUQ",
         "platform": "youtube",
         "timestamp": "2026-03-19T22:00:42+00:00"
-      },
+      }
+    ],
+    "iran-conflict": [
+      {
+        "quote": "the US is lifting sanctions on Iran to keep gas prices down",
+        "sourceUrl": "https://www.youtube.com/shorts/Qoib1Ta5NEI",
+        "platform": "youtube",
+        "timestamp": "2026-03-20T02:18:17+00:00"
+      }
+    ],
+    "media-press": [
       {
         "quote": "Don't fall for this propaganda...",
         "sourceUrl": "https://www.youtube.com/watch?v=I8hc8hIEvKU",
         "platform": "youtube",
         "timestamp": "2026-03-19T21:05:49+00:00"
-      },
+      }
+    ],
+    "foreign-policy-diplomacy": [
       {
         "quote": "the death of US empire",
         "sourceUrl": "https://www.youtube.com/shorts/0EY72Nx0-k4",
         "platform": "youtube",
         "timestamp": "2026-03-19T20:50:28+00:00"
-      },
+      }
+    ],
+    "military-defense": [
       {
         "quote": "the US military is officially cooked",
         "sourceUrl": "https://www.youtube.com/shorts/I77-3cy9Qpc",
         "platform": "youtube",
         "timestamp": "2026-03-19T19:00:29+00:00"
-      },
-      {
-        "quote": "It's Absolutely Cooked...",
-        "sourceUrl": "https://www.youtube.com/watch?v=GXByqc1mpbk",
-        "platform": "youtube",
-        "timestamp": "2026-03-19T13:15:05+00:00"
-      },
+      }
+    ],
+    "culture-war": [
       {
         "quote": "three idiots to describe america",
         "sourceUrl": "https://www.youtube.com/shorts/tkpCUr8G1OU",
         "platform": "youtube",
         "timestamp": "2026-03-19T02:43:24+00:00"
-      },
-      {
-        "quote": "THIS IS A CULT!",
-        "sourceUrl": "https://www.youtube.com/watch?v=YpvjP-_5Mxs",
-        "platform": "youtube",
-        "timestamp": "2026-03-19T01:34:41+00:00"
       }
     ]
   }
