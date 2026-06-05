@@ -1,9 +1,22 @@
 {
   "voiceId": "thomas-friedman",
   "voiceName": "Thomas Friedman",
-  "collectedAt": "2026-06-05T00:43:29.346989",
+  "collectedAt": "2026-06-05T14:22:21.423572",
   "date": "2026-06-05",
   "posts": [
+    {
+      "voiceId": "thomas-friedman",
+      "voiceName": "Thomas Friedman",
+      "platform": "x",
+      "text": "My column:  Trump Has Failed as Commander in Chief nytimes.com/2026/06/02/opini\u2026",
+      "sourceUrl": "https://x.com/tomfriedman/status/2061893323447492702",
+      "timestamp": "2026-06-02T19:30:51+00:00",
+      "type": "tweet",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "My column:  Trump Has Failed as Commander in Chief nytimes.com/2026/06/02/opini\u2026"
+    },
     {
       "voiceId": "thomas-friedman",
       "voiceName": "Thomas Friedman",
@@ -13,7 +26,7 @@
       "timestamp": "2026-06-03T21:45:02+00:00",
       "type": "tweet",
       "topic": "israel-palestine",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "lean",
       "quote": "Just started reading Dr. Shoshan Haran\u2019s gripping book ``Mission in Captivity.\u2019\u2019 bit.ly/4vtCmy1 It will make a great play one day. It\u2019s the story of how Hamas gunmen on October 7, 2023, killed her husband, sister, and brother-in-law in Kibbutz Be\u2019eri. Then they kidnapped Haran into Gaza with her dau"
     },
@@ -34,25 +47,12 @@
       "voiceId": "thomas-friedman",
       "voiceName": "Thomas Friedman",
       "platform": "x",
-      "text": "My column:  Trump Has Failed as Commander in Chief nytimes.com/2026/06/02/opini\u2026",
-      "sourceUrl": "https://x.com/tomfriedman/status/2061893323447492702",
-      "timestamp": "2026-06-02T19:30:51+00:00",
-      "type": "tweet",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "quote": "My column:  Trump Has Failed as Commander in Chief nytimes.com/2026/06/02/opini\u2026"
-    },
-    {
-      "voiceId": "thomas-friedman",
-      "voiceName": "Thomas Friedman",
-      "platform": "x",
       "text": "It\u2019s Crow, Mr. Trump, Not Lobster nytimes.com/2026/05/26/opini\u2026",
       "sourceUrl": "https://x.com/tomfriedman/status/2059608070104272942",
       "timestamp": "2026-05-27T12:10:04+00:00",
       "type": "tweet",
       "topic": "trump-administration",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "It\u2019s Crow, Mr. Trump, Not Lobster nytimes.com/2026/05/26/opini\u2026"
     },
@@ -170,7 +170,7 @@
       "type": "tweet",
       "topic": "israel-palestine",
       "relevance": "high",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "My column: How Israel Lost Its Way and How Trump Can Save Lebanon nytimes.com/2026/04/21/opini\u2026"
     },
     {
@@ -183,7 +183,7 @@
       "type": "tweet",
       "topic": "israel-palestine",
       "relevance": "high",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "How Israel Lost Its Way and How Trump Can Save Lebanon nytimes.com/2026/04/21/opini\u2026"
     },
     {
@@ -195,25 +195,38 @@
       "timestamp": "2026-04-08T01:18:12+00:00",
       "type": "tweet",
       "topic": "ai-technology",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "My column:  Anthropic\u2019s Restraint Is a Terrifying Warning Sign nytimes.com/2026/04/07/opini\u2026"
-    },
-    {
-      "voiceId": "thomas-friedman",
-      "voiceName": "Thomas Friedman",
-      "platform": "x",
-      "text": "Anthropic\u2019s Restraint Is a Terrifying Warning Sign nytimes.com/2026/04/07/opini\u2026",
-      "sourceUrl": "https://x.com/tomfriedman/status/2041864967960317980",
-      "timestamp": "2026-04-08T13:05:19+00:00",
-      "type": "tweet",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "strong",
-      "quote": "Anthropic\u2019s Restraint Is a Terrifying Warning Sign nytimes.com/2026/04/07/opini\u2026"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "My column:  Trump Has Failed as Commander in Chief nytimes.com/2026/06/02/opini\u2026",
+        "sourceUrl": "https://x.com/tomfriedman/status/2061893323447492702",
+        "platform": "x",
+        "timestamp": "2026-06-02T19:30:51+00:00"
+      },
+      {
+        "quote": "Trump Has Failed as Commander in Chief nytimes.com/2026/06/02/opini\u2026",
+        "sourceUrl": "https://x.com/tomfriedman/status/2062141810332348442",
+        "platform": "x",
+        "timestamp": "2026-06-03T11:58:14+00:00"
+      },
+      {
+        "quote": "It\u2019s Crow, Mr. Trump, Not Lobster nytimes.com/2026/05/26/opini\u2026",
+        "sourceUrl": "https://x.com/tomfriedman/status/2059608070104272942",
+        "platform": "x",
+        "timestamp": "2026-05-27T12:10:04+00:00"
+      },
+      {
+        "quote": "My column:  Trump Is the One Without the Cards at the Poker Table nytimes.com/2026/05/01/opini\u2026",
+        "sourceUrl": "https://x.com/tomfriedman/status/2050158015332987380",
+        "platform": "x",
+        "timestamp": "2026-05-01T10:18:55+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "Just started reading Dr. Shoshan Haran\u2019s gripping book ``Mission in Captivity.\u2019\u2019 bit.ly/4vtCmy1 It will make a great play one day. It\u2019s the story of how Hamas gunmen on October 7, 2023, killed her husband, sister, and brother-in-law in Kibbutz Be\u2019eri. Then they kidnapped Haran into Gaza with her dau",
@@ -232,32 +245,6 @@
         "sourceUrl": "https://x.com/tomfriedman/status/2046924984329605546",
         "platform": "x",
         "timestamp": "2026-04-22T12:12:00+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Trump Has Failed as Commander in Chief nytimes.com/2026/06/02/opini\u2026",
-        "sourceUrl": "https://x.com/tomfriedman/status/2062141810332348442",
-        "platform": "x",
-        "timestamp": "2026-06-03T11:58:14+00:00"
-      },
-      {
-        "quote": "My column:  Trump Has Failed as Commander in Chief nytimes.com/2026/06/02/opini\u2026",
-        "sourceUrl": "https://x.com/tomfriedman/status/2061893323447492702",
-        "platform": "x",
-        "timestamp": "2026-06-02T19:30:51+00:00"
-      },
-      {
-        "quote": "It\u2019s Crow, Mr. Trump, Not Lobster nytimes.com/2026/05/26/opini\u2026",
-        "sourceUrl": "https://x.com/tomfriedman/status/2059608070104272942",
-        "platform": "x",
-        "timestamp": "2026-05-27T12:10:04+00:00"
-      },
-      {
-        "quote": "My column:  Trump Is the One Without the Cards at the Poker Table nytimes.com/2026/05/01/opini\u2026",
-        "sourceUrl": "https://x.com/tomfriedman/status/2050158015332987380",
-        "platform": "x",
-        "timestamp": "2026-05-01T10:18:55+00:00"
       }
     ],
     "iran-conflict": [
@@ -314,12 +301,6 @@
         "sourceUrl": "https://x.com/tomfriedman/status/2041687016635588722",
         "platform": "x",
         "timestamp": "2026-04-08T01:18:12+00:00"
-      },
-      {
-        "quote": "Anthropic\u2019s Restraint Is a Terrifying Warning Sign nytimes.com/2026/04/07/opini\u2026",
-        "sourceUrl": "https://x.com/tomfriedman/status/2041864967960317980",
-        "platform": "x",
-        "timestamp": "2026-04-08T13:05:19+00:00"
       }
     ]
   }

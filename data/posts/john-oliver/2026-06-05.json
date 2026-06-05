@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "collectedAt": "2026-06-05T00:43:29.295191",
+  "collectedAt": "2026-06-05T14:22:21.365341",
   "date": "2026-06-05",
   "posts": [
     {
@@ -38,7 +38,7 @@
       "sourceUrl": "https://x.com/iamjohnoliver/status/1852100090741297206",
       "timestamp": "2024-10-31T21:27:26+00:00",
       "type": "tweet",
-      "topic": "immigration",
+      "topic": "culture-war",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Here's our piece from Sunday about Lee Greenwood's \"God Bless the USA\", why it shouldn't be played at naturalization ceremonies, and what maybe should be instead...piped.video/watch?v=P6grAoS-\u2026"
@@ -91,7 +91,7 @@
       "timestamp": "2024-09-26T13:53:27+00:00",
       "type": "tweet",
       "topic": "healthcare",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "Here's our story from Sunday about disability benefits...piped.video/watch?v=hq2s7RMR\u2026"
     },
@@ -104,7 +104,7 @@
       "timestamp": "2024-09-12T13:34:29+00:00",
       "type": "tweet",
       "topic": "education",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "Here's our story from Sunday about school lunch...piped.video/watch?v=-YypArYD\u2026"
     },
@@ -117,9 +117,22 @@
       "timestamp": "2024-08-25T21:37:26+00:00",
       "type": "tweet",
       "topic": "healthcare",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "In case you missed it, here's last Sunday's story about hospice...piped.video/watch?v=u2ii0DCR\u2026"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "x",
+      "text": "Here's our piece from Sunday about Hawaii...piped.video/watch?v=j8DxdibH\u2026",
+      "sourceUrl": "https://x.com/iamjohnoliver/status/1824138274987741240",
+      "timestamp": "2024-08-15T17:37:10+00:00",
+      "type": "tweet",
+      "topic": "climate-environment",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "Here's our piece from Sunday about Hawaii...piped.video/watch?v=j8DxdibH\u2026"
     },
     {
       "voiceId": "john-oliver",
@@ -155,7 +168,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=crzxR8enx6o",
       "timestamp": "2026-06-01T06:30:04+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "criminal-justice",
       "relevance": "high",
       "stance": "strong",
       "quote": "Trump\u2019s Pardons: Last Week Tonight with John Oliver (HBO)"
@@ -168,7 +181,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=vsXOhTmboGI",
       "timestamp": "2026-06-01T03:00:25+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "criminal-justice",
       "relevance": "high",
       "stance": "strong",
       "quote": "S13 E13: Freedom 250, Trump\u2019s Pardons &amp; Ghana Posters: 5/31/26: Last Week Tonight with John Oliver"
@@ -191,7 +204,7 @@
         "timestamp": "2024-11-21T19:16:03+00:00"
       }
     ],
-    "immigration": [
+    "culture-war": [
       {
         "quote": "Here's our piece from Sunday about Lee Greenwood's \"God Bless the USA\", why it shouldn't be played at naturalization ceremonies, and what maybe should be instead...piped.video/watch?v=P6grAoS-\u2026",
         "sourceUrl": "https://x.com/iamjohnoliver/status/1852100090741297206",
@@ -213,6 +226,18 @@
         "sourceUrl": "https://x.com/iamjohnoliver/status/1844370217000108532",
         "platform": "x",
         "timestamp": "2024-10-10T13:31:41+00:00"
+      },
+      {
+        "quote": "Trump\u2019s Pardons: Last Week Tonight with John Oliver (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=crzxR8enx6o",
+        "platform": "youtube",
+        "timestamp": "2026-06-01T06:30:04+00:00"
+      },
+      {
+        "quote": "S13 E13: Freedom 250, Trump\u2019s Pardons &amp; Ghana Posters: 5/31/26: Last Week Tonight with John Oliver",
+        "sourceUrl": "https://www.youtube.com/watch?v=vsXOhTmboGI",
+        "platform": "youtube",
+        "timestamp": "2026-06-01T03:00:25+00:00"
       }
     ],
     "supreme-court-legal": [
@@ -245,24 +270,20 @@
         "timestamp": "2024-09-12T13:34:29+00:00"
       }
     ],
+    "climate-environment": [
+      {
+        "quote": "Here's our piece from Sunday about Hawaii...piped.video/watch?v=j8DxdibH\u2026",
+        "sourceUrl": "https://x.com/iamjohnoliver/status/1824138274987741240",
+        "platform": "x",
+        "timestamp": "2024-08-15T17:37:10+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Here's our piece from Sunday about RFK Jr....piped.video/watch?v=1gUP_43J\u2026",
         "sourceUrl": "https://x.com/iamjohnoliver/status/1821533802260308140",
         "platform": "x",
         "timestamp": "2024-08-08T13:07:55+00:00"
-      },
-      {
-        "quote": "Trump\u2019s Pardons: Last Week Tonight with John Oliver (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=crzxR8enx6o",
-        "platform": "youtube",
-        "timestamp": "2026-06-01T06:30:04+00:00"
-      },
-      {
-        "quote": "S13 E13: Freedom 250, Trump\u2019s Pardons &amp; Ghana Posters: 5/31/26: Last Week Tonight with John Oliver",
-        "sourceUrl": "https://www.youtube.com/watch?v=vsXOhTmboGI",
-        "platform": "youtube",
-        "timestamp": "2026-06-01T03:00:25+00:00"
       }
     ],
     "israel-palestine": [

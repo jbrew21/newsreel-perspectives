@@ -1,7 +1,7 @@
 {
   "voiceId": "all-in-podcast",
   "voiceName": "All-In Podcast",
-  "collectedAt": "2026-06-05T00:43:29.310448",
+  "collectedAt": "2026-06-05T14:22:21.382746",
   "date": "2026-06-05",
   "posts": [
     {
@@ -51,7 +51,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=_TJFqEhxQg4",
       "timestamp": "2026-06-03T12:08:28+00:00",
       "type": "video_title",
-      "topic": "ai-technology",
+      "topic": "economy-trade",
       "relevance": "high",
       "stance": "strong",
       "quote": "Bill Ackman: Here's What the Market is MISSING"
@@ -92,7 +92,7 @@
       "type": "video_title",
       "topic": "ai-technology",
       "relevance": "high",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "Anthropic's Digital God, Pope vs AI, Job Loss Narrative Flips, Open Source Crackdown Coming?"
     },
     {
@@ -104,7 +104,7 @@
       "timestamp": "2026-05-28T14:33:28+00:00",
       "type": "video_title",
       "topic": "ai-technology",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "David Sacks: AI Will Create More Jobs, Not Destroy Them"
     },
@@ -117,8 +117,8 @@
       "timestamp": "2026-05-27T16:00:32+00:00",
       "type": "video_title",
       "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "strong",
+      "relevance": "high",
+      "stance": "lean",
       "quote": "3 Reasons Why College Students Hate AI - David Friedberg"
     },
     {
@@ -129,7 +129,7 @@
       "sourceUrl": "https://www.youtube.com/shorts/ZJFevnwiCww",
       "timestamp": "2026-05-26T14:51:04+00:00",
       "type": "video_title",
-      "topic": "ai-technology",
+      "topic": "billionaires-wealth",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Chamath Rips Cloudflare CEO\u2019s Layoff Memo: \u201cShut the f**k up. You suck at this.\u201d"
@@ -169,12 +169,6 @@
         "timestamp": "2026-06-04T18:32:07+00:00"
       },
       {
-        "quote": "Bill Ackman: Here's What the Market is MISSING",
-        "sourceUrl": "https://www.youtube.com/watch?v=_TJFqEhxQg4",
-        "platform": "youtube",
-        "timestamp": "2026-06-03T12:08:28+00:00"
-      },
-      {
         "quote": "Billionaires Impressed By New College Grads Being AI Natives: They Are Totally Cracked",
         "sourceUrl": "https://www.youtube.com/shorts/LtF6vT7l5ac",
         "platform": "youtube",
@@ -203,15 +197,23 @@
         "sourceUrl": "https://www.youtube.com/shorts/14TQ7Ww5yKs",
         "platform": "youtube",
         "timestamp": "2026-05-27T16:00:32+00:00"
-      },
+      }
+    ],
+    "economy-trade": [
+      {
+        "quote": "Bill Ackman: Here's What the Market is MISSING",
+        "sourceUrl": "https://www.youtube.com/watch?v=_TJFqEhxQg4",
+        "platform": "youtube",
+        "timestamp": "2026-06-03T12:08:28+00:00"
+      }
+    ],
+    "billionaires-wealth": [
       {
         "quote": "Chamath Rips Cloudflare CEO\u2019s Layoff Memo: \u201cShut the f**k up. You suck at this.\u201d",
         "sourceUrl": "https://www.youtube.com/shorts/ZJFevnwiCww",
         "platform": "youtube",
         "timestamp": "2026-05-26T14:51:04+00:00"
-      }
-    ],
-    "billionaires-wealth": [
+      },
       {
         "quote": "Chamath Lays Out the Case for SpaceX at $2 Trillion",
         "sourceUrl": "https://www.youtube.com/shorts/6f3yzCihfsE",

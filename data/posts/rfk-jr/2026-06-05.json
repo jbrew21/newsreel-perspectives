@@ -1,7 +1,7 @@
 {
   "voiceId": "rfk-jr",
   "voiceName": "Robert F. Kennedy Jr.",
-  "collectedAt": "2026-06-05T00:43:29.310689",
+  "collectedAt": "2026-06-05T14:22:21.383031",
   "date": "2026-06-05",
   "posts": [
     {
@@ -73,14 +73,40 @@
       "voiceId": "rfk-jr",
       "voiceName": "Robert F. Kennedy Jr.",
       "platform": "youtube",
+      "text": "United Unstoppable",
+      "sourceUrl": "https://www.youtube.com/shorts/yY3Jp36LMek",
+      "timestamp": "2024-11-09T19:10:39+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "United Unstoppable"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "youtube",
       "text": "Corruption",
       "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
       "timestamp": "2024-11-07T18:39:36+00:00",
       "type": "video_title",
-      "topic": "other",
+      "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "Corruption"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "tiktok",
+      "text": "Practicing moves for my confirmation hearing ",
+      "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7443554697325202718",
+      "timestamp": "2024-12-01T21:14:11+00:00",
+      "type": "video_caption",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Practicing moves for my confirmation hearing "
     }
   ],
   "topicSummary": {
@@ -124,12 +150,24 @@
         "timestamp": "2024-11-09T20:30:09+00:00"
       }
     ],
-    "other": [
+    "trump-administration": [
+      {
+        "quote": "United Unstoppable",
+        "sourceUrl": "https://www.youtube.com/shorts/yY3Jp36LMek",
+        "platform": "youtube",
+        "timestamp": "2024-11-09T19:10:39+00:00"
+      },
       {
         "quote": "Corruption",
         "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
         "platform": "youtube",
         "timestamp": "2024-11-07T18:39:36+00:00"
+      },
+      {
+        "quote": "Practicing moves for my confirmation hearing ",
+        "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7443554697325202718",
+        "platform": "tiktok",
+        "timestamp": "2024-12-01T21:14:11+00:00"
       }
     ]
   }
