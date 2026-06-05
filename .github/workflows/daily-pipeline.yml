@@ -46,6 +46,30 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/stories.py
 
+      - name: Verify topic index is not empty
+        run: |
+          IDX="data/posts/topic-index-$(date -u +%Y-%m-%d).json"
+          SIZE=$(stat -c%s "$IDX" 2>/dev/null || echo 0)
+          echo "Topic index: $IDX ($SIZE bytes)"
+          if [ "$SIZE" -lt 10000 ]; then
+            echo "::error::Topic index is empty or missing ($SIZE bytes). Claude steps likely failed silently — check ANTHROPIC_API_KEY."
+            exit 1
+          fi
+
+      - name: Sync to Supabase
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          pip install supabase
+          python -c "
+          import sys; sys.path.insert(0, 'scripts')
+          from pipeline import sync_to_supabase
+          ok = sync_to_supabase()
+          sys.exit(0 if ok else 1)
+          "
+
       - name: Commit and push data changes
         run: |
           git config user.name "github-actions[bot]"
