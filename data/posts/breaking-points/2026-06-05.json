@@ -1,7 +1,7 @@
 {
   "voiceId": "breaking-points",
   "voiceName": "Breaking Points",
-  "collectedAt": "2026-06-05T14:22:21.367654",
+  "collectedAt": "2026-06-05T15:16:02.992418",
   "date": "2026-06-05",
   "posts": [
     {
@@ -27,7 +27,7 @@
       "type": "video_title",
       "topic": "protests-activism",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "PROTESTS Erupt Over Ivanka, Kushner PRIVATE Albanian Island"
     },
     {
@@ -78,8 +78,8 @@
       "timestamp": "2026-06-04T16:00:32+00:00",
       "type": "video_title",
       "topic": "state-local-politics",
-      "relevance": "high",
-      "stance": "strong",
+      "relevance": "medium",
+      "stance": "lean",
       "quote": "Pratt SLIPS IN LA Mayor Race As Trump Says Its RIGGED"
     },
     {
@@ -112,12 +112,25 @@
       "voiceId": "breaking-points",
       "voiceName": "Breaking Points",
       "platform": "youtube",
+      "text": "California EARTHQUAKE: Spencer Pratt, Republicans RISE",
+      "sourceUrl": "https://www.youtube.com/watch?v=HuIhUn4YTzk",
+      "timestamp": "2026-06-03T18:00:19+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "California EARTHQUAKE: Spencer Pratt, Republicans RISE"
+    },
+    {
+      "voiceId": "breaking-points",
+      "voiceName": "Breaking Points",
+      "platform": "youtube",
       "text": "Congress PLOT To EMBED Israeli SPYWARE Into US Military",
       "sourceUrl": "https://www.youtube.com/watch?v=7YcTVxNZiHg",
       "timestamp": "2026-06-03T17:30:38+00:00",
       "type": "video_title",
-      "topic": "israel-palestine",
-      "relevance": "medium",
+      "topic": "foreign-policy-diplomacy",
+      "relevance": "high",
       "stance": "strong",
       "quote": "Congress PLOT To EMBED Israeli SPYWARE Into US Military"
     }
@@ -153,12 +166,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=UiVnmZc2raI",
         "platform": "youtube",
         "timestamp": "2026-06-04T17:00:01+00:00"
-      },
-      {
-        "quote": "Congress PLOT To EMBED Israeli SPYWARE Into US Military",
-        "sourceUrl": "https://www.youtube.com/watch?v=7YcTVxNZiHg",
-        "platform": "youtube",
-        "timestamp": "2026-06-03T17:30:38+00:00"
       }
     ],
     "economy-trade": [
@@ -175,6 +182,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=7rX7OBf3e8E",
         "platform": "youtube",
         "timestamp": "2026-06-04T16:00:32+00:00"
+      },
+      {
+        "quote": "California EARTHQUAKE: Spencer Pratt, Republicans RISE",
+        "sourceUrl": "https://www.youtube.com/watch?v=HuIhUn4YTzk",
+        "platform": "youtube",
+        "timestamp": "2026-06-03T18:00:19+00:00"
       }
     ],
     "immigration": [
@@ -191,6 +204,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=XgOA_Aj7zAY",
         "platform": "youtube",
         "timestamp": "2026-06-03T18:30:09+00:00"
+      }
+    ],
+    "foreign-policy-diplomacy": [
+      {
+        "quote": "Congress PLOT To EMBED Israeli SPYWARE Into US Military",
+        "sourceUrl": "https://www.youtube.com/watch?v=7YcTVxNZiHg",
+        "platform": "youtube",
+        "timestamp": "2026-06-03T17:30:38+00:00"
       }
     ]
   }

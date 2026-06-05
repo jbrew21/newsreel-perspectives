@@ -1,7 +1,7 @@
 {
   "voiceId": "shawn-ryan-show",
   "voiceName": "Shawn Ryan Show",
-  "collectedAt": "2026-06-05T14:22:21.389426",
+  "collectedAt": "2026-06-05T15:16:03.014828",
   "date": "2026-06-05",
   "posts": [
     {
@@ -14,7 +14,7 @@
       "type": "tweet",
       "topic": "media-personalities",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "This is Why Ben Shapiro Turned on Megyn Kelly. \ud83e\udd2f\n\n@megynkelly\n\nVideo"
     },
     {
@@ -51,10 +51,23 @@
       "sourceUrl": "https://www.youtube.com/shorts/pHJAtkJC2aw",
       "timestamp": "2026-06-04T00:00:21+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "elections",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "Did Steve Bannon Create Fake Hunter Biden Photos? \ud83d\ude33"
+    },
+    {
+      "voiceId": "shawn-ryan-show",
+      "voiceName": "Shawn Ryan Show",
+      "platform": "youtube",
+      "text": "Hunter Biden Responds to Alex Jones \ud83e\udd2f",
+      "sourceUrl": "https://www.youtube.com/shorts/WChtcD2h9oM",
+      "timestamp": "2026-06-03T22:00:34+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Hunter Biden Responds to Alex Jones \ud83e\udd2f"
     },
     {
       "voiceId": "shawn-ryan-show",
@@ -79,8 +92,21 @@
       "type": "video_caption",
       "topic": "media-personalities",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "This is Why Ben Shapiro Turned on Megyn Kelly. \ud83e\udd2f #shawnryanshow #podcast #news #didyouknow"
+    },
+    {
+      "voiceId": "shawn-ryan-show",
+      "voiceName": "Shawn Ryan Show",
+      "platform": "tiktok",
+      "text": "And Now It\u2019s Just Crickets?! \ud83d\ude33 #epsteinfiles #news #crime #shawnryanshow #podcast ",
+      "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7646897319673171231",
+      "timestamp": "2026-06-02T20:27:27+00:00",
+      "type": "video_caption",
+      "topic": "epstein-scandal",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "And Now It\u2019s Just Crickets?! \ud83d\ude33 #epsteinfiles #news #crime #shawnryanshow #podcast "
     }
   ],
   "topicSummary": {
@@ -90,12 +116,6 @@
         "sourceUrl": "https://x.com/ShawnRyanShow/status/2062206425221239195",
         "platform": "x",
         "timestamp": "2026-06-03T16:15:00+00:00"
-      },
-      {
-        "quote": "Did Steve Bannon Create Fake Hunter Biden Photos? \ud83d\ude33",
-        "sourceUrl": "https://www.youtube.com/shorts/pHJAtkJC2aw",
-        "platform": "youtube",
-        "timestamp": "2026-06-04T00:00:21+00:00"
       },
       {
         "quote": "Megyn Kelly Unloads on Ben Shapiro \ud83e\udd2f",
@@ -122,6 +142,28 @@
         "sourceUrl": "https://x.com/ShawnRyanShow/status/2061481648898867378",
         "platform": "x",
         "timestamp": "2026-06-01T16:15:00+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "Did Steve Bannon Create Fake Hunter Biden Photos? \ud83d\ude33",
+        "sourceUrl": "https://www.youtube.com/shorts/pHJAtkJC2aw",
+        "platform": "youtube",
+        "timestamp": "2026-06-04T00:00:21+00:00"
+      },
+      {
+        "quote": "Hunter Biden Responds to Alex Jones \ud83e\udd2f",
+        "sourceUrl": "https://www.youtube.com/shorts/WChtcD2h9oM",
+        "platform": "youtube",
+        "timestamp": "2026-06-03T22:00:34+00:00"
+      }
+    ],
+    "epstein-scandal": [
+      {
+        "quote": "And Now It\u2019s Just Crickets?! \ud83d\ude33 #epsteinfiles #news #crime #shawnryanshow #podcast ",
+        "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7646897319673171231",
+        "platform": "tiktok",
+        "timestamp": "2026-06-02T20:27:27+00:00"
       }
     ]
   }

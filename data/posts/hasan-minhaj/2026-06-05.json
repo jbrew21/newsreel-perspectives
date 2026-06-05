@@ -1,7 +1,7 @@
 {
   "voiceId": "hasan-minhaj",
   "voiceName": "Hasan Minhaj",
-  "collectedAt": "2026-06-05T14:22:21.371551",
+  "collectedAt": "2026-06-05T15:16:02.996478",
   "date": "2026-06-05",
   "posts": [
     {
@@ -27,7 +27,7 @@
       "type": "video_caption",
       "topic": "israel-palestine",
       "relevance": "high",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "Ayman Mohyeldin on the 2014 killings he witnessed in Gaza and how his network responded "
     },
     {
@@ -38,7 +38,7 @@
       "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7647522172197473549",
       "timestamp": "2026-06-04T12:52:39+00:00",
       "type": "video_caption",
-      "topic": "foreign-policy-diplomacy",
+      "topic": "iran-conflict",
       "relevance": "high",
       "stance": "strong",
       "quote": "\u201cWe decimated a state\u201d - Ayman Mohyeldin on how America\u2019s invasion of Iraq continues to impact the Middle East "
@@ -51,9 +51,9 @@
       "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7647220910482623757",
       "timestamp": "2026-06-03T17:23:17+00:00",
       "type": "video_caption",
-      "topic": "foreign-policy-diplomacy",
+      "topic": "iran-conflict",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "The Iraq War had Bad Guy trading cards - with Ayman Mohyeldin"
     },
     {
@@ -68,6 +68,19 @@
       "relevance": "medium",
       "stance": "strong",
       "quote": "\u201cSuck. On. This.\u201d 3-time Pulitzer Prize winner Thomas Friedman goes mask off in 2003 - with Ayman Mohyeldin"
+    },
+    {
+      "voiceId": "hasan-minhaj",
+      "voiceName": "Hasan Minhaj",
+      "platform": "tiktok",
+      "text": "Biden\u2019s \u201cdementia\u201d vs. Trump\u2019s \u201cdemented\u201d - with Dr. Sanjay Gupta ",
+      "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7646538951590825230",
+      "timestamp": "2026-06-01T21:16:57+00:00",
+      "type": "video_caption",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Biden\u2019s \u201cdementia\u201d vs. Trump\u2019s \u201cdemented\u201d - with Dr. Sanjay Gupta "
     }
   ],
   "topicSummary": {
@@ -77,7 +90,17 @@
         "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7647895570555702541",
         "platform": "tiktok",
         "timestamp": "2026-06-05T13:01:40+00:00"
-      },
+      }
+    ],
+    "israel-palestine": [
+      {
+        "quote": "Ayman Mohyeldin on the 2014 killings he witnessed in Gaza and how his network responded ",
+        "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7647610343497157902",
+        "platform": "tiktok",
+        "timestamp": "2026-06-04T18:34:22+00:00"
+      }
+    ],
+    "iran-conflict": [
       {
         "quote": "\u201cWe decimated a state\u201d - Ayman Mohyeldin on how America\u2019s invasion of Iraq continues to impact the Middle East ",
         "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7647522172197473549",
@@ -91,20 +114,20 @@
         "timestamp": "2026-06-03T17:23:17+00:00"
       }
     ],
-    "israel-palestine": [
-      {
-        "quote": "Ayman Mohyeldin on the 2014 killings he witnessed in Gaza and how his network responded ",
-        "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7647610343497157902",
-        "platform": "tiktok",
-        "timestamp": "2026-06-04T18:34:22+00:00"
-      }
-    ],
     "media-press": [
       {
         "quote": "\u201cSuck. On. This.\u201d 3-time Pulitzer Prize winner Thomas Friedman goes mask off in 2003 - with Ayman Mohyeldin",
         "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7647163991155805454",
         "platform": "tiktok",
         "timestamp": "2026-06-03T13:42:41+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "Biden\u2019s \u201cdementia\u201d vs. Trump\u2019s \u201cdemented\u201d - with Dr. Sanjay Gupta ",
+        "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7646538951590825230",
+        "platform": "tiktok",
+        "timestamp": "2026-06-01T21:16:57+00:00"
       }
     ]
   }
