@@ -487,6 +487,20 @@ def lookup_story(headline, days=None):
         print("  No collected data found. Run: python scripts/collect.py")
         return
 
+    # Staleness guard: warn loudly if the newest index is old (Apr 2026 incident:
+    # quotes from an 8-week-old index nearly shipped in the newsletter).
+    newest = get_all_dates()[0] if get_all_dates() else None
+    if newest:
+        from datetime import datetime as _dt
+        age_days = (_dt.now() - _dt.strptime(newest, '%Y-%m-%d')).days
+        if age_days > 2:
+            print(f"\n  {'!'*60}")
+            print(f"  ⚠ STALE DATA: newest topic index is {newest} ({age_days} days old).")
+            print(f"  ⚠ Quotes below are NOT current. Check the GitHub Action:")
+            print(f"  ⚠ https://github.com/jbrew21/newsreel-perspectives/actions")
+            print(f"  ⚠ Then run: git pull origin main")
+            print(f"  {'!'*60}\n")
+
     # Strategy 1: Match headline to topic tags
     available_topics = list(topic_index.keys())
     matching_topics = match_story_to_topics(headline, available_topics)
