@@ -6,6 +6,12 @@ on:
     - cron: '0 11 * * *'
   workflow_dispatch:
 
+# Never run two pipelines at once. A manual trigger queues behind an
+# in-flight scheduled run instead of racing it to the git push.
+concurrency:
+  group: daily-perspectives-pipeline
+  cancel-in-progress: false
+
 env:
   PYTHONUNBUFFERED: "1"
 
@@ -79,7 +85,19 @@ jobs:
             echo "No data changes to commit."
           else
             git commit -m "Daily pipeline: $(date -u +%Y-%m-%d)"
-            git push
+            # Collision-proof push: rebase on any concurrent push (e.g. the
+            # Render cron or a manual run), then push, retrying a few times.
+            pushed=false
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase --autostash origin main || true
+              if git push; then pushed=true; break; fi
+              echo "Push attempt $attempt failed (likely a concurrent push); re-syncing..."
+              sleep 5
+            done
+            if [ "$pushed" != "true" ]; then
+              echo "::error::Could not push after 5 attempts."
+              exit 1
+            fi
           fi
 
       - name: Trigger Render deploy
