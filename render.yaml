@@ -13,17 +13,8 @@ services:
       - key: PYTHON_VERSION
         value: "3.11.6"
 
-  # Daily pipeline cron -- runs collection + stories at 6am ET
-  - type: cron
-    name: perspectives-daily-pipeline
-    runtime: python
-    schedule: "0 11 * * *"  # 11:00 UTC = 6:00 AM ET
-    buildCommand: pip install -r requirements.txt
-    startCommand: python scripts/pipeline.py
-    envVars:
-      - key: ANTHROPIC_API_KEY
-        sync: false
-      - key: RENDER_API_KEY
-        sync: false
-      - key: PYTHON_VERSION
-        value: "3.11.6"
+  # NOTE: The daily pipeline cron that used to live here was removed.
+  # It duplicated the GitHub Actions workflow (.github/workflows/daily-pipeline.yml),
+  # which is the single source of truth for collection, clustering, the git
+  # push, the Supabase sync, and the Render deploy trigger. Running both raced
+  # on the git push. Keep exactly one scheduler.

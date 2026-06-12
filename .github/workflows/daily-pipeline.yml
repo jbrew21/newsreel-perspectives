@@ -76,6 +76,29 @@ jobs:
           sys.exit(0 if ok else 1)
           "
 
+      - name: Prune daily aggregate files older than 30 days
+        run: |
+          python3 - <<'PY'
+          import os, glob, datetime, subprocess
+          root = 'data/posts'
+          cutoff = datetime.date.today() - datetime.timedelta(days=30)
+          removed = 0
+          # Only the top-level dated AGGREGATE files. Per-person archives
+          # (data/posts/<name>/<date>.json) are intentionally left intact.
+          for prefix in ('topic-index-', 'stories-', 'fractures-'):
+              for path in glob.glob(os.path.join(root, prefix + '*.json')):
+                  datestr = os.path.basename(path)[len(prefix):-5]
+                  try:
+                      d = datetime.date.fromisoformat(datestr)
+                  except ValueError:
+                      continue  # not a plain dated file; skip
+                  if d < cutoff:
+                      subprocess.run(['git', 'rm', '-q', '--', path], check=False)
+                      removed += 1
+          print(f'Pruned {removed} aggregate files older than {cutoff} '
+                '(the site only ever reads the latest).')
+          PY
+
       - name: Commit and push data changes
         run: |
           git config user.name "github-actions[bot]"
