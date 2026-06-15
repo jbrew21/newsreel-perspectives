@@ -1,7 +1,7 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "collectedAt": "2026-06-15T14:54:16.486534",
+  "collectedAt": "2026-06-15T16:45:27.588577",
   "date": "2026-06-15",
   "posts": [
     {
@@ -25,7 +25,7 @@
       "sourceUrl": "https://x.com/PodSaveAmerica/status/2065441797979959501",
       "timestamp": "2026-06-12T14:31:13+00:00",
       "type": "tweet",
-      "topic": "trump-policy",
+      "topic": "criminal-justice",
       "relevance": "medium",
       "stance": "strong",
       "quote": "If Republicans win, they have a secret plan to take your money and give it to criminals who beat cops and abused children.\n\nVideo"
@@ -40,7 +40,7 @@
       "type": "tweet",
       "topic": "economy-trade",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Donald Trump: \"I love the inflation.\"\n\nVideo"
     },
     {
@@ -131,7 +131,7 @@
       "type": "tweet",
       "topic": "state-local-politics",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "Jon Favreau on the lack of strong communicators and leadership in the California Democratic Party.\n\nVideo"
     },
     {
@@ -144,8 +144,21 @@
       "type": "tweet",
       "topic": "immigration",
       "relevance": "high",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Homeland Security Secretary Markwayne Mullin wouldn't rule out plan to shut down international air travel to sanctuary cities across the United States.\n\nVideo"
+    },
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "x",
+      "text": "Alex Wagner on ICE detention centers.\n\nVideo",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2062929021034233868",
+      "timestamp": "2026-06-05T16:06:20+00:00",
+      "type": "tweet",
+      "topic": "immigration",
+      "relevance": "high",
+      "stance": "lean",
+      "quote": "Alex Wagner on ICE detention centers.\n\nVideo"
     }
   ],
   "topicSummary": {
@@ -169,7 +182,7 @@
         "timestamp": "2026-06-09T14:03:46+00:00"
       }
     ],
-    "trump-policy": [
+    "criminal-justice": [
       {
         "quote": "If Republicans win, they have a secret plan to take your money and give it to criminals who beat cops and abused children.\n\nVideo",
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2065441797979959501",
@@ -229,6 +242,12 @@
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2062945246044967159",
         "platform": "x",
         "timestamp": "2026-06-05T17:10:48+00:00"
+      },
+      {
+        "quote": "Alex Wagner on ICE detention centers.\n\nVideo",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2062929021034233868",
+        "platform": "x",
+        "timestamp": "2026-06-05T16:06:20+00:00"
       }
     ]
   }
