@@ -869,6 +869,42 @@ Respond with ONLY the canonical slug, nothing else."""
     return 'other'
 
 
+def _parse_categorization_json(text):
+    """Robustly extract a list of {index,topic,relevance,stance} dicts from a
+    Claude response that may be wrapped in code fences, have trailing prose,
+    or be truncated mid-array. Returns a list (possibly empty). This replaces a
+    bare re.search + json.loads that failed (~15% of voices) with 'Extra data'
+    errors and dumped those voices to 'uncategorized'."""
+    if not text:
+        return []
+    t = text.strip()
+    # Strip markdown code fences (```json ... ```)
+    if t.startswith('```'):
+        t = re.sub(r'^```[a-zA-Z]*\s*', '', t)
+        t = re.sub(r'\s*```$', '', t).strip()
+    # 1) Decode the first complete JSON array; raw_decode ignores trailing prose
+    #    (the exact cause of the "Extra data" failures).
+    start = t.find('[')
+    if start != -1:
+        try:
+            arr, _ = json.JSONDecoder().raw_decode(t[start:])
+            if isinstance(arr, list):
+                return arr
+        except Exception:
+            pass
+    # 2) Salvage path (handles truncated arrays / multi-block output): pull each
+    #    individual {...} object and parse it independently.
+    items = []
+    for m in re.finditer(r'\{[^{}]*\}', t):
+        try:
+            obj = json.loads(m.group())
+            if 'index' in obj:
+                items.append(obj)
+        except Exception:
+            continue
+    return items
+
+
 def categorize_posts(voice_name, posts):
     """Use Claude to categorize posts by news topic and filter garbage."""
     if not ANTHROPIC_API_KEY or not posts:
@@ -954,9 +990,8 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
             _usage_stats['total_output_tokens_est'] += usage['output_tokens']
         else:
             _usage_stats['total_output_tokens_est'] += 500  # rough estimate per call
-        json_match = re.search(r'\[[\s\S]*\]', result_text)
-        if json_match:
-            categorized = json.loads(json_match.group())
+        categorized = _parse_categorization_json(result_text)
+        if categorized:
             for item in categorized:
                 idx = item.get('index', -1)
                 if 0 <= idx < len(posts):

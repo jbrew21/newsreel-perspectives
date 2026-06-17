@@ -722,15 +722,15 @@
 
         document.title = voice.name + ' -- Perspectives';
 
-        // Load posts (try today, yesterday, day before)
+        // Load posts from the last 7 days and merge them, so the profile
+        // shows accumulated recent history -- not just a single day.
         var now = new Date();
-        var dates = [
-          now.toISOString().split('T')[0],
-          new Date(now - 86400000).toISOString().split('T')[0],
-          new Date(now - 172800000).toISOString().split('T')[0]
-        ];
+        var dates = [];
+        for (var dd = 0; dd < 7; dd++) {
+          dates.push(new Date(now - dd * 86400000).toISOString().split('T')[0]);
+        }
 
-        return tryLoadPosts(dates, 0).then(function(postData) {
+        return loadAllPosts(dates).then(function(postData) {
           return loadStories().then(function(storyItems) {
             renderProfile(voice, voices, postData, storyItems);
           });
@@ -753,6 +753,43 @@
       .catch(function() {
         return tryLoadPosts(dates, idx + 1);
       });
+  }
+
+  /* Load every available daily file across `dates` and merge into one
+     postData object (deduped), so the profile reflects accumulated history. */
+  function loadAllPosts(dates) {
+    var voiceId = getVoiceIdFromPath();
+    var fetches = dates.map(function(d) {
+      return fetch(BASE + '/data/posts/' + voiceId + '/' + d + '.json')
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .catch(function() { return null; });
+    });
+    return Promise.all(fetches).then(function(results) {
+      var merged = { voiceId: voiceId, posts: [], topicSummary: {} };
+      var seenPost = {}, seenQuote = {};
+      results.forEach(function(pd) {
+        if (!pd) return;
+        if (!merged.voiceName && pd.voiceName) merged.voiceName = pd.voiceName;
+        (pd.posts || []).forEach(function(p) {
+          var k = p.sourceUrl || (p.platform + '|' + (p.text || '').substring(0, 80));
+          if (seenPost[k]) return;
+          seenPost[k] = true;
+          merged.posts.push(p);
+        });
+        var ts = pd.topicSummary || {};
+        for (var topic in ts) {
+          if (!ts.hasOwnProperty(topic)) continue;
+          if (!merged.topicSummary[topic]) merged.topicSummary[topic] = [];
+          (ts[topic] || []).forEach(function(q) {
+            var qk = topic + '|' + (q.sourceUrl || (q.quote || q.text || '').substring(0, 80));
+            if (seenQuote[qk]) return;
+            seenQuote[qk] = true;
+            merged.topicSummary[topic].push(q);
+          });
+        }
+      });
+      return (merged.posts.length || Object.keys(merged.topicSummary).length) ? merged : null;
+    });
   }
 
   function loadStories() {
