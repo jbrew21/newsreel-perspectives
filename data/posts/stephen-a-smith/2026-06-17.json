@@ -1,7 +1,7 @@
 {
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
-  "collectedAt": "2026-06-17T17:16:29.706722",
+  "collectedAt": "2026-06-17T19:44:17.687887",
   "date": "2026-06-17",
   "posts": [
     {
@@ -40,8 +40,21 @@
       "type": "tweet",
       "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "President Trump had a lot to say. So I had some stuff to say too \npiped.video/imdCWruqHqk?is=Emd6\u2026"
+    },
+    {
+      "voiceId": "stephen-a-smith",
+      "voiceName": "Stephen A. Smith",
+      "platform": "youtube",
+      "text": "Can America Be Fixed? Liberal and Conservative Battle It Out!",
+      "sourceUrl": "https://www.youtube.com/watch?v=n4K894yfb9Y",
+      "timestamp": "2026-06-11T17:05:26+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Can America Be Fixed? Liberal and Conservative Battle It Out!"
     },
     {
       "voiceId": "stephen-a-smith",
@@ -73,12 +86,38 @@
       "voiceId": "stephen-a-smith",
       "voiceName": "Stephen A. Smith",
       "platform": "youtube",
+      "text": "CALIFORNIA TURNING RED?!",
+      "sourceUrl": "https://www.youtube.com/shorts/JHgEPpTrOtg",
+      "timestamp": "2026-06-04T01:15:00+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "high",
+      "stance": "lean",
+      "quote": "CALIFORNIA TURNING RED?!"
+    },
+    {
+      "voiceId": "stephen-a-smith",
+      "voiceName": "Stephen A. Smith",
+      "platform": "youtube",
+      "text": "DAVE RUBIN FACES SEXUAL DISCRIMINATION FROM THE LEFT?! #daverubin",
+      "sourceUrl": "https://www.youtube.com/shorts/Y2SbAxOUnkU",
+      "timestamp": "2026-06-04T00:11:18+00:00",
+      "type": "video_title",
+      "topic": "gender-lgbtq",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "DAVE RUBIN FACES SEXUAL DISCRIMINATION FROM THE LEFT?! #daverubin"
+    },
+    {
+      "voiceId": "stephen-a-smith",
+      "voiceName": "Stephen A. Smith",
+      "platform": "youtube",
       "text": "Trumps Biggest Advantage: The Dems!",
       "sourceUrl": "https://www.youtube.com/watch?v=cSACyOSVDJ0",
       "timestamp": "2026-06-03T22:50:21+00:00",
       "type": "video_title",
       "topic": "elections",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
       "quote": "Trumps Biggest Advantage: The Dems!"
     }
@@ -118,12 +157,34 @@
         "timestamp": "2026-06-09T23:27:46+00:00"
       }
     ],
+    "culture-war": [
+      {
+        "quote": "Can America Be Fixed? Liberal and Conservative Battle It Out!",
+        "sourceUrl": "https://www.youtube.com/watch?v=n4K894yfb9Y",
+        "platform": "youtube",
+        "timestamp": "2026-06-11T17:05:26+00:00"
+      }
+    ],
     "elections": [
+      {
+        "quote": "CALIFORNIA TURNING RED?!",
+        "sourceUrl": "https://www.youtube.com/shorts/JHgEPpTrOtg",
+        "platform": "youtube",
+        "timestamp": "2026-06-04T01:15:00+00:00"
+      },
       {
         "quote": "Trumps Biggest Advantage: The Dems!",
         "sourceUrl": "https://www.youtube.com/watch?v=cSACyOSVDJ0",
         "platform": "youtube",
         "timestamp": "2026-06-03T22:50:21+00:00"
+      }
+    ],
+    "gender-lgbtq": [
+      {
+        "quote": "DAVE RUBIN FACES SEXUAL DISCRIMINATION FROM THE LEFT?! #daverubin",
+        "sourceUrl": "https://www.youtube.com/shorts/Y2SbAxOUnkU",
+        "platform": "youtube",
+        "timestamp": "2026-06-04T00:11:18+00:00"
       }
     ]
   }

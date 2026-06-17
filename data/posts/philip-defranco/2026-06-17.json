@@ -1,7 +1,7 @@
 {
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
-  "collectedAt": "2026-06-17T17:16:29.704038",
+  "collectedAt": "2026-06-17T19:44:17.685348",
   "date": "2026-06-17",
   "posts": [
     {
@@ -51,10 +51,23 @@
       "sourceUrl": "https://www.youtube.com/watch?v=jLwUexiNoTY",
       "timestamp": "2026-06-15T21:32:18+00:00",
       "type": "video_title",
-      "topic": "celebrity-entertainment",
+      "topic": "media-personalities",
       "relevance": "medium",
       "stance": "lean",
       "quote": "Joe Rogan Caught in &quot;Michelle Obama is a Man&quot; Scandal &amp; I'm Giving $1,000,000 Away"
+    },
+    {
+      "voiceId": "philip-defranco",
+      "voiceName": "Philip DeFranco",
+      "platform": "youtube",
+      "text": "Scott Pelley Just Exposed Bari Weiss",
+      "sourceUrl": "https://www.youtube.com/shorts/MhC0cDQX_vs",
+      "timestamp": "2026-06-09T00:00:16+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Scott Pelley Just Exposed Bari Weiss"
     },
     {
       "voiceId": "philip-defranco",
@@ -78,7 +91,7 @@
       "timestamp": "2026-06-08T20:58:29+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "The Wild Truth Behind Trump\u2019s New Media Hit List &amp; Meltdown"
     },
@@ -91,7 +104,7 @@
       "timestamp": "2026-06-08T20:39:48+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Trump's Humiliating Meet The Press Meltdown Was Worse Than You Think"
     },
@@ -99,14 +112,27 @@
       "voiceId": "philip-defranco",
       "voiceName": "Philip DeFranco",
       "platform": "tiktok",
-      "text": "Starbucks Korea Shutting Down 2,000 Stores After Pro-Dictatorship Marketing Mess Up #Starbucks #SouthKorea",
-      "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7652079866291997983",
-      "timestamp": "2026-06-16T19:38:25+00:00",
+      "text": "Luigi Mangione's Just Going Admit He Did It... with a \"but...\" #Luigi ",
+      "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7652419182276906271",
+      "timestamp": "2026-06-17T17:35:00+00:00",
       "type": "video_caption",
-      "topic": "uk-world-politics",
+      "topic": "terrorism",
+      "relevance": "high",
+      "stance": "lean",
+      "quote": "Luigi Mangione's Just Going Admit He Did It... with a \"but...\" #Luigi "
+    },
+    {
+      "voiceId": "philip-defranco",
+      "voiceName": "Philip DeFranco",
+      "platform": "tiktok",
+      "text": "The 'Cheap' GLP-1 Trap Nobody's Talking About #USA #America",
+      "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7650554002110745886",
+      "timestamp": "2026-06-12T16:57:15+00:00",
+      "type": "video_caption",
+      "topic": "healthcare",
       "relevance": "medium",
       "stance": "lean",
-      "quote": "Starbucks Korea Shutting Down 2,000 Stores After Pro-Dictatorship Marketing Mess Up #Starbucks #SouthKorea"
+      "quote": "The 'Cheap' GLP-1 Trap Nobody's Talking About #USA #America"
     },
     {
       "voiceId": "philip-defranco",
@@ -117,7 +143,7 @@
       "timestamp": "2026-06-12T12:00:00+00:00",
       "type": "video_caption",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "lean",
       "quote": "One Appointment Just Broke America's Entire Spy Network  #USA #America"
     },
@@ -186,7 +212,7 @@
         "timestamp": "2026-06-11T23:06:16+00:00"
       }
     ],
-    "celebrity-entertainment": [
+    "media-personalities": [
       {
         "quote": "Joe Rogan Caught in &quot;Michelle Obama is a Man&quot; Scandal &amp; I'm Giving $1,000,000 Away",
         "sourceUrl": "https://www.youtube.com/watch?v=jLwUexiNoTY",
@@ -194,12 +220,28 @@
         "timestamp": "2026-06-15T21:32:18+00:00"
       }
     ],
-    "uk-world-politics": [
+    "media-press": [
       {
-        "quote": "Starbucks Korea Shutting Down 2,000 Stores After Pro-Dictatorship Marketing Mess Up #Starbucks #SouthKorea",
-        "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7652079866291997983",
+        "quote": "Scott Pelley Just Exposed Bari Weiss",
+        "sourceUrl": "https://www.youtube.com/shorts/MhC0cDQX_vs",
+        "platform": "youtube",
+        "timestamp": "2026-06-09T00:00:16+00:00"
+      }
+    ],
+    "terrorism": [
+      {
+        "quote": "Luigi Mangione's Just Going Admit He Did It... with a \"but...\" #Luigi ",
+        "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7652419182276906271",
         "platform": "tiktok",
-        "timestamp": "2026-06-16T19:38:25+00:00"
+        "timestamp": "2026-06-17T17:35:00+00:00"
+      }
+    ],
+    "healthcare": [
+      {
+        "quote": "The 'Cheap' GLP-1 Trap Nobody's Talking About #USA #America",
+        "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7650554002110745886",
+        "platform": "tiktok",
+        "timestamp": "2026-06-12T16:57:15+00:00"
       }
     ]
   }

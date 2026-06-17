@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-06-17T17:16:29.705520",
+  "collectedAt": "2026-06-17T19:44:17.686832",
   "date": "2026-06-17",
   "posts": [
     {
@@ -13,7 +13,7 @@
       "timestamp": "2026-06-16T15:07:53+00:00",
       "type": "tweet",
       "topic": "epstein-scandal",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "lean",
       "quote": "Epstein foul play? #RTOvertime @RealTimers\n\nVideo"
     },
@@ -29,19 +29,6 @@
       "relevance": "medium",
       "stance": "strong",
       "quote": "Being straight-up crazy is just not a dealbreaker anymore in politics.\n\nVideo"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "x",
-      "text": "The White House UFC fight is on Sunday.  There\u2019s a 60% chance of rain.  And 100% chance of Axe Body Spray.\n\nVideo",
-      "sourceUrl": "https://x.com/billmaher/status/2065633160336175203",
-      "timestamp": "2026-06-13T03:11:37+00:00",
-      "type": "tweet",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "lean",
-      "quote": "The White House UFC fight is on Sunday.  There\u2019s a 60% chance of rain.  And 100% chance of Axe Body Spray.\n\nVideo"
     },
     {
       "voiceId": "bill-maher",
@@ -92,7 +79,7 @@
       "type": "video_title",
       "topic": "billionaires-wealth",
       "relevance": "high",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Should We Outlaw Trillionaires? | Real Time with Bill Maher (HBO)"
     },
     {
@@ -104,8 +91,8 @@
       "timestamp": "2026-06-13T03:00:16+00:00",
       "type": "video_title",
       "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
+      "relevance": "high",
+      "stance": "strong",
       "quote": "A New Breed of Politician | Real Time with Bill Maher (HBO)"
     },
     {
@@ -117,9 +104,35 @@
       "timestamp": "2026-06-06T03:00:21+00:00",
       "type": "video_title",
       "topic": "ai-technology",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "New Rule: Grad GPT | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "VP Mike Pence on Jan. 6th | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=g9FgaCuRgOA",
+      "timestamp": "2026-06-06T03:00:00+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "VP Mike Pence on Jan. 6th | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "New Rule: Let's Be Frank | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=7sxid03nCcQ",
+      "timestamp": "2026-05-30T03:00:33+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "New Rule: Let's Be Frank | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -156,15 +169,15 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Mpb4jhcGw8A",
         "platform": "youtube",
         "timestamp": "2026-06-13T03:00:16+00:00"
+      },
+      {
+        "quote": "New Rule: Let's Be Frank | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=7sxid03nCcQ",
+        "platform": "youtube",
+        "timestamp": "2026-05-30T03:00:33+00:00"
       }
     ],
     "trump-administration": [
-      {
-        "quote": "The White House UFC fight is on Sunday.  There\u2019s a 60% chance of rain.  And 100% chance of Axe Body Spray.\n\nVideo",
-        "sourceUrl": "https://x.com/billmaher/status/2065633160336175203",
-        "platform": "x",
-        "timestamp": "2026-06-13T03:11:37+00:00"
-      },
       {
         "quote": "Can\u2019t we all just celebrate America itself and leave Trump out of it?\n\nVideo",
         "sourceUrl": "https://x.com/billmaher/status/2064441457893896548",
@@ -206,6 +219,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=49iA5k1hiHU",
         "platform": "youtube",
         "timestamp": "2026-06-13T03:00:24+00:00"
+      }
+    ],
+    "criminal-justice": [
+      {
+        "quote": "VP Mike Pence on Jan. 6th | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=g9FgaCuRgOA",
+        "platform": "youtube",
+        "timestamp": "2026-06-06T03:00:00+00:00"
       }
     ]
   }
