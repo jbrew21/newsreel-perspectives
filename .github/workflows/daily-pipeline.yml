@@ -2,8 +2,14 @@ name: Daily Perspectives Pipeline
 
 on:
   schedule:
-    # 11:00 UTC = 6:00 AM ET
-    - cron: '0 11 * * *'
+    # Off-peak, odd-minute slots to dodge GitHub's congested top-of-hour
+    # scheduler (which was drifting the old '0 11' run 2-5 hours late and
+    # missing the 7 AM ET deadline). 06:17 UTC = ~2 AM ET primary run;
+    # 08:17 UTC = ~4 AM ET backstop in case the first is dropped. Both
+    # finish well before the 7 AM ET local git-pull. Index date is stamped
+    # from the runner's UTC clock, so any run after 00:00 UTC is "today."
+    - cron: '17 6 * * *'
+    - cron: '17 8 * * *'
   workflow_dispatch:
 
 # Never run two pipelines at once. A manual trigger queues behind an
@@ -109,10 +115,24 @@ jobs:
           else
             git commit -m "Daily pipeline: $(date -u +%Y-%m-%d)"
             # Collision-proof push: rebase on any concurrent push (e.g. the
-            # Render cron or a manual run), then push, retrying a few times.
+            # backstop cron or a manual run), then push, retrying a few times.
+            # Conflicts only ever occur in regenerated data/ files, so resolve
+            # them in favor of OUR freshly-built version (--theirs during a
+            # rebase = the commit being replayed = ours). Always abort a wedged
+            # rebase before retrying so we never loop on unmerged files.
             pushed=false
             for attempt in 1 2 3 4 5; do
-              git pull --rebase --autostash origin main || true
+              git fetch origin main || true
+              if ! git rebase origin/main; then
+                git checkout --theirs -- data/ 2>/dev/null || true
+                git add data/
+                if ! GIT_EDITOR=true git rebase --continue; then
+                  git rebase --abort || true
+                  echo "Push attempt $attempt: rebase failed; re-syncing..."
+                  sleep 5
+                  continue
+                fi
+              fi
               if git push; then pushed=true; break; fi
               echo "Push attempt $attempt failed (likely a concurrent push); re-syncing..."
               sleep 5
