@@ -42,7 +42,18 @@ _usage_stats = {
     'total_output_tokens_est': 0,
 }
 
-UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+# Full, realistic Chrome UA. The previous value was truncated at
+# "AppleWebKit/537.36" (no KHTML/Chrome/Safari tail), which Substack's
+# Cloudflare bot protection flagged as non-browser and 403'd.
+UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
+      '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36')
+
+# Browser-like header set for feeds behind bot protection (Substack et al.)
+BROWSER_HEADERS = {
+    'User-Agent': UA,
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
 
 # Load env
 def load_env():
@@ -204,24 +215,34 @@ def fetch_x_posts(voice):
         except Exception:
             _x_failures['rssapp'] += 1
 
-    # Try each Nitter instance in order
-    for instance in NITTER_INSTANCES:
-        try:
-            url = f'{instance}/{x_handle}/rss'
-            req = urllib.request.Request(url, headers={'User-Agent': UA})
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                rss = resp.read().decode('utf-8')
+    # The public Nitter ecosystem has degraded to ~1 reliable instance, so a
+    # single rate-limit hiccup during a full run silently drops a voice to zero
+    # posts. Sweep the instances twice with a short backoff before giving up.
+    user_missing = False
+    for sweep in range(2):
+        for instance in NITTER_INSTANCES:
+            try:
+                url = f'{instance}/{x_handle}/rss'
+                req = urllib.request.Request(url, headers={'User-Agent': UA})
+                with urllib.request.urlopen(req, timeout=10) as resp:
+                    rss = resp.read().decode('utf-8')
 
-            # Extract the hostname for URL replacement (e.g. "nitter.net")
-            nitter_host = instance.replace('https://', '').replace('http://', '')
-            posts = _parse_nitter_rss(voice, rss, nitter_host)
-            if posts:
-                _x_failures['successes'] += 1
-                return posts
-        except Exception as e:
-            if '404' in str(e):
-                break  # user doesn't exist, no point trying other instances
-            continue  # instance down, try next
+                # Extract the hostname for URL replacement (e.g. "nitter.net")
+                nitter_host = instance.replace('https://', '').replace('http://', '')
+                posts = _parse_nitter_rss(voice, rss, nitter_host)
+                if posts:
+                    _x_failures['successes'] += 1
+                    return posts
+            except Exception as e:
+                if '404' in str(e):
+                    user_missing = True
+                    break  # user doesn't exist, no point trying other instances
+                continue  # instance down/rate-limited, try next
+        if user_missing:
+            break
+        if sweep == 0:
+            import time as _t
+            _t.sleep(3)  # let a transient rate-limit clear, then retry the sweep
 
     # All methods failed for this voice
     _x_failures['nitter'] += 1
@@ -462,9 +483,23 @@ def fetch_substack_posts(voice):
 
     posts = []
     try:
-        req = urllib.request.Request(feed_url, headers={'User-Agent': UA})
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            rss = resp.read().decode('utf-8')
+        # Substack sits behind Cloudflare; use full browser headers and retry
+        # once on a 403 (transient bot-challenge) before giving up.
+        rss = None
+        for attempt in range(2):
+            try:
+                req = urllib.request.Request(feed_url, headers=BROWSER_HEADERS)
+                with urllib.request.urlopen(req, timeout=10) as resp:
+                    rss = resp.read().decode('utf-8')
+                break
+            except urllib.error.HTTPError as he:
+                if he.code == 403 and attempt == 0:
+                    import time as _t
+                    _t.sleep(2)
+                    continue
+                raise
+        if rss is None:
+            return []
 
         items = re.findall(r'<item>(.*?)</item>', rss, re.DOTALL)
         for item in items[:15]:  # last 15 articles
