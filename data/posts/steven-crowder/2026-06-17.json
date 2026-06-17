@@ -1,9 +1,22 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-06-17T19:44:17.682070",
+  "collectedAt": "2026-06-17T22:11:14.532584",
   "date": "2026-06-17",
   "posts": [
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "This was a concealed miscarry",
+      "sourceUrl": "https://www.youtube.com/shorts/Y3xUZjDwdLI",
+      "timestamp": "2026-06-17T19:25:59+00:00",
+      "type": "video_title",
+      "topic": "abortion-reproductive",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "This was a concealed miscarry"
+    },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
@@ -68,22 +81,17 @@
       "relevance": "medium",
       "stance": "strong",
       "quote": "Democrat pride in America just hit an all-time low and the numbers are embarrassing"
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "What the Dot Com Bubble Should Teach You About AI",
-      "sourceUrl": "https://www.youtube.com/watch?v=XT7LMcVq-f4",
-      "timestamp": "2026-06-11T23:00:02+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "quote": "What the Dot Com Bubble Should Teach You About AI"
     }
   ],
   "topicSummary": {
+    "abortion-reproductive": [
+      {
+        "quote": "This was a concealed miscarry",
+        "sourceUrl": "https://www.youtube.com/shorts/Y3xUZjDwdLI",
+        "platform": "youtube",
+        "timestamp": "2026-06-17T19:25:59+00:00"
+      }
+    ],
     "protests-activism": [
       {
         "quote": "Jon Stewart's take on NYC riots will piss you off",
@@ -120,14 +128,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/FpcqlBJx5o8",
         "platform": "youtube",
         "timestamp": "2026-06-15T19:25:42+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "What the Dot Com Bubble Should Teach You About AI",
-        "sourceUrl": "https://www.youtube.com/watch?v=XT7LMcVq-f4",
-        "platform": "youtube",
-        "timestamp": "2026-06-11T23:00:02+00:00"
       }
     ]
   }
