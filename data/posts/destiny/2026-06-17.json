@@ -1,9 +1,22 @@
 {
   "voiceId": "destiny",
   "voiceName": "Destiny",
-  "collectedAt": "2026-06-17T19:44:17.687157",
+  "collectedAt": "2026-06-17T22:11:14.537952",
   "date": "2026-06-17",
   "posts": [
+    {
+      "voiceId": "destiny",
+      "voiceName": "Destiny",
+      "platform": "x",
+      "text": "How long are you going to support the Palestinians fighting? That war's been going on for almost a century now. Time to give in and throw in the towel, right?",
+      "sourceUrl": "https://x.com/TheOmniLiberal/status/2067343962638004393",
+      "timestamp": "2026-06-17T20:29:44+00:00",
+      "type": "tweet",
+      "topic": "israel-palestine",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "How long are you going to support the Palestinians fighting? That war's been going on for almost a century now. Time to give in and throw in the towel, right?"
+    },
     {
       "voiceId": "destiny",
       "voiceName": "Destiny",
@@ -33,18 +46,39 @@
     {
       "voiceId": "destiny",
       "voiceName": "Destiny",
-      "platform": "x",
-      "text": "Hasan just today discovering that conservatives have been attacking liberals and freedom of speech for years but he's never realized it since he's never been banned or deplatformed from any major platform a single time in his entire life.",
-      "sourceUrl": "https://x.com/TheOmniLiberal/status/2066311308190883982",
-      "timestamp": "2026-06-15T00:06:20+00:00",
-      "type": "tweet",
-      "topic": "free-speech-censorship",
+      "platform": "youtube",
+      "text": "HEATED Confrontation Starts When Destiny Calls Out Pro-Trump Crowd",
+      "sourceUrl": "https://www.youtube.com/shorts/nBMxY8o80qU",
+      "timestamp": "2026-06-16T17:00:19+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
       "relevance": "medium",
-      "stance": "lean",
-      "quote": "Hasan just today discovering that conservatives have been attacking liberals and freedom of speech for years but he's never realized it since he's never been banned or deplatformed from any major platform a single time in his entire life."
+      "stance": "strong",
+      "quote": "HEATED Confrontation Starts When Destiny Calls Out Pro-Trump Crowd"
+    },
+    {
+      "voiceId": "destiny",
+      "voiceName": "Destiny",
+      "platform": "youtube",
+      "text": "MAGA Gets Fact-Checked And SHUTDOWN In Live Debate",
+      "sourceUrl": "https://www.youtube.com/shorts/yDsJkZB-eo8",
+      "timestamp": "2026-06-12T14:00:37+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "MAGA Gets Fact-Checked And SHUTDOWN In Live Debate"
     }
   ],
   "topicSummary": {
+    "israel-palestine": [
+      {
+        "quote": "How long are you going to support the Palestinians fighting? That war's been going on for almost a century now. Time to give in and throw in the towel, right?",
+        "sourceUrl": "https://x.com/TheOmniLiberal/status/2067343962638004393",
+        "platform": "x",
+        "timestamp": "2026-06-17T20:29:44+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "FINALLY YES, someone can speak honestly about Biden's senility!!!! I have waited so long for a brave soul in the media SOMEWHERE to mention this, to speak up, to do his patriotic duty!!!!!! You have my deep respect @JamieMetzl for the incredibly bravery and patriotism it must have taken you to come ",
@@ -61,12 +95,18 @@
         "timestamp": "2026-06-15T03:23:05+00:00"
       }
     ],
-    "free-speech-censorship": [
+    "trump-policy": [
       {
-        "quote": "Hasan just today discovering that conservatives have been attacking liberals and freedom of speech for years but he's never realized it since he's never been banned or deplatformed from any major platform a single time in his entire life.",
-        "sourceUrl": "https://x.com/TheOmniLiberal/status/2066311308190883982",
-        "platform": "x",
-        "timestamp": "2026-06-15T00:06:20+00:00"
+        "quote": "HEATED Confrontation Starts When Destiny Calls Out Pro-Trump Crowd",
+        "sourceUrl": "https://www.youtube.com/shorts/nBMxY8o80qU",
+        "platform": "youtube",
+        "timestamp": "2026-06-16T17:00:19+00:00"
+      },
+      {
+        "quote": "MAGA Gets Fact-Checked And SHUTDOWN In Live Debate",
+        "sourceUrl": "https://www.youtube.com/shorts/yDsJkZB-eo8",
+        "platform": "youtube",
+        "timestamp": "2026-06-12T14:00:37+00:00"
       }
     ]
   }
