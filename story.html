@@ -310,6 +310,10 @@
     padding-left: var(--space-3);
     border-left: 2px solid var(--bg-hover);
   }
+  .voice-row-quote-link { text-decoration: none; display: block; }
+  .voice-row-quote-link:hover .voice-row-quote {
+    border-left-color: var(--accent); color: var(--text-primary);
+  }
   .voice-row-source {
     font-size: var(--text-xs); color: var(--accent);
     text-decoration: none; margin-top: var(--space-2);
@@ -830,7 +834,9 @@
               (pLabel ? '<span class="voice-row-platform">' + esc(pLabel) + '</span>' : '') +
             '</div>' +
             (lens ? '<div class="voice-row-lens">' + esc(lens) + '</div>' : '') +
-            (quote ? '<blockquote class="voice-row-quote">"' + esc(quote) + '"</blockquote>' : '') +
+            (quote ? (v.sourceUrl
+              ? '<a class="voice-row-quote-link" href="' + safeHref(v.sourceUrl) + '" target="_blank" rel="noopener"><blockquote class="voice-row-quote">"' + esc(quote) + '"</blockquote></a>'
+              : '<blockquote class="voice-row-quote">"' + esc(quote) + '"</blockquote>') : '') +
             (v.sourceUrl ? '<a class="voice-row-source" href="' + safeHref(v.sourceUrl) + '" target="_blank" rel="noopener">View source <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>' : '') +
           '</div>' +
         '</article>';
