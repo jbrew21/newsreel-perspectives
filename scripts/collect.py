@@ -848,7 +848,7 @@ Respond with ONLY the canonical slug, nothing else."""
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-haiku-3-5-20241022',
+                'model': 'claude-haiku-4-5',
                 'max_tokens': 32,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),

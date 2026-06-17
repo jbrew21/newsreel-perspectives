@@ -748,7 +748,7 @@ Be very strict. It is far better to return fewer matches than to misattribute qu
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-sonnet-4-20250514',
+                'model': 'claude-sonnet-4-6',
                 'max_tokens': 2048,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
