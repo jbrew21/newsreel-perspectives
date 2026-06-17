@@ -215,34 +215,29 @@ def fetch_x_posts(voice):
         except Exception:
             _x_failures['rssapp'] += 1
 
-    # The public Nitter ecosystem has degraded to ~1 reliable instance, so a
-    # single rate-limit hiccup during a full run silently drops a voice to zero
-    # posts. Sweep the instances twice with a short backoff before giving up.
-    user_missing = False
-    for sweep in range(2):
-        for instance in NITTER_INSTANCES:
-            try:
-                url = f'{instance}/{x_handle}/rss'
-                req = urllib.request.Request(url, headers={'User-Agent': UA})
-                with urllib.request.urlopen(req, timeout=10) as resp:
-                    rss = resp.read().decode('utf-8')
+    # Try each Nitter instance in order. NOTE: the public Nitter ecosystem has
+    # degraded to ~1 reliable instance (nitter.net), and the GitHub-runner IP
+    # gets rate-limited by it during a full run -- the real cause of zero-post
+    # voices. A retry sweep was tried and reverted (it only added load to the
+    # one instance and reduced total yield). Durable fix is an infra change:
+    # rotating/residential proxy or a paid X source.
+    for instance in NITTER_INSTANCES:
+        try:
+            url = f'{instance}/{x_handle}/rss'
+            req = urllib.request.Request(url, headers={'User-Agent': UA})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                rss = resp.read().decode('utf-8')
 
-                # Extract the hostname for URL replacement (e.g. "nitter.net")
-                nitter_host = instance.replace('https://', '').replace('http://', '')
-                posts = _parse_nitter_rss(voice, rss, nitter_host)
-                if posts:
-                    _x_failures['successes'] += 1
-                    return posts
-            except Exception as e:
-                if '404' in str(e):
-                    user_missing = True
-                    break  # user doesn't exist, no point trying other instances
-                continue  # instance down/rate-limited, try next
-        if user_missing:
-            break
-        if sweep == 0:
-            import time as _t
-            _t.sleep(3)  # let a transient rate-limit clear, then retry the sweep
+            # Extract the hostname for URL replacement (e.g. "nitter.net")
+            nitter_host = instance.replace('https://', '').replace('http://', '')
+            posts = _parse_nitter_rss(voice, rss, nitter_host)
+            if posts:
+                _x_failures['successes'] += 1
+                return posts
+        except Exception as e:
+            if '404' in str(e):
+                break  # user doesn't exist, no point trying other instances
+            continue  # instance down, try next
 
     # All methods failed for this voice
     _x_failures['nitter'] += 1
@@ -483,23 +478,13 @@ def fetch_substack_posts(voice):
 
     posts = []
     try:
-        # Substack sits behind Cloudflare; use full browser headers and retry
-        # once on a 403 (transient bot-challenge) before giving up.
-        rss = None
-        for attempt in range(2):
-            try:
-                req = urllib.request.Request(feed_url, headers=BROWSER_HEADERS)
-                with urllib.request.urlopen(req, timeout=10) as resp:
-                    rss = resp.read().decode('utf-8')
-                break
-            except urllib.error.HTTPError as he:
-                if he.code == 403 and attempt == 0:
-                    import time as _t
-                    _t.sleep(2)
-                    continue
-                raise
-        if rss is None:
-            return []
+        # Substack sits behind Cloudflare; full browser headers help on most
+        # IPs. NOTE: the GitHub-runner IP still gets 403'd regardless (~26/run);
+        # retrying from the same blocked IP doesn't help, so we don't. Durable
+        # fix is an infra change (residential/rotating proxy).
+        req = urllib.request.Request(feed_url, headers=BROWSER_HEADERS)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            rss = resp.read().decode('utf-8')
 
         items = re.findall(r'<item>(.*?)</item>', rss, re.DOTALL)
         for item in items[:15]:  # last 15 articles
