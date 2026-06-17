@@ -1,9 +1,22 @@
 {
   "voiceId": "breaking-points",
   "voiceName": "Breaking Points",
-  "collectedAt": "2026-06-17T14:56:41.874437",
+  "collectedAt": "2026-06-17T17:16:29.706039",
   "date": "2026-06-17",
   "posts": [
+    {
+      "voiceId": "breaking-points",
+      "voiceName": "Breaking Points",
+      "platform": "youtube",
+      "text": "Trump LASHES OUT At Israel As Iran Deal LEAKS",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zkz6kE6Xwkg",
+      "timestamp": "2026-06-17T16:09:21+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "Trump LASHES OUT At Israel As Iran Deal LEAKS"
+    },
     {
       "voiceId": "breaking-points",
       "voiceName": "Breaking Points",
@@ -27,7 +40,7 @@
       "type": "video_title",
       "topic": "economy-trade",
       "relevance": "high",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Why High Gas Prices Are HERE TO STAY"
     },
     {
@@ -40,7 +53,7 @@
       "type": "video_title",
       "topic": "iran-conflict",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Anthropic CEO's SHOCKING Response on Iranian Girl School Strike"
     },
     {
@@ -51,7 +64,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=Um6zRNsYiZs",
       "timestamp": "2026-06-16T17:00:15+00:00",
       "type": "video_title",
-      "topic": "iran-conflict",
+      "topic": "media-press",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Bari Weiss Tries To Get Trita Parsi DEPORTED"
@@ -65,7 +78,7 @@
       "timestamp": "2026-06-16T16:30:34+00:00",
       "type": "video_title",
       "topic": "iran-conflict",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "'GIANT L': Ben Shapiro MELTS DOWN Over Iran Deal"
     },
@@ -77,7 +90,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=dhdgaPnCEhg",
       "timestamp": "2026-06-16T16:00:00+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "iran-conflict",
       "relevance": "high",
       "stance": "strong",
       "quote": "Trump SLAMS Bibi As CIA LEAKS BEGIN"
@@ -103,9 +116,9 @@
       "sourceUrl": "https://www.youtube.com/watch?v=sLcuS_M28SM",
       "timestamp": "2026-06-15T18:00:19+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "billionaires-wealth",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Eric Trump CAUGHT Asking For Inside UFC Info?: Mysterious DMS"
     },
     {
@@ -117,25 +130,38 @@
       "timestamp": "2026-06-15T17:30:12+00:00",
       "type": "video_title",
       "topic": "ai-technology",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "CRASH IMMINENT: Ed Zitron Says AI Valuations Are Complete FRAUDS"
-    },
-    {
-      "voiceId": "breaking-points",
-      "voiceName": "Breaking Points",
-      "platform": "youtube",
-      "text": "Anthropic Model BANNED: Is it TOO DANGEROUS?",
-      "sourceUrl": "https://www.youtube.com/watch?v=TEFBjOL76cc",
-      "timestamp": "2026-06-15T17:00:30+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "quote": "Anthropic Model BANNED: Is it TOO DANGEROUS?"
     }
   ],
   "topicSummary": {
+    "iran-conflict": [
+      {
+        "quote": "Trump LASHES OUT At Israel As Iran Deal LEAKS",
+        "sourceUrl": "https://www.youtube.com/watch?v=Zkz6kE6Xwkg",
+        "platform": "youtube",
+        "timestamp": "2026-06-17T16:09:21+00:00"
+      },
+      {
+        "quote": "Anthropic CEO's SHOCKING Response on Iranian Girl School Strike",
+        "sourceUrl": "https://www.youtube.com/watch?v=SIUrshGwgDI",
+        "platform": "youtube",
+        "timestamp": "2026-06-16T17:30:04+00:00"
+      },
+      {
+        "quote": "'GIANT L': Ben Shapiro MELTS DOWN Over Iran Deal",
+        "sourceUrl": "https://www.youtube.com/watch?v=YJjkK-T6nnk",
+        "platform": "youtube",
+        "timestamp": "2026-06-16T16:30:34+00:00"
+      },
+      {
+        "quote": "Trump SLAMS Bibi As CIA LEAKS BEGIN",
+        "sourceUrl": "https://www.youtube.com/watch?v=dhdgaPnCEhg",
+        "platform": "youtube",
+        "timestamp": "2026-06-16T16:00:00+00:00"
+      }
+    ],
     "economy-trade": [
       {
         "quote": "MAGA Grandma: I Have PANIC ATTACKS From Grocery Prices",
@@ -150,38 +176,12 @@
         "timestamp": "2026-06-16T18:00:13+00:00"
       }
     ],
-    "iran-conflict": [
-      {
-        "quote": "Anthropic CEO's SHOCKING Response on Iranian Girl School Strike",
-        "sourceUrl": "https://www.youtube.com/watch?v=SIUrshGwgDI",
-        "platform": "youtube",
-        "timestamp": "2026-06-16T17:30:04+00:00"
-      },
+    "media-press": [
       {
         "quote": "Bari Weiss Tries To Get Trita Parsi DEPORTED",
         "sourceUrl": "https://www.youtube.com/watch?v=Um6zRNsYiZs",
         "platform": "youtube",
         "timestamp": "2026-06-16T17:00:15+00:00"
-      },
-      {
-        "quote": "'GIANT L': Ben Shapiro MELTS DOWN Over Iran Deal",
-        "sourceUrl": "https://www.youtube.com/watch?v=YJjkK-T6nnk",
-        "platform": "youtube",
-        "timestamp": "2026-06-16T16:30:34+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Trump SLAMS Bibi As CIA LEAKS BEGIN",
-        "sourceUrl": "https://www.youtube.com/watch?v=dhdgaPnCEhg",
-        "platform": "youtube",
-        "timestamp": "2026-06-16T16:00:00+00:00"
-      },
-      {
-        "quote": "Eric Trump CAUGHT Asking For Inside UFC Info?: Mysterious DMS",
-        "sourceUrl": "https://www.youtube.com/watch?v=sLcuS_M28SM",
-        "platform": "youtube",
-        "timestamp": "2026-06-15T18:00:19+00:00"
       }
     ],
     "epstein-scandal": [
@@ -192,18 +192,20 @@
         "timestamp": "2026-06-15T18:30:07+00:00"
       }
     ],
+    "billionaires-wealth": [
+      {
+        "quote": "Eric Trump CAUGHT Asking For Inside UFC Info?: Mysterious DMS",
+        "sourceUrl": "https://www.youtube.com/watch?v=sLcuS_M28SM",
+        "platform": "youtube",
+        "timestamp": "2026-06-15T18:00:19+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "CRASH IMMINENT: Ed Zitron Says AI Valuations Are Complete FRAUDS",
         "sourceUrl": "https://www.youtube.com/watch?v=jDGPnaX-86Y",
         "platform": "youtube",
         "timestamp": "2026-06-15T17:30:12+00:00"
-      },
-      {
-        "quote": "Anthropic Model BANNED: Is it TOO DANGEROUS?",
-        "sourceUrl": "https://www.youtube.com/watch?v=TEFBjOL76cc",
-        "platform": "youtube",
-        "timestamp": "2026-06-15T17:00:30+00:00"
       }
     ]
   }
