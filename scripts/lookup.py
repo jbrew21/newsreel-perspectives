@@ -405,7 +405,7 @@ Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention 
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-sonnet-4-20250514',
+                'model': 'claude-sonnet-4-6',
                 'max_tokens': 1024,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
