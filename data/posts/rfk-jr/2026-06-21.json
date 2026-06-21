@@ -1,22 +1,9 @@
 {
   "voiceId": "rfk-jr",
   "voiceName": "Robert F. Kennedy Jr.",
-  "collectedAt": "2026-06-21T10:41:17.117684",
+  "collectedAt": "2026-06-21T11:56:59.867292",
   "date": "2026-06-21",
   "posts": [
-    {
-      "voiceId": "rfk-jr",
-      "voiceName": "Robert F. Kennedy Jr.",
-      "platform": "x",
-      "text": "Thanks, Amaryllis, for your extraordinary service.\n\n\nAmaryllis Fox (@amaryllisfox)\n\nFor the last year and a half, I\u2019ve had the privilege of contributing to the security of our nation under the leadership of a President wholly and profoundly devoted to the safety and success of the American people.\n\nI\u2019ve witnessed him work tirelessly to deliver a global and sustainable peace \u2014 not the typical short-term Band-Aids and window-dressing, but true transformation to a Golden era in which our children c",
-      "sourceUrl": "https://x.com/RobertKennedyJr/status/2057233956672578007",
-      "timestamp": "2026-05-20T22:56:11+00:00",
-      "type": "tweet",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "strong",
-      "quote": "Thanks, Amaryllis, for your extraordinary service.\n\n\nAmaryllis Fox (@amaryllisfox)\n\nFor the last year and a half, I\u2019ve had the privilege of contributing to the security of our nation under the leadership of a President wholly and profoundly devoted to the safety and success of the American people.\n\n"
-    },
     {
       "voiceId": "rfk-jr",
       "voiceName": "Robert F. Kennedy Jr.",
@@ -27,7 +14,7 @@
       "type": "video_title",
       "topic": "economy-trade",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "RFK Jr. Podcast: Corporate Capture Kills Small Business with Lloyd Chapman"
     },
     {
@@ -60,6 +47,19 @@
       "voiceId": "rfk-jr",
       "voiceName": "Robert F. Kennedy Jr.",
       "platform": "youtube",
+      "text": "Charlie Kirk on why 50% of America is obese",
+      "sourceUrl": "https://www.youtube.com/shorts/rN7LRccEpno",
+      "timestamp": "2024-11-10T20:33:08+00:00",
+      "type": "video_title",
+      "topic": "healthcare",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Charlie Kirk on why 50% of America is obese"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "youtube",
       "text": "Trump: Free Speech",
       "sourceUrl": "https://www.youtube.com/watch?v=xJfUXVOoFBo",
       "timestamp": "2024-11-09T20:30:09+00:00",
@@ -79,8 +79,21 @@
       "type": "video_title",
       "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Corruption"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "tiktok",
+      "text": "Practicing moves for my confirmation hearing ",
+      "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7443554697325202718",
+      "timestamp": "2024-12-01T21:14:11+00:00",
+      "type": "video_caption",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "lean",
+      "quote": "Practicing moves for my confirmation hearing "
     },
     {
       "voiceId": "rfk-jr",
@@ -97,20 +110,6 @@
     }
   ],
   "topicSummary": {
-    "trump-administration": [
-      {
-        "quote": "Thanks, Amaryllis, for your extraordinary service.\n\n\nAmaryllis Fox (@amaryllisfox)\n\nFor the last year and a half, I\u2019ve had the privilege of contributing to the security of our nation under the leadership of a President wholly and profoundly devoted to the safety and success of the American people.\n\n",
-        "sourceUrl": "https://x.com/RobertKennedyJr/status/2057233956672578007",
-        "platform": "x",
-        "timestamp": "2026-05-20T22:56:11+00:00"
-      },
-      {
-        "quote": "Corruption",
-        "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
-        "platform": "youtube",
-        "timestamp": "2024-11-07T18:39:36+00:00"
-      }
-    ],
     "economy-trade": [
       {
         "quote": "RFK Jr. Podcast: Corporate Capture Kills Small Business with Lloyd Chapman",
@@ -141,12 +140,34 @@
         "timestamp": "2024-11-11T00:21:00+00:00"
       }
     ],
+    "healthcare": [
+      {
+        "quote": "Charlie Kirk on why 50% of America is obese",
+        "sourceUrl": "https://www.youtube.com/shorts/rN7LRccEpno",
+        "platform": "youtube",
+        "timestamp": "2024-11-10T20:33:08+00:00"
+      }
+    ],
     "free-speech-censorship": [
       {
         "quote": "Trump: Free Speech",
         "sourceUrl": "https://www.youtube.com/watch?v=xJfUXVOoFBo",
         "platform": "youtube",
         "timestamp": "2024-11-09T20:30:09+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "Corruption",
+        "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
+        "platform": "youtube",
+        "timestamp": "2024-11-07T18:39:36+00:00"
+      },
+      {
+        "quote": "Practicing moves for my confirmation hearing ",
+        "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7443554697325202718",
+        "platform": "tiktok",
+        "timestamp": "2024-12-01T21:14:11+00:00"
       }
     ]
   }

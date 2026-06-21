@@ -1,7 +1,7 @@
 {
   "voiceId": "tulsi-gabbard",
   "voiceName": "Tulsi Gabbard",
-  "collectedAt": "2026-06-21T10:41:17.111809",
+  "collectedAt": "2026-06-21T11:56:59.860362",
   "date": "2026-06-21",
   "posts": [
     {
@@ -26,9 +26,35 @@
       "timestamp": "2026-06-19T04:31:42+00:00",
       "type": "tweet",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "lean",
       "quote": "I just walked out of @ODNIgov HQ for the last time.  Thank you President Trump - I remain grateful for the profound honor of serving the American people and our nation as the Director of National Intelligence.  \n\n@DNIGabbard, out."
+    },
+    {
+      "voiceId": "tulsi-gabbard",
+      "voiceName": "Tulsi Gabbard",
+      "platform": "youtube",
+      "text": "Tulsi Gabbard on Toxic Burn Pits",
+      "sourceUrl": "https://www.youtube.com/shorts/ARk2aRBtjLE",
+      "timestamp": "2023-03-17T15:00:06+00:00",
+      "type": "video_title",
+      "topic": "military-defense",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Tulsi Gabbard on Toxic Burn Pits"
+    },
+    {
+      "voiceId": "tulsi-gabbard",
+      "voiceName": "Tulsi Gabbard",
+      "platform": "youtube",
+      "text": "Air Force has the highest rate of Cancer",
+      "sourceUrl": "https://www.youtube.com/shorts/tEW4pYMUZd0",
+      "timestamp": "2023-03-15T17:00:37+00:00",
+      "type": "video_title",
+      "topic": "military-defense",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Air Force has the highest rate of Cancer"
     },
     {
       "voiceId": "tulsi-gabbard",
@@ -40,7 +66,7 @@
       "type": "video_title",
       "topic": "education",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "The School System is Broken"
     },
     {
@@ -53,7 +79,7 @@
       "type": "video_title",
       "topic": "free-speech-censorship",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Tulsi Gabbard on the Culture of Self-Censorship"
     },
     {
@@ -115,6 +141,20 @@
         "sourceUrl": "https://www.tiktok.com/@tulsigabbard/video/7653123304915569934",
         "platform": "tiktok",
         "timestamp": "2026-06-19T15:07:38+00:00"
+      }
+    ],
+    "military-defense": [
+      {
+        "quote": "Tulsi Gabbard on Toxic Burn Pits",
+        "sourceUrl": "https://www.youtube.com/shorts/ARk2aRBtjLE",
+        "platform": "youtube",
+        "timestamp": "2023-03-17T15:00:06+00:00"
+      },
+      {
+        "quote": "Air Force has the highest rate of Cancer",
+        "sourceUrl": "https://www.youtube.com/shorts/tEW4pYMUZd0",
+        "platform": "youtube",
+        "timestamp": "2023-03-15T17:00:37+00:00"
       }
     ],
     "education": [
