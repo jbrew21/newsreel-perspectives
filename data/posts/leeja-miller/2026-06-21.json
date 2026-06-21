@@ -1,7 +1,7 @@
 {
   "voiceId": "leeja-miller",
   "voiceName": "Leeja Miller",
-  "collectedAt": "2026-06-21T10:41:17.166808",
+  "collectedAt": "2026-06-21T11:56:59.924760",
   "date": "2026-06-21",
   "posts": [
     {
@@ -78,7 +78,7 @@
       "timestamp": "2024-10-18T12:29:09+00:00",
       "type": "tweet",
       "topic": "state-local-politics",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "You love to see it. For reference, this is the same guy who put @libsoftiktok on the Oklahoma state library advisory committee despite the fact that she doesn\u2019t live there, has no connection there, and no evidence exists to indicate she\u2019s ever read a book newrepublic.com/post/187272/\u2026\n\nLink\n\n\n\nOklah"
     },
@@ -92,7 +92,7 @@
       "type": "video_title",
       "topic": "billionaires-wealth",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Corporations Have Always Had More Rights Than You | EXPLAINER"
     },
     {
@@ -118,7 +118,7 @@
       "type": "video_title",
       "topic": "economy-trade",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "How Does The Second Gilded Age End?"
     },
     {
@@ -129,9 +129,9 @@
       "sourceUrl": "https://www.youtube.com/watch?v=LVq6GzfyGqI",
       "timestamp": "2026-05-13T22:30:32+00:00",
       "type": "video_title",
-      "topic": "protests-activism",
+      "topic": "culture-war",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Is The US In Its French Revolution Era?"
     },
     {
@@ -157,7 +157,7 @@
       "type": "video_title",
       "topic": "elections",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "The Political Divide Is About To Get SO Much Worse"
     },
     {
@@ -170,8 +170,21 @@
       "type": "video_title",
       "topic": "civil-rights-race",
       "relevance": "high",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "The Death Of The Voting Rights Act EXPLAINED"
+    },
+    {
+      "voiceId": "leeja-miller",
+      "voiceName": "Leeja Miller",
+      "platform": "youtube",
+      "text": "Is Property Damage Ever Justified?",
+      "sourceUrl": "https://www.youtube.com/watch?v=P67Dr60KNgI",
+      "timestamp": "2026-04-24T22:13:37+00:00",
+      "type": "video_title",
+      "topic": "protests-activism",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "Is Property Damage Ever Justified?"
     }
   ],
   "topicSummary": {
@@ -255,7 +268,7 @@
         "timestamp": "2026-05-19T22:05:32+00:00"
       }
     ],
-    "protests-activism": [
+    "culture-war": [
       {
         "quote": "Is The US In Its French Revolution Era?",
         "sourceUrl": "https://www.youtube.com/watch?v=LVq6GzfyGqI",
@@ -269,6 +282,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=9gP1MgzmGDE",
         "platform": "youtube",
         "timestamp": "2026-04-30T23:24:13+00:00"
+      }
+    ],
+    "protests-activism": [
+      {
+        "quote": "Is Property Damage Ever Justified?",
+        "sourceUrl": "https://www.youtube.com/watch?v=P67Dr60KNgI",
+        "platform": "youtube",
+        "timestamp": "2026-04-24T22:13:37+00:00"
       }
     ]
   }
