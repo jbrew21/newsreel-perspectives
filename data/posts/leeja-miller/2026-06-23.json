@@ -1,7 +1,7 @@
 {
   "voiceId": "leeja-miller",
   "voiceName": "Leeja Miller",
-  "collectedAt": "2026-06-23T10:38:57.445081",
+  "collectedAt": "2026-06-23T12:06:09.372583",
   "date": "2026-06-23",
   "posts": [
     {
@@ -65,7 +65,7 @@
       "timestamp": "2024-11-04T23:40:18+00:00",
       "type": "tweet",
       "topic": "elections",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Today's video is a plea to those of you sitting out this election, or voting third party: please don't. So much is at stake. piped.video/0opAYZGxJD8"
     },
@@ -104,7 +104,7 @@
       "timestamp": "2026-05-20T22:04:25+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Trump's Slush Fund Is Worse Than You Think | EXPLAINER"
     },
@@ -129,7 +129,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=LVq6GzfyGqI",
       "timestamp": "2026-05-13T22:30:32+00:00",
       "type": "video_title",
-      "topic": "protests-activism",
+      "topic": "culture-war",
       "relevance": "medium",
       "stance": "lean",
       "quote": "Is The US In Its French Revolution Era?"
@@ -155,7 +155,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=eo-ociYGSgg",
       "timestamp": "2026-05-05T22:08:03+00:00",
       "type": "video_title",
-      "topic": "culture-war",
+      "topic": "elections",
       "relevance": "medium",
       "stance": "lean",
       "quote": "The Political Divide Is About To Get SO Much Worse"
@@ -172,19 +172,6 @@
       "relevance": "high",
       "stance": "lean",
       "quote": "The Death Of The Voting Rights Act EXPLAINED"
-    },
-    {
-      "voiceId": "leeja-miller",
-      "voiceName": "Leeja Miller",
-      "platform": "youtube",
-      "text": "Is Property Damage Ever Justified?",
-      "sourceUrl": "https://www.youtube.com/watch?v=P67Dr60KNgI",
-      "timestamp": "2026-04-24T22:13:37+00:00",
-      "type": "video_title",
-      "topic": "protests-activism",
-      "relevance": "medium",
-      "stance": "lean",
-      "quote": "Is Property Damage Ever Justified?"
     }
   ],
   "topicSummary": {
@@ -222,6 +209,12 @@
         "sourceUrl": "https://x.com/LeejaMiller/status/1853583079228748286",
         "platform": "x",
         "timestamp": "2024-11-04T23:40:18+00:00"
+      },
+      {
+        "quote": "The Political Divide Is About To Get SO Much Worse",
+        "sourceUrl": "https://www.youtube.com/watch?v=eo-ociYGSgg",
+        "platform": "youtube",
+        "timestamp": "2026-05-05T22:08:03+00:00"
       }
     ],
     "state-local-politics": [
@@ -262,26 +255,12 @@
         "timestamp": "2026-05-19T22:05:32+00:00"
       }
     ],
-    "protests-activism": [
+    "culture-war": [
       {
         "quote": "Is The US In Its French Revolution Era?",
         "sourceUrl": "https://www.youtube.com/watch?v=LVq6GzfyGqI",
         "platform": "youtube",
         "timestamp": "2026-05-13T22:30:32+00:00"
-      },
-      {
-        "quote": "Is Property Damage Ever Justified?",
-        "sourceUrl": "https://www.youtube.com/watch?v=P67Dr60KNgI",
-        "platform": "youtube",
-        "timestamp": "2026-04-24T22:13:37+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "The Political Divide Is About To Get SO Much Worse",
-        "sourceUrl": "https://www.youtube.com/watch?v=eo-ociYGSgg",
-        "platform": "youtube",
-        "timestamp": "2026-05-05T22:08:03+00:00"
       }
     ],
     "civil-rights-race": [
