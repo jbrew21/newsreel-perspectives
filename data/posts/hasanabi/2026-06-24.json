@@ -1,7 +1,7 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-06-24T10:23:56.090144",
+  "collectedAt": "2026-06-24T11:47:39.208663",
   "date": "2026-06-24",
   "posts": [
     {
@@ -21,13 +21,26 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
+      "text": "Fox News stream sniped me",
+      "sourceUrl": "https://www.youtube.com/shorts/ib62DajAjI8",
+      "timestamp": "2026-06-24T00:26:40+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Fox News stream sniped me"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
       "text": "Do people realize what he's doing?",
       "sourceUrl": "https://www.youtube.com/watch?v=Pgc66SDw-0Y",
       "timestamp": "2026-06-23T14:33:48+00:00",
       "type": "video_title",
       "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "Do people realize what he's doing?"
     },
     {
@@ -51,9 +64,9 @@
       "sourceUrl": "https://www.youtube.com/watch?v=Ofc_0W_TGLI",
       "timestamp": "2026-06-21T17:11:58+00:00",
       "type": "video_title",
-      "topic": "other",
+      "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "It's Getting Really Bad"
     }
   ],
@@ -66,15 +79,13 @@
         "timestamp": "2026-06-24T05:00:39+00:00"
       }
     ],
-    "trump-administration": [
-      {
-        "quote": "Do people realize what he's doing?",
-        "sourceUrl": "https://www.youtube.com/watch?v=Pgc66SDw-0Y",
-        "platform": "youtube",
-        "timestamp": "2026-06-23T14:33:48+00:00"
-      }
-    ],
     "media-press": [
+      {
+        "quote": "Fox News stream sniped me",
+        "sourceUrl": "https://www.youtube.com/shorts/ib62DajAjI8",
+        "platform": "youtube",
+        "timestamp": "2026-06-24T00:26:40+00:00"
+      },
       {
         "quote": "FOX NEWS IS AFRAID",
         "sourceUrl": "https://www.youtube.com/watch?v=mZ5dSWkNr9E",
@@ -82,7 +93,13 @@
         "timestamp": "2026-06-21T23:00:13+00:00"
       }
     ],
-    "other": [
+    "trump-administration": [
+      {
+        "quote": "Do people realize what he's doing?",
+        "sourceUrl": "https://www.youtube.com/watch?v=Pgc66SDw-0Y",
+        "platform": "youtube",
+        "timestamp": "2026-06-23T14:33:48+00:00"
+      },
       {
         "quote": "It's Getting Really Bad",
         "sourceUrl": "https://www.youtube.com/watch?v=Ofc_0W_TGLI",

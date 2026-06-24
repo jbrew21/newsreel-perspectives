@@ -1,7 +1,7 @@
 {
   "voiceId": "ana-kasparian",
   "voiceName": "Ana Kasparian",
-  "collectedAt": "2026-06-24T10:23:56.097985",
+  "collectedAt": "2026-06-24T11:47:39.218669",
   "date": "2026-06-24",
   "posts": [
     {
@@ -79,7 +79,7 @@
       "type": "tweet",
       "topic": "israel-palestine",
       "relevance": "high",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "The Cradle (@TheCradleMedia)\n\nVIDEO | An overnight Israeli airstrike targeting a residential apartment on Al-Thalathini Street in Gaza City killed four Palestinians, including four-year-old Zeina Al-Safadi and 14-year-old Lana Al-Safadi. The attack left four others injured\u2014the majority of whom are c"
     },
     {
@@ -99,14 +99,53 @@
       "voiceId": "ana-kasparian",
       "voiceName": "Ana Kasparian",
       "platform": "youtube",
+      "text": "Ed Sheeran, Climate Change, Modern-Day Slavery | The Point With Ana Kasparian",
+      "sourceUrl": "https://www.youtube.com/watch?v=XTnXo-fTl40",
+      "timestamp": "2015-12-23T22:11:20+00:00",
+      "type": "video_title",
+      "topic": "climate-environment",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Ed Sheeran, Climate Change, Modern-Day Slavery | The Point With Ana Kasparian"
+    },
+    {
+      "voiceId": "ana-kasparian",
+      "voiceName": "Ana Kasparian",
+      "platform": "youtube",
+      "text": "The Shrimp You're Eating Isn't What It Seems..",
+      "sourceUrl": "https://www.youtube.com/watch?v=MmCuuHKDtqY",
+      "timestamp": "2015-12-21T23:00:00+00:00",
+      "type": "video_title",
+      "topic": "food-agriculture",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "The Shrimp You're Eating Isn't What It Seems.."
+    },
+    {
+      "voiceId": "ana-kasparian",
+      "voiceName": "Ana Kasparian",
+      "platform": "youtube",
       "text": "Anti-War Group Promotes War With Israel",
       "sourceUrl": "https://www.youtube.com/watch?v=aC_MtdSrfCg",
       "timestamp": "2015-12-20T20:00:01+00:00",
       "type": "video_title",
       "topic": "israel-palestine",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Anti-War Group Promotes War With Israel"
+    },
+    {
+      "voiceId": "ana-kasparian",
+      "voiceName": "Ana Kasparian",
+      "platform": "youtube",
+      "text": "Is There Still Hope To Save The Planet?",
+      "sourceUrl": "https://www.youtube.com/watch?v=RgI-Txe5WWI",
+      "timestamp": "2015-12-18T20:00:01+00:00",
+      "type": "video_title",
+      "topic": "climate-environment",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Is There Still Hope To Save The Planet?"
     }
   ],
   "topicSummary": {
@@ -160,6 +199,28 @@
         "sourceUrl": "https://www.youtube.com/watch?v=NivQLBRGgXE",
         "platform": "youtube",
         "timestamp": "2015-12-31T23:17:29+00:00"
+      }
+    ],
+    "climate-environment": [
+      {
+        "quote": "Ed Sheeran, Climate Change, Modern-Day Slavery | The Point With Ana Kasparian",
+        "sourceUrl": "https://www.youtube.com/watch?v=XTnXo-fTl40",
+        "platform": "youtube",
+        "timestamp": "2015-12-23T22:11:20+00:00"
+      },
+      {
+        "quote": "Is There Still Hope To Save The Planet?",
+        "sourceUrl": "https://www.youtube.com/watch?v=RgI-Txe5WWI",
+        "platform": "youtube",
+        "timestamp": "2015-12-18T20:00:01+00:00"
+      }
+    ],
+    "food-agriculture": [
+      {
+        "quote": "The Shrimp You're Eating Isn't What It Seems..",
+        "sourceUrl": "https://www.youtube.com/watch?v=MmCuuHKDtqY",
+        "platform": "youtube",
+        "timestamp": "2015-12-21T23:00:00+00:00"
       }
     ]
   }
