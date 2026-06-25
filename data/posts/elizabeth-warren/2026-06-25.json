@@ -1,7 +1,7 @@
 {
   "voiceId": "elizabeth-warren",
   "voiceName": "Elizabeth Warren",
-  "collectedAt": "2026-06-25T10:17:05.862400",
+  "collectedAt": "2026-06-25T11:41:28.781526",
   "date": "2026-06-25",
   "posts": [
     {
@@ -53,7 +53,7 @@
       "type": "tweet",
       "topic": "ai-technology",
       "relevance": "high",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "AI could transform our economy in the long run.\n\nBut in the short term, AI could also eliminate millions of jobs and create massive disruption for working families.\n\nWe shouldn't wait until people lose their paychecks and health care to take action."
     },
     {
@@ -125,12 +125,25 @@
       "voiceId": "elizabeth-warren",
       "voiceName": "Elizabeth Warren",
       "platform": "x",
+      "text": "Juneteenth is a celebration\u2014and a reminder that the fight for racial justice in our country is far from over.",
+      "sourceUrl": "https://x.com/ewarren/status/2067960681572250061",
+      "timestamp": "2026-06-19T13:20:21+00:00",
+      "type": "tweet",
+      "topic": "civil-rights-race",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Juneteenth is a celebration\u2014and a reminder that the fight for racial justice in our country is far from over."
+    },
+    {
+      "voiceId": "elizabeth-warren",
+      "voiceName": "Elizabeth Warren",
+      "platform": "x",
       "text": "Reminder as you're traveling this summer: \n\nTrump reversed a rule that required airlines to automatically refund you with CASH\u2014not vouchers, not points\u2014for canceled or severely delayed flights.\n\nUnited Airlines and Delta Airlines each gave $1 million to Trump\u2019s inauguration fund.",
       "sourceUrl": "https://x.com/ewarren/status/2067715822009684395",
       "timestamp": "2026-06-18T21:07:22+00:00",
       "type": "tweet",
       "topic": "trump-policy",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "Reminder as you're traveling this summer: \n\nTrump reversed a rule that required airlines to automatically refund you with CASH\u2014not vouchers, not points\u2014for canceled or severely delayed flights.\n\nUnited Airlines and Delta Airlines each gave $1 million to Trump\u2019s inauguration fund."
     },
@@ -159,32 +172,6 @@
       "relevance": "high",
       "stance": "strong",
       "quote": "Gas prices: +40.5%\n\nAirfares prices: +26.7%\n\nElectricity prices: +5.9%\n\nMedical care services: +3.6%\n\nHousing costs: +3.4%\n\nGroceries prices: +2.7%\n\nWhat\u2019s driving higher prices? \n\nTrump\u2019s disastrous policies."
-    },
-    {
-      "voiceId": "elizabeth-warren",
-      "voiceName": "Elizabeth Warren",
-      "platform": "tiktok",
-      "text": "Why is Donald Trump claiming TrumpRx is decreasing drug costs by 600%? ",
-      "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7634303843450342687",
-      "timestamp": "2026-04-29T21:58:07+00:00",
-      "type": "video_caption",
-      "topic": "healthcare",
-      "relevance": "medium",
-      "stance": "strong",
-      "quote": "Why is Donald Trump claiming TrumpRx is decreasing drug costs by 600%? "
-    },
-    {
-      "voiceId": "elizabeth-warren",
-      "voiceName": "Elizabeth Warren",
-      "platform": "tiktok",
-      "text": "Americans can't afford Trump's war with Iran.",
-      "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7634200796623686942",
-      "timestamp": "2026-04-29T15:18:19+00:00",
-      "type": "video_caption",
-      "topic": "iran-conflict",
-      "relevance": "medium",
-      "stance": "strong",
-      "quote": "Americans can't afford Trump's war with Iran."
     }
   ],
   "topicSummary": {
@@ -264,28 +251,20 @@
         "timestamp": "2026-06-20T13:08:24+00:00"
       }
     ],
+    "civil-rights-race": [
+      {
+        "quote": "Juneteenth is a celebration\u2014and a reminder that the fight for racial justice in our country is far from over.",
+        "sourceUrl": "https://x.com/ewarren/status/2067960681572250061",
+        "platform": "x",
+        "timestamp": "2026-06-19T13:20:21+00:00"
+      }
+    ],
     "trump-policy": [
       {
         "quote": "Reminder as you're traveling this summer: \n\nTrump reversed a rule that required airlines to automatically refund you with CASH\u2014not vouchers, not points\u2014for canceled or severely delayed flights.\n\nUnited Airlines and Delta Airlines each gave $1 million to Trump\u2019s inauguration fund.",
         "sourceUrl": "https://x.com/ewarren/status/2067715822009684395",
         "platform": "x",
         "timestamp": "2026-06-18T21:07:22+00:00"
-      }
-    ],
-    "healthcare": [
-      {
-        "quote": "Why is Donald Trump claiming TrumpRx is decreasing drug costs by 600%? ",
-        "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7634303843450342687",
-        "platform": "tiktok",
-        "timestamp": "2026-04-29T21:58:07+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "Americans can't afford Trump's war with Iran.",
-        "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7634200796623686942",
-        "platform": "tiktok",
-        "timestamp": "2026-04-29T15:18:19+00:00"
       }
     ]
   }
