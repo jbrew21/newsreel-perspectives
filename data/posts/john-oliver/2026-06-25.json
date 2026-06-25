@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "collectedAt": "2026-06-25T10:17:05.843581",
+  "collectedAt": "2026-06-25T11:41:28.760471",
   "date": "2026-06-25",
   "posts": [
     {
@@ -104,7 +104,7 @@
       "timestamp": "2024-09-26T13:53:27+00:00",
       "type": "tweet",
       "topic": "healthcare",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "Here's our story from Sunday about disability benefits...piped.video/watch?v=hq2s7RMR\u2026\n\nLink\n\n\n\nDisability Benefits: Last Week Tonight with John Oliver (HBO)\n\nJohn Oliver discusses why disability benefits can be hard to get an...\nyoutube.com"
     },
@@ -182,7 +182,7 @@
       "timestamp": "2026-06-22T06:30:23+00:00",
       "type": "video_title",
       "topic": "climate-environment",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "Feral Hogs: Last Week Tonight with John Oliver (HBO)"
     },
@@ -203,6 +203,32 @@
       "voiceId": "john-oliver",
       "voiceName": "John Oliver",
       "platform": "youtube",
+      "text": "UK Election &amp; Robert Kenyon #lastweektonight",
+      "sourceUrl": "https://www.youtube.com/shorts/uT6aNppDqqc",
+      "timestamp": "2026-06-19T18:58:58+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "UK Election &amp; Robert Kenyon #lastweektonight"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
+      "text": "UK Election &amp; Restore Britain #lastweektonight",
+      "sourceUrl": "https://www.youtube.com/shorts/daIllJyV52M",
+      "timestamp": "2026-06-18T17:32:53+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "UK Election &amp; Restore Britain #lastweektonight"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
       "text": "UK Election &amp; Reform UK #lastweektonight",
       "sourceUrl": "https://www.youtube.com/shorts/hDwl2m51zR8",
       "timestamp": "2026-06-17T18:44:47+00:00",
@@ -211,6 +237,19 @@
       "relevance": "high",
       "stance": "strong",
       "quote": "UK Election &amp; Reform UK #lastweektonight"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
+      "text": "UK Election &amp; Makerfield #lastweektonight",
+      "sourceUrl": "https://www.youtube.com/shorts/OD17jrheh9E",
+      "timestamp": "2026-06-16T16:00:23+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "UK Election &amp; Makerfield #lastweektonight"
     }
   ],
   "topicSummary": {
@@ -326,10 +365,28 @@
     ],
     "uk-world-politics": [
       {
+        "quote": "UK Election &amp; Robert Kenyon #lastweektonight",
+        "sourceUrl": "https://www.youtube.com/shorts/uT6aNppDqqc",
+        "platform": "youtube",
+        "timestamp": "2026-06-19T18:58:58+00:00"
+      },
+      {
+        "quote": "UK Election &amp; Restore Britain #lastweektonight",
+        "sourceUrl": "https://www.youtube.com/shorts/daIllJyV52M",
+        "platform": "youtube",
+        "timestamp": "2026-06-18T17:32:53+00:00"
+      },
+      {
         "quote": "UK Election &amp; Reform UK #lastweektonight",
         "sourceUrl": "https://www.youtube.com/shorts/hDwl2m51zR8",
         "platform": "youtube",
         "timestamp": "2026-06-17T18:44:47+00:00"
+      },
+      {
+        "quote": "UK Election &amp; Makerfield #lastweektonight",
+        "sourceUrl": "https://www.youtube.com/shorts/OD17jrheh9E",
+        "platform": "youtube",
+        "timestamp": "2026-06-16T16:00:23+00:00"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "collectedAt": "2026-06-25T10:17:05.845104",
+  "collectedAt": "2026-06-25T11:41:28.762040",
   "date": "2026-06-25",
   "posts": [
     {
@@ -26,9 +26,22 @@
       "timestamp": "2026-06-24T02:20:51+00:00",
       "type": "tweet",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Jonathan Swan on the corruption surrounding Trumps desired presidential library.\n\nVideo"
+    },
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "x",
+      "text": "The National Park service putting up a fence around the Lincoln Memorial Reflecting Pool.\n\nVideo",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2069562779028107445",
+      "timestamp": "2026-06-23T23:26:31+00:00",
+      "type": "tweet",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "The National Park service putting up a fence around the Lincoln Memorial Reflecting Pool.\n\nVideo"
     },
     {
       "voiceId": "pod-save-america",
@@ -39,7 +52,7 @@
       "timestamp": "2026-06-23T17:01:22+00:00",
       "type": "tweet",
       "topic": "epstein-scandal",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Jonathan Swan on how Trump couldn't shake the Epstein files scandal.\n\nVideo"
     },
@@ -51,23 +64,10 @@
       "sourceUrl": "https://x.com/PodSaveAmerica/status/2069449170964873269",
       "timestamp": "2026-06-23T15:55:05+00:00",
       "type": "tweet",
-      "topic": "iran-conflict",
+      "topic": "foreign-policy-diplomacy",
       "relevance": "high",
       "stance": "lean",
       "quote": "We are better off not being in war than we were at war, but we are not better off than before the war started.\n\nVideo"
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "x",
-      "text": "Trump is proud of his new jet, despite it being a problem for him politically.\n\nVideo",
-      "sourceUrl": "https://x.com/PodSaveAmerica/status/2069425962014388410",
-      "timestamp": "2026-06-23T14:22:52+00:00",
-      "type": "tweet",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "lean",
-      "quote": "Trump is proud of his new jet, despite it being a problem for him politically.\n\nVideo"
     },
     {
       "voiceId": "pod-save-america",
@@ -77,7 +77,7 @@
       "sourceUrl": "https://x.com/PodSaveAmerica/status/2068806249496391718",
       "timestamp": "2026-06-21T21:20:21+00:00",
       "type": "tweet",
-      "topic": "trump-policy",
+      "topic": "trump-administration",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Heather Cox Richardson on JD Vance\u2019s rejection of the founders\u2019 original message.\n\nVideo"
@@ -91,22 +91,9 @@
       "timestamp": "2026-06-21T17:32:42+00:00",
       "type": "tweet",
       "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "quote": "Heather Cox Richardson on Trump remaking DC in his image.\n\nVideo"
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "x",
-      "text": "JD Vance lacks charisma, uniqueness, nerve and talent.\n\nVideo",
-      "sourceUrl": "https://x.com/PodSaveAmerica/status/2068034606666764682",
-      "timestamp": "2026-06-19T18:14:07+00:00",
-      "type": "tweet",
-      "topic": "culture-war",
       "relevance": "medium",
       "stance": "strong",
-      "quote": "JD Vance lacks charisma, uniqueness, nerve and talent.\n\nVideo"
+      "quote": "Heather Cox Richardson on Trump remaking DC in his image.\n\nVideo"
     },
     {
       "voiceId": "pod-save-america",
@@ -169,7 +156,7 @@
       "timestamp": "2026-06-15T23:28:36+00:00",
       "type": "tweet",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Jon, Jon and Tommy react to news that Trump's DOJ is investigating Governor Gavin Newsom.\n\nVideo"
     }
@@ -189,10 +176,10 @@
         "timestamp": "2026-06-24T02:20:51+00:00"
       },
       {
-        "quote": "Trump is proud of his new jet, despite it being a problem for him politically.\n\nVideo",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2069425962014388410",
+        "quote": "Heather Cox Richardson on JD Vance\u2019s rejection of the founders\u2019 original message.\n\nVideo",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2068806249496391718",
         "platform": "x",
-        "timestamp": "2026-06-23T14:22:52+00:00"
+        "timestamp": "2026-06-21T21:20:21+00:00"
       },
       {
         "quote": "Heather Cox Richardson on Trump remaking DC in his image.\n\nVideo",
@@ -219,6 +206,14 @@
         "timestamp": "2026-06-15T23:28:36+00:00"
       }
     ],
+    "culture-war": [
+      {
+        "quote": "The National Park service putting up a fence around the Lincoln Memorial Reflecting Pool.\n\nVideo",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2069562779028107445",
+        "platform": "x",
+        "timestamp": "2026-06-23T23:26:31+00:00"
+      }
+    ],
     "epstein-scandal": [
       {
         "quote": "Jonathan Swan on how Trump couldn't shake the Epstein files scandal.\n\nVideo",
@@ -227,13 +222,15 @@
         "timestamp": "2026-06-23T17:01:22+00:00"
       }
     ],
-    "iran-conflict": [
+    "foreign-policy-diplomacy": [
       {
         "quote": "We are better off not being in war than we were at war, but we are not better off than before the war started.\n\nVideo",
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2069449170964873269",
         "platform": "x",
         "timestamp": "2026-06-23T15:55:05+00:00"
-      },
+      }
+    ],
+    "iran-conflict": [
       {
         "quote": "Jon and Tommy react to Trump's head spinning U.S.-Iran Memorandum of Understanding.\n\nVideo",
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2068001671750225978",
@@ -245,22 +242,6 @@
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2066857348543533391",
         "platform": "x",
         "timestamp": "2026-06-16T12:16:06+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "Heather Cox Richardson on JD Vance\u2019s rejection of the founders\u2019 original message.\n\nVideo",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2068806249496391718",
-        "platform": "x",
-        "timestamp": "2026-06-21T21:20:21+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "JD Vance lacks charisma, uniqueness, nerve and talent.\n\nVideo",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2068034606666764682",
-        "platform": "x",
-        "timestamp": "2026-06-19T18:14:07+00:00"
       }
     ]
   }
