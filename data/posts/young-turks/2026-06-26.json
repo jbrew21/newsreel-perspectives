@@ -1,7 +1,7 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "collectedAt": "2026-06-26T10:30:33.969586",
+  "collectedAt": "2026-06-26T11:48:43.092953",
   "date": "2026-06-26",
   "posts": [
     {
@@ -77,10 +77,23 @@
       "sourceUrl": "https://www.youtube.com/watch?v=KUsX_3cLgMY",
       "timestamp": "2026-06-26T02:45:25+00:00",
       "type": "video_title",
-      "topic": "israel-palestine",
+      "topic": "foreign-policy-diplomacy",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Israel First LOSES IT Over US - Turkey Alliance"
+    },
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "American Casualties Coverup EXPOSED",
+      "sourceUrl": "https://www.youtube.com/watch?v=ARcjC2ddm7E",
+      "timestamp": "2026-06-26T02:00:37+00:00",
+      "type": "video_title",
+      "topic": "military-defense",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "American Casualties Coverup EXPOSED"
     },
     {
       "voiceId": "young-turks",
@@ -103,10 +116,23 @@
       "sourceUrl": "https://www.youtube.com/watch?v=tPDBW4pTfTk",
       "timestamp": "2026-06-26T00:30:06+00:00",
       "type": "video_title",
-      "topic": "military-defense",
+      "topic": "congress-legislation",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Senate Republicans CAVE On War Powers Resolution"
+    },
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "SCANDAL: Jared Kushner\u2019s COOKED #breakingnews #tyt #cenkuygur #anakasparian",
+      "sourceUrl": "https://www.youtube.com/shorts/jwxLkFqDRYE",
+      "timestamp": "2026-06-25T19:32:52+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "quote": "SCANDAL: Jared Kushner\u2019s COOKED #breakingnews #tyt #cenkuygur #anakasparian"
     }
   ],
   "topicSummary": {
@@ -136,12 +162,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=jciSXii22Yo",
         "platform": "youtube",
         "timestamp": "2026-06-26T04:15:28+00:00"
-      },
-      {
-        "quote": "Israel First LOSES IT Over US - Turkey Alliance",
-        "sourceUrl": "https://www.youtube.com/watch?v=KUsX_3cLgMY",
-        "platform": "youtube",
-        "timestamp": "2026-06-26T02:45:25+00:00"
       }
     ],
     "free-speech-censorship": [
@@ -158,12 +178,36 @@
         "timestamp": "2026-06-01T21:21:50+00:00"
       }
     ],
+    "foreign-policy-diplomacy": [
+      {
+        "quote": "Israel First LOSES IT Over US - Turkey Alliance",
+        "sourceUrl": "https://www.youtube.com/watch?v=KUsX_3cLgMY",
+        "platform": "youtube",
+        "timestamp": "2026-06-26T02:45:25+00:00"
+      }
+    ],
     "military-defense": [
+      {
+        "quote": "American Casualties Coverup EXPOSED",
+        "sourceUrl": "https://www.youtube.com/watch?v=ARcjC2ddm7E",
+        "platform": "youtube",
+        "timestamp": "2026-06-26T02:00:37+00:00"
+      }
+    ],
+    "congress-legislation": [
       {
         "quote": "Senate Republicans CAVE On War Powers Resolution",
         "sourceUrl": "https://www.youtube.com/watch?v=tPDBW4pTfTk",
         "platform": "youtube",
         "timestamp": "2026-06-26T00:30:06+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "SCANDAL: Jared Kushner\u2019s COOKED #breakingnews #tyt #cenkuygur #anakasparian",
+        "sourceUrl": "https://www.youtube.com/shorts/jwxLkFqDRYE",
+        "platform": "youtube",
+        "timestamp": "2026-06-25T19:32:52+00:00"
       }
     ]
   }

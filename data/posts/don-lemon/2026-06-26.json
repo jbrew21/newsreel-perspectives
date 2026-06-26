@@ -1,7 +1,7 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-06-26T10:30:33.974910",
+  "collectedAt": "2026-06-26T11:48:43.098033",
   "date": "2026-06-26",
   "posts": [
     {
@@ -39,7 +39,7 @@
       "timestamp": "2026-06-25T16:19:04+00:00",
       "type": "video_caption",
       "topic": "trump-policy",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "lean",
       "quote": "She said Trump is pulling us out of things we didn\u2019t even know we were trapped in\u2026 Thoughts? Tune into The Don Lemon Show on YouTube every weekday at 10 am & 5pm EST! \ud83c\udf4b"
     },
@@ -51,10 +51,36 @@
       "sourceUrl": "https://www.tiktok.com/@donlemon/video/7655095172971220255",
       "timestamp": "2026-06-24T22:39:22+00:00",
       "type": "video_caption",
-      "topic": "trump-administration",
+      "topic": "media-personalities",
       "relevance": "medium",
       "stance": "lean",
       "quote": "Donald Trump has been increasingly talking about men and the way they look... Is he trying to tell us something? Tune into The Don Lemon Show on YouTube every weekday at 10 am & 5pm EST! \ud83c\udf4b"
+    },
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "tiktok",
+      "text": "Trump cancelled the signing of a bipartisan housing bill until Congress passes the SAVE AMERICA ACT, a proposed voting bill that would require proof of citizenship for voter registration\u2026 Thoughts?",
+      "sourceUrl": "https://www.tiktok.com/@donlemon/video/7655000134408752415",
+      "timestamp": "2026-06-24T16:30:31+00:00",
+      "type": "video_caption",
+      "topic": "elections",
+      "relevance": "high",
+      "stance": "lean",
+      "quote": "Trump cancelled the signing of a bipartisan housing bill until Congress passes the SAVE AMERICA ACT, a proposed voting bill that would require proof of citizenship for voter registration\u2026 Thoughts?"
+    },
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "tiktok",
+      "text": "Josh Hokit says he was giving Michelle Obama a compliment when he called her a man. Thoughts? Tune into The Don Lemon Show on YouTube every weekday at 10 am & 5pm EST! \ud83c\udf4b",
+      "sourceUrl": "https://www.tiktok.com/@donlemon/video/7654998536580271391",
+      "timestamp": "2026-06-24T16:24:14+00:00",
+      "type": "video_caption",
+      "topic": "civil-rights-race",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Josh Hokit says he was giving Michelle Obama a compliment when he called her a man. Thoughts? Tune into The Don Lemon Show on YouTube every weekday at 10 am & 5pm EST! \ud83c\udf4b"
     }
   ],
   "topicSummary": {
@@ -82,12 +108,28 @@
         "timestamp": "2026-06-25T16:19:04+00:00"
       }
     ],
-    "trump-administration": [
+    "media-personalities": [
       {
         "quote": "Donald Trump has been increasingly talking about men and the way they look... Is he trying to tell us something? Tune into The Don Lemon Show on YouTube every weekday at 10 am & 5pm EST! \ud83c\udf4b",
         "sourceUrl": "https://www.tiktok.com/@donlemon/video/7655095172971220255",
         "platform": "tiktok",
         "timestamp": "2026-06-24T22:39:22+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "Trump cancelled the signing of a bipartisan housing bill until Congress passes the SAVE AMERICA ACT, a proposed voting bill that would require proof of citizenship for voter registration\u2026 Thoughts?",
+        "sourceUrl": "https://www.tiktok.com/@donlemon/video/7655000134408752415",
+        "platform": "tiktok",
+        "timestamp": "2026-06-24T16:30:31+00:00"
+      }
+    ],
+    "civil-rights-race": [
+      {
+        "quote": "Josh Hokit says he was giving Michelle Obama a compliment when he called her a man. Thoughts? Tune into The Don Lemon Show on YouTube every weekday at 10 am & 5pm EST! \ud83c\udf4b",
+        "sourceUrl": "https://www.tiktok.com/@donlemon/video/7654998536580271391",
+        "platform": "tiktok",
+        "timestamp": "2026-06-24T16:24:14+00:00"
       }
     ]
   }

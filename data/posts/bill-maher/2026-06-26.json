@@ -1,9 +1,22 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-06-26T10:30:33.973890",
+  "collectedAt": "2026-06-26T11:48:43.097059",
   "date": "2026-06-26",
   "posts": [
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "x",
+      "text": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo",
+      "sourceUrl": "https://x.com/billmaher/status/2068170852152344761",
+      "timestamp": "2026-06-20T03:15:30+00:00",
+      "type": "tweet",
+      "topic": "other",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo"
+    },
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
@@ -27,7 +40,7 @@
       "type": "tweet",
       "topic": "epstein-scandal",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "Epstein foul play? #RTOvertime @RealTimers\n\nVideo"
     },
     {
@@ -38,7 +51,7 @@
       "sourceUrl": "https://x.com/billmaher/status/2065633299943555092",
       "timestamp": "2026-06-13T03:12:10+00:00",
       "type": "tweet",
-      "topic": "culture-war",
+      "topic": "trump-administration",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Being straight-up crazy is just not a dealbreaker anymore in politics.\n\nVideo"
@@ -64,7 +77,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
       "timestamp": "2026-06-20T03:00:05+00:00",
       "type": "video_title",
-      "topic": "culture-war",
+      "topic": "other",
       "relevance": "medium",
       "stance": "strong",
       "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)"
@@ -78,25 +91,26 @@
       "timestamp": "2026-06-13T03:00:24+00:00",
       "type": "video_title",
       "topic": "billionaires-wealth",
-      "relevance": "medium",
-      "stance": "strong",
+      "relevance": "high",
+      "stance": "lean",
       "quote": "Should We Outlaw Trillionaires? | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "A New Breed of Politician | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=Mpb4jhcGw8A",
-      "timestamp": "2026-06-13T03:00:16+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "strong",
-      "quote": "A New Breed of Politician | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
+    "other": [
+      {
+        "quote": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo",
+        "sourceUrl": "https://x.com/billmaher/status/2068170852152344761",
+        "platform": "x",
+        "timestamp": "2026-06-20T03:15:30+00:00"
+      },
+      {
+        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:05+00:00"
+      }
+    ],
     "state-local-politics": [
       {
         "quote": "Father\u2019s Day is Sunday! Kristi Noem\u2019s kids call their father \u201cPop.\u201d Because that\u2019s what happens when his tits hit something sharp.\n\nVideo",
@@ -113,27 +127,13 @@
         "timestamp": "2026-06-16T15:07:53+00:00"
       }
     ],
-    "culture-war": [
+    "trump-administration": [
       {
         "quote": "Being straight-up crazy is just not a dealbreaker anymore in politics.\n\nVideo",
         "sourceUrl": "https://x.com/billmaher/status/2065633299943555092",
         "platform": "x",
         "timestamp": "2026-06-13T03:12:10+00:00"
       },
-      {
-        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
-        "platform": "youtube",
-        "timestamp": "2026-06-20T03:00:05+00:00"
-      },
-      {
-        "quote": "A New Breed of Politician | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=Mpb4jhcGw8A",
-        "platform": "youtube",
-        "timestamp": "2026-06-13T03:00:16+00:00"
-      }
-    ],
-    "trump-administration": [
       {
         "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)",
         "sourceUrl": "https://www.youtube.com/watch?v=nWVtaeqe8e0",

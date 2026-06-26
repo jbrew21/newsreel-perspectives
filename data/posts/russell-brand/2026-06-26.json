@@ -1,22 +1,9 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-06-26T10:30:33.970446",
+  "collectedAt": "2026-06-26T11:48:43.093787",
   "date": "2026-06-26",
   "posts": [
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "x",
-      "text": "The media's narrative got exposed.\n\nVideo",
-      "sourceUrl": "https://x.com/rustyrockets/status/2070334674325414312",
-      "timestamp": "2026-06-26T02:33:45+00:00",
-      "type": "tweet",
-      "topic": "media-press",
-      "relevance": "medium",
-      "stance": "strong",
-      "quote": "The media's narrative got exposed.\n\nVideo"
-    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -26,7 +13,7 @@
       "timestamp": "2026-06-25T18:58:21+00:00",
       "type": "tweet",
       "topic": "criminal-justice",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "Disgusting!\n\nTeenage boy has been beaten to death by a gang who filmed the attack &amp; shared it online.\n\n\nBenny Johnson (@bennyjohnson)\n\nThis is Louis.\n\nHe was 17 years-old.\n\nOn Friday night he was beaten into a coma by a group of foreign savages in Narbonne, France\n\nThe video is too graphic to po"
     },
@@ -38,7 +25,7 @@
       "sourceUrl": "https://x.com/rustyrockets/status/2070219387093557682",
       "timestamp": "2026-06-25T18:55:39+00:00",
       "type": "tweet",
-      "topic": "uk-world-politics",
+      "topic": "gender-lgbtq",
       "relevance": "medium",
       "stance": "lean",
       "quote": "This should be interesting.\n\n\nTelegraph Football (@TeleFootball)\n\nFifa will not stop fans from bringing rainbow flags into the stadium when Iran face Egypt in the controversial \u201cPride Match\u201d in Seattle.\n\nEgypt and Iran have both lobbied Fifa demanding they have no association with Seattle\u2019s PrideFes"
@@ -90,9 +77,9 @@
       "sourceUrl": "https://www.youtube.com/watch?v=CYtq7z4hu80",
       "timestamp": "2026-06-25T20:00:24+00:00",
       "type": "video_title",
-      "topic": "uk-world-politics",
+      "topic": "state-local-politics",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "Andy Burnham Thought Nobody Was Watching..."
     },
     {
@@ -131,19 +118,11 @@
       "type": "video_title",
       "topic": "uk-world-politics",
       "relevance": "medium",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "The 'King of the North' Tries to Save Britain as Fauci Faces Reckoning - SF734"
     }
   ],
   "topicSummary": {
-    "media-press": [
-      {
-        "quote": "The media's narrative got exposed.\n\nVideo",
-        "sourceUrl": "https://x.com/rustyrockets/status/2070334674325414312",
-        "platform": "x",
-        "timestamp": "2026-06-26T02:33:45+00:00"
-      }
-    ],
     "criminal-justice": [
       {
         "quote": "Disgusting!\n\nTeenage boy has been beaten to death by a gang who filmed the attack &amp; shared it online.\n\n\nBenny Johnson (@bennyjohnson)\n\nThis is Louis.\n\nHe was 17 years-old.\n\nOn Friday night he was beaten into a coma by a group of foreign savages in Narbonne, France\n\nThe video is too graphic to po",
@@ -164,24 +143,12 @@
         "timestamp": "2026-06-25T11:44:56+00:00"
       }
     ],
-    "uk-world-politics": [
+    "gender-lgbtq": [
       {
         "quote": "This should be interesting.\n\n\nTelegraph Football (@TeleFootball)\n\nFifa will not stop fans from bringing rainbow flags into the stadium when Iran face Egypt in the controversial \u201cPride Match\u201d in Seattle.\n\nEgypt and Iran have both lobbied Fifa demanding they have no association with Seattle\u2019s PrideFes",
         "sourceUrl": "https://x.com/rustyrockets/status/2070219387093557682",
         "platform": "x",
         "timestamp": "2026-06-25T18:55:39+00:00"
-      },
-      {
-        "quote": "Andy Burnham Thought Nobody Was Watching...",
-        "sourceUrl": "https://www.youtube.com/watch?v=CYtq7z4hu80",
-        "platform": "youtube",
-        "timestamp": "2026-06-25T20:00:24+00:00"
-      },
-      {
-        "quote": "The 'King of the North' Tries to Save Britain as Fauci Faces Reckoning - SF734",
-        "sourceUrl": "https://www.youtube.com/watch?v=9WXD6LZnCTc",
-        "platform": "youtube",
-        "timestamp": "2026-06-24T19:56:44+00:00"
       }
     ],
     "trump-policy": [
@@ -204,6 +171,22 @@
         "sourceUrl": "https://x.com/rustyrockets/status/2069880743170302351",
         "platform": "x",
         "timestamp": "2026-06-24T20:30:00+00:00"
+      }
+    ],
+    "state-local-politics": [
+      {
+        "quote": "Andy Burnham Thought Nobody Was Watching...",
+        "sourceUrl": "https://www.youtube.com/watch?v=CYtq7z4hu80",
+        "platform": "youtube",
+        "timestamp": "2026-06-25T20:00:24+00:00"
+      }
+    ],
+    "uk-world-politics": [
+      {
+        "quote": "The 'King of the North' Tries to Save Britain as Fauci Faces Reckoning - SF734",
+        "sourceUrl": "https://www.youtube.com/watch?v=9WXD6LZnCTc",
+        "platform": "youtube",
+        "timestamp": "2026-06-24T19:56:44+00:00"
       }
     ]
   }
