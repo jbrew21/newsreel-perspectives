@@ -1,7 +1,7 @@
 {
   "voiceId": "rfk-jr",
   "voiceName": "Robert F. Kennedy Jr.",
-  "collectedAt": "2026-06-26T10:30:33.986976",
+  "collectedAt": "2026-06-26T11:48:43.109996",
   "date": "2026-06-26",
   "posts": [
     {
@@ -77,10 +77,36 @@
       "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
       "timestamp": "2024-11-07T18:39:36+00:00",
       "type": "video_title",
-      "topic": "other",
+      "topic": "trump-administration",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Corruption"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "tiktok",
+      "text": "United Unstoppable. #lasereyes ",
+      "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7436064791585623327",
+      "timestamp": "2024-11-11T16:49:30+00:00",
+      "type": "video_caption",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "United Unstoppable. #lasereyes "
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "tiktok",
+      "text": "Yes, Joe Rogan, veterans are the most deserving of benefiting from psychedelic therapy.",
+      "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7435810066890099998",
+      "timestamp": "2024-11-11T00:21:00+00:00",
+      "type": "video_caption",
+      "topic": "drugs-addiction",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "Yes, Joe Rogan, veterans are the most deserving of benefiting from psychedelic therapy."
     }
   ],
   "topicSummary": {
@@ -106,6 +132,12 @@
         "sourceUrl": "https://www.youtube.com/shorts/eBt-U6dL9bI",
         "platform": "youtube",
         "timestamp": "2024-11-11T00:05:56+00:00"
+      },
+      {
+        "quote": "Yes, Joe Rogan, veterans are the most deserving of benefiting from psychedelic therapy.",
+        "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7435810066890099998",
+        "platform": "tiktok",
+        "timestamp": "2024-11-11T00:21:00+00:00"
       }
     ],
     "healthcare": [
@@ -124,12 +156,18 @@
         "timestamp": "2024-11-09T20:30:09+00:00"
       }
     ],
-    "other": [
+    "trump-administration": [
       {
         "quote": "Corruption",
         "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
         "platform": "youtube",
         "timestamp": "2024-11-07T18:39:36+00:00"
+      },
+      {
+        "quote": "United Unstoppable. #lasereyes ",
+        "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7436064791585623327",
+        "platform": "tiktok",
+        "timestamp": "2024-11-11T16:49:30+00:00"
       }
     ]
   }

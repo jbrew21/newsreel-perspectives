@@ -1,7 +1,7 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-06-26T10:30:33.969825",
+  "collectedAt": "2026-06-26T11:48:43.093217",
   "date": "2026-06-26",
   "posts": [
     {
@@ -26,7 +26,7 @@
       "timestamp": "2026-06-25T20:00:31+00:00",
       "type": "video_title",
       "topic": "immigration",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "quote": "Remigration Saves Lives"
     },
@@ -73,6 +73,19 @@
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
       "platform": "youtube",
+      "text": "The Juneteenth watermelon reclamation has begun",
+      "sourceUrl": "https://www.youtube.com/shorts/MYyu7d8NvQo",
+      "timestamp": "2026-06-23T18:33:29+00:00",
+      "type": "video_title",
+      "topic": "civil-rights-race",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "The Juneteenth watermelon reclamation has begun"
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
       "text": "They fired her, doxxed her, and attacked her for saying this",
       "sourceUrl": "https://www.youtube.com/shorts/Ik-aD1hlN1c",
       "timestamp": "2026-06-22T20:30:10+00:00",
@@ -81,19 +94,6 @@
       "relevance": "medium",
       "stance": "strong",
       "quote": "They fired her, doxxed her, and attacked her for saying this"
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "This Texas Woman's Islam Rant Goes Crazy",
-      "sourceUrl": "https://www.youtube.com/watch?v=S0ZFXeAO0_s",
-      "timestamp": "2026-06-22T20:02:35+00:00",
-      "type": "video_title",
-      "topic": "religion-faith",
-      "relevance": "medium",
-      "stance": "lean",
-      "quote": "This Texas Woman's Islam Rant Goes Crazy"
     }
   ],
   "topicSummary": {
@@ -135,20 +135,20 @@
         "timestamp": "2026-06-23T20:30:22+00:00"
       }
     ],
+    "civil-rights-race": [
+      {
+        "quote": "The Juneteenth watermelon reclamation has begun",
+        "sourceUrl": "https://www.youtube.com/shorts/MYyu7d8NvQo",
+        "platform": "youtube",
+        "timestamp": "2026-06-23T18:33:29+00:00"
+      }
+    ],
     "free-speech-censorship": [
       {
         "quote": "They fired her, doxxed her, and attacked her for saying this",
         "sourceUrl": "https://www.youtube.com/shorts/Ik-aD1hlN1c",
         "platform": "youtube",
         "timestamp": "2026-06-22T20:30:10+00:00"
-      }
-    ],
-    "religion-faith": [
-      {
-        "quote": "This Texas Woman's Islam Rant Goes Crazy",
-        "sourceUrl": "https://www.youtube.com/watch?v=S0ZFXeAO0_s",
-        "platform": "youtube",
-        "timestamp": "2026-06-22T20:02:35+00:00"
       }
     ]
   }
