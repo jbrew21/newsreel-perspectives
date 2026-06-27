@@ -1,7 +1,7 @@
 {
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
-  "collectedAt": "2026-06-27T09:39:05.073016",
+  "collectedAt": "2026-06-27T10:59:13.310305",
   "date": "2026-06-27",
   "posts": [
     {
@@ -65,22 +65,9 @@
       "timestamp": "2026-06-22T21:05:46+00:00",
       "type": "video_title",
       "topic": "israel-palestine",
-      "relevance": "medium",
-      "stance": "strong",
-      "quote": "The Mamdani AIPAC Scandal is Pathetic"
-    },
-    {
-      "voiceId": "philip-defranco",
-      "voiceName": "Philip DeFranco",
-      "platform": "youtube",
-      "text": "Trump Just Surrendered to Iran",
-      "sourceUrl": "https://www.youtube.com/watch?v=etofLBwcMmI",
-      "timestamp": "2026-06-18T21:32:10+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
       "relevance": "high",
       "stance": "strong",
-      "quote": "Trump Just Surrendered to Iran"
+      "quote": "The Mamdani AIPAC Scandal is Pathetic"
     },
     {
       "voiceId": "philip-defranco",
@@ -91,7 +78,7 @@
       "timestamp": "2026-06-17T21:02:02+00:00",
       "type": "video_title",
       "topic": "gender-lgbtq",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
       "quote": "Dad Harassed &amp; 911 Called For Taking Daughters To Use the Bathroom"
     },
@@ -105,7 +92,7 @@
       "type": "video_title",
       "topic": "media-personalities",
       "relevance": "medium",
-      "stance": "lean",
+      "stance": "strong",
       "quote": "Joe Rogan Caught in &quot;Michelle Obama is a Man&quot; Scandal &amp; I'm Giving $1,000,000 Away"
     },
     {
@@ -117,7 +104,7 @@
       "timestamp": "2026-06-25T18:07:31+00:00",
       "type": "video_caption",
       "topic": "healthcare",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
       "quote": "Doctors in America Forced to Ration Cancer Drugs #America #News "
     },
@@ -129,23 +116,10 @@
       "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7655027514514885919",
       "timestamp": "2026-06-24T18:16:38+00:00",
       "type": "video_caption",
-      "topic": "immigration",
-      "relevance": "medium",
+      "topic": "criminal-justice",
+      "relevance": "high",
       "stance": "lean",
       "quote": "Anti-ICE Riot Let to 450 Years Behind Bars for Alleged ANTIFA Menbers #USA #News "
-    },
-    {
-      "voiceId": "philip-defranco",
-      "voiceName": "Philip DeFranco",
-      "platform": "tiktok",
-      "text": "Meta Pauses AI-Traning Tool That Tracks Employees After Internal Leaks",
-      "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7654684939903880479",
-      "timestamp": "2026-06-23T20:07:21+00:00",
-      "type": "video_caption",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "quote": "Meta Pauses AI-Traning Tool That Tracks Employees After Internal Leaks"
     },
     {
       "voiceId": "philip-defranco",
@@ -217,20 +191,6 @@
         "timestamp": "2026-06-22T21:05:46+00:00"
       }
     ],
-    "iran-conflict": [
-      {
-        "quote": "Trump Just Surrendered to Iran",
-        "sourceUrl": "https://www.youtube.com/watch?v=etofLBwcMmI",
-        "platform": "youtube",
-        "timestamp": "2026-06-18T21:32:10+00:00"
-      },
-      {
-        "quote": "Trump Is Lying About the US Winning the War in Iran #Trump #Iran ",
-        "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7652802020847389982",
-        "platform": "tiktok",
-        "timestamp": "2026-06-18T18:20:30+00:00"
-      }
-    ],
     "gender-lgbtq": [
       {
         "quote": "Dad Harassed &amp; 911 Called For Taking Daughters To Use the Bathroom",
@@ -247,7 +207,7 @@
         "timestamp": "2026-06-25T18:07:31+00:00"
       }
     ],
-    "immigration": [
+    "criminal-justice": [
       {
         "quote": "Anti-ICE Riot Let to 450 Years Behind Bars for Alleged ANTIFA Menbers #USA #News ",
         "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7655027514514885919",
@@ -257,16 +217,18 @@
     ],
     "ai-technology": [
       {
-        "quote": "Meta Pauses AI-Traning Tool That Tracks Employees After Internal Leaks",
-        "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7654684939903880479",
-        "platform": "tiktok",
-        "timestamp": "2026-06-23T20:07:21+00:00"
-      },
-      {
         "quote": "NVIDIA Wants to Replace You With AI #TechNews",
         "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7654343045764156702",
         "platform": "tiktok",
         "timestamp": "2026-06-22T23:00:00+00:00"
+      }
+    ],
+    "iran-conflict": [
+      {
+        "quote": "Trump Is Lying About the US Winning the War in Iran #Trump #Iran ",
+        "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7652802020847389982",
+        "platform": "tiktok",
+        "timestamp": "2026-06-18T18:20:30+00:00"
       }
     ]
   }
