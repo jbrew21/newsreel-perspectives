@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-06-27T09:39:05.074492",
+  "collectedAt": "2026-06-27T10:59:13.311768",
   "date": "2026-06-27",
   "posts": [
     {
@@ -12,10 +12,23 @@
       "sourceUrl": "https://x.com/billmaher/status/2068170852152344761",
       "timestamp": "2026-06-20T03:15:30+00:00",
       "type": "tweet",
-      "topic": "culture-war",
+      "topic": "other",
       "relevance": "medium",
       "stance": "lean",
       "quote": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "x",
+      "text": "Father\u2019s Day is Sunday! Kristi Noem\u2019s kids call their father \u201cPop.\u201d Because that\u2019s what happens when his tits hit something sharp.\n\nVideo",
+      "sourceUrl": "https://x.com/billmaher/status/2068170527236350163",
+      "timestamp": "2026-06-20T03:14:13+00:00",
+      "type": "tweet",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "strong",
+      "quote": "Father\u2019s Day is Sunday! Kristi Noem\u2019s kids call their father \u201cPop.\u201d Because that\u2019s what happens when his tits hit something sharp.\n\nVideo"
     },
     {
       "voiceId": "bill-maher",
@@ -26,7 +39,7 @@
       "timestamp": "2026-06-16T15:07:53+00:00",
       "type": "tweet",
       "topic": "epstein-scandal",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
       "quote": "Epstein foul play? #RTOvertime @RealTimers\n\nVideo"
     },
@@ -39,7 +52,7 @@
       "timestamp": "2026-06-27T03:00:23+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)"
     },
@@ -52,7 +65,7 @@
       "timestamp": "2026-06-20T03:00:06+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
       "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)"
     },
@@ -71,12 +84,20 @@
     }
   ],
   "topicSummary": {
-    "culture-war": [
+    "other": [
       {
         "quote": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo",
         "sourceUrl": "https://x.com/billmaher/status/2068170852152344761",
         "platform": "x",
         "timestamp": "2026-06-20T03:15:30+00:00"
+      }
+    ],
+    "state-local-politics": [
+      {
+        "quote": "Father\u2019s Day is Sunday! Kristi Noem\u2019s kids call their father \u201cPop.\u201d Because that\u2019s what happens when his tits hit something sharp.\n\nVideo",
+        "sourceUrl": "https://x.com/billmaher/status/2068170527236350163",
+        "platform": "x",
+        "timestamp": "2026-06-20T03:14:13+00:00"
       }
     ],
     "epstein-scandal": [
