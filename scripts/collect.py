@@ -1028,10 +1028,17 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
                         # Use the actual post/title text
                         posts[idx]['quote'] = original[:300]
 
-            # Filter: must be relevant AND taking a position
-            return [p for p in posts
+            # Perspective filter: keep only posts that are relevant AND where
+            # the voice is actually taking a stand (strong/lean). Pure reporting,
+            # promo and personal posts (neutral / low relevance) are dropped so
+            # downstream only ever sees genuine perspectives.
+            kept = [p for p in posts
                     if p.get('relevance') in ('high', 'medium')
                     and p.get('stance') in ('strong', 'lean')]
+            dropped = len(posts) - len(kept)
+            if dropped:
+                print(f"    Perspective filter: kept {len(kept)}, dropped {dropped} (no stance / not news)")
+            return kept
 
     except Exception as e:
         print(f"    ⚠ Claude categorization failed: {e}")
