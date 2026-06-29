@@ -54,12 +54,30 @@ def display_label(slug, labels):
     return labels.get(slug) or slug.replace('-', ' ').title()
 
 
+# Promo / self-marketing markers. These get mis-categorized as stances
+# (e.g. podcast episode blurbs) but aren't positions on anything -- they make
+# profiles read like ad copy, so keep them out of the stance store.
+PROMO_MARKERS = (
+    'open.spotify.com/episode', 'spotify.com/episode',
+    'new episode', 'episode #', 'full episode', 'out now on',
+    'watch the full', 'link in bio', 'available now', 'subscribe',
+    'tune in', 'catch the latest', 'premieres', 'merch',
+)
+
+
+def looks_like_promo(quote):
+    q = quote.lower()
+    return any(m in q for m in PROMO_MARKERS)
+
+
 def stance_from_post(post):
     """Build a stance entry from a collected post, or None if unusable."""
     url = post.get('sourceUrl', '')
     quote = (post.get('quote') or post.get('text') or '').strip()
     topic = post.get('topic', '')
     if not url or not quote or not topic or topic in ('uncategorized', 'other'):
+        return None
+    if looks_like_promo(quote):
         return None
     return {
         'date': post.get('date') or (post.get('timestamp', '')[:10]),
@@ -113,6 +131,34 @@ def flatten_store(store):
     return flat
 
 
+def _norm_words(text):
+    """Lowercased word set for near-duplicate comparison."""
+    import re
+    return set(re.findall(r'[a-z0-9]+', (text or '').lower()))
+
+
+def dedupe_quotes(stances):
+    """Drop near-identical quotes (>70% word overlap), keeping the newest.
+    Different posts often repeat the same line nearly verbatim; without this
+    a topic shows the same stance two or three times."""
+    kept = []
+    kept_words = []
+    for s in stances:  # assumed newest-first
+        w = _norm_words(s.get('quote', ''))
+        if not w:
+            continue
+        dup = False
+        for prev in kept_words:
+            overlap = len(w & prev) / min(len(w), len(prev))
+            if overlap > 0.7:
+                dup = True
+                break
+        if not dup:
+            kept.append(s)
+            kept_words.append(w)
+    return kept
+
+
 def build_store(voice_id, voice_name, new_stances, existing_store, labels, cutoff_date, updated_at):
     """Merge new stances into the existing store, dedup, group, cap, age out."""
     merged = {}  # sourceUrl -> stance (dedup, prefer newest seen)
@@ -132,6 +178,7 @@ def build_store(voice_id, voice_name, new_stances, existing_store, labels, cutof
     total = 0
     for slug, stances in by_topic.items():
         stances.sort(key=lambda x: x.get('date', ''), reverse=True)
+        stances = dedupe_quotes(stances)
         stances = stances[:MAX_STANCES_PER_TOPIC]
         total += len(stances)
         topics.append({

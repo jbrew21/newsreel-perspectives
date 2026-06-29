@@ -256,6 +256,18 @@
     font-size: var(--text-sm); font-weight: 700; color: var(--accent);
     text-transform: uppercase; letter-spacing: 0.04em;
   }
+  .stance-topic-count {
+    font-size: var(--text-xs); color: var(--text-dim); white-space: nowrap;
+  }
+  .stance-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--border-hover);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-5);
+    margin-bottom: var(--space-3);
+  }
+  .stance-card-strong { border-left-color: var(--accent); }
   .stance-quote {
     font-size: var(--text-sm); color: var(--text-secondary);
     line-height: var(--leading-normal); font-style: italic;
@@ -265,12 +277,11 @@
     margin-top: var(--space-3);
   }
   .stance-date { font-size: var(--text-xs); color: var(--text-dim); }
-  .stance-badge {
-    font-size: var(--text-xs); font-weight: 700; color: var(--accent);
-    background: var(--accent-bg); border-radius: var(--radius-sm);
-    padding: 1px 7px; text-transform: uppercase; letter-spacing: 0.03em;
-  }
   .stance-meta .position-source { margin-top: 0; }
+  .stance-more {
+    text-align: center; font-size: var(--text-xs); color: var(--text-dim);
+    padding: var(--space-2) 0;
+  }
 
   /* Allies row */
   .position-allies {
@@ -1064,24 +1075,14 @@
       '</a>';
     }
 
-    // Fallback: if no story positions but has topic posts, show simple list
-    if (!positionsHtml && topics.length > 0) {
-      for (var ti = 0; ti < topics.length; ti++) {
-        var topic = topics[ti];
-        var quotes = topicSummary[topic] || [];
-        if (quotes.length === 0) continue;
-        var bq = quotes[0];
-        var tc = topicColor(topic);
-        positionsHtml += '<article class="position-card" style="border-left:3px solid ' + tc + ';">' +
-          '<div class="position-headline" style="color:' + tc + ';">' + esc(topic.replace(/-/g, ' ')) + '</div>' +
-          '<div class="position-quote">"' + esc((bq.quote || bq.text || '').substring(0, 280)) + '"</div>' +
-          (bq.sourceUrl ? '<a class="position-source" href="' + safeHref(bq.sourceUrl) + '" target="_blank" rel="noopener">View on ' + esc(fullPlatformName(bq.platform)) + '</a>' : '') +
-        '</article>';
-      }
-    }
-
+    // No fallback topic cards here -- the "Where they stand" section below
+    // covers each voice's topic history in a consistent, deduped format.
+    // When there's no position on today's stories, show a short pointer.
     if (!positionsHtml) {
-      positionsHtml = '<div class="empty-state">No recent positions found. Check back after the next daily collection.</div>';
+      var hasStances = stanceData && stanceData.topics && stanceData.topics.length;
+      positionsHtml = hasStances
+        ? '<div class="empty-state">No position on today’s top stories. See their tracked stances below.</div>'
+        : '<div class="empty-state">No recent positions found. Check back after the next daily collection.</div>';
     }
 
     // Build aligned voices section
@@ -1150,39 +1151,48 @@
     }
 
     // "Where they stand" -- accumulated, topic-grouped stance history.
+    // Capped to a consistent, scannable length so every profile reads the
+    // same whether the voice has 3 stances or 300.
+    var STANCE_MAX_TOPICS = 6;
+    var STANCE_PER_TOPIC = 2;
     var stancesSection = '';
     if (stanceData && stanceData.topics && stanceData.topics.length) {
+      var shownTopics = stanceData.topics.slice(0, STANCE_MAX_TOPICS);
       var stancesHtml = '';
-      stanceData.topics.forEach(function(tg) {
+      shownTopics.forEach(function(tg) {
         var rows = '';
-        (tg.stances || []).slice(0, 4).forEach(function(s) {
-          var strongBadge = (s.stance === 'strong')
-            ? '<span class="stance-badge">Strong stance</span>' : '';
+        (tg.stances || []).slice(0, STANCE_PER_TOPIC).forEach(function(s) {
           rows +=
-            '<article class="position-card">' +
-              '<div class="stance-quote">"' + esc((s.quote || '').substring(0, 280)) + '"</div>' +
+            '<article class="stance-card' + (s.stance === 'strong' ? ' stance-card-strong' : '') + '">' +
+              '<div class="stance-quote">"' + esc((s.quote || '').substring(0, 240)) + '"</div>' +
               '<div class="stance-meta">' +
                 (s.date ? '<span class="stance-date">' + esc(s.date) + '</span>' : '') +
-                strongBadge +
                 (s.sourceUrl ? '<a class="position-source" href="' + safeHref(s.sourceUrl) + '" target="_blank" rel="noopener">View on ' + esc(fullPlatformName(s.platform)) + '</a>' : '') +
               '</div>' +
             '</article>';
         });
-        var more = (tg.count > 4) ? '<span class="section-count">' + tg.count + ' total</span>' : '';
+        var countLabel = tg.count + ' stance' + (tg.count !== 1 ? 's' : '');
         stancesHtml +=
           '<div class="stance-topic">' +
-            '<div class="stance-topic-head"><span class="stance-topic-label">' + esc(tg.label || tg.topic) + '</span>' + more + '</div>' +
+            '<div class="stance-topic-head">' +
+              '<span class="stance-topic-label">' + esc(tg.label || tg.topic) + '</span>' +
+              '<span class="stance-topic-count">' + countLabel + '</span>' +
+            '</div>' +
             rows +
           '</div>';
       });
+      var moreTopics = stanceData.topics.length - shownTopics.length;
+      var moreHtml = moreTopics > 0
+        ? '<div class="stance-more">+ ' + moreTopics + ' more topic' + (moreTopics !== 1 ? 's' : '') + ' tracked</div>'
+        : '';
       stancesSection =
         '<div class="section-divider">' +
           '<div class="section-divider-inner">' +
             '<span class="section-title">Where they stand</span>' +
-            '<span class="section-count">' + stanceData.topicCount + ' topic' + (stanceData.topicCount !== 1 ? 's' : '') + ' · ' + stanceData.stanceCount + ' stances</span>' +
+            '<span class="section-count">' + stanceData.topicCount + ' topic' + (stanceData.topicCount !== 1 ? 's' : '') + ' · ' + stanceData.stanceCount + ' stances tracked</span>' +
           '</div>' +
         '</div>' +
-        '<section class="stances-list" aria-label="Stances taken by ' + esc(voice.name) + '">' + stancesHtml + '</section>';
+        '<section class="stances-list" aria-label="Stances taken by ' + esc(voice.name) + '">' + stancesHtml + moreHtml + '</section>';
     }
 
     // Hide skeleton, show content
