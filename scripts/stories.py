@@ -57,6 +57,12 @@ def load_env():
 load_env()
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 
+# Homepage story floor: on thin news days the quality gate can collapse the
+# feed to 2-3 stories. Aim for at least this many by backfilling from genuine
+# near-misses (real but weaker engagement) -- never from true garbage
+# (no confidence / zero on-topic voices).
+MIN_STORIES = 5
+
 
 # Transient API failures that are worth retrying (rate limits, overload,
 # gateway and timeout errors). A failed call here silently drops a story from
@@ -106,8 +112,9 @@ def call_claude(prompt, max_tokens=1024):
             print(f"  Claude API error (attempt {attempt}/{MAX_API_RETRIES}): {e}")
             if attempt == MAX_API_RETRIES:
                 return None
-        # Exponential backoff: 2s, 4s, 8s
-        time.sleep(2 ** attempt)
+        # Exponential backoff between attempts (2s, 4s) — not after the last.
+        if attempt < MAX_API_RETRIES:
+            time.sleep(2 ** attempt)
 
     return None
 
@@ -536,12 +543,19 @@ def build_stories(date=None):
 
         print(f"    Quality: confidence={confidence}/10, direct={direct}/{total_rated} ({direct_pct:.0%})")
 
-        if confidence <= 3:
-            print(f"    DROPPED: confidence too low ({confidence}/10)")
+        # Tiered gate (instead of a hard drop):
+        #  - PASS: clears the original quality bar -> always shown.
+        #  - BACKFILL: real but weaker engagement -> shown only to reach
+        #    MIN_STORIES on thin days, and flagged belowThreshold.
+        #  - REJECT: no confidence or zero on-topic voices -> never shown.
+        passes_gate = confidence > 3 and (direct_pct >= 0.2 or direct >= 3)
+        backfill_ok = (not passes_gate) and confidence >= 2 and direct >= 2
+
+        if not passes_gate and not backfill_ok:
+            print(f"    DROPPED: no genuine debate (confidence {confidence}/10, {direct} direct)")
             continue
-        if direct_pct < 0.2 and direct < 3:
-            print(f"    DROPPED: too few direct voices ({direct} direct, {direct_pct:.0%})")
-            continue
+        if not passes_gate:
+            print(f"    BACKFILL-ELIGIBLE: below bar (confidence {confidence}/10, {direct} direct) — used only to reach floor")
 
         # Validation pass: check how well each voice fits its cluster
         validation_result = validate_clusters(
@@ -606,6 +620,13 @@ def build_stories(date=None):
                 })
 
         cluster_list.sort(key=lambda c: -c['voiceCount'])
+
+        # Guard: if validation stripped every voice from every cluster, there is
+        # no story to show. Drop it — never append a 0-cluster story, which the
+        # floor could otherwise backfill onto the homepage as "0 positions".
+        if not cluster_list:
+            print(f"    DROPPED: all voices failed cluster validation (fit < 4)")
+            continue
 
         # ── Apply editorial overrides from review dashboard ──
         overrides_path = ROOT / "data" / "editorial-overrides.json"
@@ -762,6 +783,8 @@ If no real tension exists, return {{"tension": 0}}"""
             'relevance': relevance,
             'validated': bool(validation_result and 'validations' in validation_result),
             'heatScore': heat_score,
+            'belowThreshold': not passes_gate,
+            '_directPct': round(direct_pct, 3),
         }
         if counter_narrative:
             story['counterNarrative'] = counter_narrative
@@ -771,6 +794,30 @@ If no real tension exists, return {{"tension": 0}}"""
         print(f"    Heat: {heat_score}/100 | {result.get('summary', '')}")
         if counter_narrative:
             print(f"    Counter: {counter_narrative['tension']}")
+
+    # ── Apply the story floor ──
+    # Always keep gate-passers. If that's fewer than MIN_STORIES, backfill from
+    # the strongest near-misses (highest confidence, then most on-topic) so the
+    # homepage doesn't collapse to 2-3 on thin days. Garbage was already
+    # rejected above, so backfills are weak-but-real, not off-topic noise.
+    passers = [s for s in stories if not s.get('belowThreshold')]
+    backfills = [s for s in stories if s.get('belowThreshold')]
+    backfills.sort(key=lambda s: (-s.get('confidence', 0), -s.get('_directPct', 0)))
+
+    if len(passers) >= MIN_STORIES:
+        stories = passers
+        print(f"\n  Story floor: {len(passers)} passed the gate (no backfill needed).")
+    else:
+        need = MIN_STORIES - len(passers)
+        used = backfills[:need]
+        stories = passers + used
+        print(f"\n  Story floor: {len(passers)} passed + {len(used)} backfilled "
+              f"(below threshold) to reach {len(stories)} "
+              f"[{len(backfills) - len(used)} near-misses left unused].")
+
+    # Strip internal-only fields before saving
+    for s in stories:
+        s.pop('_directPct', None)
 
     # Sort stories by heat score (hottest first)
     stories.sort(key=lambda s: -s.get('heatScore', 0))
@@ -792,6 +839,7 @@ If no real tension exists, return {{"tension": 0}}"""
             'clusterCount': s['clusterCount'],
             'insight': s['summary'],
             'clusters': s['clusters'],
+            'belowThreshold': s.get('belowThreshold', False),
         })
     compat_path.write_text(json.dumps(compat, indent=2))
 

@@ -109,15 +109,23 @@ def health_check():
     return total_entries > 0
 
 
+def _git_has_changes(path):
+    """True if `path` has any modified or untracked changes (porcelain catches
+    new files that `git diff` misses — e.g. a brand-new voice's stance file)."""
+    r = subprocess.run(
+        ['git', 'status', '--porcelain', '--', path],
+        cwd=str(ROOT), capture_output=True, text=True,
+    )
+    return bool(r.stdout.strip())
+
+
 def git_push():
     """Commit and push new data to GitHub."""
     try:
-        # Check for changes
-        result = subprocess.run(
-            ['git', 'diff', '--quiet', 'data/posts/'],
-            cwd=str(ROOT), capture_output=True,
-        )
-        if result.returncode == 0:
+        # Commit if EITHER posts or the stance store changed. (Checking only
+        # data/posts/ would skip committing stances on a thin day where posts
+        # didn't change but build_stances still wrote new stances.)
+        if not _git_has_changes('data/posts/') and not _git_has_changes('data/stances/'):
             log("Git: No new data to commit")
             return True
 

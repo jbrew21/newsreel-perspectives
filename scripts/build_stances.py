@@ -57,11 +57,15 @@ def display_label(slug, labels):
 # Promo / self-marketing markers. These get mis-categorized as stances
 # (e.g. podcast episode blurbs) but aren't positions on anything -- they make
 # profiles read like ad copy, so keep them out of the stance store.
+# Use SPECIFIC phrases, not bare words: "subscribe"/"tune in"/"available now"
+# appear in real political statements ("subscribe to my policy newsletter",
+# "tune in to monitor coverage"), so match the promo phrasing instead.
 PROMO_MARKERS = (
     'open.spotify.com/episode', 'spotify.com/episode',
-    'new episode', 'episode #', 'full episode', 'out now on',
-    'watch the full', 'link in bio', 'available now', 'subscribe',
-    'tune in', 'catch the latest', 'premieres', 'merch',
+    'new episode', 'full episode', 'latest episode', 'episode #',
+    'new podcast', 'out now on', 'link in bio',
+    'watch the full episode', 'subscribe to my', 'subscribe to our',
+    'tune in to', 'catch the latest episode', 'available wherever you',
 )
 
 
@@ -83,6 +87,7 @@ def stance_from_post(post):
         'date': post.get('date') or (post.get('timestamp', '')[:10]),
         'topic': topic,
         'stance': post.get('stance', 'lean'),     # strong | lean
+        'summary': (post.get('summary', '') or '').strip()[:120],
         'quote': quote[:280],
         'sourceUrl': url,
         'platform': post.get('platform', ''),
@@ -141,6 +146,7 @@ def dedupe_quotes(stances):
     """Drop near-identical quotes (>70% word overlap), keeping the newest.
     Different posts often repeat the same line nearly verbatim; without this
     a topic shows the same stance two or three times."""
+    MIN_OVERLAP_WORDS = 6  # below this, high overlap is just shared policy terms
     kept = []
     kept_words = []
     for s in stances:  # assumed newest-first
@@ -149,6 +155,12 @@ def dedupe_quotes(stances):
             continue
         dup = False
         for prev in kept_words:
+            # Only treat as a near-duplicate when both quotes are long enough
+            # that high word-overlap is meaningful. Short quotes share common
+            # policy terms by chance ("Backs Iran sanctions" vs "Iran sanctions"
+            # = 100% overlap but distinct), so never dedupe them on overlap.
+            if len(w) < MIN_OVERLAP_WORDS or len(prev) < MIN_OVERLAP_WORDS:
+                continue
             overlap = len(w & prev) / min(len(w), len(prev))
             if overlap > 0.7:
                 dup = True
@@ -169,10 +181,14 @@ def build_store(voice_id, voice_name, new_stances, existing_store, labels, cutof
             continue  # too old
         merged[s['sourceUrl']] = s
 
-    # Group by topic
+    # Group by topic (skip any entry missing a topic — defensive against a
+    # corrupted store; stance_from_post already requires one).
     by_topic = {}
     for s in merged.values():
-        by_topic.setdefault(s['topic'], []).append(s)
+        topic = s.get('topic')
+        if not topic:
+            continue
+        by_topic.setdefault(topic, []).append(s)
 
     topics = []
     total = 0
@@ -180,6 +196,8 @@ def build_store(voice_id, voice_name, new_stances, existing_store, labels, cutof
         stances.sort(key=lambda x: x.get('date', ''), reverse=True)
         stances = dedupe_quotes(stances)
         stances = stances[:MAX_STANCES_PER_TOPIC]
+        if not stances:
+            continue  # everything in this topic was a dupe/empty — no header
         total += len(stances)
         topics.append({
             'topic': slug,
