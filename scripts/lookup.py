@@ -42,6 +42,26 @@ def is_content_safe(text):
     return True
 
 
+# Stop words for extracting the meaningful keywords from a story headline.
+# Used to rank quotes by on-topic relevance and to detect match precision.
+QUERY_STOP_WORDS = {
+    'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+    'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+    'should', 'may', 'might', 'shall', 'can', 'to', 'of', 'in', 'for',
+    'on', 'with', 'at', 'by', 'from', 'as', 'into', 'about', 'after',
+    'and', 'but', 'or', 'nor', 'not', 'so', 'yet', 'both', 'either',
+    'that', 'this', 'these', 'those', 'it', 'its', 'his', 'her', 'he',
+    'she', 'they', 'them', 'we', 'us', 'you', 'your', 'our', 'their',
+    'says', 'said', 'new', 'also', 'just', 'try', 'tries',
+}
+
+
+def extract_query_keywords(headline):
+    """Return the meaningful (non-stop-word, 3+ char) keywords from a headline."""
+    return [w for w in re.findall(r'[a-z]+', headline.lower())
+            if w not in QUERY_STOP_WORDS and len(w) >= 3]
+
+
 def get_voice_photo(meta, voice_name):
     """Get photo URL from voice metadata, falling back to ui-avatars only if no real photo exists."""
     photo = meta.get('photo', '') if meta else ''
@@ -509,6 +529,11 @@ def lookup_story(headline, days=None):
         print(f"  Matched topics: {', '.join(matching_topics)}")
 
     # Collect voices from topic matches
+    # Keywords from the headline let us rank each voice's quotes by how much
+    # they're actually about THIS story, so a voice tagged with a matching
+    # topic surfaces its on-topic quote rather than an unrelated post that
+    # happens to share the same topic tag.
+    query_keywords = extract_query_keywords(headline)
     voices_found = {}
     seen_urls = set()
     for topic in matching_topics:
@@ -530,8 +555,11 @@ def lookup_story(headline, days=None):
                     'topics': [],
                     'quotes': [],
                 }
-            # Score by how topic-specific this quote is (not by length)
-            quote_score = 1
+            # Score by how many of the story's keywords this quote actually
+            # contains. Off-topic posts under a matching topic tag score 1 and
+            # sink below genuinely on-topic quotes in the top-3 display.
+            quote_lower = quote_text.lower()
+            quote_score = 1 + sum(1 for w in query_keywords if w in quote_lower)
 
             voices_found[vid]['topics'].append(topic)
             voices_found[vid]['quotes'].append({
@@ -621,17 +649,7 @@ def lookup_story(headline, days=None):
 
     # ── Match precision detection ──
     # Check if any voice's quotes actually contain the user's specific query terms
-    STOP_WORDS = {
-        'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
-        'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
-        'should', 'may', 'might', 'shall', 'can', 'to', 'of', 'in', 'for',
-        'on', 'with', 'at', 'by', 'from', 'as', 'into', 'about', 'after',
-        'and', 'but', 'or', 'nor', 'not', 'so', 'yet', 'both', 'either',
-        'that', 'this', 'these', 'those', 'it', 'its', 'his', 'her', 'he',
-        'she', 'they', 'them', 'we', 'us', 'you', 'your', 'our', 'their',
-        'says', 'said', 'new', 'also', 'just',
-    }
-    query_words = [w for w in re.findall(r'[a-z]+', headline.lower()) if w not in STOP_WORDS and len(w) >= 3]
+    query_words = extract_query_keywords(headline)
     direct_match_count = 0
     for vid, data in voices_found.items():
         for q in data['quotes']:
