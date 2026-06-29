@@ -20,6 +20,8 @@ import math
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -56,32 +58,58 @@ load_env()
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 
 
+# Transient API failures that are worth retrying (rate limits, overload,
+# gateway and timeout errors). A failed call here silently drops a story from
+# the homepage feed (the Jun 29 "Validation: skipped" incident), so retry
+# before giving up.
+RETRYABLE_STATUS = {429, 500, 502, 503, 504, 529}
+MAX_API_RETRIES = 3
+
+
 def call_claude(prompt, max_tokens=1024):
-    """Call Claude API and return parsed JSON from response."""
+    """Call Claude API and return parsed JSON, retrying transient failures."""
     if not ANTHROPIC_API_KEY:
         return None
-    try:
-        req = urllib.request.Request(
-            'https://api.anthropic.com/v1/messages',
-            data=json.dumps({
-                'model': 'claude-sonnet-4-6',
-                'max_tokens': max_tokens,
-                'messages': [{'role': 'user', 'content': prompt}],
-            }).encode(),
-            headers={
-                'x-api-key': ANTHROPIC_API_KEY,
-                'anthropic-version': '2023-06-01',
-                'content-type': 'application/json',
-            },
-        )
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = json.loads(resp.read().decode())
-        result_text = data.get('content', [{}])[0].get('text', '')
-        json_match = re.search(r'\{[\s\S]*\}', result_text)
-        if json_match:
-            return json.loads(json_match.group())
-    except Exception as e:
-        print(f"  Claude API error: {e}")
+
+    payload = json.dumps({
+        'model': 'claude-sonnet-4-6',
+        'max_tokens': max_tokens,
+        'messages': [{'role': 'user', 'content': prompt}],
+    }).encode()
+
+    for attempt in range(1, MAX_API_RETRIES + 1):
+        try:
+            req = urllib.request.Request(
+                'https://api.anthropic.com/v1/messages',
+                data=payload,
+                headers={
+                    'x-api-key': ANTHROPIC_API_KEY,
+                    'anthropic-version': '2023-06-01',
+                    'content-type': 'application/json',
+                },
+            )
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = json.loads(resp.read().decode())
+            result_text = data.get('content', [{}])[0].get('text', '')
+            json_match = re.search(r'\{[\s\S]*\}', result_text)
+            if json_match:
+                return json.loads(json_match.group())
+            # Valid HTTP response but no JSON object found — retrying won't help.
+            return None
+        except urllib.error.HTTPError as e:
+            transient = e.code in RETRYABLE_STATUS
+            print(f"  Claude API error (attempt {attempt}/{MAX_API_RETRIES}): HTTP {e.code}")
+            if not transient or attempt == MAX_API_RETRIES:
+                return None
+        except Exception as e:
+            # Network/timeout errors are transient — retry.
+            print(f"  Claude API error (attempt {attempt}/{MAX_API_RETRIES}): {e}")
+            if attempt == MAX_API_RETRIES:
+                return None
+        # Exponential backoff: 2s, 4s, 8s
+        time.sleep(2 ** attempt)
+
+    return None
 
 
 # Cluster name normalization: standardize synonyms
