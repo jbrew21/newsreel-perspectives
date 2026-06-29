@@ -868,7 +868,7 @@ Respond with ONLY the canonical slug, nothing else."""
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-haiku-4-5',
+                'model': 'claude-haiku-4-5-20251001',
                 'max_tokens': 32,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
@@ -943,6 +943,7 @@ def categorize_posts(voice_name, posts):
    - "strong" = clear opinion, argument, criticism, praise, or call to action
    - "lean" = position is implied or can be inferred from framing/tone, even if not stated outright
    - "neutral" = purely informational summary, both-sides reporting, or no discernible position
+4. Summarize their POSITION in 4-8 words ("summary"): a neutral, third-person label of the stance they're taking, e.g. "Backs sanctions, opposes unfreezing Iran's assets" or "Calls the strikes an illegal war". This is a LABEL, not a quote — paraphrasing is fine here. Leave "" if stance is neutral.
 
 FIXED TAXONOMY (use ONLY these slugs):
 {taxonomy_list}
@@ -950,7 +951,7 @@ FIXED TAXONOMY (use ONLY these slugs):
 CRITICAL RULES:
 - You MUST pick the single best-matching slug from the list above. Never create a new slug.
 - If nothing fits well, use "other".
-- Do NOT make up or paraphrase quotes. Use the EXACT text from the post.
+- Do NOT make up or paraphrase quotes. Use the EXACT text from the post. (The "summary" field is the ONLY place paraphrasing is allowed — and it must stay faithful to their actual position.)
 - If it's a video title, just use the title. If it includes a transcript, pull a real sentence from the transcript. Never invent words they didn't say.
 - For stance: we want voices who are REACTING, not just reporting. A newsletter summarizing "here's what happened" with no opinion = "neutral". A tweet saying "this is insane" = "strong". An article that frames an issue in a way that clearly favors one side = "lean".
 
@@ -959,7 +960,7 @@ POSTS:
 
 Return JSON array:
 [
-  {{"index": 0, "topic": "iran-conflict", "relevance": "high", "stance": "strong"}},
+  {{"index": 0, "topic": "iran-conflict", "relevance": "high", "stance": "strong", "summary": "Backs sanctions, opposes unfreezing Iran's assets"}},
   ...
 ]
 
@@ -1019,6 +1020,7 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
                     posts[idx]['topic'] = enforce_taxonomy(raw_topic)
                     posts[idx]['relevance'] = item.get('relevance', 'low')
                     posts[idx]['stance'] = item.get('stance', 'neutral')
+                    posts[idx]['summary'] = (item.get('summary', '') or '').strip()[:120]
                     # Use REAL text, never AI-generated quotes
                     original = posts[idx]['text']
                     if original.startswith('[VIDEO: ') and '] ' in original:
