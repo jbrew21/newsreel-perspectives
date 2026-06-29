@@ -242,6 +242,36 @@
   }
   .position-source:hover { text-decoration: underline; opacity: 0.85; }
 
+  /* -- WHERE THEY STAND (accumulated stances by topic) -- */
+  .stances-list {
+    max-width: 680px; margin: 0 auto;
+    padding: var(--space-4) var(--space-5) var(--space-8);
+  }
+  .stance-topic { margin-bottom: var(--space-6); }
+  .stance-topic-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: var(--space-3); margin-bottom: var(--space-3);
+  }
+  .stance-topic-label {
+    font-size: var(--text-sm); font-weight: 700; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .stance-quote {
+    font-size: var(--text-sm); color: var(--text-secondary);
+    line-height: var(--leading-normal); font-style: italic;
+  }
+  .stance-meta {
+    display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-3);
+    margin-top: var(--space-3);
+  }
+  .stance-date { font-size: var(--text-xs); color: var(--text-dim); }
+  .stance-badge {
+    font-size: var(--text-xs); font-weight: 700; color: var(--accent);
+    background: var(--accent-bg); border-radius: var(--radius-sm);
+    padding: 1px 7px; text-transform: uppercase; letter-spacing: 0.03em;
+  }
+  .stance-meta .position-source { margin-top: 0; }
+
   /* Allies row */
   .position-allies {
     display: flex; align-items: center; gap: var(--space-2);
@@ -732,7 +762,9 @@
 
         return loadAllPosts(dates).then(function(postData) {
           return loadStories().then(function(storyItems) {
-            renderProfile(voice, voices, postData, storyItems);
+            return loadStances(voiceId).then(function(stanceData) {
+              renderProfile(voice, voices, postData, storyItems, stanceData);
+            });
           });
         });
       })
@@ -792,6 +824,14 @@
     });
   }
 
+  /* Load the accumulated, topic-grouped stance store for this voice
+     (data/stances/{voiceId}.json). Returns null if none exists yet. */
+  function loadStances(voiceId) {
+    return fetch(BASE + '/data/stances/' + voiceId + '.json')
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .catch(function() { return null; });
+  }
+
   function loadStories() {
     return fetch(BASE + '/api/stories')
       .then(function(resp) {
@@ -808,7 +848,7 @@
   }
 
   /* -- RENDER PROFILE -- */
-  function renderProfile(voice, voices, postData, storyItems) {
+  function renderProfile(voice, voices, postData, storyItems, stanceData) {
     var voiceId = voice.id;
 
     // Build photo lookup
@@ -1109,6 +1149,42 @@
       '<section class="allies-list" aria-label="Voices aligned with ' + esc(voice.name) + '">' + alignedHtml + '</section>';
     }
 
+    // "Where they stand" -- accumulated, topic-grouped stance history.
+    var stancesSection = '';
+    if (stanceData && stanceData.topics && stanceData.topics.length) {
+      var stancesHtml = '';
+      stanceData.topics.forEach(function(tg) {
+        var rows = '';
+        (tg.stances || []).slice(0, 4).forEach(function(s) {
+          var strongBadge = (s.stance === 'strong')
+            ? '<span class="stance-badge">Strong stance</span>' : '';
+          rows +=
+            '<article class="position-card">' +
+              '<div class="stance-quote">"' + esc((s.quote || '').substring(0, 280)) + '"</div>' +
+              '<div class="stance-meta">' +
+                (s.date ? '<span class="stance-date">' + esc(s.date) + '</span>' : '') +
+                strongBadge +
+                (s.sourceUrl ? '<a class="position-source" href="' + safeHref(s.sourceUrl) + '" target="_blank" rel="noopener">View on ' + esc(fullPlatformName(s.platform)) + '</a>' : '') +
+              '</div>' +
+            '</article>';
+        });
+        var more = (tg.count > 4) ? '<span class="section-count">' + tg.count + ' total</span>' : '';
+        stancesHtml +=
+          '<div class="stance-topic">' +
+            '<div class="stance-topic-head"><span class="stance-topic-label">' + esc(tg.label || tg.topic) + '</span>' + more + '</div>' +
+            rows +
+          '</div>';
+      });
+      stancesSection =
+        '<div class="section-divider">' +
+          '<div class="section-divider-inner">' +
+            '<span class="section-title">Where they stand</span>' +
+            '<span class="section-count">' + stanceData.topicCount + ' topic' + (stanceData.topicCount !== 1 ? 's' : '') + ' · ' + stanceData.stanceCount + ' stances</span>' +
+          '</div>' +
+        '</div>' +
+        '<section class="stances-list" aria-label="Stances taken by ' + esc(voice.name) + '">' + stancesHtml + '</section>';
+    }
+
     // Hide skeleton, show content
     skeletonEl.style.display = 'none';
     contentEl.style.display = 'block';
@@ -1128,6 +1204,7 @@
         '</div>' +
       '</div>' +
       '<section class="positions-list" aria-label="Positions by ' + esc(voice.name) + '">' + positionsHtml + '</section>' +
+      stancesSection +
       alignedSection;
   }
 

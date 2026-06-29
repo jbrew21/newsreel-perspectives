@@ -121,9 +121,10 @@ def git_push():
             log("Git: No new data to commit")
             return True
 
-        # Stage and commit
+        # Stage and commit (posts + the accumulated per-voice stance store,
+        # which build_stances.py writes to data/stances/ each run).
         subprocess.run(
-            ['git', 'add', 'data/posts/'],
+            ['git', 'add', 'data/posts/', 'data/stances/'],
             cwd=str(ROOT), capture_output=True,
         )
 
@@ -287,6 +288,17 @@ def main():
     )
     if not ok:
         errors.append("Stories build failed")
+
+    # Step 2b: Accumulate per-voice stances (powers each voice's "Where they
+    # stand" profile section). Non-fatal — a failure here doesn't block deploy.
+    stances_ok = run_step(
+        "Accumulate voice stances",
+        [python, str(SCRIPTS / "build_stances.py"), "--date", DATE],
+        timeout_sec=300,
+        required=False,
+    )
+    if not stances_ok:
+        errors.append("Stance accumulation failed")
 
     # Step 3: Health check
     healthy = health_check()
