@@ -1,7 +1,7 @@
 {
   "voiceId": "elizabeth-warren",
   "voiceName": "Elizabeth Warren",
-  "collectedAt": "2026-06-29T11:59:32.947412",
+  "collectedAt": "2026-06-29T13:17:14.566460",
   "date": "2026-06-29",
   "posts": [
     {
@@ -38,7 +38,7 @@
       "sourceUrl": "https://x.com/ewarren/status/2070631985807081940",
       "timestamp": "2026-06-26T22:15:10+00:00",
       "type": "tweet",
-      "topic": "economy-trade",
+      "topic": "elections",
       "relevance": "medium",
       "stance": "lean",
       "quote": "People want change. They want Washington to stop worrying so much about giant corporations and billionaires and the trillionaire.\n\nThe Democrats who have stood up, shown that they understand this, and have demonstrated how they will fight to make life more affordable are winning."
@@ -66,7 +66,7 @@
       "type": "tweet",
       "topic": "economy-trade",
       "relevance": "high",
-      "stance": "strong",
+      "stance": "lean",
       "quote": "I agree with Donald Trump: we should bring down interest rates.\n\nBut what\u2019s standing in the way? \n\nTrump\u2019s policies that are driving inflation higher.\n\nVideo"
     },
     {
@@ -177,11 +177,50 @@
       "voiceId": "elizabeth-warren",
       "voiceName": "Elizabeth Warren",
       "platform": "tiktok",
+      "text": "What could a two cent wealth tax do? ",
+      "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7649414674143857951",
+      "timestamp": "2026-06-09T15:16:05+00:00",
+      "type": "video_caption",
+      "topic": "billionaires-wealth",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "What could a two cent wealth tax do? "
+    },
+    {
+      "voiceId": "elizabeth-warren",
+      "voiceName": "Elizabeth Warren",
+      "platform": "tiktok",
+      "text": "Our health care system needs to put patients over patients. ",
+      "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7649143554563902751",
+      "timestamp": "2026-06-08T21:43:51+00:00",
+      "type": "video_caption",
+      "topic": "healthcare",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Our health care system needs to put patients over patients. "
+    },
+    {
+      "voiceId": "elizabeth-warren",
+      "voiceName": "Elizabeth Warren",
+      "platform": "tiktok",
+      "text": "Here's how billionaires get away with not paying taxes.",
+      "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7641237188646063390",
+      "timestamp": "2026-05-18T14:23:05+00:00",
+      "type": "video_caption",
+      "topic": "billionaires-wealth",
+      "relevance": "medium",
+      "stance": "lean",
+      "quote": "Here's how billionaires get away with not paying taxes."
+    },
+    {
+      "voiceId": "elizabeth-warren",
+      "voiceName": "Elizabeth Warren",
+      "platform": "tiktok",
       "text": "Why is Donald Trump claiming TrumpRx is decreasing drug costs by 600%? ",
       "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7634303843450342687",
       "timestamp": "2026-04-29T21:58:07+00:00",
       "type": "video_caption",
-      "topic": "healthcare",
+      "topic": "drugs-addiction",
       "relevance": "medium",
       "stance": "strong",
       "quote": "Why is Donald Trump claiming TrumpRx is decreasing drug costs by 600%? "
@@ -194,12 +233,6 @@
         "sourceUrl": "https://x.com/ewarren/status/2071263599255814414",
         "platform": "x",
         "timestamp": "2026-06-28T16:04:58+00:00"
-      },
-      {
-        "quote": "People want change. They want Washington to stop worrying so much about giant corporations and billionaires and the trillionaire.\n\nThe Democrats who have stood up, shown that they understand this, and have demonstrated how they will fight to make life more affordable are winning.",
-        "sourceUrl": "https://x.com/ewarren/status/2070631985807081940",
-        "platform": "x",
-        "timestamp": "2026-06-26T22:15:10+00:00"
       },
       {
         "quote": "I agree with Donald Trump: we should bring down interest rates.\n\nBut what\u2019s standing in the way? \n\nTrump\u2019s policies that are driving inflation higher.\n\nVideo",
@@ -264,6 +297,14 @@
         "timestamp": "2026-06-23T18:52:45+00:00"
       }
     ],
+    "elections": [
+      {
+        "quote": "People want change. They want Washington to stop worrying so much about giant corporations and billionaires and the trillionaire.\n\nThe Democrats who have stood up, shown that they understand this, and have demonstrated how they will fight to make life more affordable are winning.",
+        "sourceUrl": "https://x.com/ewarren/status/2070631985807081940",
+        "platform": "x",
+        "timestamp": "2026-06-26T22:15:10+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "AI could transform our economy in the long run.\n\nBut in the short term, AI could also eliminate millions of jobs and create massive disruption for working families.\n\nWe shouldn't wait until people lose their paychecks and health care to take action.",
@@ -272,7 +313,29 @@
         "timestamp": "2026-06-23T21:05:45+00:00"
       }
     ],
+    "billionaires-wealth": [
+      {
+        "quote": "What could a two cent wealth tax do? ",
+        "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7649414674143857951",
+        "platform": "tiktok",
+        "timestamp": "2026-06-09T15:16:05+00:00"
+      },
+      {
+        "quote": "Here's how billionaires get away with not paying taxes.",
+        "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7641237188646063390",
+        "platform": "tiktok",
+        "timestamp": "2026-05-18T14:23:05+00:00"
+      }
+    ],
     "healthcare": [
+      {
+        "quote": "Our health care system needs to put patients over patients. ",
+        "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7649143554563902751",
+        "platform": "tiktok",
+        "timestamp": "2026-06-08T21:43:51+00:00"
+      }
+    ],
+    "drugs-addiction": [
       {
         "quote": "Why is Donald Trump claiming TrumpRx is decreasing drug costs by 600%? ",
         "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7634303843450342687",
