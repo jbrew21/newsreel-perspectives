@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-06-30T10:43:59.022872",
+  "collectedAt": "2026-06-30T12:01:33.015564",
   "date": "2026-06-30",
   "posts": [
     {
@@ -12,7 +12,7 @@
       "sourceUrl": "https://x.com/billmaher/status/2069461125633282169",
       "timestamp": "2026-06-23T16:42:35+00:00",
       "type": "tweet",
-      "topic": "culture-war",
+      "topic": "other",
       "relevance": "medium",
       "stance": "strong",
       "summary": "Criticizes presidential libraries as monuments to ego",
@@ -26,10 +26,10 @@
       "sourceUrl": "https://x.com/billmaher/status/2068170852152344761",
       "timestamp": "2026-06-20T03:15:30+00:00",
       "type": "tweet",
-      "topic": "culture-war",
+      "topic": "trump-administration",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Defends American checks and balances system despite current threats",
+      "summary": "Warns checks-and-balances system threatened but still functioning",
       "quote": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo"
     },
     {
@@ -41,24 +41,10 @@
       "timestamp": "2026-06-16T15:07:53+00:00",
       "type": "tweet",
       "topic": "epstein-scandal",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Questions whether Epstein's death involved foul play",
-      "quote": "Epstein foul play? #RTOvertime @RealTimers\n\nVideo"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
-      "timestamp": "2026-06-27T03:00:23+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Celebrates American ideals and national identity",
-      "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)"
+      "summary": "Questions possibility of Epstein foul play",
+      "quote": "Epstein foul play? #RTOvertime @RealTimers\n\nVideo"
     },
     {
       "voiceId": "bill-maher",
@@ -69,10 +55,24 @@
       "timestamp": "2026-06-27T03:00:23+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Offers critical advice to Vice President JD Vance",
+      "summary": "Offers criticism or advice to JD Vance",
       "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=nWVtaeqe8e0",
+      "timestamp": "2026-06-20T03:00:06+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Trump administration leadership or competence",
+      "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -83,20 +83,22 @@
       "timestamp": "2026-06-13T03:00:24+00:00",
       "type": "video_title",
       "topic": "billionaires-wealth",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Questions whether trillionaire wealth class should be prohibited",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Questions or criticizes existence of trillionaire wealth class",
       "quote": "Should We Outlaw Trillionaires? | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
-    "culture-war": [
+    "other": [
       {
         "quote": "Why does anyone need a presidential library? These are monuments to somebody's ego.\n\nVideo",
         "sourceUrl": "https://x.com/billmaher/status/2069461125633282169",
         "platform": "x",
         "timestamp": "2026-06-23T16:42:35+00:00"
-      },
+      }
+    ],
+    "trump-administration": [
       {
         "quote": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo",
         "sourceUrl": "https://x.com/billmaher/status/2068170852152344761",
@@ -104,10 +106,16 @@
         "timestamp": "2026-06-20T03:15:30+00:00"
       },
       {
-        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+        "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=liF-oaTxOoM",
         "platform": "youtube",
         "timestamp": "2026-06-27T03:00:23+00:00"
+      },
+      {
+        "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=nWVtaeqe8e0",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:06+00:00"
       }
     ],
     "epstein-scandal": [
@@ -116,14 +124,6 @@
         "sourceUrl": "https://x.com/billmaher/status/2066900575862796565",
         "platform": "x",
         "timestamp": "2026-06-16T15:07:53+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=liF-oaTxOoM",
-        "platform": "youtube",
-        "timestamp": "2026-06-27T03:00:23+00:00"
       }
     ],
     "billionaires-wealth": [

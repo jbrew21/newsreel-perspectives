@@ -1,7 +1,7 @@
 {
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
-  "collectedAt": "2026-06-30T10:43:59.023690",
+  "collectedAt": "2026-06-30T12:01:33.016476",
   "date": "2026-06-30",
   "posts": [
     {
@@ -13,9 +13,9 @@
       "timestamp": "2026-06-26T19:51:26+00:00",
       "type": "tweet",
       "topic": "trump-administration",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Trump administration's alleged financial grifting by politicians",
+      "summary": "Criticizes Trump for alleged grifting, comparing wealth accumulation to Clinton and Obama",
       "quote": "See, this is exactly the stuff I\u2019m talking about. Yes, I DID say this \u2014 tongue-in-cheek, while lamenting the flagrant grifting taking place with President Trump. Went on to say I\u2019ve always wondered how politicians can enter office broke and depart being worth millions, mentioning Clinton and Obama\u2026."
     },
     {
@@ -29,7 +29,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Condemns Trump's failure to address derogatory comments about Michelle Obama",
+      "summary": "Demands Trump condemn derogatory comments about Michelle Obama",
       "quote": "President Trump still has not condemned Josh Kohit\u2019s comments regarding our former First Lady. My thoughts LIVE right now \n\npiped.video/QFp3rfxagNA?si=F40n\u2026\n\nLink\n\n\n\nStephen A. Furious After Michelle Obama Attack Goes Unchecked\n\nStephen A. Smith reacts to the controversy surrounding comments mad...\n"
     },
     {
@@ -40,10 +40,10 @@
       "sourceUrl": "https://www.youtube.com/watch?v=qRHtli9nJnk",
       "timestamp": "2026-06-29T23:03:36+00:00",
       "type": "video_title",
-      "topic": "congress-legislation",
+      "topic": "elections",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Critical of Democrat Zohran Mamdani and Democratic Party problems",
+      "summary": "Criticizes Democratic Party over Zohran Mamdani",
       "quote": "The Democratic Party Has a HUGE Zohran Mamdani Problem"
     },
     {
@@ -55,9 +55,9 @@
       "timestamp": "2026-06-25T22:00:06+00:00",
       "type": "video_title",
       "topic": "civil-rights-race",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Evaluates which party has failed Black America",
+      "summary": "Questions which political party has failed Black Americans",
       "quote": "Republican vs. Democrat: Who Failed Black America?"
     },
     {
@@ -68,10 +68,10 @@
       "sourceUrl": "https://www.youtube.com/watch?v=Jo9S_joCeIc",
       "timestamp": "2026-06-25T16:00:06+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "trump-policy",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Argues Trump is nervous about political circumstances",
+      "summary": "Argues Trump is nervous about his political position",
       "quote": "Why Donald Trump Is Nervous as Hell Right Now!"
     },
     {
@@ -85,7 +85,7 @@
       "topic": "congress-legislation",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Discusses reasons behind Marjorie Taylor Greene's congressional resignation",
+      "summary": "Examines reasons for Marjorie Taylor Greene's Congressional resignation",
       "quote": "The Real Reason Marjorie Taylor Greene Resigned From Congress"
     },
     {
@@ -99,7 +99,7 @@
       "topic": "culture-war",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Highlights fundamental disagreements between conservative and liberal ideologies",
+      "summary": "Highlights fundamental disagreements between conservatives and liberals on major issues",
       "quote": "Can America Be Saved? Conservative and Liberal Clash on Everything!"
     },
     {
@@ -113,7 +113,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Condemns Trump's silence on attacks against Michelle Obama",
+      "summary": "Expresses fury over Trump's silence on Michelle Obama attack",
       "quote": "Stephen A. Furious After Michelle Obama Attack Goes Unchecked"
     },
     {
@@ -127,7 +127,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Calls Trump's response to controversy disgusting and inadequate",
+      "summary": "Calls out Trump's silence on derogatory comments as disgusting",
       "quote": "&quot;Disgusting!&quot; Stephen A. Smith Calls Out Trump's Silence \ud83d\ude24"
     }
   ],
@@ -146,12 +146,6 @@
         "timestamp": "2026-06-18T03:07:22+00:00"
       },
       {
-        "quote": "Why Donald Trump Is Nervous as Hell Right Now!",
-        "sourceUrl": "https://www.youtube.com/watch?v=Jo9S_joCeIc",
-        "platform": "youtube",
-        "timestamp": "2026-06-25T16:00:06+00:00"
-      },
-      {
         "quote": "Stephen A. Furious After Michelle Obama Attack Goes Unchecked",
         "sourceUrl": "https://www.youtube.com/watch?v=QFp3rfxagNA",
         "platform": "youtube",
@@ -164,18 +158,12 @@
         "timestamp": "2026-06-18T02:14:39+00:00"
       }
     ],
-    "congress-legislation": [
+    "elections": [
       {
         "quote": "The Democratic Party Has a HUGE Zohran Mamdani Problem",
         "sourceUrl": "https://www.youtube.com/watch?v=qRHtli9nJnk",
         "platform": "youtube",
         "timestamp": "2026-06-29T23:03:36+00:00"
-      },
-      {
-        "quote": "The Real Reason Marjorie Taylor Greene Resigned From Congress",
-        "sourceUrl": "https://www.youtube.com/watch?v=hgZj2Qqtjfs",
-        "platform": "youtube",
-        "timestamp": "2026-06-19T19:00:06+00:00"
       }
     ],
     "civil-rights-race": [
@@ -184,6 +172,22 @@
         "sourceUrl": "https://www.youtube.com/watch?v=9FL2rUp3a6M",
         "platform": "youtube",
         "timestamp": "2026-06-25T22:00:06+00:00"
+      }
+    ],
+    "trump-policy": [
+      {
+        "quote": "Why Donald Trump Is Nervous as Hell Right Now!",
+        "sourceUrl": "https://www.youtube.com/watch?v=Jo9S_joCeIc",
+        "platform": "youtube",
+        "timestamp": "2026-06-25T16:00:06+00:00"
+      }
+    ],
+    "congress-legislation": [
+      {
+        "quote": "The Real Reason Marjorie Taylor Greene Resigned From Congress",
+        "sourceUrl": "https://www.youtube.com/watch?v=hgZj2Qqtjfs",
+        "platform": "youtube",
+        "timestamp": "2026-06-19T19:00:06+00:00"
       }
     ],
     "culture-war": [
