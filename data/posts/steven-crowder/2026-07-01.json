@@ -1,7 +1,7 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-07-01T10:56:03.664681",
+  "collectedAt": "2026-07-01T12:15:31.822900",
   "date": "2026-07-01",
   "posts": [
     {
@@ -15,8 +15,22 @@
       "topic": "gender-lgbtq",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Opposes transgender athletes in women's sports, criticizes SCOTUS decision on birthright citizenship",
+      "summary": "Opposes allowing transgender athletes in women's sports",
       "quote": "SCOTUS just BANNED men from women's Sports... then did THIS on birthright citizenship"
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "We're So F*cked",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ypd96cmXmJI",
+      "timestamp": "2026-06-30T20:00:33+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Expresses alarm about cultural or political direction",
+      "quote": "We're So F*cked"
     },
     {
       "voiceId": "steven-crowder",
@@ -29,7 +43,7 @@
       "topic": "culture-war",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes progressive sexual ideology and gender activism in schools",
+      "summary": "Critiques progressive sex education and parental involvement",
       "quote": "This Chicago dad really wants to know if you are a s*x positive ally or a \u201ctourist\u201d"
     },
     {
@@ -41,24 +55,10 @@
       "timestamp": "2026-06-29T20:00:01+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Trump outmaneuvering establishment Republican figures",
-      "quote": "Trump Humiliates the Boomer Republicans Again"
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "Just when you thought Canadian politicians couldn't get any worse",
-      "sourceUrl": "https://www.youtube.com/shorts/9lSnYsLnuGg",
-      "timestamp": "2026-06-29T19:42:21+00:00",
-      "type": "video_title",
-      "topic": "uk-world-politics",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Canadian political leadership and governance",
-      "quote": "Just when you thought Canadian politicians couldn't get any worse"
+      "summary": "Criticizes Republican establishment as out of touch",
+      "quote": "Trump Humiliates the Boomer Republicans Again"
     },
     {
       "voiceId": "steven-crowder",
@@ -71,7 +71,7 @@
       "topic": "immigration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Government negligence in protecting citizens from migrant crime",
+      "summary": "Criticizes government response to migrant-related crime",
       "quote": "Assaulted by a Migrant - Then Her Government Did This | Thais d'Escufon"
     },
     {
@@ -85,8 +85,22 @@
       "topic": "free-speech-censorship",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Mocks British resistance to free speech absolutism",
+      "summary": "Defends free speech against progressive restriction",
       "quote": "Cringe ginge Brit copes over free speech at the World Cup"
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "It's time for a zero-tolerance policy.",
+      "sourceUrl": "https://www.youtube.com/shorts/8-cEE7fzed8",
+      "timestamp": "2026-06-25T20:30:08+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Advocates stricter enforcement against cultural violations",
+      "quote": "It's time for a zero-tolerance policy."
     }
   ],
   "topicSummary": {
@@ -100,10 +114,22 @@
     ],
     "culture-war": [
       {
+        "quote": "We're So F*cked",
+        "sourceUrl": "https://www.youtube.com/watch?v=Ypd96cmXmJI",
+        "platform": "youtube",
+        "timestamp": "2026-06-30T20:00:33+00:00"
+      },
+      {
         "quote": "This Chicago dad really wants to know if you are a s*x positive ally or a \u201ctourist\u201d",
         "sourceUrl": "https://www.youtube.com/shorts/8djH8iajRW0",
         "platform": "youtube",
         "timestamp": "2026-06-30T18:06:20+00:00"
+      },
+      {
+        "quote": "It's time for a zero-tolerance policy.",
+        "sourceUrl": "https://www.youtube.com/shorts/8-cEE7fzed8",
+        "platform": "youtube",
+        "timestamp": "2026-06-25T20:30:08+00:00"
       }
     ],
     "trump-administration": [
@@ -112,14 +138,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=LxXlN_15r-0",
         "platform": "youtube",
         "timestamp": "2026-06-29T20:00:01+00:00"
-      }
-    ],
-    "uk-world-politics": [
-      {
-        "quote": "Just when you thought Canadian politicians couldn't get any worse",
-        "sourceUrl": "https://www.youtube.com/shorts/9lSnYsLnuGg",
-        "platform": "youtube",
-        "timestamp": "2026-06-29T19:42:21+00:00"
       }
     ],
     "immigration": [
