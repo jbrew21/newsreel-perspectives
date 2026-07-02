@@ -1,7 +1,7 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-07-02T10:15:01.234651",
+  "collectedAt": "2026-07-02T11:43:08.634459",
   "date": "2026-07-02",
   "posts": [
     {
@@ -12,10 +12,10 @@
       "sourceUrl": "https://www.youtube.com/shorts/lGQRO_poBbE",
       "timestamp": "2026-07-01T18:00:10+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Mocks Sean Hannity's appearance",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Mocks Trump's appearance and vanity project",
       "quote": "Josh Johnson can't focus on Trump's reflecting pool when Sean Hannity's face looks like that"
     },
     {
@@ -26,25 +26,11 @@
       "sourceUrl": "https://www.youtube.com/shorts/5osmspdtX0g",
       "timestamp": "2026-07-01T15:00:13+00:00",
       "type": "video_title",
-      "topic": "culture-war",
+      "topic": "protests-activism",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Argues anger can unite people for shared goals",
+      "summary": "Frames anger as constructive force for collective action",
       "quote": "Rebecca Traister on how anger is a powerful emotion that can draw people together for a greater good"
-    },
-    {
-      "voiceId": "trevor-noah",
-      "voiceName": "Trevor Noah",
-      "platform": "youtube",
-      "text": "The Daily Show Celebrates 250 Years of America, and Maybe 250 More? | The Daily Show",
-      "sourceUrl": "https://www.youtube.com/watch?v=lMk2nH3DqtE",
-      "timestamp": "2026-07-01T13:00:15+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Satirizes American political system and future",
-      "quote": "The Daily Show Celebrates 250 Years of America, and Maybe 250 More? | The Daily Show"
     },
     {
       "voiceId": "trevor-noah",
@@ -57,7 +43,7 @@
       "topic": "gun-policy",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Praises priest's gun buyback program",
+      "summary": "Praises community-based gun reduction effort",
       "quote": "This priest turned thoughts and prayers into action with a gun buyback program"
     },
     {
@@ -71,7 +57,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Trump's cognitive test claims as unusual",
+      "summary": "Mocks Trump's cognitive test boasting as insecure",
       "quote": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?"
     },
     {
@@ -85,7 +71,7 @@
       "topic": "billionaires-wealth",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Mocks billionaire defending against anti-rich sentiment",
+      "summary": "Sarcastically criticizes billionaire victim narrative",
       "quote": "Michael Kosta shows solidarity with a billionaire who's fighting the scourge of anti-rich hate"
     },
     {
@@ -99,33 +85,31 @@
       "topic": "iran-conflict",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Critiques administration's Iran deal approach",
+      "summary": "Questions Trump administration's Iran deal messaging",
       "quote": "Translating the administration's Iran deal subtext #dailyshow"
     }
   ],
   "topicSummary": {
-    "media-personalities": [
+    "trump-administration": [
       {
         "quote": "Josh Johnson can't focus on Trump's reflecting pool when Sean Hannity's face looks like that",
         "sourceUrl": "https://www.youtube.com/shorts/lGQRO_poBbE",
         "platform": "youtube",
         "timestamp": "2026-07-01T18:00:10+00:00"
+      },
+      {
+        "quote": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?",
+        "sourceUrl": "https://www.youtube.com/shorts/cAFGOueOR5I",
+        "platform": "youtube",
+        "timestamp": "2026-06-29T18:00:02+00:00"
       }
     ],
-    "culture-war": [
+    "protests-activism": [
       {
         "quote": "Rebecca Traister on how anger is a powerful emotion that can draw people together for a greater good",
         "sourceUrl": "https://www.youtube.com/shorts/5osmspdtX0g",
         "platform": "youtube",
         "timestamp": "2026-07-01T15:00:13+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "The Daily Show Celebrates 250 Years of America, and Maybe 250 More? | The Daily Show",
-        "sourceUrl": "https://www.youtube.com/watch?v=lMk2nH3DqtE",
-        "platform": "youtube",
-        "timestamp": "2026-07-01T13:00:15+00:00"
       }
     ],
     "gun-policy": [
@@ -134,14 +118,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/EIZlXwN9E6A",
         "platform": "youtube",
         "timestamp": "2026-06-30T15:00:22+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?",
-        "sourceUrl": "https://www.youtube.com/shorts/cAFGOueOR5I",
-        "platform": "youtube",
-        "timestamp": "2026-06-29T18:00:02+00:00"
       }
     ],
     "billionaires-wealth": [
