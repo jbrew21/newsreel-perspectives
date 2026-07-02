@@ -612,9 +612,16 @@ def lookup_story(headline, days=None):
     topic_rank = {t: i for i, t in enumerate(matching_topics)} if matching_topics else {}
     for vid, data in voices_found.items():
         best_rank = min((topic_rank.get(t, 999) for t in data['topics']), default=999)
-        text_bonus = data.get('_match_score', 0) * 2
-        quote_quality = sum(q.get('_quote_score', 0) for q in data['quotes'][:3])
-        data['_score'] = -(len(data['quotes']) + text_bonus + quote_quality) + (best_rank * 0.1)
+        # Relevance must dominate volume. A _quote_score of 1 means "topic-adjacent but
+        # mentions none of the query keywords"; >1 means the quote actually names the
+        # story's terms. Rank on the single BEST quote (volume-independent) so a prolific
+        # voice with many off-topic posts can't outrank a voice with one dead-on quote.
+        # Raw quote count survives only as a small tiebreaker. (Fixed Jul 2 2026 — the old
+        # formula summed quote counts and let off-topic high-volume accounts float to top.)
+        best_quote_score = max((q.get('_quote_score', 0) for q in data['quotes']), default=0)
+        on_topic_quotes = sum(1 for q in data['quotes'] if q.get('_quote_score', 0) > 1)
+        volume_tiebreak = min(len(data['quotes']), 3) * 0.25
+        data['_score'] = -(best_quote_score * 3 + on_topic_quotes + volume_tiebreak) + (best_rank * 0.1)
 
     # Load voice metadata for photos/lean
     voices_meta = {}
