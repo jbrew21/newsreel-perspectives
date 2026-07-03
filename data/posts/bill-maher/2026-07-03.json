@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-07-03T10:15:56.639075",
+  "collectedAt": "2026-07-03T11:40:21.469298",
   "date": "2026-07-03",
   "posts": [
     {
@@ -12,11 +12,25 @@
       "sourceUrl": "https://x.com/billmaher/status/2068170852152344761",
       "timestamp": "2026-06-20T03:15:30+00:00",
       "type": "tweet",
-      "topic": "trump-administration",
+      "topic": "culture-war",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Expresses concern about checks and balances under threat",
+      "summary": "Defends constitutional checks and balances system as threatened but resilient",
       "quote": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+      "timestamp": "2026-06-27T03:00:23+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Celebrates American democratic ideals and national identity",
+      "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -29,7 +43,7 @@
       "topic": "trump-administration",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Offers critique or commentary on VP JD Vance",
+      "summary": "Offers unsolicited advice to Vice President JD Vance",
       "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)"
     },
     {
@@ -43,18 +57,60 @@
       "topic": "trump-administration",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "",
+      "summary": "Criticizes Trump's fitness for office or competence",
       "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+      "timestamp": "2026-06-20T03:00:05+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Asserts ownership and pride in American national identity",
+      "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Should We Outlaw Trillionaires? | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=49iA5k1hiHU",
+      "timestamp": "2026-06-13T03:00:24+00:00",
+      "type": "video_title",
+      "topic": "billionaires-wealth",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions whether trillionaire wealth concentration should be legally prohibited",
+      "quote": "Should We Outlaw Trillionaires? | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
-    "trump-administration": [
+    "culture-war": [
       {
         "quote": "This 4th of July, let\u2019s all celebrate the genius American idea of checks and balances, which, yes, is threatened and, yes, is taking on water, but is still afloat. #America250\n\nVideo",
         "sourceUrl": "https://x.com/billmaher/status/2068170852152344761",
         "platform": "x",
         "timestamp": "2026-06-20T03:15:30+00:00"
       },
+      {
+        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+        "platform": "youtube",
+        "timestamp": "2026-06-27T03:00:23+00:00"
+      },
+      {
+        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:05+00:00"
+      }
+    ],
+    "trump-administration": [
       {
         "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)",
         "sourceUrl": "https://www.youtube.com/watch?v=liF-oaTxOoM",
@@ -66,6 +122,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=nWVtaeqe8e0",
         "platform": "youtube",
         "timestamp": "2026-06-20T03:00:06+00:00"
+      }
+    ],
+    "billionaires-wealth": [
+      {
+        "quote": "Should We Outlaw Trillionaires? | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=49iA5k1hiHU",
+        "platform": "youtube",
+        "timestamp": "2026-06-13T03:00:24+00:00"
       }
     ]
   }
