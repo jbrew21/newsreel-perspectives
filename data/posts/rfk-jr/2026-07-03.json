@@ -1,23 +1,9 @@
 {
   "voiceId": "rfk-jr",
   "voiceName": "Robert F. Kennedy Jr.",
-  "collectedAt": "2026-07-03T10:15:56.652757",
+  "collectedAt": "2026-07-03T11:40:21.484033",
   "date": "2026-07-03",
   "posts": [
-    {
-      "voiceId": "rfk-jr",
-      "voiceName": "Robert F. Kennedy Jr.",
-      "platform": "x",
-      "text": "Happy Father\u2019s Day to the dads and father figures raising the next generation.\n\nHealthy families are the foundation of a healthy nation. Thank you for leading with purpose, setting an example, and helping children thrive.\n\nTogether, we can Make America Healthy Again.",
-      "sourceUrl": "https://x.com/RobertKennedyJr/status/2069066656739938412",
-      "timestamp": "2026-06-22T14:35:07+00:00",
-      "type": "tweet",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Emphasizes traditional family values and healthy households as national foundation",
-      "quote": "Happy Father\u2019s Day to the dads and father figures raising the next generation.\n\nHealthy families are the foundation of a healthy nation. Thank you for leading with purpose, setting an example, and helping children thrive.\n\nTogether, we can Make America Healthy Again."
-    },
     {
       "voiceId": "rfk-jr",
       "voiceName": "Robert F. Kennedy Jr.",
@@ -29,7 +15,7 @@
       "topic": "economy-trade",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes corporate capture as harmful to small business",
+      "summary": "Corporate consolidation harms small business competition",
       "quote": "RFK Jr. Podcast: Corporate Capture Kills Small Business with Lloyd Chapman"
     },
     {
@@ -43,7 +29,7 @@
       "topic": "food-agriculture",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Promotes sustainable farming and food system reform",
+      "summary": "Promotes alternative farming practices and food systems",
       "quote": "RFK Jr. Podcast: The Future of Food with Farming Pioneer Joel Salatin"
     },
     {
@@ -56,8 +42,8 @@
       "type": "video_title",
       "topic": "drugs-addiction",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Advocates psychedelic therapy access for veterans",
+      "stance": "lean",
+      "summary": "Supports psychedelic therapy access for veterans",
       "quote": "Rogan: psychedelics for veterans"
     },
     {
@@ -71,8 +57,22 @@
       "topic": "healthcare",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Raises concern about obesity epidemic in America",
+      "summary": "Discusses obesity crisis in America",
       "quote": "Charlie Kirk on why 50% of America is obese"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "youtube",
+      "text": "Trump: Free Speech",
+      "sourceUrl": "https://www.youtube.com/watch?v=xJfUXVOoFBo",
+      "timestamp": "2024-11-09T20:30:09+00:00",
+      "type": "video_title",
+      "topic": "free-speech-censorship",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Emphasizes importance of free speech rights",
+      "quote": "Trump: Free Speech"
     },
     {
       "voiceId": "rfk-jr",
@@ -85,19 +85,11 @@
       "topic": "drugs-addiction",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Supports psychedelic therapy for veterans as deserving population",
+      "summary": "Veterans deserve access to psychedelic therapy",
       "quote": "Yes, Joe Rogan, veterans are the most deserving of benefiting from psychedelic therapy."
     }
   ],
   "topicSummary": {
-    "culture-war": [
-      {
-        "quote": "Happy Father\u2019s Day to the dads and father figures raising the next generation.\n\nHealthy families are the foundation of a healthy nation. Thank you for leading with purpose, setting an example, and helping children thrive.\n\nTogether, we can Make America Healthy Again.",
-        "sourceUrl": "https://x.com/RobertKennedyJr/status/2069066656739938412",
-        "platform": "x",
-        "timestamp": "2026-06-22T14:35:07+00:00"
-      }
-    ],
     "economy-trade": [
       {
         "quote": "RFK Jr. Podcast: Corporate Capture Kills Small Business with Lloyd Chapman",
@@ -134,6 +126,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/rN7LRccEpno",
         "platform": "youtube",
         "timestamp": "2024-11-10T20:33:08+00:00"
+      }
+    ],
+    "free-speech-censorship": [
+      {
+        "quote": "Trump: Free Speech",
+        "sourceUrl": "https://www.youtube.com/watch?v=xJfUXVOoFBo",
+        "platform": "youtube",
+        "timestamp": "2024-11-09T20:30:09+00:00"
       }
     ]
   }
