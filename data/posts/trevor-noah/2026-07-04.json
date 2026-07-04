@@ -1,7 +1,7 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-07-04T09:42:00.089255",
+  "collectedAt": "2026-07-04T11:04:45.490820",
   "date": "2026-07-04",
   "posts": [
     {
@@ -14,8 +14,8 @@
       "type": "video_title",
       "topic": "trump-administration",
       "relevance": "high",
-      "stance": "lean",
-      "summary": "Mocks Trump event's poor artist participation and low-quality replacement",
+      "stance": "strong",
+      "summary": "Mocks Trump event as artists withdraw support",
       "quote": "Six acts dropped out of Trump's Freedom 250 concert, but Vanilla Ice stepped up to save the day"
     },
     {
@@ -29,7 +29,7 @@
       "topic": "trump-administration",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques America's condition and Trump's role in national decline",
+      "summary": "Suggests America needs accountability for its actions",
       "quote": "What should go in the America 250 time capsule? Maybe an apology for how we left the place"
     },
     {
@@ -43,7 +43,7 @@
       "topic": "healthcare",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Condemns pharmaceutical company pricing as exploitative of taxpayers",
+      "summary": "Criticizes pharmaceutical pricing as exploitation of taxpayers",
       "quote": "Jon describes what pharma companies are doing to taxpayers as the &quot;worst Shark Tank deal in history&quot;"
     },
     {
@@ -57,8 +57,50 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Satirizes Trump's commercial ventures as financial exploitation of supporters",
+      "summary": "Accuses Trump of exploiting supporters for financial gain",
       "quote": "Trump Industries has an exciting new way to separate MAGA from their money!"
+    },
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
+      "text": "Josh Johnson can't focus on Trump's reflecting pool when Sean Hannity's face looks like that",
+      "sourceUrl": "https://www.youtube.com/shorts/lGQRO_poBbE",
+      "timestamp": "2026-07-01T18:00:10+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes Sean Hannity's appearance",
+      "quote": "Josh Johnson can't focus on Trump's reflecting pool when Sean Hannity's face looks like that"
+    },
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
+      "text": "Rebecca Traister on how anger is a powerful emotion that can draw people together for a greater good",
+      "sourceUrl": "https://www.youtube.com/shorts/5osmspdtX0g",
+      "timestamp": "2026-07-01T15:00:13+00:00",
+      "type": "video_title",
+      "topic": "protests-activism",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Endorses anger as motivator for collective action",
+      "quote": "Rebecca Traister on how anger is a powerful emotion that can draw people together for a greater good"
+    },
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
+      "text": "Lewis Black can't believe he has to say this, but boiling a goji berry does not make you Chinese!",
+      "sourceUrl": "https://www.youtube.com/shorts/uuIt_WVIGII",
+      "timestamp": "2026-06-30T18:00:33+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Mocks conflation of food preparation with cultural identity",
+      "quote": "Lewis Black can't believe he has to say this, but boiling a goji berry does not make you Chinese!"
     },
     {
       "voiceId": "trevor-noah",
@@ -71,7 +113,7 @@
       "topic": "gun-policy",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Highlights gun buyback as practical alternative to thoughts and prayers",
+      "summary": "Praises priest's gun buyback initiative",
       "quote": "This priest turned thoughts and prayers into action with a gun buyback program"
     },
     {
@@ -82,10 +124,10 @@
       "sourceUrl": "https://www.youtube.com/shorts/cAFGOueOR5I",
       "timestamp": "2026-06-29T18:00:02+00:00",
       "type": "video_title",
-      "topic": "trump-policy",
+      "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Mocks Trump's cognitive test claims as sign of presidential inadequacy",
+      "summary": "Questions why Trump alone took cognitive test",
       "quote": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?"
     }
   ],
@@ -108,6 +150,12 @@
         "sourceUrl": "https://www.youtube.com/shorts/ND8T2QLe1Ec",
         "platform": "youtube",
         "timestamp": "2026-07-02T15:00:24+00:00"
+      },
+      {
+        "quote": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?",
+        "sourceUrl": "https://www.youtube.com/shorts/cAFGOueOR5I",
+        "platform": "youtube",
+        "timestamp": "2026-06-29T18:00:02+00:00"
       }
     ],
     "healthcare": [
@@ -118,20 +166,36 @@
         "timestamp": "2026-07-02T18:00:23+00:00"
       }
     ],
+    "media-personalities": [
+      {
+        "quote": "Josh Johnson can't focus on Trump's reflecting pool when Sean Hannity's face looks like that",
+        "sourceUrl": "https://www.youtube.com/shorts/lGQRO_poBbE",
+        "platform": "youtube",
+        "timestamp": "2026-07-01T18:00:10+00:00"
+      }
+    ],
+    "protests-activism": [
+      {
+        "quote": "Rebecca Traister on how anger is a powerful emotion that can draw people together for a greater good",
+        "sourceUrl": "https://www.youtube.com/shorts/5osmspdtX0g",
+        "platform": "youtube",
+        "timestamp": "2026-07-01T15:00:13+00:00"
+      }
+    ],
+    "culture-war": [
+      {
+        "quote": "Lewis Black can't believe he has to say this, but boiling a goji berry does not make you Chinese!",
+        "sourceUrl": "https://www.youtube.com/shorts/uuIt_WVIGII",
+        "platform": "youtube",
+        "timestamp": "2026-06-30T18:00:33+00:00"
+      }
+    ],
     "gun-policy": [
       {
         "quote": "This priest turned thoughts and prayers into action with a gun buyback program",
         "sourceUrl": "https://www.youtube.com/shorts/EIZlXwN9E6A",
         "platform": "youtube",
         "timestamp": "2026-06-30T15:00:22+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?",
-        "sourceUrl": "https://www.youtube.com/shorts/cAFGOueOR5I",
-        "platform": "youtube",
-        "timestamp": "2026-06-29T18:00:02+00:00"
       }
     ]
   }
