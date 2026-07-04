@@ -1,57 +1,84 @@
 [
   {
-    "topic": "elections",
-    "topicDisplay": "Elections",
-    "headline": "Progressive insurgents reshape Democratic primaries, establishment fights back",
-    "voiceCount": 23,
-    "clusterCount": 3,
-    "insight": "The dominant story is an intra-Democratic civil war, with progressive and conservative voices \u2014 for very different reasons \u2014 all treating establishment Democrats as the story's losers.",
+    "topic": "trump-administration",
+    "topicDisplay": "Trump Administration",
+    "headline": "Trump Administration Faces Corruption, Grift, and Celebration Criticism",
+    "voiceCount": 41,
+    "clusterCount": 5,
+    "insight": "Overwhelming criticism spans left, center, and even some MAGA voices, united around Trump corruption and spectacle failures.",
     "clusters": [
       {
-        "name": "Establishment Must Go",
+        "name": "Corruption and Accountability Critics",
         "voices": [
           {
-            "voiceId": "ryan-grim",
-            "voiceName": "Ryan Grim",
-            "photo": "/photos/ryan-grim.jpg",
-            "quote": "AIPAC\u2019s total expenditure on ad buys in Michigan senate race now exceeds $10.7M after new $3.4M buy revealed yesterday \u2b07\ufe0f",
-            "sourceUrl": "https://bsky.app/profile/ryangrim.bsky.social/post/3mpr3qghuss2y",
+            "voiceId": "david-sirota",
+            "voiceName": "David Sirota",
+            "photo": "/photos/david-sirota.jpg",
+            "quote": " From Guantanamo To Trump\u2019s \u201cAnti-Americanism\u201d Task Force  (by Eshaan Vakil). Joint Task Force Vanguard, Trump\u2019s new unit targeting \u201canti-Americanism,\u201d is being led by prosecutors with deep ties to th",
+            "sourceUrl": "https://www.levernews.com/the-war-on-terror-vets-running-trumps-anti-americanism-task-force/",
+            "platform": "substack",
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "gavin-newsom",
+            "voiceName": "Gavin Newsom",
+            "photo": "/photos/gavin-newsom.jpg",
+            "quote": "Donald Trump is declining across every front, but the power he still wields is real, and dangerous. We must remain vigilant.\n\nVideo",
+            "sourceUrl": "https://x.com/GavinNewsom/status/2072818921095545039",
+            "platform": "x",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "radley-balko",
+            "voiceName": "Radley Balko",
+            "photo": "/photos/radley-balko.jpg",
+            "quote": "Don't want to speak ill of the dead, so getting this Mitch McConnell take out now.\nHe saw Trump with complete clarity, as a danger to America, but protected him anyway.\nPerhaps more than anyone, he ha",
+            "sourceUrl": "https://bsky.app/profile/radleybalko.bsky.social/post/3mpre4k7aek2l",
             "platform": "bluesky",
             "quoteQuality": 5
           },
           {
-            "voiceId": "cori-bush",
-            "voiceName": "Cori Bush",
-            "photo": "/photos/cori-bush.jpg",
-            "quote": "MAGA-AIPAC donors are running on the same playbook\u2014spending big to try to stop us.\n\nBut the truth is: the billionaire-backed lobbies are scared.\n\nThey\u2019re scared because they know we have the people on",
-            "sourceUrl": "https://x.com/CoriBush/status/2073159793083138214",
-            "platform": "x",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "jimmy-dore",
-            "voiceName": "Jimmy Dore",
-            "photo": "/photos/jimmy-dore.jpg",
-            "quote": "\u201cWho's still talking about this?\" isn't something you say when you think you won the argument, lol. \n\nDo you think people should stop talking about how Bernie got robbed in 2016/2020 - that was even f",
-            "sourceUrl": "https://x.com/jimmy_dore/status/2073191898869817781",
-            "platform": "x",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "aoc",
-            "voiceName": "Alexandria Ocasio-Cortez",
-            "photo": "/photos/aoc.jpg",
-            "quote": "We are proud to endorse Abdul El-Sayed to be Michigan\u2019s next senator.\n\nAbdul is building a winning coalition by putting forward an agenda that speaks directly to working people.\n\nElection Day is Augus",
-            "sourceUrl": "https://x.com/TeamAOC/status/2072640427493072918",
+            "voiceId": "elizabeth-warren",
+            "voiceName": "Elizabeth Warren",
+            "photo": "/photos/elizabeth-warren.jpg",
+            "quote": "July 23, 2025: The White House rolls out a plan to deregulate AI companies.\n\nAlso, July 23, 2025: Trump buys up to $5 million apiece in stock of Nvidia, Apple, Microsoft, Meta, Amazon &amp; Broadcom.\n",
+            "sourceUrl": "https://x.com/ewarren/status/2072812579785724264",
             "platform": "x",
             "quoteQuality": 4
           },
           {
-            "voiceId": "ro-khanna",
-            "voiceName": "Ro Khanna",
-            "photo": "/photos/ro-khanna.jpg",
-            "quote": "Colorado shows a new generation of progressives are building a bold Democratic party. \n\nIt is time for the establishment to step aside.\n\nVideo",
-            "sourceUrl": "https://x.com/RoKhanna/status/2072486268751970444",
+            "voiceId": "adam-schiff",
+            "voiceName": "Adam Schiff",
+            "photo": "/photos/adam-schiff.jpg",
+            "quote": "Donald Trump generated more than a billion dollars last year through his cryptocurrency ventures by blatantly profiteering off the presidency.\n\nIt\u2019s time Congress instated ethical guardrails to put an",
+            "sourceUrl": "https://x.com/SenAdamSchiff/status/2072726154549576029",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "chris-cuomo",
+            "voiceName": "Chris Cuomo",
+            "photo": "/photos/chris-cuomo.jpg",
+            "quote": "Profiting from the presidency isn't new. But MAGA used to brag about cleaning it up and now they say nothing while Trump takes grift and graft to a new level ? This is why change is coming:\n\nVideo",
+            "sourceUrl": "https://x.com/ChrisCuomo/status/2072477698497171570",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "mehdi-hasan",
+            "voiceName": "Mehdi Hasan",
+            "photo": "/photos/mehdi-hasan.jpg",
+            "quote": "Dude who just this week bragged about taking government stakes in US companies via intimidation and threats has views on \u2018communism\u2019.\n\n\nAcyn (@Acyn)\n\nTrump: You can be a communist or you can be a patr",
+            "sourceUrl": "https://x.com/mehdirhasan/status/2073263415926182259",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "judd-legum",
+            "voiceName": "Judd Legum",
+            "photo": "/photos/judd-legum.jpg",
+            "quote": "REMEMBER: All Trump's stock trades are part of a blind trust managed by a third-party institution that is tracking various indexes*\n\n*It's not a blind trust, they haven't disclosed who is managing the",
+            "sourceUrl": "https://x.com/JuddLegum/status/2072776475757985898",
             "platform": "x",
             "quoteQuality": 4
           },
@@ -59,184 +86,253 @@
             "voiceId": "robert-reich",
             "voiceName": "Robert Reich",
             "photo": "/photos/robert-reich.jpg",
-            "quote": "By moving to the \u201ccenter,\u201d Democrats have failed to fight the forces that led us to Trump: widening inequality and the unchecked power of billionaires.\n\nThere's no \"center\" anymore between a takeover ",
-            "sourceUrl": "https://x.com/RBReich/status/2072730810638070056",
+            "quote": "Trump is using taxpayer dollars to spread the MAGA agenda and granting private donors presidential access \u2014 all under the guise of celebrating America\u2019s 250th birthday.\n\nThe Grifter-in-Chief knows no ",
+            "sourceUrl": "https://x.com/RBReich/status/2073149789462511771",
             "platform": "x",
             "quoteQuality": 4
           },
           {
-            "voiceId": "david-sirota",
-            "voiceName": "David Sirota",
-            "photo": "/photos/david-sirota.jpg",
-            "quote": "Those defending the Dem establishment are cheering the Washington Generals in their rigged predetermined games against the Globetrotters.\n\nThose trying to throw out the Dem establishment are trying to",
-            "sourceUrl": "https://x.com/davidsirota/status/2073101343414476990",
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "USA!\n\n\nRon Filipkowski (@RonFilipkowski)\n\nNothing says good old fashioned 4th of July American patriotism like flying to a speech in a grifted Qatari jet.\n\n\n\n\u2014 https://nitter.net/RonFilipkowski/status",
+            "sourceUrl": "https://x.com/MeidasTouch/status/2073220848425771465",
             "platform": "x",
             "quoteQuality": 4
           },
           {
-            "voiceId": "pramila-jayapal",
-            "voiceName": "Pramila Jayapal",
-            "photo": "/photos/pramila-jayapal.jpg",
-            "quote": "We are in a fight for the soul of this country.\n\nWe have to be strategic and fight forward without leaving anyone behind.\n\nVideo",
-            "sourceUrl": "https://x.com/RepJayapal/status/2073044909997609179",
+            "voiceId": "bernie-sanders",
+            "voiceName": "Bernie Sanders",
+            "photo": "/photos/bernie-sanders.jpg",
+            "quote": "Let's be clear: Trump's administration is not \"America First.\"  \n\nIt is \"Trump First.\"",
+            "sourceUrl": "https://x.com/SenSanders/status/2073136721269608600",
             "platform": "x",
-            "quoteQuality": 4
+            "quoteQuality": 3
           },
           {
-            "voiceId": "killer-mike",
-            "voiceName": "Killer Mike",
-            "photo": "/photos/killer-mike.jpg",
-            "quote": "\ud83d\udc99\n\n\nJames Tate (@JamesTate121)\n\nTurning Georgia Blue.\n\n\n\n\n\n\u2014 https://nitter.net/JamesTate121/status/2072806971523092891#m",
-            "sourceUrl": "https://x.com/KillerMike/status/2073029036536684673",
-            "platform": "x",
-            "quoteQuality": 4
+            "voiceId": "under-the-desk-news",
+            "voiceName": "Under the Desk News (V Spehar)",
+            "photo": "/photos/under-the-desk-news.jpg",
+            "quote": "Prosperity Politics Halo\u2026 how long will it work as a shield for Trump to keep looting us and amassing wealth through corruption?? ",
+            "sourceUrl": "https://www.tiktok.com/@underthedesknews/video/7657769743365000461",
+            "platform": "tiktok",
+            "quoteQuality": 2
           },
           {
             "voiceId": "breaking-points",
             "voiceName": "Breaking Points",
             "photo": "/photos/breaking-points.jpg",
-            "quote": "Kamala, Gavin, Shapiro KISS THE ZOHRAN RING As Establishment FREAKS",
-            "sourceUrl": "https://www.youtube.com/watch?v=b8CAwqE5GKw",
+            "quote": "Trump BETRAYS Country As Corruption Hits INSANE NEW LEVELS",
+            "sourceUrl": "https://www.youtube.com/watch?v=ttIBvfM-TDs",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "krystal-ball",
+            "voiceName": "Krystal Ball",
+            "photo": "/photos/krystal-ball.jpg",
+            "quote": "Trump BETRAYS Country As Corruption Hits INSANE NEW LEVELS",
+            "sourceUrl": "https://www.youtube.com/watch?v=ttIBvfM-TDs",
             "platform": "youtube",
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 10,
+        "voiceCount": 14,
         "bestQuote": {
-          "voiceName": "Ryan Grim",
-          "quote": "AIPAC\u2019s total expenditure on ad buys in Michigan senate race now exceeds $10.7M after new $3.4M buy revealed yesterday \u2b07\ufe0f",
-          "platform": "bluesky",
-          "quality": 5
+          "voiceName": "David Sirota",
+          "quote": " From Guantanamo To Trump\u2019s \u201cAnti-Americanism\u201d Task Force  (by Eshaan Vakil). Joint Task Force Vanguard, Trump\u2019s new unit targeting \u201canti-Americanism,\u201d is being led by prosecutors with deep ties to th",
+          "platform": "substack",
+          "quality": 6
         }
       },
       {
-        "name": "Establishment Defense and Reform",
+        "name": "Celebration and Spectacle Mockers",
         "voices": [
           {
-            "voiceId": "nate-silver",
-            "voiceName": "Nate Silver",
-            "photo": "/photos/nate-silver.jpg",
-            "quote": "The better argument is that you should shift to nonpartisan primaries, that's the most lowercase \"d\" democratic solution, rather than give the Democratic Party more cartel power.",
-            "sourceUrl": "https://x.com/NateSilver538/status/2072896457053716737",
-            "platform": "x",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "scott-galloway",
-            "voiceName": "Scott Galloway",
-            "photo": "/photos/scott-galloway.jpg",
-            "quote": "\u201cThe establishment didn\u2019t lose on policy. They lost on energy.\u201d\n\n@karaswisher.bsky.social and @profgalloway.com talk about why a new generation of candidates is breaking through in Democratic primarie",
-            "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mpr674pkkc2l",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "matt-yglesias",
-            "voiceName": "Matt Yglesias",
-            "photo": "/photos/matt-yglesias.jpg",
-            "quote": "Of course Republicans do face primary challenges, but it\u2019s over personal loyalty to Donald Trump not over demands for expressive position-taking.\n\nAnd even Trump knows it\u2019s in his interest to give Sus",
-            "sourceUrl": "https://x.com/mattyglesias/status/2073089861242720437",
+            "voiceId": "david-pakman",
+            "voiceName": "David Pakman",
+            "photo": "/photos/david-pakman.jpg",
+            "quote": "The true test of patriotism this weekend will be, who is willing to stand in 107 degree heat, with no shade, for hours, as fetid port-a-potties release their odors like a cloud onto the masses of Trum",
+            "sourceUrl": "https://x.com/dpakman/status/2072675342544749034",
             "platform": "x",
             "quoteQuality": 4
           },
           {
-            "voiceId": "joyce-vance",
-            "voiceName": "Joyce Vance",
-            "photo": "/photos/joyce-vance.jpg",
-            "quote": "I hope these questions and answers will encourage you to learn more about the leaders in your own community, stay engaged with the issues that affect your neighbors, and make sure you\u2019re registered an",
-            "sourceUrl": "https://x.com/JoyceWhiteVance/status/2073229297536356708",
+            "voiceId": "pablo-manriquez",
+            "voiceName": "Pablo Manriquez",
+            "photo": "/photos/pablo-manriquez.jpg",
+            "quote": "Pope Leo tried to warn him. Donald didn\u2019t listen. Now his already flailing administration is getting Biblically shat on by Mother Nature. Don\u2019t fuck with the Heavens, chicos. Divinities talk. That\u2019s t",
+            "sourceUrl": "https://x.com/PabloReports/status/2073193651325329708",
             "platform": "x",
             "quoteQuality": 4
           },
           {
-            "voiceId": "joe-concha",
-            "voiceName": "Joe Concha",
-            "photo": "/photos/joe-concha.jpg",
-            "quote": "Joined Carley and Todd earlier to discuss: Kamala Harris reaches out to progressive Democrats amid party power shift foxnews.com/video/6400000797\u2026\n\nLink\n\n\n\nKamala Harris reaches out to progressive Dem",
-            "sourceUrl": "https://x.com/JoeConchaTV/status/2072739638179995846",
-            "platform": "x",
-            "quoteQuality": 4
+            "voiceId": "young-turks",
+            "voiceName": "The Young Turks",
+            "photo": "/photos/young-turks.jpg",
+            "quote": "Trump's Birthday Party For America Is A FLOP!",
+            "sourceUrl": "https://www.youtube.com/watch?v=udL0jF0LZ5Q",
+            "platform": "youtube",
+            "quoteQuality": 1
           },
           {
-            "voiceId": "pod-save-america",
-            "voiceName": "Pod Save America",
-            "photo": "/photos/pod-save-america.jpg",
-            "quote": "Dan Pfeiffer on the newest Susan Collins attack ad.\n\nVideo",
-            "sourceUrl": "https://x.com/PodSaveAmerica/status/2073080542539424253",
-            "platform": "x",
-            "quoteQuality": 3
+            "voiceId": "roland-martin",
+            "voiceName": "Roland Martin",
+            "photo": "/photos/roland-martin.jpg",
+            "quote": "Utterly Abysmal. Trump\u2019s State Fair Flops. Delusional Fox Pretends Crowds Are Huge.",
+            "sourceUrl": "https://www.youtube.com/watch?v=QhepY-BYI-k",
+            "platform": "youtube",
+            "quoteQuality": 1
           },
           {
-            "voiceId": "gavin-newsom",
-            "voiceName": "Gavin Newsom",
-            "photo": "/photos/gavin-newsom.jpg",
-            "quote": "Democrats are WINNING across the country. It's why I'm optimistic about November.\n\nVideo",
-            "sourceUrl": "https://x.com/GavinNewsom/status/2072834222998601862",
-            "platform": "x",
-            "quoteQuality": 3
+            "voiceId": "jimmy-dore",
+            "voiceName": "Jimmy Dore",
+            "photo": "/photos/jimmy-dore.jpg",
+            "quote": "Kash Patel BREAKS DOWN &amp; Admits NOBODY Comes To HIs July 4th Parties In D.C.!",
+            "sourceUrl": "https://www.youtube.com/watch?v=OD7tXYU2EbY",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "trevor-noah",
+            "voiceName": "Trevor Noah",
+            "photo": "/photos/trevor-noah.jpg",
+            "quote": "Six acts dropped out of Trump's Freedom 250 concert, but Vanilla Ice stepped up to save the day",
+            "sourceUrl": "https://www.youtube.com/shorts/P7LRuh4gAJ8",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "kyle-kulinski",
+            "voiceName": "Kyle Kulinski",
+            "photo": "/photos/kyle-kulinski.jpg",
+            "quote": "TRUMP SHOOTS HIMSELF IN THE D*CK | The Kyle Kulinski Show",
+            "sourceUrl": "https://www.youtube.com/watch?v=LbWS3cFTSoE",
+            "platform": "youtube",
+            "quoteQuality": 1
           }
         ],
         "voiceCount": 7,
         "bestQuote": {
-          "voiceName": "Nate Silver",
-          "quote": "The better argument is that you should shift to nonpartisan primaries, that's the most lowercase \"d\" democratic solution, rather than give the Democratic Party more cartel power.",
+          "voiceName": "David Pakman",
+          "quote": "The true test of patriotism this weekend will be, who is willing to stand in 107 degree heat, with no shade, for hours, as fetid port-a-potties release their odors like a cloud onto the masses of Trum",
+          "platform": "x",
+          "quality": 4
+        }
+      },
+      {
+        "name": "Anti-Establishment Skeptics",
+        "voices": [
+          {
+            "voiceId": "marjorie-taylor-greene",
+            "voiceName": "Marjorie Taylor Greene",
+            "photo": "/photos/marjorie-taylor-greene.jpg",
+            "quote": "The GOP is a disaster. The Republican Party hijacked MAGA, pretended to be America First and MAHA, and then sold us all out.\n\nThen Trump rubber stamped the entire con job while taking checks from lite",
+            "sourceUrl": "https://x.com/mtgreenee/status/2072688295239147587",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "patrick-bet-david",
+            "voiceName": "Patrick Bet-David",
+            "photo": "/photos/patrick-bet-david.jpg",
+            "quote": "It\u2019s interesting that Trump\u2019s DOJ is finishing the job the Biden started.  \n\nEven your own party doesn\u2019t you.\n\n\nGovernor Newsom Press Office (@GovPressOffice)\n\nMAGA bootlickers are spreading false inf",
+            "sourceUrl": "https://x.com/patrickbetdavid/status/2073210419494199364",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "hasanabi",
+            "voiceName": "HasanAbi",
+            "photo": "/photos/hasanabi.jpg",
+            "quote": "Professor Jiang predicts Trump will get a third term",
+            "sourceUrl": "https://www.youtube.com/shorts/NxT9G31IuYE",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "destiny",
+            "voiceName": "Destiny",
+            "photo": "/photos/destiny.jpg",
+            "quote": "Is Trump Actually Dying?",
+            "sourceUrl": "https://www.youtube.com/watch?v=A-MwiMI4bAc",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "shawn-ryan-show",
+            "voiceName": "Shawn Ryan Show",
+            "photo": "/photos/shawn-ryan-show.jpg",
+            "quote": "Can Vance Survive What Trump Did? \ud83d\ude33",
+            "sourceUrl": "https://www.youtube.com/shorts/TUXpRKXO6Bw",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 5,
+        "bestQuote": {
+          "voiceName": "Marjorie Taylor Greene",
+          "quote": "The GOP is a disaster. The Republican Party hijacked MAGA, pretended to be America First and MAHA, and then sold us all out.\n\nThen Trump rubber stamped the entire con job while taking checks from lite",
+          "platform": "x",
+          "quality": 4
+        }
+      },
+      {
+        "name": "MAGA Defending Success",
+        "voices": [
+          {
+            "voiceId": "laura-ingraham",
+            "voiceName": "Laura Ingraham",
+            "photo": "/photos/laura-ingraham.jpg",
+            "quote": "\ud83d\udea8 THIS IS WHAT SUCCESS LOOKS LIKE UNDER DONALD TRUMP TONIGHT \ud83c\uddfa\ud83c\uddf8\n\nMatt Towery: \"Gas prices down 9% in a month. Unemployment historically low. 401(k)s at all-time highs because the markets are at all-ti",
+            "sourceUrl": "https://x.com/IngrahamAngle/status/2073196564470755787",
+            "platform": "x",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "TRUMP: \u201cWe can only lose the midterms if we allow ourselves to lose the midterms. But if we terminate the filibuster as we should do, and immediately vote for the SAVE America Act, then we will not lo",
+            "sourceUrl": "https://x.com/bennyjohnson/status/2073252587176878086",
+            "platform": "x",
+            "quoteQuality": 5
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Laura Ingraham",
+          "quote": "\ud83d\udea8 THIS IS WHAT SUCCESS LOOKS LIKE UNDER DONALD TRUMP TONIGHT \ud83c\uddfa\ud83c\uddf8\n\nMatt Towery: \"Gas prices down 9% in a month. Unemployment historically low. 401(k)s at all-time highs because the markets are at all-ti",
           "platform": "x",
           "quality": 5
         }
       },
       {
-        "name": "Conservative Warning Signal",
+        "name": "Institutional Accountability Voices",
         "voices": [
           {
-            "voiceId": "jesse-watters",
-            "voiceName": "Jesse Watters",
-            "photo": "/photos/jesse-watters.jpg",
-            "quote": "\ud83d\udea8 HOLY SMOKES: @KarolineLeavitt SAYS THIS IS A \"FULL BLOWN COMMUNIST REVOLUTION\" \ud83d\udea8\n\n\"They're not negotiating, they're here to DESTROY\"\n\n\"COMMUNISM is the BIGGEST THREAT in 250 YEARS\" \ud83d\udca3\n\nOnly ONE choic",
-            "sourceUrl": "https://x.com/JesseBWatters/status/2072846947837264317",
+            "voiceId": "lincoln-project",
+            "voiceName": "Lincoln Project",
+            "photo": "/photos/lincoln-project.jpg",
+            "quote": "Presidents past wept for our fallen soldiers. Donald Trump mocks them.\n\nOur soldiers and their families deserve a Lincoln.\n\nVideo",
+            "sourceUrl": "https://x.com/ProjectLincoln/status/2072711902346584256",
             "platform": "x",
             "quoteQuality": 4
           },
           {
-            "voiceId": "tomi-lahren",
-            "voiceName": "Tomi Lahren",
-            "photo": "/photos/tomi-lahren.jpg",
-            "quote": "Tomi Lahren: We have a choice \u2014 pick candidates who love our country, or not | Fox News Video foxnews.com/video/6399967539\u2026\n\nLink\n\n\n\nTomi Lahren: We have a choice \u2014 pick candidates who love our countr",
-            "sourceUrl": "https://x.com/TomiLahren/status/2072836356368118116",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "tim-pool",
-            "voiceName": "Tim Pool",
-            "photo": "/photos/tim-pool.jpg",
-            "quote": "Democrat CIVIL WAR, Socialists OUST 15 Term Incumbent, US WORLD CUP GAME!! | Timcast IRL nitter.net/i/broadcasts/1dJrPPvrZ\u2026\n\nLink\n\n\n\nTim Pool\n\nDemocrat CIVIL WAR, Socialists OUST 15 Term Incumbent, US",
-            "sourceUrl": "https://x.com/Timcast/status/2072470461703917667",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "bo-loudon",
-            "voiceName": "Bo Loudon",
-            "photo": "/photos/bo-loudon.jpg",
-            "quote": "If it wasn't for God ensuring President Trump's 2024 victory was too big to rig, we wouldn't be here celebrating America's 250th Birthday.\n\nThankfully, Trump's landslide was bigger than the voter frau",
-            "sourceUrl": "https://x.com/BoLoudon/status/2072857127786291273",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "anna-paulina-luna",
-            "voiceName": "Anna Paulina Luna",
-            "photo": "/photos/anna-paulina-luna.jpg",
-            "quote": "If you believe in election integrity, don\u2019t hide SAVE America in a MIRV. Put it in the bill itself. Statutory text becomes law. Everything else is only guidance that can be ignored, rewritten, or quie",
-            "sourceUrl": "https://x.com/RepLuna/status/2072728125272694909",
-            "platform": "x",
-            "quoteQuality": 4
+            "voiceId": "hasan-minhaj",
+            "voiceName": "Hasan Minhaj",
+            "photo": "/photos/hasan-minhaj.jpg",
+            "quote": "Do Republican voters want the truth? with Chris Christie ",
+            "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7658287013044440333",
+            "platform": "tiktok",
+            "quoteQuality": 1
           }
         ],
-        "voiceCount": 5,
+        "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Jesse Watters",
-          "quote": "\ud83d\udea8 HOLY SMOKES: @KarolineLeavitt SAYS THIS IS A \"FULL BLOWN COMMUNIST REVOLUTION\" \ud83d\udea8\n\n\"They're not negotiating, they're here to DESTROY\"\n\n\"COMMUNISM is the BIGGEST THREAT in 250 YEARS\" \ud83d\udca3\n\nOnly ONE choic",
+          "voiceName": "Lincoln Project",
+          "quote": "Presidents past wept for our fallen soldiers. Donald Trump mocks them.\n\nOur soldiers and their families deserve a Lincoln.\n\nVideo",
           "platform": "x",
           "quality": 4
         }
@@ -245,189 +341,12 @@
     "belowThreshold": false
   },
   {
-    "topic": "billionaires-wealth",
-    "topicDisplay": "Billionaires Wealth",
-    "headline": "Trump's Financial Disclosure Reveals $2.2 Billion Earned in Office",
-    "voiceCount": 14,
-    "clusterCount": 3,
-    "insight": "Near-total progressive consensus across 14 voices condemning Trump's $2.2 billion windfall as corrupt self-dealing at public expense.",
-    "clusters": [
-      {
-        "name": "Exposing Corruption",
-        "voices": [
-          {
-            "voiceId": "judd-legum",
-            "voiceName": "Judd Legum",
-            "photo": "/photos/judd-legum.jpg",
-            "quote": "\u201cPump and dump\u201d: How Trump made $636 million \u2014 and left his supporters holding the bag (by Rebecca Crosby). On Tuesday, President Donald Trump released his 927-page financial disclosure. The filing, w",
-            "sourceUrl": "https://popular.info/p/pump-and-dump-how-trump-made-636",
-            "platform": "substack",
-            "fit": 9,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "david-sirota",
-            "voiceName": "David Sirota",
-            "photo": "/photos/david-sirota.jpg",
-            "quote": " Commander-In-Crypto  (by Veronica Riccobene). It\u2019s been a lucrative year for President Donald Trump.",
-            "sourceUrl": "https://www.levernews.com/commander-in-crypto/",
-            "platform": "substack",
-            "fit": 5,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "brian-tyler-cohen",
-            "voiceName": "Brian Tyler Cohen",
-            "photo": "/photos/brian-tyler-cohen.jpg",
-            "quote": "Read the full newsletter and consider becoming a paid subscriber here: plus.briantylercohen.com/p/t\u2026\n\nLink\n\n\n\nTrump&apos;s Grift Hits Astronomical Heights--And You&apos;re Paying For It\n\nHis 927-page ",
-            "sourceUrl": "https://x.com/briantylercohen/status/2073107005758431614",
-            "platform": "x",
-            "fit": 7,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "jim-sciutto",
-            "voiceName": "Jim Sciutto",
-            "photo": "/photos/jim-sciutto.jpg",
-            "quote": "Quite a headline - and here are the numbers:\n\n\n\n\nThe Wall Street Journal (@WSJ)\n\nPresident Trump made $1 billion on crypto deals while his fans lost a fortune on.wsj.com/4eFpbob\n\nLink\n\n\n\nTrump Made $1",
-            "sourceUrl": "https://x.com/jimsciutto/status/2072486708357050557",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "adam-schiff",
-            "voiceName": "Adam Schiff",
-            "photo": "/photos/adam-schiff.jpg",
-            "quote": "Nothing to see here.\n\n\nFactPost (@factpostnews)\n\nNew filings reveal Trump personally outearned every single publicly traded crypto firm in America last year.\n\n\n\n\n\n\u2014 https://nitter.net/factpostnews/sta",
-            "sourceUrl": "https://x.com/SenAdamSchiff/status/2072782349473878443",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "pod-save-america",
-            "voiceName": "Pod Save America",
-            "photo": "/photos/pod-save-america.jpg",
-            "quote": "Trump's made $2.2 billion in his first year back in office. This is where we are at.\n\nVideo",
-            "sourceUrl": "https://x.com/PodSaveAmerica/status/2072787843844362500",
-            "platform": "x",
-            "fit": 6,
-            "quoteQuality": 3
-          }
-        ],
-        "voiceCount": 6,
-        "bestQuote": {
-          "voiceName": "Judd Legum",
-          "quote": "\u201cPump and dump\u201d: How Trump made $636 million \u2014 and left his supporters holding the bag (by Rebecca Crosby). On Tuesday, President Donald Trump released his 927-page financial disclosure. The filing, w",
-          "platform": "substack",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Billionaire Power Critique",
-        "voices": [
-          {
-            "voiceId": "radley-balko",
-            "voiceName": "Radley Balko",
-            "photo": "/photos/radley-balko.jpg",
-            "quote": "It is seriously alarming how many of the world\u2019s wealthiest and most powerful people are just screamingly mentally unwell in deeply toxic, dangerous ways.",
-            "sourceUrl": "https://bsky.app/profile/radleybalko.bsky.social/post/3mpq2oewonk2h",
-            "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "ro-khanna",
-            "voiceName": "Ro Khanna",
-            "photo": "/photos/ro-khanna.jpg",
-            "quote": "Progressives are winning because we have candidates willing to speak truth to power about Epstein, the billionaire class, the genocide in Gaza, taxing billionaires, and putting workers over AI.\n\nVideo",
-            "sourceUrl": "https://x.com/RoKhanna/status/2073085288293835046",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "kyle-kulinski",
-            "voiceName": "Kyle Kulinski",
-            "photo": "/photos/kyle-kulinski.jpg",
-            "quote": "Peter Thiel\u2019s Evil Scheme Is So Dark You Have To See It To Believe It | The Kyle Kulinski Show",
-            "sourceUrl": "https://www.youtube.com/watch?v=zHI3CA__ZvQ",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "Palantir CEO PANICS ON AIR About Wealth Tax",
-            "sourceUrl": "https://www.youtube.com/watch?v=XWL_r8Jhw5o",
-            "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 4,
-        "bestQuote": {
-          "voiceName": "Radley Balko",
-          "quote": "It is seriously alarming how many of the world\u2019s wealthiest and most powerful people are just screamingly mentally unwell in deeply toxic, dangerous ways.",
-          "platform": "bluesky",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Demanding Accountability",
-        "voices": [
-          {
-            "voiceId": "elizabeth-warren",
-            "voiceName": "Elizabeth Warren",
-            "photo": "/photos/elizabeth-warren.jpg",
-            "quote": "Trump claims he's profiting so much because \"the stock market\u2019s going up\" and \"everybody's profiting.\"\n\nThat is BS.\n\nTrump made $2.2 BILLION last year making shady stock trades and corrupt crypto deal",
-            "sourceUrl": "https://x.com/ewarren/status/2072699284470812835",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "hakeem-jeffries",
-            "voiceName": "Hakeem Jeffries",
-            "photo": "/photos/hakeem-jeffries.jpg",
-            "quote": "Donald Trump made more than $2 billion during his first year as President.\n\nRepublicans are enriching themselves while making your life more expensive.\n\nWe must crush the culture of corruption.",
-            "sourceUrl": "https://x.com/RepJeffries/status/2072999198484554196",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "amy-klobuchar",
-            "voiceName": "Amy Klobuchar",
-            "photo": "/photos/amy-klobuchar.jpg",
-            "quote": "Somehow the article\u2019s subtitle \u201cHere\u2019s what we know\u201d seems just unnecessary\u2026\n\nWE KNOW \n\nTrump made $1.4 billion from crypto last year. Here\u2019s what we know. washingtonpost.com/politics/\u2026\n\nLink\n\n\n\nTrump",
-            "sourceUrl": "https://x.com/amyklobuchar/status/2072674591328137636",
-            "platform": "x",
-            "fit": 5,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Elizabeth Warren",
-          "quote": "Trump claims he's profiting so much because \"the stock market\u2019s going up\" and \"everybody's profiting.\"\n\nThat is BS.\n\nTrump made $2.2 BILLION last year making shady stock trades and corrupt crypto deal",
-          "platform": "x",
-          "quality": 5
-        }
-      }
-    ],
-    "belowThreshold": false
-  },
-  {
     "topic": "climate-environment",
     "topicDisplay": "Climate Environment",
-    "headline": "Record Heat Wave Sparks Grid Strain, Policy Wars Across U.S.",
-    "voiceCount": 13,
-    "clusterCount": 5,
-    "insight": "A summer heat wave becomes a proxy war over energy policy, with the Trump grid moment giving both sides sharply opposite talking points.",
+    "headline": "Record Heat Wave Strains U.S. Power Grid Amid Climate Policy Battles",
+    "voiceCount": 14,
+    "clusterCount": 4,
+    "insight": "The heat wave has become a proxy war, with progressive voices pointing to grid failures as proof fossil fuel policy is backfiring in real time.",
     "clusters": [
       {
         "name": "Clean Energy Is the Solution",
@@ -501,7 +420,7 @@
             "quote": "Our End EPA Abuse Act will ensure that future administrations cannot unleash the EPA upon Americans and their businesses like Obama and Biden did. \n\nUnelected bureaucrats with climate psychosis should",
             "sourceUrl": "https://x.com/SenMikeLee/status/2072723669583876297",
             "platform": "x",
-            "fit": 4,
+            "fit": 5,
             "quoteQuality": 5
           },
           {
@@ -511,11 +430,21 @@
             "quote": "More people have been harmed by bad climate change policies than they have by \u201cclimate change\u201d itself. It\u2019s time to drill, frack, continue using coal, and embrace nuclear energy. That\u2019s how we bring d",
             "sourceUrl": "https://x.com/VivekGRamaswamy/status/2072727575294873800",
             "platform": "x",
-            "fit": 10,
+            "fit": 9,
             "quoteQuality": 4
+          },
+          {
+            "voiceId": "steven-crowder",
+            "voiceName": "Steven Crowder",
+            "photo": "/photos/steven-crowder.jpg",
+            "quote": "Mamdani's Heatwave 'Solution' Is Straight Out of Socialist Europe",
+            "sourceUrl": "https://www.youtube.com/shorts/ey4VSJ-o8ak",
+            "platform": "youtube",
+            "fit": 4,
+            "quoteQuality": 1
           }
         ],
-        "voiceCount": 2,
+        "voiceCount": 3,
         "bestQuote": {
           "voiceName": "Mike Lee",
           "quote": "Our End EPA Abuse Act will ensure that future administrations cannot unleash the EPA upon Americans and their businesses like Obama and Biden did. \n\nUnelected bureaucrats with climate psychosis should",
@@ -524,7 +453,7 @@
         }
       },
       {
-        "name": "Mamdani's Thermostat Ask Is Reasonable",
+        "name": "Mamdani Backlash and Defense",
         "voices": [
           {
             "voiceId": "matteo-il-pazzeo",
@@ -533,11 +462,21 @@
             "quote": "New York City mayor Zohran Mamdani asked New Yorkers to set their thermostats at 78\u00b0 to conserve energy during this record breaking heat July 4 weekend. And the entire GOP, including people like @thed",
             "sourceUrl": "https://www.tiktok.com/@matteo_il_pazzeo/video/7658316106007874846",
             "platform": "tiktok",
-            "fit": 9,
+            "fit": 8,
             "quoteQuality": 2
+          },
+          {
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "New York City BANS Air Conditioning as Heat Wave Hits 100\u00b0 Internet DESTROYS Commie Mandami in Memes",
+            "sourceUrl": "https://www.youtube.com/watch?v=_s5feQIVX-g",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
           }
         ],
-        "voiceCount": 1,
+        "voiceCount": 2,
         "bestQuote": {
           "voiceName": "Matteo il Pazzeo",
           "quote": "New York City mayor Zohran Mamdani asked New Yorkers to set their thermostats at 78\u00b0 to conserve energy during this record breaking heat July 4 weekend. And the entire GOP, including people like @thed",
@@ -546,29 +485,7 @@
         }
       },
       {
-        "name": "Mamdani Is a Socialist Symbol",
-        "voices": [
-          {
-            "voiceId": "benny-johnson",
-            "voiceName": "Benny Johnson",
-            "photo": "/photos/benny-johnson.jpg",
-            "quote": "New York City BANS Air Conditioning as Heat Wave Hits 100\u00b0 Internet DESTROYS Commie Mandami in Memes",
-            "sourceUrl": "https://www.youtube.com/watch?v=_s5feQIVX-g",
-            "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Benny Johnson",
-          "quote": "New York City BANS Air Conditioning as Heat Wave Hits 100\u00b0 Internet DESTROYS Commie Mandami in Memes",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "Adjacent Accountability",
+        "name": "Broader Environmental Accountability",
         "voices": [
           {
             "voiceId": "cory-booker",
@@ -577,7 +494,7 @@
             "quote": "Donald Trump promised to \u201cMake America Healthy Again\u201d\u2014but now his EPA is approving the first-ever use of cancer-linked 'forever chemicals' on our crops. \n\nThis is a betrayal of the American people. Po",
             "sourceUrl": "https://x.com/CoryBooker/status/2072713181957427450",
             "platform": "x",
-            "fit": 5,
+            "fit": 6,
             "quoteQuality": 4
           }
         ],
@@ -593,77 +510,186 @@
     "belowThreshold": false
   },
   {
-    "topic": "iran-conflict",
-    "topicDisplay": "Iran Conflict",
-    "headline": "Israel Allegedly Tried to Kill Iran Negotiators During US Peace Talks",
-    "voiceCount": 14,
-    "clusterCount": 4,
-    "insight": "The alleged Israeli plot to assassinate Iranian negotiators during active US peace talks dominates, with most voices condemning it as a deliberate sabotage of diplomacy.",
+    "topic": "supreme-court-legal",
+    "topicDisplay": "Supreme Court Legal",
+    "headline": "Supreme Court Issues Multiple Major Rulings, Sparking Debate",
+    "voiceCount": 13,
+    "clusterCount": 5,
+    "insight": "Voices across the spectrum are alarmed by SCOTUS rulings, but disagree sharply on who is to blame and what should be done.",
     "clusters": [
       {
-        "name": "Conflict Consequences and Strategy",
+        "name": "Constitutional Crisis Alarm",
         "voices": [
           {
-            "voiceId": "spencer-ackerman",
-            "voiceName": "Spencer Ackerman",
-            "photo": "/photos/spencer-ackerman.jpg",
-            "quote": "New from me: Iran's elaborate entombment ceremony for Ali Khamenei may look like defiance aimed at Trump \u2014 it\u2019s really about legitimizing his son.\nopen.substack.com/pub/bobbygho...",
-            "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mpqtink53s2t",
-            "platform": "bluesky",
-            "fit": 5,
+            "voiceId": "brian-tyler-cohen",
+            "voiceName": "Brian Tyler Cohen",
+            "photo": "/photos/brian-tyler-cohen.jpg",
+            "quote": "I\u2019m not satisfied with symbolic victories and you shouldn\u2019t be either.\n\n\nDemocracy Docket (@DemocracyDocket)\n\nNEW: In a span of weeks, SCOTUS let the president fire independent agency heads, scrapped ",
+            "sourceUrl": "https://x.com/briantylercohen/status/2072808254267383860",
+            "platform": "x",
+            "fit": 7,
             "quoteQuality": 5
           },
           {
-            "voiceId": "richard-engel",
-            "voiceName": "Richard Engel",
-            "photo": "/photos/richard-engel.jpg",
-            "quote": "Is China happy for the Iran war to continue? piped.video/shorts/8qxPxUWwy\u2026 via @YouTube\n\nLink\n\n\n\nIs China happy for the Iran war to continue?\n\n&apos;It just displays American failings&apos;The Iran wa",
-            "sourceUrl": "https://x.com/RichardEngel/status/2072748039454806413",
+            "voiceId": "center-for-american-progress",
+            "voiceName": "Center for American Progress",
+            "photo": "/photos/center-for-american-progress.jpg",
+            "quote": "It's never been clearer that the Supreme Court is a political entity with a direct impact on American democracy. \n\n\u2696\ufe0f  Louisiana v. Callais was one of the most antidemocratic rulings in decades, super",
+            "sourceUrl": "https://x.com/amprog/status/2072719478819811782",
             "platform": "x",
-            "fit": 7,
+            "fit": 8,
             "quoteQuality": 4
           },
           {
-            "voiceId": "ryan-grim",
-            "voiceName": "Ryan Grim",
-            "photo": "/photos/ryan-grim.jpg",
-            "quote": "Trump Can Only Lose the Battle for the Strait Of Hormuz",
-            "sourceUrl": "https://www.youtube.com/watch?v=dSGcB3uPERY",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
+            "voiceId": "joyce-vance",
+            "voiceName": "Joyce Vance",
+            "photo": "/photos/joyce-vance.jpg",
+            "quote": "Former CIA Director Brennan is suing the Trump administration. He hasn't been charged with a crime. He's suing to stop evidence he\u2019ll need to defend himself from disappearing before he's charged with ",
+            "sourceUrl": "https://x.com/JoyceWhiteVance/status/2072865937615671535",
+            "platform": "x",
+            "fit": 5,
+            "quoteQuality": 4
           },
           {
-            "voiceId": "jeremy-scahill",
-            "voiceName": "Jeremy Scahill",
-            "photo": "/photos/jeremy-scahill.jpg",
-            "quote": "Trump Can Only Lose the Battle for the Strait Of Hormuz",
-            "sourceUrl": "https://www.youtube.com/watch?v=dSGcB3uPERY",
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "Trump DOJ BLINDSIDED as DESTRUCTION of Evidence GETS CALLED OUT",
+            "sourceUrl": "https://www.youtube.com/watch?v=5Xz8s8ZQRm0",
             "platform": "youtube",
-            "fit": 7,
+            "fit": 4,
             "quoteQuality": 1
           },
           {
             "voiceId": "mehdi-hasan",
             "voiceName": "Mehdi Hasan",
             "photo": "/photos/mehdi-hasan.jpg",
-            "quote": "The Last Time the U.S. Killed Dozens of Iranian Kids",
-            "sourceUrl": "https://www.youtube.com/shorts/6YI30ATMVgw",
+            "quote": "Why Is The Supreme Court Acting Like There's No Constitution?",
+            "sourceUrl": "https://www.youtube.com/shorts/6S-dFZi6fow",
             "platform": "youtube",
-            "fit": 6,
+            "fit": 9,
             "quoteQuality": 1
           }
         ],
         "voiceCount": 5,
         "bestQuote": {
-          "voiceName": "Spencer Ackerman",
-          "quote": "New from me: Iran's elaborate entombment ceremony for Ali Khamenei may look like defiance aimed at Trump \u2014 it\u2019s really about legitimizing his son.\nopen.substack.com/pub/bobbygho...",
-          "platform": "bluesky",
+          "voiceName": "Brian Tyler Cohen",
+          "quote": "I\u2019m not satisfied with symbolic victories and you shouldn\u2019t be either.\n\n\nDemocracy Docket (@DemocracyDocket)\n\nNEW: In a span of weeks, SCOTUS let the president fire independent agency heads, scrapped ",
+          "platform": "x",
           "quality": 5
         }
       },
       {
-        "name": "Diplomacy Over War",
+        "name": "Constitution Defenders",
+        "voices": [
+          {
+            "voiceId": "rand-paul",
+            "voiceName": "Rand Paul",
+            "photo": "/photos/rand-paul.jpg",
+            "quote": "Why did I introduce my Fourth Amendment Restoration and Protection Act?\n\ud83d\udd39 Your right to be free from unreasonable search and seizure is not negotiable.\n\ud83d\udd39 Government doesn't get to trade away your libe",
+            "sourceUrl": "https://x.com/RandPaul/status/2073066739253010768",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "cato-institute",
+            "voiceName": "Cato Institute",
+            "photo": "/photos/cato-institute.jpg",
+            "quote": "Those born on American soil are American citizens. The Supreme Court reaffirmed that rule.\n\nCato filed an amicus brief in this case. \n\n@Thomas_A_Berry breaks down the Court's reasoning and why the dec",
+            "sourceUrl": "https://x.com/CatoInstitute/status/2073074718198927464",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Rand Paul",
+          "quote": "Why did I introduce my Fourth Amendment Restoration and Protection Act?\n\ud83d\udd39 Your right to be free from unreasonable search and seizure is not negotiable.\n\ud83d\udd39 Government doesn't get to trade away your libe",
+          "platform": "x",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Court Reform Advocates",
+        "voices": [
+          {
+            "voiceId": "adam-schiff",
+            "voiceName": "Adam Schiff",
+            "photo": "/photos/adam-schiff.jpg",
+            "quote": "I spoke to @Elex_Michaelson about the need to reform the Supreme Court, including a term limit for justices. \n\nThis would be constitutional, as long as justices are permitted to rotate onto an appeals",
+            "sourceUrl": "https://x.com/SenAdamSchiff/status/2072773871866884279",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Adam Schiff",
+          "quote": "I spoke to @Elex_Michaelson about the need to reform the Supreme Court, including a term limit for justices. \n\nThis would be constitutional, as long as justices are permitted to rotate onto an appeals",
+          "platform": "x",
+          "quality": 4
+        }
+      },
+      {
+        "name": "Institutional Reckoning",
+        "voices": [
+          {
+            "voiceId": "chris-cuomo",
+            "voiceName": "Chris Cuomo",
+            "photo": "/photos/chris-cuomo.jpg",
+            "quote": "As America turns 250, I explain why the courts\u2014not politicians\u2014may be the country\u2019s most important institution, and why so many people are getting the latest Supreme Court rulings wrong.\n\nJoin The Chr",
+            "sourceUrl": "https://x.com/ChrisCuomo/status/2072813202929303937",
+            "platform": "x",
+            "fit": 7,
+            "quoteQuality": 5
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Chris Cuomo",
+          "quote": "As America turns 250, I explain why the courts\u2014not politicians\u2014may be the country\u2019s most important institution, and why so many people are getting the latest Supreme Court rulings wrong.\n\nJoin The Chr",
+          "platform": "x",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Populist Outrage",
+        "voices": [
+          {
+            "voiceId": "tim-pool",
+            "voiceName": "Tim Pool",
+            "photo": "/photos/tim-pool.jpg",
+            "quote": "The United States is a conquered nation. \n\nHowever, it\u2019s composed of many peoples who believe in the American way of life. \n\nCommunists want to destroy it all &amp; the recent SCOTUS rulings are helpi",
+            "sourceUrl": "https://x.com/Timcast/status/2073046603821207736",
+            "platform": "x",
+            "fit": 7,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Tim Pool",
+          "quote": "The United States is a conquered nation. \n\nHowever, it\u2019s composed of many peoples who believe in the American way of life. \n\nCommunists want to destroy it all &amp; the recent SCOTUS rulings are helpi",
+          "platform": "x",
+          "quality": 4
+        }
+      }
+    ],
+    "belowThreshold": false
+  },
+  {
+    "topic": "iran-conflict",
+    "topicDisplay": "Iran Conflict",
+    "headline": "Israel Allegedly Tried to Kill Iranian Negotiators, US Intervened",
+    "voiceCount": 14,
+    "clusterCount": 3,
+    "insight": "Progressive and independent voices nearly unanimously focus on Israel's alleged assassination plot against Iranian negotiators as a sabotage of US-Iran diplomacy.",
+    "clusters": [
+      {
+        "name": "Diplomacy Must Prevail",
         "voices": [
           {
             "voiceId": "cenk-uygur",
@@ -682,7 +708,7 @@
             "quote": "Wow!\n\nLet this sink in: After the first round of US-Iran talks in Islamabad, US intelligence picked up that Israel was planning to assassinate the Iranian negotiators as they were returning to Tehran.",
             "sourceUrl": "https://x.com/tparsi/status/2072837852757725602",
             "platform": "x",
-            "fit": 8,
+            "fit": 9,
             "quoteQuality": 4
           },
           {
@@ -692,7 +718,7 @@
             "quote": "U.S.-Iran peace talks are messy and may fail. But if they produce a deal, it could prove more durable than the JCPOA. Unlike the 2015 agreement, this deal is emerging out of a war, with Republicans on",
             "sourceUrl": "https://x.com/NegarMortazavi/status/2073172313588093402",
             "platform": "x",
-            "fit": 9,
+            "fit": 10,
             "quoteQuality": 4
           },
           {
@@ -704,9 +730,29 @@
             "platform": "youtube",
             "fit": 4,
             "quoteQuality": 1
+          },
+          {
+            "voiceId": "ryan-grim",
+            "voiceName": "Ryan Grim",
+            "photo": "/photos/ryan-grim.jpg",
+            "quote": "Trump Can Only Lose the Battle for the Strait Of Hormuz",
+            "sourceUrl": "https://www.youtube.com/watch?v=dSGcB3uPERY",
+            "platform": "youtube",
+            "fit": 5,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "jeremy-scahill",
+            "voiceName": "Jeremy Scahill",
+            "photo": "/photos/jeremy-scahill.jpg",
+            "quote": "Trump Can Only Lose the Battle for the Strait Of Hormuz",
+            "sourceUrl": "https://www.youtube.com/watch?v=dSGcB3uPERY",
+            "platform": "youtube",
+            "fit": 5,
+            "quoteQuality": 1
           }
         ],
-        "voiceCount": 4,
+        "voiceCount": 6,
         "bestQuote": {
           "voiceName": "Cenk Uygur",
           "quote": "America had to warn Iran that our so-called ally was trying to kill their negotiators. We don\u2019t want that because we want to get to peace. Israel thinks we\u2019ll be forced back into war if they do that. ",
@@ -715,17 +761,27 @@
         }
       },
       {
-        "name": "Confronting Iran's Regime",
+        "name": "Human Cost and Accountability",
         "voices": [
           {
-            "voiceId": "sean-hannity",
-            "voiceName": "Sean Hannity",
-            "photo": "/photos/sean-hannity.jpg",
-            "quote": "UN-BELIEVABLE: Waltz Torches Iran Envoy in Fiery Security Council Showdown [WATCH]\n\nhannity.com/media-room/un-be\u2026\n\nLink\n\n\n\nMike Waltz Blasts Iran\u2019s U.N. Envoy During Explosive Security Council Clash\n\n",
-            "sourceUrl": "https://x.com/seanhannity/status/2073092451259076980",
+            "voiceId": "christiane-amanpour",
+            "voiceName": "Christiane Amanpour",
+            "photo": "/photos/christiane-amanpour.jpg",
+            "quote": "Alarming news that wildlife conservationists Sepideh Kashani and Houman Jowkar have been detained in Tehran, along with Sepideh\u2019s sister Sima Kashani. Those studying our natural world should be celebr",
+            "sourceUrl": "https://x.com/amanpour/status/2073107732744307098",
             "platform": "x",
+            "fit": 5,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "mehdi-hasan",
+            "voiceName": "Mehdi Hasan",
+            "photo": "/photos/mehdi-hasan.jpg",
+            "quote": "The Last Time the U.S. Killed Dozens of Iranian Kids",
+            "sourceUrl": "https://www.youtube.com/shorts/6YI30ATMVgw",
+            "platform": "youtube",
             "fit": 8,
-            "quoteQuality": 4
+            "quoteQuality": 1
           },
           {
             "voiceId": "masih-alinejad",
@@ -734,8 +790,40 @@
             "quote": "Masih Alinejad on CBS News: &quot;Nuclear Deal or Death Sentence for Iranians?&quot;",
             "sourceUrl": "https://www.youtube.com/watch?v=veHNrXQlC78",
             "platform": "youtube",
-            "fit": 6,
+            "fit": 7,
             "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "Christiane Amanpour",
+          "quote": "Alarming news that wildlife conservationists Sepideh Kashani and Houman Jowkar have been detained in Tehran, along with Sepideh\u2019s sister Sima Kashani. Those studying our natural world should be celebr",
+          "platform": "x",
+          "quality": 5
+        }
+      },
+      {
+        "name": "US Strength and Pressure on Iran",
+        "voices": [
+          {
+            "voiceId": "sean-hannity",
+            "voiceName": "Sean Hannity",
+            "photo": "/photos/sean-hannity.jpg",
+            "quote": "UN-BELIEVABLE: Waltz Torches Iran Envoy in Fiery Security Council Showdown [WATCH]\n\nhannity.com/media-room/un-be\u2026\n\nLink\n\n\n\nMike Waltz Blasts Iran\u2019s U.N. Envoy During Explosive Security Council Clash\n\n",
+            "sourceUrl": "https://x.com/seanhannity/status/2073092451259076980",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "richard-engel",
+            "voiceName": "Richard Engel",
+            "photo": "/photos/richard-engel.jpg",
+            "quote": "Is China happy for the Iran war to continue? piped.video/shorts/8qxPxUWwy\u2026 via @YouTube\n\nLink\n\n\n\nIs China happy for the Iran war to continue?\n\n&apos;It just displays American failings&apos;The Iran wa",
+            "sourceUrl": "https://x.com/RichardEngel/status/2072748039454806413",
+            "platform": "x",
+            "fit": 4,
+            "quoteQuality": 4
           }
         ],
         "voiceCount": 2,
@@ -745,219 +833,6 @@
           "platform": "x",
           "quality": 4
         }
-      },
-      {
-        "name": "Iran Human Rights Watch",
-        "voices": [
-          {
-            "voiceId": "christiane-amanpour",
-            "voiceName": "Christiane Amanpour",
-            "photo": "/photos/christiane-amanpour.jpg",
-            "quote": "Alarming news that wildlife conservationists Sepideh Kashani and Houman Jowkar have been detained in Tehran, along with Sepideh\u2019s sister Sima Kashani. Those studying our natural world should be celebr",
-            "sourceUrl": "https://x.com/amanpour/status/2073107732744307098",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Christiane Amanpour",
-          "quote": "Alarming news that wildlife conservationists Sepideh Kashani and Houman Jowkar have been detained in Tehran, along with Sepideh\u2019s sister Sima Kashani. Those studying our natural world should be celebr",
-          "platform": "x",
-          "quality": 5
-        }
-      }
-    ],
-    "belowThreshold": false
-  },
-  {
-    "topic": "supreme-court-legal",
-    "topicDisplay": "Supreme Court Legal",
-    "headline": "Supreme Court Rules on Birthright Citizenship, Agency Firings, Refugees",
-    "voiceCount": 15,
-    "clusterCount": 5,
-    "insight": "Progressive voices dominate and fracture between demanding court reform and declaring constitutional collapse, while right-populists bizarrely agree the court failed them.",
-    "clusters": [
-      {
-        "name": "Courts Betraying Democracy",
-        "voices": [
-          {
-            "voiceId": "joy-reid",
-            "voiceName": "Joy Reid",
-            "photo": "/photos/joy-reid.jpg",
-            "quote": "On the latest TJRS: the right crashes out over the Supreme Court's decision to barely preserve the constitutional right of birthright citizenship ... plus: Eric Benet says he's always been political w",
-            "sourceUrl": "https://bsky.app/profile/joyannreid.bsky.social/post/3mpn5psj47k2s",
-            "platform": "bluesky",
-            "fit": 4,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "brian-tyler-cohen",
-            "voiceName": "Brian Tyler Cohen",
-            "photo": "/photos/brian-tyler-cohen.jpg",
-            "quote": "I\u2019m not satisfied with symbolic victories and you shouldn\u2019t be either.\n\n\nDemocracy Docket (@DemocracyDocket)\n\nNEW: In a span of weeks, SCOTUS let the president fire independent agency heads, scrapped ",
-            "sourceUrl": "https://x.com/briantylercohen/status/2072808254267383860",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "center-for-american-progress",
-            "voiceName": "Center for American Progress",
-            "photo": "/photos/center-for-american-progress.jpg",
-            "quote": "It's never been clearer that the Supreme Court is a political entity with a direct impact on American democracy. \n\n\u2696\ufe0f  Louisiana v. Callais was one of the most antidemocratic rulings in decades, super",
-            "sourceUrl": "https://x.com/amprog/status/2072719478819811782",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "mehdi-hasan",
-            "voiceName": "Mehdi Hasan",
-            "photo": "/photos/mehdi-hasan.jpg",
-            "quote": "Why Is The Supreme Court Acting Like There's No Constitution?",
-            "sourceUrl": "https://www.youtube.com/shorts/6S-dFZi6fow",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 4,
-        "bestQuote": {
-          "voiceName": "Joy Reid",
-          "quote": "On the latest TJRS: the right crashes out over the Supreme Court's decision to barely preserve the constitutional right of birthright citizenship ... plus: Eric Benet says he's always been political w",
-          "platform": "bluesky",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Institutions Need Reform",
-        "voices": [
-          {
-            "voiceId": "chris-cuomo",
-            "voiceName": "Chris Cuomo",
-            "photo": "/photos/chris-cuomo.jpg",
-            "quote": "As America turns 250, I explain why the courts\u2014not politicians\u2014may be the country\u2019s most important institution, and why so many people are getting the latest Supreme Court rulings wrong.\n\nJoin The Chr",
-            "sourceUrl": "https://x.com/ChrisCuomo/status/2072813202929303937",
-            "platform": "x",
-            "fit": 5,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "Jack Smith: \"I think we are facing an attack on the rule of law that is different in kind and scope to anything I've seen in my lifetime\"",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mpowx2hwcy2u",
-            "platform": "bluesky",
-            "fit": 4,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "adam-schiff",
-            "voiceName": "Adam Schiff",
-            "photo": "/photos/adam-schiff.jpg",
-            "quote": "I spoke to @Elex_Michaelson about the need to reform the Supreme Court, including a term limit for justices. \n\nThis would be constitutional, as long as justices are permitted to rotate onto an appeals",
-            "sourceUrl": "https://x.com/SenAdamSchiff/status/2072773871866884279",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Chris Cuomo",
-          "quote": "As America turns 250, I explain why the courts\u2014not politicians\u2014may be the country\u2019s most important institution, and why so many people are getting the latest Supreme Court rulings wrong.\n\nJoin The Chr",
-          "platform": "x",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Constitution Correctly Applied",
-        "voices": [
-          {
-            "voiceId": "rand-paul",
-            "voiceName": "Rand Paul",
-            "photo": "/photos/rand-paul.jpg",
-            "quote": "Why did I introduce my Fourth Amendment Restoration and Protection Act?\n\ud83d\udd39 Your right to be free from unreasonable search and seizure is not negotiable.\n\ud83d\udd39 Government doesn't get to trade away your libe",
-            "sourceUrl": "https://x.com/RandPaul/status/2073066739253010768",
-            "platform": "x",
-            "fit": 7,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "cato-institute",
-            "voiceName": "Cato Institute",
-            "photo": "/photos/cato-institute.jpg",
-            "quote": "Those born on American soil are American citizens. The Supreme Court reaffirmed that rule.\n\nCato filed an amicus brief in this case. \n\n@Thomas_A_Berry breaks down the Court's reasoning and why the dec",
-            "sourceUrl": "https://x.com/CatoInstitute/status/2073074718198927464",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Rand Paul",
-          "quote": "Why did I introduce my Fourth Amendment Restoration and Protection Act?\n\ud83d\udd39 Your right to be free from unreasonable search and seizure is not negotiable.\n\ud83d\udd39 Government doesn't get to trade away your libe",
-          "platform": "x",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Court Still Too Liberal",
-        "voices": [
-          {
-            "voiceId": "bo-loudon",
-            "voiceName": "Bo Loudon",
-            "photo": "/photos/bo-loudon.jpg",
-            "quote": "Throughout Justice Thomas\u2019s career, his dissents have averaged 9.5 pages.\n\nWhen the SCOTUS ruled to grant automatic citizenship to anchor babies of illegals,\n\nJustice Thomas wrote a 91 PAGE dissent.\n\n",
-            "sourceUrl": "https://x.com/BoLoudon/status/2073116656096711112",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "tim-pool",
-            "voiceName": "Tim Pool",
-            "photo": "/photos/tim-pool.jpg",
-            "quote": "The United States is a conquered nation. \n\nHowever, it\u2019s composed of many peoples who believe in the American way of life. \n\nCommunists want to destroy it all &amp; the recent SCOTUS rulings are helpi",
-            "sourceUrl": "https://x.com/Timcast/status/2073046603821207736",
-            "platform": "x",
-            "fit": 7,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Bo Loudon",
-          "quote": "Throughout Justice Thomas\u2019s career, his dissents have averaged 9.5 pages.\n\nWhen the SCOTUS ruled to grant automatic citizenship to anchor babies of illegals,\n\nJustice Thomas wrote a 91 PAGE dissent.\n\n",
-          "platform": "x",
-          "quality": 4
-        }
-      },
-      {
-        "name": "Making It Accessible",
-        "voices": [
-          {
-            "voiceId": "leeja-miller",
-            "voiceName": "Leeja Miller",
-            "photo": "/photos/leeja-miller.jpg",
-            "quote": "WTF Just Happened At The Supreme Court This Week? | EXPLAINER",
-            "sourceUrl": "https://www.youtube.com/watch?v=Qw13BEftg_4",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Leeja Miller",
-          "quote": "WTF Just Happened At The Supreme Court This Week? | EXPLAINER",
-          "platform": "youtube",
-          "quality": 1
-        }
       }
     ],
     "belowThreshold": false
@@ -965,13 +840,13 @@
   {
     "topic": "israel-palestine",
     "topicDisplay": "Israel Palestine",
-    "headline": "Israel-Gaza War Hits 1,000 Days Amid Ongoing Atrocities",
-    "voiceCount": 20,
+    "headline": "Israel-Gaza War Hits 1,000 Days Amid Global Condemnation",
+    "voiceCount": 19,
     "clusterCount": 5,
-    "insight": "An unusual cross-ideological coalition \u2014 from MAGA's Marjorie Taylor Greene to progressive Glenn Greenwald \u2014 condemns U.S. funding of Israel.",
+    "insight": "Across left, right, and independent media, an unusually broad coalition condemns U.S. complicity in Gaza, with almost no one defending current policy.",
     "clusters": [
       {
-        "name": "End U.S. Complicity Now",
+        "name": "Genocide Accountability",
         "voices": [
           {
             "voiceId": "glenn-greenwald",
@@ -980,15 +855,7 @@
             "quote": "Hasan Piker is right about this: both Joe Biden and Kamala Harris deserve to be in prison and/or at the Hague for financing, arming and enabling in every way Israel's destruction of Gaza. Complicity i",
             "sourceUrl": "https://x.com/ggreenwald/status/2073115860651393120",
             "platform": "x",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "david-sirota",
-            "voiceName": "David Sirota",
-            "photo": "/photos/david-sirota.jpg",
-            "quote": "New  @LeverNews interview with @AbdulElSayed: \n\n\"Antisemitism exists and is a very dangerous force, but I also know that trying to meld the interests of Judaism and the Jewish people with the interest",
-            "sourceUrl": "https://x.com/davidsirota/status/2073057016583479435",
-            "platform": "x",
+            "fit": 10,
             "quoteQuality": 5
           },
           {
@@ -998,6 +865,7 @@
             "quote": ".@SmithInAmerica on The RevolYOUtion with @cenkuygur  discussing AIPAC's declining influence \n\n\"It motivates people to actually vote against someone.\"\n\nVideo",
             "sourceUrl": "https://x.com/TheYoungTurks/status/2072478310274363859",
             "platform": "x",
+            "fit": 5,
             "quoteQuality": 4
           },
           {
@@ -1007,6 +875,7 @@
             "quote": "And cut all their money. Why would we give money to a country that\u2019s actively trying to destroy our foreign policy and force us to do their interests instead? But all of Washington serves Israel, so t",
             "sourceUrl": "https://x.com/cenkuygur/status/2073155522480710091",
             "platform": "x",
+            "fit": 6,
             "quoteQuality": 4
           },
           {
@@ -1016,15 +885,7 @@
             "quote": "This is what we\u2019re funding. The new Nazis.\n\n\nNora Borealis (@noraborealisFL)\n\nThere\u2019s literally hours of horrific footage, real footage. No need to spread AI.\n\n\n\n\u2014 https://nitter.net/noraborealisFL/st",
             "sourceUrl": "https://x.com/AnaKasparian/status/2073209130685489505",
             "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "chris-hedges",
-            "voiceName": "Chris Hedges",
-            "photo": "/photos/chris-hedges.jpg",
-            "quote": "In my recent conversation with @hussedogru, he broke down the institutional pressures on journalists and media outlets to spin the genocide in Gaza in a manner favorable to Israel. The potential for p",
-            "sourceUrl": "https://x.com/ChrisLynnHedges/status/2072836666826612930",
-            "platform": "x",
+            "fit": 7,
             "quoteQuality": 4
           },
           {
@@ -1034,6 +895,17 @@
             "quote": "This is the most horrific thing happening in our lifetimes and America is complicit and does nothing to stop it. \n\nEven worse, we fund it.\n\n\nIsrael Exposed (@xIsraelExposedx)\n\nIt took a little longer ",
             "sourceUrl": "https://x.com/mtgreenee/status/2072871983713239356",
             "platform": "x",
+            "fit": 7,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "chris-hedges",
+            "voiceName": "Chris Hedges",
+            "photo": "/photos/chris-hedges.jpg",
+            "quote": "In my recent conversation with @hussedogru, he broke down the institutional pressures on journalists and media outlets to spin the genocide in Gaza in a manner favorable to Israel. The potential for p",
+            "sourceUrl": "https://x.com/ChrisLynnHedges/status/2072836666826612930",
+            "platform": "x",
+            "fit": 9,
             "quoteQuality": 4
           },
           {
@@ -1043,28 +915,11 @@
             "quote": "If you were surprised that Hillary Clinton penned an oped in @FT declaring her support for Trump's Gaza plan - that de facto allows Israel to annex most of the territory - then you haven't been paying",
             "sourceUrl": "https://x.com/tparsi/status/2073048728928141653",
             "platform": "x",
+            "fit": 6,
             "quoteQuality": 4
-          },
-          {
-            "voiceId": "kyle-kulinski",
-            "voiceName": "Kyle Kulinski",
-            "photo": "/photos/kyle-kulinski.jpg",
-            "quote": "EVERYTHING GOES TO HELL As MAGA GREEN LIGHTS WAR WITH LEBANON!!! | The Kyle Kulinski Show",
-            "sourceUrl": "https://www.youtube.com/watch?v=2hXGnKeez20",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "jimmy-dore",
-            "voiceName": "Jimmy Dore",
-            "photo": "/photos/jimmy-dore.jpg",
-            "quote": "Theo Von Humiliates U.S. Sen. With FACTS Over Israel &amp; GAZA!",
-            "sourceUrl": "https://www.youtube.com/watch?v=owkMMBX2fQc",
-            "platform": "youtube",
-            "quoteQuality": 1
           }
         ],
-        "voiceCount": 10,
+        "voiceCount": 7,
         "bestQuote": {
           "voiceName": "Glenn Greenwald",
           "quote": "Hasan Piker is right about this: both Joe Biden and Kamala Harris deserve to be in prison and/or at the Hague for financing, arming and enabling in every way Israel's destruction of Gaza. Complicity i",
@@ -1073,7 +928,7 @@
         }
       },
       {
-        "name": "Accountability Journalism",
+        "name": "Investigative War Coverage",
         "voices": [
           {
             "voiceId": "jeremy-scahill",
@@ -1082,6 +937,7 @@
             "quote": "\ud83d\udcfa WATCH:\n\n\u201cLebanon\u2019s Surrender Agreement\u201d: Hezbollah Expert Amal Saad on \u201cFramework\u201d With Israel\n\n@amalsaad_lb @DropSiteNews \n\n piped.video/omYFGSEy87M?is=OSra\u2026\n\nLink\n\n\n\n\u201cLebanon\u2019s Surrender Agreement",
             "sourceUrl": "https://x.com/jeremyscahill/status/2072968223062954188",
             "platform": "x",
+            "fit": 9,
             "quoteQuality": 4
           },
           {
@@ -1091,6 +947,7 @@
             "quote": "After 1,000 days of war, the mood in Israel is \"somber ... but very much angry,\" political analyst @dahliasc tells me. Ahead of elections later this year, she tells me why some people are calling Neta",
             "sourceUrl": "https://x.com/amanpour/status/2072743355348394152",
             "platform": "x",
+            "fit": 8,
             "quoteQuality": 4
           },
           {
@@ -1100,6 +957,7 @@
             "quote": "Israel Claims Journos They Killed Don't Count",
             "sourceUrl": "https://www.youtube.com/watch?v=m38lXVRyhJ4",
             "platform": "youtube",
+            "fit": 8,
             "quoteQuality": 1
           },
           {
@@ -1109,6 +967,7 @@
             "quote": "Israel Claims Journos They Killed Don't Count",
             "sourceUrl": "https://www.youtube.com/watch?v=m38lXVRyhJ4",
             "platform": "youtube",
+            "fit": 8,
             "quoteQuality": 1
           },
           {
@@ -1118,6 +977,7 @@
             "quote": "Tebnine: The Southern Lebanon Hospital That Persisted Through 16 Israeli Strikes",
             "sourceUrl": "https://www.youtube.com/shorts/y_eowbdLsx4",
             "platform": "youtube",
+            "fit": 9,
             "quoteQuality": 1
           }
         ],
@@ -1130,7 +990,7 @@
         }
       },
       {
-        "name": "Pro-Israel Defense",
+        "name": "Pro-Israel Solidarity",
         "voices": [
           {
             "voiceId": "katie-britt",
@@ -1139,6 +999,7 @@
             "quote": "1,000 days ago, on October 7, 2023, the world watched in horror as countless Israelis and Americans were kidnapped, raped, murdered, and had their lives destroyed by terrorists.\n\nWe must never forget ",
             "sourceUrl": "https://x.com/SenKatieBritt/status/2072736233386615045",
             "platform": "x",
+            "fit": 8,
             "quoteQuality": 5
           },
           {
@@ -1148,6 +1009,7 @@
             "quote": "\u201cJournalists\u201d that are members of Hamas, Hezbollah, or any radical terrorist groups are legitimate military targets.\n\nI continue to support @IDF\u2019s efforts. \ud83c\uddee\ud83c\uddf1",
             "sourceUrl": "https://x.com/SenFettermanPA/status/2073036513663701458",
             "platform": "x",
+            "fit": 9,
             "quoteQuality": 4
           },
           {
@@ -1157,6 +1019,7 @@
             "quote": "\ud83d\udea8 MAMDANI CAN'T HAVE IT BOTH WAYS\n\nTom Smith: \"He can't go out there and profess that he's now all about protecting the Jewish community when, in fact, he's backing up people who despise the Jewish co",
             "sourceUrl": "https://x.com/IngrahamAngle/status/2072852004196536585",
             "platform": "x",
+            "fit": 6,
             "quoteQuality": 4
           }
         ],
@@ -1169,7 +1032,7 @@
         }
       },
       {
-        "name": "Moral Leadership and Reform",
+        "name": "Diplomatic Reform Advocates",
         "voices": [
           {
             "voiceId": "ro-khanna",
@@ -1178,6 +1041,7 @@
             "quote": "I was asked what US policy towards Israel should be when Democrats win. \n\nI talked about moral leadership that so many in the next generation crave.\n\nVideo",
             "sourceUrl": "https://x.com/RoKhanna/status/2073064548941156485",
             "platform": "x",
+            "fit": 6,
             "quoteQuality": 5
           }
         ],
@@ -1190,7 +1054,7 @@
         }
       },
       {
-        "name": "Bearing Witness",
+        "name": "Cultural Observers",
         "voices": [
           {
             "voiceId": "sneako",
@@ -1199,6 +1063,7 @@
             "quote": "Gaza watching the World Cup while the world is blind to Gaza",
             "sourceUrl": "https://x.com/sneako/status/2073324653506969936",
             "platform": "x",
+            "fit": 5,
             "quoteQuality": 3
           }
         ],
