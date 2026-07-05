@@ -1,7 +1,7 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-07-05T10:03:07.706983",
+  "collectedAt": "2026-07-05T11:09:19.053541",
   "date": "2026-07-05",
   "posts": [
     {
@@ -15,7 +15,7 @@
       "topic": "sports",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Warns betting apps mislead consumers by highlighting wins",
+      "summary": "Criticizes betting apps for misleading marketing",
       "quote": "Reminder: betting apps love showing the wins\u2026 never the losses \ud83d\udc40\ud83d\udcb8\u26bd\n\nVideo"
     },
     {
@@ -26,10 +26,10 @@
       "sourceUrl": "https://www.youtube.com/shorts/enfUQlDOOYE",
       "timestamp": "2026-07-04T18:00:36+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
+      "topic": "epstein-scandal",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Compares Trump's governance unfavorably to his handling of Epstein",
+      "summary": "Criticizes Trump's connections to Epstein",
       "quote": "Nick Offerman hopes Trump puts as much love into America's birthday as he did into Jeffrey Epstein's"
     },
     {
@@ -42,8 +42,8 @@
       "type": "video_title",
       "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Mocks Trump's cultural event as exploitative of supporters",
+      "stance": "strong",
+      "summary": "Mocks Trump's Freedom 250 concert as money grab",
       "quote": "Six acts dropped out of Trump's Freedom 250 concert, but Vanilla Ice stepped up to save the day"
     },
     {
@@ -54,10 +54,10 @@
       "sourceUrl": "https://www.youtube.com/shorts/jsFt6xXs_sM",
       "timestamp": "2026-07-03T15:00:00+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "other",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Questions fitness of Trump-era governance",
+      "summary": "Critiques America's historical treatment and legacy",
       "quote": "What should go in the America 250 time capsule? Maybe an apology for how we left the place"
     },
     {
@@ -69,9 +69,9 @@
       "timestamp": "2026-07-02T18:00:23+00:00",
       "type": "video_title",
       "topic": "healthcare",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes pharmaceutical industry for exploiting taxpayers",
+      "summary": "Criticizes pharmaceutical companies for overcharging taxpayers",
       "quote": "Jon describes what pharma companies are doing to taxpayers as the &quot;worst Shark Tank deal in history&quot;"
     },
     {
@@ -83,24 +83,24 @@
       "timestamp": "2026-07-02T15:00:24+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Accuses Trump entities of financial exploitation of supporters",
+      "summary": "Mocks Trump business ventures targeting MAGA supporters",
       "quote": "Trump Industries has an exciting new way to separate MAGA from their money!"
     },
     {
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
       "platform": "youtube",
-      "text": "Rebecca Traister on how anger is a powerful emotion that can draw people together for a greater good",
-      "sourceUrl": "https://www.youtube.com/shorts/5osmspdtX0g",
-      "timestamp": "2026-07-01T15:00:13+00:00",
+      "text": "Lewis Black can't believe he has to say this, but boiling a goji berry does not make you Chinese!",
+      "sourceUrl": "https://www.youtube.com/shorts/uuIt_WVIGII",
+      "timestamp": "2026-06-30T18:00:33+00:00",
       "type": "video_title",
       "topic": "culture-war",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames anger as mobilizing force for collective action",
-      "quote": "Rebecca Traister on how anger is a powerful emotion that can draw people together for a greater good"
+      "stance": "strong",
+      "summary": "Ridicules absurd claims about cultural authenticity",
+      "quote": "Lewis Black can't believe he has to say this, but boiling a goji berry does not make you Chinese!"
     },
     {
       "voiceId": "trevor-noah",
@@ -113,7 +113,7 @@
       "topic": "sports",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Warns betting apps mislead consumers by highlighting wins",
+      "summary": "Criticizes betting apps for misleading marketing",
       "quote": "Reminder: betting apps love showing the wins\u2026 never the losses \ud83d\udc40\ud83d\udcb8\u26bd"
     }
   ],
@@ -132,13 +132,15 @@
         "timestamp": "2026-07-04T02:40:00+00:00"
       }
     ],
-    "trump-administration": [
+    "epstein-scandal": [
       {
         "quote": "Nick Offerman hopes Trump puts as much love into America's birthday as he did into Jeffrey Epstein's",
         "sourceUrl": "https://www.youtube.com/shorts/enfUQlDOOYE",
         "platform": "youtube",
         "timestamp": "2026-07-04T18:00:36+00:00"
-      },
+      }
+    ],
+    "trump-administration": [
       {
         "quote": "Six acts dropped out of Trump's Freedom 250 concert, but Vanilla Ice stepped up to save the day",
         "sourceUrl": "https://www.youtube.com/shorts/P7LRuh4gAJ8",
@@ -146,16 +148,18 @@
         "timestamp": "2026-07-03T18:00:37+00:00"
       },
       {
-        "quote": "What should go in the America 250 time capsule? Maybe an apology for how we left the place",
-        "sourceUrl": "https://www.youtube.com/shorts/jsFt6xXs_sM",
-        "platform": "youtube",
-        "timestamp": "2026-07-03T15:00:00+00:00"
-      },
-      {
         "quote": "Trump Industries has an exciting new way to separate MAGA from their money!",
         "sourceUrl": "https://www.youtube.com/shorts/ND8T2QLe1Ec",
         "platform": "youtube",
         "timestamp": "2026-07-02T15:00:24+00:00"
+      }
+    ],
+    "other": [
+      {
+        "quote": "What should go in the America 250 time capsule? Maybe an apology for how we left the place",
+        "sourceUrl": "https://www.youtube.com/shorts/jsFt6xXs_sM",
+        "platform": "youtube",
+        "timestamp": "2026-07-03T15:00:00+00:00"
       }
     ],
     "healthcare": [
@@ -168,10 +172,10 @@
     ],
     "culture-war": [
       {
-        "quote": "Rebecca Traister on how anger is a powerful emotion that can draw people together for a greater good",
-        "sourceUrl": "https://www.youtube.com/shorts/5osmspdtX0g",
+        "quote": "Lewis Black can't believe he has to say this, but boiling a goji berry does not make you Chinese!",
+        "sourceUrl": "https://www.youtube.com/shorts/uuIt_WVIGII",
         "platform": "youtube",
-        "timestamp": "2026-07-01T15:00:13+00:00"
+        "timestamp": "2026-06-30T18:00:33+00:00"
       }
     ]
   }

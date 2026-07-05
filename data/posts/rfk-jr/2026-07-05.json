@@ -1,7 +1,7 @@
 {
   "voiceId": "rfk-jr",
   "voiceName": "Robert F. Kennedy Jr.",
-  "collectedAt": "2026-07-05T10:03:07.727059",
+  "collectedAt": "2026-07-05T11:09:19.076330",
   "date": "2026-07-05",
   "posts": [
     {
@@ -15,8 +15,22 @@
       "topic": "economy-trade",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes corporate capture as harmful to small business",
+      "summary": "Corporate consolidation harms small business",
       "quote": "RFK Jr. Podcast: Corporate Capture Kills Small Business with Lloyd Chapman"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "youtube",
+      "text": "RFK Jr. Podcast: The Future of Food with Farming Pioneer Joel Salatin",
+      "sourceUrl": "https://www.youtube.com/watch?v=edgQH7MRuGg",
+      "timestamp": "2024-11-19T03:27:03+00:00",
+      "type": "video_title",
+      "topic": "food-agriculture",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Promotes regenerative farming practices",
+      "quote": "RFK Jr. Podcast: The Future of Food with Farming Pioneer Joel Salatin"
     },
     {
       "voiceId": "rfk-jr",
@@ -29,8 +43,36 @@
       "topic": "drugs-addiction",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Advocates psychedelics as therapeutic for veterans",
+      "summary": "Supports psychedelic therapy for veterans",
       "quote": "Rogan: psychedelics for veterans"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "youtube",
+      "text": "Charlie Kirk on why 50% of America is obese",
+      "sourceUrl": "https://www.youtube.com/shorts/rN7LRccEpno",
+      "timestamp": "2024-11-10T20:33:08+00:00",
+      "type": "video_title",
+      "topic": "healthcare",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Discusses obesity epidemic in America",
+      "quote": "Charlie Kirk on why 50% of America is obese"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "youtube",
+      "text": "Trump: Free Speech",
+      "sourceUrl": "https://www.youtube.com/watch?v=xJfUXVOoFBo",
+      "timestamp": "2024-11-09T20:30:09+00:00",
+      "type": "video_title",
+      "topic": "free-speech-censorship",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Emphasizes importance of free speech",
+      "quote": "Trump: Free Speech"
     },
     {
       "voiceId": "rfk-jr",
@@ -40,7 +82,7 @@
       "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
       "timestamp": "2024-11-07T18:39:36+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "other",
       "relevance": "medium",
       "stance": "strong",
       "summary": "Criticizes corruption in government",
@@ -57,7 +99,7 @@
       "topic": "drugs-addiction",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Endorses psychedelic therapy access for veterans",
+      "summary": "Veterans deserve access to psychedelic therapy",
       "quote": "Yes, Joe Rogan, veterans are the most deserving of benefiting from psychedelic therapy."
     }
   ],
@@ -68,6 +110,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=1mAZTceKpRM",
         "platform": "youtube",
         "timestamp": "2024-12-08T00:01:42+00:00"
+      }
+    ],
+    "food-agriculture": [
+      {
+        "quote": "RFK Jr. Podcast: The Future of Food with Farming Pioneer Joel Salatin",
+        "sourceUrl": "https://www.youtube.com/watch?v=edgQH7MRuGg",
+        "platform": "youtube",
+        "timestamp": "2024-11-19T03:27:03+00:00"
       }
     ],
     "drugs-addiction": [
@@ -84,7 +134,23 @@
         "timestamp": "2024-11-11T00:21:00+00:00"
       }
     ],
-    "trump-administration": [
+    "healthcare": [
+      {
+        "quote": "Charlie Kirk on why 50% of America is obese",
+        "sourceUrl": "https://www.youtube.com/shorts/rN7LRccEpno",
+        "platform": "youtube",
+        "timestamp": "2024-11-10T20:33:08+00:00"
+      }
+    ],
+    "free-speech-censorship": [
+      {
+        "quote": "Trump: Free Speech",
+        "sourceUrl": "https://www.youtube.com/watch?v=xJfUXVOoFBo",
+        "platform": "youtube",
+        "timestamp": "2024-11-09T20:30:09+00:00"
+      }
+    ],
+    "other": [
       {
         "quote": "Corruption",
         "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
