@@ -1,9 +1,23 @@
 {
   "voiceId": "shawn-ryan-show",
   "voiceName": "Shawn Ryan Show",
-  "collectedAt": "2026-07-05T10:03:07.732989",
+  "collectedAt": "2026-07-05T11:09:19.082442",
   "date": "2026-07-05",
   "posts": [
+    {
+      "voiceId": "shawn-ryan-show",
+      "voiceName": "Shawn Ryan Show",
+      "platform": "x",
+      "text": "Why The Daily Wire Fired @RealCandaceO \ud83d\ude33\n\nVideo",
+      "sourceUrl": "https://x.com/ShawnRyanShow/status/2072747267920990379",
+      "timestamp": "2026-07-02T18:20:33+00:00",
+      "type": "tweet",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions The Daily Wire's decision to fire Owens",
+      "quote": "Why The Daily Wire Fired @RealCandaceO \ud83d\ude33\n\nVideo"
+    },
     {
       "voiceId": "shawn-ryan-show",
       "voiceName": "Shawn Ryan Show",
@@ -15,7 +29,7 @@
       "topic": "trump-administration",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Questions whether Vance can withstand Trump's actions",
+      "summary": "Questions Vance's viability after Trump's actions",
       "quote": "Can Vance Survive What Trump Did? \ud83d\ude33"
     },
     {
@@ -26,25 +40,11 @@
       "sourceUrl": "https://www.youtube.com/shorts/8kLL8NKkqGE",
       "timestamp": "2026-07-04T00:00:13+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "media-personalities",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Trump mocked Candace Owens with AI image",
+      "summary": "Trump used AI image to mock Candace Owens",
       "quote": "Trump Posted an AI Image Mocking Candace \ud83d\ude33"
-    },
-    {
-      "voiceId": "shawn-ryan-show",
-      "voiceName": "Shawn Ryan Show",
-      "platform": "youtube",
-      "text": "&quot;The American Dream Died a Long Time Ago&quot; | Official Preview",
-      "sourceUrl": "https://www.youtube.com/watch?v=nWAEEdRnzCs",
-      "timestamp": "2026-07-03T22:00:01+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Declares American Dream dead or defunct",
-      "quote": "&quot;The American Dream Died a Long Time Ago&quot; | Official Preview"
     },
     {
       "voiceId": "shawn-ryan-show",
@@ -57,31 +57,17 @@
       "topic": "culture-war",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Claims real American power lies with unelected actors",
+      "summary": "Real power in America resides with unelected elites",
       "quote": "Candace Owens Says the Real Power in America Was Never Elected"
-    },
-    {
-      "voiceId": "shawn-ryan-show",
-      "voiceName": "Shawn Ryan Show",
-      "platform": "tiktok",
-      "text": "\"It Was Supposed to Be You\" \ud83d\ude28 #shawnryanshow #podcast #charliekirk #didyouknow #israel",
-      "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7658060676807576862",
-      "timestamp": "2026-07-02T22:26:48+00:00",
-      "type": "video_caption",
-      "topic": "israel-palestine",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames someone as target or victim in Israel context",
-      "quote": "\"It Was Supposed to Be You\" \ud83d\ude28 #shawnryanshow #podcast #charliekirk #didyouknow #israel"
     }
   ],
   "topicSummary": {
-    "trump-administration": [
+    "media-personalities": [
       {
-        "quote": "Can Vance Survive What Trump Did? \ud83d\ude33",
-        "sourceUrl": "https://www.youtube.com/shorts/TUXpRKXO6Bw",
-        "platform": "youtube",
-        "timestamp": "2026-07-04T01:30:27+00:00"
+        "quote": "Why The Daily Wire Fired @RealCandaceO \ud83d\ude33\n\nVideo",
+        "sourceUrl": "https://x.com/ShawnRyanShow/status/2072747267920990379",
+        "platform": "x",
+        "timestamp": "2026-07-02T18:20:33+00:00"
       },
       {
         "quote": "Trump Posted an AI Image Mocking Candace \ud83d\ude33",
@@ -90,26 +76,20 @@
         "timestamp": "2026-07-04T00:00:13+00:00"
       }
     ],
-    "culture-war": [
+    "trump-administration": [
       {
-        "quote": "&quot;The American Dream Died a Long Time Ago&quot; | Official Preview",
-        "sourceUrl": "https://www.youtube.com/watch?v=nWAEEdRnzCs",
+        "quote": "Can Vance Survive What Trump Did? \ud83d\ude33",
+        "sourceUrl": "https://www.youtube.com/shorts/TUXpRKXO6Bw",
         "platform": "youtube",
-        "timestamp": "2026-07-03T22:00:01+00:00"
-      },
+        "timestamp": "2026-07-04T01:30:27+00:00"
+      }
+    ],
+    "culture-war": [
       {
         "quote": "Candace Owens Says the Real Power in America Was Never Elected",
         "sourceUrl": "https://www.youtube.com/watch?v=WH8X1O20404",
         "platform": "youtube",
         "timestamp": "2026-07-03T17:30:04+00:00"
-      }
-    ],
-    "israel-palestine": [
-      {
-        "quote": "\"It Was Supposed to Be You\" \ud83d\ude28 #shawnryanshow #podcast #charliekirk #didyouknow #israel",
-        "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7658060676807576862",
-        "platform": "tiktok",
-        "timestamp": "2026-07-02T22:26:48+00:00"
       }
     ]
   }
