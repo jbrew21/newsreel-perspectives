@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perspectives -- Story</title>
+<title>Perspectives · Story</title>
 <meta name="description" content="See how 257 public voices react to this story, clustered by argument.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -183,7 +183,7 @@
     padding: var(--space-6) var(--space-5) 0;
   }
   .proportion-bar {
-    display: flex; height: var(--space-2); border-radius: var(--space-1);
+    display: flex; gap: 1.5px; height: var(--space-2); border-radius: var(--space-1);
     overflow: hidden; background: var(--bg-elevated);
   }
   .proportion-segment {
@@ -442,13 +442,15 @@
     .story-headline { font-size: var(--text-xl); }
     .story-proportion { padding: var(--space-4) var(--space-4) 0; }
     .clusters { padding: var(--space-4) var(--space-4) var(--space-8); }
-    .cluster-header { padding: var(--space-3) var(--space-4); }
+    .nav-tab { min-height: 40px; display: inline-flex; align-items: center; }
+    .cluster-header { padding: var(--space-4); min-height: 48px; }
     .cluster-body-inner { padding: 0 var(--space-4); }
     .cluster-card.open .cluster-body-inner { padding-bottom: var(--space-3); }
     .voice-row { padding: var(--space-3); gap: var(--space-3); }
     .voice-row-photo { width: 36px; height: 36px; }
+    .proportion-bar { height: 14px; }
     .proportion-legend { gap: var(--space-2); }
-    .legend-item { font-size: 10px; padding: var(--space-1); }
+    .legend-item { font-size: var(--text-xs); min-height: 44px; padding: var(--space-2) var(--space-3); }
     .skeleton-header { padding: var(--space-6) var(--space-4) 0; }
     .skeleton-bar { padding: var(--space-4) var(--space-4) 0; }
     .skeleton-clusters { padding: var(--space-4) var(--space-4); }
@@ -549,8 +551,19 @@
   document.getElementById('voicesLink').href = PAGES.voices;
 
   /* -- CONSTANTS -- */
-  // Ranked, not identity: leading position takes the one accent, the rest recede down the zinc ramp.
-  var COLORS = ['#FF6343','#a1a1aa','#52525b','#3f3f46','#27272a'];
+  // Ranked, not identity: leading position takes the one accent, the rest step down a
+  // LEGIBLE zinc ramp (floored so no segment/dot disappears into the dark track). No rainbow.
+  var COLORS = ['#FF6343','#a1a1aa','#71717a','#52525b','#52525b'];
+
+  // Local initials avatar (on-palette, no external ui-avatars.com dependency).
+  function initialsAvatar(name) {
+    var parts = (name || '?').trim().split(/\s+/);
+    var ini = ((parts[0] || '?').charAt(0) + (parts.length > 1 ? parts[parts.length - 1].charAt(0) : '')).toUpperCase();
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">' +
+      '<rect width="80" height="80" fill="#1a1a1f"/>' +
+      '<text x="40" y="40" dy="0.35em" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="30" font-weight="600" fill="#71717a">' + ini + '</text></svg>';
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
   var PLATFORM = { x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast' };
 
   /* -- DOM REFS -- */
@@ -612,7 +625,7 @@
     if (el.tagName !== 'IMG' || el.dataset.fallbackApplied) return;
     el.dataset.fallbackApplied = 'true';
     var name = el.dataset.fallbackName || el.alt || 'User';
-    el.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name) + '&background=1a1a1f&color=a1a1aa&size=80';
+    el.src = initialsAvatar(name);
   }, true);
 
   /* -- DELEGATED SHARE BUTTON -- */
@@ -781,7 +794,7 @@
       });
     });
 
-    document.title = story.headline + ' -- Perspectives';
+    document.title = story.headline + ' · Perspectives';
 
     // Proportion bar segments
     var total = clusters.reduce(function(s, c) {
@@ -822,7 +835,7 @@
         if (rendered[v.voiceId]) return '';
         rendered[v.voiceId] = true;
 
-        var photo = v.photo || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(v.voiceName) + '&background=1a1a1f&color=a1a1aa&size=80';
+        var photo = v.photo || initialsAvatar(v.voiceName);
         var lens = getLens(v.voiceId);
         var pLabel = PLATFORM[v.platform] || v.platform || '';
         var quote = (v.quote || '').substring(0, 280);
