@@ -72,8 +72,6 @@
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 14px;
-    --radius-xl: 20px;
-    --radius-full: 100px;
 
     /* Transitions */
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -436,13 +434,14 @@
 
   /* -- MOBILE -- */
   @media (max-width: 600px) {
+    .nav-brand-label { display: none; }
     .nav { padding: var(--space-4) var(--space-4) 0; }
     .nav-brand img { height: 18px; }
     .story-header { padding: var(--space-6) var(--space-4) 0; }
     .story-headline { font-size: var(--text-xl); }
     .story-proportion { padding: var(--space-4) var(--space-4) 0; }
     .clusters { padding: var(--space-4) var(--space-4) var(--space-8); }
-    .nav-tab { min-height: 40px; display: inline-flex; align-items: center; }
+    .nav-tab { min-height: 44px; display: inline-flex; align-items: center; }
     .cluster-header { padding: var(--space-4); min-height: 48px; }
     .cluster-body-inner { padding: 0 var(--space-4); }
     .cluster-card.open .cluster-body-inner { padding-bottom: var(--space-3); }
@@ -553,7 +552,7 @@
   /* -- CONSTANTS -- */
   // Ranked, not identity: leading position takes the one accent, the rest step down a
   // LEGIBLE zinc ramp (floored so no segment/dot disappears into the dark track). No rainbow.
-  var COLORS = ['#FF6343','#a1a1aa','#71717a','#52525b','#52525b'];
+  var COLORS = ['#FF6343','#a1a1aa','#71717a','#52525b','#3f3f46'];
 
   // Local initials avatar (on-palette, no external ui-avatars.com dependency).
   function initialsAvatar(name) {
@@ -783,7 +782,9 @@
 
   /* -- RENDER STORY -- */
   function renderStory(story) {
-    var clusters = story.clusters || [];
+    var clusters = (story.clusters || []).slice().sort(function(a, b) {
+      return (b.voiceCount || (b.voices || []).length) - (a.voiceCount || (a.voices || []).length);
+    });
     var totalVoices = story.voiceCount || clusters.reduce(function(s, c) {
       return s + (c.voiceCount || (c.voices || []).length);
     }, 0);
@@ -803,7 +804,7 @@
 
     var barSegments = clusters.map(function(c, ci) {
       var pct = Math.round((c.voiceCount || (c.voices || []).length) / total * 100);
-      var color = COLORS[ci % COLORS.length];
+      var color = COLORS[Math.min(ci, COLORS.length - 1)];
       return '<div class="proportion-segment" style="width:' + pct + '%;background:' + color + ';" ' +
         'data-scroll-cluster="' + ci + '" ' +
         'role="button" tabindex="0" ' +
@@ -813,7 +814,7 @@
 
     var legendItems = clusters.map(function(c, ci) {
       var count = c.voiceCount || (c.voices || []).length;
-      var color = COLORS[ci % COLORS.length];
+      var color = COLORS[Math.min(ci, COLORS.length - 1)];
       return '<button class="legend-item" type="button" data-scroll-cluster="' + ci + '" aria-label="Jump to ' + esc(c.name) + '">' +
         '<span class="legend-dot" style="background:' + color + ';" aria-hidden="true"></span>' +
         esc(c.name) + ' (' + count + ')' +
@@ -823,7 +824,7 @@
     // Cluster cards
     var clustersHtml = '';
     clusters.forEach(function(cluster, ci) {
-      var color = COLORS[ci % COLORS.length];
+      var color = COLORS[Math.min(ci, COLORS.length - 1)];
       var voices = cluster.voices || [];
       var count = cluster.voiceCount || voices.length;
       var isFirst = ci === 0;

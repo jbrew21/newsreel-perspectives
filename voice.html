@@ -72,8 +72,6 @@
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 14px;
-    --radius-xl: 20px;
-    --radius-full: 100px;
 
     /* Transitions */
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -502,6 +500,7 @@
 
   /* -- MOBILE -- */
   @media (max-width: 600px) {
+    .nav-brand-label { display: none; }
     .nav { padding: var(--space-4) var(--space-4) 0; }
     .nav-brand img { height: 18px; }
     .profile-header { padding: var(--space-6) var(--space-4) 0; }
@@ -509,8 +508,8 @@
     .profile-name { font-size: var(--text-xl); }
     .profile-lens { font-size: var(--text-sm); max-width: 100%; }
     .profile-platforms { gap: var(--space-1); }
-    .platform-pill { font-size: var(--text-xs); padding: var(--space-2) var(--space-3); min-height: 40px; display: inline-flex; align-items: center; }
-    .nav-back { min-height: 40px; }
+    .platform-pill { font-size: var(--text-xs); padding: var(--space-2) var(--space-3); min-height: 44px; display: inline-flex; align-items: center; }
+    .nav-back { min-height: 44px; }
     .section-divider { padding: var(--space-4) var(--space-4) 0; }
     .positions-list { padding: var(--space-4) var(--space-4) var(--space-6); }
     .position-card { padding: var(--space-3); }
