@@ -226,7 +226,7 @@
     background: var(--bg-card); border: 1px solid var(--border);
     border-radius: var(--radius-lg); margin-bottom: var(--space-3);
     overflow: hidden;
-    border-left: 3px solid var(--cluster-color, #60A5FA);
+    border-left: 3px solid var(--cluster-color, var(--border));
     transition: border-color var(--duration-normal);
   }
   .cluster-card.highlight {
@@ -242,12 +242,12 @@
   .cluster-header:active { background: var(--bg-hover); }
   .cluster-name {
     font-size: var(--text-base); font-weight: 600;
-    flex: 1; line-height: var(--leading-snug);
+    flex: 1; line-height: var(--leading-snug); color: var(--text-primary);
   }
   .cluster-count {
     font-size: var(--text-xs); color: var(--text-muted); font-weight: 700;
     background: var(--bg-elevated); padding: var(--space-1) var(--space-2);
-    border-radius: var(--radius-full); white-space: nowrap;
+    border-radius: var(--radius-sm); white-space: nowrap;
   }
   .cluster-chevron {
     transition: transform var(--duration-normal) var(--ease-out);
@@ -549,7 +549,8 @@
   document.getElementById('voicesLink').href = PAGES.voices;
 
   /* -- CONSTANTS -- */
-  var COLORS = ['#60A5FA','#F87171','#FBBF24','#A78BFA','#4ADE80','#22D3EE','#F472B6','#FB923C'];
+  // Ranked, not identity: leading position takes the one accent, the rest recede down the zinc ramp.
+  var COLORS = ['#FF6343','#a1a1aa','#52525b','#3f3f46','#27272a'];
   var PLATFORM = { x:'X', youtube:'YouTube', bluesky:'Bluesky', instagram:'Instagram', tiktok:'TikTok', substack:'Substack', podcast:'Podcast' };
 
   /* -- DOM REFS -- */
@@ -788,7 +789,7 @@
     }, 0) || 1;
 
     var barSegments = clusters.map(function(c, ci) {
-      var pct = ((c.voiceCount || (c.voices || []).length) / total * 100).toFixed(1);
+      var pct = Math.round((c.voiceCount || (c.voices || []).length) / total * 100);
       var color = COLORS[ci % COLORS.length];
       return '<div class="proportion-segment" style="width:' + pct + '%;background:' + color + ';" ' +
         'data-scroll-cluster="' + ci + '" ' +
@@ -850,7 +851,7 @@
           'aria-controls="' + bodyId + '" ' +
           'data-cluster-toggle ' +
           'id="cluster-heading-' + ci + '">' +
-          '<div class="cluster-name" style="color:' + color + ';">' + esc(cluster.name) + '</div>' +
+          '<div class="cluster-name">' + esc(cluster.name) + '</div>' +
           '<div class="cluster-count">' + count + ' voice' + (count !== 1 ? 's' : '') + '</div>' +
           '<svg class="cluster-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>' +
         '</div>' +
@@ -869,7 +870,7 @@
 
     contentEl.innerHTML =
       '<header class="story-header">' +
-        '<div class="story-meta">' + totalVoices + ' voices &middot; ' + clusters.length + ' positions &middot; ' + (allPlatforms.size || 7) + ' platforms</div>' +
+        '<div class="story-meta">' + totalVoices + ' voices &middot; ' + clusters.length + ' positions' + (allPlatforms.size ? ' &middot; ' + allPlatforms.size + ' platforms' : '') + '</div>' +
         '<h1 class="story-headline">' + esc(story.headline) + '</h1>' +
         (story.summary ? '<p class="story-summary">' + esc(story.summary) + '</p>' : '') +
         '<button class="share-btn" id="shareBtn" type="button" aria-label="Copy link to clipboard">' +
