@@ -72,8 +72,6 @@
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 14px;
-    --radius-xl: 20px;
-    --radius-full: 100px;
 
     /* Transitions */
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -447,6 +445,7 @@
 
   /* -- MOBILE -- */
   @media (max-width: 600px) {
+    .nav-brand-label { display: none; }
     .nav { padding: var(--space-4) var(--space-4) 0; }
     .nav-brand img { height: 18px; }
     .page-header { padding: var(--space-6) var(--space-4) 0; }
@@ -455,8 +454,8 @@
     .filter-section { padding: var(--space-3) var(--space-4) 0; }
     .stats-section { padding: var(--space-3) var(--space-4) 0; }
     .voices-section { padding: var(--space-4) var(--space-4) var(--space-8); }
-    .filter-chip { padding: var(--space-2) var(--space-3); min-height: 40px; display: inline-flex; align-items: center; }
-    .tile-social-link { min-height: 36px; padding: var(--space-1) var(--space-2); display: inline-flex; align-items: center; }
+    .filter-chip { padding: var(--space-2) var(--space-3); min-height: 44px; display: inline-flex; align-items: center; }
+    .tile-social-link { min-height: 44px; padding: var(--space-1) var(--space-2); display: inline-flex; align-items: center; }
     .voice-tile { padding: var(--space-3) var(--space-4); }
     .tile-photo { width: 40px; height: 40px; }
     .tile-name { font-size: var(--text-sm); }
