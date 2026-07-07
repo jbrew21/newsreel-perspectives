@@ -130,6 +130,33 @@ CLUSTER_NAME_MAP = {
 }
 
 
+def strip_quoted_tweet(text):
+    """Keep only the author's own words, dropping any embedded quote-tweet.
+
+    Mirrors collect.py so already-collected posts are cleaned at build time too:
+    a quoted tweet is embedded as `<own text>\\n\\n\\n<Name> (@handle)\\n\\n<quoted>`.
+    Classifying/displaying the quoted account's words was mislabeling voices.
+    """
+    if not text:
+        return text
+    t = text
+    # Bare requote: the whole post is a quoted tweet (starts with "Name (@handle)").
+    if re.match(r"^\s*[^\n]{1,60}\s\(@[A-Za-z0-9_]{1,20}\)", t):
+        return ""
+    # Otherwise cut at the quoted tweet's attribution line.
+    m = re.search(r"\n\s*\n\s*[^\n]{1,60}\s\(@[A-Za-z0-9_]{1,20}\)", t)
+    if m:
+        t = t[:m.start()]
+    t = re.sub(r'\s*—\s*https?://\S+\s*$', '', t)
+    t = re.sub(r'(?:\n+\s*(?:Video|GIF|Link|Show this thread|Watch)\s*)+$', '', t, flags=re.I)
+    return t.strip()
+
+
+def voice_quote(entry, limit=250):
+    """Author's own quote text, quote-tweet stripped, truncated to `limit`."""
+    return strip_quoted_tweet(entry.get('quote', entry.get('text', '')))[:limit]
+
+
 def normalize_cluster_name(name):
     """Normalize cluster name for consistency across stories."""
     low = name.strip().lower()
@@ -266,7 +293,7 @@ def analyze_voices(headline, voices_data, voices_meta):
     summaries = []
     for vid, entry in voices_data.items():
         meta = voices_meta.get(vid, {})
-        quote = entry.get('quote', entry.get('text', ''))[:250]
+        quote = voice_quote(entry, 250)
         bio = meta.get('lens', 'commentator')
         name = entry.get('voiceName', vid)
         platform = entry.get('platform', '')
@@ -285,6 +312,8 @@ def analyze_voices(headline, voices_data, voices_meta):
 Voices and their quotes:
 {voices_block}
 
+Each quote is the voice's OWN words (an embedded quote-tweet or article they linked has been removed). Judge each voice ONLY by what they themselves said, never by a topic you infer from context that isn't in their quote.
+
 Do these things:
 
 1. HEADLINE: Write a short, specific news headline (under 12 words) summarizing what is actually happening. Ground the reader in the current story.
@@ -292,7 +321,7 @@ Do these things:
 2. CLUSTER: Group these voices into 2-5 argument clusters. Each cluster is a distinct position or reaction. Name each in 2-4 words describing the ARGUMENT (not ideology). If there's no real split, use descriptive groupings like "Cautious Support" or "Demanding Action."
    CRITICAL: Name each cluster using language its MEMBERS would use to describe themselves, not language their opponents would use. "Deterrence Advocates" not "War Hawks". "Abortion Rights Defenders" not "Baby Killers". "Immigration Enforcement" not "Xenophobes". Always use neutral-to-sympathetic framing for every cluster.
 
-3. ASSIGN: Put every voice in exactly one cluster. For voices marked [VIDEO TITLE], you can still assign them based on who they are and what the title suggests, but weight voices with actual quotes more heavily when determining cluster names and the summary.
+3. ASSIGN: Put every voice in exactly one cluster. For voices marked [VIDEO TITLE], you can still assign them based on who they are and what the title suggests, but weight voices with actual quotes more heavily when determining cluster names and the summary. If a voice's quote states no clear position on THIS story (a bare reaction like "Thoughts?" or "Disgusting.", or an unrelated topic), mark it "unrelated" in RELEVANCE rather than forcing it into a cluster.
 
 4. SUMMARY: Write ONE sentence (under 20 words) capturing the most interesting thing about how voices are reacting. This could be:
    - A surprising split: "Left and right unite against the bill"
@@ -336,7 +365,7 @@ def validate_clusters(headline, clusters, voices_data, voices_meta):
             for vid, entry in voices_data.items():
                 entry_name = entry.get('voiceName', vid)
                 if entry_name.lower() == name.lower() or vid == name.lower().replace(' ', '-'):
-                    quote = entry.get('quote', entry.get('text', ''))[:250]
+                    quote = voice_quote(entry, 250)
                     break
             assignments.append(f'- {name} -> cluster "{cluster_name}": "{quote}"')
 
@@ -601,7 +630,7 @@ def build_stories(date=None):
                             'voiceId': vid,
                             'voiceName': entry_name,
                             'photo': get_voice_photo(meta, entry_name),
-                            'quote': entry.get('quote', entry.get('text', ''))[:200],
+                            'quote': voice_quote(entry, 200),
                             'sourceUrl': entry.get('sourceUrl', ''),
                             'platform': entry.get('platform', ''),
                         }
