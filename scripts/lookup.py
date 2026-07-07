@@ -42,6 +42,23 @@ def is_content_safe(text):
     return True
 
 
+# Promo/solicitation quotes are on-topic but useless as a voice card ("Read the
+# full newsletter and consider becoming a paid subscriber..."). Penalize them so
+# a substantive quote from the same voice ranks first.
+PROMO_TERMS = [
+    'paid subscriber', 'become a subscriber', 'consider subscribing', 'subscribe',
+    'link in bio', 'link in our bio', 'full episode', 'full newsletter',
+    'promo code', 'use code', 'sign up at', 'join us at', 'watch the full',
+    'read the full', 'available now at', 'pre-order', 'buy my', 'my new book',
+]
+
+
+def is_promo_quote(text):
+    """True if a quote is primarily a subscription/product solicitation."""
+    text_lower = text.lower()
+    return any(term in text_lower for term in PROMO_TERMS)
+
+
 # Stop words for extracting the meaningful keywords from a story headline.
 # Used to rank quotes by on-topic relevance and to detect match precision.
 QUERY_STOP_WORDS = {
@@ -359,6 +376,9 @@ def fulltext_search(headline, dates):
                 word_count = max(len(quote_text.split()), 1)
                 keyword_density = len(matched_words) / word_count
                 quote_score += keyword_density * 10
+                # Sink subscription/product solicitations below any real quote
+                if is_promo_quote(quote_text):
+                    quote_score -= 100
 
                 voices_found[vid]['topics'].append(p.get('topic', 'matched'))
                 voices_found[vid]['quotes'].append({
@@ -560,6 +580,9 @@ def lookup_story(headline, days=None):
             # sink below genuinely on-topic quotes in the top-3 display.
             quote_lower = quote_text.lower()
             quote_score = 1 + sum(1 for w in query_keywords if w in quote_lower)
+            # Sink subscription/product solicitations below any real quote
+            if is_promo_quote(quote_text):
+                quote_score -= 100
 
             voices_found[vid]['topics'].append(topic)
             voices_found[vid]['quotes'].append({
