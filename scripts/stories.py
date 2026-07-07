@@ -626,11 +626,16 @@ def build_stories(date=None):
                     entry_name = entry.get('voiceName', vid)
                     if entry_name.lower() == name.lower() or vid == name.lower().replace(' ', '-'):
                         meta = voices_meta.get(vid, {})
+                        q = voice_quote(entry, 200)
+                        # A bare requote (quoted tweet only, no author comment) strips to
+                        # empty — don't show a voice with none of its own words.
+                        if not q:
+                            break
                         voice_obj = {
                             'voiceId': vid,
                             'voiceName': entry_name,
                             'photo': get_voice_photo(meta, entry_name),
-                            'quote': voice_quote(entry, 200),
+                            'quote': q,
                             'sourceUrl': entry.get('sourceUrl', ''),
                             'platform': entry.get('platform', ''),
                         }
