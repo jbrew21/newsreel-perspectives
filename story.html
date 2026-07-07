@@ -729,38 +729,12 @@
 
         if (story) return story;
 
-        // Fallback: search via lookup API
-        var q = slug.replace(/-/g, ' ');
-        return fetch(BASE + '/api/lookup?q=' + encodeURIComponent(q))
-          .then(function(lr) { return lr.json(); })
-          .then(function(ld) {
-            if (ld && ld.voices && ld.voices.length > 0) {
-              var cg = {};
-              for (var i = 0; i < ld.voices.length; i++) {
-                var v = ld.voices[i];
-                var c = v.argumentCluster || 'Other';
-                if (!cg[c]) cg[c] = [];
-                cg[c].push({
-                  voiceId: v.voiceId,
-                  voiceName: v.voiceName,
-                  photo: v.photo,
-                  platform: v.quotes[0] ? v.quotes[0].platform : '',
-                  quote: v.quotes[0] ? v.quotes[0].quote : '',
-                  sourceUrl: v.quotes[0] ? v.quotes[0].sourceUrl : ''
-                });
-              }
-              return {
-                headline: ld.headline,
-                summary: ld.broadeningNote || '',
-                type: 'spectrum',
-                voiceCount: ld.voices.length,
-                clusters: Object.entries(cg).map(function(pair) {
-                  return { name: pair[0], voices: pair[1], voiceCount: pair[1].length };
-                })
-              };
-            }
-            return null;
-          })
+        // Not in today's feed: resolve THIS specific story (with its real
+        // clusters) by slug across recent days. Never fall back to a topic
+        // search — that showed unrelated voices under the wrong headline.
+        return fetch(BASE + '/api/story?slug=' + encodeURIComponent(slug))
+          .then(function(r) { return r.ok ? r.json() : null; })
+          .then(function(s) { return (s && s.headline && s.clusters) ? s : null; })
           .catch(function() { return null; });
       })
       .then(function(story) {

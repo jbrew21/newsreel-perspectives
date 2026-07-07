@@ -128,6 +128,34 @@ def get_latest_file(directory, prefix):
         return None
 
 
+def story_slug(headline):
+    """Slugify a headline to match the client's slugify() exactly (story.html)."""
+    s = re.sub(r'[^a-z0-9]+', '-', (headline or '').lower())
+    return s.strip('-')[:60]
+
+
+def find_story_by_slug(slug, max_files=14):
+    """Resolve a specific story (with its real clusters) by slug across recent
+    dated stories-*.json files, so a story that has rotated off /api/stories
+    still opens with the correct headline and positions."""
+    posts_dir = os.path.join(ROOT, 'data', 'posts')
+    try:
+        files = sorted(
+            [f for f in os.listdir(posts_dir) if f.startswith('stories-') and f.endswith('.json')],
+            reverse=True
+        )[:max_files]
+    except Exception:
+        return None
+    for fname in files:
+        data = load_json_file(os.path.join(posts_dir, fname))
+        if not isinstance(data, list):
+            continue
+        for s in data:
+            if story_slug(s.get('headline', '')) == slug:
+                return s
+    return None
+
+
 def is_content_safe(text):
     text_lower = text.lower()
     return not any(term in text_lower for term in SAFETY_TERMS)
@@ -324,6 +352,20 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             log.info(f"Search: '{query}' from {ip}")
             result = do_search(query, days)
             self.send_json(result, cache_ttl=CACHE_TTL_SEARCH)
+            return
+
+        # ── API: Single story by slug (resolves rotated-out stories) ──
+        if path == '/api/story':
+            qs = parse_qs(urlparse(self.path).query)
+            slug = (qs.get('slug', [''])[0] or '').strip().lower()[:60]
+            if not slug:
+                self.send_json({'error': 'missing_slug'}, status=400, cache_ttl=0)
+                return
+            story = find_story_by_slug(slug)
+            if story:
+                self.send_json(story, cache_ttl=CACHE_TTL_STORIES)
+            else:
+                self.send_json({'error': 'not_found', 'slug': slug}, status=404, cache_ttl=60)
             return
 
         # ── API: Stories ──
