@@ -84,12 +84,37 @@ NITTER_INSTANCES = [
 ]
 
 
+def strip_quoted_tweet(text):
+    """Remove an embedded quote-tweet so we keep only the AUTHOR's own words.
+
+    Nitter/rss embed a quoted tweet after the author's text as:
+        <own text>\\n\\n\\n<Display Name> (@handle)\\n\\n<quoted text> ... — <url>
+    Pulling the quoted tweet pollutes both the displayed quote and the argument
+    classification (a bare "Thoughts?" requote was being clustered on the quoted
+    account's content). Keep everything before the quoted tweet's attribution line.
+    """
+    if not text:
+        return text
+    t = text
+    # Bare requote: the whole post is a quoted tweet (starts with "Name (@handle)").
+    if re.match(r"^\s*[^\n]{1,60}\s\(@[A-Za-z0-9_]{1,20}\)", t):
+        return ""
+    # Otherwise cut at the quoted tweet's attribution line.
+    m = re.search(r"\n\s*\n\s*[^\n]{1,60}\s\(@[A-Za-z0-9_]{1,20}\)", t)
+    if m:
+        t = t[:m.start()]
+    # Drop a trailing quoted permalink and media/thread artifacts.
+    t = re.sub(r'\s*—\s*https?://\S+\s*$', '', t)
+    t = re.sub(r'(?:\n+\s*(?:Video|GIF|Link|Show this thread|Watch)\s*)+$', '', t, flags=re.I)
+    return t.strip()
+
+
 def _parse_rssapp_json(voice, data):
     """Parse rss.app JSON format into standard post objects."""
     x_handle = voice.get('handles', {}).get('x', '').lstrip('@')
     posts = []
     for item in data.get('items', [])[:20]:
-        text = item.get('title', '')
+        text = strip_quoted_tweet(item.get('title', ''))
         if not text or len(text) < 15:
             continue
 
@@ -146,6 +171,7 @@ def _parse_nitter_rss(voice, rss, nitter_host):
         elif title_match:
             text = title_match.group(1)
 
+        text = strip_quoted_tweet(text)
         if not text or len(text) < 15:
             continue
 
