@@ -1,7 +1,7 @@
 {
   "voiceId": "rfk-jr",
   "voiceName": "Robert F. Kennedy Jr.",
-  "collectedAt": "2026-07-08T09:24:21.035895",
+  "collectedAt": "2026-07-08T11:10:27.668623",
   "date": "2026-07-08",
   "posts": [
     {
@@ -42,8 +42,8 @@
       "type": "video_title",
       "topic": "drugs-addiction",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Advocates psychedelic therapy access for veterans",
+      "stance": "lean",
+      "summary": "Supports psychedelic therapy access for military veterans",
       "quote": "Rogan: psychedelics for veterans"
     },
     {
@@ -57,7 +57,7 @@
       "topic": "healthcare",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Discusses obesity epidemic in America",
+      "summary": "Addresses obesity as public health crisis",
       "quote": "Charlie Kirk on why 50% of America is obese"
     },
     {
@@ -71,8 +71,22 @@
       "topic": "free-speech-censorship",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Emphasizes importance of free speech protections",
+      "summary": "Emphasizes free speech importance in governance",
       "quote": "Trump: Free Speech"
+    },
+    {
+      "voiceId": "rfk-jr",
+      "voiceName": "Robert F. Kennedy Jr.",
+      "platform": "youtube",
+      "text": "Corruption",
+      "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
+      "timestamp": "2024-11-07T18:39:36+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Highlights government corruption and institutional capture",
+      "quote": "Corruption"
     },
     {
       "voiceId": "rfk-jr",
@@ -85,7 +99,7 @@
       "topic": "drugs-addiction",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Advocates psychedelic therapy access for veterans",
+      "summary": "Veterans most deserving of psychedelic therapy access",
       "quote": "Yes, Joe Rogan, veterans are the most deserving of benefiting from psychedelic therapy."
     }
   ],
@@ -134,6 +148,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=xJfUXVOoFBo",
         "platform": "youtube",
         "timestamp": "2024-11-09T20:30:09+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "Corruption",
+        "sourceUrl": "https://www.youtube.com/shorts/9dAGKe0SJ-M",
+        "platform": "youtube",
+        "timestamp": "2024-11-07T18:39:36+00:00"
       }
     ]
   }

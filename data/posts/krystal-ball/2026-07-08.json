@@ -1,7 +1,7 @@
 {
   "voiceId": "krystal-ball",
   "voiceName": "Krystal Ball",
-  "collectedAt": "2026-07-08T09:24:21.042545",
+  "collectedAt": "2026-07-08T11:10:27.681013",
   "date": "2026-07-08",
   "posts": [
     {
@@ -12,7 +12,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=nhyrxGumQnc",
       "timestamp": "2026-07-07T18:00:05+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "state-local-politics",
       "relevance": "medium",
       "stance": "lean",
       "summary": "Questions McConnell's absence following cardiac arrest",
@@ -29,7 +29,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes White House press secretary's dismissal of Gen Z",
+      "summary": "Criticizes press secretary's dismissive characterization of Gen Z",
       "quote": "WH Press Secretary Says Gen Z 'LAZY,' 'SILVER SPOON'"
     },
     {
@@ -43,7 +43,7 @@
       "topic": "ai-technology",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Highlights AI industry concern over job displacement fears",
+      "summary": "Highlights CEO concern over AI-driven job displacement",
       "quote": "AI CEOS PANIC After Public Outrage Over Job Loss"
     },
     {
@@ -54,11 +54,25 @@
       "sourceUrl": "https://www.youtube.com/watch?v=Xd1NfY1oOH4",
       "timestamp": "2026-07-07T16:00:11+00:00",
       "type": "video_title",
-      "topic": "other",
-      "relevance": "medium",
+      "topic": "congress-legislation",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Reports Democratic abandonment of candidate over allegations",
+      "summary": "Reports Democratic abandonment of Platner over assault allegations",
       "quote": "Dems ABANDON Platner After Devastating SA Allegations"
+    },
+    {
+      "voiceId": "krystal-ball",
+      "voiceName": "Krystal Ball",
+      "platform": "youtube",
+      "text": "Ryan CHEERS Trump FIFA Corruption Call",
+      "sourceUrl": "https://www.youtube.com/watch?v=uwqppPnfZPY",
+      "timestamp": "2026-07-06T18:00:16+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Frames Trump's FIFA corruption call as positive action",
+      "quote": "Ryan CHEERS Trump FIFA Corruption Call"
     },
     {
       "voiceId": "krystal-ball",
@@ -68,10 +82,10 @@
       "sourceUrl": "https://www.youtube.com/watch?v=XiCBRBmuMfA",
       "timestamp": "2026-07-06T17:30:22+00:00",
       "type": "video_title",
-      "topic": "elections",
+      "topic": "israel-palestine",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Reports AIPAC spending surge after pro-Israel Democrat exits race",
+      "summary": "Highlights AIPAC spending response to pro-Israel Democrat dropout",
       "quote": "AIPAC DESPERATE $30 MILLION Push After Pro-Israel Dem DROPOUT"
     },
     {
@@ -85,7 +99,7 @@
       "topic": "trump-policy",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Covers Democratic criticism of Trump on Independence Day",
+      "summary": "Reports Democrat criticism of Trump on July 4th",
       "quote": "Zohran TRIGGERS MAGA In July 4th REBUKE OF TRUMP"
     },
     {
@@ -99,7 +113,7 @@
       "topic": "iran-conflict",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Reports anti-American and anti-Israel sentiment at Iranian mourning crowds",
+      "summary": "Reports anti-America and anti-Israel chants at Iran funeral gatherings",
       "quote": "&quot;DEATH TO AMERICA, ISRAEL&quot; Chants As MASSIVE IRAN CROWDS Mourn Ayatollah"
     },
     {
@@ -113,12 +127,12 @@
       "topic": "israel-palestine",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Reports Netanyahu rejecting Israeli High Court ruling amid political crisis",
+      "summary": "Reports Netanyahu defiance of Israeli high court ruling",
       "quote": "&quot;COUP&quot;: Netanyahu REJECTS HIGH COURT In Israeli CRISIS"
     }
   ],
   "topicSummary": {
-    "media-personalities": [
+    "state-local-politics": [
       {
         "quote": "McConnell MISSING 3 Weeks After CARDIAC ARREST",
         "sourceUrl": "https://www.youtube.com/watch?v=nhyrxGumQnc",
@@ -142,7 +156,7 @@
         "timestamp": "2026-07-07T17:00:32+00:00"
       }
     ],
-    "other": [
+    "congress-legislation": [
       {
         "quote": "Dems ABANDON Platner After Devastating SA Allegations",
         "sourceUrl": "https://www.youtube.com/watch?v=Xd1NfY1oOH4",
@@ -150,20 +164,32 @@
         "timestamp": "2026-07-07T16:00:11+00:00"
       }
     ],
-    "elections": [
-      {
-        "quote": "AIPAC DESPERATE $30 MILLION Push After Pro-Israel Dem DROPOUT",
-        "sourceUrl": "https://www.youtube.com/watch?v=XiCBRBmuMfA",
-        "platform": "youtube",
-        "timestamp": "2026-07-06T17:30:22+00:00"
-      }
-    ],
     "trump-policy": [
+      {
+        "quote": "Ryan CHEERS Trump FIFA Corruption Call",
+        "sourceUrl": "https://www.youtube.com/watch?v=uwqppPnfZPY",
+        "platform": "youtube",
+        "timestamp": "2026-07-06T18:00:16+00:00"
+      },
       {
         "quote": "Zohran TRIGGERS MAGA In July 4th REBUKE OF TRUMP",
         "sourceUrl": "https://www.youtube.com/watch?v=oyG6vmoCZSc",
         "platform": "youtube",
         "timestamp": "2026-07-06T17:00:13+00:00"
+      }
+    ],
+    "israel-palestine": [
+      {
+        "quote": "AIPAC DESPERATE $30 MILLION Push After Pro-Israel Dem DROPOUT",
+        "sourceUrl": "https://www.youtube.com/watch?v=XiCBRBmuMfA",
+        "platform": "youtube",
+        "timestamp": "2026-07-06T17:30:22+00:00"
+      },
+      {
+        "quote": "&quot;COUP&quot;: Netanyahu REJECTS HIGH COURT In Israeli CRISIS",
+        "sourceUrl": "https://www.youtube.com/watch?v=XEeGlBT-SNA",
+        "platform": "youtube",
+        "timestamp": "2026-07-06T16:00:37+00:00"
       }
     ],
     "iran-conflict": [
@@ -172,14 +198,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=K2-y0F0y-RI",
         "platform": "youtube",
         "timestamp": "2026-07-06T16:30:32+00:00"
-      }
-    ],
-    "israel-palestine": [
-      {
-        "quote": "&quot;COUP&quot;: Netanyahu REJECTS HIGH COURT In Israeli CRISIS",
-        "sourceUrl": "https://www.youtube.com/watch?v=XEeGlBT-SNA",
-        "platform": "youtube",
-        "timestamp": "2026-07-06T16:00:37+00:00"
       }
     ]
   }
