@@ -16,7 +16,6 @@ import json
 import os
 import re
 import sys
-import urllib.parse
 import urllib.request
 from pathlib import Path
 from datetime import datetime
@@ -24,6 +23,10 @@ from datetime import datetime
 ROOT = Path(__file__).parent.parent
 POSTS_DIR = ROOT / "data" / "posts"
 VOICES_PATH = ROOT / "data" / "voices.json"
+
+# Canonical voice-profile access layer (loading, photo/lens rules, validation).
+sys.path.append(str(Path(__file__).parent))
+from voices_lib import load_voices, index_by_id, voice_photo, voice_lens, VoicesError  # noqa: E402
 
 
 # Content safety: filter triggering content from search results
@@ -77,17 +80,6 @@ def extract_query_keywords(headline):
     """Return the meaningful (non-stop-word, 3+ char) keywords from a headline."""
     return [w for w in re.findall(r'[a-z]+', headline.lower())
             if w not in QUERY_STOP_WORDS and len(w) >= 3]
-
-
-def get_voice_photo(meta, voice_name):
-    """Get photo URL from voice metadata, falling back to ui-avatars only if no real photo exists."""
-    photo = meta.get('photo', '') if meta else ''
-    # Use the real photo if it exists and isn't already a ui-avatars fallback
-    if photo and 'ui-avatars.com' not in photo:
-        return photo
-    # Fallback: generate a ui-avatars URL from the voice name
-    encoded = urllib.parse.quote(voice_name)
-    return f"https://ui-avatars.com/api/?name={encoded}&background=252528&color=a1a1aa&size=96"
 
 
 # Load env: prefer environment variable, fall back to local .env files
@@ -414,7 +406,7 @@ def assign_argument_clusters(headline, voices_found, voices_meta):
         meta = voices_meta.get(vid, {})
         quotes_text = ' | '.join(q['quote'][:200] for q in data['quotes'][:3])
         voice_summaries.append(
-            f"- {data['voiceName']} (bio: {meta.get('lens', 'unknown')}): \"{quotes_text}\""
+            f"- {data['voiceName']} (bio: {voice_lens(meta, 'unknown')}): \"{quotes_text}\""
         )
 
     voices_block = '\n'.join(voice_summaries)
@@ -646,13 +638,13 @@ def lookup_story(headline, days=None):
         volume_tiebreak = min(len(data['quotes']), 3) * 0.25
         data['_score'] = -(best_quote_score * 3 + on_topic_quotes + volume_tiebreak) + (best_rank * 0.1)
 
-    # Load voice metadata for photos/lean
+    # Load voice metadata for photos/lens. Degrade gracefully (voices still
+    # render, just without photo/lens/tags) but surface the failure loudly.
     voices_meta = {}
     try:
-        voices_list = json.loads(VOICES_PATH.read_text())
-        voices_meta = {v['id']: v for v in voices_list}
-    except:
-        pass
+        voices_meta = index_by_id(load_voices())
+    except VoicesError as e:
+        print(f"  ⚠ Could not load voice metadata: {e}")
 
     # Assign argument clusters (per-story position labels)
     print(f"\n  Clustering voices by position...")
@@ -714,9 +706,8 @@ def lookup_story(headline, days=None):
             'voiceId': vid,
             'voiceName': data['voiceName'],
             'argumentCluster': clusters.get(vid, ''),
-            'lean': meta.get('lean', ''),
             'lens': meta.get('lens', ''),
-            'photo': get_voice_photo(meta, data['voiceName']),
+            'photo': voice_photo(meta, data['voiceName']),
             'tags': meta.get('tags', []),
             'topics': list(set(data['topics'])),
             'quotes': [{k: v for k, v in q.items() if not k.startswith('_')} for q in data['quotes']],

@@ -17,12 +17,16 @@ Usage:
 import json
 import os
 import re
+import sys
 import html as html_mod
 from collections import defaultdict, Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-VOICES_PATH = ROOT / "data" / "voices.json"
+
+# Canonical voice-profile access layer (loading, photo/lens rules, validation).
+sys.path.append(str(Path(__file__).parent))
+from voices_lib import load_voices, absolute_photo_url  # noqa: E402
 PROFILES_DIR = ROOT / "data" / "profiles"
 USERS_PATH = ROOT / "data" / "mirror-users.json"
 
@@ -1216,9 +1220,7 @@ def generate_profile_html(user, user_profile, closest, different, question_avgs,
         name = html_mod.escape(v.get("name", v.get("id", "")))
         category = html_mod.escape(v.get("category", "").title())
         approach = html_mod.escape(v.get("approach", ""))
-        photo_url = v.get("photo", "")
-        if photo_url.startswith("/photos/"):
-            photo_url = f"https://newsreel-perspectives.onrender.com{photo_url}"
+        photo_url = absolute_photo_url(v.get("photo", ""))
         explain = html_mod.escape(match.get("align_explain", ""))
         if not explain:
             align_topics = ", ".join(TOPIC_LABELS.get(t, t) for t in match["align_topics"][:2])
@@ -1256,9 +1258,7 @@ def generate_profile_html(user, user_profile, closest, different, question_avgs,
         name = html_mod.escape(v.get("name", v.get("id", "")))
         category = html_mod.escape(v.get("category", "").title())
         approach = html_mod.escape(v.get("approach", ""))
-        photo_url = v.get("photo", "")
-        if photo_url.startswith("/photos/"):
-            photo_url = f"https://newsreel-perspectives.onrender.com{photo_url}"
+        photo_url = absolute_photo_url(v.get("photo", ""))
         explain = html_mod.escape(match.get("differ_explain", ""))
         if not explain:
             differ_topics = ", ".join(TOPIC_LABELS.get(t, t) for t in match["differ_topics"][:2])
@@ -1535,7 +1535,7 @@ def main():
 
     # Load data
     users = json.loads(USERS_PATH.read_text())
-    voices = json.loads(VOICES_PATH.read_text())
+    voices = load_voices()
 
     # Load poll responses (handle the nested Supabase format)
     with open("/tmp/poll-responses-all.json") as f:
