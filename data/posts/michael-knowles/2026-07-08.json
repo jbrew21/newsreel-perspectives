@@ -1,9 +1,23 @@
 {
   "voiceId": "michael-knowles",
   "voiceName": "Michael Knowles",
-  "collectedAt": "2026-07-08T09:24:21.028200",
+  "collectedAt": "2026-07-08T11:10:27.655964",
   "date": "2026-07-08",
   "posts": [
+    {
+      "voiceId": "michael-knowles",
+      "voiceName": "Michael Knowles",
+      "platform": "x",
+      "text": "They got her too. \n\nDon\u2019t give up, @grahamformaine!",
+      "sourceUrl": "https://x.com/michaeljknowles/status/2074633857328951582",
+      "timestamp": "2026-07-07T23:17:11+00:00",
+      "type": "tweet",
+      "topic": "elections",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Encourages candidate to persist despite apparent pressure",
+      "quote": "They got her too. \n\nDon\u2019t give up, @grahamformaine!"
+    },
     {
       "voiceId": "michael-knowles",
       "voiceName": "Michael Knowles",
@@ -15,8 +29,22 @@
       "topic": "elections",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Urges Maine Democrat Senate candidate to resist establishment pressure",
+      "summary": "Urges Maine Senate candidate to resist establishment pressure and maintain nomination",
       "quote": "Preach, @CenkUygur! And don\u2019t bend the knee @grahamformaine! It\u2019s crucial that Platner remain the Democrat nominee for Senate in Maine. Stand strong, Platnerites!"
+    },
+    {
+      "voiceId": "michael-knowles",
+      "voiceName": "Michael Knowles",
+      "platform": "x",
+      "text": "The entire Democrat establishment right now:",
+      "sourceUrl": "https://x.com/michaeljknowles/status/2074500624616501577",
+      "timestamp": "2026-07-07T14:27:45+00:00",
+      "type": "tweet",
+      "topic": "elections",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies Democratic establishment is taking problematic action",
+      "quote": "The entire Democrat establishment right now:"
     },
     {
       "voiceId": "michael-knowles",
@@ -29,7 +57,7 @@
       "topic": "elections",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Tells candidate to resist establishment pressure, stay in Senate race",
+      "summary": "Calls for candidate to resist establishment interference in nomination process",
       "quote": "Stand strong, Graham! Don\u2019t let the establishment steal this nomination from you! Whatever you do, don\u2019t drop out!"
     },
     {
@@ -42,8 +70,8 @@
       "type": "tweet",
       "topic": "elections",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions candidate's credibility on allegations through skeptical framing",
+      "stance": "strong",
+      "summary": "Questions candidate's credibility regarding allegations",
       "quote": "\u201cFalse allegations\u201d? Is Platner seriously trying to claim he hardly knew \u2018er?"
     },
     {
@@ -57,7 +85,7 @@
       "topic": "trump-administration",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Praises JD Vance's performance without elaborating specifics",
+      "summary": "Praises JD Vance's performance",
       "quote": "JD Vance does a really good job here"
     },
     {
@@ -68,20 +96,32 @@
       "sourceUrl": "https://www.youtube.com/watch?v=ssBP5cXXITU",
       "timestamp": "2026-07-03T11:30:22+00:00",
       "type": "video_title",
-      "topic": "elections",
+      "topic": "trump-policy",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Frames new political party as potential GOP strategy against Democrats",
+      "summary": "Suggests Tucker Carlson forming new political party is noteworthy development",
       "quote": "Tucker Carlson Is Making A New Political Party"
     }
   ],
   "topicSummary": {
     "elections": [
       {
+        "quote": "They got her too. \n\nDon\u2019t give up, @grahamformaine!",
+        "sourceUrl": "https://x.com/michaeljknowles/status/2074633857328951582",
+        "platform": "x",
+        "timestamp": "2026-07-07T23:17:11+00:00"
+      },
+      {
         "quote": "Preach, @CenkUygur! And don\u2019t bend the knee @grahamformaine! It\u2019s crucial that Platner remain the Democrat nominee for Senate in Maine. Stand strong, Platnerites!",
         "sourceUrl": "https://x.com/michaeljknowles/status/2074502221090230754",
         "platform": "x",
         "timestamp": "2026-07-07T14:34:06+00:00"
+      },
+      {
+        "quote": "The entire Democrat establishment right now:",
+        "sourceUrl": "https://x.com/michaeljknowles/status/2074500624616501577",
+        "platform": "x",
+        "timestamp": "2026-07-07T14:27:45+00:00"
       },
       {
         "quote": "Stand strong, Graham! Don\u2019t let the establishment steal this nomination from you! Whatever you do, don\u2019t drop out!",
@@ -94,12 +134,6 @@
         "sourceUrl": "https://x.com/michaeljknowles/status/2074301989903532356",
         "platform": "x",
         "timestamp": "2026-07-07T01:18:27+00:00"
-      },
-      {
-        "quote": "Tucker Carlson Is Making A New Political Party",
-        "sourceUrl": "https://www.youtube.com/watch?v=ssBP5cXXITU",
-        "platform": "youtube",
-        "timestamp": "2026-07-03T11:30:22+00:00"
       }
     ],
     "trump-administration": [
@@ -108,6 +142,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/jr4f28ZtFXQ",
         "platform": "youtube",
         "timestamp": "2026-07-03T22:00:40+00:00"
+      }
+    ],
+    "trump-policy": [
+      {
+        "quote": "Tucker Carlson Is Making A New Political Party",
+        "sourceUrl": "https://www.youtube.com/watch?v=ssBP5cXXITU",
+        "platform": "youtube",
+        "timestamp": "2026-07-03T11:30:22+00:00"
       }
     ]
   }

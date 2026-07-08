@@ -1,7 +1,7 @@
 {
   "voiceId": "destiny",
   "voiceName": "Destiny",
-  "collectedAt": "2026-07-08T09:24:21.026787",
+  "collectedAt": "2026-07-08T11:10:27.653862",
   "date": "2026-07-08",
   "posts": [
     {
@@ -12,10 +12,10 @@
       "sourceUrl": "https://x.com/TheOmniLiberal/status/2074584483718733866",
       "timestamp": "2026-07-07T20:00:59+00:00",
       "type": "tweet",
-      "topic": "free-speech-censorship",
+      "topic": "media-personalities",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Sean da Black for violent rhetoric against him, calls out Twitch moderation failure",
+      "summary": "Criticizes content creator for advocating violence, condemns platform moderation failure",
       "quote": "Oh hey it's @SeanDaBlack, I remember that guy, he's the one who said we'd have socialism by now if someone had just killed me or my family. He said this on @Twitch with absolutely zero moderation or warnings or anything by the way, great platform!"
     },
     {
@@ -29,17 +29,37 @@
       "topic": "criminal-justice",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Expresses caution about defending accused rapist despite typical ideological alignment",
+      "summary": "Frames support for defendant as contingent on severity of assault allegations",
       "quote": "I mean I\u2019d be with this opinion 95% of the time but the allegation is that he literally broke into her house at night and raped her\u2026"
+    },
+    {
+      "voiceId": "destiny",
+      "voiceName": "Destiny",
+      "platform": "youtube",
+      "text": "The Case Against Hasanabi | Mini-Manifesto",
+      "sourceUrl": "https://www.youtube.com/watch?v=49lck9KT7Wc",
+      "timestamp": "2026-07-07T10:00:19+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Argues case against online political commentator",
+      "quote": "The Case Against Hasanabi | Mini-Manifesto"
     }
   ],
   "topicSummary": {
-    "free-speech-censorship": [
+    "media-personalities": [
       {
         "quote": "Oh hey it's @SeanDaBlack, I remember that guy, he's the one who said we'd have socialism by now if someone had just killed me or my family. He said this on @Twitch with absolutely zero moderation or warnings or anything by the way, great platform!",
         "sourceUrl": "https://x.com/TheOmniLiberal/status/2074584483718733866",
         "platform": "x",
         "timestamp": "2026-07-07T20:00:59+00:00"
+      },
+      {
+        "quote": "The Case Against Hasanabi | Mini-Manifesto",
+        "sourceUrl": "https://www.youtube.com/watch?v=49lck9KT7Wc",
+        "platform": "youtube",
+        "timestamp": "2026-07-07T10:00:19+00:00"
       }
     ],
     "criminal-justice": [

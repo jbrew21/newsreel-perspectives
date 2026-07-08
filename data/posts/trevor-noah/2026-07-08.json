@@ -1,7 +1,7 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-07-08T09:24:21.022602",
+  "collectedAt": "2026-07-08T11:10:27.646891",
   "date": "2026-07-08",
   "posts": [
     {
@@ -15,7 +15,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Trump's interference in USA World Cup game",
+      "summary": "Criticizes Trump's interference in World Cup match",
       "quote": "Trump Meddles in USA World Cup Game &amp; America's 250th Takes a Nosedive | The Daily Show"
     },
     {
@@ -27,9 +27,9 @@
       "timestamp": "2026-07-06T18:00:31+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Mocks Trump's intelligence and judgment through satirical suggestion",
+      "summary": "Mocks Trump's mental fitness with sarcastic comparison",
       "quote": "Are we sure Trump hasn't accidentally been drinking Roundup? #dailyshow"
     },
     {
@@ -41,10 +41,24 @@
       "timestamp": "2026-07-05T18:00:00+00:00",
       "type": "video_title",
       "topic": "foreign-policy-diplomacy",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Reports negative European sentiment toward America",
+      "summary": "Reports European public opinion toward America has declined",
       "quote": "Desi Lydic checks in on how Europeans are feeling about America these days, and it's tr\u00e8s horrible"
+    },
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
+      "text": "LindellTV: the network for people who want less ad-supported news and more news-supported ads",
+      "sourceUrl": "https://www.youtube.com/shorts/ywLbpvOn6U0",
+      "timestamp": "2026-07-05T15:00:01+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Lindell TV for blending advertising with news content",
+      "quote": "LindellTV: the network for people who want less ad-supported news and more news-supported ads"
     },
     {
       "voiceId": "trevor-noah",
@@ -55,9 +69,9 @@
       "timestamp": "2026-07-04T18:00:36+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Trump's character, implying neglect of America and Epstein associations",
+      "summary": "Criticizes Trump's neglect of America while connected to Epstein",
       "quote": "Nick Offerman hopes Trump puts as much love into America's birthday as he did into Jeffrey Epstein's"
     }
   ],
@@ -88,6 +102,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/02N6v8dMD90",
         "platform": "youtube",
         "timestamp": "2026-07-05T18:00:00+00:00"
+      }
+    ],
+    "media-press": [
+      {
+        "quote": "LindellTV: the network for people who want less ad-supported news and more news-supported ads",
+        "sourceUrl": "https://www.youtube.com/shorts/ywLbpvOn6U0",
+        "platform": "youtube",
+        "timestamp": "2026-07-05T15:00:01+00:00"
       }
     ]
   }

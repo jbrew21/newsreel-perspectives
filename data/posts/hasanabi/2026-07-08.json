@@ -1,7 +1,7 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-07-08T09:24:21.025034",
+  "collectedAt": "2026-07-08T11:10:27.651004",
   "date": "2026-07-08",
   "posts": [
     {
@@ -15,7 +15,7 @@
       "topic": "state-local-politics",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Supports Abdul El-Sayed against Haley Stevens",
+      "summary": "Supports El-Sayed's political arguments against Stevens",
       "quote": "Abdul El-Sayed embarrasses Haley Stevens"
     },
     {
@@ -29,7 +29,7 @@
       "topic": "state-local-politics",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Frames El-Sayed's political framing favorably",
+      "summary": "Frames El-Sayed's political framing as notable or compelling",
       "quote": "Abdul El-Sayed says politics is Up vs Down"
     },
     {
@@ -43,7 +43,7 @@
       "topic": "state-local-politics",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Endorses Abdul El-Sayed over Haley Stevens",
+      "summary": "Supports El-Sayed's position against Stevens",
       "quote": "Abdul El-Sayed owns Haley Stevens"
     },
     {
@@ -55,9 +55,9 @@
       "timestamp": "2026-07-07T21:44:57+00:00",
       "type": "video_title",
       "topic": "ai-technology",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Opposes data center expansion",
+      "summary": "Opposes expansion of AI data center infrastructure",
       "quote": "SHUT OFF THE DATA CENTERS"
     },
     {
@@ -69,10 +69,24 @@
       "timestamp": "2026-07-07T20:20:23+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
       "summary": "Criticizes Trump for World Cup interference and boasting",
       "quote": "Trump rigs the world cup and brags about it"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "IS THIS THE DEATH OF PHYSICAL MEDIA?",
+      "sourceUrl": "https://www.youtube.com/watch?v=7NMR9LtxeIg",
+      "timestamp": "2026-07-06T15:18:53+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Raises concerns about viability of physical media formats",
+      "quote": "IS THIS THE DEATH OF PHYSICAL MEDIA?"
     }
   ],
   "topicSummary": {
@@ -110,6 +124,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/Po-4LDPKe4o",
         "platform": "youtube",
         "timestamp": "2026-07-07T20:20:23+00:00"
+      }
+    ],
+    "media-press": [
+      {
+        "quote": "IS THIS THE DEATH OF PHYSICAL MEDIA?",
+        "sourceUrl": "https://www.youtube.com/watch?v=7NMR9LtxeIg",
+        "platform": "youtube",
+        "timestamp": "2026-07-06T15:18:53+00:00"
       }
     ]
   }
