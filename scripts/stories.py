@@ -22,7 +22,6 @@ import re
 import sys
 import time
 import urllib.error
-import urllib.parse
 import urllib.request
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -32,16 +31,9 @@ POSTS_DIR = ROOT / "data" / "posts"
 VOICES_PATH = ROOT / "data" / "voices.json"
 CMS_API = "https://newsreel-cms.onrender.com/api"
 
-
-def get_voice_photo(meta, voice_name):
-    """Get photo URL from voice metadata, falling back to ui-avatars only if no real photo exists."""
-    photo = meta.get('photo', '') if meta else ''
-    # Use the real photo if it exists and isn't already a ui-avatars fallback
-    if photo and 'ui-avatars.com' not in photo:
-        return photo
-    # Fallback: generate a ui-avatars URL from the voice name
-    encoded = urllib.parse.quote(voice_name)
-    return f"https://ui-avatars.com/api/?name={encoded}&background=252528&color=a1a1aa&size=96"
+# Canonical voice-profile access layer (loading, photo/lens rules, validation).
+sys.path.append(str(Path(__file__).parent))
+from voices_lib import load_voices, index_by_id, voice_photo, voice_lens, VoicesError  # noqa: E402
 
 
 def load_env():
@@ -294,7 +286,7 @@ def analyze_voices(headline, voices_data, voices_meta):
     for vid, entry in voices_data.items():
         meta = voices_meta.get(vid, {})
         quote = voice_quote(entry, 250)
-        bio = meta.get('lens', 'commentator')
+        bio = voice_lens(meta)
         name = entry.get('voiceName', vid)
         platform = entry.get('platform', '')
         # Flag YouTube title-only posts so Claude knows they lack opinion text
@@ -451,10 +443,9 @@ def build_stories(date=None):
     # Load voice metadata
     voices_meta = {}
     try:
-        voices_list = json.loads(VOICES_PATH.read_text())
-        voices_meta = {v['id']: v for v in voices_list}
-    except Exception:
-        pass
+        voices_meta = index_by_id(load_voices())
+    except VoicesError as e:
+        print(f"  ⚠ Could not load voice metadata: {e}")
 
     # 1. Try embedding-based story detection (enterprise), fall back to topic counting
     cms_stories = get_cms_stories(date)
@@ -634,7 +625,7 @@ def build_stories(date=None):
                         voice_obj = {
                             'voiceId': vid,
                             'voiceName': entry_name,
-                            'photo': get_voice_photo(meta, entry_name),
+                            'photo': voice_photo(meta, entry_name),
                             'quote': q,
                             'sourceUrl': entry.get('sourceUrl', ''),
                             'platform': entry.get('platform', ''),

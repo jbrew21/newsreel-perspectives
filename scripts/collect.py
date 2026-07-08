@@ -70,8 +70,12 @@ load_env()
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 
 
+sys.path.append(str(Path(__file__).parent))
+from voices_lib import load_voices as _canonical_load_voices  # noqa: E402
+
+
 def load_voices():
-    return json.loads(VOICES_PATH.read_text())
+    return _canonical_load_voices(VOICES_PATH)
 
 
 # ─── X/TWITTER VIA NITTER RSS ────────────────────────────────────────────────

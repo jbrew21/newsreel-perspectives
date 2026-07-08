@@ -51,8 +51,12 @@ ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
 
 
+sys.path.append(str(Path(__file__).parent))
+from voices_lib import load_voices as _canonical_load_voices  # noqa: E402
+
+
 def load_voices():
-    return json.loads(VOICES_PATH.read_text())
+    return _canonical_load_voices(VOICES_PATH)
 
 
 def topic_match(text, topic_words, min_matches=None):
