@@ -178,6 +178,7 @@ def sanitize_query(q):
 
 # Import lookup module directly instead of spawning subprocess
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
+import search_helpers  # noqa: E402  (pure helpers: story-join + recency sort)
 _lookup_module = None
 
 
@@ -192,6 +193,38 @@ def get_lookup():
     return _lookup_module
 
 
+def _cached_result_fallback(query):
+    """Return a prebuilt data/results/<slug>.json for this query if one exists.
+
+    The daily pipeline pre-renders results for known stories, so a live-search
+    failure (cold start, Claude hiccup) can still serve a good answer instead
+    of erroring."""
+    slug = search_helpers.result_slug(query)
+    result_path = os.path.join(ROOT, 'data', 'results', f'{slug}.json')
+    if os.path.exists(result_path):
+        return load_json_file(result_path)
+    return None
+
+
+def attach_matched_stories(result):
+    """Pin curated homepage stories that match the search's topics.
+
+    Adds ``result['matchedStories']`` (possibly empty) by joining the latest
+    stories feed on topic slugs, so search can show "the Newsreel take" above
+    the voice feed. Never raises — search must not fail over this."""
+    try:
+        topics = result.get('matchedTopics') if isinstance(result, dict) else None
+        if not topics:
+            return result
+        stories_path = get_latest_file(os.path.join(ROOT, 'data', 'posts'), 'stories-')
+        stories = load_json_file(stories_path) if stories_path else None
+        if isinstance(stories, list):
+            result['matchedStories'] = search_helpers.stories_for_topics(stories, topics, limit=2)
+    except Exception as e:
+        log.warning(f"Could not attach matched stories: {e}")
+    return result
+
+
 def do_search(query, days=None):
     """Run search in-process with caching."""
     cache_key = f"search:{hashlib.md5(f'{query}:{days}'.encode()).hexdigest()}"
@@ -202,27 +235,24 @@ def do_search(query, days=None):
 
     lookup = get_lookup()
     if not lookup:
-        # Fallback: check for cached result file
-        slug = re.sub(r'[^a-z0-9]+', '-', query.lower())[:50]
-        result_path = os.path.join(ROOT, 'data', 'results', f'{slug}.json')
-        if os.path.exists(result_path):
-            return load_json_file(result_path)
-        return {'error': 'Search temporarily unavailable. Try again in a moment.'}
+        fallback = _cached_result_fallback(query)
+        if fallback:
+            return attach_matched_stories(fallback)
+        return {'error': 'Search temporarily unavailable. Try again in a moment.', 'code': 'unavailable'}
 
     try:
         result = lookup.lookup_story(query, days=int(days) if days else None)
         if result:
+            attach_matched_stories(result)
             cache_set(cache_key, result, CACHE_TTL_SEARCH)
             return result
-        return {'error': 'No results found for this topic yet. We track 257 voices -- try a broader term.'}
+        return {'error': 'No results found for this topic yet. Try a broader term.', 'code': 'empty'}
     except Exception as e:
         log.error(f"Search error: {e}")
-        # Fallback: check for cached result file
-        slug = re.sub(r'[^a-z0-9]+', '-', query.lower())[:50]
-        result_path = os.path.join(ROOT, 'data', 'results', f'{slug}.json')
-        if os.path.exists(result_path):
-            return load_json_file(result_path)
-        return {'error': 'Search failed. Please try again.'}
+        fallback = _cached_result_fallback(query)
+        if fallback:
+            return attach_matched_stories(fallback)
+        return {'error': 'Search failed. Please try again.', 'code': 'failed'}
 
 
 # ─── HANDLER ─────────────────────────────────────────────────────────────────
