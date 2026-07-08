@@ -454,9 +454,9 @@
   }
   .sort-seg button.active { background: var(--accent); color: #fff; }
 
-  /* Pinned "Newsreel take" story section above the voice feed */
-  .newsreel-take { margin-bottom: var(--space-4); }
-  .newsreel-take-label {
+  /* Pinned story section above the voice feed */
+  .story-pin { margin-bottom: var(--space-4); }
+  .story-pin-label {
     font-family: 'IBM Plex Mono', ui-monospace, monospace;
     font-size: var(--text-xs); font-weight: 700; color: var(--accent);
     text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-2);
@@ -1462,11 +1462,11 @@
         (windowLabel ? ' &middot; ' + windowLabel : '');
     }
 
-    // ── Pinned "Newsreel take" story (if the search topic matches a curated story) ──
+    // ── Pinned story (if the search topic matches a curated story) ──
     var storyPin = '';
     if (data.matchedStories && data.matchedStories.length) {
-      storyPin = '<div class="newsreel-take">' +
-        '<div class="newsreel-take-label">The Newsreel take</div>' +
+      storyPin = '<div class="story-pin">' +
+        '<div class="story-pin-label">Story</div>' +
         data.matchedStories.map(renderStoryCard).join('') +
       '</div>';
     }
