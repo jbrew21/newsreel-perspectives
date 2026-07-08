@@ -27,6 +27,7 @@ VOICES_PATH = ROOT / "data" / "voices.json"
 # Canonical voice-profile access layer (loading, photo/lens rules, validation).
 sys.path.append(str(Path(__file__).parent))
 from voices_lib import load_voices, index_by_id, voice_photo, voice_lens, VoicesError  # noqa: E402
+import search_helpers  # noqa: E402  (recency timestamp helper)
 
 
 # Content safety: filter triggering content from search results
@@ -194,7 +195,7 @@ Example: ["iran-war", "iran-military-strike", "trump-iran", "military-casualties
                 'content-type': 'application/json',
             },
         )
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=10) as resp:
             data = json.loads(resp.read().decode())
 
         result_text = data.get('content', [{}])[0].get('text', '')
@@ -447,7 +448,7 @@ Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention 
                 'content-type': 'application/json',
             },
         )
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=20) as resp:
             data = json.loads(resp.read().decode())
 
         result_text = data.get('content', [{}])[0].get('text', '')
@@ -702,6 +703,7 @@ def lookup_story(headline, days=None):
 
     for vid, data in sorted(voices_found.items(), key=lambda x: x[1]['_score']):
         meta = voices_meta.get(vid, {})
+        clean_quotes = [{k: v for k, v in q.items() if not k.startswith('_')} for q in data['quotes']]
         output['voices'].append({
             'voiceId': vid,
             'voiceName': data['voiceName'],
@@ -710,13 +712,15 @@ def lookup_story(headline, days=None):
             'photo': voice_photo(meta, data['voiceName']),
             'tags': meta.get('tags', []),
             'topics': list(set(data['topics'])),
-            'quotes': [{k: v for k, v in q.items() if not k.startswith('_')} for q in data['quotes']],
+            'quotes': clean_quotes,
+            # Most recent quote timestamp, so the client can offer a recency sort.
+            'latestTimestamp': search_helpers.voice_latest_timestamp({'quotes': clean_quotes}).isoformat(),
         })
 
     # Save result
     results_dir = ROOT / "data" / "results"
     results_dir.mkdir(parents=True, exist_ok=True)
-    slug = re.sub(r'[^a-z0-9]+', '-', headline.lower())[:50]
+    slug = search_helpers.result_slug(headline)
     result_path = results_dir / f'{slug}.json'
     result_path.write_text(json.dumps(output, indent=2))
     print(f"\n  Result saved: {result_path}")

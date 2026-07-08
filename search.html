@@ -438,6 +438,38 @@
     font-weight: 500;
   }
 
+  /* Results toolbar: count on the left, sort control on the right (Meltwater-style) */
+  .results-toolbar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-3);
+  }
+  .results-count { font-size: var(--text-sm); color: var(--text-muted); }
+  .results-count strong { color: var(--text-primary); font-weight: 600; }
+  .sort-control { display: flex; align-items: center; gap: 6px; }
+  .sort-control .sort-label { font-size: var(--text-xs); color: var(--text-dim); }
+  .sort-seg { display: inline-flex; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+  .sort-seg button {
+    background: var(--bg-card); color: var(--text-muted); border: none;
+    font-size: var(--text-xs); font-weight: 600; padding: 4px 10px; cursor: pointer;
+  }
+  .sort-seg button.active { background: var(--accent); color: #fff; }
+
+  /* Pinned "Newsreel take" story section above the voice feed */
+  .newsreel-take { margin-bottom: var(--space-4); }
+  .newsreel-take-label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: var(--text-xs); font-weight: 700; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-2);
+  }
+  .feed-divider {
+    font-size: var(--text-xs); font-weight: 700; color: var(--text-dim);
+    text-transform: uppercase; letter-spacing: 1px;
+    margin: 0 0 var(--space-3); padding-top: var(--space-2);
+    border-top: 1px solid var(--border);
+  }
+  .quote-time { color: var(--text-dim); font-weight: 400; }
+  .quote-time::before { content: "\00b7"; margin: 0 5px; }
+
   /* Filter bar */
   .filter-bar {
     display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--space-3);
@@ -887,6 +919,55 @@
     return trimmed;
   }
 
+  /* Relative time label ("2h ago") for a quote timestamp. */
+  function timeAgo(ts) {
+    if (!ts) return '';
+    var then = new Date(ts).getTime();
+    if (isNaN(then)) return '';
+    var secs = Math.floor((Date.now() - then) / 1000);
+    if (secs < 60) return 'just now';
+    var mins = Math.floor(secs / 60);
+    if (mins < 60) return mins + 'm ago';
+    var hrs = Math.floor(mins / 60);
+    if (hrs < 24) return hrs + 'h ago';
+    var days = Math.floor(hrs / 24);
+    if (days < 7) return days + 'd ago';
+    var weeks = Math.floor(days / 7);
+    if (weeks < 5) return weeks + 'w ago';
+    return new Date(then).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+  }
+
+  /* fetch JSON with a hard client timeout + one silent retry on transient
+     failure. A cold Render instance or a slow Claude call used to surface as
+     "Could not complete search" on the very first try; this rides over it.
+     Throws {rateLimited:true} on HTTP 429 so the caller can message it. */
+  function fetchJSON(url, opts) {
+    opts = opts || {};
+    var timeoutMs = opts.timeoutMs || 28000;
+    var retries = opts.retries == null ? 1 : opts.retries;
+
+    function attempt(triesLeft) {
+      var ctrl = new AbortController();
+      var timer = setTimeout(function() { ctrl.abort(); }, timeoutMs);
+      return fetch(url, { signal: ctrl.signal })
+        .then(function(r) {
+          clearTimeout(timer);
+          if (r.status === 429) { var e = new Error('rate_limited'); e.rateLimited = true; throw e; }
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .catch(function(err) {
+          clearTimeout(timer);
+          // Don't retry rate limits — retrying makes it worse.
+          if (err.rateLimited || triesLeft <= 0) throw err;
+          // Brief backoff, then retry once (covers cold start / timeout / 5xx).
+          return new Promise(function(res) { setTimeout(res, 1200); })
+            .then(function() { return attempt(triesLeft - 1); });
+        });
+    }
+    return attempt(retries);
+  }
+
   /* ── STATE MESSAGE BUILDER ── */
   function stateMessage(icon, title, body, actionText, actionFn) {
     const wrap = document.createElement('div');
@@ -1239,11 +1320,7 @@
     var url = BASE + '/api/lookup?q=' + encodeURIComponent(q);
     if (selectedDays) url += '&days=' + selectedDays;
 
-    fetch(url)
-      .then(function(r) {
-        if (!r.ok) throw new Error('Search failed (HTTP ' + r.status + ')');
-        return r.json();
-      })
+    fetchJSON(url)
       .then(function(data) {
         if (data.error) {
           resultsDiv.innerHTML = '';
@@ -1263,11 +1340,14 @@
       .catch(function(err) {
         console.error('[Perspectives] Search failed:', err);
         resultsDiv.innerHTML = '';
+        var isRate = !!err.rateLimited;
         resultsDiv.appendChild(
           stateMessage(
             '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.36 5.64a9 9 0 11-12.73 0"/><path d="M12 2v4"/></svg>',
-            'Could not complete search',
-            'The API may be temporarily unavailable. Check your connection and try again.',
+            isRate ? 'Too many searches' : 'Could not complete search',
+            isRate
+              ? 'You’re searching quickly. Wait a few seconds and try again.'
+              : 'The connection timed out. This can happen on the first search — tap to try again.',
             'Try again',
             doSearch
           )
@@ -1295,44 +1375,30 @@
       return;
     }
 
-    data.voices.sort(function(a, b) { return b.quotes.length - a.quotes.length; });
+    // Snapshot the server's (relevance) order once so the Relevant sort is stable.
+    data.voices.forEach(function(v, i) { if (v._ord == null) v._ord = i; });
+
+    var currentSort = 'recent';   // default: most recent first
+    var activeCluster = '';
+    var activeCat = 'all';
 
     var windowLabel = {
       '1d': 'today', '3d': '3 days', '7d': 'week', '14d': '2 weeks', '30d': 'month'
     }[data.timeWindow] || data.timeWindow || '';
 
-    var html = '<div class="results-header">' +
-      '<h2>' + data.voices.length + ' voices on this story' +
-      (windowLabel ? ' <span style="color:var(--text-dim);font-size:0.8em;">' + windowLabel + '</span>' : '') +
-      '</h2>' +
-      (data.broadeningNote ? '<div style="font-size:var(--text-sm);color:var(--text-muted);margin-top:var(--space-1);">' + esc(data.broadeningNote) + '</div>' : '') +
-      '<div class="results-topics">' + data.matchedTopics.map(function(t) { return '<span class="results-topic-tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
-    '</div>';
-
-    // Build cluster filter pills
-    var clusterGroups = {};
-    for (var ci = 0; ci < data.voices.length; ci++) {
-      var c = data.voices[ci].argumentCluster || '';
-      if (c) { if (!clusterGroups[c]) clusterGroups[c] = 0; clusterGroups[c]++; }
-    }
-    var clusterNames = Object.keys(clusterGroups).sort(function(a,b) { return clusterGroups[b] - clusterGroups[a]; });
-    if (clusterNames.length > 1) {
-      html += '<div class="filter-bar" id="clusterFilters">' +
-        '<span class="filter-pill active" data-cluster="">All ' + data.voices.length + '</span>' +
-        clusterNames.map(function(c) {
-          return '<span class="filter-pill" data-cluster="' + esc(c) + '">' + esc(c) + ' ' + clusterGroups[c] + '</span>';
-        }).join('') + '</div>';
+    function sortedVoices() {
+      var vs = data.voices.slice();
+      if (currentSort === 'recent') {
+        vs.sort(function(a, b) {
+          return (new Date(b.latestTimestamp || 0)) - (new Date(a.latestTimestamp || 0));
+        });
+      } else {
+        vs.sort(function(a, b) { return a._ord - b._ord; });
+      }
+      return vs;
     }
 
-    // Build category filter pills
-    var CAT_LABELS = {all:'All',journalist:'Reporters',commentator:'Commentators',creator:'Creators',politician:'Politicians','think-tank':'Policy',activist:'Activists',satirist:'Satirists',economist:'Economists'};
-    html += '<div class="filter-bar" id="catFilters">' +
-      Object.keys(CAT_LABELS).map(function(k) {
-        return '<span class="filter-pill' + (k === 'all' ? ' active' : '') + '" data-cat="' + k + '">' + CAT_LABELS[k] + '</span>';
-      }).join('') + '</div>';
-
-    for (var i = 0; i < data.voices.length; i++) {
-      var voice = data.voices[i];
+    function buildVoiceCard(voice) {
       var clusterBadge = voice.argumentCluster ? '<span class="voice-cluster-badge">' + esc(voice.argumentCluster) + '</span>' : '';
       var photo = voice.photo || initialsAvatar(voice.voiceName);
       var lens = voice.lens || _voiceLens[voice.voiceId] || '';
@@ -1340,9 +1406,15 @@
         var tip = TAG_GLOSSARY[t.toLowerCase()];
         return '<span class="voice-tag"' + (tip ? ' title="' + esc(tip) + '" style="cursor:help;"' : '') + '>' + esc(t) + '</span>';
       }).join('');
-
       var vCat = _voiceCategory[voice.voiceId] || '';
-      html += '<div class="voice-card" data-cluster="' + esc(voice.argumentCluster || '') + '" data-cat="' + esc(vCat) + '">' +
+
+      var quotes = (voice.quotes || []).slice();
+      if (currentSort === 'recent') {
+        quotes.sort(function(a, b) { return (new Date(b.timestamp || 0)) - (new Date(a.timestamp || 0)); });
+      }
+      quotes = quotes.slice(0, 3);
+
+      var html = '<div class="voice-card" data-cluster="' + esc(voice.argumentCluster || '') + '" data-cat="' + esc(vCat) + '">' +
         '<div class="voice-header">' +
           '<img class="voice-photo" src="' + photo + '" alt="' + esc(voice.voiceName) + '">' +
           '<div>' +
@@ -1353,29 +1425,30 @@
         '</div>' +
         (tags ? '<div class="voice-tags">' + tags + '</div>' : '');
 
-      var quotes = voice.quotes.slice(0, 3);
       for (var j = 0; j < quotes.length; j++) {
         var q = quotes[j];
         var pLabel = PLATFORM[q.platform] || q.platform;
         var isTranscript = q.quote && q.quote.length > 150 && q.platform === 'youtube';
+        var ago = timeAgo(q.timestamp);
         html += '<div class="quote">' +
-          '<div class="quote-platform">' + esc(pLabel) + (isTranscript ? ' (transcript)' : '') + '</div>' +
+          '<div class="quote-platform">' + esc(pLabel) + (isTranscript ? ' (transcript)' : '') +
+            (ago ? '<span class="quote-time">' + esc(ago) + '</span>' : '') + '</div>' +
           '<div class="quote-text">"' + esc((isTranscript ? q.quote.substring(0, 350) : q.quote.substring(0, 250))) + '"</div>' +
           '<a class="quote-link" href="' + safeHref(q.sourceUrl) + '" target="_blank" rel="noopener">View original</a>' +
         '</div>';
       }
-
-      html += '</div>';
+      return html + '</div>';
     }
 
-    resultsDiv.innerHTML = html;
-
-    /* Wire up filter pills */
-    var activeCluster = '';
-    var activeCat = 'all';
+    function renderFeed() {
+      var feed = document.getElementById('voiceFeed');
+      if (!feed) return;
+      feed.innerHTML = sortedVoices().map(buildVoiceCard).join('');
+      applyFilters();
+    }
 
     function applyFilters() {
-      var cards = document.querySelectorAll('.voice-card');
+      var cards = document.querySelectorAll('#voiceFeed .voice-card');
       var visible = 0;
       for (var k = 0; k < cards.length; k++) {
         var card = cards[k];
@@ -1384,10 +1457,75 @@
         card.style.display = (clusterMatch && catMatch) ? '' : 'none';
         if (clusterMatch && catMatch) visible++;
       }
-      var h = document.querySelector('.results-header h2');
-      if (h) h.innerHTML = visible + ' voices on this story' + (windowLabel ? ' <span style="color:var(--text-dim);font-size:0.8em;">' + windowLabel + '</span>' : '');
+      var countEl = document.getElementById('resultsCount');
+      if (countEl) countEl.innerHTML = '<strong>' + visible + '</strong> voice' + (visible === 1 ? '' : 's') +
+        (windowLabel ? ' &middot; ' + windowLabel : '');
     }
 
+    // ── Pinned "Newsreel take" story (if the search topic matches a curated story) ──
+    var storyPin = '';
+    if (data.matchedStories && data.matchedStories.length) {
+      storyPin = '<div class="newsreel-take">' +
+        '<div class="newsreel-take-label">The Newsreel take</div>' +
+        data.matchedStories.map(renderStoryCard).join('') +
+      '</div>';
+    }
+
+    // ── Header: topics + toolbar (count + sort) ──
+    var header = '<div class="results-header">' +
+      '<h2>' + (data.headline ? esc(data.headline) : 'Perspectives') + '</h2>' +
+      (data.broadeningNote ? '<div style="font-size:var(--text-sm);color:var(--text-muted);margin-top:var(--space-1);">' + esc(data.broadeningNote) + '</div>' : '') +
+      '<div class="results-topics">' + (data.matchedTopics || []).map(function(t) { return '<span class="results-topic-tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
+    '</div>';
+
+    var toolbar = '<div class="results-toolbar">' +
+      '<div class="results-count" id="resultsCount"><strong>' + data.voices.length + '</strong> voices' + (windowLabel ? ' &middot; ' + windowLabel : '') + '</div>' +
+      '<div class="sort-control"><span class="sort-label">Sort</span>' +
+        '<div class="sort-seg" id="sortSeg">' +
+          '<button data-sort="recent" class="active">Recent</button>' +
+          '<button data-sort="relevant">Relevant</button>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+
+    // ── Cluster filter pills ──
+    var clusterGroups = {};
+    for (var ci = 0; ci < data.voices.length; ci++) {
+      var c = data.voices[ci].argumentCluster || '';
+      if (c) { if (!clusterGroups[c]) clusterGroups[c] = 0; clusterGroups[c]++; }
+    }
+    var clusterNames = Object.keys(clusterGroups).sort(function(a, b) { return clusterGroups[b] - clusterGroups[a]; });
+    var clusterBar = '';
+    if (clusterNames.length > 1) {
+      clusterBar = '<div class="filter-bar" id="clusterFilters">' +
+        '<span class="filter-pill active" data-cluster="">All ' + data.voices.length + '</span>' +
+        clusterNames.map(function(c) {
+          return '<span class="filter-pill" data-cluster="' + esc(c) + '">' + esc(c) + ' ' + clusterGroups[c] + '</span>';
+        }).join('') + '</div>';
+    }
+
+    // ── Category filter pills ──
+    var CAT_LABELS = {all:'All',journalist:'Reporters',commentator:'Commentators',creator:'Creators',politician:'Politicians','think-tank':'Policy',activist:'Activists',satirist:'Satirists',economist:'Economists'};
+    var catBar = '<div class="filter-bar" id="catFilters">' +
+      Object.keys(CAT_LABELS).map(function(k) {
+        return '<span class="filter-pill' + (k === 'all' ? ' active' : '') + '" data-cat="' + k + '">' + CAT_LABELS[k] + '</span>';
+      }).join('') + '</div>';
+
+    resultsDiv.innerHTML = storyPin + header + toolbar + clusterBar + catBar + '<div id="voiceFeed"></div>';
+    renderFeed();
+
+    /* Wire up sort control */
+    document.querySelectorAll('#sortSeg button').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        if (currentSort === btn.dataset.sort) return;
+        document.querySelectorAll('#sortSeg button').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentSort = btn.dataset.sort;
+        renderFeed();
+      });
+    });
+
+    /* Wire up filter pills */
     document.querySelectorAll('#clusterFilters .filter-pill').forEach(function(pill) {
       pill.addEventListener('click', function() {
         document.querySelectorAll('#clusterFilters .filter-pill').forEach(function(p) { p.classList.remove('active'); });
