@@ -1,9 +1,23 @@
 {
   "voiceId": "krystal-ball",
   "voiceName": "Krystal Ball",
-  "collectedAt": "2026-07-09T10:45:54.134993",
+  "collectedAt": "2026-07-09T11:58:06.101609",
   "date": "2026-07-09",
   "posts": [
+    {
+      "voiceId": "krystal-ball",
+      "voiceName": "Krystal Ball",
+      "platform": "x",
+      "text": "I agree that Platner should drop out. The allegations are horrible and I see no reason why his accuser would lie. Some things have to be beyond the pale.",
+      "sourceUrl": "https://x.com/krystalball/status/2074268367809028564",
+      "timestamp": "2026-07-06T23:04:51+00:00",
+      "type": "tweet",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Calls for Platner to drop out over assault allegations",
+      "quote": "I agree that Platner should drop out. The allegations are horrible and I see no reason why his accuser would lie. Some things have to be beyond the pale."
+    },
     {
       "voiceId": "krystal-ball",
       "voiceName": "Krystal Ball",
@@ -14,8 +28,8 @@
       "type": "video_title",
       "topic": "elections",
       "relevance": "high",
-      "stance": "strong",
-      "summary": "Alleges foreign influence in U.S. election campaign",
+      "stance": "lean",
+      "summary": "Questions Israeli influence on Arizona political candidate",
       "quote": "AZ Candidate Says ISRAEL BUYING HIS ELECTION"
     },
     {
@@ -29,7 +43,7 @@
       "topic": "state-local-politics",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Calls for candidate to withdraw over assault allegations",
+      "summary": "Supports calls for Platner to leave race over allegations",
       "quote": "Zohran, Bernie Say Platner MUST GO"
     },
     {
@@ -42,8 +56,8 @@
       "type": "video_title",
       "topic": "israel-palestine",
       "relevance": "high",
-      "stance": "strong",
-      "summary": "Critiques Netanyahu reaction to Trump-Turkey diplomatic meeting",
+      "stance": "lean",
+      "summary": "Frames Netanyahu criticism of Trump Turkey meeting",
       "quote": "Bibi RAGES Over Trump Turkey Meeting, DEMANDS REGIONAL HEGEMONY"
     },
     {
@@ -56,23 +70,9 @@
       "type": "video_title",
       "topic": "state-local-politics",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Challenges account of assault allegations against candidate",
+      "stance": "lean",
+      "summary": "Suggests reporting on Platner assault omitted key details",
       "quote": "EXCLUSIVE: Platner Assault STORY LEFT KEY DETAILS OUT"
-    },
-    {
-      "voiceId": "krystal-ball",
-      "voiceName": "Krystal Ball",
-      "platform": "youtube",
-      "text": "BREAKING: Trump Says CEASEFIRE OVER After Iran Hits 5 Ships In Hormuz",
-      "sourceUrl": "https://www.youtube.com/watch?v=eiDwD77BViw",
-      "timestamp": "2026-07-08T13:01:13+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Reports Trump declares ceasefire over after Iranian military action",
-      "quote": "BREAKING: Trump Says CEASEFIRE OVER After Iran Hits 5 Ships In Hormuz"
     },
     {
       "voiceId": "krystal-ball",
@@ -84,8 +84,8 @@
       "type": "video_title",
       "topic": "trump-administration",
       "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes White House press secretary for disparaging Gen Z",
+      "stance": "lean",
+      "summary": "Highlights White House criticism of Gen Z work ethic",
       "quote": "WH Press Secretary Says Gen Z 'LAZY,' 'SILVER SPOON'"
     },
     {
@@ -97,22 +97,20 @@
       "timestamp": "2026-07-07T17:00:32+00:00",
       "type": "video_title",
       "topic": "ai-technology",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Frames AI industry concern over job displacement as panicked reaction",
+      "summary": "Frames tech leaders' anxiety over public job loss concerns",
       "quote": "AI CEOS PANIC After Public Outrage Over Job Loss"
     }
   ],
   "topicSummary": {
-    "elections": [
-      {
-        "quote": "AZ Candidate Says ISRAEL BUYING HIS ELECTION",
-        "sourceUrl": "https://www.youtube.com/watch?v=5idmcZ8pItk",
-        "platform": "youtube",
-        "timestamp": "2026-07-08T17:30:11+00:00"
-      }
-    ],
     "state-local-politics": [
+      {
+        "quote": "I agree that Platner should drop out. The allegations are horrible and I see no reason why his accuser would lie. Some things have to be beyond the pale.",
+        "sourceUrl": "https://x.com/krystalball/status/2074268367809028564",
+        "platform": "x",
+        "timestamp": "2026-07-06T23:04:51+00:00"
+      },
       {
         "quote": "Zohran, Bernie Say Platner MUST GO",
         "sourceUrl": "https://www.youtube.com/watch?v=W6Y7LBcYsP4",
@@ -126,20 +124,20 @@
         "timestamp": "2026-07-08T15:50:34+00:00"
       }
     ],
+    "elections": [
+      {
+        "quote": "AZ Candidate Says ISRAEL BUYING HIS ELECTION",
+        "sourceUrl": "https://www.youtube.com/watch?v=5idmcZ8pItk",
+        "platform": "youtube",
+        "timestamp": "2026-07-08T17:30:11+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "Bibi RAGES Over Trump Turkey Meeting, DEMANDS REGIONAL HEGEMONY",
         "sourceUrl": "https://www.youtube.com/watch?v=YKvx-Yc24g4",
         "platform": "youtube",
         "timestamp": "2026-07-08T16:30:27+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "BREAKING: Trump Says CEASEFIRE OVER After Iran Hits 5 Ships In Hormuz",
-        "sourceUrl": "https://www.youtube.com/watch?v=eiDwD77BViw",
-        "platform": "youtube",
-        "timestamp": "2026-07-08T13:01:13+00:00"
       }
     ],
     "trump-administration": [
