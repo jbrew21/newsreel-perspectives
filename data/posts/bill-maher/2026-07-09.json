@@ -1,22 +1,36 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-07-09T10:45:54.112744",
+  "collectedAt": "2026-07-09T11:58:06.075105",
   "date": "2026-07-09",
   "posts": [
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=s63bVFyHk-o",
-      "timestamp": "2026-07-03T16:00:29+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
+      "platform": "x",
+      "text": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests.",
+      "sourceUrl": "https://x.com/billmaher/status/2073083300235903205",
+      "timestamp": "2026-07-03T16:35:49+00:00",
+      "type": "tweet",
+      "topic": "congress-legislation",
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Interviews VP JD Vance, frames discussion around his role and positions",
-      "quote": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)"
+      "summary": "Critiques AOC and progressive lawmakers as unavailable or evasive guests",
+      "quote": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests."
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+      "timestamp": "2026-06-27T03:00:23+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Celebrates American values and national pride",
+      "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -28,8 +42,8 @@
       "type": "video_title",
       "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Offers critical or advisory commentary on JD Vance's approach",
+      "stance": "strong",
+      "summary": "Offers critical advice to JD Vance on political leadership",
       "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)"
     },
     {
@@ -43,18 +57,48 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Critiques Trump's lack of substantive ideas or clothing",
+      "summary": "Critiques Trump leadership and competence",
       "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+      "timestamp": "2026-06-20T03:00:05+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Celebrates American identity and national belonging",
+      "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
-    "trump-administration": [
+    "congress-legislation": [
       {
-        "quote": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=s63bVFyHk-o",
+        "quote": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests.",
+        "sourceUrl": "https://x.com/billmaher/status/2073083300235903205",
+        "platform": "x",
+        "timestamp": "2026-07-03T16:35:49+00:00"
+      }
+    ],
+    "culture-war": [
+      {
+        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
         "platform": "youtube",
-        "timestamp": "2026-07-03T16:00:29+00:00"
+        "timestamp": "2026-06-27T03:00:23+00:00"
       },
+      {
+        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:05+00:00"
+      }
+    ],
+    "trump-administration": [
       {
         "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)",
         "sourceUrl": "https://www.youtube.com/watch?v=liF-oaTxOoM",
