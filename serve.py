@@ -15,6 +15,7 @@ Enterprise-grade HTTP server with:
 
 import gzip
 import hashlib
+import html as html_lib
 import http.server
 import io
 import json
@@ -24,8 +25,8 @@ import re
 import sys
 import threading
 import time
-from collections import defaultdict
-from datetime import date, datetime
+from collections import defaultdict, deque
+from datetime import date, datetime, timezone
 from urllib.parse import urlparse, parse_qs
 
 # ─── CONFIGURATION ──────────────────────────────────────────────────────────
@@ -41,6 +42,9 @@ RATE_LIMIT_GENERAL = 120     # max requests per IP per minute
 CACHE_TTL_STORIES = 300      # 5 min for stories
 CACHE_TTL_TOPICS = 300       # 5 min for topics
 CACHE_TTL_WIRE = 120         # 2 min for wire
+WIRE_MAX_PER_VOICE = 2       # keep at most N most-recent posts per voice
+WIRE_MIN_POSTS_BETWEEN = 3   # require >= N other posts between two from one voice
+WIRE_MAX_ITEMS = 100         # max entries returned in the wire feed
 CACHE_TTL_SEARCH = 600       # 10 min for search results
 CACHE_TTL_STATIC = 3600      # 1 hour for static pages
 
@@ -65,6 +69,9 @@ log = logging.getLogger('perspectives')
 
 _cache = {}
 _cache_lock = threading.Lock()
+# Single-flight guard for the wire rebuild: without it, every request that
+# arrives after the 2-min TTL expires re-walks every voice directory at once.
+_wire_build_lock = threading.Lock()
 
 
 def cache_get(key):
@@ -159,6 +166,131 @@ def find_story_by_slug(slug, max_files=14):
 def is_content_safe(text):
     text_lower = text.lower()
     return not any(term in text_lower for term in SAFETY_TERMS)
+
+
+def wire_ts_key(post):
+    """Sort key that turns a post's timestamp into a real UTC instant.
+
+    Posts arrive with mixed ISO-8601 formats (``...+00:00``, ``...Z``,
+    varying fractional-second widths, and occasionally a non-UTC offset).
+    A plain string sort orders those by byte value, which is only
+    chronologically correct while every source happens to emit zero-offset
+    UTC — an undocumented, unenforced invariant. Parsing to an instant makes
+    ordering correct for any offset; missing/unparseable timestamps sort
+    oldest so they never jump to the top of the feed.
+    """
+    ts = (post.get('timestamp') or '').strip()
+    try:
+        dt = datetime.fromisoformat(ts.replace('Z', '+00:00'))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except (ValueError, AttributeError):
+        return datetime.min.replace(tzinfo=timezone.utc)
+
+
+def decluster(posts, max_per_voice=WIRE_MAX_PER_VOICE,
+              min_gap=WIRE_MIN_POSTS_BETWEEN, limit=WIRE_MAX_ITEMS):
+    """Turn a raw post list into a diverse, chronological wire feed.
+
+    A single voice posting a burst (e.g. an 8-tweet thread inside one minute)
+    used to monopolize the top of the wire, so it read as "bunched by author"
+    instead of a diverse newswire. This:
+
+      1. sorts newest-first by real instant (see ``wire_ts_key``),
+      2. keeps at most ``max_per_voice`` most-recent posts per voice, then
+      3. greedily emits the newest remaining post whose voice has NOT appeared
+         in the last ``min_gap`` slots, so the same voice is spread out.
+
+    Newest-first order is preserved except where a burst is deliberately
+    spaced. The ``next(..., 0)`` fallback places an otherwise-blocked post when
+    every remaining candidate is still inside the gap window (e.g. a
+    single-voice input) — this guarantees termination; do not "fix" it into a
+    loop. Input size is bounded (``max_per_voice`` × number of voices), so the
+    linear scan is not a concern at any realistic scale.
+    """
+    ordered = sorted(posts, key=wire_ts_key, reverse=True)
+
+    counts = {}
+    capped = []
+    for p in ordered:
+        vid = p.get('voiceId')
+        if counts.get(vid, 0) >= max_per_voice:
+            continue
+        counts[vid] = counts.get(vid, 0) + 1
+        capped.append(p)
+
+    wire = []
+    recent = deque(maxlen=max(1, min_gap))
+    while capped:
+        idx = next((i for i, p in enumerate(capped)
+                    if p.get('voiceId') not in recent), 0)
+        p = capped.pop(idx)
+        wire.append(p)
+        recent.append(p.get('voiceId'))
+
+    return wire[:limit]
+
+
+def build_wire(root=None):
+    """Build today's de-clustered wire feed by scanning every voice's posts.
+
+    Pure of request state so it can be unit-tested and called under the
+    single-flight lock. Reads ``data/posts/<voice>/<today>.json`` for each
+    voice, decodes scraped HTML entities, drops short/unsafe posts, then hands
+    the raw list to ``decluster`` for ordering and diversity.
+    """
+    root = root or ROOT
+    today = date.today().isoformat()
+    posts_dir = os.path.join(root, 'data', 'posts')
+    voices_path = os.path.join(root, 'data', 'voices.json')
+
+    voice_meta = {}
+    voices_data = load_json_file(voices_path)
+    if voices_data:
+        for v in voices_data:
+            if isinstance(v, dict) and v.get('id'):
+                voice_meta[v['id']] = v
+
+    all_posts = []
+    try:
+        for voice_dir in os.listdir(posts_dir):
+            day_file = os.path.join(posts_dir, voice_dir, f'{today}.json')
+            if not os.path.isfile(day_file):
+                continue
+            data = load_json_file(day_file)
+            if not data:
+                continue
+            posts = data.get('posts', []) if isinstance(data, dict) else data
+            if not isinstance(posts, list):
+                continue
+            meta = voice_meta.get(voice_dir, {})
+            for p in posts:
+                # One malformed record must not drop the rest of a voice's
+                # posts, so guard each one individually.
+                if not isinstance(p, dict):
+                    continue
+                # Source text is scraped and often carries HTML entities (e.g.
+                # "Beef &amp; Draws"). Decode once here; the client re-escapes
+                # for safe display, so the reader sees "&".
+                text = html_lib.unescape(str(p.get('text') or '')).strip()
+                if len(text) < 30:
+                    continue
+                if not is_content_safe(text):
+                    continue
+                all_posts.append({
+                    'voiceId': voice_dir,
+                    'voiceName': meta.get('name', p.get('voiceName', voice_dir)),
+                    'photo': meta.get('photo', ''),
+                    'platform': p.get('platform', ''),
+                    'text': text[:200],
+                    'sourceUrl': p.get('sourceUrl', ''),
+                    'timestamp': p.get('timestamp', ''),
+                })
+    except OSError as e:
+        log.error(f"Wire error: {e}")
+
+    return decluster(all_posts)
 
 
 def sanitize_query(q):
@@ -449,53 +581,16 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # ── API: Wire ──
         if path == '/api/wire':
             cached = cache_get('wire')
-            if cached:
-                self.send_json(cached, cache_ttl=CACHE_TTL_WIRE)
-                return
-
-            today = date.today().isoformat()
-            posts_dir = os.path.join(ROOT, 'data', 'posts')
-            voices_path = os.path.join(ROOT, 'data', 'voices.json')
-
-            voice_meta = {}
-            voices_data = load_json_file(voices_path)
-            if voices_data:
-                for v in voices_data:
-                    voice_meta[v['id']] = v
-
-            all_posts = []
-            try:
-                for voice_dir in os.listdir(posts_dir):
-                    day_file = os.path.join(posts_dir, voice_dir, f'{today}.json')
-                    if not os.path.isfile(day_file):
-                        continue
-                    data = load_json_file(day_file)
-                    if not data:
-                        continue
-                    posts = data.get('posts', []) if isinstance(data, dict) else data
-                    meta = voice_meta.get(voice_dir, {})
-                    for p in posts:
-                        text = (p.get('text') or '').strip()
-                        if len(text) < 30:
-                            continue
-                        if not is_content_safe(text):
-                            continue
-                        all_posts.append({
-                            'voiceId': voice_dir,
-                            'voiceName': meta.get('name', p.get('voiceName', voice_dir)),
-                            'photo': meta.get('photo', ''),
-                            'platform': p.get('platform', ''),
-                            'text': text[:200],
-                            'sourceUrl': p.get('sourceUrl', ''),
-                            'timestamp': p.get('timestamp', ''),
-                        })
-            except Exception as e:
-                log.error(f"Wire error: {e}")
-
-            all_posts.sort(key=lambda x: x.get('timestamp', ''), reverse=True)
-            all_posts = all_posts[:100]
-            cache_set('wire', all_posts, CACHE_TTL_WIRE)
-            self.send_json(all_posts, cache_ttl=CACHE_TTL_WIRE)
+            if cached is None:
+                # Single-flight: only one thread rebuilds on a cache miss; the
+                # rest wait and then read the fresh cache. Double-check inside
+                # the lock so a queued thread doesn't rebuild redundantly.
+                with _wire_build_lock:
+                    cached = cache_get('wire')
+                    if cached is None:
+                        cached = build_wire()
+                        cache_set('wire', cached, CACHE_TTL_WIRE)
+            self.send_json(cached, cache_ttl=CACHE_TTL_WIRE)
             return
 
         # ── Photos (with caching headers) ──
