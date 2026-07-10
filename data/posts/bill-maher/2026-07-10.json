@@ -1,22 +1,36 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-07-10T10:35:07.213493",
+  "collectedAt": "2026-07-10T11:58:22.926562",
   "date": "2026-07-10",
   "posts": [
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
       "platform": "youtube",
-      "text": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
-      "timestamp": "2026-06-27T03:00:23+00:00",
+      "text": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=s63bVFyHk-o",
+      "timestamp": "2026-07-03T16:00:29+00:00",
       "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
+      "topic": "trump-administration",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Celebrates American patriotism and national pride",
-      "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)"
+      "summary": "Interviews VP JD Vance; frames revealed through questioning and editing",
+      "quote": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Overtime with Bill Maher: Sen. Raphael Warnock, Larry Wilmore (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=F4D0jFRKgig",
+      "timestamp": "2026-06-27T03:00:32+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Interviews Sen. Raphael Warnock; position implicit in guest selection and discussion",
+      "quote": "Overtime with Bill Maher: Sen. Raphael Warnock, Larry Wilmore (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -28,9 +42,23 @@
       "type": "video_title",
       "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Offers unsolicited counsel to Vice President Vance",
+      "stance": "strong",
+      "summary": "Offers critical advice to JD Vance on public presentation",
       "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Overtime with Bill Maher: Rep. Ro Khanna, Jonathan Martin (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=qd0sjtmQVT8",
+      "timestamp": "2026-06-20T03:00:36+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Interviews Rep. Ro Khanna; position revealed through discussion framing",
+      "quote": "Overtime with Bill Maher: Rep. Ro Khanna, Jonathan Martin (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -41,22 +69,20 @@
       "timestamp": "2026-06-20T03:00:06+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Critiques Trump administration competence or legitimacy",
+      "summary": "Critiques Trump administration leadership or competence",
       "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
-    "culture-war": [
-      {
-        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
-        "platform": "youtube",
-        "timestamp": "2026-06-27T03:00:23+00:00"
-      }
-    ],
     "trump-administration": [
+      {
+        "quote": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=s63bVFyHk-o",
+        "platform": "youtube",
+        "timestamp": "2026-07-03T16:00:29+00:00"
+      },
       {
         "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)",
         "sourceUrl": "https://www.youtube.com/watch?v=liF-oaTxOoM",
@@ -68,6 +94,20 @@
         "sourceUrl": "https://www.youtube.com/watch?v=nWVtaeqe8e0",
         "platform": "youtube",
         "timestamp": "2026-06-20T03:00:06+00:00"
+      }
+    ],
+    "congress-legislation": [
+      {
+        "quote": "Overtime with Bill Maher: Sen. Raphael Warnock, Larry Wilmore (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=F4D0jFRKgig",
+        "platform": "youtube",
+        "timestamp": "2026-06-27T03:00:32+00:00"
+      },
+      {
+        "quote": "Overtime with Bill Maher: Rep. Ro Khanna, Jonathan Martin (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=qd0sjtmQVT8",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:36+00:00"
       }
     ]
   }

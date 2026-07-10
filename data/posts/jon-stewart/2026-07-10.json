@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-07-10T10:35:07.211589",
+  "collectedAt": "2026-07-10T11:58:22.924367",
   "date": "2026-07-10",
   "posts": [
     {
@@ -26,10 +26,10 @@
       "sourceUrl": "https://www.youtube.com/shorts/EEN2buy98Zw",
       "timestamp": "2026-07-09T15:57:22+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "congress-legislation",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Trump administration policies discouraging public service",
+      "summary": "Criticizes barriers to public service participation",
       "quote": "Discouraging Public Service | The Weekly Show with Jon Stewart"
     },
     {
@@ -43,7 +43,7 @@
       "topic": "supreme-court-legal",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Questions DOJ credibility under Trump administration",
+      "summary": "Questions DOJ institutional credibility and integrity",
       "quote": "DOJ Credibility | The Weekly Show with Jon Stewart"
     },
     {
@@ -54,10 +54,10 @@
       "sourceUrl": "https://www.youtube.com/watch?v=Lyk9_Ku9-Q8",
       "timestamp": "2026-07-08T18:22:29+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "supreme-court-legal",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Accuses Trump DOJ of weaponizing justice system",
+      "summary": "Criticizes weaponization of DOJ under Trump administration",
       "quote": "Jack Smith &amp; Brian Driscoll On Weaponizing Justice | The Weekly Show with Jon Stewart"
     },
     {
@@ -71,7 +71,7 @@
       "topic": "criminal-justice",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Critiques Trump administration's handling of January 6 investigations",
+      "summary": "Examines January 6th Capitol riot and accountability",
       "quote": "January 6th | The Weekly Show with Jon Stewart"
     },
     {
@@ -85,7 +85,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Trump's Department of Justice as weaponized",
+      "summary": "Criticizes Trump's DOJ politicization and misuse",
       "quote": "Trump's Department Of &quot;Justice&quot; | The Weekly Show with Jon Stewart"
     },
     {
@@ -99,7 +99,7 @@
       "topic": "supreme-court-legal",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Questions Jack Smith and Brian Driscoll on DOJ independence",
+      "summary": "Examines DOJ misconduct and justice weaponization",
       "quote": "Jack Smith &amp; Brian Driscoll | The Weekly Show with Jon Stewart"
     },
     {
@@ -110,10 +110,10 @@
       "sourceUrl": "https://www.youtube.com/shorts/UzbXo2CGMyY",
       "timestamp": "2026-07-02T13:56:44+00:00",
       "type": "video_title",
-      "topic": "foreign-policy-diplomacy",
+      "topic": "other",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Examines America's foreign policy record at 250-year mark",
+      "summary": "Reflects on America's 250th anniversary and national legacy",
       "quote": "America At 250 | The Weekly Show with Jon Stewart"
     },
     {
@@ -127,7 +127,7 @@
       "topic": "military-defense",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Discusses SpaceX's role in war on terror operations",
+      "summary": "Connects SpaceX innovation to counterterrorism strategy",
       "quote": "SpaceX &amp; The War On Terror | The Weekly Show with Jon Stewart"
     }
   ],
@@ -146,24 +146,12 @@
         "timestamp": "2026-07-01T15:56:45+00:00"
       }
     ],
-    "trump-administration": [
+    "congress-legislation": [
       {
         "quote": "Discouraging Public Service | The Weekly Show with Jon Stewart",
         "sourceUrl": "https://www.youtube.com/shorts/EEN2buy98Zw",
         "platform": "youtube",
         "timestamp": "2026-07-09T15:57:22+00:00"
-      },
-      {
-        "quote": "Jack Smith &amp; Brian Driscoll On Weaponizing Justice | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/watch?v=Lyk9_Ku9-Q8",
-        "platform": "youtube",
-        "timestamp": "2026-07-08T18:22:29+00:00"
-      },
-      {
-        "quote": "Trump's Department Of &quot;Justice&quot; | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/pSvcBWgz7eo",
-        "platform": "youtube",
-        "timestamp": "2026-07-08T11:58:50+00:00"
       }
     ],
     "supreme-court-legal": [
@@ -172,6 +160,12 @@
         "sourceUrl": "https://www.youtube.com/shorts/KT7Iznnavek",
         "platform": "youtube",
         "timestamp": "2026-07-09T13:56:47+00:00"
+      },
+      {
+        "quote": "Jack Smith &amp; Brian Driscoll On Weaponizing Justice | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/watch?v=Lyk9_Ku9-Q8",
+        "platform": "youtube",
+        "timestamp": "2026-07-08T18:22:29+00:00"
       },
       {
         "quote": "Jack Smith &amp; Brian Driscoll | The Weekly Show with Jon Stewart",
@@ -188,7 +182,15 @@
         "timestamp": "2026-07-08T13:54:25+00:00"
       }
     ],
-    "foreign-policy-diplomacy": [
+    "trump-administration": [
+      {
+        "quote": "Trump's Department Of &quot;Justice&quot; | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/pSvcBWgz7eo",
+        "platform": "youtube",
+        "timestamp": "2026-07-08T11:58:50+00:00"
+      }
+    ],
+    "other": [
       {
         "quote": "America At 250 | The Weekly Show with Jon Stewart",
         "sourceUrl": "https://www.youtube.com/shorts/UzbXo2CGMyY",
