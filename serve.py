@@ -35,7 +35,8 @@ PORT = int(os.environ.get('PORT', 8888))
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Rate limiting
-RATE_LIMIT_SEARCH = 10       # max searches per IP per minute
+RATE_LIMIT_SEARCH = 20       # max search requests per IP per minute (each user
+                             # search = 2 requests: fast phase + clustered phase)
 RATE_LIMIT_GENERAL = 120     # max requests per IP per minute
 
 # Cache TTL (seconds)
@@ -101,15 +102,20 @@ _rate_buckets = defaultdict(list)
 _rate_lock = threading.Lock()
 
 
-def is_rate_limited(ip, limit, window=60):
+def is_rate_limited(ip, limit, window=60, bucket='general'):
+    # Each (ip, bucket) pair gets its own counter. Searches and general traffic
+    # MUST use separate buckets — otherwise page-load/photo requests (which are
+    # far more numerous) burn through the tight search budget and a user trips
+    # "Too many searches" after a single real query. See RATE_LIMIT_* below.
     now = time.time()
+    key = (ip, bucket)
     with _rate_lock:
-        bucket = _rate_buckets[ip]
+        hits = _rate_buckets[key]
         # Prune old entries
-        _rate_buckets[ip] = [t for t in bucket if now - t < window]
-        if len(_rate_buckets[ip]) >= limit:
+        _rate_buckets[key] = [t for t in hits if now - t < window]
+        if len(_rate_buckets[key]) >= limit:
             return True
-        _rate_buckets[ip].append(now)
+        _rate_buckets[key].append(now)
     return False
 
 
@@ -357,8 +363,14 @@ def attach_matched_stories(result):
     return result
 
 
-def do_search(query, days=None):
-    """Run search in-process with caching."""
+def do_search(query, days=None, fast=False):
+    """Run search in-process with caching.
+
+    fast=True skips the argument-clustering Claude call (the slowest step) so
+    voices paint in ~1s; the client then re-requests without fast to get the
+    clustered result. A cached FULL result always wins — even for fast requests —
+    so the second phase is free whenever the query was searched recently.
+    """
     cache_key = f"search:{hashlib.md5(f'{query}:{days}'.encode()).hexdigest()}"
     cached = cache_get(cache_key)
     if cached:
@@ -371,6 +383,27 @@ def do_search(query, days=None):
         if fallback:
             return attach_matched_stories(fallback)
         return {'error': 'Search temporarily unavailable. Try again in a moment.', 'code': 'unavailable'}
+
+    if fast:
+        fast_key = cache_key + ':fast'
+        cached_fast = cache_get(fast_key)
+        if cached_fast:
+            return cached_fast
+        try:
+            result = lookup.lookup_story(query, days=int(days) if days else None, skip_clusters=True)
+            if result:
+                attach_matched_stories(result)
+                # Short TTL: this only needs to live long enough for the client
+                # to fetch the full result behind it.
+                cache_set(fast_key, result, 120)
+                return result
+            return {'error': 'No results found for this topic yet. Try a broader term.', 'code': 'empty'}
+        except Exception as e:
+            log.error(f"Fast search error: {e}")
+            fallback = _cached_result_fallback(query)
+            if fallback:
+                return attach_matched_stories(fallback)
+            return {'error': 'Search failed. Please try again.', 'code': 'failed'}
 
     try:
         result = lookup.lookup_story(query, days=int(days) if days else None)
@@ -491,11 +524,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # Search gets its own tighter bucket; we skip the general bucket for lookup
         # so a search request doesn't burn two slots.
         if self.path.startswith('/api/lookup'):
-            if is_rate_limited(ip, RATE_LIMIT_SEARCH):
+            if is_rate_limited(ip, RATE_LIMIT_SEARCH, bucket='search'):
                 self.send_json({'error': 'Search rate limited. Max 10 per minute.'}, status=429)
                 return
         else:
-            if is_rate_limited(ip, RATE_LIMIT_GENERAL):
+            if is_rate_limited(ip, RATE_LIMIT_GENERAL, bucket='general'):
                 self.send_json({'error': 'Rate limited. Try again in a minute.'}, status=429)
                 return
 
@@ -505,15 +538,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             params = parse_qs(parsed.query)
             raw_query = params.get('q', [''])[0]
             days = params.get('days', [None])[0]
+            fast = params.get('fast', ['0'])[0] == '1'
 
             query = sanitize_query(raw_query)
             if not query:
                 self.send_json({'error': f'Invalid query. Must be {MIN_QUERY_LENGTH}-{MAX_QUERY_LENGTH} characters.'}, status=400)
                 return
 
-            log.info(f"Search: '{query}' from {ip}")
-            result = do_search(query, days)
-            self.send_json(result, cache_ttl=CACHE_TTL_SEARCH)
+            log.info(f"Search{' (fast)' if fast else ''}: '{query}' from {ip}")
+            result = do_search(query, days, fast=fast)
+            # Fast-phase responses are transitional — don't let browsers/CDNs
+            # cache them long, or a reload could show cluster-less results.
+            self.send_json(result, cache_ttl=(60 if fast else CACHE_TTL_SEARCH))
             return
 
         # ── API: Single story by slug (resolves rotated-out stories) ──
@@ -659,7 +695,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
         ip = self.get_client_ip()
 
-        if is_rate_limited(ip, RATE_LIMIT_GENERAL):
+        if is_rate_limited(ip, RATE_LIMIT_GENERAL, bucket='general'):
             self.send_json({'error': 'Rate limited'}, status=429)
             return
 

@@ -150,8 +150,27 @@ def get_all_voice_posts(date):
     return all_posts
 
 
+# Memo for topic matching. lookup_story calls match_story_to_topics twice per
+# lookup (auto-expand probe + final match), and the web UI's two-phase search
+# runs the whole lookup twice (fast paint, then clustered). Without this memo
+# that's up to 4 identical Haiku calls per search; with it, 1.
+_topic_match_memo = {}
+_TOPIC_MEMO_MAX = 200
+
+
 def match_story_to_topics(headline, available_topics):
     """Use Claude to match a story headline to relevant topic tags."""
+    memo_key = (headline.strip().lower(), len(available_topics))
+    if memo_key in _topic_match_memo:
+        return _topic_match_memo[memo_key]
+    result = _match_story_to_topics_uncached(headline, available_topics)
+    if len(_topic_match_memo) >= _TOPIC_MEMO_MAX:
+        _topic_match_memo.clear()
+    _topic_match_memo[memo_key] = result
+    return result
+
+
+def _match_story_to_topics_uncached(headline, available_topics):
     if not ANTHROPIC_API_KEY:
         # Fallback: simple keyword matching
         headline_lower = headline.lower()
@@ -401,9 +420,16 @@ def assign_argument_clusters(headline, voices_found, voices_meta):
     if not ANTHROPIC_API_KEY or not voices_found:
         return {}
 
+    # Cap how many voices go to the model. On big stories (100+ voices) the
+    # full roster made the prompt huge AND the response JSON overflow
+    # max_tokens, so the parse failed and NO clusters shipped at all. Cluster
+    # the top voices by relevance score; the tail renders uncluttered.
+    MAX_CLUSTER_VOICES = 60
+    ranked = sorted(voices_found.items(), key=lambda x: x[1].get('_score', 0))[:MAX_CLUSTER_VOICES]
+
     # Build a summary of each voice's quotes for Claude
     voice_summaries = []
-    for vid, data in voices_found.items():
+    for vid, data in ranked:
         meta = voices_meta.get(vid, {})
         quotes_text = ' | '.join(q['quote'][:200] for q in data['quotes'][:3])
         voice_summaries.append(
@@ -438,8 +464,12 @@ Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention 
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-sonnet-4-6',
-                'max_tokens': 1024,
+                # Haiku 4.5 per project config ("Perspectives: Haiku 4.5, not
+                # Sonnet") — and it cuts cluster latency to ~1/4 of Sonnet's.
+                # max_tokens must fit the full {name: cluster} mapping for up
+                # to MAX_CLUSTER_VOICES voices; 1024 silently truncated it.
+                'model': 'claude-haiku-4-5-20251001',
+                'max_tokens': 4000,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
             headers={
@@ -469,7 +499,7 @@ Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention 
     return {}
 
 
-def lookup_story(headline, days=None):
+def lookup_story(headline, days=None, skip_clusters=False):
     """Main lookup: find all voices talking about a story.
 
     Time strategy (Option 4 — auto-expand + user override):
@@ -477,6 +507,11 @@ def lookup_story(headline, days=None):
     - If days is None: auto-expand until enough voices found
       Start with 1 day, then 3, then 7, then 14, then all
       Stop expanding when we find 5+ voices
+
+    skip_clusters=True skips the assign_argument_clusters Claude call (the
+    slowest step, ~3-8s of Sonnet latency) and returns voices immediately with
+    empty argumentCluster labels + clustersPending=True. The web UI uses this
+    for a fast first paint, then fetches the full (clustered) result behind it.
     """
     MIN_VOICES = 5  # minimum before we stop expanding
 
@@ -492,6 +527,13 @@ def lookup_story(headline, days=None):
     voices_found = {}
     time_window_used = None
 
+    # Match topics ONCE against the widest window's topic set, then intersect
+    # with each probe window's index. The old per-window match cost one Haiku
+    # round-trip per expansion — a niche query that kept expanding serialized
+    # up to 5 Claude calls before anything painted.
+    _, widest_index = get_merged_topic_index(max_days=time_windows[-1])
+    widest_topics = match_story_to_topics(headline, list(widest_index.keys())) if widest_index else []
+
     for window in time_windows:
         date, topic_index = get_merged_topic_index(max_days=window)
         if not topic_index:
@@ -499,8 +541,7 @@ def lookup_story(headline, days=None):
         available_dates = get_all_dates()[:window]
 
         # Quick count: how many voices match via topic index?
-        available_topics = list(topic_index.keys())
-        test_topics = match_story_to_topics(headline, available_topics)
+        test_topics = [t for t in widest_topics if t in topic_index]
         voice_count = len(set(
             e['voiceId']
             for t in test_topics
@@ -534,9 +575,9 @@ def lookup_story(headline, days=None):
             print(f"  ⚠ Then run: git pull origin main")
             print(f"  {'!'*60}\n")
 
-    # Strategy 1: Match headline to topic tags
-    available_topics = list(topic_index.keys())
-    matching_topics = match_story_to_topics(headline, available_topics)
+    # Strategy 1: Match headline to topic tags (reuse the single widest-window
+    # match from above — no second Claude call)
+    matching_topics = [t for t in widest_topics if t in topic_index]
 
     if matching_topics:
         print(f"  Matched topics: {', '.join(matching_topics)}")
@@ -648,8 +689,11 @@ def lookup_story(headline, days=None):
         print(f"  ⚠ Could not load voice metadata: {e}")
 
     # Assign argument clusters (per-story position labels)
-    print(f"\n  Clustering voices by position...")
-    clusters = assign_argument_clusters(headline, voices_found, voices_meta)
+    if skip_clusters:
+        clusters = {}
+    else:
+        print(f"\n  Clustering voices by position...")
+        clusters = assign_argument_clusters(headline, voices_found, voices_meta)
 
     # Display results
     print(f"\n  ╔══════════════════════════════════════════════╗")
@@ -698,6 +742,7 @@ def lookup_story(headline, days=None):
         'matchedTopics': matching_topics,
         'matchPrecision': match_precision,
         'broadeningNote': broadening_note,
+        'clustersPending': bool(skip_clusters),
         'voices': [],
     }
 
@@ -717,13 +762,15 @@ def lookup_story(headline, days=None):
             'latestTimestamp': search_helpers.voice_latest_timestamp({'quotes': clean_quotes}).isoformat(),
         })
 
-    # Save result
-    results_dir = ROOT / "data" / "results"
-    results_dir.mkdir(parents=True, exist_ok=True)
-    slug = search_helpers.result_slug(headline)
-    result_path = results_dir / f'{slug}.json'
-    result_path.write_text(json.dumps(output, indent=2))
-    print(f"\n  Result saved: {result_path}")
+    # Save result — but never persist a fast-phase (unclustered) result, or the
+    # pre-rendered fallback cache would serve permanently cluster-less pages.
+    if not skip_clusters:
+        results_dir = ROOT / "data" / "results"
+        results_dir.mkdir(parents=True, exist_ok=True)
+        slug = search_helpers.result_slug(headline)
+        result_path = results_dir / f'{slug}.json'
+        result_path.write_text(json.dumps(output, indent=2))
+        print(f"\n  Result saved: {result_path}")
 
     return output
 
