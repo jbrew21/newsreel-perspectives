@@ -605,6 +605,55 @@
   .search-loading-skeletons { max-width: 680px; margin: 0 auto; padding: 0 var(--space-5); }
   .search-loading-skeletons .skeleton-card { margin-bottom: var(--space-3); }
 
+  /* ── Dynamic results: entrance, live cluster patch, pagination ── */
+  @keyframes cardIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .voice-card.card-enter { animation: cardIn .35s cubic-bezier(.2,.7,.3,1) both; }
+
+  @keyframes badgeIn {
+    from { opacity: 0; transform: scale(.85); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  .voice-cluster-badge.badge-arrive { animation: badgeIn .3s ease both; }
+
+  .cluster-pending {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: var(--text-xs); color: var(--text-muted);
+    padding: 6px 12px; margin: var(--space-2) 0;
+    border: 1px dashed var(--border); border-radius: 999px;
+  }
+  @keyframes pendingPulse { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+  .cluster-pending-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent, #FF6343);
+    animation: pendingPulse 1.2s ease-in-out infinite;
+  }
+
+  .load-more-btn {
+    display: block; width: 100%; padding: 12px 16px; margin: var(--space-3) 0;
+    background: var(--surface, #1F1F1F); color: var(--text, #eee);
+    border: 1px solid var(--border, #333); border-radius: var(--radius-md, 8px);
+    font: inherit; font-size: var(--text-sm); cursor: pointer;
+    transition: border-color .15s ease, background .15s ease;
+  }
+  .load-more-btn:hover { border-color: var(--accent, #FF6343); }
+  .load-more-count { color: var(--text-muted); margin-left: 8px; font-size: var(--text-xs); }
+  .pager-sentinel { height: 1px; }
+  .pager-end {
+    text-align: center; color: var(--text-muted);
+    font-size: var(--text-xs); padding: var(--space-3) 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .voice-card.card-enter, .voice-cluster-badge.badge-arrive, .cluster-pending-dot,
+    .skeleton { animation: none; }
+    .skeleton { background: var(--bg-elevated); }
+    .story-card:hover .vs-face, .story-card:hover .story-cta svg { transform: none; }
+    .proportion-segment, .story-card { transition: none; }
+  }
+
   /* ── FOOTER ── */
   .site-footer {
     max-width: 680px; margin: 0 auto;
@@ -683,6 +732,8 @@
     .search-hints.expanded { max-height: 360px; }
     .search-hints-toggle { display: block; min-height: 44px; }
     .time-btn { font-size: var(--text-xs); padding: var(--space-2) var(--space-3); min-height: 44px; }
+    .sort-seg button { min-height: 44px; padding: 10px 14px; }
+    .load-more-btn { min-height: 48px; }
     .site-footer { padding: var(--space-7) var(--space-4) var(--space-6); }
   }
 </style>
@@ -714,7 +765,7 @@
 
 <div class="search-section">
   <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search any topic or story..." autofocus aria-label="Search voices and stories">
+    <input type="search" enterkeyhint="search" autocomplete="off" id="searchInput" placeholder="Search any topic or story..." autofocus aria-label="Search voices and stories">
     <button id="searchBtn" aria-label="Search">Search</button>
   </div>
   <div class="time-filter" id="timeFilter">
@@ -928,6 +979,14 @@
     return d.innerHTML;
   }
 
+  /* esc() doesn't escape double quotes (textContent→innerHTML never does) —
+     use this for text interpolated into HTML attribute values, e.g.
+     data-cluster="…", where a stray " from an AI-generated label would
+     truncate the attribute and break that filter. */
+  function escAttr(t) {
+    return esc(t).replace(/"/g, '&quot;');
+  }
+
   function slugify(t) {
     return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').substring(0, 60);
   }
@@ -965,10 +1024,16 @@
     opts = opts || {};
     var timeoutMs = opts.timeoutMs || 28000;
     var retries = opts.retries == null ? 1 : opts.retries;
+    var outerSignal = opts.signal || null;   // caller can supersede a search
 
     function attempt(triesLeft) {
       var ctrl = new AbortController();
       var timer = setTimeout(function() { ctrl.abort(); }, timeoutMs);
+      var onOuterAbort = function() { ctrl.abort(); };
+      if (outerSignal) {
+        if (outerSignal.aborted) ctrl.abort();
+        else outerSignal.addEventListener('abort', onOuterAbort, { once: true });
+      }
       return fetch(url, { signal: ctrl.signal })
         .then(function(r) {
           clearTimeout(timer);
@@ -978,11 +1043,14 @@
         })
         .catch(function(err) {
           clearTimeout(timer);
-          // Don't retry rate limits — retrying makes it worse.
-          if (err.rateLimited || triesLeft <= 0) throw err;
+          // Don't retry rate limits (worse) or superseded searches (pointless).
+          if (err.rateLimited || triesLeft <= 0 || (outerSignal && outerSignal.aborted)) throw err;
           // Brief backoff, then retry once (covers cold start / timeout / 5xx).
           return new Promise(function(res) { setTimeout(res, 1200); })
             .then(function() { return attempt(triesLeft - 1); });
+        })
+        .finally(function() {
+          if (outerSignal) outerSignal.removeEventListener('abort', onOuterAbort);
         });
     }
     return attempt(retries);
@@ -1012,7 +1080,7 @@
 
   function showFeedError(message) {
     feedSkeleton.style.display = 'none';
-    feedEl.style.display = 'block';
+    feedEl.style.display = searchViewActive ? 'none' : 'block';
     feedEl.innerHTML = '';
     feedEl.appendChild(
       stateMessage(
@@ -1027,7 +1095,7 @@
 
   function showEmptyFeed() {
     feedSkeleton.style.display = 'none';
-    feedEl.style.display = 'block';
+    feedEl.style.display = searchViewActive ? 'none' : 'block';
     feedEl.innerHTML = '';
     feedEl.appendChild(
       stateMessage(
@@ -1061,7 +1129,7 @@
       var faces = voices.slice(0, 3).map(function(v) {
         var photo = v.photo || initialsAvatar(v.voiceName);
         var lensText = _voiceLens[v.voiceId] ? ', ' + _voiceLens[v.voiceId].substring(0, 60) : '';
-        return '<img class="vs-face" src="' + photo + '" alt="' + esc(v.voiceName) + '" title="' + esc(v.voiceName + lensText) + '">';
+        return '<img class="vs-face" src="' + escAttr(photo) + '" alt="' + escAttr(v.voiceName) + '" title="' + escAttr(v.voiceName + lensText) + '">';
       }).join('');
       return '<div class="vs-side">' +
         '<div class="vs-faces">' + faces + '</div>' +
@@ -1169,7 +1237,9 @@
         }
 
         _storiesData = stories;
-        feedEl.style.display = 'block';
+        // A ?q= restore runs loadFeed and doSearch concurrently; never let the
+        // stories fetch resolve the feed back over a live search view.
+        feedEl.style.display = searchViewActive ? 'none' : 'block';
 
         var now = new Date();
         var dateStr = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
@@ -1347,14 +1417,41 @@
     if (input.value.trim()) doSearch();
   });
 
-  /* ── SEARCH ── */
+  /* ── SEARCH (two-phase) ──
+     Phase 1 (&fast=1): server skips the slow argument-clustering AI call and
+     returns voices in ~1s. We paint immediately.
+     Phase 2: fetch the full (clustered) result and patch cluster badges +
+     filter pills into the already-rendered page — no flash, no reflow jump.
+     Supersede semantics: a new search ABORTS the in-flight one (its fetches
+     cancel, its callbacks are dropped via the generation counter). The user is
+     never locked out — clicking a Window pill mid-search restarts the search
+     for the new window instead of silently no-oping. Only one search chain is
+     ever live, so requests can't pile up against the rate limit. */
+  var searchGen = 0;
+  var searchViewActive = false;  // true while the search view owns the page
+  var searchCtrl = null;     // AbortController for the live search chain
+  var lastSearchKey = '';    // dedupes identical rapid re-submits (Enter spam)
+  var activeResult = null;   // handle returned by renderResults for live patches
+
   function doSearch() {
     var q = input.value.trim();
     if (!q) return;
+    var searchKey = q.toLowerCase() + '|' + (selectedDays || '');
+    // Same query+window already in flight? Let it finish — aborting and
+    // restarting an identical search only wastes time and rate budget.
+    if (searchCtrl && searchKey === lastSearchKey) return;
+    if (searchCtrl) searchCtrl.abort();
+    searchCtrl = new AbortController();
+    lastSearchKey = searchKey;
+    var ctrl = searchCtrl;
+    var gen = ++searchGen;
+    searchViewActive = true;
+    if (activeResult && activeResult.destroy) activeResult.destroy();
 
     searchBtn.disabled = true;
     loading.classList.add('active');
     resultsDiv.innerHTML = '';
+    activeResult = null;
     feedEl.style.display = 'none';
     feedSkeleton.style.display = 'none';
     searchHints.style.display = 'none';
@@ -1366,8 +1463,9 @@
     var url = BASE + '/api/lookup?q=' + encodeURIComponent(q);
     if (selectedDays) url += '&days=' + selectedDays;
 
-    fetchJSON(url)
+    fetchJSON(url + '&fast=1', { signal: ctrl.signal })
       .then(function(data) {
+        if (gen !== searchGen) return;
         if (data.error) {
           resultsDiv.innerHTML = '';
           resultsDiv.appendChild(
@@ -1380,10 +1478,31 @@
             )
           );
         } else {
-          renderResults(data);
+          activeResult = renderResults(data);
+          // Reflect the search in the URL so reload/back/share restores it.
+          try {
+            var histUrl = location.pathname + '?q=' + encodeURIComponent(q) + (selectedDays ? '&days=' + selectedDays : '');
+            (history.state && history.state.persp) ? history.replaceState({persp:1}, '', histUrl) : history.pushState({persp:1}, '', histUrl);
+          } catch (e) { /* sandboxed iframe etc. — cosmetic only */ }
+          // Phase 2: fetch clusters in the background and patch them in.
+          if (data.clustersPending) {
+            fetchJSON(url, { retries: 0, signal: ctrl.signal })
+              .then(function(full) {
+                if (gen !== searchGen || !activeResult) return;
+                if (!full.error) activeResult.applyClusters(full);
+                else activeResult.clustersFailed();
+              })
+              .catch(function() {
+                // Clusters are a progressive enhancement — results already
+                // rendered; just clear the "mapping positions" indicator.
+                if (gen === searchGen && activeResult) activeResult.clustersFailed();
+              });
+          }
         }
       })
       .catch(function(err) {
+        // Superseded searches abort their fetches — never render their errors.
+        if (gen !== searchGen || ctrl.signal.aborted) return;
         console.error('[Perspectives] Search failed:', err);
         resultsDiv.innerHTML = '';
         var isRate = !!err.rateLimited;
@@ -1400,13 +1519,35 @@
         );
       })
       .finally(function() {
+        // Only the still-current generation owns the shared UI state; a
+        // superseded chain's finally must not clear the new search's spinner.
+        if (gen !== searchGen) return;
+        // Keep searchCtrl alive: phase 2 may still be in flight on this
+        // signal, and a superseding search (or showFeedView) aborting it is
+        // exactly what we want. Aborting an already-settled chain is a no-op.
+        lastSearchKey = '';
         searchBtn.disabled = false;
         loading.classList.remove('active');
       });
   }
 
-  /* ── RENDER RESULTS ── */
+  /* Cancel whatever search chain is live (phase 1 or 2). The bumped
+     generation makes every pending callback drop itself; the abort stops the
+     network work. Safe to call when nothing is in flight. */
+  function cancelSearch() {
+    searchGen++;
+    if (searchCtrl) { searchCtrl.abort(); searchCtrl = null; }
+    lastSearchKey = '';
+    searchBtn.disabled = false;
+    loading.classList.remove('active');
+  }
+
+  /* ── RENDER RESULTS ──
+     Returns a handle { applyClusters, clustersFailed, destroy } so the
+     two-phase search can patch argument clusters into the live page when they
+     arrive, and tear down observers when superseded. */
   function renderResults(data) {
+    var noopHandle = { applyClusters: function() {}, clustersFailed: function() {}, destroy: function() {} };
     if (!data.voices || data.voices.length === 0) {
       resultsDiv.innerHTML = '';
       resultsDiv.appendChild(
@@ -1418,7 +1559,7 @@
           backToFeed
         )
       );
-      return;
+      return noopHandle;
     }
 
     // Snapshot the server's (relevance) order once so the Relevant sort is stable.
@@ -1427,6 +1568,9 @@
     var currentSort = 'recent';   // default: most recent first
     var activeCluster = '';
     var activeCat = 'all';
+    var PAGE_SIZE = 12;           // cards per page — keeps first paint light on mobile
+    var page = 1;
+    var pageObserver = null;
 
     var windowLabel = {
       '1d': 'today', '3d': '3 days', '7d': 'week', '14d': '2 weeks', '30d': 'month'
@@ -1444,15 +1588,27 @@
       return vs;
     }
 
-    function buildVoiceCard(voice) {
+    // Filtering happens in DATA space (not display:none on DOM nodes) so
+    // pagination slices the filtered list and page counts stay truthful.
+    function filteredVoices() {
+      return sortedVoices().filter(function(v) {
+        var clusterMatch = !activeCluster || (v.argumentCluster || '') === activeCluster;
+        var catMatch = activeCat === 'all' || (_voiceCategory[v.voiceId] || '') === activeCat;
+        return clusterMatch && catMatch;
+      });
+    }
+
+    function buildVoiceCard(voice, batchIndex) {
       var clusterBadge = voice.argumentCluster ? '<span class="voice-cluster-badge">' + esc(voice.argumentCluster) + '</span>' : '';
       var photo = voice.photo || initialsAvatar(voice.voiceName);
       var lens = voice.lens || _voiceLens[voice.voiceId] || '';
       var tags = (voice.tags || []).map(function(t) {
         var tip = TAG_GLOSSARY[t.toLowerCase()];
-        return '<span class="voice-tag"' + (tip ? ' title="' + esc(tip) + '" style="cursor:help;"' : '') + '>' + esc(t) + '</span>';
+        return '<span class="voice-tag"' + (tip ? ' title="' + escAttr(tip) + '" style="cursor:help;"' : '') + '>' + esc(t) + '</span>';
       }).join('');
       var vCat = _voiceCategory[voice.voiceId] || '';
+      // Staggered entrance: cap the delay so deep pages don't feel sluggish.
+      var delay = Math.min(batchIndex || 0, 8) * 45;
 
       var quotes = (voice.quotes || []).slice();
       if (currentSort === 'recent') {
@@ -1460,13 +1616,13 @@
       }
       quotes = quotes.slice(0, 3);
 
-      var html = '<div class="voice-card" data-cluster="' + esc(voice.argumentCluster || '') + '" data-cat="' + esc(vCat) + '">' +
+      var html = '<div class="voice-card card-enter" style="animation-delay:' + delay + 'ms" data-voice="' + escAttr(voice.voiceId) + '" data-cluster="' + escAttr(voice.argumentCluster || '') + '" data-cat="' + escAttr(vCat) + '">' +
         '<div class="voice-header">' +
-          '<img class="voice-photo" src="' + photo + '" alt="' + esc(voice.voiceName) + '">' +
+          '<img class="voice-photo" loading="lazy" decoding="async" src="' + escAttr(photo) + '" alt="' + escAttr(voice.voiceName) + '">' +
           '<div>' +
             '<a class="voice-name" href="' + BASE + '/voice/' + voice.voiceId + '">' + esc(voice.voiceName) + '</a>' +
             (lens ? '<div class="voice-lens">' + esc(lens) + '</div>' : '') +
-            clusterBadge +
+            '<span class="voice-badge-slot">' + clusterBadge + '</span>' +
           '</div>' +
         '</div>' +
         (tags ? '<div class="voice-tags">' + tags + '</div>' : '');
@@ -1486,26 +1642,59 @@
       return html + '</div>';
     }
 
-    function renderFeed() {
-      var feed = document.getElementById('voiceFeed');
-      if (!feed) return;
-      feed.innerHTML = sortedVoices().map(buildVoiceCard).join('');
-      applyFilters();
+    function updateCount(total) {
+      var countEl = document.getElementById('resultsCount');
+      if (countEl) countEl.innerHTML = '<strong>' + total + '</strong> voice' + (total === 1 ? '' : 's') +
+        (windowLabel ? ' &middot; ' + windowLabel : '');
     }
 
-    function applyFilters() {
-      var cards = document.querySelectorAll('#voiceFeed .voice-card');
-      var visible = 0;
-      for (var k = 0; k < cards.length; k++) {
-        var card = cards[k];
-        var clusterMatch = !activeCluster || card.dataset.cluster === activeCluster;
-        var catMatch = activeCat === 'all' || card.dataset.cat === activeCat;
-        card.style.display = (clusterMatch && catMatch) ? '' : 'none';
-        if (clusterMatch && catMatch) visible++;
+    /* Pager: "Load more" button + IntersectionObserver sentinel so scrolling
+       near the bottom auto-loads the next page (infinite scroll), with the
+       button as a no-JS-observer fallback and an explicit affordance. */
+    function renderPager(total, shown) {
+      var pagerEl = document.getElementById('voicePager');
+      if (!pagerEl) return;
+      if (pageObserver) { pageObserver.disconnect(); pageObserver = null; }
+      var remaining = total - shown;
+      if (remaining <= 0) {
+        pagerEl.innerHTML = total > PAGE_SIZE
+          ? '<div class="pager-end">All ' + total + ' voices shown</div>' : '';
+        return;
       }
-      var countEl = document.getElementById('resultsCount');
-      if (countEl) countEl.innerHTML = '<strong>' + visible + '</strong> voice' + (visible === 1 ? '' : 's') +
-        (windowLabel ? ' &middot; ' + windowLabel : '');
+      pagerEl.innerHTML =
+        '<div class="pager-sentinel" id="pagerSentinel"></div>' +
+        '<button class="load-more-btn" id="loadMoreBtn">Show ' + Math.min(remaining, PAGE_SIZE) + ' more <span class="load-more-count">' + shown + ' of ' + total + '</span></button>';
+      document.getElementById('loadMoreBtn').addEventListener('click', appendNextPage);
+      if ('IntersectionObserver' in window) {
+        pageObserver = new IntersectionObserver(function(entries) {
+          if (entries[0].isIntersecting) appendNextPage();
+        }, { rootMargin: '600px 0px' });
+        pageObserver.observe(document.getElementById('pagerSentinel'));
+      }
+    }
+
+    function appendNextPage() {
+      var feed = document.getElementById('voiceFeed');
+      if (!feed) return;
+      var list = filteredVoices();
+      if (page * PAGE_SIZE >= list.length) return;
+      page++;
+      var start = (page - 1) * PAGE_SIZE;
+      var batch = list.slice(start, page * PAGE_SIZE);
+      // Append only the new cards — existing DOM untouched, scroll undisturbed.
+      feed.insertAdjacentHTML('beforeend', batch.map(function(v, i) { return buildVoiceCard(v, i); }).join(''));
+      renderPager(list.length, Math.min(page * PAGE_SIZE, list.length));
+    }
+
+    function renderFeed(resetPage) {
+      var feed = document.getElementById('voiceFeed');
+      if (!feed) return;
+      if (resetPage) page = 1;
+      var list = filteredVoices();
+      var shown = list.slice(0, page * PAGE_SIZE);
+      feed.innerHTML = shown.map(function(v, i) { return buildVoiceCard(v, i); }).join('');
+      updateCount(list.length);
+      renderPager(list.length, shown.length);
     }
 
     // ── Pinned story (if the search topic matches a curated story) ──
@@ -1534,19 +1723,23 @@
       '</div>' +
     '</div>';
 
-    // ── Cluster filter pills ──
-    var clusterGroups = {};
-    for (var ci = 0; ci < data.voices.length; ci++) {
-      var c = data.voices[ci].argumentCluster || '';
-      if (c) { if (!clusterGroups[c]) clusterGroups[c] = 0; clusterGroups[c]++; }
-    }
-    var clusterNames = Object.keys(clusterGroups).sort(function(a, b) { return clusterGroups[b] - clusterGroups[a]; });
-    var clusterBar = '';
-    if (clusterNames.length > 1) {
-      clusterBar = '<div class="filter-bar" id="clusterFilters">' +
-        '<span class="filter-pill active" data-cluster="">All ' + data.voices.length + '</span>' +
+    // ── Cluster filter pills (live-rebuilt when phase-2 clusters arrive) ──
+    function clusterBarHtml() {
+      if (data.clustersPending) {
+        return '<div class="cluster-pending" role="status">' +
+          '<span class="cluster-pending-dot"></span>Mapping positions&hellip;</div>';
+      }
+      var clusterGroups = {};
+      for (var ci = 0; ci < data.voices.length; ci++) {
+        var c = data.voices[ci].argumentCluster || '';
+        if (c) { if (!clusterGroups[c]) clusterGroups[c] = 0; clusterGroups[c]++; }
+      }
+      var clusterNames = Object.keys(clusterGroups).sort(function(a, b) { return clusterGroups[b] - clusterGroups[a]; });
+      if (clusterNames.length < 2) return '';
+      return '<div class="filter-bar" id="clusterFilters">' +
+        '<span class="filter-pill' + (activeCluster === '' ? ' active' : '') + '" role="button" tabindex="0" data-cluster="">All ' + data.voices.length + '</span>' +
         clusterNames.map(function(c) {
-          return '<span class="filter-pill" data-cluster="' + esc(c) + '">' + esc(c) + ' ' + clusterGroups[c] + '</span>';
+          return '<span class="filter-pill' + (activeCluster === c ? ' active' : '') + '" role="button" tabindex="0" data-cluster="' + escAttr(c) + '">' + esc(c) + ' ' + clusterGroups[c] + '</span>';
         }).join('') + '</div>';
     }
 
@@ -1554,11 +1747,13 @@
     var CAT_LABELS = {all:'All',journalist:'Reporters',commentator:'Commentators',creator:'Creators',politician:'Politicians','think-tank':'Policy',activist:'Activists',satirist:'Satirists',economist:'Economists'};
     var catBar = '<div class="filter-bar" id="catFilters">' +
       Object.keys(CAT_LABELS).map(function(k) {
-        return '<span class="filter-pill' + (k === 'all' ? ' active' : '') + '" data-cat="' + k + '">' + CAT_LABELS[k] + '</span>';
+        return '<span class="filter-pill' + (k === 'all' ? ' active' : '') + '" role="button" tabindex="0" data-cat="' + k + '">' + CAT_LABELS[k] + '</span>';
       }).join('') + '</div>';
 
-    resultsDiv.innerHTML = storyPin + header + toolbar + clusterBar + catBar + '<div id="voiceFeed"></div>';
-    renderFeed();
+    resultsDiv.innerHTML = storyPin + header + toolbar +
+      '<div id="clusterBarWrap">' + clusterBarHtml() + '</div>' +
+      catBar + '<div id="voiceFeed"></div><div id="voicePager"></div>';
+    renderFeed(true);
 
     /* Wire up sort control */
     document.querySelectorAll('#sortSeg button').forEach(function(btn) {
@@ -1567,26 +1762,41 @@
         document.querySelectorAll('#sortSeg button').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         currentSort = btn.dataset.sort;
-        renderFeed();
+        renderFeed(true);
       });
     });
 
-    /* Wire up filter pills */
-    document.querySelectorAll('#clusterFilters .filter-pill').forEach(function(pill) {
-      pill.addEventListener('click', function() {
-        document.querySelectorAll('#clusterFilters .filter-pill').forEach(function(p) { p.classList.remove('active'); });
-        pill.classList.add('active');
-        activeCluster = pill.dataset.cluster || '';
-        applyFilters();
-      });
+    /* Cluster pills: delegated on the wrap, which survives live rebuilds.
+       Pills are focusable (role=button tabindex=0) — mirror click on
+       Enter/Space for keyboard users. */
+    var clusterWrap = document.getElementById('clusterBarWrap');
+    function selectClusterPill(pill) {
+      clusterWrap.querySelectorAll('.filter-pill').forEach(function(p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+      activeCluster = pill.dataset.cluster || '';
+      renderFeed(true);
+    }
+    clusterWrap.addEventListener('click', function(e) {
+      var pill = e.target.closest('.filter-pill');
+      if (pill) selectClusterPill(pill);
+    });
+    clusterWrap.addEventListener('keydown', function(e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var pill = e.target.closest('.filter-pill');
+      if (pill) { e.preventDefault(); selectClusterPill(pill); }
     });
 
+    function selectCatPill(pill) {
+      document.querySelectorAll('#catFilters .filter-pill').forEach(function(p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+      activeCat = pill.dataset.cat || 'all';
+      renderFeed(true);
+    }
     document.querySelectorAll('#catFilters .filter-pill').forEach(function(pill) {
-      pill.addEventListener('click', function() {
-        document.querySelectorAll('#catFilters .filter-pill').forEach(function(p) { p.classList.remove('active'); });
-        pill.classList.add('active');
-        activeCat = pill.dataset.cat || 'all';
-        applyFilters();
+      pill.addEventListener('click', function() { selectCatPill(pill); });
+      pill.addEventListener('keydown', function(e) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        e.preventDefault(); selectCatPill(pill);
       });
     });
 
@@ -1598,10 +1808,56 @@
     backBtn.addEventListener('click', backToFeed);
     backWrap.appendChild(backBtn);
     resultsDiv.appendChild(backWrap);
+
+    /* ── Phase-2 handle: patch clusters into the live page ── */
+    function applyClusters(fullData) {
+      var map = {};
+      (fullData.voices || []).forEach(function(v) {
+        if (v.argumentCluster) map[v.voiceId] = v.argumentCluster;
+      });
+      data.voices.forEach(function(v) {
+        if (map[v.voiceId]) v.argumentCluster = map[v.voiceId];
+      });
+      data.clustersPending = false;
+      // Rebuild the pills, then patch badges into cards already on the page —
+      // no feed re-render, so scroll position and entrance animations survive.
+      clusterWrap.innerHTML = clusterBarHtml();
+      document.querySelectorAll('#voiceFeed .voice-card').forEach(function(card) {
+        var vid = card.dataset.voice;
+        var cluster = map[vid];
+        if (!cluster) return;
+        card.dataset.cluster = cluster;
+        var slot = card.querySelector('.voice-badge-slot');
+        if (slot && !slot.firstChild) {
+          slot.innerHTML = '<span class="voice-cluster-badge badge-arrive">' + esc(cluster) + '</span>';
+        }
+      });
+    }
+
+    function clustersFailed() {
+      data.clustersPending = false;
+      var bar = clusterBarHtml();
+      // Say it plainly rather than silently vanishing — an empty space where
+      // "Mapping positions…" was pulsing reads as broken.
+      clusterWrap.innerHTML = bar || '<div class="cluster-pending">Position mapping unavailable for this search</div>';
+    }
+
+    function destroy() {
+      if (pageObserver) { pageObserver.disconnect(); pageObserver = null; }
+    }
+
+    return { applyClusters: applyClusters, clustersFailed: clustersFailed, destroy: destroy };
   }
 
   /* ── BACK TO FEED ── */
-  function backToFeed() {
+  function showFeedView() {
+    searchViewActive = false;
+    // Kill any live search chain first: without this, a search racing a
+    // back-navigation would paint its results (and pushState its ?q=) on top
+    // of the freshly restored feed when its phase 1 resolved.
+    cancelSearch();
+    if (activeResult && activeResult.destroy) activeResult.destroy();
+    activeResult = null;
     input.value = '';
     resultsDiv.innerHTML = '';
     feedEl.style.display = 'block';
@@ -1610,8 +1866,47 @@
     wireSection.style.display = 'block';
     statsEl.style.display = '';
     timeFilter.style.display = 'none';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
   }
+
+  function backToFeed() {
+    showFeedView();
+    // Clear the ?q= from the URL so reload lands on the feed the user sees.
+    try {
+      if (location.search.indexOf('q=') !== -1) history.pushState({persp:0}, '', location.pathname);
+    } catch (e) { /* cosmetic */ }
+  }
+
+  /* ── URL STATE: restore searches on load / back-forward ── */
+  function syncTimeButtons() {
+    timeFilter.querySelectorAll('.time-btn').forEach(function(b) {
+      b.classList.toggle('active', (b.dataset.days || '') === (selectedDays || ''));
+    });
+  }
+
+  function restoreFromUrl(isInitialLoad) {
+    var params = new URLSearchParams(location.search);
+    var q = (params.get('q') || '').trim();
+    if (q) {
+      input.value = q;
+      selectedDays = params.get('days') || '';
+      syncTimeButtons();
+      if (isInitialLoad) {
+        // Mark the entry so doSearch replaceState()s instead of pushing a dup.
+        try { history.replaceState({persp:1}, '', location.pathname + location.search); } catch (e) {}
+      }
+      doSearch();
+      return true;
+    }
+    return false;
+  }
+
+  window.addEventListener('popstate', function() {
+    if (!restoreFromUrl(false)) showFeedView();
+  });
+
+  restoreFromUrl(true);
 
 })();
 </script>
