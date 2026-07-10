@@ -1,7 +1,7 @@
 {
   "voiceId": "destiny",
   "voiceName": "Destiny",
-  "collectedAt": "2026-07-10T10:35:07.213651",
+  "collectedAt": "2026-07-10T11:58:22.926787",
   "date": "2026-07-10",
   "posts": [
     {
@@ -15,7 +15,7 @@
       "topic": "elections",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Vindicated by election outcome, criticizes those who didn't vote for Kamala",
+      "summary": "Defends voting for Kamala Harris, criticizes those who didn't",
       "quote": "Yeah lil bro, this is why we were telling all you morons to vote for Kamala, welcome to the present."
     },
     {
@@ -27,9 +27,9 @@
       "timestamp": "2026-07-10T03:01:10+00:00",
       "type": "tweet",
       "topic": "israel-palestine",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Questions consistency of aid opponents, implies hypocrisy on Gaza aid",
+      "summary": "Questions consistency of aid opponents on both Israel and Gaza",
       "quote": "Just curious, are all the people who are obsessed with blocking all offensive/defensive aid to Israel also on board with shutting down all aid to Gaza as well?"
     },
     {
@@ -43,7 +43,7 @@
       "topic": "media-press",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Blames dishonest media statements for ecosystem destruction",
+      "summary": "Criticizes journalists as snake oil salesmen damaging media ecosystem",
       "quote": "This statement from fake journalists have destroyed our media ecosystem over the past few decades. Anytime someone says something like this you can be guaranteed that they are a snake oil salesman."
     },
     {
@@ -54,10 +54,10 @@
       "sourceUrl": "https://x.com/TheOmniLiberal/status/2074938965296103711",
       "timestamp": "2026-07-08T19:29:34+00:00",
       "type": "tweet",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Implies official wrongfully withheld disaster aid for political reasons",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Questions withholding of disaster aid, implies improper motivation",
       "quote": "huh that's so weird, I wonder what his certainly justified reason is for withholding this disaster aid?"
     },
     {
@@ -68,10 +68,10 @@
       "sourceUrl": "https://x.com/TheOmniLiberal/status/2074926988251255174",
       "timestamp": "2026-07-08T18:41:58+00:00",
       "type": "tweet",
-      "topic": "state-local-politics",
+      "topic": "elections",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes candidate's record, suggests Republican strategy could have won",
+      "summary": "Criticizes opponent's background and character, mocks campaign strategy",
       "quote": "abuses women, lies about working class background, nazi tattoo, multiple tours in Iraq + joined Blackwater for fun...if we really wanted to beat Collins why didn't we just run this mf as a Republican he would have swept \ud83d\udc80"
     },
     {
@@ -82,10 +82,10 @@
       "sourceUrl": "https://www.youtube.com/watch?v=0lVAAcqzk6I",
       "timestamp": "2026-07-09T10:00:12+00:00",
       "type": "video_title",
-      "topic": "state-local-politics",
+      "topic": "elections",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Accuses campaign of attempting to cover up or manipulate scandal",
+      "summary": "Criticizes campaign strategy as sweep attempt",
       "quote": "DISGUSTING Sweep Attempt To Save Platner's Campaign"
     },
     {
@@ -97,9 +97,9 @@
       "timestamp": "2026-07-08T14:00:28+00:00",
       "type": "video_title",
       "topic": "trump-policy",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Characterizes MAGA movement as cult-like",
+      "summary": "Characterizes MAGA movement as a cult",
       "quote": "He Said MAGA Is A CULT \ud83d\ude33"
     }
   ],
@@ -110,6 +110,18 @@
         "sourceUrl": "https://x.com/TheOmniLiberal/status/2075470120399294853",
         "platform": "x",
         "timestamp": "2026-07-10T06:40:11+00:00"
+      },
+      {
+        "quote": "abuses women, lies about working class background, nazi tattoo, multiple tours in Iraq + joined Blackwater for fun...if we really wanted to beat Collins why didn't we just run this mf as a Republican he would have swept \ud83d\udc80",
+        "sourceUrl": "https://x.com/TheOmniLiberal/status/2074926988251255174",
+        "platform": "x",
+        "timestamp": "2026-07-08T18:41:58+00:00"
+      },
+      {
+        "quote": "DISGUSTING Sweep Attempt To Save Platner's Campaign",
+        "sourceUrl": "https://www.youtube.com/watch?v=0lVAAcqzk6I",
+        "platform": "youtube",
+        "timestamp": "2026-07-09T10:00:12+00:00"
       }
     ],
     "israel-palestine": [
@@ -128,24 +140,12 @@
         "timestamp": "2026-07-08T20:48:57+00:00"
       }
     ],
-    "state-local-politics": [
+    "trump-administration": [
       {
         "quote": "huh that's so weird, I wonder what his certainly justified reason is for withholding this disaster aid?",
         "sourceUrl": "https://x.com/TheOmniLiberal/status/2074938965296103711",
         "platform": "x",
         "timestamp": "2026-07-08T19:29:34+00:00"
-      },
-      {
-        "quote": "abuses women, lies about working class background, nazi tattoo, multiple tours in Iraq + joined Blackwater for fun...if we really wanted to beat Collins why didn't we just run this mf as a Republican he would have swept \ud83d\udc80",
-        "sourceUrl": "https://x.com/TheOmniLiberal/status/2074926988251255174",
-        "platform": "x",
-        "timestamp": "2026-07-08T18:41:58+00:00"
-      },
-      {
-        "quote": "DISGUSTING Sweep Attempt To Save Platner's Campaign",
-        "sourceUrl": "https://www.youtube.com/watch?v=0lVAAcqzk6I",
-        "platform": "youtube",
-        "timestamp": "2026-07-09T10:00:12+00:00"
       }
     ],
     "trump-policy": [
