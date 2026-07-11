@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-07-11T08:56:38.666033",
+  "collectedAt": "2026-07-11T10:27:49.141413",
   "date": "2026-07-11",
   "posts": [
     {
@@ -15,8 +15,22 @@
       "topic": "congress-legislation",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Implies difficulty booking progressive politicians as guests",
+      "summary": "Critiques AOC and progressive colleague accessibility or positions",
       "quote": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests."
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+      "timestamp": "2026-06-27T03:00:23+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Celebrates America and pushes back on anti-American sentiment",
+      "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -29,7 +43,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Offers advice to Vice President Vance",
+      "summary": "",
       "quote": "Bill Maher's Advice for JD Vance | Real Time with Bill Maher (HBO)"
     },
     {
@@ -43,8 +57,22 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Trump administration leadership or competence",
+      "summary": "",
       "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+      "timestamp": "2026-06-20T03:00:05+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Defends American identity against criticism or pessimism",
+      "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
@@ -54,6 +82,20 @@
         "sourceUrl": "https://x.com/billmaher/status/2073083300235903205",
         "platform": "x",
         "timestamp": "2026-07-03T16:35:49+00:00"
+      }
+    ],
+    "culture-war": [
+      {
+        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+        "platform": "youtube",
+        "timestamp": "2026-06-27T03:00:23+00:00"
+      },
+      {
+        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:05+00:00"
       }
     ],
     "trump-administration": [
