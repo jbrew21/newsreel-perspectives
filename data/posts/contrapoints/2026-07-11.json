@@ -1,7 +1,7 @@
 {
   "voiceId": "contrapoints",
   "voiceName": "ContraPoints",
-  "collectedAt": "2026-07-11T08:56:38.675659",
+  "collectedAt": "2026-07-11T10:27:49.153056",
   "date": "2026-07-11",
   "posts": [
     {
@@ -15,7 +15,7 @@
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Trump's refusal to accept electoral defeat",
+      "summary": "Criticizes Trump's consistent refusal to accept electoral defeat",
       "quote": "He\u2019s been consistent since 2016 and even earlier (the 2004 Emmys) that he will never admit defeat under any circumstances\u2014either he wins or it\u2019s \u201crigged.\u201d He\u2019s always just fucking said it but people don\u2019t listen or don\u2019t care."
     },
     {
@@ -26,10 +26,10 @@
       "sourceUrl": "https://www.youtube.com/watch?v=teqkK0RLNkI",
       "timestamp": "2025-03-24T18:34:09+00:00",
       "type": "video_title",
-      "topic": "free-speech-censorship",
-      "relevance": "high",
+      "topic": "culture-war",
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Analyzes conspiracy narratives and their spread",
+      "summary": "Examines conspiratorial thinking and its cultural roots",
       "quote": "Conspiracy | ContraPoints"
     },
     {
@@ -43,8 +43,22 @@
       "topic": "gender-lgbtq",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Examines J.K. Rowling's statements on sex and gender",
+      "summary": "Analyzes J.K. Rowling's statements on sex and gender",
       "quote": "The Witch Trials of J.K. Rowling | ContraPoints"
+    },
+    {
+      "voiceId": "contrapoints",
+      "voiceName": "ContraPoints",
+      "platform": "youtube",
+      "text": "J.K. Rowling | ContraPoints",
+      "sourceUrl": "https://www.youtube.com/watch?v=7gDKbT_l2us",
+      "timestamp": "2021-01-26T14:14:19+00:00",
+      "type": "video_title",
+      "topic": "gender-lgbtq",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Examines J.K. Rowling's public controversies and positions",
+      "quote": "J.K. Rowling | ContraPoints"
     },
     {
       "voiceId": "contrapoints",
@@ -56,9 +70,23 @@
       "type": "video_title",
       "topic": "elections",
       "relevance": "high",
-      "stance": "lean",
-      "summary": "Explores voting and electoral participation",
+      "stance": "strong",
+      "summary": "Arguments for voting participation and electoral engagement",
       "quote": "Voting | ContraPoints"
+    },
+    {
+      "voiceId": "contrapoints",
+      "voiceName": "ContraPoints",
+      "platform": "youtube",
+      "text": "Justice | ContraPoints",
+      "sourceUrl": "https://www.youtube.com/watch?v=smQsfNw_7V4",
+      "timestamp": "2020-09-04T20:02:34+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Critiques systems of punishment and retribution",
+      "quote": "Justice | ContraPoints"
     }
   ],
   "topicSummary": {
@@ -70,7 +98,7 @@
         "timestamp": "2026-07-07T17:48:31+00:00"
       }
     ],
-    "free-speech-censorship": [
+    "culture-war": [
       {
         "quote": "Conspiracy | ContraPoints",
         "sourceUrl": "https://www.youtube.com/watch?v=teqkK0RLNkI",
@@ -84,6 +112,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=EmT0i0xG6zg",
         "platform": "youtube",
         "timestamp": "2023-04-17T22:59:53+00:00"
+      },
+      {
+        "quote": "J.K. Rowling | ContraPoints",
+        "sourceUrl": "https://www.youtube.com/watch?v=7gDKbT_l2us",
+        "platform": "youtube",
+        "timestamp": "2021-01-26T14:14:19+00:00"
       }
     ],
     "elections": [
@@ -92,6 +126,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=t3Vah8sUFgI",
         "platform": "youtube",
         "timestamp": "2020-10-20T02:44:10+00:00"
+      }
+    ],
+    "criminal-justice": [
+      {
+        "quote": "Justice | ContraPoints",
+        "sourceUrl": "https://www.youtube.com/watch?v=smQsfNw_7V4",
+        "platform": "youtube",
+        "timestamp": "2020-09-04T20:02:34+00:00"
       }
     ]
   }
