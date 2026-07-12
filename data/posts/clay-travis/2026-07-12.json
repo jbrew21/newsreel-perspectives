@@ -1,7 +1,7 @@
 {
   "voiceId": "clay-travis",
   "voiceName": "Clay Travis",
-  "collectedAt": "2026-07-12T09:12:23.227139",
+  "collectedAt": "2026-07-12T10:40:38.706936",
   "date": "2026-07-12",
   "posts": [
     {
@@ -13,9 +13,9 @@
       "timestamp": "2026-07-11T20:52:18+00:00",
       "type": "tweet",
       "topic": "civil-rights-race",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Claims media ignores statistically rare white-on-black violence",
+      "summary": "Claims media ignores nonblack racial violence",
       "quote": "It\u2019s insane how the only racial violence the media really covers is white on black, which is statistically almost nonexistent."
     },
     {
@@ -27,9 +27,9 @@
       "timestamp": "2026-07-10T19:59:30+00:00",
       "type": "tweet",
       "topic": "elections",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Accuses Democrats of rigging primaries, replacing candidates against voter will",
+      "summary": "Accuses Democrats of rigging primaries, replacing Biden",
       "quote": "Democrats rigged the 2016 primary against Bernie in favor of Hillary. Since then they replaced Joe Biden for Kamala and Graham Platner for who Democrat powerbrokers prefer. The party that claims to \u201cprotect democracy\u201d keeps tossing voter choices out."
     },
     {
@@ -40,11 +40,25 @@
       "sourceUrl": "https://x.com/ClayTravis/status/2075601923755982999",
       "timestamp": "2026-07-10T15:23:56+00:00",
       "type": "tweet",
-      "topic": "elections",
+      "topic": "criminal-justice",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Calls for investigation and prosecution of Graham Platner for rape allegations",
+      "summary": "Questions why rape allegations not prosecuted in Maine",
       "quote": "Why isn\u2019t anyone in Maine demanding an investigation and/or prosecution of Graham Platner for rape? It\u2019s well within the statute of limitations. If Dems really believe he\u2019s a rapist, why is the only penalty he can\u2019t run for senate? With @CharlesHurt:"
+    },
+    {
+      "voiceId": "clay-travis",
+      "voiceName": "Clay Travis",
+      "platform": "youtube",
+      "text": "Coach REFUSES to Answer About Clark's Treatment #caitlinclark #controversy",
+      "sourceUrl": "https://www.youtube.com/shorts/cxNOOiL6xT4",
+      "timestamp": "2026-07-10T16:25:44+00:00",
+      "type": "video_title",
+      "topic": "sports",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes coach for not addressing player treatment",
+      "quote": "Coach REFUSES to Answer About Clark's Treatment #caitlinclark #controversy"
     },
     {
       "voiceId": "clay-travis",
@@ -56,23 +70,9 @@
       "type": "video_title",
       "topic": "sports",
       "relevance": "high",
-      "stance": "lean",
-      "summary": "Highlights disparity between men's and women's World Cup revenue",
-      "quote": "Men's World Cup Billions vs Women's Millions | US Soccer's Reality Check"
-    },
-    {
-      "voiceId": "clay-travis",
-      "voiceName": "Clay Travis",
-      "platform": "youtube",
-      "text": "Stephen A. Smith's race-baiting Lakers take is as ridiculous as it sounds",
-      "sourceUrl": "https://www.youtube.com/shorts/hMOLgFcxtrA",
-      "timestamp": "2026-07-02T21:32:20+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Stephen A. Smith for race-based sports commentary",
-      "quote": "Stephen A. Smith's race-baiting Lakers take is as ridiculous as it sounds"
+      "summary": "Highlights gender pay gap disparity in soccer",
+      "quote": "Men's World Cup Billions vs Women's Millions | US Soccer's Reality Check"
     },
     {
       "voiceId": "clay-travis",
@@ -83,9 +83,9 @@
       "timestamp": "2026-06-26T17:15:06+00:00",
       "type": "video_title",
       "topic": "gender-lgbtq",
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Claims WNBA prioritizes DEI over qualified personnel and game competence",
+      "summary": "Criticizes WNBA for DEI hires lacking qualifications",
       "quote": "&quot;The WNBA is at the forefront of DEI. They have unqualified people that cannot handle a game.&quot;"
     }
   ],
@@ -104,7 +104,9 @@
         "sourceUrl": "https://x.com/ClayTravis/status/2075671273825337528",
         "platform": "x",
         "timestamp": "2026-07-10T19:59:30+00:00"
-      },
+      }
+    ],
+    "criminal-justice": [
       {
         "quote": "Why isn\u2019t anyone in Maine demanding an investigation and/or prosecution of Graham Platner for rape? It\u2019s well within the statute of limitations. If Dems really believe he\u2019s a rapist, why is the only penalty he can\u2019t run for senate? With @CharlesHurt:",
         "sourceUrl": "https://x.com/ClayTravis/status/2075601923755982999",
@@ -114,18 +116,16 @@
     ],
     "sports": [
       {
+        "quote": "Coach REFUSES to Answer About Clark's Treatment #caitlinclark #controversy",
+        "sourceUrl": "https://www.youtube.com/shorts/cxNOOiL6xT4",
+        "platform": "youtube",
+        "timestamp": "2026-07-10T16:25:44+00:00"
+      },
+      {
         "quote": "Men's World Cup Billions vs Women's Millions | US Soccer's Reality Check",
         "sourceUrl": "https://www.youtube.com/shorts/DhVRet2gMgg",
         "platform": "youtube",
         "timestamp": "2026-07-09T21:17:15+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "Stephen A. Smith's race-baiting Lakers take is as ridiculous as it sounds",
-        "sourceUrl": "https://www.youtube.com/shorts/hMOLgFcxtrA",
-        "platform": "youtube",
-        "timestamp": "2026-07-02T21:32:20+00:00"
       }
     ],
     "gender-lgbtq": [
