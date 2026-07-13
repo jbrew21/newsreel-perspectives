@@ -25,8 +25,8 @@ import re
 import sys
 import threading
 import time
-from collections import defaultdict, deque
-from datetime import date, datetime, timezone
+from collections import Counter, defaultdict, deque
+from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlparse, parse_qs
 
 # ─── CONFIGURATION ──────────────────────────────────────────────────────────
@@ -48,6 +48,14 @@ WIRE_MIN_POSTS_BETWEEN = 3   # require >= N other posts between two from one voi
 WIRE_MAX_ITEMS = 100         # max entries returned in the wire feed
 CACHE_TTL_SEARCH = 600       # 10 min for search results
 CACHE_TTL_STATIC = 3600      # 1 hour for static pages
+CACHE_TTL_AGENDA = 300       # 5 min for the Split Screen agenda
+AGENDA_WINDOW_HOURS = 48     # topic-index is a rolling window; 24h leaves the
+                             # right column too thin, 48h gives both sides depth
+AGENDA_FALLBACK_HOURS = 168  # widen once if either column comes up short
+AGENDA_TOP_N = 5             # topics per column
+AGENDA_SHARED_MIN_VOICES = 4  # min distinct voices per side for "shared attention"
+LEAN_LEFT_MIN = 0.60         # build_voice_profile overall >= this -> left
+LEAN_RIGHT_MAX = 0.40        # overall <= this -> right; between (or unscored) -> center
 
 # Content safety
 SAFETY_TERMS = ['pedophil', 'child abuse', 'child porn', 'child sex',
@@ -257,6 +265,7 @@ def build_wire(root=None):
         for v in voices_data:
             if isinstance(v, dict) and v.get('id'):
                 voice_meta[v['id']] = v
+    leans = compute_voice_leans(voices_data)
 
     all_posts = []
     try:
@@ -292,11 +301,164 @@ def build_wire(root=None):
                     'text': text[:200],
                     'sourceUrl': p.get('sourceUrl', ''),
                     'timestamp': p.get('timestamp', ''),
+                    'lean': leans.get(voice_dir, 'center'),
                 })
     except OSError as e:
         log.error(f"Wire error: {e}")
 
     return decluster(all_posts)
+
+
+def voice_lean(voice):
+    """Bucket a voice as 'left' | 'right' | 'center' from its tags.
+
+    Uses the same scorer that powers the mirror profiles
+    (perspective_profiles.build_voice_profile, 0=conservative..1=progressive).
+    Unscored voices and everything between the thresholds land in 'center' —
+    borderline voices are never conscripted into a side.
+    """
+    profile = build_voice_profile(voice or {})
+    if not profile.get('classified'):
+        return 'center'
+    overall = profile.get('overall', 0.5)
+    if overall >= LEAN_LEFT_MIN:
+        return 'left'
+    if overall <= LEAN_RIGHT_MAX:
+        return 'right'
+    return 'center'
+
+
+def compute_voice_leans(voices_data):
+    """{voiceId: 'left'|'right'|'center'} for a loaded voices.json list."""
+    leans = {}
+    for v in voices_data or []:
+        if isinstance(v, dict) and v.get('id'):
+            leans[v['id']] = voice_lean(v)
+    return leans
+
+
+def build_agenda(root=None, now=None):
+    """Build the Split Screen payload: what left- vs right-leaning voices are
+    each talking about, ranked by distinct-voice attention per topic.
+
+    Pure of request state (like build_wire) so it can be unit-tested against a
+    fixture root. The topic-index is a rolling window, so posts are filtered to
+    AGENDA_WINDOW_HOURS; if either column comes up short the window widens once
+    to AGENDA_FALLBACK_HOURS.
+    """
+    root = root or ROOT
+    now = now or datetime.now(timezone.utc)
+    posts_dir = os.path.join(root, 'data', 'posts')
+
+    voices_data = load_json_file(os.path.join(root, 'data', 'voices.json')) or []
+    voice_meta = {v['id']: v for v in voices_data
+                  if isinstance(v, dict) and v.get('id')}
+    leans = compute_voice_leans(voices_data)
+    classified = {'left': sum(1 for b in leans.values() if b == 'left'),
+                  'right': sum(1 for b in leans.values() if b == 'right')}
+    center_count = len(leans) - classified['left'] - classified['right']
+
+    topic_index = {}
+    index_path = get_latest_file(posts_dir, 'topic-index-')
+    if index_path:
+        topic_index = load_json_file(index_path) or {}
+
+    display_names = {}
+    taxonomy = load_json_file(os.path.join(root, 'data', 'taxonomy.json')) or {}
+    for t in taxonomy.get('topics', []):
+        if isinstance(t, dict) and t.get('slug'):
+            display_names[t['slug']] = t.get('display', t['slug'])
+
+    # Map topic slug -> today's story page, when one exists
+    story_slugs = {}
+    stories_path = get_latest_file(posts_dir, 'stories-')
+    stories = load_json_file(stories_path) if stories_path else None
+    for s in stories or []:
+        if not isinstance(s, dict):
+            continue
+        slug = story_slug(s.get('headline', ''))
+        for topic in s.get('topicSlugs', []) or []:
+            story_slugs.setdefault(topic, slug)
+
+    def tally(window_hours):
+        cutoff = now - timedelta(hours=window_hours)
+        per_topic = {}
+        for topic, posts in topic_index.items():
+            if topic == 'uncategorized' or not isinstance(posts, list):
+                continue
+            sides = {'left': {'voices': Counter(), 'posts': 0},
+                     'right': {'voices': Counter(), 'posts': 0}}
+            for p in posts:
+                if not isinstance(p, dict):
+                    continue
+                if wire_ts_key(p) < cutoff:
+                    continue
+                bucket = leans.get(p.get('voiceId'), 'center')
+                if bucket == 'center':
+                    continue
+                sides[bucket]['voices'][p['voiceId']] += 1
+                sides[bucket]['posts'] += 1
+            per_topic[topic] = sides
+        return per_topic
+
+    def column(per_topic, side):
+        ranked = sorted(
+            ((t, s[side]) for t, s in per_topic.items() if s[side]['voices']),
+            key=lambda kv: (len(kv[1]['voices']), kv[1]['posts']),
+            reverse=True,
+        )[:AGENDA_TOP_N]
+        topics = []
+        for topic, stats in ranked:
+            top_voices = []
+            for vid, _count in stats['voices'].most_common(3):
+                meta = voice_meta.get(vid, {})
+                top_voices.append({
+                    'voiceId': vid,
+                    'name': meta.get('name', vid),
+                    'photo': meta.get('photo', ''),
+                })
+            topics.append({
+                'slug': topic,
+                'display': display_names.get(topic, topic.replace('-', ' ').title()),
+                'voices': len(stats['voices']),
+                'posts': stats['posts'],
+                'storySlug': story_slugs.get(topic),
+                'topVoices': top_voices,
+            })
+        return topics
+
+    def healthy(topics):
+        return sum(1 for t in topics if t['voices'] >= 2) >= 3
+
+    window = AGENDA_WINDOW_HOURS
+    per_topic = tally(window)
+    left, right = column(per_topic, 'left'), column(per_topic, 'right')
+    if not (healthy(left) and healthy(right)):
+        window = AGENDA_FALLBACK_HOURS
+        per_topic = tally(window)
+        left, right = column(per_topic, 'left'), column(per_topic, 'right')
+
+    shared = sorted(
+        (
+            {'slug': t,
+             'display': display_names.get(t, t.replace('-', ' ').title()),
+             'leftVoices': len(s['left']['voices']),
+             'rightVoices': len(s['right']['voices'])}
+            for t, s in per_topic.items()
+            if min(len(s['left']['voices']), len(s['right']['voices'])) >= AGENDA_SHARED_MIN_VOICES
+        ),
+        key=lambda x: min(x['leftVoices'], x['rightVoices']),
+        reverse=True,
+    )[:4]
+
+    return {
+        'generatedAt': now.isoformat(),
+        'windowHours': window,
+        'centerCount': center_count,
+        'left': {'voicesClassified': classified['left'], 'topics': left},
+        'right': {'voicesClassified': classified['right'], 'topics': right},
+        'shared': shared,
+    }
 
 
 def sanitize_query(q):
@@ -317,6 +479,7 @@ def sanitize_query(q):
 # Import lookup module directly instead of spawning subprocess
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 import search_helpers  # noqa: E402  (pure helpers: story-join + recency sort)
+from perspective_profiles import build_voice_profile  # noqa: E402  (pure tag scorer)
 _lookup_module = None
 
 
@@ -627,6 +790,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                         cached = build_wire()
                         cache_set('wire', cached, CACHE_TTL_WIRE)
             self.send_json(cached, cache_ttl=CACHE_TTL_WIRE)
+            return
+
+        # ── API: Agenda (the Split Screen) ──
+        if path == '/api/agenda':
+            cached = cache_get('agenda')
+            if cached is None:
+                cached = build_agenda()
+                cache_set('agenda', cached, CACHE_TTL_AGENDA)
+            self.send_json(cached, cache_ttl=CACHE_TTL_AGENDA)
             return
 
         # ── Photos (with caching headers) ──
