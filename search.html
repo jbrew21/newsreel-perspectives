@@ -1433,7 +1433,8 @@
 
   function wireSubtitleText(count) {
     var qualifier = wireLeanFilter ? wireLeanFilter + '-leaning ' : '';
-    return 'What ' + (count ? count + ' ' : '') + qualifier + 'voices are saying right now';
+    var noun = count === 1 ? 'voice is' : 'voices are';
+    return 'What ' + (count ? count + ' ' : '') + qualifier + noun + ' saying right now';
   }
 
   function renderWire() {
@@ -1576,7 +1577,7 @@
     if (!hasData) return;  /* leave the section hidden — page looks like today */
     /* On thin-data days the server widens the window to a week — say so
        instead of asserting week-old attention as "right now". */
-    if (a.windowHours && a.windowHours > 48) {
+    if (a.widened) {
       document.getElementById('splitSubtitle').textContent =
         'What each side’s algorithm has amplified over the past week';
     }
