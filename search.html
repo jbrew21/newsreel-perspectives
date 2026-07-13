@@ -1423,10 +1423,18 @@
   })();
 
   /* Wire state: entries are fetched once, re-rendered per lean filter. When
-     "All" is selected the render is identical to the pre-filter behavior. */
+     "All" is selected the render is identical to the pre-filter behavior.
+     wireExpanded survives re-renders so toggling a filter doesn't collapse a
+     feed the reader deliberately expanded. */
   var wireEntries = [];
   var wireLeanFilter = '';
   var wireShowMoreBtn = null;
+  var wireExpanded = false;
+
+  function wireSubtitleText(count) {
+    var qualifier = wireLeanFilter ? wireLeanFilter + '-leaning ' : '';
+    return 'What ' + (count ? count + ' ' : '') + qualifier + 'voices are saying right now';
+  }
 
   function renderWire() {
     var feed = document.getElementById('wireFeed');
@@ -1443,14 +1451,15 @@
     feed.classList.remove('collapsed');
 
     if (entries.length === 0) {
-      document.getElementById('wireSubtitle').textContent = 'What voices are saying right now';
+      /* Subtitle stays lean-qualified so it can't contradict the empty state. */
+      document.getElementById('wireSubtitle').textContent = wireSubtitleText(0);
       var label = wireLeanFilter ? 'No ' + wireLeanFilter + '-leaning posts on the wire right now.'
                                  : 'Quiet on the wire right now. Check back soon.';
       feed.innerHTML = '<div class="wire-empty">' + label + '</div>';
       return;
     }
     var voiceSet = new Set(entries.map(function(e) { return e.voiceId; }));
-    document.getElementById('wireSubtitle').textContent = 'What ' + voiceSet.size + ' voices are saying right now';
+    document.getElementById('wireSubtitle').textContent = wireSubtitleText(voiceSet.size);
     var shown = entries.slice(0, 50);
     var items = shown.map(function(e) {
       var p = (e.platform || '').toLowerCase();
@@ -1470,18 +1479,17 @@
     feed.innerHTML = '<ul class="wire-list" role="list">' + items + '</ul>';
 
     if (shown.length > 15) {
-      feed.classList.add('collapsed');
+      feed.classList.toggle('collapsed', !wireExpanded);
       var btn = document.createElement('button');
       btn.className = 'wire-show-more';
-      var expanded = false;
       function syncBtn() {
-        btn.textContent = expanded ? 'Show less' : ('Show all ' + shown.length + ' entries');
-        btn.setAttribute('aria-expanded', String(expanded));
+        btn.textContent = wireExpanded ? 'Show less' : ('Show all ' + shown.length + ' entries');
+        btn.setAttribute('aria-expanded', String(wireExpanded));
       }
       syncBtn();
       btn.addEventListener('click', function() {
-        expanded = !expanded;
-        feed.classList.toggle('collapsed', !expanded);
+        wireExpanded = !wireExpanded;
+        feed.classList.toggle('collapsed', !wireExpanded);
         syncBtn();
       });
       feed.parentNode.appendChild(btn);
@@ -1497,8 +1505,11 @@
     .then(function(entries) {
       wireEntries = entries || [];
       renderWire();
-      /* Only offer the lean filter once entries carrying `lean` exist. */
-      if (wireEntries.some(function(e) { return e.lean === 'left' || e.lean === 'right'; })) {
+      /* Only offer the lean filter when BOTH sides have posts — a pill that
+         can only ever show an empty state reads as a broken feature. */
+      var hasLeft = wireEntries.some(function(e) { return e.lean === 'left'; });
+      var hasRight = wireEntries.some(function(e) { return e.lean === 'right'; });
+      if (hasLeft && hasRight) {
         document.getElementById('wireFilter').style.display = '';
       }
     })
@@ -1563,6 +1574,12 @@
     if (!a || !a.left || !a.right) return;
     var hasData = (a.left.topics || []).length || (a.right.topics || []).length;
     if (!hasData) return;  /* leave the section hidden — page looks like today */
+    /* On thin-data days the server widens the window to a week — say so
+       instead of asserting week-old attention as "right now". */
+    if (a.windowHours && a.windowHours > 48) {
+      document.getElementById('splitSubtitle').textContent =
+        'What each side’s algorithm has amplified over the past week';
+    }
     renderSplitColumn('splitLeft', a.left.topics);
     renderSplitColumn('splitRight', a.right.topics);
 

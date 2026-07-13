@@ -38,6 +38,11 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 RATE_LIMIT_SEARCH = 20       # max search requests per IP per minute (each user
                              # search = 2 requests: fast phase + clustered phase)
 RATE_LIMIT_GENERAL = 120     # max requests per IP per minute
+RATE_LIMIT_PHOTOS = 360      # photos get their own bucket: a single homepage
+                             # load fetches dozens of avatar/chip images, and
+                             # NAT'd institutions (libraries, schools) share
+                             # one IP — charging photos to the general bucket
+                             # starves the API for co-located readers
 
 # Cache TTL (seconds)
 CACHE_TTL_STORIES = 300      # 5 min for stories
@@ -81,6 +86,8 @@ _cache_lock = threading.Lock()
 # Single-flight guard for the wire rebuild: without it, every request that
 # arrives after the 2-min TTL expires re-walks every voice directory at once.
 _wire_build_lock = threading.Lock()
+# Same thundering-herd guard for the agenda rebuild (5-min TTL).
+_agenda_build_lock = threading.Lock()
 
 
 def cache_get(key):
@@ -193,13 +200,18 @@ def wire_ts_key(post):
     ordering correct for any offset; missing/unparseable timestamps sort
     oldest so they never jump to the top of the feed.
     """
-    ts = (post.get('timestamp') or '').strip()
     try:
+        # The extraction stays inside the try: a truthy non-string timestamp
+        # (e.g. a numeric epoch from a scraper change) must degrade to
+        # oldest, not raise — build_agenda calls this per-post across the
+        # whole topic-index, so one bad record would otherwise 500 the
+        # endpoint for as long as that file is the latest index.
+        ts = (post.get('timestamp') or '').strip()
         dt = datetime.fromisoformat(ts.replace('Z', '+00:00'))
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt.astimezone(timezone.utc)
-    except (ValueError, AttributeError):
+    except (ValueError, AttributeError, TypeError):
         return datetime.min.replace(tzinfo=timezone.utc)
 
 
@@ -257,15 +269,8 @@ def build_wire(root=None):
     root = root or ROOT
     today = date.today().isoformat()
     posts_dir = os.path.join(root, 'data', 'posts')
-    voices_path = os.path.join(root, 'data', 'voices.json')
 
-    voice_meta = {}
-    voices_data = load_json_file(voices_path)
-    if voices_data:
-        for v in voices_data:
-            if isinstance(v, dict) and v.get('id'):
-                voice_meta[v['id']] = v
-    leans = compute_voice_leans(voices_data)
+    voice_meta, leans = load_voice_meta(root)
 
     all_posts = []
     try:
@@ -309,6 +314,36 @@ def build_wire(root=None):
     return decluster(all_posts)
 
 
+# {voices.json path: (mtime, voice_meta, leans)} — leans derive solely from
+# voices.json, which changes at most daily, so re-scoring every voice on each
+# wire (2-min) and agenda (5-min) cache miss is wasted work. Benign under
+# races: worst case two threads compute the same result.
+_voice_meta_cache = {}
+
+
+def load_voice_meta(root=None):
+    """(voice_meta, leans) for data/voices.json, cached on file mtime.
+
+    Shared by build_wire and build_agenda so the two features can never
+    disagree about which voices exist or how they lean.
+    """
+    root = root or ROOT
+    path = os.path.join(root, 'data', 'voices.json')
+    try:
+        mtime = os.path.getmtime(path)
+    except OSError:
+        mtime = None
+    cached = _voice_meta_cache.get(path)
+    if cached and cached[0] == mtime:
+        return cached[1], cached[2]
+    voices_data = load_json_file(path) or []
+    voice_meta = {v['id']: v for v in voices_data
+                  if isinstance(v, dict) and v.get('id')}
+    leans = {vid: voice_lean(v) for vid, v in voice_meta.items()}
+    _voice_meta_cache[path] = (mtime, voice_meta, leans)
+    return voice_meta, leans
+
+
 def voice_lean(voice):
     """Bucket a voice as 'left' | 'right' | 'center' from its tags.
 
@@ -350,10 +385,7 @@ def build_agenda(root=None, now=None):
     now = now or datetime.now(timezone.utc)
     posts_dir = os.path.join(root, 'data', 'posts')
 
-    voices_data = load_json_file(os.path.join(root, 'data', 'voices.json')) or []
-    voice_meta = {v['id']: v for v in voices_data
-                  if isinstance(v, dict) and v.get('id')}
-    leans = compute_voice_leans(voices_data)
+    voice_meta, leans = load_voice_meta(root)
     classified = {'left': sum(1 for b in leans.values() if b == 'left'),
                   'right': sum(1 for b in leans.values() if b == 'right')}
     center_count = len(leans) - classified['left'] - classified['right']
@@ -368,6 +400,9 @@ def build_agenda(root=None, now=None):
     for t in taxonomy.get('topics', []):
         if isinstance(t, dict) and t.get('slug'):
             display_names[t['slug']] = t.get('display', t['slug'])
+
+    def disp(slug):
+        return display_names.get(slug, slug.replace('-', ' ').title())
 
     # Map topic slug -> today's story page, when one exists
     story_slugs = {}
@@ -419,7 +454,7 @@ def build_agenda(root=None, now=None):
                 })
             topics.append({
                 'slug': topic,
-                'display': display_names.get(topic, topic.replace('-', ' ').title()),
+                'display': disp(topic),
                 'voices': len(stats['voices']),
                 'posts': stats['posts'],
                 'storySlug': story_slugs.get(topic),
@@ -441,7 +476,7 @@ def build_agenda(root=None, now=None):
     shared = sorted(
         (
             {'slug': t,
-             'display': display_names.get(t, t.replace('-', ' ').title()),
+             'display': disp(t),
              'leftVoices': len(s['left']['voices']),
              'rightVoices': len(s['right']['voices'])}
             for t, s in per_topic.items()
@@ -685,10 +720,16 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
         # ── Rate limits ──
         # Search gets its own tighter bucket; we skip the general bucket for lookup
-        # so a search request doesn't burn two slots.
+        # so a search request doesn't burn two slots. Photos get a roomier bucket
+        # of their own — a homepage load fetches dozens of images, and readers
+        # behind one NAT (libraries/schools) would otherwise starve the API.
         if self.path.startswith('/api/lookup'):
             if is_rate_limited(ip, RATE_LIMIT_SEARCH, bucket='search'):
                 self.send_json({'error': 'Search rate limited. Max 10 per minute.'}, status=429)
+                return
+        elif self.path.startswith('/photos/'):
+            if is_rate_limited(ip, RATE_LIMIT_PHOTOS, bucket='photos'):
+                self.send_json({'error': 'Rate limited. Try again in a minute.'}, status=429)
                 return
         else:
             if is_rate_limited(ip, RATE_LIMIT_GENERAL, bucket='general'):
@@ -796,8 +837,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if path == '/api/agenda':
             cached = cache_get('agenda')
             if cached is None:
-                cached = build_agenda()
-                cache_set('agenda', cached, CACHE_TTL_AGENDA)
+                # Single-flight, same as /api/wire: one thread rebuilds on a
+                # cache miss; queued threads re-check inside the lock.
+                with _agenda_build_lock:
+                    cached = cache_get('agenda')
+                    if cached is None:
+                        cached = build_agenda()
+                        cache_set('agenda', cached, CACHE_TTL_AGENDA)
             self.send_json(cached, cache_ttl=CACHE_TTL_AGENDA)
             return
 
