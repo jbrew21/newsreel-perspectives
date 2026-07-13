@@ -128,6 +128,7 @@ class BuildAgendaFixtureTests(unittest.TestCase):
         root = self._make_root(lefties + righties, index)
         agenda = serve.build_agenda(root=root, now=NOW)
         self.assertEqual(agenda["windowHours"], serve.AGENDA_FALLBACK_HOURS)
+        self.assertTrue(agenda["widened"])
         self.assertEqual(len(agenda["left"]["topics"]), 3)
 
     def test_old_posts_filtered_inside_window(self):

@@ -363,15 +363,6 @@ def voice_lean(voice):
     return 'center'
 
 
-def compute_voice_leans(voices_data):
-    """{voiceId: 'left'|'right'|'center'} for a loaded voices.json list."""
-    leans = {}
-    for v in voices_data or []:
-        if isinstance(v, dict) and v.get('id'):
-            leans[v['id']] = voice_lean(v)
-    return leans
-
-
 def build_agenda(root=None, now=None):
     """Build the Split Screen payload: what left- vs right-leaning voices are
     each talking about, ranked by distinct-voice attention per topic.
@@ -489,6 +480,7 @@ def build_agenda(root=None, now=None):
     return {
         'generatedAt': now.isoformat(),
         'windowHours': window,
+        'widened': window != AGENDA_WINDOW_HOURS,
         'centerCount': center_count,
         'left': {'voicesClassified': classified['left'], 'topics': left},
         'right': {'voicesClassified': classified['right'], 'topics': right},
