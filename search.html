@@ -628,7 +628,11 @@
     text-decoration: none; transition: color var(--duration-fast);
   }
   .voice-name:hover { color: var(--accent); }
-  .voice-lens { font-size: var(--text-xs); color: var(--text-muted); margin-top: 2px; line-height: 1.4; }
+  .voice-lens {
+    font-size: var(--text-xs); color: var(--text-muted); margin-top: 2px; line-height: 1.4;
+    /* One line only — the full bio lives on the voice page (and in title=). */
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 52ch;
+  }
   .voice-cluster-badge {
     font-size: var(--text-xs); font-weight: 600;
     padding: 3px 10px; border-radius: var(--radius-sm);
@@ -636,30 +640,36 @@
     border: 1px solid var(--border); margin-top: var(--space-1);
     display: inline-block;
   }
-  .voice-tags { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-2); }
-  .voice-tag {
-    font-size: var(--text-xs); color: var(--text-muted); background: var(--bg-elevated);
-    border: 1px solid var(--border); border-radius: var(--radius-sm);
-    padding: 2px 10px;
-  }
+  /* Quote rows: the whole block is the link to the original post. */
   .quote {
-    margin-bottom: var(--space-3);
-    padding-left: var(--space-3);
+    display: block; text-decoration: none;
+    margin-top: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
     border-left: 2px solid var(--bg-hover);
+    border-radius: var(--radius-sm);
+    transition: background var(--duration-fast), border-color var(--duration-fast);
   }
+  a.quote:hover, a.quote:focus-visible {
+    background: var(--bg-elevated);
+    border-left-color: var(--accent);
+  }
+  a.quote:hover .quote-ext, a.quote:focus-visible .quote-ext { color: var(--accent); }
   .quote-platform {
+    display: flex; align-items: center; gap: var(--space-2);
     font-size: var(--text-xs); color: var(--text-dim); font-weight: 700;
     text-transform: uppercase; margin-bottom: var(--space-1); letter-spacing: 0.05em;
   }
+  .quote-ext {
+    margin-left: auto; color: var(--text-dim); flex-shrink: 0;
+    font-size: var(--text-sm); line-height: 1;
+    transition: color var(--duration-fast);
+  }
   .quote-text {
     font-size: var(--text-sm); color: var(--text-secondary);
-    line-height: 1.6; margin-bottom: var(--space-1);
+    line-height: 1.6;
   }
-  .quote-link {
-    font-size: var(--text-xs); color: var(--accent); text-decoration: none;
-    transition: opacity var(--duration-fast);
-  }
-  .quote-link:hover { text-decoration: underline; opacity: 0.85; }
 
   /* ── EMPTY / ERROR STATES ── */
   .state-message {
@@ -1059,26 +1069,7 @@
     return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
   }
 
-  const TAG_GLOSSARY = {
-    'hawkish':'Favors strong military action',
-    'anti-establishment':'Skeptical of institutional power',
-    'contrarian':'Takes positions against consensus',
-    'centrist':'Doesn\'t align consistently with either party',
-    'populist':'Frames issues as people vs elites',
-    'progressive':'Advocates systemic change',
-    'conservative':'Traditional values, limited government',
-    'libertarian-leaning':'Individual freedom, skeptical of government',
-    'constitutionalist':'Frames arguments through constitutional law',
-    'digital media':'Reaches audiences via social platforms',
-    'heterodox':'Positions cross left-right lines',
-    'pro-Trump':'Supportive of Trump agenda',
-    'anti-Trump':'Critical of Trump/MAGA',
-    'MAGA':'Aligned with Make America Great Again',
-    'free speech':'Prioritizes broad speech protections',
-    'anti-woke':'Critical of progressive social justice activism',
-    'pro-Israel':'Supports strong U.S.-Israel alliance',
-    'anti-war':'Opposes military intervention',
-  };
+  /* (voice-tag glossary removed with the tag pills — the one-line bio carries the context now) */
 
   /* ── DOM REFS ── */
   const input = document.getElementById('searchInput');
@@ -1119,6 +1110,16 @@
      truncate the attribute and break that filter. */
   function escAttr(t) {
     return esc(t).replace(/"/g, '&quot;');
+  }
+
+  /* Scraped quote text often arrives with HTML entities already encoded
+     ("we&apos;re"). Decode once so esc() doesn't double-escape them into
+     visible artifacts. Safe: output is always re-escaped before insertion. */
+  function decodeEntities(t) {
+    if (!t || t.indexOf('&') === -1) return t || '';
+    var d = document.createElement('textarea');
+    d.innerHTML = t;
+    return d.value;
   }
 
   function slugify(t) {
@@ -1899,10 +1900,6 @@
       var clusterBadge = voice.argumentCluster ? '<span class="voice-cluster-badge">' + esc(voice.argumentCluster) + '</span>' : '';
       var photo = voice.photo || initialsAvatar(voice.voiceName);
       var lens = voice.lens || _voiceLens[voice.voiceId] || '';
-      var tags = (voice.tags || []).map(function(t) {
-        var tip = TAG_GLOSSARY[t.toLowerCase()];
-        return '<span class="voice-tag"' + (tip ? ' title="' + escAttr(tip) + '" style="cursor:help;"' : '') + '>' + esc(t) + '</span>';
-      }).join('');
       var vCat = _voiceCategory[voice.voiceId] || '';
       // Staggered entrance: cap the delay so deep pages don't feel sluggish.
       var delay = Math.min(batchIndex || 0, 8) * 45;
@@ -1911,30 +1908,34 @@
       if (currentSort === 'recent') {
         quotes.sort(function(a, b) { return (new Date(b.timestamp || 0)) - (new Date(a.timestamp || 0)); });
       }
-      quotes = quotes.slice(0, 3);
+      quotes = quotes.slice(0, 2);
 
       var html = '<div class="voice-card card-enter" style="animation-delay:' + delay + 'ms" data-voice="' + escAttr(voice.voiceId) + '" data-cluster="' + escAttr(voice.argumentCluster || '') + '" data-cat="' + escAttr(vCat) + '">' +
         '<div class="voice-header">' +
           '<img class="voice-photo" loading="lazy" decoding="async" src="' + escAttr(photo) + '" alt="' + escAttr(voice.voiceName) + '">' +
-          '<div>' +
+          '<div style="min-width:0;">' +
             '<a class="voice-name" href="' + BASE + '/voice/' + voice.voiceId + '">' + esc(voice.voiceName) + '</a>' +
-            (lens ? '<div class="voice-lens">' + esc(lens) + '</div>' : '') +
+            /* Bio clamps to one line; the full text lives in title= and on the voice page */
+            (lens ? '<div class="voice-lens" title="' + escAttr(lens) + '">' + esc(lens) + '</div>' : '') +
             '<span class="voice-badge-slot">' + clusterBadge + '</span>' +
           '</div>' +
-        '</div>' +
-        (tags ? '<div class="voice-tags">' + tags + '</div>' : '');
+        '</div>';
 
+      // The whole quote block links to the original post — no separate
+      // "View original" text link to hunt for.
       for (var j = 0; j < quotes.length; j++) {
         var q = quotes[j];
         var pLabel = PLATFORM[q.platform] || q.platform;
         var isTranscript = q.quote && q.quote.length > 150 && q.platform === 'youtube';
         var ago = timeAgo(q.timestamp);
-        html += '<div class="quote">' +
-          '<div class="quote-platform">' + esc(pLabel) + (isTranscript ? ' (transcript)' : '') +
-            (ago ? '<span class="quote-time">' + esc(ago) + '</span>' : '') + '</div>' +
-          '<div class="quote-text">"' + esc((isTranscript ? q.quote.substring(0, 350) : q.quote.substring(0, 250))) + '"</div>' +
-          '<a class="quote-link" href="' + safeHref(q.sourceUrl) + '" target="_blank" rel="noopener">View original</a>' +
-        '</div>';
+        var src = safeHref(q.sourceUrl);
+        var meta = '<div class="quote-platform">' + esc(pLabel) + (isTranscript ? ' (transcript)' : '') +
+          (ago ? '<span class="quote-time">' + esc(ago) + '</span>' : '') +
+          (src !== '#' ? '<span class="quote-ext" aria-hidden="true">&#8599;</span>' : '') + '</div>';
+        var body = '<div class="quote-text">"' + esc(decodeEntities(q.quote).substring(0, 200)) + '"</div>';
+        html += src !== '#'
+          ? '<a class="quote" href="' + src + '" target="_blank" rel="noopener" aria-label="Open original post by ' + escAttr(voice.voiceName) + '">' + meta + body + '</a>'
+          : '<div class="quote">' + meta + body + '</div>';
       }
       return html + '</div>';
     }
