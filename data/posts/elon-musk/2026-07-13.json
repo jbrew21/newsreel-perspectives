@@ -1,8 +1,52 @@
 {
   "voiceId": "elon-musk",
   "voiceName": "Elon Musk",
-  "collectedAt": "2026-07-13T10:27:49.123650",
+  "collectedAt": "2026-07-13T12:10:02.726554",
   "date": "2026-07-13",
-  "posts": [],
-  "topicSummary": {}
+  "posts": [
+    {
+      "voiceId": "elon-musk",
+      "voiceName": "Elon Musk",
+      "platform": "x",
+      "text": "Follow the Starship series @SpaceX",
+      "sourceUrl": "https://x.com/elonmusk/status/2076433121893814735",
+      "timestamp": "2026-07-12T22:26:49+00:00",
+      "type": "tweet",
+      "topic": "science-space",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Promotes SpaceX Starship development and progress",
+      "quote": "Follow the Starship series @SpaceX"
+    },
+    {
+      "voiceId": "elon-musk",
+      "voiceName": "Elon Musk",
+      "platform": "x",
+      "text": "Starship is evolving rapidly",
+      "sourceUrl": "https://x.com/elonmusk/status/2076102645823971373",
+      "timestamp": "2026-07-12T00:33:37+00:00",
+      "type": "tweet",
+      "topic": "science-space",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights rapid evolution of Starship technology",
+      "quote": "Starship is evolving rapidly"
+    }
+  ],
+  "topicSummary": {
+    "science-space": [
+      {
+        "quote": "Follow the Starship series @SpaceX",
+        "sourceUrl": "https://x.com/elonmusk/status/2076433121893814735",
+        "platform": "x",
+        "timestamp": "2026-07-12T22:26:49+00:00"
+      },
+      {
+        "quote": "Starship is evolving rapidly",
+        "sourceUrl": "https://x.com/elonmusk/status/2076102645823971373",
+        "platform": "x",
+        "timestamp": "2026-07-12T00:33:37+00:00"
+      }
+    ]
+  }
 }
