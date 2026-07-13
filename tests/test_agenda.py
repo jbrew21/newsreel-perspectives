@@ -151,6 +151,30 @@ class BuildAgendaFixtureTests(unittest.TestCase):
         self.assertIn("elections", shared_slugs)
         self.assertNotIn("culture-war", shared_slugs)
 
+    def test_non_string_timestamp_does_not_crash_endpoint(self):
+        # A numeric epoch from a scraper change must degrade to oldest (and
+        # fall out of the window), not raise and 500 /api/agenda.
+        bad = {"voiceId": "lefty", "quote": "q", "sourceUrl": "",
+               "platform": "x", "timestamp": 1783300000}
+        root = self._make_root(
+            [_voice("lefty", ["progressive"])],
+            {"elections": [_post("lefty", 1), bad]},
+        )
+        agenda = serve.build_agenda(root=root, now=NOW)
+        self.assertEqual(agenda["left"]["topics"][0]["posts"], 1)
+
+    def test_voice_meta_cache_invalidates_on_mtime_change(self):
+        root = self._make_root([_voice("lefty", ["progressive"])], {})
+        meta1, leans1 = serve.load_voice_meta(root)
+        self.assertEqual(leans1, {"lefty": "left"})
+        # Rewrite voices.json with a new voice and a bumped mtime
+        path = os.path.join(root, "data", "voices.json")
+        with open(path, "w") as f:
+            json.dump([_voice("righty", ["conservative"])], f)
+        os.utime(path, (os.path.getmtime(path) + 10,) * 2)
+        meta2, leans2 = serve.load_voice_meta(root)
+        self.assertEqual(leans2, {"righty": "right"})
+
     def test_uncategorized_skipped(self):
         root = self._make_root(
             [_voice("lefty", ["progressive"])],
