@@ -15,6 +15,13 @@
      8px grid. Intentional gray ramp (Linear/Vercel style).
      ================================================================ */
   :root {
+    /* Lean colors (match perspective_profiles.stance_color: blue=progressive,
+       coral=conservative) — used ONLY by the Split Screen + wire filter */
+    --lean-left: #6C9BF2;
+    --lean-left-bg: rgba(108, 155, 242, 0.12);
+    --lean-right: #FF6343;
+    --lean-right-bg: rgba(255, 99, 67, 0.12);
+
     /* Surface ramp -- each step is intentional */
     --bg-base: #09090b;
     --bg-subtle: #0f0f12;
@@ -445,6 +452,107 @@
   @keyframes wire-shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
   @media (prefers-reduced-motion: reduce) { .wire-skeleton { animation: none; } }
 
+  /* ── SPLIT SCREEN ── */
+  .split-section {
+    max-width: 680px; margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-10);
+  }
+  .split-header { margin-bottom: var(--space-3); }
+  .split-kicker {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: var(--text-xs); font-weight: 700; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-1);
+  }
+  .split-subtitle { font-size: var(--text-sm); color: var(--text-muted); }
+  .split-columns {
+    display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);
+  }
+  .split-col {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: var(--space-4);
+  }
+  .split-col--left { border-top: 2px solid var(--lean-left); }
+  .split-col--right { border-top: 2px solid var(--lean-right); }
+  .split-col-label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: var(--text-xs); font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: var(--space-3);
+  }
+  .split-col-label--left { color: var(--lean-left); }
+  .split-col-label--right { color: var(--lean-right); }
+  .split-topics { list-style: none; margin: 0; padding: 0; }
+  .split-topic {
+    padding: var(--space-2) 0; cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    transition: background var(--duration-fast);
+  }
+  .split-topic:last-child { border-bottom: none; }
+  .split-topic:hover { background: var(--bg-subtle); }
+  .split-topic-row {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: var(--space-2); margin-bottom: var(--space-1);
+  }
+  .split-topic-name {
+    font-size: var(--text-sm); font-weight: 600; color: var(--text-primary);
+    min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .split-chips { display: flex; align-items: center; flex-shrink: 0; }
+  .split-chip {
+    width: 20px; height: 20px; border-radius: 50%; object-fit: cover;
+    border: 1.5px solid var(--bg-card); margin-left: -6px;
+    background: var(--bg-elevated);
+  }
+  .split-chip:first-child { margin-left: 0; }
+  .split-topic-bar {
+    height: 6px; border-radius: var(--space-1); overflow: hidden;
+    background: var(--bg-elevated); margin-bottom: var(--space-1);
+  }
+  .split-topic-fill {
+    height: 100%; border-radius: var(--space-1);
+    transition: width var(--duration-slow) var(--ease-out);
+  }
+  .split-col--left .split-topic-fill { background: var(--lean-left); }
+  .split-col--right .split-topic-fill { background: var(--lean-right); }
+  .split-topic-count {
+    font-size: var(--text-xs); color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .split-empty {
+    padding: var(--space-4) 0; text-align: center;
+    font-size: var(--text-sm); color: var(--text-muted);
+  }
+  .split-shared {
+    display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+  .split-shared-label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: var(--text-xs); font-weight: 700; color: var(--text-dim);
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .split-shared-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: var(--text-xs); font-weight: 500; color: var(--text-secondary);
+    padding: var(--space-1) var(--space-3);
+    background: var(--bg-elevated); border-radius: var(--radius-sm);
+    cursor: pointer; transition: all var(--duration-fast);
+  }
+  .split-shared-pill:hover { color: var(--text-primary); background: var(--bg-hover); }
+  .split-shared-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .split-footnote {
+    font-size: var(--text-xs); color: var(--text-dim); margin-top: var(--space-3);
+  }
+  .wire-filter {
+    justify-content: flex-start; margin: var(--space-2) 0 0; margin-bottom: 0;
+  }
+  .wire-filter .filter-pill.active[data-lean="left"] {
+    background: var(--lean-left-bg); color: var(--lean-left);
+  }
+  .wire-filter .filter-pill.active[data-lean="right"] {
+    background: var(--lean-right-bg); color: var(--lean-right);
+  }
+
   /* ── SEARCH RESULTS ── */
   .results { max-width: 680px; margin: 0 auto; padding: 0 var(--space-5) var(--space-10); }
   .results-header { text-align: center; padding: var(--space-5) 0 var(--space-4); }
@@ -704,6 +812,8 @@
     .vs-cluster-name { font-size: var(--text-xs); max-width: 100px; }
     .vs-layout { gap: var(--space-2); }
     .wire-section { padding: 0 var(--space-4) var(--space-8); }
+    .split-section { padding: 0 var(--space-4) var(--space-8); }
+    .split-columns { grid-template-columns: 1fr; }
     .results { padding: 0 var(--space-4) var(--space-8); }
 
     /* Mobile wire: stacked layout — name+platform, text, then time.
@@ -821,10 +931,34 @@
 <div class="feed" id="feed" style="display:none"></div>
 <div class="stats" id="stats"></div>
 
+<div class="split-section" id="splitSection" style="display:none">
+  <div class="split-header">
+    <div class="split-kicker">The Split Screen</div>
+    <div class="split-subtitle" id="splitSubtitle">What each side's algorithm is amplifying right now</div>
+  </div>
+  <div class="split-columns">
+    <div class="split-col split-col--left">
+      <div class="split-col-label split-col-label--left">Left-leaning voices</div>
+      <ol class="split-topics" id="splitLeft"></ol>
+    </div>
+    <div class="split-col split-col--right">
+      <div class="split-col-label split-col-label--right">Right-leaning voices</div>
+      <ol class="split-topics" id="splitRight"></ol>
+    </div>
+  </div>
+  <div class="split-shared" id="splitShared"></div>
+  <div class="split-footnote" id="splitFootnote"></div>
+</div>
+
 <div class="wire-section" id="wireSection" style="display:none">
   <div class="wire-header">
     <div class="wire-title">The Wire</div>
     <div class="wire-subtitle" id="wireSubtitle">What voices are saying right now</div>
+    <div class="filter-bar wire-filter" id="wireFilter" style="display:none">
+      <span class="filter-pill active" role="button" tabindex="0" data-lean="">All</span>
+      <span class="filter-pill" role="button" tabindex="0" data-lean="left">Left-leaning</span>
+      <span class="filter-pill" role="button" tabindex="0" data-lean="right">Right-leaning</span>
+    </div>
   </div>
   <div class="wire-feed" id="wireFeed"></div>
 </div>
@@ -1288,60 +1422,204 @@
     feed.innerHTML = sk;
   })();
 
+  /* Wire state: entries are fetched once, re-rendered per lean filter. When
+     "All" is selected the render is identical to the pre-filter behavior. */
+  var wireEntries = [];
+  var wireLeanFilter = '';
+  var wireShowMoreBtn = null;
+
+  function renderWire() {
+    var feed = document.getElementById('wireFeed');
+    var entries = wireEntries.filter(function(e) {
+      /* Entries from a stale cached /api/wire may lack `lean` — they simply
+         stay visible under All only. Self-heals within the 2-min cache TTL. */
+      return !wireLeanFilter || e.lean === wireLeanFilter;
+    });
+
+    if (wireShowMoreBtn) {
+      wireShowMoreBtn.remove();
+      wireShowMoreBtn = null;
+    }
+    feed.classList.remove('collapsed');
+
+    if (entries.length === 0) {
+      document.getElementById('wireSubtitle').textContent = 'What voices are saying right now';
+      var label = wireLeanFilter ? 'No ' + wireLeanFilter + '-leaning posts on the wire right now.'
+                                 : 'Quiet on the wire right now. Check back soon.';
+      feed.innerHTML = '<div class="wire-empty">' + label + '</div>';
+      return;
+    }
+    var voiceSet = new Set(entries.map(function(e) { return e.voiceId; }));
+    document.getElementById('wireSubtitle').textContent = 'What ' + voiceSet.size + ' voices are saying right now';
+    var shown = entries.slice(0, 50);
+    var items = shown.map(function(e) {
+      var p = (e.platform || '').toLowerCase();
+      var src = safeHref(e.sourceUrl || '');
+      var textInner = esc((e.text || '').substring(0, 120));
+      var textEl = src !== '#'
+        ? '<a class="wire-text" href="' + src + '" target="_blank" rel="noopener noreferrer">' + textInner + '</a>'
+        : '<span class="wire-text">' + textInner + '</span>';
+      return '<li class="wire-entry">' +
+        '<img class="wire-photo" src="' + (e.photo || initialsAvatar(e.voiceName)) + '" alt="' + esc(e.voiceName) + '">' +
+        '<a class="wire-name" href="' + BASE + '/voice/' + e.voiceId + '">' + esc(e.voiceName) + '</a>' +
+        '<span class="wire-platform">' + (PLATFORM[p] || p) + '</span>' +
+        textEl +
+        '<time class="wire-time" datetime="' + esc(e.timestamp || '') + '">' + wireTimeAgo(e.timestamp) + '</time>' +
+      '</li>';
+    }).join('');
+    feed.innerHTML = '<ul class="wire-list" role="list">' + items + '</ul>';
+
+    if (shown.length > 15) {
+      feed.classList.add('collapsed');
+      var btn = document.createElement('button');
+      btn.className = 'wire-show-more';
+      var expanded = false;
+      function syncBtn() {
+        btn.textContent = expanded ? 'Show less' : ('Show all ' + shown.length + ' entries');
+        btn.setAttribute('aria-expanded', String(expanded));
+      }
+      syncBtn();
+      btn.addEventListener('click', function() {
+        expanded = !expanded;
+        feed.classList.toggle('collapsed', !expanded);
+        syncBtn();
+      });
+      feed.parentNode.appendChild(btn);
+      wireShowMoreBtn = btn;
+    }
+  }
+
   fetch(BASE + '/api/wire')
     .then(function(r) {
       if (!r.ok) throw new Error('Wire API returned ' + r.status);
       return r.json();
     })
     .then(function(entries) {
-      var feed = document.getElementById('wireFeed');
-      if (!entries || entries.length === 0) {
-        document.getElementById('wireSubtitle').textContent = 'What voices are saying right now';
-        feed.innerHTML = '<div class="wire-empty">Quiet on the wire right now. Check back soon.</div>';
-        return;
-      }
-      var voiceSet = new Set(entries.map(function(e) { return e.voiceId; }));
-      document.getElementById('wireSubtitle').textContent = 'What ' + voiceSet.size + ' voices are saying right now';
-      var shown = entries.slice(0, 50);
-      var items = shown.map(function(e) {
-        var p = (e.platform || '').toLowerCase();
-        var src = safeHref(e.sourceUrl || '');
-        var textInner = esc((e.text || '').substring(0, 120));
-        var textEl = src !== '#'
-          ? '<a class="wire-text" href="' + src + '" target="_blank" rel="noopener noreferrer">' + textInner + '</a>'
-          : '<span class="wire-text">' + textInner + '</span>';
-        return '<li class="wire-entry">' +
-          '<img class="wire-photo" src="' + (e.photo || initialsAvatar(e.voiceName)) + '" alt="' + esc(e.voiceName) + '">' +
-          '<a class="wire-name" href="' + BASE + '/voice/' + e.voiceId + '">' + esc(e.voiceName) + '</a>' +
-          '<span class="wire-platform">' + (PLATFORM[p] || p) + '</span>' +
-          textEl +
-          '<time class="wire-time" datetime="' + esc(e.timestamp || '') + '">' + wireTimeAgo(e.timestamp) + '</time>' +
-        '</li>';
-      }).join('');
-      feed.innerHTML = '<ul class="wire-list" role="list">' + items + '</ul>';
-
-      if (shown.length > 15) {
-        feed.classList.add('collapsed');
-        var btn = document.createElement('button');
-        btn.className = 'wire-show-more';
-        var expanded = false;
-        function syncBtn() {
-          btn.textContent = expanded ? 'Show less' : ('Show all ' + shown.length + ' entries');
-          btn.setAttribute('aria-expanded', String(expanded));
-        }
-        syncBtn();
-        btn.addEventListener('click', function() {
-          expanded = !expanded;
-          feed.classList.toggle('collapsed', !expanded);
-          syncBtn();
-        });
-        feed.parentNode.appendChild(btn);
+      wireEntries = entries || [];
+      renderWire();
+      /* Only offer the lean filter once entries carrying `lean` exist. */
+      if (wireEntries.some(function(e) { return e.lean === 'left' || e.lean === 'right'; })) {
+        document.getElementById('wireFilter').style.display = '';
       }
     })
     .catch(function(err) {
       console.warn('[Perspectives] Wire load failed:', err.message);
       /* Wire is non-critical: hide the section rather than leave a skeleton. */
       wireSection.style.display = 'none';
+    });
+
+  /* Wire lean filter pills (click + Enter/Space, same pattern as cluster pills) */
+  (function initWireFilter() {
+    var bar = document.getElementById('wireFilter');
+    function selectLeanPill(pill) {
+      wireLeanFilter = pill.dataset.lean || '';
+      bar.querySelectorAll('.filter-pill').forEach(function(p) {
+        p.classList.toggle('active', p === pill);
+      });
+      renderWire();
+    }
+    bar.addEventListener('click', function(ev) {
+      var pill = ev.target.closest('.filter-pill');
+      if (pill) selectLeanPill(pill);
+    });
+    bar.addEventListener('keydown', function(ev) {
+      if (ev.key !== 'Enter' && ev.key !== ' ') return;
+      var pill = ev.target.closest('.filter-pill');
+      if (pill) { ev.preventDefault(); selectLeanPill(pill); }
+    });
+  })();
+
+  /* ── SPLIT SCREEN (left vs right attention) ── */
+  var splitSection = document.getElementById('splitSection');
+
+  function renderSplitColumn(elId, topics) {
+    var el = document.getElementById(elId);
+    if (!topics || topics.length === 0) {
+      el.innerHTML = '<li class="split-empty">Quiet on this side of the wire.</li>';
+      return;
+    }
+    var max = Math.max.apply(null, topics.map(function(t) { return t.voices; }).concat([1]));
+    el.innerHTML = topics.map(function(t) {
+      var chips = (t.topVoices || []).map(function(v) {
+        return '<img class="split-chip" src="' + escAttr(v.photo || initialsAvatar(v.name)) +
+               '" alt="' + escAttr(v.name) + '" title="' + escAttr(v.name) + '">';
+      }).join('');
+      var pct = Math.max(8, Math.round(t.voices / max * 100));
+      return '<li class="split-topic" role="button" tabindex="0"' +
+             ' data-display="' + escAttr(t.display) + '"' +
+             (t.storySlug ? ' data-story="' + escAttr(t.storySlug) + '"' : '') + '>' +
+        '<div class="split-topic-row">' +
+          '<span class="split-topic-name">' + esc(t.display) + '</span>' +
+          '<span class="split-chips">' + chips + '</span>' +
+        '</div>' +
+        '<div class="split-topic-bar"><div class="split-topic-fill" style="width:' + pct + '%"></div></div>' +
+        '<div class="split-topic-count">' + t.voices + ' voice' + (t.voices === 1 ? '' : 's') +
+          ' &middot; ' + t.posts + ' post' + (t.posts === 1 ? '' : 's') + '</div>' +
+      '</li>';
+    }).join('');
+  }
+
+  function renderSplitScreen(a) {
+    if (!a || !a.left || !a.right) return;
+    var hasData = (a.left.topics || []).length || (a.right.topics || []).length;
+    if (!hasData) return;  /* leave the section hidden — page looks like today */
+    renderSplitColumn('splitLeft', a.left.topics);
+    renderSplitColumn('splitRight', a.right.topics);
+
+    var shared = document.getElementById('splitShared');
+    if ((a.shared || []).length) {
+      shared.innerHTML = '<span class="split-shared-label">Shared attention</span>' +
+        a.shared.map(function(s) {
+          return '<span class="split-shared-pill" role="button" tabindex="0"' +
+                 ' data-display="' + escAttr(s.display) + '">' +
+            '<span class="split-shared-dot" style="background:var(--lean-left)"></span>' + s.leftVoices +
+            ' <span>' + esc(s.display) + '</span> ' + s.rightVoices +
+            '<span class="split-shared-dot" style="background:var(--lean-right)"></span>' +
+          '</span>';
+        }).join('');
+    } else {
+      shared.innerHTML = '';
+    }
+
+    var foot = document.getElementById('splitFootnote');
+    foot.textContent = a.centerCount
+      ? a.centerCount + ' centrist or unclassified voices aren’t counted in either column.'
+      : '';
+
+    splitSection.style.display = searchViewActive ? 'none' : 'block';
+  }
+
+  /* Row click/Enter: story rows open the story page, topic rows run a search */
+  (function initSplitClicks() {
+    function activate(target) {
+      var row = target.closest('.split-topic, .split-shared-pill');
+      if (!row) return;
+      if (row.dataset.story) {
+        window.location.href = BASE + '/story/' + row.dataset.story;
+        return;
+      }
+      if (row.dataset.display) {
+        input.value = row.dataset.display;
+        doSearch();
+      }
+    }
+    splitSection.addEventListener('click', function(ev) { activate(ev.target); });
+    splitSection.addEventListener('keydown', function(ev) {
+      if (ev.key !== 'Enter' && ev.key !== ' ') return;
+      ev.preventDefault();
+      activate(ev.target);
+    });
+  })();
+
+  fetch(BASE + '/api/agenda')
+    .then(function(r) {
+      if (!r.ok) throw new Error('Agenda API returned ' + r.status);
+      return r.json();
+    })
+    .then(renderSplitScreen)
+    .catch(function(err) {
+      console.warn('[Perspectives] Agenda load failed:', err.message);
+      splitSection.style.display = 'none';  /* non-critical add-on */
     });
 
   /* ── TOPICS + HINTS ── */
@@ -1457,6 +1735,7 @@
     searchHints.style.display = 'none';
     hintsToggle.style.display = 'none';
     wireSection.style.display = 'none';
+    splitSection.style.display = 'none';
     statsEl.style.display = 'none';
     timeFilter.style.display = 'flex';
 
@@ -1864,6 +2143,10 @@
     searchHints.style.display = '';
     hintsToggle.style.display = '';
     wireSection.style.display = 'block';
+    /* Only restore the Split Screen if it ever rendered (agenda may have failed) */
+    if (document.getElementById('splitLeft').children.length) {
+      splitSection.style.display = 'block';
+    }
     statsEl.style.display = '';
     timeFilter.style.display = 'none';
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
