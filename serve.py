@@ -259,55 +259,66 @@ def decluster(posts, max_per_voice=WIRE_MAX_PER_VOICE,
 
 
 def build_wire(root=None):
-    """Build today's de-clustered wire feed by scanning every voice's posts.
+    """Build the de-clustered wire feed by scanning every voice's posts.
 
     Pure of request state so it can be unit-tested and called under the
-    single-flight lock. Reads ``data/posts/<voice>/<today>.json`` for each
-    voice, decodes scraped HTML entities, drops short/unsafe posts, then hands
-    the raw list to ``decluster`` for ordering and diversity.
+    single-flight lock. Reads ``data/posts/<voice>/<day>.json`` for today AND
+    yesterday (UTC): the pipeline commits each day's files around 06-08 UTC,
+    so a today-only wire went completely dark from 00:00 UTC (8pm ET) until
+    the morning commit. Posts are deduped across the two files, then decoded,
+    filtered, and handed to ``decluster`` for ordering and diversity.
     """
     root = root or ROOT
-    today = date.today().isoformat()
+    days = [(date.today() - timedelta(days=n)).isoformat() for n in range(2)]
     posts_dir = os.path.join(root, 'data', 'posts')
 
     voice_meta, leans = load_voice_meta(root)
 
     all_posts = []
+    seen = set()
     try:
         for voice_dir in os.listdir(posts_dir):
-            day_file = os.path.join(posts_dir, voice_dir, f'{today}.json')
-            if not os.path.isfile(day_file):
-                continue
-            data = load_json_file(day_file)
-            if not data:
-                continue
-            posts = data.get('posts', []) if isinstance(data, dict) else data
-            if not isinstance(posts, list):
-                continue
             meta = voice_meta.get(voice_dir, {})
-            for p in posts:
-                # One malformed record must not drop the rest of a voice's
-                # posts, so guard each one individually.
-                if not isinstance(p, dict):
+            for day in days:
+                day_file = os.path.join(posts_dir, voice_dir, f'{day}.json')
+                if not os.path.isfile(day_file):
                     continue
-                # Source text is scraped and often carries HTML entities (e.g.
-                # "Beef &amp; Draws"). Decode once here; the client re-escapes
-                # for safe display, so the reader sees "&".
-                text = html_lib.unescape(str(p.get('text') or '')).strip()
-                if len(text) < 30:
+                data = load_json_file(day_file)
+                if not data:
                     continue
-                if not is_content_safe(text):
+                posts = data.get('posts', []) if isinstance(data, dict) else data
+                if not isinstance(posts, list):
                     continue
-                all_posts.append({
-                    'voiceId': voice_dir,
-                    'voiceName': meta.get('name', p.get('voiceName', voice_dir)),
-                    'photo': meta.get('photo', ''),
-                    'platform': p.get('platform', ''),
-                    'text': text[:200],
-                    'sourceUrl': p.get('sourceUrl', ''),
-                    'timestamp': p.get('timestamp', ''),
-                    'lean': leans.get(voice_dir, 'center'),
-                })
+                for p in posts:
+                    # One malformed record must not drop the rest of a voice's
+                    # posts, so guard each one individually.
+                    if not isinstance(p, dict):
+                        continue
+                    # Source text is scraped and often carries HTML entities
+                    # (e.g. "Beef &amp; Draws"). Decode once here; the client
+                    # re-escapes for safe display, so the reader sees "&".
+                    text = html_lib.unescape(str(p.get('text') or '')).strip()
+                    if len(text) < 30:
+                        continue
+                    if not is_content_safe(text):
+                        continue
+                    # The same post can appear in consecutive day files when
+                    # scrapes overlap — keep the first occurrence (newest day
+                    # is scanned first).
+                    key = (voice_dir, p.get('sourceUrl') or (p.get('timestamp'), text[:80]))
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    all_posts.append({
+                        'voiceId': voice_dir,
+                        'voiceName': meta.get('name', p.get('voiceName', voice_dir)),
+                        'photo': meta.get('photo', ''),
+                        'platform': p.get('platform', ''),
+                        'text': text[:200],
+                        'sourceUrl': p.get('sourceUrl', ''),
+                        'timestamp': p.get('timestamp', ''),
+                        'lean': leans.get(voice_dir, 'center'),
+                    })
     except OSError as e:
         log.error(f"Wire error: {e}")
 
