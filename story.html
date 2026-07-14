@@ -7,7 +7,7 @@
 <meta name="description" content="See how 257 public voices react to this story, clustered by argument.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
   /* ================================================================
@@ -33,13 +33,16 @@
     /* Borders */
     --border: rgba(255,255,255,0.06);
     --border-hover: rgba(255,255,255,0.12);
-    --border-focus: rgba(255,99,67,0.5);
+    --border-focus: rgba(237,189,31,0.5);
 
     /* Accent */
-    --accent: #FF6343;
-    --accent-hover: #e5553a;
-    --accent-bg: rgba(255,99,67,0.10);
-    --accent-bg-hover: rgba(255,99,67,0.16);
+    --accent: #EDBD1F;
+    --cta: #FF6343;
+    --cta-hover: #e5553a;
+    --font-serif: 'Bree Serif', Georgia, serif;
+    --accent-hover: #d9ab12;
+    --accent-bg: rgba(237,189,31,0.10);
+    --accent-bg-hover: rgba(237,189,31,0.16);
 
     /* Spacing (8px grid) */
     --space-1: 4px;
@@ -85,7 +88,7 @@
   /* -- SKIP LINK -- */
   .skip-link {
     position: absolute; top: -100%; left: var(--space-4); z-index: 100;
-    background: var(--accent); color: #fff;
+    background: var(--cta); color: #fff;
     padding: var(--space-3) var(--space-6);
     border-radius: 0 0 var(--radius-md) var(--radius-md);
     font-weight: 600; font-size: var(--text-sm);
@@ -141,9 +144,11 @@
     font-size: var(--text-sm); color: var(--text-muted);
     margin-bottom: var(--space-3);
     display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap;
-    text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600;
+    font-weight: 500;
   }
   .story-headline {
+    font-family: var(--font-serif);
+    font-weight: 400;
     font-size: var(--text-2xl); font-weight: 700; color: var(--text-primary);
     line-height: var(--leading-tight); letter-spacing: -0.02em;
     margin-bottom: var(--space-3);
@@ -214,8 +219,8 @@
     padding: var(--space-6) var(--space-5) var(--space-10);
   }
   .clusters-title {
-    font-size: var(--text-sm); font-weight: 700; color: var(--text-secondary);
-    text-transform: uppercase; letter-spacing: 0.06em;
+    font-family: var(--font-serif);
+    font-size: var(--text-xl); font-weight: 400; color: var(--text-primary);
     margin-bottom: var(--space-5);
     padding-bottom: var(--space-4);
     border-bottom: 1px solid var(--border);
@@ -295,8 +300,7 @@
   .voice-row-name:hover { color: var(--accent); }
   .voice-row-platform {
     font-size: var(--text-xs); color: var(--text-dim);
-    text-transform: uppercase; letter-spacing: 0.05em;
-    font-weight: 700;
+    font-weight: 600;
   }
   .voice-row-lens {
     font-size: var(--text-xs); color: var(--text-muted);
@@ -396,9 +400,9 @@
     transition: all var(--duration-normal) var(--ease-out);
   }
   .state-action-primary {
-    background: var(--accent); color: #fff; border: none;
+    background: var(--cta); color: #fff; border: none;
   }
-  .state-action-primary:hover { background: var(--accent-hover); }
+  .state-action-primary:hover { background: var(--cta-hover); }
   .state-action-primary:active { transform: scale(0.97); }
   .state-action-secondary {
     background: var(--bg-card); color: var(--text-muted);
@@ -554,7 +558,7 @@
   /* -- CONSTANTS -- */
   // Ranked, not identity: leading position takes the one accent, the rest step down a
   // LEGIBLE zinc ramp (floored so no segment/dot disappears into the dark track). No rainbow.
-  var COLORS = ['#FF6343','#b4b4bb','#8f8f97','#71717a','#5e5e66'];
+  var COLORS = ['#EDBD1F','#b4b4bb','#8f8f97','#71717a','#5e5e66'];
 
   // Local initials avatar (on-palette, no external ui-avatars.com dependency).
   function initialsAvatar(name) {

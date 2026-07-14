@@ -7,7 +7,7 @@
 <meta name="description" content="See how this voice weighs in across today's biggest stories, and who they align with most.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
   /* ================================================================
@@ -33,13 +33,16 @@
     /* Borders */
     --border: rgba(255,255,255,0.06);
     --border-hover: rgba(255,255,255,0.12);
-    --border-focus: rgba(255,99,67,0.5);
+    --border-focus: rgba(237,189,31,0.5);
 
     /* Accent */
-    --accent: #FF6343;
-    --accent-hover: #e5553a;
-    --accent-bg: rgba(255,99,67,0.10);
-    --accent-bg-hover: rgba(255,99,67,0.16);
+    --accent: #EDBD1F;
+    --cta: #FF6343;
+    --cta-hover: #e5553a;
+    --font-serif: 'Bree Serif', Georgia, serif;
+    --accent-hover: #d9ab12;
+    --accent-bg: rgba(237,189,31,0.10);
+    --accent-bg-hover: rgba(237,189,31,0.16);
 
     /* Spacing (8px grid) */
     --space-1: 4px;
@@ -85,7 +88,7 @@
   /* -- SKIP LINK -- */
   .skip-link {
     position: absolute; top: -100%; left: var(--space-4); z-index: 100;
-    background: var(--accent); color: #fff;
+    background: var(--cta); color: #fff;
     padding: var(--space-3) var(--space-6);
     border-radius: 0 0 var(--radius-md) var(--radius-md);
     font-weight: 600; font-size: var(--text-sm);
@@ -144,6 +147,8 @@
     margin-bottom: var(--space-4); background: var(--bg-elevated);
   }
   .profile-name {
+    font-family: var(--font-serif);
+    font-weight: 400;
     font-size: var(--text-2xl); font-weight: 700; color: var(--text-primary);
     letter-spacing: -0.02em; margin-bottom: var(--space-1);
     line-height: var(--leading-tight);
@@ -409,9 +414,9 @@
     transition: all var(--duration-normal) var(--ease-out);
   }
   .state-action-primary {
-    background: var(--accent); color: #fff; border: none;
+    background: var(--cta); color: #fff; border: none;
   }
-  .state-action-primary:hover { background: var(--accent-hover); }
+  .state-action-primary:hover { background: var(--cta-hover); }
   .state-action-primary:active { transform: scale(0.97); }
   .state-action-secondary {
     background: var(--bg-card); color: var(--text-muted);
