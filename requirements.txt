@@ -1,2 +1,4 @@
 # Core pipeline dependencies
 youtube-transcript-api
+# Message Batches API for nightly categorization (scripts/collect.py)
+anthropic>=0.92.0
