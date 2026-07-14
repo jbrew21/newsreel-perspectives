@@ -123,6 +123,47 @@ class DeclusterTests(unittest.TestCase):
 
 
 class BuildWireTests(unittest.TestCase):
+    def _make_root(self, files):
+        """files: {(voice, iso_day): [post, ...]}"""
+        import json as _json
+        import os as _os
+        import tempfile
+        tmp = tempfile.mkdtemp()
+        _os.makedirs(_os.path.join(tmp, "data", "posts"))
+        with open(_os.path.join(tmp, "data", "voices.json"), "w") as f:
+            _json.dump([{"id": v, "name": v.title(), "photo": "", "tags": []}
+                        for v in {v for v, _ in files}], f)
+        for (voice, day), posts in files.items():
+            vdir = _os.path.join(tmp, "data", "posts", voice)
+            _os.makedirs(vdir, exist_ok=True)
+            with open(_os.path.join(vdir, f"{day}.json"), "w") as f:
+                _json.dump({"posts": posts}, f)
+        return tmp
+
+    def test_wire_includes_yesterday_after_utc_midnight(self):
+        # Regression: the wire went dark from 00:00 UTC until the morning
+        # pipeline commit because only <today>.json was read.
+        from datetime import date, timedelta
+        yesterday = (date.today() - timedelta(days=1)).isoformat()
+        post = {"text": "a post long enough to clear the thirty char floor",
+                "platform": "x", "sourceUrl": "https://x.com/a/1",
+                "timestamp": f"{yesterday}T22:00:00Z"}
+        root = self._make_root({("some-voice", yesterday): [post]})
+        out = serve.build_wire(root=root)
+        self.assertEqual(len(out), 1)
+
+    def test_wire_dedupes_posts_across_day_files(self):
+        from datetime import date, timedelta
+        today = date.today().isoformat()
+        yesterday = (date.today() - timedelta(days=1)).isoformat()
+        post = {"text": "the same post captured by two consecutive scrapes",
+                "platform": "x", "sourceUrl": "https://x.com/a/2",
+                "timestamp": f"{yesterday}T23:00:00Z"}
+        root = self._make_root({("some-voice", today): [post],
+                                ("some-voice", yesterday): [post]})
+        out = serve.build_wire(root=root)
+        self.assertEqual(len(out), 1)
+
     def test_build_wire_runs_against_repo_data(self):
         # Smoke test: build_wire reads real data/ and returns a valid feed
         # obeying the cap and adjacency guarantees.
