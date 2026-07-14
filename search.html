@@ -878,7 +878,7 @@
 
 <main id="main-content">
 
-<div class="hero-section">
+<div class="hero-section" id="heroSection">
   <h1 class="hero-title">Step outside your algorithm<br>into <span style="color:var(--accent);">others</span></h1>
   <p class="hero-subtitle">See how <strong id="heroVoiceCount">257</strong> voices across the political spectrum react to the same story. Not left vs right. Actual positions.</p>
 </div>
@@ -1755,6 +1755,7 @@
     hintsToggle.style.display = 'none';
     wireSection.style.display = 'none';
     splitSection.style.display = 'none';
+    document.getElementById('heroSection').style.display = 'none';
     statsEl.style.display = 'none';
     timeFilter.style.display = 'flex';
 
@@ -2166,6 +2167,7 @@
     if (document.getElementById('splitLeft').children.length) {
       splitSection.style.display = 'block';
     }
+    document.getElementById('heroSection').style.display = '';
     statsEl.style.display = '';
     timeFilter.style.display = 'none';
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
