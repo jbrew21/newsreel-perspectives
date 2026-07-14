@@ -1,7 +1,7 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-07-14T09:09:22.234078",
+  "collectedAt": "2026-07-14T10:51:52.942563",
   "date": "2026-07-14",
   "posts": [
     {
@@ -14,8 +14,8 @@
       "type": "video_title",
       "topic": "congress-legislation",
       "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes aging U.S. Congress, highlights generational concerns",
+      "stance": "lean",
+      "summary": "Highlights aging Congress as problem requiring attention",
       "quote": "Jon Stewart on Lindsey Graham's Death &amp; America's Geriatric Political Class | The Daily Show"
     },
     {
@@ -28,23 +28,9 @@
       "type": "video_title",
       "topic": "congress-legislation",
       "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes aging U.S. Congress, highlights generational concerns",
-      "quote": "Lindsey Graham's Death Highlights an Aging Congress &amp; Trump Keeps His Eye on Optics | The Daily Show"
-    },
-    {
-      "voiceId": "trevor-noah",
-      "voiceName": "Trevor Noah",
-      "platform": "youtube",
-      "text": "Wait, the president flies with an extra emotional support plane? #dailyshow #airforceone",
-      "sourceUrl": "https://www.youtube.com/shorts/vCEIV4GMtIo",
-      "timestamp": "2026-07-13T18:00:38+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
       "stance": "lean",
-      "summary": "Questions excessive spending on presidential support infrastructure",
-      "quote": "Wait, the president flies with an extra emotional support plane? #dailyshow #airforceone"
+      "summary": "Criticizes age of Congressional leadership as structural issue",
+      "quote": "Lindsey Graham's Death Highlights an Aging Congress &amp; Trump Keeps His Eye on Optics | The Daily Show"
     },
     {
       "voiceId": "trevor-noah",
@@ -57,8 +43,36 @@
       "topic": "elections",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes low-quality AI-generated campaign advertisements",
+      "summary": "Mocks AI-generated campaign ads as absurd election trend",
       "quote": "AI slop campaign ads are sweeping the nation this election season, from California to &quot;Varmont&quot;"
+    },
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
+      "text": "Scott Jennings discusses the extremely real conversation he had with a very alive Mitch McConnell",
+      "sourceUrl": "https://www.youtube.com/shorts/PmqZFFKCPTE",
+      "timestamp": "2026-07-11T15:00:05+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Skeptically questions credibility of commentator's McConnell claim",
+      "quote": "Scott Jennings discusses the extremely real conversation he had with a very alive Mitch McConnell"
+    },
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "tiktok",
+      "text": "When load shedding hits, South Africans just freeze like NPC characters until the power comes back.",
+      "sourceUrl": "https://www.tiktok.com/@trevornoah/video/7659321618472144159",
+      "timestamp": "2026-07-13T18:10:00+00:00",
+      "type": "video_caption",
+      "topic": "other",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Satirizes South African power crisis using cultural humor",
+      "quote": "When load shedding hits, South Africans just freeze like NPC characters until the power comes back."
     }
   ],
   "topicSummary": {
@@ -76,20 +90,28 @@
         "timestamp": "2026-07-14T01:02:36+00:00"
       }
     ],
-    "trump-administration": [
-      {
-        "quote": "Wait, the president flies with an extra emotional support plane? #dailyshow #airforceone",
-        "sourceUrl": "https://www.youtube.com/shorts/vCEIV4GMtIo",
-        "platform": "youtube",
-        "timestamp": "2026-07-13T18:00:38+00:00"
-      }
-    ],
     "elections": [
       {
         "quote": "AI slop campaign ads are sweeping the nation this election season, from California to &quot;Varmont&quot;",
         "sourceUrl": "https://www.youtube.com/shorts/3_O3texShfM",
         "platform": "youtube",
         "timestamp": "2026-07-11T18:00:38+00:00"
+      }
+    ],
+    "media-personalities": [
+      {
+        "quote": "Scott Jennings discusses the extremely real conversation he had with a very alive Mitch McConnell",
+        "sourceUrl": "https://www.youtube.com/shorts/PmqZFFKCPTE",
+        "platform": "youtube",
+        "timestamp": "2026-07-11T15:00:05+00:00"
+      }
+    ],
+    "other": [
+      {
+        "quote": "When load shedding hits, South Africans just freeze like NPC characters until the power comes back.",
+        "sourceUrl": "https://www.tiktok.com/@trevornoah/video/7659321618472144159",
+        "platform": "tiktok",
+        "timestamp": "2026-07-13T18:10:00+00:00"
       }
     ]
   }
