@@ -171,6 +171,10 @@
     box-shadow: 0 0 0 3px var(--accent-bg);
   }
   .search-box input::placeholder { color: var(--text-dim); }
+  /* The browser's native search-cancel ✕ lands awkwardly against our inset
+     Search button (and takes the OS accent color) — replace it with ours. */
+  .search-box input::-webkit-search-cancel-button,
+  .search-box input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
   .search-box button {
     position: absolute; right: 5px; top: 5px;
     padding: 9px 20px; font-size: var(--text-sm); font-weight: 600;
@@ -180,6 +184,19 @@
   }
   .search-box button:hover { background: var(--accent-hover); }
   .search-box button:active { transform: scale(0.96); }
+  .search-box .search-clear {
+    /* Overrides the generic .search-box button styling above */
+    position: absolute; right: 94px; top: 50%; transform: translateY(-50%);
+    width: 28px; height: 28px; padding: 0; min-height: 0;
+    display: none; align-items: center; justify-content: center;
+    background: transparent; color: var(--text-dim);
+    border-radius: 50%; font-size: var(--text-base); line-height: 1;
+  }
+  .search-box .search-clear.visible { display: inline-flex; }
+  .search-box .search-clear:hover {
+    background: var(--bg-elevated); color: var(--text-primary); transform: translateY(-50%);
+  }
+  .search-box .search-clear:active { transform: translateY(-50%) scale(0.92); }
   .search-box button:disabled {
     background: var(--bg-hover); color: var(--text-dim);
     cursor: not-allowed; transform: none;
@@ -886,6 +903,7 @@
 <div class="search-section">
   <div class="search-box">
     <input type="search" enterkeyhint="search" autocomplete="off" id="searchInput" placeholder="Search any topic or story..." autofocus aria-label="Search voices and stories">
+    <button type="button" class="search-clear" id="searchClear" aria-label="Clear search">&#10005;</button>
     <button id="searchBtn" aria-label="Search">Search</button>
   </div>
   <div class="time-filter" id="timeFilter">
@@ -1073,6 +1091,15 @@
 
   /* ── DOM REFS ── */
   const input = document.getElementById('searchInput');
+  const searchClear = document.getElementById('searchClear');
+  function syncSearchClear() { searchClear.classList.toggle('visible', !!input.value); }
+  input.addEventListener('input', syncSearchClear);
+  searchClear.addEventListener('click', function() {
+    input.value = '';
+    syncSearchClear();
+    input.focus();
+    if (searchViewActive) backToFeed();
+  });
   const searchBtn = document.getElementById('searchBtn');
   const loading = document.getElementById('loading');
   const resultsDiv = document.getElementById('results');
@@ -1758,6 +1785,7 @@
     document.getElementById('heroSection').style.display = 'none';
     statsEl.style.display = 'none';
     timeFilter.style.display = 'flex';
+    syncSearchClear();
 
     var url = BASE + '/api/lookup?q=' + encodeURIComponent(q);
     if (selectedDays) url += '&days=' + selectedDays;
@@ -2158,6 +2186,7 @@
     if (activeResult && activeResult.destroy) activeResult.destroy();
     activeResult = null;
     input.value = '';
+    syncSearchClear();
     resultsDiv.innerHTML = '';
     feedEl.style.display = 'block';
     searchHints.style.display = '';
