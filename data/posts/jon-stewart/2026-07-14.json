@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-07-14T10:51:52.945883",
+  "collectedAt": "2026-07-14T15:13:15.521193",
   "date": "2026-07-14",
   "posts": [
     {
@@ -143,6 +143,34 @@
       "stance": "strong",
       "summary": "Discusses weaponization of justice by Trump DOJ",
       "quote": "Jack Smith &amp; Brian Driscoll | The Weekly Show with Jon Stewart"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Food Court Of Information | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/d73CMccSlS0",
+      "timestamp": "2026-07-06T13:56:33+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques misinformation and distorted news coverage",
+      "quote": "Food Court Of Information | The Weekly Show with Jon Stewart"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "x",
+      "text": "New podcast\u2026same foreign policy\u2026",
+      "sourceUrl": "https://x.com/jonstewart/status/2054700267644358834",
+      "timestamp": "2026-05-13T23:08:12+00:00",
+      "type": "tweet",
+      "topic": "foreign-policy-diplomacy",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies criticism of current foreign policy approach",
+      "quote": "New podcast\u2026same foreign policy\u2026"
     }
   ],
   "topicSummary": {
@@ -212,6 +240,22 @@
         "sourceUrl": "https://www.youtube.com/shorts/pSvcBWgz7eo",
         "platform": "youtube",
         "timestamp": "2026-07-08T11:58:50+00:00"
+      }
+    ],
+    "media-press": [
+      {
+        "quote": "Food Court Of Information | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/d73CMccSlS0",
+        "platform": "youtube",
+        "timestamp": "2026-07-06T13:56:33+00:00"
+      }
+    ],
+    "foreign-policy-diplomacy": [
+      {
+        "quote": "New podcast\u2026same foreign policy\u2026",
+        "sourceUrl": "https://x.com/jonstewart/status/2054700267644358834",
+        "platform": "x",
+        "timestamp": "2026-05-13T23:08:12+00:00"
       }
     ]
   }

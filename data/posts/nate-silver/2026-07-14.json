@@ -1,7 +1,7 @@
 {
   "voiceId": "nate-silver",
   "voiceName": "Nate Silver",
-  "collectedAt": "2026-07-14T10:51:52.962584",
+  "collectedAt": "2026-07-14T15:13:15.541328",
   "date": "2026-07-14",
   "posts": [
     {
@@ -148,15 +148,29 @@
       "voiceId": "nate-silver",
       "voiceName": "Nate Silver",
       "platform": "substack",
-      "text": "What is Gavin Newsom doing?. Losing support in polls, the governor is leaning into his role as the avatar of an unpopular Democratic establishment.",
-      "sourceUrl": "https://www.natesilver.net/p/what-is-gavin-newsom-doing",
-      "timestamp": "2026-06-23T13:01:19+00:00",
+      "text": "America used to be exceptionally patriotic. Now we're below average. (by Eli McKown-Dawson). Most Americans still love their country, but patriotism is in sharp decline.",
+      "sourceUrl": "https://www.natesilver.net/p/america-used-to-be-exceptionally",
+      "timestamp": "2026-07-03T19:00:18+00:00",
       "type": "article",
-      "topic": "elections",
-      "relevance": "high",
+      "topic": "culture-war",
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Frames Newsom as representing unpopular Democratic establishment",
-      "quote": "What is Gavin Newsom doing?. Losing support in polls, the governor is leaning into his role as the avatar of an unpopular Democratic establishment."
+      "summary": "Patriotism declining below historical U.S. average",
+      "quote": "America used to be exceptionally patriotic. Now we're below average. (by Eli McKown-Dawson). Most Americans still love their country, but patriotism is in sharp decline."
+    },
+    {
+      "voiceId": "nate-silver",
+      "voiceName": "Nate Silver",
+      "platform": "substack",
+      "text": "Is the vibecession real \u2014 or is the survey broken? (by Joel Wertheimer). A shift to online polling and undersampling of Republicans are skewing America\u2019s most-cited measure of consumer sentiment.",
+      "sourceUrl": "https://www.natesilver.net/p/is-the-vibecession-real-or-is-the",
+      "timestamp": "2026-06-29T17:29:01+00:00",
+      "type": "article",
+      "topic": "economy-trade",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Survey methodology changes distort consumer sentiment data",
+      "quote": "Is the vibecession real \u2014 or is the survey broken? (by Joel Wertheimer). A shift to online polling and undersampling of Republicans are skewing America\u2019s most-cited measure of consumer sentiment."
     }
   ],
   "topicSummary": {
@@ -220,12 +234,22 @@
         "sourceUrl": "https://www.natesilver.net/p/dont-invest-your-political-capital",
         "platform": "substack",
         "timestamp": "2026-07-06T23:36:06+00:00"
-      },
+      }
+    ],
+    "culture-war": [
       {
-        "quote": "What is Gavin Newsom doing?. Losing support in polls, the governor is leaning into his role as the avatar of an unpopular Democratic establishment.",
-        "sourceUrl": "https://www.natesilver.net/p/what-is-gavin-newsom-doing",
+        "quote": "America used to be exceptionally patriotic. Now we're below average. (by Eli McKown-Dawson). Most Americans still love their country, but patriotism is in sharp decline.",
+        "sourceUrl": "https://www.natesilver.net/p/america-used-to-be-exceptionally",
         "platform": "substack",
-        "timestamp": "2026-06-23T13:01:19+00:00"
+        "timestamp": "2026-07-03T19:00:18+00:00"
+      }
+    ],
+    "economy-trade": [
+      {
+        "quote": "Is the vibecession real \u2014 or is the survey broken? (by Joel Wertheimer). A shift to online polling and undersampling of Republicans are skewing America\u2019s most-cited measure of consumer sentiment.",
+        "sourceUrl": "https://www.natesilver.net/p/is-the-vibecession-real-or-is-the",
+        "platform": "substack",
+        "timestamp": "2026-06-29T17:29:01+00:00"
       }
     ]
   }
