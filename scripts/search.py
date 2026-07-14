@@ -752,8 +752,16 @@ Be very strict. It is far better to return fewer matches than to misattribute qu
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-sonnet-4-6',
-                'max_tokens': 2048,
+                'model': 'claude-sonnet-5',
+                # Sonnet 5 runs adaptive thinking by default when 'thinking'
+                # is omitted, and thinking tokens count against max_tokens —
+                # keep it off to preserve pre-migration behavior/budget.
+                'thinking': {'type': 'disabled'},
+                # Output echoes matched quotes verbatim for up to 150 posts
+                # (~60-80 tokens per match) — a high-coverage story can exceed
+                # a small cap, truncate mid-JSON, and silently drop every
+                # reaction. 8192 covers ~110 matches with headroom.
+                'max_tokens': 8192,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
             headers={
@@ -762,8 +770,14 @@ Be very strict. It is far better to return fewer matches than to misattribute qu
                 'content-type': 'application/json',
             },
         )
-        with urllib.request.urlopen(req, timeout=60) as resp:
+        with urllib.request.urlopen(req, timeout=120) as resp:
             data = json.loads(resp.read().decode())
+
+        if data.get('stop_reason') == 'max_tokens':
+            # Truncated JSON is unparseable — say why instead of letting the
+            # json.loads failure masquerade as a generic API error.
+            print("  ⚠ Claude response truncated at max_tokens; matches exceed budget")
+            return None
 
         result_text = data.get('content', [{}])[0].get('text', '')
         json_match = re.search(r'\{[\s\S]*\}', result_text)

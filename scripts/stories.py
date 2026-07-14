@@ -63,17 +63,49 @@ MIN_STORIES = 5
 RETRYABLE_STATUS = {429, 500, 502, 503, 504, 529}
 MAX_API_RETRIES = 3
 
+# Clustering model. Sonnet 5 ($2/$10 intro pricing vs 4.6's $3/$15):
+# - We never send temperature/top_p/top_k (Sonnet 5 rejects non-default values).
+# - Omitting 'thinking' runs adaptive thinking by default on Sonnet 5, and
+#   thinking tokens count against max_tokens — disable it explicitly so the
+#   tight budgets below behave as they did on 4.6.
+# - Sonnet 5's tokenizer yields ~30% more tokens for the same text, so the
+#   analyze/validate budgets below got headroom bumps.
+CLAUDE_MODEL = 'claude-sonnet-5'
+
+# Output budget for the per-story analyze pass (was 1024 on sonnet-4-6; the
+# clusters JSON repeats up to 30 voice names, so give tokenizer headroom).
+ANALYZE_MAX_TOKENS = 1536
+
+
+def _claude_request_body(prompt, max_tokens):
+    """Request body for /v1/messages — shared by single calls and batches."""
+    return {
+        'model': CLAUDE_MODEL,
+        'max_tokens': max_tokens,
+        'thinking': {'type': 'disabled'},
+        'messages': [{'role': 'user', 'content': prompt}],
+    }
+
+
+def _parse_claude_message(message):
+    """Extract the first {...} JSON blob from a /v1/messages message dict.
+
+    Returns the parsed dict, or None when the response has no JSON object.
+    Raises on malformed JSON (callers treat that as a transient failure).
+    """
+    result_text = message.get('content', [{}])[0].get('text', '')
+    json_match = re.search(r'\{[\s\S]*\}', result_text)
+    if json_match:
+        return json.loads(json_match.group())
+    return None
+
 
 def call_claude(prompt, max_tokens=1024):
     """Call Claude API and return parsed JSON, retrying transient failures."""
     if not ANTHROPIC_API_KEY:
         return None
 
-    payload = json.dumps({
-        'model': 'claude-sonnet-4-6',
-        'max_tokens': max_tokens,
-        'messages': [{'role': 'user', 'content': prompt}],
-    }).encode()
+    payload = json.dumps(_claude_request_body(prompt, max_tokens)).encode()
 
     for attempt in range(1, MAX_API_RETRIES + 1):
         try:
@@ -88,12 +120,9 @@ def call_claude(prompt, max_tokens=1024):
             )
             with urllib.request.urlopen(req, timeout=60) as resp:
                 data = json.loads(resp.read().decode())
-            result_text = data.get('content', [{}])[0].get('text', '')
-            json_match = re.search(r'\{[\s\S]*\}', result_text)
-            if json_match:
-                return json.loads(json_match.group())
-            # Valid HTTP response but no JSON object found — retrying won't help.
-            return None
+            # None = valid HTTP response but no JSON object — retrying won't
+            # help. Malformed JSON raises and is retried below.
+            return _parse_claude_message(data)
         except urllib.error.HTTPError as e:
             transient = e.code in RETRYABLE_STATUS
             print(f"  Claude API error (attempt {attempt}/{MAX_API_RETRIES}): HTTP {e.code}")
@@ -280,8 +309,8 @@ Return ONLY this JSON:
 
 # ── Step 3: Analyze voices on a story ───────────────────────────
 
-def analyze_voices(headline, voices_data, voices_meta):
-    """Cluster voices and generate insight for a story."""
+def build_analysis_prompt(headline, voices_data, voices_meta):
+    """Build the clustering prompt for one story (shared by call + batch)."""
     summaries = []
     for vid, entry in voices_data.items():
         meta = voices_meta.get(vid, {})
@@ -344,7 +373,126 @@ Return ONLY this JSON:
   "confidence": 7
 }}"""
 
-    return call_claude(prompt, max_tokens=1024)
+    return prompt
+
+
+def analyze_voices(headline, voices_data, voices_meta):
+    """Cluster voices and generate insight for a story."""
+    prompt = build_analysis_prompt(headline, voices_data, voices_meta)
+    return call_claude(prompt, max_tokens=ANALYZE_MAX_TOKENS)
+
+
+# ── Message Batches: run the independent per-story analyze calls in one
+# batch at 50% token cost. Every input to analyze_voices is known before the
+# candidate loop starts, so the calls have no cross-story dependency. Any
+# batch-level failure, timeout, or per-story errored/missing result falls
+# back to the existing sequential call_claude path for that story.
+BATCHES_URL = 'https://api.anthropic.com/v1/messages/batches'
+BATCH_POLL_SECONDS = 15
+BATCH_TIMEOUT_SECONDS = 900  # hard cap, well under the nightly Action limit
+
+
+def _batch_api(url, payload=None, method='GET'):
+    """Raw HTTP call against the Message Batches endpoints. Returns body text."""
+    data = json.dumps(payload).encode() if payload is not None else None
+    req = urllib.request.Request(
+        url,
+        data=data,
+        method=method,
+        headers={
+            'x-api-key': ANTHROPIC_API_KEY,
+            'anthropic-version': '2023-06-01',
+            'content-type': 'application/json',
+        },
+    )
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        return resp.read().decode()
+
+
+def batch_analyze_voices(candidates, voices_meta):
+    """Analyze all candidates via the Message Batches API.
+
+    Returns {candidate_index: parsed_result} for the stories that succeeded.
+    Indices that are missing (errored/expired/canceled result, unparseable
+    output, or any batch-level failure) are handled by the caller with the
+    sequential analyze_voices call — identical failure semantics, lower cost.
+    """
+    if not ANTHROPIC_API_KEY or len(candidates) < 2:
+        return {}
+
+    requests_payload = [
+        {
+            'custom_id': f'analyze-{i}',
+            'params': _claude_request_body(
+                build_analysis_prompt(c['headline'], c['voices'], voices_meta),
+                ANALYZE_MAX_TOKENS,
+            ),
+        }
+        for i, c in enumerate(candidates)
+    ]
+
+    try:
+        batch = json.loads(_batch_api(
+            BATCHES_URL, payload={'requests': requests_payload}, method='POST'))
+        batch_id = batch['id']
+    except Exception as e:
+        print(f"  Batch create failed ({e}) — falling back to sequential calls")
+        return {}
+
+    print(f"  Batch {batch_id}: analyzing {len(candidates)} candidates...")
+
+    ended = None
+    deadline = time.time() + BATCH_TIMEOUT_SECONDS
+    while time.time() < deadline:
+        time.sleep(BATCH_POLL_SECONDS)
+        try:
+            snapshot = json.loads(_batch_api(f'{BATCHES_URL}/{batch_id}'))
+        except Exception as e:
+            print(f"  Batch poll error ({e}) — retrying")
+            continue
+        if snapshot.get('processing_status') == 'ended':
+            ended = snapshot
+            break
+
+    if ended is None:
+        print(f"  Batch {batch_id} not done after {BATCH_TIMEOUT_SECONDS}s — "
+              f"canceling, falling back to sequential calls")
+        try:
+            _batch_api(f'{BATCHES_URL}/{batch_id}/cancel', payload={}, method='POST')
+        except Exception:
+            pass
+        return {}
+
+    results_url = ended.get('results_url')
+    if not results_url:
+        print("  Batch ended without results_url — falling back to sequential calls")
+        return {}
+
+    try:
+        lines = _batch_api(results_url).splitlines()
+    except Exception as e:
+        print(f"  Batch results fetch failed ({e}) — falling back to sequential calls")
+        return {}
+
+    # Results arrive UNORDERED — key strictly by custom_id, never by position.
+    results = {}
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            entry = json.loads(line)
+            if entry.get('result', {}).get('type') != 'succeeded':
+                continue
+            idx = int(entry['custom_id'].rsplit('-', 1)[-1])
+            parsed = _parse_claude_message(entry['result']['message'])
+            if parsed is not None:
+                results[idx] = parsed
+        except Exception:
+            continue  # malformed entry -> sequential fallback for that story
+
+    print(f"  Batch complete: {len(results)}/{len(candidates)} analyses succeeded")
+    return results
 
 
 def validate_clusters(headline, clusters, voices_data, voices_meta):
@@ -381,7 +529,10 @@ Return ONLY this JSON:
   ]
 }}"""
 
-    return call_claude(prompt, max_tokens=1024)
+    # Was 1024 on sonnet-4-6: up to 30 validation entries with per-voice
+    # reasons could already brush that limit, and Sonnet 5's tokenizer yields
+    # ~30% more tokens for the same text.
+    return call_claude(prompt, max_tokens=2048)
 
 
 def update_cluster_history(stories, date):
@@ -542,12 +693,18 @@ def build_stories(date=None):
         src = '[CMS]' if c['source'] == 'editorial' else '[voices]'
         print(f"    {src} {c['headline'][:60]} ({c['voice_count']} voices)")
 
-    # 4. Analyze each candidate
+    # 4. Analyze each candidate. The independent analyze calls run as one
+    # Message Batch (50% token cost); any story missing from the batch result
+    # falls back to the original sequential call.
+    batch_results = batch_analyze_voices(candidates, voices_meta)
+
     stories = []
-    for candidate in candidates:
+    for idx, candidate in enumerate(candidates):
         print(f"\n  Clustering: {candidate['headline'][:50]}... ({candidate['voice_count']} voices)")
 
-        result = analyze_voices(candidate['headline'], candidate['voices'], voices_meta)
+        result = batch_results.get(idx)
+        if result is None:
+            result = analyze_voices(candidate['headline'], candidate['voices'], voices_meta)
         if not result or 'clusters' not in result:
             print(f"    Skipped (analysis failed)")
             continue

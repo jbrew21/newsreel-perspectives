@@ -40,7 +40,17 @@ _usage_stats = {
     'claude_calls': 0,
     'total_input_chars': 0,
     'total_output_tokens_est': 0,
+    'posts_reused': 0,
 }
+
+# Categorization model — Perspectives is intentionally on Haiku 4.5.
+CLAUDE_MODEL = 'claude-haiku-4-5-20251001'
+
+# Message Batches polling (Phase 3). Batches usually finish well within the
+# GitHub Action's 90-minute job budget, but cap the poll so a slow batch
+# falls back to the sequential path instead of blowing the job timeout.
+BATCH_POLL_INTERVAL = 30       # seconds between status checks
+BATCH_POLL_TIMEOUT = 40 * 60   # hard deadline before sequential fallback
 
 # Full, realistic Chrome UA. The previous value was truncated at
 # "AppleWebKit/537.36" (no KHTML/Chrome/Safari tail), which Substack's
@@ -898,7 +908,7 @@ Respond with ONLY the canonical slug, nothing else."""
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-haiku-4-5-20251001',
+                'model': CLAUDE_MODEL,
                 'max_tokens': 32,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
@@ -955,18 +965,80 @@ def _parse_categorization_json(text):
     return items
 
 
-def categorize_posts(voice_name, posts):
-    """Use Claude to categorize posts by news topic and filter garbage."""
-    if not ANTHROPIC_API_KEY or not posts:
-        return posts
+def _quote_from_text(text):
+    """Derive the display quote from a post's REAL text (never AI-generated)."""
+    if text.startswith('[VIDEO: ') and '] ' in text:
+        # Has transcript — pull the transcript part as the quote
+        return text.split('] ', 1)[1][:300]
+    # Use the actual post/title text
+    return text[:300]
 
+
+def load_categorized_cache(voice_id):
+    """Build {sourceUrl: categorization} from the voice's recent day files
+    (yesterday + today if present, today wins). Only trusts entries that were
+    fully categorized AND survived the perspective filter — a day file written
+    after a total Claude failure contains posts with no 'topic' key, and those
+    must be re-sent to the model."""
+    cache = {}
+    now = datetime.now()
+    for delta in (1, 0):
+        day = (now - timedelta(days=delta)).strftime('%Y-%m-%d')
+        path = POSTS_DIR / voice_id / f'{day}.json'
+        if not path.exists():
+            continue
+        try:
+            day_data = json.loads(path.read_text())
+        except Exception:
+            continue
+        for p in day_data.get('posts', []):
+            url = p.get('sourceUrl')
+            if not url or 'topic' not in p:
+                continue
+            if p.get('relevance') not in ('high', 'medium') or p.get('stance') not in ('strong', 'lean'):
+                continue
+            cache[url] = {
+                'topic': p['topic'],
+                'relevance': p['relevance'],
+                'stance': p['stance'],
+                'summary': p.get('summary', ''),
+            }
+    return cache
+
+
+def split_cached_posts(posts, cache):
+    """Split posts into (reused, new). Cache hits get the stored categorization
+    applied verbatim and skip Claude entirely; posts without a sourceUrl or
+    without a hit are returned as new and go to the model."""
+    reused, new_posts = [], []
+    for p in posts:
+        entry = cache.get(p.get('sourceUrl')) if cache else None
+        if entry:
+            # Re-canonicalize against the CURRENT taxonomy — a cached slug may
+            # predate a rename/removal (fresh categorizations get the same
+            # treatment in _apply_categorization; idempotent otherwise).
+            p['topic'] = enforce_taxonomy(entry['topic'])
+            p['relevance'] = entry['relevance']
+            p['stance'] = entry['stance']
+            p['summary'] = entry['summary']
+            p['quote'] = _quote_from_text(p['text'])
+            reused.append(p)
+        else:
+            new_posts.append(p)
+    _usage_stats['posts_reused'] += len(reused)
+    return reused, new_posts
+
+
+def _build_categorization_prompt(voice_name, posts):
+    """Build the per-voice categorization prompt (shared by the sequential
+    and batch paths)."""
     posts_text = ""
     for i, p in enumerate(posts):
         posts_text += f"\n[{i}] ({p['platform']}) {p['text'][:300]}\n"
 
     taxonomy_list = get_taxonomy_slug_list()
 
-    prompt = f"""Here are recent posts/videos from {voice_name}. For each one:
+    return f"""Here are recent posts/videos from {voice_name}. For each one:
 1. Assign a topic slug from the FIXED TAXONOMY below. You MUST use one of these exact slugs — do NOT invent new ones.
 2. Rate relevance to current news: "high" (clearly about a news story), "medium" (tangentially related), "low" (personal, promo, entertainment only)
 3. Rate stance: Does this person EXPRESS or IMPLY a clear position, reaction, or argument?
@@ -996,6 +1068,48 @@ Return JSON array:
 
 Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal stuff, and entertainment-only content. When in doubt, include it — we want coverage."""
 
+
+def _apply_categorization(posts, categorized):
+    """Apply parsed categorization items to posts in place, then run the
+    perspective filter. Returns the filtered list, or posts unchanged when
+    categorized is empty (mirrors the original inline behavior)."""
+    if not categorized:
+        return posts
+    for item in categorized:
+        idx = item.get('index', -1)
+        if 0 <= idx < len(posts):
+            raw_topic = item.get('topic', 'uncategorized')
+            posts[idx]['topic'] = enforce_taxonomy(raw_topic)
+            posts[idx]['relevance'] = item.get('relevance', 'low')
+            posts[idx]['stance'] = item.get('stance', 'neutral')
+            posts[idx]['summary'] = (item.get('summary', '') or '').strip()[:120]
+            # Use REAL text, never AI-generated quotes
+            posts[idx]['quote'] = _quote_from_text(posts[idx]['text'])
+
+    # Perspective filter: keep only posts that are relevant AND where
+    # the voice is actually taking a stand (strong/lean). Pure reporting,
+    # promo and personal posts (neutral / low relevance) are dropped so
+    # downstream only ever sees genuine perspectives.
+    kept = [p for p in posts
+            if p.get('relevance') in ('high', 'medium')
+            and p.get('stance') in ('strong', 'lean')]
+    dropped = len(posts) - len(kept)
+    if dropped:
+        print(f"    Perspective filter: kept {len(kept)}, dropped {dropped} (no stance / not news)")
+    return kept
+
+
+def categorize_posts(voice_name, posts):
+    """Use Claude to categorize posts by news topic and filter garbage.
+
+    Sequential per-voice call. Also the mandatory fallback path when the
+    Message Batches path (categorize_posts_batch) is unavailable or a batch
+    result is errored/expired/missing."""
+    if not ANTHROPIC_API_KEY or not posts:
+        return posts
+
+    prompt = _build_categorization_prompt(voice_name, posts)
+
     # Track usage for cost estimation
     _usage_stats['claude_calls'] += 1
     _usage_stats['total_input_chars'] += len(prompt)
@@ -1007,7 +1121,7 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
             req = urllib.request.Request(
                 'https://api.anthropic.com/v1/messages',
                 data=json.dumps({
-                    'model': 'claude-haiku-4-5-20251001',
+                    'model': CLAUDE_MODEL,
                     'max_tokens': 2048,
                     'messages': [{'role': 'user', 'content': prompt}],
                 }).encode(),
@@ -1043,39 +1157,113 @@ Include ALL posts with "high" or "medium" relevance. Skip pure promo, personal s
             _usage_stats['total_output_tokens_est'] += 500  # rough estimate per call
         categorized = _parse_categorization_json(result_text)
         if categorized:
-            for item in categorized:
-                idx = item.get('index', -1)
-                if 0 <= idx < len(posts):
-                    raw_topic = item.get('topic', 'uncategorized')
-                    posts[idx]['topic'] = enforce_taxonomy(raw_topic)
-                    posts[idx]['relevance'] = item.get('relevance', 'low')
-                    posts[idx]['stance'] = item.get('stance', 'neutral')
-                    posts[idx]['summary'] = (item.get('summary', '') or '').strip()[:120]
-                    # Use REAL text, never AI-generated quotes
-                    original = posts[idx]['text']
-                    if original.startswith('[VIDEO: ') and '] ' in original:
-                        # Has transcript — pull the transcript part as the quote
-                        posts[idx]['quote'] = original.split('] ', 1)[1][:300]
-                    else:
-                        # Use the actual post/title text
-                        posts[idx]['quote'] = original[:300]
-
-            # Perspective filter: keep only posts that are relevant AND where
-            # the voice is actually taking a stand (strong/lean). Pure reporting,
-            # promo and personal posts (neutral / low relevance) are dropped so
-            # downstream only ever sees genuine perspectives.
-            kept = [p for p in posts
-                    if p.get('relevance') in ('high', 'medium')
-                    and p.get('stance') in ('strong', 'lean')]
-            dropped = len(posts) - len(kept)
-            if dropped:
-                print(f"    Perspective filter: kept {len(kept)}, dropped {dropped} (no stance / not news)")
-            return kept
+            return _apply_categorization(posts, categorized)
 
     except Exception as e:
         print(f"    ⚠ Claude categorization failed: {e}")
 
     return posts
+
+
+def categorize_posts_batch(voice_entries):
+    """Categorize many voices' posts in one Message Batches call (50% price).
+
+    voice_entries: list of (voice_id, voice_name, posts) with non-empty posts.
+    Returns {voice_id: parsed_items} for every request that SUCCEEDED (parsed
+    items may be an empty list — that mirrors the sequential unparseable-response
+    behavior and must NOT trigger a re-send). Voices whose result was errored,
+    expired, canceled, or missing are absent from the dict — the caller must
+    fall back to the sequential categorize_posts() path for those.
+    Returns None when the batch could not be created, the SDK is unavailable,
+    or polling timed out — the caller falls back to sequential for ALL voices.
+    """
+    if not ANTHROPIC_API_KEY or not voice_entries:
+        return None
+
+    try:
+        import anthropic
+        from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
+        from anthropic.types.messages.batch_create_params import Request
+    except Exception as e:
+        print(f"    anthropic SDK unavailable ({e}); using sequential categorization")
+        return None
+
+    # Build one request per voice, keyed by a synthetic custom_id (voice ids
+    # are slugs, but custom_id has charset/length limits — index is safe).
+    custom_ids = {}
+    requests = []
+    for i, (vid, voice_name, posts) in enumerate(voice_entries):
+        prompt = _build_categorization_prompt(voice_name, posts)
+        _usage_stats['claude_calls'] += 1
+        _usage_stats['total_input_chars'] += len(prompt)
+        custom_id = f'voice-{i}'
+        custom_ids[custom_id] = vid
+        requests.append(Request(
+            custom_id=custom_id,
+            params=MessageCreateParamsNonStreaming(
+                model=CLAUDE_MODEL,
+                max_tokens=2048,
+                messages=[{'role': 'user', 'content': prompt}],
+            ),
+        ))
+
+    import time as _t
+    batch = None
+    client = None
+
+    def _cancel_batch():
+        # Never leave a submitted batch running while we re-pay sequentially.
+        if batch is not None and client is not None:
+            try:
+                client.messages.batches.cancel(batch.id)
+            except Exception:
+                pass
+
+    try:
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        batch = client.messages.batches.create(requests=requests)
+        print(f"    Batch {batch.id}: {len(requests)} voices submitted")
+
+        # Poll until ended, with a hard deadline (the GH Action job has a
+        # 90-minute budget shared with the rest of the pipeline). A transient
+        # poll error must NOT abandon the batch — retry until the deadline
+        # (same discipline as stories.py's poll loop).
+        deadline = _t.monotonic() + BATCH_POLL_TIMEOUT
+        while True:
+            try:
+                batch = client.messages.batches.retrieve(batch.id)
+                if batch.processing_status == 'ended':
+                    break
+            except Exception as poll_err:
+                print(f"    Batch poll error ({poll_err}); retrying")
+            if _t.monotonic() >= deadline:
+                print(f"    Batch {batch.id} timed out after {BATCH_POLL_TIMEOUT // 60}min; falling back to sequential")
+                _cancel_batch()
+                return None
+            _t.sleep(BATCH_POLL_INTERVAL)
+
+        # Results arrive in ANY order — key strictly by custom_id.
+        results = {}
+        for result in client.messages.batches.results(batch.id):
+            vid = custom_ids.get(result.custom_id)
+            if vid is None:
+                continue
+            if result.result.type == 'succeeded':
+                msg = result.result.message
+                text = next((b.text for b in msg.content if b.type == 'text'), '')
+                usage = getattr(msg, 'usage', None)
+                if usage is not None and getattr(usage, 'output_tokens', None):
+                    _usage_stats['total_output_tokens_est'] += usage.output_tokens
+                else:
+                    _usage_stats['total_output_tokens_est'] += 500  # rough estimate per call
+                results[vid] = _parse_categorization_json(text)
+            else:
+                print(f"    Batch result for {vid}: {result.result.type}; will retry sequentially")
+        return results
+    except Exception as e:
+        print(f"    ⚠ Batch categorization failed ({e}); falling back to sequential")
+        _cancel_batch()
+        return None
 
 
 # ─── MAIN ────────────────────────────────────────────────────────────────────
@@ -1151,6 +1339,7 @@ def log_usage(voices_collected, posts_collected):
         'voices_collected': voices_collected,
         'posts_collected': posts_collected,
         'claude_calls': _usage_stats['claude_calls'],
+        'posts_reused': _usage_stats['posts_reused'],
         'estimated_input_tokens': est_input_tokens,
         'estimated_output_tokens': est_output_tokens,
         'estimated_cost_usd': round(est_cost, 2),
@@ -1172,7 +1361,7 @@ def log_usage(voices_collected, posts_collected):
 
     log.append(entry)
     USAGE_LOG_PATH.write_text(json.dumps(log, indent=2))
-    print(f"\n  💰 Usage: {_usage_stats['claude_calls']} Claude calls, ~{est_input_tokens:,} input tokens, ~{est_output_tokens:,} output tokens, ~${est_cost:.2f}")
+    print(f"\n  💰 Usage: {_usage_stats['claude_calls']} Claude calls, {_usage_stats['posts_reused']} posts reused, ~{est_input_tokens:,} input tokens, ~{est_output_tokens:,} output tokens, ~${est_cost:.2f}")
 
 
 def main():
@@ -1230,16 +1419,39 @@ def main():
     # Phase 3: Categorize with Claude (per voice)
     if not skip_categorize:
         print(f"\n  🤖 Categorizing posts with Claude...")
+        import time
+
+        # 3a: Reuse categorizations from recent day files — feeds re-surface
+        # the same posts night after night, so only genuinely new posts go
+        # to the model.
+        pending = []       # (voice_id, voice_name, uncached_posts)
+        reused_posts = {}  # voice_id -> posts categorized from cache
         for vid, data in all_voice_posts.items():
             voice_posts = [p for p in all_posts_flat if p['voiceId'] == vid]
-            categorized = categorize_posts(data['voice']['name'], voice_posts)
-            data['posts'] = categorized
-            topics = set(p.get('topic', '?') for p in categorized)
-            if categorized:
-                print(f"    {data['voice']['name']}: {len(categorized)} relevant posts — {', '.join(topics)}")
+            cache = load_categorized_cache(vid)
+            reused, new_posts = split_cached_posts(voice_posts, cache)
+            reused_posts[vid] = reused
+            data['posts'] = reused
+            if new_posts:
+                pending.append((vid, data['voice']['name'], new_posts))
+        if _usage_stats['posts_reused']:
+            print(f"    ♻ Reused categorization for {_usage_stats['posts_reused']} posts from recent day files")
 
-            import time
-            time.sleep(0.5)  # rate limit Claude calls (Haiku handles this)
+        # 3b: One Message Batch for all new posts (50% price). Any voice the
+        # batch can't cover falls back to the sequential per-voice call.
+        batch_results = categorize_posts_batch(pending)
+        for vid, voice_name, new_posts in pending:
+            items = None if batch_results is None else batch_results.get(vid)
+            if items is not None:
+                categorized = _apply_categorization(new_posts, items)
+            else:
+                categorized = categorize_posts(voice_name, new_posts)
+                time.sleep(0.5)  # rate limit Claude calls (Haiku handles this)
+            data = all_voice_posts[vid]
+            data['posts'] = reused_posts[vid] + categorized
+            topics = set(p.get('topic', '?') for p in data['posts'])
+            if data['posts']:
+                print(f"    {voice_name}: {len(data['posts'])} relevant posts — {', '.join(topics)}")
 
         # Log usage after categorization
         log_usage(len(all_voice_posts), total_posts)
