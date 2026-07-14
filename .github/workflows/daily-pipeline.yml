@@ -10,6 +10,10 @@ on:
     # from the runner's UTC clock, so any run after 00:00 UTC is "today."
     - cron: '17 6 * * *'
     - cron: '17 8 * * *'
+    # Midday refresh so the site is fresh during business hours (~1 PM ET).
+    # 17:17 UTC = 1:17 PM EDT / 12:17 PM EST. Cross-day reuse + Batch API
+    # (Jul 2026) make this run ~$0.75 — mostly re-scrapes, few new posts.
+    - cron: '17 17 * * *'
   workflow_dispatch:
 
 # Never run two pipelines at once. A manual trigger queues behind an
