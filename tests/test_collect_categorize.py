@@ -347,6 +347,27 @@ class ApplyCategorizationTests(unittest.TestCase):
             kept = collect._apply_categorization(posts, items)
         self.assertEqual(kept, [])  # post never categorized -> filtered out
 
+    def test_malformed_items_do_not_crash(self):
+        # A stray int / string / null / bad-index object in the array (real
+        # crash from the 2026-07-15 nightly run) must be skipped, and the
+        # well-formed items in the same array must still apply.
+        posts = [
+            _post("https://x.com/a/1", text="Strong take"),
+            _post("https://x.com/a/2", text="Another take"),
+        ]
+        items = [
+            0,                       # bare int — the exact crash trigger
+            "nonsense",              # bare string
+            None,                    # null element
+            {"index": "x", "topic": "economy", "relevance": "high", "stance": "strong"},
+            {"index": 0, "topic": "economy", "relevance": "high", "stance": "strong", "summary": "s"},
+            {"index": 1, "topic": "economy", "relevance": "medium", "stance": "lean", "summary": ""},
+        ]
+        with redirect_stdout(io.StringIO()):
+            kept = collect._apply_categorization(posts, items)
+        self.assertEqual(len(kept), 2)
+        self.assertEqual({p["quote"] for p in kept}, {"Strong take", "Another take"})
+
 
 if __name__ == "__main__":
     unittest.main()
