@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-07-15T16:57:36.643421",
+  "collectedAt": "2026-07-15T19:16:12.260684",
   "date": "2026-07-15",
   "posts": [
     {
@@ -45,6 +45,20 @@
       "stance": "lean",
       "summary": "Interviews VP JD Vance on administration policies",
       "quote": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Future Headlines: Summer 2026 | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=ARIQ5M0jNmo",
+      "timestamp": "2026-06-30T16:00:13+00:00",
+      "type": "video_title",
+      "topic": "other",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Satirical predictions about future political and social events",
+      "quote": "Future Headlines: Summer 2026 | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -106,15 +120,29 @@
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
       "platform": "youtube",
-      "text": "Future Headlines: Summer 2026 | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=ARIQ5M0jNmo",
-      "timestamp": "2026-06-30T16:00:13+00:00",
+      "text": "Overtime with Bill Maher: Sen. Raphael Warnock, Larry Wilmore (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=F4D0jFRKgig",
+      "timestamp": "2026-06-27T03:00:32+00:00",
       "type": "video_title",
-      "topic": "other",
+      "topic": "elections",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Discusses electoral politics with Democratic senator",
+      "quote": "Overtime with Bill Maher: Sen. Raphael Warnock, Larry Wilmore (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Overtime with Bill Maher: Rep. Ro Khanna, Jonathan Martin (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=qd0sjtmQVT8",
+      "timestamp": "2026-06-20T03:00:36+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Satirical predictions about future political and social events",
-      "quote": "Future Headlines: Summer 2026 | Real Time with Bill Maher (HBO)"
+      "summary": "Engages with progressive congressman on policy",
+      "quote": "Overtime with Bill Maher: Rep. Ro Khanna, Jonathan Martin (HBO)"
     }
   ],
   "topicSummary": {
@@ -124,6 +152,12 @@
         "sourceUrl": "https://x.com/billmaher/status/2073083300235903205",
         "platform": "x",
         "timestamp": "2026-07-03T16:35:49+00:00"
+      },
+      {
+        "quote": "Overtime with Bill Maher: Rep. Ro Khanna, Jonathan Martin (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=qd0sjtmQVT8",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:36+00:00"
       }
     ],
     "culture-war": [
@@ -172,6 +206,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=ARIQ5M0jNmo",
         "platform": "youtube",
         "timestamp": "2026-06-30T16:00:13+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "Overtime with Bill Maher: Sen. Raphael Warnock, Larry Wilmore (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=F4D0jFRKgig",
+        "platform": "youtube",
+        "timestamp": "2026-06-27T03:00:32+00:00"
       }
     ]
   }

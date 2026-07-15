@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-07-15T16:57:36.640752",
+  "collectedAt": "2026-07-15T19:16:12.258114",
   "date": "2026-07-15",
   "posts": [
     {
@@ -45,6 +45,20 @@
       "stance": "lean",
       "summary": "Promotes collaboration with respected political commentator",
       "quote": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
+      "timestamp": "2026-07-15T15:55:13+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Examines inflation and job market dynamics",
+      "quote": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart"
     },
     {
       "voiceId": "jon-stewart",
@@ -148,43 +162,29 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "Trump's Department Of &quot;Justice&quot; | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/pSvcBWgz7eo",
-      "timestamp": "2026-07-08T11:58:50+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Condemns Trump's Department of Justice as politically weaponized",
-      "quote": "Trump's Department Of &quot;Justice&quot; | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Jack Smith &amp; Brian Driscoll | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/Cmqen2TIeBE",
-      "timestamp": "2026-07-07T20:20:11+00:00",
-      "type": "video_title",
-      "topic": "supreme-court-legal",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Discusses weaponization of justice by Trump DOJ",
-      "quote": "Jack Smith &amp; Brian Driscoll | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
-      "timestamp": "2026-07-15T15:55:13+00:00",
+      "text": "The Fed, Inflation and Our Uncertain Economy | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/watch?v=HM9AO0t0zrQ",
+      "timestamp": "2026-07-15T18:19:05+00:00",
       "type": "video_title",
       "topic": "economy-trade",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Examines inflation and job market dynamics",
-      "quote": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart"
+      "summary": "Examines Federal Reserve policy and inflation dynamics",
+      "quote": "The Fed, Inflation and Our Uncertain Economy | The Weekly Show with Jon Stewart"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Relitigating 2008 | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/WShAzcyBRgo",
+      "timestamp": "2026-07-15T17:57:18+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Revisits 2008 financial crisis causes and consequences",
+      "quote": "Relitigating 2008 | The Weekly Show with Jon Stewart"
     }
   ],
   "topicSummary": {
@@ -210,6 +210,26 @@
         "sourceUrl": "https://x.com/jonstewart/status/2039427114311557408",
         "platform": "x",
         "timestamp": "2026-04-01T19:38:09+00:00"
+      }
+    ],
+    "economy-trade": [
+      {
+        "quote": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
+        "platform": "youtube",
+        "timestamp": "2026-07-15T15:55:13+00:00"
+      },
+      {
+        "quote": "The Fed, Inflation and Our Uncertain Economy | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/watch?v=HM9AO0t0zrQ",
+        "platform": "youtube",
+        "timestamp": "2026-07-15T18:19:05+00:00"
+      },
+      {
+        "quote": "Relitigating 2008 | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/WShAzcyBRgo",
+        "platform": "youtube",
+        "timestamp": "2026-07-15T17:57:18+00:00"
       }
     ],
     "criminal-justice": [
@@ -244,12 +264,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Lyk9_Ku9-Q8",
         "platform": "youtube",
         "timestamp": "2026-07-08T18:22:29+00:00"
-      },
-      {
-        "quote": "Jack Smith &amp; Brian Driscoll | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/Cmqen2TIeBE",
-        "platform": "youtube",
-        "timestamp": "2026-07-07T20:20:11+00:00"
       }
     ],
     "trump-administration": [
@@ -264,20 +278,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/EEN2buy98Zw",
         "platform": "youtube",
         "timestamp": "2026-07-09T15:57:22+00:00"
-      },
-      {
-        "quote": "Trump's Department Of &quot;Justice&quot; | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/pSvcBWgz7eo",
-        "platform": "youtube",
-        "timestamp": "2026-07-08T11:58:50+00:00"
-      }
-    ],
-    "economy-trade": [
-      {
-        "quote": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
-        "platform": "youtube",
-        "timestamp": "2026-07-15T15:55:13+00:00"
       }
     ]
   }
