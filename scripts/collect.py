@@ -1076,7 +1076,17 @@ def _apply_categorization(posts, categorized):
     if not categorized:
         return posts
     for item in categorized:
-        idx = item.get('index', -1)
+        # The model occasionally emits a malformed array element — a bare int,
+        # a string, or an object whose "index" isn't a number. One bad element
+        # must not crash the whole nightly collect (it did: a stray int here
+        # aborted the entire run mid-way through the voice list). Skip anything
+        # that isn't a well-formed {index: <number>, ...} object.
+        if not isinstance(item, dict):
+            continue
+        try:
+            idx = int(item.get('index', -1))
+        except (TypeError, ValueError):
+            continue
         if 0 <= idx < len(posts):
             raw_topic = item.get('topic', 'uncategorized')
             posts[idx]['topic'] = enforce_taxonomy(raw_topic)
