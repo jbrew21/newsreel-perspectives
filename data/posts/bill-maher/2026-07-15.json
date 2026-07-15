@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-07-15T09:52:34.940535",
+  "collectedAt": "2026-07-15T16:57:36.643421",
   "date": "2026-07-15",
   "posts": [
     {
@@ -17,6 +17,20 @@
       "stance": "lean",
       "summary": "Suggests AOC and Mamdani unavailable or unwilling to appear on show",
       "quote": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests."
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "x",
+      "text": "The World Cup is at our shores, and all these people are doing us a great service. They are reminding Americans that this place is kind of awesome.",
+      "sourceUrl": "https://x.com/billmaher/status/2070714503923446000",
+      "timestamp": "2026-06-27T03:43:04+00:00",
+      "type": "tweet",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Praises World Cup visitors for highlighting American exceptionalism",
+      "quote": "The World Cup is at our shores, and all these people are doing us a great service. They are reminding Americans that this place is kind of awesome."
     },
     {
       "voiceId": "bill-maher",
@@ -91,16 +105,16 @@
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
-      "platform": "x",
-      "text": "The World Cup is at our shores, and all these people are doing us a great service. They are reminding Americans that this place is kind of awesome.",
-      "sourceUrl": "https://x.com/billmaher/status/2070714503923446000",
-      "timestamp": "2026-06-27T03:43:04+00:00",
-      "type": "tweet",
-      "topic": "culture-war",
+      "platform": "youtube",
+      "text": "Future Headlines: Summer 2026 | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=ARIQ5M0jNmo",
+      "timestamp": "2026-06-30T16:00:13+00:00",
+      "type": "video_title",
+      "topic": "other",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Praises World Cup visitors for highlighting American exceptionalism",
-      "quote": "The World Cup is at our shores, and all these people are doing us a great service. They are reminding Americans that this place is kind of awesome."
+      "summary": "Satirical predictions about future political and social events",
+      "quote": "Future Headlines: Summer 2026 | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
@@ -110,6 +124,26 @@
         "sourceUrl": "https://x.com/billmaher/status/2073083300235903205",
         "platform": "x",
         "timestamp": "2026-07-03T16:35:49+00:00"
+      }
+    ],
+    "culture-war": [
+      {
+        "quote": "The World Cup is at our shores, and all these people are doing us a great service. They are reminding Americans that this place is kind of awesome.",
+        "sourceUrl": "https://x.com/billmaher/status/2070714503923446000",
+        "platform": "x",
+        "timestamp": "2026-06-27T03:43:04+00:00"
+      },
+      {
+        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+        "platform": "youtube",
+        "timestamp": "2026-06-27T03:00:23+00:00"
+      },
+      {
+        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:05+00:00"
       }
     ],
     "trump-administration": [
@@ -132,24 +166,12 @@
         "timestamp": "2026-06-20T03:00:06+00:00"
       }
     ],
-    "culture-war": [
+    "other": [
       {
-        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+        "quote": "Future Headlines: Summer 2026 | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=ARIQ5M0jNmo",
         "platform": "youtube",
-        "timestamp": "2026-06-27T03:00:23+00:00"
-      },
-      {
-        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
-        "platform": "youtube",
-        "timestamp": "2026-06-20T03:00:05+00:00"
-      },
-      {
-        "quote": "The World Cup is at our shores, and all these people are doing us a great service. They are reminding Americans that this place is kind of awesome.",
-        "sourceUrl": "https://x.com/billmaher/status/2070714503923446000",
-        "platform": "x",
-        "timestamp": "2026-06-27T03:43:04+00:00"
+        "timestamp": "2026-06-30T16:00:13+00:00"
       }
     ]
   }

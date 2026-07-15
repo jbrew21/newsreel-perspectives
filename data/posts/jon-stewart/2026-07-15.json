@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-07-15T09:52:34.938363",
+  "collectedAt": "2026-07-15T16:57:36.640752",
   "date": "2026-07-15",
   "posts": [
     {
@@ -31,6 +31,20 @@
       "stance": "lean",
       "summary": "Implies criticism of current foreign policy approach",
       "quote": "New podcast\u2026same foreign policy\u2026"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "x",
+      "text": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!",
+      "sourceUrl": "https://x.com/jonstewart/status/2039427114311557408",
+      "timestamp": "2026-04-01T19:38:09+00:00",
+      "type": "tweet",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Promotes collaboration with respected political commentator",
+      "quote": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!"
     },
     {
       "voiceId": "jon-stewart",
@@ -162,29 +176,15 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "Food Court Of Information | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/d73CMccSlS0",
-      "timestamp": "2026-07-06T13:56:33+00:00",
+      "text": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
+      "timestamp": "2026-07-15T15:55:13+00:00",
       "type": "video_title",
-      "topic": "media-press",
-      "relevance": "medium",
+      "topic": "economy-trade",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Critiques misinformation and distorted news coverage",
-      "quote": "Food Court Of Information | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "x",
-      "text": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!",
-      "sourceUrl": "https://x.com/jonstewart/status/2039427114311557408",
-      "timestamp": "2026-04-01T19:38:09+00:00",
-      "type": "tweet",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Promotes collaboration with respected political commentator",
-      "quote": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!"
+      "summary": "Examines inflation and job market dynamics",
+      "quote": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart"
     }
   ],
   "topicSummary": {
@@ -202,6 +202,14 @@
         "sourceUrl": "https://x.com/jonstewart/status/2054700267644358834",
         "platform": "x",
         "timestamp": "2026-05-13T23:08:12+00:00"
+      }
+    ],
+    "media-personalities": [
+      {
+        "quote": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!",
+        "sourceUrl": "https://x.com/jonstewart/status/2039427114311557408",
+        "platform": "x",
+        "timestamp": "2026-04-01T19:38:09+00:00"
       }
     ],
     "criminal-justice": [
@@ -264,20 +272,12 @@
         "timestamp": "2026-07-08T11:58:50+00:00"
       }
     ],
-    "media-press": [
+    "economy-trade": [
       {
-        "quote": "Food Court Of Information | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/d73CMccSlS0",
+        "quote": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
         "platform": "youtube",
-        "timestamp": "2026-07-06T13:56:33+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!",
-        "sourceUrl": "https://x.com/jonstewart/status/2039427114311557408",
-        "platform": "x",
-        "timestamp": "2026-04-01T19:38:09+00:00"
+        "timestamp": "2026-07-15T15:55:13+00:00"
       }
     ]
   }
