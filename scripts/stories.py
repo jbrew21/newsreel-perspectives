@@ -188,6 +188,26 @@ def normalize_cluster_name(name):
     return None
 
 
+# Catch-all bucket names the model invents for voices that aren't actually about
+# this story — topic-adjacent posts (same broad topic tag, different event) it
+# couldn't fit into a real position. Step 3 of the analysis prompt tells it to
+# mark these "unrelated" in RELEVANCE "rather than forcing it into a cluster,"
+# but the output has no per-voice relevance field (only aggregate counts), so its
+# only lever is to bucket them — and that bucket then renders and counts as a
+# fake argument position (e.g. "Unrelated Commentary (9)" on the June CPI story).
+# Drop these buckets entirely: they are not a stance anyone is taking.
+TANGENTIAL_CLUSTER_RE = re.compile(
+    r'\b(unrelated|tangential|off[\s-]?topic|not[\s-]?related|'
+    r'no[\s-]?(clear[\s-]?)?position|miscellaneous)\b',
+    re.I,
+)
+
+
+def is_tangential_cluster(name):
+    """True if a cluster name is a catch-all for off-topic voices, not a stance."""
+    return bool(TANGENTIAL_CLUSTER_RE.search(name or ''))
+
+
 # ── Step 1: Gather candidate stories ────────────────────────────
 
 def get_cms_stories(date):
@@ -768,6 +788,13 @@ def build_stories(date=None):
         # Build cluster objects with full voice data
         cluster_list = []
         for cluster_name, voice_names in result['clusters'].items():
+            # Skip the model's off-topic catch-all bucket. These voices matched
+            # the story's broad topic tag but their posts are about a different
+            # event; showing them as a "position" is misleading (see
+            # is_tangential_cluster).
+            if is_tangential_cluster(cluster_name):
+                print(f"    Dropped off-topic bucket '{cluster_name}' ({len(voice_names)} voices) — not a position")
+                continue
             cluster_voices = []
             for name in voice_names:
                 for vid, entry in candidate['voices'].items():
@@ -958,7 +985,10 @@ If no real tension exists, return {{"tension": 0}}"""
             'coverUrl': candidate.get('cover_url', ''),
             'storyType': candidate.get('story_type', ''),
             'topicSlugs': candidate['topic_slugs'],
-            'voiceCount': candidate['voice_count'],
+            # Count only voices shown in a real position — total_voices is the
+            # sum of the surviving clusters (after validation + off-topic drop),
+            # so the "N voices" header matches what the position cards add up to.
+            'voiceCount': total_voices,
             'clusterCount': len(cluster_list),
             'clusters': cluster_list,
             'confidence': confidence,

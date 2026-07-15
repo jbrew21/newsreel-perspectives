@@ -277,5 +277,27 @@ class AnalyzeVoicesTests(unittest.TestCase):
                          stories.ANALYZE_MAX_TOKENS)
 
 
+class TangentialClusterTests(unittest.TestCase):
+    def test_catch_all_bucket_names_are_dropped(self):
+        for name in ['Unrelated Commentary', 'Tangential', 'Off-Topic Reactions',
+                     'Off Topic', 'No Clear Position', 'No Position',
+                     'Miscellaneous', 'Not Related']:
+            self.assertTrue(stories.is_tangential_cluster(name),
+                            f"{name!r} should be treated as off-topic")
+
+    def test_real_positions_are_kept(self):
+        for name in ['Structural/Policy Solutions', 'Affordability Crisis Persists',
+                     'Celebrating the Good Numbers', 'Warning Relief Is Temporary',
+                     'Media Criticism', 'Deterrence Advocates', 'Pro-Intervention Hawk',
+                     'Position of Strength', 'Common Position', 'Opposition Voices',
+                     'Now Positioned']:
+            self.assertFalse(stories.is_tangential_cluster(name),
+                             f"{name!r} is a real stance and must be kept")
+
+    def test_empty_and_none_are_not_tangential(self):
+        self.assertFalse(stories.is_tangential_cluster(''))
+        self.assertFalse(stories.is_tangential_cluster(None))
+
+
 if __name__ == '__main__':
     unittest.main()
