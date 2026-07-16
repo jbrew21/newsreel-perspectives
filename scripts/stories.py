@@ -208,6 +208,23 @@ def is_tangential_cluster(name):
     return bool(TANGENTIAL_CLUSTER_RE.search(name or ''))
 
 
+# Per-slug snapshot archive. A story's only addressable id is a slug derived
+# from its AI-generated headline, and every rebuild regenerates that headline
+# (so the slug/URL changes) AND overwrites the same-day stories-*.json. Any link
+# captured before a rebuild then 404s as "may have rotated out." Snapshotting
+# each built story here — keyed by the exact slug the client/serve use — keeps
+# every headline variant ever shown resolvable (serve.find_story_by_slug falls
+# back to this dir). Lives under data/posts/ so the pipeline commits it, in a
+# subdirectory so the top-level dated-file prune leaves it intact.
+STORY_ARCHIVE_DIR = POSTS_DIR / "story-archive"
+
+
+def story_slug(headline):
+    """Slugify a headline. MUST match serve.story_slug and story.html slugify()
+    exactly, or archived snapshots won't resolve."""
+    return re.sub(r'[^a-z0-9]+', '-', (headline or '').lower()).strip('-')[:60]
+
+
 # ── Step 1: Gather candidate stories ────────────────────────────
 
 def get_cms_stories(date):
@@ -1038,6 +1055,20 @@ If no real tension exists, return {{"tension": 0}}"""
     output_path = POSTS_DIR / f'stories-{date}.json'
     output_path.write_text(json.dumps(stories, indent=2))
     print(f"\n  Saved {len(stories)} stories to {output_path}")
+
+    # Durable per-slug snapshots so a link survives the next rebuild's headline
+    # change (see STORY_ARCHIVE_DIR). Write every story under its own slug; an
+    # unchanged headline just overwrites its own snapshot, a changed one adds a
+    # new slug alongside the old, and both keep resolving.
+    STORY_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    archived = 0
+    for s in stories:
+        slug = story_slug(s.get('headline', ''))
+        if not slug:
+            continue
+        (STORY_ARCHIVE_DIR / f'{slug}.json').write_text(json.dumps(s, indent=2))
+        archived += 1
+    print(f"  Archived {archived} story snapshots to {STORY_ARCHIVE_DIR}")
 
     # Also save as fractures for backward compat
     compat_path = POSTS_DIR / f'fractures-{date}.json'
