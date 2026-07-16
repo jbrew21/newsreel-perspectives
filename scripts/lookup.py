@@ -923,7 +923,14 @@ def ai_search(question, days=None):
     search_query = parsed['searchQuery'] or question
     audience = parsed['audience']
 
-    result = lookup_story(search_query, days=days, skip_clusters=True) or {}
+    # Retrieval is topic-driven, and an audience implies a domain the bare
+    # searchQuery may not: "doctors on Lindsey Graham's death" parses to
+    # "Lindsey Graham death", which matches political topics only — the
+    # healthcare topics where the doctors live never enter the pool. Feeding
+    # the audience into the retrieval query biases topic matching toward its
+    # domain; the filter stage still enforces who actually fits.
+    retrieval_query = f'{search_query} {audience}' if audience else search_query
+    result = lookup_story(retrieval_query, days=days, skip_clusters=True) or {}
     voices = result.get('voices', [])
     base = {
         'mode': 'ai',
