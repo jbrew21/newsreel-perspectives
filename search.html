@@ -891,10 +891,24 @@
     .wire-time { grid-column: 2 / 4; grid-row: 3; display: block; align-self: start; }
 
     .search-hint { min-height: 44px; display: inline-flex; align-items: center; font-size: 11px; }
-    .search-hints { max-height: 52px; }
+    .search-hints { max-height: 32px; margin-top: var(--space-2); }
     .search-hints.expanded { max-height: 360px; }
-    .search-hints-toggle { display: block; min-height: 44px; }
-    .time-btn { font-size: var(--text-xs); padding: var(--space-2) var(--space-3); min-height: 44px; }
+    .search-hints-toggle { display: block; margin-top: 0; }
+    .search-hints-toggle button { min-height: 44px; }
+    /* One scrollable row — wrapping put "Month" alone on its own 44px-tall
+       line and doubled the filter's height. flex-start, not center: centered
+       overflow clips both ends unreachably. */
+    .time-filter {
+      flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start;
+      -webkit-overflow-scrolling: touch; scrollbar-width: none;
+      padding: 0 var(--space-4);
+    }
+    .time-filter::-webkit-scrollbar { display: none; }
+    .time-btn {
+      font-size: var(--text-xs); padding: var(--space-2) var(--space-3);
+      min-height: 44px; flex: 0 0 auto; white-space: nowrap;
+    }
+    .time-label { flex: 0 0 auto; }
     .sort-seg button { min-height: 44px; padding: 10px 14px; }
     .load-more-btn { min-height: 48px; }
     .site-footer { padding: var(--space-7) var(--space-4) var(--space-6); }
@@ -2368,9 +2382,9 @@
 
   function backToFeed() {
     showFeedView();
-    // Clear the ?q= from the URL so reload lands on the feed the user sees.
+    // Clear the ?q=/?ask= from the URL so reload lands on the feed the user sees.
     try {
-      if (location.search.indexOf('q=') !== -1) history.pushState({persp:0}, '', location.pathname);
+      if (/[?&](q|ask)=/.test(location.search)) history.pushState({persp:0}, '', location.pathname);
     } catch (e) { /* cosmetic */ }
   }
 
@@ -2383,8 +2397,14 @@
 
   function restoreFromUrl(isInitialLoad) {
     var params = new URLSearchParams(location.search);
-    var q = (params.get('q') || '').trim();
+    var ask = (params.get('ask') || '').trim();
+    var q = ask || (params.get('q') || '').trim();
     if (q) {
+      // An ?ask= link restores in Ask AI mode (doSearch routes by searchMode).
+      if (ask && searchMode !== 'ask') {
+        var askBtn = searchModeEl.querySelector('[data-mode="ask"]');
+        if (askBtn) askBtn.click();
+      }
       input.value = q;
       selectedDays = params.get('days') || '';
       syncTimeButtons();
