@@ -167,6 +167,30 @@
   /* ── SEARCH ── */
   .search-section { max-width: 680px; margin: 0 auto; padding: var(--space-4) var(--space-5) 0; }
   .search-box { position: relative; }
+
+  /* -- SEARCH MODE TOGGLE (Search vs Ask AI) -- */
+  .search-mode { display: inline-flex; gap: 2px; margin-bottom: 10px; padding: 3px;
+    background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-md); }
+  .search-mode-btn { appearance: none; border: none; background: transparent; cursor: pointer;
+    font-family: inherit; font-size: var(--text-xs); font-weight: 600; color: var(--text-secondary);
+    padding: 6px 14px; border-radius: var(--radius-sm); transition: color .12s, background .12s; }
+  .search-mode-btn:hover { color: var(--text-primary); }
+  .search-mode-btn.active { color: #0d0d0f; background: var(--accent); }
+
+  /* -- AI SUMMARY CARD -- */
+  .ai-summary { display: none; margin: 0 0 18px; padding: 18px 20px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-left: 3px solid var(--cta); border-radius: var(--radius-md); }
+  .ai-summary .ai-summary-label { font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--cta);
+    font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 7px; }
+  .ai-summary .ai-summary-q { font-size: var(--text-sm); color: var(--text-secondary);
+    font-style: italic; margin-bottom: 10px; }
+  .ai-summary .ai-summary-body { font-size: var(--text-md); line-height: 1.55; color: var(--text-primary); }
+  .ai-summary .ai-summary-meta { margin-top: 12px; font-size: var(--text-xs); color: var(--text-secondary); }
+  .ai-summary .ai-summary-meta strong { color: var(--accent); font-weight: 600; }
+  .ai-summary.loading-state .ai-summary-body { color: var(--text-secondary); }
+
   .search-box input {
     width: 100%;
     padding: 14px 84px 14px var(--space-4);
@@ -899,6 +923,10 @@
 </div>
 
 <div class="search-section">
+  <div class="search-mode" id="searchMode" role="tablist" aria-label="Search mode">
+    <button class="search-mode-btn active" data-mode="keyword" role="tab" aria-selected="true">Search</button>
+    <button class="search-mode-btn" data-mode="ask" role="tab" aria-selected="false">Ask AI</button>
+  </div>
   <div class="search-box">
     <input type="search" enterkeyhint="search" autocomplete="off" id="searchInput" placeholder="Search any topic or story..." autofocus aria-label="Search voices and stories">
     <button type="button" class="search-clear" id="searchClear" aria-label="Clear search">&#10005;</button>
@@ -1028,6 +1056,7 @@
   </div>
   <div style="margin-top:16px;font-size:13px;color:var(--text-dim);">Searching voices...</div>
 </div>
+<div class="ai-summary" id="aiSummary" style="display:none"></div>
 <div class="results" id="results"></div>
 
 </main>
@@ -1114,6 +1143,59 @@
     var expanded = searchHints.classList.toggle('expanded');
     this.textContent = expanded ? 'Show fewer topics' : 'Show more topics';
   });
+
+  /* ── SEARCH MODE (keyword vs AI "Ask") ── */
+  const searchModeEl = document.getElementById('searchMode');
+  const aiSummaryEl = document.getElementById('aiSummary');
+  var searchMode = 'keyword';   // 'keyword' | 'ask'
+  var SPARK_ICON = '<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 5.6L19.5 9l-4.5 3.3L16.6 18 12 14.7 7.4 18l1.6-5.7L4.5 9l5.6-1.4z"/></svg>';
+  var WARN_ICON = '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>';
+  Array.prototype.forEach.call(searchModeEl.querySelectorAll('.search-mode-btn'), function(btn) {
+    btn.addEventListener('click', function() {
+      var mode = btn.getAttribute('data-mode');
+      if (mode === searchMode) return;
+      searchMode = mode;
+      Array.prototype.forEach.call(searchModeEl.querySelectorAll('.search-mode-btn'), function(b) {
+        var on = b === btn;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      input.placeholder = (mode === 'ask')
+        ? 'Ask a question, e.g. what do doctors say about…'
+        : 'Search any topic or story...';
+      hideAiSummary();
+      input.focus();
+    });
+  });
+
+  function hideAiSummary() { aiSummaryEl.style.display = 'none'; aiSummaryEl.innerHTML = ''; }
+
+  function showAiSummary(q, data, loadingState) {
+    if (loadingState) {
+      aiSummaryEl.className = 'ai-summary loading-state';
+      aiSummaryEl.innerHTML =
+        '<div class="ai-summary-label">' + SPARK_ICON + ' AI Answer</div>' +
+        '<div class="ai-summary-q">' + esc(q) + '</div>' +
+        '<div class="ai-summary-body">Reading what voices are saying…</div>';
+      aiSummaryEl.style.display = 'block';
+      return;
+    }
+    var count = (data.voices || []).length;
+    var summary = data.summary || 'No matching voices have weighed in yet.';
+    var audience = data.audienceLabel || data.audience;
+    var meta = '';
+    if (count) {
+      meta = '<div class="ai-summary-meta">Based on <strong>' + count + '</strong> voice' +
+        (count === 1 ? '' : 's') + (audience ? ' matching “' + esc(audience) + '”' : '') +
+        (data.searchQuery ? ' on ' + esc(data.searchQuery) : '') + '</div>';
+    }
+    aiSummaryEl.className = 'ai-summary';
+    aiSummaryEl.innerHTML =
+      '<div class="ai-summary-label">' + SPARK_ICON + ' AI Answer</div>' +
+      '<div class="ai-summary-q">' + esc(q) + '</div>' +
+      '<div class="ai-summary-body">' + esc(summary) + '</div>' + meta;
+    aiSummaryEl.style.display = 'block';
+  }
 
   /* ── STATE ── */
   let _voiceLens = {};
@@ -1760,6 +1842,8 @@
   var activeResult = null;   // handle returned by renderResults for live patches
 
   function doSearch() {
+    if (searchMode === 'ask') { doAsk(); return; }
+    hideAiSummary();
     var q = input.value.trim();
     if (!q) return;
     var searchKey = q.toLowerCase() + '|' + (selectedDays || '');
@@ -1855,6 +1939,74 @@
         // signal, and a superseding search (or showFeedView) aborting it is
         // exactly what we want. Aborting an already-settled chain is a no-op.
         lastSearchKey = '';
+        searchBtn.disabled = false;
+        loading.classList.remove('active');
+      });
+  }
+
+  /* ── AI "ASK" SEARCH ──
+     Natural-language question -> grounded summary card on top + the voices
+     that answer it below (reusing renderResults for the voice feed). */
+  function doAsk() {
+    var q = input.value.trim();
+    if (!q) return;
+    if (searchCtrl) searchCtrl.abort();
+    searchCtrl = new AbortController();
+    var ctrl = searchCtrl;
+    var gen = ++searchGen;
+    searchViewActive = true;
+    if (activeResult && activeResult.destroy) activeResult.destroy();
+
+    searchBtn.disabled = true;
+    loading.classList.add('active');
+    resultsDiv.innerHTML = '';
+    activeResult = null;
+    feedEl.style.display = 'none';
+    feedSkeleton.style.display = 'none';
+    searchHints.style.display = 'none';
+    hintsToggle.style.display = 'none';
+    wireSection.style.display = 'none';
+    splitSection.style.display = 'none';
+    document.getElementById('heroSection').style.display = 'none';
+    statsEl.style.display = 'none';
+    timeFilter.style.display = 'flex';
+    syncSearchClear();
+    showAiSummary(q, null, true);   // loading state
+
+    var url = BASE + '/api/ask?q=' + encodeURIComponent(q);
+    if (selectedDays) url += '&days=' + selectedDays;
+
+    fetchJSON(url, { signal: ctrl.signal })
+      .then(function(data) {
+        if (gen !== searchGen) return;
+        if (data.error) {
+          hideAiSummary();
+          resultsDiv.innerHTML = '';
+          resultsDiv.appendChild(stateMessage(WARN_ICON, 'AI search error', data.error, 'Back to stories', backToFeed));
+          return;
+        }
+        showAiSummary(q, data, false);
+        activeResult = renderResults(data);
+        try {
+          var histUrl = location.pathname + '?ask=' + encodeURIComponent(q) + (selectedDays ? '&days=' + selectedDays : '');
+          (history.state && history.state.persp) ? history.replaceState({persp:1}, '', histUrl) : history.pushState({persp:1}, '', histUrl);
+        } catch (e) { /* sandboxed — cosmetic only */ }
+      })
+      .catch(function(err) {
+        if (gen !== searchGen || ctrl.signal.aborted) return;
+        console.error('[Perspectives] AI search failed:', err);
+        hideAiSummary();
+        resultsDiv.innerHTML = '';
+        var isRate = !!err.rateLimited;
+        resultsDiv.appendChild(stateMessage(
+          WARN_ICON,
+          isRate ? 'Too many searches' : 'Could not complete AI search',
+          isRate ? 'You’re asking quickly. Wait a few seconds and try again.'
+                 : 'Something went wrong. Tap to try again.',
+          'Try again', doAsk));
+      })
+      .finally(function() {
+        if (gen !== searchGen) return;
         searchBtn.disabled = false;
         loading.classList.remove('active');
       });
@@ -2181,6 +2333,7 @@
   /* ── BACK TO FEED ── */
   function showFeedView() {
     searchViewActive = false;
+    hideAiSummary();
     // Kill any live search chain first: without this, a search racing a
     // back-navigation would paint its results (and pushState its ?q=) on top
     // of the freshly restored feed when its phase 1 resolved.

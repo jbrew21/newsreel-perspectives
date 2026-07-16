@@ -629,6 +629,28 @@ def do_search(query, days=None, fast=False):
         return {'error': 'Search failed. Please try again.', 'code': 'failed'}
 
 
+def do_ask(question, days=None):
+    """Natural-language ("AI") search: returns a grounded summary + the voices,
+    filtered to the audience the question asks for. Cached like do_search."""
+    cache_key = f"ask:{hashlib.md5(f'{question}:{days}'.encode()).hexdigest()}"
+    cached = cache_get(cache_key)
+    if cached:
+        log.info(f"Ask cache hit: {question[:50]}")
+        return cached
+
+    lookup = get_lookup()
+    if not lookup or not hasattr(lookup, 'ai_search'):
+        return {'error': 'AI search temporarily unavailable. Try again in a moment.', 'code': 'unavailable'}
+    try:
+        result = lookup.ai_search(question, days=int(days) if days else None)
+        if result and not result.get('error'):
+            cache_set(cache_key, result, CACHE_TTL_SEARCH)
+        return result
+    except Exception as e:
+        log.error(f"Ask error: {e}")
+        return {'error': 'AI search failed. Please try again.', 'code': 'failed'}
+
+
 # ─── HANDLER ─────────────────────────────────────────────────────────────────
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -734,7 +756,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # so a search request doesn't burn two slots. Photos get a roomier bucket
         # of their own — a homepage load fetches dozens of images, and readers
         # behind one NAT (libraries/schools) would otherwise starve the API.
-        if self.path.startswith('/api/lookup'):
+        if self.path.startswith('/api/lookup') or self.path.startswith('/api/ask'):
             if is_rate_limited(ip, RATE_LIMIT_SEARCH, bucket='search'):
                 self.send_json({'error': 'Search rate limited. Max 10 per minute.'}, status=429)
                 return
@@ -765,6 +787,23 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             # Fast-phase responses are transitional — don't let browsers/CDNs
             # cache them long, or a reload could show cluster-less results.
             self.send_json(result, cache_ttl=(60 if fast else CACHE_TTL_SEARCH))
+            return
+
+        # ── API: AI search (natural-language question -> summary + voices) ──
+        if self.path.startswith('/api/ask'):
+            parsed = urlparse(self.path)
+            params = parse_qs(parsed.query)
+            raw_query = params.get('q', [''])[0]
+            days = params.get('days', [None])[0]
+
+            question = sanitize_query(raw_query)
+            if not question:
+                self.send_json({'error': f'Invalid question. Must be {MIN_QUERY_LENGTH}-{MAX_QUERY_LENGTH} characters.'}, status=400)
+                return
+
+            log.info(f"Ask: '{question}' from {ip}")
+            result = do_ask(question, days)
+            self.send_json(result, cache_ttl=CACHE_TTL_SEARCH)
             return
 
         # ── API: Single story by slug (resolves rotated-out stories) ──
