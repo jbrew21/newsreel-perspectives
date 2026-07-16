@@ -181,6 +181,14 @@ def find_story_by_slug(slug, max_files=14):
         for s in data:
             if story_slug(s.get('headline', '')) == slug:
                 return s
+    # Fallback: durable per-slug snapshot written at build time. Catches links
+    # whose story has rotated off the last `max_files` dated files, or whose
+    # headline was regenerated on a later rebuild (its old slug lives on here).
+    snapshot = os.path.join(posts_dir, 'story-archive', f'{slug}.json')
+    if os.path.exists(snapshot):
+        snap = load_json_file(snapshot)
+        if isinstance(snap, dict):
+            return snap
     return None
 
 
