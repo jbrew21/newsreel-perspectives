@@ -1,7 +1,7 @@
 {
   "voiceId": "breakfast-club",
   "voiceName": "The Breakfast Club",
-  "collectedAt": "2026-07-16T10:41:41.394296",
+  "collectedAt": "2026-07-16T16:06:40.618861",
   "date": "2026-07-16",
   "posts": [
     {
@@ -35,16 +35,30 @@
     {
       "voiceId": "breakfast-club",
       "voiceName": "The Breakfast Club",
-      "platform": "youtube",
-      "text": "John Hope Bryant Speaks On How New Housing Affordability Bill Will Affect New Homeowners",
-      "sourceUrl": "https://www.youtube.com/watch?v=nl_jWcZdB5I",
-      "timestamp": "2026-07-14T15:36:59+00:00",
-      "type": "video_title",
-      "topic": "housing-infrastructure",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Promotes new housing affordability bill as beneficial policy",
-      "quote": "John Hope Bryant Speaks On How New Housing Affordability Bill Will Affect New Homeowners"
+      "platform": "x",
+      "text": "\ud83d\udea8 @johnmorganesq explains why he filed a class action lawsuit against James Dolan, CEO and Executive Chairman of Madison Square Garden, criticizing the use of facial recognition technology at his venues and warning about the privacy risks and potential for massive data breaches it could create. Check out the full conversation on @netflix.",
+      "sourceUrl": "https://x.com/breakfastclubam/status/2077762681084485680",
+      "timestamp": "2026-07-16T14:30:00+00:00",
+      "type": "tweet",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes facial recognition privacy risks, warns of data breach potential",
+      "quote": "\ud83d\udea8 @johnmorganesq explains why he filed a class action lawsuit against James Dolan, CEO and Executive Chairman of Madison Square Garden, criticizing the use of facial recognition technology at his venues and warning about the privacy risks and potential for massive data breaches it could create. Chec"
+    },
+    {
+      "voiceId": "breakfast-club",
+      "voiceName": "The Breakfast Club",
+      "platform": "x",
+      "text": "\ud83d\udea8 @JohnMorganESQ  speaks on the importance of giving back, even when life has dealt you a lucky hand! John discusses why he launched The Common Ground Party and explains why he believes these tax cuts for the wealthy are ultimately unfair. Check out the full conversation on @netflix",
+      "sourceUrl": "https://x.com/breakfastclubam/status/2077751354760536124",
+      "timestamp": "2026-07-16T13:45:00+00:00",
+      "type": "tweet",
+      "topic": "economy-trade",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Opposes tax cuts for wealthy as fundamentally unfair",
+      "quote": "\ud83d\udea8 @JohnMorganESQ  speaks on the importance of giving back, even when life has dealt you a lucky hand! John discusses why he launched The Common Ground Party and explains why he believes these tax cuts for the wealthy are ultimately unfair. Check out the full conversation on @netflix"
     }
   ],
   "topicSummary": {
@@ -64,12 +78,20 @@
         "timestamp": "2026-07-14T15:00:00+00:00"
       }
     ],
-    "housing-infrastructure": [
+    "ai-technology": [
       {
-        "quote": "John Hope Bryant Speaks On How New Housing Affordability Bill Will Affect New Homeowners",
-        "sourceUrl": "https://www.youtube.com/watch?v=nl_jWcZdB5I",
-        "platform": "youtube",
-        "timestamp": "2026-07-14T15:36:59+00:00"
+        "quote": "\ud83d\udea8 @johnmorganesq explains why he filed a class action lawsuit against James Dolan, CEO and Executive Chairman of Madison Square Garden, criticizing the use of facial recognition technology at his venues and warning about the privacy risks and potential for massive data breaches it could create. Chec",
+        "sourceUrl": "https://x.com/breakfastclubam/status/2077762681084485680",
+        "platform": "x",
+        "timestamp": "2026-07-16T14:30:00+00:00"
+      }
+    ],
+    "economy-trade": [
+      {
+        "quote": "\ud83d\udea8 @JohnMorganESQ  speaks on the importance of giving back, even when life has dealt you a lucky hand! John discusses why he launched The Common Ground Party and explains why he believes these tax cuts for the wealthy are ultimately unfair. Check out the full conversation on @netflix",
+        "sourceUrl": "https://x.com/breakfastclubam/status/2077751354760536124",
+        "platform": "x",
+        "timestamp": "2026-07-16T13:45:00+00:00"
       }
     ]
   }
