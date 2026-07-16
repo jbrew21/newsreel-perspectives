@@ -907,6 +907,18 @@ Return ONLY JSON (indices, not names):
 def ai_search(question, days=None):
     """Natural-language search: parse the question, retrieve voices, optionally
     filter to an audience, and return a grounded summary plus the voices."""
+    # AI search is meaningless without the model — parsing the question, the
+    # audience filter, and the summary all require it. Fail honestly rather than
+    # dumping unfiltered voices under a wrong label (e.g. Democrats for a
+    # "what are Republicans saying" query).
+    if not ANTHROPIC_API_KEY:
+        return {
+            'mode': 'ai', 'question': question,
+            'error': "AI search isn't available on this server yet — the language "
+                     "model key isn't configured.",
+            'code': 'no_model',
+        }
+
     parsed = _parse_ai_question(question)
     search_query = parsed['searchQuery'] or question
     audience = parsed['audience']

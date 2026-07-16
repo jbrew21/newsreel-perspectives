@@ -177,8 +177,12 @@
   .search-mode-btn:hover { color: var(--text-primary); }
   .search-mode-btn.active { color: #0d0d0f; background: var(--accent); }
 
-  /* -- AI SUMMARY CARD -- */
-  .ai-summary { display: none; margin: 0 0 18px; padding: 18px 20px;
+  /* -- AI SUMMARY CARD --
+     Outer .ai-summary matches the content column (max-width + centered + side
+     padding) so the card lines up exactly with the voice cards below it. */
+  .ai-summary { display: none; max-width: 680px; margin: 0 auto;
+    padding: 0 var(--space-5); }
+  .ai-summary .ai-summary-card { margin: 0 0 18px; padding: 18px 20px;
     background: var(--bg-card); border: 1px solid var(--border);
     border-left: 3px solid var(--cta); border-radius: var(--radius-md); }
   .ai-summary .ai-summary-label { font-family: 'IBM Plex Mono', ui-monospace, monospace;
@@ -1174,9 +1178,11 @@
     if (loadingState) {
       aiSummaryEl.className = 'ai-summary loading-state';
       aiSummaryEl.innerHTML =
+        '<div class="ai-summary-card">' +
         '<div class="ai-summary-label">' + SPARK_ICON + ' AI Answer</div>' +
         '<div class="ai-summary-q">' + esc(q) + '</div>' +
-        '<div class="ai-summary-body">Reading what voices are saying…</div>';
+        '<div class="ai-summary-body">Reading what voices are saying…</div>' +
+        '</div>';
       aiSummaryEl.style.display = 'block';
       return;
     }
@@ -1191,9 +1197,11 @@
     }
     aiSummaryEl.className = 'ai-summary';
     aiSummaryEl.innerHTML =
+      '<div class="ai-summary-card">' +
       '<div class="ai-summary-label">' + SPARK_ICON + ' AI Answer</div>' +
       '<div class="ai-summary-q">' + esc(q) + '</div>' +
-      '<div class="ai-summary-body">' + esc(summary) + '</div>' + meta;
+      '<div class="ai-summary-body">' + esc(summary) + '</div>' + meta +
+      '</div>';
     aiSummaryEl.style.display = 'block';
   }
 

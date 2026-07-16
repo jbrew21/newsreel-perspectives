@@ -52,6 +52,19 @@ class FilterAndSummarizeTests(unittest.TestCase):
 
 
 class AiSearchTests(unittest.TestCase):
+    def setUp(self):
+        # ai_search short-circuits without a model key; pretend one is present so
+        # the orchestration under test actually runs.
+        p = mock.patch.object(lookup, 'ANTHROPIC_API_KEY', 'test-key')
+        p.start()
+        self.addCleanup(p.stop)
+
+    def test_no_model_key_returns_error(self):
+        with mock.patch.object(lookup, 'ANTHROPIC_API_KEY', ''):
+            out = lookup.ai_search('what do Republicans think?')
+        self.assertEqual(out.get('code'), 'no_model')
+        self.assertIn('error', out)
+
     def test_audience_filters_voices_and_keeps_summary(self):
         with mock.patch.object(lookup, '_parse_ai_question',
                                return_value={'searchQuery': 'iran', 'audience': 'Republicans'}), \
