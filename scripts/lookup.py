@@ -775,6 +775,184 @@ def lookup_story(headline, days=None, skip_clusters=False):
     return output
 
 
+# ─── AI SEARCH (natural-language questions) ──────────────────────────────────
+# Keyword search answers "iran strikes". AI search answers "what do Republicans
+# think about the latest Iran strikes?" — it parses the question into a topic +
+# an optional audience filter (a KIND of voice: medical experts, Republicans,
+# economists…), retrieves voices via the normal lookup, keeps only those that
+# fit the audience, and writes a grounded summary from what they actually said.
+
+def _claude_message(prompt, max_tokens=800, model='claude-haiku-4-5-20251001', timeout=20):
+    """Single-shot Claude call returning raw text, or '' on any failure."""
+    if not ANTHROPIC_API_KEY:
+        return ''
+    try:
+        req = urllib.request.Request(
+            'https://api.anthropic.com/v1/messages',
+            data=json.dumps({
+                'model': model,
+                'max_tokens': max_tokens,
+                'messages': [{'role': 'user', 'content': prompt}],
+            }).encode(),
+            headers={
+                'x-api-key': ANTHROPIC_API_KEY,
+                'anthropic-version': '2023-06-01',
+                'content-type': 'application/json',
+            },
+        )
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            data = json.loads(resp.read().decode())
+        return data.get('content', [{}])[0].get('text', '') or ''
+    except Exception as e:
+        print(f"  Warning: Claude call failed ({e})")
+        return ''
+
+
+def _parse_ai_question(question):
+    """NL question -> {'searchQuery': keywords, 'audience': phrase|None}."""
+    prompt = f'''A user asked a search engine (over a database of public commentators' recent posts):
+
+"{question}"
+
+Return JSON with two fields:
+1. "searchQuery": the news topic/event to search for, as 2-6 plain keywords — no question words, no filter words. Examples: "what do Republicans think about the latest Iran strikes?" -> "Iran strikes"; "have any doctors weighed in on the Hegseth testosterone testing?" -> "Hegseth testosterone military".
+2. "audience": if the question restricts WHO should answer (a TYPE of person — "medical experts", "Republicans", "economists", "members of Congress"), return that short phrase; otherwise null.
+
+Return ONLY JSON: {{"searchQuery": "...", "audience": "..." or null}}'''
+    txt = _claude_message(prompt, max_tokens=200)
+    m = re.search(r'\{[\s\S]*\}', txt)
+    if m:
+        try:
+            d = json.loads(m.group())
+            aud = d.get('audience')
+            if isinstance(aud, str) and not aud.strip():
+                aud = None
+            return {'searchQuery': (d.get('searchQuery') or '').strip(), 'audience': aud}
+        except Exception:
+            pass
+    return {'searchQuery': question, 'audience': None}
+
+
+def _filter_and_summarize(question, audience, voices):
+    """Select voices fitting the audience filter and write a grounded summary.
+
+    The model returns compact 0-based INDICES into ``candidates`` (not slugs) so
+    the response stays small and can't truncate mid-JSON. Returns
+    {'matchedVoiceIds': [...], 'summary': str, 'audienceLabel': str|None}.
+    """
+    candidates = voices[:24]  # already ranked by relevance; bound prompt + output
+    lines = []
+    for i, v in enumerate(candidates):
+        tags = ', '.join(v.get('tags', []) or [])
+        quote = ((v.get('quotes') or [{}])[0].get('quote', '') or '')[:180]
+        lines.append(
+            f'[{i}] {v.get("voiceName")} | {(v.get("lens") or "")[:110]} | '
+            f'tags: {tags} | said: "{quote}"'
+        )
+    block = '\n'.join(lines)
+    audience_rule = (
+        f'   b. AND who fit this description: "{audience}" (judge by their bio/tags). '
+        f'A voice must satisfy BOTH a and b.'
+        if audience else
+        '   (No restriction on WHO — judge on topical relevance only.)'
+    )
+    prompt = f'''A user asked: "{question}"
+
+These commentators were retrieved because they post in a related topic area. Some are
+genuinely reacting to the specific story in the question; others only touch the broad
+area and are not really about it. Each is numbered.
+{block}
+
+1. "matched": the INDEX NUMBERS of voices whose quote is genuinely relevant —
+   a. actually on this specific story/subject (not just the broad topic), AND
+{audience_rule}
+   Use an empty list only if truly none fit.
+
+2. "summary": 2-3 sentences answering the user's question using ONLY what the matched
+   voices actually said. Name the split or consensus among them; never invent positions.
+   If "matched" is empty, make it one sentence saying no matching voices have weighed in yet.
+
+Return ONLY JSON (indices, not names):
+{{"matched": [0, 3, 5], "summary": "..."}}'''
+
+    for _attempt in range(2):
+        txt = _claude_message(prompt, max_tokens=1200)
+        m = re.search(r'\{[\s\S]*\}', txt)
+        if not m:
+            continue
+        try:
+            d = json.loads(m.group())
+        except Exception:
+            continue
+        idxs = d.get('matched')
+        if not isinstance(idxs, list):
+            idxs = []
+        ids = [candidates[i]['voiceId'] for i in idxs
+               if isinstance(i, int) and 0 <= i < len(candidates)]
+        return {
+            'matchedVoiceIds': ids,
+            'summary': (d.get('summary') or '').strip(),
+            'audienceLabel': audience,
+        }
+
+    # Both attempts failed to parse — degrade safely: no audience -> show the
+    # top relevant few; audience set -> empty (better than a mislabeled dump).
+    return {
+        'matchedVoiceIds': [] if audience else [v['voiceId'] for v in candidates[:8]],
+        'summary': '',
+        'audienceLabel': audience,
+    }
+
+
+def ai_search(question, days=None):
+    """Natural-language search: parse the question, retrieve voices, optionally
+    filter to an audience, and return a grounded summary plus the voices."""
+    parsed = _parse_ai_question(question)
+    search_query = parsed['searchQuery'] or question
+    audience = parsed['audience']
+
+    result = lookup_story(search_query, days=days, skip_clusters=True) or {}
+    voices = result.get('voices', [])
+    base = {
+        'mode': 'ai',
+        'question': question,
+        'searchQuery': search_query,
+        'audience': audience,
+        'matchedTopics': result.get('matchedTopics', []),
+        'timeWindow': result.get('timeWindow'),
+    }
+    if not voices:
+        return {**base, 'summary': None, 'voices': [], 'totalRetrieved': 0, 'noResults': True}
+
+    fs = _filter_and_summarize(question, audience, voices)
+    matched = set(fs['matchedVoiceIds'])
+    filtered = [v for v in voices if v.get('voiceId') in matched]
+    if not filtered and not audience:
+        # No audience restriction and the model matched nothing on-topic: rather
+        # than a blank result for a valid topic, fall back to the most relevant
+        # retrieved voices (already ranked by relevance) so there's still a feed.
+        filtered = voices[:12]
+
+    summary = fs['summary']
+    if not summary:
+        # Safety net so the UI never shows a blank answer card.
+        if filtered:
+            aud = f'{audience} ' if audience else ''
+            summary = f'{len(filtered)} {aud}voice{"" if len(filtered) == 1 else "s"} are discussing this. See their takes below.'
+        elif audience:
+            summary = f'No {audience} have weighed in on this yet.'
+        else:
+            summary = 'No voices have weighed in on this yet.'
+
+    return {
+        **base,
+        'audienceLabel': fs['audienceLabel'],
+        'summary': summary,
+        'voices': filtered,
+        'totalRetrieved': len(voices),
+    }
+
+
 def list_topics():
     """Show all available topics with counts."""
     date, topic_index = get_latest_topic_index()
