@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-07-16T16:06:40.621473",
+  "collectedAt": "2026-07-16T19:48:34.979813",
   "date": "2026-07-16",
   "posts": [
     {
@@ -45,6 +45,20 @@
       "stance": "lean",
       "summary": "Promotes collaboration with respected political commentator",
       "quote": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Trump's Lies Live? | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/kjusU1Wy6Tw",
+      "timestamp": "2026-07-16T13:55:35+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Trump for making false statements",
+      "quote": "Trump's Lies Live? | The Weekly Show with Jon Stewart"
     },
     {
       "voiceId": "jon-stewart",
@@ -162,29 +176,15 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "Jack Smith &amp; Brian Driscoll On Weaponizing Justice | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/watch?v=Lyk9_Ku9-Q8",
-      "timestamp": "2026-07-08T18:22:29+00:00",
+      "text": "The Fed's Responsibility | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/yVc9bzLdmeY",
+      "timestamp": "2026-07-16T16:00:02+00:00",
       "type": "video_title",
-      "topic": "supreme-court-legal",
+      "topic": "economy-trade",
       "relevance": "high",
-      "stance": "strong",
-      "summary": "Accuses Trump DOJ of weaponizing justice system",
-      "quote": "Jack Smith &amp; Brian Driscoll On Weaponizing Justice | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Trump's Lies Live? | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/kjusU1Wy6Tw",
-      "timestamp": "2026-07-16T13:55:35+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Trump for making false statements",
-      "quote": "Trump's Lies Live? | The Weekly Show with Jon Stewart"
+      "stance": "lean",
+      "summary": "Examines Federal Reserve's economic policy role and responsibility",
+      "quote": "The Fed's Responsibility | The Weekly Show with Jon Stewart"
     }
   ],
   "topicSummary": {
@@ -212,6 +212,26 @@
         "timestamp": "2026-04-01T19:38:09+00:00"
       }
     ],
+    "trump-administration": [
+      {
+        "quote": "Trump's Lies Live? | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/kjusU1Wy6Tw",
+        "platform": "youtube",
+        "timestamp": "2026-07-16T13:55:35+00:00"
+      },
+      {
+        "quote": "Trump's Happiness | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/TDJ20Sn6OSs",
+        "platform": "youtube",
+        "timestamp": "2026-07-10T13:54:34+00:00"
+      },
+      {
+        "quote": "Discouraging Public Service | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/EEN2buy98Zw",
+        "platform": "youtube",
+        "timestamp": "2026-07-09T15:57:22+00:00"
+      }
+    ],
     "economy-trade": [
       {
         "quote": "The Fed, Inflation and Our Uncertain Economy | The Weekly Show with Jon Stewart",
@@ -230,6 +250,12 @@
         "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
         "platform": "youtube",
         "timestamp": "2026-07-15T15:55:13+00:00"
+      },
+      {
+        "quote": "The Fed's Responsibility | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/yVc9bzLdmeY",
+        "platform": "youtube",
+        "timestamp": "2026-07-16T16:00:02+00:00"
       }
     ],
     "criminal-justice": [
@@ -252,32 +278,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/KT7Iznnavek",
         "platform": "youtube",
         "timestamp": "2026-07-09T13:56:47+00:00"
-      },
-      {
-        "quote": "Jack Smith &amp; Brian Driscoll On Weaponizing Justice | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/watch?v=Lyk9_Ku9-Q8",
-        "platform": "youtube",
-        "timestamp": "2026-07-08T18:22:29+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Trump's Happiness | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/TDJ20Sn6OSs",
-        "platform": "youtube",
-        "timestamp": "2026-07-10T13:54:34+00:00"
-      },
-      {
-        "quote": "Discouraging Public Service | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/EEN2buy98Zw",
-        "platform": "youtube",
-        "timestamp": "2026-07-09T15:57:22+00:00"
-      },
-      {
-        "quote": "Trump's Lies Live? | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/kjusU1Wy6Tw",
-        "platform": "youtube",
-        "timestamp": "2026-07-16T13:55:35+00:00"
       }
     ]
   }
