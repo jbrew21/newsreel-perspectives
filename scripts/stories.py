@@ -225,6 +225,40 @@ def story_slug(headline):
     return re.sub(r'[^a-z0-9]+', '-', (headline or '').lower()).strip('-')[:60]
 
 
+def carry_forward_slugs(stories, prev_stories):
+    """Give each story a stable ``slug``, reusing the previous build's.
+
+    Every rebuild regenerates headlines, so slugify(headline) changes and the
+    canonical URL churns 3x/day (the archive keeps old links resolving, but
+    the story's address still moves). If a prior story shares the lead topic
+    and ≥40% of this story's voices, it's the same ongoing story — reuse its
+    slug. Clients link story.slug first, falling back to slugify(headline).
+    Mutates ``stories`` in place.
+    """
+    def _voice_ids(s):
+        return {v.get('voiceId') for c in s.get('clusters', []) for v in c.get('voices', [])}
+
+    taken = set()
+    for s in stories:
+        own = story_slug(s.get('headline', ''))
+        carried = None
+        lead_topic = (s.get('topicSlugs') or [''])[0]
+        mine = _voice_ids(s)
+        for p in prev_stories:
+            if (p.get('topicSlugs') or [''])[0] != lead_topic or not mine:
+                continue
+            theirs = _voice_ids(p)
+            if theirs and len(mine & theirs) / max(len(mine), 1) >= 0.4:
+                carried = p.get('slug') or story_slug(p.get('headline', ''))
+                break
+        slug = carried if carried and carried not in taken else own
+        if slug in taken:  # two stories collapsing to one slug — keep both reachable
+            slug = own
+        s['slug'] = slug
+        taken.add(slug)
+    return stories
+
+
 # ── Step 1: Gather candidate stories ────────────────────────────
 
 def get_cms_stories(date):
@@ -1051,6 +1085,16 @@ If no real tension exists, return {{"tension": 0}}"""
     # Sort stories by heat score (hottest first)
     stories.sort(key=lambda s: -s.get('heatScore', 0))
 
+    # ── Stable slugs ──
+    prev_stories = []
+    prev_files = sorted(POSTS_DIR.glob('stories-*.json'), reverse=True)
+    for pf in prev_files[:2]:  # today's earlier run and/or yesterday
+        try:
+            prev_stories.extend(json.loads(pf.read_text()))
+        except Exception:
+            continue
+    carry_forward_slugs(stories, prev_stories)
+
     # Save
     output_path = POSTS_DIR / f'stories-{date}.json'
     output_path.write_text(json.dumps(stories, indent=2))
@@ -1063,11 +1107,13 @@ If no real tension exists, return {{"tension": 0}}"""
     STORY_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
     archived = 0
     for s in stories:
-        slug = story_slug(s.get('headline', ''))
-        if not slug:
-            continue
-        (STORY_ARCHIVE_DIR / f'{slug}.json').write_text(json.dumps(s, indent=2))
-        archived += 1
+        # Snapshot under the canonical slug AND the headline-derived one when
+        # they differ, so links minted under either keep resolving.
+        for slug in {s.get('slug', ''), story_slug(s.get('headline', ''))}:
+            if not slug:
+                continue
+            (STORY_ARCHIVE_DIR / f'{slug}.json').write_text(json.dumps(s, indent=2))
+            archived += 1
     print(f"  Archived {archived} story snapshots to {STORY_ARCHIVE_DIR}")
 
     # Also save as fractures for backward compat

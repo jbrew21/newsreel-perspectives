@@ -7034,7 +7034,7 @@
   {
     "id": "eric-topol",
     "name": "Eric Topol",
-    "photo": "https://ui-avatars.com/api/?name=Eric%20Topol&background=252528&color=EDBD1F&size=200",
+    "photo": "/photos/eric-topol.jpg",
     "followers": 210000,
     "followersDisplay": "210K",
     "platforms": [
@@ -7056,12 +7056,12 @@
       "cardiologist",
       "evidence-based"
     ],
-    "photoSource": ""
+    "photoSource": "bluesky-avatar"
   },
   {
     "id": "katelyn-jetelina",
     "name": "Katelyn Jetelina",
-    "photo": "https://ui-avatars.com/api/?name=Katelyn%20Jetelina&background=252528&color=EDBD1F&size=200",
+    "photo": "/photos/katelyn-jetelina.jpg",
     "followers": 110000,
     "followersDisplay": "110K",
     "platforms": [
@@ -7082,12 +7082,12 @@
       "epidemiologist",
       "public-health"
     ],
-    "photoSource": ""
+    "photoSource": "bluesky-avatar"
   },
   {
     "id": "jeremy-faust",
     "name": "Jeremy Faust",
-    "photo": "https://ui-avatars.com/api/?name=Jeremy%20Faust&background=252528&color=EDBD1F&size=200",
+    "photo": "/photos/jeremy-faust.jpg",
     "followers": 90000,
     "followersDisplay": "90K",
     "platforms": [
@@ -7108,12 +7108,12 @@
       "emergency-medicine",
       "public-health"
     ],
-    "photoSource": ""
+    "photoSource": "bluesky-avatar"
   },
   {
     "id": "ashish-jha",
     "name": "Ashish Jha",
-    "photo": "https://ui-avatars.com/api/?name=Ashish%20Jha&background=252528&color=EDBD1F&size=200",
+    "photo": "/photos/ashish-jha.jpg",
     "followers": 180000,
     "followersDisplay": "180K",
     "platforms": [
@@ -7131,29 +7131,32 @@
       "public-health",
       "health-policy"
     ],
-    "photoSource": ""
+    "photoSource": "bluesky-avatar"
   },
   {
-    "id": "sensible-medicine",
-    "name": "Sensible Medicine",
-    "photo": "https://ui-avatars.com/api/?name=Sensible%20Medicine&background=252528&color=EDBD1F&size=200",
-    "followers": 70000,
-    "followersDisplay": "70K",
+    "id": "zubin-damania",
+    "name": "Zubin Damania",
+    "photo": "/photos/zubin-damania.jpg",
+    "followers": 1100000,
+    "followersDisplay": "1.1M",
     "platforms": [
-      "substack"
+      "youtube"
     ],
     "category": "medical",
     "approach": "analyzes",
-    "lens": "A physician-run publication (Vinay Prasad, Adam Cifu, John Mandrola and colleagues) that scrutinizes medical evidence and challenges consensus, arguing much of modern medicine is over-tested and over-treated.",
+    "lens": "Physician and host of The ZDoggMD Show. Stanford-trained hospitalist who critiques healthcare dogma from inside medicine, challenging both institutional groupthink and anti-science contrarianism.",
     "feeds": {
-      "substack": "https://sensiblemed.substack.com/feed"
+      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFyRz1N_T-rnSkbaAH_TFAw"
     },
-    "handles": {},
+    "handles": {
+      "youtube": "ZDoggMD",
+      "x": "ZDoggMD"
+    },
     "tags": [
       "medical-expert",
-      "evidence-based",
-      "contrarian"
+      "physician",
+      "healthcare-skeptic"
     ],
-    "photoSource": ""
+    "photoSource": "youtube-avatar"
   }
 ]

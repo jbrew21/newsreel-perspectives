@@ -864,7 +864,9 @@ area and are not really about it. Each is numbered.
 {block}
 
 1. "matched": the INDEX NUMBERS of voices whose quote is genuinely relevant —
-   a. actually on this specific story/subject (not just the broad topic), AND
+   a. engaging with the story/subject in the question from ANY angle (reaction,
+      analysis, mockery, defense — all count). Exclude only voices whose quote is
+      clearly about a DIFFERENT story. When in doubt, include. AND
 {audience_rule}
    Use an empty list only if truly none fit.
 
@@ -953,6 +955,7 @@ def ai_search(question, days=None):
         filtered = voices[:12]
 
     summary = fs['summary']
+    degraded = not summary  # model output unusable — the summary below is a stub
     if not summary:
         # Safety net so the UI never shows a blank answer card.
         if filtered:
@@ -967,6 +970,7 @@ def ai_search(question, days=None):
         **base,
         'audienceLabel': fs['audienceLabel'],
         'summary': summary,
+        'degraded': degraded,
         'voices': filtered,
         'totalRetrieved': len(voices),
     }

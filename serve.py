@@ -179,7 +179,7 @@ def find_story_by_slug(slug, max_files=14):
         if not isinstance(data, list):
             continue
         for s in data:
-            if story_slug(s.get('headline', '')) == slug:
+            if s.get('slug') == slug or story_slug(s.get('headline', '')) == slug:
                 return s
     # Fallback: durable per-slug snapshot written at build time. Catches links
     # whose story has rotated off the last `max_files` dated files, or whose
@@ -421,7 +421,7 @@ def build_agenda(root=None, now=None):
     for s in stories or []:
         if not isinstance(s, dict):
             continue
-        slug = story_slug(s.get('headline', ''))
+        slug = s.get('slug') or story_slug(s.get('headline', ''))
         for topic in s.get('topicSlugs', []) or []:
             story_slugs.setdefault(topic, slug)
 
@@ -643,7 +643,9 @@ def do_ask(question, days=None):
         return {'error': 'AI search temporarily unavailable. Try again in a moment.', 'code': 'unavailable'}
     try:
         result = lookup.ai_search(question, days=int(days) if days else None)
-        if result and not result.get('error'):
+        # Never cache degraded answers (model hiccup -> stub summary): the next
+        # asker should get a fresh attempt, not 10 minutes of the bad one.
+        if result and not result.get('error') and not result.get('degraded'):
             cache_set(cache_key, result, CACHE_TTL_SEARCH)
         return result
     except Exception as e:

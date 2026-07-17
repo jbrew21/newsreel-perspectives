@@ -729,7 +729,7 @@
         return resp.json();
       })
       .then(function(stories) {
-        var story = (stories || []).find(function(s) { return slugify(s.headline) === slug; });
+        var story = (stories || []).find(function(s) { return (s.slug || slugify(s.headline)) === slug; });
 
         if (story) return story;
 
