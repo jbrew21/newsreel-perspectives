@@ -271,6 +271,18 @@
   }
   .search-hints-toggle button:hover { color: var(--text-muted); }
 
+  /* -- ASK MODE EXAMPLE QUESTIONS -- */
+  .ask-examples { display: none; flex-direction: column; gap: var(--space-2);
+    align-items: center; margin-top: var(--space-3); }
+  .ask-example {
+    font-family: inherit; font-size: var(--text-xs); color: var(--text-dim);
+    background: var(--bg-elevated); border: 1px solid var(--border);
+    border-radius: 999px; padding: var(--space-2) var(--space-4);
+    cursor: pointer; transition: color var(--duration-fast), border-color var(--duration-fast);
+    max-width: 100%;
+  }
+  .ask-example:hover { color: var(--accent); border-color: var(--border-hover); }
+
   .time-filter {
     display: none; gap: var(--space-2); justify-content: center;
     margin-top: var(--space-2); flex-wrap: wrap; align-items: center;
@@ -961,6 +973,11 @@
   </div>
   <div class="search-hints" id="searchHints"></div>
   <div class="search-hints-toggle" id="hintsToggle"><button type="button">Show more topics</button></div>
+  <div class="ask-examples" id="askExamples" style="display:none">
+    <button type="button" class="ask-example">What do doctors say about the biggest health story today?</button>
+    <button type="button" class="ask-example">How are Republicans reacting to the latest Trump news?</button>
+    <button type="button" class="ask-example">What do economists think about the latest inflation numbers?</button>
+  </div>
 </div>
 
 <!-- Feed skeleton (shown while loading) -->
@@ -1168,6 +1185,26 @@
   var searchMode = 'keyword';   // 'keyword' | 'ask'
   var SPARK_ICON = '<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 5.6L19.5 9l-4.5 3.3L16.6 18 12 14.7 7.4 18l1.6-5.7L4.5 9l5.6-1.4z"/></svg>';
   var WARN_ICON = '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>';
+  const askExamplesEl = document.getElementById('askExamples');
+
+  /* On the feed view, keyword mode shows the topic hint tags and Ask mode
+     shows tappable example questions instead. Mid-search both stay hidden. */
+  function syncModeHints() {
+    if (searchViewActive) { askExamplesEl.style.display = 'none'; return; }
+    var ask = searchMode === 'ask';
+    searchHints.style.display = ask ? 'none' : '';
+    hintsToggle.style.display = ask ? 'none' : '';
+    askExamplesEl.style.display = ask ? 'flex' : 'none';
+  }
+
+  Array.prototype.forEach.call(askExamplesEl.querySelectorAll('.ask-example'), function(btn) {
+    btn.addEventListener('click', function() {
+      input.value = btn.textContent;
+      syncSearchClear();
+      doAsk();
+    });
+  });
+
   Array.prototype.forEach.call(searchModeEl.querySelectorAll('.search-mode-btn'), function(btn) {
     btn.addEventListener('click', function() {
       var mode = btn.getAttribute('data-mode');
@@ -1182,6 +1219,7 @@
         ? 'Ask a question, e.g. what do doctors say about…'
         : 'Search any topic or story...';
       hideAiSummary();
+      syncModeHints();
       input.focus();
     });
   });
@@ -1416,7 +1454,7 @@
     }).join('');
 
     var leadPct = left ? Math.round((left.voiceCount || (left.voices || []).length) / total * 100) : 0;
-    var slug = slugify(story.headline);
+    var slug = story.slug || slugify(story.headline);
 
     return '<a class="story-card" href="' + BASE + '/story/' + slug + '" aria-label="' + esc(story.headline) + ', ' + totalVoices + ' voices across ' + clusterCount + ' positions">' +
       '<div class="story-headline">' + esc(story.headline) + '</div>' +
@@ -1888,6 +1926,7 @@
     feedSkeleton.style.display = 'none';
     searchHints.style.display = 'none';
     hintsToggle.style.display = 'none';
+    askExamplesEl.style.display = 'none';
     wireSection.style.display = 'none';
     splitSection.style.display = 'none';
     document.getElementById('heroSection').style.display = 'none';
@@ -1987,6 +2026,7 @@
     feedSkeleton.style.display = 'none';
     searchHints.style.display = 'none';
     hintsToggle.style.display = 'none';
+    askExamplesEl.style.display = 'none';
     wireSection.style.display = 'none';
     splitSection.style.display = 'none';
     document.getElementById('heroSection').style.display = 'none';
@@ -1998,7 +2038,10 @@
     var url = BASE + '/api/ask?q=' + encodeURIComponent(q);
     if (selectedDays) url += '&days=' + selectedDays;
 
-    fetchJSON(url, { signal: ctrl.signal })
+    // Ask chains 2-3 model calls server-side (parse -> retrieve -> summarize)
+    // and can legitimately take 20-35s; the default 28s timeout was aborting
+    // real answers mid-flight and surfacing "Could not complete AI search."
+    fetchJSON(url, { signal: ctrl.signal, timeoutMs: 60000 })
       .then(function(data) {
         if (gen !== searchGen) return;
         if (data.error) {
@@ -2368,6 +2411,7 @@
     feedEl.style.display = 'block';
     searchHints.style.display = '';
     hintsToggle.style.display = '';
+    syncModeHints();
     wireSection.style.display = 'block';
     /* Only restore the Split Screen if it ever rendered (agenda may have failed) */
     if (document.getElementById('splitLeft').children.length) {

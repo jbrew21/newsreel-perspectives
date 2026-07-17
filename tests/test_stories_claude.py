@@ -299,5 +299,43 @@ class TangentialClusterTests(unittest.TestCase):
         self.assertFalse(stories.is_tangential_cluster(None))
 
 
+
+
+class CarryForwardSlugsTests(unittest.TestCase):
+    def _story(self, headline, topic, voice_ids, slug=None):
+        s = {'headline': headline, 'topicSlugs': [topic],
+             'clusters': [{'voices': [{'voiceId': v} for v in voice_ids]}]}
+        if slug: s['slug'] = slug
+        return s
+
+    def test_same_story_keeps_previous_slug(self):
+        prev = [self._story('CPI Cools Sharply', 'economy-trade', ['a', 'b', 'c'])]
+        new = [self._story('Inflation Falls, Doubts Remain', 'economy-trade', ['a', 'b', 'd'])]
+        stories.carry_forward_slugs(new, prev)
+        self.assertEqual(new[0]['slug'], 'cpi-cools-sharply')
+
+    def test_explicit_prev_slug_wins_over_headline(self):
+        prev = [self._story('New Headline Variant', 'economy-trade', ['a', 'b'], slug='original-slug')]
+        new = [self._story('Another Rewrite', 'economy-trade', ['a', 'b'])]
+        stories.carry_forward_slugs(new, prev)
+        self.assertEqual(new[0]['slug'], 'original-slug')
+
+    def test_different_topic_or_low_overlap_gets_own_slug(self):
+        prev = [self._story('CPI Cools', 'economy-trade', ['a', 'b', 'c'])]
+        new = [self._story('Iran Strikes Resume', 'iran-conflict', ['a', 'b', 'c']),
+               self._story('Jobs Report Surges', 'economy-trade', ['x', 'y', 'z'])]
+        stories.carry_forward_slugs(new, prev)
+        self.assertEqual(new[0]['slug'], 'iran-strikes-resume')
+        self.assertEqual(new[1]['slug'], 'jobs-report-surges')
+
+    def test_two_stories_cannot_share_a_slug(self):
+        prev = [self._story('Big Economy Story', 'economy-trade', ['a', 'b', 'c', 'd'])]
+        new = [self._story('Economy Story A', 'economy-trade', ['a', 'b']),
+               self._story('Economy Story B', 'economy-trade', ['c', 'd'])]
+        stories.carry_forward_slugs(new, prev)
+        self.assertEqual(new[0]['slug'], 'big-economy-story')
+        self.assertEqual(new[1]['slug'], 'economy-story-b')
+
+
 if __name__ == '__main__':
     unittest.main()
