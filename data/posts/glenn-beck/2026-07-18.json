@@ -1,9 +1,37 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-07-18T10:17:07.995713",
+  "collectedAt": "2026-07-18T18:34:23.730194",
   "date": "2026-07-18",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Trump's BOMBSHELL Last Night...",
+      "sourceUrl": "https://www.youtube.com/shorts/kOu6STf8TJI",
+      "timestamp": "2026-07-17T21:00:38+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Promotes Trump's statements as significant revelation",
+      "quote": "Trump's BOMBSHELL Last Night..."
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Trump Brought The RECIEPTS On China's MASSIVE Election Scandal",
+      "sourceUrl": "https://www.youtube.com/watch?v=oneR6Ci9zMM",
+      "timestamp": "2026-07-17T19:00:03+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Amplifies Trump's claims of Chinese election interference",
+      "quote": "Trump Brought The RECIEPTS On China's MASSIVE Election Scandal"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -64,46 +92,40 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "Joe Biden BARELY Makes it Through His New Book Announcement | Hour 1 | 7/16/26",
-      "sourceUrl": "https://www.youtube.com/watch?v=h22Sv1VR8kU",
-      "timestamp": "2026-07-16T14:03:25+00:00",
+      "text": "Was Mamdani CAUGHT Trying To Bypass Trump With Iran?",
+      "sourceUrl": "https://www.youtube.com/watch?v=l_TTwGOhT7c",
+      "timestamp": "2026-07-18T14:00:06+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Biden struggles with public speaking during book promotion",
-      "quote": "Joe Biden BARELY Makes it Through His New Book Announcement | Hour 1 | 7/16/26"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Trump's BOMBSHELL Last Night...",
-      "sourceUrl": "https://www.youtube.com/shorts/kOu6STf8TJI",
-      "timestamp": "2026-07-17T21:00:38+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
+      "topic": "iran-conflict",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Promotes Trump's statements as significant revelation",
-      "quote": "Trump's BOMBSHELL Last Night..."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Trump Brought The RECIEPTS On China's MASSIVE Election Scandal",
-      "sourceUrl": "https://www.youtube.com/watch?v=oneR6Ci9zMM",
-      "timestamp": "2026-07-17T19:00:03+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Amplifies Trump's claims of Chinese election interference",
-      "quote": "Trump Brought The RECIEPTS On China's MASSIVE Election Scandal"
+      "summary": "Criticizes attempt to circumvent Trump administration on Iran policy",
+      "quote": "Was Mamdani CAUGHT Trying To Bypass Trump With Iran?"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Trump's BOMBSHELL Last Night...",
+        "sourceUrl": "https://www.youtube.com/shorts/kOu6STf8TJI",
+        "platform": "youtube",
+        "timestamp": "2026-07-17T21:00:38+00:00"
+      },
+      {
+        "quote": "Could THIS Be Trump's BIG Announcement For Tonight?",
+        "sourceUrl": "https://www.youtube.com/watch?v=HY4ZbDXmh4s",
+        "platform": "youtube",
+        "timestamp": "2026-07-16T19:00:09+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "Trump Brought The RECIEPTS On China's MASSIVE Election Scandal",
+        "sourceUrl": "https://www.youtube.com/watch?v=oneR6Ci9zMM",
+        "platform": "youtube",
+        "timestamp": "2026-07-17T19:00:03+00:00"
+      }
+    ],
     "congress-legislation": [
       {
         "quote": "Fetterman CALLS OUT the Democrat Party",
@@ -120,26 +142,6 @@
         "timestamp": "2026-07-16T23:00:13+00:00"
       }
     ],
-    "trump-administration": [
-      {
-        "quote": "Could THIS Be Trump's BIG Announcement For Tonight?",
-        "sourceUrl": "https://www.youtube.com/watch?v=HY4ZbDXmh4s",
-        "platform": "youtube",
-        "timestamp": "2026-07-16T19:00:09+00:00"
-      },
-      {
-        "quote": "Joe Biden BARELY Makes it Through His New Book Announcement | Hour 1 | 7/16/26",
-        "sourceUrl": "https://www.youtube.com/watch?v=h22Sv1VR8kU",
-        "platform": "youtube",
-        "timestamp": "2026-07-16T14:03:25+00:00"
-      },
-      {
-        "quote": "Trump's BOMBSHELL Last Night...",
-        "sourceUrl": "https://www.youtube.com/shorts/kOu6STf8TJI",
-        "platform": "youtube",
-        "timestamp": "2026-07-17T21:00:38+00:00"
-      }
-    ],
     "education": [
       {
         "quote": "Jennifer Welch Said WHAT About Homeschooling?",
@@ -148,12 +150,12 @@
         "timestamp": "2026-07-16T16:27:19+00:00"
       }
     ],
-    "elections": [
+    "iran-conflict": [
       {
-        "quote": "Trump Brought The RECIEPTS On China's MASSIVE Election Scandal",
-        "sourceUrl": "https://www.youtube.com/watch?v=oneR6Ci9zMM",
+        "quote": "Was Mamdani CAUGHT Trying To Bypass Trump With Iran?",
+        "sourceUrl": "https://www.youtube.com/watch?v=l_TTwGOhT7c",
         "platform": "youtube",
-        "timestamp": "2026-07-17T19:00:03+00:00"
+        "timestamp": "2026-07-18T14:00:06+00:00"
       }
     ]
   }
