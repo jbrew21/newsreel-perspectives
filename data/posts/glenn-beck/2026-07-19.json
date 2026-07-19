@@ -1,9 +1,23 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-07-19T09:47:14.833398",
+  "collectedAt": "2026-07-19T10:24:28.974629",
   "date": "2026-07-19",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Just When You Thought Joe Biden Couldn't Get Any WORSE, He Does THIS",
+      "sourceUrl": "https://www.youtube.com/watch?v=1y3mAuAxJcY",
+      "timestamp": "2026-07-18T19:00:38+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Biden administration actions or policies",
+      "quote": "Just When You Thought Joe Biden Couldn't Get Any WORSE, He Does THIS"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -17,6 +31,20 @@
       "stance": "strong",
       "summary": "Criticizes attempt to circumvent Trump administration on Iran policy",
       "quote": "Was Mamdani CAUGHT Trying To Bypass Trump With Iran?"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Just How &quot;Woke&quot; is Christopher Nolan's &quot;The Odyssey&quot;?",
+      "sourceUrl": "https://www.youtube.com/watch?v=AzQeP8KuhXs",
+      "timestamp": "2026-07-18T00:00:30+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions woke ideology in mainstream entertainment",
+      "quote": "Just How &quot;Woke&quot; is Christopher Nolan's &quot;The Odyssey&quot;?"
     },
     {
       "voiceId": "glenn-beck",
@@ -73,37 +101,23 @@
       "stance": "lean",
       "summary": "Trump pledges to maintain U.S. military and energy resources",
       "quote": "Are We Running Out Of Bombs And Oil? Trump Says He WON'T Let It Happen..."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Just When You Thought Joe Biden Couldn't Get Any WORSE, He Does THIS",
-      "sourceUrl": "https://www.youtube.com/watch?v=1y3mAuAxJcY",
-      "timestamp": "2026-07-18T19:00:38+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Biden administration actions or policies",
-      "quote": "Just When You Thought Joe Biden Couldn't Get Any WORSE, He Does THIS"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Just How &quot;Woke&quot; is Christopher Nolan's &quot;The Odyssey&quot;?",
-      "sourceUrl": "https://www.youtube.com/watch?v=AzQeP8KuhXs",
-      "timestamp": "2026-07-18T00:00:30+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions woke ideology in mainstream entertainment",
-      "quote": "Just How &quot;Woke&quot; is Christopher Nolan's &quot;The Odyssey&quot;?"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Just When You Thought Joe Biden Couldn't Get Any WORSE, He Does THIS",
+        "sourceUrl": "https://www.youtube.com/watch?v=1y3mAuAxJcY",
+        "platform": "youtube",
+        "timestamp": "2026-07-18T19:00:38+00:00"
+      },
+      {
+        "quote": "Trump's BOMBSHELL Last Night...",
+        "sourceUrl": "https://www.youtube.com/shorts/kOu6STf8TJI",
+        "platform": "youtube",
+        "timestamp": "2026-07-17T21:00:38+00:00"
+      }
+    ],
     "iran-conflict": [
       {
         "quote": "Was Mamdani CAUGHT Trying To Bypass Trump With Iran?",
@@ -112,18 +126,12 @@
         "timestamp": "2026-07-18T14:00:06+00:00"
       }
     ],
-    "trump-administration": [
+    "culture-war": [
       {
-        "quote": "Trump's BOMBSHELL Last Night...",
-        "sourceUrl": "https://www.youtube.com/shorts/kOu6STf8TJI",
+        "quote": "Just How &quot;Woke&quot; is Christopher Nolan's &quot;The Odyssey&quot;?",
+        "sourceUrl": "https://www.youtube.com/watch?v=AzQeP8KuhXs",
         "platform": "youtube",
-        "timestamp": "2026-07-17T21:00:38+00:00"
-      },
-      {
-        "quote": "Just When You Thought Joe Biden Couldn't Get Any WORSE, He Does THIS",
-        "sourceUrl": "https://www.youtube.com/watch?v=1y3mAuAxJcY",
-        "platform": "youtube",
-        "timestamp": "2026-07-18T19:00:38+00:00"
+        "timestamp": "2026-07-18T00:00:30+00:00"
       }
     ],
     "elections": [
@@ -148,14 +156,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=aE25TVkKNag",
         "platform": "youtube",
         "timestamp": "2026-07-16T23:00:13+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "Just How &quot;Woke&quot; is Christopher Nolan's &quot;The Odyssey&quot;?",
-        "sourceUrl": "https://www.youtube.com/watch?v=AzQeP8KuhXs",
-        "platform": "youtube",
-        "timestamp": "2026-07-18T00:00:30+00:00"
       }
     ]
   }
