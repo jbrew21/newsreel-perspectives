@@ -1,7 +1,7 @@
 {
   "voiceId": "nate-silver",
   "voiceName": "Nate Silver",
-  "collectedAt": "2026-07-20T10:50:41.715787",
+  "collectedAt": "2026-07-20T12:29:22.019512",
   "date": "2026-07-20",
   "posts": [
     {
@@ -129,6 +129,48 @@
       "stance": "lean",
       "summary": "Survey methodology changes distort consumer sentiment data",
       "quote": "Is the vibecession real \u2014 or is the survey broken? (by Joel Wertheimer). A shift to online polling and undersampling of Republicans are skewing America\u2019s most-cited measure of consumer sentiment."
+    },
+    {
+      "voiceId": "nate-silver",
+      "voiceName": "Nate Silver",
+      "platform": "x",
+      "text": "While Claude reduced my workload on our soccer/World Cup projects by maybe 30%, it wasn't more than that because you *really* need to stay on top of it, checking its work after every 1-2 steps. And there are things I might not have noticed without extensive domain experience.",
+      "sourceUrl": "https://x.com/NateSilver538/status/2077863411728196087",
+      "timestamp": "2026-07-16T21:10:16+00:00",
+      "type": "tweet",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "AI coding agents require extensive human oversight and verification",
+      "quote": "While Claude reduced my workload on our soccer/World Cup projects by maybe 30%, it wasn't more than that because you *really* need to stay on top of it, checking its work after every 1-2 steps. And there are things I might not have noticed without extensive domain experience."
+    },
+    {
+      "voiceId": "nate-silver",
+      "voiceName": "Nate Silver",
+      "platform": "x",
+      "text": "If I make a programming error, the program usually either doesn't execute or the mistakes are super obvious. With coding agents, you'll encounter cases where the program works but took shortcuts/is subtly wrong. Opus was also stubborn about acknowledging bugs it introduced.",
+      "sourceUrl": "https://x.com/NateSilver538/status/2077863410310492657",
+      "timestamp": "2026-07-16T21:10:16+00:00",
+      "type": "tweet",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "AI agents produce subtle errors, less transparent than traditional debugging",
+      "quote": "If I make a programming error, the program usually either doesn't execute or the mistakes are super obvious. With coding agents, you'll encounter cases where the program works but took shortcuts/is subtly wrong. Opus was also stubborn about acknowledging bugs it introduced."
+    },
+    {
+      "voiceId": "nate-silver",
+      "voiceName": "Nate Silver",
+      "platform": "x",
+      "text": "You notice this more, too, if you have programming tasks that require extreme precision. Like, for our sports/election models, a forecast being off by a few percentage points is a fairly big deal (especially if people are comparing your numbers to e.g. prediction markets).",
+      "sourceUrl": "https://x.com/NateSilver538/status/2077863408481784311",
+      "timestamp": "2026-07-16T21:10:16+00:00",
+      "type": "tweet",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "AI precision limitations problematic for high-stakes forecasting applications",
+      "quote": "You notice this more, too, if you have programming tasks that require extreme precision. Like, for our sports/election models, a forecast being off by a few percentage points is a fairly big deal (especially if people are comparing your numbers to e.g. prediction markets)."
     }
   ],
   "topicSummary": {
@@ -192,6 +234,26 @@
         "sourceUrl": "https://www.natesilver.net/p/is-the-vibecession-real-or-is-the",
         "platform": "substack",
         "timestamp": "2026-06-29T17:29:01+00:00"
+      }
+    ],
+    "ai-technology": [
+      {
+        "quote": "While Claude reduced my workload on our soccer/World Cup projects by maybe 30%, it wasn't more than that because you *really* need to stay on top of it, checking its work after every 1-2 steps. And there are things I might not have noticed without extensive domain experience.",
+        "sourceUrl": "https://x.com/NateSilver538/status/2077863411728196087",
+        "platform": "x",
+        "timestamp": "2026-07-16T21:10:16+00:00"
+      },
+      {
+        "quote": "If I make a programming error, the program usually either doesn't execute or the mistakes are super obvious. With coding agents, you'll encounter cases where the program works but took shortcuts/is subtly wrong. Opus was also stubborn about acknowledging bugs it introduced.",
+        "sourceUrl": "https://x.com/NateSilver538/status/2077863410310492657",
+        "platform": "x",
+        "timestamp": "2026-07-16T21:10:16+00:00"
+      },
+      {
+        "quote": "You notice this more, too, if you have programming tasks that require extreme precision. Like, for our sports/election models, a forecast being off by a few percentage points is a fairly big deal (especially if people are comparing your numbers to e.g. prediction markets).",
+        "sourceUrl": "https://x.com/NateSilver538/status/2077863408481784311",
+        "platform": "x",
+        "timestamp": "2026-07-16T21:10:16+00:00"
       }
     ]
   }
