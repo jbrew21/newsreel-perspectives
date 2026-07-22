@@ -1,7 +1,7 @@
 {
   "voiceId": "michael-knowles",
   "voiceName": "Michael Knowles",
-  "collectedAt": "2026-07-22T16:48:30.711395",
+  "collectedAt": "2026-07-22T18:57:08.053719",
   "date": "2026-07-22",
   "posts": [
     {
@@ -64,6 +64,20 @@
       "voiceId": "michael-knowles",
       "voiceName": "Michael Knowles",
       "platform": "youtube",
+      "text": "Trump Scores First HUGE Midterm Election Win In Arizona",
+      "sourceUrl": "https://www.youtube.com/watch?v=6Y5hv7WLOL4",
+      "timestamp": "2026-07-22T16:03:06+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Celebrates Trump's election victory in Arizona",
+      "quote": "Trump Scores First HUGE Midterm Election Win In Arizona"
+    },
+    {
+      "voiceId": "michael-knowles",
+      "voiceName": "Michael Knowles",
+      "platform": "youtube",
       "text": "WATCH: AOC Is Either Lying Or Crazy",
       "sourceUrl": "https://www.youtube.com/watch?v=NEDE5gjNIk8",
       "timestamp": "2026-07-21T16:10:10+00:00",
@@ -91,16 +105,16 @@
     {
       "voiceId": "michael-knowles",
       "voiceName": "Michael Knowles",
-      "platform": "youtube",
-      "text": "Trump Scores First HUGE Midterm Election Win In Arizona",
-      "sourceUrl": "https://www.youtube.com/watch?v=6Y5hv7WLOL4",
-      "timestamp": "2026-07-22T16:03:06+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Celebrates Trump's election victory in Arizona",
-      "quote": "Trump Scores First HUGE Midterm Election Win In Arizona"
+      "platform": "x",
+      "text": "RT @Vermeullarmine: \u201cOnly the good conservatives need apply\u201d",
+      "sourceUrl": "https://x.com/michaeljknowles/status/2079666424272863625",
+      "timestamp": "2026-07-21T20:34:48+00:00",
+      "type": "tweet",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes conservative gatekeeping or ideological purity testing",
+      "quote": "RT @Vermeullarmine: \u201cOnly the good conservatives need apply\u201d"
     }
   ],
   "topicSummary": {
@@ -130,12 +144,26 @@
         "timestamp": "2026-07-21T03:47:48+00:00"
       }
     ],
+    "elections": [
+      {
+        "quote": "Trump Scores First HUGE Midterm Election Win In Arizona",
+        "sourceUrl": "https://www.youtube.com/watch?v=6Y5hv7WLOL4",
+        "platform": "youtube",
+        "timestamp": "2026-07-22T16:03:06+00:00"
+      }
+    ],
     "culture-war": [
       {
         "quote": "WATCH: AOC Is Either Lying Or Crazy",
         "sourceUrl": "https://www.youtube.com/watch?v=NEDE5gjNIk8",
         "platform": "youtube",
         "timestamp": "2026-07-21T16:10:10+00:00"
+      },
+      {
+        "quote": "RT @Vermeullarmine: \u201cOnly the good conservatives need apply\u201d",
+        "sourceUrl": "https://x.com/michaeljknowles/status/2079666424272863625",
+        "platform": "x",
+        "timestamp": "2026-07-21T20:34:48+00:00"
       }
     ],
     "other": [
@@ -144,14 +172,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/LmmU7UOuzDw",
         "platform": "youtube",
         "timestamp": "2026-07-20T14:48:29+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "Trump Scores First HUGE Midterm Election Win In Arizona",
-        "sourceUrl": "https://www.youtube.com/watch?v=6Y5hv7WLOL4",
-        "platform": "youtube",
-        "timestamp": "2026-07-22T16:03:06+00:00"
       }
     ]
   }
