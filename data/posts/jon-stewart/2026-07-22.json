@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-07-22T16:48:30.706747",
+  "collectedAt": "2026-07-22T18:57:08.048350",
   "date": "2026-07-22",
   "posts": [
     {
@@ -45,6 +45,34 @@
       "stance": "lean",
       "summary": "Promotes collaboration with respected political commentator",
       "quote": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Feedback vs. Noise | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/X3xz8yNQ28E",
+      "timestamp": "2026-07-22T13:55:48+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques distinction between feedback and noise in media",
+      "quote": "Feedback vs. Noise | The Weekly Show with Jon Stewart"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Democratic Socialism | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/bhV8rscUvPE",
+      "timestamp": "2026-07-22T11:57:52+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Discusses democratic socialism economic framework",
+      "quote": "Democratic Socialism | The Weekly Show with Jon Stewart"
     },
     {
       "voiceId": "jon-stewart",
@@ -106,43 +134,15 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
-      "timestamp": "2026-07-15T15:55:13+00:00",
+      "text": "Mayor Zohran Mamdani on Socialism, Politics &amp; NYC | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/watch?v=nffK_ji57X0",
+      "timestamp": "2026-07-22T17:42:03+00:00",
       "type": "video_title",
-      "topic": "economy-trade",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Examines inflation and job market dynamics",
-      "quote": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Feedback vs. Noise | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/X3xz8yNQ28E",
-      "timestamp": "2026-07-22T13:55:48+00:00",
-      "type": "video_title",
-      "topic": "media-press",
+      "topic": "state-local-politics",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques distinction between feedback and noise in media",
-      "quote": "Feedback vs. Noise | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Democratic Socialism | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/bhV8rscUvPE",
-      "timestamp": "2026-07-22T11:57:52+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Discusses democratic socialism economic framework",
-      "quote": "Democratic Socialism | The Weekly Show with Jon Stewart"
+      "summary": "Platforms NYC mayor discussing socialism and local politics",
+      "quote": "Mayor Zohran Mamdani on Socialism, Politics &amp; NYC | The Weekly Show with Jon Stewart"
     }
   ],
   "topicSummary": {
@@ -170,7 +170,21 @@
         "timestamp": "2026-04-01T19:38:09+00:00"
       }
     ],
+    "media-press": [
+      {
+        "quote": "Feedback vs. Noise | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/X3xz8yNQ28E",
+        "platform": "youtube",
+        "timestamp": "2026-07-22T13:55:48+00:00"
+      }
+    ],
     "economy-trade": [
+      {
+        "quote": "Democratic Socialism | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/bhV8rscUvPE",
+        "platform": "youtube",
+        "timestamp": "2026-07-22T11:57:52+00:00"
+      },
       {
         "quote": "The Fed's Responsibility | The Weekly Show with Jon Stewart",
         "sourceUrl": "https://www.youtube.com/shorts/yVc9bzLdmeY",
@@ -188,18 +202,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/WShAzcyBRgo",
         "platform": "youtube",
         "timestamp": "2026-07-15T17:57:18+00:00"
-      },
-      {
-        "quote": "Inflation &amp; The Job Market | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/dVWA00lzEZU",
-        "platform": "youtube",
-        "timestamp": "2026-07-15T15:55:13+00:00"
-      },
-      {
-        "quote": "Democratic Socialism | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/bhV8rscUvPE",
-        "platform": "youtube",
-        "timestamp": "2026-07-22T11:57:52+00:00"
       }
     ],
     "trump-administration": [
@@ -210,12 +212,12 @@
         "timestamp": "2026-07-16T13:55:35+00:00"
       }
     ],
-    "media-press": [
+    "state-local-politics": [
       {
-        "quote": "Feedback vs. Noise | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/X3xz8yNQ28E",
+        "quote": "Mayor Zohran Mamdani on Socialism, Politics &amp; NYC | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/watch?v=nffK_ji57X0",
         "platform": "youtube",
-        "timestamp": "2026-07-22T13:55:48+00:00"
+        "timestamp": "2026-07-22T17:42:03+00:00"
       }
     ]
   }
