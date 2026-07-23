@@ -1,9 +1,37 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-07-23T09:08:29.107059",
+  "collectedAt": "2026-07-23T10:57:34.221119",
   "date": "2026-07-23",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Is The Ayatollah Dead?",
+      "sourceUrl": "https://www.youtube.com/shorts/YL_E7gJDy8g",
+      "timestamp": "2026-07-23T01:00:14+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Questions status of Iranian leadership amid potential succession",
+      "quote": "Is The Ayatollah Dead?"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "NYC Mayor Tried To Bypass Trump And FAILED, But Exposed Who He Really Is",
+      "sourceUrl": "https://www.youtube.com/watch?v=F_flcVwfNcM",
+      "timestamp": "2026-07-22T19:00:07+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes NYC Mayor for opposing Trump policies",
+      "quote": "NYC Mayor Tried To Bypass Trump And FAILED, But Exposed Who He Really Is"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -73,37 +101,31 @@
       "stance": "strong",
       "summary": "Attacks left-wing arsonist as ideologically motivated",
       "quote": "Left Wing Arsonist Demonically Influenced? HERE Is His Disgusting Resume..."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Is The Ayatollah Dead?",
-      "sourceUrl": "https://www.youtube.com/shorts/YL_E7gJDy8g",
-      "timestamp": "2026-07-23T01:00:14+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Questions status of Iranian leadership amid potential succession",
-      "quote": "Is The Ayatollah Dead?"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "NYC Mayor Tried To Bypass Trump And FAILED, But Exposed Who He Really Is",
-      "sourceUrl": "https://www.youtube.com/watch?v=F_flcVwfNcM",
-      "timestamp": "2026-07-22T19:00:07+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes NYC Mayor for opposing Trump policies",
-      "quote": "NYC Mayor Tried To Bypass Trump And FAILED, But Exposed Who He Really Is"
     }
   ],
   "topicSummary": {
+    "iran-conflict": [
+      {
+        "quote": "Is The Ayatollah Dead?",
+        "sourceUrl": "https://www.youtube.com/shorts/YL_E7gJDy8g",
+        "platform": "youtube",
+        "timestamp": "2026-07-23T01:00:14+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "NYC Mayor Tried To Bypass Trump And FAILED, But Exposed Who He Really Is",
+        "sourceUrl": "https://www.youtube.com/watch?v=F_flcVwfNcM",
+        "platform": "youtube",
+        "timestamp": "2026-07-22T19:00:07+00:00"
+      },
+      {
+        "quote": "The REAL Reason Marco Rubio Called Out Cuba",
+        "sourceUrl": "https://www.youtube.com/watch?v=a49f7iZsPm4",
+        "platform": "youtube",
+        "timestamp": "2026-07-22T00:00:39+00:00"
+      }
+    ],
     "culture-war": [
       {
         "quote": "The REAL Reason the Tate Brothers Were Just Arrested",
@@ -126,34 +148,12 @@
         "timestamp": "2026-07-22T01:00:19+00:00"
       }
     ],
-    "trump-administration": [
-      {
-        "quote": "The REAL Reason Marco Rubio Called Out Cuba",
-        "sourceUrl": "https://www.youtube.com/watch?v=a49f7iZsPm4",
-        "platform": "youtube",
-        "timestamp": "2026-07-22T00:00:39+00:00"
-      },
-      {
-        "quote": "NYC Mayor Tried To Bypass Trump And FAILED, But Exposed Who He Really Is",
-        "sourceUrl": "https://www.youtube.com/watch?v=F_flcVwfNcM",
-        "platform": "youtube",
-        "timestamp": "2026-07-22T19:00:07+00:00"
-      }
-    ],
     "economy-trade": [
       {
         "quote": "Trump TARIFFS Canada's Wildfires?!",
         "sourceUrl": "https://www.youtube.com/shorts/Ojf7Hjg_yyQ",
         "platform": "youtube",
         "timestamp": "2026-07-21T20:00:35+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "Is The Ayatollah Dead?",
-        "sourceUrl": "https://www.youtube.com/shorts/YL_E7gJDy8g",
-        "platform": "youtube",
-        "timestamp": "2026-07-23T01:00:14+00:00"
       }
     ]
   }
