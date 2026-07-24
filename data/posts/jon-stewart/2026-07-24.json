@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-07-24T18:10:20.048585",
+  "collectedAt": "2026-07-24T19:09:07.378516",
   "date": "2026-07-24",
   "posts": [
     {
@@ -45,6 +45,20 @@
       "stance": "lean",
       "summary": "Promotes collaboration with respected political commentator",
       "quote": "New podcast with one of my favorites! The exceptional Heather Cox Richardson!!"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Working Class Exodus | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/KsjELQ-SoTk",
+      "timestamp": "2026-07-24T15:55:49+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Examines economic pressures driving working-class migration patterns",
+      "quote": "Working Class Exodus | The Weekly Show with Jon Stewart"
     },
     {
       "voiceId": "jon-stewart",
@@ -134,15 +148,15 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "Working Class Exodus | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/KsjELQ-SoTk",
-      "timestamp": "2026-07-24T15:55:49+00:00",
+      "text": "Biden 2020? | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/bpOlX6et_-c",
+      "timestamp": "2026-07-24T13:55:58+00:00",
       "type": "video_title",
-      "topic": "economy-trade",
+      "topic": "elections",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Examines economic pressures driving working-class migration patterns",
-      "quote": "Working Class Exodus | The Weekly Show with Jon Stewart"
+      "summary": "Discusses Biden's 2020 presidential campaign and viability",
+      "quote": "Biden 2020? | The Weekly Show with Jon Stewart"
     }
   ],
   "topicSummary": {
@@ -170,15 +184,13 @@
         "timestamp": "2026-04-01T19:38:09+00:00"
       }
     ],
-    "criminal-justice": [
-      {
-        "quote": "Safety &amp; Justice | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/qCDJU9VASGg",
-        "platform": "youtube",
-        "timestamp": "2026-07-23T15:56:31+00:00"
-      }
-    ],
     "economy-trade": [
+      {
+        "quote": "Working Class Exodus | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/KsjELQ-SoTk",
+        "platform": "youtube",
+        "timestamp": "2026-07-24T15:55:49+00:00"
+      },
       {
         "quote": "Mamdani, Fiscal Conservative?! | The Weekly Show with Jon Stewart",
         "sourceUrl": "https://www.youtube.com/shorts/F_P_jyc3crs",
@@ -190,12 +202,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/bhV8rscUvPE",
         "platform": "youtube",
         "timestamp": "2026-07-22T11:57:52+00:00"
-      },
+      }
+    ],
+    "criminal-justice": [
       {
-        "quote": "Working Class Exodus | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/KsjELQ-SoTk",
+        "quote": "Safety &amp; Justice | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/qCDJU9VASGg",
         "platform": "youtube",
-        "timestamp": "2026-07-24T15:55:49+00:00"
+        "timestamp": "2026-07-23T15:56:31+00:00"
       }
     ],
     "state-local-politics": [
@@ -218,6 +232,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/X3xz8yNQ28E",
         "platform": "youtube",
         "timestamp": "2026-07-22T13:55:48+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "Biden 2020? | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/bpOlX6et_-c",
+        "platform": "youtube",
+        "timestamp": "2026-07-24T13:55:58+00:00"
       }
     ]
   }
