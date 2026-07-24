@@ -1,9 +1,23 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-07-24T09:06:42.906150",
+  "collectedAt": "2026-07-24T10:50:37.193298",
   "date": "2026-07-24",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Obama Tried To Slam JD Vance As Hypocrite, THIS Is What He Got Wrong",
+      "sourceUrl": "https://www.youtube.com/watch?v=c2xFb2TTcqs",
+      "timestamp": "2026-07-23T23:00:15+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Obama's claims about JD Vance as factually incorrect",
+      "quote": "Obama Tried To Slam JD Vance As Hypocrite, THIS Is What He Got Wrong"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -17,6 +31,20 @@
       "stance": "lean",
       "summary": "Discusses House passage of Israel military aid agreement",
       "quote": "The Truth About The Israel Military Deal That Just Passed In The House"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Did We Just MERGE Our Military Secrets with Israel?! | Hour 1 | 7/23/26",
+      "sourceUrl": "https://www.youtube.com/watch?v=MWVgwaffRF4",
+      "timestamp": "2026-07-23T14:03:35+00:00",
+      "type": "video_title",
+      "topic": "military-defense",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions whether U.S. shared military secrets with Israel",
+      "quote": "Did We Just MERGE Our Military Secrets with Israel?! | Hour 1 | 7/23/26"
     },
     {
       "voiceId": "glenn-beck",
@@ -59,37 +87,17 @@
       "stance": "strong",
       "summary": "Criticizes political figure's position on Netanyahu arrest",
       "quote": "Wanna-Be President Mamdani Admits He Can't Arrest Netanyahu | Hour 1 | 7/22/26"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Obama Tried To Slam JD Vance As Hypocrite, THIS Is What He Got Wrong",
-      "sourceUrl": "https://www.youtube.com/watch?v=c2xFb2TTcqs",
-      "timestamp": "2026-07-23T23:00:15+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Obama's claims about JD Vance as factually incorrect",
-      "quote": "Obama Tried To Slam JD Vance As Hypocrite, THIS Is What He Got Wrong"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Did We Just MERGE Our Military Secrets with Israel?! | Hour 1 | 7/23/26",
-      "sourceUrl": "https://www.youtube.com/watch?v=MWVgwaffRF4",
-      "timestamp": "2026-07-23T14:03:35+00:00",
-      "type": "video_title",
-      "topic": "military-defense",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions whether U.S. shared military secrets with Israel",
-      "quote": "Did We Just MERGE Our Military Secrets with Israel?! | Hour 1 | 7/23/26"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "Obama Tried To Slam JD Vance As Hypocrite, THIS Is What He Got Wrong",
+        "sourceUrl": "https://www.youtube.com/watch?v=c2xFb2TTcqs",
+        "platform": "youtube",
+        "timestamp": "2026-07-23T23:00:15+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "The Truth About The Israel Military Deal That Just Passed In The House",
@@ -102,6 +110,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=URAj2KzvAy8",
         "platform": "youtube",
         "timestamp": "2026-07-22T14:03:40+00:00"
+      }
+    ],
+    "military-defense": [
+      {
+        "quote": "Did We Just MERGE Our Military Secrets with Israel?! | Hour 1 | 7/23/26",
+        "sourceUrl": "https://www.youtube.com/watch?v=MWVgwaffRF4",
+        "platform": "youtube",
+        "timestamp": "2026-07-23T14:03:35+00:00"
       }
     ],
     "iran-conflict": [
@@ -118,22 +134,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=F_flcVwfNcM",
         "platform": "youtube",
         "timestamp": "2026-07-22T19:00:07+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "Obama Tried To Slam JD Vance As Hypocrite, THIS Is What He Got Wrong",
-        "sourceUrl": "https://www.youtube.com/watch?v=c2xFb2TTcqs",
-        "platform": "youtube",
-        "timestamp": "2026-07-23T23:00:15+00:00"
-      }
-    ],
-    "military-defense": [
-      {
-        "quote": "Did We Just MERGE Our Military Secrets with Israel?! | Hour 1 | 7/23/26",
-        "sourceUrl": "https://www.youtube.com/watch?v=MWVgwaffRF4",
-        "platform": "youtube",
-        "timestamp": "2026-07-23T14:03:35+00:00"
       }
     ]
   }
