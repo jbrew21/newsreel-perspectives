@@ -1,9 +1,37 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-07-24T18:10:20.050579",
+  "collectedAt": "2026-07-24T19:09:07.380824",
   "date": "2026-07-24",
   "posts": [
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "x",
+      "text": "Whipped for singing?",
+      "sourceUrl": "https://x.com/billmaher/status/2076739307742937443",
+      "timestamp": "2026-07-13T18:43:29+00:00",
+      "type": "tweet",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions social consequences for offensive speech",
+      "quote": "Whipped for singing?"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "x",
+      "text": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests.",
+      "sourceUrl": "https://x.com/billmaher/status/2073083300235903205",
+      "timestamp": "2026-07-03T16:35:49+00:00",
+      "type": "tweet",
+      "topic": "congress-legislation",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Suggests AOC and Mamdani unavailable or unwilling to appear on show",
+      "quote": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests."
+    },
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
@@ -115,27 +143,43 @@
       "stance": "lean",
       "summary": "Celebrates American identity and patriotism",
       "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "What NOT to Say In Your Wedding Toast | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/shorts/3mvkA36cbqM",
-      "timestamp": "2026-06-19T18:14:31+00:00",
-      "type": "video_title"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "Overtime with Bill Maher: David Sedaris, Ian Bremmer, Hagar Chemali (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=AYCX_1vDbR0",
-      "timestamp": "2026-06-13T03:00:26+00:00",
-      "type": "video_title"
     }
   ],
   "topicSummary": {
+    "culture-war": [
+      {
+        "quote": "Whipped for singing?",
+        "sourceUrl": "https://x.com/billmaher/status/2076739307742937443",
+        "platform": "x",
+        "timestamp": "2026-07-13T18:43:29+00:00"
+      },
+      {
+        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+        "platform": "youtube",
+        "timestamp": "2026-06-27T03:00:23+00:00"
+      },
+      {
+        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:05+00:00"
+      }
+    ],
+    "congress-legislation": [
+      {
+        "quote": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests.",
+        "sourceUrl": "https://x.com/billmaher/status/2073083300235903205",
+        "platform": "x",
+        "timestamp": "2026-07-03T16:35:49+00:00"
+      },
+      {
+        "quote": "Overtime with Bill Maher: Rep. Ro Khanna, Jonathan Martin (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=qd0sjtmQVT8",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:36+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)",
@@ -170,42 +214,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=F4D0jFRKgig",
         "platform": "youtube",
         "timestamp": "2026-06-27T03:00:32+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
-        "platform": "youtube",
-        "timestamp": "2026-06-27T03:00:23+00:00"
-      },
-      {
-        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
-        "platform": "youtube",
-        "timestamp": "2026-06-20T03:00:05+00:00"
-      }
-    ],
-    "congress-legislation": [
-      {
-        "quote": "Overtime with Bill Maher: Rep. Ro Khanna, Jonathan Martin (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=qd0sjtmQVT8",
-        "platform": "youtube",
-        "timestamp": "2026-06-20T03:00:36+00:00"
-      }
-    ],
-    "uncategorized": [
-      {
-        "quote": "What NOT to Say In Your Wedding Toast | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/shorts/3mvkA36cbqM",
-        "platform": "youtube",
-        "timestamp": "2026-06-19T18:14:31+00:00"
-      },
-      {
-        "quote": "Overtime with Bill Maher: David Sedaris, Ian Bremmer, Hagar Chemali (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=AYCX_1vDbR0",
-        "platform": "youtube",
-        "timestamp": "2026-06-13T03:00:26+00:00"
       }
     ]
   }
