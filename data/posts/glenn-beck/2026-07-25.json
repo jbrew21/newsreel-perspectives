@@ -1,9 +1,37 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-07-25T08:45:22.669639",
+  "collectedAt": "2026-07-25T10:20:21.157643",
   "date": "2026-07-25",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Glenn Is DONE Giving Senate Republicans A Pass",
+      "sourceUrl": "https://www.youtube.com/watch?v=IpHlNzJyzxo",
+      "timestamp": "2026-07-24T23:00:02+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Withdraws support from Senate Republicans on unspecified policy",
+      "quote": "Glenn Is DONE Giving Senate Republicans A Pass"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "THIS Is How Mamdani Is DOOMING NYC, And It's NOT The Way You Think...",
+      "sourceUrl": "https://www.youtube.com/watch?v=vMcqRK6tPqA",
+      "timestamp": "2026-07-24T19:00:09+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes NYC official Mamdani's policy decisions as harmful",
+      "quote": "THIS Is How Mamdani Is DOOMING NYC, And It's NOT The Way You Think..."
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -17,6 +45,20 @@
       "stance": "lean",
       "summary": "Suggests Rubio signaling significant Cuba policy shift",
       "quote": "Marco Rubio Just Hinted Something BIG With Cuba"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "How Mamdani's Latest Stupid Move Will BACKFIRE | Hour 1 | 7/24/26",
+      "sourceUrl": "https://www.youtube.com/watch?v=aBpAoIbvyws",
+      "timestamp": "2026-07-24T14:02:55+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Predicts negative consequences from Mamdani's recent action",
+      "quote": "How Mamdani's Latest Stupid Move Will BACKFIRE | Hour 1 | 7/24/26"
     },
     {
       "voiceId": "glenn-beck",
@@ -73,51 +115,31 @@
       "stance": "lean",
       "summary": "Questions status of Iranian leadership amid potential succession",
       "quote": "Is The Ayatollah Dead?"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Glenn Is DONE Giving Senate Republicans A Pass",
-      "sourceUrl": "https://www.youtube.com/watch?v=IpHlNzJyzxo",
-      "timestamp": "2026-07-24T23:00:02+00:00",
-      "type": "video_title",
-      "topic": "congress-legislation",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Withdraws support from Senate Republicans on unspecified policy",
-      "quote": "Glenn Is DONE Giving Senate Republicans A Pass"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "THIS Is How Mamdani Is DOOMING NYC, And It's NOT The Way You Think...",
-      "sourceUrl": "https://www.youtube.com/watch?v=vMcqRK6tPqA",
-      "timestamp": "2026-07-24T19:00:09+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes NYC official Mamdani's policy decisions as harmful",
-      "quote": "THIS Is How Mamdani Is DOOMING NYC, And It's NOT The Way You Think..."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "How Mamdani's Latest Stupid Move Will BACKFIRE | Hour 1 | 7/24/26",
-      "sourceUrl": "https://www.youtube.com/watch?v=aBpAoIbvyws",
-      "timestamp": "2026-07-24T14:02:55+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Predicts negative consequences from Mamdani's recent action",
-      "quote": "How Mamdani's Latest Stupid Move Will BACKFIRE | Hour 1 | 7/24/26"
     }
   ],
   "topicSummary": {
+    "congress-legislation": [
+      {
+        "quote": "Glenn Is DONE Giving Senate Republicans A Pass",
+        "sourceUrl": "https://www.youtube.com/watch?v=IpHlNzJyzxo",
+        "platform": "youtube",
+        "timestamp": "2026-07-24T23:00:02+00:00"
+      }
+    ],
+    "state-local-politics": [
+      {
+        "quote": "THIS Is How Mamdani Is DOOMING NYC, And It's NOT The Way You Think...",
+        "sourceUrl": "https://www.youtube.com/watch?v=vMcqRK6tPqA",
+        "platform": "youtube",
+        "timestamp": "2026-07-24T19:00:09+00:00"
+      },
+      {
+        "quote": "How Mamdani's Latest Stupid Move Will BACKFIRE | Hour 1 | 7/24/26",
+        "sourceUrl": "https://www.youtube.com/watch?v=aBpAoIbvyws",
+        "platform": "youtube",
+        "timestamp": "2026-07-24T14:02:55+00:00"
+      }
+    ],
     "foreign-policy-diplomacy": [
       {
         "quote": "Marco Rubio Just Hinted Something BIG With Cuba",
@@ -156,28 +178,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/YL_E7gJDy8g",
         "platform": "youtube",
         "timestamp": "2026-07-23T01:00:14+00:00"
-      }
-    ],
-    "congress-legislation": [
-      {
-        "quote": "Glenn Is DONE Giving Senate Republicans A Pass",
-        "sourceUrl": "https://www.youtube.com/watch?v=IpHlNzJyzxo",
-        "platform": "youtube",
-        "timestamp": "2026-07-24T23:00:02+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "THIS Is How Mamdani Is DOOMING NYC, And It's NOT The Way You Think...",
-        "sourceUrl": "https://www.youtube.com/watch?v=vMcqRK6tPqA",
-        "platform": "youtube",
-        "timestamp": "2026-07-24T19:00:09+00:00"
-      },
-      {
-        "quote": "How Mamdani's Latest Stupid Move Will BACKFIRE | Hour 1 | 7/24/26",
-        "sourceUrl": "https://www.youtube.com/watch?v=aBpAoIbvyws",
-        "platform": "youtube",
-        "timestamp": "2026-07-24T14:02:55+00:00"
       }
     ]
   }
