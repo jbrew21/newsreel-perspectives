@@ -1,9 +1,37 @@
 {
   "voiceId": "krystal-ball",
   "voiceName": "Krystal Ball",
-  "collectedAt": "2026-07-25T08:45:22.571996",
+  "collectedAt": "2026-07-25T10:20:21.041110",
   "date": "2026-07-25",
   "posts": [
+    {
+      "voiceId": "krystal-ball",
+      "voiceName": "Krystal Ball",
+      "platform": "x",
+      "text": "NYC crime rate about to drop even further",
+      "sourceUrl": "https://x.com/krystalball/status/2080812032597622937",
+      "timestamp": "2026-07-25T00:27:02+00:00",
+      "type": "tweet",
+      "topic": "criminal-justice",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies NYC crime policy is counterproductive or misguided",
+      "quote": "NYC crime rate about to drop even further"
+    },
+    {
+      "voiceId": "krystal-ball",
+      "voiceName": "Krystal Ball",
+      "platform": "x",
+      "text": "Weird. Maybe we shouldn\u2019t have murdered his dad.",
+      "sourceUrl": "https://x.com/krystalball/status/2080781005279973394",
+      "timestamp": "2026-07-24T22:23:45+00:00",
+      "type": "tweet",
+      "topic": "criminal-justice",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes extrajudicial killing, suggests policy created violent blowback",
+      "quote": "Weird. Maybe we shouldn\u2019t have murdered his dad."
+    },
     {
       "voiceId": "krystal-ball",
       "voiceName": "Krystal Ball",
@@ -213,37 +241,23 @@
       "stance": "strong",
       "summary": "Critiques Trump's new tariff policy on Canada",
       "quote": "Trump Declares New TRADE WAR On Canada"
-    },
-    {
-      "voiceId": "krystal-ball",
-      "voiceName": "Krystal Ball",
-      "platform": "x",
-      "text": "NYC crime rate about to drop even further",
-      "sourceUrl": "https://x.com/krystalball/status/2080812032597622937",
-      "timestamp": "2026-07-25T00:27:02+00:00",
-      "type": "tweet",
-      "topic": "criminal-justice",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies NYC crime policy is counterproductive or misguided",
-      "quote": "NYC crime rate about to drop even further"
-    },
-    {
-      "voiceId": "krystal-ball",
-      "voiceName": "Krystal Ball",
-      "platform": "x",
-      "text": "Weird. Maybe we shouldn\u2019t have murdered his dad.",
-      "sourceUrl": "https://x.com/krystalball/status/2080781005279973394",
-      "timestamp": "2026-07-24T22:23:45+00:00",
-      "type": "tweet",
-      "topic": "criminal-justice",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes extrajudicial killing, suggests policy created violent blowback",
-      "quote": "Weird. Maybe we shouldn\u2019t have murdered his dad."
     }
   ],
   "topicSummary": {
+    "criminal-justice": [
+      {
+        "quote": "NYC crime rate about to drop even further",
+        "sourceUrl": "https://x.com/krystalball/status/2080812032597622937",
+        "platform": "x",
+        "timestamp": "2026-07-25T00:27:02+00:00"
+      },
+      {
+        "quote": "Weird. Maybe we shouldn\u2019t have murdered his dad.",
+        "sourceUrl": "https://x.com/krystalball/status/2080781005279973394",
+        "platform": "x",
+        "timestamp": "2026-07-24T22:23:45+00:00"
+      }
+    ],
     "trump-policy": [
       {
         "quote": "MAGA policies are killing women",
@@ -352,20 +366,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=LBWgVI-buAU",
         "platform": "youtube",
         "timestamp": "2026-07-22T17:30:11+00:00"
-      }
-    ],
-    "criminal-justice": [
-      {
-        "quote": "NYC crime rate about to drop even further",
-        "sourceUrl": "https://x.com/krystalball/status/2080812032597622937",
-        "platform": "x",
-        "timestamp": "2026-07-25T00:27:02+00:00"
-      },
-      {
-        "quote": "Weird. Maybe we shouldn\u2019t have murdered his dad.",
-        "sourceUrl": "https://x.com/krystalball/status/2080781005279973394",
-        "platform": "x",
-        "timestamp": "2026-07-24T22:23:45+00:00"
       }
     ]
   }
