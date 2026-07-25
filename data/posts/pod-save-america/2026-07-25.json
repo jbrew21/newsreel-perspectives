@@ -1,9 +1,37 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "collectedAt": "2026-07-25T08:45:22.545646",
+  "collectedAt": "2026-07-25T18:42:05.205740",
   "date": "2026-07-25",
   "posts": [
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "x",
+      "text": "Jennifer Palmieri on moms who voted MAGA feeling duped.",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2080788350269559221",
+      "timestamp": "2026-07-24T22:52:56+00:00",
+      "type": "tweet",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes MAGA voters, suggests they were misled",
+      "quote": "Jennifer Palmieri on moms who voted MAGA feeling duped."
+    },
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "x",
+      "text": "\u201cIt\u2019s gross.\u201d \u2013Jon Favreau describes what Trump has done to the Oval Office.",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2080729173430051290",
+      "timestamp": "2026-07-24T18:57:47+00:00",
+      "type": "tweet",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Expresses disapproval of Trump's changes to Oval Office",
+      "quote": "\u201cIt\u2019s gross.\u201d \u2013Jon Favreau describes what Trump has done to the Oval Office."
+    },
     {
       "voiceId": "pod-save-america",
       "voiceName": "Pod Save America",
@@ -199,37 +227,55 @@
       "stance": "lean",
       "summary": "Voters seek candidates offering concrete problem-solving solutions",
       "quote": "Voters are hungry for someone who is offering a solution to their problems."
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "x",
-      "text": "Jennifer Palmieri on moms who voted MAGA feeling duped.",
-      "sourceUrl": "https://x.com/PodSaveAmerica/status/2080788350269559221",
-      "timestamp": "2026-07-24T22:52:56+00:00",
-      "type": "tweet",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes MAGA voters, suggests they were misled",
-      "quote": "Jennifer Palmieri on moms who voted MAGA feeling duped."
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "x",
-      "text": "\u201cIt\u2019s gross.\u201d \u2013Jon Favreau describes what Trump has done to the Oval Office.",
-      "sourceUrl": "https://x.com/PodSaveAmerica/status/2080729173430051290",
-      "timestamp": "2026-07-24T18:57:47+00:00",
-      "type": "tweet",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Expresses disapproval of Trump's changes to Oval Office",
-      "quote": "\u201cIt\u2019s gross.\u201d \u2013Jon Favreau describes what Trump has done to the Oval Office."
     }
   ],
   "topicSummary": {
+    "culture-war": [
+      {
+        "quote": "Jennifer Palmieri on moms who voted MAGA feeling duped.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080788350269559221",
+        "platform": "x",
+        "timestamp": "2026-07-24T22:52:56+00:00"
+      },
+      {
+        "quote": "Favreau and Lovett on \u201cThe Odyssey\u2019s\u201d right-wing, \u201cwoke\u201d backlash.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2079328630765691242",
+        "platform": "x",
+        "timestamp": "2026-07-20T22:12:32+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "\u201cIt\u2019s gross.\u201d \u2013Jon Favreau describes what Trump has done to the Oval Office.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080729173430051290",
+        "platform": "x",
+        "timestamp": "2026-07-24T18:57:47+00:00"
+      },
+      {
+        "quote": "Share this so Elon can't pretend children didn't die when he destroyed USAID.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080679272298271186",
+        "platform": "x",
+        "timestamp": "2026-07-24T15:39:30+00:00"
+      },
+      {
+        "quote": "Donald Trump puts words in the mouths of fallen service members.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080080856849190917",
+        "platform": "x",
+        "timestamp": "2026-07-23T00:01:36+00:00"
+      },
+      {
+        "quote": "Trump makes FIFA celebration about himself.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2079382400929280501",
+        "platform": "x",
+        "timestamp": "2026-07-21T01:46:12+00:00"
+      },
+      {
+        "quote": "Should Pete Hegseth bring his new policy to The Odyssey?",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2079352372044640352",
+        "platform": "x",
+        "timestamp": "2026-07-20T23:46:52+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "It's going to be a bloodbath\u2026I think they're all going to fight to the death for this.\u201d \u2013Someone describing how the debate over the Democratic primary schedule is going.",
@@ -254,38 +300,6 @@
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2078834948631363689",
         "platform": "x",
         "timestamp": "2026-07-19T13:30:49+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Share this so Elon can't pretend children didn't die when he destroyed USAID.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080679272298271186",
-        "platform": "x",
-        "timestamp": "2026-07-24T15:39:30+00:00"
-      },
-      {
-        "quote": "Donald Trump puts words in the mouths of fallen service members.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080080856849190917",
-        "platform": "x",
-        "timestamp": "2026-07-23T00:01:36+00:00"
-      },
-      {
-        "quote": "Trump makes FIFA celebration about himself.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2079382400929280501",
-        "platform": "x",
-        "timestamp": "2026-07-21T01:46:12+00:00"
-      },
-      {
-        "quote": "Should Pete Hegseth bring his new policy to The Odyssey?",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2079352372044640352",
-        "platform": "x",
-        "timestamp": "2026-07-20T23:46:52+00:00"
-      },
-      {
-        "quote": "\u201cIt\u2019s gross.\u201d \u2013Jon Favreau describes what Trump has done to the Oval Office.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080729173430051290",
-        "platform": "x",
-        "timestamp": "2026-07-24T18:57:47+00:00"
       }
     ],
     "trump-policy": [
@@ -324,20 +338,6 @@
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2079397478458093909",
         "platform": "x",
         "timestamp": "2026-07-21T02:46:06+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "Favreau and Lovett on \u201cThe Odyssey\u2019s\u201d right-wing, \u201cwoke\u201d backlash.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2079328630765691242",
-        "platform": "x",
-        "timestamp": "2026-07-20T22:12:32+00:00"
-      },
-      {
-        "quote": "Jennifer Palmieri on moms who voted MAGA feeling duped.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080788350269559221",
-        "platform": "x",
-        "timestamp": "2026-07-24T22:52:56+00:00"
       }
     ]
   }
