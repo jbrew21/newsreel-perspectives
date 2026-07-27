@@ -1,9 +1,23 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-07-27T10:30:03.401060",
+  "collectedAt": "2026-07-27T12:06:56.618231",
   "date": "2026-07-27",
   "posts": [
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "x",
+      "text": "Whipped for singing?",
+      "sourceUrl": "https://x.com/billmaher/status/2076739307742937443",
+      "timestamp": "2026-07-13T18:43:29+00:00",
+      "type": "tweet",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions consequences for singing performances",
+      "quote": "Whipped for singing?"
+    },
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
@@ -129,23 +143,29 @@
       "stance": "lean",
       "summary": "Celebrates American identity and patriotism",
       "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "x",
-      "text": "Whipped for singing?",
-      "sourceUrl": "https://x.com/billmaher/status/2076739307742937443",
-      "timestamp": "2026-07-13T18:43:29+00:00",
-      "type": "tweet",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions consequences for singing performances",
-      "quote": "Whipped for singing?"
     }
   ],
   "topicSummary": {
+    "culture-war": [
+      {
+        "quote": "Whipped for singing?",
+        "sourceUrl": "https://x.com/billmaher/status/2076739307742937443",
+        "platform": "x",
+        "timestamp": "2026-07-13T18:43:29+00:00"
+      },
+      {
+        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
+        "platform": "youtube",
+        "timestamp": "2026-06-27T03:00:23+00:00"
+      },
+      {
+        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
+        "platform": "youtube",
+        "timestamp": "2026-06-20T03:00:05+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "I would love to have @AOC and @ZohranKMamdani on the show, but I can't subpoena the guests.",
@@ -186,26 +206,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=ARIQ5M0jNmo",
         "platform": "youtube",
         "timestamp": "2026-06-30T16:00:13+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "New Rule: Hooray for the USA! | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=76UXWSaGZhI",
-        "platform": "youtube",
-        "timestamp": "2026-06-27T03:00:23+00:00"
-      },
-      {
-        "quote": "New Rule: America Is Ours | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=OqXNmO-6c3k",
-        "platform": "youtube",
-        "timestamp": "2026-06-20T03:00:05+00:00"
-      },
-      {
-        "quote": "Whipped for singing?",
-        "sourceUrl": "https://x.com/billmaher/status/2076739307742937443",
-        "platform": "x",
-        "timestamp": "2026-07-13T18:43:29+00:00"
       }
     ],
     "congress-legislation": [
