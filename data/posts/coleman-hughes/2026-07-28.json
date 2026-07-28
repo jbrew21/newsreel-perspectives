@@ -1,9 +1,37 @@
 {
   "voiceId": "coleman-hughes",
   "voiceName": "Coleman Hughes",
-  "collectedAt": "2026-07-28T09:29:01.617305",
+  "collectedAt": "2026-07-28T11:06:53.363049",
   "date": "2026-07-28",
   "posts": [
+    {
+      "voiceId": "coleman-hughes",
+      "voiceName": "Coleman Hughes",
+      "platform": "youtube",
+      "text": "How is RFK Jr. Doing?",
+      "sourceUrl": "https://www.youtube.com/shorts/6sTpNGi_M90",
+      "timestamp": "2026-07-27T19:15:14+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Evaluates RFK Jr.'s performance in Trump administration role",
+      "quote": "How is RFK Jr. Doing?"
+    },
+    {
+      "voiceId": "coleman-hughes",
+      "voiceName": "Coleman Hughes",
+      "platform": "youtube",
+      "text": "Why Kilian Michaels LEFT California",
+      "sourceUrl": "https://www.youtube.com/shorts/Qh5OnB1esbY",
+      "timestamp": "2026-07-27T19:11:21+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Discusses reasons for public figure's departure from California",
+      "quote": "Why Kilian Michaels LEFT California"
+    },
     {
       "voiceId": "coleman-hughes",
       "voiceName": "Coleman Hughes",
@@ -87,37 +115,25 @@
       "stance": "lean",
       "summary": "Defends elite institutions and expert authority",
       "quote": "In Defense of Elites, with Richard Hanania"
-    },
-    {
-      "voiceId": "coleman-hughes",
-      "voiceName": "Coleman Hughes",
-      "platform": "youtube",
-      "text": "How is RFK Jr. Doing?",
-      "sourceUrl": "https://www.youtube.com/shorts/6sTpNGi_M90",
-      "timestamp": "2026-07-27T19:15:14+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Evaluates RFK Jr.'s performance in Trump administration role",
-      "quote": "How is RFK Jr. Doing?"
-    },
-    {
-      "voiceId": "coleman-hughes",
-      "voiceName": "Coleman Hughes",
-      "platform": "youtube",
-      "text": "Why Kilian Michaels LEFT California",
-      "sourceUrl": "https://www.youtube.com/shorts/Qh5OnB1esbY",
-      "timestamp": "2026-07-27T19:11:21+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Discusses reasons for public figure's departure from California",
-      "quote": "Why Kilian Michaels LEFT California"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "How is RFK Jr. Doing?",
+        "sourceUrl": "https://www.youtube.com/shorts/6sTpNGi_M90",
+        "platform": "youtube",
+        "timestamp": "2026-07-27T19:15:14+00:00"
+      }
+    ],
+    "state-local-politics": [
+      {
+        "quote": "Why Kilian Michaels LEFT California",
+        "sourceUrl": "https://www.youtube.com/shorts/Qh5OnB1esbY",
+        "platform": "youtube",
+        "timestamp": "2026-07-27T19:11:21+00:00"
+      }
+    ],
     "healthcare": [
       {
         "quote": "The Real Reason Americans Are So Sick, with Jillian Michaels",
@@ -160,22 +176,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=18wYRFjC39o",
         "platform": "youtube",
         "timestamp": "2026-07-13T12:52:52+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "How is RFK Jr. Doing?",
-        "sourceUrl": "https://www.youtube.com/shorts/6sTpNGi_M90",
-        "platform": "youtube",
-        "timestamp": "2026-07-27T19:15:14+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "Why Kilian Michaels LEFT California",
-        "sourceUrl": "https://www.youtube.com/shorts/Qh5OnB1esbY",
-        "platform": "youtube",
-        "timestamp": "2026-07-27T19:11:21+00:00"
       }
     ]
   }
