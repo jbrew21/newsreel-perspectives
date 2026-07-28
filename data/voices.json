@@ -7212,14 +7212,18 @@
     "followers": 322577,
     "followersDisplay": "323K",
     "platforms": [
-      "bluesky"
+      "bluesky",
+      "substack"
     ],
     "category": "legal",
     "approach": "analyzes",
     "lens": "Supreme Court and legal journalist who writes Law Dork. Covers the courts, LGBTQ rights, and the death penalty with close attention to legal procedure.",
-    "feeds": {},
+    "feeds": {
+      "substack": "https://www.lawdork.com/feed"
+    },
     "handles": {
-      "bluesky": "chrisgeidner.bsky.social"
+      "bluesky": "chrisgeidner.bsky.social",
+      "substack": "lawdork"
     },
     "tags": [
       "legal",
@@ -8117,5 +8121,31 @@
       "competition-policy"
     ],
     "photoSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Matt_Stoller_bio_pic.jpg/500px-Matt_Stoller_bio_pic.jpg"
+  },
+  {
+    "id": "rick-hasen",
+    "name": "Rick Hasen",
+    "photo": "/photos/rick-hasen.jpg",
+    "followers": 70000,
+    "followersDisplay": "70K",
+    "platforms": [
+      "blog",
+      "x"
+    ],
+    "category": "legal",
+    "approach": "explains",
+    "lens": "Election law scholar at UCLA School of Law and author of the Election Law Blog. A leading nonpartisan authority on voting rights, election administration, and the courts, he writes closely on mail voting, the Supreme Court's election cases, and threats to election integrity from every direction.",
+    "feeds": {
+      "blog": "https://electionlawblog.org/?feed=rss2"
+    },
+    "handles": {
+      "x": "rickhasen"
+    },
+    "tags": [
+      "election-law",
+      "voting-rights",
+      "nonpartisan"
+    ],
+    "photoSource": "https://apps.law.ucla.edu/FacultyPhoto/9981.jpg"
   }
 ]
