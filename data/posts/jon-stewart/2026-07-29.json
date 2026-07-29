@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-07-29T11:18:44.557846",
+  "collectedAt": "2026-07-29T18:37:50.975836",
   "date": "2026-07-29",
   "posts": [
     {
@@ -162,15 +162,29 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "Mayor Zohran Mamdani | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/pYn1vOIcHaw",
-      "timestamp": "2026-07-21T18:37:19+00:00",
+      "text": "Elon's Financial Timebomb | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/OOLj4nl1FFs",
+      "timestamp": "2026-07-29T13:52:41+00:00",
       "type": "video_title",
-      "topic": "state-local-politics",
+      "topic": "billionaires-wealth",
       "relevance": "high",
-      "stance": "lean",
-      "summary": "Platforms NYC elected official on policy platform",
-      "quote": "Mayor Zohran Mamdani | The Weekly Show with Jon Stewart"
+      "stance": "strong",
+      "summary": "Criticizes Elon Musk's financial practices and risk exposure",
+      "quote": "Elon's Financial Timebomb | The Weekly Show with Jon Stewart"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Regulating Monopolies | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/aFBjykZApiE",
+      "timestamp": "2026-07-29T11:52:40+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Advocates for regulatory oversight of monopolistic business practices",
+      "quote": "Regulating Monopolies | The Weekly Show with Jon Stewart"
     }
   ],
   "topicSummary": {
@@ -224,6 +238,12 @@
         "sourceUrl": "https://www.youtube.com/shorts/bhV8rscUvPE",
         "platform": "youtube",
         "timestamp": "2026-07-22T11:57:52+00:00"
+      },
+      {
+        "quote": "Regulating Monopolies | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/aFBjykZApiE",
+        "platform": "youtube",
+        "timestamp": "2026-07-29T11:52:40+00:00"
       }
     ],
     "elections": [
@@ -248,12 +268,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=nffK_ji57X0",
         "platform": "youtube",
         "timestamp": "2026-07-22T17:42:03+00:00"
-      },
-      {
-        "quote": "Mayor Zohran Mamdani | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/pYn1vOIcHaw",
-        "platform": "youtube",
-        "timestamp": "2026-07-21T18:37:19+00:00"
       }
     ],
     "media-press": [
@@ -262,6 +276,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/X3xz8yNQ28E",
         "platform": "youtube",
         "timestamp": "2026-07-22T13:55:48+00:00"
+      }
+    ],
+    "billionaires-wealth": [
+      {
+        "quote": "Elon's Financial Timebomb | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/OOLj4nl1FFs",
+        "platform": "youtube",
+        "timestamp": "2026-07-29T13:52:41+00:00"
       }
     ]
   }
