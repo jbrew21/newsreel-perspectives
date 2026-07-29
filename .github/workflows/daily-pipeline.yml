@@ -86,15 +86,28 @@ jobs:
           sys.exit(0 if ok else 1)
           "
 
-      - name: Prune daily aggregate files older than 30 days
+      - name: Prune old aggregate files (30d) and per-person archives (45d)
         run: |
           python3 - <<'PY'
-          import os, glob, datetime, subprocess
+          import os, glob, re, datetime, subprocess
           root = 'data/posts'
-          cutoff = datetime.date.today() - datetime.timedelta(days=30)
-          removed = 0
-          # Only the top-level dated AGGREGATE files. Per-person archives
-          # (data/posts/<name>/<date>.json) are intentionally left intact.
+          today = datetime.date.today()
+          agg_cutoff = today - datetime.timedelta(days=30)
+          # Per-person archives are read by lookup.py's auto-expanding search,
+          # which widens up to a 30-day window (scripts/lookup.py). Keep 45 days
+          # so there is always a 15-day buffer beyond the widest lookback, then
+          # drop the rest -- unbounded per-person history had grown data/posts
+          # to 671MB / ~34k files and was wedging free-tier Render spin-ups.
+          post_cutoff = today - datetime.timedelta(days=45)
+
+          def git_rm(paths):
+              # Batch to keep the daily run fast and avoid one process per file.
+              for i in range(0, len(paths), 500):
+                  subprocess.run(['git', 'rm', '-q', '--'] + paths[i:i + 500],
+                                 check=False)
+
+          # 1) Top-level dated AGGREGATE files -- only the latest is ever read.
+          agg = []
           for prefix in ('topic-index-', 'stories-', 'fractures-'):
               for path in glob.glob(os.path.join(root, prefix + '*.json')):
                   datestr = os.path.basename(path)[len(prefix):-5]
@@ -102,11 +115,25 @@ jobs:
                       d = datetime.date.fromisoformat(datestr)
                   except ValueError:
                       continue  # not a plain dated file; skip
-                  if d < cutoff:
-                      subprocess.run(['git', 'rm', '-q', '--', path], check=False)
-                      removed += 1
-          print(f'Pruned {removed} aggregate files older than {cutoff} '
-                '(the site only ever reads the latest).')
+                  if d < agg_cutoff:
+                      agg.append(path)
+          git_rm(agg)
+
+          # 2) Per-person archives: data/posts/<voice>/<YYYY-MM-DD>.json
+          dated = re.compile(r'^(\d{4}-\d{2}-\d{2})\.json$')
+          posts = []
+          for voice in os.listdir(root):
+              vdir = os.path.join(root, voice)
+              if not os.path.isdir(vdir):
+                  continue
+              for fn in os.listdir(vdir):
+                  m = dated.match(fn)
+                  if m and m.group(1) < post_cutoff.isoformat():
+                      posts.append(os.path.join(vdir, fn))
+          git_rm(posts)
+
+          print(f'Pruned {len(agg)} aggregate files (<{agg_cutoff}) and '
+                f'{len(posts)} per-person archives (<{post_cutoff}).')
           PY
 
       - name: Commit and push data changes
