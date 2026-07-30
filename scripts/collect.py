@@ -502,8 +502,8 @@ def fetch_bluesky_posts(voice):
                 'timestamp': record.get('createdAt', ''),
                 'type': 'post',
             })
-    except:
-        pass
+    except Exception as e:
+        print(f"    ⚠ Bluesky failed for @{handle}: {e}")
 
     return posts
 
