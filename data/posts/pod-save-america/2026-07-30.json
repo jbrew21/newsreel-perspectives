@@ -1,9 +1,37 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "collectedAt": "2026-07-30T10:57:16.564014",
+  "collectedAt": "2026-07-30T19:11:35.727008",
   "date": "2026-07-30",
   "posts": [
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "x",
+      "text": "Alex Jones calls for Trump's impeachment over the war in Iran.",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2082640884290527513",
+      "timestamp": "2026-07-30T01:34:15+00:00",
+      "type": "tweet",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Calls for Trump's impeachment over Iran war",
+      "quote": "Alex Jones calls for Trump's impeachment over the war in Iran."
+    },
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "x",
+      "text": "Obama joins Josh Turek in Turek's latest ad for the Senate.",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2082621730565021709",
+      "timestamp": "2026-07-30T00:18:08+00:00",
+      "type": "tweet",
+      "topic": "elections",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Obama endorses Senate candidate Josh Turek",
+      "quote": "Obama joins Josh Turek in Turek's latest ad for the Senate."
+    },
     {
       "voiceId": "pod-save-america",
       "voiceName": "Pod Save America",
@@ -199,52 +227,36 @@
       "stance": "strong",
       "summary": "Criticizes Trump for using bombing to escalate Iran war",
       "quote": "Trump tries to bomb his way out of the war in Iran."
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "x",
-      "text": "Donald Trump puts words in the mouths of fallen service members.",
-      "sourceUrl": "https://x.com/PodSaveAmerica/status/2080080856849190917",
-      "timestamp": "2026-07-23T00:01:36+00:00",
-      "type": "tweet",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Trump for misrepresenting fallen service members",
-      "quote": "Donald Trump puts words in the mouths of fallen service members."
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "x",
-      "text": "Alex Jones calls for Trump's impeachment over the war in Iran.",
-      "sourceUrl": "https://x.com/PodSaveAmerica/status/2082640884290527513",
-      "timestamp": "2026-07-30T01:34:15+00:00",
-      "type": "tweet",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Calls for Trump's impeachment over Iran war",
-      "quote": "Alex Jones calls for Trump's impeachment over the war in Iran."
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "x",
-      "text": "Obama joins Josh Turek in Turek's latest ad for the Senate.",
-      "sourceUrl": "https://x.com/PodSaveAmerica/status/2082621730565021709",
-      "timestamp": "2026-07-30T00:18:08+00:00",
-      "type": "tweet",
-      "topic": "elections",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Obama endorses Senate candidate Josh Turek",
-      "quote": "Obama joins Josh Turek in Turek's latest ad for the Senate."
     }
   ],
   "topicSummary": {
+    "iran-conflict": [
+      {
+        "quote": "Alex Jones calls for Trump's impeachment over the war in Iran.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2082640884290527513",
+        "platform": "x",
+        "timestamp": "2026-07-30T01:34:15+00:00"
+      },
+      {
+        "quote": "Trump compares the Iran war to playing a banjo.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2082157218749645201",
+        "platform": "x",
+        "timestamp": "2026-07-28T17:32:20+00:00"
+      },
+      {
+        "quote": "Trump tries to bomb his way out of the war in Iran.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080476587070255346",
+        "platform": "x",
+        "timestamp": "2026-07-24T02:14:06+00:00"
+      }
+    ],
     "elections": [
+      {
+        "quote": "Obama joins Josh Turek in Turek's latest ad for the Senate.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2082621730565021709",
+        "platform": "x",
+        "timestamp": "2026-07-30T00:18:08+00:00"
+      },
       {
         "quote": "Ben Wikler on how to build a winning coalition by improving people\u2019s lives.",
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2082529414248534359",
@@ -268,12 +280,6 @@
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2080682458018656396",
         "platform": "x",
         "timestamp": "2026-07-24T15:52:09+00:00"
-      },
-      {
-        "quote": "Obama joins Josh Turek in Turek's latest ad for the Senate.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2082621730565021709",
-        "platform": "x",
-        "timestamp": "2026-07-30T00:18:08+00:00"
       }
     ],
     "trump-administration": [
@@ -300,12 +306,6 @@
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2080679272298271186",
         "platform": "x",
         "timestamp": "2026-07-24T15:39:30+00:00"
-      },
-      {
-        "quote": "Donald Trump puts words in the mouths of fallen service members.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080080856849190917",
-        "platform": "x",
-        "timestamp": "2026-07-23T00:01:36+00:00"
       }
     ],
     "congress-legislation": [
@@ -320,26 +320,6 @@
         "sourceUrl": "https://x.com/PodSaveAmerica/status/2081380550015693124",
         "platform": "x",
         "timestamp": "2026-07-26T14:06:07+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "Trump compares the Iran war to playing a banjo.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2082157218749645201",
-        "platform": "x",
-        "timestamp": "2026-07-28T17:32:20+00:00"
-      },
-      {
-        "quote": "Trump tries to bomb his way out of the war in Iran.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2080476587070255346",
-        "platform": "x",
-        "timestamp": "2026-07-24T02:14:06+00:00"
-      },
-      {
-        "quote": "Alex Jones calls for Trump's impeachment over the war in Iran.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2082640884290527513",
-        "platform": "x",
-        "timestamp": "2026-07-30T01:34:15+00:00"
       }
     ],
     "culture-war": [
