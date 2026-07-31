@@ -1,9 +1,23 @@
 {
   "voiceId": "krystal-ball",
   "voiceName": "Krystal Ball",
-  "collectedAt": "2026-07-31T09:35:54.848390",
+  "collectedAt": "2026-07-31T11:22:17.417337",
   "date": "2026-07-31",
   "posts": [
+    {
+      "voiceId": "krystal-ball",
+      "voiceName": "Krystal Ball",
+      "platform": "x",
+      "text": "Fox News wrapped this segment REAL quick",
+      "sourceUrl": "https://x.com/krystalball/status/2082929159467143466",
+      "timestamp": "2026-07-30T20:39:45+00:00",
+      "type": "tweet",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques Fox News editorial control or rapid segment termination",
+      "quote": "Fox News wrapped this segment REAL quick"
+    },
     {
       "voiceId": "krystal-ball",
       "voiceName": "Krystal Ball",
@@ -87,6 +101,20 @@
       "stance": "strong",
       "summary": "Criticizes Trump campaign chief receiving payments from Israel",
       "quote": "Israel Paying Trump Campaign Chief MILLIONS To Poison Chatbots"
+    },
+    {
+      "voiceId": "krystal-ball",
+      "voiceName": "Krystal Ball",
+      "platform": "youtube",
+      "text": "Altman SHOOK After AI Hacking Crime Spree",
+      "sourceUrl": "https://www.youtube.com/watch?v=cO_1FsrRQG4",
+      "timestamp": "2026-07-30T18:00:28+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights AI security vulnerabilities and hacking threats",
+      "quote": "Altman SHOOK After AI Hacking Crime Spree"
     },
     {
       "voiceId": "krystal-ball",
@@ -185,37 +213,17 @@
       "stance": "strong",
       "summary": "Americans support Netanyahu's arrest for alleged crimes",
       "quote": "POLL: AMERICANS DEMAND NETANYAHU ARREST"
-    },
-    {
-      "voiceId": "krystal-ball",
-      "voiceName": "Krystal Ball",
-      "platform": "x",
-      "text": "Fox News wrapped this segment REAL quick",
-      "sourceUrl": "https://x.com/krystalball/status/2082929159467143466",
-      "timestamp": "2026-07-30T20:39:45+00:00",
-      "type": "tweet",
-      "topic": "media-press",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critiques Fox News editorial control or rapid segment termination",
-      "quote": "Fox News wrapped this segment REAL quick"
-    },
-    {
-      "voiceId": "krystal-ball",
-      "voiceName": "Krystal Ball",
-      "platform": "youtube",
-      "text": "Altman SHOOK After AI Hacking Crime Spree",
-      "sourceUrl": "https://www.youtube.com/watch?v=cO_1FsrRQG4",
-      "timestamp": "2026-07-30T18:00:28+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights AI security vulnerabilities and hacking threats",
-      "quote": "Altman SHOOK After AI Hacking Crime Spree"
     }
   ],
   "topicSummary": {
+    "media-press": [
+      {
+        "quote": "Fox News wrapped this segment REAL quick",
+        "sourceUrl": "https://x.com/krystalball/status/2082929159467143466",
+        "platform": "x",
+        "timestamp": "2026-07-30T20:39:45+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "On April 6th @AbdulElSayed had only a 27% chance of winning the Democratic Primary. On April 7th he campaigned with @hasanthehun. Look at what happens to his odds of victory after that moment. \n\nThe establishment thought elevating and attacking Hasan would help them but it only helped clarify for De",
@@ -262,6 +270,20 @@
         "timestamp": "2026-07-30T18:30:01+00:00"
       }
     ],
+    "ai-technology": [
+      {
+        "quote": "Altman SHOOK After AI Hacking Crime Spree",
+        "sourceUrl": "https://www.youtube.com/watch?v=cO_1FsrRQG4",
+        "platform": "youtube",
+        "timestamp": "2026-07-30T18:00:28+00:00"
+      },
+      {
+        "quote": "Tech CEO: No More Poor People Voting!",
+        "sourceUrl": "https://www.youtube.com/watch?v=fb3UHAuEg7c",
+        "platform": "youtube",
+        "timestamp": "2026-07-29T18:00:40+00:00"
+      }
+    ],
     "covid-pandemic": [
       {
         "quote": "Fauci PLEADS Fifth After Diary Reveals Lab Leak Coverup",
@@ -284,20 +306,6 @@
         "timestamp": "2026-07-30T16:00:04+00:00"
       }
     ],
-    "ai-technology": [
-      {
-        "quote": "Tech CEO: No More Poor People Voting!",
-        "sourceUrl": "https://www.youtube.com/watch?v=fb3UHAuEg7c",
-        "platform": "youtube",
-        "timestamp": "2026-07-29T18:00:40+00:00"
-      },
-      {
-        "quote": "Altman SHOOK After AI Hacking Crime Spree",
-        "sourceUrl": "https://www.youtube.com/watch?v=cO_1FsrRQG4",
-        "platform": "youtube",
-        "timestamp": "2026-07-30T18:00:28+00:00"
-      }
-    ],
     "israel-palestine": [
       {
         "quote": "Liberal Zionist Fantasies DEBUNKED By Escalating West Bank Pogroms",
@@ -310,14 +318,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=LeW8ZUsBPv4",
         "platform": "youtube",
         "timestamp": "2026-07-29T17:00:13+00:00"
-      }
-    ],
-    "media-press": [
-      {
-        "quote": "Fox News wrapped this segment REAL quick",
-        "sourceUrl": "https://x.com/krystalball/status/2082929159467143466",
-        "platform": "x",
-        "timestamp": "2026-07-30T20:39:45+00:00"
       }
     ]
   }
