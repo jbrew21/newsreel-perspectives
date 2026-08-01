@@ -1,9 +1,37 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-08-01T08:52:26.463930",
+  "collectedAt": "2026-08-01T10:31:12.393510",
   "date": "2026-08-01",
   "posts": [
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "What's the problem? It's just a bunch of women and children seeking a better life.",
+      "sourceUrl": "https://www.youtube.com/shorts/k-Su6oCz7eg",
+      "timestamp": "2026-07-31T23:30:32+00:00",
+      "type": "video_title",
+      "topic": "immigration",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Sarcastically frames migrant concerns as economic, implying skepticism of asylum claims",
+      "quote": "What's the problem? It's just a bunch of women and children seeking a better life."
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "They're Coming For You Next",
+      "sourceUrl": "https://www.youtube.com/watch?v=65_j41ZC_zU",
+      "timestamp": "2026-07-31T20:00:03+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Warns of escalating ideological targeting or persecution",
+      "quote": "They're Coming For You Next"
+    },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
@@ -87,37 +115,37 @@
       "stance": "lean",
       "summary": "Mocks feminist messaging in commercial",
       "quote": "The free meal Feminist manifesto nobody asked for"
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "What's the problem? It's just a bunch of women and children seeking a better life.",
-      "sourceUrl": "https://www.youtube.com/shorts/k-Su6oCz7eg",
-      "timestamp": "2026-07-31T23:30:32+00:00",
-      "type": "video_title",
-      "topic": "immigration",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Sarcastically frames migrant concerns as economic, implying skepticism of asylum claims",
-      "quote": "What's the problem? It's just a bunch of women and children seeking a better life."
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "They're Coming For You Next",
-      "sourceUrl": "https://www.youtube.com/watch?v=65_j41ZC_zU",
-      "timestamp": "2026-07-31T20:00:03+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Warns of escalating ideological targeting or persecution",
-      "quote": "They're Coming For You Next"
     }
   ],
   "topicSummary": {
+    "immigration": [
+      {
+        "quote": "What's the problem? It's just a bunch of women and children seeking a better life.",
+        "sourceUrl": "https://www.youtube.com/shorts/k-Su6oCz7eg",
+        "platform": "youtube",
+        "timestamp": "2026-07-31T23:30:32+00:00"
+      }
+    ],
+    "culture-war": [
+      {
+        "quote": "They're Coming For You Next",
+        "sourceUrl": "https://www.youtube.com/watch?v=65_j41ZC_zU",
+        "platform": "youtube",
+        "timestamp": "2026-07-31T20:00:03+00:00"
+      },
+      {
+        "quote": "The Case for Fascism",
+        "sourceUrl": "https://www.youtube.com/watch?v=4RtXoyTxZRQ",
+        "platform": "youtube",
+        "timestamp": "2026-07-28T20:00:22+00:00"
+      },
+      {
+        "quote": "The free meal Feminist manifesto nobody asked for",
+        "sourceUrl": "https://www.youtube.com/shorts/Zb60PmRX2qQ",
+        "platform": "youtube",
+        "timestamp": "2026-07-28T19:35:29+00:00"
+      }
+    ],
     "covid-pandemic": [
       {
         "quote": "Fauci's lies are the gift that keeps on giving...",
@@ -142,34 +170,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=3_v_8AmIaZ4",
         "platform": "youtube",
         "timestamp": "2026-07-29T18:40:38+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "The Case for Fascism",
-        "sourceUrl": "https://www.youtube.com/watch?v=4RtXoyTxZRQ",
-        "platform": "youtube",
-        "timestamp": "2026-07-28T20:00:22+00:00"
-      },
-      {
-        "quote": "The free meal Feminist manifesto nobody asked for",
-        "sourceUrl": "https://www.youtube.com/shorts/Zb60PmRX2qQ",
-        "platform": "youtube",
-        "timestamp": "2026-07-28T19:35:29+00:00"
-      },
-      {
-        "quote": "They're Coming For You Next",
-        "sourceUrl": "https://www.youtube.com/watch?v=65_j41ZC_zU",
-        "platform": "youtube",
-        "timestamp": "2026-07-31T20:00:03+00:00"
-      }
-    ],
-    "immigration": [
-      {
-        "quote": "What's the problem? It's just a bunch of women and children seeking a better life.",
-        "sourceUrl": "https://www.youtube.com/shorts/k-Su6oCz7eg",
-        "platform": "youtube",
-        "timestamp": "2026-07-31T23:30:32+00:00"
       }
     ]
   }

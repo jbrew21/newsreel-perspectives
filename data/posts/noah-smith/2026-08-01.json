@@ -1,9 +1,23 @@
 {
   "voiceId": "noah-smith",
   "voiceName": "Noah Smith",
-  "collectedAt": "2026-08-01T08:52:26.493631",
+  "collectedAt": "2026-08-01T10:31:12.416449",
   "date": "2026-08-01",
   "posts": [
+    {
+      "voiceId": "noah-smith",
+      "voiceName": "Noah Smith",
+      "platform": "x",
+      "text": "Tariffs are slopulism",
+      "sourceUrl": "https://x.com/Noahpinion/status/2083455941564112948",
+      "timestamp": "2026-08-01T07:32:59+00:00",
+      "type": "tweet",
+      "topic": "economy-trade",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes tariffs as populism",
+      "quote": "Tariffs are slopulism"
+    },
     {
       "voiceId": "noah-smith",
       "voiceName": "Noah Smith",
@@ -161,19 +175,33 @@
     {
       "voiceId": "noah-smith",
       "voiceName": "Noah Smith",
-      "platform": "x",
-      "text": "Tariffs are slopulism",
-      "sourceUrl": "https://x.com/Noahpinion/status/2083455941564112948",
-      "timestamp": "2026-08-01T07:32:59+00:00",
-      "type": "tweet",
-      "topic": "economy-trade",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes tariffs as populism",
-      "quote": "Tariffs are slopulism"
+      "platform": "bluesky",
+      "text": "We\u2019ll have declared war on Latveria by Christmas. \n\nwww.bbc.com/news/world-u...",
+      "sourceUrl": "https://bsky.app/profile/smithnoah.bsky.social/post/3mrx7dcawys2b",
+      "timestamp": "2026-07-31T14:51:23.608Z",
+      "type": "post",
+      "topic": "other",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Sarcastically suggests escalating military conflict with unnamed nation",
+      "quote": "We\u2019ll have declared war on Latveria by Christmas. \n\nwww.bbc.com/news/world-u..."
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "Tariffs are slopulism",
+        "sourceUrl": "https://x.com/Noahpinion/status/2083455941564112948",
+        "platform": "x",
+        "timestamp": "2026-08-01T07:32:59+00:00"
+      },
+      {
+        "quote": "No, China did not manage to avoid a crash. But there are still things we can learn from how they manage their macroeconomy.",
+        "sourceUrl": "https://www.noahpinion.blog/p/no-china-did-not-manage-to-avoid",
+        "platform": "substack",
+        "timestamp": "2026-07-06T08:54:30+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "What will more intelligence actually do for us?. A lot, actually. But it won't look quite like what humans do with our intelligence.",
@@ -212,6 +240,12 @@
         "sourceUrl": "https://www.noahpinion.blog/p/why-i-didnt-sign-the-we-must-act",
         "platform": "substack",
         "timestamp": "2026-07-15T08:19:54+00:00"
+      },
+      {
+        "quote": "We\u2019ll have declared war on Latveria by Christmas. \n\nwww.bbc.com/news/world-u...",
+        "sourceUrl": "https://bsky.app/profile/smithnoah.bsky.social/post/3mrx7dcawys2b",
+        "platform": "bluesky",
+        "timestamp": "2026-07-31T14:51:23.608Z"
       }
     ],
     "housing-infrastructure": [
@@ -242,20 +276,6 @@
         "sourceUrl": "https://www.noahpinion.blog/p/jd-vances-crusade-against-gdp-is",
         "platform": "substack",
         "timestamp": "2026-07-08T03:56:06+00:00"
-      }
-    ],
-    "economy-trade": [
-      {
-        "quote": "No, China did not manage to avoid a crash. But there are still things we can learn from how they manage their macroeconomy.",
-        "sourceUrl": "https://www.noahpinion.blog/p/no-china-did-not-manage-to-avoid",
-        "platform": "substack",
-        "timestamp": "2026-07-06T08:54:30+00:00"
-      },
-      {
-        "quote": "Tariffs are slopulism",
-        "sourceUrl": "https://x.com/Noahpinion/status/2083455941564112948",
-        "platform": "x",
-        "timestamp": "2026-08-01T07:32:59+00:00"
       }
     ],
     "foreign-policy-diplomacy": [
