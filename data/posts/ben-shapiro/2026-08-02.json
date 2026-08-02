@@ -1,7 +1,7 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-02T10:30:51.430795",
+  "collectedAt": "2026-08-02T18:36:01.657843",
   "date": "2026-08-02",
   "posts": [
     {
@@ -260,15 +260,29 @@
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
       "platform": "youtube",
-      "text": "Fauci's Pardon Might Not Save Him",
-      "sourceUrl": "https://www.youtube.com/watch?v=X_1u6wW8uMI",
-      "timestamp": "2026-07-30T21:00:19+00:00",
+      "text": "What The Constitution REALLY Says About Voting Rights",
+      "sourceUrl": "https://www.youtube.com/watch?v=nEOSwVQDogo",
+      "timestamp": "2026-08-02T15:00:34+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
+      "topic": "supreme-court-legal",
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Questions effectiveness of presidential pardon for Fauci",
-      "quote": "Fauci's Pardon Might Not Save Him"
+      "summary": "Interprets Constitution's voting rights provisions from originalist perspective",
+      "quote": "What The Constitution REALLY Says About Voting Rights"
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "Why you should be optimistic about AI",
+      "sourceUrl": "https://www.youtube.com/shorts/NOY7dexUZTw",
+      "timestamp": "2026-08-02T14:15:33+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Advocates optimistic view of artificial intelligence development",
+      "quote": "Why you should be optimistic about AI"
     }
   ],
   "topicSummary": {
@@ -400,12 +414,20 @@
         "timestamp": "2026-07-31T19:00:37+00:00"
       }
     ],
-    "trump-administration": [
+    "supreme-court-legal": [
       {
-        "quote": "Fauci's Pardon Might Not Save Him",
-        "sourceUrl": "https://www.youtube.com/watch?v=X_1u6wW8uMI",
+        "quote": "What The Constitution REALLY Says About Voting Rights",
+        "sourceUrl": "https://www.youtube.com/watch?v=nEOSwVQDogo",
         "platform": "youtube",
-        "timestamp": "2026-07-30T21:00:19+00:00"
+        "timestamp": "2026-08-02T15:00:34+00:00"
+      }
+    ],
+    "ai-technology": [
+      {
+        "quote": "Why you should be optimistic about AI",
+        "sourceUrl": "https://www.youtube.com/shorts/NOY7dexUZTw",
+        "platform": "youtube",
+        "timestamp": "2026-08-02T14:15:33+00:00"
       }
     ]
   }
