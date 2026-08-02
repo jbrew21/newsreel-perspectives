@@ -1,9 +1,23 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-02T08:57:09.128267",
+  "collectedAt": "2026-08-02T10:30:51.433315",
   "date": "2026-08-02",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "Jim Carrey and Jenny McCarthy tried to warn us...",
+      "sourceUrl": "https://x.com/rustyrockets/status/2083298081349722381",
+      "timestamp": "2026-07-31T21:05:43+00:00",
+      "type": "tweet",
+      "topic": "covid-pandemic",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies vaccine safety concerns via historical figures' warnings",
+      "quote": "Jim Carrey and Jenny McCarthy tried to warn us..."
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -106,6 +120,20 @@
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
       "platform": "youtube",
+      "text": "Jim Carrey and Jenny McCarthy tried to warn us...",
+      "sourceUrl": "https://www.youtube.com/shorts/13YryHTF9k0",
+      "timestamp": "2026-07-31T21:43:29+00:00",
+      "type": "video_title",
+      "topic": "covid-pandemic",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies vaccine safety concerns via historical figures' warnings",
+      "quote": "Jim Carrey and Jenny McCarthy tried to warn us..."
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
       "text": "Candace Owens challenges Jews to learn this truth...",
       "sourceUrl": "https://www.youtube.com/shorts/kLajdzFx0hI",
       "timestamp": "2026-07-30T23:00:24+00:00",
@@ -157,38 +185,16 @@
       "stance": "strong",
       "summary": "Criticizes Fauci's pandemic guidance and policy decisions",
       "quote": "This is what happened when they trusted Fauci..."
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "x",
-      "text": "Jim Carrey and Jenny McCarthy tried to warn us...",
-      "sourceUrl": "https://x.com/rustyrockets/status/2083298081349722381",
-      "timestamp": "2026-07-31T21:05:43+00:00",
-      "type": "tweet",
-      "topic": "covid-pandemic",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies vaccine safety concerns via historical figures' warnings",
-      "quote": "Jim Carrey and Jenny McCarthy tried to warn us..."
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Jim Carrey and Jenny McCarthy tried to warn us...",
-      "sourceUrl": "https://www.youtube.com/shorts/13YryHTF9k0",
-      "timestamp": "2026-07-31T21:43:29+00:00",
-      "type": "video_title",
-      "topic": "covid-pandemic",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies vaccine safety concerns via historical figures' warnings",
-      "quote": "Jim Carrey and Jenny McCarthy tried to warn us..."
     }
   ],
   "topicSummary": {
     "covid-pandemic": [
+      {
+        "quote": "Jim Carrey and Jenny McCarthy tried to warn us...",
+        "sourceUrl": "https://x.com/rustyrockets/status/2083298081349722381",
+        "platform": "x",
+        "timestamp": "2026-07-31T21:05:43+00:00"
+      },
       {
         "quote": "What was the biggest price you paid for not getting vaccinated?\n\nFriends? \nFamily? \nYour job? \nYour business? \nYour reputation?",
         "sourceUrl": "https://x.com/rustyrockets/status/2083254023998595121",
@@ -202,22 +208,16 @@
         "timestamp": "2026-07-30T12:00:00+00:00"
       },
       {
-        "quote": "This is what happened when they trusted Fauci...",
-        "sourceUrl": "https://www.youtube.com/shorts/ND-Dg4QnKH0",
-        "platform": "youtube",
-        "timestamp": "2026-07-30T12:00:24+00:00"
-      },
-      {
-        "quote": "Jim Carrey and Jenny McCarthy tried to warn us...",
-        "sourceUrl": "https://x.com/rustyrockets/status/2083298081349722381",
-        "platform": "x",
-        "timestamp": "2026-07-31T21:05:43+00:00"
-      },
-      {
         "quote": "Jim Carrey and Jenny McCarthy tried to warn us...",
         "sourceUrl": "https://www.youtube.com/shorts/13YryHTF9k0",
         "platform": "youtube",
         "timestamp": "2026-07-31T21:43:29+00:00"
+      },
+      {
+        "quote": "This is what happened when they trusted Fauci...",
+        "sourceUrl": "https://www.youtube.com/shorts/ND-Dg4QnKH0",
+        "platform": "youtube",
+        "timestamp": "2026-07-30T12:00:24+00:00"
       }
     ],
     "free-speech-censorship": [
