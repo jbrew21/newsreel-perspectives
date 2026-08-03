@@ -1,7 +1,7 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-03T12:08:47.937536",
+  "collectedAt": "2026-08-03T19:29:33.652270",
   "date": "2026-08-03",
   "posts": [
     {
@@ -190,6 +190,20 @@
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
       "platform": "youtube",
+      "text": "Did this old report predict the pandemic?",
+      "sourceUrl": "https://www.youtube.com/shorts/CZzgAuhGLVs",
+      "timestamp": "2026-08-02T18:03:58+00:00",
+      "type": "video_title",
+      "topic": "covid-pandemic",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions official pandemic narrative, suggests predictive foreknowledge",
+      "quote": "Did this old report predict the pandemic?"
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
       "text": "Jim Carrey and Jenny McCarthy tried to warn us...",
       "sourceUrl": "https://www.youtube.com/shorts/13YryHTF9k0",
       "timestamp": "2026-07-31T21:43:29+00:00",
@@ -203,44 +217,30 @@
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Candace Owens challenges Jews to learn this truth...",
-      "sourceUrl": "https://www.youtube.com/shorts/kLajdzFx0hI",
-      "timestamp": "2026-07-30T23:00:24+00:00",
-      "type": "video_title",
-      "topic": "civil-rights-race",
+      "platform": "x",
+      "text": "Why Did Cancer Deaths Spike After This?",
+      "sourceUrl": "https://x.com/rustyrockets/status/2084350203822576011",
+      "timestamp": "2026-08-03T18:46:28+00:00",
+      "type": "tweet",
+      "topic": "covid-pandemic",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Challenges Jewish people on unspecified truth claims",
-      "quote": "Candace Owens challenges Jews to learn this truth..."
+      "stance": "lean",
+      "summary": "Implies vaccine correlation with cancer death increases",
+      "quote": "Why Did Cancer Deaths Spike After This?"
     },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
       "platform": "youtube",
-      "text": "Joe Biden's broken promise exposed...",
-      "sourceUrl": "https://www.youtube.com/shorts/2get3dD-C94",
-      "timestamp": "2026-07-30T20:00:08+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Biden administration for unfulfilled commitments",
-      "quote": "Joe Biden's broken promise exposed..."
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Did this old report predict the pandemic?",
-      "sourceUrl": "https://www.youtube.com/shorts/CZzgAuhGLVs",
-      "timestamp": "2026-08-02T18:03:58+00:00",
+      "text": "Why Did Cancer Deaths Spike After This?",
+      "sourceUrl": "https://www.youtube.com/shorts/ADz3EEHvYp8",
+      "timestamp": "2026-08-03T18:46:38+00:00",
       "type": "video_title",
       "topic": "covid-pandemic",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Questions official pandemic narrative, suggests predictive foreknowledge",
-      "quote": "Did this old report predict the pandemic?"
+      "summary": "Implies vaccine correlation with cancer death increases",
+      "quote": "Why Did Cancer Deaths Spike After This?"
     }
   ],
   "topicSummary": {
@@ -288,16 +288,28 @@
         "timestamp": "2026-08-02T18:19:20+00:00"
       },
       {
+        "quote": "Did this old report predict the pandemic?",
+        "sourceUrl": "https://www.youtube.com/shorts/CZzgAuhGLVs",
+        "platform": "youtube",
+        "timestamp": "2026-08-02T18:03:58+00:00"
+      },
+      {
         "quote": "Jim Carrey and Jenny McCarthy tried to warn us...",
         "sourceUrl": "https://www.youtube.com/shorts/13YryHTF9k0",
         "platform": "youtube",
         "timestamp": "2026-07-31T21:43:29+00:00"
       },
       {
-        "quote": "Did this old report predict the pandemic?",
-        "sourceUrl": "https://www.youtube.com/shorts/CZzgAuhGLVs",
+        "quote": "Why Did Cancer Deaths Spike After This?",
+        "sourceUrl": "https://x.com/rustyrockets/status/2084350203822576011",
+        "platform": "x",
+        "timestamp": "2026-08-03T18:46:28+00:00"
+      },
+      {
+        "quote": "Why Did Cancer Deaths Spike After This?",
+        "sourceUrl": "https://www.youtube.com/shorts/ADz3EEHvYp8",
         "platform": "youtube",
-        "timestamp": "2026-08-02T18:03:58+00:00"
+        "timestamp": "2026-08-03T18:46:38+00:00"
       }
     ],
     "free-speech-censorship": [
@@ -334,12 +346,6 @@
         "sourceUrl": "https://x.com/rustyrockets/status/2082964461791723885",
         "platform": "x",
         "timestamp": "2026-07-30T23:00:01+00:00"
-      },
-      {
-        "quote": "Candace Owens challenges Jews to learn this truth...",
-        "sourceUrl": "https://www.youtube.com/shorts/kLajdzFx0hI",
-        "platform": "youtube",
-        "timestamp": "2026-07-30T23:00:24+00:00"
       }
     ],
     "trump-administration": [
@@ -348,12 +354,6 @@
         "sourceUrl": "https://x.com/rustyrockets/status/2082919407714779562",
         "platform": "x",
         "timestamp": "2026-07-30T20:01:00+00:00"
-      },
-      {
-        "quote": "Joe Biden's broken promise exposed...",
-        "sourceUrl": "https://www.youtube.com/shorts/2get3dD-C94",
-        "platform": "youtube",
-        "timestamp": "2026-07-30T20:00:08+00:00"
       }
     ]
   }

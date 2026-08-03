@@ -1,9 +1,23 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-03T12:08:48.077807",
+  "collectedAt": "2026-08-03T19:29:33.793428",
   "date": "2026-08-03",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "I Asked President Trump An IMPOSSIBLE Question",
+      "sourceUrl": "https://www.youtube.com/shorts/3obzU903yco",
+      "timestamp": "2026-08-03T00:00:30+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Engages Trump on difficult policy question",
+      "quote": "I Asked President Trump An IMPOSSIBLE Question"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -92,32 +106,40 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "Pop Group REJECTS DEI Nomination...",
-      "sourceUrl": "https://www.youtube.com/shorts/4AdK2ezxEcY",
-      "timestamp": "2026-07-31T01:00:00+00:00",
+      "text": "Devasting Shootout In Idaho Could Have Been Even Worse...",
+      "sourceUrl": "https://www.youtube.com/watch?v=ADfnBwpTPMI",
+      "timestamp": "2026-08-03T19:00:18+00:00",
       "type": "video_title",
-      "topic": "culture-war",
+      "topic": "gun-policy",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Criticizes DEI initiatives through entertainment industry example",
-      "quote": "Pop Group REJECTS DEI Nomination..."
+      "summary": "Implies gun incident was serious but preventable with better measures",
+      "quote": "Devasting Shootout In Idaho Could Have Been Even Worse..."
     },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "I Asked President Trump An IMPOSSIBLE Question",
-      "sourceUrl": "https://www.youtube.com/shorts/3obzU903yco",
-      "timestamp": "2026-08-03T00:00:30+00:00",
+      "text": "They're Jailing Parents Now? Glenn Beck Warns Of This Dangerous Precedent",
+      "sourceUrl": "https://www.youtube.com/watch?v=6uRyfay9w2c",
+      "timestamp": "2026-08-03T14:03:44+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "criminal-justice",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Engages Trump on difficult policy question",
-      "quote": "I Asked President Trump An IMPOSSIBLE Question"
+      "stance": "strong",
+      "summary": "Warns against jailing parents, frames as dangerous legal precedent",
+      "quote": "They're Jailing Parents Now? Glenn Beck Warns Of This Dangerous Precedent"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "I Asked President Trump An IMPOSSIBLE Question",
+        "sourceUrl": "https://www.youtube.com/shorts/3obzU903yco",
+        "platform": "youtube",
+        "timestamp": "2026-08-03T00:00:30+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "The Dark Side Of Flock Cameras: What NO ONE Ever Told You",
@@ -164,20 +186,20 @@
         "timestamp": "2026-07-31T19:00:22+00:00"
       }
     ],
-    "culture-war": [
+    "gun-policy": [
       {
-        "quote": "Pop Group REJECTS DEI Nomination...",
-        "sourceUrl": "https://www.youtube.com/shorts/4AdK2ezxEcY",
+        "quote": "Devasting Shootout In Idaho Could Have Been Even Worse...",
+        "sourceUrl": "https://www.youtube.com/watch?v=ADfnBwpTPMI",
         "platform": "youtube",
-        "timestamp": "2026-07-31T01:00:00+00:00"
+        "timestamp": "2026-08-03T19:00:18+00:00"
       }
     ],
-    "trump-administration": [
+    "criminal-justice": [
       {
-        "quote": "I Asked President Trump An IMPOSSIBLE Question",
-        "sourceUrl": "https://www.youtube.com/shorts/3obzU903yco",
+        "quote": "They're Jailing Parents Now? Glenn Beck Warns Of This Dangerous Precedent",
+        "sourceUrl": "https://www.youtube.com/watch?v=6uRyfay9w2c",
         "platform": "youtube",
-        "timestamp": "2026-08-03T00:00:30+00:00"
+        "timestamp": "2026-08-03T14:03:44+00:00"
       }
     ]
   }
