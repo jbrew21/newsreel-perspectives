@@ -98,6 +98,10 @@ def load_env():
 load_env()
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 
+# Single source of truth for the model id. Keeping it in one place avoids the
+# stale-id-in-one-call-site bug that has bitten this pipeline before.
+CLAUDE_MODEL = 'claude-haiku-4-5-20251001'
+
 
 def get_latest_topic_index():
     """Find the most recent topic index file."""
@@ -204,7 +208,7 @@ Example: ["iran-war", "iran-military-strike", "trump-iran", "military-casualties
         req = urllib.request.Request(
             'https://api.anthropic.com/v1/messages',
             data=json.dumps({
-                'model': 'claude-haiku-4-5-20251001',
+                'model': CLAUDE_MODEL,
                 'max_tokens': 512,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
@@ -468,7 +472,7 @@ Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention 
                 # Sonnet") — and it cuts cluster latency to ~1/4 of Sonnet's.
                 # max_tokens must fit the full {name: cluster} mapping for up
                 # to MAX_CLUSTER_VOICES voices; 1024 silently truncated it.
-                'model': 'claude-haiku-4-5-20251001',
+                'model': CLAUDE_MODEL,
                 'max_tokens': 4000,
                 'messages': [{'role': 'user', 'content': prompt}],
             }).encode(),
@@ -782,7 +786,7 @@ def lookup_story(headline, days=None, skip_clusters=False):
 # economists…), retrieves voices via the normal lookup, keeps only those that
 # fit the audience, and writes a grounded summary from what they actually said.
 
-def _claude_message(prompt, max_tokens=800, model='claude-haiku-4-5-20251001', timeout=20):
+def _claude_message(prompt, max_tokens=800, model=CLAUDE_MODEL, timeout=20):
     """Single-shot Claude call returning raw text, or '' on any failure."""
     if not ANTHROPIC_API_KEY:
         return ''
