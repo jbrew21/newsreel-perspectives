@@ -1,9 +1,37 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-08-04T09:28:25.848178",
+  "collectedAt": "2026-08-04T11:19:01.425356",
   "date": "2026-08-04",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "\u201cWhy does the media use you as a boogeyman?\u201d",
+      "sourceUrl": "https://www.youtube.com/shorts/P1fWPEG0Vx4",
+      "timestamp": "2026-08-04T02:04:59+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques media's use of him as convenient villain",
+      "quote": "\u201cWhy does the media use you as a boogeyman?\u201d"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "TALKING TO ABDUL EL-SAYED BEFORE HE WINS TOMORROW",
+      "sourceUrl": "https://www.youtube.com/watch?v=KTucJVDfPSA",
+      "timestamp": "2026-08-03T20:10:50+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Endorses Abdul El-Sayed's electoral campaign",
+      "quote": "TALKING TO ABDUL EL-SAYED BEFORE HE WINS TOMORROW"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -31,6 +59,20 @@
       "stance": "lean",
       "summary": "Explores progressive electoral viability in Detroit",
       "quote": "CAN DETROIT ELECT A PROGRESSIVE? | Donavan McKinney"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "WHY IS MARK LEVIN SO MAD?!",
+      "sourceUrl": "https://www.youtube.com/watch?v=valeN8LIjho",
+      "timestamp": "2026-08-02T04:26:16+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Mocks conservative commentator Mark Levin's rhetoric",
+      "quote": "WHY IS MARK LEVIN SO MAD?!"
     },
     {
       "voiceId": "hasanabi",
@@ -73,51 +115,37 @@
       "stance": "strong",
       "summary": "Criticizes Fox News for extreme coverage or rhetoric",
       "quote": "EVEN FOX NEWS DIDN'T GO THIS FAR"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "\u201cWhy does the media use you as a boogeyman?\u201d",
-      "sourceUrl": "https://www.youtube.com/shorts/P1fWPEG0Vx4",
-      "timestamp": "2026-08-04T02:04:59+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critiques media's use of him as convenient villain",
-      "quote": "\u201cWhy does the media use you as a boogeyman?\u201d"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "TALKING TO ABDUL EL-SAYED BEFORE HE WINS TOMORROW",
-      "sourceUrl": "https://www.youtube.com/watch?v=KTucJVDfPSA",
-      "timestamp": "2026-08-03T20:10:50+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Endorses Abdul El-Sayed's electoral campaign",
-      "quote": "TALKING TO ABDUL EL-SAYED BEFORE HE WINS TOMORROW"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "WHY IS MARK LEVIN SO MAD?!",
-      "sourceUrl": "https://www.youtube.com/watch?v=valeN8LIjho",
-      "timestamp": "2026-08-02T04:26:16+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Mocks conservative commentator Mark Levin's rhetoric",
-      "quote": "WHY IS MARK LEVIN SO MAD?!"
     }
   ],
   "topicSummary": {
+    "media-press": [
+      {
+        "quote": "\u201cWhy does the media use you as a boogeyman?\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/P1fWPEG0Vx4",
+        "platform": "youtube",
+        "timestamp": "2026-08-04T02:04:59+00:00"
+      },
+      {
+        "quote": "EVEN FOX NEWS DIDN'T GO THIS FAR",
+        "sourceUrl": "https://www.youtube.com/watch?v=Pu-uXWH9kaE",
+        "platform": "youtube",
+        "timestamp": "2026-08-01T12:00:31+00:00"
+      }
+    ],
+    "state-local-politics": [
+      {
+        "quote": "TALKING TO ABDUL EL-SAYED BEFORE HE WINS TOMORROW",
+        "sourceUrl": "https://www.youtube.com/watch?v=KTucJVDfPSA",
+        "platform": "youtube",
+        "timestamp": "2026-08-03T20:10:50+00:00"
+      },
+      {
+        "quote": "CAN DETROIT ELECT A PROGRESSIVE? | Donavan McKinney",
+        "sourceUrl": "https://www.youtube.com/watch?v=PE4LfOyLjkM",
+        "platform": "youtube",
+        "timestamp": "2026-08-02T13:00:34+00:00"
+      }
+    ],
     "media-personalities": [
       {
         "quote": "CNN DID A WHOLE DOCUMENTARY ON ME",
@@ -130,20 +158,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=valeN8LIjho",
         "platform": "youtube",
         "timestamp": "2026-08-02T04:26:16+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "CAN DETROIT ELECT A PROGRESSIVE? | Donavan McKinney",
-        "sourceUrl": "https://www.youtube.com/watch?v=PE4LfOyLjkM",
-        "platform": "youtube",
-        "timestamp": "2026-08-02T13:00:34+00:00"
-      },
-      {
-        "quote": "TALKING TO ABDUL EL-SAYED BEFORE HE WINS TOMORROW",
-        "sourceUrl": "https://www.youtube.com/watch?v=KTucJVDfPSA",
-        "platform": "youtube",
-        "timestamp": "2026-08-03T20:10:50+00:00"
       }
     ],
     "elections": [
@@ -160,20 +174,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=daBD362RwU4",
         "platform": "youtube",
         "timestamp": "2026-08-01T19:09:40+00:00"
-      }
-    ],
-    "media-press": [
-      {
-        "quote": "EVEN FOX NEWS DIDN'T GO THIS FAR",
-        "sourceUrl": "https://www.youtube.com/watch?v=Pu-uXWH9kaE",
-        "platform": "youtube",
-        "timestamp": "2026-08-01T12:00:31+00:00"
-      },
-      {
-        "quote": "\u201cWhy does the media use you as a boogeyman?\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/P1fWPEG0Vx4",
-        "platform": "youtube",
-        "timestamp": "2026-08-04T02:04:59+00:00"
       }
     ]
   }

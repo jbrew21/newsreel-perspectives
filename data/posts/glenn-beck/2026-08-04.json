@@ -1,9 +1,37 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-04T09:28:25.924415",
+  "collectedAt": "2026-08-04T11:19:01.555205",
   "date": "2026-08-04",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Bill Maher's Audience GASPS When He Reads What Democratic Socialists Actually Believe",
+      "sourceUrl": "https://www.youtube.com/watch?v=7VXCMhZ8REk",
+      "timestamp": "2026-08-03T23:30:24+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Democratic socialism positions merit skepticism and concern",
+      "quote": "Bill Maher's Audience GASPS When He Reads What Democratic Socialists Actually Believe"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "You're Being Watched And Don't Even Know It",
+      "sourceUrl": "https://www.youtube.com/shorts/0sqo9VLN3vM",
+      "timestamp": "2026-08-03T21:00:29+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Government and corporations conducting surveillance without public knowledge",
+      "quote": "You're Being Watched And Don't Even Know It"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -92,32 +120,40 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "Bill Maher's Audience GASPS When He Reads What Democratic Socialists Actually Believe",
-      "sourceUrl": "https://www.youtube.com/watch?v=7VXCMhZ8REk",
-      "timestamp": "2026-08-03T23:30:24+00:00",
+      "text": "BRUTAL: RFK Jr. Takes Down CNN",
+      "sourceUrl": "https://www.youtube.com/shorts/nJ3YXABlsHc",
+      "timestamp": "2026-08-04T01:30:13+00:00",
       "type": "video_title",
-      "topic": "culture-war",
+      "topic": "media-personalities",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Democratic socialism positions merit skepticism and concern",
-      "quote": "Bill Maher's Audience GASPS When He Reads What Democratic Socialists Actually Believe"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "You're Being Watched And Don't Even Know It",
-      "sourceUrl": "https://www.youtube.com/shorts/0sqo9VLN3vM",
-      "timestamp": "2026-08-03T21:00:29+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Government and corporations conducting surveillance without public knowledge",
-      "quote": "You're Being Watched And Don't Even Know It"
+      "stance": "strong",
+      "summary": "Praises RFK Jr. for criticizing CNN",
+      "quote": "BRUTAL: RFK Jr. Takes Down CNN"
     }
   ],
   "topicSummary": {
+    "culture-war": [
+      {
+        "quote": "Bill Maher's Audience GASPS When He Reads What Democratic Socialists Actually Believe",
+        "sourceUrl": "https://www.youtube.com/watch?v=7VXCMhZ8REk",
+        "platform": "youtube",
+        "timestamp": "2026-08-03T23:30:24+00:00"
+      }
+    ],
+    "ai-technology": [
+      {
+        "quote": "You're Being Watched And Don't Even Know It",
+        "sourceUrl": "https://www.youtube.com/shorts/0sqo9VLN3vM",
+        "platform": "youtube",
+        "timestamp": "2026-08-03T21:00:29+00:00"
+      },
+      {
+        "quote": "The Dark Side Of Flock Cameras: What NO ONE Ever Told You",
+        "sourceUrl": "https://www.youtube.com/watch?v=tyNprEYSQOw",
+        "platform": "youtube",
+        "timestamp": "2026-08-02T14:00:13+00:00"
+      }
+    ],
     "gun-policy": [
       {
         "quote": "In-N-Out Attack Takes A MIRACULOUS Turn That You HAVE to Hear",
@@ -142,20 +178,6 @@
         "timestamp": "2026-08-03T00:00:30+00:00"
       }
     ],
-    "ai-technology": [
-      {
-        "quote": "The Dark Side Of Flock Cameras: What NO ONE Ever Told You",
-        "sourceUrl": "https://www.youtube.com/watch?v=tyNprEYSQOw",
-        "platform": "youtube",
-        "timestamp": "2026-08-02T14:00:13+00:00"
-      },
-      {
-        "quote": "You're Being Watched And Don't Even Know It",
-        "sourceUrl": "https://www.youtube.com/shorts/0sqo9VLN3vM",
-        "platform": "youtube",
-        "timestamp": "2026-08-03T21:00:29+00:00"
-      }
-    ],
     "terrorism": [
       {
         "quote": "9/11 Families Are CLEAR About Mamdani",
@@ -172,12 +194,12 @@
         "timestamp": "2026-08-01T12:00:37+00:00"
       }
     ],
-    "culture-war": [
+    "media-personalities": [
       {
-        "quote": "Bill Maher's Audience GASPS When He Reads What Democratic Socialists Actually Believe",
-        "sourceUrl": "https://www.youtube.com/watch?v=7VXCMhZ8REk",
+        "quote": "BRUTAL: RFK Jr. Takes Down CNN",
+        "sourceUrl": "https://www.youtube.com/shorts/nJ3YXABlsHc",
         "platform": "youtube",
-        "timestamp": "2026-08-03T23:30:24+00:00"
+        "timestamp": "2026-08-04T01:30:13+00:00"
       }
     ]
   }
