@@ -1,7 +1,7 @@
 {
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
-  "collectedAt": "2026-08-05T09:27:03.952763",
+  "collectedAt": "2026-08-05T11:12:54.919863",
   "date": "2026-08-05",
   "posts": [
     {
@@ -17,6 +17,20 @@
       "stance": "lean",
       "summary": "Implies Farage's anti-establishment claims are contradicted by establishment support",
       "quote": "Farage: I\u2019m fighting against the establishment. \n\nThe establishment:"
+    },
+    {
+      "voiceId": "philip-defranco",
+      "voiceName": "Philip DeFranco",
+      "platform": "youtube",
+      "text": "The Dark Side of Joe Rogan, RFK Jr, &amp; the $140 Billion Peptide Industry",
+      "sourceUrl": "https://www.youtube.com/watch?v=jsGAqjjy7Ds",
+      "timestamp": "2026-08-04T21:36:27+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes Joe Rogan and RFK Jr's promotion of peptide industry",
+      "quote": "The Dark Side of Joe Rogan, RFK Jr, &amp; the $140 Billion Peptide Industry"
     },
     {
       "voiceId": "philip-defranco",
@@ -106,6 +120,20 @@
       "voiceId": "philip-defranco",
       "voiceName": "Philip DeFranco",
       "platform": "tiktok",
+      "text": "Even Texas Is Tired of Datacenters As Abbott Demands Audits",
+      "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7670301343273323807",
+      "timestamp": "2026-08-04T22:06:57+00:00",
+      "type": "video_caption",
+      "topic": "housing-infrastructure",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights state opposition to datacenter expansion",
+      "quote": "Even Texas Is Tired of Datacenters As Abbott Demands Audits"
+    },
+    {
+      "voiceId": "philip-defranco",
+      "voiceName": "Philip DeFranco",
+      "platform": "tiktok",
       "text": "Ebay Settles Insane Harassment Case",
       "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7668384038293490974",
       "timestamp": "2026-07-30T18:06:41+00:00",
@@ -185,34 +213,6 @@
       "stance": "lean",
       "summary": "Highlights security warning preceding mass shooting incident",
       "quote": "He Warned People about Weak Security at Seattle Food Fest. Then It Was Shot Up #Seattle #Crime"
-    },
-    {
-      "voiceId": "philip-defranco",
-      "voiceName": "Philip DeFranco",
-      "platform": "youtube",
-      "text": "The Dark Side of Joe Rogan, RFK Jr, &amp; the $140 Billion Peptide Industry",
-      "sourceUrl": "https://www.youtube.com/watch?v=jsGAqjjy7Ds",
-      "timestamp": "2026-08-04T21:36:27+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Criticizes Joe Rogan and RFK Jr's promotion of peptide industry",
-      "quote": "The Dark Side of Joe Rogan, RFK Jr, &amp; the $140 Billion Peptide Industry"
-    },
-    {
-      "voiceId": "philip-defranco",
-      "voiceName": "Philip DeFranco",
-      "platform": "tiktok",
-      "text": "Even Texas Is Tired of Datacenters As Abbott Demands Audits",
-      "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7670301343273323807",
-      "timestamp": "2026-08-04T22:06:57+00:00",
-      "type": "video_caption",
-      "topic": "housing-infrastructure",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights state opposition to datacenter expansion",
-      "quote": "Even Texas Is Tired of Datacenters As Abbott Demands Audits"
     }
   ],
   "topicSummary": {
@@ -224,21 +224,13 @@
         "timestamp": "2026-07-09T15:51:26+00:00"
       }
     ],
-    "trump-administration": [
-      {
-        "quote": "Donald Trump Fires on Jeanine Pirro Over Reflecting Pool",
-        "sourceUrl": "https://www.youtube.com/shorts/1Hjj6TPEdKM",
-        "platform": "youtube",
-        "timestamp": "2026-08-04T00:00:31+00:00"
-      },
-      {
-        "quote": "The Trump Fauci Diary Scandal is Crazy",
-        "sourceUrl": "https://www.youtube.com/watch?v=TCegIXymWHw",
-        "platform": "youtube",
-        "timestamp": "2026-07-28T21:24:12+00:00"
-      }
-    ],
     "ai-technology": [
+      {
+        "quote": "The Dark Side of Joe Rogan, RFK Jr, &amp; the $140 Billion Peptide Industry",
+        "sourceUrl": "https://www.youtube.com/watch?v=jsGAqjjy7Ds",
+        "platform": "youtube",
+        "timestamp": "2026-08-04T21:36:27+00:00"
+      },
       {
         "quote": "The Flock Cameras Problem Is Getting Worse",
         "sourceUrl": "https://www.youtube.com/watch?v=V_R5YaMkXF0",
@@ -268,12 +260,20 @@
         "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7667292216682908959",
         "platform": "tiktok",
         "timestamp": "2026-07-27T19:30:02+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "Donald Trump Fires on Jeanine Pirro Over Reflecting Pool",
+        "sourceUrl": "https://www.youtube.com/shorts/1Hjj6TPEdKM",
+        "platform": "youtube",
+        "timestamp": "2026-08-04T00:00:31+00:00"
       },
       {
-        "quote": "The Dark Side of Joe Rogan, RFK Jr, &amp; the $140 Billion Peptide Industry",
-        "sourceUrl": "https://www.youtube.com/watch?v=jsGAqjjy7Ds",
+        "quote": "The Trump Fauci Diary Scandal is Crazy",
+        "sourceUrl": "https://www.youtube.com/watch?v=TCegIXymWHw",
         "platform": "youtube",
-        "timestamp": "2026-08-04T21:36:27+00:00"
+        "timestamp": "2026-07-28T21:24:12+00:00"
       }
     ],
     "other": [
@@ -290,6 +290,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=4tm4lZdc71A",
         "platform": "youtube",
         "timestamp": "2026-07-23T20:47:49+00:00"
+      }
+    ],
+    "housing-infrastructure": [
+      {
+        "quote": "Even Texas Is Tired of Datacenters As Abbott Demands Audits",
+        "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7670301343273323807",
+        "platform": "tiktok",
+        "timestamp": "2026-08-04T22:06:57+00:00"
       }
     ],
     "media-press": [
@@ -314,14 +322,6 @@
         "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7667259608125197598",
         "platform": "tiktok",
         "timestamp": "2026-07-27T17:23:19+00:00"
-      }
-    ],
-    "housing-infrastructure": [
-      {
-        "quote": "Even Texas Is Tired of Datacenters As Abbott Demands Audits",
-        "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7670301343273323807",
-        "platform": "tiktok",
-        "timestamp": "2026-08-04T22:06:57+00:00"
       }
     ]
   }
