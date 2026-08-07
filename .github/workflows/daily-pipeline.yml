@@ -14,6 +14,13 @@ on:
     # 17:17 UTC = 1:17 PM EDT / 12:17 PM EST. Cross-day reuse + Batch API
     # (Jul 2026) make this run ~$0.75 — mostly re-scrapes, few new posts.
     - cron: '17 17 * * *'
+    # Midday backstop, mirroring the 06:17/08:17 morning pair. 19:17 UTC =
+    # 3:17 PM ET. The single midday run had no fallback, so when GitHub
+    # dropped it / couldn't acquire a hosted runner (Aug 6 2026, run
+    # 31126229962), the site got no midday refresh until the next morning.
+    # Public repo = free Actions minutes, and the concurrency group below
+    # makes this a no-op re-scrape if the 17:17 run already succeeded.
+    - cron: '17 19 * * *'
   workflow_dispatch:
 
 # Never run two pipelines at once. A manual trigger queues behind an
