@@ -1,7 +1,7 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-08-08T18:08:33.743520",
+  "collectedAt": "2026-08-08T20:03:57.297999",
   "date": "2026-08-08",
   "posts": [
     {
@@ -50,6 +50,20 @@
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
       "platform": "youtube",
+      "text": "With Free Speech Plus, you can say (almost) anything you want about Trump! #DailyShow #Trump #Speech",
+      "sourceUrl": "https://www.youtube.com/shorts/kr3dxRlEjNY",
+      "timestamp": "2026-08-08T15:00:05+00:00",
+      "type": "video_title",
+      "topic": "free-speech-censorship",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Satirizes Trump speech restrictions as absurd",
+      "quote": "With Free Speech Plus, you can say (almost) anything you want about Trump! #DailyShow #Trump #Speech"
+    },
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
       "text": "WTF, NFL? We're on the brink of nuclear war because you wouldn't let Trump have the Buffalo Bills?",
       "sourceUrl": "https://www.youtube.com/shorts/jvcPhsAfy1Q",
       "timestamp": "2026-08-06T18:00:01+00:00",
@@ -91,20 +105,6 @@
     {
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
-      "platform": "youtube",
-      "text": "Never forget Trump's shocking crime against NYC: eating pizza with a fork #dailyshow",
-      "sourceUrl": "https://www.youtube.com/shorts/7G8LUdnxL18",
-      "timestamp": "2026-08-04T15:00:23+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Trump's pizza eating etiquette as a cultural transgression",
-      "quote": "Never forget Trump's shocking crime against NYC: eating pizza with a fork #dailyshow"
-    },
-    {
-      "voiceId": "trevor-noah",
-      "voiceName": "Trevor Noah",
       "platform": "tiktok",
       "text": "When you try to tell Julius Malema he\u2019s scaring people, but his logic is just too good \ud83d\ude02\ud83c\uddff\ud83c\udde6",
       "sourceUrl": "https://www.tiktok.com/@trevornoah/video/7669578739709119774",
@@ -134,15 +134,15 @@
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
       "platform": "youtube",
-      "text": "With Free Speech Plus, you can say (almost) anything you want about Trump! #DailyShow #Trump #Speech",
-      "sourceUrl": "https://www.youtube.com/shorts/kr3dxRlEjNY",
-      "timestamp": "2026-08-08T15:00:05+00:00",
+      "text": "We asked MAGA a simple question: When was America last great? #TDS30 #DailyShow #MAGA #Trump",
+      "sourceUrl": "https://www.youtube.com/shorts/-BisVGzwcJg",
+      "timestamp": "2026-08-08T18:00:07+00:00",
       "type": "video_title",
-      "topic": "free-speech-censorship",
-      "relevance": "medium",
+      "topic": "trump-policy",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Satirizes Trump speech restrictions as absurd",
-      "quote": "With Free Speech Plus, you can say (almost) anything you want about Trump! #DailyShow #Trump #Speech"
+      "summary": "Questions MAGA rhetoric about American greatness",
+      "quote": "We asked MAGA a simple question: When was America last great? #TDS30 #DailyShow #MAGA #Trump"
     }
   ],
   "topicSummary": {
@@ -176,12 +176,26 @@
         "timestamp": "2026-07-29T22:20:00+00:00"
       }
     ],
+    "free-speech-censorship": [
+      {
+        "quote": "With Free Speech Plus, you can say (almost) anything you want about Trump! #DailyShow #Trump #Speech",
+        "sourceUrl": "https://www.youtube.com/shorts/kr3dxRlEjNY",
+        "platform": "youtube",
+        "timestamp": "2026-08-08T15:00:05+00:00"
+      }
+    ],
     "trump-policy": [
       {
         "quote": "WTF, NFL? We're on the brink of nuclear war because you wouldn't let Trump have the Buffalo Bills?",
         "sourceUrl": "https://www.youtube.com/shorts/jvcPhsAfy1Q",
         "platform": "youtube",
         "timestamp": "2026-08-06T18:00:01+00:00"
+      },
+      {
+        "quote": "We asked MAGA a simple question: When was America last great? #TDS30 #DailyShow #MAGA #Trump",
+        "sourceUrl": "https://www.youtube.com/shorts/-BisVGzwcJg",
+        "platform": "youtube",
+        "timestamp": "2026-08-08T18:00:07+00:00"
       }
     ],
     "civil-rights-race": [
@@ -198,12 +212,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/tz0IazQ1GZk",
         "platform": "youtube",
         "timestamp": "2026-08-04T18:00:18+00:00"
-      },
-      {
-        "quote": "Never forget Trump's shocking crime against NYC: eating pizza with a fork #dailyshow",
-        "sourceUrl": "https://www.youtube.com/shorts/7G8LUdnxL18",
-        "platform": "youtube",
-        "timestamp": "2026-08-04T15:00:23+00:00"
       }
     ],
     "uk-world-politics": [
@@ -212,14 +220,6 @@
         "sourceUrl": "https://www.tiktok.com/@trevornoah/video/7669578739709119774",
         "platform": "tiktok",
         "timestamp": "2026-08-06T16:25:00+00:00"
-      }
-    ],
-    "free-speech-censorship": [
-      {
-        "quote": "With Free Speech Plus, you can say (almost) anything you want about Trump! #DailyShow #Trump #Speech",
-        "sourceUrl": "https://www.youtube.com/shorts/kr3dxRlEjNY",
-        "platform": "youtube",
-        "timestamp": "2026-08-08T15:00:05+00:00"
       }
     ]
   }

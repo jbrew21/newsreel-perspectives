@@ -1,9 +1,23 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-08T18:08:33.887290",
+  "collectedAt": "2026-08-08T20:03:57.430164",
   "date": "2026-08-08",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Georgia Just Did Something We\u2019ve NEVER Seen Before. It Could Be Very Dangerous.",
+      "sourceUrl": "https://www.youtube.com/watch?v=4GjNKdkYJWs",
+      "timestamp": "2026-08-08T14:00:12+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Georgia's electoral procedures as unprecedented and potentially dangerous",
+      "quote": "Georgia Just Did Something We\u2019ve NEVER Seen Before. It Could Be Very Dangerous."
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -101,23 +115,17 @@
       "stance": "strong",
       "summary": "Proposes Trump executive action to reform Congress",
       "quote": "How Trump Could FIX Congress With One Move | Hour 1 | 8/6/26"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Georgia Just Did Something We\u2019ve NEVER Seen Before. It Could Be Very Dangerous.",
-      "sourceUrl": "https://www.youtube.com/watch?v=4GjNKdkYJWs",
-      "timestamp": "2026-08-08T14:00:12+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Georgia's electoral procedures as unprecedented and potentially dangerous",
-      "quote": "Georgia Just Did Something We\u2019ve NEVER Seen Before. It Could Be Very Dangerous."
     }
   ],
   "topicSummary": {
+    "elections": [
+      {
+        "quote": "Georgia Just Did Something We\u2019ve NEVER Seen Before. It Could Be Very Dangerous.",
+        "sourceUrl": "https://www.youtube.com/watch?v=4GjNKdkYJWs",
+        "platform": "youtube",
+        "timestamp": "2026-08-08T14:00:12+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "The Rise Of A.I. Tyrants Just Began And We Had NO IDEA",
@@ -164,14 +172,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=No8RoFfHAuo",
         "platform": "youtube",
         "timestamp": "2026-08-06T14:03:42+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "Georgia Just Did Something We\u2019ve NEVER Seen Before. It Could Be Very Dangerous.",
-        "sourceUrl": "https://www.youtube.com/watch?v=4GjNKdkYJWs",
-        "platform": "youtube",
-        "timestamp": "2026-08-08T14:00:12+00:00"
       }
     ]
   }
