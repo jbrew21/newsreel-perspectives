@@ -1,9 +1,37 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-08-08T07:36:54.299433",
+  "collectedAt": "2026-08-08T09:20:45.942990",
   "date": "2026-08-08",
   "posts": [
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "Tucker Carlson's 10-Point Plan is just a list of adjectives.",
+      "sourceUrl": "https://www.youtube.com/shorts/McrE37yu2xA",
+      "timestamp": "2026-08-07T20:30:27+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Tucker Carlson's policy proposal as poorly substantive",
+      "quote": "Tucker Carlson's 10-Point Plan is just a list of adjectives."
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "Tucker's 10-Point Plan Is a Joke",
+      "sourceUrl": "https://www.youtube.com/watch?v=QqrzE1PqQ9s",
+      "timestamp": "2026-08-07T20:24:05+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Dismisses Tucker Carlson's 10-point plan as lacking credibility",
+      "quote": "Tucker's 10-Point Plan Is a Joke"
+    },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
@@ -73,37 +101,23 @@
       "stance": "strong",
       "summary": "Frames biological sex as deterministic, dismisses transgender identity claims",
       "quote": "Biology Wins Again"
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "Tucker Carlson's 10-Point Plan is just a list of adjectives.",
-      "sourceUrl": "https://www.youtube.com/shorts/McrE37yu2xA",
-      "timestamp": "2026-08-07T20:30:27+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Tucker Carlson's policy proposal as poorly substantive",
-      "quote": "Tucker Carlson's 10-Point Plan is just a list of adjectives."
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "Tucker's 10-Point Plan Is a Joke",
-      "sourceUrl": "https://www.youtube.com/watch?v=QqrzE1PqQ9s",
-      "timestamp": "2026-08-07T20:24:05+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Dismisses Tucker Carlson's 10-point plan as lacking credibility",
-      "quote": "Tucker's 10-Point Plan Is a Joke"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "Tucker Carlson's 10-Point Plan is just a list of adjectives.",
+        "sourceUrl": "https://www.youtube.com/shorts/McrE37yu2xA",
+        "platform": "youtube",
+        "timestamp": "2026-08-07T20:30:27+00:00"
+      },
+      {
+        "quote": "Tucker's 10-Point Plan Is a Joke",
+        "sourceUrl": "https://www.youtube.com/watch?v=QqrzE1PqQ9s",
+        "platform": "youtube",
+        "timestamp": "2026-08-07T20:24:05+00:00"
+      }
+    ],
     "media-press": [
       {
         "quote": "McCarthyism Is NOT What the Left Wants You to Think",
@@ -138,20 +152,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=a1TXQQ_Rp5Y",
         "platform": "youtube",
         "timestamp": "2026-08-04T20:00:19+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "Tucker Carlson's 10-Point Plan is just a list of adjectives.",
-        "sourceUrl": "https://www.youtube.com/shorts/McrE37yu2xA",
-        "platform": "youtube",
-        "timestamp": "2026-08-07T20:30:27+00:00"
-      },
-      {
-        "quote": "Tucker's 10-Point Plan Is a Joke",
-        "sourceUrl": "https://www.youtube.com/watch?v=QqrzE1PqQ9s",
-        "platform": "youtube",
-        "timestamp": "2026-08-07T20:24:05+00:00"
       }
     ]
   }

@@ -1,9 +1,37 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-08-08T07:36:54.301612",
+  "collectedAt": "2026-08-08T09:20:45.945655",
   "date": "2026-08-08",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "Zohran Mamdani is moving like crazy",
+      "sourceUrl": "https://www.youtube.com/shorts/EN_qzUAXnyA",
+      "timestamp": "2026-08-08T00:08:38+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Positively covers activist politician's legislative momentum",
+      "quote": "Zohran Mamdani is moving like crazy"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "Jon Stewart cooks John Fetterman",
+      "sourceUrl": "https://www.youtube.com/shorts/S2k6Y7ux6K4",
+      "timestamp": "2026-08-07T21:05:50+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames Jon Stewart's criticism of John Fetterman favorably",
+      "quote": "Jon Stewart cooks John Fetterman"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -45,37 +73,25 @@
       "stance": "lean",
       "summary": "Describes encounter with UK news outlet during Michigan visit",
       "quote": "UK news ambushed me in Michigan"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "Zohran Mamdani is moving like crazy",
-      "sourceUrl": "https://www.youtube.com/shorts/EN_qzUAXnyA",
-      "timestamp": "2026-08-08T00:08:38+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Positively covers activist politician's legislative momentum",
-      "quote": "Zohran Mamdani is moving like crazy"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "Jon Stewart cooks John Fetterman",
-      "sourceUrl": "https://www.youtube.com/shorts/S2k6Y7ux6K4",
-      "timestamp": "2026-08-07T21:05:50+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames Jon Stewart's criticism of John Fetterman favorably",
-      "quote": "Jon Stewart cooks John Fetterman"
     }
   ],
   "topicSummary": {
+    "state-local-politics": [
+      {
+        "quote": "Zohran Mamdani is moving like crazy",
+        "sourceUrl": "https://www.youtube.com/shorts/EN_qzUAXnyA",
+        "platform": "youtube",
+        "timestamp": "2026-08-08T00:08:38+00:00"
+      }
+    ],
+    "media-personalities": [
+      {
+        "quote": "Jon Stewart cooks John Fetterman",
+        "sourceUrl": "https://www.youtube.com/shorts/S2k6Y7ux6K4",
+        "platform": "youtube",
+        "timestamp": "2026-08-07T21:05:50+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "ABDUL EL-SAYED DEFEATS HALEY STEVENS!",
@@ -98,22 +114,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/6lAeXonir5A",
         "platform": "youtube",
         "timestamp": "2026-08-06T02:10:19+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "Zohran Mamdani is moving like crazy",
-        "sourceUrl": "https://www.youtube.com/shorts/EN_qzUAXnyA",
-        "platform": "youtube",
-        "timestamp": "2026-08-08T00:08:38+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "Jon Stewart cooks John Fetterman",
-        "sourceUrl": "https://www.youtube.com/shorts/S2k6Y7ux6K4",
-        "platform": "youtube",
-        "timestamp": "2026-08-07T21:05:50+00:00"
       }
     ]
   }

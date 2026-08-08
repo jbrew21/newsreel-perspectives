@@ -1,9 +1,23 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-08T07:36:54.299820",
+  "collectedAt": "2026-08-08T09:20:45.943506",
   "date": "2026-08-08",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "2008 all over again?",
+      "sourceUrl": "https://x.com/rustyrockets/status/2085854667888529825",
+      "timestamp": "2026-08-07T22:24:40+00:00",
+      "type": "tweet",
+      "topic": "economy-trade",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Suggests economic crisis comparable to 2008 financial collapse",
+      "quote": "2008 all over again?"
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -204,18 +218,54 @@
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
       "platform": "x",
-      "text": "2008 all over again?",
-      "sourceUrl": "https://x.com/rustyrockets/status/2085854667888529825",
-      "timestamp": "2026-08-07T22:24:40+00:00",
+      "text": "Demonic attacks followed after he interviewed a Satanist...",
+      "sourceUrl": "https://x.com/rustyrockets/status/2084776403333984472",
+      "timestamp": "2026-08-04T23:00:02+00:00",
       "type": "tweet",
-      "topic": "economy-trade",
+      "topic": "religion-faith",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Suggests economic crisis comparable to 2008 financial collapse",
-      "quote": "2008 all over again?"
+      "summary": "Frames Satanism negatively as source of demonic attacks",
+      "quote": "Demonic attacks followed after he interviewed a Satanist..."
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "Satanist leader meets Jesus during ritual...",
+      "sourceUrl": "https://x.com/rustyrockets/status/2084414008334139507",
+      "timestamp": "2026-08-03T23:00:00+00:00",
+      "type": "tweet",
+      "topic": "religion-faith",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Presents Christian conversion narrative in contrast to Satanism",
+      "quote": "Satanist leader meets Jesus during ritual..."
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "He left CNN scrambling...",
+      "sourceUrl": "https://x.com/rustyrockets/status/2084332405549105171",
+      "timestamp": "2026-08-03T17:35:45+00:00",
+      "type": "tweet",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies criticism of CNN through framing of interview impact",
+      "quote": "He left CNN scrambling..."
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "2008 all over again?",
+        "sourceUrl": "https://x.com/rustyrockets/status/2085854667888529825",
+        "platform": "x",
+        "timestamp": "2026-08-07T22:24:40+00:00"
+      }
+    ],
     "covid-pandemic": [
       {
         "quote": "Covid was never supposed to be lethal...",
@@ -308,12 +358,26 @@
         "timestamp": "2026-08-04T16:44:12+00:00"
       }
     ],
-    "economy-trade": [
+    "religion-faith": [
       {
-        "quote": "2008 all over again?",
-        "sourceUrl": "https://x.com/rustyrockets/status/2085854667888529825",
+        "quote": "Demonic attacks followed after he interviewed a Satanist...",
+        "sourceUrl": "https://x.com/rustyrockets/status/2084776403333984472",
         "platform": "x",
-        "timestamp": "2026-08-07T22:24:40+00:00"
+        "timestamp": "2026-08-04T23:00:02+00:00"
+      },
+      {
+        "quote": "Satanist leader meets Jesus during ritual...",
+        "sourceUrl": "https://x.com/rustyrockets/status/2084414008334139507",
+        "platform": "x",
+        "timestamp": "2026-08-03T23:00:00+00:00"
+      }
+    ],
+    "media-press": [
+      {
+        "quote": "He left CNN scrambling...",
+        "sourceUrl": "https://x.com/rustyrockets/status/2084332405549105171",
+        "platform": "x",
+        "timestamp": "2026-08-03T17:35:45+00:00"
       }
     ]
   }

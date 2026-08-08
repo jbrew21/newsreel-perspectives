@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-08-08T07:36:54.304372",
+  "collectedAt": "2026-08-08T09:20:45.948710",
   "date": "2026-08-08",
   "posts": [
     {
@@ -31,6 +31,20 @@
       "stance": "lean",
       "summary": "Critiques Spain's migrant border crisis via California comparison",
       "quote": "Spain has been having a rough time. The northern part of the country is on fire, and the southern border is being overrun by migrants. So basically, it's California."
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=2tyF1UgSecU",
+      "timestamp": "2026-08-08T03:00:12+00:00",
+      "type": "video_title",
+      "topic": "covid-pandemic",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Fauci's pursuit of fame and media attention",
+      "quote": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -105,16 +119,16 @@
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=2tyF1UgSecU",
-      "timestamp": "2026-08-08T03:00:12+00:00",
-      "type": "video_title",
-      "topic": "covid-pandemic",
+      "platform": "x",
+      "text": "The White House released a new wave of UFO files. Sightings include a triangular craft in the sky, high-speed orbs near an army base, and a stick-like figure with large eyes, but that was just Ariana Grande.",
+      "sourceUrl": "https://x.com/billmaher/status/2085926015193477317",
+      "timestamp": "2026-08-08T03:08:11+00:00",
+      "type": "tweet",
+      "topic": "ufo-paranormal",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Fauci's pursuit of fame and media attention",
-      "quote": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)"
+      "summary": "Mocks UFO disclosure credibility via celebrity comparison",
+      "quote": "The White House released a new wave of UFO files. Sightings include a triangular craft in the sky, high-speed orbs near an army base, and a stick-like figure with large eyes, but that was just Ariana Grande."
     }
   ],
   "topicSummary": {
@@ -132,6 +146,14 @@
         "sourceUrl": "https://x.com/billmaher/status/2083390577375420520",
         "platform": "x",
         "timestamp": "2026-08-01T03:13:15+00:00"
+      }
+    ],
+    "covid-pandemic": [
+      {
+        "quote": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=2tyF1UgSecU",
+        "platform": "youtube",
+        "timestamp": "2026-08-08T03:00:12+00:00"
       }
     ],
     "other": [
@@ -172,12 +194,12 @@
         "timestamp": "2026-06-27T03:00:32+00:00"
       }
     ],
-    "covid-pandemic": [
+    "ufo-paranormal": [
       {
-        "quote": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=2tyF1UgSecU",
-        "platform": "youtube",
-        "timestamp": "2026-08-08T03:00:12+00:00"
+        "quote": "The White House released a new wave of UFO files. Sightings include a triangular craft in the sky, high-speed orbs near an army base, and a stick-like figure with large eyes, but that was just Ariana Grande.",
+        "sourceUrl": "https://x.com/billmaher/status/2085926015193477317",
+        "platform": "x",
+        "timestamp": "2026-08-08T03:08:11+00:00"
       }
     ]
   }
