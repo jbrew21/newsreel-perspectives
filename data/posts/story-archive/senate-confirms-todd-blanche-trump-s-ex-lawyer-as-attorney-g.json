@@ -1,6 +1,6 @@
 {
   "headline": "Senate Confirms Todd Blanche, Trump's Ex-Lawyer, as Attorney General",
-  "summary": "Blanche's 50-49 AG confirmation splits reaction sharply between corruption charges and MAGA celebration.",
+  "summary": "Blanche's confirmation as AG splits Washington sharply, while other outlets cover disparate Trump-era controversies simultaneously.",
   "type": "split",
   "source": "voices",
   "coverUrl": "",
@@ -8,11 +8,11 @@
   "topicSlugs": [
     "trump-administration"
   ],
-  "voiceCount": 27,
+  "voiceCount": 29,
   "clusterCount": 5,
   "clusters": [
     {
-      "name": "Broader Trump Accountability Critiques",
+      "name": "Trump Administration Scrutiny/Criticism",
       "voices": [
         {
           "voiceId": "radley-balko",
@@ -21,7 +21,6 @@
           "quote": "So, SCOTUS rules against Trump on 3 things: tariffs, removing birthright citizenship, and firing Fed governors. And he moves forward with all three...",
           "sourceUrl": "https://bsky.app/profile/radleybalko.bsky.social/post/3msjit5idb22p",
           "platform": "bluesky",
-          "fit": 9,
           "quoteQuality": 6
         },
         {
@@ -31,7 +30,6 @@
           "quote": "A new report from the Government Accountability Office finds that DOGE wildly exaggerated the purported \"savings\" it delivered for the federal government.\n\nWe lost vital government services for basica",
           "sourceUrl": "https://x.com/RBReich/status/2085833376712310818",
           "platform": "x",
-          "fit": 9,
           "quoteQuality": 4
         },
         {
@@ -41,7 +39,15 @@
           "quote": "Trump vs. Fauci: Stephen A. Says This Could Blow Up in Trump's Face\npiped.video/BwcBAiuEpVU\n\nLink\n\n\n\nTrump vs. Fauci: Stephen A. Says This Could Blow Up in Trump&apos;s Face\n\nAnthony Fauci invoked the",
           "sourceUrl": "https://x.com/stephenasmith/status/2085536233929777274",
           "platform": "x",
-          "fit": 6,
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "meidastouch",
+          "voiceName": "MeidasTouch",
+          "photo": "/photos/meidastouch.jpg",
+          "quote": "CAUGHT ON CAMERA: Vivek Ramaswamy claims he \u201cnever once\u201d said he was pro-data center expansion. We have the receipts.",
+          "sourceUrl": "https://x.com/MeidasTouch/status/2086231044890542582",
+          "platform": "x",
           "quoteQuality": 4
         },
         {
@@ -51,7 +57,15 @@
           "quote": "Trump's speech patterns raise new neurological questions",
           "sourceUrl": "https://x.com/davidpakmanshow/status/2085763556272681156",
           "platform": "x",
-          "fit": 6,
+          "quoteQuality": 3
+        },
+        {
+          "voiceId": "roland-martin",
+          "voiceName": "Roland Martin",
+          "photo": "/photos/roland-martin.jpg",
+          "quote": "Trump Spews A Dehumanizing Attack On Blue Cities. Roland Rips Apart His Racist Crime Narrative.",
+          "sourceUrl": "https://x.com/rolandsmartin/status/2086241913905271128",
+          "platform": "x",
           "quoteQuality": 3
         },
         {
@@ -61,18 +75,7 @@
           "quote": "#whitehouse #presidenttrump #ballroom A panel of appellate court judges in the District of Columbia ruled today that the construction of President Trump\u2019s massive ballroom is illegal. The majority of ",
           "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7671508400185937165",
           "platform": "tiktok",
-          "fit": 8,
           "quoteQuality": 2
-        },
-        {
-          "voiceId": "roland-martin",
-          "voiceName": "Roland Martin",
-          "photo": "/photos/roland-martin.jpg",
-          "quote": "Trump White House Targets Lisa Cook Again. 23,000 Jobs Lost. Black Unemployment Gap Persists",
-          "sourceUrl": "https://www.youtube.com/watch?v=WCgzg7bb4oo",
-          "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 1
         },
         {
           "voiceId": "philip-defranco",
@@ -81,7 +84,15 @@
           "quote": "DOGE Lied About Its Savings, According to Government Watchdog",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7671393873414933790",
           "platform": "tiktok",
-          "fit": 8,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "brian-tyler-cohen",
+          "voiceName": "Brian Tyler Cohen",
+          "photo": "/photos/brian-tyler-cohen.jpg",
+          "quote": "UNHINGED: Trump LOSES IT at judge amid BOMBSHELL ruling",
+          "sourceUrl": "https://www.youtube.com/watch?v=qVtOEd030hw",
+          "platform": "youtube",
           "quoteQuality": 1
         },
         {
@@ -91,27 +102,6 @@
           "quote": "Trump still hasn't rejected the idea he is running for a third term.",
           "sourceUrl": "https://www.tiktok.com/@donlemon/video/7671725622875491614",
           "platform": "tiktok",
-          "fit": 7,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "brian-tyler-cohen",
-          "voiceName": "Brian Tyler Cohen",
-          "photo": "/photos/brian-tyler-cohen.jpg",
-          "quote": "BREAKING: Trump's midterm INFILTRATION plan gets EXPOSED",
-          "sourceUrl": "https://www.youtube.com/watch?v=CTAEdHomIC0",
-          "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "young-turks",
-          "voiceName": "The Young Turks",
-          "photo": "/photos/young-turks.jpg",
-          "quote": "Trump's Base Leaving In Droves",
-          "sourceUrl": "https://www.youtube.com/watch?v=361qszF6SAY",
-          "platform": "youtube",
-          "fit": 6,
           "quoteQuality": 1
         },
         {
@@ -121,11 +111,19 @@
           "quote": "Trump's Base Leaving In Droves",
           "sourceUrl": "https://www.youtube.com/watch?v=361qszF6SAY",
           "platform": "youtube",
-          "fit": 6,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "young-turks",
+          "voiceName": "The Young Turks",
+          "photo": "/photos/young-turks.jpg",
+          "quote": "Trump's Base Leaving In Droves",
+          "sourceUrl": "https://www.youtube.com/watch?v=361qszF6SAY",
+          "platform": "youtube",
           "quoteQuality": 1
         }
       ],
-      "voiceCount": 11,
+      "voiceCount": 12,
       "bestQuote": {
         "voiceName": "Radley Balko",
         "quote": "So, SCOTUS rules against Trump on 3 things: tariffs, removing birthright citizenship, and firing Fed governors. And he moves forward with all three...",
@@ -134,7 +132,7 @@
       }
     },
     {
-      "name": "Confirmation Is Corruption",
+      "name": "Blanche Confirmation Is Corruption",
       "voices": [
         {
           "voiceId": "jennifer-rubin",
@@ -143,7 +141,6 @@
           "quote": "If we care about something as fundamental as protecting children from predators or maintaining the DoJ as a respected institution Rs cannot remain in positions of power. They cannot be trusted to cond",
           "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3msixe25pms2a",
           "platform": "bluesky",
-          "fit": 7,
           "quoteQuality": 5
         },
         {
@@ -153,7 +150,6 @@
           "quote": "This is how democracies rot.\n\nIn the dead of night, the MAGA-controlled Senate bent the knee again \u2014 confirming Trump\u2019s personal attorney as Attorney General.\n\nThis is corruption on a staggering scale",
           "sourceUrl": "https://x.com/GavinNewsom/status/2086131206253318519",
           "platform": "x",
-          "fit": 10,
           "quoteQuality": 4
         },
         {
@@ -163,7 +159,6 @@
           "quote": "Trump wants his lawyer running the DOJ.\n\nTodd Blanche represented Trump personally.\n\nHe helped create Trump's \"Anti-Weaponization Fund.\"\n\nHe helped negotiate IRS protections for Trump.\n\nAnd he wants D",
           "sourceUrl": "https://x.com/ewarren/status/2086135870889791814",
           "platform": "x",
-          "fit": 9,
           "quoteQuality": 4
         },
         {
@@ -173,17 +168,6 @@
           "quote": "Senate Republicans have handed Trump an excuse on a silver platter to keep up his pervasive, breathtaking corruption.\n\u00a0\nIf you want to wipe out corruption, you can\u2019t have the president\u2019s personal atto",
           "sourceUrl": "https://x.com/SenSchumer/status/2086012998502469713",
           "platform": "x",
-          "fit": 10,
-          "quoteQuality": 4
-        },
-        {
-          "voiceId": "meidastouch",
-          "voiceName": "MeidasTouch",
-          "photo": "/photos/meidastouch.jpg",
-          "quote": "If you\u2019re just waking up: the U.S. Senate confirmed Todd Blanche as attorney general at around 4:30am ET in a 50\u201349 vote.",
-          "sourceUrl": "https://x.com/MeidasTouch/status/2086036008643309793",
-          "platform": "x",
-          "fit": 5,
           "quoteQuality": 4
         },
         {
@@ -193,7 +177,6 @@
           "quote": "Who could\u2019ve guessed that all is not right with Trump\u2019s big brother banner that hangs on DOJ?",
           "sourceUrl": "https://x.com/JoyceWhiteVance/status/2085843934450753780",
           "platform": "x",
-          "fit": 6,
           "quoteQuality": 4
         },
         {
@@ -203,7 +186,6 @@
           "quote": "5 reasons Todd Blanche is unfit to serve as Attorney General:",
           "sourceUrl": "https://x.com/SenAdamSchiff/status/2086119212234178660",
           "platform": "x",
-          "fit": 8,
           "quoteQuality": 3
         },
         {
@@ -213,11 +195,10 @@
           "quote": ".@TheRickWilson: Donald Trump does not give a shit about anyone in the GOP",
           "sourceUrl": "https://x.com/ProjectLincoln/status/2085756114797236696",
           "platform": "x",
-          "fit": 4,
           "quoteQuality": 3
         }
       ],
-      "voiceCount": 8,
+      "voiceCount": 7,
       "bestQuote": {
         "voiceName": "Jennifer Rubin",
         "quote": "If we care about something as fundamental as protecting children from predators or maintaining the DoJ as a respected institution Rs cannot remain in positions of power. They cannot be trusted to cond",
@@ -226,7 +207,55 @@
       }
     },
     {
-      "name": "Celebrating Confirmation",
+      "name": "Conservative Defense/Pro-Trump Framing",
+      "voices": [
+        {
+          "voiceId": "ben-shapiro",
+          "voiceName": "Ben Shapiro",
+          "photo": "/photos/ben-shapiro.jpg",
+          "quote": "Many on the Right are spending all day and all night blackpilling about the Trump administration or pretending there\u2019s no difference between the parties. Yesterday, President Trump issued two executiv",
+          "sourceUrl": "https://x.com/benshapiro/status/2085801290974609505",
+          "platform": "x",
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "benny-johnson",
+          "voiceName": "Benny Johnson",
+          "photo": "/photos/benny-johnson.jpg",
+          "quote": "Donald Trump got 184,458 votes in Alaska in his last election \n\nLisa Murkowski got 136,330\n\nBy voting against Todd Blanche, Murkowski attempted to obstruct the will of the American people out of hatre",
+          "sourceUrl": "https://x.com/bennyjohnson/status/2086101744585466233",
+          "platform": "x",
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "tomi-lahren",
+          "voiceName": "Tomi Lahren",
+          "photo": "/photos/tomi-lahren.jpg",
+          "quote": "Markwayne Mullin said he didn\u2019t want to be in the headlines like Noem but guess what..he is\u2026and for very different reasons. \n\nWe are discussing next on @BigWeekendShow",
+          "sourceUrl": "https://x.com/TomiLahren/status/2086235746684334105",
+          "platform": "x",
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "dan-bongino",
+          "voiceName": "Dan Bongino",
+          "photo": "/photos/dan-bongino.jpg",
+          "quote": "Today is August 8, 2026 and Donald J. Trump is the President of the United States of America.\nIYKYK",
+          "sourceUrl": "https://x.com/dbongino/status/2086098712061681720",
+          "platform": "x",
+          "quoteQuality": 3
+        }
+      ],
+      "voiceCount": 4,
+      "bestQuote": {
+        "voiceName": "Ben Shapiro",
+        "quote": "Many on the Right are spending all day and all night blackpilling about the Trump administration or pretending there\u2019s no difference between the parties. Yesterday, President Trump issued two executiv",
+        "platform": "x",
+        "quality": 5
+      }
+    },
+    {
+      "name": "Blanche Confirmation Is a Win",
       "voices": [
         {
           "voiceId": "jd-vance",
@@ -235,7 +264,6 @@
           "quote": "Congratulations to Todd for being confirmed as Attorney General. He\u2019s already done so much to help us in our fight against fraud and will continue to do that and so much more for our Administration!",
           "sourceUrl": "https://x.com/JDVance/status/2086130691696103481",
           "platform": "x",
-          "fit": 10,
           "quoteQuality": 4
         },
         {
@@ -245,7 +273,6 @@
           "quote": "BLANCHE CHECK: Cassidy Vote Clears Trump AG Pick\u2019s Path\n\nhannity.com/media-room/blanc\u2026\n\nLink\n\n\n\nBill Cassidy Backs Todd Blanche for Attorney General\n\nSen. Bill Cassidy says he will vote to confirm Tod",
           "sourceUrl": "https://x.com/seanhannity/status/2085761657209225357",
           "platform": "x",
-          "fit": 8,
           "quoteQuality": 4
         },
         {
@@ -255,7 +282,6 @@
           "quote": "Senate Republicans have been confirming\u00a0President Trump's nominees at a historic pace.\n\u00a0\nDespite Democrats' political games, 95% of civilian nominees have been confirmed - the fastest and highest rate",
           "sourceUrl": "https://x.com/SenatorTimScott/status/2085806078676152759",
           "platform": "x",
-          "fit": 6,
           "quoteQuality": 4
         }
       ],
@@ -268,60 +294,8 @@
       }
     },
     {
-      "name": "Defending Trump Agenda",
+      "name": "Right-Leaning Internal Critique",
       "voices": [
-        {
-          "voiceId": "ben-shapiro",
-          "voiceName": "Ben Shapiro",
-          "photo": "/photos/ben-shapiro.jpg",
-          "quote": "Many on the Right are spending all day and all night blackpilling about the Trump administration or pretending there\u2019s no difference between the parties. Yesterday, President Trump issued two executiv",
-          "sourceUrl": "https://x.com/benshapiro/status/2085801290974609505",
-          "platform": "x",
-          "fit": 9,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "benny-johnson",
-          "voiceName": "Benny Johnson",
-          "photo": "/photos/benny-johnson.jpg",
-          "quote": "Donald Trump got 184,458 votes in Alaska in his last election \n\nLisa Murkowski got 136,330\n\nBy voting against Todd Blanche, Murkowski attempted to obstruct the will of the American people out of hatre",
-          "sourceUrl": "https://x.com/bennyjohnson/status/2086101744585466233",
-          "platform": "x",
-          "fit": 9,
-          "quoteQuality": 4
-        },
-        {
-          "voiceId": "dan-bongino",
-          "voiceName": "Dan Bongino",
-          "photo": "/photos/dan-bongino.jpg",
-          "quote": "Today is August 8, 2026 and Donald J. Trump is the President of the United States of America.\nIYKYK",
-          "sourceUrl": "https://x.com/dbongino/status/2086098712061681720",
-          "platform": "x",
-          "fit": 5,
-          "quoteQuality": 3
-        }
-      ],
-      "voiceCount": 3,
-      "bestQuote": {
-        "voiceName": "Ben Shapiro",
-        "quote": "Many on the Right are spending all day and all night blackpilling about the Trump administration or pretending there\u2019s no difference between the parties. Yesterday, President Trump issued two executiv",
-        "platform": "x",
-        "quality": 5
-      }
-    },
-    {
-      "name": "Institutionalist Conservative Skepticism",
-      "voices": [
-        {
-          "voiceId": "jonah-goldberg",
-          "voiceName": "Jonah Goldberg",
-          "photo": "/photos/jonah-goldberg.jpg",
-          "quote": "thedispatch.com/newsletter/g\u2026\n\nLink\n\n\n\nJ.D. Vance\u2019s Burrito Offensive\n\nThe vice president wants to silence his Republican opposition ahead of 2028.\nthedispatch.com",
-          "sourceUrl": "https://x.com/JonahDispatch/status/2086176317741957479",
-          "platform": "x",
-          "fit": 8,
-          "quoteQuality": 4
-        },
         {
           "voiceId": "glenn-greenwald",
           "voiceName": "Glenn Greenwald",
@@ -329,36 +303,53 @@
           "quote": "If Tucker Carlson is \"Judas\" for criticizing and betraying Trump, who is Trump in this framework?\n\nSeems sort of blasphemous coming from a self-described \"Conservative Christian blogger.\"\n\nIn any even",
           "sourceUrl": "https://x.com/ggreenwald/status/2086083323831488723",
           "platform": "x",
-          "fit": 7,
           "quoteQuality": 4
+        },
+        {
+          "voiceId": "jonah-goldberg",
+          "voiceName": "Jonah Goldberg",
+          "photo": "/photos/jonah-goldberg.jpg",
+          "quote": "thedispatch.com/newsletter/g\u2026\n\nLink\n\n\n\nJ.D. Vance\u2019s Burrito Offensive\n\nThe vice president wants to silence his Republican opposition ahead of 2028.\nthedispatch.com",
+          "sourceUrl": "https://x.com/JonahDispatch/status/2086176317741957479",
+          "platform": "x",
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "dave-rubin",
+          "voiceName": "Dave Rubin",
+          "photo": "/photos/dave-rubin.jpg",
+          "quote": "Watch Panel's Faces Go Limp When Republican Shows Receipts",
+          "sourceUrl": "https://www.youtube.com/shorts/kVhjGkBuB-c",
+          "platform": "youtube",
+          "quoteQuality": 1
         }
       ],
-      "voiceCount": 2,
+      "voiceCount": 3,
       "bestQuote": {
-        "voiceName": "Jonah Goldberg",
-        "quote": "thedispatch.com/newsletter/g\u2026\n\nLink\n\n\n\nJ.D. Vance\u2019s Burrito Offensive\n\nThe vice president wants to silence his Republican opposition ahead of 2028.\nthedispatch.com",
+        "voiceName": "Glenn Greenwald",
+        "quote": "If Tucker Carlson is \"Judas\" for criticizing and betraying Trump, who is Trump in this framework?\n\nSeems sort of blasphemous coming from a self-described \"Conservative Christian blogger.\"\n\nIn any even",
         "platform": "x",
         "quality": 4
       }
     }
   ],
-  "confidence": 6,
+  "confidence": 4,
   "relevance": {
     "direct": 10,
-    "related": 12,
+    "related": 16,
     "unrelated": 4
   },
-  "validated": true,
-  "heatScore": 58,
+  "validated": false,
+  "heatScore": 55,
   "belowThreshold": false,
   "counterNarrative": {
-    "dominantCluster": "Confirmation Is Corruption",
-    "dominantCount": 8,
-    "counterCluster": "Celebrating Confirmation",
+    "dominantCluster": "Blanche Confirmation Is Corruption",
+    "dominantCount": 7,
+    "counterCluster": "Blanche Confirmation Is a Win",
     "counterCount": 3,
-    "axis": "whether confirmation was legitimate or corrupt",
+    "axis": "whether confirmation is good or bad",
     "tensionScore": 9,
-    "tension": "8 voices say \"Confirmation Is Corruption\" \u2014 but 3 push back: \"Celebrating Confirmation\""
+    "tension": "7 voices say \"Blanche Confirmation Is Corruption\" \u2014 but 3 push back: \"Blanche Confirmation Is a Win\""
   },
   "slug": "trump-fixates-on-reflecting-pool-erupts-at-officials"
 }
