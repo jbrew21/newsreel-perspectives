@@ -1,7 +1,7 @@
 {
   "voiceId": "all-in-podcast",
   "voiceName": "All-In Podcast",
-  "collectedAt": "2026-08-10T10:05:04.987554",
+  "collectedAt": "2026-08-10T18:31:50.359361",
   "date": "2026-08-10",
   "posts": [
     {
@@ -302,15 +302,29 @@
       "voiceId": "all-in-podcast",
       "voiceName": "All-In Podcast",
       "platform": "youtube",
-      "text": "Mark Cuban: AI is not going to take away 50% of the jobs.",
-      "sourceUrl": "https://www.youtube.com/shorts/8LFUuMqUqfM",
-      "timestamp": "2026-07-27T23:30:38+00:00",
+      "text": "GameStop CEO: \u201cWhy Does Everyone Want Us to Fail?\u201d",
+      "sourceUrl": "https://www.youtube.com/shorts/0KY-kln39o4",
+      "timestamp": "2026-08-10T15:51:40+00:00",
+      "type": "video_title",
+      "topic": "other",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "CEO defends GameStop against perceived hostility from financial community",
+      "quote": "GameStop CEO: \u201cWhy Does Everyone Want Us to Fail?\u201d"
+    },
+    {
+      "voiceId": "all-in-podcast",
+      "voiceName": "All-In Podcast",
+      "platform": "youtube",
+      "text": "Jensen Huang says Open Source can be MORE expensive",
+      "sourceUrl": "https://www.youtube.com/shorts/4FcohSMfNeM",
+      "timestamp": "2026-08-10T14:46:28+00:00",
       "type": "video_title",
       "topic": "ai-technology",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "AI job displacement concerns overstated; entrepreneurship opportunities significant",
-      "quote": "Mark Cuban: AI is not going to take away 50% of the jobs."
+      "summary": "Challenges perception that open source AI is cheaper than proprietary solutions",
+      "quote": "Jensen Huang says Open Source can be MORE expensive"
     }
   ],
   "topicSummary": {
@@ -400,10 +414,10 @@
         "timestamp": "2026-07-29T12:49:19+00:00"
       },
       {
-        "quote": "Mark Cuban: AI is not going to take away 50% of the jobs.",
-        "sourceUrl": "https://www.youtube.com/shorts/8LFUuMqUqfM",
+        "quote": "Jensen Huang says Open Source can be MORE expensive",
+        "sourceUrl": "https://www.youtube.com/shorts/4FcohSMfNeM",
         "platform": "youtube",
-        "timestamp": "2026-07-27T23:30:38+00:00"
+        "timestamp": "2026-08-10T14:46:28+00:00"
       }
     ],
     "military-defense": [
@@ -452,6 +466,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/ucwxs7KLUI4",
         "platform": "youtube",
         "timestamp": "2026-08-01T04:16:11+00:00"
+      }
+    ],
+    "other": [
+      {
+        "quote": "GameStop CEO: \u201cWhy Does Everyone Want Us to Fail?\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/0KY-kln39o4",
+        "platform": "youtube",
+        "timestamp": "2026-08-10T15:51:40+00:00"
       }
     ]
   }

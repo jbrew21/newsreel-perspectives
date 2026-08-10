@@ -1,9 +1,23 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-08-10T10:05:04.966111",
+  "collectedAt": "2026-08-10T18:31:50.338365",
   "date": "2026-08-10",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "Oliver Larkin with a masterclass on Fox News",
+      "sourceUrl": "https://www.youtube.com/shorts/FoWSWQvZwQg",
+      "timestamp": "2026-08-10T00:43:57+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques Fox News through commentary on Oliver Larkin",
+      "quote": "Oliver Larkin with a masterclass on Fox News"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -73,37 +87,23 @@
       "stance": "lean",
       "summary": "Highlights Democratic alienation of Black voters",
       "quote": "Black Voters Tell Democrats: \u201cIt Just Feels Fake\u201d"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "FETTERMAN LEAVES JON STEWART IN SHOCK",
-      "sourceUrl": "https://www.youtube.com/watch?v=xEOvPDKu1TY",
-      "timestamp": "2026-08-08T12:00:02+00:00",
-      "type": "video_title",
-      "topic": "congress-legislation",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights surprising or notable congressional figure statement",
-      "quote": "FETTERMAN LEAVES JON STEWART IN SHOCK"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "Oliver Larkin with a masterclass on Fox News",
-      "sourceUrl": "https://www.youtube.com/shorts/FoWSWQvZwQg",
-      "timestamp": "2026-08-10T00:43:57+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critiques Fox News through commentary on Oliver Larkin",
-      "quote": "Oliver Larkin with a masterclass on Fox News"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "Oliver Larkin with a masterclass on Fox News",
+        "sourceUrl": "https://www.youtube.com/shorts/FoWSWQvZwQg",
+        "platform": "youtube",
+        "timestamp": "2026-08-10T00:43:57+00:00"
+      },
+      {
+        "quote": "Abdul El-Sayed responds to the President",
+        "sourceUrl": "https://www.youtube.com/shorts/UY7VYqqksbA",
+        "platform": "youtube",
+        "timestamp": "2026-08-08T22:52:51+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "Haley Stevens endorses Abdul El-Sayed",
@@ -130,28 +130,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=rho_bKocGdc",
         "platform": "youtube",
         "timestamp": "2026-08-09T12:12:59+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "Abdul El-Sayed responds to the President",
-        "sourceUrl": "https://www.youtube.com/shorts/UY7VYqqksbA",
-        "platform": "youtube",
-        "timestamp": "2026-08-08T22:52:51+00:00"
-      },
-      {
-        "quote": "Oliver Larkin with a masterclass on Fox News",
-        "sourceUrl": "https://www.youtube.com/shorts/FoWSWQvZwQg",
-        "platform": "youtube",
-        "timestamp": "2026-08-10T00:43:57+00:00"
-      }
-    ],
-    "congress-legislation": [
-      {
-        "quote": "FETTERMAN LEAVES JON STEWART IN SHOCK",
-        "sourceUrl": "https://www.youtube.com/watch?v=xEOvPDKu1TY",
-        "platform": "youtube",
-        "timestamp": "2026-08-08T12:00:02+00:00"
       }
     ]
   }
