@@ -315,8 +315,11 @@ def fetch_youtube_posts(voice):
                     'timestamp': published_match.group(1) if published_match else '',
                     'type': 'video_title',
                 })
-    except:
-        pass
+    except Exception as e:
+        # A 404 here almost always means a stale/renamed channel_id, which
+        # otherwise silently yields zero posts forever. Surface it like the
+        # Bluesky/Substack/Instagram fetchers do so dead feeds get noticed.
+        print(f"    ⚠ YouTube fetch failed for {voice['id']} ({yt_feed}): {e}")
 
     return posts
 
