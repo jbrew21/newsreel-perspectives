@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "collectedAt": "2026-08-10T18:31:50.338919",
+  "collectedAt": "2026-08-10T20:22:37.865481",
   "date": "2026-08-10",
   "posts": [
     {
@@ -218,6 +218,34 @@
       "voiceId": "john-oliver",
       "voiceName": "John Oliver",
       "platform": "youtube",
+      "text": "S9 E30: Elon Musk, Twitter &amp; Qatar World Cup: Last Week Tonight with John Oliver",
+      "sourceUrl": "https://www.youtube.com/watch?v=14xmIVd1I78",
+      "timestamp": "2026-08-10T16:00:10+00:00",
+      "type": "video_title",
+      "topic": "billionaires-wealth",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Critiques Elon Musk's Twitter acquisition and corporate practices",
+      "quote": "S9 E30: Elon Musk, Twitter &amp; Qatar World Cup: Last Week Tonight with John Oliver"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
+      "text": "Trump &amp; the DOJ #lastweektonight",
+      "sourceUrl": "https://www.youtube.com/shorts/QEXdQcn7iDQ",
+      "timestamp": "2026-08-10T15:00:11+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Opposes Trump's interference with Department of Justice independence",
+      "quote": "Trump &amp; the DOJ #lastweektonight"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
       "text": "Trump &amp; the DOJ: Last Week Tonight with John Oliver (HBO)",
       "sourceUrl": "https://www.youtube.com/watch?v=PUPuhlJ3IuE",
       "timestamp": "2026-08-10T06:30:06+00:00",
@@ -325,34 +353,6 @@
       "stance": "lean",
       "summary": "Examines police surveillance and microphone use practices",
       "quote": "Police Surveillance &amp; Microphones #lastweektonight"
-    },
-    {
-      "voiceId": "john-oliver",
-      "voiceName": "John Oliver",
-      "platform": "youtube",
-      "text": "S9 E30: Elon Musk, Twitter &amp; Qatar World Cup: Last Week Tonight with John Oliver",
-      "sourceUrl": "https://www.youtube.com/watch?v=14xmIVd1I78",
-      "timestamp": "2026-08-10T16:00:10+00:00",
-      "type": "video_title",
-      "topic": "billionaires-wealth",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Critiques Elon Musk's Twitter acquisition and corporate practices",
-      "quote": "S9 E30: Elon Musk, Twitter &amp; Qatar World Cup: Last Week Tonight with John Oliver"
-    },
-    {
-      "voiceId": "john-oliver",
-      "voiceName": "John Oliver",
-      "platform": "youtube",
-      "text": "Trump &amp; the DOJ #lastweektonight",
-      "sourceUrl": "https://www.youtube.com/shorts/QEXdQcn7iDQ",
-      "timestamp": "2026-08-10T15:00:11+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Opposes Trump's interference with Department of Justice independence",
-      "quote": "Trump &amp; the DOJ #lastweektonight"
     }
   ],
   "topicSummary": {
@@ -390,6 +390,12 @@
         "timestamp": "2024-08-08T13:07:55+00:00"
       },
       {
+        "quote": "Trump &amp; the DOJ #lastweektonight",
+        "sourceUrl": "https://www.youtube.com/shorts/QEXdQcn7iDQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-10T15:00:11+00:00"
+      },
+      {
         "quote": "Trump &amp; the DOJ: Last Week Tonight with John Oliver (HBO)",
         "sourceUrl": "https://www.youtube.com/watch?v=PUPuhlJ3IuE",
         "platform": "youtube",
@@ -400,12 +406,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=sPXxPcQoAZA",
         "platform": "youtube",
         "timestamp": "2026-08-10T03:00:34+00:00"
-      },
-      {
-        "quote": "Trump &amp; the DOJ #lastweektonight",
-        "sourceUrl": "https://www.youtube.com/shorts/QEXdQcn7iDQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-10T15:00:11+00:00"
       }
     ],
     "elections": [
@@ -510,6 +510,14 @@
         "timestamp": "2024-08-01T12:45:31+00:00"
       }
     ],
+    "billionaires-wealth": [
+      {
+        "quote": "S9 E30: Elon Musk, Twitter &amp; Qatar World Cup: Last Week Tonight with John Oliver",
+        "sourceUrl": "https://www.youtube.com/watch?v=14xmIVd1I78",
+        "platform": "youtube",
+        "timestamp": "2026-08-10T16:00:10+00:00"
+      }
+    ],
     "uk-world-politics": [
       {
         "quote": "S9 E27: Rishi Sunak &amp; Bail Reform: Last Week Tonight with John Oliver",
@@ -522,14 +530,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=ikFe0NcKv2c",
         "platform": "youtube",
         "timestamp": "2026-08-06T16:00:36+00:00"
-      }
-    ],
-    "billionaires-wealth": [
-      {
-        "quote": "S9 E30: Elon Musk, Twitter &amp; Qatar World Cup: Last Week Tonight with John Oliver",
-        "sourceUrl": "https://www.youtube.com/watch?v=14xmIVd1I78",
-        "platform": "youtube",
-        "timestamp": "2026-08-10T16:00:10+00:00"
       }
     ]
   }
