@@ -1,35 +1,42 @@
-# Broken YouTube feeds — found 2026-08-10
+# Broken YouTube feeds — found 2026-08-10 (updated 2026-08-10)
 
-23 native YouTube feeds return HTTP 404: their stored `channel_id` is stale/renamed,
-so these voices silently collect zero YouTube posts. Found during newsletter maintenance.
-`fetch_youtube_posts` used a bare `except:` that hid this; now fixed to log (collect.py).
+Original scan found 23 native YouTube feeds returning 404 (stale/renamed `channel_id`),
+so those voices silently collected zero YouTube posts.
+`fetch_youtube_posts` now logs these failures instead of swallowing them (collect.py).
 
-To fix: re-resolve each channel_id (visit youtube.com/@handle, read `externalId`),
-verify `feeds/videos.xml?channel_id=<new>` returns `<entry>` items, then update voices.json.
-YouTube rate-limits rapid lookups — resolve slowly (a few at a time).
+## FIXED (16) — re-resolved via yt-dlp, each verified to return a live feed
 
-| id | stored (dead) channel_id | youtube handle |
+| id | new channel_id | handle |
 |----|----|----|
-| theo-von | UC5AQEUAwCh1sGDvkQobt1dw | TheoVon |
-| full-send | UCwMDFutAGCTTb-wUMVwXKDg | FULLSENDPODCAST |
-| candace-owens | UCL0u5uz7KH9iy-XBbGCqemQ | CandaceOwensPodcast |
-| phil-mcgraw | UCfCLrzQ3OaLJSAGfAOmfjWQ | DrPhil |
-| tucker-carlson | UCEbnEBMJHQkx1rcHfJvj3Cg | TuckerCarlson |
-| dan-bongino | UCVStvibG0gkwMU_WM42TSjA | BonginoReport |
-| lex-fridman | UCSHZKJJfhK61IS3o76uAkDA | lexfridman |
-| asmongold | UCQeRaTukNYft1_6AZPNvImw | Asmongold |
-| megyn-kelly | UCEghn6GXHuh-OweS0lcbBeA | MegynKelly |
-| pod-save-america | UCs7nznrHmSyNNFl4Fgd7tMQ | CrookedMedia |
-| don-lemon | UCQGqTCJlmMEFC_KMYMxit5w | TheDonLemonShow |
-| charlamagne-tha-god | UCBFg4JMHESwUN2V63LhCA9A | BrilliantIdiotsTV |
-| chris-cuomo | UCMSvErhJfJdGfOsaLZVJLhA | ChrisCuomo |
-| hasan-minhaj | UCyTXHfyaDy996UwXBYonVow | HasanMinhaj |
-| glenn-greenwald | UCbnlBWwMBiECBrExsBJMB7w | GlennGreenwald |
-| jason-whitlock | UCp4oTSBkr-S7r5cRVnfDaqg | JasonWhitlock |
-| mark-levin | UCLoEK7HTLmQqATo5bfAi_KQ | (none stored) |
-| kai-cenat | UCavTGojUqfDi9Kf4yxCM4lA | KaiCenat |
-| rachel-maddow | UC_9FzicajUNLvwUsuAoqOuw | (none stored) |
-| sean-hannity | UC-jWyoXTGy12xFU_f_nJLwA | (none stored) |
-| jidion | UC2imo__4GBrjjNU1l-Z9TpA | JiDion |
-| drew-gooden | UCTSRIY3GLFYIpkR2QAhr8BQ | DrewGooden |
-| damon-imani | UCDamonImani | (none stored) |
+| theo-von | UC5AQEUAwCh1sGDvkQtkDWUQ | @TheoVon |
+| full-send | UChPuCAEXg7iYkVNjQY1NGYg | @FULLSENDPODCAST |
+| candace-owens | UCkY4fdKOFk3Kiq7g5LLKYLw | @CandaceOwensPodcast |
+| phil-mcgraw | UCYLR1ghzYNyvfjw78raCuxA | @DrPhil |
+| tucker-carlson | UCGttrUON87gWfU6dMWm1fcA | @TuckerCarlson |
+| lex-fridman | UCSHZKyawb77ixDdsGog4iWA | @lexfridman |
+| asmongold | UCq2jigrIGtupbTXiNjq6Wrw | @zackrawrr |
+| megyn-kelly | UCzJXNzqz6VMHSNInQt_7q6w | @MegynKelly |
+| don-lemon | UCXs0PlIGUDSXfBaF7j-1euA | @TheDonLemonShow |
+| chris-cuomo | UCGB-czkAt6nLd3UrQ1eD0uw | @ChrisCuomo |
+| hasan-minhaj | UCarEovlrD9QY-fy-Z6apIDQ | @HasanMinhaj |
+| glenn-greenwald | UChzVhAwzGR7hV-4O8ZmBLHg | @GlennGreenwald |
+| mark-levin | UCm0ZCU4Svnq9f46AOiYvONw | @MarkLevinShow |
+| kai-cenat | UCoEmptob-eEGKk18c2VplJg | @KaiCenat |
+| jidion | UCvj3hNvwrEgTRkeut7_cBAQ | @JiDion |
+| drew-gooden | UCjtkaY_1JrDw6uUtwvcPsTg | @DrewGooden |
+
+## STILL OPEN (7) — need a manual decision (no clean canonical channel)
+
+| id | note |
+|----|----|
+| dan-bongino | Left podcasting for FBI Deputy Director (2025); channel likely dormant/removed. |
+| pod-save-america | Content lives on the Crooked Media channel; needs a decision on which feed to track. |
+| charlamagne-tha-god | Content lives on The Breakfast Club / network channels; no clean solo channel. |
+| jason-whitlock | "Fearless" show is on Blaze Media; @FearlessTV resolved to an unrelated 2015 channel — needs the real Blaze channel_id. |
+| rachel-maddow | MSNBC hosts her content; no standalone Maddow channel with a working feed. |
+| sean-hannity | Handle @SeanHannity did not resolve; needs the current Fox/Hannity channel_id. |
+| damon-imani | Stored ID was a placeholder ("UCDamonImani"); @DamonImani resolved only to a "Clips" channel, not his primary. |
+
+These 7 are edge cases: several people don't run a standalone YouTube channel
+(their content lives on a network's channel), or left the platform. Decide per voice
+whether to point at a network channel, drop the youtube feed, or keep only their other platforms.
