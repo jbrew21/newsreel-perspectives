@@ -1,9 +1,23 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-08-11T07:54:33.360654",
+  "collectedAt": "2026-08-11T09:35:33.905392",
   "date": "2026-08-11",
   "posts": [
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "Women, you HAVE TO stop trying to be agreeable to this insanity.",
+      "sourceUrl": "https://www.youtube.com/shorts/S_sFdO6xD8w",
+      "timestamp": "2026-08-10T20:30:22+00:00",
+      "type": "video_title",
+      "topic": "gender-lgbtq",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Opposes women accommodating what he views as gender ideology",
+      "quote": "Women, you HAVE TO stop trying to be agreeable to this insanity."
+    },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
@@ -78,18 +92,40 @@
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
       "platform": "youtube",
-      "text": "Women, you HAVE TO stop trying to be agreeable to this insanity.",
-      "sourceUrl": "https://www.youtube.com/shorts/S_sFdO6xD8w",
-      "timestamp": "2026-08-10T20:30:22+00:00",
+      "text": "The clientele is exactly what you'd expect.",
+      "sourceUrl": "https://www.youtube.com/shorts/uAVP5wtHzFM",
+      "timestamp": "2026-08-10T18:08:38+00:00",
       "type": "video_title",
-      "topic": "gender-lgbtq",
-      "relevance": "medium",
+      "topic": "epstein-scandal",
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Opposes women accommodating what he views as gender ideology",
-      "quote": "Women, you HAVE TO stop trying to be agreeable to this insanity."
+      "summary": "Implies damning clientele details in Epstein case",
+      "quote": "The clientele is exactly what you'd expect."
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "Nothing says \u201cspirit of aloha\u201d like a knife fight on the beach.",
+      "sourceUrl": "https://www.youtube.com/shorts/8OZ-pfqpIFQ",
+      "timestamp": "2026-08-05T19:10:22+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes public safety conditions in Hawaii",
+      "quote": "Nothing says \u201cspirit of aloha\u201d like a knife fight on the beach."
     }
   ],
   "topicSummary": {
+    "gender-lgbtq": [
+      {
+        "quote": "Women, you HAVE TO stop trying to be agreeable to this insanity.",
+        "sourceUrl": "https://www.youtube.com/shorts/S_sFdO6xD8w",
+        "platform": "youtube",
+        "timestamp": "2026-08-10T20:30:22+00:00"
+      }
+    ],
     "media-personalities": [
       {
         "quote": "Tucker Carlson's 10-Point Plan is just a list of adjectives.",
@@ -126,12 +162,20 @@
         "timestamp": "2026-08-05T20:00:25+00:00"
       }
     ],
-    "gender-lgbtq": [
+    "epstein-scandal": [
       {
-        "quote": "Women, you HAVE TO stop trying to be agreeable to this insanity.",
-        "sourceUrl": "https://www.youtube.com/shorts/S_sFdO6xD8w",
+        "quote": "The clientele is exactly what you'd expect.",
+        "sourceUrl": "https://www.youtube.com/shorts/uAVP5wtHzFM",
         "platform": "youtube",
-        "timestamp": "2026-08-10T20:30:22+00:00"
+        "timestamp": "2026-08-10T18:08:38+00:00"
+      }
+    ],
+    "state-local-politics": [
+      {
+        "quote": "Nothing says \u201cspirit of aloha\u201d like a knife fight on the beach.",
+        "sourceUrl": "https://www.youtube.com/shorts/8OZ-pfqpIFQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-05T19:10:22+00:00"
       }
     ]
   }

@@ -1,9 +1,37 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-11T07:54:33.360939",
+  "collectedAt": "2026-08-11T09:35:33.905967",
   "date": "2026-08-11",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "Can AI even be stopped now?",
+      "sourceUrl": "https://x.com/rustyrockets/status/2086938730636435743",
+      "timestamp": "2026-08-10T22:12:21+00:00",
+      "type": "tweet",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Expresses concern about AI control and trajectory",
+      "quote": "Can AI even be stopped now?"
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "No wonder he pled the Fifth\u2026",
+      "sourceUrl": "https://x.com/rustyrockets/status/2086927401376760137",
+      "timestamp": "2026-08-10T21:27:20+00:00",
+      "type": "tweet",
+      "topic": "other",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "",
+      "quote": "No wonder he pled the Fifth\u2026"
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -171,37 +199,37 @@
       "stance": "lean",
       "summary": "Questioning conventional approaches to conflict resolution",
       "quote": "Is there only one way to end war?"
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "x",
-      "text": "Can AI even be stopped now?",
-      "sourceUrl": "https://x.com/rustyrockets/status/2086938730636435743",
-      "timestamp": "2026-08-10T22:12:21+00:00",
-      "type": "tweet",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Expresses concern about AI control and trajectory",
-      "quote": "Can AI even be stopped now?"
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "x",
-      "text": "No wonder he pled the Fifth\u2026",
-      "sourceUrl": "https://x.com/rustyrockets/status/2086927401376760137",
-      "timestamp": "2026-08-10T21:27:20+00:00",
-      "type": "tweet",
-      "topic": "other",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "",
-      "quote": "No wonder he pled the Fifth\u2026"
     }
   ],
   "topicSummary": {
+    "ai-technology": [
+      {
+        "quote": "Can AI even be stopped now?",
+        "sourceUrl": "https://x.com/rustyrockets/status/2086938730636435743",
+        "platform": "x",
+        "timestamp": "2026-08-10T22:12:21+00:00"
+      }
+    ],
+    "other": [
+      {
+        "quote": "No wonder he pled the Fifth\u2026",
+        "sourceUrl": "https://x.com/rustyrockets/status/2086927401376760137",
+        "platform": "x",
+        "timestamp": "2026-08-10T21:27:20+00:00"
+      },
+      {
+        "quote": "Is there only one way to end war?",
+        "sourceUrl": "https://x.com/rustyrockets/status/2085426100927345102",
+        "platform": "x",
+        "timestamp": "2026-08-06T18:01:42+00:00"
+      },
+      {
+        "quote": "Is there only one way to end war?",
+        "sourceUrl": "https://www.youtube.com/shorts/5_Wdsb0_YXs",
+        "platform": "youtube",
+        "timestamp": "2026-08-06T18:01:27+00:00"
+      }
+    ],
     "covid-pandemic": [
       {
         "quote": "Did the pandemic expose their control playbook?",
@@ -264,34 +292,6 @@
         "sourceUrl": "https://x.com/rustyrockets/status/2085854667888529825",
         "platform": "x",
         "timestamp": "2026-08-07T22:24:40+00:00"
-      }
-    ],
-    "other": [
-      {
-        "quote": "Is there only one way to end war?",
-        "sourceUrl": "https://x.com/rustyrockets/status/2085426100927345102",
-        "platform": "x",
-        "timestamp": "2026-08-06T18:01:42+00:00"
-      },
-      {
-        "quote": "Is there only one way to end war?",
-        "sourceUrl": "https://www.youtube.com/shorts/5_Wdsb0_YXs",
-        "platform": "youtube",
-        "timestamp": "2026-08-06T18:01:27+00:00"
-      },
-      {
-        "quote": "No wonder he pled the Fifth\u2026",
-        "sourceUrl": "https://x.com/rustyrockets/status/2086927401376760137",
-        "platform": "x",
-        "timestamp": "2026-08-10T21:27:20+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "Can AI even be stopped now?",
-        "sourceUrl": "https://x.com/rustyrockets/status/2086938730636435743",
-        "platform": "x",
-        "timestamp": "2026-08-10T22:12:21+00:00"
       }
     ]
   }

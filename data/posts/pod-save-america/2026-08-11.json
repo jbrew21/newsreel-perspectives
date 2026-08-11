@@ -1,9 +1,23 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "collectedAt": "2026-08-11T07:54:33.363609",
+  "collectedAt": "2026-08-11T09:35:33.910717",
   "date": "2026-08-11",
   "posts": [
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "x",
+      "text": "Trump's executive order on vaccines will lead to more sick kids.",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2086999357442740471",
+      "timestamp": "2026-08-11T02:13:16+00:00",
+      "type": "tweet",
+      "topic": "covid-pandemic",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Opposes Trump vaccine executive order as harmful to children",
+      "quote": "Trump's executive order on vaccines will lead to more sick kids."
+    },
     {
       "voiceId": "pod-save-america",
       "voiceName": "Pod Save America",
@@ -246,18 +260,30 @@
       "voiceId": "pod-save-america",
       "voiceName": "Pod Save America",
       "platform": "x",
-      "text": "Trump's executive order on vaccines will lead to more sick kids.",
-      "sourceUrl": "https://x.com/PodSaveAmerica/status/2086999357442740471",
-      "timestamp": "2026-08-11T02:13:16+00:00",
-      "type": "tweet",
-      "topic": "covid-pandemic",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Opposes Trump vaccine executive order as harmful to children",
-      "quote": "Trump's executive order on vaccines will lead to more sick kids."
+      "text": "Abdul El-Sayed's grandmother stole the show.",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2086980148167876768",
+      "timestamp": "2026-08-11T00:56:56+00:00",
+      "type": "tweet"
+    },
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "x",
+      "text": "Maybe he\u2019s born with it, maybe it\u2019s hair extensions.",
+      "sourceUrl": "https://x.com/PodSaveAmerica/status/2085839572772978999",
+      "timestamp": "2026-08-07T21:24:41+00:00",
+      "type": "tweet"
     }
   ],
   "topicSummary": {
+    "covid-pandemic": [
+      {
+        "quote": "Trump's executive order on vaccines will lead to more sick kids.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2086999357442740471",
+        "platform": "x",
+        "timestamp": "2026-08-11T02:13:16+00:00"
+      }
+    ],
     "state-local-politics": [
       {
         "quote": "Chris Hayes and Alex Wagner discuss the roles of Hasan Piker and the establishment after Abdul El-Sayed's primary win.",
@@ -374,12 +400,18 @@
         "timestamp": "2026-08-04T13:31:41+00:00"
       }
     ],
-    "covid-pandemic": [
+    "uncategorized": [
       {
-        "quote": "Trump's executive order on vaccines will lead to more sick kids.",
-        "sourceUrl": "https://x.com/PodSaveAmerica/status/2086999357442740471",
+        "quote": "Abdul El-Sayed's grandmother stole the show.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2086980148167876768",
         "platform": "x",
-        "timestamp": "2026-08-11T02:13:16+00:00"
+        "timestamp": "2026-08-11T00:56:56+00:00"
+      },
+      {
+        "quote": "Maybe he\u2019s born with it, maybe it\u2019s hair extensions.",
+        "sourceUrl": "https://x.com/PodSaveAmerica/status/2085839572772978999",
+        "platform": "x",
+        "timestamp": "2026-08-07T21:24:41+00:00"
       }
     ]
   }
