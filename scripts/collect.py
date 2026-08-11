@@ -150,7 +150,7 @@ def _parse_rssapp_json(voice, data):
                 from email.utils import parsedate_to_datetime
                 dt = parsedate_to_datetime(date_str)
                 timestamp = dt.isoformat()
-            except:
+            except Exception:
                 timestamp = date_str
 
         posts.append({
@@ -211,7 +211,7 @@ def _parse_nitter_rss(voice, rss, nitter_host):
                 from email.utils import parsedate_to_datetime
                 dt = parsedate_to_datetime(pub_match.group(1))
                 timestamp = dt.isoformat()
-            except:
+            except Exception:
                 timestamp = pub_match.group(1)
 
         posts.append({
@@ -386,7 +386,7 @@ def enrich_transcripts(posts):
     if TRANSCRIPT_CACHE.exists():
         try:
             cache = json.loads(TRANSCRIPT_CACHE.read_text())
-        except:
+        except Exception:
             cache = {}
 
     ytt_api = YouTubeTranscriptApi()
@@ -432,7 +432,7 @@ def enrich_transcripts(posts):
         except IpBlocked:
             print("    ⚠ YouTube IP rate limited — falling back to yt-dlp")
             ip_blocked = True
-        except:
+        except Exception:
             cache[video_id] = ''
 
     # Fallback: use yt-dlp for a small batch of uncached videos when IP blocked
@@ -578,7 +578,7 @@ def fetch_substack_posts(voice):
                     from email.utils import parsedate_to_datetime
                     dt = parsedate_to_datetime(pub_match.group(1))
                     timestamp = dt.isoformat()
-                except:
+                except Exception:
                     timestamp = pub_match.group(1)
 
             posts.append({
@@ -800,7 +800,7 @@ def fetch_podcast_posts(voice):
                     from email.utils import parsedate_to_datetime
                     dt = parsedate_to_datetime(pub_match.group(1))
                     timestamp = dt.isoformat()
-                except:
+                except Exception:
                     timestamp = pub_match.group(1)
 
             posts.append({
@@ -1505,7 +1505,7 @@ def main():
     if TRANSCRIPT_CACHE.exists():
         try:
             yt_cache = json.loads(TRANSCRIPT_CACHE.read_text())
-        except:
+        except Exception:
             pass
 
     topic_index = {}
