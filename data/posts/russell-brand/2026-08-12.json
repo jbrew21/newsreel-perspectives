@@ -1,9 +1,23 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-12T08:11:13.119435",
+  "collectedAt": "2026-08-12T09:53:40.896578",
   "date": "2026-08-12",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "Update: UK man cleared of all charges...",
+      "sourceUrl": "https://x.com/rustyrockets/status/2087267932686442829",
+      "timestamp": "2026-08-11T20:00:29+00:00",
+      "type": "tweet",
+      "topic": "criminal-justice",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights exoneration case, questions justice system failures",
+      "quote": "Update: UK man cleared of all charges..."
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -213,23 +227,17 @@
       "stance": "strong",
       "summary": "Criticizes vaccine injury tracking resistance as suspicious",
       "quote": "Why does tracking vaccine injuries scare them?"
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "x",
-      "text": "Update: UK man cleared of all charges...",
-      "sourceUrl": "https://x.com/rustyrockets/status/2087267932686442829",
-      "timestamp": "2026-08-11T20:00:29+00:00",
-      "type": "tweet",
-      "topic": "criminal-justice",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights exoneration case, questions justice system failures",
-      "quote": "Update: UK man cleared of all charges..."
     }
   ],
   "topicSummary": {
+    "criminal-justice": [
+      {
+        "quote": "Update: UK man cleared of all charges...",
+        "sourceUrl": "https://x.com/rustyrockets/status/2087267932686442829",
+        "platform": "x",
+        "timestamp": "2026-08-11T20:00:29+00:00"
+      }
+    ],
     "protests-activism": [
       {
         "quote": "Was this the largest mass control event ever?",
@@ -332,14 +340,6 @@
         "sourceUrl": "https://x.com/rustyrockets/status/2086927401376760137",
         "platform": "x",
         "timestamp": "2026-08-10T21:27:20+00:00"
-      }
-    ],
-    "criminal-justice": [
-      {
-        "quote": "Update: UK man cleared of all charges...",
-        "sourceUrl": "https://x.com/rustyrockets/status/2087267932686442829",
-        "platform": "x",
-        "timestamp": "2026-08-11T20:00:29+00:00"
       }
     ]
   }
