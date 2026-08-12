@@ -25,11 +25,16 @@ so those voices silently collected zero YouTube posts.
 | jidion | UCvj3hNvwrEgTRkeut7_cBAQ | @JiDion |
 | drew-gooden | UCjtkaY_1JrDw6uUtwvcPsTg | @DrewGooden |
 
-## STILL OPEN (7) — need a manual decision (no clean canonical channel)
+## RESOLVED by dropping the dead youtube feed
+
+| id | resolution |
+|----|----|
+| dan-bongino | 2026-08-12: youtube channel `UCVStvibG0gkwMU_WM42TSjA` confirmed 404 with no clean replacement. Dropped the youtube feed/platform/handle; keeps live podcast (megaphone, 200). Note: his `x` rss.app feed is also 404 and may need regenerating. |
+
+## STILL OPEN (6) — need a manual decision (no clean canonical channel)
 
 | id | note |
 |----|----|
-| dan-bongino | Left podcasting for FBI Deputy Director (2025); channel likely dormant/removed. |
 | pod-save-america | Content lives on the Crooked Media channel; needs a decision on which feed to track. |
 | charlamagne-tha-god | Content lives on The Breakfast Club / network channels; no clean solo channel. |
 | jason-whitlock | "Fearless" show is on Blaze Media; @FearlessTV resolved to an unrelated 2015 channel — needs the real Blaze channel_id. |
