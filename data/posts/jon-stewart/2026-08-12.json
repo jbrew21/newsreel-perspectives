@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-08-12T18:31:03.958988",
+  "collectedAt": "2026-08-12T20:29:54.305895",
   "date": "2026-08-12",
   "posts": [
     {
@@ -31,6 +31,34 @@
       "stance": "lean",
       "summary": "Implies continuity in foreign policy approach",
       "quote": "New podcast\u2026same foreign policy\u2026"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Trump's Cancel Culture | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/_oYjeHdMMAw",
+      "timestamp": "2026-08-12T13:56:50+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Trump's cancel culture practices",
+      "quote": "Trump's Cancel Culture | The Weekly Show with Jon Stewart"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Trump Defectors' Mea Culpa | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/VwBx4hns7K4",
+      "timestamp": "2026-08-12T11:56:56+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Examines Trump administration officials' reckonings",
+      "quote": "Trump Defectors' Mea Culpa | The Weekly Show with Jon Stewart"
     },
     {
       "voiceId": "jon-stewart",
@@ -120,43 +148,15 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "Caricature Politics | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/Lm4aR_JK7_I",
-      "timestamp": "2026-08-05T11:59:07+00:00",
+      "text": "Making &amp; Breaking Points: Populism, New Media &amp; More | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/watch?v=XmYD4udHP6k",
+      "timestamp": "2026-08-12T19:45:17+00:00",
       "type": "video_title",
-      "topic": "other",
+      "topic": "media-press",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques oversimplified political caricatures",
-      "quote": "Caricature Politics | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Trump's Cancel Culture | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/_oYjeHdMMAw",
-      "timestamp": "2026-08-12T13:56:50+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Trump's cancel culture practices",
-      "quote": "Trump's Cancel Culture | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Trump Defectors' Mea Culpa | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/VwBx4hns7K4",
-      "timestamp": "2026-08-12T11:56:56+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Examines Trump administration officials' reckonings",
-      "quote": "Trump Defectors' Mea Culpa | The Weekly Show with Jon Stewart"
+      "summary": "Examines populism and new media's role in contemporary politics",
+      "quote": "Making &amp; Breaking Points: Populism, New Media &amp; More | The Weekly Show with Jon Stewart"
     }
   ],
   "topicSummary": {
@@ -178,18 +178,6 @@
     ],
     "trump-administration": [
       {
-        "quote": "Trump's Great Escape | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/hcY17q9CkZk",
-        "platform": "youtube",
-        "timestamp": "2026-08-11T20:25:33+00:00"
-      },
-      {
-        "quote": "Trump's Pinky Promise | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/Iu9UmzakrTo",
-        "platform": "youtube",
-        "timestamp": "2026-08-06T13:56:07+00:00"
-      },
-      {
         "quote": "Trump's Cancel Culture | The Weekly Show with Jon Stewart",
         "sourceUrl": "https://www.youtube.com/shorts/_oYjeHdMMAw",
         "platform": "youtube",
@@ -200,6 +188,18 @@
         "sourceUrl": "https://www.youtube.com/shorts/VwBx4hns7K4",
         "platform": "youtube",
         "timestamp": "2026-08-12T11:56:56+00:00"
+      },
+      {
+        "quote": "Trump's Great Escape | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/hcY17q9CkZk",
+        "platform": "youtube",
+        "timestamp": "2026-08-11T20:25:33+00:00"
+      },
+      {
+        "quote": "Trump's Pinky Promise | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/Iu9UmzakrTo",
+        "platform": "youtube",
+        "timestamp": "2026-08-06T13:56:07+00:00"
       }
     ],
     "israel-palestine": [
@@ -230,12 +230,12 @@
         "timestamp": "2026-08-06T15:56:01+00:00"
       }
     ],
-    "other": [
+    "media-press": [
       {
-        "quote": "Caricature Politics | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/Lm4aR_JK7_I",
+        "quote": "Making &amp; Breaking Points: Populism, New Media &amp; More | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/watch?v=XmYD4udHP6k",
         "platform": "youtube",
-        "timestamp": "2026-08-05T11:59:07+00:00"
+        "timestamp": "2026-08-12T19:45:17+00:00"
       }
     ]
   }
