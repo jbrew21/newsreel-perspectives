@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-08-13T18:32:24.626411",
+  "collectedAt": "2026-08-13T20:22:58.805342",
   "date": "2026-08-13",
   "posts": [
     {
@@ -31,6 +31,34 @@
       "stance": "lean",
       "summary": "Implies continuity in foreign policy approach",
       "quote": "New podcast\u2026same foreign policy\u2026"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Dems Dissatisfaction | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/HtKVAnxp5Cw",
+      "timestamp": "2026-08-13T15:54:52+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Critiques Democratic voter dissatisfaction and messaging",
+      "quote": "Dems Dissatisfaction | The Weekly Show with Jon Stewart"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/guPx_6ixYes",
+      "timestamp": "2026-08-13T13:56:20+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Satirizes and questions MAGA movement authenticity",
+      "quote": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart"
     },
     {
       "voiceId": "jon-stewart",
@@ -92,6 +120,20 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
+      "text": "Finding Solutions | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/COR0Dz47phw",
+      "timestamp": "2026-08-07T15:58:54+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Seeks pragmatic policy solutions to political problems",
+      "quote": "Finding Solutions | The Weekly Show with Jon Stewart"
+    },
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
       "text": "The Pro-Hamas Caricature | The Weekly Show with Jon Stewart",
       "sourceUrl": "https://www.youtube.com/shorts/rjS0nLzfI4o",
       "timestamp": "2026-08-07T13:58:10+00:00",
@@ -133,44 +175,16 @@
     {
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Dems Dissatisfaction | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/HtKVAnxp5Cw",
-      "timestamp": "2026-08-13T15:54:52+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Critiques Democratic voter dissatisfaction and messaging",
-      "quote": "Dems Dissatisfaction | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/guPx_6ixYes",
-      "timestamp": "2026-08-13T13:56:20+00:00",
-      "type": "video_title",
-      "topic": "trump-policy",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Satirizes and questions MAGA movement authenticity",
-      "quote": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Finding Solutions | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/COR0Dz47phw",
-      "timestamp": "2026-08-07T15:58:54+00:00",
-      "type": "video_title",
-      "topic": "congress-legislation",
+      "platform": "x",
+      "text": "Amy Goodman is a movie star now!!! New podcast!",
+      "sourceUrl": "https://x.com/jonstewart/status/2052173179691598320",
+      "timestamp": "2026-05-06T23:46:28+00:00",
+      "type": "tweet",
+      "topic": "media-press",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Seeks pragmatic policy solutions to political problems",
-      "quote": "Finding Solutions | The Weekly Show with Jon Stewart"
+      "summary": "Highlights Amy Goodman as credible journalist entering film",
+      "quote": "Amy Goodman is a movie star now!!! New podcast!"
     }
   ],
   "topicSummary": {
@@ -190,12 +204,34 @@
         "timestamp": "2026-05-13T23:08:12+00:00"
       }
     ],
+    "elections": [
+      {
+        "quote": "Dems Dissatisfaction | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/HtKVAnxp5Cw",
+        "platform": "youtube",
+        "timestamp": "2026-08-13T15:54:52+00:00"
+      }
+    ],
+    "trump-policy": [
+      {
+        "quote": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/guPx_6ixYes",
+        "platform": "youtube",
+        "timestamp": "2026-08-13T13:56:20+00:00"
+      }
+    ],
     "media-press": [
       {
         "quote": "Making &amp; Breaking Points: Populism, New Media &amp; More | The Weekly Show with Jon Stewart",
         "sourceUrl": "https://www.youtube.com/watch?v=XmYD4udHP6k",
         "platform": "youtube",
         "timestamp": "2026-08-12T19:45:17+00:00"
+      },
+      {
+        "quote": "Amy Goodman is a movie star now!!! New podcast!",
+        "sourceUrl": "https://x.com/jonstewart/status/2052173179691598320",
+        "platform": "x",
+        "timestamp": "2026-05-06T23:46:28+00:00"
       }
     ],
     "trump-administration": [
@@ -224,6 +260,14 @@
         "timestamp": "2026-08-06T13:56:07+00:00"
       }
     ],
+    "congress-legislation": [
+      {
+        "quote": "Finding Solutions | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/COR0Dz47phw",
+        "platform": "youtube",
+        "timestamp": "2026-08-07T15:58:54+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "The Pro-Hamas Caricature | The Weekly Show with Jon Stewart",
@@ -238,30 +282,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/5-xinSo3R3M",
         "platform": "youtube",
         "timestamp": "2026-08-06T15:56:01+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "Dems Dissatisfaction | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/HtKVAnxp5Cw",
-        "platform": "youtube",
-        "timestamp": "2026-08-13T15:54:52+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/guPx_6ixYes",
-        "platform": "youtube",
-        "timestamp": "2026-08-13T13:56:20+00:00"
-      }
-    ],
-    "congress-legislation": [
-      {
-        "quote": "Finding Solutions | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/COR0Dz47phw",
-        "platform": "youtube",
-        "timestamp": "2026-08-07T15:58:54+00:00"
       }
     ]
   }
