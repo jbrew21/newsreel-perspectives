@@ -1,9 +1,37 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-13T08:18:59.257099",
+  "collectedAt": "2026-08-13T09:57:47.929868",
   "date": "2026-08-13",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "Is this just corporate greed in disguise?",
+      "sourceUrl": "https://x.com/rustyrockets/status/2087637748672835791",
+      "timestamp": "2026-08-12T20:30:00+00:00",
+      "type": "tweet",
+      "topic": "economy-trade",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes corporate greed as hidden motive",
+      "quote": "Is this just corporate greed in disguise?"
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "Did the pandemic get rushed out early?",
+      "sourceUrl": "https://x.com/rustyrockets/status/2087615018061984073",
+      "timestamp": "2026-08-12T18:59:40+00:00",
+      "type": "tweet",
+      "topic": "covid-pandemic",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions whether pandemic response was prematurely ended",
+      "quote": "Did the pandemic get rushed out early?"
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -31,6 +59,20 @@
       "stance": "lean",
       "summary": "Amplifies celebrity criticism of Fauci over pandemic response",
       "quote": "Woody Harrelson goes off on Fauci.."
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "x",
+      "text": "AI marking its territory?",
+      "sourceUrl": "https://x.com/rustyrockets/status/2087314587892805882",
+      "timestamp": "2026-08-11T23:05:52+00:00",
+      "type": "tweet",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies concern about AI expansion and influence",
+      "quote": "AI marking its territory?"
     },
     {
       "voiceId": "russell-brand",
@@ -115,6 +157,20 @@
       "stance": "strong",
       "summary": "Suggests government planning future pandemic scenarios",
       "quote": "Is a new pandemic already being planned?"
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
+      "text": "Where Does Your Self Checkout &quot;Tip&quot; Actually Go?",
+      "sourceUrl": "https://www.youtube.com/shorts/ay0buIezdAk",
+      "timestamp": "2026-08-12T20:30:32+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Investigates tipping practices and corporate fee allocation",
+      "quote": "Where Does Your Self Checkout &quot;Tip&quot; Actually Go?"
     },
     {
       "voiceId": "russell-brand",
@@ -218,61 +274,39 @@
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
       "platform": "x",
-      "text": "Is this just corporate greed in disguise?",
-      "sourceUrl": "https://x.com/rustyrockets/status/2087637748672835791",
-      "timestamp": "2026-08-12T20:30:00+00:00",
+      "text": "What is culture actually designed to do?",
+      "sourceUrl": "https://x.com/rustyrockets/status/2086950720868159688",
+      "timestamp": "2026-08-10T23:00:00+00:00",
       "type": "tweet",
-      "topic": "economy-trade",
+      "topic": "culture-war",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes corporate greed as hidden motive",
-      "quote": "Is this just corporate greed in disguise?"
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "x",
-      "text": "Did the pandemic get rushed out early?",
-      "sourceUrl": "https://x.com/rustyrockets/status/2087615018061984073",
-      "timestamp": "2026-08-12T18:59:40+00:00",
-      "type": "tweet",
-      "topic": "covid-pandemic",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions whether pandemic response was prematurely ended",
-      "quote": "Did the pandemic get rushed out early?"
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "x",
-      "text": "AI marking its territory?",
-      "sourceUrl": "https://x.com/rustyrockets/status/2087314587892805882",
-      "timestamp": "2026-08-11T23:05:52+00:00",
-      "type": "tweet",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies concern about AI expansion and influence",
-      "quote": "AI marking its territory?"
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Where Does Your Self Checkout &quot;Tip&quot; Actually Go?",
-      "sourceUrl": "https://www.youtube.com/shorts/ay0buIezdAk",
-      "timestamp": "2026-08-12T20:30:32+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Investigates tipping practices and corporate fee allocation",
-      "quote": "Where Does Your Self Checkout &quot;Tip&quot; Actually Go?"
+      "summary": "Questions purpose and design of contemporary culture",
+      "quote": "What is culture actually designed to do?"
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "Is this just corporate greed in disguise?",
+        "sourceUrl": "https://x.com/rustyrockets/status/2087637748672835791",
+        "platform": "x",
+        "timestamp": "2026-08-12T20:30:00+00:00"
+      },
+      {
+        "quote": "Where Does Your Self Checkout &quot;Tip&quot; Actually Go?",
+        "sourceUrl": "https://www.youtube.com/shorts/ay0buIezdAk",
+        "platform": "youtube",
+        "timestamp": "2026-08-12T20:30:32+00:00"
+      }
+    ],
     "covid-pandemic": [
+      {
+        "quote": "Did the pandemic get rushed out early?",
+        "sourceUrl": "https://x.com/rustyrockets/status/2087615018061984073",
+        "platform": "x",
+        "timestamp": "2026-08-12T18:59:40+00:00"
+      },
       {
         "quote": "The Fauci Files are Worse Than We Thought\u2026\n\npiped.video/live/A2LIIxKi58s\u2026",
         "sourceUrl": "https://x.com/rustyrockets/status/2087612575496155495",
@@ -308,12 +342,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/i00R2IztpBY",
         "platform": "youtube",
         "timestamp": "2026-08-12T18:45:20+00:00"
-      },
+      }
+    ],
+    "ai-technology": [
       {
-        "quote": "Did the pandemic get rushed out early?",
-        "sourceUrl": "https://x.com/rustyrockets/status/2087615018061984073",
+        "quote": "AI marking its territory?",
+        "sourceUrl": "https://x.com/rustyrockets/status/2087314587892805882",
         "platform": "x",
-        "timestamp": "2026-08-12T18:59:40+00:00"
+        "timestamp": "2026-08-11T23:05:52+00:00"
       }
     ],
     "criminal-justice": [
@@ -380,26 +416,12 @@
         "timestamp": "2026-08-11T11:30:12+00:00"
       }
     ],
-    "economy-trade": [
+    "culture-war": [
       {
-        "quote": "Is this just corporate greed in disguise?",
-        "sourceUrl": "https://x.com/rustyrockets/status/2087637748672835791",
+        "quote": "What is culture actually designed to do?",
+        "sourceUrl": "https://x.com/rustyrockets/status/2086950720868159688",
         "platform": "x",
-        "timestamp": "2026-08-12T20:30:00+00:00"
-      },
-      {
-        "quote": "Where Does Your Self Checkout &quot;Tip&quot; Actually Go?",
-        "sourceUrl": "https://www.youtube.com/shorts/ay0buIezdAk",
-        "platform": "youtube",
-        "timestamp": "2026-08-12T20:30:32+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "AI marking its territory?",
-        "sourceUrl": "https://x.com/rustyrockets/status/2087314587892805882",
-        "platform": "x",
-        "timestamp": "2026-08-11T23:05:52+00:00"
+        "timestamp": "2026-08-10T23:00:00+00:00"
       }
     ]
   }
