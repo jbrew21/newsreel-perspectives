@@ -555,7 +555,8 @@ def lookup_story(headline, days=None, skip_clusters=False):
         time_window_used = f"{window}d" if window < 30 else "all"
 
         if voice_count >= MIN_VOICES or window == time_windows[-1]:
-            print(f"\n  Searching voice database (window: {time_window_used}, {len(available_dates)} days)...")
+            n_dates = len(available_dates)
+            print(f"\n  Searching voice database (window: {time_window_used}, {n_dates} day{'s' if n_dates != 1 else ''})...")
             print(f"  Story: \"{headline}\"")
             if len(time_windows) > 1 and window > 1:
                 print(f"  Auto-expanded to {window} days ({voice_count} voices found)")

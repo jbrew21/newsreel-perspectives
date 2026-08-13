@@ -30,8 +30,9 @@ so those voices silently collected zero YouTube posts.
 | id | resolution |
 |----|----|
 | dan-bongino | 2026-08-12: youtube channel `UCVStvibG0gkwMU_WM42TSjA` confirmed 404 with no clean replacement. Dropped the youtube feed/platform/handle; keeps live podcast (megaphone, 200). Note: his `x` rss.app feed is also 404 and may need regenerating. |
+| damon-imani | 2026-08-13: placeholder ID `UCDamonImani` (invalid, 0 posts) → repointed to his live channel `UCdUq1SGXWgdbHYVU4VQlHPA` ("Damon Imani Clips", @DamonImani, 234K subs, actively posts his satire). Verified feed 200. His main reach is X/TikTok/IG (1.6M); YouTube clips are his primary output there. |
 
-## STILL OPEN (6) — need a manual decision (no clean canonical channel)
+## STILL OPEN (5) — need a manual decision (no clean canonical channel)
 
 | id | note |
 |----|----|
@@ -40,8 +41,7 @@ so those voices silently collected zero YouTube posts.
 | jason-whitlock | "Fearless" show is on Blaze Media; @FearlessTV resolved to an unrelated 2015 channel — needs the real Blaze channel_id. |
 | rachel-maddow | MSNBC hosts her content; no standalone Maddow channel with a working feed. |
 | sean-hannity | Handle @SeanHannity did not resolve; needs the current Fox/Hannity channel_id. |
-| damon-imani | Stored ID was a placeholder ("UCDamonImani"); @DamonImani resolved only to a "Clips" channel, not his primary. |
 
-These 7 are edge cases: several people don't run a standalone YouTube channel
+These edge cases are people who don't run a standalone YouTube channel
 (their content lives on a network's channel), or left the platform. Decide per voice
 whether to point at a network channel, drop the youtube feed, or keep only their other platforms.
