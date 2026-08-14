@@ -303,7 +303,7 @@ def get_voice_topics(date, min_voices=4, max_topics=8):
     # Time-scope: only include posts from last 48 hours
     try:
         cutoff = datetime.strptime(date, '%Y-%m-%d') - timedelta(hours=48)
-    except:
+    except Exception:
         cutoff = datetime.now() - timedelta(hours=48)
 
     SKIP = {'uncategorized', 'other'}
@@ -324,7 +324,7 @@ def get_voice_topics(date, min_voices=4, max_topics=8):
                     post_time = datetime.fromisoformat(ts.replace('Z', '+00:00').replace('+00:00', ''))
                     if post_time.replace(tzinfo=None) < cutoff:
                         continue
-                except:
+                except Exception:
                     pass  # Keep posts with unparseable timestamps
             recent.append(e)
 
