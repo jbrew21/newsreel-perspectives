@@ -1,7 +1,7 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-08-14T08:10:49.521407",
+  "collectedAt": "2026-08-14T09:50:40.363038",
   "date": "2026-08-14",
   "posts": [
     {
@@ -17,6 +17,20 @@
       "stance": "strong",
       "summary": "Accuses Trump of child rape, calls for divine punishment",
       "quote": "trump raped children Epstein.He deserve curse."
+    },
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "Lemon LIVE at 5 | BREAKING: Nolan Wells' Family Demands Federal Investigation",
+      "sourceUrl": "https://www.youtube.com/watch?v=G6DsWwJo3T8",
+      "timestamp": "2026-08-13T22:23:12+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Demands federal investigation into death",
+      "quote": "Lemon LIVE at 5 | BREAKING: Nolan Wells' Family Demands Federal Investigation"
     },
     {
       "voiceId": "don-lemon",
@@ -78,6 +92,20 @@
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
       "platform": "tiktok",
+      "text": "The Trump Administration looks very different than it did on Jan. 20th, 2025.",
+      "sourceUrl": "https://www.tiktok.com/@donlemon/video/7673651165602549022",
+      "timestamp": "2026-08-13T22:46:00+00:00",
+      "type": "video_caption",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Notes significant staffing changes since inauguration",
+      "quote": "The Trump Administration looks very different than it did on Jan. 20th, 2025."
+    },
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "tiktok",
       "text": "The Congressional Black Caucus has formally asked the federal government to begin investigating the Nolan Wells case.",
       "sourceUrl": "https://www.tiktok.com/@donlemon/video/7673587385703222558",
       "timestamp": "2026-08-13T18:38:22+00:00",
@@ -134,29 +162,15 @@
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
       "platform": "youtube",
-      "text": "Lemon LIVE at 5 | BREAKING: Nolan Wells' Family Demands Federal Investigation",
-      "sourceUrl": "https://www.youtube.com/watch?v=G6DsWwJo3T8",
-      "timestamp": "2026-08-13T22:23:12+00:00",
+      "text": "New Orleans 911 is using AI to answer calls... here's why",
+      "sourceUrl": "https://www.youtube.com/shorts/N8xLQ0Oacb0",
+      "timestamp": "2026-08-13T23:05:41+00:00",
       "type": "video_title",
-      "topic": "criminal-justice",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Demands federal investigation into death",
-      "quote": "Lemon LIVE at 5 | BREAKING: Nolan Wells' Family Demands Federal Investigation"
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "tiktok",
-      "text": "The Trump Administration looks very different than it did on Jan. 20th, 2025.",
-      "sourceUrl": "https://www.tiktok.com/@donlemon/video/7673651165602549022",
-      "timestamp": "2026-08-13T22:46:00+00:00",
-      "type": "video_caption",
-      "topic": "trump-administration",
-      "relevance": "high",
+      "topic": "ai-technology",
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Notes significant staffing changes since inauguration",
-      "quote": "The Trump Administration looks very different than it did on Jan. 20th, 2025."
+      "summary": "Questions AI deployment in emergency services",
+      "quote": "New Orleans 911 is using AI to answer calls... here's why"
     }
   ],
   "topicSummary": {
@@ -169,6 +183,12 @@
       }
     ],
     "criminal-justice": [
+      {
+        "quote": "Lemon LIVE at 5 | BREAKING: Nolan Wells' Family Demands Federal Investigation",
+        "sourceUrl": "https://www.youtube.com/watch?v=G6DsWwJo3T8",
+        "platform": "youtube",
+        "timestamp": "2026-08-13T22:23:12+00:00"
+      },
       {
         "quote": "The Congressional Black Caucus has asked the FBI to begin investigating the Nolan Wells case.",
         "sourceUrl": "https://www.youtube.com/shorts/O_OJydE7MfQ",
@@ -198,12 +218,6 @@
         "sourceUrl": "https://www.tiktok.com/@donlemon/video/7673564566311259422",
         "platform": "tiktok",
         "timestamp": "2026-08-13T17:09:50+00:00"
-      },
-      {
-        "quote": "Lemon LIVE at 5 | BREAKING: Nolan Wells' Family Demands Federal Investigation",
-        "sourceUrl": "https://www.youtube.com/watch?v=G6DsWwJo3T8",
-        "platform": "youtube",
-        "timestamp": "2026-08-13T22:23:12+00:00"
       }
     ],
     "military-defense": [
@@ -234,6 +248,14 @@
         "sourceUrl": "https://www.tiktok.com/@donlemon/video/7673651165602549022",
         "platform": "tiktok",
         "timestamp": "2026-08-13T22:46:00+00:00"
+      }
+    ],
+    "ai-technology": [
+      {
+        "quote": "New Orleans 911 is using AI to answer calls... here's why",
+        "sourceUrl": "https://www.youtube.com/shorts/N8xLQ0Oacb0",
+        "platform": "youtube",
+        "timestamp": "2026-08-13T23:05:41+00:00"
       }
     ]
   }
