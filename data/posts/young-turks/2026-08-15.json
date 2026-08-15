@@ -1,7 +1,7 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "collectedAt": "2026-08-15T17:56:00.403703",
+  "collectedAt": "2026-08-15T19:50:29.622934",
   "date": "2026-08-15",
   "posts": [
     {
@@ -36,6 +36,20 @@
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
       "platform": "youtube",
+      "text": "Netanyahu\u2019s Excuse For Massive Iran Crowds Is INSANE",
+      "sourceUrl": "https://www.youtube.com/watch?v=Q2GRR7ni1is",
+      "timestamp": "2026-08-15T14:00:37+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Netanyahu's explanation for Iranian public gatherings",
+      "quote": "Netanyahu\u2019s Excuse For Massive Iran Crowds Is INSANE"
+    },
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
       "text": "Sailors DEBUNK Hegseth\u2019s Latest LIES",
       "sourceUrl": "https://www.youtube.com/watch?v=qYTXqUBqbu0",
       "timestamp": "2026-08-15T04:15:11+00:00",
@@ -45,6 +59,20 @@
       "stance": "strong",
       "summary": "Criticizes Hegseth's military credibility as false",
       "quote": "Sailors DEBUNK Hegseth\u2019s Latest LIES"
+    },
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "This Feud Just Got UGLY",
+      "sourceUrl": "https://www.youtube.com/watch?v=u5VO13ToiSE",
+      "timestamp": "2026-08-15T03:30:32+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Covers escalating conflict between media figures",
+      "quote": "This Feud Just Got UGLY"
     },
     {
       "voiceId": "young-turks",
@@ -134,43 +162,15 @@
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
       "platform": "youtube",
-      "text": "Scarborough: Iran War Isn't A Big Deal",
-      "sourceUrl": "https://www.youtube.com/watch?v=2fBKPxPhHkg",
-      "timestamp": "2026-08-14T19:44:01+00:00",
+      "text": "Free Press Takes WILD Stance On Flock Cameras",
+      "sourceUrl": "https://www.youtube.com/watch?v=4CLGlpzIgMg",
+      "timestamp": "2026-08-15T18:00:24+00:00",
       "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Criticizes dismissive attitude toward potential Iran war",
-      "quote": "Scarborough: Iran War Isn't A Big Deal"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "Netanyahu\u2019s Excuse For Massive Iran Crowds Is INSANE",
-      "sourceUrl": "https://www.youtube.com/watch?v=Q2GRR7ni1is",
-      "timestamp": "2026-08-15T14:00:37+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Netanyahu's explanation for Iranian public gatherings",
-      "quote": "Netanyahu\u2019s Excuse For Massive Iran Crowds Is INSANE"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "This Feud Just Got UGLY",
-      "sourceUrl": "https://www.youtube.com/watch?v=u5VO13ToiSE",
-      "timestamp": "2026-08-15T03:30:32+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "media-press",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Covers escalating conflict between media figures",
-      "quote": "This Feud Just Got UGLY"
+      "summary": "Frames Free Press position on surveillance cameras as extreme or noteworthy",
+      "quote": "Free Press Takes WILD Stance On Flock Cameras"
     }
   ],
   "topicSummary": {
@@ -202,12 +202,28 @@
         "timestamp": "2026-07-31T20:27:10+00:00"
       }
     ],
+    "iran-conflict": [
+      {
+        "quote": "Netanyahu\u2019s Excuse For Massive Iran Crowds Is INSANE",
+        "sourceUrl": "https://www.youtube.com/watch?v=Q2GRR7ni1is",
+        "platform": "youtube",
+        "timestamp": "2026-08-15T14:00:37+00:00"
+      }
+    ],
     "military-defense": [
       {
         "quote": "Sailors DEBUNK Hegseth\u2019s Latest LIES",
         "sourceUrl": "https://www.youtube.com/watch?v=qYTXqUBqbu0",
         "platform": "youtube",
         "timestamp": "2026-08-15T04:15:11+00:00"
+      }
+    ],
+    "media-personalities": [
+      {
+        "quote": "This Feud Just Got UGLY",
+        "sourceUrl": "https://www.youtube.com/watch?v=u5VO13ToiSE",
+        "platform": "youtube",
+        "timestamp": "2026-08-15T03:30:32+00:00"
       }
     ],
     "trump-administration": [
@@ -238,26 +254,12 @@
         "timestamp": "2026-08-15T00:21:39+00:00"
       }
     ],
-    "iran-conflict": [
+    "media-press": [
       {
-        "quote": "Scarborough: Iran War Isn't A Big Deal",
-        "sourceUrl": "https://www.youtube.com/watch?v=2fBKPxPhHkg",
+        "quote": "Free Press Takes WILD Stance On Flock Cameras",
+        "sourceUrl": "https://www.youtube.com/watch?v=4CLGlpzIgMg",
         "platform": "youtube",
-        "timestamp": "2026-08-14T19:44:01+00:00"
-      },
-      {
-        "quote": "Netanyahu\u2019s Excuse For Massive Iran Crowds Is INSANE",
-        "sourceUrl": "https://www.youtube.com/watch?v=Q2GRR7ni1is",
-        "platform": "youtube",
-        "timestamp": "2026-08-15T14:00:37+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "This Feud Just Got UGLY",
-        "sourceUrl": "https://www.youtube.com/watch?v=u5VO13ToiSE",
-        "platform": "youtube",
-        "timestamp": "2026-08-15T03:30:32+00:00"
+        "timestamp": "2026-08-15T18:00:24+00:00"
       }
     ]
   }
