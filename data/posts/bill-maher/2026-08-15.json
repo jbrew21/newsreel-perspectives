@@ -1,9 +1,23 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-08-15T09:07:03.070057",
+  "collectedAt": "2026-08-15T17:56:00.409392",
   "date": "2026-08-15",
   "posts": [
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "x",
+      "text": "If you\u2019re going to migrate to a country that is proudly a melting pot, you have to want to melt.",
+      "sourceUrl": "https://x.com/billmaher/status/2088464604821328298",
+      "timestamp": "2026-08-15T03:15:38+00:00",
+      "type": "tweet",
+      "topic": "immigration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Immigrants should assimilate into American culture",
+      "quote": "If you\u2019re going to migrate to a country that is proudly a melting pot, you have to want to melt."
+    },
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
@@ -64,6 +78,20 @@
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
       "platform": "youtube",
+      "text": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
+      "timestamp": "2026-08-15T03:00:24+00:00",
+      "type": "video_title",
+      "topic": "immigration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Immigrants should assimilate into American culture",
+      "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
       "text": "Mike Rowe on NILFs | Real Time with Bill Maher (HBO)",
       "sourceUrl": "https://www.youtube.com/watch?v=xiOUAz-IOtM",
       "timestamp": "2026-08-08T03:00:20+00:00",
@@ -115,37 +143,23 @@
       "stance": "strong",
       "summary": "Criticizes communist ideology or left-wing politics by name",
       "quote": "New Rule: Commie By Your Name | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "x",
-      "text": "If you\u2019re going to migrate to a country that is proudly a melting pot, you have to want to melt.",
-      "sourceUrl": "https://x.com/billmaher/status/2088464604821328298",
-      "timestamp": "2026-08-15T03:15:38+00:00",
-      "type": "tweet",
-      "topic": "immigration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Immigrants should assimilate into American culture",
-      "quote": "If you\u2019re going to migrate to a country that is proudly a melting pot, you have to want to melt."
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
-      "timestamp": "2026-08-15T03:00:24+00:00",
-      "type": "video_title",
-      "topic": "immigration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Immigrants should assimilate into American culture",
-      "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
+    "immigration": [
+      {
+        "quote": "If you\u2019re going to migrate to a country that is proudly a melting pot, you have to want to melt.",
+        "sourceUrl": "https://x.com/billmaher/status/2088464604821328298",
+        "platform": "x",
+        "timestamp": "2026-08-15T03:15:38+00:00"
+      },
+      {
+        "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
+        "platform": "youtube",
+        "timestamp": "2026-08-15T03:00:24+00:00"
+      }
+    ],
     "economy-trade": [
       {
         "quote": "There are 7 million able-bodied men, mostly young, who are what they call NILF (Not in the Labor Force).",
@@ -206,20 +220,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=dRIjYHVh5kI",
         "platform": "youtube",
         "timestamp": "2026-08-01T03:00:06+00:00"
-      }
-    ],
-    "immigration": [
-      {
-        "quote": "If you\u2019re going to migrate to a country that is proudly a melting pot, you have to want to melt.",
-        "sourceUrl": "https://x.com/billmaher/status/2088464604821328298",
-        "platform": "x",
-        "timestamp": "2026-08-15T03:15:38+00:00"
-      },
-      {
-        "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
-        "platform": "youtube",
-        "timestamp": "2026-08-15T03:00:24+00:00"
       }
     ]
   }

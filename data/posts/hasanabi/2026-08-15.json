@@ -1,9 +1,37 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-08-15T09:07:03.066901",
+  "collectedAt": "2026-08-15T17:56:00.406457",
   "date": "2026-08-15",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "Luigi Mangione Pleads Guilty",
+      "sourceUrl": "https://www.youtube.com/watch?v=7bj3Ul6YI90",
+      "timestamp": "2026-08-15T01:16:57+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Covering high-profile criminal case with framing perspective",
+      "quote": "Luigi Mangione Pleads Guilty"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "US Navy sailors in Iran are starving now",
+      "sourceUrl": "https://www.youtube.com/shorts/tdN4s9jAurg",
+      "timestamp": "2026-08-14T21:30:04+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes U.S. military deployment conditions in Iran",
+      "quote": "US Navy sailors in Iran are starving now"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -64,46 +92,34 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
-      "text": "Luigi Mangione Pleads Guilty",
-      "sourceUrl": "https://www.youtube.com/watch?v=7bj3Ul6YI90",
-      "timestamp": "2026-08-15T01:16:57+00:00",
+      "text": "MY CONCERN ABOUT THE WISCONSIN RACE",
+      "sourceUrl": "https://www.youtube.com/watch?v=8cmd4weUTBA",
+      "timestamp": "2026-08-15T13:34:07+00:00",
       "type": "video_title",
-      "topic": "criminal-justice",
+      "topic": "elections",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Covering high-profile criminal case with framing perspective",
-      "quote": "Luigi Mangione Pleads Guilty"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "US Navy sailors in Iran are starving now",
-      "sourceUrl": "https://www.youtube.com/shorts/tdN4s9jAurg",
-      "timestamp": "2026-08-14T21:30:04+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes U.S. military deployment conditions in Iran",
-      "quote": "US Navy sailors in Iran are starving now"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "I THINK IT'S TIME TO SUE",
-      "sourceUrl": "https://www.youtube.com/watch?v=uckyXolW0Tg",
-      "timestamp": "2026-08-13T20:00:27+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Expressing intent to pursue legal action against someone",
-      "quote": "I THINK IT'S TIME TO SUE"
+      "summary": "",
+      "quote": "MY CONCERN ABOUT THE WISCONSIN RACE"
     }
   ],
   "topicSummary": {
+    "criminal-justice": [
+      {
+        "quote": "Luigi Mangione Pleads Guilty",
+        "sourceUrl": "https://www.youtube.com/watch?v=7bj3Ul6YI90",
+        "platform": "youtube",
+        "timestamp": "2026-08-15T01:16:57+00:00"
+      }
+    ],
+    "iran-conflict": [
+      {
+        "quote": "US Navy sailors in Iran are starving now",
+        "sourceUrl": "https://www.youtube.com/shorts/tdN4s9jAurg",
+        "platform": "youtube",
+        "timestamp": "2026-08-14T21:30:04+00:00"
+      }
+    ],
     "media-personalities": [
       {
         "quote": "WHAT IS NICK FUENTES TALKING ABOUT?",
@@ -122,12 +138,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=YtV7wE_ZOS4",
         "platform": "youtube",
         "timestamp": "2026-08-14T12:00:33+00:00"
-      },
-      {
-        "quote": "I THINK IT'S TIME TO SUE",
-        "sourceUrl": "https://www.youtube.com/watch?v=uckyXolW0Tg",
-        "platform": "youtube",
-        "timestamp": "2026-08-13T20:00:27+00:00"
       }
     ],
     "trump-administration": [
@@ -138,20 +148,12 @@
         "timestamp": "2026-08-13T23:15:08+00:00"
       }
     ],
-    "criminal-justice": [
+    "elections": [
       {
-        "quote": "Luigi Mangione Pleads Guilty",
-        "sourceUrl": "https://www.youtube.com/watch?v=7bj3Ul6YI90",
+        "quote": "MY CONCERN ABOUT THE WISCONSIN RACE",
+        "sourceUrl": "https://www.youtube.com/watch?v=8cmd4weUTBA",
         "platform": "youtube",
-        "timestamp": "2026-08-15T01:16:57+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "US Navy sailors in Iran are starving now",
-        "sourceUrl": "https://www.youtube.com/shorts/tdN4s9jAurg",
-        "platform": "youtube",
-        "timestamp": "2026-08-14T21:30:04+00:00"
+        "timestamp": "2026-08-15T13:34:07+00:00"
       }
     ]
   }

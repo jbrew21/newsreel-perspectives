@@ -1,37 +1,9 @@
 {
   "voiceId": "elon-musk",
   "voiceName": "Elon Musk",
-  "collectedAt": "2026-08-15T09:07:03.082547",
+  "collectedAt": "2026-08-15T17:56:00.420532",
   "date": "2026-08-15",
   "posts": [
-    {
-      "voiceId": "elon-musk",
-      "voiceName": "Elon Musk",
-      "platform": "x",
-      "text": "Any censorship required by governments is now clearly visible",
-      "sourceUrl": "https://x.com/elonmusk/status/2088445767673369044",
-      "timestamp": "2026-08-15T02:00:47+00:00",
-      "type": "tweet",
-      "topic": "free-speech-censorship",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Opposes government-mandated censorship, advocates transparency",
-      "quote": "Any censorship required by governments is now clearly visible"
-    },
-    {
-      "voiceId": "elon-musk",
-      "voiceName": "Elon Musk",
-      "platform": "x",
-      "text": "Orbital compute will be the only way to scale AI probably sometime in 2029 due to power availability&amp; permitting problems on land",
-      "sourceUrl": "https://x.com/elonmusk/status/2088306926442430578",
-      "timestamp": "2026-08-14T16:49:04+00:00",
-      "type": "tweet",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Predicts orbital compute necessary for AI scaling by 2029",
-      "quote": "Orbital compute will be the only way to scale AI probably sometime in 2029 due to power availability&amp; permitting problems on land"
-    },
     {
       "voiceId": "elon-musk",
       "voiceName": "Elon Musk",
@@ -45,6 +17,20 @@
       "stance": "lean",
       "summary": "Promotes Grok 4.6 as high-performing AI model",
       "quote": "Grok 4.6 runs The Gauntlet"
+    },
+    {
+      "voiceId": "elon-musk",
+      "voiceName": "Elon Musk",
+      "platform": "x",
+      "text": "Any censorship required by governments is now clearly visible",
+      "sourceUrl": "https://x.com/elonmusk/status/2088445767673369044",
+      "timestamp": "2026-08-15T02:00:47+00:00",
+      "type": "tweet",
+      "topic": "free-speech-censorship",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Opposes government-mandated censorship, advocates transparency",
+      "quote": "Any censorship required by governments is now clearly visible"
     },
     {
       "voiceId": "elon-musk",
@@ -64,6 +50,20 @@
       "voiceId": "elon-musk",
       "voiceName": "Elon Musk",
       "platform": "x",
+      "text": "Orbital compute will be the only way to scale AI probably sometime in 2029 due to power availability&amp; permitting problems on land",
+      "sourceUrl": "https://x.com/elonmusk/status/2088306926442430578",
+      "timestamp": "2026-08-14T16:49:04+00:00",
+      "type": "tweet",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Predicts orbital compute necessary for AI scaling by 2029",
+      "quote": "Orbital compute will be the only way to scale AI probably sometime in 2029 due to power availability&amp; permitting problems on land"
+    },
+    {
+      "voiceId": "elon-musk",
+      "voiceName": "Elon Musk",
+      "platform": "x",
       "text": "Grok 4.6 ranks #1 on CursorBench for real-world coding",
       "sourceUrl": "https://x.com/elonmusk/status/2088138697002668110",
       "timestamp": "2026-08-14T05:40:35+00:00",
@@ -76,21 +76,7 @@
     }
   ],
   "topicSummary": {
-    "free-speech-censorship": [
-      {
-        "quote": "Any censorship required by governments is now clearly visible",
-        "sourceUrl": "https://x.com/elonmusk/status/2088445767673369044",
-        "platform": "x",
-        "timestamp": "2026-08-15T02:00:47+00:00"
-      }
-    ],
     "ai-technology": [
-      {
-        "quote": "Orbital compute will be the only way to scale AI probably sometime in 2029 due to power availability&amp; permitting problems on land",
-        "sourceUrl": "https://x.com/elonmusk/status/2088306926442430578",
-        "platform": "x",
-        "timestamp": "2026-08-14T16:49:04+00:00"
-      },
       {
         "quote": "Grok 4.6 runs The Gauntlet",
         "sourceUrl": "https://x.com/elonmusk/status/2088484972965298489",
@@ -104,10 +90,24 @@
         "timestamp": "2026-08-15T01:49:59+00:00"
       },
       {
+        "quote": "Orbital compute will be the only way to scale AI probably sometime in 2029 due to power availability&amp; permitting problems on land",
+        "sourceUrl": "https://x.com/elonmusk/status/2088306926442430578",
+        "platform": "x",
+        "timestamp": "2026-08-14T16:49:04+00:00"
+      },
+      {
         "quote": "Grok 4.6 ranks #1 on CursorBench for real-world coding",
         "sourceUrl": "https://x.com/elonmusk/status/2088138697002668110",
         "platform": "x",
         "timestamp": "2026-08-14T05:40:35+00:00"
+      }
+    ],
+    "free-speech-censorship": [
+      {
+        "quote": "Any censorship required by governments is now clearly visible",
+        "sourceUrl": "https://x.com/elonmusk/status/2088445767673369044",
+        "platform": "x",
+        "timestamp": "2026-08-15T02:00:47+00:00"
       }
     ]
   }
