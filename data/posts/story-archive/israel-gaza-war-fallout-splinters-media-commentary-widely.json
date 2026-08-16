@@ -1,6 +1,6 @@
 {
-  "headline": "Israel-Palestine conflict fractures political commentary across US spectrum",
-  "summary": "Commentators split sharply between condemning Israeli conduct in Gaza and defending Israel, with skeptics warning of renewed war.",
+  "headline": "Israel-Palestine Conflict Sparks Scattered Debates Across Media",
+  "summary": "Voices split sharply on Israel-Palestine, from accusations of atrocities to defenses of Israeli security policy, amid Trump-Netanyahu friction.",
   "type": "split",
   "source": "voices",
   "coverUrl": "",
@@ -12,7 +12,7 @@
   "clusterCount": 5,
   "clusters": [
     {
-      "name": "Israel Conduct Critics",
+      "name": "Israel Critics/Accountability",
       "voices": [
         {
           "voiceId": "ryan-grim",
@@ -65,6 +65,16 @@
           "quoteQuality": 4
         },
         {
+          "voiceId": "trita-parsi",
+          "voiceName": "Trita Parsi",
+          "photo": "/photos/trita-parsi.jpg",
+          "quote": "This image was sent to me from the field. These are messages US servicemen in the Persian Gulf have scribbled on the dust of an aircraft flap.\n\n\"Be a good guy and do what Israel tells you to\"\n\n\"Operat",
+          "sourceUrl": "https://x.com/tparsi/status/2088984699146240411",
+          "platform": "x",
+          "fit": 7,
+          "quoteQuality": 4
+        },
+        {
           "voiceId": "cenk-uygur",
           "voiceName": "Cenk Uygur",
           "photo": "/photos/cenk-uygur.jpg",
@@ -73,29 +83,9 @@
           "platform": "x",
           "fit": 9,
           "quoteQuality": 3
-        },
-        {
-          "voiceId": "krystal-ball",
-          "voiceName": "Krystal Ball",
-          "photo": "/photos/krystal-ball.jpg",
-          "quote": "Oracle Exec Delights in \u201cScary Tech\u201d Unleashed On Gaza",
-          "sourceUrl": "https://www.youtube.com/watch?v=t1Rok0IPhiQ",
-          "platform": "youtube",
-          "fit": 7,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "breaking-points",
-          "voiceName": "Breaking Points",
-          "photo": "/photos/breaking-points.jpg",
-          "quote": "Oracle Exec Delights in \u201cScary Tech\u201d Unleashed On Gaza",
-          "sourceUrl": "https://www.youtube.com/watch?v=t1Rok0IPhiQ",
-          "platform": "youtube",
-          "fit": 7,
-          "quoteQuality": 1
         }
       ],
-      "voiceCount": 8,
+      "voiceCount": 7,
       "bestQuote": {
         "voiceName": "Ryan Grim",
         "quote": "Hormuz grinds to a halt again; Gaza\u2019s cancer patients dying at 2-3 times prewar rate; DHS surveilled left-wing groups in Minnesota (by Drop Site News)",
@@ -104,7 +94,7 @@
       }
     },
     {
-      "name": "Anti-Establishment War Skepticism",
+      "name": "Trump-Netanyahu Political Tensions",
       "voices": [
         {
           "voiceId": "matt-gaetz",
@@ -113,31 +103,21 @@
           "quote": "Because Trump has withheld his endorsement of @netanyahu following Bibi\u2019s rejection of Trump\u2019s Gaza deal\u2026..the Bibi propaganda machine is posting things like this\u2026..largely out of political desperatio",
           "sourceUrl": "https://x.com/mattgaetz/status/2088647217317839058",
           "platform": "x",
-          "fit": 7,
+          "fit": 9,
           "quoteQuality": 5
         },
         {
-          "voiceId": "trita-parsi",
-          "voiceName": "Trita Parsi",
-          "photo": "/photos/trita-parsi.jpg",
-          "quote": "Appears increasingly likely that there will be a third round of this idiotic war :(",
-          "sourceUrl": "https://x.com/tparsi/status/2088363238245249330",
+          "voiceId": "ian-bremmer",
+          "voiceName": "Ian Bremmer",
+          "photo": "/photos/ian-bremmer.jpg",
+          "quote": "someone should tell the israeli prime minister about pakistan (became a nuclear power in 1998)",
+          "sourceUrl": "https://x.com/ianbremmer/status/2088341774188044698",
           "platform": "x",
-          "fit": 8,
-          "quoteQuality": 3
-        },
-        {
-          "voiceId": "jimmy-dore",
-          "voiceName": "Jimmy Dore",
-          "photo": "/photos/jimmy-dore.jpg",
-          "quote": "Netanyahu ADMITS Israel Is At War With Christians &amp; The West!",
-          "sourceUrl": "https://www.youtube.com/watch?v=68ZxR0rtVrw",
-          "platform": "youtube",
-          "fit": 7,
-          "quoteQuality": 1
+          "fit": 4,
+          "quoteQuality": 4
         }
       ],
-      "voiceCount": 3,
+      "voiceCount": 2,
       "bestQuote": {
         "voiceName": "Matt Gaetz",
         "quote": "Because Trump has withheld his endorsement of @netanyahu following Bibi\u2019s rejection of Trump\u2019s Gaza deal\u2026..the Bibi propaganda machine is posting things like this\u2026..largely out of political desperatio",
@@ -146,7 +126,39 @@
       }
     },
     {
-      "name": "Demanding Ideological Consistency",
+      "name": "Media/Tech Coverage",
+      "voices": [
+        {
+          "voiceId": "breaking-points",
+          "voiceName": "Breaking Points",
+          "photo": "/photos/breaking-points.jpg",
+          "quote": "Oracle Exec Delights in \u201cScary Tech\u201d Unleashed On Gaza",
+          "sourceUrl": "https://www.youtube.com/watch?v=t1Rok0IPhiQ",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "krystal-ball",
+          "voiceName": "Krystal Ball",
+          "photo": "/photos/krystal-ball.jpg",
+          "quote": "Oracle Exec Delights in \u201cScary Tech\u201d Unleashed On Gaza",
+          "sourceUrl": "https://www.youtube.com/watch?v=t1Rok0IPhiQ",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 2,
+      "bestQuote": {
+        "voiceName": "Breaking Points",
+        "quote": "Oracle Exec Delights in \u201cScary Tech\u201d Unleashed On Gaza",
+        "platform": "youtube",
+        "quality": 1
+      }
+    },
+    {
+      "name": "Calling Out Inconsistency",
       "voices": [
         {
           "voiceId": "destiny",
@@ -157,9 +169,19 @@
           "platform": "x",
           "fit": 9,
           "quoteQuality": 4
+        },
+        {
+          "voiceId": "jimmy-dore",
+          "voiceName": "Jimmy Dore",
+          "photo": "/photos/jimmy-dore.jpg",
+          "quote": "Netanyahu ADMITS Israel Is At War With Christians &amp; The West!",
+          "sourceUrl": "https://www.youtube.com/watch?v=68ZxR0rtVrw",
+          "platform": "youtube",
+          "fit": 5,
+          "quoteQuality": 1
         }
       ],
-      "voiceCount": 1,
+      "voiceCount": 2,
       "bestQuote": {
         "voiceName": "Destiny",
         "quote": "So then you disagree with Hasan that the hijacking of the Galaxy Leader was morally justifiable? Or what?\n\nHave a fucking spine and take a stance.",
@@ -168,7 +190,7 @@
       }
     },
     {
-      "name": "Staunch Israel Defenders",
+      "name": "Pro-Israel/Hardline Security",
       "voices": [
         {
           "voiceId": "mark-levin",
@@ -188,28 +210,6 @@
         "platform": "x",
         "quality": 4
       }
-    },
-    {
-      "name": "Geopolitical Risk Framing",
-      "voices": [
-        {
-          "voiceId": "ian-bremmer",
-          "voiceName": "Ian Bremmer",
-          "photo": "/photos/ian-bremmer.jpg",
-          "quote": "someone should tell the israeli prime minister about pakistan (became a nuclear power in 1998)",
-          "sourceUrl": "https://x.com/ianbremmer/status/2088341774188044698",
-          "platform": "x",
-          "fit": 8,
-          "quoteQuality": 4
-        }
-      ],
-      "voiceCount": 1,
-      "bestQuote": {
-        "voiceName": "Ian Bremmer",
-        "quote": "someone should tell the israeli prime minister about pakistan (became a nuclear power in 1998)",
-        "platform": "x",
-        "quality": 4
-      }
     }
   ],
   "confidence": 6,
@@ -219,7 +219,7 @@
     "unrelated": 0
   },
   "validated": true,
-  "heatScore": 75,
+  "heatScore": 78,
   "belowThreshold": false,
   "slug": "israel-gaza-war-fallout-splinters-media-commentary-widely"
 }
