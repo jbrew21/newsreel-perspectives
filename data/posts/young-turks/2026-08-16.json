@@ -1,7 +1,7 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "collectedAt": "2026-08-16T07:17:28.172323",
+  "collectedAt": "2026-08-16T09:09:03.423529",
   "date": "2026-08-16",
   "posts": [
     {
@@ -31,6 +31,34 @@
       "stance": "strong",
       "summary": "Criticizes Trump AI deregulation; characterizes AI as parasitic to human intellect",
       "quote": "The Trump administration is blocking AI regulation with executive orders while pouring money and power into the very systems built to replace us. In this discussion, @RameshMedias calls our relationship to AI parasitic: it feeds off our attention and our data, flattening our intellect as machines co"
+    },
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "Fox News\u2019 HILARIOUS Attack On El-Sayed FAILS",
+      "sourceUrl": "https://www.youtube.com/watch?v=XSaE-R50HLo",
+      "timestamp": "2026-08-16T00:00:05+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes Fox News coverage as flawed or misleading",
+      "quote": "Fox News\u2019 HILARIOUS Attack On El-Sayed FAILS"
+    },
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "The ADL Is Out Of Control!",
+      "sourceUrl": "https://www.youtube.com/watch?v=HHy2LBBiW4s",
+      "timestamp": "2026-08-15T22:00:37+00:00",
+      "type": "video_title",
+      "topic": "civil-rights-race",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Opposes ADL's positions or actions as excessive",
+      "quote": "The ADL Is Out Of Control!"
     },
     {
       "voiceId": "young-turks",
@@ -134,29 +162,15 @@
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
       "platform": "youtube",
-      "text": "Fox News\u2019 HILARIOUS Attack On El-Sayed FAILS",
-      "sourceUrl": "https://www.youtube.com/watch?v=XSaE-R50HLo",
-      "timestamp": "2026-08-16T00:00:05+00:00",
+      "text": "Tucker Makes His Most STARTLING Admission Yet!",
+      "sourceUrl": "https://www.youtube.com/watch?v=PTEPxWcqWWc",
+      "timestamp": "2026-08-15T20:00:34+00:00",
       "type": "video_title",
-      "topic": "media-press",
+      "topic": "media-personalities",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Criticizes Fox News coverage as flawed or misleading",
-      "quote": "Fox News\u2019 HILARIOUS Attack On El-Sayed FAILS"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "The ADL Is Out Of Control!",
-      "sourceUrl": "https://www.youtube.com/watch?v=HHy2LBBiW4s",
-      "timestamp": "2026-08-15T22:00:37+00:00",
-      "type": "video_title",
-      "topic": "civil-rights-race",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Opposes ADL's positions or actions as excessive",
-      "quote": "The ADL Is Out Of Control!"
+      "summary": "Frames Tucker Carlson admission as noteworthy or damaging",
+      "quote": "Tucker Makes His Most STARTLING Admission Yet!"
     }
   ],
   "topicSummary": {
@@ -190,16 +204,24 @@
     ],
     "media-press": [
       {
-        "quote": "Free Press Takes WILD Stance On Flock Cameras",
-        "sourceUrl": "https://www.youtube.com/watch?v=4CLGlpzIgMg",
-        "platform": "youtube",
-        "timestamp": "2026-08-15T18:00:24+00:00"
-      },
-      {
         "quote": "Fox News\u2019 HILARIOUS Attack On El-Sayed FAILS",
         "sourceUrl": "https://www.youtube.com/watch?v=XSaE-R50HLo",
         "platform": "youtube",
         "timestamp": "2026-08-16T00:00:05+00:00"
+      },
+      {
+        "quote": "Free Press Takes WILD Stance On Flock Cameras",
+        "sourceUrl": "https://www.youtube.com/watch?v=4CLGlpzIgMg",
+        "platform": "youtube",
+        "timestamp": "2026-08-15T18:00:24+00:00"
+      }
+    ],
+    "civil-rights-race": [
+      {
+        "quote": "The ADL Is Out Of Control!",
+        "sourceUrl": "https://www.youtube.com/watch?v=HHy2LBBiW4s",
+        "platform": "youtube",
+        "timestamp": "2026-08-15T22:00:37+00:00"
       }
     ],
     "iran-conflict": [
@@ -224,6 +246,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=u5VO13ToiSE",
         "platform": "youtube",
         "timestamp": "2026-08-15T03:30:32+00:00"
+      },
+      {
+        "quote": "Tucker Makes His Most STARTLING Admission Yet!",
+        "sourceUrl": "https://www.youtube.com/watch?v=PTEPxWcqWWc",
+        "platform": "youtube",
+        "timestamp": "2026-08-15T20:00:34+00:00"
       }
     ],
     "trump-administration": [
@@ -232,14 +260,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=PgS_PKV_q08",
         "platform": "youtube",
         "timestamp": "2026-08-15T02:45:12+00:00"
-      }
-    ],
-    "civil-rights-race": [
-      {
-        "quote": "The ADL Is Out Of Control!",
-        "sourceUrl": "https://www.youtube.com/watch?v=HHy2LBBiW4s",
-        "platform": "youtube",
-        "timestamp": "2026-08-15T22:00:37+00:00"
       }
     ]
   }
