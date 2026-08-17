@@ -103,12 +103,19 @@ def main():
 
     success = 0
     failed = 0
-    already_wiki = 0
+    already_local = 0
     fallback_used = 0
 
     for i, voice in enumerate(voices):
         vid = voice["id"]
         name = voice["name"]
+
+        # Don't clobber curated local photos (e.g. bluesky-avatar downloads in
+        # data/photos/). Only (re)fetch for voices missing a real photo.
+        if voice.get("photo", "").startswith("/photos/"):
+            already_local += 1
+            print(f"[SKIP] {name:40s} (curated /photos/)")
+            continue
 
         article = name_to_wiki(voice)
         photo_url, err = get_wiki_thumbnail(article)
@@ -144,6 +151,7 @@ def main():
 
     print(f"\n--- Results ---")
     print(f"Total voices:     {len(voices)}")
+    print(f"Skipped (curated):{already_local}")
     print(f"Photos found:     {success}")
     print(f"Fallback used:    {fallback_used}")
     print(f"voices.json updated.")
