@@ -1,9 +1,23 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-17T07:32:41.274265",
+  "collectedAt": "2026-08-17T09:33:23.036199",
   "date": "2026-08-17",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Democratic Candidate JAILED After This fight?!",
+      "sourceUrl": "https://www.youtube.com/shorts/rL-nIrSt1Ew",
+      "timestamp": "2026-08-16T21:00:34+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames Democratic candidate's legal trouble as noteworthy scandal",
+      "quote": "Democratic Candidate JAILED After This fight?!"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -17,6 +31,20 @@
       "stance": "lean",
       "summary": "Suggests Trump's plan will have major transformative consequences",
       "quote": "If Glenn Is Right About Trump's Plan, EVERYTHING Is About to Change..."
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "The Truth About Nixon...",
+      "sourceUrl": "https://www.youtube.com/shorts/IveCYHcSHPc",
+      "timestamp": "2026-08-15T00:15:01+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Revisits Nixon history with implied contemporary relevance",
+      "quote": "The Truth About Nixon..."
     },
     {
       "voiceId": "glenn-beck",
@@ -92,38 +120,44 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "Democratic Candidate JAILED After This fight?!",
-      "sourceUrl": "https://www.youtube.com/shorts/rL-nIrSt1Ew",
-      "timestamp": "2026-08-16T21:00:34+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames Democratic candidate's legal trouble as noteworthy scandal",
-      "quote": "Democratic Candidate JAILED After This fight?!"
+      "text": "The Best of Glenn Beck's Chalkboard Specials",
+      "sourceUrl": "https://www.youtube.com/watch?v=JdbGjfgbI8Q",
+      "timestamp": "2026-08-16T14:00:20+00:00",
+      "type": "video_title"
     },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "The Truth About Nixon...",
-      "sourceUrl": "https://www.youtube.com/shorts/IveCYHcSHPc",
-      "timestamp": "2026-08-15T00:15:01+00:00",
-      "type": "video_title",
-      "topic": "uk-world-politics",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Revisits Nixon history with implied contemporary relevance",
-      "quote": "The Truth About Nixon..."
+      "text": "Is He Right About This?",
+      "sourceUrl": "https://www.youtube.com/shorts/P2pn9UDwdfU",
+      "timestamp": "2026-08-15T21:00:40+00:00",
+      "type": "video_title"
     }
   ],
   "topicSummary": {
+    "criminal-justice": [
+      {
+        "quote": "Democratic Candidate JAILED After This fight?!",
+        "sourceUrl": "https://www.youtube.com/shorts/rL-nIrSt1Ew",
+        "platform": "youtube",
+        "timestamp": "2026-08-16T21:00:34+00:00"
+      }
+    ],
     "trump-policy": [
       {
         "quote": "If Glenn Is Right About Trump's Plan, EVERYTHING Is About to Change...",
         "sourceUrl": "https://www.youtube.com/watch?v=BdAJi2Jg-A4",
         "platform": "youtube",
         "timestamp": "2026-08-15T14:00:12+00:00"
+      }
+    ],
+    "uk-world-politics": [
+      {
+        "quote": "The Truth About Nixon...",
+        "sourceUrl": "https://www.youtube.com/shorts/IveCYHcSHPc",
+        "platform": "youtube",
+        "timestamp": "2026-08-15T00:15:01+00:00"
       }
     ],
     "congress-legislation": [
@@ -162,20 +196,18 @@
         "timestamp": "2026-08-13T21:27:21+00:00"
       }
     ],
-    "criminal-justice": [
+    "uncategorized": [
       {
-        "quote": "Democratic Candidate JAILED After This fight?!",
-        "sourceUrl": "https://www.youtube.com/shorts/rL-nIrSt1Ew",
+        "quote": "The Best of Glenn Beck's Chalkboard Specials",
+        "sourceUrl": "https://www.youtube.com/watch?v=JdbGjfgbI8Q",
         "platform": "youtube",
-        "timestamp": "2026-08-16T21:00:34+00:00"
-      }
-    ],
-    "uk-world-politics": [
+        "timestamp": "2026-08-16T14:00:20+00:00"
+      },
       {
-        "quote": "The Truth About Nixon...",
-        "sourceUrl": "https://www.youtube.com/shorts/IveCYHcSHPc",
+        "quote": "Is He Right About This?",
+        "sourceUrl": "https://www.youtube.com/shorts/P2pn9UDwdfU",
         "platform": "youtube",
-        "timestamp": "2026-08-15T00:15:01+00:00"
+        "timestamp": "2026-08-15T21:00:40+00:00"
       }
     ]
   }
