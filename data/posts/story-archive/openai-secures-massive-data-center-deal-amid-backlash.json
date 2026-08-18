@@ -1,6 +1,6 @@
 {
   "headline": "OpenAI Secures Massive Data Center Deal Amid Backlash",
-  "summary": "Commentators split between framing this as economic exploitation, safety risk, or grid/community backlash, while many voices discuss unrelated AI tangents.",
+  "summary": "A vocal minority frames the data center boom as an economic and environmental backlash story, while most voices discuss unrelated AI topics.",
   "type": "spectrum",
   "source": "editorial",
   "coverUrl": "https://cdn.newsreel.co/storage/v1/object/public/story-media/stories/6c191aa2-0c50-491c-bd9d-431be9a8383d/cover/0f7c5ae1-72f8-48d7-bd0c-cbf6f106d541.gif",
@@ -8,11 +8,11 @@
   "topicSlugs": [
     "ai-technology"
   ],
-  "voiceCount": 18,
+  "voiceCount": 16,
   "clusterCount": 4,
   "clusters": [
     {
-      "name": "AI Economic and Power Critique",
+      "name": "Corporate Power and Inequality Critics",
       "voices": [
         {
           "voiceId": "jennifer-rubin",
@@ -20,16 +20,6 @@
           "photo": "/photos/jennifer-rubin.jpg",
           "quote": "BTW any 2028 contenders from CA are going to have to play defense on their rhetoric/policies on AI and Silicon Valley. WAY too friendly for too long",
           "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mtagcakmck23",
-          "platform": "bluesky",
-          "fit": 7,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "ed-zitron",
-          "voiceName": "Ed Zitron",
-          "photo": "/photos/ed-zitron.jpg",
-          "quote": "Free Newsletter: It's time to talk about what happens if OpenAI dies. With $800bn in obligations and decelerating revenue, it's unclear how this company survives, and today I dig into what it'll take ",
-          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtel5pzeox2q",
           "platform": "bluesky",
           "fit": 6,
           "quoteQuality": 5
@@ -55,13 +45,13 @@
           "quoteQuality": 4
         },
         {
-          "voiceId": "ro-khanna",
-          "voiceName": "Ro Khanna",
-          "photo": "/photos/ro-khanna.jpg",
-          "quote": "Wednesday in East Las Vegas. Big tech wants to boost their profits. We want a worker-first agenda for AI.\n\nJoin me, @Carlos_E_Espina, @SEIU1107, @Culinary226, @votolatino, @IBT631, @makeroadactNV, and",
-          "sourceUrl": "https://x.com/RoKhanna/status/2089465249263149370",
+          "voiceId": "gary-marcus",
+          "voiceName": "Gary Marcus",
+          "photo": "/photos/gary-marcus.jpg",
+          "quote": "The hidden costs of AI never end. First it was memory chips and nonconsensual deepfake porn and the undermining of college and high school education; now it is interest rates.",
+          "sourceUrl": "https://x.com/GaryMarcus/status/2089729547759727017",
           "platform": "x",
-          "fit": 9,
+          "fit": 7,
           "quoteQuality": 4
         },
         {
@@ -71,8 +61,18 @@
           "quote": "Special report on the tech boom, deregulation and the MAGA allies reshaping AI and media. Full report on YouTube at ms.now/ari \ud83d\udcfa",
           "sourceUrl": "https://www.tiktok.com/@arimelber/video/7675111502109576461",
           "platform": "tiktok",
-          "fit": 7,
+          "fit": 6,
           "quoteQuality": 2
+        },
+        {
+          "voiceId": "tristan-harris",
+          "voiceName": "Tristan Harris",
+          "photo": "/photos/tristan-harris.jpg",
+          "quote": "What would it look like to put workers at the center of the AI discussion?",
+          "sourceUrl": "https://www.youtube.com/shorts/c62-LlQH1PY",
+          "platform": "youtube",
+          "fit": 7,
+          "quoteQuality": 1
         }
       ],
       "voiceCount": 6,
@@ -84,7 +84,7 @@
       }
     },
     {
-      "name": "Data Center Backlash",
+      "name": "Community and Grid Backlash",
       "voices": [
         {
           "voiceId": "paris-marx",
@@ -93,18 +93,8 @@
           "quote": "Big news! HYPERSCALE made the longlist for the FT/Standard Chartered Business Book of the Year Award.\n\nThey call it a \u201ca polemical on-the-ground investigation into the rapid spread of data centres and",
           "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtbyll2p422p",
           "platform": "bluesky",
-          "fit": 8,
+          "fit": 7,
           "quoteQuality": 5
-        },
-        {
-          "voiceId": "nate-silver",
-          "voiceName": "Nate Silver",
-          "photo": "/photos/nate-silver.jpg",
-          "quote": "Just published my interview with @jasminewsun on the data center backlash. \n\nShe makes a key point here. It's much more about people not trusting the huge tech firms (\"big corporation scary\") than any",
-          "sourceUrl": "https://x.com/NateSilver538/status/2089406562829799867",
-          "platform": "x",
-          "fit": 9,
-          "quoteQuality": 4
         },
         {
           "voiceId": "ian-bremmer",
@@ -114,6 +104,16 @@
           "sourceUrl": "https://x.com/ianbremmer/status/2089426882013835385",
           "platform": "x",
           "fit": 9,
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "nate-silver",
+          "voiceName": "Nate Silver",
+          "photo": "/photos/nate-silver.jpg",
+          "quote": "Just published my interview with @jasminewsun on the data center backlash. \n\nShe makes a key point here. It's much more about people not trusting the huge tech firms (\"big corporation scary\") than any",
+          "sourceUrl": "https://x.com/NateSilver538/status/2089406562829799867",
+          "platform": "x",
+          "fit": 8,
           "quoteQuality": 4
         },
         {
@@ -146,16 +146,16 @@
       }
     },
     {
-      "name": "AI Safety and Existential Risk",
+      "name": "AI Risk and Control Concerns",
       "voices": [
         {
-          "voiceId": "gary-marcus",
-          "voiceName": "Gary Marcus",
-          "photo": "/photos/gary-marcus.jpg",
-          "quote": "Some say dogs look like their owners.\n\nGenerative AI CEOs have come to sound like their product: frequently wrong, never in doubt, often full of BS.",
-          "sourceUrl": "https://x.com/GaryMarcus/status/2089430174085574748",
+          "voiceId": "tyler-cowen",
+          "voiceName": "Tyler Cowen",
+          "photo": "/photos/tyler-cowen.jpg",
+          "quote": "What if AI agents were unowned, untraceable, or otherwise \u201cuntethered\u201d? How might we deal with that? soniafpearson.substack.com/p\u2026, because it is coming, whether we like it or not.",
+          "sourceUrl": "https://x.com/tylercowen/status/2089679345673441294",
           "platform": "x",
-          "fit": 5,
+          "fit": 9,
           "quoteQuality": 5
         },
         {
@@ -165,7 +165,7 @@
           "quote": "Uh oh, sounds like another agent escaped its testing environment!",
           "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3mtbxkebaek2d",
           "platform": "bluesky",
-          "fit": 8,
+          "fit": 9,
           "quoteQuality": 4
         },
         {
@@ -175,88 +175,59 @@
           "quote": "The A.I.s Are Already Out of Control | The Ezra Klein Show",
           "sourceUrl": "https://www.youtube.com/watch?v=locKEKxG3os",
           "platform": "youtube",
-          "fit": 8,
+          "fit": 10,
           "quoteQuality": 1
         },
         {
-          "voiceId": "tristan-harris",
-          "voiceName": "Tristan Harris",
-          "photo": "/photos/tristan-harris.jpg",
-          "quote": "We can't allow AI to break the career ladder.",
-          "sourceUrl": "https://www.youtube.com/shorts/4GXKSMG9lNE",
+          "voiceId": "chris-williamson",
+          "voiceName": "Chris Williamson",
+          "photo": "/photos/chris-williamson.jpg",
+          "quote": "AI DEBATE: \u201cMost People Have No Idea What\u2019s Coming\u201d",
+          "sourceUrl": "https://www.youtube.com/watch?v=mSjaMyP5QjY",
           "platform": "youtube",
-          "fit": 4,
+          "fit": 8,
           "quoteQuality": 1
         }
       ],
       "voiceCount": 4,
       "bestQuote": {
-        "voiceName": "Gary Marcus",
-        "quote": "Some say dogs look like their owners.\n\nGenerative AI CEOs have come to sound like their product: frequently wrong, never in doubt, often full of BS.",
+        "voiceName": "Tyler Cowen",
+        "quote": "What if AI agents were unowned, untraceable, or otherwise \u201cuntethered\u201d? How might we deal with that? soniafpearson.substack.com/p\u2026, because it is coming, whether we like it or not.",
         "platform": "x",
         "quality": 5
       }
     },
     {
-      "name": "Surveillance and Civil Liberties Concerns",
+      "name": "Blue-Collar Buildout Optimism",
       "voices": [
         {
-          "voiceId": "asha-rangappa",
-          "voiceName": "Asha Rangappa",
-          "photo": "/photos/asha-rangappa.jpg",
-          "quote": "Meta has built its business around addictive feeds and features that put our kids' mental health at risk.\u2028\u2028Today, together with a bipartisan coalition of AGs, we begin our trial to\u00a0hold Meta accountab",
-          "sourceUrl": "https://bsky.app/profile/asharangappa.bsky.social/post/3mteo7rpots2o",
-          "platform": "bluesky",
-          "fit": 5,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "bernie-sanders",
-          "voiceName": "Bernie Sanders",
-          "photo": "/photos/bernie-sanders.jpg",
-          "quote": "The AI surveillance company Flock has installed nearly 100,000 cameras across America to track your every movement. \n \nGoing to the doctor? Flock knows.\n \nDropping your kid off at school? Flock is tra",
-          "sourceUrl": "https://x.com/SenSanders/status/2089716977442926842",
+          "voiceId": "american-enterprise-institute",
+          "voiceName": "American Enterprise Institute",
+          "photo": "/photos/american-enterprise-institute.jpg",
+          "quote": "The future of artificial intelligence may depend less on coders than on construction workers, electricians and factory technicians, writes AEI\u2019s Rob Portman. \n\nfoxnews.com/opinion/america-\u2026\n\nLink\n\n\n\nA",
+          "sourceUrl": "https://x.com/AEI/status/2089350968206852202",
           "platform": "x",
           "fit": 10,
           "quoteQuality": 4
-        },
-        {
-          "voiceId": "all-in-podcast",
-          "voiceName": "All-In Podcast",
-          "photo": "/photos/all-in-podcast.jpg",
-          "quote": "Mass Surveillance, Police Misuse, and Who Controls Your Flock Cameras with Flock CEO, Garret Langley",
-          "sourceUrl": "https://www.youtube.com/watch?v=5BWuvjGLMik",
-          "platform": "youtube",
-          "fit": 9,
-          "quoteQuality": 1
         }
       ],
-      "voiceCount": 3,
+      "voiceCount": 1,
       "bestQuote": {
-        "voiceName": "Asha Rangappa",
-        "quote": "Meta has built its business around addictive feeds and features that put our kids' mental health at risk.\u2028\u2028Today, together with a bipartisan coalition of AGs, we begin our trial to\u00a0hold Meta accountab",
-        "platform": "bluesky",
-        "quality": 5
+        "voiceName": "American Enterprise Institute",
+        "quote": "The future of artificial intelligence may depend less on coders than on construction workers, electricians and factory technicians, writes AEI\u2019s Rob Portman. \n\nfoxnews.com/opinion/america-\u2026\n\nLink\n\n\n\nA",
+        "platform": "x",
+        "quality": 4
       }
     }
   ],
   "confidence": 4,
   "relevance": {
     "direct": 5,
-    "related": 12,
-    "unrelated": 11
+    "related": 8,
+    "unrelated": 14
   },
   "validated": true,
-  "heatScore": 52,
+  "heatScore": 49,
   "belowThreshold": false,
-  "counterNarrative": {
-    "dominantCluster": "Data Center Backlash",
-    "dominantCount": 5,
-    "counterCluster": "AI Safety and Existential Risk",
-    "counterCount": 4,
-    "axis": "which risk deserves priority focus",
-    "tensionScore": 6,
-    "tension": "5 voices say \"Data Center Backlash\" \u2014 but 4 push back: \"AI Safety and Existential Risk\""
-  },
   "slug": "ai-boom-sparks-debate-over-risk-regulation-and-hype"
 }

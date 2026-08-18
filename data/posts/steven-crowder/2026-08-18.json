@@ -1,9 +1,23 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-08-18T18:45:02.335376",
+  "collectedAt": "2026-08-18T20:01:04.961605",
   "date": "2026-08-18",
   "posts": [
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "This is what the internet won't show you.",
+      "sourceUrl": "https://www.youtube.com/shorts/_7TH_HkCxVk",
+      "timestamp": "2026-08-17T20:30:39+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies internet censorship or suppression of information",
+      "quote": "This is what the internet won't show you."
+    },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
@@ -106,32 +120,26 @@
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
       "platform": "youtube",
-      "text": "These women clapping and smiling ear-to-ear are pure evil.",
-      "sourceUrl": "https://www.youtube.com/shorts/Yep8UjL1Ch4",
-      "timestamp": "2026-08-12T20:30:31+00:00",
+      "text": "Two of our worst governors possibly ever decided to collaborate.",
+      "sourceUrl": "https://www.youtube.com/shorts/EgHpMXmoUVw",
+      "timestamp": "2026-08-18T17:59:16+00:00",
       "type": "video_title",
-      "topic": "culture-war",
+      "topic": "state-local-politics",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Condemns women's behavior as evil and morally corrupt",
-      "quote": "These women clapping and smiling ear-to-ear are pure evil."
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "This is what the internet won't show you.",
-      "sourceUrl": "https://www.youtube.com/shorts/_7TH_HkCxVk",
-      "timestamp": "2026-08-17T20:30:39+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies internet censorship or suppression of information",
-      "quote": "This is what the internet won't show you."
+      "summary": "Criticizes two governors as among the worst, opposes their collaboration",
+      "quote": "Two of our worst governors possibly ever decided to collaborate."
     }
   ],
   "topicSummary": {
+    "media-press": [
+      {
+        "quote": "This is what the internet won't show you.",
+        "sourceUrl": "https://www.youtube.com/shorts/_7TH_HkCxVk",
+        "platform": "youtube",
+        "timestamp": "2026-08-17T20:30:39+00:00"
+      }
+    ],
     "media-personalities": [
       {
         "quote": "EXCLUSIVE: Crowder and Tim Pool On His Viral Jubilee Debate &quot;Rage Quit&quot;",
@@ -170,12 +178,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/4_F4DWhZfYI",
         "platform": "youtube",
         "timestamp": "2026-08-13T21:00:27+00:00"
-      },
-      {
-        "quote": "These women clapping and smiling ear-to-ear are pure evil.",
-        "sourceUrl": "https://www.youtube.com/shorts/Yep8UjL1Ch4",
-        "platform": "youtube",
-        "timestamp": "2026-08-12T20:30:31+00:00"
       }
     ],
     "civil-rights-race": [
@@ -186,12 +188,12 @@
         "timestamp": "2026-08-13T20:00:33+00:00"
       }
     ],
-    "media-press": [
+    "state-local-politics": [
       {
-        "quote": "This is what the internet won't show you.",
-        "sourceUrl": "https://www.youtube.com/shorts/_7TH_HkCxVk",
+        "quote": "Two of our worst governors possibly ever decided to collaborate.",
+        "sourceUrl": "https://www.youtube.com/shorts/EgHpMXmoUVw",
         "platform": "youtube",
-        "timestamp": "2026-08-17T20:30:39+00:00"
+        "timestamp": "2026-08-18T17:59:16+00:00"
       }
     ]
   }

@@ -1,9 +1,23 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-08-18T18:45:02.338798",
+  "collectedAt": "2026-08-18T20:01:04.966048",
   "date": "2026-08-18",
   "posts": [
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
+      "timestamp": "2026-08-18T16:00:14+00:00",
+      "type": "video_title",
+      "topic": "billionaires-wealth",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques private equity industry and its business practices",
+      "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)"
+    },
     {
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
@@ -50,34 +64,6 @@
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
       "platform": "youtube",
-      "text": "Gambling Your Life Away | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=IZm4OOYQP_s",
-      "timestamp": "2026-08-01T03:00:16+00:00",
-      "type": "video_title",
-      "topic": "other",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critiques gambling as destructive personal financial behavior",
-      "quote": "Gambling Your Life Away | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
-      "timestamp": "2026-08-18T16:00:14+00:00",
-      "type": "video_title",
-      "topic": "billionaires-wealth",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critiques private equity industry and its business practices",
-      "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
       "text": "Overtime with Bill Maher: Erin Brockovich, Scott Galloway, Peter Hamby (HBO)",
       "sourceUrl": "https://www.youtube.com/watch?v=upSPfx1dp9w",
       "timestamp": "2026-08-01T03:00:33+00:00",
@@ -87,9 +73,31 @@
       "stance": "lean",
       "summary": "Discussion of economic issues and business topics",
       "quote": "Overtime with Bill Maher: Erin Brockovich, Scott Galloway, Peter Hamby (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Gambling Your Life Away | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=IZm4OOYQP_s",
+      "timestamp": "2026-08-01T03:00:16+00:00",
+      "type": "video_title",
+      "topic": "other",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques gambling as destructive personal financial behavior",
+      "quote": "Gambling Your Life Away | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
+    "billionaires-wealth": [
+      {
+        "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
+        "platform": "youtube",
+        "timestamp": "2026-08-18T16:00:14+00:00"
+      }
+    ],
     "immigration": [
       {
         "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
@@ -114,28 +122,20 @@
         "timestamp": "2026-08-08T03:00:12+00:00"
       }
     ],
-    "other": [
-      {
-        "quote": "Gambling Your Life Away | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=IZm4OOYQP_s",
-        "platform": "youtube",
-        "timestamp": "2026-08-01T03:00:16+00:00"
-      }
-    ],
-    "billionaires-wealth": [
-      {
-        "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T16:00:14+00:00"
-      }
-    ],
     "economy-trade": [
       {
         "quote": "Overtime with Bill Maher: Erin Brockovich, Scott Galloway, Peter Hamby (HBO)",
         "sourceUrl": "https://www.youtube.com/watch?v=upSPfx1dp9w",
         "platform": "youtube",
         "timestamp": "2026-08-01T03:00:33+00:00"
+      }
+    ],
+    "other": [
+      {
+        "quote": "Gambling Your Life Away | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=IZm4OOYQP_s",
+        "platform": "youtube",
+        "timestamp": "2026-08-01T03:00:16+00:00"
       }
     ]
   }
