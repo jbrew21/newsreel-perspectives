@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-08-18T09:47:20.645012",
+  "collectedAt": "2026-08-18T18:45:02.338798",
   "date": "2026-08-18",
   "posts": [
     {
@@ -64,15 +64,29 @@
       "voiceId": "bill-maher",
       "voiceName": "Bill Maher",
       "platform": "youtube",
-      "text": "New Rule: Commie By Your Name | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=dRIjYHVh5kI",
-      "timestamp": "2026-08-01T03:00:06+00:00",
+      "text": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
+      "timestamp": "2026-08-18T16:00:14+00:00",
       "type": "video_title",
-      "topic": "culture-war",
+      "topic": "billionaires-wealth",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes communist ideology or left-wing politics by name",
-      "quote": "New Rule: Commie By Your Name | Real Time with Bill Maher (HBO)"
+      "stance": "lean",
+      "summary": "Critiques private equity industry and its business practices",
+      "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)"
+    },
+    {
+      "voiceId": "bill-maher",
+      "voiceName": "Bill Maher",
+      "platform": "youtube",
+      "text": "Overtime with Bill Maher: Erin Brockovich, Scott Galloway, Peter Hamby (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=upSPfx1dp9w",
+      "timestamp": "2026-08-01T03:00:33+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Discussion of economic issues and business topics",
+      "quote": "Overtime with Bill Maher: Erin Brockovich, Scott Galloway, Peter Hamby (HBO)"
     }
   ],
   "topicSummary": {
@@ -108,12 +122,20 @@
         "timestamp": "2026-08-01T03:00:16+00:00"
       }
     ],
-    "culture-war": [
+    "billionaires-wealth": [
       {
-        "quote": "New Rule: Commie By Your Name | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=dRIjYHVh5kI",
+        "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
         "platform": "youtube",
-        "timestamp": "2026-08-01T03:00:06+00:00"
+        "timestamp": "2026-08-18T16:00:14+00:00"
+      }
+    ],
+    "economy-trade": [
+      {
+        "quote": "Overtime with Bill Maher: Erin Brockovich, Scott Galloway, Peter Hamby (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=upSPfx1dp9w",
+        "platform": "youtube",
+        "timestamp": "2026-08-01T03:00:33+00:00"
       }
     ]
   }
