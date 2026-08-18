@@ -31,12 +31,12 @@ so those voices silently collected zero YouTube posts.
 |----|----|
 | dan-bongino | 2026-08-12: youtube channel `UCVStvibG0gkwMU_WM42TSjA` confirmed 404 with no clean replacement. Dropped the youtube feed/platform/handle; keeps live podcast (megaphone, 200). Note: his `x` rss.app feed is also 404 and may need regenerating. |
 | damon-imani | 2026-08-13: placeholder ID `UCDamonImani` (invalid, 0 posts) → repointed to his live channel `UCdUq1SGXWgdbHYVU4VQlHPA` ("Damon Imani Clips", @DamonImani, 234K subs, actively posts his satire). Verified feed 200. His main reach is X/TikTok/IG (1.6M); YouTube clips are his primary output there. |
+| pod-save-america | 2026-08-18: old Crooked Media channel `UCs7nznrHmSyNNFl4Fgd7tMQ` confirmed 404 → repointed to the dedicated Pod Save America channel `UC0jYTMDGoHT_Q6HQ7SFtGXg` (@PodSaveAmerica). Verified feed 200, 15 entries, actively posting full episodes. |
 
-## STILL OPEN (5) — need a manual decision (no clean canonical channel)
+## STILL OPEN (4) — need a manual decision (no clean canonical channel)
 
 | id | note |
 |----|----|
-| pod-save-america | Content lives on the Crooked Media channel; needs a decision on which feed to track. |
 | charlamagne-tha-god | Content lives on The Breakfast Club / network channels; no clean solo channel. |
 | jason-whitlock | "Fearless" show is on Blaze Media; @FearlessTV resolved to an unrelated 2015 channel — needs the real Blaze channel_id. |
 | rachel-maddow | MSNBC hosts her content; no standalone Maddow channel with a working feed. |
