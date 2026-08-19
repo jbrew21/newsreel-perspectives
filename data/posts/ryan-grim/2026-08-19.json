@@ -1,9 +1,37 @@
 {
   "voiceId": "ryan-grim",
   "voiceName": "Ryan Grim",
-  "collectedAt": "2026-08-19T07:44:59.385442",
+  "collectedAt": "2026-08-19T09:46:19.050181",
   "date": "2026-08-19",
   "posts": [
+    {
+      "voiceId": "ryan-grim",
+      "voiceName": "Ryan Grim",
+      "platform": "youtube",
+      "text": "\u2018Unending nightmare\u2019: L.A. Family Held in ICE Detention for Over 130 Days",
+      "sourceUrl": "https://www.youtube.com/watch?v=LJOxE3WnttE",
+      "timestamp": "2026-08-18T21:00:29+00:00",
+      "type": "video_title",
+      "topic": "immigration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes prolonged ICE detention of families",
+      "quote": "\u2018Unending nightmare\u2019: L.A. Family Held in ICE Detention for Over 130 Days"
+    },
+    {
+      "voiceId": "ryan-grim",
+      "voiceName": "Ryan Grim",
+      "platform": "youtube",
+      "text": "Cuba Fights Sanctions With an Energy Revolution",
+      "sourceUrl": "https://www.youtube.com/shorts/OACTDJtz5G8",
+      "timestamp": "2026-08-18T20:03:54+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames Cuba's energy revolution as sanctions response",
+      "quote": "Cuba Fights Sanctions With an Energy Revolution"
+    },
     {
       "voiceId": "ryan-grim",
       "voiceName": "Ryan Grim",
@@ -414,32 +442,46 @@
       "voiceId": "ryan-grim",
       "voiceName": "Ryan Grim",
       "platform": "youtube",
-      "text": "\u2018Unending nightmare\u2019: L.A. Family Held in ICE Detention for Over 130 Days",
-      "sourceUrl": "https://www.youtube.com/watch?v=LJOxE3WnttE",
-      "timestamp": "2026-08-18T21:00:29+00:00",
+      "text": "Florida Primaries \u2014 Elijah Manley and Oliver Larkin Take On Pro-Israel Incumbents",
+      "sourceUrl": "https://www.youtube.com/watch?v=E9UNVMlp06s",
+      "timestamp": "2026-08-18T17:52:41+00:00",
       "type": "video_title",
-      "topic": "immigration",
+      "topic": "elections",
       "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes prolonged ICE detention of families",
-      "quote": "\u2018Unending nightmare\u2019: L.A. Family Held in ICE Detention for Over 130 Days"
-    },
-    {
-      "voiceId": "ryan-grim",
-      "voiceName": "Ryan Grim",
-      "platform": "youtube",
-      "text": "Cuba Fights Sanctions With an Energy Revolution",
-      "sourceUrl": "https://www.youtube.com/shorts/OACTDJtz5G8",
-      "timestamp": "2026-08-18T20:03:54+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "medium",
       "stance": "lean",
-      "summary": "Frames Cuba's energy revolution as sanctions response",
-      "quote": "Cuba Fights Sanctions With an Energy Revolution"
+      "summary": "Covers primary challengers opposing pro-Israel incumbents",
+      "quote": "Florida Primaries \u2014 Elijah Manley and Oliver Larkin Take On Pro-Israel Incumbents"
     }
   ],
   "topicSummary": {
+    "immigration": [
+      {
+        "quote": "\u2018Unending nightmare\u2019: L.A. Family Held in ICE Detention for Over 130 Days",
+        "sourceUrl": "https://www.youtube.com/watch?v=LJOxE3WnttE",
+        "platform": "youtube",
+        "timestamp": "2026-08-18T21:00:29+00:00"
+      }
+    ],
+    "iran-conflict": [
+      {
+        "quote": "Cuba Fights Sanctions With an Energy Revolution",
+        "sourceUrl": "https://www.youtube.com/shorts/OACTDJtz5G8",
+        "platform": "youtube",
+        "timestamp": "2026-08-18T20:03:54+00:00"
+      },
+      {
+        "quote": "U.S. Infrastructure Strikes Have Left Iranians in the South Without Livelihoods (by Peiman Salehi). U.S. airstrikes last month in southern Iran targeted civilian infrastructure, including fishing ports, bridges, telecommunications networks, power plants, hospitals, and transportation corridors.",
+        "sourceUrl": "https://www.dropsitenews.com/p/southern-iran-us-airstrikes-civilian-infrastructure",
+        "platform": "substack",
+        "timestamp": "2026-08-13T17:02:51+00:00"
+      },
+      {
+        "quote": "Trump \u201clow-keys\u201d Iran; Netanyahu rejects BoP plan for Gaza; Ukraine kills 13 in strike targeting Russian refinery (by Drop Site News)",
+        "sourceUrl": "https://www.dropsitenews.com/p/trump-iran-hormuz-netanyahu-gaza-board-peace-ukraine-russia-refinery",
+        "platform": "substack",
+        "timestamp": "2026-08-10T15:31:41+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "What will 'merging' the U.S. and Israeli military look like if Section 219 passes?",
@@ -588,6 +630,12 @@
         "sourceUrl": "https://bsky.app/profile/ryangrim.bsky.social/post/3ms4h3qdb6k2n",
         "platform": "bluesky",
         "timestamp": "2026-08-02T16:53:38.554Z"
+      },
+      {
+        "quote": "Florida Primaries \u2014 Elijah Manley and Oliver Larkin Take On Pro-Israel Incumbents",
+        "sourceUrl": "https://www.youtube.com/watch?v=E9UNVMlp06s",
+        "platform": "youtube",
+        "timestamp": "2026-08-18T17:52:41+00:00"
       }
     ],
     "media-press": [
@@ -606,40 +654,12 @@
         "timestamp": "2026-07-04T18:38:05.966Z"
       }
     ],
-    "iran-conflict": [
-      {
-        "quote": "U.S. Infrastructure Strikes Have Left Iranians in the South Without Livelihoods (by Peiman Salehi). U.S. airstrikes last month in southern Iran targeted civilian infrastructure, including fishing ports, bridges, telecommunications networks, power plants, hospitals, and transportation corridors.",
-        "sourceUrl": "https://www.dropsitenews.com/p/southern-iran-us-airstrikes-civilian-infrastructure",
-        "platform": "substack",
-        "timestamp": "2026-08-13T17:02:51+00:00"
-      },
-      {
-        "quote": "Trump \u201clow-keys\u201d Iran; Netanyahu rejects BoP plan for Gaza; Ukraine kills 13 in strike targeting Russian refinery (by Drop Site News)",
-        "sourceUrl": "https://www.dropsitenews.com/p/trump-iran-hormuz-netanyahu-gaza-board-peace-ukraine-russia-refinery",
-        "platform": "substack",
-        "timestamp": "2026-08-10T15:31:41+00:00"
-      },
-      {
-        "quote": "Cuba Fights Sanctions With an Energy Revolution",
-        "sourceUrl": "https://www.youtube.com/shorts/OACTDJtz5G8",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T20:03:54+00:00"
-      }
-    ],
     "military-defense": [
       {
         "quote": "USS Abraham Lincoln sailors try to jump overboard after 250 days at sea; Third person dies after Newark ICE facility detention; Israel sets wildfires in Lebanon (by Drop Site News)",
         "sourceUrl": "https://www.dropsitenews.com/p/uss-abraham-lincoln-overboard-newark-ice-detention-israel-lebanon-wildfires",
         "platform": "substack",
         "timestamp": "2026-08-13T15:19:39+00:00"
-      }
-    ],
-    "immigration": [
-      {
-        "quote": "\u2018Unending nightmare\u2019: L.A. Family Held in ICE Detention for Over 130 Days",
-        "sourceUrl": "https://www.youtube.com/watch?v=LJOxE3WnttE",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T21:00:29+00:00"
       }
     ]
   }
