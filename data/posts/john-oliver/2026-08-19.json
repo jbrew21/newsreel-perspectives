@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "collectedAt": "2026-08-19T18:35:35.904464",
+  "collectedAt": "2026-08-19T20:21:09.448134",
   "date": "2026-08-19",
   "posts": [
     {
@@ -218,6 +218,20 @@
       "voiceId": "john-oliver",
       "voiceName": "John Oliver",
       "platform": "youtube",
+      "text": "S10 E9: Bud Light Trans Rights Panic &amp; Cryptocurrencies Update: Last Week Tonight with John Oliver",
+      "sourceUrl": "https://www.youtube.com/watch?v=JSzcDcDkmqU",
+      "timestamp": "2026-08-19T16:00:20+00:00",
+      "type": "video_title",
+      "topic": "gender-lgbtq",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Critiques corporate panic over transgender visibility and rights",
+      "quote": "S10 E9: Bud Light Trans Rights Panic &amp; Cryptocurrencies Update: Last Week Tonight with John Oliver"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
       "text": "Fetal Personhood #lastweektonight",
       "sourceUrl": "https://www.youtube.com/shorts/3fCogmuPgeo",
       "timestamp": "2026-08-18T17:06:12+00:00",
@@ -302,29 +316,15 @@
       "voiceId": "john-oliver",
       "voiceName": "John Oliver",
       "platform": "youtube",
-      "text": "S10 E6: French Retirement Protests &amp; Solitary Confinement: Last Week Tonight with John Oliver",
-      "sourceUrl": "https://www.youtube.com/watch?v=0y91DFVClQ8",
-      "timestamp": "2026-08-16T16:00:38+00:00",
+      "text": "Fetal Personhood &amp; IVF #lastweektonight",
+      "sourceUrl": "https://www.youtube.com/shorts/w19_W78Gzf4",
+      "timestamp": "2026-08-19T19:13:52+00:00",
       "type": "video_title",
-      "topic": "uk-world-politics",
+      "topic": "abortion-reproductive",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Critiques French retirement age increase and solitary confinement practices",
-      "quote": "S10 E6: French Retirement Protests &amp; Solitary Confinement: Last Week Tonight with John Oliver"
-    },
-    {
-      "voiceId": "john-oliver",
-      "voiceName": "John Oliver",
-      "platform": "youtube",
-      "text": "S10 E9: Bud Light Trans Rights Panic &amp; Cryptocurrencies Update: Last Week Tonight with John Oliver",
-      "sourceUrl": "https://www.youtube.com/watch?v=JSzcDcDkmqU",
-      "timestamp": "2026-08-19T16:00:20+00:00",
-      "type": "video_title",
-      "topic": "gender-lgbtq",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Critiques corporate panic over transgender visibility and rights",
-      "quote": "S10 E9: Bud Light Trans Rights Panic &amp; Cryptocurrencies Update: Last Week Tonight with John Oliver"
+      "summary": "Criticizes fetal personhood laws and their impact on IVF access",
+      "quote": "Fetal Personhood &amp; IVF #lastweektonight"
     }
   ],
   "topicSummary": {
@@ -438,6 +438,14 @@
         "timestamp": "2024-08-01T12:45:31+00:00"
       }
     ],
+    "gender-lgbtq": [
+      {
+        "quote": "S10 E9: Bud Light Trans Rights Panic &amp; Cryptocurrencies Update: Last Week Tonight with John Oliver",
+        "sourceUrl": "https://www.youtube.com/watch?v=JSzcDcDkmqU",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T16:00:20+00:00"
+      }
+    ],
     "abortion-reproductive": [
       {
         "quote": "Fetal Personhood #lastweektonight",
@@ -456,6 +464,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=sCSt45rev7w",
         "platform": "youtube",
         "timestamp": "2026-08-17T06:30:17+00:00"
+      },
+      {
+        "quote": "Fetal Personhood &amp; IVF #lastweektonight",
+        "sourceUrl": "https://www.youtube.com/shorts/w19_W78Gzf4",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T19:13:52+00:00"
       }
     ],
     "iran-conflict": [
@@ -478,22 +492,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=jEaSeKBkNG4",
         "platform": "youtube",
         "timestamp": "2026-08-17T16:00:08+00:00"
-      }
-    ],
-    "uk-world-politics": [
-      {
-        "quote": "S10 E6: French Retirement Protests &amp; Solitary Confinement: Last Week Tonight with John Oliver",
-        "sourceUrl": "https://www.youtube.com/watch?v=0y91DFVClQ8",
-        "platform": "youtube",
-        "timestamp": "2026-08-16T16:00:38+00:00"
-      }
-    ],
-    "gender-lgbtq": [
-      {
-        "quote": "S10 E9: Bud Light Trans Rights Panic &amp; Cryptocurrencies Update: Last Week Tonight with John Oliver",
-        "sourceUrl": "https://www.youtube.com/watch?v=JSzcDcDkmqU",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T16:00:20+00:00"
       }
     ]
   }

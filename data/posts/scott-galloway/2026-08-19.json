@@ -1,9 +1,37 @@
 {
   "voiceId": "scott-galloway",
   "voiceName": "Scott Galloway",
-  "collectedAt": "2026-08-19T18:35:35.926195",
+  "collectedAt": "2026-08-19T20:21:09.475395",
   "date": "2026-08-19",
   "posts": [
+    {
+      "voiceId": "scott-galloway",
+      "voiceName": "Scott Galloway",
+      "platform": "youtube",
+      "text": "The Jobs Report Has a Blind Spot | Office Hours",
+      "sourceUrl": "https://www.youtube.com/watch?v=LyYtMe53WaE",
+      "timestamp": "2026-08-19T16:00:17+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Jobs report methodology obscures labor market weaknesses",
+      "quote": "The Jobs Report Has a Blind Spot | Office Hours"
+    },
+    {
+      "voiceId": "scott-galloway",
+      "voiceName": "Scott Galloway",
+      "platform": "youtube",
+      "text": "Elon Musk's SpaceX IPO is low-grade corruption",
+      "sourceUrl": "https://www.youtube.com/shorts/iJAaJgwfePY",
+      "timestamp": "2026-08-19T13:00:33+00:00",
+      "type": "video_title",
+      "topic": "billionaires-wealth",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes SpaceX IPO as corrupt corporate favoritism",
+      "quote": "Elon Musk's SpaceX IPO is low-grade corruption"
+    },
     {
       "voiceId": "scott-galloway",
       "voiceName": "Scott Galloway",
@@ -185,57 +213,43 @@
       "stance": "strong",
       "summary": "Accuses Trump of building secret police through ICE killings",
       "quote": "Donald Trump is building an American secret police. Killings at the hands of ICE agents confirm that we\u2019re not teetering on a slippery slope, but plunging down a vertical drop. \n\nThere is a silver lining: Many Americans are standing up. If you\u2019re one of them, thank you, and keep going."
-    },
-    {
-      "voiceId": "scott-galloway",
-      "voiceName": "Scott Galloway",
-      "platform": "youtube",
-      "text": "The Jobs Report Has a Blind Spot | Office Hours",
-      "sourceUrl": "https://www.youtube.com/watch?v=LyYtMe53WaE",
-      "timestamp": "2026-08-19T16:00:17+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Jobs report methodology obscures labor market weaknesses",
-      "quote": "The Jobs Report Has a Blind Spot | Office Hours"
-    },
-    {
-      "voiceId": "scott-galloway",
-      "voiceName": "Scott Galloway",
-      "platform": "youtube",
-      "text": "Elon Musk's SpaceX IPO is low-grade corruption",
-      "sourceUrl": "https://www.youtube.com/shorts/iJAaJgwfePY",
-      "timestamp": "2026-08-19T13:00:33+00:00",
-      "type": "video_title",
-      "topic": "billionaires-wealth",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes SpaceX IPO as corrupt corporate favoritism",
-      "quote": "Elon Musk's SpaceX IPO is low-grade corruption"
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "The Jobs Report Has a Blind Spot | Office Hours",
+        "sourceUrl": "https://www.youtube.com/watch?v=LyYtMe53WaE",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T16:00:17+00:00"
+      },
+      {
+        "quote": "Why Microsoft Is Quietly Abandoning China | China Decode",
+        "sourceUrl": "https://www.youtube.com/watch?v=XllZdG69AIA",
+        "platform": "youtube",
+        "timestamp": "2026-08-18T08:00:07+00:00"
+      }
+    ],
+    "billionaires-wealth": [
+      {
+        "quote": "Elon Musk's SpaceX IPO is low-grade corruption",
+        "sourceUrl": "https://www.youtube.com/shorts/iJAaJgwfePY",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T13:00:33+00:00"
+      },
+      {
+        "quote": "This is low-grade corruption, but it's legal and Musk did it,,, I would stay away from the stock.",
+        "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mtcdr7b3hc2p",
+        "platform": "bluesky",
+        "timestamp": "2026-08-17T18:35:13.945Z"
+      }
+    ],
     "healthcare": [
       {
         "quote": "The overlooked risk of GLP-1s",
         "sourceUrl": "https://www.youtube.com/shorts/cx3Apy7fq-U",
         "platform": "youtube",
         "timestamp": "2026-08-18T13:00:29+00:00"
-      }
-    ],
-    "economy-trade": [
-      {
-        "quote": "Why Microsoft Is Quietly Abandoning China | China Decode",
-        "sourceUrl": "https://www.youtube.com/watch?v=XllZdG69AIA",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T08:00:07+00:00"
-      },
-      {
-        "quote": "The Jobs Report Has a Blind Spot | Office Hours",
-        "sourceUrl": "https://www.youtube.com/watch?v=LyYtMe53WaE",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T16:00:17+00:00"
       }
     ],
     "culture-war": [
@@ -288,20 +302,6 @@
         "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mteqi7n5ms2c",
         "platform": "bluesky",
         "timestamp": "2026-08-18T17:28:10.471Z"
-      }
-    ],
-    "billionaires-wealth": [
-      {
-        "quote": "This is low-grade corruption, but it's legal and Musk did it,,, I would stay away from the stock.",
-        "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mtcdr7b3hc2p",
-        "platform": "bluesky",
-        "timestamp": "2026-08-17T18:35:13.945Z"
-      },
-      {
-        "quote": "Elon Musk's SpaceX IPO is low-grade corruption",
-        "sourceUrl": "https://www.youtube.com/shorts/iJAaJgwfePY",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T13:00:33+00:00"
       }
     ],
     "media-press": [
