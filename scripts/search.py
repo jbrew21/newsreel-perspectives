@@ -180,7 +180,7 @@ async def search_bluesky(topic, voices):
                     })
                     voice_name = next((v['name'] for v in voices if v['id'] == voice_id), '?')
                     print(f"    ✓ {voice_name}: \"{text[:60]}...\"")
-        except:
+        except Exception:
             pass
 
     print(f"  ✓ Bluesky: {len(results)} relevant posts found")
@@ -238,7 +238,7 @@ async def search_tiktok(topic, voices, browser_context=None):
                     print(f"    ✓ @{handle}: \"{text[:60]}...\"")
 
             await asyncio.sleep(1)
-        except:
+        except Exception:
             pass
 
     await page.close()
@@ -300,7 +300,7 @@ async def search_instagram(topic, voices, browser_context=None):
                     break  # One per user
 
             await asyncio.sleep(1)
-        except:
+        except Exception:
             pass
 
     await page.close()
@@ -346,7 +346,7 @@ async def search_youtube(topic, voices):
                             'username': voice['name'],
                         })
                         print(f"    ✓ {voice['name']}: \"{title[:60]}...\"")
-        except:
+        except Exception:
             pass
 
     print(f"  ✓ YouTube: {len(results)} relevant videos found")
@@ -564,7 +564,7 @@ async def search_web(topic, voices):
     if SEARCH_CACHE.exists():
         try:
             search_cache = json.loads(SEARCH_CACHE.read_text())
-        except:
+        except Exception:
             search_cache = {}
 
     cached = search_cache.get(cache_key)
@@ -653,7 +653,7 @@ async def search_web(topic, voices):
                     print(f"    ✓ {name} ({platform}): \"{text[:60]}...\"")
 
             await asyncio.sleep(0.3)
-        except:
+        except Exception:
             pass
 
     print(f"  ✓ Web: {len(results)} direct platform posts found")
@@ -936,7 +936,7 @@ async def main():
                         p['source'] = 'enriched_tweet'  # Upgrade from web_search
                         enriched_tweets += 1
                 await asyncio.sleep(0.3)
-            except:
+            except Exception:
                 pass
         print(f"  ✓ Enriched {enriched_tweets}/{len(x_web_posts)} tweets with actual text")
 
@@ -950,7 +950,7 @@ async def main():
         if TRANSCRIPT_CACHE.exists():
             try:
                 cache = json.loads(TRANSCRIPT_CACHE.read_text())
-            except:
+            except Exception:
                 cache = {}
 
         ytt_api = YouTubeTranscriptApi()
@@ -999,7 +999,7 @@ async def main():
                         fetched_new += 1
                     else:
                         cache[video_id] = ''
-                except:
+                except Exception:
                     cache[video_id] = ''  # cache failures too
 
             # Save cache
@@ -1023,7 +1023,7 @@ async def main():
                             p['text'] = f"[VIDEO by {author}] {title}"
                             p['source'] = 'oembed_title'
                             desc_enriched += 1
-                    except:
+                    except Exception:
                         pass
                 print(f"  ✓ Got {desc_enriched} video titles via oembed")
     except ImportError:
