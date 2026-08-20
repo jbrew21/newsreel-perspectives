@@ -1,9 +1,37 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-20T07:26:53.103898",
+  "collectedAt": "2026-08-20T09:19:18.986856",
   "date": "2026-08-20",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Can Trump Actually Make Housing Affordable Again?",
+      "sourceUrl": "https://www.youtube.com/watch?v=6_spfaub60o",
+      "timestamp": "2026-08-19T23:00:18+00:00",
+      "type": "video_title",
+      "topic": "housing-infrastructure",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions Trump's ability to reduce housing costs",
+      "quote": "Can Trump Actually Make Housing Affordable Again?"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "You'll Never Even Know The Story Changed...",
+      "sourceUrl": "https://www.youtube.com/shorts/Qausvom1vmc",
+      "timestamp": "2026-08-19T21:15:10+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes media for altering narratives without acknowledgment",
+      "quote": "You'll Never Even Know The Story Changed..."
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -101,49 +129,29 @@
       "stance": "lean",
       "summary": "Frames Trump as opposing globalist New World Order agenda",
       "quote": "Trump Is Trying To Stop The New World Order"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Can Trump Actually Make Housing Affordable Again?",
-      "sourceUrl": "https://www.youtube.com/watch?v=6_spfaub60o",
-      "timestamp": "2026-08-19T23:00:18+00:00",
-      "type": "video_title",
-      "topic": "housing-infrastructure",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions Trump's ability to reduce housing costs",
-      "quote": "Can Trump Actually Make Housing Affordable Again?"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "You'll Never Even Know The Story Changed...",
-      "sourceUrl": "https://www.youtube.com/shorts/Qausvom1vmc",
-      "timestamp": "2026-08-19T21:15:10+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes media for altering narratives without acknowledgment",
-      "quote": "You'll Never Even Know The Story Changed..."
     }
   ],
   "topicSummary": {
-    "media-press": [
+    "housing-infrastructure": [
       {
-        "quote": "Media Has Been Doing This For YEARS And Thought You Wouldn't Notice...",
-        "sourceUrl": "https://www.youtube.com/watch?v=UFrUHXeh2d0",
+        "quote": "Can Trump Actually Make Housing Affordable Again?",
+        "sourceUrl": "https://www.youtube.com/watch?v=6_spfaub60o",
         "platform": "youtube",
-        "timestamp": "2026-08-19T18:00:01+00:00"
-      },
+        "timestamp": "2026-08-19T23:00:18+00:00"
+      }
+    ],
+    "media-press": [
       {
         "quote": "You'll Never Even Know The Story Changed...",
         "sourceUrl": "https://www.youtube.com/shorts/Qausvom1vmc",
         "platform": "youtube",
         "timestamp": "2026-08-19T21:15:10+00:00"
+      },
+      {
+        "quote": "Media Has Been Doing This For YEARS And Thought You Wouldn't Notice...",
+        "sourceUrl": "https://www.youtube.com/watch?v=UFrUHXeh2d0",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T18:00:01+00:00"
       }
     ],
     "trump-administration": [
@@ -188,14 +196,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=6VX2auYstNE",
         "platform": "youtube",
         "timestamp": "2026-08-17T23:00:03+00:00"
-      }
-    ],
-    "housing-infrastructure": [
-      {
-        "quote": "Can Trump Actually Make Housing Affordable Again?",
-        "sourceUrl": "https://www.youtube.com/watch?v=6_spfaub60o",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T23:00:18+00:00"
       }
     ]
   }

@@ -1,9 +1,37 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-08-20T07:26:53.056273",
+  "collectedAt": "2026-08-20T09:19:18.929957",
   "date": "2026-08-20",
   "posts": [
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "All of This Is a Disgrace to Charlie",
+      "sourceUrl": "https://www.youtube.com/watch?v=XD09VSBNbcM",
+      "timestamp": "2026-08-19T20:00:08+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes someone's actions as disrespectful to Charlie",
+      "quote": "All of This Is a Disgrace to Charlie"
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "Black Fatigue strikes again",
+      "sourceUrl": "https://www.youtube.com/shorts/h2wEcvFSYsU",
+      "timestamp": "2026-08-19T19:50:02+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques what he frames as racial fatigue narrative",
+      "quote": "Black Fatigue strikes again"
+    },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
@@ -87,38 +115,16 @@
       "stance": "lean",
       "summary": "Defends his interview approach with Candace Owens",
       "quote": "Andrew Wilson on why he didn't need to push Candace Owens harder on her claims."
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "All of This Is a Disgrace to Charlie",
-      "sourceUrl": "https://www.youtube.com/watch?v=XD09VSBNbcM",
-      "timestamp": "2026-08-19T20:00:08+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes someone's actions as disrespectful to Charlie",
-      "quote": "All of This Is a Disgrace to Charlie"
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "Black Fatigue strikes again",
-      "sourceUrl": "https://www.youtube.com/shorts/h2wEcvFSYsU",
-      "timestamp": "2026-08-19T19:50:02+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critiques what he frames as racial fatigue narrative",
-      "quote": "Black Fatigue strikes again"
     }
   ],
   "topicSummary": {
     "media-personalities": [
+      {
+        "quote": "All of This Is a Disgrace to Charlie",
+        "sourceUrl": "https://www.youtube.com/watch?v=XD09VSBNbcM",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T20:00:08+00:00"
+      },
       {
         "quote": "Tucker Carlson\u2019s Transgender Nuclear Weapons Theory Is Wild",
         "sourceUrl": "https://www.youtube.com/watch?v=J2EejWe_-GY",
@@ -142,12 +148,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/D2r0wBiKqSA",
         "platform": "youtube",
         "timestamp": "2026-08-14T20:05:59+00:00"
-      },
+      }
+    ],
+    "culture-war": [
       {
-        "quote": "All of This Is a Disgrace to Charlie",
-        "sourceUrl": "https://www.youtube.com/watch?v=XD09VSBNbcM",
+        "quote": "Black Fatigue strikes again",
+        "sourceUrl": "https://www.youtube.com/shorts/h2wEcvFSYsU",
         "platform": "youtube",
-        "timestamp": "2026-08-19T20:00:08+00:00"
+        "timestamp": "2026-08-19T19:50:02+00:00"
       }
     ],
     "state-local-politics": [
@@ -164,14 +172,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/_7TH_HkCxVk",
         "platform": "youtube",
         "timestamp": "2026-08-17T20:30:39+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "Black Fatigue strikes again",
-        "sourceUrl": "https://www.youtube.com/shorts/h2wEcvFSYsU",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T19:50:02+00:00"
       }
     ]
   }

@@ -1,9 +1,37 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-20T07:26:53.054561",
+  "collectedAt": "2026-08-20T09:19:18.927552",
   "date": "2026-08-20",
   "posts": [
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "The Trans Assassin Who Tried To Kill Sec. Bessent",
+      "sourceUrl": "https://www.youtube.com/watch?v=NXDq0IV_Pjs",
+      "timestamp": "2026-08-19T20:30:06+00:00",
+      "type": "video_title",
+      "topic": "terrorism",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Reports on assassination attempt against Treasury Secretary",
+      "quote": "The Trans Assassin Who Tried To Kill Sec. Bessent"
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "The Internet Lied to You About This Election",
+      "sourceUrl": "https://www.youtube.com/watch?v=ZCIgSyvuvOA",
+      "timestamp": "2026-08-19T20:00:08+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Challenges media narratives about election coverage",
+      "quote": "The Internet Lied to You About This Election"
+    },
     {
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
@@ -73,37 +101,25 @@
       "stance": "lean",
       "summary": "Dismisses public concern about Flock Camera as exaggerated",
       "quote": "The Flock Camera Freakout Is Overblown"
-    },
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "The Trans Assassin Who Tried To Kill Sec. Bessent",
-      "sourceUrl": "https://www.youtube.com/watch?v=NXDq0IV_Pjs",
-      "timestamp": "2026-08-19T20:30:06+00:00",
-      "type": "video_title",
-      "topic": "terrorism",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Reports on assassination attempt against Treasury Secretary",
-      "quote": "The Trans Assassin Who Tried To Kill Sec. Bessent"
-    },
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "The Internet Lied to You About This Election",
-      "sourceUrl": "https://www.youtube.com/watch?v=ZCIgSyvuvOA",
-      "timestamp": "2026-08-19T20:00:08+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Challenges media narratives about election coverage",
-      "quote": "The Internet Lied to You About This Election"
     }
   ],
   "topicSummary": {
+    "terrorism": [
+      {
+        "quote": "The Trans Assassin Who Tried To Kill Sec. Bessent",
+        "sourceUrl": "https://www.youtube.com/watch?v=NXDq0IV_Pjs",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T20:30:06+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "The Internet Lied to You About This Election",
+        "sourceUrl": "https://www.youtube.com/watch?v=ZCIgSyvuvOA",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T20:00:08+00:00"
+      }
+    ],
     "culture-war": [
       {
         "quote": "You're Not Racist To Oppose The &quot;Teen Takeover&quot; Trend",
@@ -140,22 +156,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=qZoxWKNtvUQ",
         "platform": "youtube",
         "timestamp": "2026-08-18T20:30:03+00:00"
-      }
-    ],
-    "terrorism": [
-      {
-        "quote": "The Trans Assassin Who Tried To Kill Sec. Bessent",
-        "sourceUrl": "https://www.youtube.com/watch?v=NXDq0IV_Pjs",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T20:30:06+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "The Internet Lied to You About This Election",
-        "sourceUrl": "https://www.youtube.com/watch?v=ZCIgSyvuvOA",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T20:00:08+00:00"
       }
     ]
   }
