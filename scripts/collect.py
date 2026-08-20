@@ -514,8 +514,15 @@ def fetch_bluesky_posts(voice):
 # ─── SUBSTACK / NEWSLETTER RSS ───────────────────────────────────────────────
 
 def fetch_substack_posts(voice):
-    """Pull recent articles from Substack/newsletter RSS feed (free, no auth)."""
-    feed_url = voice.get('feeds', {}).get('substack')
+    """Pull recent articles from a Substack/newsletter/blog RSS feed (free, no auth).
+
+    Also handles the 'blog' feed key (standard RSS 2.0, e.g. Election Law Blog).
+    Before this, voices configured with only a 'blog' feed were silently never
+    collected — collect_voice() had no blog handler.
+    """
+    feeds = voice.get('feeds', {})
+    feed_url = feeds.get('substack') or feeds.get('blog')
+    platform = 'substack' if feeds.get('substack') else 'blog'
     if not feed_url:
         return []
 
@@ -584,7 +591,7 @@ def fetch_substack_posts(voice):
             posts.append({
                 'voiceId': voice['id'],
                 'voiceName': voice['name'],
-                'platform': 'substack',
+                'platform': platform,
                 'text': text[:500],
                 'sourceUrl': source_url,
                 'timestamp': timestamp,
@@ -592,7 +599,7 @@ def fetch_substack_posts(voice):
             })
     except Exception as e:
         if '404' not in str(e):
-            print(f"    ⚠ Substack fetch failed: {e}")
+            print(f"    ⚠ {platform.capitalize()} fetch failed: {e}")
 
     return posts
 
