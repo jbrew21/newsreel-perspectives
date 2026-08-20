@@ -1,7 +1,7 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-20T18:42:26.139440",
+  "collectedAt": "2026-08-20T20:04:40.394797",
   "date": "2026-08-20",
   "posts": [
     {
@@ -64,43 +64,29 @@
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
       "platform": "youtube",
-      "text": "The 'Girlboss Dating' Dream Just Died",
-      "sourceUrl": "https://www.youtube.com/watch?v=sBlA35eK8Is",
-      "timestamp": "2026-08-18T21:00:09+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critiques Bumble's business strategy or product initiative as failed",
-      "quote": "The 'Girlboss Dating' Dream Just Died"
-    },
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "Oval Office Showdown: Trump vs. CNN",
-      "sourceUrl": "https://www.youtube.com/watch?v=qZoxWKNtvUQ",
-      "timestamp": "2026-08-18T20:30:03+00:00",
+      "text": "Trump Has Become the White House\u2019s General Contractor",
+      "sourceUrl": "https://www.youtube.com/watch?v=t0mYraz3H2o",
+      "timestamp": "2026-08-20T19:02:41+00:00",
       "type": "video_title",
       "topic": "trump-administration",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Frames Trump-CNN interaction as confrontational or adversarial",
-      "quote": "Oval Office Showdown: Trump vs. CNN"
+      "summary": "Characterizes Trump as managing White House like construction project",
+      "quote": "Trump Has Become the White House\u2019s General Contractor"
     },
     {
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
       "platform": "youtube",
-      "text": "The Truth About Flock Cameras Nobody's Telling You",
-      "sourceUrl": "https://www.youtube.com/watch?v=0stN5EOos_c",
-      "timestamp": "2026-08-18T20:00:32+00:00",
+      "text": "The West To (Mostly Muslim) Migrants: Please Don\u2019t Rape Us",
+      "sourceUrl": "https://www.youtube.com/watch?v=kLk5Nwsg9mI",
+      "timestamp": "2026-08-20T17:32:45+00:00",
       "type": "video_title",
-      "topic": "ai-technology",
+      "topic": "immigration",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Dismisses public concern about Flock Camera as exaggerated",
-      "quote": "The Truth About Flock Cameras Nobody's Telling You"
+      "stance": "strong",
+      "summary": "Frames migration from Muslim-majority regions as sexual assault threat",
+      "quote": "The West To (Mostly Muslim) Migrants: Please Don\u2019t Rape Us"
     }
   ],
   "topicSummary": {
@@ -136,26 +122,20 @@
         "timestamp": "2026-08-19T01:07:19+00:00"
       }
     ],
-    "ai-technology": [
-      {
-        "quote": "The 'Girlboss Dating' Dream Just Died",
-        "sourceUrl": "https://www.youtube.com/watch?v=sBlA35eK8Is",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T21:00:09+00:00"
-      },
-      {
-        "quote": "The Truth About Flock Cameras Nobody's Telling You",
-        "sourceUrl": "https://www.youtube.com/watch?v=0stN5EOos_c",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T20:00:32+00:00"
-      }
-    ],
     "trump-administration": [
       {
-        "quote": "Oval Office Showdown: Trump vs. CNN",
-        "sourceUrl": "https://www.youtube.com/watch?v=qZoxWKNtvUQ",
+        "quote": "Trump Has Become the White House\u2019s General Contractor",
+        "sourceUrl": "https://www.youtube.com/watch?v=t0mYraz3H2o",
         "platform": "youtube",
-        "timestamp": "2026-08-18T20:30:03+00:00"
+        "timestamp": "2026-08-20T19:02:41+00:00"
+      }
+    ],
+    "immigration": [
+      {
+        "quote": "The West To (Mostly Muslim) Migrants: Please Don\u2019t Rape Us",
+        "sourceUrl": "https://www.youtube.com/watch?v=kLk5Nwsg9mI",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T17:32:45+00:00"
       }
     ]
   }

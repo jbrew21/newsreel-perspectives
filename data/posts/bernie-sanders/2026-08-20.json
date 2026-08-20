@@ -1,9 +1,23 @@
 {
   "voiceId": "bernie-sanders",
   "voiceName": "Bernie Sanders",
-  "collectedAt": "2026-08-20T18:42:26.151443",
+  "collectedAt": "2026-08-20T20:04:40.411705",
   "date": "2026-08-20",
   "posts": [
+    {
+      "voiceId": "bernie-sanders",
+      "voiceName": "Bernie Sanders",
+      "platform": "youtube",
+      "text": "Trump: \u201cI could be the greatest communist in history\u201d",
+      "sourceUrl": "https://www.youtube.com/shorts/hW3d03OxWaY",
+      "timestamp": "2026-08-20T16:21:57+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies Trump's economic policies contradict communist ideology",
+      "quote": "Trump: \u201cI could be the greatest communist in history\u201d"
+    },
     {
       "voiceId": "bernie-sanders",
       "voiceName": "Bernie Sanders",
@@ -129,23 +143,29 @@
       "stance": "lean",
       "summary": "Endorses Peggy Flanagan for Minnesota office",
       "quote": "Minnesota: Vote Peggy Flanagan"
-    },
-    {
-      "voiceId": "bernie-sanders",
-      "voiceName": "Bernie Sanders",
-      "platform": "youtube",
-      "text": "Trump: \u201cI could be the greatest communist in history\u201d",
-      "sourceUrl": "https://www.youtube.com/shorts/hW3d03OxWaY",
-      "timestamp": "2026-08-20T16:21:57+00:00",
-      "type": "video_title",
-      "topic": "trump-policy",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies Trump's economic policies contradict communist ideology",
-      "quote": "Trump: \u201cI could be the greatest communist in history\u201d"
     }
   ],
   "topicSummary": {
+    "trump-policy": [
+      {
+        "quote": "Trump: \u201cI could be the greatest communist in history\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/hW3d03OxWaY",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T16:21:57+00:00"
+      },
+      {
+        "quote": "Trump's right.",
+        "sourceUrl": "https://www.youtube.com/shorts/8eZNSHjyBY8",
+        "platform": "youtube",
+        "timestamp": "2026-08-14T21:22:55+00:00"
+      },
+      {
+        "quote": "Trump didn't like crypto. Then he figured out a way to profit from it.",
+        "sourceUrl": "https://www.youtube.com/shorts/zAzUwbXcMNg",
+        "platform": "youtube",
+        "timestamp": "2026-08-08T12:51:02+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "What is behind progressives\u2019 national success?",
@@ -194,26 +214,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/vAxVDaEo2gc",
         "platform": "youtube",
         "timestamp": "2026-08-15T13:00:20+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "Trump's right.",
-        "sourceUrl": "https://www.youtube.com/shorts/8eZNSHjyBY8",
-        "platform": "youtube",
-        "timestamp": "2026-08-14T21:22:55+00:00"
-      },
-      {
-        "quote": "Trump didn't like crypto. Then he figured out a way to profit from it.",
-        "sourceUrl": "https://www.youtube.com/shorts/zAzUwbXcMNg",
-        "platform": "youtube",
-        "timestamp": "2026-08-08T12:51:02+00:00"
-      },
-      {
-        "quote": "Trump: \u201cI could be the greatest communist in history\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/hW3d03OxWaY",
-        "platform": "youtube",
-        "timestamp": "2026-08-20T16:21:57+00:00"
       }
     ]
   }

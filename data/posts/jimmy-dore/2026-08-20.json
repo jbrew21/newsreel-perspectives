@@ -1,9 +1,23 @@
 {
   "voiceId": "jimmy-dore",
   "voiceName": "Jimmy Dore",
-  "collectedAt": "2026-08-20T18:42:26.150608",
+  "collectedAt": "2026-08-20T20:04:40.410489",
   "date": "2026-08-20",
   "posts": [
+    {
+      "voiceId": "jimmy-dore",
+      "voiceName": "Jimmy Dore",
+      "platform": "youtube",
+      "text": "Joe Kent On Charlie Kirk, Trump Shooting &amp; How Americans Can Take Our Country Back!",
+      "sourceUrl": "https://www.youtube.com/watch?v=_wOylvcuM9M",
+      "timestamp": "2026-08-20T15:20:22+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Advocates for reclaiming American sovereignty and national direction",
+      "quote": "Joe Kent On Charlie Kirk, Trump Shooting &amp; How Americans Can Take Our Country Back!"
+    },
     {
       "voiceId": "jimmy-dore",
       "voiceName": "Jimmy Dore",
@@ -73,37 +87,17 @@
       "stance": "strong",
       "summary": "Opposes military spending, advocates prioritizing healthcare over wars",
       "quote": "Wars Or Healthcare? It\u2019s A No-Brainer! w/ Joe Jent"
-    },
-    {
-      "voiceId": "jimmy-dore",
-      "voiceName": "Jimmy Dore",
-      "platform": "youtube",
-      "text": "92% Of Americans Skip Seeing A Doctor Over Cost! ",
-      "sourceUrl": "https://www.youtube.com/watch?v=dPjiv5YLEFQ",
-      "timestamp": "2026-08-19T15:35:48+00:00",
-      "type": "video_title",
-      "topic": "healthcare",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes healthcare affordability crisis preventing Americans from seeking care",
-      "quote": "92% Of Americans Skip Seeing A Doctor Over Cost! "
-    },
-    {
-      "voiceId": "jimmy-dore",
-      "voiceName": "Jimmy Dore",
-      "platform": "youtube",
-      "text": "Joe Kent On Charlie Kirk, Trump Shooting &amp; How Americans Can Take Our Country Back!",
-      "sourceUrl": "https://www.youtube.com/watch?v=_wOylvcuM9M",
-      "timestamp": "2026-08-20T15:20:22+00:00",
-      "type": "video_title",
-      "topic": "trump-policy",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Advocates for reclaiming American sovereignty and national direction",
-      "quote": "Joe Kent On Charlie Kirk, Trump Shooting &amp; How Americans Can Take Our Country Back!"
     }
   ],
   "topicSummary": {
+    "trump-policy": [
+      {
+        "quote": "Joe Kent On Charlie Kirk, Trump Shooting &amp; How Americans Can Take Our Country Back!",
+        "sourceUrl": "https://www.youtube.com/watch?v=_wOylvcuM9M",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T15:20:22+00:00"
+      }
+    ],
     "iran-conflict": [
       {
         "quote": "Trump Is Planning to NUKE IRAN! Says Marjorie Taylor Greene! w/ James Corbett",
@@ -140,22 +134,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/kK9C0M6K5Uk",
         "platform": "youtube",
         "timestamp": "2026-08-19T16:00:30+00:00"
-      }
-    ],
-    "healthcare": [
-      {
-        "quote": "92% Of Americans Skip Seeing A Doctor Over Cost! ",
-        "sourceUrl": "https://www.youtube.com/watch?v=dPjiv5YLEFQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T15:35:48+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "Joe Kent On Charlie Kirk, Trump Shooting &amp; How Americans Can Take Our Country Back!",
-        "sourceUrl": "https://www.youtube.com/watch?v=_wOylvcuM9M",
-        "platform": "youtube",
-        "timestamp": "2026-08-20T15:20:22+00:00"
       }
     ]
   }

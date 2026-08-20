@@ -1,9 +1,23 @@
 {
   "voiceId": "gavin-newsom",
   "voiceName": "Gavin Newsom",
-  "collectedAt": "2026-08-20T18:42:26.155228",
+  "collectedAt": "2026-08-20T20:04:40.416572",
   "date": "2026-08-20",
   "posts": [
+    {
+      "voiceId": "gavin-newsom",
+      "voiceName": "Gavin Newsom",
+      "platform": "youtube",
+      "text": "California Provides FREE Asthma Medication to Schools Across State",
+      "sourceUrl": "https://www.youtube.com/shorts/wDF7qQLFr9c",
+      "timestamp": "2026-08-20T17:24:39+00:00",
+      "type": "video_title",
+      "topic": "healthcare",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Promotes state provision of free asthma medication in schools",
+      "quote": "California Provides FREE Asthma Medication to Schools Across State"
+    },
     {
       "voiceId": "gavin-newsom",
       "voiceName": "Gavin Newsom",
@@ -106,18 +120,30 @@
       "voiceId": "gavin-newsom",
       "voiceName": "Gavin Newsom",
       "platform": "youtube",
-      "text": "California Provides FREE Asthma Medication to Schools Across State",
-      "sourceUrl": "https://www.youtube.com/shorts/wDF7qQLFr9c",
-      "timestamp": "2026-08-20T17:24:39+00:00",
-      "type": "video_title",
-      "topic": "healthcare",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Promotes state provision of free asthma medication in schools",
-      "quote": "California Provides FREE Asthma Medication to Schools Across State"
+      "text": "Governor #Newsom, First Partner Welcome #California Kids #BackToSchool #shorts #gavinnewsom #school",
+      "sourceUrl": "https://www.youtube.com/shorts/YAZJRRhbKoI",
+      "timestamp": "2026-08-20T00:37:06+00:00",
+      "type": "video_title"
+    },
+    {
+      "voiceId": "gavin-newsom",
+      "voiceName": "Gavin Newsom",
+      "platform": "youtube",
+      "text": "Governor Gavin Newsom and First Partner Jennifer Siebel Newsom welcome students to a new school year",
+      "sourceUrl": "https://www.youtube.com/watch?v=sF3cBWZZCDY",
+      "timestamp": "2026-08-19T19:39:55+00:00",
+      "type": "video_title"
     }
   ],
   "topicSummary": {
+    "healthcare": [
+      {
+        "quote": "California Provides FREE Asthma Medication to Schools Across State",
+        "sourceUrl": "https://www.youtube.com/shorts/wDF7qQLFr9c",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T17:24:39+00:00"
+      }
+    ],
     "climate-environment": [
       {
         "quote": "Governor #Newsom on New #ElectricBuses for #California #Schools \u00a0#shorts #electricvehicles #news",
@@ -168,12 +194,18 @@
         "timestamp": "2026-07-23T21:38:59+00:00"
       }
     ],
-    "healthcare": [
+    "uncategorized": [
       {
-        "quote": "California Provides FREE Asthma Medication to Schools Across State",
-        "sourceUrl": "https://www.youtube.com/shorts/wDF7qQLFr9c",
+        "quote": "Governor #Newsom, First Partner Welcome #California Kids #BackToSchool #shorts #gavinnewsom #school",
+        "sourceUrl": "https://www.youtube.com/shorts/YAZJRRhbKoI",
         "platform": "youtube",
-        "timestamp": "2026-08-20T17:24:39+00:00"
+        "timestamp": "2026-08-20T00:37:06+00:00"
+      },
+      {
+        "quote": "Governor Gavin Newsom and First Partner Jennifer Siebel Newsom welcome students to a new school year",
+        "sourceUrl": "https://www.youtube.com/watch?v=sF3cBWZZCDY",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T19:39:55+00:00"
       }
     ]
   }
