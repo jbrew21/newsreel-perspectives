@@ -1,14 +1,360 @@
 [
   {
-    "topic": "elections",
-    "topicDisplay": "Elections",
-    "headline": "2025 Primaries: DSA Upsets Shake Democratic Establishment",
-    "voiceCount": 30,
-    "clusterCount": 5,
-    "insight": "Progressives celebrate DSA-aligned primary upsets while establishment Democrats and critics debate what it means for the party's future.",
+    "topic": "economy-trade",
+    "topicDisplay": "Economy Trade",
+    "headline": "National Debt Hits $40 Trillion Milestone",
+    "voiceCount": 16,
+    "clusterCount": 4,
+    "insight": "Debt hawks and progressives both sound alarms, while MAGA voices tout unrelated economic wins instead.",
     "clusters": [
       {
-        "name": "Progressive Populist Wins",
+        "name": "Debt Alarm Sounders",
+        "voices": [
+          {
+            "voiceId": "justin-wolfers",
+            "voiceName": "Justin Wolfers",
+            "photo": "/photos/justin-wolfers.jpg",
+            "quote": "It's like trying to fill up a leaky bathtub. You can keep turning up the faucet, but if the leak keeps growing, the tub is never going to fill.\u2063\n\u2063\nhttps://newsletter.platypuseconomics.com/p/burrito-ga",
+            "sourceUrl": "https://bsky.app/profile/justinwolfers.bsky.social/post/3mthdev27cz2b",
+            "platform": "bluesky",
+            "fit": 7,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "The national debt has risen by $3.8 trillion since Trump took office, and economic growth is slowing.\n\nThis is far from the first time the economy has shuttered under a Republican president.\n\nIt\u2019s tim",
+            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mthq76r2mk2s",
+            "platform": "bluesky",
+            "fit": 6,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "The bond market is sending a warning about America\u2019s debt.\n\nNow Trump\u2019s Treasury is stepping in.\n\nChief Economist Justin Wolfers explains what\u2019s happening, what we still don\u2019t know, and why this could",
+            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mthnzo2wyk2a",
+            "platform": "bluesky",
+            "fit": 6,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "jake-tapper",
+            "voiceName": "Jake Tapper",
+            "photo": "/photos/jake-tapper.jpg",
+            "quote": "Boom\n\nNational debt reaches grim $40 trillion milestone. Here\u2019s why that matters cnn.com/2026/08/19/economy/n\u2026\n\nLink\n\n\n\nNational debt reaches grim $40 trillion milestone. Here\u2019s why that matters | CNN",
+            "sourceUrl": "https://x.com/jaketapper/status/2090171724717609188",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "rand-paul",
+            "voiceName": "Rand Paul",
+            "photo": "/photos/rand-paul.jpg",
+            "quote": "The national debt crossed the $40 trillion mark, months ahead of schedule. Instead of paying for things as we go, Washington spends and spends.\n\nYou and your family make a budget and live by it. Washi",
+            "sourceUrl": "https://x.com/RandPaul/status/2090445658356400563",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "ted-cruz",
+            "voiceName": "Ted Cruz",
+            "photo": "/photos/ted-cruz.jpg",
+            "quote": "BONUS POD: Heads in the Sand\u2014The Unsustainable Numbers behind America\u2019s $40 Trill Debt",
+            "sourceUrl": "https://www.youtube.com/watch?v=7HUy8pJxrUA",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 6,
+        "bestQuote": {
+          "voiceName": "Justin Wolfers",
+          "quote": "It's like trying to fill up a leaky bathtub. You can keep turning up the faucet, but if the leak keeps growing, the tub is never going to fill.\u2063\n\u2063\nhttps://newsletter.platypuseconomics.com/p/burrito-ga",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Bond Market Instability Watch",
+        "voices": [
+          {
+            "voiceId": "young-turks",
+            "voiceName": "The Young Turks",
+            "photo": "/photos/young-turks.jpg",
+            "quote": "The Bond Market Is In BIG TROUBLE",
+            "sourceUrl": "https://www.youtube.com/watch?v=sykq5vutBkI",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "cenk-uygur",
+            "voiceName": "Cenk Uygur",
+            "photo": "/photos/cenk-uygur.jpg",
+            "quote": "The Bond Market Is In BIG TROUBLE",
+            "sourceUrl": "https://www.youtube.com/watch?v=sykq5vutBkI",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "breaking-points",
+            "voiceName": "Breaking Points",
+            "photo": "/photos/breaking-points.jpg",
+            "quote": "Trump PANICS As Bond Market Crumbles",
+            "sourceUrl": "https://www.youtube.com/watch?v=t0A6k5Fl00Q",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "krystal-ball",
+            "voiceName": "Krystal Ball",
+            "photo": "/photos/krystal-ball.jpg",
+            "quote": "Trump PANICS As Bond Market Crumbles",
+            "sourceUrl": "https://www.youtube.com/watch?v=t0A6k5Fl00Q",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "The Young Turks",
+          "quote": "The Bond Market Is In BIG TROUBLE",
+          "platform": "youtube",
+          "quality": 1
+        }
+      },
+      {
+        "name": "Fed and Growth Skeptics",
+        "voices": [
+          {
+            "voiceId": "noah-smith",
+            "voiceName": "Noah Smith",
+            "photo": "/photos/noah-smith.jpg",
+            "quote": "Economists should be worried about birth rates. Don\u2019t be so quick to dismiss the threat of an aging, declining population.",
+            "sourceUrl": "https://www.noahpinion.blog/p/economists-should-be-worried-about",
+            "platform": "substack",
+            "fit": 4,
+            "quoteQuality": 7
+          },
+          {
+            "voiceId": "claudia-sahm",
+            "voiceName": "Claudia Sahm",
+            "photo": "/photos/claudia-sahm.jpg",
+            "quote": "The Chair is the Fed's storyteller, and this one is proving unreliable. My new post on how to listen to the Warsh Fed. stayathomemacro.substack.com/p/read-the-m...",
+            "sourceUrl": "https://bsky.app/profile/claudia-sahm.bsky.social/post/3mtjlmom7bc27",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "jamelle-bouie",
+            "voiceName": "Jamelle Bouie",
+            "photo": "/photos/jamelle-bouie.jpg",
+            "quote": "\u2026that acknowledgement of reality doesn\u2019t send the same aspirational message, nor does it fit the administration\u2019s economic messaging.",
+            "sourceUrl": "https://bsky.app/profile/jamellebouie.net/post/3mtjdfspaas24",
+            "platform": "bluesky",
+            "fit": 6,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "ben-shapiro",
+            "voiceName": "Ben Shapiro",
+            "photo": "/photos/ben-shapiro.jpg",
+            "quote": "The economy your parents knew is already gone. The economy you know is going next.",
+            "sourceUrl": "https://www.youtube.com/shorts/QRfdEhJvofM",
+            "platform": "youtube",
+            "fit": 5,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "Noah Smith",
+          "quote": "Economists should be worried about birth rates. Don\u2019t be so quick to dismiss the threat of an aging, declining population.",
+          "platform": "substack",
+          "quality": 7
+        }
+      },
+      {
+        "name": "Administration Economic Wins",
+        "voices": [
+          {
+            "voiceId": "vivek-ramaswamy",
+            "voiceName": "Vivek Ramaswamy",
+            "photo": "/photos/vivek-ramaswamy.jpg",
+            "quote": "Lower property taxes. Lower electric bills. Bigger after-tax paychecks.",
+            "sourceUrl": "https://www.youtube.com/shorts/LXlP810uXAw",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "Iran Thought They Beat Trump\u2026But Trump\u2019s Oil Power Move Changed EVERYTHING\u2026Keystone XL Pipeline OPEN",
+            "sourceUrl": "https://www.youtube.com/watch?v=h9OvJRNuJ68",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Vivek Ramaswamy",
+          "quote": "Lower property taxes. Lower electric bills. Bigger after-tax paychecks.",
+          "platform": "youtube",
+          "quality": 1
+        }
+      }
+    ],
+    "belowThreshold": false
+  },
+  {
+    "topic": "congress-legislation",
+    "topicDisplay": "Congress Legislation",
+    "headline": "Democrats Debate Party Strategy Amid Trump-Era Fights",
+    "voiceCount": 8,
+    "clusterCount": 3,
+    "insight": "Multiple commentators converge on a critique that Democrats are too timid or reactive against Trump.",
+    "clusters": [
+      {
+        "name": "Democrats Too Passive",
+        "voices": [
+          {
+            "voiceId": "tom-nichols",
+            "voiceName": "Tom Nichols",
+            "photo": "/photos/tom-nichols.jpg",
+            "quote": "David saying what many of us watching the Dems fear: They'd rather fight each other than worry all that much about Trump.\nwww.theatlantic.com/ideas/2026/0...",
+            "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtjnnjajzk2e",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "jamelle-bouie",
+            "voiceName": "Jamelle Bouie",
+            "photo": "/photos/jamelle-bouie.jpg",
+            "quote": "one part \u201cmy green room friends thought it was mean,\u201d one part debilitating fear of backlash. inability to see that ossof successfully goaded the white house into *being reactive* and thus revealing t",
+            "sourceUrl": "https://bsky.app/profile/jamellebouie.net/post/3mth27uyaw226",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "chris-geidner",
+            "voiceName": "Chris Geidner",
+            "photo": "/photos/chris-geidner.jpg",
+            "quote": "the fact that john ossoff can kick off a two-day media cycle by saying that the president is uninterested in doing his job and is sleeping through meetings and traveling around with a young blonde, su",
+            "sourceUrl": "https://bsky.app/profile/chrisgeidner.bsky.social/post/3mteet4jwxc2m",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "hasanabi",
+            "voiceName": "HasanAbi",
+            "photo": "/photos/hasanabi.jpg",
+            "quote": "Haley Stevens what are you doing??",
+            "sourceUrl": "https://www.youtube.com/shorts/igJ-5hQyMmg",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "megyn-kelly",
+            "voiceName": "Megyn Kelly",
+            "photo": "/photos/megyn-kelly.jpg",
+            "quote": "Hakeem Jeffries Has NO ANSWER For What's Happening To His Party",
+            "sourceUrl": "https://www.youtube.com/watch?v=3Hbj0qknF8U",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 5,
+        "bestQuote": {
+          "voiceName": "Tom Nichols",
+          "quote": "David saying what many of us watching the Dems fear: They'd rather fight each other than worry all that much about Trump.\nwww.theatlantic.com/ideas/2026/0...",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Corporate Influence Accountability",
+        "voices": [
+          {
+            "voiceId": "david-sirota",
+            "voiceName": "David Sirota",
+            "photo": "/photos/david-sirota.jpg",
+            "quote": "This Senate Candidate Tried To Let His Future Employer Spy On You  (by Ben Solis). Mike Rogers took thousands from AT&T, pushed to let telecoms share private customer data without a warrant, then join",
+            "sourceUrl": "https://www.levernews.com/this-senate-candidate-tried-to-let-his-future-employer-spy-on-you/",
+            "platform": "substack",
+            "fit": 9,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "leah-litman",
+            "voiceName": "Leah Litman",
+            "photo": "/photos/leah-litman.jpg",
+            "quote": "This is a helpful overview our the lawsuit AG Ellison and I announced on Tuesday against Texas Governor Abbott. As is pointed out below, \u201cAbbott has no plausible legal basis for opposing Minnesota\u2019s d",
+            "sourceUrl": "https://bsky.app/profile/leahlitman.bsky.social/post/3mtjlmmeegs2i",
+            "platform": "bluesky",
+            "fit": 4,
+            "quoteQuality": 5
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "David Sirota",
+          "quote": "This Senate Candidate Tried To Let His Future Employer Spy On You  (by Ben Solis). Mike Rogers took thousands from AT&T, pushed to let telecoms share private customer data without a warrant, then join",
+          "platform": "substack",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Party Strategy Analysis",
+        "voices": [
+          {
+            "voiceId": "matt-yglesias",
+            "voiceName": "Matt Yglesias",
+            "photo": "/photos/matt-yglesias.jpg",
+            "quote": "Two kinds of moderate Democrats (by Matthew Yglesias). There are many pragmatists, but few have the courage to say what they really think.",
+            "sourceUrl": "https://www.slowboring.com/p/two-kinds-of-moderate-democrats",
+            "platform": "substack",
+            "fit": 8,
+            "quoteQuality": 6
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Matt Yglesias",
+          "quote": "Two kinds of moderate Democrats (by Matthew Yglesias). There are many pragmatists, but few have the courage to say what they really think.",
+          "platform": "substack",
+          "quality": 6
+        }
+      }
+    ],
+    "belowThreshold": false
+  },
+  {
+    "topic": "elections",
+    "topicDisplay": "Elections",
+    "headline": "2026 primary season exposes Democratic establishment-progressive rift",
+    "voiceCount": 29,
+    "clusterCount": 7,
+    "insight": "Progressive primary wins spark fierce debate over Democratic establishment sabotage vs. genuine grassroots momentum.",
+    "clusters": [
+      {
+        "name": "Progressive Insurgency Wins",
         "voices": [
           {
             "voiceId": "david-sirota",
@@ -29,13 +375,13 @@
             "quoteQuality": 5
           },
           {
-            "voiceId": "kyle-kulinski",
-            "voiceName": "Kyle Kulinski",
-            "photo": "/photos/kyle-kulinski.jpg",
-            "quote": "Florida is a tough state for the left, much love to Oliver and Elijah Manley for running great races in tough districts. If we won a single race tonight I'd be ecstatic. Not only did we win one, we wo",
-            "sourceUrl": "https://x.com/KyleKulinski/status/2089867398413254752",
-            "platform": "x",
-            "quoteQuality": 4
+            "voiceId": "jennifer-rubin",
+            "voiceName": "Jennifer Rubin",
+            "photo": "/photos/jennifer-rubin.jpg",
+            "quote": "You know why establish Dems keep losing? their opponents are MUCH better candidates. WATCH for yourself",
+            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mthic6iqo22q",
+            "platform": "bluesky",
+            "quoteQuality": 5
           },
           {
             "voiceId": "mehdi-hasan",
@@ -65,20 +411,29 @@
             "quoteQuality": 1
           },
           {
-            "voiceId": "bernie-sanders",
-            "voiceName": "Bernie Sanders",
-            "photo": "/photos/bernie-sanders.jpg",
-            "quote": "What is behind progressives\u2019 national success?",
-            "sourceUrl": "https://www.youtube.com/shorts/0ccoZs9GpKw",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
             "voiceId": "krystal-ball",
             "voiceName": "Krystal Ball",
             "photo": "/photos/krystal-ball.jpg",
             "quote": "HISTORIC SHOCK DSA Victory In Florida",
             "sourceUrl": "https://www.youtube.com/watch?v=UjWm9ZJpaSQ",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "kyle-kulinski",
+            "voiceName": "Kyle Kulinski",
+            "photo": "/photos/kyle-kulinski.jpg",
+            "quote": "THEY\u2019RE TRYING TO SABOTAGE ABDUL | The Kyle Kulinski Show",
+            "sourceUrl": "https://www.youtube.com/watch?v=2HoW6slVPAA",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "bernie-sanders",
+            "voiceName": "Bernie Sanders",
+            "photo": "/photos/bernie-sanders.jpg",
+            "quote": "What is behind progressives\u2019 national success?",
+            "sourceUrl": "https://www.youtube.com/shorts/0ccoZs9GpKw",
             "platform": "youtube",
             "quoteQuality": 1
           },
@@ -101,7 +456,7 @@
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 10,
+        "voiceCount": 11,
         "bestQuote": {
           "voiceName": "David Sirota",
           "quote": "As I've been saying: The corporate Democratic faction is willing to sabotage populist Democratic nominees, effectively make common cause with MAGA and potentially lose the 2026 midterms if that corpor",
@@ -110,7 +465,64 @@
         }
       },
       {
-        "name": "Culture War Framing of Candidates",
+        "name": "Election Integrity Concerns",
+        "voices": [
+          {
+            "voiceId": "adam-schiff",
+            "voiceName": "Adam Schiff",
+            "photo": "/photos/adam-schiff.jpg",
+            "quote": "That's why Shasta County already rejected these conspiracies this year by ousting an election denier in their own election \u2014 the very one who is now bringing Tina Peters to California. \n\nShasta County",
+            "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3mtewcnzmn22t",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "dan-bongino",
+            "voiceName": "Dan Bongino",
+            "photo": "/photos/dan-bongino.jpg",
+            "quote": "Vouching For Voter Fraud?\nShow is live at 10am. Don't miss it \ud83d\udc47\ud83d\udc47\nrumble.com/v7edk6u-vouching-\u2026\n\nLink\n\n\n\nVouching For Voter Fraud? (Ep. 2577) - 08/19/2026\n\nIn this episode, I&apos;ll expose the horrifi",
+            "sourceUrl": "https://x.com/dbongino/status/2090053622537032090",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "gregory-price",
+            "voiceName": "Gregory Price",
+            "photo": "/photos/gregory-price.jpg",
+            "quote": "The way Alaska does their elections is just completely absurd.\n\nThe spoiler Dan Sullivan is going to advance in the Senate race despite winning less than 4,000 votes.\n\nAnd on the House side, Eric Hafn",
+            "sourceUrl": "https://x.com/greg_price11/status/2090128324542505141",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "HUGE: Missouri Judge Just Handed Trump Major VICTORY in Redistricting Battle\n\nCole County Circuit Judge Daniel Green just upheld the Trump-backed congressional map, BLOCKING Democrats referendum chall",
+            "sourceUrl": "https://x.com/bennyjohnson/status/2090469343112892604",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "tim-pool",
+            "voiceName": "Tim Pool",
+            "photo": "/photos/tim-pool.jpg",
+            "quote": "Democrat CHEATING SCANDAL CAUGHT, Poll WAS FAKE, Dems RIGGING Alaska Primary",
+            "sourceUrl": "https://www.youtube.com/watch?v=C9MR48psyHg",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 5,
+        "bestQuote": {
+          "voiceName": "Adam Schiff",
+          "quote": "That's why Shasta County already rejected these conspiracies this year by ousting an election denier in their own election \u2014 the very one who is now bringing Tina Peters to California. \n\nShasta County",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Conservative Culture War Framing",
         "voices": [
           {
             "voiceId": "michael-knowles",
@@ -131,15 +543,6 @@
             "quoteQuality": 2
           },
           {
-            "voiceId": "ted-cruz",
-            "voiceName": "Ted Cruz",
-            "photo": "/photos/ted-cruz.jpg",
-            "quote": "Abdul El Sayed's RADICAL Islamist Ties EXPOSED",
-            "sourceUrl": "https://www.youtube.com/shorts/bRJTrV5ilxc",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
             "voiceId": "ben-shapiro",
             "voiceName": "Ben Shapiro",
             "photo": "/photos/ben-shapiro.jpg",
@@ -149,20 +552,71 @@
             "quoteQuality": 1
           },
           {
-            "voiceId": "brian-tyler-cohen",
-            "voiceName": "Brian Tyler Cohen",
-            "photo": "/photos/brian-tyler-cohen.jpg",
-            "quote": "OMG: Lindsey Graham\u2019s sister BOMBS on debate stage with DISASTER response",
-            "sourceUrl": "https://www.youtube.com/watch?v=rbPeGRqcXTs",
+            "voiceId": "ted-cruz",
+            "voiceName": "Ted Cruz",
+            "photo": "/photos/ted-cruz.jpg",
+            "quote": "Abdul El Sayed's RADICAL Islamist Ties EXPOSED",
+            "sourceUrl": "https://www.youtube.com/shorts/bRJTrV5ilxc",
             "platform": "youtube",
             "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "Michael Knowles",
+          "quote": "HUGE Difference Between Radical Left and Radical Right \u2013 Primary Election RECAP",
+          "platform": "youtube",
+          "quality": 2
+        }
+      },
+      {
+        "name": "MAGA Weakening/Republican Trouble",
+        "voices": [
+          {
+            "voiceId": "lincoln-project",
+            "voiceName": "Lincoln Project",
+            "photo": "/photos/lincoln-project.jpg",
+            "quote": "Stephanie Ruehle: \"In Trump's home state of Florida, Republican voters rejected 2 of his candidates for the House. His pick for governor in Wyoming lost as well\" \n\nMAGA is weakening.",
+            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mtgys4tzef2d",
+            "platform": "bluesky",
+            "quoteQuality": 5
           },
           {
-            "voiceId": "roland-martin",
-            "voiceName": "Roland Martin",
-            "photo": "/photos/roland-martin.jpg",
-            "quote": "Unlock Victory: Mobilize Non-Voters in South Carolina! #shorts",
-            "sourceUrl": "https://www.youtube.com/shorts/9kP36yLZncM",
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "Something is shifting in Trump country.\n\nLifelong Republicans and even three-time Trump voters are now saying they\u2019ve had enough, and some are ready to vote Democratic for the first time.",
+            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mthsr3fl4c2w",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "dave-rubin",
+            "voiceName": "Dave Rubin",
+            "photo": "/photos/dave-rubin.jpg",
+            "quote": "Watch Pollster's Face as He Realizes How Much Worse It Just Got for Democrat Establishment",
+            "sourceUrl": "https://www.youtube.com/watch?v=G70r5mwJQ4g",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "Lincoln Project",
+          "quote": "Stephanie Ruehle: \"In Trump's home state of Florida, Republican voters rejected 2 of his candidates for the House. His pick for governor in Wyoming lost as well\" \n\nMAGA is weakening.",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Democratic Establishment Sabotage",
+        "voices": [
+          {
+            "voiceId": "pod-save-america",
+            "voiceName": "Pod Save America",
+            "photo": "/photos/pod-save-america.jpg",
+            "quote": "Why Did the DSCC Leave Mississippi Out? Scott Colom Responds",
+            "sourceUrl": "https://www.youtube.com/shorts/cm2E-bjIA1g",
             "platform": "youtube",
             "quoteQuality": 1
           },
@@ -176,26 +630,17 @@
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 7,
+        "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Michael Knowles",
-          "quote": "HUGE Difference Between Radical Left and Radical Right \u2013 Primary Election RECAP",
+          "voiceName": "Pod Save America",
+          "quote": "Why Did the DSCC Leave Mississippi Out? Scott Colom Responds",
           "platform": "youtube",
-          "quality": 2
+          "quality": 1
         }
       },
       {
-        "name": "Establishment Democrats Failing",
+        "name": "Democratic Party Infighting Skeptics",
         "voices": [
-          {
-            "voiceId": "jennifer-rubin",
-            "voiceName": "Jennifer Rubin",
-            "photo": "/photos/jennifer-rubin.jpg",
-            "quote": "You know why establish Dems keep losing? their opponents are MUCH better candidates. WATCH for yourself",
-            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mthic6iqo22q",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
           {
             "voiceId": "matt-yglesias",
             "voiceName": "Matt Yglesias",
@@ -204,81 +649,6 @@
             "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mte2cyod2c2o",
             "platform": "bluesky",
             "quoteQuality": 5
-          },
-          {
-            "voiceId": "adam-schiff",
-            "voiceName": "Adam Schiff",
-            "photo": "/photos/adam-schiff.jpg",
-            "quote": "That's why Shasta County already rejected these conspiracies this year by ousting an election denier in their own election \u2014 the very one who is now bringing Tina Peters to California. \n\nShasta County",
-            "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3mtewcnzmn22t",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "nate-silver",
-            "voiceName": "Nate Silver",
-            "photo": "/photos/nate-silver.jpg",
-            "quote": "It's kind of been a rough set of primaries for Heroes of the Resistance 1.0 between Vindman losing tonight, Dan Goldman losing his seat (although there were other issues there) and George Conway getti",
-            "sourceUrl": "https://x.com/NateSilver538/status/2089881090454396952",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "pod-save-america",
-            "voiceName": "Pod Save America",
-            "photo": "/photos/pod-save-america.jpg",
-            "quote": "Why Did the DSCC Leave Mississippi Out? Scott Colom Responds",
-            "sourceUrl": "https://www.youtube.com/shorts/cm2E-bjIA1g",
-            "platform": "youtube",
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 5,
-        "bestQuote": {
-          "voiceName": "Jennifer Rubin",
-          "quote": "You know why establish Dems keep losing? their opponents are MUCH better candidates. WATCH for yourself",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Democratic Party Dysfunction/Weakness",
-        "voices": [
-          {
-            "voiceId": "lincoln-project",
-            "voiceName": "Lincoln Project",
-            "photo": "/photos/lincoln-project.jpg",
-            "quote": "Stephanie Ruehle: \"In Trump's home state of Florida, Republican voters rejected 2 of his candidates for the House. His pick for governor in Wyoming lost as well\" \n\nMAGA is weakening.",
-            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mtgys4tzef2d",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "jonah-goldberg",
-            "voiceName": "Jonah Goldberg",
-            "photo": "/photos/jonah-goldberg.jpg",
-            "quote": "This is a great example of how \u201cpublic financing\u201d of campaigns is actually an incumbency protection racket.",
-            "sourceUrl": "https://x.com/JonahDispatch/status/2090230810255184167",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "meidastouch",
-            "voiceName": "MeidasTouch",
-            "photo": "/photos/meidastouch.jpg",
-            "quote": "LIVE: Trump and MAGA get BRUTAL NEWS in Elections!!!",
-            "sourceUrl": "https://www.youtube.com/watch?v=AKM5SCWZWPQ",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "dave-rubin",
-            "voiceName": "Dave Rubin",
-            "photo": "/photos/dave-rubin.jpg",
-            "quote": "Watch Pollster's Face as He Realizes How Much Worse It Just Got for Democrat Establishment",
-            "sourceUrl": "https://www.youtube.com/watch?v=G70r5mwJQ4g",
-            "platform": "youtube",
-            "quoteQuality": 1
           },
           {
             "voiceId": "jon-stewart",
@@ -290,237 +660,411 @@
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 5,
+        "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Lincoln Project",
-          "quote": "Stephanie Ruehle: \"In Trump's home state of Florida, Republican voters rejected 2 of his candidates for the House. His pick for governor in Wyoming lost as well\" \n\nMAGA is weakening.",
+          "voiceName": "Matt Yglesias",
+          "quote": "Talk of a factional battle between the insurgent left and moderates leaves out what\u2019s actually the largest and most influential faction in the Democratic Party today. \n\nwww.slowboring.com/p/the-invisi",
           "platform": "bluesky",
           "quality": 5
         }
       },
       {
-        "name": "Voter Fraud/Election Integrity Concerns",
+        "name": "Voter Engagement Push",
         "voices": [
           {
-            "voiceId": "dan-bongino",
-            "voiceName": "Dan Bongino",
-            "photo": "/photos/dan-bongino.jpg",
-            "quote": "Vouching For Voter Fraud? (Ep. 2577). In this episode, I'll expose the horrific 'vouching' voter ID laws for voting in Minnesota and how detrimental they may be to our republic.\n\n\n\n1776 Live Club: No ",
-            "sourceUrl": "",
-            "platform": "podcast",
-            "quoteQuality": 5
+            "voiceId": "david-pakman",
+            "voiceName": "David Pakman",
+            "photo": "/photos/david-pakman.jpg",
+            "quote": "\ud83d\udc40 Let this be your reminder to check your voter registration. #shorts",
+            "sourceUrl": "https://www.youtube.com/shorts/K1iikjz31NI",
+            "platform": "youtube",
+            "quoteQuality": 1
           },
           {
-            "voiceId": "bogdan-laurentiu",
-            "voiceName": "Bogdan Laurentiu",
-            "photo": "/photos/bogdan-laurentiu.jpg",
-            "quote": "James Talarico says the SAVE Act will prevent blacks from voting. \n\n@jamestalarico do you think black people cannot get an ID bruh?!",
-            "sourceUrl": "https://x.com/immi_grateful/status/2089679130740556253",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "tim-pool",
-            "voiceName": "Tim Pool",
-            "photo": "/photos/tim-pool.jpg",
-            "quote": "Democrat CHEATING SCANDAL CAUGHT, Poll WAS FAKE, Dems RIGGING Alaska Primary",
-            "sourceUrl": "https://www.youtube.com/watch?v=C9MR48psyHg",
+            "voiceId": "roland-martin",
+            "voiceName": "Roland Martin",
+            "photo": "/photos/roland-martin.jpg",
+            "quote": "Unlock Victory: Mobilize Non-Voters in South Carolina! #shorts",
+            "sourceUrl": "https://www.youtube.com/shorts/9kP36yLZncM",
             "platform": "youtube",
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 3,
+        "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Dan Bongino",
-          "quote": "Vouching For Voter Fraud? (Ep. 2577). In this episode, I'll expose the horrific 'vouching' voter ID laws for voting in Minnesota and how detrimental they may be to our republic.\n\n\n\n1776 Live Club: No ",
-          "platform": "podcast",
-          "quality": 5
+          "voiceName": "David Pakman",
+          "quote": "\ud83d\udc40 Let this be your reminder to check your voter registration. #shorts",
+          "platform": "youtube",
+          "quality": 1
         }
       }
     ],
     "belowThreshold": false
   },
   {
-    "topic": "economy-trade",
-    "topicDisplay": "Economy Trade",
-    "headline": "National Debt Hits $40 Trillion, Bond Market Reacts",
-    "voiceCount": 16,
-    "clusterCount": 4,
-    "insight": "Debt milestone sparks bond-market alarm from economists while partisans redirect blame toward the other side.",
+    "topic": "iran-conflict",
+    "topicDisplay": "Iran Conflict",
+    "headline": "Iran conflict escalates as Trump strategy draws sharp criticism",
+    "voiceCount": 15,
+    "clusterCount": 6,
+    "insight": "Wide bipartisan criticism of Trump's Iran strategy, with only a couple of conservative voices defending it.",
     "clusters": [
       {
-        "name": "Debt Crisis Warnings",
+        "name": "Mismanagement and Accountability",
         "voices": [
           {
-            "voiceId": "stephen-gutowski",
-            "voiceName": "Stephen Gutowski",
-            "photo": "/photos/stephen-gutowski.jpg",
-            "quote": "History is full of countries that didn\u2019t want to pay taxes and didn\u2019t want to cut spending. You can ask the AI of your choice what happens next if US doesn\u2019t change course.",
-            "sourceUrl": "https://bsky.app/profile/stephengutowski.bsky.social/post/3mthu6kesmk2q",
+            "voiceId": "lincoln-project",
+            "voiceName": "Lincoln Project",
+            "photo": "/photos/lincoln-project.jpg",
+            "quote": "Q: \"Are you open to negotiations with Iran?\"\n\nTrump: \"Maybe at some point. But right now, the situation is so good\"\n\nTrump is more concerned with the ballroom so the Iran war will have to wait.",
+            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mth5iol5zk2k",
             "platform": "bluesky",
-            "fit": 8,
+            "fit": 9,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "We have a president who took the nation into a war for reasons he could not articulate, without a strategy for how to respond when Iran flexed its control over the Strait of Hormuz, and without an exi",
+            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mthtkgkxch22",
+            "platform": "bluesky",
+            "fit": 10,
             "quoteQuality": 5
           },
           {
-            "voiceId": "justin-wolfers",
-            "voiceName": "Justin Wolfers",
-            "photo": "/photos/justin-wolfers.jpg",
-            "quote": "It's like trying to fill up a leaky bathtub. You can keep turning up the faucet, but if the leak keeps growing, the tub is never going to fill.\u2063\n\u2063\nhttps://newsletter.platypuseconomics.com/p/burrito-ga",
-            "sourceUrl": "https://bsky.app/profile/justinwolfers.bsky.social/post/3mthdev27cz2b",
+            "voiceId": "adam-schiff",
+            "voiceName": "Adam Schiff",
+            "photo": "/photos/adam-schiff.jpg",
+            "quote": "After shortages of food and supplies, poor living conditions, and extended strain on their well-being, it is time to bring these troops home.\n\nWe are demanding an investigation into the lack of planni",
+            "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3mtehpa42l22t",
             "platform": "bluesky",
-            "fit": 7,
+            "fit": 10,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "mark-hertling",
+            "voiceName": "Mark Hertling",
+            "photo": "/photos/mark-hertling.jpg",
+            "quote": "Lt. Gen. @markhertling.bsky.social reacts to Jared Kushner, saying there is \u201cgood dialogue\u201d between Iran and the United States, even though Trump claims there has been no dialogue.\n\n\u201cIt is...stretchin",
+            "sourceUrl": "https://bsky.app/profile/markhertling.bsky.social/post/3mthlyeinfk2m",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "joey-politano",
+            "voiceName": "Joey Politano",
+            "photo": "/photos/joey-politano.jpg",
+            "quote": "RIP. It's so dumb that the \"solution\" Trump has presented for the Strait of Hormuz closure is to just hope that a bunch of sailors are willing to risk life and limb in service of global oil markets.\nw",
+            "sourceUrl": "https://bsky.app/profile/josephpolitano.bsky.social/post/3mtddbcvy7s2c",
+            "platform": "bluesky",
+            "fit": 9,
             "quoteQuality": 5
           },
           {
             "voiceId": "meidastouch",
             "voiceName": "MeidasTouch",
             "photo": "/photos/meidastouch.jpg",
-            "quote": "The bond market is sending a warning about America\u2019s debt.\n\nNow Trump\u2019s Treasury is stepping in.\n\nChief Economist Justin Wolfers explains what\u2019s happening, what we still don\u2019t know, and why this could",
-            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mthnzo2wyk2a",
+            "quote": "Trump's now declaring an \u201cECONOMIC D-DAY\u201d against Iran, threatening \u201cTREMENDOUS Economic Consequences\u201d against ANY country that provides Tehran a \u201clifeline.\u201d\n\nIn an increasingly unhinged post, Trump c",
+            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mthu7napm22t",
             "platform": "bluesky",
-            "fit": 7,
+            "fit": 6,
             "quoteQuality": 5
           },
           {
-            "voiceId": "ted-cruz",
-            "voiceName": "Ted Cruz",
-            "photo": "/photos/ted-cruz.jpg",
-            "quote": "BONUS POD: Heads in the Sand\u2014The Unsustainable Numbers behind America\u2019s $40 Trill Debt",
-            "sourceUrl": "https://www.youtube.com/watch?v=7HUy8pJxrUA",
+            "voiceId": "kyle-kulinski",
+            "voiceName": "Kyle Kulinski",
+            "photo": "/photos/kyle-kulinski.jpg",
+            "quote": "Fox News IN TOTAL PANIC Over Trump LOSING IRAN WAR!! | The Kyle Kulinski Show",
+            "sourceUrl": "https://www.youtube.com/watch?v=IoBc0joZWaw",
             "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "Trump PANICS As Bond Market Crumbles",
-            "sourceUrl": "https://www.youtube.com/watch?v=t0A6k5Fl00Q",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "Trump PANICS As Bond Market Crumbles",
-            "sourceUrl": "https://www.youtube.com/watch?v=t0A6k5Fl00Q",
-            "platform": "youtube",
-            "fit": 5,
+            "fit": 7,
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 6,
+        "voiceCount": 7,
         "bestQuote": {
-          "voiceName": "Stephen Gutowski",
-          "quote": "History is full of countries that didn\u2019t want to pay taxes and didn\u2019t want to cut spending. You can ask the AI of your choice what happens next if US doesn\u2019t change course.",
+          "voiceName": "Lincoln Project",
+          "quote": "Q: \"Are you open to negotiations with Iran?\"\n\nTrump: \"Maybe at some point. But right now, the situation is so good\"\n\nTrump is more concerned with the ballroom so the Iran war will have to wait.",
           "platform": "bluesky",
-          "quality": 5
+          "quality": 6
         }
       },
       {
-        "name": "Blame Trump Economy",
+        "name": "Never-Trump Conservative Critique",
         "voices": [
           {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "The national debt has risen by $3.8 trillion since Trump took office, and economic growth is slowing.\n\nThis is far from the first time the economy has shuttered under a Republican president.\n\nIt\u2019s tim",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mthq76r2mk2s",
+            "voiceId": "tom-nichols",
+            "voiceName": "Tom Nichols",
+            "photo": "/photos/tom-nichols.jpg",
+            "quote": "Great job from the president yesterday, basically telling Iran \"yes, you should get a nuke ASAP, so you can get the same treatment I give my friends in North Korea.\"\n\nwww.theatlantic.com/ideas/2026/0.",
+            "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtjpxdhm3k2b",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "bill-kristol",
+            "voiceName": "Bill Kristol",
+            "photo": "/photos/bill-kristol.jpg",
+            "quote": "\u201cOn Monday, Trump boasted that if Iran wanted to build a nuclear weapon, \u201cafter what we did previously with the B-2 bombers, it\u2019s going to be a long time.\u201d\n\nIn other words, we took out the Iranian nuc",
+            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3mtjittkads24",
             "platform": "bluesky",
             "fit": 9,
             "quoteQuality": 5
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Tom Nichols",
+          "quote": "Great job from the president yesterday, basically telling Iran \"yes, you should get a nuke ASAP, so you can get the same treatment I give my friends in North Korea.\"\n\nwww.theatlantic.com/ideas/2026/0.",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Pro-Trump Strategy Defense",
+        "voices": [
+          {
+            "voiceId": "mark-levin",
+            "voiceName": "Mark Levin",
+            "photo": "/photos/mark-levin.jpg",
+            "quote": "The Woke Reich vs. Reality: Why They Hate Trump\u2019s Iran Strategy",
+            "sourceUrl": "https://www.youtube.com/watch?v=TFvqf1bmNas",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 1
           },
           {
-            "voiceId": "lincoln-project",
-            "voiceName": "Lincoln Project",
-            "photo": "/photos/lincoln-project.jpg",
-            "quote": "Fox: Gas prices have increased by 90 cents over the past year",
-            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mtf564rotv26",
-            "platform": "bluesky",
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "\ud83d\udea8Iran Threatens WORLD WAR by Bombing EUROPE\u2026But The Truth Is Much Darker | Iran Knows They've LOST",
+            "sourceUrl": "https://www.youtube.com/watch?v=VXZG9Ob_YQo",
+            "platform": "youtube",
             "fit": 7,
-            "quoteQuality": 4
-          },
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Mark Levin",
+          "quote": "The Woke Reich vs. Reality: Why They Hate Trump\u2019s Iran Strategy",
+          "platform": "youtube",
+          "quality": 1
+        }
+      },
+      {
+        "name": "Iran Diplomacy Coverage",
+        "voices": [
           {
             "voiceId": "young-turks",
             "voiceName": "The Young Turks",
             "photo": "/photos/young-turks.jpg",
-            "quote": "The Bond Market Is In BIG TROUBLE",
-            "sourceUrl": "https://www.youtube.com/watch?v=sykq5vutBkI",
+            "quote": "Iran Calls Out Trump For BAILING On MOU",
+            "sourceUrl": "https://www.youtube.com/watch?v=RPOfMDhkj6A",
             "platform": "youtube",
-            "fit": 4,
+            "fit": 8,
             "quoteQuality": 1
           },
           {
             "voiceId": "cenk-uygur",
             "voiceName": "Cenk Uygur",
             "photo": "/photos/cenk-uygur.jpg",
-            "quote": "The Bond Market Is In BIG TROUBLE",
-            "sourceUrl": "https://www.youtube.com/watch?v=sykq5vutBkI",
+            "quote": "Iran Calls Out Trump For BAILING On MOU",
+            "sourceUrl": "https://www.youtube.com/watch?v=RPOfMDhkj6A",
             "platform": "youtube",
-            "fit": 4,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "don-lemon",
-            "voiceName": "Don Lemon",
-            "photo": "/photos/don-lemon.jpg",
-            "quote": "Voters are fed up with a system that benefits those at the top.",
-            "sourceUrl": "https://www.tiktok.com/@donlemon/video/7675788920134634783",
-            "platform": "tiktok",
-            "fit": 5,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "brian-tyler-cohen",
-            "voiceName": "Brian Tyler Cohen",
-            "photo": "/photos/brian-tyler-cohen.jpg",
-            "quote": "Fox News: \u201cGas has increased 90 cents over the past year.\u201d",
-            "sourceUrl": "https://www.youtube.com/shorts/SuQCOfKkHT4",
-            "platform": "youtube",
-            "fit": 7,
+            "fit": 8,
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 6,
+        "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Robert Reich",
-          "quote": "The national debt has risen by $3.8 trillion since Trump took office, and economic growth is slowing.\n\nThis is far from the first time the economy has shuttered under a Republican president.\n\nIt\u2019s tim",
-          "platform": "bluesky",
-          "quality": 5
+          "voiceName": "The Young Turks",
+          "quote": "Iran Calls Out Trump For BAILING On MOU",
+          "platform": "youtube",
+          "quality": 1
         }
       },
       {
-        "name": "Affordability Populism",
+        "name": "Anti-War Skepticism",
         "voices": [
           {
-            "voiceId": "ben-shapiro",
-            "voiceName": "Ben Shapiro",
-            "photo": "/photos/ben-shapiro.jpg",
-            "quote": "The economy your parents knew is already gone. The economy you know is going next.",
-            "sourceUrl": "https://www.youtube.com/shorts/QRfdEhJvofM",
+            "voiceId": "jimmy-dore",
+            "voiceName": "Jimmy Dore",
+            "photo": "/photos/jimmy-dore.jpg",
+            "quote": "Trump Is Planning to NUKE IRAN! Says Marjorie Taylor Greene! w/ James Corbett",
+            "sourceUrl": "https://www.youtube.com/watch?v=dRcgnRDbJ5k",
             "platform": "youtube",
             "fit": 6,
             "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Jimmy Dore",
+          "quote": "Trump Is Planning to NUKE IRAN! Says Marjorie Taylor Greene! w/ James Corbett",
+          "platform": "youtube",
+          "quality": 1
+        }
+      },
+      {
+        "name": "International Observer",
+        "voices": [
+          {
+            "voiceId": "trevor-noah",
+            "voiceName": "Trevor Noah",
+            "photo": "/photos/trevor-noah.jpg",
+            "quote": "Jordan Klepper asks Trump supporters who's winning the U.S.-Iran &quot;conflict&quot; #dailyshow",
+            "sourceUrl": "https://www.youtube.com/shorts/iStwwqdOPQc",
+            "platform": "youtube",
+            "fit": 4,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Trevor Noah",
+          "quote": "Jordan Klepper asks Trump supporters who's winning the U.S.-Iran &quot;conflict&quot; #dailyshow",
+          "platform": "youtube",
+          "quality": 1
+        }
+      }
+    ],
+    "belowThreshold": false
+  },
+  {
+    "topic": "israel-palestine",
+    "topicDisplay": "Israel Palestine",
+    "headline": "Progressive media presses Israel accountability, Hind Rajab, West Bank violence",
+    "voiceCount": 11,
+    "clusterCount": 4,
+    "insight": "Progressive and independent media converge on demanding accountability for Israeli actions and US complicity.",
+    "clusters": [
+      {
+        "name": "Demanding Accountability for Killings",
+        "voices": [
+          {
+            "voiceId": "spencer-ackerman",
+            "voiceName": "Spencer Ackerman",
+            "photo": "/photos/spencer-ackerman.jpg",
+            "quote": "IDF marks Palestinian detainees with numbers as it expands northern West Bank operations. \n\n\u201cAn image reminiscent of dark periods, and one that should shock everyone\u201d MK Ahmad Tibi  \n \nJack Khoury\n\nww",
+            "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mte7ad3s4k2p",
+            "platform": "bluesky",
+            "fit": 4,
+            "quoteQuality": 6
           },
           {
-            "voiceId": "vivek-ramaswamy",
-            "voiceName": "Vivek Ramaswamy",
-            "photo": "/photos/vivek-ramaswamy.jpg",
-            "quote": "Lower property taxes. Lower electric bills. Bigger after-tax paychecks.",
-            "sourceUrl": "https://www.youtube.com/shorts/LXlP810uXAw",
+            "voiceId": "young-turks",
+            "voiceName": "The Young Turks",
+            "photo": "/photos/young-turks.jpg",
+            "quote": "Will HIND RAJAB FINALLY Get Justice?!?",
+            "sourceUrl": "https://www.youtube.com/watch?v=kk1cJadacBo",
             "platform": "youtube",
             "fit": 9,
             "quoteQuality": 1
           },
           {
-            "voiceId": "glenn-beck",
-            "voiceName": "Glenn Beck",
-            "photo": "/photos/glenn-beck.jpg",
-            "quote": "The REAL Reason Mamdani Is Creating Socialist Grocery Stores.",
-            "sourceUrl": "https://www.youtube.com/shorts/L0-LxSGjWeI",
+            "voiceId": "cenk-uygur",
+            "voiceName": "Cenk Uygur",
+            "photo": "/photos/cenk-uygur.jpg",
+            "quote": "Will HIND RAJAB FINALLY Get Justice?!?",
+            "sourceUrl": "https://www.youtube.com/watch?v=kk1cJadacBo",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "mehdi-hasan",
+            "voiceName": "Mehdi Hasan",
+            "photo": "/photos/mehdi-hasan.jpg",
+            "quote": "Israel Finally Admits to Killing Hind Rajab",
+            "sourceUrl": "https://www.youtube.com/shorts/JDBk9BCTyeE",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "Spencer Ackerman",
+          "quote": "IDF marks Palestinian detainees with numbers as it expands northern West Bank operations. \n\n\u201cAn image reminiscent of dark periods, and one that should shock everyone\u201d MK Ahmad Tibi  \n \nJack Khoury\n\nww",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Criticizing US-Israel Political Influence",
+        "voices": [
+          {
+            "voiceId": "breaking-points",
+            "voiceName": "Breaking Points",
+            "photo": "/photos/breaking-points.jpg",
+            "quote": "Israel Lobby DESPERATE After Shock DSA Wins",
+            "sourceUrl": "https://www.youtube.com/watch?v=PMMk9jwXidU",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "krystal-ball",
+            "voiceName": "Krystal Ball",
+            "photo": "/photos/krystal-ball.jpg",
+            "quote": "Israel Lobby DESPERATE After Shock DSA Wins",
+            "sourceUrl": "https://www.youtube.com/watch?v=PMMk9jwXidU",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "briahna-joy-gray",
+            "voiceName": "Briahna Joy Gray",
+            "photo": "/photos/briahna-joy-gray.jpg",
+            "quote": "How Israel Gets Away With OWNING the US Congress (w/ Eli Clifton)",
+            "sourceUrl": "https://www.youtube.com/watch?v=SqNdwmwiVeg",
+            "platform": "youtube",
+            "fit": 10,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "Breaking Points",
+          "quote": "Israel Lobby DESPERATE After Shock DSA Wins",
+          "platform": "youtube",
+          "quality": 1
+        }
+      },
+      {
+        "name": "Documenting Military Escalation",
+        "voices": [
+          {
+            "voiceId": "ryan-grim",
+            "voiceName": "Ryan Grim",
+            "photo": "/photos/ryan-grim.jpg",
+            "quote": "Israeli Settler Rampage Across West Bank Escalates Further With Military Backing",
+            "sourceUrl": "https://www.youtube.com/watch?v=Khtw-NJCLi4",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "jeremy-scahill",
+            "voiceName": "Jeremy Scahill",
+            "photo": "/photos/jeremy-scahill.jpg",
+            "quote": "Israeli Settler Rampage Across West Bank Escalates Further With Military Backing",
+            "sourceUrl": "https://www.youtube.com/watch?v=Khtw-NJCLi4",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "jimmy-dore",
+            "voiceName": "Jimmy Dore",
+            "photo": "/photos/jimmy-dore.jpg",
+            "quote": "U.S. Soldiers Are Writing Anti-Israel Messages On U.S. Planes!",
+            "sourceUrl": "https://www.youtube.com/watch?v=sC6bKzPjFU8",
             "platform": "youtube",
             "fit": 4,
             "quoteQuality": 1
@@ -528,32 +1072,32 @@
         ],
         "voiceCount": 3,
         "bestQuote": {
-          "voiceName": "Ben Shapiro",
-          "quote": "The economy your parents knew is already gone. The economy you know is going next.",
+          "voiceName": "Ryan Grim",
+          "quote": "Israeli Settler Rampage Across West Bank Escalates Further With Military Backing",
           "platform": "youtube",
           "quality": 1
         }
       },
       {
-        "name": "Free Market Skepticism of Spending",
+        "name": "Condemning US Complicity",
         "voices": [
           {
-            "voiceId": "scott-lincicome",
-            "voiceName": "Scott Lincicome",
-            "photo": "/photos/scott-lincicome.jpg",
-            "quote": "It's still costly and foolish to have 25% \"national security\" tariffs on steel and aluminum from a close ally, but the president's walkback here would be good start - economically and politically. www",
-            "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mthcjo4lwh2p",
-            "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 5
+            "voiceId": "tucker-carlson",
+            "voiceName": "Tucker Carlson",
+            "photo": "/photos/tucker-carlson.jpg",
+            "quote": "Tucker Calls Out Trump Administration for Allowing Americans to Be Slaughtered by Israeli Terrorists",
+            "sourceUrl": "https://www.youtube.com/watch?v=HuPoyiTFFcQ",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
           }
         ],
         "voiceCount": 1,
         "bestQuote": {
-          "voiceName": "Scott Lincicome",
-          "quote": "It's still costly and foolish to have 25% \"national security\" tariffs on steel and aluminum from a close ally, but the president's walkback here would be good start - economically and politically. www",
-          "platform": "bluesky",
-          "quality": 5
+          "voiceName": "Tucker Carlson",
+          "quote": "Tucker Calls Out Trump Administration for Allowing Americans to Be Slaughtered by Israeli Terrorists",
+          "platform": "youtube",
+          "quality": 1
         }
       }
     ],
@@ -562,13 +1106,13 @@
   {
     "topic": "immigration",
     "topicDisplay": "Immigration",
-    "headline": "ICE Enforcement Tactics Draw Scrutiny, Legal Pushback Nationwide",
-    "voiceCount": 19,
-    "clusterCount": 5,
-    "insight": "Most direct quotes document specific ICE enforcement abuses and legal pushback, while others warn of border threats.",
+    "headline": "ICE Enforcement Tactics Spark Legal and Political Clashes",
+    "voiceCount": 17,
+    "clusterCount": 6,
+    "insight": "Most voices detail specific ICE overreach cases while a smaller group defends enforcement and border security urgency.",
     "clusters": [
       {
-        "name": "ICE Overreach Documented",
+        "name": "ICE Accountability & Abuses",
         "voices": [
           {
             "voiceId": "adam-schiff",
@@ -591,23 +1135,13 @@
             "quoteQuality": 6
           },
           {
-            "voiceId": "stephen-gutowski",
-            "voiceName": "Stephen Gutowski",
-            "photo": "/photos/stephen-gutowski.jpg",
-            "quote": "ICE admitted in court that it did, in fact, track down this man at his hotel with his 7-year-old daughter and gave him a threatening letter because he sent ICE Director Todd Lyons this email.",
-            "sourceUrl": "https://bsky.app/profile/stephengutowski.bsky.social/post/3mthf7izxhc2k",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 6
-          },
-          {
             "voiceId": "radley-balko",
             "voiceName": "Radley Balko",
             "photo": "/photos/radley-balko.jpg",
             "quote": "ST. PAUL, Minn. (AP) - Minnesota attorney general sues Texas governor to compel extradition of ICE agent charged in nonfatal shooting.",
             "sourceUrl": "https://bsky.app/profile/radleybalko.bsky.social/post/3mtesby3wt223",
             "platform": "bluesky",
-            "fit": 8,
+            "fit": 9,
             "quoteQuality": 5
           },
           {
@@ -631,24 +1165,34 @@
             "quoteQuality": 5
           },
           {
-            "voiceId": "ilya-somin",
-            "voiceName": "Ilya Somin",
-            "photo": "/photos/ilya-somin.jpg",
-            "quote": "As my @georgemasonu.bsky.social colleague @ilyasomin.bsky.social argues, the Trump administration's justifications for treating immigration as \"invasion\" simply do not hold up.\n\nYou can read his worki",
-            "sourceUrl": "https://bsky.app/profile/ilyasomin.bsky.social/post/3mth33xqyo22l",
+            "voiceId": "steve-vladeck",
+            "voiceName": "Steve Vladeck",
+            "photo": "/photos/steve-vladeck.jpg",
+            "quote": "Abbott has no plausible legal basis for opposing Minnesota's demand. The bigger issue is the timing\u2014\"the distinct possibility that Abbott ... is not trying to win, but rather is trying to run out the ",
+            "sourceUrl": "https://bsky.app/profile/stevevladeck.bsky.social/post/3mtjj52ropc2s",
             "platform": "bluesky",
             "fit": 6,
             "quoteQuality": 5
           },
           {
-            "voiceId": "lalo-alcaraz",
-            "voiceName": "Lalo Alcaraz",
-            "photo": "/photos/lalo-alcaraz.jpg",
-            "quote": "Lalo on CAL\u00d3: Gloves are off calonews.com/multimedia/lalo\u2026\n\nLink\n\n\n\nLalo on CAL\u00d3: Gloves are off\n\nICE announced plans to acquire electric shock gloves through a proposed sole-source (no-bid) contract ",
-            "sourceUrl": "https://x.com/laloalcaraz/status/2089608503187145136",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
+            "voiceId": "austin-kocher",
+            "voiceName": "Austin Kocher",
+            "photo": "/photos/austin-kocher.jpg",
+            "quote": "\u201cOur Faith Is Calling Us to Take Care of These Folks, Not Kick Them Out\u201d: Rep Greg Landsman on Why Extending TPS for Haitians is a Matter of Dignity\n\naustinkocher.substack.com/p/our-faith-...",
+            "sourceUrl": "https://bsky.app/profile/austinkocher.com/post/3mthj43pblr23",
+            "platform": "bluesky",
+            "fit": 4,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "matteo-il-pazzeo",
+            "voiceName": "Matteo il Pazzeo",
+            "photo": "/photos/matteo-il-pazzeo.jpg",
+            "quote": "ICE agents entered a California immigration law firm without a warrant, demanding to inspect the offices and look for beds, assuming that undocumented migrants could be living there. This happened aft",
+            "sourceUrl": "https://www.tiktok.com/@matteo_il_pazzeo/video/7675779137423822110",
+            "platform": "tiktok",
+            "fit": 9,
+            "quoteQuality": 2
           },
           {
             "voiceId": "don-lemon",
@@ -690,59 +1234,17 @@
         }
       },
       {
-        "name": "Enforcement Under Threat",
+        "name": "Border Crisis Coverage",
         "voices": [
           {
-            "voiceId": "center-for-western-priorities",
-            "voiceName": "Center for Western Priorities",
-            "photo": "/photos/center-for-western-priorities.jpg",
-            "quote": "Border agency halts Big Bend construction, for now (by Lilly Bock-Brownstein). U.S. Customs and Border Protection Commissioner Rodney Scott\u00a0ordered a pause\u00a0on all border construction inside Big Bend N",
-            "sourceUrl": "https://westernpriorities.org/2026/08/border-agency-halts-big-bend-construction-for-now/",
-            "platform": "substack",
-            "fit": 7,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "MAGA Sheriffs FORCE Trump To STOP Border Wall",
-            "sourceUrl": "https://www.youtube.com/watch?v=zhup2Z0Obnc",
-            "platform": "youtube",
+            "voiceId": "shawn-ryan-show",
+            "voiceName": "Shawn Ryan Show",
+            "photo": "/photos/shawn-ryan-show.jpg",
+            "quote": "Was Spain\u2019s Border Surge Coordinated?! \ud83d\ude33 #shawnryanshow #news #immigration #PolymarketPartner #geopolitics",
+            "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7675467627971611935",
+            "platform": "tiktok",
             "fit": 8,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "ted-cruz",
-            "voiceName": "Ted Cruz",
-            "photo": "/photos/ted-cruz.jpg",
-            "quote": "It's OFFICIAL: Democrats Want To Abolish ICE",
-            "sourceUrl": "https://www.youtube.com/shorts/Ql2nKbIsjcs",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Center for Western Priorities",
-          "quote": "Border agency halts Big Bend construction, for now (by Lilly Bock-Brownstein). U.S. Customs and Border Protection Commissioner Rodney Scott\u00a0ordered a pause\u00a0on all border construction inside Big Bend N",
-          "platform": "substack",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Border Crisis Concerns",
-        "voices": [
-          {
-            "voiceId": "heritage-foundation",
-            "voiceName": "Heritage Foundation",
-            "photo": "/photos/heritage-foundation.jpg",
-            "quote": "\ud83d\udd75\ufe0f\u200d\u2642\ufe0f The border crisis isn't just about illegal crossings. Behind the scenes are fraudulent asylum claims, visa scams, and entire networks profiting from them.\n\n@WatchfulWaiter1 is a Senior Research ",
-            "sourceUrl": "https://x.com/Heritage/status/2090085232938557467",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
+            "quoteQuality": 2
           },
           {
             "voiceId": "dave-rubin",
@@ -751,460 +1253,104 @@
             "quote": "Illegal Immigrant Charged with Murdering Woman; Migrants Overwhelm Spanish City | 8/20/26 FIRST LOOK",
             "sourceUrl": "https://www.youtube.com/watch?v=_s0xtfUlxvE",
             "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "shawn-ryan-show",
-            "voiceName": "Shawn Ryan Show",
-            "photo": "/photos/shawn-ryan-show.jpg",
-            "quote": "Is Spain\u2019s Border Surge Really Organic?! \ud83d\ude33",
-            "sourceUrl": "https://www.youtube.com/shorts/mRvQZo7iySw",
-            "platform": "youtube",
             "fit": 8,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Heritage Foundation",
-          "quote": "\ud83d\udd75\ufe0f\u200d\u2642\ufe0f The border crisis isn't just about illegal crossings. Behind the scenes are fraudulent asylum claims, visa scams, and entire networks profiting from them.\n\n@WatchfulWaiter1 is a Senior Research ",
-          "platform": "x",
-          "quality": 4
-        }
-      },
-      {
-        "name": "Rhetorical Reaction",
-        "voices": [
-          {
-            "voiceId": "bill-kristol",
-            "voiceName": "Bill Kristol",
-            "photo": "/photos/bill-kristol.jpg",
-            "quote": "\"She did not jump a wall, she did not swim a river\" makes me want to throw something.",
-            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3mtepugcsvb2e",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Bill Kristol",
-          "quote": "\"She did not jump a wall, she did not swim a river\" makes me want to throw something.",
-          "platform": "bluesky",
-          "quality": 4
-        }
-      },
-      {
-        "name": "Policy Transparency",
-        "voices": [
-          {
-            "voiceId": "austin-kocher",
-            "voiceName": "Austin Kocher",
-            "photo": "/photos/austin-kocher.jpg",
-            "quote": "\u201cOur Faith Is Calling Us to Take Care of These Folks, Not Kick Them Out\u201d: Rep Greg Landsman on Why Extending TPS for Haitians is a Matter of Dignity\n\naustinkocher.substack.com/p/our-faith-...",
-            "sourceUrl": "https://bsky.app/profile/austinkocher.com/post/3mthj43pblr23",
-            "platform": "bluesky",
-            "fit": 6,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Austin Kocher",
-          "quote": "\u201cOur Faith Is Calling Us to Take Care of These Folks, Not Kick Them Out\u201d: Rep Greg Landsman on Why Extending TPS for Haitians is a Matter of Dignity\n\naustinkocher.substack.com/p/our-faith-...",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      }
-    ],
-    "belowThreshold": false
-  },
-  {
-    "topic": "israel-palestine",
-    "topicDisplay": "Israel Palestine",
-    "headline": "Hind Rajab killing, West Bank violence draw fresh scrutiny",
-    "voiceCount": 11,
-    "clusterCount": 5,
-    "insight": "Progressive and populist voices converge on Israeli accountability, from Hind Rajab to West Bank settler violence.",
-    "clusters": [
-      {
-        "name": "Accountability for Hind Rajab Killing",
-        "voices": [
-          {
-            "voiceId": "young-turks",
-            "voiceName": "The Young Turks",
-            "photo": "/photos/young-turks.jpg",
-            "quote": "Will HIND RAJAB FINALLY Get Justice?!?",
-            "sourceUrl": "https://www.youtube.com/watch?v=kk1cJadacBo",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "cenk-uygur",
-            "voiceName": "Cenk Uygur",
-            "photo": "/photos/cenk-uygur.jpg",
-            "quote": "Will HIND RAJAB FINALLY Get Justice?!?",
-            "sourceUrl": "https://www.youtube.com/watch?v=kk1cJadacBo",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "mehdi-hasan",
-            "voiceName": "Mehdi Hasan",
-            "photo": "/photos/mehdi-hasan.jpg",
-            "quote": "Israel Finally Admits to Killing Hind Rajab",
-            "sourceUrl": "https://www.youtube.com/shorts/JDBk9BCTyeE",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "The Young Turks",
-          "quote": "Will HIND RAJAB FINALLY Get Justice?!?",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "Documenting West Bank Escalation",
-        "voices": [
-          {
-            "voiceId": "spencer-ackerman",
-            "voiceName": "Spencer Ackerman",
-            "photo": "/photos/spencer-ackerman.jpg",
-            "quote": "IDF marks Palestinian detainees with numbers as it expands northern West Bank operations. \n\n\u201cAn image reminiscent of dark periods, and one that should shock everyone\u201d MK Ahmad Tibi  \n \nJack Khoury\n\nww",
-            "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mte7ad3s4k2p",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "ryan-grim",
-            "voiceName": "Ryan Grim",
-            "photo": "/photos/ryan-grim.jpg",
-            "quote": "Israeli Settler Rampage Across West Bank Escalates Further With Military Backing",
-            "sourceUrl": "https://www.youtube.com/watch?v=Khtw-NJCLi4",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "jeremy-scahill",
-            "voiceName": "Jeremy Scahill",
-            "photo": "/photos/jeremy-scahill.jpg",
-            "quote": "Israeli Settler Rampage Across West Bank Escalates Further With Military Backing",
-            "sourceUrl": "https://www.youtube.com/watch?v=Khtw-NJCLi4",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Spencer Ackerman",
-          "quote": "IDF marks Palestinian detainees with numbers as it expands northern West Bank operations. \n\n\u201cAn image reminiscent of dark periods, and one that should shock everyone\u201d MK Ahmad Tibi  \n \nJack Khoury\n\nww",
-          "platform": "bluesky",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Israel Lobby's Political Influence",
-        "voices": [
-          {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "Israel Lobby DESPERATE After Shock DSA Wins",
-            "sourceUrl": "https://www.youtube.com/watch?v=PMMk9jwXidU",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "Israel Lobby DESPERATE After Shock DSA Wins",
-            "sourceUrl": "https://www.youtube.com/watch?v=PMMk9jwXidU",
-            "platform": "youtube",
-            "fit": 10,
             "quoteQuality": 1
           }
         ],
         "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Breaking Points",
-          "quote": "Israel Lobby DESPERATE After Shock DSA Wins",
-          "platform": "youtube",
-          "quality": 1
+          "voiceName": "Shawn Ryan Show",
+          "quote": "Was Spain\u2019s Border Surge Coordinated?! \ud83d\ude33 #shawnryanshow #news #immigration #PolymarketPartner #geopolitics",
+          "platform": "tiktok",
+          "quality": 2
         }
       },
       {
-        "name": "Condemning U.S. Complicity",
+        "name": "Immigration Enforcement Support",
         "voices": [
-          {
-            "voiceId": "tucker-carlson",
-            "voiceName": "Tucker Carlson",
-            "photo": "/photos/tucker-carlson.jpg",
-            "quote": "Tucker Calls Out Trump Administration for Allowing Americans to Be Slaughtered by Israeli Terrorists",
-            "sourceUrl": "https://www.youtube.com/watch?v=HuPoyiTFFcQ",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "jimmy-dore",
-            "voiceName": "Jimmy Dore",
-            "photo": "/photos/jimmy-dore.jpg",
-            "quote": "U.S. Soldiers Are Writing Anti-Israel Messages On U.S. Planes!",
-            "sourceUrl": "https://www.youtube.com/watch?v=sC6bKzPjFU8",
-            "platform": "youtube",
-            "fit": 6,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Tucker Carlson",
-          "quote": "Tucker Calls Out Trump Administration for Allowing Americans to Be Slaughtered by Israeli Terrorists",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "Nuance on Antisemitism and Criticism",
-        "voices": [
-          {
-            "voiceId": "jennifer-rubin",
-            "voiceName": "Jennifer Rubin",
-            "photo": "/photos/jennifer-rubin.jpg",
-            "quote": "the sanest take you will read on Israel, Am Jews, AIPAC, antisemitism, etc. (evocative of \u201cIf I am not for myself, who will be for me? If I am only for myself, what am I? And if not now, when?\u201d)\nopen.",
-            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mtgof3avkc2o",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Jennifer Rubin",
-          "quote": "the sanest take you will read on Israel, Am Jews, AIPAC, antisemitism, etc. (evocative of \u201cIf I am not for myself, who will be for me? If I am only for myself, what am I? And if not now, when?\u201d)\nopen.",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      }
-    ],
-    "belowThreshold": false
-  },
-  {
-    "topic": "iran-conflict",
-    "topicDisplay": "Iran Conflict",
-    "headline": "Trump Administration's Iran Strategy Draws Fire from All Sides",
-    "voiceCount": 15,
-    "clusterCount": 4,
-    "insight": "Progressive and even some Trump-skeptical voices pile on Trump's Iran strategy as confused or dangerous, while conservatives frame Iran as the loser.",
-    "clusters": [
-      {
-        "name": "Trump Handling Failures",
-        "voices": [
-          {
-            "voiceId": "lincoln-project",
-            "voiceName": "Lincoln Project",
-            "photo": "/photos/lincoln-project.jpg",
-            "quote": "Q: \"Are you open to negotiations with Iran?\"\n\nTrump: \"Maybe at some point. But right now, the situation is so good\"\n\nTrump is more concerned with the ballroom so the Iran war will have to wait.",
-            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mth5iol5zk2k",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "We have a president who took the nation into a war for reasons he could not articulate, without a strategy for how to respond when Iran flexed its control over the Strait of Hormuz, and without an exi",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mthtkgkxch22",
-            "platform": "bluesky",
-            "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "adam-schiff",
-            "voiceName": "Adam Schiff",
-            "photo": "/photos/adam-schiff.jpg",
-            "quote": "After shortages of food and supplies, poor living conditions, and extended strain on their well-being, it is time to bring these troops home.\n\nWe are demanding an investigation into the lack of planni",
-            "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3mtehpa42l22t",
-            "platform": "bluesky",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "meidastouch",
-            "voiceName": "MeidasTouch",
-            "photo": "/photos/meidastouch.jpg",
-            "quote": "Trump's now declaring an \u201cECONOMIC D-DAY\u201d against Iran, threatening \u201cTREMENDOUS Economic Consequences\u201d against ANY country that provides Tehran a \u201clifeline.\u201d\n\nIn an increasingly unhinged post, Trump c",
-            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mthu7napm22t",
-            "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "mark-hertling",
-            "voiceName": "Mark Hertling",
-            "photo": "/photos/mark-hertling.jpg",
-            "quote": "Lt. Gen. @markhertling.bsky.social reacts to Jared Kushner, saying there is \u201cgood dialogue\u201d between Iran and the United States, even though Trump claims there has been no dialogue.\n\n\u201cIt is...stretchin",
-            "sourceUrl": "https://bsky.app/profile/markhertling.bsky.social/post/3mthlyeinfk2m",
-            "platform": "bluesky",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "joey-politano",
-            "voiceName": "Joey Politano",
-            "photo": "/photos/joey-politano.jpg",
-            "quote": "RIP. It's so dumb that the \"solution\" Trump has presented for the Strait of Hormuz closure is to just hope that a bunch of sailors are willing to risk life and limb in service of global oil markets.\nw",
-            "sourceUrl": "https://bsky.app/profile/josephpolitano.bsky.social/post/3mtddbcvy7s2c",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "young-turks",
-            "voiceName": "The Young Turks",
-            "photo": "/photos/young-turks.jpg",
-            "quote": "Iran Calls Out Trump For BAILING On MOU",
-            "sourceUrl": "https://www.youtube.com/watch?v=RPOfMDhkj6A",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "cenk-uygur",
-            "voiceName": "Cenk Uygur",
-            "photo": "/photos/cenk-uygur.jpg",
-            "quote": "Iran Calls Out Trump For BAILING On MOU",
-            "sourceUrl": "https://www.youtube.com/watch?v=RPOfMDhkj6A",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "kyle-kulinski",
-            "voiceName": "Kyle Kulinski",
-            "photo": "/photos/kyle-kulinski.jpg",
-            "quote": "Fox News IN TOTAL PANIC Over Trump LOSING IRAN WAR!! | The Kyle Kulinski Show",
-            "sourceUrl": "https://www.youtube.com/watch?v=IoBc0joZWaw",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 9,
-        "bestQuote": {
-          "voiceName": "Lincoln Project",
-          "quote": "Q: \"Are you open to negotiations with Iran?\"\n\nTrump: \"Maybe at some point. But right now, the situation is so good\"\n\nTrump is more concerned with the ballroom so the Iran war will have to wait.",
-          "platform": "bluesky",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Trump Strategy Defense",
-        "voices": [
-          {
-            "voiceId": "benny-johnson",
-            "voiceName": "Benny Johnson",
-            "photo": "/photos/benny-johnson.jpg",
-            "quote": "\ud83d\udea8Iran Threatens WORLD WAR by Bombing EUROPE\u2026But The Truth Is Much Darker | Iran Knows They've LOST",
-            "sourceUrl": "https://www.youtube.com/watch?v=VXZG9Ob_YQo",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "mark-levin",
-            "voiceName": "Mark Levin",
-            "photo": "/photos/mark-levin.jpg",
-            "quote": "The Woke Reich vs. Reality: Why They Hate Trump\u2019s Iran Strategy",
-            "sourceUrl": "https://www.youtube.com/watch?v=TFvqf1bmNas",
-            "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
-          },
           {
             "voiceId": "ted-cruz",
             "voiceName": "Ted Cruz",
             "photo": "/photos/ted-cruz.jpg",
-            "quote": "BONUS POD: Iran Threatens Escalation plus China\u2019s Education Infiltration",
-            "sourceUrl": "https://www.youtube.com/watch?v=afhOrn4xfNI",
-            "platform": "youtube",
-            "fit": 4,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Benny Johnson",
-          "quote": "\ud83d\udea8Iran Threatens WORLD WAR by Bombing EUROPE\u2026But The Truth Is Much Darker | Iran Knows They've LOST",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "International/Ironic Observation",
-        "voices": [
-          {
-            "voiceId": "spencer-ackerman",
-            "voiceName": "Spencer Ackerman",
-            "photo": "/photos/spencer-ackerman.jpg",
-            "quote": "Saudi Aramco sure remembers 2019",
-            "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mteiw4wjp22m",
-            "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "trevor-noah",
-            "voiceName": "Trevor Noah",
-            "photo": "/photos/trevor-noah.jpg",
-            "quote": "Jordan Klepper asks Trump supporters who's winning the U.S.-Iran &quot;conflict&quot; #dailyshow",
-            "sourceUrl": "https://www.youtube.com/shorts/iStwwqdOPQc",
+            "quote": "It's OFFICIAL: Democrats Want To Abolish ICE",
+            "sourceUrl": "https://www.youtube.com/shorts/Ql2nKbIsjcs",
             "platform": "youtube",
             "fit": 8,
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 2,
+        "voiceCount": 1,
         "bestQuote": {
-          "voiceName": "Spencer Ackerman",
-          "quote": "Saudi Aramco sure remembers 2019",
-          "platform": "bluesky",
-          "quality": 4
+          "voiceName": "Ted Cruz",
+          "quote": "It's OFFICIAL: Democrats Want To Abolish ICE",
+          "platform": "youtube",
+          "quality": 1
         }
       },
       {
-        "name": "Anti-War Skepticism",
+        "name": "Legal Scholarship on Immigration Policy",
         "voices": [
           {
-            "voiceId": "jimmy-dore",
-            "voiceName": "Jimmy Dore",
-            "photo": "/photos/jimmy-dore.jpg",
-            "quote": "Trump Is Planning to NUKE IRAN! Says Marjorie Taylor Greene! w/ James Corbett",
-            "sourceUrl": "https://www.youtube.com/watch?v=dRcgnRDbJ5k",
+            "voiceId": "ilya-somin",
+            "voiceName": "Ilya Somin",
+            "photo": "/photos/ilya-somin.jpg",
+            "quote": "As my @georgemasonu.bsky.social colleague @ilyasomin.bsky.social argues, the Trump administration's justifications for treating immigration as \"invasion\" simply do not hold up.\n\nYou can read his worki",
+            "sourceUrl": "https://bsky.app/profile/ilyasomin.bsky.social/post/3mth33xqyo22l",
+            "platform": "bluesky",
+            "fit": 10,
+            "quoteQuality": 5
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Ilya Somin",
+          "quote": "As my @georgemasonu.bsky.social colleague @ilyasomin.bsky.social argues, the Trump administration's justifications for treating immigration as \"invasion\" simply do not hold up.\n\nYou can read his worki",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Business/Cultural Commentary",
+        "voices": [
+          {
+            "voiceId": "patrick-bet-david",
+            "voiceName": "Patrick Bet-David",
+            "photo": "/photos/patrick-bet-david.jpg",
+            "quote": "Joel Webbon Draws a Line on Immigration",
+            "sourceUrl": "https://www.youtube.com/shorts/NOoV-qqHxj0",
             "platform": "youtube",
-            "fit": 6,
+            "fit": 5,
             "quoteQuality": 1
           }
         ],
         "voiceCount": 1,
         "bestQuote": {
-          "voiceName": "Jimmy Dore",
-          "quote": "Trump Is Planning to NUKE IRAN! Says Marjorie Taylor Greene! w/ James Corbett",
+          "voiceName": "Patrick Bet-David",
+          "quote": "Joel Webbon Draws a Line on Immigration",
           "platform": "youtube",
           "quality": 1
+        }
+      },
+      {
+        "name": "Public Lands Impact",
+        "voices": [
+          {
+            "voiceId": "center-for-western-priorities",
+            "voiceName": "Center for Western Priorities",
+            "photo": "/photos/center-for-western-priorities.jpg",
+            "quote": "Border agency halts Big Bend construction, for now (by Lilly Bock-Brownstein). U.S. Customs and Border Protection Commissioner Rodney Scott\u00a0ordered a pause\u00a0on all border construction inside Big Bend N",
+            "sourceUrl": "https://westernpriorities.org/2026/08/border-agency-halts-big-bend-construction-for-now/",
+            "platform": "substack",
+            "fit": 9,
+            "quoteQuality": 6
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Center for Western Priorities",
+          "quote": "Border agency halts Big Bend construction, for now (by Lilly Bock-Brownstein). U.S. Customs and Border Protection Commissioner Rodney Scott\u00a0ordered a pause\u00a0on all border construction inside Big Bend N",
+          "platform": "substack",
+          "quality": 6
         }
       }
     ],
@@ -1213,24 +1359,14 @@
   {
     "topic": "free-speech-censorship",
     "topicDisplay": "Free Speech Censorship",
-    "headline": "Disney/ABC Sues FCC's Brendan Carr Over Speech Pressure",
-    "voiceCount": 6,
+    "headline": "ABC/Disney Sues FCC's Brendan Carr Over Speech Pressure",
+    "voiceCount": 7,
     "clusterCount": 3,
-    "insight": "Legal analysts cheer ABC/Disney's lawsuit against FCC chair Carr as a First Amendment stand, while others link it to broader censorship patterns.",
+    "insight": "Disney/ABC's lawsuit against FCC's Carr sparks broader free speech debate, but voices split between government and corporate censorship concerns.",
     "clusters": [
       {
-        "name": "Disney/ABC Fighting FCC Overreach",
+        "name": "Disney's Free Speech Lawsuit",
         "voices": [
-          {
-            "voiceId": "barb-mcquade",
-            "voiceName": "Barb McQuade",
-            "photo": "/photos/barb-mcquade.jpg",
-            "quote": "Now that\u2019s the spirit! At last, one of the big media outlets is fighting for the first amendment! \nwww.wsj.com/business/med...",
-            "sourceUrl": "https://bsky.app/profile/barbmcquade.bsky.social/post/3mte7p3lzrk27",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          },
           {
             "voiceId": "bill-kristol",
             "voiceName": "Bill Kristol",
@@ -1250,18 +1386,28 @@
             "platform": "bluesky",
             "fit": 10,
             "quoteQuality": 5
+          },
+          {
+            "voiceId": "barb-mcquade",
+            "voiceName": "Barb McQuade",
+            "photo": "/photos/barb-mcquade.jpg",
+            "quote": "Now that\u2019s the spirit! At last, one of the big media outlets is fighting for the first amendment! \nwww.wsj.com/business/med...",
+            "sourceUrl": "https://bsky.app/profile/barbmcquade.bsky.social/post/3mte7p3lzrk27",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
           }
         ],
         "voiceCount": 3,
         "bestQuote": {
-          "voiceName": "Barb McQuade",
-          "quote": "Now that\u2019s the spirit! At last, one of the big media outlets is fighting for the first amendment! \nwww.wsj.com/business/med...",
+          "voiceName": "Bill Kristol",
+          "quote": "\u201cABC\u2019s entire complaint is a chilling catalogue of governmental efforts to restrict speech at the behest of the president\u2026He does not believe in freedom of speech. He believes only in obeisance and ob",
           "platform": "bluesky",
           "quality": 5
         }
       },
       {
-        "name": "Systemic Censorship Critique",
+        "name": "Algorithmic/Platform Censorship Concerns",
         "voices": [
           {
             "voiceId": "david-sirota",
@@ -1270,7 +1416,7 @@
             "quote": "Here is today's reminder that we are all trying to communicate through an oligarch-owned algorithmic censorship system that determines what everyone sees and talks about - and what nobody sees and nob",
             "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3mteheumfb22b",
             "platform": "bluesky",
-            "fit": 8,
+            "fit": 9,
             "quoteQuality": 5
           },
           {
@@ -1282,9 +1428,19 @@
             "platform": "bluesky",
             "fit": 7,
             "quoteQuality": 4
+          },
+          {
+            "voiceId": "david-pakman",
+            "voiceName": "David Pakman",
+            "photo": "/photos/david-pakman.jpg",
+            "quote": "This is exactly how political intimidation creates self-censorship. #shorts",
+            "sourceUrl": "https://www.youtube.com/shorts/wl8UvysBZDE",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
           }
         ],
-        "voiceCount": 2,
+        "voiceCount": 3,
         "bestQuote": {
           "voiceName": "David Sirota",
           "quote": "Here is today's reminder that we are all trying to communicate through an oligarch-owned algorithmic censorship system that determines what everyone sees and talks about - and what nobody sees and nob",
@@ -1293,139 +1449,24 @@
         }
       },
       {
-        "name": "Unclear/Video-Only Coverage",
+        "name": "Conservative Media Distrust",
         "voices": [
           {
-            "voiceId": "patrick-bet-david",
-            "voiceName": "Patrick Bet-David",
-            "photo": "/photos/patrick-bet-david.jpg",
-            "quote": "Joel Webbon Challenges Free Speech",
-            "sourceUrl": "https://www.youtube.com/shorts/dp7iGZGYYN0",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "Remarkable. Are you blind?\n\nThe audience you\u2019re trying to reach with this message is MY audience. We have close to 20 million center-right subscribers.\n\nThe last time left-wing tech overlords had powe",
+            "sourceUrl": "https://x.com/bennyjohnson/status/2090450140498624617",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 5
           }
         ],
         "voiceCount": 1,
         "bestQuote": {
-          "voiceName": "Patrick Bet-David",
-          "quote": "Joel Webbon Challenges Free Speech",
-          "platform": "youtube",
-          "quality": 1
-        }
-      }
-    ],
-    "belowThreshold": false
-  },
-  {
-    "topic": "criminal-justice",
-    "topicDisplay": "Criminal Justice",
-    "headline": "GOP Rep. Randy Fine's Wife Accuses Him of Stalking, Abuse",
-    "voiceCount": 8,
-    "clusterCount": 2,
-    "insight": "Progressive outlets pile on GOP Rep. Randy Fine over surveillance-stalking abuse allegations, while an unrelated GOP molestation case draws separate outrage.",
-    "clusters": [
-      {
-        "name": "Condemning Fine's Alleged Abuse",
-        "voices": [
-          {
-            "voiceId": "young-turks",
-            "voiceName": "The Young Turks",
-            "photo": "/photos/young-turks.jpg",
-            "quote": "Florida Official's Abuse Allegations Are About As Sick As It Gets",
-            "sourceUrl": "https://www.youtube.com/watch?v=JqGroE-_0lM",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "breakfast-club",
-            "voiceName": "The Breakfast Club",
-            "photo": "/photos/breakfast-club.jpg",
-            "quote": "Florida Officer Used Flock Cameras To Track Estranged Wife 717 Times",
-            "sourceUrl": "https://www.youtube.com/watch?v=OSeTll-b2u8",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "brian-tyler-cohen",
-            "voiceName": "Brian Tyler Cohen",
-            "photo": "/photos/brian-tyler-cohen.jpg",
-            "quote": "GOP Rep. Fine caught SNOOPING in stranger\u2019s mailbox while canvassing",
-            "sourceUrl": "https://www.youtube.com/shorts/dW8BgL9PpWc",
-            "platform": "youtube",
-            "fit": 6,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "Randy Fine CAUGHT ON CAMERA Committing Federal Crime?",
-            "sourceUrl": "https://www.youtube.com/watch?v=pS5fu-6dhi0",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "Randy Fine CAUGHT ON CAMERA Committing Federal Crime?",
-            "sourceUrl": "https://www.youtube.com/watch?v=pS5fu-6dhi0",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "cenk-uygur",
-            "voiceName": "Cenk Uygur",
-            "photo": "/photos/cenk-uygur.jpg",
-            "quote": "Florida Official's Abuse Allegations Are About As Sick As It Gets",
-            "sourceUrl": "https://www.youtube.com/watch?v=JqGroE-_0lM",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 6,
-        "bestQuote": {
-          "voiceName": "The Young Turks",
-          "quote": "Florida Official's Abuse Allegations Are About As Sick As It Gets",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "Separate Grandson Molestation Case",
-        "voices": [
-          {
-            "voiceId": "asha-rangappa",
-            "voiceName": "Asha Rangappa",
-            "photo": "/photos/asha-rangappa.jpg",
-            "quote": "This is the most Republican story you will read all day. A Republican who represents Trump\u2019s home district was arrested for molesting his OWN GRANDSON and could face the death penalty under a state la",
-            "sourceUrl": "https://bsky.app/profile/asharangappa.bsky.social/post/3mtgwdqeb5c2b",
-            "platform": "bluesky",
-            "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "kyle-kulinski",
-            "voiceName": "Kyle Kulinski",
-            "photo": "/photos/kyle-kulinski.jpg",
-            "quote": "MAGA Politician Forced Grandson To Perform Oral S*x On Him | The Kyle Kulinski Show",
-            "sourceUrl": "https://www.youtube.com/watch?v=lSG4YAmwaEM",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Asha Rangappa",
-          "quote": "This is the most Republican story you will read all day. A Republican who represents Trump\u2019s home district was arrested for molesting his OWN GRANDSON and could face the death penalty under a state la",
-          "platform": "bluesky",
+          "voiceName": "Benny Johnson",
+          "quote": "Remarkable. Are you blind?\n\nThe audience you\u2019re trying to reach with this message is MY audience. We have close to 20 million center-right subscribers.\n\nThe last time left-wing tech overlords had powe",
+          "platform": "x",
           "quality": 5
         }
       }
