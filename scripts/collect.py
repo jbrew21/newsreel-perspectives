@@ -486,6 +486,13 @@ def fetch_bluesky_posts(voice):
             data = json.loads(resp.read().decode())
 
         for item in data.get('feed', []):
+            # Skip reposts: getAuthorFeed mixes in posts the voice reposted,
+            # whose text belongs to a different author. Attributing them to this
+            # voice would misquote them and build a sourceUrl under the wrong
+            # profile (the reposter's handle + the original's rkey → dead link).
+            if item.get('reason', {}).get('$type') == 'app.bsky.feed.defs#reasonRepost':
+                continue
+
             post = item.get('post', {})
             record = post.get('record', {})
             text = record.get('text', '')

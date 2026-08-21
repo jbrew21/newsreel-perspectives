@@ -1756,14 +1756,14 @@
     "followers": 12000000,
     "followersDisplay": "12M",
     "platforms": [
-      "x",
-      "youtube"
+      "podcast",
+      "x"
     ],
     "category": "commentator",
     "approach": "argues",
     "lens": "MS NOW (formerly MSNBC) host of a Monday-only primetime show. Emmy winner. Her podcast Ultra uncovered forgotten history of American fascism.",
     "feeds": {
-      "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_9FzicajUNLvwUsuAoqOuw"
+      "podcast": "https://podcastfeeds.nbcnews.com/rachelmaddow"
     },
     "handles": {
       "x": "maddow",
@@ -8552,6 +8552,33 @@
       "drug-discovery",
       "biotech-industry",
       "evidence-based"
+    ],
+    "photoSource": "bluesky-avatar"
+  },
+  {
+    "id": "bill-bishop",
+    "name": "Bill Bishop",
+    "photo": "/photos/bill-bishop.jpg",
+    "followers": 150000,
+    "followersDisplay": "150K",
+    "platforms": [
+      "substack",
+      "bluesky"
+    ],
+    "category": "journalist",
+    "approach": "analyzes",
+    "lens": "Writes Sinocism, the most influential independent newsletter on elite Chinese politics. A former Beijing media executive who reads Party documents in the original and tracks how Xi Jinping's decisions actually get made.",
+    "feeds": {
+      "substack": "https://sinocism.com/feed"
+    },
+    "handles": {
+      "x": "niubi",
+      "bluesky": "billbishop.bsky.social"
+    },
+    "tags": [
+      "china",
+      "foreign policy",
+      "elite politics"
     ],
     "photoSource": "bluesky-avatar"
   }
