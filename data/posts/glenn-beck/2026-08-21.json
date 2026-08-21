@@ -1,9 +1,37 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-21T07:28:08.543327",
+  "collectedAt": "2026-08-21T09:15:35.362686",
   "date": "2026-08-21",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Could This Be Trump's Solution For The Iran War?",
+      "sourceUrl": "https://www.youtube.com/watch?v=gScc5lRPgFE",
+      "timestamp": "2026-08-20T23:00:35+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Questions Trump's potential approach to Iran military conflict",
+      "quote": "Could This Be Trump's Solution For The Iran War?"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "California Is A Total Dump...",
+      "sourceUrl": "https://www.youtube.com/shorts/ryyliUTjhpk",
+      "timestamp": "2026-08-20T21:15:21+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes California state governance and conditions",
+      "quote": "California Is A Total Dump..."
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -92,44 +120,38 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "Could This Be Trump's Solution For The Iran War?",
-      "sourceUrl": "https://www.youtube.com/watch?v=gScc5lRPgFE",
-      "timestamp": "2026-08-20T23:00:35+00:00",
+      "text": "Is Your Oura Ring Going To Tattle On You?",
+      "sourceUrl": "https://www.youtube.com/shorts/Dsu0gG0-r48",
+      "timestamp": "2026-08-21T01:00:32+00:00",
       "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Questions Trump's potential approach to Iran military conflict",
-      "quote": "Could This Be Trump's Solution For The Iran War?"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "California Is A Total Dump...",
-      "sourceUrl": "https://www.youtube.com/shorts/ryyliUTjhpk",
-      "timestamp": "2026-08-20T21:15:21+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
+      "topic": "ai-technology",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes California state governance and conditions",
-      "quote": "California Is A Total Dump..."
+      "stance": "lean",
+      "summary": "Questions privacy implications of wearable biometric tracking",
+      "quote": "Is Your Oura Ring Going To Tattle On You?"
     }
   ],
   "topicSummary": {
-    "state-local-politics": [
+    "iran-conflict": [
       {
-        "quote": "California Somehow Just Got WORSE",
-        "sourceUrl": "https://www.youtube.com/watch?v=WSUiR5jKJ7g",
+        "quote": "Could This Be Trump's Solution For The Iran War?",
+        "sourceUrl": "https://www.youtube.com/watch?v=gScc5lRPgFE",
         "platform": "youtube",
-        "timestamp": "2026-08-20T18:00:27+00:00"
-      },
+        "timestamp": "2026-08-20T23:00:35+00:00"
+      }
+    ],
+    "state-local-politics": [
       {
         "quote": "California Is A Total Dump...",
         "sourceUrl": "https://www.youtube.com/shorts/ryyliUTjhpk",
         "platform": "youtube",
         "timestamp": "2026-08-20T21:15:21+00:00"
+      },
+      {
+        "quote": "California Somehow Just Got WORSE",
+        "sourceUrl": "https://www.youtube.com/watch?v=WSUiR5jKJ7g",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T18:00:27+00:00"
       }
     ],
     "housing-infrastructure": [
@@ -168,12 +190,12 @@
         "timestamp": "2026-08-18T23:00:07+00:00"
       }
     ],
-    "iran-conflict": [
+    "ai-technology": [
       {
-        "quote": "Could This Be Trump's Solution For The Iran War?",
-        "sourceUrl": "https://www.youtube.com/watch?v=gScc5lRPgFE",
+        "quote": "Is Your Oura Ring Going To Tattle On You?",
+        "sourceUrl": "https://www.youtube.com/shorts/Dsu0gG0-r48",
         "platform": "youtube",
-        "timestamp": "2026-08-20T23:00:35+00:00"
+        "timestamp": "2026-08-21T01:00:32+00:00"
       }
     ]
   }

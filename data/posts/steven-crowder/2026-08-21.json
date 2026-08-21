@@ -1,9 +1,23 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-08-21T07:28:08.495562",
+  "collectedAt": "2026-08-21T09:15:35.302843",
   "date": "2026-08-21",
   "posts": [
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "This should be on rotation for the Ken Paxton Campaign.",
+      "sourceUrl": "https://www.youtube.com/shorts/G8ifmWarnVA",
+      "timestamp": "2026-08-20T20:30:06+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Endorses Ken Paxton campaign material",
+      "quote": "This should be on rotation for the Ken Paxton Campaign."
+    },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
@@ -87,23 +101,23 @@
       "stance": "lean",
       "summary": "Implies internet censorship or suppression of information",
       "quote": "This is what the internet won't show you."
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "This should be on rotation for the Ken Paxton Campaign.",
-      "sourceUrl": "https://www.youtube.com/shorts/G8ifmWarnVA",
-      "timestamp": "2026-08-20T20:30:06+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Endorses Ken Paxton campaign material",
-      "quote": "This should be on rotation for the Ken Paxton Campaign."
     }
   ],
   "topicSummary": {
+    "state-local-politics": [
+      {
+        "quote": "This should be on rotation for the Ken Paxton Campaign.",
+        "sourceUrl": "https://www.youtube.com/shorts/G8ifmWarnVA",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T20:30:06+00:00"
+      },
+      {
+        "quote": "Two of our worst governors possibly ever decided to collaborate.",
+        "sourceUrl": "https://www.youtube.com/shorts/EgHpMXmoUVw",
+        "platform": "youtube",
+        "timestamp": "2026-08-18T17:59:16+00:00"
+      }
+    ],
     "culture-war": [
       {
         "quote": "We've forgotten who the real enemy is",
@@ -130,20 +144,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=J2EejWe_-GY",
         "platform": "youtube",
         "timestamp": "2026-08-18T20:00:33+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "Two of our worst governors possibly ever decided to collaborate.",
-        "sourceUrl": "https://www.youtube.com/shorts/EgHpMXmoUVw",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T17:59:16+00:00"
-      },
-      {
-        "quote": "This should be on rotation for the Ken Paxton Campaign.",
-        "sourceUrl": "https://www.youtube.com/shorts/G8ifmWarnVA",
-        "platform": "youtube",
-        "timestamp": "2026-08-20T20:30:06+00:00"
       }
     ],
     "media-press": [

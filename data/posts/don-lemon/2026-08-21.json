@@ -1,9 +1,23 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-08-21T07:28:08.500982",
+  "collectedAt": "2026-08-21T09:15:35.309892",
   "date": "2026-08-21",
   "posts": [
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "Lemon LIVE at 5 | Trump's DEI Disaster: Lindsey Graham's Sister Darline",
+      "sourceUrl": "https://www.youtube.com/watch?v=rLt9rcczisA",
+      "timestamp": "2026-08-20T22:38:42+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Trump DEI policy changes involving Graham's sister",
+      "quote": "Lemon LIVE at 5 | Trump's DEI Disaster: Lindsey Graham's Sister Darline"
+    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -64,18 +78,32 @@
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
       "platform": "youtube",
-      "text": "Lemon LIVE at 5 | Trump's DEI Disaster: Lindsey Graham's Sister Darline",
-      "sourceUrl": "https://www.youtube.com/watch?v=rLt9rcczisA",
-      "timestamp": "2026-08-20T22:38:42+00:00",
+      "text": "Trump Cabinet Secretary on war in Iran: \u201cWe will get on the other side of this. We don't know when.&quot;",
+      "sourceUrl": "https://www.youtube.com/shorts/cJyLBVK-DZo",
+      "timestamp": "2026-08-20T16:57:24+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Trump DEI policy changes involving Graham's sister",
-      "quote": "Lemon LIVE at 5 | Trump's DEI Disaster: Lindsey Graham's Sister Darline"
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Trump administration acknowledges Iran conflict duration uncertain",
+      "quote": "Trump Cabinet Secretary on war in Iran: \u201cWe will get on the other side of this. We don't know when.&quot;"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Lemon LIVE at 5 | Trump's DEI Disaster: Lindsey Graham's Sister Darline",
+        "sourceUrl": "https://www.youtube.com/watch?v=rLt9rcczisA",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T22:38:42+00:00"
+      },
+      {
+        "quote": "Jon Ossoff responds to the Trump administration\u2019s \u201cmelt down\u201d over Natalie Harp",
+        "sourceUrl": "https://www.youtube.com/shorts/oj9JSyBuluw",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T16:22:12+00:00"
+      }
+    ],
     "civil-rights-race": [
       {
         "quote": "ICE agents caught using racial slurs in body cam footage",
@@ -100,18 +128,12 @@
         "timestamp": "2026-08-20T17:25:11+00:00"
       }
     ],
-    "trump-administration": [
+    "iran-conflict": [
       {
-        "quote": "Jon Ossoff responds to the Trump administration\u2019s \u201cmelt down\u201d over Natalie Harp",
-        "sourceUrl": "https://www.youtube.com/shorts/oj9JSyBuluw",
+        "quote": "Trump Cabinet Secretary on war in Iran: \u201cWe will get on the other side of this. We don't know when.&quot;",
+        "sourceUrl": "https://www.youtube.com/shorts/cJyLBVK-DZo",
         "platform": "youtube",
-        "timestamp": "2026-08-20T16:22:12+00:00"
-      },
-      {
-        "quote": "Lemon LIVE at 5 | Trump's DEI Disaster: Lindsey Graham's Sister Darline",
-        "sourceUrl": "https://www.youtube.com/watch?v=rLt9rcczisA",
-        "platform": "youtube",
-        "timestamp": "2026-08-20T22:38:42+00:00"
+        "timestamp": "2026-08-20T16:57:24+00:00"
       }
     ]
   }
