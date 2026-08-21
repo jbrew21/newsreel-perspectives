@@ -1,9 +1,23 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "collectedAt": "2026-08-21T18:03:38.447419",
+  "collectedAt": "2026-08-21T19:50:49.938069",
   "date": "2026-08-21",
   "posts": [
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "EXCLUSIVE: Candace Owens Discusses The Charlie Kirk Investigation On TYT",
+      "sourceUrl": "https://www.youtube.com/shorts/sum7_HFyVQU",
+      "timestamp": "2026-08-21T12:30:25+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Covers investigation into conservative media figures and their activities",
+      "quote": "EXCLUSIVE: Candace Owens Discusses The Charlie Kirk Investigation On TYT"
+    },
     {
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
@@ -17,20 +31,6 @@
       "stance": "strong",
       "summary": "Criticizes Trump administration targeting Palestine supporters",
       "quote": "Whistleblower EXPOSES Trump\u2019s Pro-Palestine Witch Hunt"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "Fox Tries To Paint Opposition To Data Centers As A 'Far Left' Position",
-      "sourceUrl": "https://www.youtube.com/watch?v=GV9yRgTIoUw",
-      "timestamp": "2026-08-21T02:45:18+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames data center opposition as legitimate, not far-left",
-      "quote": "Fox Tries To Paint Opposition To Data Centers As A 'Far Left' Position"
     },
     {
       "voiceId": "young-turks",
@@ -134,18 +134,32 @@
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
       "platform": "youtube",
-      "text": "EXCLUSIVE: Candace Owens Discusses The Charlie Kirk Investigation On TYT",
-      "sourceUrl": "https://www.youtube.com/shorts/sum7_HFyVQU",
-      "timestamp": "2026-08-21T12:30:25+00:00",
+      "text": "Fox News Wants You to Love Data Centers",
+      "sourceUrl": "https://www.youtube.com/watch?v=3URWf4MJplE",
+      "timestamp": "2026-08-21T18:15:33+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "climate-environment",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Covers investigation into conservative media figures and their activities",
-      "quote": "EXCLUSIVE: Candace Owens Discusses The Charlie Kirk Investigation On TYT"
+      "summary": "Criticizes Fox News promotion of data center expansion",
+      "quote": "Fox News Wants You to Love Data Centers"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "EXCLUSIVE: Candace Owens Discusses The Charlie Kirk Investigation On TYT",
+        "sourceUrl": "https://www.youtube.com/shorts/sum7_HFyVQU",
+        "platform": "youtube",
+        "timestamp": "2026-08-21T12:30:25+00:00"
+      },
+      {
+        "quote": "Alex Jones CALLS OUT Tim Pool For Cucking For Israel",
+        "sourceUrl": "https://www.youtube.com/watch?v=IK5OtQUWsUo",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T21:34:23+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Whistleblower EXPOSES Trump\u2019s Pro-Palestine Witch Hunt",
@@ -164,14 +178,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/b08WcrrwSJ0",
         "platform": "youtube",
         "timestamp": "2026-08-20T17:14:06+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "Fox Tries To Paint Opposition To Data Centers As A 'Far Left' Position",
-        "sourceUrl": "https://www.youtube.com/watch?v=GV9yRgTIoUw",
-        "platform": "youtube",
-        "timestamp": "2026-08-21T02:45:18+00:00"
       }
     ],
     "economy-trade": [
@@ -196,26 +202,20 @@
         "timestamp": "2026-08-21T00:30:06+00:00"
       }
     ],
-    "media-personalities": [
-      {
-        "quote": "Alex Jones CALLS OUT Tim Pool For Cucking For Israel",
-        "sourceUrl": "https://www.youtube.com/watch?v=IK5OtQUWsUo",
-        "platform": "youtube",
-        "timestamp": "2026-08-20T21:34:23+00:00"
-      },
-      {
-        "quote": "EXCLUSIVE: Candace Owens Discusses The Charlie Kirk Investigation On TYT",
-        "sourceUrl": "https://www.youtube.com/shorts/sum7_HFyVQU",
-        "platform": "youtube",
-        "timestamp": "2026-08-21T12:30:25+00:00"
-      }
-    ],
     "criminal-justice": [
       {
         "quote": "Fl. Official's Shocking Child S.A. Charges",
         "sourceUrl": "https://www.youtube.com/watch?v=4GpcZ8IhgzU",
         "platform": "youtube",
         "timestamp": "2026-08-20T17:30:01+00:00"
+      }
+    ],
+    "climate-environment": [
+      {
+        "quote": "Fox News Wants You to Love Data Centers",
+        "sourceUrl": "https://www.youtube.com/watch?v=3URWf4MJplE",
+        "platform": "youtube",
+        "timestamp": "2026-08-21T18:15:33+00:00"
       }
     ]
   }

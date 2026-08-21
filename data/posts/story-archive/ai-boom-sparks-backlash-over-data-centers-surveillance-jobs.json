@@ -1,7 +1,7 @@
 {
   "headline": "AI Boom Sparks Backlash Over Data Centers, Surveillance, Jobs",
-  "summary": "Growing political and public backlash over AI's costs collides with tech-industry optimism and adoption pressure.",
-  "type": "split",
+  "summary": "Growing bipartisan backlash over data centers and surveillance clashes with tech-adjacent voices urging adoption and pragmatic policy.",
+  "type": "spectrum",
   "source": "voices",
   "coverUrl": "",
   "storyType": "",
@@ -9,10 +9,10 @@
     "ai-technology"
   ],
   "voiceCount": 23,
-  "clusterCount": 7,
+  "clusterCount": 5,
   "clusters": [
     {
-      "name": "AI Backlash & Overreach Warnings",
+      "name": "AI Skepticism and Backlash",
       "voices": [
         {
           "voiceId": "david-sirota",
@@ -61,18 +61,8 @@
           "quote": "Blackouts &amp; Water Shortage Imminent: Tech Overlords Build AI Dystopia &amp; Crush Anyone Who Resists",
           "sourceUrl": "https://www.youtube.com/watch?v=KMsklsr_nBM",
           "platform": "youtube",
-          "fit": 10,
+          "fit": 9,
           "quoteQuality": 2
-        },
-        {
-          "voiceId": "russell-brand",
-          "voiceName": "Russell Brand",
-          "photo": "/photos/russell-brand.jpg",
-          "quote": "Who benefits from your digital ID?",
-          "sourceUrl": "https://www.youtube.com/shorts/ws7Dg85kiyk",
-          "platform": "youtube",
-          "fit": 7,
-          "quoteQuality": 1
         },
         {
           "voiceId": "kyle-kulinski",
@@ -85,17 +75,17 @@
           "quoteQuality": 1
         },
         {
-          "voiceId": "glenn-beck",
-          "voiceName": "Glenn Beck",
-          "photo": "/photos/glenn-beck.jpg",
-          "quote": "Is Your Oura Ring Going To Tattle On You?",
-          "sourceUrl": "https://www.youtube.com/shorts/Dsu0gG0-r48",
+          "voiceId": "cenk-uygur",
+          "voiceName": "Cenk Uygur",
+          "photo": "/photos/cenk-uygur.jpg",
+          "quote": "Fox News Wants You to Love Data Centers",
+          "sourceUrl": "https://www.youtube.com/watch?v=3URWf4MJplE",
           "platform": "youtube",
           "fit": 7,
           "quoteQuality": 1
         }
       ],
-      "voiceCount": 8,
+      "voiceCount": 7,
       "bestQuote": {
         "voiceName": "David Sirota",
         "quote": "Politicians and their tech donors are shocked to see new poll numbers confirming that voters hate being forced to accept huge downsides and no upsides - all to enrich distant Silicon Valley billionair",
@@ -104,7 +94,69 @@
       }
     },
     {
-      "name": "Adopt & Adapt Pragmatism",
+      "name": "Surveillance and Privacy Concerns",
+      "voices": [
+        {
+          "voiceId": "lincoln-project",
+          "voiceName": "Lincoln Project",
+          "photo": "/photos/lincoln-project.jpg",
+          "quote": "\u201cLocal leaders are hearing it, loud and clear: Flock\u2019s spy system must die, either by voting to shut it down or to the sound of reciprocating saws in the night.\u201d\n\nRick Wilson's Flock piece: https://op",
+          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mth7fjah2w2n",
+          "platform": "bluesky",
+          "fit": 9,
+          "quoteQuality": 6
+        },
+        {
+          "voiceId": "adam-schiff",
+          "voiceName": "Adam Schiff",
+          "photo": "/photos/adam-schiff.jpg",
+          "quote": "Flock cameras and other license plate readers have popped up seemingly everywhere around the country.\n\nWhat are the risks? Who's benefiting from these cameras? We break it down:\nyoutu.be/VWDuZenSBvE?.",
+          "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3mthnq4pqbs2a",
+          "platform": "bluesky",
+          "fit": 9,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "eva-galperin",
+          "voiceName": "Eva Galperin",
+          "photo": "/photos/eva-galperin.jpg",
+          "quote": "When you target security researchers with malware, getting caught and written up is honestly one of the less unpleasant possible outcomes: techcrunch.com/2026/08/20/s...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtk335zc622y",
+          "platform": "bluesky",
+          "fit": 7,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "russell-brand",
+          "voiceName": "Russell Brand",
+          "photo": "/photos/russell-brand.jpg",
+          "quote": "Who benefits from your digital ID?",
+          "sourceUrl": "https://www.youtube.com/shorts/ws7Dg85kiyk",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "glenn-beck",
+          "voiceName": "Glenn Beck",
+          "photo": "/photos/glenn-beck.jpg",
+          "quote": "Is Your Oura Ring Going To Tattle On You?",
+          "sourceUrl": "https://www.youtube.com/shorts/Dsu0gG0-r48",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 5,
+      "bestQuote": {
+        "voiceName": "Lincoln Project",
+        "quote": "\u201cLocal leaders are hearing it, loud and clear: Flock\u2019s spy system must die, either by voting to shut it down or to the sound of reciprocating saws in the night.\u201d\n\nRick Wilson's Flock piece: https://op",
+        "platform": "bluesky",
+        "quality": 6
+      }
+    },
+    {
+      "name": "Adopt and Adapt",
       "voices": [
         {
           "voiceId": "ethan-mollick",
@@ -113,7 +165,17 @@
           "quote": "The Industrial Revolution worked out really well in the end, but along the way there was horrible disruption. It is an important reason why we need good policy and support to navigate the job changes ",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtigfc2o5s2n",
           "platform": "bluesky",
-          "fit": 9,
+          "fit": 8,
+          "quoteQuality": 6
+        },
+        {
+          "voiceId": "tyler-cowen",
+          "voiceName": "Tyler Cowen",
+          "photo": "/photos/tyler-cowen.jpg",
+          "quote": "Capitalizing untethered AI agents. That is my latest piece of writing, co-authored with Sonia Farrell Pearson of Harvard.\u00a0 Here is the opening premise: As early as 2017, the\u00a0European Parliament floate",
+          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/08/capitalizing-untethered-ai-agents.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=capitalizing-untethered-ai-agents",
+          "platform": "substack",
+          "fit": 6,
           "quoteQuality": 6
         },
         {
@@ -127,13 +189,13 @@
           "quoteQuality": 5
         },
         {
-          "voiceId": "matt-pearce",
-          "voiceName": "Matt Pearce",
-          "photo": "/photos/matt-pearce.jpg",
-          "quote": "Like the way software people are like \u201ccmon man, you gotta get with times on AI,\u201d book people are like \u201chey, have you tried reading a book\u201d",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mthzbevnps2r",
+          "voiceId": "scott-lincicome",
+          "voiceName": "Scott Lincicome",
+          "photo": "/photos/scott-lincicome.jpg",
+          "quote": "\"there has probably never been a better time to solve the world\u2019s material challenges.... the increasingly widespread adoption of AI may be opening up novel ways of developing completely new materials",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtloids5x32r",
           "platform": "bluesky",
-          "fit": 5,
+          "fit": 8,
           "quoteQuality": 5
         },
         {
@@ -144,16 +206,6 @@
           "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
           "platform": "youtube",
           "fit": 9,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "scott-galloway",
-          "voiceName": "Scott Galloway",
-          "photo": "/photos/scott-galloway.jpg",
-          "quote": "My case for autonomous vehicles + planes",
-          "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
-          "platform": "youtube",
-          "fit": 7,
           "quoteQuality": 1
         }
       ],
@@ -166,50 +218,28 @@
       }
     },
     {
-      "name": "Surveillance & Privacy Accountability",
+      "name": "Cautious Inquiry",
       "voices": [
         {
-          "voiceId": "lincoln-project",
-          "voiceName": "Lincoln Project",
-          "photo": "/photos/lincoln-project.jpg",
-          "quote": "\u201cLocal leaders are hearing it, loud and clear: Flock\u2019s spy system must die, either by voting to shut it down or to the sound of reciprocating saws in the night.\u201d\n\nRick Wilson's Flock piece: https://op",
-          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mth7fjah2w2n",
+          "voiceId": "matt-pearce",
+          "voiceName": "Matt Pearce",
+          "photo": "/photos/matt-pearce.jpg",
+          "quote": "Like the way software people are like \u201ccmon man, you gotta get with times on AI,\u201d book people are like \u201chey, have you tried reading a book\u201d",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mthzbevnps2r",
           "platform": "bluesky",
-          "fit": 10,
-          "quoteQuality": 6
-        },
-        {
-          "voiceId": "adam-schiff",
-          "voiceName": "Adam Schiff",
-          "photo": "/photos/adam-schiff.jpg",
-          "quote": "Flock cameras and other license plate readers have popped up seemingly everywhere around the country.\n\nWhat are the risks? Who's benefiting from these cameras? We break it down:\nyoutu.be/VWDuZenSBvE?.",
-          "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3mthnq4pqbs2a",
-          "platform": "bluesky",
-          "fit": 10,
+          "fit": 6,
           "quoteQuality": 5
         },
         {
-          "voiceId": "eva-galperin",
-          "voiceName": "Eva Galperin",
-          "photo": "/photos/eva-galperin.jpg",
-          "quote": "When you target security researchers with malware, getting caught and written up is honestly one of the less unpleasant possible outcomes: techcrunch.com/2026/08/20/s...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtk335zc622y",
+          "voiceId": "taylor-lorenz",
+          "voiceName": "Taylor Lorenz",
+          "photo": "/photos/taylor-lorenz.jpg",
+          "quote": "I actually thought this was a meme someone made but no it's real and even more insane than you could imagine",
+          "sourceUrl": "https://bsky.app/profile/taylorlorenz.bsky.social/post/3mtfpjme7222b",
           "platform": "bluesky",
-          "fit": 8,
+          "fit": 5,
           "quoteQuality": 5
-        }
-      ],
-      "voiceCount": 3,
-      "bestQuote": {
-        "voiceName": "Lincoln Project",
-        "quote": "\u201cLocal leaders are hearing it, loud and clear: Flock\u2019s spy system must die, either by voting to shut it down or to the sound of reciprocating saws in the night.\u201d\n\nRick Wilson's Flock piece: https://op",
-        "platform": "bluesky",
-        "quality": 6
-      }
-    },
-    {
-      "name": "Cautious Policy Inquiry",
-      "voices": [
+        },
         {
           "voiceId": "ezra-klein",
           "voiceName": "Ezra Klein",
@@ -219,71 +249,19 @@
           "platform": "youtube",
           "fit": 9,
           "quoteQuality": 1
-        },
-        {
-          "voiceId": "all-in-podcast",
-          "voiceName": "All-In Podcast",
-          "photo": "/photos/all-in-podcast.jpg",
-          "quote": "Dario Defends Himself, Datacenter Panic, AI Doomer Trap, Senate Toss-Up",
-          "sourceUrl": "https://www.youtube.com/watch?v=Sij_v-mcZXQ",
-          "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 1
         }
       ],
-      "voiceCount": 2,
+      "voiceCount": 3,
       "bestQuote": {
-        "voiceName": "Ezra Klein",
-        "quote": "Is A.I. Development Really on a Safe Path? | The Ezra Klein Show",
-        "platform": "youtube",
-        "quality": 1
+        "voiceName": "Matt Pearce",
+        "quote": "Like the way software people are like \u201ccmon man, you gotta get with times on AI,\u201d book people are like \u201chey, have you tried reading a book\u201d",
+        "platform": "bluesky",
+        "quality": 5
       }
     },
     {
-      "name": "Market Optimism",
+      "name": "Corporate Accountability Watch",
       "voices": [
-        {
-          "voiceId": "tyler-cowen",
-          "voiceName": "Tyler Cowen",
-          "photo": "/photos/tyler-cowen.jpg",
-          "quote": "Capitalizing untethered AI agents. That is my latest piece of writing, co-authored with Sonia Farrell Pearson of Harvard.\u00a0 Here is the opening premise: As early as 2017, the\u00a0European Parliament floate",
-          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/08/capitalizing-untethered-ai-agents.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=capitalizing-untethered-ai-agents",
-          "platform": "substack",
-          "fit": 8,
-          "quoteQuality": 6
-        },
-        {
-          "voiceId": "scott-lincicome",
-          "voiceName": "Scott Lincicome",
-          "photo": "/photos/scott-lincicome.jpg",
-          "quote": "\"there has probably never been a better time to solve the world\u2019s material challenges.... the increasingly widespread adoption of AI may be opening up novel ways of developing completely new materials",
-          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtloids5x32r",
-          "platform": "bluesky",
-          "fit": 10,
-          "quoteQuality": 5
-        }
-      ],
-      "voiceCount": 2,
-      "bestQuote": {
-        "voiceName": "Tyler Cowen",
-        "quote": "Capitalizing untethered AI agents. That is my latest piece of writing, co-authored with Sonia Farrell Pearson of Harvard.\u00a0 Here is the opening premise: As early as 2017, the\u00a0European Parliament floate",
-        "platform": "substack",
-        "quality": 6
-      }
-    },
-    {
-      "name": "Industry Applications & Culture",
-      "voices": [
-        {
-          "voiceId": "taylor-lorenz",
-          "voiceName": "Taylor Lorenz",
-          "photo": "/photos/taylor-lorenz.jpg",
-          "quote": "I actually thought this was a meme someone made but no it's real and even more insane than you could imagine",
-          "sourceUrl": "https://bsky.app/profile/taylorlorenz.bsky.social/post/3mtfpjme7222b",
-          "platform": "bluesky",
-          "fit": 7,
-          "quoteQuality": 5
-        },
         {
           "voiceId": "emily-atkin",
           "voiceName": "Emily Atkin",
@@ -293,56 +271,54 @@
           "platform": "bluesky",
           "fit": 8,
           "quoteQuality": 5
+        },
+        {
+          "voiceId": "bernie-sanders",
+          "voiceName": "Bernie Sanders",
+          "photo": "/photos/bernie-sanders.jpg",
+          "quote": "Trump thinks every community should have a data center",
+          "sourceUrl": "https://www.youtube.com/shorts/Kb7UpCfh_F4",
+          "platform": "youtube",
+          "fit": 7,
+          "quoteQuality": 2
+        },
+        {
+          "voiceId": "all-in-podcast",
+          "voiceName": "All-In Podcast",
+          "photo": "/photos/all-in-podcast.jpg",
+          "quote": "Dario Defends Himself, Datacenter Panic, AI Doomer Trap, Senate Toss-Up",
+          "sourceUrl": "https://www.youtube.com/watch?v=Sij_v-mcZXQ",
+          "platform": "youtube",
+          "fit": 5,
+          "quoteQuality": 1
         }
       ],
-      "voiceCount": 2,
+      "voiceCount": 3,
       "bestQuote": {
-        "voiceName": "Taylor Lorenz",
-        "quote": "I actually thought this was a meme someone made but no it's real and even more insane than you could imagine",
+        "voiceName": "Emily Atkin",
+        "quote": "Thank you! Shamelessly linking my article if people want to read more. I\u2019ve also reached out to the major tech companies making AI tools for big oil to get their response.",
         "platform": "bluesky",
         "quality": 5
       }
-    },
-    {
-      "name": "AI Bubble Skepticism",
-      "voices": [
-        {
-          "voiceId": "ed-zitron",
-          "voiceName": "Ed Zitron",
-          "photo": "/photos/ed-zitron.jpg",
-          "quote": "that is actually not what the argument is for bailing out anthropic and openai at all",
-          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtkphk7yh22y",
-          "platform": "bluesky",
-          "fit": 8,
-          "quoteQuality": 4
-        }
-      ],
-      "voiceCount": 1,
-      "bestQuote": {
-        "voiceName": "Ed Zitron",
-        "quote": "that is actually not what the argument is for bailing out anthropic and openai at all",
-        "platform": "bluesky",
-        "quality": 4
-      }
     }
   ],
-  "confidence": 6,
+  "confidence": 5,
   "relevance": {
-    "direct": 9,
-    "related": 13,
+    "direct": 8,
+    "related": 15,
     "unrelated": 0
   },
   "validated": true,
-  "heatScore": 58,
+  "heatScore": 57,
   "belowThreshold": false,
   "counterNarrative": {
-    "dominantCluster": "AI Backlash & Overreach Warnings",
-    "dominantCount": 8,
-    "counterCluster": "Market Optimism",
-    "counterCount": 2,
-    "axis": "whether AI investment is justified",
+    "dominantCluster": "AI Skepticism and Backlash",
+    "dominantCount": 7,
+    "counterCluster": "Adopt and Adapt",
+    "counterCount": 5,
+    "axis": "whether to embrace or resist AI",
     "tensionScore": 8,
-    "tension": "8 voices say \"AI Backlash & Overreach Warnings\" \u2014 but 2 push back: \"Market Optimism\""
+    "tension": "7 voices say \"AI Skepticism and Backlash\" \u2014 but 5 push back: \"Adopt and Adapt\""
   },
   "slug": "ai-backlash-grows-surveillance-data-centers-bubble-fears-con"
 }

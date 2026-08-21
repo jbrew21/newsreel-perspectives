@@ -1,9 +1,23 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-08-21T18:03:38.450154",
+  "collectedAt": "2026-08-21T19:50:49.940390",
   "date": "2026-08-21",
   "posts": [
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "Action vs. Corruption | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
+      "timestamp": "2026-08-21T13:56:45+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes government inaction on corruption and accountability",
+      "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart"
+    },
     {
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
@@ -120,18 +134,21 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "Action vs. Corruption | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
-      "timestamp": "2026-08-21T13:56:45+00:00",
-      "type": "video_title",
-      "topic": "congress-legislation",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes government inaction on corruption and accountability",
-      "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart"
+      "text": "McD's Fries vs. BK Onion Rings | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/9Tx0LPeaq-M",
+      "timestamp": "2026-08-14T16:00:35+00:00",
+      "type": "video_title"
     }
   ],
   "topicSummary": {
+    "congress-legislation": [
+      {
+        "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
+        "platform": "youtube",
+        "timestamp": "2026-08-21T13:56:45+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "Dems 2028 Plan? | The Weekly Show with Jon Stewart",
@@ -192,12 +209,12 @@
         "timestamp": "2026-08-12T11:56:56+00:00"
       }
     ],
-    "congress-legislation": [
+    "uncategorized": [
       {
-        "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
+        "quote": "McD's Fries vs. BK Onion Rings | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/9Tx0LPeaq-M",
         "platform": "youtube",
-        "timestamp": "2026-08-21T13:56:45+00:00"
+        "timestamp": "2026-08-14T16:00:35+00:00"
       }
     ]
   }

@@ -1,9 +1,23 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-21T18:03:38.445424",
+  "collectedAt": "2026-08-21T19:50:49.936370",
   "date": "2026-08-21",
   "posts": [
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "Former Microsoft CEO Says Adopt AI Now or Get Left Behind | Titans on Tomorrow",
+      "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
+      "timestamp": "2026-08-20T23:00:35+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Emphasizes need for AI adoption to avoid competitive disadvantage",
+      "quote": "Former Microsoft CEO Says Adopt AI Now or Get Left Behind | Titans on Tomorrow"
+    },
     {
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
@@ -45,23 +59,17 @@
       "stance": "strong",
       "summary": "Reports on assassination attempt against Treasury Secretary",
       "quote": "Another Assassination Attempt"
-    },
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "Former Microsoft CEO Says Adopt AI Now or Get Left Behind | Titans on Tomorrow",
-      "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
-      "timestamp": "2026-08-20T23:00:35+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Emphasizes need for AI adoption to avoid competitive disadvantage",
-      "quote": "Former Microsoft CEO Says Adopt AI Now or Get Left Behind | Titans on Tomorrow"
     }
   ],
   "topicSummary": {
+    "ai-technology": [
+      {
+        "quote": "Former Microsoft CEO Says Adopt AI Now or Get Left Behind | Titans on Tomorrow",
+        "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T23:00:35+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Trump Has Become the White House\u2019s General Contractor",
@@ -84,14 +92,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=NXDq0IV_Pjs",
         "platform": "youtube",
         "timestamp": "2026-08-19T20:30:06+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "Former Microsoft CEO Says Adopt AI Now or Get Left Behind | Titans on Tomorrow",
-        "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
-        "platform": "youtube",
-        "timestamp": "2026-08-20T23:00:35+00:00"
       }
     ]
   }

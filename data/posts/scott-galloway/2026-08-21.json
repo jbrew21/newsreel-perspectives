@@ -1,9 +1,37 @@
 {
   "voiceId": "scott-galloway",
   "voiceName": "Scott Galloway",
-  "collectedAt": "2026-08-21T18:03:38.471822",
+  "collectedAt": "2026-08-21T19:50:49.958814",
   "date": "2026-08-21",
   "posts": [
+    {
+      "voiceId": "scott-galloway",
+      "voiceName": "Scott Galloway",
+      "platform": "youtube",
+      "text": "The Right Is Turning Against the Rich | The Week",
+      "sourceUrl": "https://www.youtube.com/watch?v=mvpfoycAjgE",
+      "timestamp": "2026-08-21T17:02:17+00:00",
+      "type": "video_title",
+      "topic": "billionaires-wealth",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Right-wing movement challenging wealthy interests and corporate power",
+      "quote": "The Right Is Turning Against the Rich | The Week"
+    },
+    {
+      "voiceId": "scott-galloway",
+      "voiceName": "Scott Galloway",
+      "platform": "youtube",
+      "text": "My case for autonomous vehicles + planes",
+      "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
+      "timestamp": "2026-08-21T13:00:03+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Advocates for autonomous vehicles and planes as viable technology",
+      "quote": "My case for autonomous vehicles + planes"
+    },
     {
       "voiceId": "scott-galloway",
       "voiceName": "Scott Galloway",
@@ -213,37 +241,43 @@
       "stance": "strong",
       "summary": "Accuses Trump of building secret police through ICE killings",
       "quote": "Donald Trump is building an American secret police. Killings at the hands of ICE agents confirm that we\u2019re not teetering on a slippery slope, but plunging down a vertical drop. \n\nThere is a silver lining: Many Americans are standing up. If you\u2019re one of them, thank you, and keep going."
-    },
-    {
-      "voiceId": "scott-galloway",
-      "voiceName": "Scott Galloway",
-      "platform": "youtube",
-      "text": "The Right Is Turning Against the Rich | The Week",
-      "sourceUrl": "https://www.youtube.com/watch?v=mvpfoycAjgE",
-      "timestamp": "2026-08-21T17:02:17+00:00",
-      "type": "video_title",
-      "topic": "billionaires-wealth",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Right-wing movement challenging wealthy interests and corporate power",
-      "quote": "The Right Is Turning Against the Rich | The Week"
-    },
-    {
-      "voiceId": "scott-galloway",
-      "voiceName": "Scott Galloway",
-      "platform": "youtube",
-      "text": "My case for autonomous vehicles + planes",
-      "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
-      "timestamp": "2026-08-21T13:00:03+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Advocates for autonomous vehicles and planes as viable technology",
-      "quote": "My case for autonomous vehicles + planes"
     }
   ],
   "topicSummary": {
+    "billionaires-wealth": [
+      {
+        "quote": "The Right Is Turning Against the Rich | The Week",
+        "sourceUrl": "https://www.youtube.com/watch?v=mvpfoycAjgE",
+        "platform": "youtube",
+        "timestamp": "2026-08-21T17:02:17+00:00"
+      },
+      {
+        "quote": "Elon Musk's SpaceX IPO is low-grade corruption",
+        "sourceUrl": "https://www.youtube.com/shorts/iJAaJgwfePY",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T13:00:33+00:00"
+      },
+      {
+        "quote": "This is low-grade corruption, but it's legal and Musk did it,,, I would stay away from the stock.",
+        "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mtcdr7b3hc2p",
+        "platform": "bluesky",
+        "timestamp": "2026-08-17T18:35:13.945Z"
+      }
+    ],
+    "ai-technology": [
+      {
+        "quote": "My case for autonomous vehicles + planes",
+        "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
+        "platform": "youtube",
+        "timestamp": "2026-08-21T13:00:03+00:00"
+      },
+      {
+        "quote": "\u201cSpaceX Is a $10 Stock\u201d | Office Hours",
+        "sourceUrl": "https://www.youtube.com/watch?v=yTpiZR8bJIU",
+        "platform": "youtube",
+        "timestamp": "2026-08-17T16:00:10+00:00"
+      }
+    ],
     "economy-trade": [
       {
         "quote": "China Builds a Germany Every Year \u2014 And the U.S. Is Losing",
@@ -284,26 +318,6 @@
         "timestamp": "2026-08-20T17:11:07.074Z"
       }
     ],
-    "billionaires-wealth": [
-      {
-        "quote": "Elon Musk's SpaceX IPO is low-grade corruption",
-        "sourceUrl": "https://www.youtube.com/shorts/iJAaJgwfePY",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T13:00:33+00:00"
-      },
-      {
-        "quote": "This is low-grade corruption, but it's legal and Musk did it,,, I would stay away from the stock.",
-        "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mtcdr7b3hc2p",
-        "platform": "bluesky",
-        "timestamp": "2026-08-17T18:35:13.945Z"
-      },
-      {
-        "quote": "The Right Is Turning Against the Rich | The Week",
-        "sourceUrl": "https://www.youtube.com/watch?v=mvpfoycAjgE",
-        "platform": "youtube",
-        "timestamp": "2026-08-21T17:02:17+00:00"
-      }
-    ],
     "healthcare": [
       {
         "quote": "The overlooked risk of GLP-1s",
@@ -318,20 +332,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=bpW0BgxlsQc",
         "platform": "youtube",
         "timestamp": "2026-08-17T22:00:33+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "\u201cSpaceX Is a $10 Stock\u201d | Office Hours",
-        "sourceUrl": "https://www.youtube.com/watch?v=yTpiZR8bJIU",
-        "platform": "youtube",
-        "timestamp": "2026-08-17T16:00:10+00:00"
-      },
-      {
-        "quote": "My case for autonomous vehicles + planes",
-        "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
-        "platform": "youtube",
-        "timestamp": "2026-08-21T13:00:03+00:00"
       }
     ],
     "trump-administration": [
