@@ -1,9 +1,23 @@
 {
   "voiceId": "tim-pool",
   "voiceName": "Tim Pool",
-  "collectedAt": "2026-08-22T17:55:39.008871",
+  "collectedAt": "2026-08-22T19:52:28.642252",
   "date": "2026-08-22",
   "posts": [
+    {
+      "voiceId": "tim-pool",
+      "voiceName": "Tim Pool",
+      "platform": "youtube",
+      "text": "Alex Jones is Lying About Everything #shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/vwREwd92rv4",
+      "timestamp": "2026-08-22T13:00:18+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Alex Jones for spreading misinformation",
+      "quote": "Alex Jones is Lying About Everything #shorts"
+    },
     {
       "voiceId": "tim-pool",
       "voiceName": "Tim Pool",
@@ -31,6 +45,20 @@
       "stance": "strong",
       "summary": "FBI raid on Democrat indicates legal trouble for Swalwell",
       "quote": "FBI RAIDS Democrats House, Swalwell IS IN TROUBLE"
+    },
+    {
+      "voiceId": "tim-pool",
+      "voiceName": "Tim Pool",
+      "platform": "youtube",
+      "text": "The Conspiracies MAKE NO SENSE #shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/LOop7DLo5lo",
+      "timestamp": "2026-08-20T13:21:52+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Dismisses conspiracy theories as illogical",
+      "quote": "The Conspiracies MAKE NO SENSE #shorts"
     },
     {
       "voiceId": "tim-pool",
@@ -73,37 +101,23 @@
       "stance": "strong",
       "summary": "Claims DSA defeated, polls fundamentally broken, mixed Trump and Democratic outcomes",
       "quote": "DSA CRUSHED, Polls INSANELY WRONG, Trump Gets GOOD NEWS But Democrats STRONG In Midterms"
-    },
-    {
-      "voiceId": "tim-pool",
-      "voiceName": "Tim Pool",
-      "platform": "youtube",
-      "text": "Alex Jones is Lying About Everything #shorts",
-      "sourceUrl": "https://www.youtube.com/shorts/vwREwd92rv4",
-      "timestamp": "2026-08-22T13:00:18+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Alex Jones for spreading misinformation",
-      "quote": "Alex Jones is Lying About Everything #shorts"
-    },
-    {
-      "voiceId": "tim-pool",
-      "voiceName": "Tim Pool",
-      "platform": "youtube",
-      "text": "The Conspiracies MAKE NO SENSE #shorts",
-      "sourceUrl": "https://www.youtube.com/shorts/LOop7DLo5lo",
-      "timestamp": "2026-08-20T13:21:52+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Dismisses conspiracy theories as illogical",
-      "quote": "The Conspiracies MAKE NO SENSE #shorts"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "Alex Jones is Lying About Everything #shorts",
+        "sourceUrl": "https://www.youtube.com/shorts/vwREwd92rv4",
+        "platform": "youtube",
+        "timestamp": "2026-08-22T13:00:18+00:00"
+      },
+      {
+        "quote": "Tucker Carlson Says Ben Shapiro IS A PSYOP, Israel MADE HIM Smear Hunter Biden",
+        "sourceUrl": "https://www.youtube.com/watch?v=SZCk79OqHxw",
+        "platform": "youtube",
+        "timestamp": "2026-08-13T20:00:06+00:00"
+      }
+    ],
     "science-space": [
       {
         "quote": "Moderna's New mRNA Cancer Vaccine Could Change Everything #shorts",
@@ -120,6 +134,14 @@
         "timestamp": "2026-08-20T20:00:18+00:00"
       }
     ],
+    "culture-war": [
+      {
+        "quote": "The Conspiracies MAKE NO SENSE #shorts",
+        "sourceUrl": "https://www.youtube.com/shorts/LOop7DLo5lo",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T13:21:52+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "Democrat CHEATING SCANDAL CAUGHT, Poll WAS FAKE, Dems RIGGING Alaska Primary",
@@ -132,28 +154,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=KY0Sx70QNWw",
         "platform": "youtube",
         "timestamp": "2026-08-12T20:00:06+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "Tucker Carlson Says Ben Shapiro IS A PSYOP, Israel MADE HIM Smear Hunter Biden",
-        "sourceUrl": "https://www.youtube.com/watch?v=SZCk79OqHxw",
-        "platform": "youtube",
-        "timestamp": "2026-08-13T20:00:06+00:00"
-      },
-      {
-        "quote": "Alex Jones is Lying About Everything #shorts",
-        "sourceUrl": "https://www.youtube.com/shorts/vwREwd92rv4",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T13:00:18+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "The Conspiracies MAKE NO SENSE #shorts",
-        "sourceUrl": "https://www.youtube.com/shorts/LOop7DLo5lo",
-        "platform": "youtube",
-        "timestamp": "2026-08-20T13:21:52+00:00"
       }
     ]
   }

@@ -1,9 +1,23 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-08-22T17:55:39.001011",
+  "collectedAt": "2026-08-22T19:52:28.634064",
   "date": "2026-08-22",
   "posts": [
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
+      "text": "Jordan Klepper asks Trump supporters: Can a woman be president? #tds30",
+      "sourceUrl": "https://www.youtube.com/shorts/tqnFy4xLQMg",
+      "timestamp": "2026-08-22T15:00:03+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions whether Trump supporters accept women in presidential leadership",
+      "quote": "Jordan Klepper asks Trump supporters: Can a woman be president? #tds30"
+    },
     {
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
@@ -59,37 +73,17 @@
       "stance": "strong",
       "summary": "Satirizes Trump's appearance and supporter merchandise",
       "quote": "The Presidential Neck Vag: When You Want to Look JUST Like the President | The Daily Show"
-    },
-    {
-      "voiceId": "trevor-noah",
-      "voiceName": "Trevor Noah",
-      "platform": "youtube",
-      "text": "Jordan Klepper asks Trump supporters who's winning the U.S.-Iran &quot;conflict&quot; #dailyshow",
-      "sourceUrl": "https://www.youtube.com/shorts/iStwwqdOPQc",
-      "timestamp": "2026-08-18T17:00:06+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Satirizes Trump supporters' understanding of U.S.-Iran tensions",
-      "quote": "Jordan Klepper asks Trump supporters who's winning the U.S.-Iran &quot;conflict&quot; #dailyshow"
-    },
-    {
-      "voiceId": "trevor-noah",
-      "voiceName": "Trevor Noah",
-      "platform": "youtube",
-      "text": "Jordan Klepper asks Trump supporters: Can a woman be president? #tds30",
-      "sourceUrl": "https://www.youtube.com/shorts/tqnFy4xLQMg",
-      "timestamp": "2026-08-22T15:00:03+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions whether Trump supporters accept women in presidential leadership",
-      "quote": "Jordan Klepper asks Trump supporters: Can a woman be president? #tds30"
     }
   ],
   "topicSummary": {
+    "culture-war": [
+      {
+        "quote": "Jordan Klepper asks Trump supporters: Can a woman be president? #tds30",
+        "sourceUrl": "https://www.youtube.com/shorts/tqnFy4xLQMg",
+        "platform": "youtube",
+        "timestamp": "2026-08-22T15:00:03+00:00"
+      }
+    ],
     "economy-trade": [
       {
         "quote": "Trump has a plan to bring down drug prices. Does it make sense? No, but he has a plan! #fyc",
@@ -118,22 +112,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=r2uCEzgv06w",
         "platform": "youtube",
         "timestamp": "2026-08-19T13:00:01+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "Jordan Klepper asks Trump supporters who's winning the U.S.-Iran &quot;conflict&quot; #dailyshow",
-        "sourceUrl": "https://www.youtube.com/shorts/iStwwqdOPQc",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T17:00:06+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "Jordan Klepper asks Trump supporters: Can a woman be president? #tds30",
-        "sourceUrl": "https://www.youtube.com/shorts/tqnFy4xLQMg",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T15:00:03+00:00"
       }
     ]
   }

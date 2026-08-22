@@ -1,9 +1,23 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "collectedAt": "2026-08-22T17:55:39.005426",
+  "collectedAt": "2026-08-22T19:52:28.638822",
   "date": "2026-08-22",
   "posts": [
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
+      "text": "S10 E12: Tennessee Mayoral Race &amp; Homeschooling: Last Week Tonight with John Oliver",
+      "sourceUrl": "https://www.youtube.com/watch?v=juCyYV7kauw",
+      "timestamp": "2026-08-22T16:00:05+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Examines Tennessee mayoral race and homeschooling policy issues",
+      "quote": "S10 E12: Tennessee Mayoral Race &amp; Homeschooling: Last Week Tonight with John Oliver"
+    },
     {
       "voiceId": "john-oliver",
       "voiceName": "John Oliver",
@@ -115,23 +129,17 @@
       "stance": "strong",
       "summary": "Addresses mass shooting and gun violence issues",
       "quote": "S10 E7: Tennessee Mass Shooting &amp; Homeowners Associations: Last Week Tonight with John Oliver"
-    },
-    {
-      "voiceId": "john-oliver",
-      "voiceName": "John Oliver",
-      "platform": "youtube",
-      "text": "S10 E12: Tennessee Mayoral Race &amp; Homeschooling: Last Week Tonight with John Oliver",
-      "sourceUrl": "https://www.youtube.com/watch?v=juCyYV7kauw",
-      "timestamp": "2026-08-22T16:00:05+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Examines Tennessee mayoral race and homeschooling policy issues",
-      "quote": "S10 E12: Tennessee Mayoral Race &amp; Homeschooling: Last Week Tonight with John Oliver"
     }
   ],
   "topicSummary": {
+    "state-local-politics": [
+      {
+        "quote": "S10 E12: Tennessee Mayoral Race &amp; Homeschooling: Last Week Tonight with John Oliver",
+        "sourceUrl": "https://www.youtube.com/watch?v=juCyYV7kauw",
+        "platform": "youtube",
+        "timestamp": "2026-08-22T16:00:05+00:00"
+      }
+    ],
     "criminal-justice": [
       {
         "quote": "S10 E11: Return from WGA Strike &amp; Prison Healthcare: Last Week Tonight with John Oliver",
@@ -190,14 +198,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=jEaSeKBkNG4",
         "platform": "youtube",
         "timestamp": "2026-08-17T16:00:08+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "S10 E12: Tennessee Mayoral Race &amp; Homeschooling: Last Week Tonight with John Oliver",
-        "sourceUrl": "https://www.youtube.com/watch?v=juCyYV7kauw",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T16:00:05+00:00"
       }
     ]
   }

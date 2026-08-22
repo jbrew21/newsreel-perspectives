@@ -1,9 +1,23 @@
 {
   "voiceId": "matt-walsh",
   "voiceName": "Matt Walsh",
-  "collectedAt": "2026-08-22T17:55:39.009142",
+  "collectedAt": "2026-08-22T19:52:28.642553",
   "date": "2026-08-22",
   "posts": [
+    {
+      "voiceId": "matt-walsh",
+      "voiceName": "Matt Walsh",
+      "platform": "youtube",
+      "text": "This pedagogically sucks",
+      "sourceUrl": "https://www.youtube.com/shorts/0gRJOFolW9w",
+      "timestamp": "2026-08-22T14:00:36+00:00",
+      "type": "video_title",
+      "topic": "education",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "",
+      "quote": "This pedagogically sucks"
+    },
     {
       "voiceId": "matt-walsh",
       "voiceName": "Matt Walsh",
@@ -45,23 +59,17 @@
       "stance": "lean",
       "summary": "Presents alternative historical interpretation of civil rights era",
       "quote": "The Real Story Of Martin Luther King Jr."
-    },
-    {
-      "voiceId": "matt-walsh",
-      "voiceName": "Matt Walsh",
-      "platform": "youtube",
-      "text": "This pedagogically sucks",
-      "sourceUrl": "https://www.youtube.com/shorts/0gRJOFolW9w",
-      "timestamp": "2026-08-22T14:00:36+00:00",
-      "type": "video_title",
-      "topic": "education",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "",
-      "quote": "This pedagogically sucks"
     }
   ],
   "topicSummary": {
+    "education": [
+      {
+        "quote": "This pedagogically sucks",
+        "sourceUrl": "https://www.youtube.com/shorts/0gRJOFolW9w",
+        "platform": "youtube",
+        "timestamp": "2026-08-22T14:00:36+00:00"
+      }
+    ],
     "criminal-justice": [
       {
         "quote": "INSANE: Prosecutors In Karmelo Anthony Case Hid The Most Damning Evidence | Ep. 1826",
@@ -82,14 +90,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=ih8y4KP3wyw",
         "platform": "youtube",
         "timestamp": "2026-08-20T17:00:11+00:00"
-      }
-    ],
-    "education": [
-      {
-        "quote": "This pedagogically sucks",
-        "sourceUrl": "https://www.youtube.com/shorts/0gRJOFolW9w",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T14:00:36+00:00"
       }
     ]
   }
