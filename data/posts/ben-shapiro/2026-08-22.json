@@ -1,51 +1,9 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-22T09:06:28.695698",
+  "collectedAt": "2026-08-22T17:55:39.000452",
   "date": "2026-08-22",
   "posts": [
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "Former Microsoft CEO Speaks Out on AI",
-      "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
-      "timestamp": "2026-08-20T23:00:35+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Emphasizes need for AI adoption to avoid competitive disadvantage",
-      "quote": "Former Microsoft CEO Speaks Out on AI"
-    },
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "Trump Has Become the White House\u2019s General Contractor",
-      "sourceUrl": "https://www.youtube.com/watch?v=t0mYraz3H2o",
-      "timestamp": "2026-08-20T19:02:41+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Characterizes Trump as managing White House like construction project",
-      "quote": "Trump Has Become the White House\u2019s General Contractor"
-    },
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "The UK Government Is Begging Muslims Not to R**e People",
-      "sourceUrl": "https://www.youtube.com/watch?v=kLk5Nwsg9mI",
-      "timestamp": "2026-08-20T17:32:45+00:00",
-      "type": "video_title",
-      "topic": "immigration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Frames migration from Muslim-majority regions as sexual assault threat",
-      "quote": "The UK Government Is Begging Muslims Not to R**e People"
-    },
     {
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
@@ -87,21 +45,79 @@
       "stance": "lean",
       "summary": "Examines economic and employment impacts of AI advancement",
       "quote": "What does the AI revolution mean for your average worker?"
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "Former Microsoft CEO Speaks Out on AI",
+      "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
+      "timestamp": "2026-08-20T23:00:35+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Emphasizes need for AI adoption to avoid competitive disadvantage",
+      "quote": "Former Microsoft CEO Speaks Out on AI"
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "Trump Has Become the White House\u2019s General Contractor",
+      "sourceUrl": "https://www.youtube.com/watch?v=t0mYraz3H2o",
+      "timestamp": "2026-08-20T19:02:41+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Characterizes Trump as managing White House like construction project",
+      "quote": "Trump Has Become the White House\u2019s General Contractor"
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "The UK Government Is Begging Muslims Not to R**e People",
+      "sourceUrl": "https://www.youtube.com/watch?v=kLk5Nwsg9mI",
+      "timestamp": "2026-08-20T17:32:45+00:00",
+      "type": "video_title",
+      "topic": "immigration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Frames migration from Muslim-majority regions as sexual assault threat",
+      "quote": "The UK Government Is Begging Muslims Not to R**e People"
     }
   ],
   "topicSummary": {
-    "ai-technology": [
+    "culture-war": [
       {
-        "quote": "Former Microsoft CEO Speaks Out on AI",
-        "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
+        "quote": "Democrats Are Done Hiding the Socialism",
+        "sourceUrl": "https://www.youtube.com/watch?v=XpVrXKxBY24",
         "platform": "youtube",
-        "timestamp": "2026-08-20T23:00:35+00:00"
-      },
+        "timestamp": "2026-08-21T20:30:28+00:00"
+      }
+    ],
+    "terrorism": [
+      {
+        "quote": "An ISIS Supporter Just Tried to Bomb the New York Capitol",
+        "sourceUrl": "https://www.youtube.com/watch?v=ezsxSva7l6U",
+        "platform": "youtube",
+        "timestamp": "2026-08-21T20:00:23+00:00"
+      }
+    ],
+    "ai-technology": [
       {
         "quote": "What does the AI revolution mean for your average worker?",
         "sourceUrl": "https://www.youtube.com/shorts/_PPhlW_MpPo",
         "platform": "youtube",
         "timestamp": "2026-08-21T17:27:26+00:00"
+      },
+      {
+        "quote": "Former Microsoft CEO Speaks Out on AI",
+        "sourceUrl": "https://www.youtube.com/watch?v=fv4qMGwCEtc",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T23:00:35+00:00"
       }
     ],
     "trump-administration": [
@@ -118,22 +134,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=kLk5Nwsg9mI",
         "platform": "youtube",
         "timestamp": "2026-08-20T17:32:45+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "Democrats Are Done Hiding the Socialism",
-        "sourceUrl": "https://www.youtube.com/watch?v=XpVrXKxBY24",
-        "platform": "youtube",
-        "timestamp": "2026-08-21T20:30:28+00:00"
-      }
-    ],
-    "terrorism": [
-      {
-        "quote": "An ISIS Supporter Just Tried to Bomb the New York Capitol",
-        "sourceUrl": "https://www.youtube.com/watch?v=ezsxSva7l6U",
-        "platform": "youtube",
-        "timestamp": "2026-08-21T20:00:23+00:00"
       }
     ]
   }

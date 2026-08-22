@@ -1,9 +1,23 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-22T09:06:28.697889",
+  "collectedAt": "2026-08-22T17:55:39.003235",
   "date": "2026-08-22",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
+      "text": "Racist neighbors firebombed his family's house!",
+      "sourceUrl": "https://www.youtube.com/shorts/8wOk8-LBOL8",
+      "timestamp": "2026-08-21T23:00:07+00:00",
+      "type": "video_title",
+      "topic": "civil-rights-race",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights racial violence and discrimination against family",
+      "quote": "Racist neighbors firebombed his family's house!"
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -64,32 +78,26 @@
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
       "platform": "youtube",
-      "text": "Did Fauci admit he lied to us?",
-      "sourceUrl": "https://www.youtube.com/shorts/ETha0qU-HdM",
-      "timestamp": "2026-08-19T20:11:57+00:00",
+      "text": "The Political Insider Trading Game EXPOSED",
+      "sourceUrl": "https://www.youtube.com/watch?v=6utY2XY8G10",
+      "timestamp": "2026-08-22T15:20:12+00:00",
       "type": "video_title",
-      "topic": "covid-pandemic",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Questions Fauci's honesty about pandemic guidance",
-      "quote": "Did Fauci admit he lied to us?"
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Racist neighbors firebombed his family's house!",
-      "sourceUrl": "https://www.youtube.com/shorts/8wOk8-LBOL8",
-      "timestamp": "2026-08-21T23:00:07+00:00",
-      "type": "video_title",
-      "topic": "civil-rights-race",
+      "topic": "congress-legislation",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights racial violence and discrimination against family",
-      "quote": "Racist neighbors firebombed his family's house!"
+      "stance": "strong",
+      "summary": "Criticizes politicians for insider trading and financial corruption",
+      "quote": "The Political Insider Trading Game EXPOSED"
     }
   ],
   "topicSummary": {
+    "civil-rights-race": [
+      {
+        "quote": "Racist neighbors firebombed his family's house!",
+        "sourceUrl": "https://www.youtube.com/shorts/8wOk8-LBOL8",
+        "platform": "youtube",
+        "timestamp": "2026-08-21T23:00:07+00:00"
+      }
+    ],
     "education": [
       {
         "quote": "The Jason Arday Story Is Deeper Than It Seems\u2026 - SF750",
@@ -110,12 +118,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/C5ZReAnUZvA",
         "platform": "youtube",
         "timestamp": "2026-08-20T23:00:05+00:00"
-      },
-      {
-        "quote": "Did Fauci admit he lied to us?",
-        "sourceUrl": "https://www.youtube.com/shorts/ETha0qU-HdM",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T20:11:57+00:00"
       }
     ],
     "ai-technology": [
@@ -126,12 +128,12 @@
         "timestamp": "2026-08-20T21:00:38+00:00"
       }
     ],
-    "civil-rights-race": [
+    "congress-legislation": [
       {
-        "quote": "Racist neighbors firebombed his family's house!",
-        "sourceUrl": "https://www.youtube.com/shorts/8wOk8-LBOL8",
+        "quote": "The Political Insider Trading Game EXPOSED",
+        "sourceUrl": "https://www.youtube.com/watch?v=6utY2XY8G10",
         "platform": "youtube",
-        "timestamp": "2026-08-21T23:00:07+00:00"
+        "timestamp": "2026-08-22T15:20:12+00:00"
       }
     ]
   }
