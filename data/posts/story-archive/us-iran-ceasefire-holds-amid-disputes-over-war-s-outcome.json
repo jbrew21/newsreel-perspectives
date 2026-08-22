@@ -1,6 +1,6 @@
 {
   "headline": "US-Iran ceasefire holds amid disputes over war's outcome",
-  "summary": "Partisan media clash over who 'won,' while analysts focus on China's leverage and sanctions bluff.",
+  "summary": "Right claims decisive victory while critics highlight stalemate, Chinese defiance, and shaky sanctions leverage.",
   "type": "split",
   "source": "voices",
   "coverUrl": "",
@@ -8,11 +8,11 @@
   "topicSlugs": [
     "iran-conflict"
   ],
-  "voiceCount": 8,
+  "voiceCount": 9,
   "clusterCount": 4,
   "clusters": [
     {
-      "name": "Skeptical Geopolitical Analysis",
+      "name": "Economic Leverage Skepticism",
       "voices": [
         {
           "voiceId": "bill-bishop",
@@ -21,7 +21,7 @@
           "quote": "US may impose more sanctions on China over Iran?; PRC-South Korea; Life for Evergrande\u2019s Xu; AI governance; Supply chain punishment for Taiwan; \u201cPseudo-history\u201d. Given the PRC\u2019s economic relations wit",
           "sourceUrl": "https://sinocism.com/p/us-may-impose-more-sanctions-on-china",
           "platform": "substack",
-          "fit": 8,
+          "fit": 7,
           "quoteQuality": 6
         },
         {
@@ -54,7 +54,7 @@
       }
     },
     {
-      "name": "Trump Administration Victory Narrative",
+      "name": "Trump Achieved Victory",
       "voices": [
         {
           "voiceId": "benny-johnson",
@@ -70,10 +70,10 @@
           "voiceId": "glenn-beck",
           "voiceName": "Glenn Beck",
           "photo": "/photos/glenn-beck.jpg",
-          "quote": "Could This Be Trump's Solution For The Iran War?",
-          "sourceUrl": "https://www.youtube.com/watch?v=gScc5lRPgFE",
+          "quote": "The ONE Video That Summarizes Trump's Plan In Iran",
+          "sourceUrl": "https://www.youtube.com/watch?v=EkNK_mGXMMc",
           "platform": "youtube",
-          "fit": 6,
+          "fit": 7,
           "quoteQuality": 1
         }
       ],
@@ -86,7 +86,39 @@
       }
     },
     {
-      "name": "Trump Failure and Backlash Narrative",
+      "name": "Skeptical of Intervention",
+      "voices": [
+        {
+          "voiceId": "tucker-carlson",
+          "voiceName": "Tucker Carlson",
+          "photo": "/photos/tucker-carlson.jpg",
+          "quote": "We\u2019re Risking Nuclear War",
+          "sourceUrl": "https://www.youtube.com/shorts/isfb6c7NyJM",
+          "platform": "youtube",
+          "fit": 10,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "shawn-ryan-show",
+          "voiceName": "Shawn Ryan Show",
+          "photo": "/photos/shawn-ryan-show.jpg",
+          "quote": "A Navy SEAL\u2019s Warning to Soldiers Going to Iran \u26a0\ufe0f",
+          "sourceUrl": "https://www.youtube.com/shorts/piIvbzEjQ-A",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 2,
+      "bestQuote": {
+        "voiceName": "Tucker Carlson",
+        "quote": "We\u2019re Risking Nuclear War",
+        "platform": "youtube",
+        "quality": 1
+      }
+    },
+    {
+      "name": "Trump Failing/Stalemate",
       "voices": [
         {
           "voiceId": "mehdi-hasan",
@@ -105,7 +137,7 @@
           "quote": "Trump PANICS ON TARMAC as Iraq STABS HIM IN BACK!!!",
           "sourceUrl": "https://www.youtube.com/watch?v=jZeK76aEEMU",
           "platform": "youtube",
-          "fit": 10,
+          "fit": 9,
           "quoteQuality": 1
         }
       ],
@@ -116,47 +148,25 @@
         "platform": "bluesky",
         "quality": 5
       }
-    },
-    {
-      "name": "Military Ground-Level Perspective",
-      "voices": [
-        {
-          "voiceId": "shawn-ryan-show",
-          "voiceName": "Shawn Ryan Show",
-          "photo": "/photos/shawn-ryan-show.jpg",
-          "quote": "A Navy SEAL\u2019s Warning to Soldiers Going to Iran \u26a0\ufe0f",
-          "sourceUrl": "https://www.youtube.com/shorts/piIvbzEjQ-A",
-          "platform": "youtube",
-          "fit": 9,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 1,
-      "bestQuote": {
-        "voiceName": "Shawn Ryan Show",
-        "quote": "A Navy SEAL\u2019s Warning to Soldiers Going to Iran \u26a0\ufe0f",
-        "platform": "youtube",
-        "quality": 1
-      }
     }
   ],
   "confidence": 7,
   "relevance": {
-    "direct": 6,
-    "related": 2,
+    "direct": 8,
+    "related": 1,
     "unrelated": 0
   },
   "validated": true,
-  "heatScore": 60,
+  "heatScore": 63,
   "belowThreshold": false,
   "counterNarrative": {
-    "dominantCluster": "Trump Administration Victory Narrative",
+    "dominantCluster": "Trump Achieved Victory",
     "dominantCount": 2,
-    "counterCluster": "Trump Failure and Backlash Narrative",
+    "counterCluster": "Trump Failing/Stalemate",
     "counterCount": 2,
-    "axis": "whether the strikes succeeded",
+    "axis": "whether the war succeeded",
     "tensionScore": 9,
-    "tension": "2 voices say \"Trump Administration Victory Narrative\" \u2014 but 2 push back: \"Trump Failure and Backlash Narrative\""
+    "tension": "2 voices say \"Trump Achieved Victory\" \u2014 but 2 push back: \"Trump Failing/Stalemate\""
   },
   "slug": "iran-war-drags-on-past-trump-s-promised-timeline-casualties-"
 }

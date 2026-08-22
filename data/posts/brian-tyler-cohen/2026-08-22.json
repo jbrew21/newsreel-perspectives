@@ -1,9 +1,23 @@
 {
   "voiceId": "brian-tyler-cohen",
   "voiceName": "Brian Tyler Cohen",
-  "collectedAt": "2026-08-22T07:17:20.030658",
+  "collectedAt": "2026-08-22T09:06:28.700746",
   "date": "2026-08-22",
   "posts": [
+    {
+      "voiceId": "brian-tyler-cohen",
+      "voiceName": "Brian Tyler Cohen",
+      "platform": "youtube",
+      "text": "BREAKING: Supreme Court issues SHOCKING ruling on emergency docket",
+      "sourceUrl": "https://www.youtube.com/watch?v=_orvMILMpEg",
+      "timestamp": "2026-08-22T01:23:59+00:00",
+      "type": "video_title",
+      "topic": "supreme-court-legal",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Supreme Court ruling framed as shocking or notable",
+      "quote": "BREAKING: Supreme Court issues SHOCKING ruling on emergency docket"
+    },
     {
       "voiceId": "brian-tyler-cohen",
       "voiceName": "Brian Tyler Cohen",
@@ -101,23 +115,17 @@
       "stance": "strong",
       "summary": "Criticizes Trump's documented attacks on women",
       "quote": "CNN EXPOSES Trump with montage of him attacking women"
-    },
-    {
-      "voiceId": "brian-tyler-cohen",
-      "voiceName": "Brian Tyler Cohen",
-      "platform": "youtube",
-      "text": "BREAKING: Supreme Court issues SHOCKING ruling on emergency docket",
-      "sourceUrl": "https://www.youtube.com/watch?v=_orvMILMpEg",
-      "timestamp": "2026-08-22T01:23:59+00:00",
-      "type": "video_title",
-      "topic": "supreme-court-legal",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Supreme Court ruling framed as shocking or notable",
-      "quote": "BREAKING: Supreme Court issues SHOCKING ruling on emergency docket"
     }
   ],
   "topicSummary": {
+    "supreme-court-legal": [
+      {
+        "quote": "BREAKING: Supreme Court issues SHOCKING ruling on emergency docket",
+        "sourceUrl": "https://www.youtube.com/watch?v=_orvMILMpEg",
+        "platform": "youtube",
+        "timestamp": "2026-08-22T01:23:59+00:00"
+      }
+    ],
     "military-defense": [
       {
         "quote": "Aircraft carrier named after WW2 hero may be renamed after Donald Trump",
@@ -166,14 +174,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/jbZ95avJybE",
         "platform": "youtube",
         "timestamp": "2026-08-21T06:45:36+00:00"
-      }
-    ],
-    "supreme-court-legal": [
-      {
-        "quote": "BREAKING: Supreme Court issues SHOCKING ruling on emergency docket",
-        "sourceUrl": "https://www.youtube.com/watch?v=_orvMILMpEg",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T01:23:59+00:00"
       }
     ]
   }
