@@ -1,18 +1,80 @@
 {
   "headline": "Public Backlash Grows Against AI Data Center Buildout",
-  "summary": "Public opposition to data centers is surging, with commentators split between validating the backlash and defending the industry.",
-  "type": "split",
+  "summary": "Data center backlash dominates, with polling showing community opposition nearly doubling in a year.",
+  "type": "spectrum",
   "source": "voices",
   "coverUrl": "",
   "storyType": "",
   "topicSlugs": [
     "ai-technology"
   ],
-  "voiceCount": 13,
-  "clusterCount": 6,
+  "voiceCount": 14,
+  "clusterCount": 5,
   "clusters": [
     {
-      "name": "Backlash Against Data Centers",
+      "name": "AI Practice and Culture",
+      "voices": [
+        {
+          "voiceId": "tyler-cowen",
+          "voiceName": "Tyler Cowen",
+          "photo": "/photos/tyler-cowen.jpg",
+          "quote": "My recent visit to Anthropic. I very recently participated in a two-day session to offer guidance on rewriting the constitution for Claude.\u00a0 The small group invited was uniformly excellent, we receive",
+          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/08/my-recent-visit-to-anthropic.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=my-recent-visit-to-anthropic",
+          "platform": "substack",
+          "fit": 8,
+          "quoteQuality": 6
+        },
+        {
+          "voiceId": "ethan-mollick",
+          "voiceName": "Ethan Mollick",
+          "photo": "/photos/ethan-mollick.jpg",
+          "quote": "Unfortunately, consumer Copilot is quite bad. Most of the value comes from a frontier model- GPT-5.6 Sol or Claude Fable/Opus or, if you want to use an open weights model that is not quite as good or ",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtpup2pdhk2j",
+          "platform": "bluesky",
+          "fit": 7,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "tom-nichols",
+          "voiceName": "Tom Nichols",
+          "photo": "/photos/tom-nichols.jpg",
+          "quote": "Star Trek was worried about AI before worrying about AI was cool",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtpv3tblgs25",
+          "platform": "bluesky",
+          "fit": 6,
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "paris-marx",
+          "voiceName": "Paris Marx",
+          "photo": "/photos/paris-marx.jpg",
+          "quote": "great way of translating how tech is inherently political, not just a tool",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtmpdl4ubc2q",
+          "platform": "bluesky",
+          "fit": 7,
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "glenn-beck",
+          "voiceName": "Glenn Beck",
+          "photo": "/photos/glenn-beck.jpg",
+          "quote": "Did These Nazi Machines Lead To Modern A.I.?",
+          "sourceUrl": "https://www.youtube.com/watch?v=Q8YvF9iXxQ4",
+          "platform": "youtube",
+          "fit": 5,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 5,
+      "bestQuote": {
+        "voiceName": "Tyler Cowen",
+        "quote": "My recent visit to Anthropic. I very recently participated in a two-day session to offer guidance on rewriting the constitution for Claude.\u00a0 The small group invited was uniformly excellent, we receive",
+        "platform": "substack",
+        "quality": 6
+      }
+    },
+    {
+      "name": "Data Center Backlash",
       "voices": [
         {
           "voiceId": "robert-reich",
@@ -28,10 +90,10 @@
           "voiceId": "matt-yglesias",
           "voiceName": "Matt Yglesias",
           "photo": "/photos/matt-yglesias.jpg",
-          "quote": "Sometimes, you\u2019ve got to give the people what they want \u2014 a data center moratorium and maybe the industry can come back with a more appealing pitch.\n\nwww.slowboring.com/p/giving-the...",
-          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mtlpoo2b5k25",
+          "quote": "I don\u2019t really favor AI progress so if sand gets thrown in the gears of the hyperscalers that\u2019s fine, but in practice a lot of the activism against data centers is activism against transmission lines ",
+          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mtqwhhoab22o",
           "platform": "bluesky",
-          "fit": 8,
+          "fit": 6,
           "quoteQuality": 5
         },
         {
@@ -51,21 +113,11 @@
           "quote": "Trump thinks every community should have a data center",
           "sourceUrl": "https://www.youtube.com/shorts/Kb7UpCfh_F4",
           "platform": "youtube",
-          "fit": 7,
+          "fit": 8,
           "quoteQuality": 2
-        },
-        {
-          "voiceId": "glenn-beck",
-          "voiceName": "Glenn Beck",
-          "photo": "/photos/glenn-beck.jpg",
-          "quote": "Did These Nazi Machines Lead To Modern A.I.?",
-          "sourceUrl": "https://www.youtube.com/watch?v=Q8YvF9iXxQ4",
-          "platform": "youtube",
-          "fit": 5,
-          "quoteQuality": 1
         }
       ],
-      "voiceCount": 5,
+      "voiceCount": 4,
       "bestQuote": {
         "voiceName": "Robert Reich",
         "quote": "A year ago, just 42% of Americans opposed a data center being built in their community.\n\nToday, a staggering 75% do.\n\nAre data centers really that bad? Let\u2019s take a look.",
@@ -74,103 +126,7 @@
       }
     },
     {
-      "name": "Practical AI Adoption Commentary",
-      "voices": [
-        {
-          "voiceId": "ethan-mollick",
-          "voiceName": "Ethan Mollick",
-          "photo": "/photos/ethan-mollick.jpg",
-          "quote": "Unfortunately, consumer Copilot is quite bad. Most of the value comes from a frontier model- GPT-5.6 Sol or Claude Fable/Opus or, if you want to use an open weights model that is not quite as good or ",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtpup2pdhk2j",
-          "platform": "bluesky",
-          "fit": 8,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "scott-galloway",
-          "voiceName": "Scott Galloway",
-          "photo": "/photos/scott-galloway.jpg",
-          "quote": "My case for autonomous vehicles + planes",
-          "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
-          "platform": "youtube",
-          "fit": 4,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "ben-shapiro",
-          "voiceName": "Ben Shapiro",
-          "photo": "/photos/ben-shapiro.jpg",
-          "quote": "What does the AI revolution mean for your average worker?",
-          "sourceUrl": "https://www.youtube.com/shorts/_PPhlW_MpPo",
-          "platform": "youtube",
-          "fit": 4,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 3,
-      "bestQuote": {
-        "voiceName": "Ethan Mollick",
-        "quote": "Unfortunately, consumer Copilot is quite bad. Most of the value comes from a frontier model- GPT-5.6 Sol or Claude Fable/Opus or, if you want to use an open weights model that is not quite as good or ",
-        "platform": "bluesky",
-        "quality": 5
-      }
-    },
-    {
-      "name": "Cultural and Political Framing of Tech",
-      "voices": [
-        {
-          "voiceId": "tom-nichols",
-          "voiceName": "Tom Nichols",
-          "photo": "/photos/tom-nichols.jpg",
-          "quote": "Star Trek was worried about AI before worrying about AI was cool",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtpv3tblgs25",
-          "platform": "bluesky",
-          "fit": 8,
-          "quoteQuality": 4
-        },
-        {
-          "voiceId": "paris-marx",
-          "voiceName": "Paris Marx",
-          "photo": "/photos/paris-marx.jpg",
-          "quote": "great way of translating how tech is inherently political, not just a tool",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtmpdl4ubc2q",
-          "platform": "bluesky",
-          "fit": 9,
-          "quoteQuality": 4
-        }
-      ],
-      "voiceCount": 2,
-      "bestQuote": {
-        "voiceName": "Tom Nichols",
-        "quote": "Star Trek was worried about AI before worrying about AI was cool",
-        "platform": "bluesky",
-        "quality": 4
-      }
-    },
-    {
-      "name": "Industry Pushback on Critics",
-      "voices": [
-        {
-          "voiceId": "all-in-podcast",
-          "voiceName": "All-In Podcast",
-          "photo": "/photos/all-in-podcast.jpg",
-          "quote": "Jason Calacanis on America\u2019s AI Backlash: \u201cThey\u2019re Sharpening the Guillotines\u201d",
-          "sourceUrl": "https://www.youtube.com/shorts/JXnLFsOg-vk",
-          "platform": "youtube",
-          "fit": 9,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 1,
-      "bestQuote": {
-        "voiceName": "All-In Podcast",
-        "quote": "Jason Calacanis on America\u2019s AI Backlash: \u201cThey\u2019re Sharpening the Guillotines\u201d",
-        "platform": "youtube",
-        "quality": 1
-      }
-    },
-    {
-      "name": "AI Bubble Skepticism",
+      "name": "AI Boom Skepticism",
       "voices": [
         {
           "voiceId": "ed-zitron",
@@ -181,9 +137,19 @@
           "platform": "bluesky",
           "fit": 6,
           "quoteQuality": 5
+        },
+        {
+          "voiceId": "all-in-podcast",
+          "voiceName": "All-In Podcast",
+          "photo": "/photos/all-in-podcast.jpg",
+          "quote": "Jason Calacanis on America\u2019s AI Backlash: \u201cThey\u2019re Sharpening the Guillotines\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/JXnLFsOg-vk",
+          "platform": "youtube",
+          "fit": 7,
+          "quoteQuality": 1
         }
       ],
-      "voiceCount": 1,
+      "voiceCount": 2,
       "bestQuote": {
         "voiceName": "Ed Zitron",
         "quote": "spent most of that segment trying to work out what he was selling and it turns out it's a well-meaning think tank that also assumes AI is the biggest and strongest thing in the world",
@@ -192,7 +158,39 @@
       }
     },
     {
-      "name": "Regulatory and Competition Concerns",
+      "name": "Labor Market Questions",
+      "voices": [
+        {
+          "voiceId": "ben-shapiro",
+          "voiceName": "Ben Shapiro",
+          "photo": "/photos/ben-shapiro.jpg",
+          "quote": "What does the AI revolution mean for your average worker?",
+          "sourceUrl": "https://www.youtube.com/shorts/_PPhlW_MpPo",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "scott-galloway",
+          "voiceName": "Scott Galloway",
+          "photo": "/photos/scott-galloway.jpg",
+          "quote": "AI isn't the real threat to young workers",
+          "sourceUrl": "https://www.youtube.com/shorts/ILUpSdb-4uY",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 2,
+      "bestQuote": {
+        "voiceName": "Ben Shapiro",
+        "quote": "What does the AI revolution mean for your average worker?",
+        "platform": "youtube",
+        "quality": 1
+      }
+    },
+    {
+      "name": "Tech Industry Regulation",
       "voices": [
         {
           "voiceId": "scott-lincicome",
@@ -214,14 +212,23 @@
       }
     }
   ],
-  "confidence": 6,
+  "confidence": 5,
   "relevance": {
-    "direct": 5,
+    "direct": 4,
     "related": 9,
     "unrelated": 1
   },
   "validated": true,
-  "heatScore": 53,
+  "heatScore": 52,
   "belowThreshold": false,
+  "counterNarrative": {
+    "dominantCluster": "AI Practice and Culture",
+    "dominantCount": 5,
+    "counterCluster": "Data Center Backlash",
+    "counterCount": 4,
+    "axis": "AI's value versus its costs",
+    "tensionScore": 7,
+    "tension": "5 voices say \"AI Practice and Culture\" \u2014 but 4 push back: \"Data Center Backlash\""
+  },
   "slug": "ai-backlash-grows-surveillance-data-centers-bubble-fears-con"
 }

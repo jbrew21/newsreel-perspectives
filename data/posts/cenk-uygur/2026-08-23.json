@@ -1,9 +1,23 @@
 {
   "voiceId": "cenk-uygur",
   "voiceName": "Cenk Uygur",
-  "collectedAt": "2026-08-23T17:58:01.861036",
+  "collectedAt": "2026-08-23T19:46:16.200338",
   "date": "2026-08-23",
   "posts": [
+    {
+      "voiceId": "cenk-uygur",
+      "voiceName": "Cenk Uygur",
+      "platform": "youtube",
+      "text": "Van Jones Goes FASCIST",
+      "sourceUrl": "https://www.youtube.com/watch?v=DulgzOQcqqQ",
+      "timestamp": "2026-08-23T16:07:14+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Van Jones as having fascist positions or rhetoric",
+      "quote": "Van Jones Goes FASCIST"
+    },
     {
       "voiceId": "cenk-uygur",
       "voiceName": "Cenk Uygur",
@@ -78,46 +92,26 @@
       "voiceId": "cenk-uygur",
       "voiceName": "Cenk Uygur",
       "platform": "youtube",
-      "text": "Ukraine Is Suddenly In BIG TROUBLE",
-      "sourceUrl": "https://www.youtube.com/watch?v=Vj1ht_Fm5Ko",
-      "timestamp": "2026-08-22T02:00:36+00:00",
+      "text": "Israel\u2019s Latest Wishlist Gets REVEALED",
+      "sourceUrl": "https://www.youtube.com/watch?v=t4NvfX0xz1g",
+      "timestamp": "2026-08-23T19:00:06+00:00",
       "type": "video_title",
-      "topic": "foreign-policy-diplomacy",
+      "topic": "israel-palestine",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Suggests Ukraine facing serious military or geopolitical crisis",
-      "quote": "Ukraine Is Suddenly In BIG TROUBLE"
-    },
-    {
-      "voiceId": "cenk-uygur",
-      "voiceName": "Cenk Uygur",
-      "platform": "youtube",
-      "text": "WTF Is Pete Hegseth\u2019s Wife Doing INSIDE The Pentagon???",
-      "sourceUrl": "https://www.youtube.com/watch?v=jkNl1ktGGA0",
-      "timestamp": "2026-08-22T01:15:31+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Questions impropriety of Pete Hegseth's wife's Pentagon access",
-      "quote": "WTF Is Pete Hegseth\u2019s Wife Doing INSIDE The Pentagon???"
-    },
-    {
-      "voiceId": "cenk-uygur",
-      "voiceName": "Cenk Uygur",
-      "platform": "youtube",
-      "text": "Van Jones Goes FASCIST",
-      "sourceUrl": "https://www.youtube.com/watch?v=DulgzOQcqqQ",
-      "timestamp": "2026-08-23T16:07:14+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Van Jones as having fascist positions or rhetoric",
-      "quote": "Van Jones Goes FASCIST"
+      "summary": "Criticizes Israeli demands and military objectives",
+      "quote": "Israel\u2019s Latest Wishlist Gets REVEALED"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "Van Jones Goes FASCIST",
+        "sourceUrl": "https://www.youtube.com/watch?v=DulgzOQcqqQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-23T16:07:14+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "Israeli Doctors Give BIG WARNING",
@@ -136,6 +130,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=07oT3mBdxkQ",
         "platform": "youtube",
         "timestamp": "2026-08-22T02:45:38+00:00"
+      },
+      {
+        "quote": "Israel\u2019s Latest Wishlist Gets REVEALED",
+        "sourceUrl": "https://www.youtube.com/watch?v=t4NvfX0xz1g",
+        "platform": "youtube",
+        "timestamp": "2026-08-23T19:00:06+00:00"
       }
     ],
     "refugees-humanitarian": [
@@ -152,30 +152,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=VAs7ob8zL_I",
         "platform": "youtube",
         "timestamp": "2026-08-22T03:30:33+00:00"
-      }
-    ],
-    "foreign-policy-diplomacy": [
-      {
-        "quote": "Ukraine Is Suddenly In BIG TROUBLE",
-        "sourceUrl": "https://www.youtube.com/watch?v=Vj1ht_Fm5Ko",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T02:00:36+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "WTF Is Pete Hegseth\u2019s Wife Doing INSIDE The Pentagon???",
-        "sourceUrl": "https://www.youtube.com/watch?v=jkNl1ktGGA0",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T01:15:31+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "Van Jones Goes FASCIST",
-        "sourceUrl": "https://www.youtube.com/watch?v=DulgzOQcqqQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-23T16:07:14+00:00"
       }
     ]
   }
