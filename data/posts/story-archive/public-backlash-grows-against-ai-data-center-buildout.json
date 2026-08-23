@@ -1,18 +1,18 @@
 {
   "headline": "Public Backlash Grows Against AI Data Center Buildout",
-  "summary": "A sharp rise in public opposition to data centers is drawing reaction from across the political spectrum, with progressives citing polling data and tech insiders warning of backlash.",
-  "type": "spectrum",
+  "summary": "Public opposition to data centers is surging, with commentators split between validating the backlash and defending the industry.",
+  "type": "split",
   "source": "voices",
   "coverUrl": "",
   "storyType": "",
   "topicSlugs": [
     "ai-technology"
   ],
-  "voiceCount": 11,
-  "clusterCount": 7,
+  "voiceCount": 13,
+  "clusterCount": 6,
   "clusters": [
     {
-      "name": "Rising Public Backlash",
+      "name": "Backlash Against Data Centers",
       "voices": [
         {
           "voiceId": "robert-reich",
@@ -21,7 +21,7 @@
           "quote": "A year ago, just 42% of Americans opposed a data center being built in their community.\n\nToday, a staggering 75% do.\n\nAre data centers really that bad? Let\u2019s take a look.",
           "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mtp2v63zqm2t",
           "platform": "bluesky",
-          "fit": 10,
+          "fit": 9,
           "quoteQuality": 5
         },
         {
@@ -31,41 +31,9 @@
           "quote": "Sometimes, you\u2019ve got to give the people what they want \u2014 a data center moratorium and maybe the industry can come back with a more appealing pitch.\n\nwww.slowboring.com/p/giving-the...",
           "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mtlpoo2b5k25",
           "platform": "bluesky",
-          "fit": 7,
+          "fit": 8,
           "quoteQuality": 5
         },
-        {
-          "voiceId": "bernie-sanders",
-          "voiceName": "Bernie Sanders",
-          "photo": "/photos/bernie-sanders.jpg",
-          "quote": "Trump thinks every community should have a data center",
-          "sourceUrl": "https://www.youtube.com/shorts/Kb7UpCfh_F4",
-          "platform": "youtube",
-          "fit": 6,
-          "quoteQuality": 2
-        },
-        {
-          "voiceId": "david-pakman",
-          "voiceName": "David Pakman",
-          "photo": "/photos/david-pakman.jpg",
-          "quote": "Americans agree on AI data centers. Trump may not like the answer. #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/jbipCrIyeto",
-          "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 4,
-      "bestQuote": {
-        "voiceName": "Robert Reich",
-        "quote": "A year ago, just 42% of Americans opposed a data center being built in their community.\n\nToday, a staggering 75% do.\n\nAre data centers really that bad? Let\u2019s take a look.",
-        "platform": "bluesky",
-        "quality": 5
-      }
-    },
-    {
-      "name": "Data Center Skepticism",
-      "voices": [
         {
           "voiceId": "tucker-carlson",
           "voiceName": "Tucker Carlson",
@@ -74,6 +42,16 @@
           "sourceUrl": "https://www.youtube.com/shorts/E90DepKeEKU",
           "platform": "youtube",
           "fit": 10,
+          "quoteQuality": 2
+        },
+        {
+          "voiceId": "bernie-sanders",
+          "voiceName": "Bernie Sanders",
+          "photo": "/photos/bernie-sanders.jpg",
+          "quote": "Trump thinks every community should have a data center",
+          "sourceUrl": "https://www.youtube.com/shorts/Kb7UpCfh_F4",
+          "platform": "youtube",
+          "fit": 7,
           "quoteQuality": 2
         },
         {
@@ -87,16 +65,90 @@
           "quoteQuality": 1
         }
       ],
-      "voiceCount": 2,
+      "voiceCount": 5,
       "bestQuote": {
-        "voiceName": "Tucker Carlson",
-        "quote": "Data Centers Must Be Stopped\u2026",
-        "platform": "youtube",
-        "quality": 2
+        "voiceName": "Robert Reich",
+        "quote": "A year ago, just 42% of Americans opposed a data center being built in their community.\n\nToday, a staggering 75% do.\n\nAre data centers really that bad? Let\u2019s take a look.",
+        "platform": "bluesky",
+        "quality": 5
       }
     },
     {
-      "name": "Industry Alarmed by Backlash",
+      "name": "Practical AI Adoption Commentary",
+      "voices": [
+        {
+          "voiceId": "ethan-mollick",
+          "voiceName": "Ethan Mollick",
+          "photo": "/photos/ethan-mollick.jpg",
+          "quote": "Unfortunately, consumer Copilot is quite bad. Most of the value comes from a frontier model- GPT-5.6 Sol or Claude Fable/Opus or, if you want to use an open weights model that is not quite as good or ",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtpup2pdhk2j",
+          "platform": "bluesky",
+          "fit": 8,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "scott-galloway",
+          "voiceName": "Scott Galloway",
+          "photo": "/photos/scott-galloway.jpg",
+          "quote": "My case for autonomous vehicles + planes",
+          "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
+          "platform": "youtube",
+          "fit": 4,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "ben-shapiro",
+          "voiceName": "Ben Shapiro",
+          "photo": "/photos/ben-shapiro.jpg",
+          "quote": "What does the AI revolution mean for your average worker?",
+          "sourceUrl": "https://www.youtube.com/shorts/_PPhlW_MpPo",
+          "platform": "youtube",
+          "fit": 4,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 3,
+      "bestQuote": {
+        "voiceName": "Ethan Mollick",
+        "quote": "Unfortunately, consumer Copilot is quite bad. Most of the value comes from a frontier model- GPT-5.6 Sol or Claude Fable/Opus or, if you want to use an open weights model that is not quite as good or ",
+        "platform": "bluesky",
+        "quality": 5
+      }
+    },
+    {
+      "name": "Cultural and Political Framing of Tech",
+      "voices": [
+        {
+          "voiceId": "tom-nichols",
+          "voiceName": "Tom Nichols",
+          "photo": "/photos/tom-nichols.jpg",
+          "quote": "Star Trek was worried about AI before worrying about AI was cool",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtpv3tblgs25",
+          "platform": "bluesky",
+          "fit": 8,
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "paris-marx",
+          "voiceName": "Paris Marx",
+          "photo": "/photos/paris-marx.jpg",
+          "quote": "great way of translating how tech is inherently political, not just a tool",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtmpdl4ubc2q",
+          "platform": "bluesky",
+          "fit": 9,
+          "quoteQuality": 4
+        }
+      ],
+      "voiceCount": 2,
+      "bestQuote": {
+        "voiceName": "Tom Nichols",
+        "quote": "Star Trek was worried about AI before worrying about AI was cool",
+        "platform": "bluesky",
+        "quality": 4
+      }
+    },
+    {
+      "name": "Industry Pushback on Critics",
       "voices": [
         {
           "voiceId": "all-in-podcast",
@@ -118,7 +170,7 @@
       }
     },
     {
-      "name": "AI Boom Skeptics",
+      "name": "AI Bubble Skepticism",
       "voices": [
         {
           "voiceId": "ed-zitron",
@@ -127,7 +179,7 @@
           "quote": "spent most of that segment trying to work out what he was selling and it turns out it's a well-meaning think tank that also assumes AI is the biggest and strongest thing in the world",
           "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtmz3zci422r",
           "platform": "bluesky",
-          "fit": 7,
+          "fit": 6,
           "quoteQuality": 5
         }
       ],
@@ -140,14 +192,14 @@
       }
     },
     {
-      "name": "AI Capability Nuance",
+      "name": "Regulatory and Competition Concerns",
       "voices": [
         {
-          "voiceId": "ethan-mollick",
-          "voiceName": "Ethan Mollick",
-          "photo": "/photos/ethan-mollick.jpg",
-          "quote": "It is one of the things that I think is being lost in the good versus evil AI debates. These models, as they are today, are actually capable of solving some very hard, very real problems. I worry that",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtpu3uybbc2j",
+          "voiceId": "scott-lincicome",
+          "voiceName": "Scott Lincicome",
+          "photo": "/photos/scott-lincicome.jpg",
+          "quote": "\"Waymo doubles spending on lobbying in robotaxi battle with Uber\"\nwww.ft.com/content/de7f...\n\"Critics have accused Uber of seeking regulatory capture by attempting to keep rides flowing through its pl",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtoj24tmot2r",
           "platform": "bluesky",
           "fit": 9,
           "quoteQuality": 5
@@ -155,65 +207,21 @@
       ],
       "voiceCount": 1,
       "bestQuote": {
-        "voiceName": "Ethan Mollick",
-        "quote": "It is one of the things that I think is being lost in the good versus evil AI debates. These models, as they are today, are actually capable of solving some very hard, very real problems. I worry that",
+        "voiceName": "Scott Lincicome",
+        "quote": "\"Waymo doubles spending on lobbying in robotaxi battle with Uber\"\nwww.ft.com/content/de7f...\n\"Critics have accused Uber of seeking regulatory capture by attempting to keep rides flowing through its pl",
         "platform": "bluesky",
         "quality": 5
-      }
-    },
-    {
-      "name": "Tech Is Political",
-      "voices": [
-        {
-          "voiceId": "paris-marx",
-          "voiceName": "Paris Marx",
-          "photo": "/photos/paris-marx.jpg",
-          "quote": "great way of translating how tech is inherently political, not just a tool",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtmpdl4ubc2q",
-          "platform": "bluesky",
-          "fit": 9,
-          "quoteQuality": 4
-        }
-      ],
-      "voiceCount": 1,
-      "bestQuote": {
-        "voiceName": "Paris Marx",
-        "quote": "great way of translating how tech is inherently political, not just a tool",
-        "platform": "bluesky",
-        "quality": 4
-      }
-    },
-    {
-      "name": "Worker Impact Inquiry",
-      "voices": [
-        {
-          "voiceId": "ben-shapiro",
-          "voiceName": "Ben Shapiro",
-          "photo": "/photos/ben-shapiro.jpg",
-          "quote": "What does the AI revolution mean for your average worker?",
-          "sourceUrl": "https://www.youtube.com/shorts/_PPhlW_MpPo",
-          "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 1,
-      "bestQuote": {
-        "voiceName": "Ben Shapiro",
-        "quote": "What does the AI revolution mean for your average worker?",
-        "platform": "youtube",
-        "quality": 1
       }
     }
   ],
   "confidence": 6,
   "relevance": {
-    "direct": 6,
-    "related": 8,
+    "direct": 5,
+    "related": 9,
     "unrelated": 1
   },
   "validated": true,
-  "heatScore": 54,
+  "heatScore": 53,
   "belowThreshold": false,
   "slug": "ai-backlash-grows-surveillance-data-centers-bubble-fears-con"
 }
