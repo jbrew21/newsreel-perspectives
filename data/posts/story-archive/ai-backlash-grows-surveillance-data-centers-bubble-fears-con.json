@@ -1,15 +1,15 @@
 {
-  "headline": "Public backlash against AI data centers grows sharply",
-  "summary": "Data center backlash is surging in polls, with commentators split between validating public anger and defending the AI buildout.",
-  "type": "split",
+  "headline": "Public Backlash Grows Against AI Data Center Buildout",
+  "summary": "A sharp rise in public opposition to data centers is drawing reaction from across the political spectrum, with progressives citing polling data and tech insiders warning of backlash.",
+  "type": "spectrum",
   "source": "voices",
   "coverUrl": "",
   "storyType": "",
   "topicSlugs": [
     "ai-technology"
   ],
-  "voiceCount": 14,
-  "clusterCount": 6,
+  "voiceCount": 11,
+  "clusterCount": 7,
   "clusters": [
     {
       "name": "Rising Public Backlash",
@@ -45,16 +45,6 @@
           "quoteQuality": 2
         },
         {
-          "voiceId": "tucker-carlson",
-          "voiceName": "Tucker Carlson",
-          "photo": "/photos/tucker-carlson.jpg",
-          "quote": "Data Centers Must Be Stopped\u2026",
-          "sourceUrl": "https://www.youtube.com/shorts/E90DepKeEKU",
-          "platform": "youtube",
-          "fit": 9,
-          "quoteQuality": 2
-        },
-        {
           "voiceId": "david-pakman",
           "voiceName": "David Pakman",
           "photo": "/photos/david-pakman.jpg",
@@ -65,7 +55,7 @@
           "quoteQuality": 1
         }
       ],
-      "voiceCount": 5,
+      "voiceCount": 4,
       "bestQuote": {
         "voiceName": "Robert Reich",
         "quote": "A year ago, just 42% of Americans opposed a data center being built in their community.\n\nToday, a staggering 75% do.\n\nAre data centers really that bad? Let\u2019s take a look.",
@@ -74,91 +64,17 @@
       }
     },
     {
-      "name": "AI Adoption and Practicalities",
+      "name": "Data Center Skepticism",
       "voices": [
         {
-          "voiceId": "ethan-mollick",
-          "voiceName": "Ethan Mollick",
-          "photo": "/photos/ethan-mollick.jpg",
-          "quote": "(To make this work you need to run the ChatGPT or Claude apps on your computer and turn on browser control, which means you need to trust the models to do that. Definitely check the work carefully fir",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtoqmmir422j",
-          "platform": "bluesky",
-          "fit": 9,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "scott-lincicome",
-          "voiceName": "Scott Lincicome",
-          "photo": "/photos/scott-lincicome.jpg",
-          "quote": "\"Waymo doubles spending on lobbying in robotaxi battle with Uber\"\nwww.ft.com/content/de7f...\n\"Critics have accused Uber of seeking regulatory capture by attempting to keep rides flowing through its pl",
-          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtoj24tmot2r",
-          "platform": "bluesky",
-          "fit": 6,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "scott-galloway",
-          "voiceName": "Scott Galloway",
-          "photo": "/photos/scott-galloway.jpg",
-          "quote": "My case for autonomous vehicles + planes",
-          "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
+          "voiceId": "tucker-carlson",
+          "voiceName": "Tucker Carlson",
+          "photo": "/photos/tucker-carlson.jpg",
+          "quote": "Data Centers Must Be Stopped\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/E90DepKeEKU",
           "platform": "youtube",
-          "fit": 6,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 3,
-      "bestQuote": {
-        "voiceName": "Ethan Mollick",
-        "quote": "(To make this work you need to run the ChatGPT or Claude apps on your computer and turn on browser control, which means you need to trust the models to do that. Definitely check the work carefully fir",
-        "platform": "bluesky",
-        "quality": 5
-      }
-    },
-    {
-      "name": "AI Boom Skepticism",
-      "voices": [
-        {
-          "voiceId": "ed-zitron",
-          "voiceName": "Ed Zitron",
-          "photo": "/photos/ed-zitron.jpg",
-          "quote": "spent most of that segment trying to work out what he was selling and it turns out it's a well-meaning think tank that also assumes AI is the biggest and strongest thing in the world",
-          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtmz3zci422r",
-          "platform": "bluesky",
-          "fit": 7,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "paris-marx",
-          "voiceName": "Paris Marx",
-          "photo": "/photos/paris-marx.jpg",
-          "quote": "great way of translating how tech is inherently political, not just a tool",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtmpdl4ubc2q",
-          "platform": "bluesky",
-          "fit": 5,
-          "quoteQuality": 4
-        }
-      ],
-      "voiceCount": 2,
-      "bestQuote": {
-        "voiceName": "Ed Zitron",
-        "quote": "spent most of that segment trying to work out what he was selling and it turns out it's a well-meaning think tank that also assumes AI is the biggest and strongest thing in the world",
-        "platform": "bluesky",
-        "quality": 5
-      }
-    },
-    {
-      "name": "Historical and Cultural Framing",
-      "voices": [
-        {
-          "voiceId": "tom-nichols",
-          "voiceName": "Tom Nichols",
-          "photo": "/photos/tom-nichols.jpg",
-          "quote": "Star Trek was worried about AI before worrying about AI was cool",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtpv3tblgs25",
-          "platform": "bluesky",
-          "fit": 9,
-          "quoteQuality": 4
+          "fit": 10,
+          "quoteQuality": 2
         },
         {
           "voiceId": "glenn-beck",
@@ -167,20 +83,20 @@
           "quote": "Did These Nazi Machines Lead To Modern A.I.?",
           "sourceUrl": "https://www.youtube.com/watch?v=Q8YvF9iXxQ4",
           "platform": "youtube",
-          "fit": 9,
+          "fit": 5,
           "quoteQuality": 1
         }
       ],
       "voiceCount": 2,
       "bestQuote": {
-        "voiceName": "Tom Nichols",
-        "quote": "Star Trek was worried about AI before worrying about AI was cool",
-        "platform": "bluesky",
-        "quality": 4
+        "voiceName": "Tucker Carlson",
+        "quote": "Data Centers Must Be Stopped\u2026",
+        "platform": "youtube",
+        "quality": 2
       }
     },
     {
-      "name": "Industry Pushback on Critics",
+      "name": "Industry Alarmed by Backlash",
       "voices": [
         {
           "voiceId": "all-in-podcast",
@@ -189,7 +105,7 @@
           "quote": "Jason Calacanis on America\u2019s AI Backlash: \u201cThey\u2019re Sharpening the Guillotines\u201d",
           "sourceUrl": "https://www.youtube.com/shorts/JXnLFsOg-vk",
           "platform": "youtube",
-          "fit": 8,
+          "fit": 9,
           "quoteQuality": 1
         }
       ],
@@ -202,6 +118,72 @@
       }
     },
     {
+      "name": "AI Boom Skeptics",
+      "voices": [
+        {
+          "voiceId": "ed-zitron",
+          "voiceName": "Ed Zitron",
+          "photo": "/photos/ed-zitron.jpg",
+          "quote": "spent most of that segment trying to work out what he was selling and it turns out it's a well-meaning think tank that also assumes AI is the biggest and strongest thing in the world",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtmz3zci422r",
+          "platform": "bluesky",
+          "fit": 7,
+          "quoteQuality": 5
+        }
+      ],
+      "voiceCount": 1,
+      "bestQuote": {
+        "voiceName": "Ed Zitron",
+        "quote": "spent most of that segment trying to work out what he was selling and it turns out it's a well-meaning think tank that also assumes AI is the biggest and strongest thing in the world",
+        "platform": "bluesky",
+        "quality": 5
+      }
+    },
+    {
+      "name": "AI Capability Nuance",
+      "voices": [
+        {
+          "voiceId": "ethan-mollick",
+          "voiceName": "Ethan Mollick",
+          "photo": "/photos/ethan-mollick.jpg",
+          "quote": "It is one of the things that I think is being lost in the good versus evil AI debates. These models, as they are today, are actually capable of solving some very hard, very real problems. I worry that",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtpu3uybbc2j",
+          "platform": "bluesky",
+          "fit": 9,
+          "quoteQuality": 5
+        }
+      ],
+      "voiceCount": 1,
+      "bestQuote": {
+        "voiceName": "Ethan Mollick",
+        "quote": "It is one of the things that I think is being lost in the good versus evil AI debates. These models, as they are today, are actually capable of solving some very hard, very real problems. I worry that",
+        "platform": "bluesky",
+        "quality": 5
+      }
+    },
+    {
+      "name": "Tech Is Political",
+      "voices": [
+        {
+          "voiceId": "paris-marx",
+          "voiceName": "Paris Marx",
+          "photo": "/photos/paris-marx.jpg",
+          "quote": "great way of translating how tech is inherently political, not just a tool",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtmpdl4ubc2q",
+          "platform": "bluesky",
+          "fit": 9,
+          "quoteQuality": 4
+        }
+      ],
+      "voiceCount": 1,
+      "bestQuote": {
+        "voiceName": "Paris Marx",
+        "quote": "great way of translating how tech is inherently political, not just a tool",
+        "platform": "bluesky",
+        "quality": 4
+      }
+    },
+    {
       "name": "Worker Impact Inquiry",
       "voices": [
         {
@@ -211,7 +193,7 @@
           "quote": "What does the AI revolution mean for your average worker?",
           "sourceUrl": "https://www.youtube.com/shorts/_PPhlW_MpPo",
           "platform": "youtube",
-          "fit": 10,
+          "fit": 8,
           "quoteQuality": 1
         }
       ],
@@ -226,12 +208,12 @@
   ],
   "confidence": 6,
   "relevance": {
-    "direct": 8,
+    "direct": 6,
     "related": 8,
     "unrelated": 1
   },
   "validated": true,
-  "heatScore": 56,
+  "heatScore": 54,
   "belowThreshold": false,
   "slug": "ai-backlash-grows-surveillance-data-centers-bubble-fears-con"
 }

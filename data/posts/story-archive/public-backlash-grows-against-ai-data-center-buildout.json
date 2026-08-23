@@ -1,6 +1,6 @@
 {
   "headline": "Public Backlash Grows Against AI Data Center Buildout",
-  "summary": "Populist voices across left and right converge against AI data centers, while tech-adjacent figures push back or stay optimistic.",
+  "summary": "A sharp rise in public opposition to data centers is drawing reaction from across the political spectrum, with progressives citing polling data and tech insiders warning of backlash.",
   "type": "spectrum",
   "source": "voices",
   "coverUrl": "",
@@ -8,12 +8,22 @@
   "topicSlugs": [
     "ai-technology"
   ],
-  "voiceCount": 19,
-  "clusterCount": 5,
+  "voiceCount": 11,
+  "clusterCount": 7,
   "clusters": [
     {
-      "name": "Data Center Backlash",
+      "name": "Rising Public Backlash",
       "voices": [
+        {
+          "voiceId": "robert-reich",
+          "voiceName": "Robert Reich",
+          "photo": "/photos/robert-reich.jpg",
+          "quote": "A year ago, just 42% of Americans opposed a data center being built in their community.\n\nToday, a staggering 75% do.\n\nAre data centers really that bad? Let\u2019s take a look.",
+          "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mtp2v63zqm2t",
+          "platform": "bluesky",
+          "fit": 10,
+          "quoteQuality": 5
+        },
         {
           "voiceId": "matt-yglesias",
           "voiceName": "Matt Yglesias",
@@ -21,19 +31,41 @@
           "quote": "Sometimes, you\u2019ve got to give the people what they want \u2014 a data center moratorium and maybe the industry can come back with a more appealing pitch.\n\nwww.slowboring.com/p/giving-the...",
           "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mtlpoo2b5k25",
           "platform": "bluesky",
-          "fit": 8,
+          "fit": 7,
           "quoteQuality": 5
         },
         {
-          "voiceId": "david-sirota",
-          "voiceName": "David Sirota",
-          "photo": "/photos/david-sirota.jpg",
-          "quote": "Politicians and their tech donors are shocked to see new poll numbers confirming that voters hate being forced to accept huge downsides and no upsides - all to enrich distant Silicon Valley billionair",
-          "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3mtjv4gafmc2j",
-          "platform": "bluesky",
-          "fit": 9,
-          "quoteQuality": 5
+          "voiceId": "bernie-sanders",
+          "voiceName": "Bernie Sanders",
+          "photo": "/photos/bernie-sanders.jpg",
+          "quote": "Trump thinks every community should have a data center",
+          "sourceUrl": "https://www.youtube.com/shorts/Kb7UpCfh_F4",
+          "platform": "youtube",
+          "fit": 6,
+          "quoteQuality": 2
         },
+        {
+          "voiceId": "david-pakman",
+          "voiceName": "David Pakman",
+          "photo": "/photos/david-pakman.jpg",
+          "quote": "Americans agree on AI data centers. Trump may not like the answer. #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/jbipCrIyeto",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 4,
+      "bestQuote": {
+        "voiceName": "Robert Reich",
+        "quote": "A year ago, just 42% of Americans opposed a data center being built in their community.\n\nToday, a staggering 75% do.\n\nAre data centers really that bad? Let\u2019s take a look.",
+        "platform": "bluesky",
+        "quality": 5
+      }
+    },
+    {
+      "name": "Data Center Skepticism",
+      "voices": [
         {
           "voiceId": "tucker-carlson",
           "voiceName": "Tucker Carlson",
@@ -45,192 +77,48 @@
           "quoteQuality": 2
         },
         {
-          "voiceId": "bernie-sanders",
-          "voiceName": "Bernie Sanders",
-          "photo": "/photos/bernie-sanders.jpg",
-          "quote": "Trump thinks every community should have a data center",
-          "sourceUrl": "https://www.youtube.com/shorts/Kb7UpCfh_F4",
-          "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 2
-        },
-        {
-          "voiceId": "russell-brand",
-          "voiceName": "Russell Brand",
-          "photo": "/photos/russell-brand.jpg",
-          "quote": "Who benefits from your digital ID?",
-          "sourceUrl": "https://www.youtube.com/shorts/ws7Dg85kiyk",
-          "platform": "youtube",
-          "fit": 5,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "david-pakman",
-          "voiceName": "David Pakman",
-          "photo": "/photos/david-pakman.jpg",
-          "quote": "Americans agree on AI data centers. Trump may not like the answer. #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/jbipCrIyeto",
-          "platform": "youtube",
-          "fit": 7,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "kyle-kulinski",
-          "voiceName": "Kyle Kulinski",
-          "photo": "/photos/kyle-kulinski.jpg",
-          "quote": "AI IS RUINING EVERYTHING | The Kyle Kulinski Show",
-          "sourceUrl": "https://www.youtube.com/watch?v=DMlgkj8zcRk",
-          "platform": "youtube",
-          "fit": 6,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 7,
-      "bestQuote": {
-        "voiceName": "Matt Yglesias",
-        "quote": "Sometimes, you\u2019ve got to give the people what they want \u2014 a data center moratorium and maybe the industry can come back with a more appealing pitch.\n\nwww.slowboring.com/p/giving-the...",
-        "platform": "bluesky",
-        "quality": 5
-      }
-    },
-    {
-      "name": "AI Optimism & Economic Upside",
-      "voices": [
-        {
-          "voiceId": "tyler-cowen",
-          "voiceName": "Tyler Cowen",
-          "photo": "/photos/tyler-cowen.jpg",
-          "quote": "Indian documentary covers EV winners. A new short documentary (22 mins) film called The 22nd Century Indian by Shaurya Sinha offers an optimistic take on India, and also covers five (!) Emergent Ventu",
-          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/08/indian-documentary-covers-ev-winners.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=indian-documentary-covers-ev-winners",
-          "platform": "substack",
-          "fit": 6,
-          "quoteQuality": 6
-        },
-        {
-          "voiceId": "scott-lincicome",
-          "voiceName": "Scott Lincicome",
-          "photo": "/photos/scott-lincicome.jpg",
-          "quote": "\"there has probably never been a better time to solve the world\u2019s material challenges.... the increasingly widespread adoption of AI may be opening up novel ways of developing completely new materials",
-          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtloids5x32r",
-          "platform": "bluesky",
-          "fit": 9,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "ethan-mollick",
-          "voiceName": "Ethan Mollick",
-          "photo": "/photos/ethan-mollick.jpg",
-          "quote": "Fable: \"I want a twigl shader that renders Lost Carcosa from The King in Yellow. Nail the mood.\"\n\n(Shaders are procedurally generated using math alone)\ntwigl.app?ol=true&ss=-...\n\nAlong the shore the c",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtncr3ccls2j",
-          "platform": "bluesky",
-          "fit": 6,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "scott-galloway",
-          "voiceName": "Scott Galloway",
-          "photo": "/photos/scott-galloway.jpg",
-          "quote": "My case for autonomous vehicles + planes",
-          "sourceUrl": "https://www.youtube.com/shorts/1g2mZ8WEgRc",
-          "platform": "youtube",
-          "fit": 7,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 4,
-      "bestQuote": {
-        "voiceName": "Tyler Cowen",
-        "quote": "Indian documentary covers EV winners. A new short documentary (22 mins) film called The 22nd Century Indian by Shaurya Sinha offers an optimistic take on India, and also covers five (!) Emergent Ventu",
-        "platform": "substack",
-        "quality": 6
-      }
-    },
-    {
-      "name": "Skeptical Tech Criticism",
-      "voices": [
-        {
-          "voiceId": "eva-galperin",
-          "voiceName": "Eva Galperin",
-          "photo": "/photos/eva-galperin.jpg",
-          "quote": "When you target security researchers with malware, getting caught and written up is honestly one of the less unpleasant possible outcomes: techcrunch.com/2026/08/20/s...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtk335zc622y",
-          "platform": "bluesky",
-          "fit": 7,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "paris-marx",
-          "voiceName": "Paris Marx",
-          "photo": "/photos/paris-marx.jpg",
-          "quote": "great way of translating how tech is inherently political, not just a tool",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtmpdl4ubc2q",
-          "platform": "bluesky",
-          "fit": 8,
-          "quoteQuality": 4
-        },
-        {
           "voiceId": "glenn-beck",
           "voiceName": "Glenn Beck",
           "photo": "/photos/glenn-beck.jpg",
           "quote": "Did These Nazi Machines Lead To Modern A.I.?",
           "sourceUrl": "https://www.youtube.com/watch?v=Q8YvF9iXxQ4",
           "platform": "youtube",
-          "fit": 7,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "ben-shapiro",
-          "voiceName": "Ben Shapiro",
-          "photo": "/photos/ben-shapiro.jpg",
-          "quote": "What does the AI revolution mean for your average worker?",
-          "sourceUrl": "https://www.youtube.com/shorts/_PPhlW_MpPo",
-          "platform": "youtube",
           "fit": 5,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 4,
-      "bestQuote": {
-        "voiceName": "Eva Galperin",
-        "quote": "When you target security researchers with malware, getting caught and written up is honestly one of the less unpleasant possible outcomes: techcrunch.com/2026/08/20/s...",
-        "platform": "bluesky",
-        "quality": 5
-      }
-    },
-    {
-      "name": "Hypocrisy & Media Framing Critique",
-      "voices": [
-        {
-          "voiceId": "meidastouch",
-          "voiceName": "MeidasTouch",
-          "photo": "/photos/meidastouch.jpg",
-          "quote": "Trump when a Democrat opposes AI data centers vs. Trump when a Republican does it.\n\nJuly 23: \u201cRadical left lunatics\u201d trying to stop AI.\n\nAugust 21: Suddenly, opposing data centers is \u201cvery understanda",
-          "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mtmrr766hs26",
-          "platform": "bluesky",
-          "fit": 10,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "cenk-uygur",
-          "voiceName": "Cenk Uygur",
-          "photo": "/photos/cenk-uygur.jpg",
-          "quote": "Fox News Wants You to Love Data Centers",
-          "sourceUrl": "https://www.youtube.com/watch?v=3URWf4MJplE",
-          "platform": "youtube",
-          "fit": 9,
           "quoteQuality": 1
         }
       ],
       "voiceCount": 2,
       "bestQuote": {
-        "voiceName": "MeidasTouch",
-        "quote": "Trump when a Democrat opposes AI data centers vs. Trump when a Republican does it.\n\nJuly 23: \u201cRadical left lunatics\u201d trying to stop AI.\n\nAugust 21: Suddenly, opposing data centers is \u201cvery understanda",
-        "platform": "bluesky",
-        "quality": 5
+        "voiceName": "Tucker Carlson",
+        "quote": "Data Centers Must Be Stopped\u2026",
+        "platform": "youtube",
+        "quality": 2
       }
     },
     {
-      "name": "Tech Industry Defense & Debate",
+      "name": "Industry Alarmed by Backlash",
+      "voices": [
+        {
+          "voiceId": "all-in-podcast",
+          "voiceName": "All-In Podcast",
+          "photo": "/photos/all-in-podcast.jpg",
+          "quote": "Jason Calacanis on America\u2019s AI Backlash: \u201cThey\u2019re Sharpening the Guillotines\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/JXnLFsOg-vk",
+          "platform": "youtube",
+          "fit": 9,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 1,
+      "bestQuote": {
+        "voiceName": "All-In Podcast",
+        "quote": "Jason Calacanis on America\u2019s AI Backlash: \u201cThey\u2019re Sharpening the Guillotines\u201d",
+        "platform": "youtube",
+        "quality": 1
+      }
+    },
+    {
+      "name": "AI Boom Skeptics",
       "voices": [
         {
           "voiceId": "ed-zitron",
@@ -239,26 +127,82 @@
           "quote": "spent most of that segment trying to work out what he was selling and it turns out it's a well-meaning think tank that also assumes AI is the biggest and strongest thing in the world",
           "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtmz3zci422r",
           "platform": "bluesky",
-          "fit": 6,
+          "fit": 7,
           "quoteQuality": 5
-        },
-        {
-          "voiceId": "all-in-podcast",
-          "voiceName": "All-In Podcast",
-          "photo": "/photos/all-in-podcast.jpg",
-          "quote": "Dario Defends Himself, Datacenter Panic, AI Doomer Trap, Senate Toss-Up",
-          "sourceUrl": "https://www.youtube.com/watch?v=Sij_v-mcZXQ",
-          "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 1
         }
       ],
-      "voiceCount": 2,
+      "voiceCount": 1,
       "bestQuote": {
         "voiceName": "Ed Zitron",
         "quote": "spent most of that segment trying to work out what he was selling and it turns out it's a well-meaning think tank that also assumes AI is the biggest and strongest thing in the world",
         "platform": "bluesky",
         "quality": 5
+      }
+    },
+    {
+      "name": "AI Capability Nuance",
+      "voices": [
+        {
+          "voiceId": "ethan-mollick",
+          "voiceName": "Ethan Mollick",
+          "photo": "/photos/ethan-mollick.jpg",
+          "quote": "It is one of the things that I think is being lost in the good versus evil AI debates. These models, as they are today, are actually capable of solving some very hard, very real problems. I worry that",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtpu3uybbc2j",
+          "platform": "bluesky",
+          "fit": 9,
+          "quoteQuality": 5
+        }
+      ],
+      "voiceCount": 1,
+      "bestQuote": {
+        "voiceName": "Ethan Mollick",
+        "quote": "It is one of the things that I think is being lost in the good versus evil AI debates. These models, as they are today, are actually capable of solving some very hard, very real problems. I worry that",
+        "platform": "bluesky",
+        "quality": 5
+      }
+    },
+    {
+      "name": "Tech Is Political",
+      "voices": [
+        {
+          "voiceId": "paris-marx",
+          "voiceName": "Paris Marx",
+          "photo": "/photos/paris-marx.jpg",
+          "quote": "great way of translating how tech is inherently political, not just a tool",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtmpdl4ubc2q",
+          "platform": "bluesky",
+          "fit": 9,
+          "quoteQuality": 4
+        }
+      ],
+      "voiceCount": 1,
+      "bestQuote": {
+        "voiceName": "Paris Marx",
+        "quote": "great way of translating how tech is inherently political, not just a tool",
+        "platform": "bluesky",
+        "quality": 4
+      }
+    },
+    {
+      "name": "Worker Impact Inquiry",
+      "voices": [
+        {
+          "voiceId": "ben-shapiro",
+          "voiceName": "Ben Shapiro",
+          "photo": "/photos/ben-shapiro.jpg",
+          "quote": "What does the AI revolution mean for your average worker?",
+          "sourceUrl": "https://www.youtube.com/shorts/_PPhlW_MpPo",
+          "platform": "youtube",
+          "fit": 8,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 1,
+      "bestQuote": {
+        "voiceName": "Ben Shapiro",
+        "quote": "What does the AI revolution mean for your average worker?",
+        "platform": "youtube",
+        "quality": 1
       }
     }
   ],
@@ -269,16 +213,7 @@
     "unrelated": 1
   },
   "validated": true,
-  "heatScore": 57,
+  "heatScore": 54,
   "belowThreshold": false,
-  "counterNarrative": {
-    "dominantCluster": "Data Center Backlash",
-    "dominantCount": 7,
-    "counterCluster": "AI Optimism & Economic Upside",
-    "counterCount": 4,
-    "axis": "costs/harms versus economic benefits",
-    "tensionScore": 8,
-    "tension": "7 voices say \"Data Center Backlash\" \u2014 but 4 push back: \"AI Optimism & Economic Upside\""
-  },
   "slug": "ai-backlash-grows-surveillance-data-centers-bubble-fears-con"
 }
