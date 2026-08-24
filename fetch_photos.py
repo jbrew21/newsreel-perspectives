@@ -2,6 +2,7 @@
 """Fetch Wikipedia thumbnail photos for all voices in voices.json."""
 
 import json
+import os
 import time
 import urllib.request
 import urllib.parse
@@ -105,6 +106,7 @@ def main():
     failed = 0
     already_local = 0
     fallback_used = 0
+    missing_local = []
 
     for i, voice in enumerate(voices):
         vid = voice["id"]
@@ -113,8 +115,16 @@ def main():
         # Don't clobber curated local photos (e.g. bluesky-avatar downloads in
         # data/photos/). Only (re)fetch for voices missing a real photo.
         if voice.get("photo", "").startswith("/photos/"):
-            already_local += 1
-            print(f"[SKIP] {name:40s} (curated /photos/)")
+            # A curated path is only safe to skip if the file actually exists.
+            # A /photos/ path pointing at a missing file renders as a broken
+            # image on the site; surface it loudly instead of silently skipping.
+            local_path = os.path.join("data", voice["photo"].lstrip("/"))
+            if os.path.exists(local_path):
+                already_local += 1
+                print(f"[SKIP] {name:40s} (curated /photos/)")
+            else:
+                missing_local.append(name)
+                print(f"[MISS] {name:40s} (curated path but FILE MISSING: {local_path})")
             continue
 
         article = name_to_wiki(voice)
@@ -154,6 +164,11 @@ def main():
     print(f"Skipped (curated):{already_local}")
     print(f"Photos found:     {success}")
     print(f"Fallback used:    {fallback_used}")
+    print(f"Missing local:    {len(missing_local)}")
+    if missing_local:
+        print("  ⚠ curated /photos/ paths with NO file (broken images):")
+        for n in missing_local:
+            print(f"    - {n}")
     print(f"voices.json updated.")
 
 
