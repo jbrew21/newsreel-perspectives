@@ -1,7 +1,7 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-24T18:11:28.602428",
+  "collectedAt": "2026-08-24T20:07:53.426942",
   "date": "2026-08-24",
   "posts": [
     {
@@ -92,15 +92,29 @@
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
       "platform": "youtube",
-      "text": "Blackouts &amp; Water Shortage Imminent: Tech Overlords Build AI Dystopia &amp; Crush Anyone Who Resists",
-      "sourceUrl": "https://www.youtube.com/watch?v=KMsklsr_nBM",
-      "timestamp": "2026-08-21T17:00:06+00:00",
+      "text": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World",
+      "sourceUrl": "https://www.youtube.com/watch?v=Fi4ViAuh_Os",
+      "timestamp": "2026-08-24T17:53:54+00:00",
       "type": "video_title",
-      "topic": "ai-technology",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Expresses concern about Trump's escalating foreign policy approach",
+      "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World"
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "This Is What Huckabee Told Him\u2026",
+      "sourceUrl": "https://www.youtube.com/shorts/p504cKo4-QM",
+      "timestamp": "2026-08-22T16:25:46+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Warns AI task force threatens freedom, risks blackouts and automation control",
-      "quote": "Blackouts &amp; Water Shortage Imminent: Tech Overlords Build AI Dystopia &amp; Crush Anyone Who Resists"
+      "stance": "lean",
+      "summary": "References Marco Rubio confirmation or policy direction",
+      "quote": "This Is What Huckabee Told Him\u2026"
     }
   ],
   "topicSummary": {
@@ -140,12 +154,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/BFoxMIh8p3E",
         "platform": "youtube",
         "timestamp": "2026-08-21T22:30:27+00:00"
-      },
-      {
-        "quote": "Blackouts &amp; Water Shortage Imminent: Tech Overlords Build AI Dystopia &amp; Crush Anyone Who Resists",
-        "sourceUrl": "https://www.youtube.com/watch?v=KMsklsr_nBM",
-        "platform": "youtube",
-        "timestamp": "2026-08-21T17:00:06+00:00"
       }
     ],
     "trump-policy": [
@@ -154,6 +162,20 @@
         "sourceUrl": "https://www.youtube.com/shorts/KXIXzj5vYw4",
         "platform": "youtube",
         "timestamp": "2026-08-21T20:56:42+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World",
+        "sourceUrl": "https://www.youtube.com/watch?v=Fi4ViAuh_Os",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T17:53:54+00:00"
+      },
+      {
+        "quote": "This Is What Huckabee Told Him\u2026",
+        "sourceUrl": "https://www.youtube.com/shorts/p504cKo4-QM",
+        "platform": "youtube",
+        "timestamp": "2026-08-22T16:25:46+00:00"
       }
     ]
   }

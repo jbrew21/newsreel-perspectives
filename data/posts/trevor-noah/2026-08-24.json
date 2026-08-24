@@ -1,9 +1,23 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-08-24T18:11:28.601305",
+  "collectedAt": "2026-08-24T20:07:53.425620",
   "date": "2026-08-24",
   "posts": [
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
+      "text": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show",
+      "sourceUrl": "https://www.youtube.com/watch?v=QF5EyK-r09w",
+      "timestamp": "2026-08-24T13:00:14+00:00",
+      "type": "video_title",
+      "topic": "food-agriculture",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes SNAP cuts as harmful social policy",
+      "quote": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show"
+    },
     {
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
@@ -78,18 +92,26 @@
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
       "platform": "youtube",
-      "text": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show",
-      "sourceUrl": "https://www.youtube.com/watch?v=QF5EyK-r09w",
-      "timestamp": "2026-08-24T13:00:14+00:00",
+      "text": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?",
+      "sourceUrl": "https://www.youtube.com/shorts/5LjzwRaRirQ",
+      "timestamp": "2026-08-24T18:00:24+00:00",
       "type": "video_title",
-      "topic": "food-agriculture",
+      "topic": "trump-administration",
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes SNAP cuts as harmful social policy",
-      "quote": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show"
+      "summary": "Criticizes Trump's cognitive test claims as suspicious",
+      "quote": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?"
     }
   ],
   "topicSummary": {
+    "food-agriculture": [
+      {
+        "quote": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show",
+        "sourceUrl": "https://www.youtube.com/watch?v=QF5EyK-r09w",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T13:00:14+00:00"
+      }
+    ],
     "civil-rights-race": [
       {
         "quote": "Baseball has played a key role in America's great traditions, from fighting racism to doing racism",
@@ -128,12 +150,12 @@
         "timestamp": "2026-08-20T17:00:18+00:00"
       }
     ],
-    "food-agriculture": [
+    "trump-administration": [
       {
-        "quote": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show",
-        "sourceUrl": "https://www.youtube.com/watch?v=QF5EyK-r09w",
+        "quote": "Trump brags that he's the &quot;only president to take a cognitive test.&quot; Any guess as to why that is?",
+        "sourceUrl": "https://www.youtube.com/shorts/5LjzwRaRirQ",
         "platform": "youtube",
-        "timestamp": "2026-08-24T13:00:14+00:00"
+        "timestamp": "2026-08-24T18:00:24+00:00"
       }
     ]
   }
