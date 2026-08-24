@@ -1,9 +1,37 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-24T07:39:04.097020",
+  "collectedAt": "2026-08-24T09:21:44.285360",
   "date": "2026-08-24",
   "posts": [
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Tucker Rips Gregg Abbott",
+      "sourceUrl": "https://www.youtube.com/shorts/3_SQAqetKPw",
+      "timestamp": "2026-08-24T01:30:35+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Texas Governor Greg Abbott",
+      "quote": "Tucker Rips Gregg Abbott"
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Banned From Printing This Story (Until Now)",
+      "sourceUrl": "https://www.youtube.com/shorts/UkrGW-pCHKs",
+      "timestamp": "2026-08-24T00:00:30+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies censorship prevented story publication",
+      "quote": "Banned From Printing This Story (Until Now)"
+    },
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
@@ -73,37 +101,25 @@
       "stance": "strong",
       "summary": "Warns AI task force threatens freedom, risks blackouts and automation control",
       "quote": "Blackouts &amp; Water Shortage Imminent: Tech Overlords Build AI Dystopia &amp; Crush Anyone Who Resists"
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "Tucker Rips Gregg Abbott",
-      "sourceUrl": "https://www.youtube.com/shorts/3_SQAqetKPw",
-      "timestamp": "2026-08-24T01:30:35+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Texas Governor Greg Abbott",
-      "quote": "Tucker Rips Gregg Abbott"
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "Banned From Printing This Story (Until Now)",
-      "sourceUrl": "https://www.youtube.com/shorts/UkrGW-pCHKs",
-      "timestamp": "2026-08-24T00:00:30+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies censorship prevented story publication",
-      "quote": "Banned From Printing This Story (Until Now)"
     }
   ],
   "topicSummary": {
+    "state-local-politics": [
+      {
+        "quote": "Tucker Rips Gregg Abbott",
+        "sourceUrl": "https://www.youtube.com/shorts/3_SQAqetKPw",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T01:30:35+00:00"
+      }
+    ],
+    "media-press": [
+      {
+        "quote": "Banned From Printing This Story (Until Now)",
+        "sourceUrl": "https://www.youtube.com/shorts/UkrGW-pCHKs",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T00:00:30+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "Tucker Reacts to Disturbing Israeli Terrorism Footage",
@@ -138,22 +154,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/KXIXzj5vYw4",
         "platform": "youtube",
         "timestamp": "2026-08-21T20:56:42+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "Tucker Rips Gregg Abbott",
-        "sourceUrl": "https://www.youtube.com/shorts/3_SQAqetKPw",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T01:30:35+00:00"
-      }
-    ],
-    "media-press": [
-      {
-        "quote": "Banned From Printing This Story (Until Now)",
-        "sourceUrl": "https://www.youtube.com/shorts/UkrGW-pCHKs",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T00:00:30+00:00"
       }
     ]
   }
