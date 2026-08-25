@@ -1,9 +1,23 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-08-25T07:30:49.144500",
+  "collectedAt": "2026-08-25T09:22:22.656205",
   "date": "2026-08-25",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "THEY'RE GOING TO NUKE THE ECONOMY",
+      "sourceUrl": "https://www.youtube.com/watch?v=DV_Rd9vDtDs",
+      "timestamp": "2026-08-24T23:58:40+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes economic policies as destructive to economy",
+      "quote": "THEY'RE GOING TO NUKE THE ECONOMY"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -31,6 +45,20 @@
       "stance": "lean",
       "summary": "Critiques Western response to Chinese geopolitical rise",
       "quote": "THEY'RE REALIZING CHINA WON."
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "I am their new target...",
+      "sourceUrl": "https://www.youtube.com/watch?v=9ZMiOd8_DyI",
+      "timestamp": "2026-08-22T15:35:38+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies he is being targeted by Trump administration",
+      "quote": "I am their new target..."
     },
     {
       "voiceId": "hasanabi",
@@ -87,37 +115,17 @@
       "stance": "strong",
       "summary": "Endorses Jared Moskowitz for political office",
       "quote": "Why I'm Endorsing Jared Moskowitz"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "THEY'RE GOING TO NUKE THE ECONOMY",
-      "sourceUrl": "https://www.youtube.com/watch?v=DV_Rd9vDtDs",
-      "timestamp": "2026-08-24T23:58:40+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes economic policies as destructive to economy",
-      "quote": "THEY'RE GOING TO NUKE THE ECONOMY"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "I am their new target...",
-      "sourceUrl": "https://www.youtube.com/watch?v=9ZMiOd8_DyI",
-      "timestamp": "2026-08-22T15:35:38+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies he is being targeted by Trump administration",
-      "quote": "I am their new target..."
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "THEY'RE GOING TO NUKE THE ECONOMY",
+        "sourceUrl": "https://www.youtube.com/watch?v=DV_Rd9vDtDs",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T23:58:40+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "FIRST TRUMP MENTION!!!",
@@ -168,14 +176,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=zd03tkzUdyA",
         "platform": "youtube",
         "timestamp": "2026-08-21T02:21:14+00:00"
-      }
-    ],
-    "economy-trade": [
-      {
-        "quote": "THEY'RE GOING TO NUKE THE ECONOMY",
-        "sourceUrl": "https://www.youtube.com/watch?v=DV_Rd9vDtDs",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T23:58:40+00:00"
       }
     ]
   }

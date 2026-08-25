@@ -1,9 +1,23 @@
 {
   "voiceId": "chris-cuomo",
   "voiceName": "Chris Cuomo",
-  "collectedAt": "2026-08-25T07:30:49.148204",
+  "collectedAt": "2026-08-25T09:22:22.660793",
   "date": "2026-08-25",
   "posts": [
+    {
+      "voiceId": "chris-cuomo",
+      "voiceName": "Chris Cuomo",
+      "platform": "youtube",
+      "text": "I'm Actually For Trump Supporters",
+      "sourceUrl": "https://www.youtube.com/shorts/Ktkz9f_g82s",
+      "timestamp": "2026-08-24T22:00:38+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Expresses openness or common ground with Trump supporters",
+      "quote": "I'm Actually For Trump Supporters"
+    },
     {
       "voiceId": "chris-cuomo",
       "voiceName": "Chris Cuomo",
@@ -101,23 +115,17 @@
       "stance": "strong",
       "summary": "Critiques Trump's influence and takeover of Christian institutions",
       "quote": "Former Pastor John Pavlovitz On How Trump Took Over Christianity"
-    },
-    {
-      "voiceId": "chris-cuomo",
-      "voiceName": "Chris Cuomo",
-      "platform": "youtube",
-      "text": "I'm Actually For Trump Supporters",
-      "sourceUrl": "https://www.youtube.com/shorts/Ktkz9f_g82s",
-      "timestamp": "2026-08-24T22:00:38+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Expresses openness or common ground with Trump supporters",
-      "quote": "I'm Actually For Trump Supporters"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "I'm Actually For Trump Supporters",
+        "sourceUrl": "https://www.youtube.com/shorts/Ktkz9f_g82s",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T22:00:38+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "Will Trump Leave If He Loses",
@@ -168,14 +176,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/WVr4QHf0gA0",
         "platform": "youtube",
         "timestamp": "2026-08-20T14:44:32+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "I'm Actually For Trump Supporters",
-        "sourceUrl": "https://www.youtube.com/shorts/Ktkz9f_g82s",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T22:00:38+00:00"
       }
     ]
   }

@@ -1,9 +1,37 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-25T07:30:49.142709",
+  "collectedAt": "2026-08-25T09:22:22.654066",
   "date": "2026-08-25",
   "posts": [
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Why Assassinations Seem More Common",
+      "sourceUrl": "https://www.youtube.com/shorts/jVcL3dsnURQ",
+      "timestamp": "2026-08-24T23:00:07+00:00",
+      "type": "video_title",
+      "topic": "other",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Suggests assassinations are increasing in frequency or visibility",
+      "quote": "Why Assassinations Seem More Common"
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Heartbreaking Rant on the 9/11 Cover-Up",
+      "sourceUrl": "https://www.youtube.com/shorts/xjuIa2EdLx4",
+      "timestamp": "2026-08-24T20:09:09+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Claims government coverup of 9/11 facts occurred",
+      "quote": "Heartbreaking Rant on the 9/11 Cover-Up"
+    },
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
@@ -64,32 +92,40 @@
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
       "platform": "youtube",
-      "text": "Why Assassinations Seem More Common",
-      "sourceUrl": "https://www.youtube.com/shorts/jVcL3dsnURQ",
-      "timestamp": "2026-08-24T23:00:07+00:00",
+      "text": "Your Tax Dollars Are Funding This\u2026",
+      "sourceUrl": "https://www.youtube.com/shorts/qtElRyJA9CU",
+      "timestamp": "2026-08-22T18:00:09+00:00",
       "type": "video_title",
       "topic": "other",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Suggests assassinations are increasing in frequency or visibility",
-      "quote": "Why Assassinations Seem More Common"
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "Heartbreaking Rant on the 9/11 Cover-Up",
-      "sourceUrl": "https://www.youtube.com/shorts/xjuIa2EdLx4",
-      "timestamp": "2026-08-24T20:09:09+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Claims government coverup of 9/11 facts occurred",
-      "quote": "Heartbreaking Rant on the 9/11 Cover-Up"
+      "summary": "Criticizes government spending priorities",
+      "quote": "Your Tax Dollars Are Funding This\u2026"
     }
   ],
   "topicSummary": {
+    "other": [
+      {
+        "quote": "Why Assassinations Seem More Common",
+        "sourceUrl": "https://www.youtube.com/shorts/jVcL3dsnURQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T23:00:07+00:00"
+      },
+      {
+        "quote": "Your Tax Dollars Are Funding This\u2026",
+        "sourceUrl": "https://www.youtube.com/shorts/qtElRyJA9CU",
+        "platform": "youtube",
+        "timestamp": "2026-08-22T18:00:09+00:00"
+      }
+    ],
+    "criminal-justice": [
+      {
+        "quote": "Heartbreaking Rant on the 9/11 Cover-Up",
+        "sourceUrl": "https://www.youtube.com/shorts/xjuIa2EdLx4",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T20:09:09+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World",
@@ -118,22 +154,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/UkrGW-pCHKs",
         "platform": "youtube",
         "timestamp": "2026-08-24T00:00:30+00:00"
-      }
-    ],
-    "other": [
-      {
-        "quote": "Why Assassinations Seem More Common",
-        "sourceUrl": "https://www.youtube.com/shorts/jVcL3dsnURQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T23:00:07+00:00"
-      }
-    ],
-    "criminal-justice": [
-      {
-        "quote": "Heartbreaking Rant on the 9/11 Cover-Up",
-        "sourceUrl": "https://www.youtube.com/shorts/xjuIa2EdLx4",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T20:09:09+00:00"
       }
     ]
   }
