@@ -1,9 +1,23 @@
 {
   "voiceId": "ted-cruz",
   "voiceName": "Ted Cruz",
-  "collectedAt": "2026-08-25T09:22:22.672689",
+  "collectedAt": "2026-08-25T18:08:18.461478",
   "date": "2026-08-25",
   "posts": [
+    {
+      "voiceId": "ted-cruz",
+      "voiceName": "Ted Cruz",
+      "platform": "youtube",
+      "text": "BONUS POD: Economic D-Day Pushes Iran to the Brink",
+      "sourceUrl": "https://www.youtube.com/watch?v=A-WOmnupNsU",
+      "timestamp": "2026-08-25T08:40:43+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Economic pressure strategy targeting Iran's economic stability",
+      "quote": "BONUS POD: Economic D-Day Pushes Iran to the Brink"
+    },
     {
       "voiceId": "ted-cruz",
       "voiceName": "Ted Cruz",
@@ -59,51 +73,17 @@
       "stance": "lean",
       "summary": "Interviews Justice Thomas, implicitly validates his jurisprudence",
       "quote": "Justice Clarence Thomas One-on-One (Part 1)"
-    },
-    {
-      "voiceId": "ted-cruz",
-      "voiceName": "Ted Cruz",
-      "platform": "youtube",
-      "text": "Nike made it their business plan to market anti-Americanism.",
-      "sourceUrl": "https://www.youtube.com/shorts/6STK1L68vWo",
-      "timestamp": "2026-08-23T13:15:13+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Nike for marketing anti-American messaging",
-      "quote": "Nike made it their business plan to market anti-Americanism."
-    },
-    {
-      "voiceId": "ted-cruz",
-      "voiceName": "Ted Cruz",
-      "platform": "youtube",
-      "text": "Why does James Talarico think it's okay to stab teenagers in the heart and murder them?",
-      "sourceUrl": "https://www.youtube.com/shorts/seFgQSBD_Z4",
-      "timestamp": "2026-08-22T19:45:24+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Attacks opponent's position on criminal justice/sentencing policy",
-      "quote": "Why does James Talarico think it's okay to stab teenagers in the heart and murder them?"
-    },
-    {
-      "voiceId": "ted-cruz",
-      "voiceName": "Ted Cruz",
-      "platform": "youtube",
-      "text": "BONUS POD: Economic D-Day Pushes Iran to the Brink",
-      "sourceUrl": "https://www.youtube.com/watch?v=A-WOmnupNsU",
-      "timestamp": "2026-08-25T08:40:43+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Economic pressure strategy targeting Iran's economic stability",
-      "quote": "BONUS POD: Economic D-Day Pushes Iran to the Brink"
     }
   ],
   "topicSummary": {
+    "iran-conflict": [
+      {
+        "quote": "BONUS POD: Economic D-Day Pushes Iran to the Brink",
+        "sourceUrl": "https://www.youtube.com/watch?v=A-WOmnupNsU",
+        "platform": "youtube",
+        "timestamp": "2026-08-25T08:40:43+00:00"
+      }
+    ],
     "religion-faith": [
       {
         "quote": "Clarence Thomas On A Harvard Square Riot and The Prayer That Took Hate Out of His Heart",
@@ -132,30 +112,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=5lrflpjWodw",
         "platform": "youtube",
         "timestamp": "2026-08-24T08:12:42+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "Nike made it their business plan to market anti-Americanism.",
-        "sourceUrl": "https://www.youtube.com/shorts/6STK1L68vWo",
-        "platform": "youtube",
-        "timestamp": "2026-08-23T13:15:13+00:00"
-      }
-    ],
-    "criminal-justice": [
-      {
-        "quote": "Why does James Talarico think it's okay to stab teenagers in the heart and murder them?",
-        "sourceUrl": "https://www.youtube.com/shorts/seFgQSBD_Z4",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T19:45:24+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "BONUS POD: Economic D-Day Pushes Iran to the Brink",
-        "sourceUrl": "https://www.youtube.com/watch?v=A-WOmnupNsU",
-        "platform": "youtube",
-        "timestamp": "2026-08-25T08:40:43+00:00"
       }
     ]
   }
