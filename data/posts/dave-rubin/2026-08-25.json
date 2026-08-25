@@ -1,9 +1,23 @@
 {
   "voiceId": "dave-rubin",
   "voiceName": "Dave Rubin",
-  "collectedAt": "2026-08-25T18:08:18.451230",
+  "collectedAt": "2026-08-25T20:01:11.282935",
   "date": "2026-08-25",
   "posts": [
+    {
+      "voiceId": "dave-rubin",
+      "voiceName": "Dave Rubin",
+      "platform": "youtube",
+      "text": "Patrick Bet-David Couldn\u2019t Believe the Final Straw That Made Dave Rubin Leave California",
+      "sourceUrl": "https://www.youtube.com/watch?v=ns3G5gpL4rE",
+      "timestamp": "2026-08-25T15:00:09+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes California governance, implies relocation justified",
+      "quote": "Patrick Bet-David Couldn\u2019t Believe the Final Straw That Made Dave Rubin Leave California"
+    },
     {
       "voiceId": "dave-rubin",
       "voiceName": "Dave Rubin",
@@ -106,32 +120,32 @@
       "voiceId": "dave-rubin",
       "voiceName": "Dave Rubin",
       "platform": "youtube",
-      "text": "Patrick Bet-David Stunned as Ben Shapiro Explains the Real Reason Rubio Won\u2019t Run in 2028",
-      "sourceUrl": "https://www.youtube.com/watch?v=eda5Ue7jnGI",
-      "timestamp": "2026-08-21T19:15:06+00:00",
+      "text": "Watch CNN Host Lose His Cool as Republican Goes Off Script to Say This",
+      "sourceUrl": "https://www.youtube.com/watch?v=9Rg5CsNr6VQ",
+      "timestamp": "2026-08-25T19:15:34+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "media-press",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Discusses Rubio's political future under Trump administration",
-      "quote": "Patrick Bet-David Stunned as Ben Shapiro Explains the Real Reason Rubio Won\u2019t Run in 2028"
-    },
-    {
-      "voiceId": "dave-rubin",
-      "voiceName": "Dave Rubin",
-      "platform": "youtube",
-      "text": "Patrick Bet-David Couldn\u2019t Believe the Final Straw That Made Dave Rubin Leave California",
-      "sourceUrl": "https://www.youtube.com/watch?v=ns3G5gpL4rE",
-      "timestamp": "2026-08-25T15:00:09+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Criticizes California governance, implies relocation justified",
-      "quote": "Patrick Bet-David Couldn\u2019t Believe the Final Straw That Made Dave Rubin Leave California"
+      "summary": "Criticizes CNN host for controlling narrative, favors Republican breaking from script",
+      "quote": "Watch CNN Host Lose His Cool as Republican Goes Off Script to Say This"
     }
   ],
   "topicSummary": {
+    "state-local-politics": [
+      {
+        "quote": "Patrick Bet-David Couldn\u2019t Believe the Final Straw That Made Dave Rubin Leave California",
+        "sourceUrl": "https://www.youtube.com/watch?v=ns3G5gpL4rE",
+        "platform": "youtube",
+        "timestamp": "2026-08-25T15:00:09+00:00"
+      },
+      {
+        "quote": "Wall St. Legend Shares Proof NYC Has Passed the Point of No Return",
+        "sourceUrl": "https://www.youtube.com/watch?v=fAMyLTqAN5w",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T19:15:16+00:00"
+      }
+    ],
     "economy-trade": [
       {
         "quote": "Trump Threatens Canada with 50% Tariffs; Murdered Children Forgotten at Trial | 8/25/26 FIRST LOOK",
@@ -162,32 +176,12 @@
         "timestamp": "2026-08-24T21:15:12+00:00"
       }
     ],
-    "state-local-politics": [
-      {
-        "quote": "Wall St. Legend Shares Proof NYC Has Passed the Point of No Return",
-        "sourceUrl": "https://www.youtube.com/watch?v=fAMyLTqAN5w",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T19:15:16+00:00"
-      },
-      {
-        "quote": "Patrick Bet-David Couldn\u2019t Believe the Final Straw That Made Dave Rubin Leave California",
-        "sourceUrl": "https://www.youtube.com/watch?v=ns3G5gpL4rE",
-        "platform": "youtube",
-        "timestamp": "2026-08-25T15:00:09+00:00"
-      }
-    ],
     "trump-administration": [
       {
         "quote": "Top Democrat Quietly Meets with Jared Kushner; Trump Takes Victory Lap | 8/24/26 FIRST LOOK",
         "sourceUrl": "https://www.youtube.com/watch?v=y8T9uNdFPzE",
         "platform": "youtube",
         "timestamp": "2026-08-24T08:45:27+00:00"
-      },
-      {
-        "quote": "Patrick Bet-David Stunned as Ben Shapiro Explains the Real Reason Rubio Won\u2019t Run in 2028",
-        "sourceUrl": "https://www.youtube.com/watch?v=eda5Ue7jnGI",
-        "platform": "youtube",
-        "timestamp": "2026-08-21T19:15:06+00:00"
       }
     ],
     "elections": [
@@ -196,6 +190,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/YdpIdMg54Tk",
         "platform": "youtube",
         "timestamp": "2026-08-21T23:15:28+00:00"
+      }
+    ],
+    "media-press": [
+      {
+        "quote": "Watch CNN Host Lose His Cool as Republican Goes Off Script to Say This",
+        "sourceUrl": "https://www.youtube.com/watch?v=9Rg5CsNr6VQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-25T19:15:34+00:00"
       }
     ]
   }

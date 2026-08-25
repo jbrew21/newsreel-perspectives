@@ -1,9 +1,23 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "collectedAt": "2026-08-25T18:08:18.441080",
+  "collectedAt": "2026-08-25T20:01:11.271656",
   "date": "2026-08-25",
   "posts": [
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "Data Centers ROCK Greg Abbott's Reelection Bid",
+      "sourceUrl": "https://www.youtube.com/watch?v=qev9XX57aB0",
+      "timestamp": "2026-08-25T16:38:05+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Data centers benefiting Abbott's political fortunes in Texas",
+      "quote": "Data Centers ROCK Greg Abbott's Reelection Bid"
+    },
     {
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
@@ -115,37 +129,17 @@
       "stance": "strong",
       "summary": "Characterizes Iran economic measures as catastrophic",
       "quote": "Why This Economic D-Day On Iran Is CATASTROPHIC"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "WTF Is Scott Bessent DOING?!?",
-      "sourceUrl": "https://www.youtube.com/watch?v=Tv0OiixhF94",
-      "timestamp": "2026-08-24T20:06:23+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Questions Scott Bessent's economic decision-making",
-      "quote": "WTF Is Scott Bessent DOING?!?"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "Data Centers ROCK Greg Abbott's Reelection Bid",
-      "sourceUrl": "https://www.youtube.com/watch?v=qev9XX57aB0",
-      "timestamp": "2026-08-25T16:38:05+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Data centers benefiting Abbott's political fortunes in Texas",
-      "quote": "Data Centers ROCK Greg Abbott's Reelection Bid"
     }
   ],
   "topicSummary": {
+    "state-local-politics": [
+      {
+        "quote": "Data Centers ROCK Greg Abbott's Reelection Bid",
+        "sourceUrl": "https://www.youtube.com/watch?v=qev9XX57aB0",
+        "platform": "youtube",
+        "timestamp": "2026-08-25T16:38:05+00:00"
+      }
+    ],
     "civil-rights-race": [
       {
         "quote": "Cenk EXPOSES Susan Collins\u2019 Most Corrupt Donor",
@@ -188,12 +182,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=7cxj1VUjYa4",
         "platform": "youtube",
         "timestamp": "2026-08-25T02:00:34+00:00"
-      },
-      {
-        "quote": "WTF Is Scott Bessent DOING?!?",
-        "sourceUrl": "https://www.youtube.com/watch?v=Tv0OiixhF94",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T20:06:23+00:00"
       }
     ],
     "israel-palestine": [
@@ -210,14 +198,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=XzZVv9NHDx4",
         "platform": "youtube",
         "timestamp": "2026-08-25T00:30:06+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "Data Centers ROCK Greg Abbott's Reelection Bid",
-        "sourceUrl": "https://www.youtube.com/watch?v=qev9XX57aB0",
-        "platform": "youtube",
-        "timestamp": "2026-08-25T16:38:05+00:00"
       }
     ]
   }

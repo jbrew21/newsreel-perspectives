@@ -1,9 +1,23 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-25T18:08:18.440831",
+  "collectedAt": "2026-08-25T20:01:11.271377",
   "date": "2026-08-25",
   "posts": [
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "\u201cWhy Iran Should Get the Bomb\u201d",
+      "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
+      "timestamp": "2026-08-25T17:00:01+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Argues Iran should acquire nuclear weapons capability",
+      "quote": "\u201cWhy Iran Should Get the Bomb\u201d"
+    },
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
@@ -78,44 +92,32 @@
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
       "platform": "youtube",
-      "text": "Your Tax Dollars Are Funding This\u2026",
-      "sourceUrl": "https://www.youtube.com/shorts/qtElRyJA9CU",
-      "timestamp": "2026-08-22T18:00:09+00:00",
+      "text": "Tucker Reacts to Shocking Military Kidnapping",
+      "sourceUrl": "https://www.youtube.com/shorts/bWkRkev1owI",
+      "timestamp": "2026-08-25T18:00:32+00:00",
       "type": "video_title",
-      "topic": "other",
+      "topic": "military-defense",
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Criticizes government spending priorities",
-      "quote": "Your Tax Dollars Are Funding This\u2026"
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "\u201cWhy Iran Should Get the Bomb\u201d",
-      "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
-      "timestamp": "2026-08-25T17:00:01+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
       "stance": "strong",
-      "summary": "Argues Iran should acquire nuclear weapons capability",
-      "quote": "\u201cWhy Iran Should Get the Bomb\u201d"
+      "summary": "Criticizes military conduct as kidnapping",
+      "quote": "Tucker Reacts to Shocking Military Kidnapping"
     }
   ],
   "topicSummary": {
+    "iran-conflict": [
+      {
+        "quote": "\u201cWhy Iran Should Get the Bomb\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
+        "platform": "youtube",
+        "timestamp": "2026-08-25T17:00:01+00:00"
+      }
+    ],
     "other": [
       {
         "quote": "Why Assassinations Seem More Common",
         "sourceUrl": "https://www.youtube.com/shorts/jVcL3dsnURQ",
         "platform": "youtube",
         "timestamp": "2026-08-24T23:00:07+00:00"
-      },
-      {
-        "quote": "Your Tax Dollars Are Funding This\u2026",
-        "sourceUrl": "https://www.youtube.com/shorts/qtElRyJA9CU",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T18:00:09+00:00"
       }
     ],
     "criminal-justice": [
@@ -150,12 +152,12 @@
         "timestamp": "2026-08-24T00:00:30+00:00"
       }
     ],
-    "iran-conflict": [
+    "military-defense": [
       {
-        "quote": "\u201cWhy Iran Should Get the Bomb\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
+        "quote": "Tucker Reacts to Shocking Military Kidnapping",
+        "sourceUrl": "https://www.youtube.com/shorts/bWkRkev1owI",
         "platform": "youtube",
-        "timestamp": "2026-08-25T17:00:01+00:00"
+        "timestamp": "2026-08-25T18:00:32+00:00"
       }
     ]
   }
