@@ -1,9 +1,23 @@
 {
   "voiceId": "cenk-uygur",
   "voiceName": "Cenk Uygur",
-  "collectedAt": "2026-08-26T19:37:49.692024",
+  "collectedAt": "2026-08-26T22:09:27.129009",
   "date": "2026-08-26",
   "posts": [
+    {
+      "voiceId": "cenk-uygur",
+      "voiceName": "Cenk Uygur",
+      "platform": "youtube",
+      "text": "NEW Charlie Kirk Footage Raises MAJOR Questions",
+      "sourceUrl": "https://www.youtube.com/watch?v=MlOuUFJWq-Q",
+      "timestamp": "2026-08-26T16:00:04+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Questions credibility of Charlie Kirk footage, implies problematic content",
+      "quote": "NEW Charlie Kirk Footage Raises MAJOR Questions"
+    },
     {
       "voiceId": "cenk-uygur",
       "voiceName": "Cenk Uygur",
@@ -106,34 +120,6 @@
       "voiceId": "cenk-uygur",
       "voiceName": "Cenk Uygur",
       "platform": "youtube",
-      "text": "Data Centers ROCK Greg Abbott's Reelection Bid",
-      "sourceUrl": "https://www.youtube.com/watch?v=qev9XX57aB0",
-      "timestamp": "2026-08-25T16:38:05+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames data centers as benefiting Abbott's political interests",
-      "quote": "Data Centers ROCK Greg Abbott's Reelection Bid"
-    },
-    {
-      "voiceId": "cenk-uygur",
-      "voiceName": "Cenk Uygur",
-      "platform": "youtube",
-      "text": "NEW Charlie Kirk Footage Raises MAJOR Questions",
-      "sourceUrl": "https://www.youtube.com/watch?v=MlOuUFJWq-Q",
-      "timestamp": "2026-08-26T16:00:04+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Questions credibility of Charlie Kirk footage, implies problematic content",
-      "quote": "NEW Charlie Kirk Footage Raises MAJOR Questions"
-    },
-    {
-      "voiceId": "cenk-uygur",
-      "voiceName": "Cenk Uygur",
-      "platform": "youtube",
       "text": "Who's Gonna Bail Us Out?!?!",
       "sourceUrl": "https://www.youtube.com/shorts/mbuNtQiSrCU",
       "timestamp": "2026-08-25T19:29:31+00:00",
@@ -143,29 +129,43 @@
       "stance": "lean",
       "summary": "Expresses concern about economic crisis or fiscal instability",
       "quote": "Who's Gonna Bail Us Out?!?!"
+    },
+    {
+      "voiceId": "cenk-uygur",
+      "voiceName": "Cenk Uygur",
+      "platform": "youtube",
+      "text": "Bombshell New Reports Reveal Hegseth\u2019s FAILURES As Secretary of War",
+      "sourceUrl": "https://www.youtube.com/watch?v=gyx00SPLbew",
+      "timestamp": "2026-08-26T21:33:38+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Hegseth's performance as Secretary of Defense",
+      "quote": "Bombshell New Reports Reveal Hegseth\u2019s FAILURES As Secretary of War"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "NEW Charlie Kirk Footage Raises MAJOR Questions",
+        "sourceUrl": "https://www.youtube.com/watch?v=MlOuUFJWq-Q",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T16:00:04+00:00"
+      },
+      {
+        "quote": "We Learned What Hakeem Jeffries Promised Jared Kushner",
+        "sourceUrl": "https://www.youtube.com/watch?v=f0lOcA0uWLM",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T03:30:35+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "SCOTUS Makes MAJOR Ruling About Midterm Elections",
         "sourceUrl": "https://www.youtube.com/watch?v=LHfbjVHRrCg",
         "platform": "youtube",
         "timestamp": "2026-08-26T04:15:34+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "We Learned What Hakeem Jeffries Promised Jared Kushner",
-        "sourceUrl": "https://www.youtube.com/watch?v=f0lOcA0uWLM",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T03:30:35+00:00"
-      },
-      {
-        "quote": "NEW Charlie Kirk Footage Raises MAJOR Questions",
-        "sourceUrl": "https://www.youtube.com/watch?v=MlOuUFJWq-Q",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T16:00:04+00:00"
       }
     ],
     "israel-palestine": [
@@ -212,12 +212,12 @@
         "timestamp": "2026-08-26T00:30:06+00:00"
       }
     ],
-    "state-local-politics": [
+    "trump-administration": [
       {
-        "quote": "Data Centers ROCK Greg Abbott's Reelection Bid",
-        "sourceUrl": "https://www.youtube.com/watch?v=qev9XX57aB0",
+        "quote": "Bombshell New Reports Reveal Hegseth\u2019s FAILURES As Secretary of War",
+        "sourceUrl": "https://www.youtube.com/watch?v=gyx00SPLbew",
         "platform": "youtube",
-        "timestamp": "2026-08-25T16:38:05+00:00"
+        "timestamp": "2026-08-26T21:33:38+00:00"
       }
     ]
   }

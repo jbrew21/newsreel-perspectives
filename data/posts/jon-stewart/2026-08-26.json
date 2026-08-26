@@ -1,9 +1,23 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-08-26T19:37:49.687898",
+  "collectedAt": "2026-08-26T22:09:27.124525",
   "date": "2026-08-26",
   "posts": [
+    {
+      "voiceId": "jon-stewart",
+      "voiceName": "Jon Stewart",
+      "platform": "youtube",
+      "text": "The Fed's Independence | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/gkdS5RgFR7k",
+      "timestamp": "2026-08-26T13:54:53+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Critiques Federal Reserve independence and monetary policy decisions",
+      "quote": "The Fed's Independence | The Weekly Show with Jon Stewart"
+    },
     {
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
@@ -120,18 +134,27 @@
       "voiceId": "jon-stewart",
       "voiceName": "Jon Stewart",
       "platform": "youtube",
-      "text": "The Fed's Independence | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/gkdS5RgFR7k",
-      "timestamp": "2026-08-26T13:54:53+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Critiques Federal Reserve independence and monetary policy decisions",
-      "quote": "The Fed's Independence | The Weekly Show with Jon Stewart"
+      "text": "McD's Fries vs. BK Onion Rings | The Weekly Show with Jon Stewart",
+      "sourceUrl": "https://www.youtube.com/shorts/9Tx0LPeaq-M",
+      "timestamp": "2026-08-14T16:00:35+00:00",
+      "type": "video_title"
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "The Fed's Independence | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/gkdS5RgFR7k",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T13:54:53+00:00"
+      },
+      {
+        "quote": "Cost Of Living | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/rgDQPVF6_60",
+        "platform": "youtube",
+        "timestamp": "2026-08-18T13:58:12+00:00"
+      }
+    ],
     "media-personalities": [
       {
         "quote": "Tucker's Party | The Weekly Show with Jon Stewart",
@@ -162,20 +185,6 @@
         "timestamp": "2026-08-13T15:54:52+00:00"
       }
     ],
-    "economy-trade": [
-      {
-        "quote": "Cost Of Living | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/rgDQPVF6_60",
-        "platform": "youtube",
-        "timestamp": "2026-08-18T13:58:12+00:00"
-      },
-      {
-        "quote": "The Fed's Independence | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/gkdS5RgFR7k",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T13:54:53+00:00"
-      }
-    ],
     "free-speech-censorship": [
       {
         "quote": "Cynicism &amp; Free Speech | The Weekly Show with Jon Stewart",
@@ -198,6 +207,14 @@
         "sourceUrl": "https://www.youtube.com/watch?v=XmYD4udHP6k",
         "platform": "youtube",
         "timestamp": "2026-08-12T19:45:17+00:00"
+      }
+    ],
+    "uncategorized": [
+      {
+        "quote": "McD's Fries vs. BK Onion Rings | The Weekly Show with Jon Stewart",
+        "sourceUrl": "https://www.youtube.com/shorts/9Tx0LPeaq-M",
+        "platform": "youtube",
+        "timestamp": "2026-08-14T16:00:35+00:00"
       }
     ]
   }

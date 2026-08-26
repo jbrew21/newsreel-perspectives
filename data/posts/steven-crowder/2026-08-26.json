@@ -1,7 +1,7 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-08-26T19:37:49.685849",
+  "collectedAt": "2026-08-26T22:09:27.121989",
   "date": "2026-08-26",
   "posts": [
     {
@@ -92,15 +92,43 @@
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
       "platform": "youtube",
-      "text": "We've forgotten who the real enemy is",
-      "sourceUrl": "https://www.youtube.com/shorts/DnjUv-2-fF0",
-      "timestamp": "2026-08-19T20:30:29+00:00",
+      "text": "Did you vote for perfect, or did you vote for more than ever?",
+      "sourceUrl": "https://www.youtube.com/shorts/AMeugZT9q3E",
+      "timestamp": "2026-08-26T20:30:25+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Defends voting for Trump despite imperfection",
+      "quote": "Did you vote for perfect, or did you vote for more than ever?"
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "Trump Just Doubled Down Bigly",
+      "sourceUrl": "https://www.youtube.com/watch?v=7dfoMhD31Dk",
+      "timestamp": "2026-08-26T20:08:42+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Praises Trump for aggressive policy action",
+      "quote": "Trump Just Doubled Down Bigly"
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "This Is A Massive F*ck You",
+      "sourceUrl": "https://www.youtube.com/watch?v=42CV8zz5iSE",
+      "timestamp": "2026-08-25T20:00:14+00:00",
       "type": "video_title",
       "topic": "culture-war",
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Argues progressivism is the real enemy, not external threats",
-      "quote": "We've forgotten who the real enemy is"
+      "summary": "Criticizes progressive institutional or educational practices",
+      "quote": "This Is A Massive F*ck You"
     }
   ],
   "topicSummary": {
@@ -124,10 +152,10 @@
         "timestamp": "2026-08-21T21:32:44+00:00"
       },
       {
-        "quote": "We've forgotten who the real enemy is",
-        "sourceUrl": "https://www.youtube.com/shorts/DnjUv-2-fF0",
+        "quote": "This Is A Massive F*ck You",
+        "sourceUrl": "https://www.youtube.com/watch?v=42CV8zz5iSE",
         "platform": "youtube",
-        "timestamp": "2026-08-19T20:30:29+00:00"
+        "timestamp": "2026-08-25T20:00:14+00:00"
       }
     ],
     "criminal-justice": [
@@ -152,6 +180,22 @@
         "sourceUrl": "https://www.youtube.com/shorts/G8ifmWarnVA",
         "platform": "youtube",
         "timestamp": "2026-08-20T20:30:06+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "Did you vote for perfect, or did you vote for more than ever?",
+        "sourceUrl": "https://www.youtube.com/shorts/AMeugZT9q3E",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T20:30:25+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "Trump Just Doubled Down Bigly",
+        "sourceUrl": "https://www.youtube.com/watch?v=7dfoMhD31Dk",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T20:08:42+00:00"
       }
     ]
   }

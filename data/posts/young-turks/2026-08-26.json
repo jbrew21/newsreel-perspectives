@@ -1,9 +1,23 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "collectedAt": "2026-08-26T19:37:49.685552",
+  "collectedAt": "2026-08-26T22:09:27.121680",
   "date": "2026-08-26",
   "posts": [
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "NEW Charlie Kirk Footage Raises MAJOR Questions",
+      "sourceUrl": "https://www.youtube.com/watch?v=MlOuUFJWq-Q",
+      "timestamp": "2026-08-26T16:00:04+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Presents Charlie Kirk footage as raising questions about his conduct or statements",
+      "quote": "NEW Charlie Kirk Footage Raises MAJOR Questions"
+    },
     {
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
@@ -120,32 +134,26 @@
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
       "platform": "youtube",
-      "text": "Data Centers ROCK Greg Abbott's Reelection Bid",
-      "sourceUrl": "https://www.youtube.com/watch?v=qev9XX57aB0",
-      "timestamp": "2026-08-25T16:38:05+00:00",
+      "text": "Bombshell New Reports Reveal Hegseth\u2019s FAILURES As Secretary of War",
+      "sourceUrl": "https://www.youtube.com/watch?v=gyx00SPLbew",
+      "timestamp": "2026-08-26T21:33:38+00:00",
       "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Data centers benefiting Abbott's political fortunes in Texas",
-      "quote": "Data Centers ROCK Greg Abbott's Reelection Bid"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "NEW Charlie Kirk Footage Raises MAJOR Questions",
-      "sourceUrl": "https://www.youtube.com/watch?v=MlOuUFJWq-Q",
-      "timestamp": "2026-08-26T16:00:04+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Presents Charlie Kirk footage as raising questions about his conduct or statements",
-      "quote": "NEW Charlie Kirk Footage Raises MAJOR Questions"
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Pete Hegseth's performance as Defense Secretary",
+      "quote": "Bombshell New Reports Reveal Hegseth\u2019s FAILURES As Secretary of War"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "NEW Charlie Kirk Footage Raises MAJOR Questions",
+        "sourceUrl": "https://www.youtube.com/watch?v=MlOuUFJWq-Q",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T16:00:04+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "SCOTUS Makes MAJOR Ruling About Midterm Elections",
@@ -160,6 +168,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=f0lOcA0uWLM",
         "platform": "youtube",
         "timestamp": "2026-08-26T03:30:35+00:00"
+      },
+      {
+        "quote": "Bombshell New Reports Reveal Hegseth\u2019s FAILURES As Secretary of War",
+        "sourceUrl": "https://www.youtube.com/watch?v=gyx00SPLbew",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T21:33:38+00:00"
       }
     ],
     "israel-palestine": [
@@ -204,22 +218,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=-_tlr3u2iP0",
         "platform": "youtube",
         "timestamp": "2026-08-26T00:30:06+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "Data Centers ROCK Greg Abbott's Reelection Bid",
-        "sourceUrl": "https://www.youtube.com/watch?v=qev9XX57aB0",
-        "platform": "youtube",
-        "timestamp": "2026-08-25T16:38:05+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "NEW Charlie Kirk Footage Raises MAJOR Questions",
-        "sourceUrl": "https://www.youtube.com/watch?v=MlOuUFJWq-Q",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T16:00:04+00:00"
       }
     ]
   }

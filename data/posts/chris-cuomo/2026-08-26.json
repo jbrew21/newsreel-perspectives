@@ -1,9 +1,37 @@
 {
   "voiceId": "chris-cuomo",
   "voiceName": "Chris Cuomo",
-  "collectedAt": "2026-08-26T19:37:49.692301",
+  "collectedAt": "2026-08-26T22:09:27.129343",
   "date": "2026-08-26",
   "posts": [
+    {
+      "voiceId": "chris-cuomo",
+      "voiceName": "Chris Cuomo",
+      "platform": "youtube",
+      "text": "Why Islamophobia Is Back for the Midterms",
+      "sourceUrl": "https://www.youtube.com/watch?v=XkN0TkuLx1M",
+      "timestamp": "2026-08-26T19:00:09+00:00",
+      "type": "video_title",
+      "topic": "civil-rights-race",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes resurgence of Islamophobia as midterm election tactic",
+      "quote": "Why Islamophobia Is Back for the Midterms"
+    },
+    {
+      "voiceId": "chris-cuomo",
+      "voiceName": "Chris Cuomo",
+      "platform": "youtube",
+      "text": "The Two Parties Are Not Equal Offenders",
+      "sourceUrl": "https://www.youtube.com/shorts/hLsaLGwG8Ck",
+      "timestamp": "2026-08-26T14:35:35+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Argues the two major political parties are not morally equivalent",
+      "quote": "The Two Parties Are Not Equal Offenders"
+    },
     {
       "voiceId": "chris-cuomo",
       "voiceName": "Chris Cuomo",
@@ -87,37 +115,31 @@
       "stance": "lean",
       "summary": "Frames economic policy debate as individual choice rather than socialism",
       "quote": "This Isn't Socialism. It's Choices."
-    },
-    {
-      "voiceId": "chris-cuomo",
-      "voiceName": "Chris Cuomo",
-      "platform": "youtube",
-      "text": "Why Islamophobia Is Back for the Midterms",
-      "sourceUrl": "https://www.youtube.com/watch?v=XkN0TkuLx1M",
-      "timestamp": "2026-08-26T19:00:09+00:00",
-      "type": "video_title",
-      "topic": "civil-rights-race",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes resurgence of Islamophobia as midterm election tactic",
-      "quote": "Why Islamophobia Is Back for the Midterms"
-    },
-    {
-      "voiceId": "chris-cuomo",
-      "voiceName": "Chris Cuomo",
-      "platform": "youtube",
-      "text": "The Two Parties Are Not Equal Offenders",
-      "sourceUrl": "https://www.youtube.com/shorts/hLsaLGwG8Ck",
-      "timestamp": "2026-08-26T14:35:35+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Argues the two major political parties are not morally equivalent",
-      "quote": "The Two Parties Are Not Equal Offenders"
     }
   ],
   "topicSummary": {
+    "civil-rights-race": [
+      {
+        "quote": "Why Islamophobia Is Back for the Midterms",
+        "sourceUrl": "https://www.youtube.com/watch?v=XkN0TkuLx1M",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T19:00:09+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "The Two Parties Are Not Equal Offenders",
+        "sourceUrl": "https://www.youtube.com/shorts/hLsaLGwG8Ck",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T14:35:35+00:00"
+      },
+      {
+        "quote": "Will Trump Leave If He Loses",
+        "sourceUrl": "https://www.youtube.com/watch?v=YAaFusrtlwQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T19:00:04+00:00"
+      }
+    ],
     "congress-legislation": [
       {
         "quote": "The Parties Are The Problem",
@@ -142,20 +164,6 @@
         "timestamp": "2026-08-24T22:00:38+00:00"
       }
     ],
-    "elections": [
-      {
-        "quote": "Will Trump Leave If He Loses",
-        "sourceUrl": "https://www.youtube.com/watch?v=YAaFusrtlwQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T19:00:04+00:00"
-      },
-      {
-        "quote": "The Two Parties Are Not Equal Offenders",
-        "sourceUrl": "https://www.youtube.com/shorts/hLsaLGwG8Ck",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T14:35:35+00:00"
-      }
-    ],
     "religion-faith": [
       {
         "quote": "Why So Many Christians Still Back Trump",
@@ -170,14 +178,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/VME8BSAAvw8",
         "platform": "youtube",
         "timestamp": "2026-08-23T14:00:17+00:00"
-      }
-    ],
-    "civil-rights-race": [
-      {
-        "quote": "Why Islamophobia Is Back for the Midterms",
-        "sourceUrl": "https://www.youtube.com/watch?v=XkN0TkuLx1M",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T19:00:09+00:00"
       }
     ]
   }

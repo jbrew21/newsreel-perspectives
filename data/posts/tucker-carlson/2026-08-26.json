@@ -1,9 +1,37 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-26T19:37:49.685328",
+  "collectedAt": "2026-08-26T22:09:27.121443",
   "date": "2026-08-26",
   "posts": [
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "The Mega Corporations Are at It Again...",
+      "sourceUrl": "https://www.youtube.com/shorts/penMN52ufRI",
+      "timestamp": "2026-08-26T19:00:09+00:00",
+      "type": "video_title",
+      "topic": "billionaires-wealth",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes mega corporations for unspecified wrongdoing",
+      "quote": "The Mega Corporations Are at It Again..."
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Amazon Just Admitted This\u2026",
+      "sourceUrl": "https://www.youtube.com/shorts/Dfz18Q5LV9M",
+      "timestamp": "2026-08-26T17:00:28+00:00",
+      "type": "video_title",
+      "topic": "billionaires-wealth",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights Amazon admission suggesting corporate misconduct",
+      "quote": "Amazon Just Admitted This\u2026"
+    },
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
@@ -36,46 +64,32 @@
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
       "platform": "youtube",
-      "text": "\u201cWhy Iran Should Get the Bomb\u201d",
-      "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
-      "timestamp": "2026-08-25T17:00:01+00:00",
+      "text": "Maduro, Greenland, and Now This\u2026",
+      "sourceUrl": "https://www.youtube.com/shorts/zDKaMaqVWrE",
+      "timestamp": "2026-08-26T21:00:14+00:00",
       "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Argues Iran should acquire nuclear weapons capability",
-      "quote": "\u201cWhy Iran Should Get the Bomb\u201d"
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "The Mega Corporations Are at It Again...",
-      "sourceUrl": "https://www.youtube.com/shorts/penMN52ufRI",
-      "timestamp": "2026-08-26T19:00:09+00:00",
-      "type": "video_title",
-      "topic": "billionaires-wealth",
+      "topic": "foreign-policy-diplomacy",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Criticizes mega corporations for unspecified wrongdoing",
-      "quote": "The Mega Corporations Are at It Again..."
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "Amazon Just Admitted This\u2026",
-      "sourceUrl": "https://www.youtube.com/shorts/Dfz18Q5LV9M",
-      "timestamp": "2026-08-26T17:00:28+00:00",
-      "type": "video_title",
-      "topic": "billionaires-wealth",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights Amazon admission suggesting corporate misconduct",
-      "quote": "Amazon Just Admitted This\u2026"
+      "summary": "Critical framing of U.S. foreign policy decisions under current administration",
+      "quote": "Maduro, Greenland, and Now This\u2026"
     }
   ],
   "topicSummary": {
+    "billionaires-wealth": [
+      {
+        "quote": "The Mega Corporations Are at It Again...",
+        "sourceUrl": "https://www.youtube.com/shorts/penMN52ufRI",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T19:00:09+00:00"
+      },
+      {
+        "quote": "Amazon Just Admitted This\u2026",
+        "sourceUrl": "https://www.youtube.com/shorts/Dfz18Q5LV9M",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T17:00:28+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Tucker on Trump\u2019s Recent Comments\u2026",
@@ -92,26 +106,12 @@
         "timestamp": "2026-08-25T18:00:32+00:00"
       }
     ],
-    "iran-conflict": [
+    "foreign-policy-diplomacy": [
       {
-        "quote": "\u201cWhy Iran Should Get the Bomb\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
+        "quote": "Maduro, Greenland, and Now This\u2026",
+        "sourceUrl": "https://www.youtube.com/shorts/zDKaMaqVWrE",
         "platform": "youtube",
-        "timestamp": "2026-08-25T17:00:01+00:00"
-      }
-    ],
-    "billionaires-wealth": [
-      {
-        "quote": "The Mega Corporations Are at It Again...",
-        "sourceUrl": "https://www.youtube.com/shorts/penMN52ufRI",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T19:00:09+00:00"
-      },
-      {
-        "quote": "Amazon Just Admitted This\u2026",
-        "sourceUrl": "https://www.youtube.com/shorts/Dfz18Q5LV9M",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T17:00:28+00:00"
+        "timestamp": "2026-08-26T21:00:14+00:00"
       }
     ]
   }

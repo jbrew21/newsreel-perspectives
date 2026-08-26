@@ -1,9 +1,23 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-26T19:37:49.784052",
+  "collectedAt": "2026-08-26T22:09:27.205521",
   "date": "2026-08-26",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "President Trump Exclusive: Dolly Parton, Canada, Iran and Rise of Sharia Law | Hour 1 | 8/26/26",
+      "sourceUrl": "https://www.youtube.com/watch?v=YueOim4xdVc",
+      "timestamp": "2026-08-26T14:03:43+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Discusses Iran policy concerns and rise of Sharia law",
+      "quote": "President Trump Exclusive: Dolly Parton, Canada, Iran and Rise of Sharia Law | Hour 1 | 8/26/26"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -64,18 +78,40 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "President Trump Exclusive: Dolly Parton, Canada, Iran and Rise of Sharia Law | Hour 1 | 8/26/26",
-      "sourceUrl": "https://www.youtube.com/watch?v=YueOim4xdVc",
-      "timestamp": "2026-08-26T14:03:43+00:00",
+      "text": "Dolly Parton, Secret Russia Trip, &amp; Sharia Law: My Phone Call With The President",
+      "sourceUrl": "https://www.youtube.com/watch?v=BETaTAmZqds",
+      "timestamp": "2026-08-26T17:58:30+00:00",
       "type": "video_title",
-      "topic": "iran-conflict",
+      "topic": "trump-administration",
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Discusses Iran policy concerns and rise of Sharia law",
-      "quote": "President Trump Exclusive: Dolly Parton, Canada, Iran and Rise of Sharia Law | Hour 1 | 8/26/26"
+      "summary": "Frames Trump conversation as newsworthy presidential commentary",
+      "quote": "Dolly Parton, Secret Russia Trip, &amp; Sharia Law: My Phone Call With The President"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Moms Are DEFENDING Lindsay Clancy Over THIS?!",
+      "sourceUrl": "https://www.youtube.com/shorts/0w7UOI5bYQ4",
+      "timestamp": "2026-08-26T00:45:14+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes mothers defending Lindsay Clancy's actions",
+      "quote": "Moms Are DEFENDING Lindsay Clancy Over THIS?!"
     }
   ],
   "topicSummary": {
+    "iran-conflict": [
+      {
+        "quote": "President Trump Exclusive: Dolly Parton, Canada, Iran and Rise of Sharia Law | Hour 1 | 8/26/26",
+        "sourceUrl": "https://www.youtube.com/watch?v=YueOim4xdVc",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T14:03:43+00:00"
+      }
+    ],
     "criminal-justice": [
       {
         "quote": "The Lindsay Clancy Trial Exposed Something SICKENING About Our Society",
@@ -106,12 +142,20 @@
         "timestamp": "2026-08-25T19:00:12+00:00"
       }
     ],
-    "iran-conflict": [
+    "trump-administration": [
       {
-        "quote": "President Trump Exclusive: Dolly Parton, Canada, Iran and Rise of Sharia Law | Hour 1 | 8/26/26",
-        "sourceUrl": "https://www.youtube.com/watch?v=YueOim4xdVc",
+        "quote": "Dolly Parton, Secret Russia Trip, &amp; Sharia Law: My Phone Call With The President",
+        "sourceUrl": "https://www.youtube.com/watch?v=BETaTAmZqds",
         "platform": "youtube",
-        "timestamp": "2026-08-26T14:03:43+00:00"
+        "timestamp": "2026-08-26T17:58:30+00:00"
+      }
+    ],
+    "culture-war": [
+      {
+        "quote": "Moms Are DEFENDING Lindsay Clancy Over THIS?!",
+        "sourceUrl": "https://www.youtube.com/shorts/0w7UOI5bYQ4",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T00:45:14+00:00"
       }
     ]
   }
