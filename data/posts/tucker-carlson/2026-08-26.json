@@ -1,9 +1,23 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-26T07:27:20.459574",
+  "collectedAt": "2026-08-26T09:25:19.898108",
   "date": "2026-08-26",
   "posts": [
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Tucker on Trump\u2019s Recent Comments\u2026",
+      "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
+      "timestamp": "2026-08-25T23:00:00+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Commenting on Trump statements; position unclear from title",
+      "quote": "Tucker on Trump\u2019s Recent Comments\u2026"
+    },
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
@@ -73,23 +87,23 @@
       "stance": "lean",
       "summary": "Expresses concern about Trump's escalating foreign policy approach",
       "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World"
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "Tucker on Trump\u2019s Recent Comments\u2026",
-      "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
-      "timestamp": "2026-08-25T23:00:00+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Commenting on Trump statements; position unclear from title",
-      "quote": "Tucker on Trump\u2019s Recent Comments\u2026"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Tucker on Trump\u2019s Recent Comments\u2026",
+        "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
+        "platform": "youtube",
+        "timestamp": "2026-08-25T23:00:00+00:00"
+      },
+      {
+        "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World",
+        "sourceUrl": "https://www.youtube.com/watch?v=Fi4ViAuh_Os",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T17:53:54+00:00"
+      }
+    ],
     "military-defense": [
       {
         "quote": "Tucker Reacts to Shocking Military Kidnapping",
@@ -120,20 +134,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/xjuIa2EdLx4",
         "platform": "youtube",
         "timestamp": "2026-08-24T20:09:09+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World",
-        "sourceUrl": "https://www.youtube.com/watch?v=Fi4ViAuh_Os",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T17:53:54+00:00"
-      },
-      {
-        "quote": "Tucker on Trump\u2019s Recent Comments\u2026",
-        "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
-        "platform": "youtube",
-        "timestamp": "2026-08-25T23:00:00+00:00"
       }
     ]
   }

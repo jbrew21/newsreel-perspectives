@@ -1,9 +1,23 @@
 {
   "voiceId": "gavin-newsom",
   "voiceName": "Gavin Newsom",
-  "collectedAt": "2026-08-26T07:27:20.476215",
+  "collectedAt": "2026-08-26T09:25:19.916178",
   "date": "2026-08-26",
   "posts": [
+    {
+      "voiceId": "gavin-newsom",
+      "voiceName": "Gavin Newsom",
+      "platform": "youtube",
+      "text": "Governor Newsom announces new investments to create jobs and strengthen regional economies across CA",
+      "sourceUrl": "https://www.youtube.com/watch?v=C_MZcwF-9cw",
+      "timestamp": "2026-08-26T04:39:17+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Promotes job creation and economic strengthening initiatives",
+      "quote": "Governor Newsom announces new investments to create jobs and strengthen regional economies across CA"
+    },
     {
       "voiceId": "gavin-newsom",
       "voiceName": "Gavin Newsom",
@@ -106,18 +120,30 @@
       "voiceId": "gavin-newsom",
       "voiceName": "Gavin Newsom",
       "platform": "youtube",
-      "text": "Governor Newsom announces new investments to create jobs and strengthen regional economies across CA",
-      "sourceUrl": "https://www.youtube.com/watch?v=C_MZcwF-9cw",
-      "timestamp": "2026-08-26T04:39:17+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Promotes job creation and economic strengthening initiatives",
-      "quote": "Governor Newsom announces new investments to create jobs and strengthen regional economies across CA"
+      "text": "Governor #Newsom, First Partner Welcome #California Kids #BackToSchool #shorts #gavinnewsom #school",
+      "sourceUrl": "https://www.youtube.com/shorts/YAZJRRhbKoI",
+      "timestamp": "2026-08-20T00:37:06+00:00",
+      "type": "video_title"
+    },
+    {
+      "voiceId": "gavin-newsom",
+      "voiceName": "Gavin Newsom",
+      "platform": "youtube",
+      "text": "Governor Gavin Newsom and First Partner Jennifer Siebel Newsom welcome students to a new school year",
+      "sourceUrl": "https://www.youtube.com/watch?v=sF3cBWZZCDY",
+      "timestamp": "2026-08-19T19:39:55+00:00",
+      "type": "video_title"
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "Governor Newsom announces new investments to create jobs and strengthen regional economies across CA",
+        "sourceUrl": "https://www.youtube.com/watch?v=C_MZcwF-9cw",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T04:39:17+00:00"
+      }
+    ],
     "education": [
       {
         "quote": "Governor #Newsom &amp; First Partner Celebrate ONE MILLION #CalKIDS Accounts \u00a0#shorts #california #news",
@@ -166,12 +192,18 @@
         "timestamp": "2026-08-07T17:59:33+00:00"
       }
     ],
-    "economy-trade": [
+    "uncategorized": [
       {
-        "quote": "Governor Newsom announces new investments to create jobs and strengthen regional economies across CA",
-        "sourceUrl": "https://www.youtube.com/watch?v=C_MZcwF-9cw",
+        "quote": "Governor #Newsom, First Partner Welcome #California Kids #BackToSchool #shorts #gavinnewsom #school",
+        "sourceUrl": "https://www.youtube.com/shorts/YAZJRRhbKoI",
         "platform": "youtube",
-        "timestamp": "2026-08-26T04:39:17+00:00"
+        "timestamp": "2026-08-20T00:37:06+00:00"
+      },
+      {
+        "quote": "Governor Gavin Newsom and First Partner Jennifer Siebel Newsom welcome students to a new school year",
+        "sourceUrl": "https://www.youtube.com/watch?v=sF3cBWZZCDY",
+        "platform": "youtube",
+        "timestamp": "2026-08-19T19:39:55+00:00"
       }
     ]
   }
