@@ -1,9 +1,23 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-27T15:19:17.441410",
+  "collectedAt": "2026-08-27T17:56:31.228389",
   "date": "2026-08-27",
   "posts": [
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country.",
+      "sourceUrl": "https://www.youtube.com/watch?v=bf_tbI1brbg",
+      "timestamp": "2026-08-27T00:46:01+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Trump for becoming what he opposed, warns of national consequences",
+      "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country."
+    },
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
@@ -64,18 +78,46 @@
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
       "platform": "youtube",
-      "text": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country.",
-      "sourceUrl": "https://www.youtube.com/watch?v=bf_tbI1brbg",
-      "timestamp": "2026-08-27T00:46:01+00:00",
+      "text": "Tucker Shuts Down Mark Cuban",
+      "sourceUrl": "https://www.youtube.com/shorts/bP2nFKl66PU",
+      "timestamp": "2026-08-27T17:00:15+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
-      "relevance": "high",
+      "topic": "media-personalities",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Trump for becoming what he opposed, warns of national consequences",
-      "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country."
+      "summary": "Criticizes Mark Cuban in confrontational exchange",
+      "quote": "Tucker Shuts Down Mark Cuban"
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Tucker Obliterates Mark Cuban: \u201cVanity!\u201d",
+      "sourceUrl": "https://www.youtube.com/shorts/4ysgJyUswmA",
+      "timestamp": "2026-08-27T15:00:18+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Attacks Mark Cuban's motives as vanity-driven",
+      "quote": "Tucker Obliterates Mark Cuban: \u201cVanity!\u201d"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country.",
+        "sourceUrl": "https://www.youtube.com/watch?v=bf_tbI1brbg",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T00:46:01+00:00"
+      },
+      {
+        "quote": "Tucker on Trump\u2019s Recent Comments\u2026",
+        "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
+        "platform": "youtube",
+        "timestamp": "2026-08-25T23:00:00+00:00"
+      }
+    ],
     "foreign-policy-diplomacy": [
       {
         "quote": "Maduro, Greenland, and Now This\u2026",
@@ -98,18 +140,18 @@
         "timestamp": "2026-08-26T17:00:28+00:00"
       }
     ],
-    "trump-administration": [
+    "media-personalities": [
       {
-        "quote": "Tucker on Trump\u2019s Recent Comments\u2026",
-        "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
+        "quote": "Tucker Shuts Down Mark Cuban",
+        "sourceUrl": "https://www.youtube.com/shorts/bP2nFKl66PU",
         "platform": "youtube",
-        "timestamp": "2026-08-25T23:00:00+00:00"
+        "timestamp": "2026-08-27T17:00:15+00:00"
       },
       {
-        "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country.",
-        "sourceUrl": "https://www.youtube.com/watch?v=bf_tbI1brbg",
+        "quote": "Tucker Obliterates Mark Cuban: \u201cVanity!\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/4ysgJyUswmA",
         "platform": "youtube",
-        "timestamp": "2026-08-27T00:46:01+00:00"
+        "timestamp": "2026-08-27T15:00:18+00:00"
       }
     ]
   }
