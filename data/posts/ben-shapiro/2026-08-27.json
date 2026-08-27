@@ -1,7 +1,7 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-27T17:56:31.226856",
+  "collectedAt": "2026-08-27T19:22:05.678101",
   "date": "2026-08-27",
   "posts": [
     {
@@ -36,15 +36,29 @@
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
       "platform": "youtube",
-      "text": "Iran Is in Serious Trouble. Here's Why.",
-      "sourceUrl": "https://www.youtube.com/watch?v=tTI_8j7RNAk",
-      "timestamp": "2026-08-25T23:30:32+00:00",
+      "text": "We can all learn a few things from Dolly Parton.",
+      "sourceUrl": "https://www.youtube.com/shorts/6IkArFUC3JU",
+      "timestamp": "2026-08-26T23:35:48+00:00",
       "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
+      "topic": "culture-war",
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Iran facing serious economic or geopolitical difficulties",
-      "quote": "Iran Is in Serious Trouble. Here's Why."
+      "summary": "Highlights positive cultural figure as unifying example",
+      "quote": "We can all learn a few things from Dolly Parton."
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "Why America Agrees on Dolly Parton",
+      "sourceUrl": "https://www.youtube.com/watch?v=NpNlV_ai1xM",
+      "timestamp": "2026-08-26T23:30:26+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames Dolly Parton as rare point of national agreement",
+      "quote": "Why America Agrees on Dolly Parton"
     }
   ],
   "topicSummary": {
@@ -64,12 +78,18 @@
         "timestamp": "2026-08-26T20:30:04+00:00"
       }
     ],
-    "iran-conflict": [
+    "culture-war": [
       {
-        "quote": "Iran Is in Serious Trouble. Here's Why.",
-        "sourceUrl": "https://www.youtube.com/watch?v=tTI_8j7RNAk",
+        "quote": "We can all learn a few things from Dolly Parton.",
+        "sourceUrl": "https://www.youtube.com/shorts/6IkArFUC3JU",
         "platform": "youtube",
-        "timestamp": "2026-08-25T23:30:32+00:00"
+        "timestamp": "2026-08-26T23:35:48+00:00"
+      },
+      {
+        "quote": "Why America Agrees on Dolly Parton",
+        "sourceUrl": "https://www.youtube.com/watch?v=NpNlV_ai1xM",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T23:30:26+00:00"
       }
     ]
   }

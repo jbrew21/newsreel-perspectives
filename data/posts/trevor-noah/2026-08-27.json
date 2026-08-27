@@ -1,9 +1,23 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "collectedAt": "2026-08-27T17:56:31.227328",
+  "collectedAt": "2026-08-27T19:22:05.678468",
   "date": "2026-08-27",
   "posts": [
+    {
+      "voiceId": "trevor-noah",
+      "voiceName": "Trevor Noah",
+      "platform": "youtube",
+      "text": "John Oliver went to Australia to investigate the country's wildly successful approach to gun control",
+      "sourceUrl": "https://www.youtube.com/shorts/DMYNsxgM4xc",
+      "timestamp": "2026-08-27T15:00:02+00:00",
+      "type": "video_title",
+      "topic": "gun-policy",
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Australia's gun control approach presented as successful model",
+      "quote": "John Oliver went to Australia to investigate the country's wildly successful approach to gun control"
+    },
     {
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
@@ -106,44 +120,30 @@
       "voiceId": "trevor-noah",
       "voiceName": "Trevor Noah",
       "platform": "youtube",
-      "text": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show",
-      "sourceUrl": "https://www.youtube.com/watch?v=QF5EyK-r09w",
-      "timestamp": "2026-08-24T13:00:14+00:00",
+      "text": "Have these NYers done anything that they would need a pardon for? Grace finds out #DailyShow #Pardon",
+      "sourceUrl": "https://www.youtube.com/shorts/Rt8XylUk7R8",
+      "timestamp": "2026-08-27T18:00:22+00:00",
       "type": "video_title",
-      "topic": "food-agriculture",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes SNAP cuts as harmful social policy",
-      "quote": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show"
-    },
-    {
-      "voiceId": "trevor-noah",
-      "voiceName": "Trevor Noah",
-      "platform": "youtube",
-      "text": "John Oliver went to Australia to investigate the country's wildly successful approach to gun control",
-      "sourceUrl": "https://www.youtube.com/shorts/DMYNsxgM4xc",
-      "timestamp": "2026-08-27T15:00:02+00:00",
-      "type": "video_title",
-      "topic": "gun-policy",
+      "topic": "trump-administration",
       "relevance": "high",
       "stance": "lean",
-      "summary": "Australia's gun control approach presented as successful model",
-      "quote": "John Oliver went to Australia to investigate the country's wildly successful approach to gun control"
+      "summary": "Questions whether New Yorkers seeking pardons actually committed pardonable offenses",
+      "quote": "Have these NYers done anything that they would need a pardon for? Grace finds out #DailyShow #Pardon"
     }
   ],
   "topicSummary": {
     "gun-policy": [
       {
-        "quote": "John Oliver Investigates Australian Gun Control | The Daily Show",
-        "sourceUrl": "https://www.youtube.com/watch?v=dFJWYpPrLGs",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T13:00:13+00:00"
-      },
-      {
         "quote": "John Oliver went to Australia to investigate the country's wildly successful approach to gun control",
         "sourceUrl": "https://www.youtube.com/shorts/DMYNsxgM4xc",
         "platform": "youtube",
         "timestamp": "2026-08-27T15:00:02+00:00"
+      },
+      {
+        "quote": "John Oliver Investigates Australian Gun Control | The Daily Show",
+        "sourceUrl": "https://www.youtube.com/watch?v=dFJWYpPrLGs",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T13:00:13+00:00"
       }
     ],
     "trump-administration": [
@@ -176,6 +176,12 @@
         "sourceUrl": "https://www.youtube.com/shorts/5LjzwRaRirQ",
         "platform": "youtube",
         "timestamp": "2026-08-24T18:00:24+00:00"
+      },
+      {
+        "quote": "Have these NYers done anything that they would need a pardon for? Grace finds out #DailyShow #Pardon",
+        "sourceUrl": "https://www.youtube.com/shorts/Rt8XylUk7R8",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T18:00:22+00:00"
       }
     ],
     "culture-war": [
@@ -184,14 +190,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/f1_hKmuytBs",
         "platform": "youtube",
         "timestamp": "2026-08-24T15:00:08+00:00"
-      }
-    ],
-    "food-agriculture": [
-      {
-        "quote": "Jessica Williams on How SNAP Cuts Make America Look Like the Hunger Games | The Daily Show",
-        "sourceUrl": "https://www.youtube.com/watch?v=QF5EyK-r09w",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T13:00:14+00:00"
       }
     ]
   }
