@@ -23,6 +23,17 @@ from datetime import datetime
 ROOT = Path(__file__).parent.parent
 POSTS_DIR = ROOT / "data" / "posts"
 VOICES_PATH = ROOT / "data" / "voices.json"
+TAXONOMY_PATH = ROOT / "data" / "taxonomy.json"
+
+
+def load_topic_descriptions():
+    """Map topic slug -> taxonomy description, so the matcher sees what a slug
+    actually covers (e.g. ai-technology includes social media platforms)."""
+    try:
+        taxonomy = json.loads(TAXONOMY_PATH.read_text())
+        return {t['slug']: t.get('description', '') for t in taxonomy.get('topics', [])}
+    except (OSError, ValueError, KeyError):
+        return {}
 
 # Canonical voice-profile access layer (loading, photo/lens rules, validation).
 sys.path.append(str(Path(__file__).parent))
@@ -185,7 +196,11 @@ def _match_story_to_topics_uncached(headline, available_topics):
                 matches.append(topic)
         return matches
 
-    topics_list = '\n'.join(f'  - {t}' for t in sorted(available_topics))
+    descriptions = load_topic_descriptions()
+    topics_list = '\n'.join(
+        f'  - {t} ({descriptions[t]})' if descriptions.get(t) else f'  - {t}'
+        for t in sorted(available_topics)
+    )
 
     prompt = f"""Given this news headline:
 "{headline}"
@@ -201,6 +216,7 @@ RULES:
 Available topics:
 {topics_list}
 
+Topics are listed as "slug (description)". Return ONLY the slug, never the description.
 Return a JSON array of matching topic strings, most specific first. Max 8.
 Example: ["iran-war", "iran-military-strike", "trump-iran", "military-casualties"]"""
 
