@@ -1,9 +1,37 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-28T01:47:00.549131",
+  "collectedAt": "2026-08-28T03:46:15.460457",
   "date": "2026-08-28",
   "posts": [
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "Trump Is Racking Up Wins",
+      "sourceUrl": "https://www.youtube.com/watch?v=JG14TM_Vzzc",
+      "timestamp": "2026-08-27T20:30:26+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Praises Trump administration accomplishments",
+      "quote": "Trump Is Racking Up Wins"
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "Why the Left Loves Criminals",
+      "sourceUrl": "https://www.youtube.com/watch?v=MmrEFrTkq-A",
+      "timestamp": "2026-08-27T20:00:01+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Left's approach to criminal justice policy",
+      "quote": "Why the Left Loves Criminals"
+    },
     {
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
@@ -50,33 +78,47 @@
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
       "platform": "youtube",
-      "text": "Trump Is Racking Up Wins",
-      "sourceUrl": "https://www.youtube.com/watch?v=JG14TM_Vzzc",
-      "timestamp": "2026-08-27T20:30:26+00:00",
+      "text": "Mehdi Hasan says the Left isn't radical? \ud83e\udd28 #balanceofnaturepartner",
+      "sourceUrl": "https://www.youtube.com/shorts/xKQx0Ki2_DQ",
+      "timestamp": "2026-08-27T22:35:30+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "media-personalities",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Praises Trump administration accomplishments",
-      "quote": "Trump Is Racking Up Wins"
+      "stance": "lean",
+      "summary": "Challenges Mehdi Hasan's claim that the Left isn't radical",
+      "quote": "Mehdi Hasan says the Left isn't radical? \ud83e\udd28 #balanceofnaturepartner"
     },
     {
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
       "platform": "youtube",
-      "text": "Why the Left Loves Criminals",
-      "sourceUrl": "https://www.youtube.com/watch?v=MmrEFrTkq-A",
-      "timestamp": "2026-08-27T20:00:01+00:00",
+      "text": "Anna Faris's Comments About Her Religious Son Are Revealing",
+      "sourceUrl": "https://www.youtube.com/watch?v=omHtNwiwJJM",
+      "timestamp": "2026-08-27T21:00:27+00:00",
       "type": "video_title",
       "topic": "culture-war",
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Left's approach to criminal justice policy",
-      "quote": "Why the Left Loves Criminals"
+      "stance": "lean",
+      "summary": "Frames Anna Faris's religious parenting comments as culturally revealing",
+      "quote": "Anna Faris's Comments About Her Religious Son Are Revealing"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Trump Is Racking Up Wins",
+        "sourceUrl": "https://www.youtube.com/watch?v=JG14TM_Vzzc",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T20:30:26+00:00"
+      }
+    ],
     "culture-war": [
+      {
+        "quote": "Why the Left Loves Criminals",
+        "sourceUrl": "https://www.youtube.com/watch?v=MmrEFrTkq-A",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T20:00:01+00:00"
+      },
       {
         "quote": "We can all learn a few things from Dolly Parton.",
         "sourceUrl": "https://www.youtube.com/shorts/6IkArFUC3JU",
@@ -90,10 +132,10 @@
         "timestamp": "2026-08-26T23:30:26+00:00"
       },
       {
-        "quote": "Why the Left Loves Criminals",
-        "sourceUrl": "https://www.youtube.com/watch?v=MmrEFrTkq-A",
+        "quote": "Anna Faris's Comments About Her Religious Son Are Revealing",
+        "sourceUrl": "https://www.youtube.com/watch?v=omHtNwiwJJM",
         "platform": "youtube",
-        "timestamp": "2026-08-27T20:00:01+00:00"
+        "timestamp": "2026-08-27T21:00:27+00:00"
       }
     ],
     "ai-technology": [
@@ -104,12 +146,12 @@
         "timestamp": "2026-08-26T22:08:55+00:00"
       }
     ],
-    "trump-administration": [
+    "media-personalities": [
       {
-        "quote": "Trump Is Racking Up Wins",
-        "sourceUrl": "https://www.youtube.com/watch?v=JG14TM_Vzzc",
+        "quote": "Mehdi Hasan says the Left isn't radical? \ud83e\udd28 #balanceofnaturepartner",
+        "sourceUrl": "https://www.youtube.com/shorts/xKQx0Ki2_DQ",
         "platform": "youtube",
-        "timestamp": "2026-08-27T20:30:26+00:00"
+        "timestamp": "2026-08-27T22:35:30+00:00"
       }
     ]
   }
