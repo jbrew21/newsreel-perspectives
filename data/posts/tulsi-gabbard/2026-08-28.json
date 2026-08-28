@@ -1,7 +1,7 @@
 {
   "voiceId": "tulsi-gabbard",
   "voiceName": "Tulsi Gabbard",
-  "collectedAt": "2026-08-28T01:47:00.558999",
+  "collectedAt": "2026-08-28T19:06:02.662143",
   "date": "2026-08-28",
   "posts": [
     {
@@ -12,25 +12,15 @@
       "sourceUrl": "https://www.youtube.com/shorts/pA5ZzwHo8_s",
       "timestamp": "2023-04-07T14:00:28+00:00",
       "type": "video_title",
-      "topic": "congress-legislation",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration",
+        "congress-legislation"
+      ],
       "relevance": "medium",
       "stance": "lean",
       "summary": "",
       "quote": "The Real Situation in the American Political System"
-    },
-    {
-      "voiceId": "tulsi-gabbard",
-      "voiceName": "Tulsi Gabbard",
-      "platform": "youtube",
-      "text": "Ira Glasser on the Supreme Court expanding rights",
-      "sourceUrl": "https://www.youtube.com/shorts/XLoPZ713bB0",
-      "timestamp": "2023-03-24T14:00:30+00:00",
-      "type": "video_title",
-      "topic": "supreme-court-legal",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "",
-      "quote": "Ira Glasser on the Supreme Court expanding rights"
     },
     {
       "voiceId": "tulsi-gabbard",
@@ -41,9 +31,12 @@
       "timestamp": "2023-03-17T15:00:06+00:00",
       "type": "video_title",
       "topic": "military-defense",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Raises awareness of toxic burn pit health risks affecting service members",
+      "topics": [
+        "military-defense"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes military exposure to toxic burn pit hazards",
       "quote": "Tulsi Gabbard on Toxic Burn Pits"
     },
     {
@@ -55,24 +48,13 @@
       "timestamp": "2023-03-15T17:00:37+00:00",
       "type": "video_title",
       "topic": "military-defense",
-      "relevance": "medium",
+      "topics": [
+        "military-defense"
+      ],
+      "relevance": "high",
       "stance": "lean",
       "summary": "Highlights elevated cancer rates among Air Force personnel",
       "quote": "Air Force has the highest rate of Cancer"
-    },
-    {
-      "voiceId": "tulsi-gabbard",
-      "voiceName": "Tulsi Gabbard",
-      "platform": "youtube",
-      "text": "&quot;You'll never have lunch in this town again!&quot;",
-      "sourceUrl": "https://www.youtube.com/shorts/EmiZx7Ouah8",
-      "timestamp": "2023-03-09T22:15:00+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "",
-      "quote": "&quot;You'll never have lunch in this town again!&quot;"
     },
     {
       "voiceId": "tulsi-gabbard",
@@ -83,38 +65,13 @@
       "timestamp": "2023-03-08T18:00:16+00:00",
       "type": "video_title",
       "topic": "education",
+      "topics": [
+        "education"
+      ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Critiques American school system as fundamentally broken",
+      "summary": "Argues education system requires fundamental reform",
       "quote": "The School System is Broken"
-    },
-    {
-      "voiceId": "tulsi-gabbard",
-      "voiceName": "Tulsi Gabbard",
-      "platform": "youtube",
-      "text": "&quot;How dumb do you think everyone is?&quot;",
-      "sourceUrl": "https://www.youtube.com/shorts/CZ0hdw8bU8E",
-      "timestamp": "2023-03-02T19:30:02+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "",
-      "quote": "&quot;How dumb do you think everyone is?&quot;"
-    },
-    {
-      "voiceId": "tulsi-gabbard",
-      "voiceName": "Tulsi Gabbard",
-      "platform": "youtube",
-      "text": "&quot;He cashed out $43 million in stock...&quot;",
-      "sourceUrl": "https://www.youtube.com/shorts/CoTArVmUejk",
-      "timestamp": "2023-02-28T18:00:07+00:00",
-      "type": "video_title",
-      "topic": "billionaires-wealth",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "",
-      "quote": "&quot;He cashed out $43 million in stock...&quot;"
     },
     {
       "voiceId": "tulsi-gabbard",
@@ -125,27 +82,22 @@
       "timestamp": "2023-02-27T18:00:34+00:00",
       "type": "video_title",
       "topic": "free-speech-censorship",
-      "relevance": "medium",
+      "topics": [
+        "free-speech-censorship"
+      ],
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes pervasive culture of self-censorship in society",
+      "summary": "Warns against self-censorship in political and cultural discourse",
       "quote": "Tulsi Gabbard on the Culture of Self-Censorship"
     }
   ],
   "topicSummary": {
-    "congress-legislation": [
+    "trump-administration": [
       {
         "quote": "The Real Situation in the American Political System",
         "sourceUrl": "https://www.youtube.com/shorts/pA5ZzwHo8_s",
         "platform": "youtube",
         "timestamp": "2023-04-07T14:00:28+00:00"
-      }
-    ],
-    "supreme-court-legal": [
-      {
-        "quote": "Ira Glasser on the Supreme Court expanding rights",
-        "sourceUrl": "https://www.youtube.com/shorts/XLoPZ713bB0",
-        "platform": "youtube",
-        "timestamp": "2023-03-24T14:00:30+00:00"
       }
     ],
     "military-defense": [
@@ -162,34 +114,12 @@
         "timestamp": "2023-03-15T17:00:37+00:00"
       }
     ],
-    "media-press": [
-      {
-        "quote": "&quot;You'll never have lunch in this town again!&quot;",
-        "sourceUrl": "https://www.youtube.com/shorts/EmiZx7Ouah8",
-        "platform": "youtube",
-        "timestamp": "2023-03-09T22:15:00+00:00"
-      },
-      {
-        "quote": "&quot;How dumb do you think everyone is?&quot;",
-        "sourceUrl": "https://www.youtube.com/shorts/CZ0hdw8bU8E",
-        "platform": "youtube",
-        "timestamp": "2023-03-02T19:30:02+00:00"
-      }
-    ],
     "education": [
       {
         "quote": "The School System is Broken",
         "sourceUrl": "https://www.youtube.com/shorts/Zpjv8Ai2MA4",
         "platform": "youtube",
         "timestamp": "2023-03-08T18:00:16+00:00"
-      }
-    ],
-    "billionaires-wealth": [
-      {
-        "quote": "&quot;He cashed out $43 million in stock...&quot;",
-        "sourceUrl": "https://www.youtube.com/shorts/CoTArVmUejk",
-        "platform": "youtube",
-        "timestamp": "2023-02-28T18:00:07+00:00"
       }
     ],
     "free-speech-censorship": [

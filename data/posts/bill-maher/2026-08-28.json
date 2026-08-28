@@ -1,7 +1,7 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "collectedAt": "2026-08-28T01:47:00.553831",
+  "collectedAt": "2026-08-28T19:06:02.657465",
   "date": "2026-08-28",
   "posts": [
     {
@@ -12,25 +12,14 @@
       "sourceUrl": "https://www.youtube.com/watch?v=xEGP_dd2zig",
       "timestamp": "2026-08-22T03:00:15+00:00",
       "type": "video_title",
-      "topic": "criminal-justice",
-      "relevance": "medium",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Platforms convicted felon's perspective on redemption and accountability",
+      "summary": "Hunter Biden seeking redemption after conviction",
       "quote": "Hunter Biden on Making Amends | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "New Rule: Free Workplace Romance! | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=hMSIl5E7hz8",
-      "timestamp": "2026-08-22T03:00:05+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Advocates relaxing workplace romance restrictions",
-      "quote": "New Rule: Free Workplace Romance! | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -41,38 +30,13 @@
       "timestamp": "2026-08-18T16:00:14+00:00",
       "type": "video_title",
       "topic": "billionaires-wealth",
+      "topics": [
+        "billionaires-wealth"
+      ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques private equity industry and its business practices",
+      "summary": "Critiques private equity industry influence",
       "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
-      "timestamp": "2026-08-15T03:00:24+00:00",
-      "type": "video_title",
-      "topic": "immigration",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Immigrants should assimilate into American culture",
-      "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)"
-    },
-    {
-      "voiceId": "bill-maher",
-      "voiceName": "Bill Maher",
-      "platform": "youtube",
-      "text": "Mike Rowe on NILFs | Real Time with Bill Maher (HBO)",
-      "sourceUrl": "https://www.youtube.com/watch?v=xiOUAz-IOtM",
-      "timestamp": "2026-08-08T03:00:20+00:00",
-      "type": "video_title",
-      "topic": "education",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Discusses NIL (Name, Image, Likeness) compensation for student athletes",
-      "quote": "Mike Rowe on NILFs | Real Time with Bill Maher (HBO)"
     },
     {
       "voiceId": "bill-maher",
@@ -82,28 +46,23 @@
       "sourceUrl": "https://www.youtube.com/watch?v=2tyF1UgSecU",
       "timestamp": "2026-08-08T03:00:12+00:00",
       "type": "video_title",
-      "topic": "covid-pandemic",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Fauci's pursuit of fame and media attention",
+      "stance": "lean",
+      "summary": "Questions celebrity status of public health officials",
       "quote": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)"
     }
   ],
   "topicSummary": {
-    "criminal-justice": [
+    "trump-administration": [
       {
         "quote": "Hunter Biden on Making Amends | Real Time with Bill Maher (HBO)",
         "sourceUrl": "https://www.youtube.com/watch?v=xEGP_dd2zig",
         "platform": "youtube",
         "timestamp": "2026-08-22T03:00:15+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "New Rule: Free Workplace Romance! | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=hMSIl5E7hz8",
-        "platform": "youtube",
-        "timestamp": "2026-08-22T03:00:05+00:00"
       }
     ],
     "billionaires-wealth": [
@@ -114,23 +73,7 @@
         "timestamp": "2026-08-18T16:00:14+00:00"
       }
     ],
-    "immigration": [
-      {
-        "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
-        "platform": "youtube",
-        "timestamp": "2026-08-15T03:00:24+00:00"
-      }
-    ],
-    "education": [
-      {
-        "quote": "Mike Rowe on NILFs | Real Time with Bill Maher (HBO)",
-        "sourceUrl": "https://www.youtube.com/watch?v=xiOUAz-IOtM",
-        "platform": "youtube",
-        "timestamp": "2026-08-08T03:00:20+00:00"
-      }
-    ],
-    "covid-pandemic": [
+    "media-press": [
       {
         "quote": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)",
         "sourceUrl": "https://www.youtube.com/watch?v=2tyF1UgSecU",

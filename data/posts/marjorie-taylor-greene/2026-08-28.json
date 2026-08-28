@@ -1,23 +1,9 @@
 {
   "voiceId": "marjorie-taylor-greene",
   "voiceName": "Marjorie Taylor Greene",
-  "collectedAt": "2026-08-28T01:47:00.566282",
+  "collectedAt": "2026-08-28T19:06:02.668434",
   "date": "2026-08-28",
   "posts": [
-    {
-      "voiceId": "marjorie-taylor-greene",
-      "voiceName": "Marjorie Taylor Greene",
-      "platform": "youtube",
-      "text": "Congresswoman Marjorie Taylor Greene Joins The Situation Room on CNN to Dicuss Healthcare",
-      "sourceUrl": "https://www.youtube.com/watch?v=kWM1JMbT-3M",
-      "timestamp": "2025-10-09T18:09:44+00:00",
-      "type": "video_title",
-      "topic": "healthcare",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Appears to discuss healthcare policy on CNN",
-      "quote": "Congresswoman Marjorie Taylor Greene Joins The Situation Room on CNN to Dicuss Healthcare"
-    },
     {
       "voiceId": "marjorie-taylor-greene",
       "voiceName": "Marjorie Taylor Greene",
@@ -27,24 +13,14 @@
       "timestamp": "2025-06-24T02:00:41+00:00",
       "type": "video_title",
       "topic": "iran-conflict",
-      "relevance": "medium",
+      "topics": [
+        "iran-conflict",
+        "trump-administration"
+      ],
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Discusses Iran policy on political commentary show",
+      "summary": "",
       "quote": "Congresswoman Marjorie Taylor Greene Joins The Matt Gaetz Show to Discuss Iran and the OBBB"
-    },
-    {
-      "voiceId": "marjorie-taylor-greene",
-      "voiceName": "Marjorie Taylor Greene",
-      "platform": "youtube",
-      "text": "Congresswoman Marjorie Taylor Greene Holds a Constituent Town Hall in Cobb County, GA",
-      "sourceUrl": "https://www.youtube.com/watch?v=_BgNUJ6LkP0",
-      "timestamp": "2025-04-15T23:15:36+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Engages constituents on local and political concerns",
-      "quote": "Congresswoman Marjorie Taylor Greene Holds a Constituent Town Hall in Cobb County, GA"
     },
     {
       "voiceId": "marjorie-taylor-greene",
@@ -55,9 +31,12 @@
       "timestamp": "2025-03-26T15:43:07+00:00",
       "type": "video_title",
       "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Holds NPR and PBS leadership accountable for bias",
+      "summary": "Holds NPR and PBS leadership accountable",
       "quote": "Chairwoman MTG Delivers Opening Statement Holding the Heads of NPR and PBS Accountable"
     },
     {
@@ -69,24 +48,13 @@
       "timestamp": "2025-03-05T22:27:53+00:00",
       "type": "video_title",
       "topic": "immigration",
-      "relevance": "medium",
+      "topics": [
+        "immigration"
+      ],
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Questions sanctuary city mayors on immigration enforcement",
+      "summary": "Questions sanctuary city policies on immigration",
       "quote": "Congresswoman Marjorie Taylor Greene Questions Sanctuary City Mayors"
-    },
-    {
-      "voiceId": "marjorie-taylor-greene",
-      "voiceName": "Marjorie Taylor Greene",
-      "platform": "youtube",
-      "text": "Congresswoman Marjorie Taylor Greene Questions the Comptroller General of the United States",
-      "sourceUrl": "https://www.youtube.com/watch?v=ipaUkt710wc",
-      "timestamp": "2025-02-25T22:22:54+00:00",
-      "type": "video_title",
-      "topic": "congress-legislation",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Scrutinizes federal government accountability and spending",
-      "quote": "Congresswoman Marjorie Taylor Greene Questions the Comptroller General of the United States"
     },
     {
       "voiceId": "marjorie-taylor-greene",
@@ -97,9 +65,13 @@
       "timestamp": "2025-02-24T22:55:56+00:00",
       "type": "video_title",
       "topic": "trump-administration",
-      "relevance": "medium",
+      "topics": [
+        "trump-administration",
+        "foreign-policy-diplomacy"
+      ],
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Discusses DOGE and FBI matters with conservative commentator",
+      "summary": "",
       "quote": "Congresswoman Marjorie Taylor Greene Joins The Dan Bongino Show to Discuss DOGE, USAID, and the FBI"
     },
     {
@@ -111,9 +83,12 @@
       "timestamp": "2025-01-22T20:04:16+00:00",
       "type": "video_title",
       "topic": "immigration",
+      "topics": [
+        "immigration"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Supports Laken Riley Act immigration enforcement measure",
+      "summary": "Supports Laken Riley Act for immigration enforcement",
       "quote": "Congresswoman Marjorie Taylor Greene Stands in Support of the Laken Riley Act"
     },
     {
@@ -125,35 +100,23 @@
       "timestamp": "2025-01-22T17:46:37+00:00",
       "type": "video_title",
       "topic": "economy-trade",
+      "topics": [
+        "economy-trade",
+        "trump-policy"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Testifies in support of Trump's tax cuts legislation",
+      "summary": "Backs Trump's tax cuts and jobs legislation",
       "quote": "Congresswoman Marjorie Taylor Greene Testifies in Support of President Trump's Tax Cuts and Jobs Act"
     }
   ],
   "topicSummary": {
-    "healthcare": [
-      {
-        "quote": "Congresswoman Marjorie Taylor Greene Joins The Situation Room on CNN to Dicuss Healthcare",
-        "sourceUrl": "https://www.youtube.com/watch?v=kWM1JMbT-3M",
-        "platform": "youtube",
-        "timestamp": "2025-10-09T18:09:44+00:00"
-      }
-    ],
     "iran-conflict": [
       {
         "quote": "Congresswoman Marjorie Taylor Greene Joins The Matt Gaetz Show to Discuss Iran and the OBBB",
         "sourceUrl": "https://www.youtube.com/watch?v=HUaN3rGE-8M",
         "platform": "youtube",
         "timestamp": "2025-06-24T02:00:41+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "Congresswoman Marjorie Taylor Greene Holds a Constituent Town Hall in Cobb County, GA",
-        "sourceUrl": "https://www.youtube.com/watch?v=_BgNUJ6LkP0",
-        "platform": "youtube",
-        "timestamp": "2025-04-15T23:15:36+00:00"
       }
     ],
     "media-press": [
@@ -176,14 +139,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=r4msLYQRdW4",
         "platform": "youtube",
         "timestamp": "2025-01-22T20:04:16+00:00"
-      }
-    ],
-    "congress-legislation": [
-      {
-        "quote": "Congresswoman Marjorie Taylor Greene Questions the Comptroller General of the United States",
-        "sourceUrl": "https://www.youtube.com/watch?v=ipaUkt710wc",
-        "platform": "youtube",
-        "timestamp": "2025-02-25T22:22:54+00:00"
       }
     ],
     "trump-administration": [

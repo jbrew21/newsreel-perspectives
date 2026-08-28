@@ -1,7 +1,7 @@
 {
   "voiceId": "laura-ingraham",
   "voiceName": "Laura Ingraham",
-  "collectedAt": "2026-08-28T01:47:00.562515",
+  "collectedAt": "2026-08-28T19:06:02.664979",
   "date": "2026-08-28",
   "posts": [
     {
@@ -13,9 +13,12 @@
       "timestamp": "2026-03-14T17:32:17+00:00",
       "type": "video_title",
       "topic": "trump-policy",
+      "topics": [
+        "trump-policy"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Claims Trump made America safer, criticizes Democrats for denying it",
+      "summary": "Credits Trump with making America safer",
       "quote": "Laura: Democrats Won\u2019t Admit Trump Made America Safer"
     },
     {
@@ -27,9 +30,12 @@
       "timestamp": "2026-03-13T23:25:57+00:00",
       "type": "video_title",
       "topic": "iran-conflict",
+      "topics": [
+        "iran-conflict"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Characterizes Iran's radical theocracy as holding world hostage",
+      "summary": "Criticizes Iran's radical theocracy for hostage-taking behavior",
       "quote": "Rep. Chip Roy: \u201cIran\u2019s radical theocracy has held the world HOSTAGE.\u201d"
     },
     {
@@ -41,9 +47,12 @@
       "timestamp": "2026-03-13T16:31:14+00:00",
       "type": "video_title",
       "topic": "iran-conflict",
+      "topics": [
+        "iran-conflict"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Frames Iran's Strait of Hormuz control as coercive pressure tactic",
+      "summary": "Warns Iran weaponizes Strait of Hormuz as geopolitical leverage",
       "quote": "Mike Sarraille: \u201cIran is using the Strait of Hormuz as a pressure LEVER.\u201d"
     },
     {
@@ -55,9 +64,12 @@
       "timestamp": "2026-03-13T16:30:34+00:00",
       "type": "video_title",
       "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Blames China for existence of Iran's nuclear program",
+      "topics": [
+        "iran-conflict"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Attributes Iran's nuclear program to Chinese support",
       "quote": "Gordon Chang: \u201cIran\u2019s nuclear program exists because of CHINA.\u201d"
     },
     {
@@ -69,6 +81,9 @@
       "timestamp": "2026-03-13T16:29:49+00:00",
       "type": "video_title",
       "topic": "immigration",
+      "topics": [
+        "immigration"
+      ],
       "relevance": "high",
       "stance": "strong",
       "summary": "Accuses Democrats of prioritizing ICE defunding over border security",
@@ -82,10 +97,14 @@
       "sourceUrl": "https://www.youtube.com/watch?v=3Ul36vW_AIs",
       "timestamp": "2026-03-13T16:28:59+00:00",
       "type": "video_title",
-      "topic": "terrorism",
+      "topic": "iran-conflict",
+      "topics": [
+        "iran-conflict",
+        "terrorism"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Characterizes Iran's pressure tactics as acts of terrorism",
+      "summary": "Frames Iran's pressure tactics as acts of terrorism",
       "quote": "Kevin Donegan: \u201cIran\u2019s pressure tactics are acts of TERRORISM.\u201d"
     },
     {
@@ -96,10 +115,14 @@
       "sourceUrl": "https://www.youtube.com/watch?v=htBZjk1x7OE",
       "timestamp": "2026-03-13T16:20:51+00:00",
       "type": "video_title",
-      "topic": "foreign-policy-diplomacy",
+      "topic": "trump-policy",
+      "topics": [
+        "trump-policy",
+        "foreign-policy-diplomacy"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Advises Trump against visiting Beijing",
+      "summary": "Advises Trump against diplomatic engagement with Beijing",
       "quote": "Gordon Chang: \u201cPresident Trump should not go to BEIJING.\u201d"
     },
     {
@@ -111,9 +134,12 @@
       "timestamp": "2026-03-13T16:19:59+00:00",
       "type": "video_title",
       "topic": "terrorism",
+      "topics": [
+        "terrorism"
+      ],
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Expresses greater concern about lone actor terrorists than sleeper cells",
+      "stance": "lean",
+      "summary": "Identifies lone-actor terrorism as greater security threat",
       "quote": "Dan Bongino: \u201cLone actors worry me more than sleeper cells.\u201d"
     },
     {
@@ -125,9 +151,12 @@
       "timestamp": "2026-03-13T16:19:01+00:00",
       "type": "video_title",
       "topic": "terrorism",
+      "topics": [
+        "terrorism"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes release of convicted ISIS sympathizer",
+      "summary": "Warns convicted ISIS sympathizer remained at large",
       "quote": "Stefano Ritondale: \u201cA CONVICTED ISIS sympathizer was still free.\u201d"
     },
     {
@@ -138,10 +167,14 @@
       "sourceUrl": "https://www.youtube.com/watch?v=Dg-NJuIBkfc",
       "timestamp": "2026-03-13T16:18:19+00:00",
       "type": "video_title",
-      "topic": "criminal-justice",
-      "relevance": "medium",
+      "topic": "terrorism",
+      "topics": [
+        "terrorism",
+        "criminal-justice"
+      ],
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Advocates changing laws to address convicted terrorists",
+      "summary": "Calls for stricter laws against convicted terrorists",
       "quote": "Morgan Wright: \u201cThe laws SHOULD change for convicted terrorists.\u201d"
     }
   ],
@@ -152,6 +185,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=8dSkpMzNts0",
         "platform": "youtube",
         "timestamp": "2026-03-14T17:32:17+00:00"
+      },
+      {
+        "quote": "Gordon Chang: \u201cPresident Trump should not go to BEIJING.\u201d",
+        "sourceUrl": "https://www.youtube.com/watch?v=htBZjk1x7OE",
+        "platform": "youtube",
+        "timestamp": "2026-03-13T16:20:51+00:00"
       }
     ],
     "iran-conflict": [
@@ -172,6 +211,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=HmKDHXgxnPE",
         "platform": "youtube",
         "timestamp": "2026-03-13T16:30:34+00:00"
+      },
+      {
+        "quote": "Kevin Donegan: \u201cIran\u2019s pressure tactics are acts of TERRORISM.\u201d",
+        "sourceUrl": "https://www.youtube.com/watch?v=3Ul36vW_AIs",
+        "platform": "youtube",
+        "timestamp": "2026-03-13T16:28:59+00:00"
       }
     ],
     "immigration": [
@@ -184,12 +229,6 @@
     ],
     "terrorism": [
       {
-        "quote": "Kevin Donegan: \u201cIran\u2019s pressure tactics are acts of TERRORISM.\u201d",
-        "sourceUrl": "https://www.youtube.com/watch?v=3Ul36vW_AIs",
-        "platform": "youtube",
-        "timestamp": "2026-03-13T16:28:59+00:00"
-      },
-      {
         "quote": "Dan Bongino: \u201cLone actors worry me more than sleeper cells.\u201d",
         "sourceUrl": "https://www.youtube.com/watch?v=q7dyD0Fvfgw",
         "platform": "youtube",
@@ -200,17 +239,7 @@
         "sourceUrl": "https://www.youtube.com/watch?v=uJWgPKQicWo",
         "platform": "youtube",
         "timestamp": "2026-03-13T16:19:01+00:00"
-      }
-    ],
-    "foreign-policy-diplomacy": [
-      {
-        "quote": "Gordon Chang: \u201cPresident Trump should not go to BEIJING.\u201d",
-        "sourceUrl": "https://www.youtube.com/watch?v=htBZjk1x7OE",
-        "platform": "youtube",
-        "timestamp": "2026-03-13T16:20:51+00:00"
-      }
-    ],
-    "criminal-justice": [
+      },
       {
         "quote": "Morgan Wright: \u201cThe laws SHOULD change for convicted terrorists.\u201d",
         "sourceUrl": "https://www.youtube.com/watch?v=Dg-NJuIBkfc",

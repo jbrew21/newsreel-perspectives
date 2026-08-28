@@ -1,7 +1,7 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "collectedAt": "2026-08-28T01:47:00.552520",
+  "collectedAt": "2026-08-28T19:06:02.656231",
   "date": "2026-08-28",
   "posts": [
     {
@@ -13,9 +13,12 @@
       "timestamp": "2026-08-26T13:54:53+00:00",
       "type": "video_title",
       "topic": "economy-trade",
-      "relevance": "high",
+      "topics": [
+        "economy-trade"
+      ],
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques Federal Reserve independence and monetary policy decisions",
+      "summary": "Critiques Federal Reserve independence and economic policy",
       "quote": "The Fed's Independence | The Weekly Show with Jon Stewart"
     },
     {
@@ -26,10 +29,14 @@
       "sourceUrl": "https://www.youtube.com/shorts/KqjR-_Akry4",
       "timestamp": "2026-08-25T13:54:39+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration",
+        "media-personalities"
+      ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Critiques Tucker Carlson's political positioning and media presence",
+      "summary": "Criticizes Tucker Carlson and Trump-aligned politics",
       "quote": "Tucker's Party | The Weekly Show with Jon Stewart"
     },
     {
@@ -40,10 +47,14 @@
       "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
       "timestamp": "2026-08-21T13:56:45+00:00",
       "type": "video_title",
-      "topic": "congress-legislation",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration",
+        "criminal-justice"
+      ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes government inaction on corruption and accountability",
+      "summary": "Contrasts Trump administration action with corruption concerns",
       "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart"
     },
     {
@@ -55,9 +66,13 @@
       "timestamp": "2026-08-19T13:59:00+00:00",
       "type": "video_title",
       "topic": "elections",
-      "relevance": "high",
+      "topics": [
+        "elections",
+        "congress-legislation"
+      ],
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Examines Democratic Party strategy for 2028 presidential race",
+      "summary": "Questions Democratic Party strategy for 2028 election",
       "quote": "Dems 2028 Plan? | The Weekly Show with Jon Stewart"
     },
     {
@@ -69,9 +84,12 @@
       "timestamp": "2026-08-18T13:58:12+00:00",
       "type": "video_title",
       "topic": "economy-trade",
-      "relevance": "high",
+      "topics": [
+        "economy-trade"
+      ],
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques rising cost of living issues",
+      "summary": "Examines cost of living and economic pressures",
       "quote": "Cost Of Living | The Weekly Show with Jon Stewart"
     },
     {
@@ -83,9 +101,12 @@
       "timestamp": "2026-08-14T13:57:20+00:00",
       "type": "video_title",
       "topic": "free-speech-censorship",
+      "topics": [
+        "free-speech-censorship"
+      ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Examines relationship between cynicism and free speech protections",
+      "summary": "Explores cynicism and free speech implications",
       "quote": "Cynicism &amp; Free Speech | The Weekly Show with Jon Stewart"
     },
     {
@@ -97,9 +118,13 @@
       "timestamp": "2026-08-13T15:54:52+00:00",
       "type": "video_title",
       "topic": "elections",
-      "relevance": "high",
+      "topics": [
+        "elections",
+        "congress-legislation"
+      ],
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques Democratic voter dissatisfaction and messaging",
+      "summary": "Addresses Democratic Party dissatisfaction and divisions",
       "quote": "Dems Dissatisfaction | The Weekly Show with Jon Stewart"
     },
     {
@@ -111,33 +136,14 @@
       "timestamp": "2026-08-13T13:56:20+00:00",
       "type": "video_title",
       "topic": "trump-policy",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Satirizes and questions MAGA movement authenticity",
-      "quote": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "Making &amp; Breaking Points: Populism, New Media &amp; More | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/watch?v=XmYD4udHP6k",
-      "timestamp": "2026-08-12T19:45:17+00:00",
-      "type": "video_title",
-      "topic": "media-press",
+      "topics": [
+        "trump-policy",
+        "culture-war"
+      ],
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Examines populism and new media's role in contemporary politics",
-      "quote": "Making &amp; Breaking Points: Populism, New Media &amp; More | The Weekly Show with Jon Stewart"
-    },
-    {
-      "voiceId": "jon-stewart",
-      "voiceName": "Jon Stewart",
-      "platform": "youtube",
-      "text": "McD's Fries vs. BK Onion Rings | The Weekly Show with Jon Stewart",
-      "sourceUrl": "https://www.youtube.com/shorts/9Tx0LPeaq-M",
-      "timestamp": "2026-08-14T16:00:35+00:00",
-      "type": "video_title"
+      "stance": "strong",
+      "summary": "Critiques MAGA movement and Trump political ideology",
+      "quote": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart"
     }
   ],
   "topicSummary": {
@@ -155,15 +161,13 @@
         "timestamp": "2026-08-18T13:58:12+00:00"
       }
     ],
-    "media-personalities": [
+    "trump-administration": [
       {
         "quote": "Tucker's Party | The Weekly Show with Jon Stewart",
         "sourceUrl": "https://www.youtube.com/shorts/KqjR-_Akry4",
         "platform": "youtube",
         "timestamp": "2026-08-25T13:54:39+00:00"
-      }
-    ],
-    "congress-legislation": [
+      },
       {
         "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart",
         "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
@@ -199,22 +203,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/guPx_6ixYes",
         "platform": "youtube",
         "timestamp": "2026-08-13T13:56:20+00:00"
-      }
-    ],
-    "media-press": [
-      {
-        "quote": "Making &amp; Breaking Points: Populism, New Media &amp; More | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/watch?v=XmYD4udHP6k",
-        "platform": "youtube",
-        "timestamp": "2026-08-12T19:45:17+00:00"
-      }
-    ],
-    "uncategorized": [
-      {
-        "quote": "McD's Fries vs. BK Onion Rings | The Weekly Show with Jon Stewart",
-        "sourceUrl": "https://www.youtube.com/shorts/9Tx0LPeaq-M",
-        "platform": "youtube",
-        "timestamp": "2026-08-14T16:00:35+00:00"
       }
     ]
   }

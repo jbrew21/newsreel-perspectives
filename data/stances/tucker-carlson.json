@@ -2,58 +2,192 @@
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
   "updatedAt": "2026-08-28",
-  "topicCount": 22,
+  "topicCount": 21,
   "stanceCount": 74,
   "topics": [
     {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 3,
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 4,
       "lastActive": "2026-08-28",
       "stances": [
         {
           "date": "2026-08-28",
-          "topic": "iran-conflict",
+          "topic": "military-defense",
           "stance": "strong",
-          "summary": "Claims Pentagon nuclear plans show U.S. lacks diplomatic options with Iran",
+          "summary": "Criticizes U.S. military strategy as desperate, warns of escalation risk",
           "quote": "LEAKED: Pentagon Nuclear Plans Prove the US Is Out of Options. Joe Kent on What Comes Next.",
           "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
           "platform": "youtube"
         },
         {
           "date": "2026-08-25",
-          "topic": "iran-conflict",
+          "topic": "military-defense",
           "stance": "strong",
-          "summary": "Argues Iran should acquire nuclear weapons capability",
-          "quote": "\u201cWhy Iran Should Get the Bomb\u201d",
-          "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
+          "summary": "Criticizes military conduct as kidnapping",
+          "quote": "Tucker Reacts to Shocking Military Kidnapping",
+          "sourceUrl": "https://www.youtube.com/shorts/bWkRkev1owI",
           "platform": "youtube"
         },
         {
-          "date": "2026-08-21",
-          "topic": "iran-conflict",
+          "date": "2026-08-12",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Questions accountability for military spending",
+          "quote": "Where Did All the Military Money Go?",
+          "sourceUrl": "https://www.youtube.com/shorts/Gcunf3AUkfE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "military-defense",
           "stance": "strong",
-          "summary": "Warns against escalation risks of nuclear war with Iran",
-          "quote": "We\u2019re Risking Nuclear War",
-          "sourceUrl": "https://www.youtube.com/shorts/isfb6c7NyJM",
+          "summary": "CIA operates without oversight and poses danger to nation",
+          "quote": "The one federal agency no one has even tried to reform is also the most powerful: CIA. Jim Erdman just resigned after a long career as an operations officer. He says the agency is completely out of control and dangerous.\n\n0:00 The CIA's Obstruction of Justice\n17:54 CIA Secrecy an",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2081786887648276864",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 9,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Challenges Trump administration on border wall construction delays",
+          "quote": "What Happened to Building a Wall?",
+          "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Accuses Trump of betraying campaign promises, warns of national consequences",
+          "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country.",
+          "sourceUrl": "https://www.youtube.com/watch?v=bf_tbI1brbg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Commenting on Trump statements; position unclear from title",
+          "quote": "Tucker on Trump\u2019s Recent Comments\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Expresses concern about Trump's escalating foreign policy approach",
+          "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World",
+          "sourceUrl": "https://www.youtube.com/watch?v=Fi4ViAuh_Os",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "References Marco Rubio confirmation or policy direction",
+          "quote": "This Is What Huckabee Told Him\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/p504cKo4-QM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "",
+          "quote": "Tucker\u2019s Message to Rick Scott",
+          "sourceUrl": "https://www.youtube.com/shorts/s5nkMIUn9T0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Questions Trump administration's motivations or allegiances",
+          "quote": "Who Is Trump Working For?",
+          "sourceUrl": "https://www.youtube.com/shorts/Ze4sgGOpSSY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Covers interview with Hunter Biden, implicit scrutiny",
+          "quote": "The Hunter Biden Interview",
+          "sourceUrl": "https://www.youtube.com/watch?v=M58G-zmqifE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Criticizes Trump business decision as unusual",
+          "quote": "Trump's Weird Business Move",
+          "sourceUrl": "https://www.youtube.com/shorts/rNHu7biXqk4",
           "platform": "youtube"
         }
       ]
     },
     {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 1,
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 5,
       "lastActive": "2026-08-28",
       "stances": [
         {
           "date": "2026-08-28",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Criticizes Trump administration for failing to build border wall",
-          "quote": "What Happened to Building a Wall?",
-          "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Signals concern about multiple international crises under current administration",
+          "quote": "Maduro, Greenland, and Now This\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/zDKaMaqVWrE",
           "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Questions CIA-Mossad intelligence relationship",
+          "quote": "CIA Reports to Mossad?",
+          "sourceUrl": "https://www.youtube.com/shorts/SiFoJoWyMo8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes NATO propaganda network pushing West toward world war",
+          "quote": "Elizabeth Lane on the secret NATO propaganda network pushing the West toward world war.\n\n0:00 Where Are All the Bots Coming From?\n9:41 What Was the Institute of Statecraft?\n13:15 The Russian Agent Lie\n15:11 Who Are \"They\"?\n25:07 Who Is Peter Pomerantsev?\n30:21 Where Does the Mone",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2083236332491661810",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes Western leaders for pushing Russia toward war they will lose",
+          "quote": "Nihilistic western leaders have been pushing for decades to have a major war with Russia. Former Royal Navy commander Steve Jermy says they\u2019re about to get that war, and lose badly.\n\n0:00 What Is Happening Between Russia and Ukraine?\n9:21 Why Would the US and NATO Want a War With",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2079250208018276707",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes U.S. ambassador for failing to defend congressman threatened by foreign-backed terrorists",
+          "quote": "An Amercian member of congress is threatened by foreign terrorists carrying American rifles, backed by a foreign military paid for by American taxpayers, and the US ambassador to that country says not a word in defense of his own countryman, and instead uses his social media acco",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2076034141485760763",
+          "platform": "x"
         }
       ]
     },
@@ -156,139 +290,6 @@
       ]
     },
     {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 8,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump for becoming what he opposed, warns of national consequences",
-          "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country.",
-          "sourceUrl": "https://www.youtube.com/watch?v=bf_tbI1brbg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Commenting on Trump statements; position unclear from title",
-          "quote": "Tucker on Trump\u2019s Recent Comments\u2026",
-          "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-24",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Expresses concern about Trump's escalating foreign policy approach",
-          "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World",
-          "sourceUrl": "https://www.youtube.com/watch?v=Fi4ViAuh_Os",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-24",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "References Marco Rubio confirmation or policy direction",
-          "quote": "This Is What Huckabee Told Him\u2026",
-          "sourceUrl": "https://www.youtube.com/shorts/p504cKo4-QM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "",
-          "quote": "Tucker\u2019s Message to Rick Scott",
-          "sourceUrl": "https://www.youtube.com/shorts/s5nkMIUn9T0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Questions Trump administration's motivations or allegiances",
-          "quote": "Who Is Trump Working For?",
-          "sourceUrl": "https://www.youtube.com/shorts/Ze4sgGOpSSY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Covers interview with Hunter Biden, implicit scrutiny",
-          "quote": "The Hunter Biden Interview",
-          "sourceUrl": "https://www.youtube.com/watch?v=M58G-zmqifE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Criticizes Trump business decision as unusual",
-          "quote": "Trump's Weird Business Move",
-          "sourceUrl": "https://www.youtube.com/shorts/rNHu7biXqk4",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 5,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Critical framing of U.S. foreign policy decisions under current administration",
-          "quote": "Maduro, Greenland, and Now This\u2026",
-          "sourceUrl": "https://www.youtube.com/shorts/zDKaMaqVWrE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Questions CIA-Mossad intelligence relationship",
-          "quote": "CIA Reports to Mossad?",
-          "sourceUrl": "https://www.youtube.com/shorts/SiFoJoWyMo8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Criticizes NATO propaganda network pushing West toward world war",
-          "quote": "Elizabeth Lane on the secret NATO propaganda network pushing the West toward world war.\n\n0:00 Where Are All the Bots Coming From?\n9:41 What Was the Institute of Statecraft?\n13:15 The Russian Agent Lie\n15:11 Who Are \"They\"?\n25:07 Who Is Peter Pomerantsev?\n30:21 Where Does the Mone",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2083236332491661810",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Criticizes Western leaders for pushing Russia toward war they will lose",
-          "quote": "Nihilistic western leaders have been pushing for decades to have a major war with Russia. Former Royal Navy commander Steve Jermy says they\u2019re about to get that war, and lose badly.\n\n0:00 What Is Happening Between Russia and Ukraine?\n9:21 Why Would the US and NATO Want a War With",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2079250208018276707",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Criticizes U.S. ambassador for failing to defend congressman threatened by foreign-backed terrorists",
-          "quote": "An Amercian member of congress is threatened by foreign terrorists carrying American rifles, backed by a foreign military paid for by American taxpayers, and the US ambassador to that country says not a word in defense of his own countryman, and instead uses his social media acco",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2076034141485760763",
-          "platform": "x"
-        }
-      ]
-    },
-    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 3,
@@ -324,37 +325,28 @@
       ]
     },
     {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 3,
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 2,
       "lastActive": "2026-08-25",
       "stances": [
         {
           "date": "2026-08-25",
-          "topic": "military-defense",
+          "topic": "iran-conflict",
           "stance": "strong",
-          "summary": "Criticizes military conduct as kidnapping",
-          "quote": "Tucker Reacts to Shocking Military Kidnapping",
-          "sourceUrl": "https://www.youtube.com/shorts/bWkRkev1owI",
+          "summary": "Argues Iran should acquire nuclear weapons capability",
+          "quote": "\u201cWhy Iran Should Get the Bomb\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
           "platform": "youtube"
         },
         {
-          "date": "2026-08-12",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Questions accountability for military spending",
-          "quote": "Where Did All the Military Money Go?",
-          "sourceUrl": "https://www.youtube.com/shorts/Gcunf3AUkfE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "military-defense",
+          "date": "2026-08-21",
+          "topic": "iran-conflict",
           "stance": "strong",
-          "summary": "CIA operates without oversight and poses danger to nation",
-          "quote": "The one federal agency no one has even tried to reform is also the most powerful: CIA. Jim Erdman just resigned after a long career as an operations officer. He says the agency is completely out of control and dangerous.\n\n0:00 The CIA's Obstruction of Justice\n17:54 CIA Secrecy an",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2081786887648276864",
-          "platform": "x"
+          "summary": "Warns against escalation risks of nuclear war with Iran",
+          "quote": "We\u2019re Risking Nuclear War",
+          "sourceUrl": "https://www.youtube.com/shorts/isfb6c7NyJM",
+          "platform": "youtube"
         }
       ]
     },

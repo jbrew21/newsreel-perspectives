@@ -2,29 +2,37 @@
   "voiceId": "leeja-miller",
   "voiceName": "Leeja Miller",
   "updatedAt": "2026-08-28",
-  "topicCount": 13,
-  "stanceCount": 21,
+  "topicCount": 15,
+  "stanceCount": 22,
   "topics": [
     {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 3,
-      "lastActive": "2026-08-27",
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-08-27",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Questions U.S. expansionist ambitions toward Canada",
+          "date": "2026-08-28",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Critiques Trump expansionist rhetoric toward Canada as aggressive imperialism",
           "quote": "Manifest Destiny Includes Canada, Too",
           "sourceUrl": "https://www.youtube.com/watch?v=7UVJJI2ebcY",
           "platform": "youtube"
-        },
+        }
+      ]
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 2,
+      "lastActive": "2026-08-28",
+      "stances": [
         {
-          "date": "2026-08-20",
+          "date": "2026-08-28",
           "topic": "foreign-policy-diplomacy",
           "stance": "lean",
-          "summary": "Examines U.S. policy fixation on Cuba through critical framing",
+          "summary": "Examines U.S. historical antagonism and policy focus on Cuba",
           "quote": "Why Is The US Obsessed With Cuba?",
           "sourceUrl": "https://www.youtube.com/watch?v=-HEvrPz8kJg",
           "platform": "youtube"
@@ -41,53 +49,35 @@
       ]
     },
     {
-      "topic": "protests-activism",
-      "label": "Protests & Activism",
-      "count": 2,
-      "lastActive": "2026-08-14",
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 1,
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-08-14",
-          "topic": "protests-activism",
-          "stance": "lean",
-          "summary": "Criticizes DHS surveillance of leftist activists",
+          "date": "2026-08-28",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Criticizes DHS surveillance targeting left-wing activists as overreach",
           "quote": "DHS Spies On Leftists; Gamblers Bet On Natural Disasters | Friday Roundup",
           "sourceUrl": "https://www.youtube.com/watch?v=3i77ZJDlTFQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "protests-activism",
-          "stance": "lean",
-          "summary": "Covers police use of force against senators during protest",
-          "quote": "They're Pepper Spraying Senators Now",
-          "sourceUrl": "https://www.youtube.com/watch?v=WYHxDpFXZTY",
           "platform": "youtube"
         }
       ]
     },
     {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 2,
-      "lastActive": "2026-08-12",
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 1,
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-08-12",
-          "topic": "culture-war",
+          "date": "2026-08-28",
+          "topic": "free-speech-censorship",
           "stance": "lean",
-          "summary": "Critiques contemporary anti-communist rhetoric and historical parallels",
+          "summary": "Analyzes parallels between contemporary anti-communist rhetoric and historical McCarthyism",
           "quote": "The New Red Scare",
           "sourceUrl": "https://www.youtube.com/watch?v=1pdrZuZxzOc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Compares current US political moment to French Revolution period",
-          "quote": "Is The US In Its French Revolution Era?",
-          "sourceUrl": "https://www.youtube.com/watch?v=LVq6GzfyGqI",
           "platform": "youtube"
         }
       ]
@@ -95,9 +85,18 @@
     {
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2026-07-29",
+      "count": 2,
+      "lastActive": "2026-08-28",
       "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Meta settlement frames as limited victory, raises scrutiny of actual enforcement",
+          "quote": "The Meta Settlement Isn\u2019t The Victory You Think It Is",
+          "sourceUrl": "https://www.youtube.com/watch?v=VmQp4cyyqbs",
+          "platform": "youtube"
+        },
         {
           "date": "2026-07-29",
           "topic": "supreme-court-legal",
@@ -113,13 +112,13 @@
       "topic": "religion-faith",
       "label": "Religion & Faith",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-08-28",
           "topic": "religion-faith",
           "stance": "lean",
-          "summary": "Examines whether United States was founded as Christian nation",
+          "summary": "Questions whether U.S. founding principles align with Christian nationalism claims",
           "quote": "Is the US a Christian Nation?",
           "sourceUrl": "https://www.youtube.com/watch?v=FU0eOrIPJ4w",
           "platform": "youtube"
@@ -127,18 +126,61 @@
       ]
     },
     {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 2,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Legal critique of Trump administration prosecutions targeting antifa activists",
+          "quote": "A Legal Analysis of Trump's Antifa Prosecutions",
+          "sourceUrl": "https://www.youtube.com/watch?v=jc8en44IWDo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump slush fund arrangement as worse than public realizes",
+          "quote": "Trump's Slush Fund Is Worse Than You Think | EXPLAINER",
+          "sourceUrl": "https://www.youtube.com/watch?v=jsPiXlGkbWU",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
       "count": 1,
       "lastActive": "2026-07-29",
       "stances": [
         {
           "date": "2026-07-29",
-          "topic": "criminal-justice",
+          "topic": "protests-activism",
           "stance": "lean",
-          "summary": "Provides legal analysis of Trump administration's antifa prosecutions",
-          "quote": "A Legal Analysis of Trump's Antifa Prosecutions",
-          "sourceUrl": "https://www.youtube.com/watch?v=jc8en44IWDo",
+          "summary": "Covers police use of force against senators during protest",
+          "quote": "They're Pepper Spraying Senators Now",
+          "sourceUrl": "https://www.youtube.com/watch?v=WYHxDpFXZTY",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Compares current US political moment to French Revolution period",
+          "quote": "Is The US In Its French Revolution Era?",
+          "sourceUrl": "https://www.youtube.com/watch?v=LVq6GzfyGqI",
           "platform": "youtube"
         }
       ]
@@ -175,23 +217,6 @@
           "quote": "in which I publicly bully @elonmusk piped.video/SbYeTdz_JTc",
           "sourceUrl": "https://x.com/LeejaMiller/status/1848472374645297341",
           "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump slush fund arrangement as worse than public realizes",
-          "quote": "Trump's Slush Fund Is Worse Than You Think | EXPLAINER",
-          "sourceUrl": "https://www.youtube.com/watch?v=jsPiXlGkbWU",
-          "platform": "youtube"
         }
       ]
     },

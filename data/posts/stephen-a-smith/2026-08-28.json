@@ -1,7 +1,7 @@
 {
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
-  "collectedAt": "2026-08-28T01:47:00.554532",
+  "collectedAt": "2026-08-28T19:06:02.658147",
   "date": "2026-08-28",
   "posts": [
     {
@@ -13,7 +13,10 @@
       "timestamp": "2026-08-26T01:00:05+00:00",
       "type": "video_title",
       "topic": "media-press",
-      "relevance": "high",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "medium",
       "stance": "strong",
       "summary": "Criticizes journalists for conflating disagreement with disparagement",
       "quote": "Journalists Should Know the Difference Between Disagreement and Disparagement"
@@ -27,9 +30,12 @@
       "timestamp": "2026-08-26T00:00:06+00:00",
       "type": "video_title",
       "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Demands evidence or accountability from unnamed target",
+      "summary": "Demands evidence or accountability from unnamed critic",
       "quote": "11 Days Later and Still No Receipts!"
     },
     {
@@ -41,38 +47,13 @@
       "timestamp": "2026-08-19T16:21:25+00:00",
       "type": "video_title",
       "topic": "civil-rights-race",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Commits to creating opportunities for Black journalists",
-      "quote": "The work speaks for itself. I\u2019ll keep opening doors and creating opportunities for Black journalist."
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "youtube",
-      "text": "The greatest woman I have ever known is a Black woman.",
-      "sourceUrl": "https://www.youtube.com/shorts/qKcrM7sbBb4",
-      "timestamp": "2026-08-17T20:05:15+00:00",
-      "type": "video_title",
-      "topic": "civil-rights-race",
+      "topics": [
+        "civil-rights-race"
+      ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Affirms respect and admiration for Black women",
-      "quote": "The greatest woman I have ever known is a Black woman."
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "youtube",
-      "text": "Now you want the conversation to be PRIVATE?...",
-      "sourceUrl": "https://www.youtube.com/shorts/dwWt4GXpaDw",
-      "timestamp": "2026-08-17T19:08:04+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes NABJ for seeking private conversation instead of public debate",
-      "quote": "Now you want the conversation to be PRIVATE?..."
+      "summary": "Commits to opening doors and creating opportunities for Black journalists",
+      "quote": "The work speaks for itself. I\u2019ll keep opening doors and creating opportunities for Black journalist."
     },
     {
       "voiceId": "stephen-a-smith",
@@ -83,108 +64,13 @@
       "timestamp": "2026-08-17T19:00:06+00:00",
       "type": "video_title",
       "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Defends himself against NABJ criticism, demands factual discussion",
+      "summary": "Responds defensively to criticism from NABJ organization",
       "quote": "I Was Blindsided by NABJ - Now I\u2019m Responding"
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "youtube",
-      "text": "He Said it was a FAILURE, I Don't Think So! I Stephen A. Reacts",
-      "sourceUrl": "https://www.youtube.com/shorts/BQ6WEpJmqx4",
-      "timestamp": "2026-08-13T21:30:30+00:00",
-      "type": "video_title",
-      "topic": "sports",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Disputes characterization of Lakers situation as failure",
-      "quote": "He Said it was a FAILURE, I Don't Think So! I Stephen A. Reacts"
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "youtube",
-      "text": "\u201cI want a legitimate run for the presidency!\u201d I Stephen A. Smith #stephenasmith #politics #news",
-      "sourceUrl": "https://www.youtube.com/shorts/gt-x9KDbGUM",
-      "timestamp": "2026-08-13T20:34:06+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Expresses desire for legitimate presidential candidacy consideration",
-      "quote": "\u201cI want a legitimate run for the presidency!\u201d I Stephen A. Smith #stephenasmith #politics #news"
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "tiktok",
-      "text": "Enes Kanter went too far with the WNBA. Watch my full take on YouTube now! Do you think he was wrong?",
-      "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7678116903918800141",
-      "timestamp": "2026-08-25T23:35:01+00:00",
-      "type": "video_caption",
-      "topic": "sports",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Enes Kanter for overstepping with WNBA comments",
-      "quote": "Enes Kanter went too far with the WNBA. Watch my full take on YouTube now! Do you think he was wrong?"
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "tiktok",
-      "text": "There\u2019s no time to play small when the goals are this big. It\u2019s clear what Dave Canales expects from this team and just how far he believes the Carolina Panthers can go this season. Panthers fans, watch the full conversation on YouTube now.",
-      "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7678073002147302670",
-      "timestamp": "2026-08-25T20:45:03+00:00",
-      "type": "video_caption",
-      "topic": "sports",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Supports Dave Canales' ambitious vision for Panthers",
-      "quote": "There\u2019s no time to play small when the goals are this big. It\u2019s clear what Dave Canales expects from this team and just how far he believes the Carolina Panthers can go this season. Panthers fans, watch the full conversation on YouTube now."
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "tiktok",
-      "text": "Dave Canales, Head Coach of the Carolina Panthers, reveals what he sees in Bryce Young! Panthers fans, how far can this team go? Watch the full conversation on The Stephen A. Smith Show on YouTube.",
-      "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7678033041977003277",
-      "timestamp": "2026-08-25T18:10:04+00:00",
-      "type": "video_caption",
-      "topic": "sports",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights Dave Canales' confidence in Bryce Young's potential",
-      "quote": "Dave Canales, Head Coach of the Carolina Panthers, reveals what he sees in Bryce Young! Panthers fans, how far can this team go? Watch the full conversation on The Stephen A. Smith Show on YouTube."
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "tiktok",
-      "text": "Coach Harbaugh told me what makes Mike McDaniel SPECIAL. I had some thoughts of my own...full conversation on YouTube NOW.",
-      "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7676191886666730765",
-      "timestamp": "2026-08-20T19:05:03+00:00",
-      "type": "video_caption",
-      "topic": "sports",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Praises Mike McDaniel as a special coach",
-      "quote": "Coach Harbaugh told me what makes Mike McDaniel SPECIAL. I had some thoughts of my own...full conversation on YouTube NOW."
-    },
-    {
-      "voiceId": "stephen-a-smith",
-      "voiceName": "Stephen A. Smith",
-      "platform": "tiktok",
-      "text": "Everybody\u2019s got something to say about this NFL season! The coaches. The pressure. The expectations. And the decisions that could change everything! 3 PARTS. 3 COACHES. STRAIGHT ANSWERS. Coming to Youtube today at 3PM ET!",
-      "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7676175264132500750",
-      "timestamp": "2026-08-20T18:00:29+00:00",
-      "type": "video_caption",
-      "topic": "sports",
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Explores NFL season pressures and coaching decisions",
-      "quote": "Everybody\u2019s got something to say about this NFL season! The coaches. The pressure. The expectations. And the decisions that could change everything! 3 PARTS. 3 COACHES. STRAIGHT ANSWERS. Coming to Youtube today at 3PM ET!"
     }
   ],
   "topicSummary": {
@@ -204,12 +90,6 @@
         "timestamp": "2026-08-26T00:00:06+00:00"
       },
       {
-        "quote": "Now you want the conversation to be PRIVATE?...",
-        "sourceUrl": "https://www.youtube.com/shorts/dwWt4GXpaDw",
-        "platform": "youtube",
-        "timestamp": "2026-08-17T19:08:04+00:00"
-      },
-      {
         "quote": "I Was Blindsided by NABJ - Now I\u2019m Responding",
         "sourceUrl": "https://www.youtube.com/watch?v=BITy6WSbniQ",
         "platform": "youtube",
@@ -222,58 +102,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/2H5t0tlv3jg",
         "platform": "youtube",
         "timestamp": "2026-08-19T16:21:25+00:00"
-      },
-      {
-        "quote": "The greatest woman I have ever known is a Black woman.",
-        "sourceUrl": "https://www.youtube.com/shorts/qKcrM7sbBb4",
-        "platform": "youtube",
-        "timestamp": "2026-08-17T20:05:15+00:00"
-      }
-    ],
-    "sports": [
-      {
-        "quote": "He Said it was a FAILURE, I Don't Think So! I Stephen A. Reacts",
-        "sourceUrl": "https://www.youtube.com/shorts/BQ6WEpJmqx4",
-        "platform": "youtube",
-        "timestamp": "2026-08-13T21:30:30+00:00"
-      },
-      {
-        "quote": "Enes Kanter went too far with the WNBA. Watch my full take on YouTube now! Do you think he was wrong?",
-        "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7678116903918800141",
-        "platform": "tiktok",
-        "timestamp": "2026-08-25T23:35:01+00:00"
-      },
-      {
-        "quote": "There\u2019s no time to play small when the goals are this big. It\u2019s clear what Dave Canales expects from this team and just how far he believes the Carolina Panthers can go this season. Panthers fans, watch the full conversation on YouTube now.",
-        "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7678073002147302670",
-        "platform": "tiktok",
-        "timestamp": "2026-08-25T20:45:03+00:00"
-      },
-      {
-        "quote": "Dave Canales, Head Coach of the Carolina Panthers, reveals what he sees in Bryce Young! Panthers fans, how far can this team go? Watch the full conversation on The Stephen A. Smith Show on YouTube.",
-        "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7678033041977003277",
-        "platform": "tiktok",
-        "timestamp": "2026-08-25T18:10:04+00:00"
-      },
-      {
-        "quote": "Coach Harbaugh told me what makes Mike McDaniel SPECIAL. I had some thoughts of my own...full conversation on YouTube NOW.",
-        "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7676191886666730765",
-        "platform": "tiktok",
-        "timestamp": "2026-08-20T19:05:03+00:00"
-      },
-      {
-        "quote": "Everybody\u2019s got something to say about this NFL season! The coaches. The pressure. The expectations. And the decisions that could change everything! 3 PARTS. 3 COACHES. STRAIGHT ANSWERS. Coming to Youtube today at 3PM ET!",
-        "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7676175264132500750",
-        "platform": "tiktok",
-        "timestamp": "2026-08-20T18:00:29+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "\u201cI want a legitimate run for the presidency!\u201d I Stephen A. Smith #stephenasmith #politics #news",
-        "sourceUrl": "https://www.youtube.com/shorts/gt-x9KDbGUM",
-        "platform": "youtube",
-        "timestamp": "2026-08-13T20:34:06+00:00"
       }
     ]
   }

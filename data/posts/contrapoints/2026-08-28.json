@@ -1,23 +1,9 @@
 {
   "voiceId": "contrapoints",
   "voiceName": "ContraPoints",
-  "collectedAt": "2026-08-28T01:47:00.561097",
+  "collectedAt": "2026-08-28T19:06:02.663814",
   "date": "2026-08-28",
   "posts": [
-    {
-      "voiceId": "contrapoints",
-      "voiceName": "ContraPoints",
-      "platform": "youtube",
-      "text": "Tangent: Liberalism",
-      "sourceUrl": "https://www.youtube.com/shorts/g5o-OpVUHF0",
-      "timestamp": "2026-08-19T15:00:57+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Examines liberalism and online political discourse dynamics",
-      "quote": "Tangent: Liberalism"
-    },
     {
       "voiceId": "contrapoints",
       "voiceName": "ContraPoints",
@@ -27,9 +13,13 @@
       "timestamp": "2023-04-17T22:59:53+00:00",
       "type": "video_title",
       "topic": "gender-lgbtq",
-      "relevance": "high",
+      "topics": [
+        "gender-lgbtq",
+        "free-speech-censorship"
+      ],
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Video essay on J.K. Rowling's gender-critical statements and controversy",
+      "summary": "Defends trans rights against J.K. Rowling's public statements",
       "quote": "The Witch Trials of J.K. Rowling | ContraPoints"
     },
     {
@@ -41,9 +31,13 @@
       "timestamp": "2021-01-26T14:14:19+00:00",
       "type": "video_title",
       "topic": "gender-lgbtq",
-      "relevance": "high",
+      "topics": [
+        "gender-lgbtq",
+        "free-speech-censorship"
+      ],
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Video essay analyzing J.K. Rowling's positions and impact",
+      "summary": "Critiques J.K. Rowling's trans-exclusionary rhetoric and influence",
       "quote": "J.K. Rowling | ContraPoints"
     },
     {
@@ -55,21 +49,16 @@
       "timestamp": "2020-10-20T02:44:10+00:00",
       "type": "video_title",
       "topic": "elections",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Video essay on voting and electoral participation",
+      "topics": [
+        "elections"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Examines voting as political participation and democratic practice",
       "quote": "Voting | ContraPoints"
     }
   ],
   "topicSummary": {
-    "culture-war": [
-      {
-        "quote": "Tangent: Liberalism",
-        "sourceUrl": "https://www.youtube.com/shorts/g5o-OpVUHF0",
-        "platform": "youtube",
-        "timestamp": "2026-08-19T15:00:57+00:00"
-      }
-    ],
     "gender-lgbtq": [
       {
         "quote": "The Witch Trials of J.K. Rowling | ContraPoints",

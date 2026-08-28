@@ -1,36 +1,42 @@
 {
   "voiceId": "mike-konczal",
   "voiceName": "Mike Konczal",
-  "collectedAt": "2026-08-28T03:46:15.487622",
+  "collectedAt": "2026-08-28T19:06:02.685213",
   "date": "2026-08-28",
   "posts": [
     {
       "voiceId": "mike-konczal",
       "voiceName": "Mike Konczal",
       "platform": "bluesky",
-      "text": "I haven't been a big fan of the \"in hours of work\" measure in general, like for groceries. I like it for rent because:\n- linkage between wages and housing prices at state level\n- issue of deflating shelter by CPI which is a third shelter\n- big enough of a single item that it tracks",
-      "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3mt62qttxqs2h",
-      "timestamp": "2026-08-16T01:43:19.351Z",
+      "text": "There's a political question here, as Trump advocates are calling on the Fed to ignore PCE and just focus on CPI.\n\nAnd a media one! Since CPI gets the coverage, it is easy to think inflation is lower. Meanwhile media barely covers PCE, which is raging. 2/2 newsletter.mikekonczal.com/p/is-the-act...",
+      "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3mu5lleekxk2a",
+      "timestamp": "2026-08-28T14:37:00.846Z",
       "type": "post",
       "topic": "economy-trade",
-      "relevance": "medium",
+      "topics": [
+        "economy-trade"
+      ],
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Prefers wages-to-housing metric over hours-of-work measure",
-      "quote": "I haven't been a big fan of the \"in hours of work\" measure in general, like for groceries. I like it for rent because:\n- linkage between wages and housing prices at state level\n- issue of deflating shelter by CPI which is a third shelter\n- big enough of a single item that it tracks"
+      "summary": "Trump advocates push misleading inflation narrative by favoring CPI over PCE",
+      "quote": "There's a political question here, as Trump advocates are calling on the Fed to ignore PCE and just focus on CPI.\n\nAnd a media one! Since CPI gets the coverage, it is easy to think inflation is lower. Meanwhile media barely covers PCE, which is raging. 2/2 newsletter.mikekonczal.com/p/is-the-act..."
     },
     {
       "voiceId": "mike-konczal",
       "voiceName": "Mike Konczal",
       "platform": "bluesky",
-      "text": "I think a more micro vibes discussion, after decades of general macro vibes and a current obsession with macro frames, is important.\n\nBoth because macro variables are going to miss what's happening in this moment, and the political tripwires are also different in this world. 4/4",
-      "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3msxzwdpazk24",
-      "timestamp": "2026-08-13T16:12:31.573Z",
+      "text": "New piece on the most interesting inflation question I think is out there. It's debated in some circles, but is definitely missing from the general discourse and coverage:\n\nis inflation CPI, and thus near its target, or PCE, and so high and above target it deserve hikes? /1",
+      "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3mu5ljg3eqc2a",
+      "timestamp": "2026-08-28T14:35:55.532Z",
       "type": "post",
       "topic": "economy-trade",
-      "relevance": "medium",
+      "topics": [
+        "economy-trade"
+      ],
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Argues micro-level affordability data more politically relevant than macro metrics",
-      "quote": "I think a more micro vibes discussion, after decades of general macro vibes and a current obsession with macro frames, is important.\n\nBoth because macro variables are going to miss what's happening in this moment, and the political tripwires are also different in this world. 4/4"
+      "summary": "PCE inflation remains elevated and above target, missing from mainstream discourse",
+      "quote": "New piece on the most interesting inflation question I think is out there. It's debated in some circles, but is definitely missing from the general discourse and coverage:\n\nis inflation CPI, and thus near its target, or PCE, and so high and above target it deserve hikes? /1"
     },
     {
       "voiceId": "mike-konczal",
@@ -41,73 +47,34 @@
       "timestamp": "2026-08-13T16:11:49.741Z",
       "type": "post",
       "topic": "economy-trade",
-      "relevance": "high",
+      "topics": [
+        "economy-trade"
+      ],
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques inflation discourse, emphasizes affordability over macro metrics",
+      "summary": "Affordability crisis misunderstood by focusing on anecdotes rather than structural economics",
       "quote": "I also used this as an opportunity to blog up my current thinking on vibescession and affordability.\n\nI think the $20 burrito discourse really misses what is going on, as well as its political and economic dimensions. /3 newsletter.mikekonczal.com/p/our-new-af..."
-    },
-    {
-      "voiceId": "mike-konczal",
-      "voiceName": "Mike Konczal",
-      "platform": "bluesky",
-      "text": "Very excited to share what we built at \n@economicsecurityproject.org: the Affordability Dashboard.\n\nThere's a bunch of scattered data I'm always pulling, stuff useful for politicos, reporters, and activists on affordability, so we put it in one place. /1 economicsecurityproject.org/resource/aff...",
-      "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3msxzt2koz224",
-      "timestamp": "2026-08-13T16:10:41.324Z",
-      "type": "post",
-      "topic": "economy-trade",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Launches tool to improve affordability data accessibility",
-      "quote": "Very excited to share what we built at \n@economicsecurityproject.org: the Affordability Dashboard.\n\nThere's a bunch of scattered data I'm always pulling, stuff useful for politicos, reporters, and activists on affordability, so we put it in one place. /1 economicsecurityproject.org/resource/aff..."
-    },
-    {
-      "voiceId": "mike-konczal",
-      "voiceName": "Mike Konczal",
-      "platform": "bluesky",
-      "text": "I have it pull the data from BLS API as part of a script I wrote, so I don't believe it's making it up.\n\nI'd test anything before I'd use it, just want to get ideas and mockups here, but at this point the frontier models are very good on summary statistic accuracy.",
-      "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3msj53hwrtc2b",
-      "timestamp": "2026-08-07T17:59:08.938Z",
-      "type": "post",
-      "topic": "ai-technology",
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frontier AI models are reliable for data accuracy work",
-      "quote": "I have it pull the data from BLS API as part of a script I wrote, so I don't believe it's making it up.\n\nI'd test anything before I'd use it, just want to get ideas and mockups here, but at this point the frontier models are very good on summary statistic accuracy."
     }
   ],
   "topicSummary": {
     "economy-trade": [
       {
-        "quote": "I haven't been a big fan of the \"in hours of work\" measure in general, like for groceries. I like it for rent because:\n- linkage between wages and housing prices at state level\n- issue of deflating shelter by CPI which is a third shelter\n- big enough of a single item that it tracks",
-        "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3mt62qttxqs2h",
+        "quote": "There's a political question here, as Trump advocates are calling on the Fed to ignore PCE and just focus on CPI.\n\nAnd a media one! Since CPI gets the coverage, it is easy to think inflation is lower. Meanwhile media barely covers PCE, which is raging. 2/2 newsletter.mikekonczal.com/p/is-the-act...",
+        "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3mu5lleekxk2a",
         "platform": "bluesky",
-        "timestamp": "2026-08-16T01:43:19.351Z"
+        "timestamp": "2026-08-28T14:37:00.846Z"
       },
       {
-        "quote": "I think a more micro vibes discussion, after decades of general macro vibes and a current obsession with macro frames, is important.\n\nBoth because macro variables are going to miss what's happening in this moment, and the political tripwires are also different in this world. 4/4",
-        "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3msxzwdpazk24",
+        "quote": "New piece on the most interesting inflation question I think is out there. It's debated in some circles, but is definitely missing from the general discourse and coverage:\n\nis inflation CPI, and thus near its target, or PCE, and so high and above target it deserve hikes? /1",
+        "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3mu5ljg3eqc2a",
         "platform": "bluesky",
-        "timestamp": "2026-08-13T16:12:31.573Z"
+        "timestamp": "2026-08-28T14:35:55.532Z"
       },
       {
         "quote": "I also used this as an opportunity to blog up my current thinking on vibescession and affordability.\n\nI think the $20 burrito discourse really misses what is going on, as well as its political and economic dimensions. /3 newsletter.mikekonczal.com/p/our-new-af...",
         "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3msxzv3slj224",
         "platform": "bluesky",
         "timestamp": "2026-08-13T16:11:49.741Z"
-      },
-      {
-        "quote": "Very excited to share what we built at \n@economicsecurityproject.org: the Affordability Dashboard.\n\nThere's a bunch of scattered data I'm always pulling, stuff useful for politicos, reporters, and activists on affordability, so we put it in one place. /1 economicsecurityproject.org/resource/aff...",
-        "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3msxzt2koz224",
-        "platform": "bluesky",
-        "timestamp": "2026-08-13T16:10:41.324Z"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "I have it pull the data from BLS API as part of a script I wrote, so I don't believe it's making it up.\n\nI'd test anything before I'd use it, just want to get ideas and mockups here, but at this point the frontier models are very good on summary statistic accuracy.",
-        "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3msj53hwrtc2b",
-        "platform": "bluesky",
-        "timestamp": "2026-08-07T17:59:08.938Z"
       }
     ]
   }

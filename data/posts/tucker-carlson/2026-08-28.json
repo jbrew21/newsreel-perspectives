@@ -1,36 +1,44 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-28T01:47:00.550421",
+  "collectedAt": "2026-08-28T19:06:02.654245",
   "date": "2026-08-28",
   "posts": [
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
       "platform": "youtube",
-      "text": "Tucker Shuts Down Mark Cuban",
-      "sourceUrl": "https://www.youtube.com/shorts/bP2nFKl66PU",
-      "timestamp": "2026-08-27T17:00:15+00:00",
+      "text": "LEAKED: Pentagon Nuclear Plans Prove the US Is Out of Options. Joe Kent on What Comes Next.",
+      "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
+      "timestamp": "2026-08-28T17:00:06+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
+      "topic": "military-defense",
+      "topics": [
+        "military-defense",
+        "iran-conflict"
+      ],
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Mark Cuban in confrontational exchange",
-      "quote": "Tucker Shuts Down Mark Cuban"
+      "summary": "Criticizes U.S. military strategy as desperate, warns of escalation risk",
+      "quote": "LEAKED: Pentagon Nuclear Plans Prove the US Is Out of Options. Joe Kent on What Comes Next."
     },
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
       "platform": "youtube",
-      "text": "Tucker Obliterates Mark Cuban: \u201cVanity!\u201d",
-      "sourceUrl": "https://www.youtube.com/shorts/4ysgJyUswmA",
-      "timestamp": "2026-08-27T15:00:18+00:00",
+      "text": "What Happened to Building a Wall?",
+      "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
+      "timestamp": "2026-08-27T20:00:13+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
-      "relevance": "medium",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration",
+        "immigration"
+      ],
+      "relevance": "high",
       "stance": "strong",
-      "summary": "Attacks Mark Cuban's motives as vanity-driven",
-      "quote": "Tucker Obliterates Mark Cuban: \u201cVanity!\u201d"
+      "summary": "Challenges Trump administration on border wall construction delays",
+      "quote": "What Happened to Building a Wall?"
     },
     {
       "voiceId": "tucker-carlson",
@@ -41,9 +49,13 @@
       "timestamp": "2026-08-27T00:46:01+00:00",
       "type": "video_title",
       "topic": "trump-administration",
+      "topics": [
+        "trump-administration",
+        "trump-policy"
+      ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Criticizes Trump for becoming what he opposed, warns of national consequences",
+      "summary": "Accuses Trump of betraying campaign promises, warns of national consequences",
       "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country."
     },
     {
@@ -55,56 +67,31 @@
       "timestamp": "2026-08-26T21:00:14+00:00",
       "type": "video_title",
       "topic": "foreign-policy-diplomacy",
+      "topics": [
+        "foreign-policy-diplomacy"
+      ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Critical framing of U.S. foreign policy decisions under current administration",
+      "summary": "Signals concern about multiple international crises under current administration",
       "quote": "Maduro, Greenland, and Now This\u2026"
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "LEAKED: Pentagon Nuclear Plans Prove the US Is Out of Options. Joe Kent on What Comes Next.",
-      "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
-      "timestamp": "2026-08-27T20:31:54+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Claims Pentagon nuclear plans show U.S. lacks diplomatic options with Iran",
-      "quote": "LEAKED: Pentagon Nuclear Plans Prove the US Is Out of Options. Joe Kent on What Comes Next."
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "What Happened to Building a Wall?",
-      "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
-      "timestamp": "2026-08-27T20:00:13+00:00",
-      "type": "video_title",
-      "topic": "immigration",
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Trump administration for failing to build border wall",
-      "quote": "What Happened to Building a Wall?"
     }
   ],
   "topicSummary": {
-    "media-personalities": [
+    "military-defense": [
       {
-        "quote": "Tucker Shuts Down Mark Cuban",
-        "sourceUrl": "https://www.youtube.com/shorts/bP2nFKl66PU",
+        "quote": "LEAKED: Pentagon Nuclear Plans Prove the US Is Out of Options. Joe Kent on What Comes Next.",
+        "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
         "platform": "youtube",
-        "timestamp": "2026-08-27T17:00:15+00:00"
-      },
-      {
-        "quote": "Tucker Obliterates Mark Cuban: \u201cVanity!\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/4ysgJyUswmA",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T15:00:18+00:00"
+        "timestamp": "2026-08-28T17:00:06+00:00"
       }
     ],
     "trump-administration": [
+      {
+        "quote": "What Happened to Building a Wall?",
+        "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T20:00:13+00:00"
+      },
       {
         "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country.",
         "sourceUrl": "https://www.youtube.com/watch?v=bf_tbI1brbg",
@@ -118,22 +105,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/zDKaMaqVWrE",
         "platform": "youtube",
         "timestamp": "2026-08-26T21:00:14+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "LEAKED: Pentagon Nuclear Plans Prove the US Is Out of Options. Joe Kent on What Comes Next.",
-        "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T20:31:54+00:00"
-      }
-    ],
-    "immigration": [
-      {
-        "quote": "What Happened to Building a Wall?",
-        "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T20:00:13+00:00"
       }
     ]
   }
