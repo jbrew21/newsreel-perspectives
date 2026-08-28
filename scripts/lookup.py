@@ -763,6 +763,7 @@ def lookup_story(headline, days=None, skip_clusters=False):
                 'platform': entry.get('platform', ''),
                 'timestamp': entry.get('timestamp', ''),
                 '_quote_score': quote_score,
+                '_src': 'topic',
             })
 
     # Strategy 2: Full-text search across ALL posts (multiple days)
@@ -778,16 +779,45 @@ def lookup_story(headline, days=None, skip_clusters=False):
                     voices_found[vid]['quotes'].append(q)
                     voices_found[vid]['topics'].append(q['topic'])
 
+    # Rarity re-weighting (Aug 28 2026): in "trump tariffs", 'trump' appears in
+    # half the candidate quotes and says nothing about relevance — 'tariffs' is
+    # the signal. Re-score topic-index quotes weighting each keyword by how
+    # rare it is across THIS result set, so single-common-word hits sink below
+    # quotes that use the query's distinctive terms. Fulltext quotes keep their
+    # own density-based scores.
+    all_quotes = [q for d in voices_found.values() for q in d['quotes']]
+    if len(all_quotes) >= 8 and len(query_keywords) > 1:
+        n = len(all_quotes)
+        df = {w: sum(1 for q in all_quotes if w in q['quote'].lower()) / n
+              for w in query_keywords}
+        for d in voices_found.values():
+            for q in d['quotes']:
+                if q.get('_src') != 'topic':
+                    continue
+                ql = q['quote'].lower()
+                score = 1 + sum((2 if df[w] <= 0.3 else 0.5)
+                                for w in query_keywords if w in ql)
+                score += min(sum(1 for w in bonus_terms if w in ql), 2)
+                if is_promo_quote(q['quote']):
+                    score -= 100
+                q['_quote_score'] = score
+
     # Relevance gate (Aug 28 2026): a voice must either quote the story's own
     # words / a matched topic's signature terms (_quote_score > 1), or have a
     # post filed under the search's PRIMARY topic. Without this, a voice tagged
     # only with an adjacent topic renders posts about something else entirely.
     if query_keywords and matching_topics:
         primary = matching_topics[0]
+        # A multi-word query is MORE specific than any single topic tag, so a
+        # broad primary ("trump tariffs" -> trump-policy) doesn't vouch for a
+        # voice by itself — the quote must hit a query word or bonus term.
+        # Single-word queries ("congress") keep the tag bypass: the query IS
+        # the topic, and a bill post needn't say the literal word.
+        primary_vouches = not (len(query_keywords) > 1 and primary in BROAD_TOPICS)
         gated = {}
         for vid, data in voices_found.items():
             best = max((q.get('_quote_score', 0) for q in data['quotes']), default=0)
-            if best > 1 or any(q.get('topic') == primary for q in data['quotes']):
+            if best > 1 or (primary_vouches and any(q.get('topic') == primary for q in data['quotes'])):
                 gated[vid] = data
         if len(gated) < len(voices_found):
             print(f"  Relevance gate: dropped {len(voices_found) - len(gated)} voices with no on-topic quote")
