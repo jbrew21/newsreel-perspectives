@@ -550,6 +550,62 @@ Example: {{"Tucker Carlson": "anti-war right", "Ben Shapiro": "pro-intervention 
         json_match = re.search(r'\{[\s\S]*\}', result_text)
         if json_match:
             name_to_cluster = json.loads(json_match.group())
+
+            # Enforce the 4-6 cluster instruction. The model routinely sprawls
+            # (17 labels for 24 voices, Aug 28 2026) and a wall of singleton
+            # pills defeats the whole Ground News-style grouping. One retry
+            # with explicit feedback; if it still sprawls, fold the singleton
+            # clusters into "Other viewpoints" (never fold "Media Criticism"
+            # or "tangential" — those labels carry meaning on their own).
+            labels = set(name_to_cluster.values())
+            if len(labels) > 7:
+                consolidate = (
+                    f"You returned {len(labels)} clusters — far too many. "
+                    "Consolidate into AT MOST 6 clusters by merging similar "
+                    "positions. Same JSON format, every voice assigned.\n\n"
+                    f"Your previous answer:\n{json.dumps(name_to_cluster)}"
+                )
+                try:
+                    req2 = urllib.request.Request(
+                        'https://api.anthropic.com/v1/messages',
+                        data=json.dumps({
+                            'model': CLAUDE_MODEL,
+                            'max_tokens': 4000,
+                            'messages': [
+                                {'role': 'user', 'content': prompt},
+                                {'role': 'assistant', 'content': result_text},
+                                {'role': 'user', 'content': consolidate},
+                            ],
+                        }).encode(),
+                        headers={
+                            'x-api-key': ANTHROPIC_API_KEY,
+                            'anthropic-version': '2023-06-01',
+                            'content-type': 'application/json',
+                        },
+                    )
+                    with urllib.request.urlopen(req2, timeout=20) as resp2:
+                        data2 = json.loads(resp2.read().decode())
+                    retry_text = data2.get('content', [{}])[0].get('text', '')
+                    retry_match = re.search(r'\{[\s\S]*\}', retry_text)
+                    if retry_match:
+                        retried = json.loads(retry_match.group())
+                        # Only accept a retry that actually consolidated and
+                        # still covers (most of) the same voices.
+                        if (len(set(retried.values())) < len(labels)
+                                and len(retried) >= len(name_to_cluster) * 0.8):
+                            name_to_cluster = retried
+                            labels = set(name_to_cluster.values())
+                except Exception as e:
+                    print(f"  Warning: cluster consolidation retry failed ({e})")
+
+            if len(labels) > 7:
+                from collections import Counter
+                counts = Counter(name_to_cluster.values())
+                keep = {'Media Criticism', 'tangential', 'Tangential'}
+                for name, cluster in list(name_to_cluster.items()):
+                    if counts[cluster] == 1 and cluster not in keep:
+                        name_to_cluster[name] = 'Other viewpoints'
+
             # Map back to voice IDs
             name_to_id = {d['voiceName']: vid for vid, d in voices_found.items()}
             clusters = {}
@@ -601,6 +657,13 @@ def lookup_story(headline, days=None, skip_clusters=False):
     # Deterministic guard on top of the model's judgment: umbrella topics only
     # match when the query names them (see BROAD_TOPICS).
     widest_topics = drop_unnamed_broad_topics(widest_topics, headline)
+    # Zero-match fallback: when the model declines every topic (bare umbrella
+    # words like "congress" post-guard), take topics the query literally names.
+    # Full-text still carries the search either way; this restores topic
+    # ranking and the pinned matchedStories join.
+    if not widest_topics and widest_index:
+        query_words = set(re.findall(r'[a-z]+', headline.lower()))
+        widest_topics = [t for t in widest_index if set(t.split('-')) & query_words]
 
     for window in time_windows:
         date, topic_index = get_merged_topic_index(max_days=window)
