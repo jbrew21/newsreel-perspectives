@@ -1,7 +1,7 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-28T19:06:02.689705",
+  "collectedAt": "2026-08-28T20:31:32.542188",
   "date": "2026-08-28",
   "posts": [
     {
@@ -77,18 +77,35 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "Trump Makes BIG Statement About Sharia Law In America",
-      "sourceUrl": "https://www.youtube.com/watch?v=QvchlJFiUiE",
-      "timestamp": "2026-08-27T00:30:09+00:00",
+      "text": "Trump Is Helping Farmers Thanks To YOU!",
+      "sourceUrl": "https://www.youtube.com/shorts/-K3eDqyPcwE",
+      "timestamp": "2026-08-28T20:15:14+00:00",
       "type": "video_title",
-      "topic": "trump-policy",
+      "topic": "economy-trade",
       "topics": [
-        "trump-policy"
+        "economy-trade"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Praises Trump's support for farmers as beneficial policy",
+      "quote": "Trump Is Helping Farmers Thanks To YOU!"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "The Last Time This Happened, It Didn't End Well",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ah11WOVoy7s",
+      "timestamp": "2026-08-27T23:00:24+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
       ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Highlights Trump's position on restricting Sharia law in America",
-      "quote": "Trump Makes BIG Statement About Sharia Law In America"
+      "summary": "Warns of historical precedent for current Trump-related events",
+      "quote": "The Last Time This Happened, It Didn't End Well"
     }
   ],
   "topicSummary": {
@@ -114,12 +131,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/dGN1P8XfWI4",
         "platform": "youtube",
         "timestamp": "2026-08-27T20:00:29+00:00"
-      },
-      {
-        "quote": "Trump Makes BIG Statement About Sharia Law In America",
-        "sourceUrl": "https://www.youtube.com/watch?v=QvchlJFiUiE",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T00:30:09+00:00"
       }
     ],
     "trump-administration": [
@@ -128,6 +139,20 @@
         "sourceUrl": "https://www.youtube.com/watch?v=_Y3l1gax6YI",
         "platform": "youtube",
         "timestamp": "2026-08-27T18:00:02+00:00"
+      },
+      {
+        "quote": "The Last Time This Happened, It Didn't End Well",
+        "sourceUrl": "https://www.youtube.com/watch?v=Ah11WOVoy7s",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T23:00:24+00:00"
+      }
+    ],
+    "economy-trade": [
+      {
+        "quote": "Trump Is Helping Farmers Thanks To YOU!",
+        "sourceUrl": "https://www.youtube.com/shorts/-K3eDqyPcwE",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T20:15:14+00:00"
       }
     ]
   }

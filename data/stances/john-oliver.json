@@ -3,7 +3,7 @@
   "voiceName": "John Oliver",
   "updatedAt": "2026-08-28",
   "topicCount": 23,
-  "stanceCount": 67,
+  "stanceCount": 68,
   "topics": [
     {
       "topic": "israel-palestine",
@@ -87,7 +87,7 @@
     {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
-      "count": 3,
+      "count": 4,
       "lastActive": "2026-08-28",
       "stances": [
         {
@@ -97,6 +97,15 @@
           "summary": "Criticizes congressional corruption and corporate consulting influence",
           "quote": "S10 E14: Bob Menendez &amp; McKinsey: Last Week Tonight with John Oliver",
           "sourceUrl": "https://www.youtube.com/watch?v=-BRWR6iK2iY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Critiques congressional dysfunction and dollar store regulation",
+          "quote": "S10 E18: Congress, Dollar Stores &amp; BOTY Update II: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=RXTJOqZdDe0",
           "platform": "youtube"
         },
         {
@@ -123,22 +132,22 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 4,
-      "lastActive": "2026-08-27",
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-08-27",
+          "date": "2026-08-28",
           "topic": "ai-technology",
           "stance": "strong",
-          "summary": "Critiques data collection practices by subscription services",
+          "summary": "Opposes corporate data collection through subscription services",
           "quote": "Subscriptions &amp; Personal Data #lastweektonight",
           "sourceUrl": "https://www.youtube.com/shorts/znUIOZcJkn4",
           "platform": "youtube"
         },
         {
-          "date": "2026-08-27",
+          "date": "2026-08-28",
           "topic": "ai-technology",
           "stance": "strong",
-          "summary": "Criticizes privacy risks and data vulnerabilities in smart products",
+          "summary": "Criticizes exploitative design in smart product subscriptions",
           "quote": "Subscriptions &amp; Smart Products #lastweektonight",
           "sourceUrl": "https://www.youtube.com/shorts/JKMWHq6s1wE",
           "platform": "youtube"
@@ -164,42 +173,16 @@
       ]
     },
     {
-      "topic": "food-agriculture",
-      "label": "Food & Agriculture",
-      "count": 2,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "food-agriculture",
-          "stance": "lean",
-          "summary": "Examines labor and production issues in chocolate industry",
-          "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "food-agriculture",
-          "stance": "lean",
-          "summary": "Examines food safety failures during Trump administration",
-          "quote": "Cyclospora Outbreak &amp; The Trump Administration #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/Zl79TSscerI",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 9,
-      "lastActive": "2026-08-24",
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-08-24",
+          "date": "2026-08-28",
           "topic": "trump-administration",
           "stance": "strong",
-          "summary": "Satirizes Trump Transportation Secretary Sean Duffy's qualifications",
+          "summary": "Critiques Secretary of Transportation Sean Duffy's record and qualifications",
           "quote": "Sean Duffy's Road Trip #lastweektonight",
           "sourceUrl": "https://www.youtube.com/shorts/UuesMLxBZL4",
           "platform": "youtube"
@@ -274,6 +257,32 @@
           "summary": "Criticizes Trump and Melania's financial dealings or conduct",
           "quote": "$Trump &amp; $Melania #lastweektonight",
           "sourceUrl": "https://www.youtube.com/shorts/07YrWWB09Zo",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
+      "count": 2,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "food-agriculture",
+          "stance": "lean",
+          "summary": "Examines labor and production issues in chocolate industry",
+          "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "food-agriculture",
+          "stance": "lean",
+          "summary": "Examines food safety failures during Trump administration",
+          "quote": "Cyclospora Outbreak &amp; The Trump Administration #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/Zl79TSscerI",
           "platform": "youtube"
         }
       ]
