@@ -44,7 +44,7 @@ def _post(url="https://x.com/a/status/1", text="This policy is insane", **over):
 
 def _cached_day_post(url, topic="immigration", stance="strong", relevance="high", **over):
     p = _post(url)
-    p.update({"topic": topic, "relevance": relevance, "stance": stance,
+    p.update({"topic": topic, "topics": [topic], "relevance": relevance, "stance": stance,
               "summary": "Opposes the policy", "quote": p["text"][:300]})
     p.update(over)
     return p
@@ -148,6 +148,27 @@ class ReuseCacheTests(unittest.TestCase):
 
     def test_missing_day_files_yield_empty_cache(self):
         self.assertEqual(collect.load_categorized_cache("nobody"), {})
+
+    def test_legacy_single_tag_entries_are_misses(self):
+        # Day files written before multi-tag (Aug 28 2026) have 'topic' but no
+        # 'topics' list. Those must NOT populate the cache — the post gets
+        # re-sent once so it picks up its secondary tags.
+        legacy = _cached_day_post("https://x.com/a/status/1")
+        del legacy["topics"]
+        self._write_day_file("jane-doe", self._yesterday(), [legacy])
+        self.assertEqual(collect.load_categorized_cache("jane-doe"), {})
+
+    def test_hit_reuses_topics_list(self):
+        self._write_day_file("jane-doe", self._yesterday(), [_cached_day_post(
+            "https://x.com/a/status/1",
+            topics=["immigration", "trump-administration"])])
+        cache = collect.load_categorized_cache("jane-doe")
+        with mock.patch.object(collect, "enforce_taxonomy", side_effect=lambda s: s):
+            reused, new = collect.split_cached_posts(
+                [_post("https://x.com/a/status/1")], cache)
+        self.assertEqual(len(reused), 1)
+        self.assertEqual(reused[0]["topics"], ["immigration", "trump-administration"])
+        self.assertEqual(reused[0]["topic"], "immigration")
 
 
 def _fake_client(create=None, retrieve=None, results=None, cancel=None):
@@ -329,6 +350,26 @@ class ApplyCategorizationTests(unittest.TestCase):
             kept = collect._apply_categorization(posts, items)
         self.assertEqual(len(kept), 1)
         self.assertEqual(kept[0]["quote"], "Strong take")
+
+    def test_multi_tag_topics_applied_primary_first(self):
+        posts = [_post("https://x.com/a/1", text="ICE raid take")]
+        items = [{"index": 0,
+                  "topics": ["immigration", "trump-administration", "immigration", "elections", "economy"],
+                  "relevance": "high", "stance": "strong", "summary": "s"}]
+        with redirect_stdout(io.StringIO()):
+            kept = collect._apply_categorization(posts, items)
+        self.assertEqual(kept[0]["topic"], "immigration")
+        # Deduped and capped at 3 (dedupe happens within the first 3 raw slugs)
+        self.assertEqual(kept[0]["topics"], ["immigration", "trump-administration"])
+
+    def test_legacy_single_topic_item_still_applies(self):
+        posts = [_post("https://x.com/a/1", text="Strong take")]
+        items = [{"index": 0, "topic": "economy", "relevance": "high",
+                  "stance": "strong", "summary": "s"}]
+        with redirect_stdout(io.StringIO()):
+            kept = collect._apply_categorization(posts, items)
+        self.assertEqual(kept[0]["topic"], "economy")
+        self.assertEqual(kept[0]["topics"], ["economy"])
 
     def test_video_transcript_quote_extraction(self):
         posts = [_post("https://youtube.com/watch?v=abc",

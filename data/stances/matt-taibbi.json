@@ -1,174 +1,354 @@
 {
   "voiceId": "matt-taibbi",
   "voiceName": "Matt Taibbi",
-  "updatedAt": "2026-06-29",
-  "topicCount": 18,
-  "stanceCount": 71,
+  "updatedAt": "2026-08-28",
+  "topicCount": 16,
+  "stanceCount": 72,
   "topics": [
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 12,
+      "lastActive": "2026-08-25",
+      "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Defends right to express imperfect or unpopular opinions",
+          "quote": "Karen Attiah and the Right to Suck",
+          "sourceUrl": "https://www.racket.news/p/karen-attiah-and-the-right-to-suck",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Defends accurate reporting against blame for suicide, criticizes reality denial",
+          "quote": "Listen to This Article: No, Jason Arday Wasn't the Media's Fault. Narrated Version | Blaming a suicide on correct reporting unfortunately makes perfect sense in this reality-challenged era.",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-no-jason-arday",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Criticizes New York Times for reverting to partisan framing amid Democratic divisions",
+          "quote": "Listen to This Article: Clich\u00e9 Alert: Return of the \"Beer Test\"\n\nThe New York Times reverts to old form, thanks to a blue-party schism.\n\nracket.news/p/listen-to-this\u2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2088007898710376609",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Critiques overuse of dismissive argument about obsession with topics",
+          "quote": "The \"why are you so obsessed with that?\" argument is the Ukraine flag emoji of 2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2087860959427616783",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Makes Fauci reporting publicly accessible by unlocking paywall",
+          "quote": "Editor's Note: Fauci Stories Unlocked. In response to reader questions about paywalled articles, I've unlocked prior reports.",
+          "sourceUrl": "https://www.racket.news/p/editors-note-fauci-stories-unlocked",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes press response to Fauci COVID testimony",
+          "quote": "Listen to This Article: After Fauci Debacle, Our Idiot Press Circles the Wagons. Narrated Version | I guess it's true: you can't hate the news media enough.",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-after-fauci",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Attacks media for slow reporting, presenting old facts as news",
+          "quote": "This is CNN.\n\nWe take six years to figure shit out. \n\nThen act like it\u2019s news.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084089193014190083",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Challenges accuracy of anti-vax and fascist allegations against him",
+          "quote": "Considering you\u2019re such a stickler for accuracy, please identify my \u201canti-vax\u201d ideas. Or fascist ones, for that matter.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083633378910191971",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes journalist-source relationship compromising objectivity on Fauci",
+          "quote": "\u201cChuck is really an excellent journalist and although he must maintain his objectivity in reporting, it is very clear that he is really being a friend\u2026.\u201d - A. Fauci",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083292246284087477",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Argues journalists must rigorously investigate complex topics independently",
+          "quote": "Incidentally, a highly technical story doesn\u2019t mean you just roll over for experts forever - that just means you\u2019re at a temporary disadvantage until you can reach a working knowledge. You have to study harder and faster, not defer more.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083269723970486516",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Skeptical of media narratives dismissing Fauci criticism as partisan revenge",
+          "quote": "Of course, it\u2019s all a pathological Rand Paul revenge plot to get Fauci at all costs. Aaron Rupar on the case",
+          "sourceUrl": "https://x.com/mtaibbi/status/2082900253578039532",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes Senator Andy Kim for deferential treatment of Fauci at hearing",
+          "quote": "\u201cAfter watching Fauci \u2018plead the FIF,\u2019 my own dickhead Senator Andy Kim used the hearing to rivet his lips to Fauci\u2019s posterior, blessing him with Teddy Roosevelt\u2019s \u2018Man in the Arena\u2019 speech\u201d:\n\nracket.news/p/after-fauci-de\u2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2082883818164281576",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 12,
+      "lastActive": "2026-08-19",
+      "stances": [
+        {
+          "date": "2026-08-19",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Criticizes government COVID-19 origin cover-up, demands Pentagon transparency",
+          "quote": "Listen to This Article: The Covid Cover-Up Suffers a Blow in Court. Narrated Version | Thanks to the U.S. Right to Know, the Defense Intelligence Agency may be forced to explain the Pentagon's stunning \"Hypothetical Origin of SARS-CoV-2\" documents",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-the-covid",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Pentagon COVID origin documents may be forced to disclosure in court",
+          "quote": "The Covid Cover-Up Suffers a Blow in Court open.substack.com/pub/taibbi\u2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2088389200240378328",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Examining origins narrative; implies questioning official account",
+          "quote": "Livestream 3 PM ET: The Origins of COVID",
+          "sourceUrl": "https://www.racket.news/p/livestream-3-pm-et-the-origins-of",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Documents reveal damaging exchanges between Wuhan Institute and U.S. researchers",
+          "quote": "The Ongoing Covid Coverup. While a dramatic hearing involving Dr. Anthony Fauci garnered headlines, document releases revealed damning exchanges between the Wuhan Institute and U.S. researchers",
+          "sourceUrl": "https://www.racket.news/p/the-ongoing-covid-coverup",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Investigates Fauci and COVID origins with focus on wrongdoing",
+          "quote": "Going to be on live with @matt_bivens about Fauci and Covid origins at 3 PM ET",
+          "sourceUrl": "https://x.com/mtaibbi/status/2085802085103071353",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Criticizes ferocity of COVID coverup efforts",
+          "quote": "Listen to This Article: The Fauci Legend Will Not Die!. Narrated Version | The ferocity of the Covid coverup is a thing to behold.",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-the-fauci",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Criticizes Fauci and WHO for misrepresenting COVID mortality and infectiousness data",
+          "quote": "Jay's study absolutely showed that Covid a) was far more infectious than believed and b) the mortality rate was far lower. And Fauci didn't have new studies, he had a new (wrong) estimate by the WHO - one of the worst pieces of misinformation in the crisis cnbc.com/2020/03/03/who",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084237524369584510",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Accuses Fauci of misrepresenting COVID mortality rate to Congress",
+          "quote": "I put the transcript in the tweet. Fauci testified to 3% in March 2020",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084090128369070360",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Accuses Fauci of lying about COVID mortality, attacks COVID misinformation critics",
+          "quote": "Aaron, this is you cheering the shadowbanning of @DrJBhattacharya, whose research identified the correct Covid mortality rate. Meanwhile, your icon Fauci privately knew the correct rate in January 2020, but lied to Congress, telling them it was massively higher.\n\nYou should sit o",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084083576497123512",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Claims scientists suspected lab leak based on WIV research knowledge",
+          "quote": "No, he isn\u2019t. There\u2019s a reason 9 of the scientists Fauci met with on a conference call on February 1,  2020 were concerned with a lab leak - because they knew about research at the WIV that had been done in partnership with US scientists.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084028619559416013",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Alleges Fauci and US officials misled public on COVID-19 origin",
+          "quote": "\"Now we know the wet market was not the source, it was the amplifier.\" \n-- Anthony Fauci, January 26th, 2020\n\nUS officials not only knew the wet market wasn't the source by then, they knew the Chinese had gamed the wet market test.\n\nopen.substack.com/pub/taibbi\u2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083551957009002990",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Prioritizes virus origin investigation over partisan blame",
+          "quote": "It\u2019s not about Covid policy - it\u2019s about whether or not the virus was engineered, and Fauci and other health officials have knowledge there that Trump likely did not. These GOF programs predate Trump. Not everything is about him",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083358329263255743",
+          "platform": "x"
+        }
+      ]
+    },
     {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 12,
-      "lastActive": "2026-06-29",
+      "lastActive": "2026-08-12",
       "stances": [
         {
-          "date": "2026-06-29",
+          "date": "2026-08-12",
           "topic": "culture-war",
           "stance": "strong",
-          "summary": "Criticizes algorithmic division by identity",
-          "quote": "Most political content on the Internet now is designed to divide people by race, sex, religion, orientation, and nationality in addition to ideology, and because algorithmic targeting is so effective, it\u2019s hard to see anything but a conscious unity movement preventing disaster.",
-          "sourceUrl": "https://x.com/mtaibbi/status/2071383544669020337",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-27",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Critiques anti-patriotism among elites",
-          "quote": "Listen to This Article: The New Radical Chic. Narrated Version | Ahead of America\u2019s 250th, the beautiful people have brought anti-patriotism fully back into style",
-          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-the-new-radical",
+          "summary": "Criticizes progressive strategy of accepting political losses for cultural gains",
+          "quote": "Listen to This Article: \u201cWoke 2\u201d Wants a Mulligan for \u201cWoke 1\u201d. Narrated Version | Gearing for a White House run, Alexandria Ocasio-Cortez laughs off \"Woke 1\" as \"a little crazy.\" On the strategy of losing every political battle in order to win the political war",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-woke-2-wants",
           "platform": "substack"
         },
         {
-          "date": "2026-06-25",
+          "date": "2026-08-10",
           "topic": "culture-war",
           "stance": "strong",
-          "summary": "Notes differential treatment of political figures",
-          "quote": "As a thought experiment, try: what would be the world\u2019s reaction if Donald Trump had been the one to introduce the torture program?\n\n\nanalogjam (@infoverload)\n\nThat\u2019s such a shit take. On his worst day nobody thought W was a gross corrupt scumbag. An idiot perhaps, but not morall",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069503915008160026",
+          "summary": "Criticizes AOC for distancing from progressive politics ahead of White House run",
+          "quote": "\"Woke 2\" Wants a Mulligan for \"Woke 1\"\nopen.substack.com/pub/taibbi\u2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2086872077265474033",
           "platform": "x"
         },
         {
-          "date": "2026-06-24",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes elite anti-patriotic sentiment",
-          "quote": "The New Radical Chic\n\"Elegant slumming\" is back in again, just in time for the 250th, and 56 years after Tom Wolfe's excoriating essay\n\nopen.substack.com/pub/taibbi\u2026",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069461991609991458",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Notes shift in mainstream consensus positions",
-          "quote": "But my views haven\u2019t changed. I would have said the same thing in 2005 or 2010 - and the New York Times editorialists would have as well. Better for you to admit there\u2019s a changed consensus, on issues like this and speech or equality vs equity and a dozen other things.\n\n\npaez234 ",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069195758654415306",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Objects to political litmus tests",
-          "quote": "Im really looking forward to having to pass political litmus tests on foreign policy issues to get coffee in America. We\u2019ve gone too long allowing just anyone to buy stuff\n\n\nborder collie herder (@1342runner)\n\nYeah.  The world would be a much better place if more people were acce",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069241260565524990",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-22",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Rejects revisionist slavery narrative of Revolution",
-          "quote": "It may be that none of Joy Reid\u2019s black friends are excited about the 4th \u2014 there are plenty of good reasons why that would be true \u2014 but this revisionist history that the revolution was about protecting slavery is madness.\n\n\nWestern Lensman (@WesternLensman)\n\nJoy Reid: \u201cNobody b",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068833046309023901",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-22",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes New York Times Father's Day coverage",
-          "quote": "Recent themes include \"My father's death helped me self-actualize,\" \"My father was an addict who failed me,\" and \"The pain of caring for an abusive parent.\"\n\n\n\n\n\n\n\n\n\n\nAlex Berenson (@AlexBerenson)\n\nCannot make this up, either.\n\n@nytimes opinion has had four recent pieces about fa",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068771487452897357",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-22",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Mocks Times coverage of transgender individuals",
-          "quote": "Right, Eoin \u2014 the New York Times idea of a Father\u2019s Day story is about a woman with a beard, but I\u2019m the lunatic for thinking it\u2019s funny.\n\n\nEoin Higgins (@EoinHiggins_)\n\nCensorship advocate Matt Taibbi continues his devolution into right-wing culture war lunatic by spending his F",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068738814688874631",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-22",
+          "date": "2026-08-08",
           "topic": "culture-war",
           "stance": "lean",
-          "summary": "References radical communist critique of society",
-          "quote": "\u201cThey talked\u2026 about abolishing the army and navy\u2026 about the abolition of inheritance, the family, children, and priests\u2026\u201d",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068440713642012736",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes Columbia professor on equality concept",
-          "quote": "Listen to This Article: To an Ivy League Professor, Who Doesn't Understand \"Equality\". Narrated Version | A Columbia professor writes a dumb column, in anticipation of what will likely be humorously bad book",
-          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-to-an-ivy",
+          "summary": "Draws parallel between Dostoevsky's political extremism and modern chaos",
+          "quote": "\u201cGet Lit\" July 30, 2026: In Dostoyevsky's Demons, a Ridiculous Party Precedes Bloodshed. Brad and Matt review a crucial scene before the last week of broadcasts about the famous Russian novel about political extremism",
+          "sourceUrl": "https://www.racket.news/p/get-lit-july-30-2026-in-dostoyevskys",
           "platform": "substack"
         },
         {
-          "date": "2026-06-12",
+          "date": "2026-08-05",
           "topic": "culture-war",
           "stance": "strong",
-          "summary": "Says Western liberalism went too far",
-          "quote": "Listen to This Article: Britain's Great Self-Loathing Crusade. Narrated Version | American and European liberalism rightly campaigned against ethnocentrism once upon a time, but both versions ultimately went way too far",
-          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-britains-great",
-          "platform": "substack"
-        }
-      ]
-    },
-    {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 2,
-      "lastActive": "2026-06-29",
-      "stances": [
-        {
-          "date": "2026-06-29",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Investigates inflated political book advances",
-          "quote": "Something\u2019s up with the publishing industry and inflated advances for politician-authors. I was in Russia during a thing called the \u201cauthor scandal\u201d in which bribes were crudely disguised as book deals - several more sophisticated versions of this now exist here across parties\n\n\n",
-          "sourceUrl": "https://x.com/mtaibbi/status/2071265073314615711",
+          "summary": "Opposes framing interracial marriage as political or evidence of assimilationism",
+          "quote": "She shouldn\u2019t have been focused on race at all, then or now, in her choice of romantic partner or in her parenting. There is nothing wrong with marrying a white person. It\u2019s not a political act unless you\u2019re racist and make it one - as you both have.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084796108916580832",
           "platform": "x"
         },
         {
-          "date": "2026-06-22",
-          "topic": "media-personalities",
+          "date": "2026-08-05",
+          "topic": "culture-war",
           "stance": "strong",
-          "summary": "Disputes claims about funding influence",
-          "quote": "Of course you pivot to trying to sell your lying-ass book that claims I\u2019m \u201cowned\u201d by people I never accepted a dime from.\n\n\nEoin Higgins (@EoinHiggins_)\n\nand, as always:\n\nhachettebookgroup.com/titles\u2026\n\nLink\n\n\n\nOwned\n\n\u00a0A \u201cdevastating\u201d (Nation) examination of how a cabal of tech-bi",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068743140626890752",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 2,
-      "lastActive": "2026-06-28",
-      "stances": [
-        {
-          "date": "2026-06-28",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Objects to weaponizing identity against political views",
-          "quote": "I\u2019m confused. I thought Wiener had become much more critical of Israel lately?\n\n\nDavid Weigel (@daveweigel)\n\n\u201cYou stopped being queer the moment you started supporting Israel, you piece of shit.\u201d\n\nVideo\n  \n\n\n\n\n\n\u2014 https://nitter.net/daveweigel/status/2070829516902047900#m",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070993437516537936",
+          "summary": "Criticizes describing multiracial family as proximity to whiteness",
+          "quote": "Anyone who characterizes having a half-white son as \u201cmy proximity to whiteness\u201d is certifiable and should not hold public office.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084794379558871447",
           "platform": "x"
         },
         {
-          "date": "2026-06-21",
-          "topic": "civil-rights-race",
+          "date": "2026-08-05",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Argues choosing partners by race reflects poor judgment and inconsistency",
+          "quote": "If she really picked a partner and had children with a person because she wanted to \u201cassimilate\u201d with a race, she\u2019s nuts - and it doesn\u2019t show \u201cmore consciousness\u201d to now be denouncing her former \u201cproximity to whiteness.\u201d That\u2019s just crazy added to crazy.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084791924410511800",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "culture-war",
           "stance": "lean",
-          "summary": "Questions media focus on politician's harassment",
-          "quote": "Wow, people call Jamaal Bowman the N-word every day? That\u2019s horrible. He should film that\n\n\nThomas Hern (@ThomasMHern)\n\nJamaal Bowman is something else.\n\n\"I'm a black man in America. The reason why heart disease and cancer and obesity and diabetes are bigger in the black communit",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068010478496784491",
+          "summary": "Questions race-based criticism of personal romantic choices",
+          "quote": "Okay, then, educate me as to what it means to say Hong was \u201cfocused on assimilation into the white majority, as evidenced by her romantic choices.\u201d",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084786633358856250",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Disputes claim that race-based partner selection shows consciousness",
+          "quote": "Are you saying it shows more \u201cconsciousness\u201d to choose romantic partners by race?",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084781309344244092",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Rejects characterizing romantic choices as assimilation strategy",
+          "quote": "If Hong really made sexual/romantic choices, and had children with someone, because she was \u201cfocused on assimilation into the white majority,\u201d then she was and is nuts. Or, you both are.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084778927285793259",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes DSA platform as dangerous concentration of power",
+          "quote": "The DSA platform advocates for massive concentration of power.  Sayonara, checks and balances! Baffling that this is popular",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083684299568550321",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Condemns widespread belief in false narratives as absurd",
+          "quote": "Someday historians are going to look back and be astonished at the amount of absurd bullshit Americans took pride in believing during this era",
+          "sourceUrl": "https://x.com/mtaibbi/status/2082258250724970556",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Sarcastically rejects false equivalence between Mao and Lincoln",
+          "quote": "Yes, Mao and Lincoln were pretty much the same. Who can forget \"Smash the Four Grays!\"",
+          "sourceUrl": "https://x.com/mtaibbi/status/2080048801708974537",
           "platform": "x"
         }
       ]
@@ -177,59 +357,15 @@
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 1,
-      "lastActive": "2026-06-27",
+      "lastActive": "2026-08-07",
       "stances": [
         {
-          "date": "2026-06-27",
+          "date": "2026-08-07",
           "topic": "supreme-court-legal",
           "stance": "lean",
-          "summary": "Resists detailed engagement on Supreme Court case",
-          "quote": "I see. Well, forgive me for making an offhand after-hours observation on a Friday evening, and not commenting seriously and at length on whatever SCOTUS case that has you wound up.\n\n\nHissyspit (@Hissyspit)\n\nSCOTUS Trump installs just once again changed the nature of our republic ",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070638168420852025",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "religion-faith",
-      "label": "Religion & Faith",
-      "count": 4,
-      "lastActive": "2026-06-26",
-      "stances": [
-        {
-          "date": "2026-06-26",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Requires religious practice compliance with law",
-          "quote": "This is right - people of faith who in other contexts would observe customs illegal here have to adhere to American law, eg no polygamy, honor killing, etc. In return for moderating religious practice, we grant protection of right to worship\n\n\nSon of Bat (@djsuupaa)\n\nFreedom of r",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070315857234862164",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-26",
-          "topic": "religion-faith",
-          "stance": "strong",
-          "summary": "Opposes discriminatory religious bans",
-          "quote": "Because we\u2019re not a theocracy - it\u2019s one of the first principles of our system.\n\n\nThomas (@Bonaventure1636)\n\nIf Saudi Arabia can ban churches, why can't we ban mosques?\n\n\n\n\u2014 https://nitter.net/Bonaventure1636/status/2070311266288087067#m",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070312652622970998",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-26",
-          "topic": "religion-faith",
-          "stance": "strong",
-          "summary": "Defends religious freedom as fundamental",
-          "quote": "Freedom of religion is fundamental to our system - I\u2019m not sure what you\u2019re asking but meddling with it can only end badly\n\n\nJoe Citizen \ud83c\uddfa\ud83c\uddf2\ud83d\udcaa (@joecitizenus)\n\nSuggestions Matt? It's becoming a real problem.\n\n\n\n\u2014 https://nitter.net/joecitizenus/status/2070299270851285436#m",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070306723156406371",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-26",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Protects political overthrow advocacy rights",
-          "quote": "Under existing law you\u2019re allowed to advocate for the political overthrow of the country, even if religion isn\u2019t involved\n\n\nTruthheals (@KeatySohei47031)\n\nThere has to be limits to freedom of religion. If that religion\u2019s purpose is destroy your nation and take away your first ame",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070309733538418959",
+          "summary": "Senate contempt vote against Fauci suggests misconduct or obstruction",
+          "quote": "Senate Votes to Hold Dr. Anthony Fauci in Contempt; Obtains His Phone\n\nopen.substack.com/pub/taibbi\u2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2085362042530148719",
           "platform": "x"
         }
       ]
@@ -237,493 +373,245 @@
     {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
-      "count": 1,
-      "lastActive": "2026-06-26",
+      "count": 9,
+      "lastActive": "2026-08-07",
       "stances": [
         {
-          "date": "2026-06-26",
+          "date": "2026-08-07",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Senate contempt vote against Fauci implies criticism of his responses",
+          "quote": "Senate Votes to Hold Dr. Anthony Fauci in Contempt; Obtains His Phone. After Dr. Anthony Fauci pleaded the Fifth, a Senate committee takes action, after obtaining a copy of his phone",
+          "sourceUrl": "https://www.racket.news/p/senate-votes-to-hold-dr-anthony-fauci",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-03",
           "topic": "congress-legislation",
           "stance": "strong",
-          "summary": "Praises political reshaping of Democratic Party",
-          "quote": "Zohran Mamdani and the Nitwit Revolution. New York's Mayor proved he's a generational political talent this week, re-shaping the Democratic Party and setting America up for a referendum on its founding principles",
-          "sourceUrl": "https://www.racket.news/p/zohran-mamdani-and-the-nitwit-revolution",
-          "platform": "substack"
+          "summary": "Opposes DSA platform eliminating checks and balances",
+          "quote": "What are you talking about? The executive can veto Congress and nominates judges; the high court can overturn laws and check executive orders; Congress can overrule the president and has to approve the judiciary. They all check each other. All that would be absent under the DSA",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084091121240506545",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Questions indefensible platform proposals attracting unnecessary criticism",
+          "quote": "If \u201cthat portion\u201d isn\u2019t important, isn\u2019t something outsiders should worry about, why have it? It\u2019s not defensible and as you point out, it\u2019s also catnip to critics. So why have it? Why was this at the center of the new platform?",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084052181313900883",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Opposes DSA structural reforms, defends existing democratic institutions",
+          "quote": "\u201cSomething more democratic\u201d - the DSA proposal is massively less democratic, redesigning government to enable one-party rule. \nThere are sensible structural fixes  (eg reversing Citizens United, ranked choice voting maybe) but eliminating our most successful concepts is lunacy.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084049326234333647",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes critics of two-party system who propose one-party alternative",
+          "quote": "Cannot understand people who criticize the two party system and turn right around and  propose a one party system.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084029122095812815",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Ridicules support for abolishing Senate, Presidency, and Supreme Court",
+          "quote": "Also, lol at \u201cmeltdown\u201d - \u201cI can\u2019t BELIEVE you get emotional about a little thing like eliminating the Senate, President, and Supreme Court.\u201d",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084027260156137854",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Demands DSA candidates renounce platform proposals eliminating branches",
+          "quote": "This is the only answer I\u2019ve heard in response to the platform - the DSA platform doesn\u2019t matter, its candidates don\u2019t really want these things. Naturally the DSA candidates will renounce those ideas then?",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084026863962198262",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Argues abolishing checks balances only serves unconstitutional policies",
+          "quote": "The only reason to support those ideas is to prevent institutions from stopping the implementation of unconstitutional policies.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084025333397750126",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Opposes eliminating Senate, Presidency, and Supreme Court as concentration of power",
+          "quote": "If you abolish the Senate, Presidency, and Supreme Court, you eliminate all checks and balances and concentrate power totally in the hands of one ruling party. But sure, I\u2019m the authoritarian",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084023921280446581",
+          "platform": "x"
         }
       ]
     },
     {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 7,
-      "lastActive": "2026-06-26",
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 1,
+      "lastActive": "2026-08-05",
       "stances": [
         {
-          "date": "2026-06-26",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Opposes blanket exclusion of official denials",
-          "quote": "I\u2019m very opposed to the \u201cmoral clarity\u201d model of reporting that says you shouldn\u2019t include denials of state or police officials because they always lie. They do often lie, but it\u2019s worse to assume a lie and be proved wrong than the opposite. Just include the pro forma comment!",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070305421949022437",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-26",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Supported investigation despite Russiagate skepticism",
-          "quote": "Always? I thought Russiagate was bullshit from day one but said an investigation was necessary for years, until Mueller came back without charges. And even in that case all I said was that newspapers should probably include Rubio\u2019s quote.\n\n\nAlexandros Marinos \ud83c\udff4\u200d\u2620\ufe0f (@alexandrosM)\n",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070305419247940094",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-20",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes New York Times elitism",
-          "quote": "Listen to This Article: Post-Trump, Will Snobbism Still Work as an Electoral Strategy?. Narrated Version | The New York Times keeps setting new records for snootiness",
-          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-post-trump",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-06-07",
-          "topic": "media-press",
+          "date": "2026-08-05",
+          "topic": "billionaires-wealth",
           "stance": "lean",
-          "summary": "Advocates selective internet usage",
-          "quote": "Listen to This Article: Humanity Needs to Get Offline. Narrated Version | Log on for some things. Stay off for most things",
-          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-humanity-needs",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-06-07",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Advocates selective internet usage",
-          "quote": "Humanity Needs to Get Offline",
-          "sourceUrl": "https://www.racket.news/p/humanity-needs-to-get-offline",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Analyzes online conspiracy theory responses",
-          "quote": "Listen to This Article by @cadenolson_ - The Correspondents' Dinner Shooting, Time Travel, and Solomon's Temple: Conspiracy Roundup\n\nThe online fallout from the Correspondent's Dinner shooting has been an epic national Rorschach Test\n\nracket.news/p/listen-to-this\u2026",
-          "sourceUrl": "https://x.com/mtaibbi/status/2050295239349334204",
+          "summary": "Criticizes framing of wealth as enabling speech freedom",
+          "quote": "\u201cHe\u2019s got enough money that he can afford to say or not say whatever he wants\u201d maybe isn\u2019t the insult you think it is.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084799136197497071",
           "platform": "x"
-        },
+        }
+      ]
+    },
+    {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 4,
+      "lastActive": "2026-08-05",
+      "stances": [
         {
-          "date": "2026-06-05",
-          "topic": "media-press",
+          "date": "2026-08-05",
+          "topic": "media-personalities",
           "stance": "strong",
-          "summary": "Criticizes media dishonesty and violence",
-          "quote": "Listen to This Article: The Press Promotes Violence and Everyone Knows It\n\nCasual lies told by the news media for commercial and political reasons spawn all sorts of horrors, making its phony rectitude insufferable\n\nracket.news/p/listen-to-this\u2026",
-          "sourceUrl": "https://x.com/mtaibbi/status/2049959547561722033",
+          "summary": "Challenges Trump's AI claims about investigation history",
+          "quote": "Donald, why don\u2019t you ask your AI if I was ever investigated by a British politician.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084782991281119669",
           "platform": "x"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Defends colleague against accusations of pro-Putin or pro-Assad statements",
+          "quote": "I worked with Katie for years and never heard her defend Asaad or gas attacks or express support for Putin. Not sure what you\u2019re talking about",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083631796575461388",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Defends himself against accusation of being bought by undisclosed sources",
+          "quote": "When Higgins apologizes for calling me \u201cbought\u201d by people I never accepted a dime from.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2078209297289212126",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Criticizes Drop Site News for ambush interview tactics",
+          "quote": "Anatomy of a Struggle Session. On Drop Site's appalling ambush \"interview\" of Ro Khanna.",
+          "sourceUrl": "https://www.racket.news/p/anatomy-of-a-struggle-session",
+          "platform": "substack"
         }
       ]
     },
     {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
-      "count": 3,
-      "lastActive": "2026-06-26",
+      "count": 6,
+      "lastActive": "2026-08-05",
       "stances": [
         {
-          "date": "2026-06-26",
+          "date": "2026-08-05",
           "topic": "free-speech-censorship",
-          "stance": "lean",
-          "summary": "Distinguishes between advocacy and imminent violence",
-          "quote": "Did you read the whole case already? That was fast. I take it you made to the part about the Gitlow and Dennis cases and distinguishing \u201cmere advocacy\u201d from imminent violence? Or you could just ignore me and ask a lawyer. I don\u2019t care.\n\n\n\n\nBrian (@txaggie05)\n\nOh, you are that dum",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070318100554084573",
+          "stance": "strong",
+          "summary": "Criticizes UK police investigation of journalist as institutional speech suppression",
+          "quote": "News that the Met investigated reporter Jack Grove for four months just for researching Cambridge\u2019s Jason Arday is incredible - yes, we have speech problems in the US, but the UK has an institutional mechanism to use police to stop reporting aol.com/articles/journalist-\u2026\n\nLink\n\n\n",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084769329954914329",
           "platform": "x"
         },
         {
-          "date": "2026-06-26",
+          "date": "2026-08-02",
           "topic": "free-speech-censorship",
-          "stance": "lean",
-          "summary": "Defends broad free speech protections under imminent lawless action standard",
-          "quote": "Even if that were true it would not be something you can ban. The legal standard is \u201cimminent lawless action,\u201d which means we allow any political activity until it becomes active, imminent threat\n\n\nGrammyprepper (@creedyrn)\n\nThe thing is, islam is not 'just' a religion. It is als",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070314698143089142",
+          "stance": "strong",
+          "summary": "Alleges politician dismissed digital censorship concerns and FBI skepticism",
+          "quote": "Still remember being told by Colin Allred to take off my tinfoil hat, stop complaining about digital censorship, and learn to trust the FBI.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083636716196217103",
           "platform": "x"
         },
         {
-          "date": "2026-06-19",
+          "date": "2026-07-29",
           "topic": "free-speech-censorship",
-          "stance": "lean",
-          "summary": "Identifies Senator Murphy as major censorship advocate",
-          "quote": "Murphy is one of the bigger censorship advocates in that coalition\n\n\nSemafor (@semafor)\n\nSen. Chris Murphy, D-Conn., isn\u2019t necessarily running for president \u2014 but he is writing to help define how the next Democratic president should make policy, writes @daveweigel. \n\nSen. Murphy ",
-          "sourceUrl": "https://x.com/mtaibbi/status/2067754092970049572",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 3,
-      "lastActive": "2026-06-26",
-      "stances": [
-        {
-          "date": "2026-06-26",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Questions funding sustainability of unlimited migration benefits",
-          "quote": "Oh, I see. Where\u2019s the revenue for all of this coming? We can just shovel out benefits limitlessly?\n\n\n\u5fcd\u8005\u306e\u795e Marxist-Yeagerist \u232c (@delmoi)\n\n&gt; which cannot work if you\u2019re also giving away cradle-to-grave social programming\n\nIt obviously can, you're also bringing in doctors, nurse",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070311513705873815",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-26",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Argues open borders incompatible with cradle-to-grave social programs",
-          "quote": "I don\u2019t understand what\u2019s confusing about \u201ctotal freedom to migrate,\u201d which means no borders, which cannot work if you\u2019re also giving away cradle-to-grave social programming\n\n\nPIT LORD (@PITLORDMOSH)\n\nBut you just cropped off the policy.. which is basically just immigration refor",
-          "sourceUrl": "https://x.com/mtaibbi/status/2070309149296980189",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Reports on immigration activism and detention facility protests",
-          "quote": "Activism, Uncensored: Delaney Hall (by Ford Fischer). Protesters Face Off with ICE, New Jersey State Police at Private Detention Facility in Newark",
-          "sourceUrl": "https://www.racket.news/p/activism-uncensored-delaney-hall",
-          "platform": "substack"
-        }
-      ]
-    },
-    {
-      "topic": "gender-lgbtq",
-      "label": "Gender & LGBTQ+",
-      "count": 8,
-      "lastActive": "2026-06-23",
-      "stances": [
-        {
-          "date": "2026-06-23",
-          "topic": "gender-lgbtq",
           "stance": "strong",
-          "summary": "Refuses institutional demands to affirm transgender identity claims",
-          "quote": "No, I have sympathy for people who are in this position. What\u2019s upsetting is the institutional demand that I go along with a delusion  transequality.org/news/biden\u2026\n\nLink\n\nBiden Administration Delivers Major Policy Reforms for Transgender People | A4TE\n\nThe National Center for Tr",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069202485915385902",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Criticizes pseudo-intellectuals pushing new gender concepts",
-          "quote": "I can pull out the polling to demonstrate those changes on every one of those issues. It is infuriating to have pseudo-intellectuals pushing absurd new concepts and demanding I agree. This one is particularly ridiculous",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069195761699500315",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Opposes defining biological sex statements as hate speech",
-          "quote": "I don\u2019t hate anyone in this picture. If any adult wants to identify as another sex, I don\u2019t have a problem with that. But I won\u2019t agree that a woman can be a father and it is not hate speech to say it\u2019s factually absurd.\n\n\nScott Landis (@ScottCLandis)\n\nI asked you a question firs",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069193847159067079",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Rejects labeling sex-based statements as inherently right-wing",
-          "quote": "The key word there being \u201ccoded.\u201d I refuse to accept that it\u2019s \u201cright wing\u201d to think women can\u2019t be fathers. Instead of just calling it right wing, can you answer the question?\n\n\npaez234 (@paez23493869)\n\n@mtaibbi \n\nBro. You\u2019ve been doing this game for a decade. You say right wing",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069193084781391902",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Distinguishes transgender identity from sexual orientation categories",
-          "quote": "No, and it isn\u2019t one. That\u2019s kind of the point\n\n\nroxy (@residentsparkie)\n\nDo you think homosexuality is a delusion too?\n\n\n\n\u2014 https://nitter.net/residentsparkie/status/2069206081193009208#m",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069239494990029129",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Questions whether women can be fathers",
-          "quote": "Can a woman be a father?\n\n\nScott Landis (@ScottCLandis)\n\nSo you are a loud and obnoxious right winger because you hated the repression of growing up in the Soviet bloc but you also hate the freedom of of people to choose how to live their own lives in a way that has no impact on ",
-          "sourceUrl": "https://x.com/mtaibbi/status/2069154777246605503",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Suggests transgender individuals should accept peer mockery",
-          "quote": "If Elliot Page were a man, \u201che\u201d would expect to be mocked by men for saying something dumb online. His best friends might pull his briefs over his head or put him on a plane to Jakarta drunk or tattoo a bunghole on his forehead  while sleeping \u2014  but a \u201ctrans person\u201d doesn\u2019t want",
-          "sourceUrl": "https://x.com/mtaibbi/status/2066609738582774120",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "gender-lgbtq",
-          "stance": "lean",
-          "summary": "Supports transgender rights while reserving right to criticize",
-          "quote": "I\u2019m fully in support of her right to identify as whatever she wants and have any surgeries she wants, even if I think it\u2019s sad. Once, that would have been considered \u201cpro-trans.\u201d By \u201canti trans\u201d do you mean I also shouldn\u2019t laugh at things she says?\n\n\n1 fish 2 fish red fish blue ",
-          "sourceUrl": "https://x.com/mtaibbi/status/2066597170497634680",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 3,
-      "lastActive": "2026-06-23",
-      "stances": [
-        {
-          "date": "2026-06-23",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Questions prohibiting generous inheritance while allowing personal wealth",
-          "quote": "Oh. So I can selfishly keep it while alive because I did earn it, but the thing we have to prohibit is generous giving. Do I have that right?",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068780610194174288",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Opposes forced liquidation of family assets upon death",
-          "quote": "\"Back into general circulation.\" I'm assuming that includes the family home in which the kids grew up. So you'd want to liquidate the asset and do what with it  exactly?",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068778173433532828",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Rejects state seizure of savings instead of voluntary inheritance",
-          "quote": "I think you're confusing \"Are t-bills a safe investment?\" with \"Do I want to give my savings to my kids, or would I rather the state seized it?\"\n\n\nTimbassett (@Timbassett)\n\nWhat do you think Treasuries are?\n\n\n\n\u2014 https://nitter.net/Timbassett/status/2068663933100036159#m",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068763749683503382",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 12,
-      "lastActive": "2026-06-22",
-      "stances": [
-        {
-          "date": "2026-06-22",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Criticizes Harris campaign messaging as empty rhetoric",
-          "quote": "Trying to follow the rhetoric of KH is like tearing open one empty cardboard box after another\n\n\nWestern Lensman (@WesternLensman)\n\nKamala explains to Don Lemon the power of hope:\n\n\u201cI really, truly believe this. We we each have have light inside of us. And we need to know that th",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068736384135811535",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Condemns New York Times snobbism in political coverage",
-          "quote": "Post-Trump, Will Snobbism Still Work as an Electoral Strategy?. The New York Times keeps setting new records for snootiness",
-          "sourceUrl": "https://www.racket.news/p/post-trump-will-snobbism-still-work",
+          "summary": "Opposes attempts to control language through AI and activist pressure",
+          "quote": "Listen to This Article: Don't Let Activists or Robots Choose Your Words. Narrated Version | From AI chats to the new AP stylebook to a long list of political crazes, online America is constantly looking for ways to put words in your mouth",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-dont-let-activists",
           "platform": "substack"
         },
         {
-          "date": "2026-06-17",
-          "topic": "elections",
+          "date": "2026-07-29",
+          "topic": "free-speech-censorship",
           "stance": "strong",
-          "summary": "Disputes Coates's characterization of presidency as inherently violent",
-          "quote": "\u201cIf the American presidency is an inherently violent office, what does it mean for any Black woman to hold it?\u201d\n\n So on planet Coates, the Presidency is an \u201cinherently violent office,\u201d but the Vice Presidency isn\u2019t?\n\n\nVANITY FAIR (@VanityFair)\n\nWhether or not Kamala Harris will r",
-          "sourceUrl": "https://x.com/mtaibbi/status/2067015299707089366",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Notes Harris's weak performance gains despite media support",
-          "quote": "\u201cShe finished in like 500th place in 2020 w/zero delegates despite friendly media, was handed the nomination in 2024 and somehow did 8% worse among black voters than her dead white predecessor Joe Biden, but is she right for 2024? Ta-Nehisi Coates investigates\u201d \n\n pewresearch.org",
-          "sourceUrl": "https://x.com/mtaibbi/status/2066946152910717260",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Argues American elections are poorly managed",
-          "quote": "Post-Trump, Will Snobbism Still Work as an Electoral Strategy?open.substack.com/pub/taibbi\u2026",
-          "sourceUrl": "https://x.com/mtaibbi/status/2066927950507757930",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-15",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Criticizes inefficiency of American electoral processes",
-          "quote": "Listen to This Article: American Elections Are a Joke. Narrated Version | 57 years ago, Americans went to the moon in four days. Californians would still be working on the countdown",
-          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-american-elections",
+          "summary": "Trump's speech policies create problems for country",
+          "quote": "Meet The New Boss, Same as the Old Boss. On speech, Donald Trump is making a mess, for himself and the country.",
+          "sourceUrl": "https://www.racket.news/p/meet-the-new-boss-same-as-the-old",
           "platform": "substack"
         },
         {
-          "date": "2026-06-13",
-          "topic": "elections",
+          "date": "2026-07-29",
+          "topic": "free-speech-censorship",
           "stance": "strong",
-          "summary": "Questions whether mail voting benefits Democrats systematically",
-          "quote": "Why would that be true? Why would Democrats inherently prefer to vote by mail?\n\n\nMac Cramer \ud83d\udc35 (@SleepyNBA)\n\nMatt doesn\u2019t like mail voting because mail voters tend to be less Republican.\n\n\n\n\u2014 https://nitter.net/SleepyNBA/status/2065488501555023887#m",
-          "sourceUrl": "https://x.com/mtaibbi/status/2065489329229533445",
+          "summary": "Calls for politicians and institutions to defend speech rights across ideological spectrum",
+          "quote": "Two recent actions/comments by @TheFIREorg show that both blue and red states are trying to respond to disfavored speech through bans. We need more politicians and institutions who'll fight for everyone's speech rights.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2080640886812156027",
           "platform": "x"
         },
         {
-          "date": "2026-06-13",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Emphasizes importance of in-person voting for civic participation",
-          "quote": "Maybe, but photos/video of presidents and nominees \u201cdoing their civic duty\u201d was powerful imagery, and also reminded people that presidents have them same rights and obligations as ordinary people\n\n\ndonna freitas (@donnafreitas6)\n\nI'm... being the Leader of the Free World may just",
-          "sourceUrl": "https://x.com/mtaibbi/status/2065488378032796104",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-13",
-          "topic": "elections",
+          "date": "2026-07-29",
+          "topic": "free-speech-censorship",
           "stance": "strong",
-          "summary": "Advocates in-person voting as preferable voting method",
-          "quote": "Because I think people should vote in person? Which con men benefit from in-person voting?\n\n\nScott Cullen (@ByScottCullen)\n\nYou are simping for conmen. It's embarrassing.\n\n\n\n\u2014 https://nitter.net/ByScottCullen/status/2065485568461492410#m",
-          "sourceUrl": "https://x.com/mtaibbi/status/2065486295153959045",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-13",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Argues all voters should vote in person like Trump",
-          "quote": "He should vote in person if he wants a change.\n\n\nthedealerkuo (@thedealerkuo)\n\nDonald trump mailed in his last ballot, as he was legally allowed to do.  why is it ok for Trump to do so, but not everyone else.\n\n\n\n\u2014 https://nitter.net/thedealerkuo/status/2065485024820867415#m",
-          "sourceUrl": "https://x.com/mtaibbi/status/2065485407572168786",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-13",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Claims mail voting takes longer and produces questionable results",
-          "quote": "It takes far longer than it needs to and produces suspicious results? And forget blue-red - look at the 2020 Iowa Democratic caucus. Does anyone believe that result?\n\n\nJesse Brenneman (@Jesse_Brenneman)\n\nDoes it work better? Why? Because the votes were counted faster? Has anyone ",
-          "sourceUrl": "https://x.com/mtaibbi/status/2065484868243296679",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-13",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Questions absentee status for non-absent voters",
-          "quote": "No, but the military has to mail in votes, just like I had to when I lived overseas. It would never have entered my head to ask for absentee status when not being absent.\n\n\nSpency Bratt (@gwardo630)\n\nDo you think it\u2019s stupid that the military mails in their votes?\n\n\n\n\u2014 https://ni",
-          "sourceUrl": "https://x.com/mtaibbi/status/2065482969993679183",
+          "summary": "Praises Kasparov for opposing censorious practices reminiscent of Soviet repression",
+          "quote": "I don\u2019t agree with Kasparov about everything but his resignation letter to the Aspen Institute Committee on Information Disorder over its censorious tendencies - which reminded him of the USSR - showed he has principle: racket.news/p/foia-files-gar\u2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2078181796496212067",
           "platform": "x"
         }
       ]
     },
     {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 3,
-      "lastActive": "2026-06-22",
-      "stances": [
-        {
-          "date": "2026-06-22",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Questions leniency for serious crimes due to learning disabilities",
-          "quote": "Would an American court bail out a 30-year-old man after he threw a 3-year-old into a crocodile enclosure,  because he had a learning disability? bbc.com/news/articles/czx50n\u2026\n\n\n\n\n\n\nEnd Wokeness (@EndWokeness)\n\nHoly crap. Look how NBC is spinning it:\n\n\n\n\n\n\u2014 https://nitter.net/End",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068418459659075929",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-21",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Criticizes mischaracterizing bail system critiques as supporting bail for attempted murder",
-          "quote": "A big part of one of my books was about problems with the bail system, yes, but it doesn\u2019t follow that I\u2019d have ever cheered bail for attempted child murder. This is such a strange time in history\n\n\nSimon Rhoades (@umlungu)\n\nFuck off, Matt. What the fuck happened to you?\n\n\n\n\u2014 htt",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068443260360479180",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Defends right to sue regardless of defendant's identity",
-          "quote": "Secondly, I\u2019d have sued Sydney Kamlager-Dove no matter what her race or sex was, and it\u2019s not exactly a big win for her that she was allowed to hide behind Congressional privilege to make false/defamatory statements. Great precedent for everyone, congrats.",
-          "sourceUrl": "https://x.com/mtaibbi/status/2067346029461094706",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
       "count": 1,
-      "lastActive": "2026-06-21",
+      "lastActive": "2026-08-03",
       "stances": [
         {
-          "date": "2026-06-21",
-          "topic": "trump-policy",
+          "date": "2026-08-03",
+          "topic": "epstein-scandal",
           "stance": "lean",
-          "summary": "Claims press amplifies Trump through negative coverage",
-          "quote": "Trump\u2019s speech is absurd, but the idea that the press \u201camplifies\u201d him is nuts, unless you mean through negative attention.\n\n\nMatt Houseman (@MHouseman010170)\n\nAgreed.  The press looked for, found and amplifies the anti-JFK\n\nImagine JFK saying this during the Cuban missile crisis ",
-          "sourceUrl": "https://x.com/mtaibbi/status/2068025969982521721",
+          "summary": "Questions overgeneralization that all named individuals in Epstein files are guilty",
+          "quote": "Do you mean \u201cdownplay\u201d in the sense of \u201cnot everyone who\u2019s in the \u2018Epstein files\u2019 is a pedophile or trafficker or even did anything wrong at all\u201d? Is that what you mean?",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084277392655220850",
           "platform": "x"
         }
       ]
     },
     {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 5,
-      "lastActive": "2026-06-20",
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 1,
+      "lastActive": "2026-08-03",
       "stances": [
         {
-          "date": "2026-06-20",
-          "topic": "foreign-policy-diplomacy",
+          "date": "2026-08-03",
+          "topic": "civil-rights-race",
           "stance": "lean",
-          "summary": "Discusses Machiavelli's advice on maintaining empires",
-          "quote": "\u201cGet Lit\u201d Takes on Immigration, Foreign Wars, and other themes of \u201cDiscourses on Livy\u201d. A recording from Monday's live video: Machiavelli had plenty of advice for current politicians on the subject of how, or whether, to maintain an empire.",
-          "sourceUrl": "https://www.racket.news/p/get-lit-takes-on-immigration-foreign",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-06-13",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Questions why alleged Putin assassination attempt underreported",
-          "quote": "\"Why is no one covering an apparent attempt to assassinate Putin?\". A recording from Matt Taibbi's live video with Matt Bivens.",
-          "sourceUrl": "https://www.racket.news/p/why-is-no-one-covering-an-apparent",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-06-10",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Questions why alleged Putin assassination attempt underreported",
-          "quote": "Livestream, 5:00 PM ET: Did We Try to Whack Putin? . Interviewing friend and former colleague Matt Bivens about a weirdly undercovered story",
-          "sourceUrl": "https://www.racket.news/p/livestream-500-pm-et-did-we-try-to",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-06-10",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Questions why alleged Putin assassination attempt underreported",
-          "quote": "Live at 5 pm ET: \"Why is no one covering an apparent attempt to assassinate Putin?\" nitter.net/i/broadcasts/1pJdRRPny\u2026",
-          "sourceUrl": "https://x.com/mtaibbi/status/2064452563328540710",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-10",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Questions why alleged Putin assassination attempt underreported",
-          "quote": "Livestream, 5:00 PM ET: Did We Try to Whack Putin? \n\nmattbivens.substack.com/p/ze\u2026\n\nopen.substack.com/pub/taibbi\u2026",
-          "sourceUrl": "https://x.com/mtaibbi/status/2064416820178665677",
+          "summary": "Criticizes party positions on minority rights as contradictory",
+          "quote": "That would be an interesting ideological stance for a party ostensibly concerned with minority rights. But hey, winner take all, right?",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084089792573079936",
           "platform": "x"
         }
       ]
@@ -732,59 +620,164 @@
       "topic": "education",
       "label": "Education",
       "count": 1,
-      "lastActive": "2026-06-13",
+      "lastActive": "2026-08-03",
       "stances": [
         {
-          "date": "2026-06-13",
+          "date": "2026-08-03",
           "topic": "education",
           "stance": "strong",
-          "summary": "Criticizes Columbia professor's column on equality",
-          "quote": "To an Ivy League Professor, Who Doesn't Understand \"Equality\". A Columbia professor writes a dumb column, in anticipation of what will likely be humorously bad book",
-          "sourceUrl": "https://www.racket.news/p/to-an-ivy-league-professor-who-doesnt",
-          "platform": "substack"
+          "summary": "Condemns academic plagiarism and institutional failures",
+          "quote": "That there\u2019s even a controversy about this story is incredible. If a Cambridge prof can plagiarize this carelessly and get away with it for years, and still have defenders, shows academia is totally broken",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084057619476426788",
+          "platform": "x"
         }
       ]
     },
     {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
+      "topic": "military-defense",
+      "label": "Military & Defense",
       "count": 2,
-      "lastActive": "2026-06-08",
+      "lastActive": "2026-08-03",
       "stances": [
         {
-          "date": "2026-06-08",
-          "topic": "uk-world-politics",
+          "date": "2026-08-03",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Supports defense spending reductions but opposes total elimination",
+          "quote": "I agree. I\u2019ve written about this at length. But I wouldn\u2019t argue for defunding the whole DoD.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084053286697550277",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "military-defense",
           "stance": "strong",
-          "summary": "Argues liberalism's anti-ethnocentrism campaign went too far",
-          "quote": "Britain's Great Self-Loathing Crusade. American and European liberalism rightly campaigned against ethnocentrism once upon a time, but both versions ultimately went way too far",
-          "sourceUrl": "https://www.racket.news/p/britains-great-self-loathing-crusade",
+          "summary": "Rejects Pentagon defunding as unrealistic extremism",
+          "quote": "My favorite is when she says \u201cDefund the Pentagon.\u201d I\u2019ve argued for major reductions in defense spending my whole career and repeatedly covered DoD waste/corruption - but only a lunatic thinks existence without ANY defense works. What\u2019s the strategy - safety by positive vibes?",
+          "sourceUrl": "https://x.com/mtaibbi/status/2084050992438428106",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-01",
+      "stances": [
+        {
+          "date": "2026-08-01",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Acknowledges rating agencies' role in financial crisis reporting",
+          "quote": "That\u2019s true. The ratings agencies played a big part. Did a number of stories on that",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083268657472233824",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Explains financial incentives behind subprime mortgage origination",
+          "quote": "This is widely misunderstood. Mortgage originators and banks had massive market incentives to write bad loans - because they were immediately bundled and sold as debt hamburger to unsuspecting institutional investors like pension funds, who got killed.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083263807330116021",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Suggests industry-wide incentives enable widespread dishonesty",
+          "quote": "I remember after the 2008 crash calling one Wall Street talking head after another and being told mortgage fraud was not a factor in the collapse. \nSometimes there are industry-wide incentives for everyone to be full of shit.",
+          "sourceUrl": "https://x.com/mtaibbi/status/2083238637605454155",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 3,
+      "lastActive": "2026-07-30",
+      "stances": [
+        {
+          "date": "2026-07-30",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "German probation and radicalization counseling systems failed to prevent terror attack",
+          "quote": "Listen to This Article: History's Most Preventable Terror Attack?",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-historys-most",
           "platform": "substack"
         },
         {
-          "date": "2026-06-08",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Argues historical apology governance leads to negative outcomes",
-          "quote": "Britain's Great Self-Loathing Crusade\nThe Henry Nowak murder is what happens when nations try to govern by historical apology:\n\nopen.substack.com/pub/taibbi\u2026",
-          "sourceUrl": "https://x.com/mtaibbi/status/2063937944990200245",
+          "date": "2026-07-29",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Critiques preventable security failures in German counterterrorism",
+          "quote": "History's Most Preventable Terror Attack?. Probation and radicalization counseling fail in Germany.",
+          "sourceUrl": "https://www.racket.news/p/historys-most-preventable-terror",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Critiques preventable security failures in German counterterrorism",
+          "quote": "History's Most Preventable Terror Attack?\nopen.substack.com/pub/taibbi\u2026",
+          "sourceUrl": "https://x.com/mtaibbi/status/2081769649767588087",
           "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump's handling of speech issues as damaging",
+          "quote": "Listen to This Article: Meet The New Boss, Same as the Old Boss",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-meet-the-new-9fa",
+          "platform": "substack"
         }
       ]
     },
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-06-08",
+      "count": 3,
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-08",
+          "date": "2026-07-29",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Advocates limiting time spent online for most purposes",
-          "quote": "Listen to This Article: Humanity Needs to Get Offline\nLog on for some things. Stay off for most things\n\nracket.news/p/listen-to-this\u2026",
-          "sourceUrl": "https://x.com/mtaibbi/status/2060733502878847058",
-          "platform": "x"
+          "summary": "Criticizes AI and activist pressure on language standardization",
+          "quote": "Don't Let Activists or Robots Choose Your Words . From AI chats to the new AP stylebook to a long list of political crazes, online America is constantly looking for ways to put words in your mouth",
+          "sourceUrl": "https://www.racket.news/p/dont-let-activists-or-robots-choose",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses concern about AI outsourcing mental effort despite benefits",
+          "quote": "On Substack's New AI-Spotting Tool, and the Importance of Human Thought. Machines that help the outsourcing of mental effort are a wonder, and have many positive uses, but they're also dangerous. Join me in a discussion with other Substack voices tonight",
+          "sourceUrl": "https://www.racket.news/p/on-substacks-new-ai-spotting-tool",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Warns against AI content proliferation and ideological implications",
+          "quote": "Listen to This Article: Humans, Unite: The Reign of \"AIdeology\" is Here . Narrated Version | The AI content hurricane is making landfall.",
+          "sourceUrl": "https://www.racket.news/p/listen-to-this-article-humans-unite",
+          "platform": "substack"
         }
       ]
     }

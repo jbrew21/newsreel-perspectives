@@ -94,6 +94,50 @@ def extract_query_keywords(headline):
             if w not in QUERY_STOP_WORDS and len(w) >= 3]
 
 
+# Umbrella topics whose posts span many unrelated stories. A search may only
+# match one of these when the query itself names it ("congress budget" ->
+# congress-legislation). Without this guard, the topic matcher padded searches
+# with adjacent umbrellas and every voice in the bucket flooded the results
+# (Aug 28 2026: "immigration" matched foreign-policy-diplomacy +
+# congress-legislation and returned podcast blurbs and Census posts).
+BROAD_TOPICS = {
+    'trump-administration', 'trump-policy', 'congress-legislation',
+    'foreign-policy-diplomacy', 'economy-trade', 'supreme-court-legal',
+    'elections', 'culture-war', 'media-press', 'media-personalities',
+    'state-local-politics', 'uk-world-politics', 'celebrity-entertainment',
+    'free-speech-censorship', 'protests-activism', 'billionaires-wealth',
+}
+
+
+def drop_unnamed_broad_topics(topics, headline):
+    """Keep an umbrella topic only if a query word appears in its slug."""
+    query_words = set(re.findall(r'[a-z]+', headline.lower()))
+    return [t for t in topics
+            if t not in BROAD_TOPICS or (set(t.split('-')) & query_words)]
+
+
+# Words in taxonomy descriptions that describe every topic rather than one.
+_GENERIC_DESC_WORDS = {
+    'policy', 'policies', 'political', 'politics', 'issues', 'news',
+    'related', 'major', 'general', 'american', 'national', 'coverage',
+    'debates', 'actions', 'battles', 'stories',
+}
+
+
+def topic_bonus_terms(topics, limit=2):
+    """Signature words for the top matched topics, from their slug + taxonomy
+    description. Lets a quote that says "ICE arrests" score as on-topic for an
+    "immigration" search even though it never uses the query word."""
+    descriptions = load_topic_descriptions()
+    terms = set()
+    for t in topics[:limit]:
+        text = t.replace('-', ' ') + ' ' + descriptions.get(t, '')
+        for w in re.findall(r'[a-z]+', text.lower()):
+            if w not in QUERY_STOP_WORDS and w not in _GENERIC_DESC_WORDS and len(w) >= 3:
+                terms.add(w)
+    return terms
+
+
 # Load env: prefer environment variable, fall back to local .env files
 def load_env():
     # Check common .env locations
@@ -211,6 +255,7 @@ RULES:
 - Only include topics where posts tagged with it would clearly be about THIS story
 - Do NOT include generic topics (politics, social-issues, media-criticism, etc.)
 - Do NOT include topics that share a keyword but are about something else (e.g. "war-on-christmas" is not about actual war, "iran-womens-soccer" is not about Iran military)
+- Do NOT pad with broad umbrella topics (congress-legislation, foreign-policy-diplomacy, trump-administration, economy-trade, supreme-court-legal) unless the story is DIRECTLY about them. A search for "immigration" wants immigration posts, not everything Congress did this week.
 - Maximum 8 topics. Quality over quantity.
 
 Available topics:
@@ -553,6 +598,9 @@ def lookup_story(headline, days=None, skip_clusters=False):
     # up to 5 Claude calls before anything painted.
     _, widest_index = get_merged_topic_index(max_days=time_windows[-1])
     widest_topics = match_story_to_topics(headline, list(widest_index.keys())) if widest_index else []
+    # Deterministic guard on top of the model's judgment: umbrella topics only
+    # match when the query names them (see BROAD_TOPICS).
+    widest_topics = drop_unnamed_broad_topics(widest_topics, headline)
 
     for window in time_windows:
         date, topic_index = get_merged_topic_index(max_days=window)
@@ -609,6 +657,10 @@ def lookup_story(headline, days=None, skip_clusters=False):
     # topic surfaces its on-topic quote rather than an unrelated post that
     # happens to share the same topic tag.
     query_keywords = extract_query_keywords(headline)
+    # Signature terms of the top matched topics ("immigration" -> ice,
+    # deportation, border, asylum...). Worth less than a literal query-word
+    # hit, but they let genuinely on-topic quotes clear the relevance gate.
+    bonus_terms = topic_bonus_terms(matching_topics) - set(query_keywords)
     voices_found = {}
     seen_urls = set()
     for topic in matching_topics:
@@ -634,7 +686,8 @@ def lookup_story(headline, days=None, skip_clusters=False):
             # contains. Off-topic posts under a matching topic tag score 1 and
             # sink below genuinely on-topic quotes in the top-3 display.
             quote_lower = quote_text.lower()
-            quote_score = 1 + sum(1 for w in query_keywords if w in quote_lower)
+            quote_score = 1 + 2 * sum(1 for w in query_keywords if w in quote_lower)
+            quote_score += min(sum(1 for w in bonus_terms if w in quote_lower), 2)
             # Sink subscription/product solicitations below any real quote
             if is_promo_quote(quote_text):
                 quote_score -= 100
@@ -661,6 +714,21 @@ def lookup_story(headline, days=None, skip_clusters=False):
                 if q['sourceUrl'] not in existing_urls:
                     voices_found[vid]['quotes'].append(q)
                     voices_found[vid]['topics'].append(q['topic'])
+
+    # Relevance gate (Aug 28 2026): a voice must either quote the story's own
+    # words / a matched topic's signature terms (_quote_score > 1), or have a
+    # post filed under the search's PRIMARY topic. Without this, a voice tagged
+    # only with an adjacent topic renders posts about something else entirely.
+    if query_keywords and matching_topics:
+        primary = matching_topics[0]
+        gated = {}
+        for vid, data in voices_found.items():
+            best = max((q.get('_quote_score', 0) for q in data['quotes']), default=0)
+            if best > 1 or any(q.get('topic') == primary for q in data['quotes']):
+                gated[vid] = data
+        if len(gated) < len(voices_found):
+            print(f"  Relevance gate: dropped {len(voices_found) - len(gated)} voices with no on-topic quote")
+        voices_found = gated
 
     if not voices_found:
         print(f"\n  No voices found for these topics.")

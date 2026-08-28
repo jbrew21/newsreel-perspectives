@@ -1,59 +1,157 @@
 {
   "voiceId": "american-enterprise-institute",
   "voiceName": "American Enterprise Institute",
-  "updatedAt": "2026-06-29",
-  "topicCount": 13,
-  "stanceCount": 34,
+  "updatedAt": "2026-08-28",
+  "topicCount": 18,
+  "stanceCount": 56,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
-      "count": 5,
-      "lastActive": "2026-06-27",
+      "count": 3,
+      "lastActive": "2026-08-20",
       "stances": [
         {
-          "date": "2026-06-27",
+          "date": "2026-08-20",
           "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Regional conflicts destabilize world through interconnected dynamics",
+          "quote": "AEI\u2019s @HalBrands to @JonahDispatch: The world is being destabilized by multiple interlinked regional conflicts. All of them are fueled by and feed on each other.",
+          "sourceUrl": "https://x.com/AEI/status/2090492490138693898",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "North Korea's improved position strengthens Kim Jong Un's negotiating leverage",
+          "quote": "AEI's Nicholas Eberstadt: North Korea is in a better financial situation and probably a better military situation than it's been since the collapse of the Soviet Union. So Kim Jung Un's opening bid is going to be a lot higher if we ever get to transactional negotiations.",
+          "sourceUrl": "https://x.com/AEI/status/2090087000825024563",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "China-US competition intensifying in Western Pacific region",
+          "quote": "That crucial, contested region of the Western Pacific is where the geopolitical ambitions of China and the US meet head-on, and where the clash for primacy grows ever more intense, writes AEI\u2019s @HalBrands \n\nbloomberg.com/opinion/articl\u2026\n\nLink\n\n\n\nThe Test of US-China Ties Is in th",
+          "sourceUrl": "https://x.com/AEI/status/2089714791749206170",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 12,
+      "lastActive": "2026-08-20",
+      "stances": [
+        {
+          "date": "2026-08-20",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Deficit spending, not interest rates alone, drives bond market stress",
+          "quote": "AEI\u2019s @MichaelRStrain to @WSJ: The issue is not so much the rising interest rates. The issue is the deficit.\n\nwsj.com/finance/investing/bo\u2026\n\nLink\n\n\n\nBonds Are Getting Hammered, and Wall Street Says the Rout Won\u2019t End Anytime Soon\n\nWith yields on 30-year U.S. Treasurys at 19-year ",
+          "sourceUrl": "https://x.com/AEI/status/2090462782143472075",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "economy-trade",
           "stance": "strong",
-          "summary": "North Korea closing door to diplomatic engagement",
-          "quote": "Kim Jong Un used recent constitutional amendments to sever any basis for engagement with South Korea, free himself from ideological constraints, and codify the role of North Korea's nuclear weapons, writes AEI\u2019s @DAlexBlumenthal in a new report. aei.org/articles/special-rep\u2026\n\nLin",
-          "sourceUrl": "https://x.com/AEI/status/2070524792122347811",
+          "summary": "China shock narrative misrepresents trade liberalization impacts",
+          "quote": "It is wrong to present the \u201cChina shock\u201d as evidence that trade liberalization hurts the working class, or that a powerful, murky, nefarious elite is making deliberate, isolated choices that hurt the majority of Americans, writes AEI\u2019s @MichaelRStrain \n\naei.org/commentary/the-myt",
+          "sourceUrl": "https://x.com/AEI/status/2090101973294964902",
           "platform": "x"
         },
         {
-          "date": "2026-06-25",
-          "topic": "foreign-policy-diplomacy",
+          "date": "2026-08-18",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Work-promoting safety net reduces dependency and poverty most effectively",
+          "quote": "The lesson of welfare reform was that a work-promoting safety net is the most effective tool we have to reduce both dependency and poverty, write AEI\u2019s @swinshi and @kevincorinth \n\nnationalreview.com/2026/08/t\u2026\n\nLink\n\n\n\nThe Ongoing Battle to Defend Welfare Reform | National Revie",
+          "sourceUrl": "https://x.com/AEI/status/2089442429346734412",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Governments must act now on fiscal sustainability to avoid future crisis",
+          "quote": "The world\u2019s major governments can adopt meaningful budget measures now to put their public finances on a sustainable path and avoid a later day of reckoning, writes AEI\u2019s Desmond Lachman. \n\nbarrons.com/articles/debt-bo\u2026\n\nLink\n\n\n\nThe Debt Danger World Leaders Are Ignoring\n\nA crisi",
+          "sourceUrl": "https://x.com/AEI/status/2088308655942689037",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "CPI data leaves Fed's policy stance unchanged; rates hinge on inflation trends",
+          "quote": "AEI\u2019s @MichaelRStrain: I think this leaves the Fed in the same place it was in before the CPI report came out. The 0.2% monthly figure was right on the bubble. Anything below this, the Fed could have had a lot of the pressure taken off of it.",
+          "sourceUrl": "https://x.com/AEI/status/2087552841548214773",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "economy-trade",
           "stance": "strong",
-          "summary": "US should lead flexible partnership network against rivals",
-          "quote": "Only the United States can be the central node in the network of flexible partnerships that will enable the rimland to outinnovate and outlast its foes, write AEI\u2019s @HalBrands and Michael Beckley.\nforeignaffairs.com/china/hea\u2026\n\nLink\n\n\n\nHeartland vs. Rimland\n\nThe battle lines in t",
-          "sourceUrl": "https://x.com/AEI/status/2069861124258808076",
+          "summary": "Advocates for Federal Reserve interest rate increases",
+          "quote": "AEI\u2019s @MichaelRStrain: My read is pretty clear. The unemployment rate is low and stable. Financial conditions are easing, not tightening. Core PCE inflation is accelerating and has been accelerating for more than a year. I think the Fed should be raising.",
+          "sourceUrl": "https://x.com/AEI/status/2087552689039171732",
           "platform": "x"
         },
         {
-          "date": "2026-06-23",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Freedom of navigation principles can deter violations",
-          "quote": "Ukraine\u2019s experience\u00a0offers a template for how countries committed to freedom of navigation can still uphold the principle and deter its violators, writes AEI\u2019s @DaliborRohac and @oleksiireznikov engelsbergideas.com/essays/u\u2026\n\nLink\n\n\n\nUkraine and the fight for freedom of navigati",
-          "sourceUrl": "https://x.com/AEI/status/2069141580775092356",
+          "date": "2026-08-10",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Opposes union resistance to automation, warns of economic harm",
+          "quote": "Any technology powerful enough to change the way we live will also affect what a workday looks like, writes AEI's @JimPethokoukis \n\naei.org/economics/the-teamst\u2026\n\nLink\n\nThe Teamsters\u2019 Opposition to Driverless Trucks Is a Road to Economic Oblivion\n\nThis can&apos;t be how the Ameri",
+          "sourceUrl": "https://x.com/AEI/status/2086884890381848789",
           "platform": "x"
         },
         {
-          "date": "2026-06-09",
-          "topic": "foreign-policy-diplomacy",
+          "date": "2026-08-10",
+          "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Japan strengthening Pacific stability and strategic autonomy",
-          "quote": "Japan is becoming steadily more valuable to Washington and the stability of the Pacific region. It is also, more subtly, equipping itself for the greater dangers it would face if the US eventually does pull back from the world, writes AEI's @HalBrands bloomberg.com/opinion/featur",
-          "sourceUrl": "https://x.com/AEI/status/2064053232335196338",
+          "summary": "Predicts slower job growth ahead despite current labor market strength",
+          "quote": "AEI\u2019s @stanveuger to @WSJ: My guess would be that the rest of the year will, if anything, see slower jobs growth than what we\u2019ve seen so far.\n\nwsj.com/economy/jobs/jobs-re\u2026\n\nLink\n\n\n\nWhy Slow Job Growth Doesn\u2019t Mean the Labor Market Is in Trouble\n\nA smaller supply of potential wor",
+          "sourceUrl": "https://x.com/AEI/status/2086860408053178768",
           "platform": "x"
         },
         {
-          "date": "2026-06-05",
-          "topic": "foreign-policy-diplomacy",
+          "date": "2026-08-07",
+          "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Trump weapons deal with Taiwan tests competitive diplomacy",
-          "quote": "The fate of a record-breaking US weapons deal with Taipei has become a test of whether President Donald Trump can pursue strong, competitive policies even while he engages diplomatically with China, writes AEI's @HalBrands bloomberg.com/opinion/articl\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2060410290047439031",
+          "summary": "Proposes consumption tax over income or AI taxation to preserve growth",
+          "quote": "The tax code should not target the sources of long-term growth, writes AEI's @MichaelRStrain \nft.com/content/78756a27-817e\u2026\n\nLink\n\n\n\nTax consumption, not income or AI\n\nIf the US needs more revenue, it should overhaul its broken taxation system\nft.com",
+          "sourceUrl": "https://x.com/AEI/status/2085726387063714003",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Challenges conventional retirement planning wisdom with alternative strategy",
+          "quote": "New AEI research on retirement income strategies was featured by @CNBC's @LorieKonish: The\u00a04% rule is not necessarily the best answer according to\u00a0new research\u00a0by Mark Warshawsky.\n\ncnbc.com/2026/07/29/retireme\u2026\n\nLink\n\nDoes the 4% retirement rule still work? New research points to",
+          "sourceUrl": "https://x.com/AEI/status/2082894876983677206",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Congress should restrict China's chipmaking advancement",
+          "quote": "Congress now has an opportunity to meaningfully delay the emergence of China\u2019s near-frontier chipmaking capability. Doing so would buy precious time for AI hardware made in America\u2014not China\u2014to anchor the global intelligence economy, writes AEI's @RyanFedasiuk \n\nnationalinterest.",
+          "sourceUrl": "https://x.com/AEI/status/2082819223328338133",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Advocates neutral business income taxation, elimination of deductions",
+          "quote": "After the passage of the OBBBA, lawmakers now have time to plan the next business tax reform. Such a reform should tax business income neutrally and eliminate this deduction, writes AEI\u2019s @kpomerleau aei.org/economics/lawmakers-\u2026\n\nLink\n\n\n\nLawmakers Need to Get Serious About Busin",
+          "sourceUrl": "https://x.com/AEI/status/2082488195241959442",
           "platform": "x"
         }
       ]
@@ -61,122 +159,123 @@
     {
       "topic": "education",
       "label": "Education",
+      "count": 9,
+      "lastActive": "2026-08-20",
+      "stances": [
+        {
+          "date": "2026-08-20",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Higher ed reform requires institutional courage against campus consensus",
+          "quote": "The reforms so urgently needed in higher ed will be the work of scholars and administrators ready to fight for their own institutions, even at some cost to their comfort and standing on campus, writes AEI\u2019s @GaryRosenAEI \n\nwashingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpinion | I see wh",
+          "sourceUrl": "https://x.com/AEI/status/2090431153610035463",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Art majors face worse employment outcomes than peers",
+          "quote": "Art majors earn less than other recent graduates and end up working in an artistic field less than a quarter of the time.\n\nAEI's @PrestonCooper93 explains why the concordance between what students study and where they work is stronger for certain majors.",
+          "sourceUrl": "https://x.com/AEI/status/2087896419378033074",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Centralization and efficiency drive reduced local school quality and community engagement",
+          "quote": "The social capital that comes with small school districts and local elections, has, tragically, become a luxury good, writes AEI\u2019s Howard Husock.\n\nwsj.com/opinion/free-express\u2026\n\nLink\n\n\n\nOpinion | How We Got Fewer and Worse Schools\n\nThe midcentury professionalization and efficienc",
+          "sourceUrl": "https://x.com/AEI/status/2088278412951425065",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Criticizes university grading policy as destructive equity measure",
+          "quote": "We\u2019ve grown all too familiar with destructive policies enacted under the banner of compassion and equity. But we don\u2019t have to accept them, writes AEI\u2019s @continetti on the University of Michigan\u2019s new first-semester grading policy.\nwsj.com/opinion/free-express\u2026\n\nLink\n\n\n\nOpinion |",
+          "sourceUrl": "https://x.com/AEI/status/2087535659426722208",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Reading crisis reframes debate about curriculum and literacy instruction methods",
+          "quote": "\"When you\u2019re no longer confident that schools are producing capable readers at all, old arguments about what children should read\u2014and how they should be taught to read\u2014begin to sound different.\"\u2014@rpondiscio fordhaminstitute.org/nationa\u2026\n\nLink\n\n\n\nThe reading crisis is changing the",
+          "sourceUrl": "https://x.com/AEIeducation/status/2085460594828665330",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Public schools face unique data-sharing constraints versus private sector",
+          "quote": "Public schools don\u2019t operate like the private companies and government agencies Anthropic is used to working with. Teachers face legal exposure around sharing student data that doesn\u2019t exist in those sectors, write AEI's Mark Schneider and Andrew Rice.\n\nthe74million.org/article/w",
+          "sourceUrl": "https://x.com/AEI/status/2085029613244211241",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Supports loan limits forcing graduate school cost control",
+          "quote": "For too long, taxpayers have effectively paid for any graduate degree of any quality at any price the institution chooses to charge. No longer: loan limits are finally starting to force some real cost control, writes AEI\u2019s @PrestonCooper93 aei.org/education/the-gradua\u2026\n\nLink\n\n\n\nT",
+          "sourceUrl": "https://x.com/AEI/status/2082153527619555424",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Supports data-driven tools to combat chronic absenteeism in schools",
+          "quote": "In a new feature by @educationweek on the AEI Absence Forecast tool, AEI\u2019s @natmalkus says he hopes districts can walk away with more information to keep up the fight against chronic absenteeism. edweek.org/leadership/a-new-\u2026\n\nLink\n\n\n\nA New Tool Can Predict Absenteeism\u2014Before It&",
+          "sourceUrl": "https://x.com/AEI/status/2081802562362118546",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Family structure should be standard metric for student success reporting",
+          "quote": "Family structure should be a standard reporting category alongside race, poverty and disability\u2014not an afterthought, write AEI\u2019s @BradWilcoxIFS and @IanVRowe wsj.com/opinion/the-hidden-f\u2026\n\nLink\n\n\n\nOpinion | The Hidden Factor in Student Success: Family Structure\n\nThe federal gover",
+          "sourceUrl": "https://x.com/AEI/status/2081741459309375967",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
       "count": 3,
-      "lastActive": "2026-06-27",
+      "lastActive": "2026-08-18",
       "stances": [
         {
-          "date": "2026-06-27",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Low student loan interest rates are poor policy",
-          "quote": "Setting student loan interest at 2 percent makes for an appealing soundbite. But it\u2019s a terrible policy, writes AEI's @PrestonCooper93 aei.org/education/capping-st\u2026\n\nLink\n\n\n\nCapping Student Loan Interest Would Cost Billions, Help Well-off Borrowers\n\nSetting student loan interest ",
-          "sourceUrl": "https://x.com/AEI/status/2070509361122697263",
+          "date": "2026-08-18",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Americans prefer private insurance over Medicare-for-all disruption",
+          "quote": "Americans, for all their complaints about the health care system, generally dread the prospect of Washington disrupting their insurance, writes AEI\u2019s @RameshPonnuru \nwashingtonpost.com/opinions/\u2026\n\nLink\n\nOpinion | Medicare-for-all, private insurance for none\n\nAbdul El-Sayed, Berni",
+          "sourceUrl": "https://x.com/AEI/status/2089786543745483025",
           "platform": "x"
         },
         {
-          "date": "2026-06-24",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "School choice vouchers benefit participating students most",
-          "quote": "The primary beneficiaries of choice policies are the students who themselves receive vouchers and thereby can access school options that they could not otherwise afford, writes AEI's @MrDanielBuck aei.org/op-eds/democrats-aim\u2026\n\nLink\n\nDemocrats Aim to Kill School Choice from Wisco",
-          "sourceUrl": "https://x.com/AEI/status/2069428615129739478",
+          "date": "2026-08-13",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Warns upfront payment requirements harm providers, clinicians, and patients",
+          "quote": "AEI's @chipkahn to @Julie_appleby: Things like preservice deposits and those kinds of moves are probably going to become more and more likely. That will make it harder on the provider, the clinician, and harder on the patients. \ncbsnews.com/detroit/news/hos\u2026\n\nLink\n\n\n\nHospitals pu",
+          "sourceUrl": "https://x.com/AEI/status/2087962352515784772",
           "platform": "x"
         },
         {
-          "date": "2026-06-24",
-          "topic": "education",
+          "date": "2026-08-12",
+          "topic": "healthcare",
           "stance": "lean",
-          "summary": "Higher education institutions embody practical wisdom traditions",
-          "quote": "The complex institutions of higher education we have inherited embody the successive efforts of a free people to find the practical wisdom they need to live well in a world that is always new, write AEI's Benjamin Storey and Jenna Silber Storey. nationalaffairs.com/publicat\u2026\n\nLin",
-          "sourceUrl": "https://x.com/AEI/status/2069510830786273289",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "housing-infrastructure",
-      "label": "Housing & Infrastructure",
-      "count": 2,
-      "lastActive": "2026-06-26",
-      "stances": [
-        {
-          "date": "2026-06-26",
-          "topic": "housing-infrastructure",
-          "stance": "lean",
-          "summary": "State laws will significantly increase housing construction",
-          "quote": "State-level laws are on track to produce roughly 280,000 new homes a year, which could halve the national housing shortage within a decade, write AEI's @ArthurGailes and Edward Pinto. barrons.com/articles/congres\u2026\n\nLink\n\n\n\nCongress Passed a Major Housing Bill. It Won\u2019t Help You B",
-          "sourceUrl": "https://x.com/AEI/status/2070205113424138628",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "housing-infrastructure",
-          "stance": "lean",
-          "summary": "Federal bills inadequate for starter home production",
-          "quote": "AEI\u2019s @TobiasPeterAEI: In the housing sector, we have not been building enough starter homes. We need to get back to that. Unfortunately, these bills that are currently floating around on the federal side, I\u2019m afraid they\u2019re not going to achieve that.\n\nVideo",
-          "sourceUrl": "https://x.com/AEI/status/2061839847896007084",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 6,
-      "lastActive": "2026-06-26",
-      "stances": [
-        {
-          "date": "2026-06-26",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Quantum computers will advance drug discovery and cybersecurity",
-          "quote": "When scaled up, quantum computers will supercharge efforts to discover new drugs, invent new materials\u2014and overcome adversaries\u2019 staunchest cyber-defences, write AEI's @crmiller1 and @joshzoff economist.com/by-invitation/\u2026\n\nLink\n\n\n\nThe quantum-computing mistakes America must avoi",
-          "sourceUrl": "https://x.com/AEI/status/2070171295719784515",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Pope's AI guidance insufficient for emerging technology",
-          "quote": "In this sense, despite tackling an emerging technology at the beginning of what futurists like to call the Fourth Industrial Revolution, the pope\u2019s guidance might already be too little, too late, writes AEI\u2019s Christine Rosen. \n\naei.org/op-eds/ai-and-the-to\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2067267969873289367",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-16",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "US-China AI risk engagement offers cautious optimism",
-          "quote": "One area where there may be cause for cautious optimism is the renewed potential for U.S.-China engagement on AI risk, writes AEI\u2019s Chris Li. aei.org/articles/are-there-a\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2066908530557190408",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-11",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Remote work advocates need AI wake-up call",
-          "quote": "The rise of generative AI tools should be a wake-up call to work-from-home advocates and to workers who insist on working from home, writes AEI\u2019s @MichaelRStrain in a @WSJ feature on the future of work and AI. wsj.com/tech/ai/economists-w\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2064756671570661657",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "AI consciousness claims require proof from believers",
-          "quote": "The burden of proof that AI can engage in introspection\u2014can form a self-image, as humans can\u2014and experience emotions is on the believer, not the skeptic, writes AEI\u2019s @MichaelRStrain aei.org/op-eds/ai-must-not-e\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2062905049995514306",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Generative AI could reshape entire American economy",
-          "quote": "If the economic optimists are correct, GenAI will be so broadly and usefully adopted that it eventually reshapes productivity across the entire American economy, writes AEI\u2019s @JimPethokoukis aei.org/economics/an-expecte\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2061447673853407298",
+          "summary": "FDA handling of Cyclospora outbreak raises food safety concerns",
+          "quote": "AEI senior fellow @ScottGottliebMD joins CNBC's \u2018Squawk Box\u2019 to discuss concerns over food safety and FDA's handing of the recent Cyclospora outbreak.",
+          "sourceUrl": "https://x.com/AEI/status/2087610538519884003",
           "platform": "x"
         }
       ]
@@ -185,94 +284,15 @@
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 1,
-      "lastActive": "2026-06-25",
+      "lastActive": "2026-08-18",
       "stances": [
         {
-          "date": "2026-06-25",
+          "date": "2026-08-18",
           "topic": "supreme-court-legal",
           "stance": "strong",
-          "summary": "Supreme Court cameras would harm proceedings and trust",
-          "quote": "Putting cameras in the court would dramatically change the nature of the proceedings, create perverse incentives and further erode the public\u2019s trust in the institution, writes AEI\u2019s @BenSasse \nwsj.com/opinion/free-express\u2026\n\nLink\n\n\n\nOpinion | Ben Sasse: Keep Cameras Out of the Su",
-          "sourceUrl": "https://x.com/AEI/status/2069840674749325417",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 5,
-      "lastActive": "2026-06-25",
-      "stances": [
-        {
-          "date": "2026-06-25",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Social Security's financial health significantly worsening",
-          "quote": "This year\u2019s Social Security Trustees Report was an improvement, in the sense that it gives a more accurate picture of how much worse Social Security\u2019s financial health has become, writes AEI's @biggsag aei.org/articles/the-social-\u2026\n\nLink\n\n\n\nThe Social Security Trustees Report: It",
-          "sourceUrl": "https://x.com/AEI/status/2069808470430253555",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-19",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Politicians will cut deficits when voters demand it",
-          "quote": "When enough voters feel more pain from deficit increases than from deficit reduction, more politicians \u2014 in an effort to win elections \u2014 will try to stop the deficit from increasing, writes AEI\u2019s @MichaelRStrain nationalreview.com/corner/ca\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2067691697606164983",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-08",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Economic growth benefits all Americans, though unequally",
-          "quote": "The rising tide has lifted all boats notably, even if unequally. It has not left everyday Americans stranded on the economic shore, write AEI\u2019s @swinshi and Stephen J. Rose. nytimes.com/2026/06/08/opini\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2063992959851221157",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Republicans need economic gains to win elections",
-          "quote": "AEI\u2019s @continetti: Voters are always asking, \u201cWhat have you done for us lately?\u201d Unless the president can show real gains in the Strait of Hormuz, and on the price level and income growth, it is an uphill climb for Republicans in the fall.\n\nVideo",
-          "sourceUrl": "https://x.com/AEI/status/2061472969545699426",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Dollar weakness worsens affordability and fiscal position",
-          "quote": "Weakening the dollar, including by eroding policy predictability and the economic institutions underpinning its hegemony, will exacerbate the affordability pressures many Americans face and harm the country\u2019s fiscal position, writes AEI's Glenn Hubbard. aei.org/op-eds/the-policy-",
-          "sourceUrl": "https://x.com/AEI/status/2060015822282654007",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 2,
-      "lastActive": "2026-06-25",
-      "stances": [
-        {
-          "date": "2026-06-25",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Local governance equally important as national celebrations",
-          "quote": "As America turns 250, the celebrations in Washington and Philadelphia will naturally take center stage. But equally important is what goes on in every town hall, county seat and school board, writes AEI's Howard Husock. wsj.com/opinion/free-express\u2026\n\nLink\n\n\n\nOpinion | The Best Po",
-          "sourceUrl": "https://x.com/AEI/status/2069875548080177352",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-23",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Mayors should discourage poor from lottery spending",
-          "quote": "A mayor who is truly concerned about the poor would be urging the state to stop tempting them with illusion-based ads to spend their money foolishly on what amounts to a regressive tax, writes AEI\u2019s Howard Husock. nypost.com/2026/06/21/opinio\u2026\n\nLink\n\n\n\nNew York is overdoing it wi",
-          "sourceUrl": "https://x.com/AEI/status/2069109428905824542",
+          "summary": "Praises originalist justices as improvement over past Court",
+          "quote": "Forty years ago, at the time of Dad\u2019s hearings, there were no originalist justices. It\u2019s fair to say that the Court has improved dramatically since then, writes AEI\u2019s @cjscalia \n\nnationalreview.com/2026/08/o\u2026\n\nLink\n\n\n\nOne Crazy Summer | National Review\n\nMemories of my father\u2019s co",
+          "sourceUrl": "https://x.com/AEI/status/2089777623937188296",
           "platform": "x"
         }
       ]
@@ -280,42 +300,338 @@
     {
       "topic": "military-defense",
       "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-06-24",
+      "count": 3,
+      "lastActive": "2026-08-18",
       "stances": [
         {
-          "date": "2026-06-24",
+          "date": "2026-08-18",
           "topic": "military-defense",
-          "stance": "lean",
-          "summary": "US conventional forces critical to nuclear deterrence",
-          "quote": "The credibility of US extended nuclear deterrence depends on America making a meaningful conventional contribution to European security, writes AEI's @BalzerKyle aei.org/foreign-and-defense-\u2026\n\nLink\n\n\n\nFinland, Nuclear Deterrence, and Reviving the \u201cNATO Triad\u201d\n\nYesterday, Finland\u2019",
-          "sourceUrl": "https://x.com/AEI/status/2069419260783308930",
+          "stance": "strong",
+          "summary": "Congress must fund critical defense requests to protect national security",
+          "quote": "If Congress neglects critical defense funding requests, the losers are obvious: the military; the industrial base, economic, and innovation engine that supports it; the taxpayer; and ultimately the nation\u2019s security and prosperity, writes AEI\u2019s Elaine McCusker.\n\nnationalinterest.",
+          "sourceUrl": "https://x.com/AEI/status/2089395514613633269",
           "platform": "x"
         },
         {
-          "date": "2026-06-05",
+          "date": "2026-07-29",
           "topic": "military-defense",
           "stance": "strong",
-          "summary": "Reintroducing nuclear forces in Asia reassures allies",
-          "quote": "By reintroducing US theater nuclear forces to East Asia\u2014first in South Korea, and then more gradually in Japan \u2014 Washington can reassure its anxious allies, while also bolstering its own national security interests, writes AEI\u2019s @BalzerKyle breakingdefense.com/2026/06/\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2062223500119560699",
+          "summary": "Criticizes Navy underinvestment, calls for stronger acquisition priorities",
+          "quote": "Securing shipping lanes is one of the Navy\u2019s core missions. Decades of underinvestment and inconsistent acquisition priorities have left the Navy brittle, overstretched, and falling behind, write AEI\u2019s @MEaglen and @NicholasACarl nationalinterest.org/feature\u2026\n\nLink\n\n\n\nThe US Navy",
+          "sourceUrl": "https://x.com/AEI/status/2082182951832281154",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Ukraine warfare innovations provide U.S. strategic insight without domestic cost",
+          "quote": "Ukraine\u2019s innovation in modern warfare has allowed the U.S. to see the future of the battlefield without suffering the same terrible cost, writes AEI\u2019s @bradyafr",
+          "sourceUrl": "https://x.com/AEI/status/2080665644102468049",
           "platform": "x"
         }
       ]
     },
     {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-06-19",
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 9,
+      "lastActive": "2026-08-18",
       "stances": [
         {
-          "date": "2026-06-19",
-          "topic": "healthcare",
+          "date": "2026-08-18",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "U.S. AI future requires skilled blue-collar manufacturing workforce",
+          "quote": "The future of artificial intelligence may depend less on coders than on construction workers, electricians and factory technicians, writes AEI\u2019s Rob Portman. \n\nfoxnews.com/opinion/america-\u2026\n\nLink\n\n\n\nAmerica needs thousands of blue-collar workers to manufacture our AI future\n\nThe ",
+          "sourceUrl": "https://x.com/AEI/status/2089350968206852202",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Administration taking bullish stance on AI technology",
+          "quote": "I think they are bullish about this technology, said AEI\u2019s @MichaelRStrain to @TonyRomm on the administration\u2019s approach to AI. \n\nnytimes.com/2026/08/10/busin\u2026\n\nLink\n\n\n\nTrump Shrugs Off A.I. and Data Center Concerns as Voters Grow Anxious\n\nThe president and his top aides have bee",
+          "sourceUrl": "https://x.com/AEI/status/2087169503029256292",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Commercial satellite imagery market will prioritize trust over access as deepfakes proliferate",
+          "quote": "In a world crowded with providers and rife with\u00a0fakes, tomorrow\u2019s commercial satellite imagery market will be defined more by trust than access, writes AEI\u2019s @bradyafr \nforeignpolicy.com/2026/08/06\u2026\n\nLink\n\n\n\nSelling Trust From Orbit\n\nSatellite images are plentiful, affordable, an",
+          "sourceUrl": "https://x.com/AEI/status/2085741665902288936",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Data center growth feasible with adequate infrastructure investment",
+          "quote": "If the United States could add generation, transmission, and water capacity at the pace of earlier eras, the data center \u201ccrisis\u201d would mostly disappear, writes AEI's @RogerPielkeJr \n\nthedispatch.com/newsletter/d\u2026\n\nLink\n\n\n\nThe Data Center Backlash Is Really About Abundance\n\nKeepi",
+          "sourceUrl": "https://x.com/AEI/status/2085062968559989031",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "U.S. should pursue superintelligence advantage over shared development",
+          "quote": "Technological advantage is of benefit whether Washington is surging to superintelligence or negotiating the terms of shared development, writes AEI's @HalBrands \n\nforeignaffairs.com/united-st\u2026\n\nLink\n\n\n\nAmerica\u2019s Superintelligence Dilemma\n\nHow to avoid an AI catastrophe.\nforeignaf",
+          "sourceUrl": "https://x.com/AEI/status/2085006951801385409",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Chinese open-source AI models pose strategic challenge requiring policy response",
+          "quote": "China\u2019s open-source AI models are marching steadily into global markets, and now account for the majority of global AI workloads. The debate about what to do about them has polarized Washington into two camps, writes AEI's @RyanFedasiuk \n\nwarontherocks.com/cogs-of-wa\u2026\n\nLink\n\n\n\nHo",
+          "sourceUrl": "https://x.com/AEI/status/2084661343123042666",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Supports AI efficiency gains alongside job creation concerns",
+          "quote": "AEI\u2019s @JimPethokoukis: We want companies to hire, but we also want companies to say, we started up all these AI projects, and they're making things more efficient, they're generating revenue.",
+          "sourceUrl": "https://x.com/AEI/status/2084697472010502562",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Warns U.S. must compete with China on AI to maintain global position",
+          "quote": "America\u2019s overall position is formidable; Washington wouldn\u2019t want to trade places with Beijing. Nonetheless, a set of emerging challenges threatens to render that position less secure, writes AEI\u2019s @HalBrands on global AI competition. bloomberg.com/opinion/featur\u2026\n\nLink\n\n\n\nAI Is",
+          "sourceUrl": "https://x.com/AEI/status/2084331455707033642",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Emphasizes individual responsibility over technology blame",
+          "quote": "Adults are responsible for their choices \u2014 including for how they use and misuse technology, writes AEI's @MichaelRStrain \nnationalreview.com/corner/ad\u2026\n\nLink\n\n\n\nAdults are Responsible for How They Use AI | National Review\n\nConservatives are accustomed to arguing that the instrum",
+          "sourceUrl": "https://x.com/AEI/status/2084272509558378710",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "refugees-humanitarian",
+      "label": "Refugees & Humanitarian",
+      "count": 1,
+      "lastActive": "2026-08-14",
+      "stances": [
+        {
+          "date": "2026-08-14",
+          "topic": "refugees-humanitarian",
+          "stance": "lean",
+          "summary": "Questions whether Spain's mass immigration is integrating newcomers successfully",
+          "quote": "Spain\u2019s experiment in mass immigration begs the question of how its enormous new wave of newcomers is assimilating into the life of the country, writes AEI\u2019s Nicholas Eberstadt.\n\naei.org/foreign-and-defense-\u2026\n\nLink\n\n\n\nQuo Vadis,\u00a0Hispania?\u00a0Part One\n\nMany troubling questions about ",
+          "sourceUrl": "https://x.com/AEI/status/2088256630072709430",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 5,
+      "lastActive": "2026-08-13",
+      "stances": [
+        {
+          "date": "2026-08-13",
+          "topic": "culture-war",
           "stance": "strong",
-          "summary": "FDA needs restored expert leadership for effectiveness",
-          "quote": "AEI Senior Fellow @ScottGottliebMD writes in @JAMAHealthForum that restoring expert leadership in the FDA\u2019s medical review centers is critical to rebuilding the agency\u2019s effectiveness, credibility, and ability to deliver lasting reforms. \naei.org/articles/making-the-\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2067932618746671448",
+          "summary": "Criticizes Republicans for profiting from vice industries despite family values rhetoric",
+          "quote": "Too many in the party of \u201cfamily values\u201d have become partisans for the vice economy, writes AEI\u2019s @BradWilcoxIFS and @jameslynch32 compactmag.com/article/repub\u2026\n\nLink\n\n\n\nRepublicans Embrace the Vice Economy\n\nAs marijuana use surpasses alcohol and tobacco use for the first time, R",
+          "sourceUrl": "https://x.com/AEI/status/2087911472621818077",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Politicians failing to meet demand for patriotic revival",
+          "quote": "We believe that there is an unmet demand in this country for a revival of patriotism that politicians of both parties appear incapable of meeting, write AEI\u2019s Ruy Teixeira and Karlyn Bowman. \nthefp.com/p/american-patriot\u2026\n\nLink\n\n\n\nAmericans Are Patriotic. Why Aren\u2019t Our Politicia",
+          "sourceUrl": "https://x.com/AEI/status/2087583137127674027",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Notes DSA's appeal to isolated young people seeking community",
+          "quote": "One aspect of the DSA\u2019s appeal has been too often overlooked, particularly by conservative critics: its appeal as a form of instant community for a generation that often lacks one, writes AEI's Christine Rosen.\n\nnationalreview.com/2026/08/t\u2026\n\nLink\n\n\n\nThe Unwelcome Return of Senti",
+          "sourceUrl": "https://x.com/AEI/status/2086806314290680272",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Democratic Socialists gaining influence, Democrats losing working-class support",
+          "quote": "On @themimsshow, AEI\u2019s Ruy Teixeira spoke with @jameshohmann about the growing influence of the Democratic Socialists of America and the Democratic Party\u2019s continued struggle with working-class voters.\n\npiped.video/watch?v=dcaMyj2l\u2026\n\nLink\n\n\n\nAre Socialists Hijacking The Democrati",
+          "sourceUrl": "https://x.com/AEI/status/2085356699246792808",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Argues socialism loses popular support through governance failure",
+          "quote": "Even if the \u201csocialists\u201d win, they\u2019ll lose at governing. And so will the popularity of socialism, writes AEI\u2019s @JonahDispatch \n\nthedispatch.com/article/demo\u2026\n\nLink\n\n\n\nA Socialist Takeover Is Not Imminent\n\nSocialism still isn\u2019t very popular, even among those dissatisfied with our ",
+          "sourceUrl": "https://x.com/AEI/status/2082514283934396684",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 1,
+      "lastActive": "2026-08-12",
+      "stances": [
+        {
+          "date": "2026-08-12",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Trump vaccine order may pressure states to relax school vaccination requirements",
+          "quote": "AEI senior fellow @ScottGottliebMD joins CNBC's \u2018Squawk Box\u2019 to discuss how President Trump's vaccine executive order could put pressure on states that require proof of vaccination status for school entrance to limit or curtail those requirements.",
+          "sourceUrl": "https://x.com/AEI/status/2087610385939468318",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 2,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Chinese Americans face dual political pressure from U.S. and Beijing",
+          "quote": "These days, Chinese Americans are facing pressure from two directions as they participate in American democracy, writes AEI's @audryewong \n\naei.org/commentary/chinese-a\u2026\n\nLink\n\nChinese Americans are caught between U.S. hostility and Beijing\u2019s political pressure\n\nSan Francisco Sup",
+          "sourceUrl": "https://x.com/AEI/status/2087196225955127670",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Unmarried-parent households produce lower academic achievement",
+          "quote": "Children from non-intact or unmarried-parent households are 13 percent less likely to earn A\u2019s and B\u2019s or better than peers from intact, married-parent\u00a0families, find AEI\u2019s @BradWilcoxIFS and @IanVRowe",
+          "sourceUrl": "https://x.com/AEI/status/2082832429895565698",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 1,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Defends filibuster as valuable institutional check on partisan politics",
+          "quote": "The filibuster is an artifact of an earlier era. That is what makes it valuable, writes AEI's @RameshPonnuru \n\nwashingtonpost.com/opinions/\u2026\n\nLink\n\nOpinion | Killing the filibuster won\u2019t fix a broken Congress\n\nPartisan politics keep ratcheting up. But Republicans shouldn\u2019t take t",
+          "sourceUrl": "https://x.com/AEI/status/2085772507596919010",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 1,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Data center water use concerns are exaggerated relative to other uses",
+          "quote": "US data centers directly use approximately 17.5 billion gallons of water annually, compared to the 3.2 trillion gallons used for residential lawns and turf.\n\nAEI\u2019s @ProfDanielLyons explains that data center pushback focused on water consumption is overblown.",
+          "sourceUrl": "https://x.com/AEI/status/2085378088163045751",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 1,
+      "lastActive": "2026-08-03",
+      "stances": [
+        {
+          "date": "2026-08-03",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Defends objective truth pursuit through engaging opposing viewpoints",
+          "quote": "Genuine civil discourse recognizes not only that objective truth exists but that it\u2019s often best pursued by engaging with people who are convinced we\u2019ve got it wrong, writes AEI's @McCormickProf theatlantic.com/ideas/2026/0\u2026\n\nLink\n\n\n\nThe Two Great Threats to Truth\n\nMoral relativi",
+          "sourceUrl": "https://x.com/AEI/status/2084350615837192501",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-07-31",
+      "stances": [
+        {
+          "date": "2026-07-31",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Warns against oversimplifying gerrymandering as a settled scientific question",
+          "quote": "Defining a gerrymander is not easy, nor is it scientific. It\u2019s a question that involves deep theoretical questions and policy questions, and voters should be wary of anyone who oversimplifies it, writes AEI's @SeanTrende for The American Enterprise. \n\ntheamericanenterprise.com/wh",
+          "sourceUrl": "https://x.com/AEI/status/2083237411073429640",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-07-31",
+      "stances": [
+        {
+          "date": "2026-07-31",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Calls for applying Milton Friedman's free-market principles to counter socialism",
+          "quote": "To defeat socialism, intellectual and political leaders will have to draw on Friedman\u2019s lessons, writes AEI's @continetti \n\nwsj.com/opinion/free-express\u2026\n\nLink\n\n\n\nOpinion | Milton Friedman Was Right\n\nCritics of the famed free-market economist should try learning from him.\nwsj.com",
+          "sourceUrl": "https://x.com/AEI/status/2083201628614643947",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Criticizes rent regulation benefiting affluent while harming newcomers",
+          "quote": "Affluent households in New York City\u2019s top neighborhoods have benefited from rent regulation for decades while newcomers to the city crowd into small apartments and face high market-rate rents, writes AEI\u2019s Howard Husock. nypost.com/2026/07/27/opinio\u2026\n\nLink\n\n\n\nSurprise: Mamdani&a",
+          "sourceUrl": "https://x.com/AEI/status/2082120034583769161",
           "platform": "x"
         }
       ]
@@ -324,93 +640,15 @@
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 1,
-      "lastActive": "2026-06-19",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-19",
+          "date": "2026-07-29",
           "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Iran deal creates intermission rather than resolution",
-          "quote": "The deal will mark more of an intermission than a conclusion: It would entrench, rather than end, the struggle between America and Iran, writes AEI\u2019s @HalBrands bloomberg.com/opinion/articl\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2067645510593257484",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 2,
-      "lastActive": "2026-06-17",
-      "stances": [
-        {
-          "date": "2026-06-17",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Declining marriage and fatherhood rates harm families",
-          "quote": "A major reason why Super Dads dominate families is that we have a lot fewer dads. Divorce and single parenthood have fallen, but marriage and fatherhood altogether are also in retreat, writes AEI's @BradWilcoxIFS \n\nthefp.com/p/america-fatherho\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2067275884319441202",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-15",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Smartphones transformed culture, dating, and self-understanding",
-          "quote": "Maybe the culture was upended by a device that altered how people spend all their time, how singles date, how fast first-world norms spread across the planet, and frankly, how we understand ourselves, writes AEI\u2019s @TPCarney washingtonexaminer.com/in_fo\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2066540714352075122",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 3,
-      "lastActive": "2026-06-12",
-      "stances": [
-        {
-          "date": "2026-06-12",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Democrats would constrain presidential power if given majority",
-          "quote": "A Democratic House majority would use its leverage to force action on some of their priorities and insist on statutory checks on the president\u2019s power.\n\nRepublicans will do everything they can between now and November to deny them the chance, writes AEI's @PhilipWallach nypost.co",
-          "sourceUrl": "https://x.com/AEI/status/2065122946192925004",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-10",
-          "topic": "congress-legislation",
           "stance": "strong",
-          "summary": "Entitlements should not be exempt from budget cuts",
-          "quote": "It\u2019s nonsensical to give entitlements a pass and then pursue symbolic savings in education, one of the few outlays that are plausibly an investment in more than next week, writes AEI\u2019s @rickhess99 aei.org/op-eds/tough-times-f\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2064428022103523591",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Congress should align federal budget with defense needs",
-          "quote": "Congress must fix the annual federal budget dysfunction and bring its power of the purse into alignment with the defense of the nation, writes AEI\u2019s Elaine McCusker. thehill.com/opinion/national\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2061870736361304217",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 1,
-      "lastActive": "2026-06-06",
-      "stances": [
-        {
-          "date": "2026-06-06",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "GOP resistance to Trump driven by low polling",
-          "quote": "GOP legislators\u2019 growing comfort with resisting Trump may be growing due to his plunging poll numbers, writes AEI\u2019s @kevinrkosar washingtonexaminer.com/premi\u2026",
-          "sourceUrl": "https://x.com/AEI/status/2062910475520667933",
+          "summary": "Warns Iran conflict exposes U.S. military weaknesses requiring urgent adaptation",
+          "quote": "The Iran conflict is a summons to urgency for a country whose way of war is unraveling. The US military must adapt before those weaknesses are exposed in an even bigger, more bruising fight, writes AEI\u2019s @HalBrands \n\naei.org/commentary/irans-str\u2026\n\nLink\n\n\n\nIran\u2019s Strikes on US Bas",
+          "sourceUrl": "https://x.com/AEI/status/2080705841087291840",
           "platform": "x"
         }
       ]

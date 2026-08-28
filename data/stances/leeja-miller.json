@@ -1,21 +1,142 @@
 {
   "voiceId": "leeja-miller",
   "voiceName": "Leeja Miller",
-  "updatedAt": "2026-06-29",
-  "topicCount": 12,
-  "stanceCount": 17,
+  "updatedAt": "2026-08-28",
+  "topicCount": 13,
+  "stanceCount": 21,
   "topics": [
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 3,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Questions U.S. expansionist ambitions toward Canada",
+          "quote": "Manifest Destiny Includes Canada, Too",
+          "sourceUrl": "https://www.youtube.com/watch?v=7UVJJI2ebcY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Examines U.S. policy fixation on Cuba through critical framing",
+          "quote": "Why Is The US Obsessed With Cuba?",
+          "sourceUrl": "https://www.youtube.com/watch?v=-HEvrPz8kJg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Departed U.S., expresses rejection of American system",
+          "quote": "Why I Left The US",
+          "sourceUrl": "https://www.youtube.com/watch?v=a5IEyylqQrE",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 2,
+      "lastActive": "2026-08-14",
+      "stances": [
+        {
+          "date": "2026-08-14",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Criticizes DHS surveillance of leftist activists",
+          "quote": "DHS Spies On Leftists; Gamblers Bet On Natural Disasters | Friday Roundup",
+          "sourceUrl": "https://www.youtube.com/watch?v=3i77ZJDlTFQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Covers police use of force against senators during protest",
+          "quote": "They're Pepper Spraying Senators Now",
+          "sourceUrl": "https://www.youtube.com/watch?v=WYHxDpFXZTY",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 2,
+      "lastActive": "2026-08-12",
+      "stances": [
+        {
+          "date": "2026-08-12",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Critiques contemporary anti-communist rhetoric and historical parallels",
+          "quote": "The New Red Scare",
+          "sourceUrl": "https://www.youtube.com/watch?v=1pdrZuZxzOc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Compares current US political moment to French Revolution period",
+          "quote": "Is The US In Its French Revolution Era?",
+          "sourceUrl": "https://www.youtube.com/watch?v=LVq6GzfyGqI",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Analyzes recent Supreme Court decision or ruling",
+          "quote": "WTF Just Happened At The Supreme Court This Week? | EXPLAINER",
+          "sourceUrl": "https://www.youtube.com/watch?v=Qw13BEftg_4",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "religion-faith",
+      "label": "Religion & Faith",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Examines whether United States was founded as Christian nation",
+          "quote": "Is the US a Christian Nation?",
+          "sourceUrl": "https://www.youtube.com/watch?v=FU0eOrIPJ4w",
+          "platform": "youtube"
+        }
+      ]
+    },
     {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 1,
-      "lastActive": "2026-06-26",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-26",
+          "date": "2026-07-29",
           "topic": "criminal-justice",
           "stance": "lean",
-          "summary": "Analyzes legal aspects of Trump's Antifa prosecutions",
+          "summary": "Provides legal analysis of Trump administration's antifa prosecutions",
           "quote": "A Legal Analysis of Trump's Antifa Prosecutions",
           "sourceUrl": "https://www.youtube.com/watch?v=jc8en44IWDo",
           "platform": "youtube"
@@ -23,18 +144,53 @@
       ]
     },
     {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2026-06-06",
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 3,
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-06",
-          "topic": "terrorism",
+          "date": "2026-07-29",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Examines historical corporate power exceeding individual rights",
+          "quote": "Corporations Have Always Had More Rights Than You | EXPLAINER",
+          "sourceUrl": "https://www.youtube.com/watch?v=Lh2TgokrDfw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "billionaires-wealth",
           "stance": "strong",
-          "summary": "Questions whether Correspondents' Dinner shooting occurred",
-          "quote": "Was The Correspondents' Dinner Shooting A Hoax?",
-          "sourceUrl": "https://www.youtube.com/watch?v=8eBE0c8t2q8",
+          "summary": "Expresses disapproval of Elon Musk, migrates to alternative platform",
+          "quote": ". @elonmusk can get bent, join me over on bluesky bsky.app/profile/leejamiller\u2026",
+          "sourceUrl": "https://x.com/LeejaMiller/status/1857565800795660631",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Publicly criticizes Elon Musk",
+          "quote": "in which I publicly bully @elonmusk piped.video/SbYeTdz_JTc",
+          "sourceUrl": "https://x.com/LeejaMiller/status/1848472374645297341",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump slush fund arrangement as worse than public realizes",
+          "quote": "Trump's Slush Fund Is Worse Than You Think | EXPLAINER",
+          "sourceUrl": "https://www.youtube.com/watch?v=jsPiXlGkbWU",
           "platform": "youtube"
         }
       ]
@@ -43,50 +199,50 @@
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 1,
-      "lastActive": "2026-06-05",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-05",
+          "date": "2026-07-29",
           "topic": "congress-legislation",
           "stance": "strong",
-          "summary": "Opposes bill to abolish OSHA workplace safety regulations",
-          "quote": ".@RepAndyBiggsAZ just introduced a bill that would abolish OSHA and workplace safety regulations that protect workers, including first responders, from preventable workplace dangers. But sure, Andrew, go off on how much you care about protecting life, you fucking hypocrite\n\n\nRep ",
+          "summary": "Opposes OSHA abolition bill, calls author hypocrite on worker safety",
+          "quote": ".@RepAndyBiggsAZ just introduced a bill that would abolish OSHA and workplace safety regulations that protect workers, including first responders, from preventable workplace dangers. But sure, Andrew, go off on how much you care about protecting life, you fucking hypocrite",
           "sourceUrl": "https://x.com/LeejaMiller/status/1886868939134681435",
           "platform": "x"
         }
       ]
     },
     {
-      "topic": "immigration",
-      "label": "Immigration",
+      "topic": "media-press",
+      "label": "Media & Press",
       "count": 3,
-      "lastActive": "2026-06-05",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-05",
-          "topic": "immigration",
+          "date": "2026-07-29",
+          "topic": "media-press",
           "stance": "strong",
-          "summary": "Criticizes CIS for promoting racist and white nationalist writers",
-          "quote": "Per the @splcenter : @CIS_org 's much-touted tagline is \u201clow immigration, pro-immigrant,\u201d but the organization has a decades-long history of circulating racist writers, while also associating with white nationalists. @NPR @NPRJoel These are your 'experts'? splcenter.org/resources",
-          "sourceUrl": "https://x.com/LeejaMiller/status/1884754260283306222",
+          "summary": "Criticizes NPR for false equivalence between left-leaning and far-right organizations",
+          "quote": "hey @NPR @NPRJoel says @BrennanCenter is a \u201cleft-leaning nonprofit\u201d while @CIS_org, founded by a eugenicist/white nationalist, dubbed by SPLC a hate group, is \u201ca think tank that favors lower levels of immigration\" and gives them equal authority \ud83e\uddf5 npr.org/2025/01/27/nx-s1-527\u2026\n\nLi",
+          "sourceUrl": "https://x.com/LeejaMiller/status/1884754257007476817",
           "platform": "x"
         },
         {
-          "date": "2026-06-05",
-          "topic": "immigration",
+          "date": "2026-07-29",
+          "topic": "media-press",
           "stance": "strong",
-          "summary": "Accuses NPR of legitimizing far-right extremist organizations",
-          "quote": "hey @NPR @NPRJoel , @CIS_org is called the same thing here--you're playing directly into the playbook that gives legitimacy to far right extremists in \"think tanks\" by treating them like experts npr.org/2025/01/24/nx-s1-527\u2026",
+          "summary": "Accuses NPR of legitimizing far-right extremists by treating them as credible experts",
+          "quote": "hey @NPR @NPRJoel , @CIS_org is called the same thing here--you're playing directly into the playbook that gives legitimacy to far right extremists in \"think tanks\" by treating them like experts npr.org/2025/01/24/nx-s1-527\u2026\n\nLink\n\n\n\nTrump officials empower DHS to expel migrants ",
           "sourceUrl": "https://x.com/LeejaMiller/status/1884754258660147309",
           "platform": "x"
         },
         {
-          "date": "2026-06-05",
-          "topic": "immigration",
+          "date": "2026-07-29",
+          "topic": "media-press",
           "stance": "strong",
-          "summary": "Criticizes NPR for treating hate group as credible think tank",
-          "quote": "hey @NPR @NPRJoel says @BrennanCenter is a \u201cleft-leaning nonprofit\u201d while @CIS_org, founded by a eugenicist/white nationalist, dubbed by SPLC a hate group, is \u201ca think tank that favors lower levels of immigration\" and gives them equal authority \ud83e\uddf5 npr.org/2025/01/27/nx-s1-527\u2026",
-          "sourceUrl": "https://x.com/LeejaMiller/status/1884754257007476817",
+          "summary": "Calls out NPR for citing racist organization with white nationalist ties as experts",
+          "quote": "Per the @splcenter : @CIS_org 's much-touted tagline is \u201clow immigration, pro-immigrant,\u201d but the organization has a decades-long history of circulating racist writers, while also associating with white nationalists. @NPR @NPRJoel These are your 'experts'? splcenter.org/resources",
+          "sourceUrl": "https://x.com/LeejaMiller/status/1884754260283306222",
           "platform": "x"
         }
       ]
@@ -95,13 +251,13 @@
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 1,
-      "lastActive": "2026-06-05",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-05",
+          "date": "2026-07-29",
           "topic": "elections",
           "stance": "strong",
-          "summary": "Urges voters against abstention and third-party voting",
+          "summary": "Urges voters not to sit out or vote third party due to high stakes",
           "quote": "Today's video is a plea to those of you sitting out this election, or voting third party: please don't. So much is at stake. piped.video/0opAYZGxJD8",
           "sourceUrl": "https://x.com/LeejaMiller/status/1853583079228748286",
           "platform": "x"
@@ -112,13 +268,13 @@
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 1,
-      "lastActive": "2026-06-05",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-05",
+          "date": "2026-07-29",
           "topic": "state-local-politics",
           "stance": "strong",
-          "summary": "Criticizes Oklahoma official for appointing non-resident to library committee",
+          "summary": "Criticizes appointment of non-resident activist to state library advisory committee",
           "quote": "You love to see it. For reference, this is the same guy who put @libsoftiktok on the Oklahoma state library advisory committee despite the fact that she doesn\u2019t live there, has no connection there, and no evidence exists to indicate she\u2019s ever read a book newrepublic.com/post/187",
           "sourceUrl": "https://x.com/LeejaMiller/status/1847253584926195993",
           "platform": "x"
@@ -126,130 +282,18 @@
       ]
     },
     {
-      "topic": "billionaires-wealth",
-      "label": "Billionaires & Wealth",
-      "count": 2,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "billionaires-wealth",
-          "stance": "lean",
-          "summary": "Claims corporations have more rights than citizens",
-          "quote": "Corporations Have Always Had More Rights Than You | EXPLAINER",
-          "sourceUrl": "https://www.youtube.com/watch?v=Lh2TgokrDfw",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Argues billionaires should fear growing public sentiment",
-          "quote": "Billionaires Are Terrified. They Should Be.",
-          "sourceUrl": "https://www.youtube.com/watch?v=ljLdBFKHGLI",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "protests-activism",
-      "label": "Protests & Activism",
-      "count": 2,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "protests-activism",
-          "stance": "lean",
-          "summary": "Reports police pepper-sprayed senators during protests",
-          "quote": "They're Pepper Spraying Senators Now",
-          "sourceUrl": "https://www.youtube.com/watch?v=WYHxDpFXZTY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "protests-activism",
-          "stance": "lean",
-          "summary": "Questions whether property damage can be justified",
-          "quote": "Is Property Damage Ever Justified?",
-          "sourceUrl": "https://www.youtube.com/watch?v=P67Dr60KNgI",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump administration slush fund practices",
-          "quote": "Trump's Slush Fund Is Worse Than You Think | EXPLAINER",
-          "sourceUrl": "https://www.youtube.com/watch?v=jsPiXlGkbWU",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 1,
-      "lastActive": "2026-06-05",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-05",
+          "date": "2026-07-29",
           "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Questions how second Gilded Age economic period ends",
+          "summary": "Examines end point of second Gilded Age wealth inequality era",
           "quote": "How Does The Second Gilded Age End?",
           "sourceUrl": "https://www.youtube.com/watch?v=TEhs3R2jH7w",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 2,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Compares current US political divisions to French Revolution",
-          "quote": "Is The US In Its French Revolution Era?",
-          "sourceUrl": "https://www.youtube.com/watch?v=LVq6GzfyGqI",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Predicts political divide will significantly worsen",
-          "quote": "The Political Divide Is About To Get SO Much Worse",
-          "sourceUrl": "https://www.youtube.com/watch?v=eo-ociYGSgg",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Explains decline of the Voting Rights Act",
-          "quote": "The Death Of The Voting Rights Act EXPLAINED",
-          "sourceUrl": "https://www.youtube.com/watch?v=9gP1MgzmGDE",
           "platform": "youtube"
         }
       ]

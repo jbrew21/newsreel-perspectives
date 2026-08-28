@@ -1,66 +1,248 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "updatedAt": "2026-06-29",
-  "topicCount": 12,
-  "stanceCount": 13,
+  "updatedAt": "2026-08-28",
+  "topicCount": 15,
+  "stanceCount": 23,
   "topics": [
     {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 2,
-      "lastActive": "2026-06-24",
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 4,
+      "lastActive": "2026-08-26",
       "stances": [
         {
-          "date": "2026-06-24",
-          "topic": "culture-war",
+          "date": "2026-08-26",
+          "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Examines gap between American history and national mythology",
-          "quote": "America 250: History vs. Mythology | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/watch?v=8T9TJXm4Sr0",
+          "summary": "Critiques Federal Reserve independence and monetary policy decisions",
+          "quote": "The Fed's Independence | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/gkdS5RgFR7k",
           "platform": "youtube"
         },
         {
-          "date": "2026-06-19",
+          "date": "2026-08-18",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critiques rising cost of living issues",
+          "quote": "Cost Of Living | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/rgDQPVF6_60",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Examines economic pressures driving working-class migration patterns",
+          "quote": "Working Class Exodus | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/KsjELQ-SoTk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Questions fiscal conservatism framing or assumptions",
+          "quote": "Mamdani, Fiscal Conservative?! | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/F_P_jyc3crs",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 1,
+      "lastActive": "2026-08-25",
+      "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Critiques Tucker Carlson's political positioning and media presence",
+          "quote": "Tucker's Party | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/KqjR-_Akry4",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 2,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes government inaction on corruption and accountability",
+          "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes lack of congressional planning or policy direction",
+          "quote": "Still No Plan | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/h9xreruPKo4",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-08-19",
+      "stances": [
+        {
+          "date": "2026-08-19",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Examines Democratic Party strategy for 2028 presidential race",
+          "quote": "Dems 2028 Plan? | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/CVgXLd7usdA",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 1,
+      "lastActive": "2026-08-14",
+      "stances": [
+        {
+          "date": "2026-08-14",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Examines relationship between cynicism and free speech protections",
+          "quote": "Cynicism &amp; Free Speech | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/_irAAr88mwc",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-08-13",
+      "stances": [
+        {
+          "date": "2026-08-13",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Satirizes and questions MAGA movement authenticity",
+          "quote": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/guPx_6ixYes",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-08-12",
+      "stances": [
+        {
+          "date": "2026-08-12",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Examines populism and new media's role in contemporary politics",
+          "quote": "Making &amp; Breaking Points: Populism, New Media &amp; More | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/watch?v=XmYD4udHP6k",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Critiques distinction between feedback and noise in media",
+          "quote": "Feedback vs. Noise | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/X3xz8yNQ28E",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 3,
+      "lastActive": "2026-08-12",
+      "stances": [
+        {
+          "date": "2026-08-12",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump's cancel culture practices",
+          "quote": "Trump's Cancel Culture | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/_oYjeHdMMAw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Examines Trump administration officials' reckonings",
+          "quote": "Trump Defectors' Mea Culpa | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/VwBx4hns7K4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Fox News alignment with Trump administration",
+          "quote": "Fox News Administration | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/cLMj-PkQkDU",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 2,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Critiques anti-Israel caricatures and reductive framing",
+          "quote": "The Pro-Hamas Caricature | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/rjS0nLzfI4o",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Discusses Democratic disagreements over Israel policy",
+          "quote": "Sen. John Fetterman on Democratic Divides, DSA &amp; Israel | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/watch?v=U3BMAkJIlnw",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
           "topic": "culture-war",
           "stance": "strong",
-          "summary": "Criticizes Trump's culture war initiatives",
-          "quote": "Trump's Culture War | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/5NsTP6Te690",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2026-06-15",
-      "stances": [
-        {
-          "date": "2026-06-15",
-          "topic": "terrorism",
-          "stance": "lean",
-          "summary": "Discusses technology's role in counterterrorism efforts",
-          "quote": "Tech &amp; The War On Terror | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/eZxpN-FDZ_4",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 1,
-      "lastActive": "2026-06-13",
-      "stances": [
-        {
-          "date": "2026-06-13",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Critiques Elon Musk's opposition to diversity programs",
-          "quote": "Elon vs. Diversity | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/XBj3x9j-c3g",
+          "summary": "Criticizes dehumanizing rhetoric in political discourse",
+          "quote": "Dehumanization | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/5-xinSo3R3M",
           "platform": "youtube"
         }
       ]
@@ -69,16 +251,33 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 1,
-      "lastActive": "2026-06-13",
+      "lastActive": "2026-07-31",
       "stances": [
         {
-          "date": "2026-06-13",
+          "date": "2026-07-31",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Analyzes artificial intelligence's impact on public",
-          "quote": "AI &amp; The Public | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/fxc65qjM7gY",
+          "summary": "Examines artificial intelligence impact on workers and employment",
+          "quote": "AI vs. Labor | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/R4iAqDB7uPM",
           "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Advocates for K2 veterans recognition, care, and accountability",
+          "quote": "America is celebrating 250 years of freedom.\u00a0 Let's not forget those still paying the price for defending it.\u00a0K2 veterans have spent 25 years fighting for recognition, care, and accountability.\u00a0 Stronghold Freedom Foundation is a 100% volunteer organization working everyday to en",
+          "sourceUrl": "https://x.com/jonstewart/status/2073104220073668940",
+          "platform": "x"
         }
       ]
     },
@@ -86,83 +285,15 @@
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 1,
-      "lastActive": "2026-06-11",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-11",
+          "date": "2026-07-29",
           "topic": "billionaires-wealth",
           "stance": "strong",
-          "summary": "Warns of tech oligarchy concentration among billionaires",
-          "quote": "Elon Musk &amp; America\u2019s Tech Oligarchy | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/watch?v=OkFTKHz5HHc",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 1,
-      "lastActive": "2026-06-10",
-      "stances": [
-        {
-          "date": "2026-06-10",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Covers Trump's return to New York",
-          "quote": "Trump's NY Welcome | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/xVh_RCCvnDE",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Claims crypto enables sanctions evasion and crime",
-          "quote": "This will blow your fucking mind!!!!!\n\n\nThe Weekly Show with Jon Stewart (@weeklyshowpod)\n\n.@ben_mckenzie on how crypto helps criminals and hostile states evade sanctions \u2014 and how Commerce Secretary Howard Lutnick profits from it. #theweeklyshow #jonstewart #politics\n\nVideo\n  \n\n",
-          "sourceUrl": "https://x.com/jonstewart/status/2044456501473862080",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Presents alternative theory of government functioning",
-          "quote": "A New Theory Of Government | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/hY7-nEZke7w",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Links Iran conflict to American energy policy",
-          "quote": "The Iran War &amp; Our Energy Future | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/watch?v=L8ArG02zMI0",
+          "summary": "Criticizes Elon Musk's financial practices and risk exposure",
+          "quote": "Elon's Financial Timebomb | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/OOLj4nl1FFs",
           "platform": "youtube"
         }
       ]
@@ -171,49 +302,32 @@
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 1,
-      "lastActive": "2026-06-05",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-05",
+          "date": "2026-07-29",
           "topic": "criminal-justice",
           "stance": "strong",
-          "summary": "Addresses gaps in governmental accountability mechanisms",
-          "quote": "The Accountability Gap | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/GzN_OcsWemY",
+          "summary": "Advocates for safety improvements and criminal justice reform",
+          "quote": "Safety &amp; Justice | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/qCDJU9VASGg",
           "platform": "youtube"
         }
       ]
     },
     {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
       "count": 1,
-      "lastActive": "2026-06-05",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-05",
-          "topic": "foreign-policy-diplomacy",
+          "date": "2026-07-29",
+          "topic": "state-local-politics",
           "stance": "lean",
-          "summary": "Examines shifting international diplomatic alliances",
-          "quote": "Scrambled Alliances | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/S5z2QfQmWwA",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Discusses media ownership and press independence",
-          "quote": "&quot;Steal This Story&quot; | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/nkQi3fvNMbc",
+          "summary": "Platforms NYC mayor discussing socialism and local politics",
+          "quote": "Mayor Zohran Mamdani on Socialism, Politics &amp; NYC | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/watch?v=nffK_ji57X0",
           "platform": "youtube"
         }
       ]

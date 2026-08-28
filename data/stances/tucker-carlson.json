@@ -1,41 +1,446 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "updatedAt": "2026-06-29",
-  "topicCount": 10,
-  "stanceCount": 20,
+  "updatedAt": "2026-08-28",
+  "topicCount": 22,
+  "stanceCount": 74,
   "topics": [
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 3,
-      "lastActive": "2026-06-27",
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-06-27",
+          "date": "2026-08-28",
           "topic": "iran-conflict",
           "stance": "strong",
-          "summary": "Criticizes pro-war propaganda and neoconservative influence",
-          "quote": "Donald Trump\u2019s top social media advisor slams Mark Levin and other foreign influence campaigns.\n\n0:00 The Iran War Propaganda\n7:21 How Marjorie Taylor Greene Blew Up on Social Media\n14:57 Was There an Epstein Cover-Up?\n19:38 Who Is Mark Levin?\n25:09 Why Did Trump Pivot on the War",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2070553363620778384",
+          "summary": "Claims Pentagon nuclear plans show U.S. lacks diplomatic options with Iran",
+          "quote": "LEAKED: Pentagon Nuclear Plans Prove the US Is Out of Options. Joe Kent on What Comes Next.",
+          "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Argues Iran should acquire nuclear weapons capability",
+          "quote": "\u201cWhy Iran Should Get the Bomb\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/xsl77Zrt5R4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Warns against escalation risks of nuclear war with Iran",
+          "quote": "We\u2019re Risking Nuclear War",
+          "sourceUrl": "https://www.youtube.com/shorts/isfb6c7NyJM",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 1,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes Trump administration for failing to build border wall",
+          "quote": "What Happened to Building a Wall?",
+          "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 10,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Criticizes Mark Cuban in confrontational exchange",
+          "quote": "Tucker Shuts Down Mark Cuban",
+          "sourceUrl": "https://www.youtube.com/shorts/bP2nFKl66PU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Attacks Mark Cuban's motives as vanity-driven",
+          "quote": "Tucker Obliterates Mark Cuban: \u201cVanity!\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/4ysgJyUswmA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Criticizes Ben Shapiro, implies personal or ideological conflict",
+          "quote": "Ben Shapiro Hates You",
+          "sourceUrl": "https://www.youtube.com/shorts/5-GmcxCsFcw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-16",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Criticizes Ben Shapiro's empathy or compassion",
+          "quote": "Ben Shapiro Has Zero Compassion",
+          "sourceUrl": "https://www.youtube.com/shorts/dmLs8smYhOk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Criticizes neoconservative commentary as propaganda",
+          "quote": "Tucker\u2019s Slam Dunk on Neocon Propaganda",
+          "sourceUrl": "https://www.youtube.com/shorts/K8WMWSpl1-I",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Disagrees with Ben Shapiro's stated position",
+          "quote": "Tucker Reacts to Ben Shapiro\u2019s Insane Take",
+          "sourceUrl": "https://www.youtube.com/shorts/AbnxsTzfYvY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Criticizes Ben Shapiro's commentary on food and consumer culture",
+          "quote": "Ben Shapiro to America: shut up and eat your goyslop. Overpriced burritos are more than you deserve.",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2087690762322350155",
           "platform": "x"
         },
         {
-          "date": "2026-06-18",
-          "topic": "iran-conflict",
+          "date": "2026-08-14",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Critiques Ben Shapiro's views on retirement",
+          "quote": "Ben Shapiro Hates Retirement",
+          "sourceUrl": "https://www.youtube.com/shorts/QVvQ1GqzV4M",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "media-personalities",
           "stance": "strong",
-          "summary": "Supports ending Iran war and Israel support",
-          "quote": "The Iran war seems to be ending, along with our uncritical support for Israel, and not a moment too soon. No wonder the neocons are hysterical.\n\nVideo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2067410526930375101",
+          "summary": "Delivers critical commentary on Mark Levin",
+          "quote": "Tucker\u2019s Epic Mark Levin Rant",
+          "sourceUrl": "https://www.youtube.com/shorts/qv1Jzm0Kpus",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Discusses guest's spiritual transformation and criticism of U.S. military leadership",
+          "quote": "Shawn Ryan on Trump\u2019s betrayal and his own spiritual transformation.\n\n0:00 The Lies of Politicians\n3:20 Shawn Ryan's Spiritual Transformation\n18:02 How Shawn's View on Christianity Has Changed\n19:03 The Lies Coming Out of US Military Command\n26:08 Shawn's Encounters With God\n37:3",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2080700462890652045",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 8,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump for becoming what he opposed, warns of national consequences",
+          "quote": "Trump Becomes the Very Thing He Swore to Destroy. And It Might Cost Us Our Country.",
+          "sourceUrl": "https://www.youtube.com/watch?v=bf_tbI1brbg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Commenting on Trump statements; position unclear from title",
+          "quote": "Tucker on Trump\u2019s Recent Comments\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/UJRyL6QOEtU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Expresses concern about Trump's escalating foreign policy approach",
+          "quote": "Harvard Professor Warns of the Next Phase of Trump\u2019s War: We\u2019re Approaching a Dangerous World",
+          "sourceUrl": "https://www.youtube.com/watch?v=Fi4ViAuh_Os",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "References Marco Rubio confirmation or policy direction",
+          "quote": "This Is What Huckabee Told Him\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/p504cKo4-QM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "",
+          "quote": "Tucker\u2019s Message to Rick Scott",
+          "sourceUrl": "https://www.youtube.com/shorts/s5nkMIUn9T0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Questions Trump administration's motivations or allegiances",
+          "quote": "Who Is Trump Working For?",
+          "sourceUrl": "https://www.youtube.com/shorts/Ze4sgGOpSSY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Covers interview with Hunter Biden, implicit scrutiny",
+          "quote": "The Hunter Biden Interview",
+          "sourceUrl": "https://www.youtube.com/watch?v=M58G-zmqifE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Criticizes Trump business decision as unusual",
+          "quote": "Trump's Weird Business Move",
+          "sourceUrl": "https://www.youtube.com/shorts/rNHu7biXqk4",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 5,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Critical framing of U.S. foreign policy decisions under current administration",
+          "quote": "Maduro, Greenland, and Now This\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/zDKaMaqVWrE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Questions CIA-Mossad intelligence relationship",
+          "quote": "CIA Reports to Mossad?",
+          "sourceUrl": "https://www.youtube.com/shorts/SiFoJoWyMo8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes NATO propaganda network pushing West toward world war",
+          "quote": "Elizabeth Lane on the secret NATO propaganda network pushing the West toward world war.\n\n0:00 Where Are All the Bots Coming From?\n9:41 What Was the Institute of Statecraft?\n13:15 The Russian Agent Lie\n15:11 Who Are \"They\"?\n25:07 Who Is Peter Pomerantsev?\n30:21 Where Does the Mone",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2083236332491661810",
           "platform": "x"
         },
         {
-          "date": "2026-06-16",
-          "topic": "iran-conflict",
+          "date": "2026-07-29",
+          "topic": "foreign-policy-diplomacy",
           "stance": "strong",
-          "summary": "Endorses rational, pro-American Iran peace approach",
-          "quote": "Trita Parsi has a rational, pro-American view of the Iran war, so naturally Bari Weiss tried to get him deported.\n\n0:00 The Key Points of Trump\u2019s Iran Peace Deal\n5:36 Israel\u2019s Move to Sabotage the Peace Deal\n11:00 Why Both the US and Iran Need Peace\n24:19 How Netanyahu Will Try t",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2066634040153940209",
+          "summary": "Criticizes Western leaders for pushing Russia toward war they will lose",
+          "quote": "Nihilistic western leaders have been pushing for decades to have a major war with Russia. Former Royal Navy commander Steve Jermy says they\u2019re about to get that war, and lose badly.\n\n0:00 What Is Happening Between Russia and Ukraine?\n9:21 Why Would the US and NATO Want a War With",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2079250208018276707",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes U.S. ambassador for failing to defend congressman threatened by foreign-backed terrorists",
+          "quote": "An Amercian member of congress is threatened by foreign terrorists carrying American rifles, backed by a foreign military paid for by American taxpayers, and the US ambassador to that country says not a word in defense of his own countryman, and instead uses his social media acco",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2076034141485760763",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 3,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Criticizes mega corporations for unspecified wrongdoing",
+          "quote": "The Mega Corporations Are at It Again...",
+          "sourceUrl": "https://www.youtube.com/shorts/penMN52ufRI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Highlights Amazon admission suggesting corporate misconduct",
+          "quote": "Amazon Just Admitted This\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/Dfz18Q5LV9M",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Criticizes BlackRock's corporate power and influence",
+          "quote": "Tucker Puts BlackRock In Its Place",
+          "sourceUrl": "https://www.youtube.com/shorts/VpM8uYfIENo",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 3,
+      "lastActive": "2026-08-25",
+      "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes military conduct as kidnapping",
+          "quote": "Tucker Reacts to Shocking Military Kidnapping",
+          "sourceUrl": "https://www.youtube.com/shorts/bWkRkev1owI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Questions accountability for military spending",
+          "quote": "Where Did All the Military Money Go?",
+          "sourceUrl": "https://www.youtube.com/shorts/Gcunf3AUkfE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "CIA operates without oversight and poses danger to nation",
+          "quote": "The one federal agency no one has even tried to reform is also the most powerful: CIA. Jim Erdman just resigned after a long career as an operations officer. He says the agency is completely out of control and dangerous.\n\n0:00 The CIA's Obstruction of Justice\n17:54 CIA Secrecy an",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2081786887648276864",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-08-25",
+      "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Claims government coverup of 9/11 facts occurred",
+          "quote": "9/11 Firefighter's Message to CIA: &quot;Scumbags!&quot;",
+          "sourceUrl": "https://www.youtube.com/shorts/xjuIa2EdLx4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes surveillance effectiveness, warns against authoritarian prison monitoring",
+          "quote": "If surveillance makes us safe, why are so many people murdered in prison? Flock cameras and the coming slave state.",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2077562851485434228",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 1,
+      "lastActive": "2026-08-24",
+      "stances": [
+        {
+          "date": "2026-08-24",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Criticizes Texas Governor Greg Abbott",
+          "quote": "Tucker Rips Gregg Abbott",
+          "sourceUrl": "https://www.youtube.com/shorts/3_SQAqetKPw",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 4,
+      "lastActive": "2026-08-24",
+      "stances": [
+        {
+          "date": "2026-08-24",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Implies censorship prevented story publication",
+          "quote": "Banned From Printing This Story (Until Now)",
+          "sourceUrl": "https://www.youtube.com/shorts/UkrGW-pCHKs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes media figures promoting surveillance technology, warns of neocon totalitarianism",
+          "quote": "Why is Bari Weiss promoting Flock cameras? Glenn Greenwald on neocon support for totalitarianism.\n\n0:00 Why Is Bari Weiss and the Free Press Pushing Pro-Flock Camera Propaganda?\n16:21 The Establishment Should Be Afraid of the People\n20:47 Big Pharma's Zombification of Americans\n2",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2088309678241415575",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Advises on media literacy and identifying truth",
+          "quote": "Tucker\u2019s Guide on How to Tell When Something Is True",
+          "sourceUrl": "https://www.youtube.com/shorts/4Fh9Bim_tZQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "CIA imprisoned whistleblower for exposing internal wrongdoing",
+          "quote": "John Kiriakou served in the CIA for many years before they threw him in prison for telling the truth about what was really going on inside the organization. Everything he learned at the CIA and more is detailed in his new book. Get it at TuckerCarlsonBooks.com.",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2079695665823621270",
           "platform": "x"
         }
       ]
@@ -43,62 +448,255 @@
     {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
-      "count": 6,
-      "lastActive": "2026-06-25",
+      "count": 4,
+      "lastActive": "2026-08-22",
       "stances": [
         {
-          "date": "2026-06-25",
+          "date": "2026-08-22",
           "topic": "israel-palestine",
           "stance": "strong",
-          "summary": "Claims Israel threatens Trump administration",
-          "quote": "It took a while, but Donald Trump has finally figured out that the biggest threat to his administration is Israel.\n\nVideo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2069967009895362658",
+          "summary": "Criticizes Israeli military actions as terrorism",
+          "quote": "Tucker Reacts to Disturbing Israeli Terrorism Footage",
+          "sourceUrl": "https://www.youtube.com/shorts/XhcPfCIOQdc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Condemns Israeli military actions against American citizens",
+          "quote": "Tucker Calls Out Trump Administration for Allowing Americans to Be Slaughtered by Israeli Terrorists",
+          "sourceUrl": "https://www.youtube.com/watch?v=HuPoyiTFFcQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Criticizes U.S. military support for Israeli operations, opposes American soldier involvement",
+          "quote": "Obviously this little freak could go volunteer to fight the war himself, but of course he won\u2019t. He\u2019s got no interest in making any kind of personal sacrifice. None of them do. Israel\u2019s finance minister bragged the other day that having American soldiers fight Netanyahu\u2019s wars \u201ci",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2080385647416623547",
           "platform": "x"
         },
         {
-          "date": "2026-06-20",
+          "date": "2026-07-29",
           "topic": "israel-palestine",
           "stance": "strong",
-          "summary": "Alleges Israeli government targets American churches",
-          "quote": "Turns out the Israeli government is targeting American churches to indoctrinate unsuspecting Christians. Nathan Apffel, director of \u201cThe Religion Business\u201d explains.\n\n0:00 The Idolization of the Nation-State of Israel by Christian Leaders\n5:40 Israel\u2019s Tracking of Megachurch Atte",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2068016219735646359",
+          "summary": "Claims Israel deliberately attacked USS Liberty to kill American sailors",
+          "quote": "USS Liberty deniers will say Israel\u2019s 1967 attack on the U.S. spy ship was a total accident. Marine Staff Sergeant Bryce Lockwood was on the Liberty and says there\u2019s no doubt Israel meant to kill every American on board.\n\n0:00 The Story of the USS Liberty\n11:14 What Really Happen",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2075627001038176411",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 6,
+      "lastActive": "2026-08-22",
+      "stances": [
+        {
+          "date": "2026-08-22",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Opposes expansion of data center infrastructure",
+          "quote": "Data Centers Must Be Stopped\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/E90DepKeEKU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Implies corporate-government collusion on surveillance",
+          "quote": "Amazon Is Working With the CIA",
+          "sourceUrl": "https://www.youtube.com/shorts/BFoxMIh8p3E",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Warns AI task force threatens freedom, risks blackouts and automation control",
+          "quote": "Blackouts &amp; Water Shortage Imminent: Tech Overlords Build AI Dystopia &amp; Crush Anyone Who Resists",
+          "sourceUrl": "https://www.youtube.com/watch?v=KMsklsr_nBM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights concerns about surveillance, AI, and propaganda risks",
+          "quote": "World-Renowned Hacker Issues Dark Warning on Surveillance, AI, Propaganda, &amp; Trump\u2019s Agenda",
+          "sourceUrl": "https://www.youtube.com/watch?v=eLZuL52Qp6U",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Raises concerns about digital surveillance and privacy threats",
+          "quote": "Kim Dotcom knows what it\u2019s like to be spied on. He\u2019s a hacker, and therefore an expert on digital surveillance. He watched our new docuseries on internet privacy, so we invited him to talk to us. What followed was very dark. Watch:",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2085772961102139753",
           "platform": "x"
         },
         {
-          "date": "2026-06-13",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Agrees Israel committing genocide in Gaza",
-          "quote": "Israeli journalist Gideon Levy says his government is guilty of committing genocide in Gaza and the United States is complicit. He joins us from the West Bank.\n\n0:00 What\u2019s Happening in Gaza and Lebanon?\n1:22 What\u2019s the Goal?\n5:47 Will the US Withdraw Its Support From Israel?\n10:",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2065479444173627884",
+          "date": "2026-08-07",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Investigates surveillance capitalism and data collection practices",
+          "quote": "Our 3-part investigative report on surveillance capitalism, \u201cThe World Is Watching You,\u201d is available now at TuckerCarlson.com.\n\nPaid partnerships:\n\nVulnerable People Project: Stand with Christians in the land where Christianity began, go to SaveWestBankChristians.com\n\nDose: Dail",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2085773411993682372",
           "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 3,
+      "lastActive": "2026-08-22",
+      "stances": [
+        {
+          "date": "2026-08-22",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Highlights notable Trump statement or position",
+          "quote": "Trump Really Said This\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/KXIXzj5vYw4",
+          "platform": "youtube"
         },
         {
-          "date": "2026-06-11",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Discusses genocide in Gaza and Iran conflict",
-          "quote": "Prof. John Mearsheimer on genocide in Gaza, looming defeat in Iran and the potential of a nuclear strike in Europe.\n\nVideo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2064870368456613908",
-          "platform": "x"
+          "date": "2026-08-18",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Promotes Trump-aligned agenda or policy direction",
+          "quote": "It\u2019s Time to Fix America",
+          "sourceUrl": "https://www.youtube.com/shorts/uEZPspvJloU",
+          "platform": "youtube"
         },
         {
-          "date": "2026-06-05",
-          "topic": "israel-palestine",
+          "date": "2026-08-05",
+          "topic": "trump-policy",
           "stance": "strong",
-          "summary": "Compares Gaza situation to Holocaust atrocities",
-          "quote": "At some point every Holocaust museum will be forced to include an exhibit on what\u2019s happening in Gaza right now. It\u2019s only a matter of time. Dr. Nick Maynard of Oxford University medical school has been a witness to the genocide.\n\nVideo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2059790599461490805",
+          "summary": "Claims MAGA movement betrayed, calls for new direction",
+          "quote": "MAGA was betrayed. We all were. It's time for a new path forward. More tomorrow night at 6 PM ET on TuckerCarlson.com.\n\nLink\n\n\n\nTucker Carlson Network\n\nTucker Carlson Network\ntuckercarlson.com",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2084790786038661589",
           "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 7,
+      "lastActive": "2026-08-22",
+      "stances": [
+        {
+          "date": "2026-08-22",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Defends right to discuss controversial topic",
+          "quote": "No, We Will Not Shut Up About This",
+          "sourceUrl": "https://www.youtube.com/shorts/BuA3Gr_nYMs",
+          "platform": "youtube"
         },
         {
-          "date": "2026-06-05",
-          "topic": "israel-palestine",
+          "date": "2026-08-19",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Implies suppression of information from audience",
+          "quote": "They Don\u2019t Want You to Read This\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/p3_jtVAycLY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Suggests suppression of speech or information on topic",
+          "quote": "You Can\u2019t Talk About This\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/y8_62euyDGc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Expresses concern about government surveillance and surveillance state expansion",
+          "quote": "The Totalitarian Surveillance State Grows as a New Movement Rises From the Ashes of MAGA",
+          "sourceUrl": "https://www.youtube.com/watch?v=yoBTkpus8Iw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "free-speech-censorship",
           "stance": "strong",
-          "summary": "Blames Israel lobby for political influence",
-          "quote": "The Israel lobby takes out Thomas Massie and kills MAGA in the process. The good news is, we\u2019ve now confirmed how the system works.\n\nVideo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2057269128201703613",
-          "platform": "x"
+          "summary": "Highlights hacker revelations about surveillance or data security threats",
+          "quote": "Tucker Shocked at Hacker\u2019s Revelation",
+          "sourceUrl": "https://www.youtube.com/shorts/KAFjlPLSAYc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Warns of government persecution or jailing of political opponents",
+          "quote": "Hacker: \u201cThey\u2019ll Put You in Jail\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/JCAXkG137I0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Expresses concern about potential platform removal",
+          "quote": "Tucker Soon to Be Banned?",
+          "sourceUrl": "https://www.youtube.com/shorts/rD_RQ15DVKc",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Frames AOC's political ambitions critically or skeptically",
+          "quote": "She Thought We Wouldn't Notice...",
+          "sourceUrl": "https://www.youtube.com/shorts/IeKsN0cz4R8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Argues voting alone cannot solve systemic problems",
+          "quote": "We Can\u2019t Vote Our Way Out\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/E5ao_IV_oyI",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 1,
+      "lastActive": "2026-08-17",
+      "stances": [
+        {
+          "date": "2026-08-17",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Frames transgenderism as a manifestation of satanic spiritual attack",
+          "quote": "Rev. Billy Cerveny: Satan\u2019s Attacks, Transgenderism, Seeing the Supernatural &amp; Hearing God\u2019s Voice",
+          "sourceUrl": "https://www.youtube.com/watch?v=GoD8yx0xbhE",
+          "platform": "youtube"
         }
       ]
     },
@@ -106,33 +704,111 @@
       "topic": "religion-faith",
       "label": "Religion & Faith",
       "count": 3,
-      "lastActive": "2026-06-23",
+      "lastActive": "2026-08-17",
       "stances": [
         {
-          "date": "2026-06-23",
+          "date": "2026-08-17",
           "topic": "religion-faith",
           "stance": "strong",
-          "summary": "Criticizes Christian Zionism as corrupting theology",
-          "quote": "Theologian JD Hall on the corrupting lie of Christian Zionism.\n\n0:00 What Is Christian Zionism?\n2:50 What Is Dispensationalism?\n20:40 What Is Jesus Christ's Role in Dispensationalism?\n26:26 Who Killed Jesus?\n35:45 The Scofield Bible and How Dispensationalism Was Used for Politica",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2069176086139748608",
+          "summary": "Promotes Christian spiritual warfare framework and theological worldview",
+          "quote": "\u201cWant to know what God loves the most? Watch what Satan attacks most aggressively.\u201d The Rev. Billy Cerveny on spiritual war.\n\n0:00 The Moment Rev. Cerveny Heard God's Calling\n8:20 The Uniqueness of the Relationship Between a Father and Son\n16:53 How Does Spiritual Warfare Manifes",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2089396847588839549",
           "platform": "x"
         },
         {
-          "date": "2026-06-20",
-          "topic": "religion-faith",
-          "stance": "strong",
-          "summary": "Accuses celebrity pastors of financial exploitation",
-          "quote": "Many celebrity pastors are exploiting the Christian faith and the nonprofit system to line their own pockets. It\u2019s unbelievable. Watch The Religion Business on TCN.\n\nVideo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2068091458742358229",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-11",
+          "date": "2026-07-29",
           "topic": "religion-faith",
           "stance": "lean",
-          "summary": "Discusses Nephilim as real demonic entities",
-          "quote": "Genesis 6 describes the Nephilim as demonic hybrids who occupy positions of authority in human society. They\u2019re entirely real, says Father Stephen De Young.\n\n0:00 What Are the Nephilim?\n3:40 The Advanced Civilization Before the Flood\n12:14 Was Human Lifespan Longer Before the Flo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2060405936523448714",
+          "summary": "Highlights growing interest in Orthodox Christianity as response to evil",
+          "quote": "More people than ever are discovering there\u2019s true evil in the world and they\u2019re turning to God for answers. Jay Dyer explains the growing popularity of the Orthodox Church.\n\n0:00 The Attempts to Suppress Christianity in Schools\n8:14 The Problems With Christian Zionism\n14:09 What",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2076713534071947454",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "religion-faith",
+          "stance": "strong",
+          "summary": "Calls for support of Christians in West Bank",
+          "quote": "Paid partnerships with:\n\nBrooklyn Bedding: Get 30% off sitewide with promo code TUCKER at\u00a0brooklynbedding.com\n\nVulnerable People Project:\u00a0Stand with Christians in the land where Christianity began, go to SaveWestBankChristians.com\n\nAmerican Financing:\u00a0NMLS 182334,\u00a0nmlsconsumeracc",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2076713646458392718",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 3,
+      "lastActive": "2026-08-13",
+      "stances": [
+        {
+          "date": "2026-08-13",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Opposes modern architecture, advocates for traditional aesthetics",
+          "quote": "Tucker: No More Ugly Buildings",
+          "sourceUrl": "https://www.youtube.com/shorts/Amsn65bKQDs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Claims political system has collapsed, calls for systemic change",
+          "quote": "Our political system has collapsed into paralysis and looting. Change is coming. Here\u2019s what America should be.",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2085153884499247576",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Promotes great replacement theory, frames immigration as coordinated ethnic change",
+          "quote": "The Great Replacement is no longer a theory, as what\u2019s happening in Spain makes clear. Darryl Cooper on who\u2019s behind the invasion and why.\n\n0:00 How the Iran War Is Different\n10:20 The Descent Into Primitive Tendencies Due to War\n18:20 Trump, the Iranian Girls\u2019 School Attack, and",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2084406802213470439",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-08-10",
+      "stances": [
+        {
+          "date": "2026-08-10",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Warns consumers about car-buying decisions",
+          "quote": "Tucker\u2019s Warning to Car-Buyers",
+          "sourceUrl": "https://www.youtube.com/shorts/sQ4wC-FV080",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Skeptical of government assurances that oil supply removal poses no economic risk",
+          "quote": "What happens when you remove more than a billion barrels of oil from the global energy supply? Both the government and futures markets assure us everything will be fine. That\u2019s probably not true.",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2080104540745965637",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 1,
+      "lastActive": "2026-07-30",
+      "stances": [
+        {
+          "date": "2026-07-30",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Criticizes Fauci as vain and self-interested rather than brilliant or evil",
+          "quote": "Covid and the banality of evil. Most people assumed Tony Fauci was either a brilliant scientist or an evil mastermind, or maybe both. His diary reveals he\u2019s just a vain teenage girl pining for cable news hits.",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2082642670992679163",
           "platform": "x"
         }
       ]
@@ -141,126 +817,32 @@
       "topic": "terrorism",
       "label": "Terrorism & Security",
       "count": 1,
-      "lastActive": "2026-06-09",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-09",
+          "date": "2026-07-29",
           "topic": "terrorism",
           "stance": "strong",
-          "summary": "Questions Trump assassination attempts and investigations",
-          "quote": "The attempts on Donald Trump\u2019s life, why he shut down the investigations and how it altered history forever. Ken Silva with bizarre details from the shooting that changed world history.\n\n0:00 The Assassination Attempt on Trump in Butler, PA\n5:04 Who Was Thomas Crooks?\n13:14 The M",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2064029745696706941",
+          "summary": "Calls for legitimate criminal investigation into 9-11 attacks",
+          "quote": "There\u2019s never been a legitimate criminal investigation into 9-11, the deadliest terror attack in US history. Roger Waters is trying to change that.\n\n0:00 Waters' Thoughts on 9-11 and Where He Was When It Happened\n14:29 Were Americans and Israelis Involved in 9-11?\n18:47 The Note ",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2078163159022445052",
           "platform": "x"
         }
       ]
     },
     {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 2,
-      "lastActive": "2026-06-08",
-      "stances": [
-        {
-          "date": "2026-06-08",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Links online cults to suicide rates",
-          "quote": "What percentage of suicides are inspired by satanic death cults online? Ryan Montgomery tracks crime on the internet and says it\u2019s more common than we know.\n \n0:00 Ryan Shows How Easy It Is to Find a Stranger\u2019s Information\n9:19 The Scary Reality of Facial Recognition\n23:12 How Th",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2058956451716976661",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Frames data center opposition as Chinese-influenced",
-          "quote": "Kevin O\u2019Leary says anyone who opposes his dystopian data center is probably working for China. A debate.\n\nVideo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2054728644795199546",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
+      "topic": "abortion-reproductive",
+      "label": "Abortion & Reproductive Rights",
       "count": 1,
-      "lastActive": "2026-06-08",
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-06-08",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Attributes world events to supernatural forces",
-          "quote": "Once you understand that world events are influenced by supernatural forces, what seems bizarre begins to make sense. Filmmaker Sean Stone on our leaders and the occult.\n\n0:00 Why Do Leaders Commune With the Supernatural?\n5:02 Demonology, Rituals, and Demonic Possession\n23:57 Wha",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2056419842438074527",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 1,
-      "lastActive": "2026-06-06",
-      "stances": [
-        {
-          "date": "2026-06-06",
-          "topic": "elections",
+          "date": "2026-07-29",
+          "topic": "abortion-reproductive",
           "stance": "strong",
-          "summary": "Critiques two-party system as illusory democracy",
-          "quote": "Jimmy Dore on the uniparty, Charlie Kirk\u2019s murder and why he came to believe in God.\n\n0:00 Thomas Massie\u2019s Loss and Life in a Corporate Hellscape\n5:55 The Illusion of Democracy in the US\n14:56 What Would Grab the Attention of Those in Charge?\n19:04 What Really Happened to Seth Ri",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2062942636135034934",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Claims white mortality rates are intentional",
-          "quote": "Whites are dying. It\u2019s not an accident and the only crime is noticing.\n\nVideo",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2062333612410700063",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Blames immigration for trucking industry decline",
-          "quote": "Too many white men were supporting their families by driving trucks, so of course our leaders had to end that by importing unqualified foreigners. A lot of people have died in the process. Gord Magill is a trucker who saw it happen.\n\n0:00 The Last American Cowboys and the War on ",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2061493165463585249",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 1,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Argues major wars begin under false pretenses",
-          "quote": "Virtually every major war begins under false pretenses. German economist Richard Werner explains what the current global conflict is actually about.\n\n0:00 The Effect of Propaganda in Wartime\n11:52 The Return of Total War\n21:50 Rivalry, Concentration Camps, and the First World War",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2057869299541315674",
+          "summary": "Encourages donations to provide ultrasounds to pregnant women",
+          "quote": "Paid partnerships:\n\nDefend: Enter code \"Tucker\" for 20% off your purchase at defendcellcam.com\n\nPreborn: America celebrates its 250th birthday, help provide ultrasounds dial #250 and say keyword \"BABY\" or visit preborn.com/TUCKER\n\nAmerican Financing: NMLS 182334, nmlsconsumeracce",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2075627156630286702",
           "platform": "x"
         }
       ]

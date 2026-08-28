@@ -1,50 +1,366 @@
 {
   "voiceId": "fareed-zakaria",
   "voiceName": "Fareed Zakaria",
-  "updatedAt": "2026-06-29",
-  "topicCount": 11,
-  "stanceCount": 28,
+  "updatedAt": "2026-08-28",
+  "topicCount": 10,
+  "stanceCount": 33,
   "topics": [
+    {
+      "topic": "refugees-humanitarian",
+      "label": "Refugees & Humanitarian",
+      "count": 2,
+      "lastActive": "2026-08-17",
+      "stances": [
+        {
+          "date": "2026-08-17",
+          "topic": "refugees-humanitarian",
+          "stance": "lean",
+          "summary": "Highlights plight of abandoned Afghan allies under Taliban rule",
+          "quote": "It's been five years since the US' tumultuous withdrawal from Afghanistan. What has happened to the thousands of Afghan allies who aided American forces during the war but are now trapped in the country under Taliban rule? I talked to Afghanistan veteran @JasonKander:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2089054758011060531",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "refugees-humanitarian",
+          "stance": "lean",
+          "summary": "Questions coordination of large-scale migration event",
+          "quote": "Last week, more than 70,000 migrants from Morocco arrived on the shores of Ceuta, a Spanish territory in North Africa. It appeared to be a coordinated event. So who was behind it? I discussed with @anneapplebaum of @TheAtlantic:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2086523095595012551",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 3,
+      "lastActive": "2026-08-16",
+      "stances": [
+        {
+          "date": "2026-08-16",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Sweden shifted from welfare-state progressivism to ultra-capitalism and restrictive immigration",
+          "quote": "For decades, Sweden was known for its inclusive welfare state and its strong voice on human rights.\n\nBut recently, the country has come to resemble something very different: an ultra-capitalist haven, with an increasingly tough approach on immigration.\n\nI explained what changed:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2089062286761537939",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Questions whether new PM can dismantle illiberal system while respecting democracy",
+          "quote": "Hungary's longtime strongman Viktor Orb\u00e1n spent 16 years building one of the world\u2019s most prominent illiberal democracies.\n\nNow, the country\u2019s new prime minister, P\u00e9ter Magyar, is trying to tear that old system down.\n\nCan he do this while sticking to democratic norms?\n\nMy thought",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2083988856966119668",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Russia facing existential crisis from Ukraine drone attacks",
+          "quote": "\u201cEveryone is waiting for the end.\u201d\n\nThat\u2019s how Russian journalist @zygaro described the mood in Putin\u2019s Russia, as the country grapples with a worsening energy crisis, fueled by Ukraine\u2019s intensifying drone attacks:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2078905381418410066",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 6,
+      "lastActive": "2026-08-16",
+      "stances": [
+        {
+          "date": "2026-08-16",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Trump squandered U.S. credibility; allies losing faith in American word",
+          "quote": "From the war with Iran to dealings with allies, President Trump has put on a master class in how to squander credibility.\n\nNow countries are building insurance policies. It's evidence of a deepening loss of faith in America\u2019s word.\n\nMy take:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2089049817120989516",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes U.S. credibility damage from Iran war mismanagement",
+          "quote": "For eight decades, the U.S. built up something as powerful as aircraft carriers and squadrons of F-35s: credibility. \n\nThe Iran war has been a master class in how to squander it. \n\nMy latest column:\nwashingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpinion | How to squander a superpower\u2019s c",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2088249525479657763",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Suggests Gulf states reducing reliance on U.S. security guarantees",
+          "quote": "Saudi Arabia just signed a NATO-style defense pact with Turkey and Pakistan. Are other Gulf countries turning away from a longtime reliance on America to underwrite their security? I asked Harvard's Tarek Masoud and @citrinowicz in part 2 of our conversation:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2086518042419147125",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Middle East powers shifting toward post-American geopolitical order",
+          "quote": "On GPS, at 10am & 1pm ET Sunday on @CNN \u2026\n\u2022 Amid doubts over Washington\u2019s reliability, Middle East powers are banding together. I\u2019ll delve into the region\u2019s new geopolitics, and the growing move toward a post-American order, with scholar Tarek Masoud of @Harvard\u2019s @Kennedy_School",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2086135219602501979",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Questions whether democratic transition outcome met expectations",
+          "quote": "X: When US forces struck Caracas and seized Nicol\u00e1s Maduro in January of this year, many had hoped that the opposition leader, Mar\u00eda Corina Machado, would steer the country through a democratic transition. Why has that not happened? My conversation with @MariaCorinaYA:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2081449687844819120",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Argues U.S. losing credibility as liberal international order leader",
+          "quote": "\"much of the world is losing faith in the United States\u2019 ability to serve as the leader of a liberal international order.\" foreignaffairs.com/united-st\u2026\n\nLink\n\n\n\nThe World Is Giving Up on America\n\nThis time, anti-Americanism is different.\nforeignaffairs.com",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2078229823177007371",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 10,
+      "lastActive": "2026-08-16",
+      "stances": [
+        {
+          "date": "2026-08-16",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Questions credibility of Iranian assassination plots against Trump",
+          "quote": "On GPS, at 10am & 1pm ET Sunday on @CNN \u2026\n\u2022 After Pres. Trump\u2019s strange escape last month via a catering truck, I\u2019ll ask veteran @nytimes White House & national security correspondent @SangerNYT how seriously we should take suspected Iranian plots\n\u2022 Five years after the US withdr",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2088645650397180271",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Criticizes Trump administration for damaging US credibility through broken promises",
+          "quote": "The Iran war is a master class in squandering a superpower\u2019s credibility washingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpinion | How to squander a superpower\u2019s credibility\n\nTrump treats promises like bluffs. Allies are responding by building alternatives.\nwashingtonpost.com",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2088401740173328843",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Notes regional instability threatening Gulf business environment",
+          "quote": "The Iran war has shattered the Gulf\u2019s image as a stable haven for business. How do these countries move forward?\n\nIn part 1 of our conversation, I spoke with Tarek Masoud of @Kennedy_School &amp; @citrinowicz of @INSSIsrael:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2086515503879598427",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Questions whether Iran genuinely seeks negotiated settlement",
+          "quote": "Despite signing a memorandum of understanding to cease hostilities back in June, the US and Iran have been locked in an ongoing tit-for-tat conflict. Does Iran want a deal? My conversation with @CH_MENAP's @SanamVakil:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2083981327053853114",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Iran caught between military escalation and diplomatic possibility",
+          "quote": "The Iran war seems to be lurching between sudden outbursts of fighting and fragile pauses for diplomacy. How are Iranians responding?\n\n@nytimes Middle East correspondent @Lattif recently spent 10 days in the country. He told me about the two very different faces of Iran he saw, \u201c",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2083978811213791279",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Iran trapped between military outbursts and fragile diplomatic pauses",
+          "quote": "On GPS, at 10am and 1pm ET Sunday on @CNN...\n\u2022 The Iran war seems to be caught between sudden outbursts of fighting and fragile pauses for diplomacy. How are Iranians responding? I'll ask @Lattif of @nytimes, who just spent 10 days in Iran. And does Iran even want a deal? I'll di",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2083643975693390323",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Iran policy represents major foreign policy mistake",
+          "quote": "Why Iran is the biggest foriegn policy mistake in many decades -- and more in this stimulating conversation. Listen or read.  washingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpinion | Fareed Zakaria: Is America losing the world?\n\nThe latest from \u201cMake It Make Sense\u201d on global issues.\nwash",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2082948210885058967",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Iran's economic resilience explains reluctance to pursue peace",
+          "quote": "Iran's economy has been pummeled by war and sanctions. So why has that country not been compelled to make peace? The answer lies in part in Tehran's surprising degree of economic resilience:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2081452142594867678",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Questions unusual Israeli intelligence operation involving Iranian politician",
+          "quote": "Stunning reporting from The New York Times showed that Israel groomed the staunchly anti-Israel former Iranian President Mahmoud Ahmadinejad as an intelligence asset. How did that happen? My conversation with @MarkMazzettiNYT, one of the reporters who broke the story:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2078907897103196395",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "China benefiting geopolitically while U.S. credibility declines",
+          "quote": "China has gained more from the Iran war than from any crisis in three decades.\n\nBeijing has paid costs for this war. But measured against the damage to America\u2019s goals, alliances and credibility, China has come out ahead.\n\nMy take:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2078902904585326963",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 3,
+      "lastActive": "2026-08-09",
+      "stances": [
+        {
+          "date": "2026-08-09",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether aging leadership serves older Americans' interests disproportionately",
+          "quote": "Sen. Mitch McConnell's prolonged absence from Congress has many talking about whether America's leaders are too old. But perhaps the problem is not that its leaders themselves are seniors, but that they govern in the interests of older Americans:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2086525592816529616",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "AI offers creative potential alongside documented dangers",
+          "quote": "We've talked about the dangers of AI. Now, for its promise: the potential to enable a new kind of human creativity. That's what I discussed with @Microsoft CEO @satyanadella in the third part of our exclusive interview:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2081447119030722959",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "AI investment on Wall Street faces uncertainty over returns",
+          "quote": "Artificial intelligence is fueling the American economy right now. But so much of the spending around AI is one massive bet -- and many on Wall Street are worried about whether the payout will materialize. I discussed with @Microsoft CEO @satyanadella in part 1 of our conversatio",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2081442159006187621",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 2,
+      "lastActive": "2026-08-09",
+      "stances": [
+        {
+          "date": "2026-08-09",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Advises Democrats move right on culture, not left on economics",
+          "quote": "Democrats are facing a dilemma: The left has the passion, but the middle still has the votes the party needs to win in general elections.\n\nTo win, Democrats don\u2019t need to move left on economics. They need to move to the center on cultural issues.\n\nMy take:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2086513148454990139",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Democrats must translate base energy into common sense politics for broader appeal",
+          "quote": "Michigan\u2019s Senate primary showed where the Democratic Party\u2019s energy lies for its base. \n\nThe test now is whether Democrats can turn that energy into a politics of common sense that appeals to the rest of the country. \n\nMy latest column:\nwashingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpi",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2085709111392362982",
+          "platform": "x"
+        }
+      ]
+    },
     {
       "topic": "culture-war",
       "label": "Culture War",
-      "count": 4,
-      "lastActive": "2026-06-29",
+      "count": 2,
+      "lastActive": "2026-08-07",
       "stances": [
         {
-          "date": "2026-06-29",
+          "date": "2026-08-07",
           "topic": "culture-war",
           "stance": "lean",
-          "summary": "Argues political parties lack community function",
-          "quote": "\"Politics seems to offer you a team, but that doesn't really offer community.\"\n\nThat\u2019s what @TheAtlantic staff writer @DavidBrooks224 told me at the opening session of @aspenideas. Part 2 of our conversation:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2071302742010667210",
+          "summary": "Democrats prioritize economics over cultural issues to appeal to moderates",
+          "quote": "By Moving Left on Economics, Democrats are solving the wrong problem washingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpinion | Democrats are solving the wrong problems\n\nThe party needs to show moderate voters that it can be trusted on cultural issues.\nwashingtonpost.com",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2085746730025312574",
           "platform": "x"
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-07-29",
           "topic": "culture-war",
           "stance": "lean",
-          "summary": "Identifies division and distrust in America",
-          "quote": "As America nears its 250th birthday, the country is experiencing a serious moment of division and distrust.\n\nHow do we recover?\n\nI asked @TheAtlantic staff writer @DavidBrooks224 at the opening session of @aspenideas. Part 1 of our conversation:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2071300259473432625",
+          "summary": "Technological revolution driving democratic anxiety and public anger",
+          "quote": "Across the world, democratic governments face intense public anger. \n\nThe reason: We are living through one of history\u2019s great technological revolutions. And these transformations always produce deep anxiety and fear. \n\nMy latest column:\nwashingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpi",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2080643937769840709",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-08-03",
+      "stances": [
+        {
+          "date": "2026-08-03",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Highlights concerning Silicon Valley influence on university education",
+          "quote": "I spoke with Stanford University recent graduate and award-winning journalist @tab_delete about his new memoir, \u201cHow to Rule the World: An Education in Power at Stanford University,\u201d in which he documents what he sees as the worrying influence of Silicon Valley on his school:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2083986380607090722",
+          "platform": "x"
+        }
+      ]
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-02",
+      "stances": [
+        {
+          "date": "2026-08-02",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Trump tariffs as protectionism causing inflation and job losses",
+          "quote": "President Trump's tariffs have made the US into a paragon of protectionism.\n\nThe result has been higher prices, weaker investment, fewer manufacturing jobs \u2014 and a willingness to make falsehood official policy in order to defend a failed economic creed.\n\nMy take:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2083976505525252452",
           "platform": "x"
         },
         {
-          "date": "2026-06-29",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Calls for liberalism to recover radical spirit",
-          "quote": "From the UK to New York City, a certain kind of liberalism is losing energy, confidence and connection to the people it claims to represent.\n\nThe way forward for liberalism is not to abandon it. It is to recover its radical spirit.\n\nMy take:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2071292845940469789",
+          "date": "2026-07-30",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Frames Trump tariffs as dominance play, implies strategic coercion",
+          "quote": "\"Mr. Trump\u2019s tariff offensive has a clear purpose: to demonstrate who is dominant and who must submit.\" nytimes.com/2026/07/28/opini\u2026\n\nLink\n\n\n\nOpinion | Remember When \u2018Blame Canada\u2019 Was a \u2018South Park\u2019 Joke?\n\nIt would be a grave mistake for Americans to treat their place in the wo",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2082820483817279566",
           "platform": "x"
         },
         {
-          "date": "2026-06-27",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Says liberals must embrace radical spirit",
-          "quote": "Democratic socialists and right-wing populists understand that people want someone to fight for them. \n\nFor liberals, the path forward is not to abandon liberalism. It is to recover its radical spirit. \n\nMy latest column:\nwashingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpinion | To beat s",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2070489092765229279",
+          "date": "2026-07-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "China's rare earth dominance poses strategic vulnerability; Japan's approach offers lessons",
+          "quote": "The world is only now waking up to China\u2019s chokehold on rare earths, which are the critical minerals inside everything from phones to fighter jets.\n\nOne country \u2014 Japan \u2014 saw the threat coming nearly two decades ago. I explained how its response offers some valuable lessons:",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2078915450352611354",
           "platform": "x"
         }
       ]
@@ -53,294 +369,15 @@
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 1,
-      "lastActive": "2026-06-29",
+      "lastActive": "2026-08-01",
       "stances": [
         {
-          "date": "2026-06-29",
+          "date": "2026-08-01",
           "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Questions durability of US-Israel relationship",
-          "quote": "The relationship between the US and Israel is growing increasingly strained. Will it bounce back, or is it altered forever? I discussed with Jake Sullivan in part 2 of our conversation:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2071297730283020346",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 5,
-      "lastActive": "2026-06-29",
-      "stances": [
-        {
-          "date": "2026-06-29",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Notes Iran war ending amid other tensions",
-          "quote": "Not long ago, President Trump was threatening to annex Greenland. With an end to the Iran war coming into view, could that be back on the agenda? My conversation with @NewYorker staff writer Ben Taub:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2068763544133279812",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-24",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Reports Trump Iran peace deal draws bipartisan backlash",
-          "quote": "President Trump signed a peace plan with Iran this week. The agreement has drawn backlash from both sides of the political aisle in the US. What has the deal actually achieved? I asked @PhilGordonDC, who was a top adviser in the Obama admin when the 2015 Iran nuclear deal was cra",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2068758500331647418",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-17",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Expresses skepticism about imminent Iran deal",
-          "quote": "President Trump has said the US is on the verge of a deal with Iran around 40 times since the war began. But this time feels different. I asked @ksadjadpour and @ianbremmer what to expect from a potentially imminent deal between the US and Iran to end the war:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2066221765089435980",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-15",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Links Iran war to oil disruption, green transition",
-          "quote": "The war with Iran has led to the largest oil supply disruption in global history. Can the world use the crisis to support a green energy transition? In fact, that transition may have already begun:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2066231831528100182",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-09",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Questions Biden's decision not to revive JCPOA",
-          "quote": "Why didn't Biden revive the JCPOA \u2014 particularly since he criticized Trump for pulling out of the deal? I asked Obama's former Deputy National Security Adviser @brhodes in part 2 of our conversation:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2063687647210394087",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 4,
-      "lastActive": "2026-06-26",
-      "stances": [
-        {
-          "date": "2026-06-26",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Warns China could take Taiwan without military force",
-          "quote": "China is trying softball with Taiwan before hardball \nforeignaffairs.com/taiwan/ch\u2026\n\nLink\n\n\n\nChina Could Win Taiwan Without Fighting\n\nThe cost of Trump\u2019s equivocation.\nforeignaffairs.com",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2070132014729023511",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-08",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Questions results of Trump's Venezuela intervention",
-          "quote": "We are now nearly half a year on from Donald Trump\u2019s pledge to \u201crun\u201d Venezuela, after US forces captured the country\u2019s strongman Nicol\u00e1s Maduro.\n\nHow is that experiment working out?\n\nI explained why some things have gone better than many expected:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2063695113952313666",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-08",
-          "topic": "foreign-policy-diplomacy",
           "stance": "strong",
-          "summary": "Urges Trump to leverage Ukraine advantage for peace",
-          "quote": "In recent months, the tide has turned in the war in Ukraine. Peace may finally be possible.\n\nWith the right pressure on Putin, President Trump would have an opportunity to make a historic deal.\n\nMy take:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2063682659625164982",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Says Ukraine tide creates Trump opportunity for peace",
-          "quote": "The tide is turning in Ukraine.\n\nIt gives President Trump an opportunity for a real achievement: to help end the worst war in Europe since World War II. \n\nMy latest column:\nwashingtonpost.com/opinions/\u2026",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2062880275885965684",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 1,
-      "lastActive": "2026-06-25",
-      "stances": [
-        {
-          "date": "2026-06-25",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Warns military morale deteriorating amid losses",
-          "quote": "Losing wars abroad, tearing apart America's military from within theatlantic.com/national-sec\u2026\n\nLink\n\n\n\nAnother Top General Is Out at the Pentagon\n\nC. D. Donahue, the last American soldier to leave Afghanistan, is the latest in a long line of military departures.\ntheatlantic.com",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2069872655625302482",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 1,
-      "lastActive": "2026-06-22",
-      "stances": [
-        {
-          "date": "2026-06-22",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Explains post-Brexit Britain failed to thrive",
-          "quote": "When Britain voted to leave the EU a decade ago, its leaders envisioned a post-Brexit country that could thrive as a nimble, free-trading \u201cSingapore-on-Thames.\u201d\n\nWhy did that dream never work out?\n\nMy thoughts:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2068768546188865593",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 6,
-      "lastActive": "2026-06-22",
-      "stances": [
-        {
-          "date": "2026-06-22",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Calls for institutional AI governance framework",
-          "quote": "The fight between Washington and Anthropic is not really about one company. It is the first visible battle over who governs artificial intelligence.\n\nIt should not be regulated through improvisation and raw power, but rules and institutions: We need a Fed for AI.\n\nMy take:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2068756294370988272",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-21",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Opposes ad hoc government AI regulation",
-          "quote": "AI is too important to govern by grudge washingtonpost.com/opinions/\u2026\n\nLink\n\n\n\nOpinion | AI is too important to govern by grudge\n\nThe government\u2019s fight with Anthropic is a dangerous omen.\nwashingtonpost.com",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2067957149666267522",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-20",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Proposes federal reserve model for AI oversight",
-          "quote": "AI will become the most important technology of our age \u2014 too important for the kind of score-settling and personalized, unpredictable regulation we\u2019ve seen from the Trump administration.  \n\nWe should create a Fed for AI. \n\nMy latest column:\nwashingtonpost.com/opinions/\u2026",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2067949797131051251",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-15",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Suggests AI job displacement concerns may be premature",
-          "quote": "More than half of Americans believe AI could put them or someone in their household out of a job. But labor market data shows that the panic may be premature. What is the reality? My conversation with AI policy expert @Mollykinder:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2066229333438435390",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Addresses graduate concerns about AI job competition",
-          "quote": "At university graduation ceremonies this spring, commencement speakers have been getting booed for championing AI, given how the technology might threaten their job prospects.\n\nIn a commencement speech at Bard College last week, I delivered a more hopeful message \u2014 that humans ca",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2061155923947602202",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Examines whether AI caused job market tightness",
-          "quote": "Millions are graduating from college across the US \u2014 into one of the toughest job markets in recent memory. Is AI the culprit? I explored with @DKThomp, writer and host of the podcast \"Plain English\":\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2058616679236551096",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-06-15",
-      "stances": [
-        {
-          "date": "2026-06-15",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes California for inefficient public spending",
-          "quote": "California is one of the most dynamic places on the planet.\n\nBut it is a case study in how a rich society can spend more and more while producing less and less of what its ordinary citizens need.\n\nMy take:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2066234582299545634",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 1,
-      "lastActive": "2026-06-12",
-      "stances": [
-        {
-          "date": "2026-06-12",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Says California economy succeeds despite governance failure",
-          "quote": "California is one of the most dynamic places on the planet. \n\nThe paradox of the state today is that its successful economy is attached to a failing model of governance. \n\nMy latest column:\nwashingtonpost.com/opinions/\u2026",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2065421253045817649",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "covid-pandemic",
-      "label": "COVID & Pandemic",
-      "count": 1,
-      "lastActive": "2026-06-08",
-      "stances": [
-        {
-          "date": "2026-06-08",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Reports WHO declares Ebola international health emergency",
-          "quote": "The WHO has declared the Ebola outbreak in Africa a Public Health Emergency of International Concern. I spoke with former White House COVID-19 Response Coordinator in the Biden administration @ashishkjha about the scale of the outbreak and the extent to which it has been worsened",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2063692597634203752",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 3,
-      "lastActive": "2026-06-05",
-      "stances": [
-        {
-          "date": "2026-06-05",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Accuses Trump of surrounding himself with loyalists",
-          "quote": "In his first term, President Trump was constrained.\n\nThis term, he has surrounded himself with people whose chief qualification is fealty. The result is reckless policy and the brazen pursuit of enrichment.\n\nMy take:\n\nVideo",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2058609182471786901",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump's second term for monetizing presidency",
-          "quote": "Trump's 2nd term differs greatly from his first in a crucial way -- It is relentlessly MONETIZING the presidency.  washingtonpost.com/opinions/\u2026",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2058164343401857470",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-05",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Says unconstrained Trump more brazenly pursues enrichment",
-          "quote": "President Trump\u2019s first term was more disciplined \u2014 not because he was disciplined, but because he was constrained. \n\nThis time he is unconstrained by policy advisers, and more brazen in pursuit of enrichment. \n\nMy latest column:\nwashingtonpost.com/opinions/\u2026",
-          "sourceUrl": "https://x.com/FareedZakaria/status/2057801645962981675",
+          "summary": "Netanyahu damaged Israel's standing in America through failed diplomacy",
+          "quote": "The legacy of Benjamin Netanyahu theatlantic.com/ideas/2026/0\u2026\n\nLink\n\n\n\nHow Netanyahu Lost America\n\nThe prime minister, a self-styled expert on the U.S., has shattered his country\u2019s standing.\ntheatlantic.com",
+          "sourceUrl": "https://x.com/FareedZakaria/status/2083282492828569624",
           "platform": "x"
         }
       ]

@@ -1012,10 +1012,16 @@ def load_categorized_cache(voice_id):
             url = p.get('sourceUrl')
             if not url or 'topic' not in p:
                 continue
+            # Entries without a 'topics' list predate multi-tag (Aug 28 2026).
+            # Treat them as misses so they get re-tagged once — a one-day cost
+            # bump, then the cache is fully multi-tagged.
+            if not p.get('topics'):
+                continue
             if p.get('relevance') not in ('high', 'medium') or p.get('stance') not in ('strong', 'lean'):
                 continue
             cache[url] = {
                 'topic': p['topic'],
+                'topics': p['topics'],
                 'relevance': p['relevance'],
                 'stance': p['stance'],
                 'summary': p.get('summary', ''),
@@ -1035,6 +1041,12 @@ def split_cached_posts(posts, cache):
             # predate a rename/removal (fresh categorizations get the same
             # treatment in _apply_categorization; idempotent otherwise).
             p['topic'] = enforce_taxonomy(entry['topic'])
+            slugs = []
+            for rt in entry.get('topics', [entry['topic']]):
+                ct = enforce_taxonomy(rt)
+                if ct and ct not in slugs:
+                    slugs.append(ct)
+            p['topics'] = slugs or [p['topic']]
             p['relevance'] = entry['relevance']
             p['stance'] = entry['stance']
             p['summary'] = entry['summary']
@@ -1056,7 +1068,7 @@ def _build_categorization_prompt(voice_name, posts):
     taxonomy_list = get_taxonomy_slug_list()
 
     return f"""Here are recent posts/videos from {voice_name}. For each one:
-1. Assign a topic slug from the FIXED TAXONOMY below. You MUST use one of these exact slugs — do NOT invent new ones.
+1. Assign 1-3 topic slugs from the FIXED TAXONOMY below ("topics", best match FIRST). You MUST use these exact slugs — do NOT invent new ones. Most posts get 1-2 slugs; add a 2nd or 3rd only when the post genuinely spans topics (an ICE-raid post is ["immigration", "trump-administration"], not just one).
 2. Rate relevance to current news: "high" (clearly about a news story), "medium" (tangentially related), "low" (personal, promo, entertainment only)
 3. Rate stance: Does this person EXPRESS or IMPLY a clear position, reaction, or argument?
    - "strong" = clear opinion, argument, criticism, praise, or call to action
@@ -1079,7 +1091,7 @@ POSTS:
 
 Return JSON array:
 [
-  {{"index": 0, "topic": "iran-conflict", "relevance": "high", "stance": "strong", "summary": "Backs sanctions, opposes unfreezing Iran's assets"}},
+  {{"index": 0, "topics": ["iran-conflict", "foreign-policy-diplomacy"], "relevance": "high", "stance": "strong", "summary": "Backs sanctions, opposes unfreezing Iran's assets"}},
   ...
 ]
 
@@ -1105,8 +1117,22 @@ def _apply_categorization(posts, categorized):
         except (TypeError, ValueError):
             continue
         if 0 <= idx < len(posts):
-            raw_topic = item.get('topic', 'uncategorized')
-            posts[idx]['topic'] = enforce_taxonomy(raw_topic)
+            # Multi-tag (Aug 28 2026): the model returns "topics" (1-3 slugs,
+            # best first). Accept legacy single-"topic" responses too. The
+            # primary slug stays in 'topic' so every downstream consumer
+            # (stances, stories, day files) keeps working unchanged.
+            raw_topics = item.get('topics') or [item.get('topic', 'uncategorized')]
+            if isinstance(raw_topics, str):
+                raw_topics = [raw_topics]
+            slugs = []
+            for rt in raw_topics[:3]:
+                if not isinstance(rt, str):
+                    continue
+                ct = enforce_taxonomy(rt)
+                if ct and ct not in slugs:
+                    slugs.append(ct)
+            posts[idx]['topic'] = slugs[0] if slugs else 'uncategorized'
+            posts[idx]['topics'] = slugs or ['uncategorized']
             posts[idx]['relevance'] = item.get('relevance', 'low')
             posts[idx]['stance'] = item.get('stance', 'neutral')
             posts[idx]['summary'] = (item.get('summary', '') or '').strip()[:120]
@@ -1526,21 +1552,11 @@ def main():
     uncategorized_fixed = 0
     for vid, data in all_voice_posts.items():
         for p in data['posts']:
-            topic = p.get('topic', 'uncategorized')
-
-            # Safety net: enforce taxonomy on every topic slug
-            if topic and topic != 'uncategorized':
-                topic = enforce_taxonomy(topic)
-            elif topic == 'uncategorized' or not topic:
-                # Post was never categorized — skip it from the index
-                # (it adds noise and dilutes story matching)
-                continue
-
-            if topic == 'other':
-                continue  # skip catch-all bucket
-
-            if topic not in topic_index:
-                topic_index[topic] = []
+            # Multi-tag (Aug 28 2026): index the post under EVERY tag so an
+            # ICE-raid post tagged ["immigration", "trump-administration"] is
+            # findable from both searches. lookup dedupes by sourceUrl, so the
+            # same post never renders twice.
+            tags = p.get('topics') or [p.get('topic', 'uncategorized')]
 
             # For YouTube posts with only a title, try transcript cache
             quote = p.get('quote', p['text'][:200])
@@ -1549,14 +1565,29 @@ def main():
                 if vid_match and vid_match.group(1) in yt_cache and yt_cache[vid_match.group(1)]:
                     quote = yt_cache[vid_match.group(1)][:300]
 
-            topic_index[topic].append({
-                'voiceId': vid,
-                'voiceName': data['voice']['name'],
-                'quote': quote,
-                'sourceUrl': p['sourceUrl'],
-                'platform': p['platform'],
-                'timestamp': p['timestamp'],
-            })
+            for topic in tags:
+                # Safety net: enforce taxonomy on every topic slug
+                if topic and topic != 'uncategorized':
+                    topic = enforce_taxonomy(topic)
+                else:
+                    # Post was never categorized — skip it from the index
+                    # (it adds noise and dilutes story matching)
+                    continue
+
+                if topic == 'other':
+                    continue  # skip catch-all bucket
+
+                if topic not in topic_index:
+                    topic_index[topic] = []
+
+                topic_index[topic].append({
+                    'voiceId': vid,
+                    'voiceName': data['voice']['name'],
+                    'quote': quote,
+                    'sourceUrl': p['sourceUrl'],
+                    'platform': p['platform'],
+                    'timestamp': p['timestamp'],
+                })
 
     index_path = POSTS_DIR / f'topic-index-{date}.json'
     index_path.write_text(json.dumps(topic_index, indent=2))
