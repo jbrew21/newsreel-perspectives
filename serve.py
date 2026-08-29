@@ -926,6 +926,26 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_json({}, cache_ttl=60)
             return
 
+        # ── API: Voice lenses (one-line descriptor per voice) ──
+        # The story page pulled all of data/voices.json (~276KB of tags,
+        # handles, feeds and follower counts) to render one short string per
+        # voice. This is that string and nothing else.
+        if path == '/api/voice-lens':
+            cached = cache_get('voice_lens')
+            if cached is None:
+                lenses = {}
+                try:
+                    voices = load_json_file(os.path.join(ROOT, 'data', 'voices.json')) or []
+                    for v in voices:
+                        if isinstance(v, dict) and v.get('id') and v.get('lens'):
+                            lenses[v['id']] = v['lens']
+                except Exception as e:
+                    log.warning(f"Could not build voice lenses: {e}")
+                cached = lenses
+                cache_set('voice_lens', cached, CACHE_TTL_TOPICS)
+            self.send_json(cached, cache_ttl=CACHE_TTL_TOPICS)
+            return
+
         # ── API: Voice activity (summary for the /voices browse page) ──
         # The browse page used to pull the whole topic index (~760KB of quotes)
         # just to learn which voices are active and what they cover. This

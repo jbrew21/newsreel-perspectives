@@ -325,10 +325,16 @@
   }
   .voice-row-source:hover { text-decoration: underline; opacity: 0.85; }
   .cluster-overflow {
-    font-size: var(--text-xs); color: var(--text-dim);
-    padding: var(--space-1) var(--space-3);
+    font-size: var(--text-xs); color: var(--text-muted);
+    padding: var(--space-2) var(--space-3);
     font-weight: 500;
+    background: none; border: none; cursor: pointer;
+    font-family: inherit; text-align: left;
+    transition: color var(--duration-fast);
   }
+  .cluster-overflow:hover { color: var(--accent); }
+  .voice-row[data-overflow] { display: none; }
+  .cluster-body-inner.voices-expanded .voice-row[data-overflow] { display: flex; }
 
   /* -- SKELETON LOADING -- */
   @keyframes shimmer {
@@ -475,7 +481,7 @@
     </a>
   </div>
   <div class="nav-tabs">
-    <a class="nav-tab active" href="/" id="searchTab">Search</a>
+    <a class="nav-tab" href="/" id="searchTab">Search</a>
     <a class="nav-tab" href="/voices" id="voicesTab">Voices</a>
     <a class="nav-tab" href="/methodology" id="methodTab">Methodology</a>
   </div>
@@ -651,9 +657,19 @@
   document.addEventListener('keydown', function(e) {
     if (e.key !== 'Enter' && e.key !== ' ') return;
     var header = e.target.closest('[data-cluster-toggle]');
-    if (!header) return;
-    e.preventDefault();
-    toggleCluster(header);
+    if (header) {
+      e.preventDefault();
+      toggleCluster(header);
+      return;
+    }
+    // Proportion-bar segments carry role="button" and tabindex="0", so they
+    // take focus and are announced as buttons. Without this they were a
+    // keyboard dead end while the mouse path worked.
+    var seg = e.target.closest('[data-scroll-cluster]');
+    if (seg) {
+      e.preventDefault();
+      scrollToCluster(seg.getAttribute('data-scroll-cluster'));
+    }
   });
 
   function toggleCluster(header) {
@@ -668,10 +684,7 @@
   }
 
   /* -- SCROLL-TO-CLUSTER (proportion bar + legend) -- */
-  document.addEventListener('click', function(e) {
-    var el = e.target.closest('[data-scroll-cluster]');
-    if (!el) return;
-    var idx = el.dataset.scrollCluster;
+  function scrollToCluster(idx) {
     var card = document.getElementById('cluster-' + idx);
     if (!card) return;
     if (!card.classList.contains('open')) {
@@ -687,26 +700,43 @@
     card.scrollIntoView({ behavior: 'smooth', block: 'start' });
     card.classList.add('highlight');
     setTimeout(function() { card.classList.remove('highlight'); }, 2000);
+  }
+
+  document.addEventListener('click', function(e) {
+    var expand = e.target.closest('[data-voice-expand]');
+    if (expand) {
+      var inner = expand.parentElement;
+      var open = inner.classList.toggle('voices-expanded');
+      expand.setAttribute('aria-expanded', String(open));
+      expand.textContent = open ? 'Show fewer voices' : expand.dataset.collapsedLabel;
+      return;
+    }
+    var el = e.target.closest('[data-scroll-cluster]');
+    if (!el) return;
+    scrollToCluster(el.dataset.scrollCluster);
   });
 
-  /* -- VOICE METADATA -- */
-  var _voiceMeta = {};
-  fetch(BASE + '/data/voices.json')
+  /* -- VOICE LENSES --
+     Only the one-line lens is needed here, so fetch just that (~25KB) rather
+     than all of voices.json (~276KB of tags/handles/feeds/followers).
+     The promise is awaited before render: this used to be fire-and-forget,
+     and being the larger payload it regularly lost the race against the
+     story fetch, so every voice row silently rendered a blank lens. */
+  var _voiceLens = {};
+  var _lensReady = fetch(BASE + '/api/voice-lens')
     .then(function(r) {
-      if (!r.ok) throw new Error('Voice data unavailable');
+      if (!r.ok) throw new Error('Lens data unavailable');
       return r.json();
     })
-    .then(function(voices) {
-      for (var i = 0; i < voices.length; i++) {
-        _voiceMeta[voices[i].id] = voices[i];
-      }
+    .then(function(lenses) {
+      _voiceLens = lenses || {};
     })
     .catch(function(err) {
-      console.warn('[Perspectives] Could not load voices.json:', err.message);
+      console.warn('[Perspectives] Could not load voice lenses:', err.message);
     });
 
   function getLens(id) {
-    return (_voiceMeta[id] || {}).lens || '';
+    return _voiceLens[id] || '';
   }
 
   /* -- SLUG PARSING -- */
@@ -723,22 +753,25 @@
       return;
     }
 
-    fetch(BASE + '/api/stories')
-      .then(function(resp) {
-        if (!resp.ok) throw new Error('API returned ' + resp.status);
-        return resp.json();
-      })
-      .then(function(stories) {
-        var story = (stories || []).find(function(s) { return (s.slug || slugify(s.headline)) === slug; });
-
-        if (story) return story;
-
-        // Not in today's feed: resolve THIS specific story (with its real
-        // clusters) by slug across recent days. Never fall back to a topic
-        // search — that showed unrelated voices under the wrong headline.
-        return fetch(BASE + '/api/story?slug=' + encodeURIComponent(slug))
-          .then(function(r) { return r.ok ? r.json() : null; })
-          .then(function(s) { return (s && s.headline && s.clusters) ? s : null; })
+    // Ask for THIS story first (~10KB). The old order downloaded the entire
+    // feed (~94KB of every story's clusters, voices and quotes) and filtered
+    // client-side to find one. Never fall back to a topic search — that showed
+    // unrelated voices under the wrong headline.
+    fetch(BASE + '/api/story?slug=' + encodeURIComponent(slug))
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(s) {
+        if (s && s.headline && s.clusters) return s;
+        // Older slug shapes still resolve out of the live feed.
+        return fetch(BASE + '/api/stories')
+          .then(function(resp) {
+            if (!resp.ok) throw new Error('API returned ' + resp.status);
+            return resp.json();
+          })
+          .then(function(stories) {
+            return (stories || []).find(function(st) {
+              return (st.slug || slugify(st.headline)) === slug;
+            }) || null;
+          })
           .catch(function() { return null; });
       })
       .then(function(story) {
@@ -752,7 +785,11 @@
           );
           return;
         }
-        renderStory(story);
+        // Wait for the lenses so every voice row renders with its descriptor
+        // rather than blank; never let a lens failure block the story itself.
+        return _lensReady.catch(function() {}).then(function() {
+          renderStory(story);
+        });
       })
       .catch(function(err) {
         console.error('[Perspectives] Story load failed:', err);
@@ -765,6 +802,23 @@
     var clusters = (story.clusters || []).slice().sort(function(a, b) {
       return (b.voiceCount || (b.voices || []).length) - (a.voiceCount || (a.voices || []).length);
     });
+
+    // With no clusters the page used to paint full chrome around nothing:
+    // "0 voices · 0 positions", an empty gray proportion track, an empty
+    // legend, and a "0 argument positions" heading. Say what happened instead.
+    if (!clusters.length) {
+      showErrorWithSearch(
+        'No positions yet',
+        'We have not clustered any voices on this story yet. It may still be collecting.',
+        (story.headline || '').slice(0, 80),
+        PAGES.search + '?q=' + encodeURIComponent((story.headline || '').slice(0, 80))
+      );
+      return;
+    }
+
+    // A single cluster makes the proportion bar meaningless: one 100%-wide
+    // segment conveys no proportion. Show the cluster, skip the bar.
+    var showProportion = clusters.length > 1;
     var totalVoices = story.voiceCount || clusters.reduce(function(s, c) {
       return s + (c.voiceCount || (c.voices || []).length);
     }, 0);
@@ -810,18 +864,31 @@
       var isFirst = ci === 0;
       var bodyId = 'cluster-body-' + ci;
 
-      // Deduplicate
-      var rendered = {};
-      var voiceRows = voices.slice(0, 12).map(function(v) {
-        if (rendered[v.voiceId]) return '';
-        rendered[v.voiceId] = true;
+      // Dedupe FIRST, then cap. Slicing before deduping rendered fewer than
+      // VOICES_PER_CLUSTER rows and computed the overflow count off the
+      // pre-dedupe length, so a cluster with a repeated voice advertised
+      // "+N more" voices that did not exist.
+      var VOICES_PER_CLUSTER = 12;
+      var seenVoice = {};
+      var uniqueVoices = voices.filter(function(v) {
+        if (seenVoice[v.voiceId]) return false;
+        seenVoice[v.voiceId] = true;
+        return true;
+      });
+      // Lead with the voices that actually said something on this story: a
+      // real quote first, longer quotes above one-liners. Raw API order made
+      // "which 12 of N you see" arbitrary.
+      uniqueVoices.sort(function(a, b) {
+        return (b.quote || '').length - (a.quote || '').length;
+      });
+      var voiceRows = uniqueVoices.map(function(v, vi) {
 
         var photo = v.photo || initialsAvatar(v.voiceName);
         var lens = getLens(v.voiceId);
         var pLabel = PLATFORM[v.platform] || v.platform || '';
         var quote = (v.quote || '').substring(0, 280);
 
-        return '<article class="voice-row">' +
+        return '<article class="voice-row"' + (vi >= VOICES_PER_CLUSTER ? ' data-overflow="1"' : '') + '>' +
           '<img class="voice-row-photo" src="' + photo + '" alt="" data-fallback-name="' + esc(v.voiceName) + '" loading="lazy">' +
           '<div class="voice-row-body">' +
             '<div class="voice-row-header">' +
@@ -837,7 +904,7 @@
         '</article>';
       }).join('');
 
-      var overflow = count - Math.min(voices.length, 12);
+      var overflow = uniqueVoices.length - Math.min(uniqueVoices.length, VOICES_PER_CLUSTER);
 
       clustersHtml += '<section class="cluster-card' + (isFirst ? ' open' : '') + '" style="--cluster-color:' + color + ';" id="cluster-' + ci + '" aria-labelledby="cluster-heading-' + ci + '">' +
         '<div class="cluster-header" role="button" tabindex="0" ' +
@@ -852,7 +919,7 @@
         '<div class="cluster-body" id="' + bodyId + '" role="region" aria-hidden="' + (isFirst ? 'false' : 'true') + '">' +
           '<div class="cluster-body-inner">' +
             voiceRows +
-            (overflow > 0 ? '<div class="cluster-overflow">+ ' + overflow + ' more voice' + (overflow !== 1 ? 's' : '') + '</div>' : '') +
+            (overflow > 0 ? '<button type="button" class="cluster-overflow" data-voice-expand="' + ci + '" data-collapsed-label="Show ' + overflow + ' more voice' + (overflow !== 1 ? 's' : '') + '" aria-expanded="false">Show ' + overflow + ' more voice' + (overflow !== 1 ? 's' : '') + '</button>' : '') +
           '</div>' +
         '</div>' +
       '</section>';
@@ -864,7 +931,7 @@
 
     contentEl.innerHTML =
       '<header class="story-header">' +
-        '<div class="story-meta">' + totalVoices + ' voices &middot; ' + clusters.length + ' positions' + (allPlatforms.size ? ' &middot; ' + allPlatforms.size + ' platforms' : '') + '</div>' +
+        '<div class="story-meta">' + totalVoices + ' voice' + (totalVoices !== 1 ? 's' : '') + '</div>' +
         '<h1 class="story-headline">' + esc(story.headline) + '</h1>' +
         (story.summary ? '<p class="story-summary">' + esc(story.summary) + '</p>' : '') +
         '<button class="share-btn" id="shareBtn" type="button" aria-label="Copy link to clipboard">' +
@@ -872,10 +939,11 @@
           'Share' +
         '</button>' +
       '</header>' +
-      '<nav class="story-proportion" aria-label="Argument distribution">' +
-        '<div class="proportion-bar" role="group" aria-label="Proportion of voices per argument position">' + barSegments + '</div>' +
-        '<div class="proportion-legend" role="group" aria-label="Argument position legend">' + legendItems + '</div>' +
-      '</nav>' +
+      (showProportion ?
+        '<nav class="story-proportion" aria-label="Argument distribution">' +
+          '<div class="proportion-bar" role="group" aria-label="Proportion of voices per argument position">' + barSegments + '</div>' +
+          '<div class="proportion-legend" role="group" aria-label="Argument position legend">' + legendItems + '</div>' +
+        '</nav>' : '') +
       '<div class="clusters" role="list" aria-label="Argument clusters">' +
         '<div class="clusters-title">' + clusters.length + ' argument position' + (clusters.length !== 1 ? 's' : '') + '</div>' +
         clustersHtml +

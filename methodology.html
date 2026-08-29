@@ -222,15 +222,23 @@
     margin: 16px 0;
   }
 
+  /* Labels, not controls: these name our sources. The filled-pill treatment
+     made them indistinguishable from the clickable platform filters on
+     /voices, so readers tried to click an inert span. */
   .platform-chip {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
     font-weight: 500;
-    color: var(--text-secondary);
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
-    border-radius: 100px;
-    padding: 6px 14px;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 6px 0;
+  }
+  .platform-chip + .platform-chip::before {
+    content: '·';
+    margin: 0 10px 0 0;
+    color: var(--border-subtle);
   }
 
   /* NOT LIST */
@@ -315,8 +323,7 @@
       </a>
     </div>
     <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/search">Search</a>
+      <a href="/">Search</a>
       <a href="/voices">Voices</a>
       <a href="/methodology" class="active">Methodology</a>
     </div>
@@ -325,7 +332,7 @@
 
 <div class="page-header">
   <h1>How Perspectives Works</h1>
-  <p>Our methodology for tracking 232 voices across the political spectrum and grouping them by what they actually say, not who they are.</p>
+  <p>Our methodology for tracking more than 300 voices across the political spectrum and grouping them by what they actually say, not who they are.</p>
 </div>
 
 <div class="content">
@@ -334,16 +341,17 @@
   <div class="section">
     <div class="section-number">01</div>
     <h2>How It Works</h2>
-    <p>Every day, we collect public posts from <strong>232 voices</strong> across <strong>7 platforms</strong>. Politicians, creators, journalists, podcasters, policy experts. We pull their posts, categorize each one by topic, then group voices into argument clusters for every story.</p>
+    <p>Every day, we collect public posts from <strong>more than 300 voices</strong> across <strong>eight platforms</strong>. Politicians, creators, journalists, podcasters, policy experts. We pull their posts, categorize each one by topic, then group voices into argument clusters for every story.</p>
     <p>The result: for any story in the news, you can see who is talking about it and what they are actually saying, organized not by party or ideology but by the specific argument they are making.</p>
     <div class="platform-grid">
       <span class="platform-chip">X</span>
+      <span class="platform-chip">Instagram</span>
       <span class="platform-chip">YouTube</span>
       <span class="platform-chip">Bluesky</span>
-      <span class="platform-chip">Instagram</span>
       <span class="platform-chip">TikTok</span>
       <span class="platform-chip">Substack</span>
       <span class="platform-chip">Podcasts</span>
+      <span class="platform-chip">Blogs</span>
     </div>
   </div>
 
@@ -442,7 +450,7 @@
   <div class="section">
     <div class="section-number">06</div>
     <h2>What We Track</h2>
-    <p><strong>232 voices</strong> across politicians, creators, journalists, podcasters, and policy experts. All public content. No private messages. Nothing behind paywalls.</p>
+    <p><strong>More than 300 voices</strong> across politicians, creators, journalists, podcasters, and policy experts. All public content. No private messages. Nothing behind paywalls.</p>
     <p>Collection runs daily. Each voice is monitored across all platforms where they have a public presence. A single voice might have posts from X, a YouTube video, and a Substack article, all on the same story, all surfaced together.</p>
     <div class="callout">
       <div class="callout-label">Sources</div>
@@ -477,16 +485,16 @@
     <div class="callout">
       <div class="callout-label">Common tags explained</div>
       <p>
-        <strong>hawkish</strong> - favors strong military action or aggressive foreign policy<br>
-        <strong>anti-establishment</strong> - skeptical of institutional power, both parties<br>
-        <strong>contrarian</strong> - frequently takes positions against mainstream consensus<br>
-        <strong>centrist</strong> - positions don't align consistently with either party<br>
-        <strong>populist</strong> - frames issues as people vs. elites<br>
-        <strong>libertarian-leaning</strong> - prioritizes individual freedom, skeptical of government<br>
         <strong>progressive</strong> - advocates systemic change on social/economic issues<br>
-        <strong>constitutionalist</strong> - frames arguments through constitutional law<br>
-        <strong>digital media</strong> - primarily reaches audiences through social platforms<br>
-        <strong>heterodox</strong> - positions cross traditional left-right lines
+        <strong>conservative</strong> - favors traditional institutions and limited government<br>
+        <strong>center-left</strong> - leans left but breaks with the party's left flank<br>
+        <strong>anti-establishment</strong> - skeptical of institutional power, both parties<br>
+        <strong>center-right</strong> - leans right but breaks with the party's right flank<br>
+        <strong>free speech</strong> - organizes their argument around expression and censorship<br>
+        <strong>investigative</strong> - works primarily from original reporting and documents<br>
+        <strong>national security</strong> - argues from defense, intelligence, or foreign policy<br>
+        <strong>centrist</strong> - positions don't align consistently with either party<br>
+        <strong>libertarian-leaning</strong> - prioritizes individual freedom, skeptical of government
       </p>
     </div>
 
@@ -495,13 +503,17 @@
     <div class="callout">
       <div class="callout-label">Voice categories</div>
       <p>
-        <strong>Journalist</strong> - professional reporter or news organization<br>
         <strong>Commentator</strong> - opinion-focused media personality<br>
-        <strong>Creator</strong> - social-media-native content maker<br>
         <strong>Politician</strong> - elected official or candidate<br>
-        <strong>Activist</strong> - advocacy-focused public figure<br>
+        <strong>Journalist</strong> - professional reporter or news organization<br>
+        <strong>Creator</strong> - social-media-native content maker<br>
         <strong>Think-tank</strong> - policy researcher or institution<br>
-        <strong>Satirist</strong> - uses comedy to comment on news
+        <strong>Economist</strong> - argues from economic research or practice<br>
+        <strong>Activist</strong> - advocacy-focused public figure<br>
+        <strong>Medical</strong> - physician, epidemiologist, or public-health expert<br>
+        <strong>Legal</strong> - attorney, law professor, or legal analyst<br>
+        <strong>Satirist</strong> - uses comedy to comment on news<br>
+        <strong>Entrepreneur</strong> - founder or investor commenting from industry
       </p>
     </div>
 
