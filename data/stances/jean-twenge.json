@@ -1,34 +1,61 @@
 {
   "voiceId": "jean-twenge",
   "voiceName": "Jean Twenge",
-  "updatedAt": "2026-08-28",
-  "topicCount": 5,
+  "updatedAt": "2026-08-29",
+  "topicCount": 6,
   "stanceCount": 12,
   "topics": [
     {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 5,
-      "lastActive": "2026-08-28",
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 4,
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-28",
-          "topic": "culture-war",
+          "date": "2026-08-29",
+          "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Frames decline in non-heterosexual identity as notable demographic shift",
-          "quote": "Less gay than yesterday? (by Jean M. Twenge). The recent declines appear in non-heterosexual sexual activity, not just in identity",
-          "sourceUrl": "https://www.generationtechblog.com/p/less-gay-than-yesterday",
+          "summary": "Warns parents about risks of AI companion apps for children",
+          "quote": "AI companion apps: What parents need to know (by Jean M. Twenge). Want your kid to have an AI girlfriend? No? Then read on.",
+          "sourceUrl": "https://www.generationtechblog.com/p/ai-companion-apps-what-parents-need",
           "platform": "substack"
         },
         {
-          "date": "2026-08-28",
-          "topic": "culture-war",
+          "date": "2026-08-27",
+          "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Documents decline in non-heterosexual identity among young adults",
-          "quote": "Non-heterosexual identity is in free-fall among U.S. young adults (by Jean M. Twenge)",
-          "sourceUrl": "https://www.generationtechblog.com/p/non-heterosexual-identity-is-in-free",
+          "summary": "Links social media proliferation to global teen suicide increases",
+          "quote": "Teen suicide rates around the world and the rise of social media (by Jean M. Twenge)",
+          "sourceUrl": "https://www.generationtechblog.com/p/teen-suicide-rates-around-the-world",
           "platform": "substack"
         },
+        {
+          "date": "2026-08-27",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Social media linked to mental health disorders beyond well-being",
+          "quote": "Social media use is linked to mental health disorders, not just low well-being (by Jean M. Twenge)",
+          "sourceUrl": "https://www.generationtechblog.com/p/social-media-use-is-linked-to-mental",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights widespread excessive social media use among teenagers",
+          "quote": "A mind-blowing number of teens are spending 7+ hours a day on social media  (by Jean M. Twenge)",
+          "sourceUrl": "https://www.generationtechblog.com/p/the-mind-blowing-amount-of-time-teens",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 3,
+      "lastActive": "2026-08-27",
+      "stances": [
         {
           "date": "2026-08-27",
           "topic": "culture-war",
@@ -60,45 +87,27 @@
       "active": true
     },
     {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 4,
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 2,
       "lastActive": "2026-08-28",
       "stances": [
         {
           "date": "2026-08-28",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Warns parents about AI companion apps as concerning technology",
-          "quote": "AI companion apps: What parents need to know (by Jean M. Twenge). Want your kid to have an AI girlfriend? No? Then read on.",
-          "sourceUrl": "https://www.generationtechblog.com/p/ai-companion-apps-what-parents-need",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Declines in non-heterosexual activity and identity among young adults documented",
+          "quote": "Less gay than yesterday? (by Jean M. Twenge). The recent declines appear in non-heterosexual sexual activity, not just in identity",
+          "sourceUrl": "https://www.generationtechblog.com/p/less-gay-than-yesterday",
           "platform": "substack"
         },
         {
-          "date": "2026-08-27",
-          "topic": "ai-technology",
+          "date": "2026-08-28",
+          "topic": "gender-lgbtq",
           "stance": "lean",
-          "summary": "Links social media proliferation to global teen suicide increases",
-          "quote": "Teen suicide rates around the world and the rise of social media (by Jean M. Twenge)",
-          "sourceUrl": "https://www.generationtechblog.com/p/teen-suicide-rates-around-the-world",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-27",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Social media linked to mental health disorders beyond well-being",
-          "quote": "Social media use is linked to mental health disorders, not just low well-being (by Jean M. Twenge)",
-          "sourceUrl": "https://www.generationtechblog.com/p/social-media-use-is-linked-to-mental",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-27",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Highlights widespread excessive social media use among teenagers",
-          "quote": "A mind-blowing number of teens are spending 7+ hours a day on social media  (by Jean M. Twenge)",
-          "sourceUrl": "https://www.generationtechblog.com/p/the-mind-blowing-amount-of-time-teens",
+          "summary": "Non-heterosexual identity declining sharply among U.S. young adults",
+          "quote": "Non-heterosexual identity is in free-fall among U.S. young adults (by Jean M. Twenge)",
+          "sourceUrl": "https://www.generationtechblog.com/p/non-heterosexual-identity-is-in-free",
           "platform": "substack"
         }
       ],

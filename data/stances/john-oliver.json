@@ -1,9 +1,9 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "topicCount": 23,
-  "stanceCount": 67,
+  "stanceCount": 66,
   "topics": [
     {
       "topic": "trump-administration",
@@ -156,7 +156,7 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "criminal-justice",
           "stance": "strong",
           "summary": "Criticizes excessive police power during traffic stops",
@@ -165,7 +165,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "criminal-justice",
           "stance": "strong",
           "summary": "Criticizes January 6th insurrection and congressional response",
@@ -285,6 +285,51 @@
       "active": true
     },
     {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 4,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Critiques congressional dysfunction and dollar store regulation",
+          "quote": "S10 E18: Congress, Dollar Stores &amp; BOTY Update II: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=RXTJOqZdDe0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes Senator Menendez and McKinsey's influence on policy",
+          "quote": "S10 E14: Bob Menendez &amp; McKinsey: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=-BRWR6iK2iY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes TANF program inadequacy and dysfunction",
+          "quote": "S10 E4: Randy McNally &amp; TANF: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=J7GXS7WGgOo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes barriers to accessing disability benefits",
+          "quote": "Here's our story from Sunday about disability benefits...piped.video/watch?v=hq2s7RMR\u2026\n\nLink\n\n\n\nDisability Benefits: Last Week Tonight with John Oliver (HBO)\n\nJohn Oliver discusses why disability benefits can be hard to get an...\nyoutube.com",
+          "sourceUrl": "https://x.com/iamjohnoliver/status/1839302266878308419",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 4,
@@ -363,93 +408,12 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "state-local-politics",
           "stance": "strong",
           "summary": "Criticizes Hawaii governance and land use prioritization",
           "quote": "Here's our piece from Sunday about Hawaii...piped.video/watch?v=j8DxdibH\u2026\n\nLink\n\n\n\nHawaii: Last Week Tonight with John Oliver (HBO)\n\nJohn Oliver discusses how Hawaii has long been run for the benefit ...\nyoutube.com",
           "sourceUrl": "https://x.com/iamjohnoliver/status/1824138274987741240",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 4,
-      "lastActive": "2026-08-15",
-      "stances": [
-        {
-          "date": "2026-08-15",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Silicon Valley Bank collapse and predatory timeshare practices",
-          "quote": "S10 E5: Silicon Valley Bank &amp; Timeshares: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=7WRG9UVcGgU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Critiques inflation policies and economic management",
-          "quote": "S9 E17: Inflation &amp; Beach Dolls Update: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=D10nBR4m9rg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Examines Trump's relationship with cryptocurrency industry",
-          "quote": "Trump &amp; Crypto: Last Week Tonight with John Oliver (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=A9iZ10yIRwM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes tech monopolies and their market dominance",
-          "quote": "S9 E14: 2022 Midterms &amp; Tech Monopolies: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=a5nGaBHqGhQ",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 3,
-      "lastActive": "2026-08-24",
-      "stances": [
-        {
-          "date": "2026-08-24",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes Senator Menendez and McKinsey's influence on policy",
-          "quote": "S10 E14: Bob Menendez &amp; McKinsey: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=-BRWR6iK2iY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes TANF program inadequacy and dysfunction",
-          "quote": "S10 E4: Randy McNally &amp; TANF: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=J7GXS7WGgOo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes barriers to accessing disability benefits",
-          "quote": "Here's our story from Sunday about disability benefits...piped.video/watch?v=hq2s7RMR\u2026\n\nLink\n\n\n\nDisability Benefits: Last Week Tonight with John Oliver (HBO)\n\nJohn Oliver discusses why disability benefits can be hard to get an...\nyoutube.com",
-          "sourceUrl": "https://x.com/iamjohnoliver/status/1839302266878308419",
           "platform": "x"
         }
       ],
@@ -492,6 +456,42 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-15",
+      "stances": [
+        {
+          "date": "2026-08-15",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Silicon Valley Bank collapse and predatory timeshare practices",
+          "quote": "S10 E5: Silicon Valley Bank &amp; Timeshares: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=7WRG9UVcGgU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Critiques inflation policies and economic management",
+          "quote": "S9 E17: Inflation &amp; Beach Dolls Update: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=D10nBR4m9rg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Examines Trump's relationship with cryptocurrency industry",
+          "quote": "Trump &amp; Crypto: Last Week Tonight with John Oliver (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=A9iZ10yIRwM",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 2,
@@ -507,7 +507,7 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "israel-palestine",
           "stance": "strong",
           "summary": "Critiques West Bank settlements as illegal occupation",
@@ -540,33 +540,6 @@
           "summary": "Examines food safety failures during Trump administration",
           "quote": "Cyclospora Outbreak &amp; The Trump Administration #lastweektonight",
           "sourceUrl": "https://www.youtube.com/shorts/Zl79TSscerI",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "gun-policy",
-      "label": "Guns & Gun Policy",
-      "count": 2,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "gun-policy",
-          "stance": "strong",
-          "summary": "Addresses mass shooting and gun violence issues",
-          "quote": "S10 E7: Tennessee Mass Shooting &amp; Homeowners Associations: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=jEaSeKBkNG4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "gun-policy",
-          "stance": "strong",
-          "summary": "Criticizes inadequate school security responses to gun violence",
-          "quote": "S9 E13: Uvalde Update &amp; School Police: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=AGvr2TUsVys",
           "platform": "youtube"
         }
       ],
@@ -609,6 +582,24 @@
       "active": true
     },
     {
+      "topic": "gun-policy",
+      "label": "Guns & Gun Policy",
+      "count": 1,
+      "lastActive": "2026-08-17",
+      "stances": [
+        {
+          "date": "2026-08-17",
+          "topic": "gun-policy",
+          "stance": "strong",
+          "summary": "Addresses mass shooting and gun violence issues",
+          "quote": "S10 E7: Tennessee Mass Shooting &amp; Homeowners Associations: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=jEaSeKBkNG4",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 4,
@@ -633,7 +624,7 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "elections",
           "stance": "strong",
           "summary": "Expresses urgency and concern ahead of election",
@@ -642,7 +633,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "elections",
           "stance": "strong",
           "summary": "Condemns attempts to subvert election integrity",
@@ -684,10 +675,10 @@
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 2,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "supreme-court-legal",
           "stance": "strong",
           "summary": "Examines Trump's negative impact on federal judiciary",
@@ -696,7 +687,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "supreme-court-legal",
           "stance": "strong",
           "summary": "Criticizes Supreme Court decision overturning Roe v. Wade",
@@ -726,6 +717,60 @@
       "active": false
     },
     {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-07-30",
+      "stances": [
+        {
+          "date": "2026-07-30",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Challenges song choice at naturalization ceremonies",
+          "quote": "Here's our piece from Sunday about Lee Greenwood's \"God Bless the USA\", why it shouldn't be played at naturalization ceremonies, and what maybe should be instead...piped.video/watch?v=P6grAoS-\u2026",
+          "sourceUrl": "https://x.com/iamjohnoliver/status/1852100090741297206",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-07-30",
+      "stances": [
+        {
+          "date": "2026-07-30",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Examines issues with school lunch programs",
+          "quote": "Here's our story from Sunday about school lunch...piped.video/watch?v=-YypArYD\u2026",
+          "sourceUrl": "https://x.com/iamjohnoliver/status/1834224061473276217",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 1,
+      "lastActive": "2026-07-30",
+      "stances": [
+        {
+          "date": "2026-07-30",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Exposes problems and fraud in hospice industry",
+          "quote": "In case you missed it, here's last Sunday's story about hospice...piped.video/watch?v=u2ii0DCR\u2026\n\nLink\n\n\n\nHospice: Last Week Tonight with John Oliver (HBO)\n\nJohn Oliver discusses how hospice is intended to function, the hosp...\nyoutube.com",
+          "sourceUrl": "https://x.com/iamjohnoliver/status/1827822618138791984",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 1,
@@ -744,67 +789,13 @@
       "active": false
     },
     {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Challenges song choice at naturalization ceremonies",
-          "quote": "Here's our piece from Sunday about Lee Greenwood's \"God Bless the USA\", why it shouldn't be played at naturalization ceremonies, and what maybe should be instead...piped.video/watch?v=P6grAoS-\u2026",
-          "sourceUrl": "https://x.com/iamjohnoliver/status/1852100090741297206",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Examines issues with school lunch programs",
-          "quote": "Here's our story from Sunday about school lunch...piped.video/watch?v=-YypArYD\u2026",
-          "sourceUrl": "https://x.com/iamjohnoliver/status/1834224061473276217",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Exposes problems and fraud in hospice industry",
-          "quote": "In case you missed it, here's last Sunday's story about hospice...piped.video/watch?v=u2ii0DCR\u2026\n\nLink\n\n\n\nHospice: Last Week Tonight with John Oliver (HBO)\n\nJohn Oliver discusses how hospice is intended to function, the hosp...\nyoutube.com",
-          "sourceUrl": "https://x.com/iamjohnoliver/status/1827822618138791984",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "trump-policy",
           "stance": "strong",
           "summary": "Examines Trump administration's cryptocurrency stance critically",

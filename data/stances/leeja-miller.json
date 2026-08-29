@@ -1,9 +1,9 @@
 {
   "voiceId": "leeja-miller",
   "voiceName": "Leeja Miller",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "topicCount": 13,
-  "stanceCount": 21,
+  "stanceCount": 22,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -42,13 +42,40 @@
       "active": true
     },
     {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 2,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Meta settlement frames as limited victory, raises scrutiny of actual enforcement",
+          "quote": "The Meta Settlement Isn\u2019t The Victory You Think It Is",
+          "sourceUrl": "https://www.youtube.com/watch?v=VmQp4cyyqbs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Analyzes recent Supreme Court decision or ruling",
+          "quote": "WTF Just Happened At The Supreme Court This Week? | EXPLAINER",
+          "sourceUrl": "https://www.youtube.com/watch?v=Qw13BEftg_4",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 3,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "billionaires-wealth",
           "stance": "lean",
           "summary": "Examines historical corporate power exceeding individual rights",
@@ -57,7 +84,7 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "billionaires-wealth",
           "stance": "strong",
           "summary": "Expresses disapproval of Elon Musk, migrates to alternative platform",
@@ -66,7 +93,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "billionaires-wealth",
           "stance": "strong",
           "summary": "Publicly criticizes Elon Musk",
@@ -81,10 +108,10 @@
       "topic": "media-press",
       "label": "Media & Press",
       "count": 3,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "media-press",
           "stance": "strong",
           "summary": "Criticizes NPR for false equivalence between left-leaning and far-right organizations",
@@ -93,7 +120,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "media-press",
           "stance": "strong",
           "summary": "Accuses NPR of legitimizing far-right extremists by treating them as credible experts",
@@ -102,7 +129,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "media-press",
           "stance": "strong",
           "summary": "Calls out NPR for citing racist organization with white nationalist ties as experts",
@@ -129,7 +156,7 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "protests-activism",
           "stance": "lean",
           "summary": "Covers police use of force against senators during protest",
@@ -156,7 +183,7 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "culture-war",
           "stance": "lean",
           "summary": "Compares current US political moment to French Revolution period",
@@ -168,31 +195,13 @@
       "active": false
     },
     {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "Analyzes recent Supreme Court decision or ruling",
-          "quote": "WTF Just Happened At The Supreme Court This Week? | EXPLAINER",
-          "sourceUrl": "https://www.youtube.com/watch?v=Qw13BEftg_4",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "religion-faith",
       "label": "Religion & Faith",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "religion-faith",
           "stance": "lean",
           "summary": "Examines whether United States was founded as Christian nation",
@@ -207,10 +216,10 @@
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "criminal-justice",
           "stance": "lean",
           "summary": "Provides legal analysis of Trump administration's antifa prosecutions",
@@ -225,10 +234,10 @@
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "trump-administration",
           "stance": "strong",
           "summary": "Criticizes Trump slush fund arrangement as worse than public realizes",
@@ -243,10 +252,10 @@
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "congress-legislation",
           "stance": "strong",
           "summary": "Opposes OSHA abolition bill, calls author hypocrite on worker safety",
@@ -261,10 +270,10 @@
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "elections",
           "stance": "strong",
           "summary": "Urges voters not to sit out or vote third party due to high stakes",
@@ -279,10 +288,10 @@
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "state-local-politics",
           "stance": "strong",
           "summary": "Criticizes appointment of non-resident activist to state library advisory committee",
@@ -297,10 +306,10 @@
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "economy-trade",
           "stance": "lean",
           "summary": "Examines end point of second Gilded Age wealth inequality era",

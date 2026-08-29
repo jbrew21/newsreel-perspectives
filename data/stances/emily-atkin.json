@@ -1,7 +1,7 @@
 {
   "voiceId": "emily-atkin",
   "voiceName": "Emily Atkin",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "topicCount": 11,
   "stanceCount": 35,
   "topics": [
@@ -204,6 +204,24 @@
       "active": true
     },
     {
+      "topic": "refugees-humanitarian",
+      "label": "Refugees & Humanitarian",
+      "count": 1,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "refugees-humanitarian",
+          "stance": "lean",
+          "summary": "Encourages individual action on humanitarian crises",
+          "quote": "\u201cWhat can I do?\u201d The answer is still anything.. Revisiting a 2021 call to action in the wake of the Nepal-Tibet floods.",
+          "sourceUrl": "https://heated.world/p/what-can-i-do-the-answer-is-still",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 5,
@@ -246,7 +264,7 @@
           "platform": "substack"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "media-press",
           "stance": "lean",
           "summary": "Media should adapt strategy for Trump administration",
@@ -351,10 +369,10 @@
       "topic": "education",
       "label": "Education",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "education",
           "stance": "strong",
           "summary": "Reports Switch Energy Alliance markets materials as objective despite fossil fuel backing",
@@ -369,10 +387,10 @@
       "topic": "food-agriculture",
       "label": "Food & Agriculture",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "food-agriculture",
           "stance": "lean",
           "summary": "Highlights environmental facts about World Cup industry",
@@ -387,33 +405,15 @@
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "trump-administration",
           "stance": "lean",
           "summary": "Trump administration secretly weakening pollution notification rules for communities",
           "quote": "NEW: the trump administration is quietly pushing to change rules that could give the public much less advance notice when a polluting facility comes to their neighborhoods\n\nthe move comes as communities across the country mobilize against data centers and the gas turbines and die",
           "sourceUrl": "https://bsky.app/profile/emorwee.bsky.social/post/3mrctmu3zrc27",
-          "platform": "bluesky"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "U.S. asserting financial control over Venezuela's oil and state resources",
-          "quote": "The U.S. says it now controls Venezuela\u2019s billions of dollars in oil revenues and state finances, putting Washington at the center of any reconstruction efforts.\nwww.wsj.com/world/americ...",
-          "sourceUrl": "https://bsky.app/profile/emorwee.bsky.social/post/3mr3f5briss2t",
           "platform": "bluesky"
         }
       ],

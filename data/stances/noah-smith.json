@@ -1,16 +1,25 @@
 {
   "voiceId": "noah-smith",
   "voiceName": "Noah Smith",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "topicCount": 21,
-  "stanceCount": 91,
+  "stanceCount": 88,
   "topics": [
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 12,
-      "lastActive": "2026-08-22",
+      "lastActive": "2026-08-28",
       "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Questions whether economic factors are root cause of major problems",
+          "quote": "What if our biggest problems aren\u2019t economic?",
+          "sourceUrl": "https://www.noahpinion.blog/p/what-if-our-biggest-problems-arent",
+          "platform": "substack"
+        },
         {
           "date": "2026-08-22",
           "topic": "economy-trade",
@@ -108,15 +117,6 @@
           "summary": "Criticizes tariffs as populism",
           "quote": "Tariffs are slopulism",
           "sourceUrl": "https://x.com/Noahpinion/status/2083455941564112948",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Questions Democratic automation policy alignment with progressive labor values",
-          "quote": "Why are Democrats trying to pay people to use machines instead of humans? Seems like the opposite of where progressive policy had been headed.",
-          "sourceUrl": "https://x.com/Noahpinion/status/2083251494598664581",
           "platform": "x"
         }
       ],
@@ -258,18 +258,18 @@
           "date": "2026-08-15",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Promotes policy recommendations for regulating artificial intelligence",
-          "quote": "23 low-regret recommendations for AI policy (by Tim Fist). A guest post by Tim Fist and Saif Khan, with Tao Burga, Arthur Tellis, Ben Schifman, Jonah Weinbaum, and Olivia Scharfman",
-          "sourceUrl": "https://www.noahpinion.blog/p/23-low-regret-recommendations-for",
+          "summary": "Questions whether AI self-improvement should be intentionally slowed",
+          "quote": "Should we \"pace\" AI self-improvement? (by Tim Fist)",
+          "sourceUrl": "https://www.noahpinion.blog/p/should-we-pace-ai-self-improvement",
           "platform": "substack"
         },
         {
           "date": "2026-08-15",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Questions whether AI self-improvement should be intentionally slowed",
-          "quote": "Should we \"pace\" AI self-improvement? (by Tim Fist)",
-          "sourceUrl": "https://www.noahpinion.blog/p/should-we-pace-ai-self-improvement",
+          "summary": "Promotes policy recommendations for regulating artificial intelligence",
+          "quote": "23 low-regret recommendations for AI policy (by Tim Fist). A guest post by Tim Fist and Saif Khan, with Tao Burga, Arthur Tellis, Ben Schifman, Jonah Weinbaum, and Olivia Scharfman",
+          "sourceUrl": "https://www.noahpinion.blog/p/23-low-regret-recommendations-for",
           "platform": "substack"
         },
         {
@@ -352,6 +352,69 @@
           "quote": "The people who want to ban data centers nationwide are playing with fire. That data center boom is the one and only thing holding up the U.S. economy in the face of Trumpian stupidity and mismanagement.\n\nnoahpinion.blog/p/banning-da\u2026\n\nLink\n\n\n\nBanning data centers would blow up th",
           "sourceUrl": "https://x.com/Noahpinion/status/2086021311219073454",
           "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 6,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Mocks MAGA boycott of NFL as futile, ridicules Trump's 'geography-based tantrum'",
+          "quote": "Apparently, there is a MAGA movement to boycott the NFL because Al Michael\u2019s made an extremely mild joke about Trump\u2019s latest geography-based tantrum. \n\nYou\u2019re going to get MAGA to\nNOT watch football? I guess you really do believe in miracles.",
+          "sourceUrl": "https://bsky.app/profile/smithnoah.bsky.social/post/3mu6k4w5xm22d",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes MAGA for building nothing, predicts inevitable failure",
+          "quote": "I wrote this a year ago, about how MAGA builds nothing and is thus doomed to fail.\n\nSince then, I've been continuously proven right.\n\nnoahpinion.blog/p/this-thing\u2026",
+          "sourceUrl": "https://x.com/Noahpinion/status/2087588307425460473",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Argues MAGA movement was incoherent rage with no substantive agenda",
+          "quote": "MAGA is dying because it built nothing. Just as I predicted.\n\nMAGA was always just a blast of incoherent online rage. It was not a civilizational project. It was always bound to fade.",
+          "sourceUrl": "https://x.com/Noahpinion/status/2087560272047460695",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Suggests MAGA political movement is declining in momentum",
+          "quote": "In this week's roundup:\n- The MAGA wave is breaking and rolling back\n- How much is the labor share REALLY falling?\n- How skilled immigrants CREATE jobs for Americans\n- AI is increasing productivity, but maybe not how you think\n- The decline of Botswana\n\nnoahpinion.blog/p/roundup-",
+          "sourceUrl": "https://x.com/Noahpinion/status/2087456310845678025",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Attacks Trump's attack on science as dangerous",
+          "quote": "MAGA's attack on science is even worse than it looks. The engine that powered history's greatest nation is in danger.",
+          "sourceUrl": "https://www.noahpinion.blog/p/magas-attack-on-science-is-even-worse",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Opposes JD Vance's critique of GDP growth",
+          "quote": "JD Vance's crusade against GDP is wrong and bad. Making Americans poorer won't make our society better.",
+          "sourceUrl": "https://www.noahpinion.blog/p/jd-vances-crusade-against-gdp-is",
+          "platform": "substack"
         }
       ],
       "active": true
@@ -453,7 +516,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "housing-infrastructure",
           "stance": "lean",
           "summary": "Defends American suburbs against common criticism",
@@ -543,7 +606,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "uk-world-politics",
           "stance": "lean",
           "summary": "UK failures offer cautionary lessons for U.S. policy",
@@ -609,9 +672,54 @@
       "active": true
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 4,
+      "lastActive": "2026-08-14",
+      "stances": [
+        {
+          "date": "2026-08-14",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Critiques departments using activism to preserve enrollments and funding",
+          "quote": "One underrated dynamic is that when undergrads walk away from a major because they realize it's useless for getting a job, departments sometimes respond by pumping up political activism, in the hopes that woke students will sign up for the major and preserve their funding levels.",
+          "sourceUrl": "https://x.com/Noahpinion/status/2088326208740381104",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Blames sociology for politicized activism undermining academic credibility",
+          "quote": "Happy to see more people zeroing in on sociology as the source of much of the politicized activism that is making academia less credible. The humanities get too much negative attention, and sociology (and anthropology) get too little.\n\nnytimes.com/2026/08/14/us/ac\u2026\n\nLink\n\n\n\nIs Ac",
+          "sourceUrl": "https://x.com/Noahpinion/status/2088320429777989736",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Questions whether gifted programs provide academic or primarily social benefits",
+          "quote": "I've always thought that the purpose of gifted programs was to let smart kids feel socially normal, rather than any academic benefit.\n\nThis makes me very ambivalent toward them. Is it good to feel more normal than you are?",
+          "sourceUrl": "https://x.com/Noahpinion/status/2086856398793764967",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Universities failing as functional institution for social integration",
+          "quote": "We asked too much of the American university. Our one remaining functional institution is going downhill.",
+          "sourceUrl": "https://www.noahpinion.blog/p/we-asked-too-much-of-the-american",
+          "platform": "substack"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "immigration",
       "label": "Immigration",
-      "count": 5,
+      "count": 4,
       "lastActive": "2026-08-14",
       "stances": [
         {
@@ -649,114 +757,6 @@
           "quote": "Japan is A) cracking down on illegal immigrants, B) making it harder for useless Westerners to get permanent residency, and C) inviting in tens of thousands of skilled Indian tech workers, all at the same time.\n\nYes, it can be done.",
           "sourceUrl": "https://x.com/Noahpinion/status/2082895035457286179",
           "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Calls for rational immigration policy over culture war",
-          "quote": "Stop screeching about immigration, and get smart about it. The culture war is making it impossible for us to deal with declining population.",
-          "sourceUrl": "https://www.noahpinion.blog/p/stop-screeching-about-immigration",
-          "platform": "substack"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 5,
-      "lastActive": "2026-08-12",
-      "stances": [
-        {
-          "date": "2026-08-12",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes MAGA for building nothing, predicts inevitable failure",
-          "quote": "I wrote this a year ago, about how MAGA builds nothing and is thus doomed to fail.\n\nSince then, I've been continuously proven right.\n\nnoahpinion.blog/p/this-thing\u2026",
-          "sourceUrl": "https://x.com/Noahpinion/status/2087588307425460473",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Argues MAGA movement was incoherent rage with no substantive agenda",
-          "quote": "MAGA is dying because it built nothing. Just as I predicted.\n\nMAGA was always just a blast of incoherent online rage. It was not a civilizational project. It was always bound to fade.",
-          "sourceUrl": "https://x.com/Noahpinion/status/2087560272047460695",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "trump-policy",
-          "stance": "lean",
-          "summary": "Suggests MAGA political movement is declining in momentum",
-          "quote": "In this week's roundup:\n- The MAGA wave is breaking and rolling back\n- How much is the labor share REALLY falling?\n- How skilled immigrants CREATE jobs for Americans\n- AI is increasing productivity, but maybe not how you think\n- The decline of Botswana\n\nnoahpinion.blog/p/roundup-",
-          "sourceUrl": "https://x.com/Noahpinion/status/2087456310845678025",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Attacks Trump's attack on science as dangerous",
-          "quote": "MAGA's attack on science is even worse than it looks. The engine that powered history's greatest nation is in danger.",
-          "sourceUrl": "https://www.noahpinion.blog/p/magas-attack-on-science-is-even-worse",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Opposes JD Vance's critique of GDP growth",
-          "quote": "JD Vance's crusade against GDP is wrong and bad. Making Americans poorer won't make our society better.",
-          "sourceUrl": "https://www.noahpinion.blog/p/jd-vances-crusade-against-gdp-is",
-          "platform": "substack"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 4,
-      "lastActive": "2026-08-14",
-      "stances": [
-        {
-          "date": "2026-08-14",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Critiques departments using activism to preserve enrollments and funding",
-          "quote": "One underrated dynamic is that when undergrads walk away from a major because they realize it's useless for getting a job, departments sometimes respond by pumping up political activism, in the hopes that woke students will sign up for the major and preserve their funding levels.",
-          "sourceUrl": "https://x.com/Noahpinion/status/2088326208740381104",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Blames sociology for politicized activism undermining academic credibility",
-          "quote": "Happy to see more people zeroing in on sociology as the source of much of the politicized activism that is making academia less credible. The humanities get too much negative attention, and sociology (and anthropology) get too little.\n\nnytimes.com/2026/08/14/us/ac\u2026\n\nLink\n\n\n\nIs Ac",
-          "sourceUrl": "https://x.com/Noahpinion/status/2088320429777989736",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Questions whether gifted programs provide academic or primarily social benefits",
-          "quote": "I've always thought that the purpose of gifted programs was to let smart kids feel socially normal, rather than any academic benefit.\n\nThis makes me very ambivalent toward them. Is it good to feel more normal than you are?",
-          "sourceUrl": "https://x.com/Noahpinion/status/2086856398793764967",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Universities failing as functional institution for social integration",
-          "quote": "We asked too much of the American university. Our one remaining functional institution is going downhill.",
-          "sourceUrl": "https://www.noahpinion.blog/p/we-asked-too-much-of-the-american",
-          "platform": "substack"
         }
       ],
       "active": false
@@ -840,7 +840,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "civil-rights-race",
           "stance": "lean",
           "summary": "Acknowledges personal disconnect from working-class experience",
@@ -854,7 +854,7 @@
     {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
-      "count": 4,
+      "count": 2,
       "lastActive": "2026-08-10",
       "stances": [
         {
@@ -867,31 +867,13 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "foreign-policy-diplomacy",
           "stance": "lean",
           "summary": "Characterizes American era as defining human civilization broadly",
           "quote": "The American age was the human age",
           "sourceUrl": "https://www.noahpinion.blog/p/the-american-age-was-the-human-age",
           "platform": "substack"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Criticizes naive softening of stance toward China",
-          "quote": "I'm seeing some people I otherwise respect start to do the \"NO GUYS, CHINA IS ACKSHUALLY OUR FRIENNNND\" shit again. People have such short memories.",
-          "sourceUrl": "https://x.com/Noahpinion/status/2082329471173190044",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Implies Mearsheimer relies on selective data like controversial economist Borjas",
-          "quote": "John Mearsheimer is the George Borjas of international relations",
-          "sourceUrl": "https://x.com/Noahpinion/status/2082483496308949333",
-          "platform": "x"
         }
       ],
       "active": false
@@ -899,7 +881,7 @@
     {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
-      "count": 3,
+      "count": 2,
       "lastActive": "2026-08-08",
       "stances": [
         {
@@ -918,15 +900,6 @@
           "summary": "Frames anti-tech sentiment as rooted in wealth inequality concerns",
           "quote": "Anti-tech sentiment is about tech founders getting rich. The rest is just made-up stuff. It's anger over extreme wealth inequality among the college-educated class.",
           "sourceUrl": "https://x.com/Noahpinion/status/2083249428274798927",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Criticizes eBay's intimidation tactics against critical bloggers",
-          "quote": "eBay mailed people a bloody pig's head because they criticized eBay on their blog\n\nThat is straight-up GANGSTA.",
-          "sourceUrl": "https://x.com/Noahpinion/status/2082503516703330716",
           "platform": "x"
         }
       ],

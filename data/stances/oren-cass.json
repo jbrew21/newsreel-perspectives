@@ -1,21 +1,39 @@
 {
   "voiceId": "oren-cass",
   "voiceName": "Oren Cass",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "topicCount": 10,
-  "stanceCount": 12,
+  "stanceCount": 17,
   "topics": [
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 3,
-      "lastActive": "2026-08-28",
+      "count": 5,
+      "lastActive": "2026-08-29",
       "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critiques economic policies or outcomes affecting working economy",
+          "quote": "The Real Economy: Mountie Meltdown",
+          "sourceUrl": "https://www.commonplace.org/p/the-real-economy-mountie-meltdown",
+          "platform": "substack"
+        },
         {
           "date": "2026-08-28",
           "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Argues prioritizing Americans compatible with preserving economic freedom",
+          "summary": "Explores Trump's unconventional economic approach on finance and trade",
+          "quote": "Trump's Economic Revolution with Stephen Miran. The former chair of the Council of Economic Advisors discusses the new vision on finance, banking, and trade, and why economists can't make sense of it.",
+          "sourceUrl": "https://www.commonplace.org/p/trumps-economic-revolution-with-stephen",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Defends prioritizing American interests as compatible with economic freedom",
           "quote": "\u2018Common Good\u2019 Capitalism Preserves Freedom (by Fred Bauer). Prioritizing Americans is less an apostasy from freedom than a prerequisite for preserving it.",
           "sourceUrl": "https://www.commonplace.org/p/common-good-capitalism-preserves",
           "platform": "substack"
@@ -42,6 +60,69 @@
       "active": true
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 3,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Argues meritocratic systems require moral foundations",
+          "quote": "Making Meritocrats Moral (by Yuval Levin)",
+          "sourceUrl": "https://www.commonplace.org/p/yuval-levin-making-meritocrats-moral",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Promotes self-governance and civic participation in education",
+          "quote": "The School of Self-Rule (by Bruno V. Manno)",
+          "sourceUrl": "https://www.commonplace.org/p/the-school-of-self-rule",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Public education should instill civic virtues and shared national allegiances",
+          "quote": "The Citizenship Test. Public education must instill civic virtues and shared allegiances.",
+          "sourceUrl": "https://www.commonplace.org/p/the-citizenship-test",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses concern about surveillance and tracking of young children",
+          "quote": "But Who Monitors the Baby Monitors?. Team Compass on the tragic trend toward toddler-tracking technology.",
+          "sourceUrl": "https://www.commonplace.org/p/but-who-monitors-the-baby-monitors",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether AI singularity is occurring and its implications",
+          "quote": "Is the AI Apocalypse Already Here? with Gregory Conti. Are we living through the singularity? Does it matter?",
+          "sourceUrl": "https://www.commonplace.org/p/is-the-ai-apocalypse-already-here",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "abortion-reproductive",
       "label": "Abortion & Reproductive Rights",
       "count": 1,
@@ -60,24 +141,6 @@
       "active": true
     },
     {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Questions whether AI singularity is occurring and its implications",
-          "quote": "Is the AI Apocalypse Already Here? with Gregory Conti. Are we living through the singularity? Does it matter?",
-          "sourceUrl": "https://www.commonplace.org/p/is-the-ai-apocalypse-already-here",
-          "platform": "substack"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 1,
@@ -90,24 +153,6 @@
           "summary": "Distinguishes anti-family opposition from pro-family advocacy in conservative policy",
           "quote": "Anti-Anti-Family Policy Is Not Pro-Family (by Leah Libresco Sargeant). Conservatives must learn the difference between the two.",
           "sourceUrl": "https://www.commonplace.org/p/leah-sargeant-anti-anti-family-policy",
-          "platform": "substack"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 1,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Public education should instill civic virtues and shared national allegiances",
-          "quote": "The Citizenship Test. Public education must instill civic virtues and shared allegiances.",
-          "sourceUrl": "https://www.commonplace.org/p/the-citizenship-test",
           "platform": "substack"
         }
       ],

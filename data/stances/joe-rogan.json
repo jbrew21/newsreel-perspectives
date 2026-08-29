@@ -1,7 +1,7 @@
 {
   "voiceId": "joe-rogan",
   "voiceName": "Joe Rogan",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "topicCount": 4,
   "stanceCount": 6,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 3,
-      "lastActive": "2026-08-20",
+      "lastActive": "2026-08-28",
       "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Discusses Trump administration policies and personnel",
+          "quote": "Joe Rogan Experience #2545 - Jesse Michels",
+          "sourceUrl": "https://www.youtube.com/watch?v=33Fc_mLqY90",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-20",
           "topic": "trump-administration",
@@ -21,21 +30,12 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "trump-administration",
           "stance": "strong",
           "summary": "Vice President-elect discusses Trump administration plans and policies",
           "quote": "Joe Rogan Experience #2526 - JD Vance",
           "sourceUrl": "https://www.youtube.com/watch?v=vtxyvD58eDg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Former Trump administration official discusses political career and experiences",
-          "quote": "Joe Rogan Experience #2524 - Rupert Lowe",
-          "sourceUrl": "https://www.youtube.com/watch?v=k29cMrVtVXY",
           "platform": "youtube"
         }
       ],
@@ -81,10 +81,10 @@
       "topic": "science-space",
       "label": "Science & Space",
       "count": 1,
-      "lastActive": "2026-07-29",
+      "lastActive": "2026-07-30",
       "stances": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "topic": "science-space",
           "stance": "lean",
           "summary": "Expresses surprise at remote viewing case used to locate military asset",
