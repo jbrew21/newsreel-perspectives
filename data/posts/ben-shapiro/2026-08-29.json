@@ -1,9 +1,26 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-29T19:58:47.798593",
+  "collectedAt": "2026-08-29T21:58:21.564166",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "They Blamed the Klan\u2014Then the Video Came Out",
+      "sourceUrl": "https://www.youtube.com/watch?v=kTf5CZik87k",
+      "timestamp": "2026-08-29T14:00:22+00:00",
+      "type": "video_title",
+      "topic": "civil-rights-race",
+      "topics": [
+        "civil-rights-race"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Challenges narrative about Klan involvement based on video evidence",
+      "quote": "They Blamed the Klan\u2014Then the Video Came Out"
+    },
     {
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
@@ -122,26 +139,17 @@
       "stance": "strong",
       "summary": "Praises Trump administration accomplishments",
       "quote": "Trump Is Racking Up Wins"
-    },
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "They Blamed the Klan\u2014Then the Video Came Out",
-      "sourceUrl": "https://www.youtube.com/watch?v=kTf5CZik87k",
-      "timestamp": "2026-08-29T14:00:22+00:00",
-      "type": "video_title",
-      "topic": "civil-rights-race",
-      "topics": [
-        "civil-rights-race"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Challenges narrative about Klan involvement based on video evidence",
-      "quote": "They Blamed the Klan\u2014Then the Video Came Out"
     }
   ],
   "topicSummary": {
+    "civil-rights-race": [
+      {
+        "quote": "They Blamed the Klan\u2014Then the Video Came Out",
+        "sourceUrl": "https://www.youtube.com/watch?v=kTf5CZik87k",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T14:00:22+00:00"
+      }
+    ],
     "state-local-politics": [
       {
         "quote": "You're doing just great, California. #puretalkpartner",
@@ -196,14 +204,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=JG14TM_Vzzc",
         "platform": "youtube",
         "timestamp": "2026-08-27T20:30:26+00:00"
-      }
-    ],
-    "civil-rights-race": [
-      {
-        "quote": "They Blamed the Klan\u2014Then the Video Came Out",
-        "sourceUrl": "https://www.youtube.com/watch?v=kTf5CZik87k",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T14:00:22+00:00"
       }
     ]
   }

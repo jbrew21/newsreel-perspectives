@@ -1,6 +1,6 @@
 {
   "headline": "Media, Public Opinion Split Sharply Over Israel-Gaza Coverage",
-  "summary": "Progressive media accuses outlets of pro-Israel bias while national security reporters flag terrorism-list crackdowns on critics.",
+  "summary": "Progressive and independent media broadly criticize Israel and mainstream coverage, while Bongino claims the narrative is collapsing in Israel's favor.",
   "type": "split",
   "source": "voices",
   "coverUrl": "",
@@ -8,11 +8,11 @@
   "topicSlugs": [
     "israel-palestine"
   ],
-  "voiceCount": 13,
+  "voiceCount": 12,
   "clusterCount": 5,
   "clusters": [
     {
-      "name": "Media Complicity Critics",
+      "name": "Media Bias Critics (Pro-Palestinian)",
       "voices": [
         {
           "voiceId": "young-turks",
@@ -21,7 +21,7 @@
           "quote": "MS Now Is IN THE TANK For Israel",
           "sourceUrl": "https://www.youtube.com/watch?v=n2bH3bdoHdg",
           "platform": "youtube",
-          "fit": 10,
+          "fit": 9,
           "quoteQuality": 1
         },
         {
@@ -31,7 +31,7 @@
           "quote": "MS Now Is IN THE TANK For Israel",
           "sourceUrl": "https://www.youtube.com/watch?v=n2bH3bdoHdg",
           "platform": "youtube",
-          "fit": 10,
+          "fit": 9,
           "quoteQuality": 1
         },
         {
@@ -41,7 +41,7 @@
           "quote": "THE AIPAC AVENGERS ARE AFTER ME",
           "sourceUrl": "https://www.youtube.com/watch?v=Ue-z8vFs-I4",
           "platform": "youtube",
-          "fit": 6,
+          "fit": 7,
           "quoteQuality": 1
         },
         {
@@ -51,21 +51,11 @@
           "quote": "5-Year-Old Girl Shot 335 Times \u2014 Israel\u2019s \u201cInvestigation\u201d Is a Joke",
           "sourceUrl": "https://www.youtube.com/watch?v=iF45ZvRkG28",
           "platform": "youtube",
-          "fit": 4,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "glenn-greenwald",
-          "voiceName": "Glenn Greenwald",
-          "photo": "/photos/glenn-greenwald.jpg",
-          "quote": "THE TRUTH: Israel THREATENS American Sovereignty",
-          "sourceUrl": "https://www.youtube.com/shorts/oFMnRCZFQlE",
-          "platform": "youtube",
-          "fit": 5,
+          "fit": 8,
           "quoteQuality": 1
         }
       ],
-      "voiceCount": 5,
+      "voiceCount": 4,
       "bestQuote": {
         "voiceName": "The Young Turks",
         "quote": "MS Now Is IN THE TANK For Israel",
@@ -74,59 +64,7 @@
       }
     },
     {
-      "name": "Documenting War Costs",
-      "voices": [
-        {
-          "voiceId": "john-oliver",
-          "voiceName": "John Oliver",
-          "photo": "/photos/john-oliver.jpg",
-          "quote": "S10 E17: Bird of the Year Update &amp; Gaza War: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=Rsgqav1Ua2U",
-          "platform": "youtube",
-          "fit": 6,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "mehdi-hasan",
-          "voiceName": "Mehdi Hasan",
-          "photo": "/photos/mehdi-hasan.jpg",
-          "quote": "Why This Palestinian Raises the American Flag Over His Home",
-          "sourceUrl": "https://www.youtube.com/shorts/9WQB25_-eRQ",
-          "platform": "youtube",
-          "fit": 5,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "breaking-points",
-          "voiceName": "Breaking Points",
-          "photo": "/photos/breaking-points.jpg",
-          "quote": "Norm Finkelstein In Depth ANALYSIS Of New 10/7 Sexual Violence Report",
-          "sourceUrl": "https://www.youtube.com/watch?v=xJBwJZhXM-g",
-          "platform": "youtube",
-          "fit": 6,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "krystal-ball",
-          "voiceName": "Krystal Ball",
-          "photo": "/photos/krystal-ball.jpg",
-          "quote": "Norm Finkelstein In Depth ANALYSIS Of New 10/7 Sexual Violence Report",
-          "sourceUrl": "https://www.youtube.com/watch?v=xJBwJZhXM-g",
-          "platform": "youtube",
-          "fit": 6,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 4,
-      "bestQuote": {
-        "voiceName": "John Oliver",
-        "quote": "S10 E17: Bird of the Year Update &amp; Gaza War: Last Week Tonight with John Oliver",
-        "platform": "youtube",
-        "quality": 1
-      }
-    },
-    {
-      "name": "Surveillance & Crackdown Concerns",
+      "name": "Institutional Overreach Concerns",
       "voices": [
         {
           "voiceId": "ryan-grim",
@@ -147,14 +85,66 @@
           "platform": "substack",
           "fit": 9,
           "quoteQuality": 7
+        },
+        {
+          "voiceId": "spencer-ackerman",
+          "voiceName": "Spencer Ackerman",
+          "photo": "/photos/spencer-ackerman.jpg",
+          "quote": "Looking forward to Mladic organizing an infernal advance party for Netanyahu and Gallant",
+          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mu2woocjjc26",
+          "platform": "bluesky",
+          "fit": 4,
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "glenn-greenwald",
+          "voiceName": "Glenn Greenwald",
+          "photo": "/photos/glenn-greenwald.jpg",
+          "quote": "THE TRUTH: Israel THREATENS American Sovereignty",
+          "sourceUrl": "https://www.youtube.com/shorts/oFMnRCZFQlE",
+          "platform": "youtube",
+          "fit": 9,
+          "quoteQuality": 1
         }
       ],
-      "voiceCount": 2,
+      "voiceCount": 4,
       "bestQuote": {
         "voiceName": "Ryan Grim",
         "quote": "U.S. Designates Palestinian Refugee in Germany as \u201cTerrorist\u201d (by Karim Natour). \u201cI was frightened. The authorities did not contact me beforehand; they just put me on the list.\u201d",
         "platform": "substack",
         "quality": 7
+      }
+    },
+    {
+      "name": "Populist Cross-Spectrum Critique",
+      "voices": [
+        {
+          "voiceId": "breaking-points",
+          "voiceName": "Breaking Points",
+          "photo": "/photos/breaking-points.jpg",
+          "quote": "Norm Finkelstein LOSES IT Over Iran War, Trump Gaza Takeover",
+          "sourceUrl": "https://www.youtube.com/watch?v=W-B5LucmPLk",
+          "platform": "youtube",
+          "fit": 6,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "krystal-ball",
+          "voiceName": "Krystal Ball",
+          "photo": "/photos/krystal-ball.jpg",
+          "quote": "Norm Finkelstein LOSES IT Over Iran War, Trump Gaza Takeover",
+          "sourceUrl": "https://www.youtube.com/watch?v=W-B5LucmPLk",
+          "platform": "youtube",
+          "fit": 6,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 2,
+      "bestQuote": {
+        "voiceName": "Breaking Points",
+        "quote": "Norm Finkelstein LOSES IT Over Iran War, Trump Gaza Takeover",
+        "platform": "youtube",
+        "quality": 1
       }
     },
     {
@@ -180,7 +170,7 @@
       }
     },
     {
-      "name": "Media Narrative Vindicated",
+      "name": "Conservative Media Counter-Narrative",
       "voices": [
         {
           "voiceId": "dan-bongino",
@@ -189,7 +179,7 @@
           "quote": "It Must Be Painful For Them To Write This (Ep. 2584). In this episode, I'll discuss&nbsp;the narrative shattering news out of the Middle East, leaving the leftist media in shambles.\n\n\n\n1776 Live Club:",
           "sourceUrl": "",
           "platform": "podcast",
-          "fit": 9,
+          "fit": 8,
           "quoteQuality": 6
         }
       ],

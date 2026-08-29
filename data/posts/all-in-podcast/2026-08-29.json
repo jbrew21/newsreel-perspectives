@@ -1,9 +1,44 @@
 {
   "voiceId": "all-in-podcast",
   "voiceName": "All-In Podcast",
-  "collectedAt": "2026-08-29T19:58:47.815538",
+  "collectedAt": "2026-08-29T21:58:21.585240",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "all-in-podcast",
+      "voiceName": "All-In Podcast",
+      "platform": "youtube",
+      "text": "Chamath: \u201cThis could be the beginning of a death spiral.\u201d",
+      "sourceUrl": "https://www.youtube.com/shorts/WkTC8Hn60Gs",
+      "timestamp": "2026-08-29T19:00:03+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "topics": [
+        "economy-trade"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Warns of economic downturn or systemic collapse risk",
+      "quote": "Chamath: \u201cThis could be the beginning of a death spiral.\u201d"
+    },
+    {
+      "voiceId": "all-in-podcast",
+      "voiceName": "All-In Podcast",
+      "platform": "youtube",
+      "text": "Sacks: China\u2019s Biggest AI Advantage Over America Is Optimism",
+      "sourceUrl": "https://www.youtube.com/shorts/heZBlRiD_sM",
+      "timestamp": "2026-08-29T15:00:38+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology",
+        "foreign-policy-diplomacy"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "China's cultural optimism gives it AI development advantage",
+      "quote": "Sacks: China\u2019s Biggest AI Advantage Over America Is Optimism"
+    },
     {
       "voiceId": "all-in-podcast",
       "voiceName": "All-In Podcast",
@@ -128,48 +163,42 @@
       "voiceId": "all-in-podcast",
       "voiceName": "All-In Podcast",
       "platform": "youtube",
-      "text": "Chamath: \u201cThis could be the beginning of a death spiral.\u201d",
-      "sourceUrl": "https://www.youtube.com/shorts/WkTC8Hn60Gs",
-      "timestamp": "2026-08-29T19:00:03+00:00",
+      "text": "Nvidia's Historic Quarter, SaaS Comeback, Bessent vs Druck, America's Debt Crisis, Cancer Vaccine",
+      "sourceUrl": "https://www.youtube.com/watch?v=1u5dMAKl_ks",
+      "timestamp": "2026-08-29T01:37:17+00:00",
       "type": "video_title",
       "topic": "economy-trade",
       "topics": [
         "economy-trade"
       ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Warns of economic downturn or systemic collapse risk",
-      "quote": "Chamath: \u201cThis could be the beginning of a death spiral.\u201d"
-    },
-    {
-      "voiceId": "all-in-podcast",
-      "voiceName": "All-In Podcast",
-      "platform": "youtube",
-      "text": "Sacks: China\u2019s Biggest AI Advantage Over America Is Optimism",
-      "sourceUrl": "https://www.youtube.com/shorts/heZBlRiD_sM",
-      "timestamp": "2026-08-29T15:00:38+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology",
-        "foreign-policy-diplomacy"
-      ],
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "China's cultural optimism gives it AI development advantage",
-      "quote": "Sacks: China\u2019s Biggest AI Advantage Over America Is Optimism"
+      "summary": "Discusses Nvidia earnings, SaaS trends, Treasury policy debates, and fiscal challenges",
+      "quote": "Nvidia's Historic Quarter, SaaS Comeback, Bessent vs Druck, America's Debt Crisis, Cancer Vaccine"
     }
   ],
   "topicSummary": {
-    "science-space": [
+    "economy-trade": [
       {
-        "quote": "Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics",
-        "sourceUrl": "https://www.youtube.com/watch?v=y84ypzELP_s",
+        "quote": "Chamath: \u201cThis could be the beginning of a death spiral.\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/WkTC8Hn60Gs",
         "platform": "youtube",
-        "timestamp": "2026-08-27T03:00:52+00:00"
+        "timestamp": "2026-08-29T19:00:03+00:00"
+      },
+      {
+        "quote": "Nvidia's Historic Quarter, SaaS Comeback, Bessent vs Druck, America's Debt Crisis, Cancer Vaccine",
+        "sourceUrl": "https://www.youtube.com/watch?v=1u5dMAKl_ks",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T01:37:17+00:00"
       }
     ],
     "ai-technology": [
+      {
+        "quote": "Sacks: China\u2019s Biggest AI Advantage Over America Is Optimism",
+        "sourceUrl": "https://www.youtube.com/shorts/heZBlRiD_sM",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T15:00:38+00:00"
+      },
       {
         "quote": "Gavin Baker: If you're a patriot, you should be pro-open source AI",
         "sourceUrl": "https://www.youtube.com/shorts/hTLXWbfVi8w",
@@ -187,12 +216,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/EpqCeH_YcIc",
         "platform": "youtube",
         "timestamp": "2026-08-24T17:45:48+00:00"
-      },
+      }
+    ],
+    "science-space": [
       {
-        "quote": "Sacks: China\u2019s Biggest AI Advantage Over America Is Optimism",
-        "sourceUrl": "https://www.youtube.com/shorts/heZBlRiD_sM",
+        "quote": "Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics",
+        "sourceUrl": "https://www.youtube.com/watch?v=y84ypzELP_s",
         "platform": "youtube",
-        "timestamp": "2026-08-29T15:00:38+00:00"
+        "timestamp": "2026-08-27T03:00:52+00:00"
       }
     ],
     "covid-pandemic": [
@@ -217,14 +248,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Xj4pTYsVSWQ",
         "platform": "youtube",
         "timestamp": "2026-08-24T23:30:59+00:00"
-      }
-    ],
-    "economy-trade": [
-      {
-        "quote": "Chamath: \u201cThis could be the beginning of a death spiral.\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/WkTC8Hn60Gs",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T19:00:03+00:00"
       }
     ]
   }

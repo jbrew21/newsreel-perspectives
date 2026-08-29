@@ -1,9 +1,26 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-29T19:58:47.801090",
+  "collectedAt": "2026-08-29T21:58:21.567153",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
+      "text": "Former NBA player claims to be transgender now?!",
+      "sourceUrl": "https://www.youtube.com/shorts/iE3FKniaPDM",
+      "timestamp": "2026-08-29T19:15:08+00:00",
+      "type": "video_title",
+      "topic": "gender-lgbtq",
+      "topics": [
+        "gender-lgbtq"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Expresses skepticism or concern about transgender identity claims",
+      "quote": "Former NBA player claims to be transgender now?!"
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -54,60 +71,17 @@
       "stance": "lean",
       "summary": "Examines Trudeau political situation with implied criticism",
       "quote": "What's happening with Justin Trudeau?"
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "They've f*cking infiltrated...",
-      "sourceUrl": "https://www.youtube.com/watch?v=YYhbxfVi7ZQ",
-      "timestamp": "2026-08-27T21:16:21+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "topics": [
-        "culture-war"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Suggests ideological groups have infiltrated institutions",
-      "quote": "They've f*cking infiltrated..."
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Fauci wants YOU to pay his legal bills...",
-      "sourceUrl": "https://www.youtube.com/shorts/OC5tsaGzFPY",
-      "timestamp": "2026-08-27T18:30:52+00:00",
-      "type": "video_title",
-      "topic": "supreme-court-legal",
-      "topics": [
-        "supreme-court-legal"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Fauci seeking public funding for legal defense",
-      "quote": "Fauci wants YOU to pay his legal bills..."
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Former NBA player claims to be transgender now?!",
-      "sourceUrl": "https://www.youtube.com/shorts/iE3FKniaPDM",
-      "timestamp": "2026-08-29T19:15:08+00:00",
-      "type": "video_title",
-      "topic": "gender-lgbtq",
-      "topics": [
-        "gender-lgbtq"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Expresses skepticism or concern about transgender identity claims",
-      "quote": "Former NBA player claims to be transgender now?!"
     }
   ],
   "topicSummary": {
+    "gender-lgbtq": [
+      {
+        "quote": "Former NBA player claims to be transgender now?!",
+        "sourceUrl": "https://www.youtube.com/shorts/iE3FKniaPDM",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T19:15:08+00:00"
+      }
+    ],
     "criminal-justice": [
       {
         "quote": "UK police is still terrorizing its own people...",
@@ -130,30 +104,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/IFMxHL1gQJw",
         "platform": "youtube",
         "timestamp": "2026-08-28T18:53:10+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "They've f*cking infiltrated...",
-        "sourceUrl": "https://www.youtube.com/watch?v=YYhbxfVi7ZQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T21:16:21+00:00"
-      }
-    ],
-    "supreme-court-legal": [
-      {
-        "quote": "Fauci wants YOU to pay his legal bills...",
-        "sourceUrl": "https://www.youtube.com/shorts/OC5tsaGzFPY",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T18:30:52+00:00"
-      }
-    ],
-    "gender-lgbtq": [
-      {
-        "quote": "Former NBA player claims to be transgender now?!",
-        "sourceUrl": "https://www.youtube.com/shorts/iE3FKniaPDM",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T19:15:08+00:00"
       }
     ]
   }
