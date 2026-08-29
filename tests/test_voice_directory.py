@@ -153,13 +153,31 @@ class StanceOrderingTests(unittest.TestCase):
         self.assertEqual(topics[0]["topic"], "culture-war")
         self.assertEqual(topics[0]["count"], 6)
 
-    def test_live_topic_floats_above_a_bigger_dormant_one(self):
-        posts = ([self._post("old-beat", 90, i) for i in range(9)] +
-                 [self._post("live-beat", 1, i) for i in range(3)])
+    def test_live_topic_edges_out_a_slightly_bigger_dormant_one(self):
+        # Freshness is a weight, not a partition: 4 live beats 5 dormant...
+        posts = ([self._post("old-beat", 90, i) for i in range(5)] +
+                 [self._post("live-beat", 1, i) for i in range(4)])
         topics = self._build(posts)["topics"]
         self.assertEqual(topics[0]["topic"], "live-beat")
         self.assertTrue(topics[0]["active"])
-        self.assertFalse(topics[1]["active"])
+
+    def test_a_much_bigger_dormant_beat_still_leads(self):
+        # ...but a real body of work is not displaced by one recent flurry.
+        # This is the AOC case: her 7-stance beat must outrank a 1-stance
+        # live topic, which the earlier active/dormant split got backwards.
+        posts = ([self._post("old-beat", 40, i) for i in range(7)] +
+                 [self._post("live-beat", 1)])
+        topics = self._build(posts)["topics"]
+        self.assertEqual(topics[0]["topic"], "old-beat")
+        self.assertEqual(topics[0]["count"], 7)
+
+    def test_ordering_is_monotonic_by_weighted_score(self):
+        posts = ([self._post("a", 1, i) for i in range(4)] +
+                 [self._post("b", 60, i) for i in range(5)] +
+                 [self._post("c", 2, i) for i in range(2)])
+        topics = self._build(posts)["topics"]
+        scores = [t["count"] * (1.5 if t["active"] else 1.0) for t in topics]
+        self.assertEqual(scores, sorted(scores, reverse=True))
 
     def test_counts_descend_within_the_live_group(self):
         posts = []

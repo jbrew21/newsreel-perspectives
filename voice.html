@@ -301,6 +301,11 @@
   }
   a.beat-chip:hover { border-color: var(--accent); color: var(--text-primary); }
   .beat-chip--flat { opacity: 0.62; }
+  .beat-chip--rest { opacity: 0.5; font-style: italic; }
+  .beat-live {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--accent); flex-shrink: 0;
+  }
   .beat-count {
     font-family: var(--font-mono); font-size: 10px;
     color: var(--accent);
@@ -1224,15 +1229,24 @@
       /* Beat map: every tracked topic at a glance, biggest first. A reader
          sees the whole footprint in one glance instead of inferring it from
          however many topic blocks happened to fit. */
-      var beatMap = stanceData.topics.map(function(tg) {
+      var BEAT_MAX = 16;
+      var beatTopics = stanceData.topics.slice(0, BEAT_MAX);
+      var beatMap = beatTopics.map(function(tg) {
         var deep = shownTopics.indexOf(tg) !== -1;
+        /* The live dot explains the order: a fresh topic outranks a slightly
+           larger dormant one, so without it the counts read as jumbled. */
         var inner =
+          (tg.active ? '<span class="beat-live" title="Active in the last two weeks"></span>' : '') +
           '<span class="beat-name">' + esc(tg.label || tg.topic) + '</span>' +
           '<span class="beat-count">' + tg.count + '</span>';
         return deep
           ? '<a class="beat-chip" href="#beat-' + esc(tg.topic) + '">' + inner + '</a>'
           : '<span class="beat-chip beat-chip--flat">' + inner + '</span>';
       }).join('');
+      var beatRest = stanceData.topics.length - beatTopics.length;
+      if (beatRest > 0) {
+        beatMap += '<span class="beat-chip beat-chip--rest">+' + beatRest + ' more</span>';
+      }
 
       var hiddenBlocks = Math.max(0, shownTopics.length - 4);
       var restTopics = stanceData.topics.length - shownTopics.length;

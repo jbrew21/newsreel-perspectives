@@ -35,6 +35,7 @@ TAXONOMY_PATH = ROOT / "data" / "taxonomy.json"
 MAX_STANCES_PER_TOPIC = 12      # most recent N per topic
 MAX_AGE_DAYS = 120              # drop stances older than this
 ACTIVE_DAYS = 14                # a topic is "live" if touched within this many days
+ACTIVE_BOOST = 1.5              # freshness weight applied to a live topic's volume
 
 
 def load_topic_labels():
@@ -215,10 +216,19 @@ def build_store(voice_id, voice_name, new_stances, existing_store, labels, cutof
     # Rank by volume, break ties on recency, and float topics that are still
     # live (activity within ACTIVE_DAYS) above dormant ones of equal size so
     # the top of a profile still reflects the present.
+    # Weight, don't partition. Sorting active-vs-dormant as separate blocks
+    # buried real beats behind trivia: AOC led with a 1-stance live topic while
+    # her 7-stance topic sat below it. A modest freshness multiplier keeps the
+    # top of the profile current without letting one recent post outrank a
+    # body of work.
     active_cutoff = (datetime.now() - timedelta(days=ACTIVE_DAYS)).strftime('%Y-%m-%d')
     for t in topics:
         t['active'] = bool(t['lastActive'] and t['lastActive'] >= active_cutoff)
-    topics.sort(key=lambda t: (t['active'], t['count'], t['lastActive']), reverse=True)
+    topics.sort(
+        key=lambda t: (t['count'] * (ACTIVE_BOOST if t['active'] else 1.0),
+                       t['lastActive']),
+        reverse=True,
+    )
 
     return {
         'voiceId': voice_id,
