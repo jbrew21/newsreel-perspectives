@@ -1,9 +1,26 @@
 {
   "voiceId": "michael-knowles",
   "voiceName": "Michael Knowles",
-  "collectedAt": "2026-08-29T01:18:14.811149",
+  "collectedAt": "2026-08-29T02:29:46.554053",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "michael-knowles",
+      "voiceName": "Michael Knowles",
+      "platform": "youtube",
+      "text": "Trump Renames Lake Ontario To Lake America",
+      "sourceUrl": "https://www.youtube.com/watch?v=N1SL-9kDogE",
+      "timestamp": "2026-08-28T22:00:19+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames Trump's actions as humorous or noteworthy",
+      "quote": "Trump Renames Lake Ontario To Lake America"
+    },
     {
       "voiceId": "michael-knowles",
       "voiceName": "Michael Knowles",
@@ -89,26 +106,17 @@
       "stance": "strong",
       "summary": "Portrays refugee resettlement program as enabling fraud",
       "quote": "Even the award-winning Somali refugees are fraudsters..."
-    },
-    {
-      "voiceId": "michael-knowles",
-      "voiceName": "Michael Knowles",
-      "platform": "youtube",
-      "text": "Trump Renames Lake Ontario To Lake America",
-      "sourceUrl": "https://www.youtube.com/watch?v=N1SL-9kDogE",
-      "timestamp": "2026-08-28T22:00:19+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames Trump's actions as humorous or noteworthy",
-      "quote": "Trump Renames Lake Ontario To Lake America"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Trump Renames Lake Ontario To Lake America",
+        "sourceUrl": "https://www.youtube.com/watch?v=N1SL-9kDogE",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T22:00:19+00:00"
+      }
+    ],
     "media-personalities": [
       {
         "quote": "It was nice knowing you, Jack",
@@ -147,14 +155,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/t1-t62s5tq4",
         "platform": "youtube",
         "timestamp": "2026-08-27T19:33:09+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Trump Renames Lake Ontario To Lake America",
-        "sourceUrl": "https://www.youtube.com/watch?v=N1SL-9kDogE",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T22:00:19+00:00"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "collectedAt": "2026-08-29T01:18:14.809482",
+  "collectedAt": "2026-08-29T02:29:46.550015",
   "date": "2026-08-29",
   "posts": [
     {
@@ -93,6 +93,23 @@
       "voiceId": "john-oliver",
       "voiceName": "John Oliver",
       "platform": "youtube",
+      "text": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
+      "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
+      "timestamp": "2026-08-25T16:00:19+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "topics": [
+        "uk-world-politics"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques Argentina's economic policies and chocolate industry practices",
+      "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
       "text": "S10 E14: Bob Menendez &amp; McKinsey: Last Week Tonight with John Oliver",
       "sourceUrl": "https://www.youtube.com/watch?v=-BRWR6iK2iY",
       "timestamp": "2026-08-24T16:00:26+00:00",
@@ -127,18 +144,19 @@
       "voiceId": "john-oliver",
       "voiceName": "John Oliver",
       "platform": "youtube",
-      "text": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
-      "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
-      "timestamp": "2026-08-25T16:00:19+00:00",
-      "type": "video_title",
-      "topic": "uk-world-politics",
-      "topics": [
-        "uk-world-politics"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critiques Argentina's economic policies and chocolate industry practices",
-      "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver"
+      "text": "Subscriptions #lastweektonight",
+      "sourceUrl": "https://www.youtube.com/shorts/9XtHItb_Cvs",
+      "timestamp": "2026-08-25T14:00:12+00:00",
+      "type": "video_title"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
+      "text": "Subscriptions: Last Week Tonight with John Oliver (HBO)",
+      "sourceUrl": "https://www.youtube.com/watch?v=Wko-2c7lZL8",
+      "timestamp": "2026-08-24T06:30:09+00:00",
+      "type": "video_title"
     }
   ],
   "topicSummary": {
@@ -186,6 +204,14 @@
         "timestamp": "2026-08-26T16:00:33+00:00"
       }
     ],
+    "uk-world-politics": [
+      {
+        "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
+        "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
+        "platform": "youtube",
+        "timestamp": "2026-08-25T16:00:19+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Sean Duffy's Road Trip #lastweektonight",
@@ -194,12 +220,18 @@
         "timestamp": "2026-08-24T13:00:21+00:00"
       }
     ],
-    "uk-world-politics": [
+    "uncategorized": [
       {
-        "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
-        "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
+        "quote": "Subscriptions #lastweektonight",
+        "sourceUrl": "https://www.youtube.com/shorts/9XtHItb_Cvs",
         "platform": "youtube",
-        "timestamp": "2026-08-25T16:00:19+00:00"
+        "timestamp": "2026-08-25T14:00:12+00:00"
+      },
+      {
+        "quote": "Subscriptions: Last Week Tonight with John Oliver (HBO)",
+        "sourceUrl": "https://www.youtube.com/watch?v=Wko-2c7lZL8",
+        "platform": "youtube",
+        "timestamp": "2026-08-24T06:30:09+00:00"
       }
     ]
   }

@@ -1,9 +1,26 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-08-29T01:18:14.808924",
+  "collectedAt": "2026-08-29T02:29:46.549046",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "ALL OUR FOOD IS BEING RECALLED",
+      "sourceUrl": "https://www.youtube.com/watch?v=Kl-0nAlwFU8",
+      "timestamp": "2026-08-28T19:30:48+00:00",
+      "type": "video_title",
+      "topic": "food-agriculture",
+      "topics": [
+        "food-agriculture"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Expresses concern about food safety and recall issues",
+      "quote": "ALL OUR FOOD IS BEING RECALLED"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -111,51 +128,35 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
-      "text": "ABDUL EL-SAYED MAKES THE FOX NEWS HOST LAUGH AT HIS OPPONENT",
-      "sourceUrl": "https://www.youtube.com/watch?v=ViDE9Xz8654",
-      "timestamp": "2026-08-26T02:30:32+00:00",
+      "text": "MILO YIANNOPOULOS ARRESTED BY ICE",
+      "sourceUrl": "https://www.youtube.com/watch?v=LHhkIWGPwjM",
+      "timestamp": "2026-08-29T01:08:49+00:00",
       "type": "video_title",
-      "topic": "elections",
+      "topic": "immigration",
       "topics": [
-        "elections",
-        "media-press"
+        "immigration"
       ],
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Highlights Fox News host's reaction to candidate criticism",
-      "quote": "ABDUL EL-SAYED MAKES THE FOX NEWS HOST LAUGH AT HIS OPPONENT"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "ALL OUR FOOD IS BEING RECALLED",
-      "sourceUrl": "https://www.youtube.com/watch?v=Kl-0nAlwFU8",
-      "timestamp": "2026-08-28T19:30:48+00:00",
-      "type": "video_title",
-      "topic": "food-agriculture",
-      "topics": [
-        "food-agriculture"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Expresses concern about food safety and recall issues",
-      "quote": "ALL OUR FOOD IS BEING RECALLED"
+      "summary": "ICE arrest of political figure presented as newsworthy event",
+      "quote": "MILO YIANNOPOULOS ARRESTED BY ICE"
     }
   ],
   "topicSummary": {
+    "food-agriculture": [
+      {
+        "quote": "ALL OUR FOOD IS BEING RECALLED",
+        "sourceUrl": "https://www.youtube.com/watch?v=Kl-0nAlwFU8",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T19:30:48+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "JON OSSOFF CAME AFTER ME",
         "sourceUrl": "https://www.youtube.com/watch?v=gV5eCaMWZqg",
         "platform": "youtube",
         "timestamp": "2026-08-28T13:55:38+00:00"
-      },
-      {
-        "quote": "ABDUL EL-SAYED MAKES THE FOX NEWS HOST LAUGH AT HIS OPPONENT",
-        "sourceUrl": "https://www.youtube.com/watch?v=ViDE9Xz8654",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T02:30:32+00:00"
       }
     ],
     "climate-environment": [
@@ -196,12 +197,12 @@
         "timestamp": "2026-08-26T13:14:54+00:00"
       }
     ],
-    "food-agriculture": [
+    "immigration": [
       {
-        "quote": "ALL OUR FOOD IS BEING RECALLED",
-        "sourceUrl": "https://www.youtube.com/watch?v=Kl-0nAlwFU8",
+        "quote": "MILO YIANNOPOULOS ARRESTED BY ICE",
+        "sourceUrl": "https://www.youtube.com/watch?v=LHhkIWGPwjM",
         "platform": "youtube",
-        "timestamp": "2026-08-28T19:30:48+00:00"
+        "timestamp": "2026-08-29T01:08:49+00:00"
       }
     ]
   }

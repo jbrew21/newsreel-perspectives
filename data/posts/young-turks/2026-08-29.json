@@ -1,9 +1,44 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "collectedAt": "2026-08-29T01:18:14.806835",
+  "collectedAt": "2026-08-29T02:29:46.547138",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "Laura Loomer CHEERS After Milo Yiannopoulos DETAINED By ICE",
+      "sourceUrl": "https://www.youtube.com/watch?v=knXm2kvonQg",
+      "timestamp": "2026-08-29T00:34:09+00:00",
+      "type": "video_title",
+      "topic": "immigration",
+      "topics": [
+        "immigration",
+        "trump-administration"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Reports on ICE detention; implies criticism through 'CHEERS' framing",
+      "quote": "Laura Loomer CHEERS After Milo Yiannopoulos DETAINED By ICE"
+    },
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "Why Trump's Petty 'Lake America' Move Is A DISTRACTION",
+      "sourceUrl": "https://www.youtube.com/watch?v=qtId5gZ6U4k",
+      "timestamp": "2026-08-29T00:30:06+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Trump's 'Lake America' renaming as distraction tactic",
+      "quote": "Why Trump's Petty 'Lake America' Move Is A DISTRACTION"
+    },
     {
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
@@ -94,56 +129,49 @@
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
       "platform": "youtube",
-      "text": "The Most OBVIOUS Revelation About Epstein Was FINALLY Released",
-      "sourceUrl": "https://www.youtube.com/watch?v=n6v3dz847qg",
-      "timestamp": "2026-08-28T02:00:32+00:00",
-      "type": "video_title",
-      "topic": "epstein-scandal",
-      "topics": [
-        "epstein-scandal"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Significant Epstein case revelation newly disclosed",
-      "quote": "The Most OBVIOUS Revelation About Epstein Was FINALLY Released"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "Why Trump's Petty 'Lake America' Move Is A DISTRACTION",
-      "sourceUrl": "https://www.youtube.com/watch?v=qtId5gZ6U4k",
-      "timestamp": "2026-08-29T00:30:06+00:00",
+      "text": "Trump Has Made BILLIONS At The Expense Of His Supporters",
+      "sourceUrl": "https://www.youtube.com/watch?v=itpWPUSOKfQ",
+      "timestamp": "2026-08-29T01:15:19+00:00",
       "type": "video_title",
       "topic": "trump-administration",
       "topics": [
         "trump-administration"
       ],
-      "relevance": "high",
+      "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Trump's 'Lake America' renaming as distraction tactic",
-      "quote": "Why Trump's Petty 'Lake America' Move Is A DISTRACTION"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "Laura Loomer CHEERS After Milo Yiannopoulos DETAINED By ICE",
-      "sourceUrl": "https://www.youtube.com/watch?v=knXm2kvonQg",
-      "timestamp": "2026-08-29T00:34:09+00:00",
-      "type": "video_title",
-      "topic": "immigration",
-      "topics": [
-        "immigration",
-        "trump-administration"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Reports on ICE detention; implies criticism through 'CHEERS' framing",
-      "quote": "Laura Loomer CHEERS After Milo Yiannopoulos DETAINED By ICE"
+      "summary": "Criticizes Trump for profiting from supporters",
+      "quote": "Trump Has Made BILLIONS At The Expense Of His Supporters"
     }
   ],
   "topicSummary": {
+    "immigration": [
+      {
+        "quote": "Laura Loomer CHEERS After Milo Yiannopoulos DETAINED By ICE",
+        "sourceUrl": "https://www.youtube.com/watch?v=knXm2kvonQg",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T00:34:09+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "Why Trump's Petty 'Lake America' Move Is A DISTRACTION",
+        "sourceUrl": "https://www.youtube.com/watch?v=qtId5gZ6U4k",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T00:30:06+00:00"
+      },
+      {
+        "quote": "Marjorie Greene NUKES The RNC",
+        "sourceUrl": "https://www.youtube.com/watch?v=1kGavw41wqs",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T02:30:25+00:00"
+      },
+      {
+        "quote": "Trump Has Made BILLIONS At The Expense Of His Supporters",
+        "sourceUrl": "https://www.youtube.com/watch?v=itpWPUSOKfQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T01:15:19+00:00"
+      }
+    ],
     "iran-conflict": [
       {
         "quote": "Trump Forced To ABANDON Massive Iran Attack Plan",
@@ -170,36 +198,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=V_Em_GLBqzg",
         "platform": "youtube",
         "timestamp": "2026-08-28T03:30:15+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Marjorie Greene NUKES The RNC",
-        "sourceUrl": "https://www.youtube.com/watch?v=1kGavw41wqs",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T02:30:25+00:00"
-      },
-      {
-        "quote": "Why Trump's Petty 'Lake America' Move Is A DISTRACTION",
-        "sourceUrl": "https://www.youtube.com/watch?v=qtId5gZ6U4k",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T00:30:06+00:00"
-      }
-    ],
-    "epstein-scandal": [
-      {
-        "quote": "The Most OBVIOUS Revelation About Epstein Was FINALLY Released",
-        "sourceUrl": "https://www.youtube.com/watch?v=n6v3dz847qg",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T02:00:32+00:00"
-      }
-    ],
-    "immigration": [
-      {
-        "quote": "Laura Loomer CHEERS After Milo Yiannopoulos DETAINED By ICE",
-        "sourceUrl": "https://www.youtube.com/watch?v=knXm2kvonQg",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T00:34:09+00:00"
       }
     ]
   }

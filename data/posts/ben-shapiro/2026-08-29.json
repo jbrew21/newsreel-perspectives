@@ -1,9 +1,26 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-08-29T01:18:14.805867",
+  "collectedAt": "2026-08-29T02:29:46.545032",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "You're doing just great, California. #puretalkpartner",
+      "sourceUrl": "https://www.youtube.com/shorts/PaoJ9xfyL-w",
+      "timestamp": "2026-08-28T23:07:18+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "topics": [
+        "state-local-politics"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes California state governance",
+      "quote": "You're doing just great, California. #puretalkpartner"
+    },
     {
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
@@ -105,26 +122,17 @@
       "stance": "strong",
       "summary": "Argues Democrats make excuses for crime",
       "quote": "The Real Reason Democrats Excuse Crime"
-    },
-    {
-      "voiceId": "ben-shapiro",
-      "voiceName": "Ben Shapiro",
-      "platform": "youtube",
-      "text": "You're doing just great, California. #puretalkpartner",
-      "sourceUrl": "https://www.youtube.com/shorts/PaoJ9xfyL-w",
-      "timestamp": "2026-08-28T23:07:18+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "topics": [
-        "state-local-politics"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Criticizes California state governance",
-      "quote": "You're doing just great, California. #puretalkpartner"
     }
   ],
   "topicSummary": {
+    "state-local-politics": [
+      {
+        "quote": "You're doing just great, California. #puretalkpartner",
+        "sourceUrl": "https://www.youtube.com/shorts/PaoJ9xfyL-w",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T23:07:18+00:00"
+      }
+    ],
     "culture-war": [
       {
         "quote": "He just gave in to radical Hollywood.",
@@ -169,14 +177,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=JG14TM_Vzzc",
         "platform": "youtube",
         "timestamp": "2026-08-27T20:30:26+00:00"
-      }
-    ],
-    "state-local-politics": [
-      {
-        "quote": "You're doing just great, California. #puretalkpartner",
-        "sourceUrl": "https://www.youtube.com/shorts/PaoJ9xfyL-w",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T23:07:18+00:00"
       }
     ]
   }

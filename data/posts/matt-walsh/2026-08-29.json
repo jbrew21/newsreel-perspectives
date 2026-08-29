@@ -1,9 +1,26 @@
 {
   "voiceId": "matt-walsh",
   "voiceName": "Matt Walsh",
-  "collectedAt": "2026-08-29T01:18:14.811071",
+  "collectedAt": "2026-08-29T02:29:46.553812",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "matt-walsh",
+      "voiceName": "Matt Walsh",
+      "platform": "youtube",
+      "text": "The Lookout Was Too Busy Eating Ice Cream | The Real History of Watergate",
+      "sourceUrl": "https://www.youtube.com/shorts/9YT9ohGEmO8",
+      "timestamp": "2026-08-28T21:13:42+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critiques media's historical Watergate coverage accuracy",
+      "quote": "The Lookout Was Too Busy Eating Ice Cream | The Real History of Watergate"
+    },
     {
       "voiceId": "matt-walsh",
       "voiceName": "Matt Walsh",
@@ -42,21 +59,46 @@
       "voiceId": "matt-walsh",
       "voiceName": "Matt Walsh",
       "platform": "youtube",
-      "text": "The Lookout Was Too Busy Eating Ice Cream | The Real History of Watergate",
-      "sourceUrl": "https://www.youtube.com/shorts/9YT9ohGEmO8",
-      "timestamp": "2026-08-28T21:13:42+00:00",
+      "text": "China is better at this than us",
+      "sourceUrl": "https://www.youtube.com/shorts/uBD4QB5gJDI",
+      "timestamp": "2026-08-28T18:29:16+00:00",
       "type": "video_title",
-      "topic": "media-press",
+      "topic": "economy-trade",
       "topics": [
-        "media-press"
+        "economy-trade"
       ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Critiques media's historical Watergate coverage accuracy",
-      "quote": "The Lookout Was Too Busy Eating Ice Cream | The Real History of Watergate"
+      "summary": "Implies U.S. lagging behind China in economic or manufacturing capacity",
+      "quote": "China is better at this than us"
+    },
+    {
+      "voiceId": "matt-walsh",
+      "voiceName": "Matt Walsh",
+      "platform": "youtube",
+      "text": "Dystopian pods are now real",
+      "sourceUrl": "https://www.youtube.com/shorts/Y1by95IHr_Q",
+      "timestamp": "2026-08-27T23:45:29+00:00",
+      "type": "video_title",
+      "topic": "housing-infrastructure",
+      "topics": [
+        "housing-infrastructure"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes compact housing design as dystopian or impractical",
+      "quote": "Dystopian pods are now real"
     }
   ],
   "topicSummary": {
+    "media-press": [
+      {
+        "quote": "The Lookout Was Too Busy Eating Ice Cream | The Real History of Watergate",
+        "sourceUrl": "https://www.youtube.com/shorts/9YT9ohGEmO8",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T21:13:42+00:00"
+      }
+    ],
     "economy-trade": [
       {
         "quote": "Malls are dying and it's no secret why",
@@ -69,14 +111,20 @@
         "sourceUrl": "https://www.youtube.com/watch?v=UaIJkZ8Peuo",
         "platform": "youtube",
         "timestamp": "2026-08-27T19:00:06+00:00"
+      },
+      {
+        "quote": "China is better at this than us",
+        "sourceUrl": "https://www.youtube.com/shorts/uBD4QB5gJDI",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T18:29:16+00:00"
       }
     ],
-    "media-press": [
+    "housing-infrastructure": [
       {
-        "quote": "The Lookout Was Too Busy Eating Ice Cream | The Real History of Watergate",
-        "sourceUrl": "https://www.youtube.com/shorts/9YT9ohGEmO8",
+        "quote": "Dystopian pods are now real",
+        "sourceUrl": "https://www.youtube.com/shorts/Y1by95IHr_Q",
         "platform": "youtube",
-        "timestamp": "2026-08-28T21:13:42+00:00"
+        "timestamp": "2026-08-27T23:45:29+00:00"
       }
     ]
   }

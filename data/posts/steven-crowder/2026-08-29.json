@@ -1,9 +1,43 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-08-29T01:18:14.806982",
+  "collectedAt": "2026-08-29T02:29:46.547452",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "There is no hope for people who think Lindsay Clancy should walk free.",
+      "sourceUrl": "https://www.youtube.com/shorts/5myNpOO8G8w",
+      "timestamp": "2026-08-28T20:30:07+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "topics": [
+        "criminal-justice"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Opposes leniency for convicted murderer Lindsay Clancy",
+      "quote": "There is no hope for people who think Lindsay Clancy should walk free."
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "Does He Expect Us to Believe Lindsay Clancy?",
+      "sourceUrl": "https://www.youtube.com/watch?v=3SSwBPkeFAE",
+      "timestamp": "2026-08-28T20:00:35+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "topics": [
+        "criminal-justice"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Skeptical of Lindsay Clancy's credibility or defense claims",
+      "quote": "Does He Expect Us to Believe Lindsay Clancy?"
+    },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
@@ -72,43 +106,23 @@
       "stance": "strong",
       "summary": "Supports Trump restricting immigration and foreign influence",
       "quote": "Trump Is Done Letting the Third World Ruin America"
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "There is no hope for people who think Lindsay Clancy should walk free.",
-      "sourceUrl": "https://www.youtube.com/shorts/5myNpOO8G8w",
-      "timestamp": "2026-08-28T20:30:07+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "topics": [
-        "criminal-justice"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Opposes leniency for convicted murderer Lindsay Clancy",
-      "quote": "There is no hope for people who think Lindsay Clancy should walk free."
-    },
-    {
-      "voiceId": "steven-crowder",
-      "voiceName": "Steven Crowder",
-      "platform": "youtube",
-      "text": "Does He Expect Us to Believe Lindsay Clancy?",
-      "sourceUrl": "https://www.youtube.com/watch?v=3SSwBPkeFAE",
-      "timestamp": "2026-08-28T20:00:35+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "topics": [
-        "criminal-justice"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Skeptical of Lindsay Clancy's credibility or defense claims",
-      "quote": "Does He Expect Us to Believe Lindsay Clancy?"
     }
   ],
   "topicSummary": {
+    "criminal-justice": [
+      {
+        "quote": "There is no hope for people who think Lindsay Clancy should walk free.",
+        "sourceUrl": "https://www.youtube.com/shorts/5myNpOO8G8w",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T20:30:07+00:00"
+      },
+      {
+        "quote": "Does He Expect Us to Believe Lindsay Clancy?",
+        "sourceUrl": "https://www.youtube.com/watch?v=3SSwBPkeFAE",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T20:00:35+00:00"
+      }
+    ],
     "foreign-policy-diplomacy": [
       {
         "quote": "Canada's free ride is over",
@@ -139,20 +153,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=7dfoMhD31Dk",
         "platform": "youtube",
         "timestamp": "2026-08-26T20:08:42+00:00"
-      }
-    ],
-    "criminal-justice": [
-      {
-        "quote": "There is no hope for people who think Lindsay Clancy should walk free.",
-        "sourceUrl": "https://www.youtube.com/shorts/5myNpOO8G8w",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T20:30:07+00:00"
-      },
-      {
-        "quote": "Does He Expect Us to Believe Lindsay Clancy?",
-        "sourceUrl": "https://www.youtube.com/watch?v=3SSwBPkeFAE",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T20:00:35+00:00"
       }
     ]
   }

@@ -1,9 +1,44 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "collectedAt": "2026-08-29T01:18:14.810109",
+  "collectedAt": "2026-08-29T02:29:46.551412",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "youtube",
+      "text": "Marjorie Taylor Greene tears into Trump for not understanding Georgians",
+      "sourceUrl": "https://www.youtube.com/shorts/qDN1X4JMo8w",
+      "timestamp": "2026-08-28T22:30:16+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Trump for misunderstanding Georgia voter concerns",
+      "quote": "Marjorie Taylor Greene tears into Trump for not understanding Georgians"
+    },
+    {
+      "voiceId": "pod-save-america",
+      "voiceName": "Pod Save America",
+      "platform": "youtube",
+      "text": "Texans speak out against the killing of Lorenzo Salgado Araujo: &quot;We are not animals&quot;",
+      "sourceUrl": "https://www.youtube.com/shorts/Ktei1X1cns4",
+      "timestamp": "2026-08-28T21:00:22+00:00",
+      "type": "video_title",
+      "topic": "immigration",
+      "topics": [
+        "immigration",
+        "criminal-justice"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Documents Texans opposing ICE killing of undocumented immigrant",
+      "quote": "Texans speak out against the killing of Lorenzo Salgado Araujo: &quot;We are not animals&quot;"
+    },
     {
       "voiceId": "pod-save-america",
       "voiceName": "Pod Save America",
@@ -107,44 +142,25 @@
       "stance": "lean",
       "summary": "South Carolina Republicans resist top-down party pressure",
       "quote": "These South Carolina Republican Voters Aren\u2019t Taking Orders"
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "youtube",
-      "text": "Marjorie Taylor Greene tears into Trump for not understanding Georgians",
-      "sourceUrl": "https://www.youtube.com/shorts/qDN1X4JMo8w",
-      "timestamp": "2026-08-28T22:30:16+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Trump for misunderstanding Georgia voter concerns",
-      "quote": "Marjorie Taylor Greene tears into Trump for not understanding Georgians"
-    },
-    {
-      "voiceId": "pod-save-america",
-      "voiceName": "Pod Save America",
-      "platform": "youtube",
-      "text": "Texans speak out against the killing of Lorenzo Salgado Araujo: &quot;We are not animals&quot;",
-      "sourceUrl": "https://www.youtube.com/shorts/Ktei1X1cns4",
-      "timestamp": "2026-08-28T21:00:22+00:00",
-      "type": "video_title",
-      "topic": "immigration",
-      "topics": [
-        "immigration",
-        "criminal-justice"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Documents Texans opposing ICE killing of undocumented immigrant",
-      "quote": "Texans speak out against the killing of Lorenzo Salgado Araujo: &quot;We are not animals&quot;"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Marjorie Taylor Greene tears into Trump for not understanding Georgians",
+        "sourceUrl": "https://www.youtube.com/shorts/qDN1X4JMo8w",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T22:30:16+00:00"
+      }
+    ],
+    "immigration": [
+      {
+        "quote": "Texans speak out against the killing of Lorenzo Salgado Araujo: &quot;We are not animals&quot;",
+        "sourceUrl": "https://www.youtube.com/shorts/Ktei1X1cns4",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T21:00:22+00:00"
+      }
+    ],
     "state-local-politics": [
       {
         "quote": "Why Wright Thompson Says Modern Politics Gets the South Wrong",
@@ -187,22 +203,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/_HcW25G9FdY",
         "platform": "youtube",
         "timestamp": "2026-08-13T13:49:41+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Marjorie Taylor Greene tears into Trump for not understanding Georgians",
-        "sourceUrl": "https://www.youtube.com/shorts/qDN1X4JMo8w",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T22:30:16+00:00"
-      }
-    ],
-    "immigration": [
-      {
-        "quote": "Texans speak out against the killing of Lorenzo Salgado Araujo: &quot;We are not animals&quot;",
-        "sourceUrl": "https://www.youtube.com/shorts/Ktei1X1cns4",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T21:00:22+00:00"
       }
     ]
   }

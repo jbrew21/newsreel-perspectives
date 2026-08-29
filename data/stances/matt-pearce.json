@@ -1,10 +1,36 @@
 {
   "voiceId": "matt-pearce",
   "voiceName": "Matt Pearce",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "topicCount": 10,
   "stanceCount": 39,
   "topics": [
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes perceived threat to Social Security benefits",
+          "quote": "[George Carlin voice] AND NOW THEY\u2019RE COMING FOR YOUR SOCIAL SECURITY",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mtyinmae2222",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Criticizes Democratic tax cut messaging as populist",
+          "quote": "ATTENTION TO ALL DEM TAX CUT SLOPULISTS",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mscmuh3i7k2g",
+          "platform": "bluesky"
+        }
+      ]
+    },
     {
       "topic": "education",
       "label": "Education",
@@ -36,32 +62,6 @@
           "summary": "Literacy education needs deeper cultural examination beyond surface-level reporting",
           "quote": "Reporting on what literacy means and why it feels so broken these days made me realize I had far more to say than could be captured in one feature. I\u2019m so, so thrilled to say that now I get to write a whole book about it!",
           "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mssvlxebt227",
-          "platform": "bluesky"
-        }
-      ]
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 2,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Opposes proposed changes to Social Security",
-          "quote": "[George Carlin voice] AND NOW THEY\u2019RE COMING FOR YOUR SOCIAL SECURITY",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mtyinmae2222",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Critiques expansion of government scope and power",
-          "quote": "the era of big government is here",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msa67ctjxk2d",
           "platform": "bluesky"
         }
       ]
@@ -386,18 +386,18 @@
       ]
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
       "count": 1,
-      "lastActive": "2026-08-05",
+      "lastActive": "2026-08-04",
       "stances": [
         {
-          "date": "2026-08-05",
-          "topic": "economy-trade",
+          "date": "2026-08-04",
+          "topic": "congress-legislation",
           "stance": "lean",
-          "summary": "Criticizes Democratic tax cut messaging as populist",
-          "quote": "ATTENTION TO ALL DEM TAX CUT SLOPULISTS",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mscmuh3i7k2g",
+          "summary": "Critiques expansion of government scope and power",
+          "quote": "the era of big government is here",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msa67ctjxk2d",
           "platform": "bluesky"
         }
       ]

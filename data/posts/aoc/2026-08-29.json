@@ -1,9 +1,26 @@
 {
   "voiceId": "aoc",
   "voiceName": "Alexandria Ocasio-Cortez",
-  "collectedAt": "2026-08-29T01:18:14.811713",
+  "collectedAt": "2026-08-29T02:29:46.555121",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "aoc",
+      "voiceName": "Alexandria Ocasio-Cortez",
+      "platform": "youtube",
+      "text": "AOC Speaks at March on Washington 2026",
+      "sourceUrl": "https://www.youtube.com/watch?v=Cmb0RLamBVs",
+      "timestamp": "2026-08-28T20:04:02+00:00",
+      "type": "video_title",
+      "topic": "protests-activism",
+      "topics": [
+        "protests-activism"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Participates in March on Washington demonstration",
+      "quote": "AOC Speaks at March on Washington 2026"
+    },
     {
       "voiceId": "aoc",
       "voiceName": "Alexandria Ocasio-Cortez",
@@ -156,26 +173,17 @@
       "stance": "strong",
       "summary": "Calls on New York voters to participate in election",
       "quote": "New York, it\u2019s time to vote!"
-    },
-    {
-      "voiceId": "aoc",
-      "voiceName": "Alexandria Ocasio-Cortez",
-      "platform": "youtube",
-      "text": "AOC Speaks at March on Washington 2026",
-      "sourceUrl": "https://www.youtube.com/watch?v=Cmb0RLamBVs",
-      "timestamp": "2026-08-28T20:04:02+00:00",
-      "type": "video_title",
-      "topic": "protests-activism",
-      "topics": [
-        "protests-activism"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Participates in March on Washington demonstration",
-      "quote": "AOC Speaks at March on Washington 2026"
     }
   ],
   "topicSummary": {
+    "protests-activism": [
+      {
+        "quote": "AOC Speaks at March on Washington 2026",
+        "sourceUrl": "https://www.youtube.com/watch?v=Cmb0RLamBVs",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T20:04:02+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "AOC Rallies in Michigan with Bernie Sanders to Get Out the Vote for Dr. Abdul El-Sayed",
@@ -232,14 +240,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/DY3kqNnFVF4",
         "platform": "youtube",
         "timestamp": "2026-07-01T19:55:12+00:00"
-      }
-    ],
-    "protests-activism": [
-      {
-        "quote": "AOC Speaks at March on Washington 2026",
-        "sourceUrl": "https://www.youtube.com/watch?v=Cmb0RLamBVs",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T20:04:02+00:00"
       }
     ]
   }

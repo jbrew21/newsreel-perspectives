@@ -1,9 +1,26 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-29T01:18:14.807159",
+  "collectedAt": "2026-08-29T02:29:46.547863",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
+      "text": "UK police is still terrorizing its own people...",
+      "sourceUrl": "https://www.youtube.com/shorts/T7fjZ8qFcso",
+      "timestamp": "2026-08-28T21:00:08+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "topics": [
+        "criminal-justice"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes UK police conduct as oppressive toward citizens",
+      "quote": "UK police is still terrorizing its own people..."
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -88,26 +105,17 @@
       "stance": "lean",
       "summary": "Suggests damaging information about Fauci emerged unexpectedly",
       "quote": "Fauci wasn't expecting this to get out..."
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "UK police is still terrorizing its own people...",
-      "sourceUrl": "https://www.youtube.com/shorts/T7fjZ8qFcso",
-      "timestamp": "2026-08-28T21:00:08+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "topics": [
-        "criminal-justice"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes UK police conduct as oppressive toward citizens",
-      "quote": "UK police is still terrorizing its own people..."
     }
   ],
   "topicSummary": {
+    "criminal-justice": [
+      {
+        "quote": "UK police is still terrorizing its own people...",
+        "sourceUrl": "https://www.youtube.com/shorts/T7fjZ8qFcso",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T21:00:08+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Trump THREATENS Canada After Premier Tells Him to \u201cKiss My ***\u201d - SF752",
@@ -144,14 +152,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=qGxzYXu3zjw",
         "platform": "youtube",
         "timestamp": "2026-08-26T23:37:25+00:00"
-      }
-    ],
-    "criminal-justice": [
-      {
-        "quote": "UK police is still terrorizing its own people...",
-        "sourceUrl": "https://www.youtube.com/shorts/T7fjZ8qFcso",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T21:00:08+00:00"
       }
     ]
   }
