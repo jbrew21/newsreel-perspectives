@@ -481,6 +481,16 @@
     .stats-section { padding: var(--space-3) var(--space-4) 0; }
     .voices-section { padding: var(--space-4) var(--space-4) var(--space-8); }
     .filter-chip { padding: var(--space-2) var(--space-3); min-height: 44px; display: inline-flex; align-items: center; }
+    /* One scrollable row per filter, matching the time-filter pattern on the
+       search page. Wrapped, 17 chips pushed the first voice ~700px down the
+       page — the filters read as the content. */
+    .filter-row {
+      flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      justify-content: flex-start;
+    }
+    .filter-row::-webkit-scrollbar { display: none; }
+    .filter-chip, .filter-label { flex-shrink: 0; }
     .tile-social-link { min-height: 44px; padding: var(--space-1) var(--space-2); display: inline-flex; align-items: center; }
     .voice-tile { padding: var(--space-3) var(--space-4); }
     .tile-photo { width: 40px; height: 40px; }
