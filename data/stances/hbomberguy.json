@@ -1,7 +1,7 @@
 {
   "voiceId": "hbomberguy",
   "voiceName": "Hbomberguy",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "topicCount": 5,
   "stanceCount": 7,
   "topics": [
@@ -9,10 +9,10 @@
       "topic": "climate-environment",
       "label": "Climate & Environment",
       "count": 1,
-      "lastActive": "2026-08-28",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "topic": "climate-environment",
           "stance": "strong",
           "summary": "Critiques climate change denial arguments",
@@ -26,10 +26,10 @@
       "topic": "media-press",
       "label": "Media & Press",
       "count": 2,
-      "lastActive": "2026-08-28",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "topic": "media-press",
           "stance": "strong",
           "summary": "Critiques plagiarism and YouTube's handling of content theft",
@@ -52,15 +52,32 @@
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 1,
-      "lastActive": "2026-08-28",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "topic": "healthcare",
           "stance": "strong",
           "summary": "Debunks false vaccine-autism link with scientific evidence",
           "quote": "Vaccines and Autism: A Measured Response",
           "sourceUrl": "https://www.youtube.com/watch?v=8BIcAZxFfrc",
+          "platform": "youtube"
+        }
+      ]
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Critiques culture war framing of Christmas controversies",
+          "quote": "The War on Christmas: A Measured Response",
+          "sourceUrl": "https://www.youtube.com/watch?v=jbZo4x0NbbI",
           "platform": "youtube"
         }
       ]
@@ -87,23 +104,6 @@
           "summary": "Video game design critique examining mechanics and systems",
           "quote": "Fallout: New Vegas Is Genius, And Here's Why",
           "sourceUrl": "https://www.youtube.com/watch?v=gzF7aHxk4Y4",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Addresses politicized debate around Christmas celebrations",
-          "quote": "The War on Christmas: A Measured Response",
-          "sourceUrl": "https://www.youtube.com/watch?v=jbZo4x0NbbI",
           "platform": "youtube"
         }
       ]
