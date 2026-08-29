@@ -34,6 +34,7 @@ TAXONOMY_PATH = ROOT / "data" / "taxonomy.json"
 # Keep the store bounded.
 MAX_STANCES_PER_TOPIC = 12      # most recent N per topic
 MAX_AGE_DAYS = 120              # drop stances older than this
+ACTIVE_DAYS = 14                # a topic is "live" if touched within this many days
 
 
 def load_topic_labels():
@@ -207,8 +208,17 @@ def build_store(voice_id, voice_name, new_stances, existing_store, labels, cutof
             'stances': stances,
         })
 
-    # Most recently active topics first
-    topics.sort(key=lambda t: t['lastActive'], reverse=True)
+    # Order topics by what this voice actually COVERS, not merely what they
+    # touched last. Pure recency (the rule until Aug 28 2026) let a single
+    # offhand post outrank a voice's real throughline, so profiles read as a
+    # random pile: Shapiro showed 8, 5, 4, 11, 12, 5 stances in that order.
+    # Rank by volume, break ties on recency, and float topics that are still
+    # live (activity within ACTIVE_DAYS) above dormant ones of equal size so
+    # the top of a profile still reflects the present.
+    active_cutoff = (datetime.now() - timedelta(days=ACTIVE_DAYS)).strftime('%Y-%m-%d')
+    for t in topics:
+        t['active'] = bool(t['lastActive'] and t['lastActive'] >= active_cutoff)
+    topics.sort(key=lambda t: (t['active'], t['count'], t['lastActive']), reverse=True)
 
     return {
         'voiceId': voice_id,

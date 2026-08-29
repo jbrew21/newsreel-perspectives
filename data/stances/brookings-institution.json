@@ -65,7 +65,8 @@
           "sourceUrl": "https://x.com/BrookingsInst/status/2074511930610287021",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "ai-technology",
@@ -127,24 +128,8 @@
           "sourceUrl": "https://x.com/BrookingsInst/status/2072344236855271439",
           "platform": "x"
         }
-      ]
-    },
-    {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 1,
-      "lastActive": "2026-08-13",
-      "stances": [
-        {
-          "date": "2026-08-13",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Highlights underinvestment in Native American philanthropic causes",
-          "quote": "Just 0.88% of U.S. foundation and corporate philanthropic giving goes to Native-serving causes\u2014well below Native Americans' population share. Robert Maxim, Glencora Haskins, and Danika Grieser examine why philanthropic and federal investment continue to fall short in Indian Count",
-          "sourceUrl": "https://x.com/BrookingsInst/status/2087921373708443803",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "foreign-policy-diplomacy",
@@ -170,58 +155,8 @@
           "sourceUrl": "https://x.com/BrookingsInst/status/2077452097939751136",
           "platform": "x"
         }
-      ]
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 1,
-      "lastActive": "2026-08-02",
-      "stances": [
-        {
-          "date": "2026-08-02",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Non-citizens use benefits less than citizens despite concentration in low-income populations",
-          "quote": "Non-citizens use public benefits at lower rates than citizens\u2014despite being more concentrated at the bottom of the income distribution, where these programs are targeted, according to new estimates from Sasha Snyder and Tara Watson. brook.gs/4bdocJU\n\nLink\n\n\n\nImmigrant public bene",
-          "sourceUrl": "https://x.com/BrookingsInst/status/2082850211748094063",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "science-space",
-      "label": "Science & Space",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "science-space",
-          "stance": "lean",
-          "summary": "Calls for increased government infrastructure investment in space economy",
-          "quote": "The space economy is accelerating fast\u2014tourism, mining, exploration, communications, defense. Darrell West talks with Bridgit Mendler and Mariel Borowitz about why more infrastructure investment is needed to support that growth, and where government can lead. brook.gs/4yKg917\n\nLi",
-          "sourceUrl": "https://x.com/BrookingsInst/status/2082116629295456700",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Iran attack will strengthen U.S.-Jordan partnership",
-          "quote": "Following Iran's attack on a U.S. air base in Jordan that killed American soldiers, Bruce Riedel explains the recent history of U.S.-Jordan relations\u2014and why the attack is likely to reinforce, not weaken, the partnership. brook.gs/4pxFBmd\n\nLink\n\n\n\nWhy Jordan remains a critical US",
-          "sourceUrl": "https://x.com/BrookingsInst/status/2081751512380850275",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "housing-infrastructure",
@@ -247,7 +182,80 @@
           "sourceUrl": "https://x.com/BrookingsInst/status/2074859141797933084",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 1,
+      "lastActive": "2026-08-13",
+      "stances": [
+        {
+          "date": "2026-08-13",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Highlights underinvestment in Native American philanthropic causes",
+          "quote": "Just 0.88% of U.S. foundation and corporate philanthropic giving goes to Native-serving causes\u2014well below Native Americans' population share. Robert Maxim, Glencora Haskins, and Danika Grieser examine why philanthropic and federal investment continue to fall short in Indian Count",
+          "sourceUrl": "https://x.com/BrookingsInst/status/2087921373708443803",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 1,
+      "lastActive": "2026-08-02",
+      "stances": [
+        {
+          "date": "2026-08-02",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Non-citizens use benefits less than citizens despite concentration in low-income populations",
+          "quote": "Non-citizens use public benefits at lower rates than citizens\u2014despite being more concentrated at the bottom of the income distribution, where these programs are targeted, according to new estimates from Sasha Snyder and Tara Watson. brook.gs/4bdocJU\n\nLink\n\n\n\nImmigrant public bene",
+          "sourceUrl": "https://x.com/BrookingsInst/status/2082850211748094063",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Calls for increased government infrastructure investment in space economy",
+          "quote": "The space economy is accelerating fast\u2014tourism, mining, exploration, communications, defense. Darrell West talks with Bridgit Mendler and Mariel Borowitz about why more infrastructure investment is needed to support that growth, and where government can lead. brook.gs/4yKg917\n\nLi",
+          "sourceUrl": "https://x.com/BrookingsInst/status/2082116629295456700",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Iran attack will strengthen U.S.-Jordan partnership",
+          "quote": "Following Iran's attack on a U.S. air base in Jordan that killed American soldiers, Bruce Riedel explains the recent history of U.S.-Jordan relations\u2014and why the attack is likely to reinforce, not weaken, the partnership. brook.gs/4pxFBmd\n\nLink\n\n\n\nWhy Jordan remains a critical US",
+          "sourceUrl": "https://x.com/BrookingsInst/status/2081751512380850275",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "state-local-politics",
@@ -264,7 +272,8 @@
           "sourceUrl": "https://x.com/BrookingsInst/status/2072720460496724277",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "culture-war",
@@ -281,7 +290,8 @@
           "sourceUrl": "https://x.com/BrookingsInst/status/2072684246297190497",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

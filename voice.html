@@ -286,10 +286,38 @@
   }
   .stance-date { font-size: var(--text-xs); color: var(--text-dim); }
   .stance-meta .position-source { margin-top: 0; }
-  .stance-more {
-    text-align: center; font-size: var(--text-xs); color: var(--text-dim);
-    padding: var(--space-2) 0;
+  /* Beat map: the voice's whole topic footprint, biggest first. */
+  .beat-map {
+    display: flex; flex-wrap: wrap; gap: var(--space-2);
+    max-width: 680px; margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-5);
   }
+  .beat-chip {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    padding: 5px 10px; border-radius: 999px;
+    background: var(--bg-elevated); border: 1px solid var(--border);
+    font-size: var(--text-xs); color: var(--text-secondary);
+    text-decoration: none; transition: border-color var(--duration-fast), color var(--duration-fast);
+  }
+  a.beat-chip:hover { border-color: var(--accent); color: var(--text-primary); }
+  .beat-chip--flat { opacity: 0.62; }
+  .beat-count {
+    font-family: var(--font-mono); font-size: 10px;
+    color: var(--accent);
+  }
+  .beat-chip--flat .beat-count { color: var(--text-dim); }
+
+  .stance-topic[data-overflow] { display: none; }
+  .stances-list.expanded .stance-topic[data-overflow] { display: block; }
+  .stance-expand {
+    display: block; max-width: 680px;
+    margin: 0 auto var(--space-8); padding: var(--space-3) var(--space-5);
+    width: 100%;
+    background: none; border: none; cursor: pointer;
+    font-family: inherit; font-size: var(--text-xs); color: var(--text-muted);
+    transition: color var(--duration-fast);
+  }
+  .stance-expand:hover { color: var(--accent); }
 
   /* Allies row */
   .position-allies {
@@ -1083,12 +1111,13 @@
 
     // No fallback topic cards here -- the "Where they stand" section below
     // covers each voice's topic history in a consistent, deduped format.
-    // When there's no position on today's stories, show a short pointer.
-    if (!positionsHtml) {
-      var hasStances = stanceData && stanceData.topics && stanceData.topics.length;
-      positionsHtml = hasStances
-        ? '<div class="empty-state">No position on today’s top stories. See their tracked stances below.</div>'
-        : '<div class="empty-state">No recent positions found. Check back after the next daily collection.</div>';
+    // When there's no position on today's stories AND we have a stance history
+    // to show instead, drop the section entirely rather than spending a full
+    // screen on an empty state that says nothing (Aug 28 2026).
+    var hasStances = !!(stanceData && stanceData.topics && stanceData.topics.length);
+    var skipPositions = !positionsHtml && hasStances;
+    if (!positionsHtml && !hasStances) {
+      positionsHtml = '<div class="empty-state">Nothing collected for this voice yet. Profiles fill in after the next daily collection.</div>';
     }
 
     // Build aligned voices section
@@ -1159,13 +1188,13 @@
     // "Where they stand" -- accumulated, topic-grouped stance history.
     // Capped to a consistent, scannable length so every profile reads the
     // same whether the voice has 3 stances or 300.
-    var STANCE_MAX_TOPICS = 6;
+    var STANCE_MAX_TOPICS = 8;
     var STANCE_PER_TOPIC = 2;
     var stancesSection = '';
     if (stanceData && stanceData.topics && stanceData.topics.length) {
       var shownTopics = stanceData.topics.slice(0, STANCE_MAX_TOPICS);
       var stancesHtml = '';
-      shownTopics.forEach(function(tg) {
+      shownTopics.forEach(function(tg, tgIndex) {
         var rows = '';
         (tg.stances || []).slice(0, STANCE_PER_TOPIC).forEach(function(s) {
           var summaryHtml = s.summary
@@ -1182,7 +1211,8 @@
         });
         var countLabel = tg.count + ' stance' + (tg.count !== 1 ? 's' : '');
         stancesHtml +=
-          '<div class="stance-topic">' +
+          '<div class="stance-topic" id="beat-' + esc(tg.topic) + '"' +
+              (tgIndex >= 4 ? ' data-overflow="1"' : '') + '>' +
             '<div class="stance-topic-head">' +
               '<span class="stance-topic-label">' + esc(tg.label || tg.topic) + '</span>' +
               '<span class="stance-topic-count">' + countLabel + '</span>' +
@@ -1190,10 +1220,29 @@
             rows +
           '</div>';
       });
-      var moreTopics = stanceData.topics.length - shownTopics.length;
-      var moreHtml = moreTopics > 0
-        ? '<div class="stance-more">+ ' + moreTopics + ' more topic' + (moreTopics !== 1 ? 's' : '') + ' tracked</div>'
+
+      /* Beat map: every tracked topic at a glance, biggest first. A reader
+         sees the whole footprint in one glance instead of inferring it from
+         however many topic blocks happened to fit. */
+      var beatMap = stanceData.topics.map(function(tg) {
+        var deep = shownTopics.indexOf(tg) !== -1;
+        var inner =
+          '<span class="beat-name">' + esc(tg.label || tg.topic) + '</span>' +
+          '<span class="beat-count">' + tg.count + '</span>';
+        return deep
+          ? '<a class="beat-chip" href="#beat-' + esc(tg.topic) + '">' + inner + '</a>'
+          : '<span class="beat-chip beat-chip--flat">' + inner + '</span>';
+      }).join('');
+
+      var hiddenBlocks = Math.max(0, shownTopics.length - 4);
+      var restTopics = stanceData.topics.length - shownTopics.length;
+      var expandLabel = restTopics > 0
+        ? 'Show ' + hiddenBlocks + ' more with quotes · ' + restTopics + ' further topic' + (restTopics !== 1 ? 's' : '') + ' listed above'
+        : 'Show ' + hiddenBlocks + ' more with quotes';
+      var moreHtml = hiddenBlocks > 0
+        ? '<button type="button" class="stance-expand" id="stanceExpand" aria-expanded="false">' + expandLabel + '</button>'
         : '';
+
       stancesSection =
         '<div class="section-divider">' +
           '<div class="section-divider-inner">' +
@@ -1201,7 +1250,9 @@
             '<span class="section-count">' + stanceData.topicCount + ' topic' + (stanceData.topicCount !== 1 ? 's' : '') + ' · ' + stanceData.stanceCount + ' stances tracked</span>' +
           '</div>' +
         '</div>' +
-        '<section class="stances-list" aria-label="Stances taken by ' + esc(voice.name) + '">' + stancesHtml + moreHtml + '</section>';
+        '<nav class="beat-map" aria-label="Topics tracked for ' + esc(voice.name) + '">' + beatMap + '</nav>' +
+        '<section class="stances-list" aria-label="Stances taken by ' + esc(voice.name) + '">' + stancesHtml + '</section>' +
+        moreHtml;
     }
 
     // Hide skeleton, show content
@@ -1216,15 +1267,26 @@
         tagsHtml +
         platformLinksHtml +
       '</header>' +
-      '<div class="section-divider">' +
-        '<div class="section-divider-inner">' +
-          '<span class="section-title">Story positions</span>' +
-          '<span class="section-count">' + storyPositions.length + ' stor' + (storyPositions.length !== 1 ? 'ies' : 'y') + ' today</span>' +
+      (skipPositions ? '' :
+        '<div class="section-divider">' +
+          '<div class="section-divider-inner">' +
+            '<span class="section-title">Story positions</span>' +
+            '<span class="section-count">' + storyPositions.length + ' stor' + (storyPositions.length !== 1 ? 'ies' : 'y') + ' today</span>' +
+          '</div>' +
         '</div>' +
-      '</div>' +
-      '<section class="positions-list" aria-label="Positions by ' + esc(voice.name) + '">' + positionsHtml + '</section>' +
+        '<section class="positions-list" aria-label="Positions by ' + esc(voice.name) + '">' + positionsHtml + '</section>') +
       stancesSection +
       alignedSection;
+
+    var expandBtn = document.getElementById('stanceExpand');
+    if (expandBtn) {
+      expandBtn.addEventListener('click', function() {
+        var list = contentEl.querySelector('.stances-list');
+        var open = list.classList.toggle('expanded');
+        expandBtn.setAttribute('aria-expanded', String(open));
+        expandBtn.textContent = open ? 'Show fewer topics' : expandLabel;
+      });
+    }
   }
 
   /* -- INIT -- */

@@ -6,83 +6,6 @@
   "stanceCount": 12,
   "topics": [
     {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 1,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Praises libertarian host for endorsing Jon (candidate) across political lines for Georgia",
-          "quote": "Ga Talk Show host @shelleywynter1 who is very libertarian in his views Was the 1st To Back Jon.  Bravo Shelley and Erick Great Choice in crossing the isle and Supporting what's best for Georgia.",
-          "sourceUrl": "https://x.com/KillerMike/status/2085686962443132991",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 1,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Endorses Georgia electoral choice",
-          "quote": "Come on Georgia! Good choice",
-          "sourceUrl": "https://x.com/KillerMike/status/2085549628234027427",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "protests-activism",
-      "label": "Protests & Activism",
-      "count": 1,
-      "lastActive": "2026-08-06",
-      "stances": [
-        {
-          "date": "2026-08-06",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Supports community aid for single parents and families in need",
-          "quote": "RT @RandyMoss: I wanna be a blessing this school year\u2026\u2026\u2026\u2026..Looking 4 any SINGLE parent or guardian with a boy in a 13(shoe)that\u2019s growing o\u2026",
-          "sourceUrl": "https://x.com/KillerMike/status/2085096515790373357",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-08-05",
-      "stances": [
-        {
-          "date": "2026-08-05",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Supports individual's crime-solving work, advocates personal autonomy",
-          "quote": "\ud83e\udee1 I felt him.  Let that man live and go solve some crime frfr",
-          "sourceUrl": "https://x.com/KillerMike/status/2083271348160225664",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Criticizes police arrest and abuse of authority, demands accountability",
-          "quote": "American's, Our Government should fear the people and not the other way around.  How do u arrest this man because of your bullshit insecurity and ego.  Fuck both these officers and this department. I pray this man filed and won a lawsuit.  Pigs smh",
-          "sourceUrl": "https://x.com/KillerMike/status/2081723320643559462",
-          "platform": "x"
-        }
-      ]
-    },
-    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 3,
@@ -115,7 +38,89 @@
           "sourceUrl": "https://x.com/KillerMike/status/2077721749823574414",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-08-05",
+      "stances": [
+        {
+          "date": "2026-08-05",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Supports individual's crime-solving work, advocates personal autonomy",
+          "quote": "\ud83e\udee1 I felt him.  Let that man live and go solve some crime frfr",
+          "sourceUrl": "https://x.com/KillerMike/status/2083271348160225664",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes police arrest and abuse of authority, demands accountability",
+          "quote": "American's, Our Government should fear the people and not the other way around.  How do u arrest this man because of your bullshit insecurity and ego.  Fuck both these officers and this department. I pray this man filed and won a lawsuit.  Pigs smh",
+          "sourceUrl": "https://x.com/KillerMike/status/2081723320643559462",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 1,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Praises libertarian host for endorsing Jon (candidate) across political lines for Georgia",
+          "quote": "Ga Talk Show host @shelleywynter1 who is very libertarian in his views Was the 1st To Back Jon.  Bravo Shelley and Erick Great Choice in crossing the isle and Supporting what's best for Georgia.",
+          "sourceUrl": "https://x.com/KillerMike/status/2085686962443132991",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Endorses Georgia electoral choice",
+          "quote": "Come on Georgia! Good choice",
+          "sourceUrl": "https://x.com/KillerMike/status/2085549628234027427",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 1,
+      "lastActive": "2026-08-06",
+      "stances": [
+        {
+          "date": "2026-08-06",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Supports community aid for single parents and families in need",
+          "quote": "RT @RandyMoss: I wanna be a blessing this school year\u2026\u2026\u2026\u2026..Looking 4 any SINGLE parent or guardian with a boy in a 13(shoe)that\u2019s growing o\u2026",
+          "sourceUrl": "https://x.com/KillerMike/status/2085096515790373357",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "drugs-addiction",
@@ -132,7 +137,8 @@
           "sourceUrl": "https://www.tiktok.com/@killermike/video/7465854615213444382",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "billionaires-wealth",
@@ -149,7 +155,8 @@
           "sourceUrl": "https://www.tiktok.com/@killermike/video/7551104026390056222",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "sports",
@@ -166,7 +173,8 @@
           "sourceUrl": "https://www.tiktok.com/@killermike/video/7496240741853793567",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "celebrity-entertainment",
@@ -183,7 +191,8 @@
           "sourceUrl": "https://www.tiktok.com/@killermike/video/7451708657840049438",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

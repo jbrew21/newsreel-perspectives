@@ -20,24 +20,8 @@
           "sourceUrl": "https://www.youtube.com/watch?v=vif8NQcjVf0",
           "platform": "youtube"
         }
-      ]
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Praises America as greatest nation, celebrates democratic argument",
-          "quote": "Happy Birthday America! To me, the greatest nation on Earth. 250 years of loudly arguing our way toward a more perfect union \ud83d\ude02 We're in this together, I love you all! \u2764\ufe0f\n\nPS: World Cup has been amazing. US in the round of 16, LFG! Also, I'm a long-time huge fan of Argentina and M",
-          "sourceUrl": "https://x.com/lexfridman/status/2073494781389316170",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "science-space",
@@ -63,7 +47,26 @@
           "sourceUrl": "https://x.com/lexfridman/status/2039471948938215743",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Praises America as greatest nation, celebrates democratic argument",
+          "quote": "Happy Birthday America! To me, the greatest nation on Earth. 250 years of loudly arguing our way toward a more perfect union \ud83d\ude02 We're in this together, I love you all! \u2764\ufe0f\n\nPS: World Cup has been amazing. US in the round of 16, LFG! Also, I'm a long-time huge fan of Argentina and M",
+          "sourceUrl": "https://x.com/lexfridman/status/2073494781389316170",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "billionaires-wealth",
@@ -80,7 +83,8 @@
           "sourceUrl": "https://x.com/lexfridman/status/2061847191367647457",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

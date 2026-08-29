@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>The Mirror — Your Perspective, Reflected</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg-base: #0a0a0b;
+    --bg-surface: #141416;
+    --bg-surface-2: #1c1c1f;
+    --bg-elevated: #252528;
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-tertiary: #71717a;
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-default: rgba(255, 255, 255, 0.1);
+    --accent: #FF6343;
+    --accent-soft: rgba(255, 99, 67, 0.12);
+    --blue: #60A5FA;
+    --blue-soft: rgba(96, 165, 250, 0.12);
+    --violet: #A78BFA;
+    --violet-soft: rgba(167, 139, 250, 0.12);
+    --green: #4ADE80;
+    --green-soft: rgba(74, 222, 128, 0.12);
+  }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-base);
+    color: var(--text-secondary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── CONTAINER ── */
+  .mirror-wrap {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ── TOP ACCENT LINE ── */
+  .top-line {
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), #FF8C6B, var(--accent));
+    background-size: 200% 100%;
+  }
+
+  /* ── HEADER ── */
+  .mirror-header {
+    text-align: center;
+    padding: 48px 0 12px;
+  }
+  .mirror-wordmark {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .mirror-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 6px;
+  }
+  .mirror-subtitle {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  /* ── GREETING ── */
+  .greeting {
+    padding: 36px 0 0;
+  }
+  .greeting-text {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+  }
+  .greeting-text strong {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  .greeting-name {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  /* ── SECTION DIVIDER ── */
+  .section-divider {
+    height: 1px;
+    margin: 48px 0;
+    background: linear-gradient(90deg, transparent, var(--border-default), transparent);
+  }
+
+  /* ── SECTION LABEL ── */
+  .section-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 8px;
+  }
+  .section-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .section-desc {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+
+  /* ═══════════════════════════════════
+     SECTION 1: YOUR COMPASS
+     ═══════════════════════════════════ */
+  .compass-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 28px 24px;
+  }
+  .compass-gauge {
+    position: relative;
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #60A5FA, #818CF8, #A78BFA, #C084FC, #E879F9, #F472B6, #FB7185);
+    margin: 20px 0 12px;
+    overflow: visible;
+  }
+  .compass-marker {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--text-primary);
+    border: 3px solid var(--bg-surface);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3), 0 2px 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    /* Position set via inline style: left: {{COMPASS_POSITION}}% */
+  }
+  .compass-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+  .compass-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+  }
+  .compass-interpretation {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  /* ═══════════════════════════════════
+     SECTION 2: ALIGNED VOICES
+     ═══════════════════════════════════ */
+  .voice-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s;
+  }
+  .voice-card:hover {
+    border-color: var(--border-default);
+  }
+  .voice-card-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .voice-photo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-default);
+    flex-shrink: 0;
+    background: var(--bg-elevated);
+  }
+  .voice-info {
+    flex: 1;
+    min-width: 0;
+  }
+  .voice-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+  }
+  .voice-pills {
+    display: flex;
+    gap: 6px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+  }
+  .voice-pill {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-tertiary);
+  }
+  .voice-pill.category {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  /* Alignment ring */
+  .voice-alignment {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .alignment-ring {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    /* conic-gradient set via inline style */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .alignment-ring-inner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .voice-shared {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    line-height: 1.5;
+  }
+  .voice-shared em {
+    color: var(--text-secondary);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  /* ═══════════════════════════════════
+     SECTION 3: CHALLENGING VOICES
+     ═══════════════════════════════════ */
+  .voice-card.challenge {
+    border-left: 2px solid var(--blue);
+  }
+  .voice-card.challenge .voice-pill.category {
+    background: var(--blue-soft);
+    color: var(--blue);
+  }
+  .voice-card.challenge .alignment-ring-inner {
+    color: var(--blue);
+  }
+
+  /* ═══════════════════════════════════
+     SECTION 4: SIGNATURE TAKES
+     ═══════════════════════════════════ */
+  .take-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 12px;
+  }
+  .take-question {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  .take-scale {
+    position: relative;
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.08);
+    margin-bottom: 24px;
+  }
+  .take-crowd {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-tertiary);
+    opacity: 0.5;
+    /* left set via inline style */
+  }
+  .take-you {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255, 99, 67, 0.2);
+    /* left set via inline style */
+  }
+  .take-legend {
+    display: flex;
+    gap: 16px;
+    margin-top: 0;
+  }
+  .take-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+  }
+  .take-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .take-legend-dot.you { background: var(--accent); }
+  .take-legend-dot.crowd { background: var(--text-tertiary); opacity: 0.5; }
+
+  .take-answer {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-subtle);
+  }
+  .take-answer strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ═══════════════════════════════════
+     SECTION 5: TOPIC MAP
+     ═══════════════════════════════════ */
+  .topic-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .topic-row:last-child {
+    border-bottom: none;
+  }
+  .topic-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    width: 110px;
+    flex-shrink: 0;
+  }
+  .topic-bar-wrap {
+    flex: 1;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.06);
+    position: relative;
+    overflow: visible;
+  }
+  .topic-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--violet));
+    /* width set via inline style */
+  }
+  .topic-bar-marker {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--text-primary);
+    border: 2px solid var(--bg-base);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    /* left set via inline style */
+  }
+  .topic-value {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    width: 28px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .topic-map-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 24px 20px 12px;
+  }
+
+  /* ═══════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════ */
+  .mirror-footer {
+    text-align: center;
+    padding: 20px 0 60px;
+  }
+  .footer-cta {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 12px;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: background 0.2s;
+  }
+  .footer-cta:hover {
+    background: #e5553a;
+  }
+  .footer-note {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    line-height: 1.6;
+    margin-top: 28px;
+  }
+  .footer-brand {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-subtle);
+  }
+  .footer-brand img {
+    height: 18px;
+    opacity: 0.4;
+  }
+  .footer-brand-text {
+    font-size: 0.65rem;
+    color: var(--text-tertiary);
+    margin-top: 8px;
+    letter-spacing: 0.02em;
+  }
+  .footer-links {
+    margin-top: 12px;
+  }
+  .footer-links a {
+    font-size: 0.65rem;
+    color: var(--text-tertiary);
+    text-decoration: underline;
+    margin: 0 8px;
+  }
+
+  /* ═══════════════════════════════════
+     RESPONSIVE
+     ═══════════════════════════════════ */
+  @media (max-width: 480px) {
+    .mirror-wrap { padding: 0 16px; }
+    .mirror-title { font-size: 2rem; }
+    .section-heading { font-size: 1.25rem; }
+    .voice-card-top { gap: 10px; }
+    .voice-photo { width: 48px; height: 48px; }
+    .voice-alignment { width: 44px; height: 44px; }
+    .alignment-ring { width: 44px; height: 44px; }
+    .alignment-ring-inner { width: 34px; height: 34px; font-size: 0.6rem; }
+    .topic-name { width: 90px; font-size: 0.75rem; }
+    .compass-card { padding: 24px 18px; }
+  }
+
+  @media (min-width: 601px) {
+    .mirror-wrap { padding: 0 32px; }
+    .mirror-header { padding-top: 64px; }
+    .voice-photo { width: 64px; height: 64px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP ACCENT LINE -->
+<div class="top-line"></div>
+
+<div class="mirror-wrap">
+
+  <!-- ════════════════════════════════
+       HERO
+       ════════════════════════════════ -->
+  <div class="mirror-header">
+    <div class="mirror-wordmark">Newsreel Perspectives</div>
+    <h1 class="mirror-title">The Mirror</h1>
+    <p class="mirror-subtitle">Your perspective, reflected</p>
+  </div>
+
+  <!-- GREETING -->
+  <div class="greeting">
+    <p class="greeting-name">Hey {{FIRST_NAME}},</p>
+    <p class="greeting-text">
+      You've answered <strong>{{POLLS_COUNT}} polls</strong>. Here's what that says about how you see the world.
+    </p>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- ════════════════════════════════
+       SECTION 1: YOUR COMPASS
+       ════════════════════════════════ -->
+  <div class="section-label">01 / Your Compass</div>
+  <h2 class="section-heading">Where you stand</h2>
+  <p class="section-desc">Based on your poll responses, mapped against 257 public voices.</p>
+
+  <div class="compass-card">
+    <div class="compass-gauge">
+      <div class="compass-marker" style="left: {{COMPASS_PERCENT}}%;"></div>
+    </div>
+    <div class="compass-labels">
+      <span class="compass-label">Progressive</span>
+      <span class="compass-label">Center</span>
+      <span class="compass-label">Conservative</span>
+    </div>
+    <p class="compass-interpretation">{{COMPASS_INTERPRETATION}}</p>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- ════════════════════════════════
+       SECTION 2: VOICES YOU ALIGN WITH
+       ════════════════════════════════ -->
+  <div class="section-label">02 / Your Orbit</div>
+  <h2 class="section-heading">Voices that see the world like you</h2>
+  <p class="section-desc">These are the public figures whose positions most closely match your poll answers.</p>
+
+  <!-- VOICE CARDS — repeat for each aligned voice -->
+  <!-- {{#VOICES_ALIGNED}} -->
+  <div class="voice-card">
+    <div class="voice-card-top">
+      <img class="voice-photo" src="{{VOICE_PHOTO}}" alt="{{VOICE_NAME}}">
+      <div class="voice-info">
+        <div class="voice-name">{{VOICE_NAME}}</div>
+        <div class="voice-pills">
+          <span class="voice-pill category">{{VOICE_CATEGORY}}</span>
+          <span class="voice-pill">{{VOICE_APPROACH}}</span>
+        </div>
+      </div>
+      <div class="voice-alignment">
+        <div class="alignment-ring" style="background: conic-gradient(var(--accent) 0% {{ALIGNMENT_PERCENT}}%, rgba(255,255,255,0.06) {{ALIGNMENT_PERCENT}}% 100%);">
+          <div class="alignment-ring-inner">{{ALIGNMENT_SCORE}}%</div>
+        </div>
+      </div>
+    </div>
+    <p class="voice-shared"><em>{{VOICE_SHARED_TEXT}}</em></p>
+  </div>
+  <!-- {{/VOICES_ALIGNED}} -->
+
+  <!-- SAMPLE: 5 example cards for preview -->
+  <!--
+  <div class="voice-card">
+    <div class="voice-card-top">
+      <img class="voice-photo" src="https://pbs.twimg.com/profile_images/example.jpg" alt="Ezra Klein">
+      <div class="voice-info">
+        <div class="voice-name">Ezra Klein</div>
+        <div class="voice-pills">
+          <span class="voice-pill category">Journalist</span>
+          <span class="voice-pill">Policy-Driven</span>
+        </div>
+      </div>
+      <div class="voice-alignment">
+        <div class="alignment-ring" style="background: conic-gradient(var(--accent) 0% 87%, rgba(255,255,255,0.06) 87% 100%);">
+          <div class="alignment-ring-inner">87%</div>
+        </div>
+      </div>
+    </div>
+    <p class="voice-shared"><em>You both lean toward systemic reform on healthcare and institutional accountability.</em></p>
+  </div>
+  -->
+
+  <div class="section-divider"></div>
+
+  <!-- ════════════════════════════════
+       SECTION 3: VOICES THAT CHALLENGE YOU
+       ════════════════════════════════ -->
+  <div class="section-label">03 / The Other Side</div>
+  <h2 class="section-heading">Step outside your echo chamber</h2>
+  <p class="section-desc">These voices see the same stories but reach different conclusions. That's worth understanding.</p>
+
+  <!-- {{#VOICES_CHALLENGE}} -->
+  <div class="voice-card challenge">
+    <div class="voice-card-top">
+      <img class="voice-photo" src="{{VOICE_PHOTO}}" alt="{{VOICE_NAME}}">
+      <div class="voice-info">
+        <div class="voice-name">{{VOICE_NAME}}</div>
+        <div class="voice-pills">
+          <span class="voice-pill category">{{VOICE_CATEGORY}}</span>
+          <span class="voice-pill">{{VOICE_APPROACH}}</span>
+        </div>
+      </div>
+      <div class="voice-alignment">
+        <div class="alignment-ring" style="background: conic-gradient(var(--blue) 0% {{ALIGNMENT_PERCENT}}%, rgba(255,255,255,0.06) {{ALIGNMENT_PERCENT}}% 100%);">
+          <div class="alignment-ring-inner">{{ALIGNMENT_SCORE}}%</div>
+        </div>
+      </div>
+    </div>
+    <p class="voice-shared"><em>{{VOICE_DIVERGE_TEXT}}</em></p>
+  </div>
+  <!-- {{/VOICES_CHALLENGE}} -->
+
+  <div class="section-divider"></div>
+
+  <!-- ════════════════════════════════
+       SECTION 4: SIGNATURE TAKES
+       ════════════════════════════════ -->
+  <div class="section-label">04 / Signature Takes</div>
+  <h2 class="section-heading">Your strongest positions</h2>
+  <p class="section-desc">The questions where you felt it most. Your dot versus the crowd.</p>
+
+  <!-- {{#SIGNATURE_TAKES}} -->
+  <div class="take-card">
+    <p class="take-question">{{TAKE_QUESTION}}</p>
+    <div class="take-scale">
+      <div class="take-crowd" style="left: {{CROWD_POSITION}}%;"></div>
+      <div class="take-you" style="left: {{YOUR_POSITION}}%;"></div>
+    </div>
+    <div class="take-legend">
+      <span class="take-legend-item"><span class="take-legend-dot you"></span>You</span>
+      <span class="take-legend-item"><span class="take-legend-dot crowd"></span>Crowd avg</span>
+    </div>
+    <p class="take-answer">You answered: <strong>{{YOUR_ANSWER}}</strong></p>
+  </div>
+  <!-- {{/SIGNATURE_TAKES}} -->
+
+  <div class="section-divider"></div>
+
+  <!-- ════════════════════════════════
+       SECTION 5: TOPIC MAP
+       ════════════════════════════════ -->
+  <div class="section-label">05 / Topic Map</div>
+  <h2 class="section-heading">Where you stand, topic by topic</h2>
+  <p class="section-desc">Your average position across every topic you've weighed in on.</p>
+
+  <div class="topic-map-card">
+    <!-- {{#TOPIC_MAP}} -->
+    <div class="topic-row">
+      <span class="topic-name">{{TOPIC_NAME}}</span>
+      <div class="topic-bar-wrap">
+        <div class="topic-bar-fill" style="width: {{TOPIC_PERCENT}}%;"></div>
+        <div class="topic-bar-marker" style="left: {{TOPIC_PERCENT}}%;"></div>
+      </div>
+      <span class="topic-value">{{TOPIC_SCORE}}</span>
+    </div>
+    <!-- {{/TOPIC_MAP}} -->
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- ════════════════════════════════
+       FOOTER
+       ════════════════════════════════ -->
+  <div class="mirror-footer">
+    <a href="https://newsreel-perspectives.onrender.com" class="footer-cta">Explore All 257 Voices</a>
+
+    <p class="footer-note">
+      Your perspective is always evolving.<br>
+      We'll check back next month.
+    </p>
+
+    <div class="footer-brand">
+      <a href="https://newsreel.co">
+        <img src="https://newsreel.co/images/newsreel-wordmark-white.png" alt="Newsreel">
+      </a>
+      <p class="footer-brand-text">Step outside your algorithm into others.</p>
+      <div class="footer-links">
+        <a href="{{UNSUBSCRIBE_URL}}">Unsubscribe</a>
+        <a href="https://newsreel.co/privacy">Privacy</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- .mirror-wrap -->
+
+</body>
+</html>

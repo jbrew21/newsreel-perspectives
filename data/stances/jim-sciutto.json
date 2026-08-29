@@ -6,23 +6,6 @@
   "stanceCount": 44,
   "topics": [
     {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "Suggests Paramount's bond demand lacks merit and appears retaliatory",
-          "quote": "As Paramount demands a $1.88 billion bond from State AGs to compensate it for losses due to WBD merger trial, CA @AGRobBonta tells me \u201cThey don\u2019t have any legitimate claim,\u201d adding \u201cit reeks of depreciation.\u201d",
-          "sourceUrl": "https://x.com/jimsciutto/status/2089490711380979862",
-          "platform": "x"
-        }
-      ]
-    },
-    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 12,
@@ -136,7 +119,8 @@
           "sourceUrl": "https://x.com/jimsciutto/status/2083204138985210253",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",
@@ -216,7 +200,26 @@
           "sourceUrl": "https://x.com/jimsciutto/status/2080675188757196893",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 1,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Suggests Paramount's bond demand lacks merit and appears retaliatory",
+          "quote": "As Paramount demands a $1.88 billion bond from State AGs to compensate it for losses due to WBD merger trial, CA @AGRobBonta tells me \u201cThey don\u2019t have any legitimate claim,\u201d adding \u201cit reeks of depreciation.\u201d",
+          "sourceUrl": "https://x.com/jimsciutto/status/2089490711380979862",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "trump-administration",
@@ -287,51 +290,8 @@
           "sourceUrl": "https://x.com/jimsciutto/status/2080748226718601600",
           "platform": "x"
         }
-      ]
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 4,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Expresses concern about negative economic trend",
-          "quote": "It is hard to see much positive in this trend line (graph via WSJ)",
-          "sourceUrl": "https://x.com/jimsciutto/status/2085714221036179922",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Questions Federal Reserve independence on economic policy",
-          "quote": "Or, indeed, from the legislated independence of the Fed.",
-          "sourceUrl": "https://x.com/jimsciutto/status/2085208641230065764",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Trump's trade deals as misleading, questions actual value of agreements",
-          "quote": "As with the Saudis and dozens of U.S. trading partners, Trump\u2019s \u201cdeals\u201d often aren\u2019t what they claim to be.",
-          "sourceUrl": "https://x.com/jimsciutto/status/2082979145542246759",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Questions GOP tariff policy consistency and abandonment of free trade",
-          "quote": "Does the GOP consider this sound trade policy? The party already abandoned its free trade roots - now it is tariffs based on prevailing winds? Will the party support reciprocal tariffs when the smoke -\nor the parasites - go the other way?",
-          "sourceUrl": "https://x.com/jimsciutto/status/2080791658333983103",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "uk-world-politics",
@@ -393,7 +353,8 @@
           "sourceUrl": "https://x.com/jimsciutto/status/2082623997221445990",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "military-defense",
@@ -446,7 +407,53 @@
           "sourceUrl": "https://x.com/jimsciutto/status/2082241954323046529",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 4,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Expresses concern about negative economic trend",
+          "quote": "It is hard to see much positive in this trend line (graph via WSJ)",
+          "sourceUrl": "https://x.com/jimsciutto/status/2085714221036179922",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Questions Federal Reserve independence on economic policy",
+          "quote": "Or, indeed, from the legislated independence of the Fed.",
+          "sourceUrl": "https://x.com/jimsciutto/status/2085208641230065764",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Trump's trade deals as misleading, questions actual value of agreements",
+          "quote": "As with the Saudis and dozens of U.S. trading partners, Trump\u2019s \u201cdeals\u201d often aren\u2019t what they claim to be.",
+          "sourceUrl": "https://x.com/jimsciutto/status/2082979145542246759",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Questions GOP tariff policy consistency and abandonment of free trade",
+          "quote": "Does the GOP consider this sound trade policy? The party already abandoned its free trade roots - now it is tariffs based on prevailing winds? Will the party support reciprocal tariffs when the smoke -\nor the parasites - go the other way?",
+          "sourceUrl": "https://x.com/jimsciutto/status/2080791658333983103",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "criminal-justice",
@@ -463,7 +470,8 @@
           "sourceUrl": "https://x.com/jimsciutto/status/2083012937019502785",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

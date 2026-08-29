@@ -6,23 +6,6 @@
   "stanceCount": 18,
   "topics": [
     {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 1,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Advocates for voter access against suppression efforts",
-          "quote": "If someone tries to keep you from voting, you should definitely go vote.",
-          "sourceUrl": "https://x.com/RepTedLieu/status/2090127690552549834",
-          "platform": "x"
-        }
-      ]
-    },
-    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 7,
@@ -91,7 +74,26 @@
           "sourceUrl": "https://x.com/RepTedLieu/status/2080293165169357070",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-08-20",
+      "stances": [
+        {
+          "date": "2026-08-20",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Advocates for voter access against suppression efforts",
+          "quote": "If someone tries to keep you from voting, you should definitely go vote.",
+          "sourceUrl": "https://x.com/RepTedLieu/status/2090127690552549834",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",
@@ -108,67 +110,8 @@
           "sourceUrl": "https://x.com/RepTedLieu/status/2089772219391955398",
           "platform": "x"
         }
-      ]
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 2,
-      "lastActive": "2026-08-14",
-      "stances": [
-        {
-          "date": "2026-08-14",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Todd Blanche's loyalty to Trump over public interest",
-          "quote": "As trump's ex-personal lawyer, Todd Blanche\u2019s top client was and still is trump, not the American people.",
-          "sourceUrl": "https://x.com/RepTedLieu/status/2087998694016586134",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Mike Waltz as unfit for office",
-          "quote": "Mike Waltz is an absolute disgrace.",
-          "sourceUrl": "https://x.com/RepTedLieu/status/2080005915512623119",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-08-12",
-      "stances": [
-        {
-          "date": "2026-08-12",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Identifies cost of living crisis affecting Americans",
-          "quote": "We\u2019re in a cost of living crisis in America.",
-          "sourceUrl": "https://x.com/RepTedLieu/status/2087553615678312609",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
-      "count": 1,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Supports innovative water scarcity solutions and Democratic tech investment",
-          "quote": "California\u2019s 36th Congressional District is home to many amazing tech companies \u2013 including Rainmaker.\n\nIt was a pleasure to see firsthand how Rainmaker\u2019s cloud seeding technology helps combat water scarcity in the U.S.\n\nDemocrats are working in Congress to support innovative tec",
-          "sourceUrl": "https://x.com/RepTedLieu/status/2085787672166166801",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",
@@ -221,7 +164,71 @@
           "sourceUrl": "https://x.com/RepTedLieu/status/2079984636143292749",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 2,
+      "lastActive": "2026-08-14",
+      "stances": [
+        {
+          "date": "2026-08-14",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Todd Blanche's loyalty to Trump over public interest",
+          "quote": "As trump's ex-personal lawyer, Todd Blanche\u2019s top client was and still is trump, not the American people.",
+          "sourceUrl": "https://x.com/RepTedLieu/status/2087998694016586134",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Mike Waltz as unfit for office",
+          "quote": "Mike Waltz is an absolute disgrace.",
+          "sourceUrl": "https://x.com/RepTedLieu/status/2080005915512623119",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 1,
+      "lastActive": "2026-08-12",
+      "stances": [
+        {
+          "date": "2026-08-12",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Identifies cost of living crisis affecting Americans",
+          "quote": "We\u2019re in a cost of living crisis in America.",
+          "sourceUrl": "https://x.com/RepTedLieu/status/2087553615678312609",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 1,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Supports innovative water scarcity solutions and Democratic tech investment",
+          "quote": "California\u2019s 36th Congressional District is home to many amazing tech companies \u2013 including Rainmaker.\n\nIt was a pleasure to see firsthand how Rainmaker\u2019s cloud seeding technology helps combat water scarcity in the U.S.\n\nDemocrats are working in Congress to support innovative tec",
+          "sourceUrl": "https://x.com/RepTedLieu/status/2085787672166166801",
+          "platform": "x"
+        }
+      ],
+      "active": false
     }
   ]
 }

@@ -6,23 +6,6 @@
   "stanceCount": 4,
   "topics": [
     {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "EEOC charges Tesla with tolerating racial harassment of Black employees",
-          "quote": "\u201cElectric car maker Tesla, Inc., violated federal law by tolerating widespread and ongoing racial harassment of its Black employees and by subjecting some of these workers to retaliation for opposing the harassment, the U.S. Equal Employment Opportunity Commission (EEOC) charged ",
-          "sourceUrl": "https://x.com/nhannahjones/status/2001079487552012586",
-          "platform": "x"
-        }
-      ]
-    },
-    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 3,
@@ -55,7 +38,26 @@
           "sourceUrl": "https://x.com/nhannahjones/status/1941945596996370938",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "EEOC charges Tesla with tolerating racial harassment of Black employees",
+          "quote": "\u201cElectric car maker Tesla, Inc., violated federal law by tolerating widespread and ongoing racial harassment of its Black employees and by subjecting some of these workers to retaliation for opposing the harassment, the U.S. Equal Employment Opportunity Commission (EEOC) charged ",
+          "sourceUrl": "https://x.com/nhannahjones/status/2001079487552012586",
+          "platform": "x"
+        }
+      ],
+      "active": false
     }
   ]
 }

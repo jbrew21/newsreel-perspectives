@@ -6,32 +6,6 @@
   "stanceCount": 35,
   "topics": [
     {
-      "topic": "education",
-      "label": "Education",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Announces new education funding and classroom investments for Michigan students",
-          "quote": "With Back to School season on the horizon, we\u2019re giving Michigan students and teachers some major new investments for when they return to the classroom.\n\nHere\u2019s what we\u2019ve done since last school year:",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2089377399829934214",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Supports expanding tuition-free higher education access",
-          "quote": "A great education opens doors - that's why we\u2019re lowering the cost of higher ed to ensure more Michiganders are set up for success.\n\nThis year, we're expanding Michigan reconnect to learners 21 or older, giving more Michiganders a tuition-free pathway to a higher education.",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2084693517197086796",
-          "platform": "x"
-        }
-      ]
-    },
-    {
       "topic": "housing-infrastructure",
       "label": "Housing & Infrastructure",
       "count": 12,
@@ -145,7 +119,35 @@
           "sourceUrl": "https://x.com/GovWhitmer/status/2082175412923142533",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Announces new education funding and classroom investments for Michigan students",
+          "quote": "With Back to School season on the horizon, we\u2019re giving Michigan students and teachers some major new investments for when they return to the classroom.\n\nHere\u2019s what we\u2019ve done since last school year:",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2089377399829934214",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Supports expanding tuition-free higher education access",
+          "quote": "A great education opens doors - that's why we\u2019re lowering the cost of higher ed to ensure more Michiganders are set up for success.\n\nThis year, we're expanding Michigan reconnect to learners 21 or older, giving more Michiganders a tuition-free pathway to a higher education.",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2084693517197086796",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "state-local-politics",
@@ -216,67 +218,8 @@
           "sourceUrl": "https://x.com/GovWhitmer/status/2079670354398576734",
           "platform": "x"
         }
-      ]
-    },
-    {
-      "topic": "gun-policy",
-      "label": "Guns & Gun Policy",
-      "count": 1,
-      "lastActive": "2026-08-12",
-      "stances": [
-        {
-          "date": "2026-08-12",
-          "topic": "gun-policy",
-          "stance": "strong",
-          "summary": "Promotes gun seizure operation, credits crime reduction success",
-          "quote": "Over 1,000 illegal guns off Michigan streets.\n\nThat's Operation Safe Neighborhoods: state and local law enforcement working together to get guns out of the wrong hands, part of the effort that's helped drive violent crime down 11% over the last 5 years.",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2087551100014530718",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 2,
-      "lastActive": "2026-08-12",
-      "stances": [
-        {
-          "date": "2026-08-12",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes Republican SNAP cuts to fund tax breaks for wealthy",
-          "quote": "145,000+ Michiganders have lost food assistance since DC Republicans\u00a0cut SNAP to fund tax breaks for the wealthy when they passed the Big Beautiful Bill. One of every three is a child.\n\nNo one should go to bed hungry, we deserve better from Washington. \n\u00a0\nmichiganadvance.com/2026",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2087280605323030939",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Celebrates passage of balanced, bipartisan budget",
-          "quote": "71 bills. 60+ minutes of signing. 1 balanced, bipartisan budget.\n\u00a0\nEver wondered how a budget gets signed? Here's a sneak peek:",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2085027825795420529",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "food-agriculture",
-      "label": "Food & Agriculture",
-      "count": 1,
-      "lastActive": "2026-08-11",
-      "stances": [
-        {
-          "date": "2026-08-11",
-          "topic": "food-agriculture",
-          "stance": "lean",
-          "summary": "Highlights Michigan dairy production and corporate investment",
-          "quote": "MI cows produce more milk per cow than any other U.S. state. \ud83d\udc04\ud83e\udd47\n\u00a0\nWhen @fairlife needed the good stuff for their $650M Coopersville investment, they knew where to look. ~200 new jobs, 2 new lines, powered by the hardest-working cows in America. That's the Michigan difference.",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2087208400371306856",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "economy-trade",
@@ -338,24 +281,35 @@
           "sourceUrl": "https://x.com/GovWhitmer/status/2084361801513193978",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2026-08-01",
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 2,
+      "lastActive": "2026-08-12",
       "stances": [
         {
-          "date": "2026-08-01",
-          "topic": "supreme-court-legal",
+          "date": "2026-08-12",
+          "topic": "congress-legislation",
           "stance": "strong",
-          "summary": "Celebrates Michigan Supreme Court restoring consumer protection safeguards",
-          "quote": "Today\u2019s decision is a landmark victory for Michigan consumers. @MIAttyGen Nessel\u2019s successful fight in this case restores the Michigan Consumer Protection Act as a safeguard. michiganadvance.com/briefs/m\u2026\n\nLink\n\n\n\nMichigan Supreme Court sides with Nessel, overrules cases curtaili",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2083336064958152716",
+          "summary": "Criticizes Republican SNAP cuts to fund tax breaks for wealthy",
+          "quote": "145,000+ Michiganders have lost food assistance since DC Republicans\u00a0cut SNAP to fund tax breaks for the wealthy when they passed the Big Beautiful Bill. One of every three is a child.\n\nNo one should go to bed hungry, we deserve better from Washington. \n\u00a0\nmichiganadvance.com/2026",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2087280605323030939",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Celebrates passage of balanced, bipartisan budget",
+          "quote": "71 bills. 60+ minutes of signing. 1 balanced, bipartisan budget.\n\u00a0\nEver wondered how a budget gets signed? Here's a sneak peek:",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2085027825795420529",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "healthcare",
@@ -381,7 +335,62 @@
           "sourceUrl": "https://x.com/GovWhitmer/status/2080020126565355655",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "gun-policy",
+      "label": "Guns & Gun Policy",
+      "count": 1,
+      "lastActive": "2026-08-12",
+      "stances": [
+        {
+          "date": "2026-08-12",
+          "topic": "gun-policy",
+          "stance": "strong",
+          "summary": "Promotes gun seizure operation, credits crime reduction success",
+          "quote": "Over 1,000 illegal guns off Michigan streets.\n\nThat's Operation Safe Neighborhoods: state and local law enforcement working together to get guns out of the wrong hands, part of the effort that's helped drive violent crime down 11% over the last 5 years.",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2087551100014530718",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
+      "count": 1,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "food-agriculture",
+          "stance": "lean",
+          "summary": "Highlights Michigan dairy production and corporate investment",
+          "quote": "MI cows produce more milk per cow than any other U.S. state. \ud83d\udc04\ud83e\udd47\n\u00a0\nWhen @fairlife needed the good stuff for their $650M Coopersville investment, they knew where to look. ~200 new jobs, 2 new lines, powered by the hardest-working cows in America. That's the Michigan difference.",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2087208400371306856",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 1,
+      "lastActive": "2026-08-01",
+      "stances": [
+        {
+          "date": "2026-08-01",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Celebrates Michigan Supreme Court restoring consumer protection safeguards",
+          "quote": "Today\u2019s decision is a landmark victory for Michigan consumers. @MIAttyGen Nessel\u2019s successful fight in this case restores the Michigan Consumer Protection Act as a safeguard. michiganadvance.com/briefs/m\u2026\n\nLink\n\n\n\nMichigan Supreme Court sides with Nessel, overrules cases curtaili",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2083336064958152716",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "abortion-reproductive",
@@ -398,7 +407,8 @@
           "sourceUrl": "https://x.com/GovWhitmer/status/2082904951731200198",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

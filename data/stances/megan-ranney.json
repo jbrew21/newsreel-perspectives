@@ -1,25 +1,52 @@
 {
   "voiceId": "megan-ranney",
   "voiceName": "Megan Ranney",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-28",
   "topicCount": 7,
-  "stanceCount": 13,
+  "stanceCount": 12,
   "topics": [
+    {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 1,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Skeptical attribution of health outcome to specific virus",
+          "quote": "Oh for sure. But unlikely to be because of this specific virus.",
+          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mlj5ck6l422l",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 1,
+      "lastActive": "2026-08-15",
+      "stances": [
+        {
+          "date": "2026-08-15",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Cyclosporiasis outbreak reveals gaps in U.S. public health capacity",
+          "quote": "Dean @meganranney.bsky.social joined CNN yesterday to discuss the current cyclosporiasis outbreak and what it can tell us about the current capacity of our nation's public health system.",
+          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mr3rgxfxac2h",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "science-space",
       "label": "Science & Space",
-      "count": 4,
-      "lastActive": "2026-08-29",
+      "count": 3,
+      "lastActive": "2026-07-29",
       "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "science-space",
-          "stance": "lean",
-          "summary": "Pandemic risk from Andes strain hantavirus is very low",
-          "quote": "Hot off the press. A well referenced high quality statement from the International Hantavirus Society. \n\nHigh level:\n- Andes strain is different\n- some spread will occur\n- pandemic potential is tremendously low\n- lots to learn\n- what happens next is up to us\nzenodo.org/records/20",
-          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mley7ymdec2u",
-          "platform": "bluesky"
-        },
         {
           "date": "2026-07-29",
           "topic": "science-space",
@@ -47,101 +74,8 @@
           "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mi3hrywigk2h",
           "platform": "bluesky"
         }
-      ]
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Expresses concern or criticism about upcoming legislation",
-          "quote": "\u26a0\ufe0f\u26a0\ufe0f here we go again\n\nrollcall.com/2026/03/27/s...",
-          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mi33andhmc2k",
-          "platform": "bluesky"
-        }
-      ]
-    },
-    {
-      "topic": "covid-pandemic",
-      "label": "COVID & Pandemic",
-      "count": 1,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Skeptical attribution of health outcome to specific virus",
-          "quote": "Oh for sure. But unlikely to be because of this specific virus.",
-          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mlj5ck6l422l",
-          "platform": "bluesky"
-        }
-      ]
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-08-15",
-      "stances": [
-        {
-          "date": "2026-08-15",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Cyclosporiasis outbreak reveals gaps in U.S. public health capacity",
-          "quote": "Dean @meganranney.bsky.social joined CNN yesterday to discuss the current cyclosporiasis outbreak and what it can tell us about the current capacity of our nation's public health system.",
-          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mr3rgxfxac2h",
-          "platform": "bluesky"
-        }
-      ]
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 1,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Promotes expert credibility and competent public health communication",
-          "quote": "To watch an interview with actual experts\u20142 of the best respected & most trusted experts in virology, @angierasmussen.bsky.social, & public health, @meganranney.bsky.social\u2014watch this CNN interview: observe their competence, expertise, experience, & strong messaging\n\nwww.linkedin",
-          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mlja6sjbjs2m",
-          "platform": "bluesky"
-        }
-      ]
-    },
-    {
-      "topic": "gun-policy",
-      "label": "Guns & Gun Policy",
-      "count": 2,
-      "lastActive": "2026-07-29",
-      "stances": [
-        {
-          "date": "2026-07-29",
-          "topic": "gun-policy",
-          "stance": "strong",
-          "summary": "Domestic violence shootings are common and predictive of mass shooting risk",
-          "quote": "\u201cmore than 70 women\u2026[are] shot &killed *every month* in the US due to domestic violence. & we find that DV shootings often overlap w/other types of shootings\u2026a history of DV is a big predictor for committing a mass shooting. & we also find that DV & suicide\u2026often overlap\u201d\ud83e\uddea\ud83d\udedf @mega",
-          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mjyzwjmgec2v",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "gun-policy",
-          "stance": "strong",
-          "summary": "Gun violence expert discusses overlap between domestic violence and mass shootings",
-          "quote": "After Deadly Louisiana Shooting, Doctor Shares the Realities of Domestic Violence\n\nGun violence expert & emergency physician Dr. Megan Ranney @meganranney.bsky.social discusses the mass shooting in Shreveport, Louisiana.\n\nHeard on @npr.org's Morning Edition hosted by @michelmarti",
-          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mjz3cwg2qs22",
-          "platform": "bluesky"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "trump-administration",
@@ -176,7 +110,71 @@
           "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mhb37uumfs23",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "gun-policy",
+      "label": "Guns & Gun Policy",
+      "count": 2,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "gun-policy",
+          "stance": "strong",
+          "summary": "Domestic violence shootings are common and predictive of mass shooting risk",
+          "quote": "\u201cmore than 70 women\u2026[are] shot &killed *every month* in the US due to domestic violence. & we find that DV shootings often overlap w/other types of shootings\u2026a history of DV is a big predictor for committing a mass shooting. & we also find that DV & suicide\u2026often overlap\u201d\ud83e\uddea\ud83d\udedf @mega",
+          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mjyzwjmgec2v",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "gun-policy",
+          "stance": "strong",
+          "summary": "Gun violence expert discusses overlap between domestic violence and mass shootings",
+          "quote": "After Deadly Louisiana Shooting, Doctor Shares the Realities of Domestic Violence\n\nGun violence expert & emergency physician Dr. Megan Ranney @meganranney.bsky.social discusses the mass shooting in Shreveport, Louisiana.\n\nHeard on @npr.org's Morning Edition hosted by @michelmarti",
+          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mjz3cwg2qs22",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Hantavirus outbreak has low pandemic potential, outcome depends on response",
+          "quote": "Hot off the press. A well referenced high quality statement from the International Hantavirus Society. \n\nHigh level:\n- Andes strain is different\n- some spread will occur\n- pandemic potential is tremendously low\n- lots to learn\n- what happens next is up to us\nzenodo.org/records/20",
+          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mley7ymdec2u",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Promotes expert credibility and competent public health communication",
+          "quote": "To watch an interview with actual experts\u20142 of the best respected & most trusted experts in virology, @angierasmussen.bsky.social, & public health, @meganranney.bsky.social\u2014watch this CNN interview: observe their competence, expertise, experience, & strong messaging\n\nwww.linkedin",
+          "sourceUrl": "https://bsky.app/profile/meganranney.bsky.social/post/3mlja6sjbjs2m",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
     }
   ]
 }

@@ -1,139 +1,45 @@
 {
   "voiceId": "bill-maher",
   "voiceName": "Bill Maher",
-  "updatedAt": "2026-08-29",
-  "topicCount": 14,
-  "stanceCount": 23,
+  "updatedAt": "2026-08-28",
+  "topicCount": 12,
+  "stanceCount": 19,
   "topics": [
     {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 6,
-      "lastActive": "2026-08-29",
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 3,
+      "lastActive": "2026-08-15",
       "stances": [
         {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Hunter Biden seeking redemption after conviction",
-          "quote": "Hunter Biden on Making Amends | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=xEGP_dd2zig",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "",
-          "quote": "Overtime with Bill Maher: Byron Donalds, Molly Jong-Fast, Michael S. Roth (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=jMIOtFoeE0M",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "",
-          "quote": "Overtime with Bill Maher: Dana Bash, Jeremy Peters (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=W9VyM8blMJU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "",
-          "quote": "Overtime with Bill Maher: Ryan Holiday, Andrew Cuomo, Kristen Soltis Anderson (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=gUvynycoi3s",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Interviews VP JD Vance on administration policies",
-          "quote": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=s63bVFyHk-o",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "trump-administration",
+          "date": "2026-08-15",
+          "topic": "immigration",
           "stance": "strong",
-          "summary": "Criticizes Trump's lack of substance or competence",
-          "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=nWVtaeqe8e0",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "billionaires-wealth",
-      "label": "Billionaires & Wealth",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "billionaires-wealth",
-          "stance": "lean",
-          "summary": "Critiques private equity industry influence",
-          "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Questions celebrity status of public health officials",
-          "quote": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=2tyF1UgSecU",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "climate-environment",
-          "stance": "strong",
-          "summary": "Criticizes America's inability to address climate change",
+          "summary": "Immigrants should assimilate into American culture",
           "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
           "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
           "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
+        },
         {
-          "date": "2026-08-29",
-          "topic": "uk-world-politics",
+          "date": "2026-08-15",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Immigrants should assimilate into American culture",
+          "quote": "If you\u2019re going to migrate to a country that is proudly a melting pot, you have to want to melt.",
+          "sourceUrl": "https://x.com/billmaher/status/2088464604821328298",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "immigration",
           "stance": "lean",
-          "summary": "Critiques Canadian politics or policy through comedic framing",
-          "quote": "Monologue: Canadian Achin' | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=u2URCI6CZi8",
-          "platform": "youtube"
+          "summary": "Critiques Spain's migrant border crisis via California comparison",
+          "quote": "Spain has been having a rough time. The northern part of the country is on fire, and the southern border is being overrun by migrants. So basically, it's California.",
+          "sourceUrl": "https://x.com/billmaher/status/2083390577375420520",
+          "platform": "x"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "culture-war",
@@ -159,7 +65,8 @@
           "sourceUrl": "https://x.com/billmaher/status/2076739307742937443",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "economy-trade",
@@ -185,55 +92,49 @@
           "sourceUrl": "https://x.com/billmaher/status/2087226786832892078",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
     },
     {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 2,
-      "lastActive": "2026-08-15",
-      "stances": [
-        {
-          "date": "2026-08-15",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Immigrants should assimilate into American culture",
-          "quote": "If you\u2019re going to migrate to a country that is proudly a melting pot, you have to want to melt.",
-          "sourceUrl": "https://x.com/billmaher/status/2088464604821328298",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Critiques Spain's migrant border crisis via California comparison",
-          "quote": "Spain has been having a rough time. The northern part of the country is on fire, and the southern border is being overrun by migrants. So basically, it's California.",
-          "sourceUrl": "https://x.com/billmaher/status/2083390577375420520",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "education",
-      "label": "Education",
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
       "count": 1,
-      "lastActive": "2026-08-11",
+      "lastActive": "2026-08-22",
       "stances": [
         {
-          "date": "2026-08-11",
-          "topic": "education",
+          "date": "2026-08-22",
+          "topic": "criminal-justice",
           "stance": "lean",
-          "summary": "Discusses NIL (Name, Image, Likeness) compensation for student athletes",
-          "quote": "Mike Rowe on NILFs | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=xiOUAz-IOtM",
+          "summary": "Platforms convicted felon's perspective on redemption and accountability",
+          "quote": "Hunter Biden on Making Amends | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=xEGP_dd2zig",
           "platform": "youtube"
         }
-      ]
+      ],
+      "active": true
+    },
+    {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 1,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Critiques private equity industry and its business practices",
+          "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
-      "count": 1,
+      "count": 2,
       "lastActive": "2026-08-10",
       "stances": [
         {
@@ -244,42 +145,45 @@
           "quote": "Turns out, with COVID-19, the really dangerous \u201cintimate contact\u201d wasn\u2019t shaking hands; it was kissing ass.",
           "sourceUrl": "https://x.com/billmaher/status/2085927244736938142",
           "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "ufo-paranormal",
-      "label": "UFOs & Paranormal",
-      "count": 1,
-      "lastActive": "2026-08-08",
-      "stances": [
+        },
         {
           "date": "2026-08-08",
-          "topic": "ufo-paranormal",
+          "topic": "covid-pandemic",
           "stance": "strong",
-          "summary": "Mocks UFO disclosure credibility via celebrity comparison",
-          "quote": "The White House released a new wave of UFO files. Sightings include a triangular craft in the sky, high-speed orbs near an army base, and a stick-like figure with large eyes, but that was just Ariana Grande.",
-          "sourceUrl": "https://x.com/billmaher/status/2085926015193477317",
-          "platform": "x"
+          "summary": "Criticizes Fauci's pursuit of fame and media attention",
+          "quote": "New Rule: Fauci &amp; Fame | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=2tyF1UgSecU",
+          "platform": "youtube"
         }
-      ]
+      ],
+      "active": false
     },
     {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 1,
-      "lastActive": "2026-08-01",
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 2,
+      "lastActive": "2026-07-29",
       "stances": [
         {
-          "date": "2026-08-01",
-          "topic": "israel-palestine",
+          "date": "2026-07-29",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Interviews VP JD Vance on administration policies",
+          "quote": "JD Vance - Full Interview | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=s63bVFyHk-o",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "trump-administration",
           "stance": "strong",
-          "summary": "Opposes voting for Cold War revisionism and pro-Intifada positions",
-          "quote": "I'm not voting for anyone who thinks the wrong side won the Cold War or cheers for the Intifada like it's the World Cup.",
-          "sourceUrl": "https://x.com/billmaher/status/2083391019182399653",
-          "platform": "x"
+          "summary": "Criticizes Trump's lack of substance or competence",
+          "quote": "Monologue: The Emperor Has No Close | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=nWVtaeqe8e0",
+          "platform": "youtube"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "elections",
@@ -305,7 +209,62 @@
           "sourceUrl": "https://x.com/billmaher/status/2073083300235903205",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Discusses NIL (Name, Image, Likeness) compensation for student athletes",
+          "quote": "Mike Rowe on NILFs | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=xiOUAz-IOtM",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "ufo-paranormal",
+      "label": "UFOs & Paranormal",
+      "count": 1,
+      "lastActive": "2026-08-08",
+      "stances": [
+        {
+          "date": "2026-08-08",
+          "topic": "ufo-paranormal",
+          "stance": "strong",
+          "summary": "Mocks UFO disclosure credibility via celebrity comparison",
+          "quote": "The White House released a new wave of UFO files. Sightings include a triangular craft in the sky, high-speed orbs near an army base, and a stick-like figure with large eyes, but that was just Ariana Grande.",
+          "sourceUrl": "https://x.com/billmaher/status/2085926015193477317",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 1,
+      "lastActive": "2026-08-01",
+      "stances": [
+        {
+          "date": "2026-08-01",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Opposes voting for Cold War revisionism and pro-Intifada positions",
+          "quote": "I'm not voting for anyone who thinks the wrong side won the Cold War or cheers for the Intifada like it's the World Cup.",
+          "sourceUrl": "https://x.com/billmaher/status/2083391019182399653",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "congress-legislation",
@@ -322,7 +281,8 @@
           "sourceUrl": "https://www.youtube.com/watch?v=qd0sjtmQVT8",
           "platform": "youtube"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

@@ -6,23 +6,6 @@
   "stanceCount": 24,
   "topics": [
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-08-16",
-      "stances": [
-        {
-          "date": "2026-08-16",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Emphasizes Tesla's domestic manufacturing advantage",
-          "quote": "Tesla cars sold in America are the most made in America of any cars",
-          "sourceUrl": "https://x.com/elonmusk/status/2088781747911819519",
-          "platform": "x"
-        }
-      ]
-    },
-    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
@@ -136,7 +119,8 @@
           "sourceUrl": "https://x.com/elonmusk/status/2082360969150529649",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "free-speech-censorship",
@@ -171,7 +155,26 @@
           "sourceUrl": "https://x.com/elonmusk/status/2087966834519675053",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 1,
+      "lastActive": "2026-08-16",
+      "stances": [
+        {
+          "date": "2026-08-16",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Emphasizes Tesla's domestic manufacturing advantage",
+          "quote": "Tesla cars sold in America are the most made in America of any cars",
+          "sourceUrl": "https://x.com/elonmusk/status/2088781747911819519",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "culture-war",
@@ -206,24 +209,8 @@
           "sourceUrl": "https://x.com/elonmusk/status/2085510467544314111",
           "platform": "x"
         }
-      ]
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 1,
-      "lastActive": "2026-08-08",
-      "stances": [
-        {
-          "date": "2026-08-08",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Criticizes Twitch for inconsistent content moderation standards",
-          "quote": "Why does Twitch have this double-standard?",
-          "sourceUrl": "https://x.com/elonmusk/status/2086111385449095456",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "foreign-policy-diplomacy",
@@ -249,7 +236,26 @@
           "sourceUrl": "https://x.com/elonmusk/status/2084276008073515443",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-08-08",
+      "stances": [
+        {
+          "date": "2026-08-08",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Criticizes Twitch for inconsistent content moderation standards",
+          "quote": "Why does Twitch have this double-standard?",
+          "sourceUrl": "https://x.com/elonmusk/status/2086111385449095456",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "immigration",
@@ -266,7 +272,8 @@
           "sourceUrl": "https://x.com/elonmusk/status/2082666044854804986",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "science-space",
@@ -283,7 +290,8 @@
           "sourceUrl": "https://x.com/elonmusk/status/2082367610835157028",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

@@ -1,34 +1,169 @@
 {
   "voiceId": "molly-white",
   "voiceName": "Molly White",
-  "updatedAt": "2026-08-29",
-  "topicCount": 8,
-  "stanceCount": 33,
+  "updatedAt": "2026-08-28",
+  "topicCount": 9,
+  "stanceCount": 32,
   "topics": [
     {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 9,
-      "lastActive": "2026-08-29",
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 7,
+      "lastActive": "2026-08-24",
       "stances": [
         {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
+          "date": "2026-08-24",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses skepticism about AI-generated news tips",
+          "quote": "i receive an incredible number of \"i was talking to my AI and it found this 'scoop' that i think you should write about\"",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mtu36nw5fc22",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Critiques AI platforms promoting themselves without human involvement",
+          "quote": "\"Hi Molly,\n\nI'm [product name] \u2014 an AI platform, and full disclosure: no human wrote this email. That's kind of the point.\"",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mttxmviqdc22",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Suggests Coinbase manipulated metrics to hide trading volume decline",
+          "quote": "Spotted in Coinbase\u2019s most recent 10-Q: Coinbase has stopped using trading volume as a key metric, which is I\u2019m sure completely unrelated to the 38%/48% decrease in spot trading volume they reported over the past three/six months",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstoo7on7u2t",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Crypto winter causing industry-wide closures and failures",
+          "quote": "Often when there\u2019s a \u201ccrypto winter\u201d, it can take a little while before we start to see the fallout. But it seems to be emerging now, with three crypto exchanges announcing shutdowns in July, and multiple high-profile web3 projects closing up shop recently.",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4jvies2z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Crypto winter causing industry-wide closures and failures",
+          "quote": "Newsletter: Firms close up shop amid a continued crypto winter, a Trump venture ditches its crypto plans, and the crypto industry\u2013friendly Clarity Act market structure bill fails to reach a vote before August recess \u2014 likely dooming it.\n\nwww.citationneeded.news/issue-108/",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4jce322z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "ai-technology",
           "stance": "strong",
-          "summary": "Criticizes Trump's executive order naming the Gulf of America",
+          "summary": "Argues workers need union organizing, not AI solutions",
+          "quote": "If you have so much work to do that you feel you need AI in order to get it all done: you don't. You need a union.",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3msmb5zbkis2h",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights previously identified tech policy issue gaining attention",
+          "quote": "It's a year and a half after i highlighted the issue, but nice to see: arstechnica.com/tech-policy/...",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3msdydmny7k2p",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 5,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Highlights billionaire's alleged extortion and reputation attacks",
+          "quote": "Jing has released a statement that Sun is attempting to extort her by attacking her reputation, and that she intends to leave the matter \"entirely to the courts\".",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mu3i5huvlh2i",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Trump Media reports massive losses, abandons crypto partnerships",
+          "quote": "Trump\u2019s own Trump Media & Technology Group just posted a $238\u00a0million net loss. While TMTG regularly reports huge net losses, this time they were accompanied by announcements that the firm would be unwinding multiple planned partnerships with crypto exchange and Trump megadonor C",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4krhv22z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Criticizes World Liberty Financial and its backers as abhorrent",
+          "quote": "When Justin Sun, of all people, is the hero of a story then the villains are truly abhorrent",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrpws3nor22n",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Highlights shady characters in World Liberty Financial, including Justin Sun",
+          "quote": "This article is a great deep dive into some of the shady characters behind World Liberty Financial \u2014 Justin Sun among them, despite his recent efforts to distance himself from the project. (He likely hoped this interview would help, and it is a little friendly, but rightly points",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrpwktytt226",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Criticizes Elon Musk's arguments and endorsements as unambiguous",
+          "quote": "There is simply no ambiguity in what Elon Musk is arguing and endorsing here.",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrjzbrhgxk2q",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Dismisses Trump's executive order renaming as lacking authority over Wikipedia",
           "quote": "The TL;DR about how Wikipedia handles naming disputes like this: Wikipedia is not governed by Donald Trump and his dumb executive orders, and if no one actually adopts his names Wikipedia won't either.",
           "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mu3rhbhntk2h",
           "platform": "bluesky"
         },
         {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
+          "date": "2026-08-28",
+          "topic": "trump-policy",
           "stance": "strong",
-          "summary": "Dismisses Gulf of America naming as unpopular and unlikely to be adopted",
+          "summary": "Mocks widespread adoption prospects for Trump's 'Gulf of America' naming order",
           "quote": "if you're wondering how this is likely to shake out, the name \"Gulf of America\" isn't mentioned in the lead of this Wikipedia article at all, and out of the three sentences it earns later on, one is about how stupid people think it is",
           "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mu3rbxatyc2h",
           "platform": "bluesky"
-        },
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 7,
+      "lastActive": "2026-08-14",
+      "stances": [
         {
           "date": "2026-08-14",
           "topic": "trump-administration",
@@ -92,175 +227,8 @@
           "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrn2d63p5226",
           "platform": "bluesky"
         }
-      ]
-    },
-    {
-      "topic": "billionaires-wealth",
-      "label": "Billionaires & Wealth",
-      "count": 6,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Criticizes tech billionaires making dubious health claims online",
-          "quote": "there should be a term for the specific psychosis that kicks in once a tech founder's net worth hits ten figures and he starts talking about AMH levels",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mu3j2ow3i22d",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "billionaires-wealth",
-          "stance": "lean",
-          "summary": "Highlights alleged extortion attempt by wealthy crypto figure",
-          "quote": "Jing has released a statement that Sun is attempting to extort her by attacking her reputation, and that she intends to leave the matter \"entirely to the courts\".",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mu3i5huvlh2i",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "billionaires-wealth",
-          "stance": "lean",
-          "summary": "Trump Media reports massive losses, abandons crypto partnerships",
-          "quote": "Trump\u2019s own Trump Media & Technology Group just posted a $238\u00a0million net loss. While TMTG regularly reports huge net losses, this time they were accompanied by announcements that the firm would be unwinding multiple planned partnerships with crypto exchange and Trump megadonor C",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4krhv22z",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Criticizes World Liberty Financial and its backers as abhorrent",
-          "quote": "When Justin Sun, of all people, is the hero of a story then the villains are truly abhorrent",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrpws3nor22n",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Highlights shady characters in World Liberty Financial, including Justin Sun",
-          "quote": "This article is a great deep dive into some of the shady characters behind World Liberty Financial \u2014 Justin Sun among them, despite his recent efforts to distance himself from the project. (He likely hoped this interview would help, and it is a little friendly, but rightly points",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrpwktytt226",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Criticizes Elon Musk's arguments and endorsements as unambiguous",
-          "quote": "There is simply no ambiguity in what Elon Musk is arguing and endorsing here.",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrjzbrhgxk2q",
-          "platform": "bluesky"
-        }
-      ]
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 3,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes uncredited adaptation and plagiarism despite author acknowledgment",
-          "quote": "i know when i sneakily steal someone's book to create an unauthorized and uncredited adaptation i always make sure to write \"It is not possible for me to overstate how important Rachel Hope Cleves\u2019 book on the subject was\" and point readers \"towards our Holy Mother of knowledge R",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3msyoo42g7k2t",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes lack of professional standards in reputation management",
-          "quote": "i never thought i'd miss the day when these guys at least had to hire dubious \"reputation management consultants\"",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3ms5nfxmyzs2p",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Highlights text recovery and archival challenges in digital preservation",
-          "quote": "This is just to say\n\nI have OCRed\nthe text\nthet was in\ntne arch:ve\n\nand whicb\nyov were prabaldy\nseamhing\nfor \"breahtast\"\n\nFargme ms\nfheg mem debo:w5\nsb ?mccf\nmmb 5c oc1b",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrpxvkcgnc2m",
-          "platform": "bluesky"
-        }
-      ]
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 7,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Skeptical of AI-generated scoops from readers",
-          "quote": "i receive an incredible number of \"i was talking to my AI and it found this 'scoop' that i think you should write about\"",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mtu36nw5fc22",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Critical observation of AI-written marketing without human disclosure",
-          "quote": "\"Hi Molly,\n\nI'm [product name] \u2014 an AI platform, and full disclosure: no human wrote this email. That's kind of the point.\"",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mttxmviqdc22",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Suggests Coinbase manipulated metrics to hide trading volume decline",
-          "quote": "Spotted in Coinbase\u2019s most recent 10-Q: Coinbase has stopped using trading volume as a key metric, which is I\u2019m sure completely unrelated to the 38%/48% decrease in spot trading volume they reported over the past three/six months",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstoo7on7u2t",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Crypto winter causing industry-wide closures and failures",
-          "quote": "Often when there\u2019s a \u201ccrypto winter\u201d, it can take a little while before we start to see the fallout. But it seems to be emerging now, with three crypto exchanges announcing shutdowns in July, and multiple high-profile web3 projects closing up shop recently.",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4jvies2z",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Crypto winter causing industry-wide closures and failures",
-          "quote": "Newsletter: Firms close up shop amid a continued crypto winter, a Trump venture ditches its crypto plans, and the crypto industry\u2013friendly Clarity Act market structure bill fails to reach a vote before August recess \u2014 likely dooming it.\n\nwww.citationneeded.news/issue-108/",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4jce322z",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Argues workers need union organizing, not AI solutions",
-          "quote": "If you have so much work to do that you feel you need AI in order to get it all done: you don't. You need a union.",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3msmb5zbkis2h",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Highlights previously identified tech policy issue gaining attention",
-          "quote": "It's a year and a half after i highlighted the issue, but nice to see: arstechnica.com/tech-policy/...",
-          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3msdydmny7k2p",
-          "platform": "bluesky"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "free-speech-censorship",
@@ -313,7 +281,44 @@
           "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3ms5mdhk5de2u",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 3,
+      "lastActive": "2026-08-14",
+      "stances": [
+        {
+          "date": "2026-08-14",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes unauthorized adaptation lacking proper attribution",
+          "quote": "i know when i sneakily steal someone's book to create an unauthorized and uncredited adaptation i always make sure to write \"It is not possible for me to overstate how important Rachel Hope Cleves\u2019 book on the subject was\" and point readers \"towards our Holy Mother of knowledge R",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3msyoo42g7k2t",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes lack of professional standards in reputation management",
+          "quote": "i never thought i'd miss the day when these guys at least had to hire dubious \"reputation management consultants\"",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3ms5nfxmyzs2p",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Highlights text recovery and archival challenges in digital preservation",
+          "quote": "This is just to say\n\nI have OCRed\nthe text\nthet was in\ntne arch:ve\n\nand whicb\nyov were prabaldy\nseamhing\nfor \"breahtast\"\n\nFargme ms\nfheg mem debo:w5\nsb ?mccf\nmmb 5c oc1b",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mrpxvkcgnc2m",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "elections",
@@ -330,7 +335,8 @@
           "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4skin22z",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "economy-trade",
@@ -347,7 +353,8 @@
           "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4ozzys2z",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "congress-legislation",
@@ -364,7 +371,8 @@
           "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mstn4mjiu22z",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

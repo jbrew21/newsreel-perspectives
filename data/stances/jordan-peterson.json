@@ -74,68 +74,8 @@
           "sourceUrl": "https://x.com/jordanbpeterson/status/2078199362841436248",
           "platform": "x"
         }
-      ]
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 2,
-      "lastActive": "2026-08-11",
-      "stances": [
-        {
-          "date": "2026-08-11",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Productivity gains correlate with significant income increases",
-          "quote": "\u201cIf you work 10% longer hours, you make 40% more money.\u201d",
-          "sourceUrl": "https://www.youtube.com/shorts/C1z76W9wOrw",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Western economic surrender to China, condemns elite hypocrisy",
-          "quote": "The West is handing over the world's economy to China. To China, for God's sake: an unimaginably brutal totalitarian regime. \n\nAnd why? \nSo our hypocritical elite can continue to style themselves as planetary saviors?\n\nEnough demoralizing doom-crying. \n\nEnough despicable praying ",
-          "sourceUrl": "https://x.com/jordanbpeterson/status/2085075376720785593",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
-      "count": 3,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "climate-environment",
-          "stance": "strong",
-          "summary": "Climate models failed to predict ecosystem changes; questions their credibility",
-          "quote": "The doomsaying climate modellers completely missed the biggest transformation of the Earth's ecosystem in the last thirty years.\n\nWait: it's worse than that. They predicted exactly the opposite of what has happened.\n\nHow can we possibly justify continuing to trust them?\n\nThe plan",
-          "sourceUrl": "https://x.com/jordanbpeterson/status/2085742769243668674",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "climate-environment",
-          "stance": "strong",
-          "summary": "Disputes climate change narrative, claims planet greening and deserts shrinking",
-          "quote": "Everybody knows the deserts are expanding.\n\nEverybody knows that climate change threatens our food supplies.\n\nLIES. LIES. LIES. LIES. LIES. LIES.\n\nThe planet is greener, by an area 3x that of the Amazon. The Sahara is shrinking fast. Crops are thriving like never before.\n\nEnough ",
-          "sourceUrl": "https://x.com/jordanbpeterson/status/2084670704742527257",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Critiques moral panic over air conditioning and temperature concerns",
-          "quote": "Article\n\n\n\nTwenty Green Years: An Inconvenient Truth\n\nPart 1: How Cool Are We Allowed to Get?\nA moral panic over air conditioning recently raged across the West as high summer temperatures produced the usual flood of exaggerated concerns. Britons were",
-          "sourceUrl": "https://x.com/jordanbpeterson/status/2083229750382694636",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",
@@ -179,7 +119,8 @@
           "sourceUrl": "https://x.com/jordanbpeterson/status/2080684436572496201",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "religion-faith",
@@ -223,7 +164,71 @@
           "sourceUrl": "https://x.com/jordanbpeterson/status/2079677416805650495",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 3,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Climate models failed to predict ecosystem changes; questions their credibility",
+          "quote": "The doomsaying climate modellers completely missed the biggest transformation of the Earth's ecosystem in the last thirty years.\n\nWait: it's worse than that. They predicted exactly the opposite of what has happened.\n\nHow can we possibly justify continuing to trust them?\n\nThe plan",
+          "sourceUrl": "https://x.com/jordanbpeterson/status/2085742769243668674",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Disputes climate change narrative, claims planet greening and deserts shrinking",
+          "quote": "Everybody knows the deserts are expanding.\n\nEverybody knows that climate change threatens our food supplies.\n\nLIES. LIES. LIES. LIES. LIES. LIES.\n\nThe planet is greener, by an area 3x that of the Amazon. The Sahara is shrinking fast. Crops are thriving like never before.\n\nEnough ",
+          "sourceUrl": "https://x.com/jordanbpeterson/status/2084670704742527257",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Critiques moral panic over air conditioning and temperature concerns",
+          "quote": "Article\n\n\n\nTwenty Green Years: An Inconvenient Truth\n\nPart 1: How Cool Are We Allowed to Get?\nA moral panic over air conditioning recently raged across the West as high summer temperatures produced the usual flood of exaggerated concerns. Britons were",
+          "sourceUrl": "https://x.com/jordanbpeterson/status/2083229750382694636",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Productivity gains correlate with significant income increases",
+          "quote": "\u201cIf you work 10% longer hours, you make 40% more money.\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/C1z76W9wOrw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Western economic surrender to China, condemns elite hypocrisy",
+          "quote": "The West is handing over the world's economy to China. To China, for God's sake: an unimaginably brutal totalitarian regime. \n\nAnd why? \nSo our hypocritical elite can continue to style themselves as planetary saviors?\n\nEnough demoralizing doom-crying. \n\nEnough despicable praying ",
+          "sourceUrl": "https://x.com/jordanbpeterson/status/2085075376720785593",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "media-personalities",
@@ -249,7 +254,8 @@
           "sourceUrl": "https://x.com/jordanbpeterson/status/2080541619636584911",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "media-press",
@@ -266,7 +272,8 @@
           "sourceUrl": "https://x.com/jordanbpeterson/status/2080541745868378546",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "uk-world-politics",
@@ -283,7 +290,8 @@
           "sourceUrl": "https://x.com/jordanbpeterson/status/2079970018914381974",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

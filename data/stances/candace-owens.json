@@ -1,36 +1,10 @@
 {
   "voiceId": "candace-owens",
   "voiceName": "Candace Owens",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-28",
   "topicCount": 11,
   "stanceCount": 43,
   "topics": [
-    {
-      "topic": "free-speech-censorship",
-      "label": "Free Speech & Censorship",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "free-speech-censorship",
-          "stance": "strong",
-          "summary": "Defends against cancel culture, asserts personal resilience",
-          "quote": "She\u2019s Real, She\u2019s Honest, She\u2019s Uncancelable",
-          "sourceUrl": "https://www.youtube.com/watch?v=sVgZrx4VfpI",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "free-speech-censorship",
-          "stance": "strong",
-          "summary": "Defends against cancel culture, asserts personal resilience",
-          "quote": "She\u2019s Real, She\u2019s Honest, She\u2019s Uncancelable",
-          "sourceUrl": "https://www.youtube.com/shorts/Z_KLm2LmIA4",
-          "platform": "youtube"
-        }
-      ]
-    },
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
@@ -145,7 +119,8 @@
           "sourceUrl": "https://x.com/RealCandaceO/status/2088247171606773885",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "criminal-justice",
@@ -261,7 +236,8 @@
           "sourceUrl": "https://x.com/RealCandaceO/status/2082292534009557009",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "supreme-court-legal",
@@ -287,7 +263,35 @@
           "sourceUrl": "https://x.com/RealCandaceO/status/2087532689733689370",
           "platform": "x"
         }
-      ]
+      ],
+      "active": true
+    },
+    {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Positions self as resistant to cancel culture and censorship",
+          "quote": "She\u2019s Real, She\u2019s Honest, She\u2019s Uncancelable",
+          "sourceUrl": "https://www.youtube.com/watch?v=sVgZrx4VfpI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Frames herself as honest and resistant to cancellation",
+          "quote": "She\u2019s Real, She\u2019s Honest, She\u2019s Uncancelable",
+          "sourceUrl": "https://www.youtube.com/shorts/Z_KLm2LmIA4",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "billionaires-wealth",
@@ -331,59 +335,8 @@
           "sourceUrl": "https://x.com/RealCandaceO/status/2085350781931106623",
           "platform": "x"
         }
-      ]
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 1,
-      "lastActive": "2026-08-10",
-      "stances": [
-        {
-          "date": "2026-08-10",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Suggests political sacrifice necessary for party unity",
-          "quote": "\u201cCharlie had to die so we could unite the party\u201d.",
-          "sourceUrl": "https://x.com/RealCandaceO/status/2086880869671645315",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 3,
-      "lastActive": "2026-08-09",
-      "stances": [
-        {
-          "date": "2026-08-09",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Claims punishment for stating genocide is wrong, criticizes Zionists",
-          "quote": "This has been my punishment since tweeting \u201cGenocide is always wrong\u201d. \n\nThese people are truly demented in a way that\u2019s difficult for non-Zionists to comprehend.",
-          "sourceUrl": "https://x.com/RealCandaceO/status/2086262336436781197",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Criticizes Israel's alleged involvement in human trafficking networks",
-          "quote": "Have they tried listening to the will of their people and not starting conflicts to protect and expand the Epstein network?\nIt\u2019s certainly an unconventional idea, but how about not siding with Israel\u2019s global human trafficking ring and sending us halfwit pastors and influencers t",
-          "sourceUrl": "https://x.com/RealCandaceO/status/2084292700329640224",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Alleges Netanyahu visit driven by ulterior motive to order killings for territorial expansion",
-          "quote": "Bibi is slated to be here under the guise of Lindsay Graham\u2019s funeral. \n\nNote: you are an idiot if you think Bibi comes to America for any reason other than dictate instructions on who else must be murdered for the empire of Baal to expand.",
-          "sourceUrl": "https://x.com/RealCandaceO/status/2081812493421154413",
-          "platform": "x"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "terrorism",
@@ -427,7 +380,62 @@
           "sourceUrl": "https://x.com/RealCandaceO/status/2083297081842683977",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 3,
+      "lastActive": "2026-08-09",
+      "stances": [
+        {
+          "date": "2026-08-09",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Claims punishment for stating genocide is wrong, criticizes Zionists",
+          "quote": "This has been my punishment since tweeting \u201cGenocide is always wrong\u201d. \n\nThese people are truly demented in a way that\u2019s difficult for non-Zionists to comprehend.",
+          "sourceUrl": "https://x.com/RealCandaceO/status/2086262336436781197",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Criticizes Israel's alleged involvement in human trafficking networks",
+          "quote": "Have they tried listening to the will of their people and not starting conflicts to protect and expand the Epstein network?\nIt\u2019s certainly an unconventional idea, but how about not siding with Israel\u2019s global human trafficking ring and sending us halfwit pastors and influencers t",
+          "sourceUrl": "https://x.com/RealCandaceO/status/2084292700329640224",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Alleges Netanyahu visit driven by ulterior motive to order killings for territorial expansion",
+          "quote": "Bibi is slated to be here under the guise of Lindsay Graham\u2019s funeral. \n\nNote: you are an idiot if you think Bibi comes to America for any reason other than dictate instructions on who else must be murdered for the empire of Baal to expand.",
+          "sourceUrl": "https://x.com/RealCandaceO/status/2081812493421154413",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-08-10",
+      "stances": [
+        {
+          "date": "2026-08-10",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Suggests political sacrifice necessary for party unity",
+          "quote": "\u201cCharlie had to die so we could unite the party\u201d.",
+          "sourceUrl": "https://x.com/RealCandaceO/status/2086880869671645315",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "foreign-policy-diplomacy",
@@ -444,7 +452,8 @@
           "sourceUrl": "https://x.com/RealCandaceO/status/2082848077858136507",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "epstein-scandal",
@@ -461,7 +470,8 @@
           "sourceUrl": "https://x.com/RealCandaceO/status/2082118031665176758",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "iran-conflict",
@@ -478,7 +488,8 @@
           "sourceUrl": "https://x.com/RealCandaceO/status/2080826787517346016",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

@@ -1,41 +1,32 @@
 {
   "voiceId": "ramesh-ponnuru",
   "voiceName": "Ramesh Ponnuru",
-  "updatedAt": "2026-08-29",
-  "topicCount": 13,
+  "updatedAt": "2026-08-28",
+  "topicCount": 15,
   "stanceCount": 28,
   "topics": [
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 7,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-25",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-25",
           "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Questions whether dollar dominance benefits U.S. interests",
+          "summary": "Critiques vice president's framing of dollar dominance as negative",
           "quote": "Dethroning King Dollar. The vice president thinks the dollar\u2019s global status is a curse.",
           "sourceUrl": "https://www.nationalreview.com/corner/dethroning-king-dollar/",
           "platform": "substack"
         },
         {
-          "date": "2026-08-29",
+          "date": "2026-08-24",
           "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Argues Canadian trade war creates political opportunity in Michigan",
+          "summary": "Trade war with Canada will harm Michigan's economy",
           "quote": "The Latest Trade War Helps El-Sayed. The trade war with Canada will hit Michigan particularly hard.",
           "sourceUrl": "https://www.nationalreview.com/corner/the-latest-trade-war-helps-el-sayed/",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Jobs report criticism misses population growth context",
-          "quote": "The Allegedly Awful Jobs Report. Our sense of what counts as a bad or good jobs report hasn\u2019t kept up with population trends.",
-          "sourceUrl": "https://www.nationalreview.com/corner/the-allegedly-awful-jobs-report/",
           "platform": "substack"
         },
         {
@@ -68,29 +59,30 @@
         {
           "date": "2026-08-11",
           "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Jobs report analysis outdated relative to demographic shifts",
+          "quote": "The Allegedly Awful Jobs Report. Our sense of what counts as a bad or good jobs report hasn\u2019t kept up with population trends.",
+          "sourceUrl": "https://www.nationalreview.com/corner/the-allegedly-awful-jobs-report/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "economy-trade",
           "stance": "strong",
           "summary": "Opposes raising Federal Reserve inflation target",
           "quote": "Don&#8217;t Raise the Inflation Target. If the Fed decides it\u2019s too painful to reach 2 percent \u2014 even with unemployment low \u2014 how is its new target going to have any credibility?",
           "sourceUrl": "https://www.nationalreview.com/corner/dont-raise-the-inflation-target/",
           "platform": "substack"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 3,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-18",
       "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Identifies GOP opportunity to exploit Democratic Medicare for All support",
-          "quote": "A Republican Opportunity on Health Care. This year, Democrats are running three Senate nominees who have endorsed the idea of Medicare for All.",
-          "sourceUrl": "https://www.nationalreview.com/corner/a-republican-opportunity-on-health-care/",
-          "platform": "substack"
-        },
         {
           "date": "2026-08-18",
           "topic": "healthcare",
@@ -108,172 +100,27 @@
           "quote": "The last time Medicare for All was the subject of a national debate, a poll found that 2/3rds of its supporters believed it would let people keep their existing health insurance.",
           "sourceUrl": "https://x.com/RameshPonnuru/status/2089414389162008721",
           "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "trump-policy",
-          "stance": "lean",
-          "summary": "Agrees with Vance's approach but warns Trump policies may undermine strategy",
-          "quote": "Vance on How Republicans Can Fight Socialism. He\u2019s right to say that criticizing young people for being lazy won\u2019t win them over. But the results of Trumponomics so far hold a warning for Republicans.",
-          "sourceUrl": "https://www.nationalreview.com/corner/vance-on-how-republicans-can-fight-socialism/",
-          "platform": "substack"
         },
         {
-          "date": "2026-08-14",
-          "topic": "trump-policy",
+          "date": "2026-08-17",
+          "topic": "healthcare",
           "stance": "lean",
-          "summary": "Acknowledges Trump economic approach appeal but notes voter skepticism",
-          "quote": "Vance made a number of important and sound points. But voters, and especially the young people he talked about, are not warming up to what he calls Trump's \"unique and refreshing\" approach to the economy.",
-          "sourceUrl": "https://x.com/RameshPonnuru/status/2088343218962239983",
-          "platform": "x"
-        }
-      ]
-    },
-    {
-      "topic": "drugs-addiction",
-      "label": "Drugs & Addiction",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "drugs-addiction",
-          "stance": "lean",
-          "summary": "Suggests public marijuana ban could reverse legalization momentum",
-          "quote": "Why the Tide Might Turn on Marijuana. A backlash might start with a ban on public pot-smoking.",
-          "sourceUrl": "https://www.nationalreview.com/corner/why-the-tide-might-turn-on-marijuana/",
+          "summary": "Republicans should capitalize on Democrats' Medicare for All positions",
+          "quote": "A Republican Opportunity on Health Care. This year, Democrats are running three Senate nominees who have endorsed the idea of Medicare for All.",
+          "sourceUrl": "https://www.nationalreview.com/corner/a-republican-opportunity-on-health-care/",
           "platform": "substack"
         }
-      ]
-    },
-    {
-      "topic": "abortion-reproductive",
-      "label": "Abortion & Reproductive Rights",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "abortion-reproductive",
-          "stance": "lean",
-          "summary": "Questions justification for Massachusetts late-term abortion law",
-          "quote": "On Late-Term Abortion, Massachusetts Removes the Fig Leaf. What, after all, was the problem the new law was enacted to address?",
-          "sourceUrl": "https://www.nationalreview.com/corner/on-late-term-abortion-massachusetts-removes-the-fig-leaf/",
-          "platform": "substack"
-        }
-      ]
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Advocates clarifying legislative priorities before reforming filibuster",
-          "quote": "What Do We Want Congress to Do?. Before deciding whether to change the filibuster, we should decide what we actually want Congress to do.",
-          "sourceUrl": "https://www.nationalreview.com/corner/what-do-we-want-congress-to-do/",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Argues filibuster design reflects outdated political conditions",
-          "quote": "Does the Filibuster Make Sense Anymore?. The filibuster was designed for a different political era. Is it still worth preserving?",
-          "sourceUrl": "https://www.nationalreview.com/corner/does-the-filibuster-make-sense-anymore/",
-          "platform": "substack"
-        }
-      ]
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Argues Trump had authority to remove Fauci but chose not to",
-          "quote": "Firing Fauci. Trump had enormous discretion over Fauci\u2019s role. There was nothing inevitable about Fauci\u2019s becoming the face of the federal government\u2019s Covid-19 response.",
-          "sourceUrl": "https://www.nationalreview.com/corner/firing-fauci/",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump for deliberately running dysfunctional administration with Fauci",
-          "quote": "Fauci&#8217;s Great Enabler. Trump had all the power he needed to dismiss Fauci. He just chose to run his administration dysfunctionally.",
-          "sourceUrl": "https://www.nationalreview.com/corner/faucis-great-enabler/",
-          "platform": "substack"
-        }
-      ]
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Condemns AI-publisher relationship as parasitic",
-          "quote": "AI vs. Journalism. The relationship between AI and publishers is parasitic.",
-          "sourceUrl": "https://www.nationalreview.com/corner/ai-vs-journalism/",
-          "platform": "substack"
-        }
-      ]
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "",
-          "quote": "A Well-Wisher Advises El-Sayed",
-          "sourceUrl": "https://www.nationalreview.com/corner/a-well-wisher-advises-el-sayed/",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "",
-          "quote": "The First Socialist Governor . . .",
-          "sourceUrl": "https://www.nationalreview.com/corner/the-first-socialist-governor/",
-          "platform": "substack"
-        }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 3,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-13",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-13",
           "topic": "supreme-court-legal",
           "stance": "lean",
           "summary": "Notes Republican erosion of Supreme Court confidence",
@@ -299,7 +146,62 @@
           "sourceUrl": "https://www.nationalreview.com/corner/sotomayor-slaughters-hamilton/",
           "platform": "substack"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-08-14",
+      "stances": [
+        {
+          "date": "2026-08-14",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Agrees with Vance's critique of lazy criticism, warns of Trumponomics risks",
+          "quote": "Vance on How Republicans Can Fight Socialism. He\u2019s right to say that criticizing young people for being lazy won\u2019t work. But the results of Trumponomics so far hold a warning for Republicans.",
+          "sourceUrl": "https://www.nationalreview.com/corner/vance-on-how-republicans-can-fight-socialism/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Acknowledges Trump economic approach appeal but notes voter skepticism",
+          "quote": "Vance made a number of important and sound points. But voters, and especially the young people he talked about, are not warming up to what he calls Trump's \"unique and refreshing\" approach to the economy.",
+          "sourceUrl": "https://x.com/RameshPonnuru/status/2088343218962239983",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 2,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Urges clarity on legislative goals before filibuster reform",
+          "quote": "What Do We Want Congress to Do?. Before deciding whether to change the filibuster, we should decide what we actually want Congress to do.",
+          "sourceUrl": "https://www.nationalreview.com/corner/what-do-we-want-congress-to-do/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Questions filibuster relevance in modern political era",
+          "quote": "Does the Filibuster Make Sense Anymore?. The filibuster was designed for a different political era. Is it still worth preserving?",
+          "sourceUrl": "https://www.nationalreview.com/corner/does-the-filibuster-make-sense-anymore/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "media-press",
@@ -325,7 +227,134 @@
           "sourceUrl": "https://www.nationalreview.com/corner/no-fun-with-sally-quinn-and-maga/",
           "platform": "substack"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "drugs-addiction",
+      "label": "Drugs & Addiction",
+      "count": 1,
+      "lastActive": "2026-08-13",
+      "stances": [
+        {
+          "date": "2026-08-13",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Suggests marijuana policy backlash may emerge from public smoking concerns",
+          "quote": "Why the Tide Might Turn on Marijuana. A backlash might start with a ban on public pot-smoking.",
+          "sourceUrl": "https://www.nationalreview.com/corner/why-the-tide-might-turn-on-marijuana/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "abortion-reproductive",
+      "label": "Abortion & Reproductive Rights",
+      "count": 1,
+      "lastActive": "2026-08-13",
+      "stances": [
+        {
+          "date": "2026-08-13",
+          "topic": "abortion-reproductive",
+          "stance": "lean",
+          "summary": "Questions Massachusetts late-term abortion law's stated rationale",
+          "quote": "On Late-Term Abortion, Massachusetts Removes the Fig Leaf. What, after all, was the problem the new law was enacted to address?",
+          "sourceUrl": "https://www.nationalreview.com/corner/on-late-term-abortion-massachusetts-removes-the-fig-leaf/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Critical perspective on candidate El-Sayed's political positioning",
+          "quote": "A Well-Wisher Advises El-Sayed",
+          "sourceUrl": "https://www.nationalreview.com/corner/a-well-wisher-advises-el-sayed/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 1,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Trump had discretion to limit Fauci's pandemic role",
+          "quote": "Firing Fauci. Trump had enormous discretion over Fauci\u2019s role. There was nothing inevitable about Fauci\u2019s becoming the face of the federal government\u2019s Covid-19 response.",
+          "sourceUrl": "https://www.nationalreview.com/corner/firing-fauci/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump for running administration dysfunctionally",
+          "quote": "Fauci&#8217;s Great Enabler. Trump had all the power he needed to dismiss Fauci. He just chose to run his administration dysfunctionally.",
+          "sourceUrl": "https://www.nationalreview.com/corner/faucis-great-enabler/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "AI-publisher relationship is parasitic",
+          "quote": "AI vs. Journalism. The relationship between AI and publishers is parasitic.",
+          "sourceUrl": "https://www.nationalreview.com/corner/ai-vs-journalism/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 1,
+      "lastActive": "2026-08-11",
+      "stances": [
+        {
+          "date": "2026-08-11",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Commentary on socialist governor, framing suggests skepticism",
+          "quote": "The First Socialist Governor . . .",
+          "sourceUrl": "https://www.nationalreview.com/corner/the-first-socialist-governor/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "immigration",
@@ -342,7 +371,8 @@
           "sourceUrl": "https://www.nationalreview.com/corner/birthrates-and-immigration/",
           "platform": "substack"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "culture-war",
@@ -359,7 +389,8 @@
           "sourceUrl": "https://x.com/RameshPonnuru/status/2086935086583132387",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

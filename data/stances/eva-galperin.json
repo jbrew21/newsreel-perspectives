@@ -1,41 +1,131 @@
 {
   "voiceId": "eva-galperin",
   "voiceName": "Eva Galperin",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-28",
   "topicCount": 7,
   "stanceCount": 29,
   "topics": [
     {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 9,
-      "lastActive": "2026-08-29",
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 11,
+      "lastActive": "2026-08-27",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-27",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses critical skepticism about Meta settlement terms",
+          "quote": "Reading the Meta settlement and I'm very tired and I just want someone else to tell me why I hate this.",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtzgbw6l4c2l",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Warns non-technical people about real cybersecurity threat",
+          "quote": "Sometimes I hear non-technical people speculating that this is a thing that could happen and I am posting it here to let them know that yes, this is a thing that happens.",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtytkntg2k2v",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights Apple spyware threat, directs to security resources",
+          "quote": "If you got a notification from Apple that you have been targeted by spyware, Access Now has written up what you need to know: www.accessnow.org/apple-threat...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtyr5csu3k2u",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Frames malware targeting researchers as counterproductive security practice",
+          "quote": "When you target security researchers with malware, getting caught and written up is honestly one of the less unpleasant possible outcomes: techcrunch.com/2026/08/20/s...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtk335zc622y",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Skeptical of zero-knowledge proofs as age verification solution",
+          "quote": "So you think you have solved your age verification problem with zero-knowledge proofs...  www.eff.org/deeplinks/20...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtjxt4bnt22y",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes surveillance AI tool misuse and victim-blaming language",
+          "quote": "Please note that even after being caught using Flock to stalk a woman, he dehumanizes her as a \"shiny thing,\" and describes her as \"teasing\" and \"leading him on.\"\n\nwww.404media.co/i-saw-a-shin...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mthbj6f3a225",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Exposes Flock's deceptive claims about tracking capabilities",
+          "quote": "NEW: Flock has said for years that its cameras \"cannot track individuals.\" We found the code for its new AI tool. It's preloaded w/ prompts like \"Find me witness\" & \"find relatives.\" \n\nOne tracks visitors of multiple hotels, another if you visit banks after midnight.\n\nwww.wired.c",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtgsrptyus2p",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Warns against using AI tools for professional work subject to legal discovery",
+          "quote": "If you are an expert witness, do not use ChatGPT to write the report you are charging $475/hour for. All of your chat prompts are subpoenable and we are all going to laugh so hard.\n\nwww.404media.co/show-how-3m-...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtcic3uryc2e",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Concerned about surveillance capabilities of Meta glasses",
+          "quote": "Today in Pervert Glasses news, Meta glasses have been banned from court in England and Wales: Meta glasses have been banned from courts in England and Wales: www.theguardian.com/technology/2...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mstjkph2b22k",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Notes platform monetization differences favoring X over BlueSky",
+          "quote": "They can also monetize the engagement on X, but not on BlueSky.",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3msqoax3guk25",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Apple's privacy tool fails to protect users' IP addresses",
+          "quote": "Researchers find a flaw in Apple's Private Relay that exposes users' real IP addresses, which also affects users of Tor's OnionBrowser in iOS:  www.404media.co/apples-priva...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mse3b676zk25",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 8,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
           "topic": "criminal-justice",
           "stance": "strong",
-          "summary": "Police use facial recognition tool to stalk intimate partners systematically",
+          "summary": "Criticizes police use of surveillance technology for stalking and harassment",
           "quote": "I could start a feed of stories about cops using flock to stalk and terrorize current and former partners and I would never run out of material. www.404media.co/florida-depu...",
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mu45p3j2uk26",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Police face minimal consequences for abusing surveillance access",
-          "quote": "If you're writing a story about police abusing Flock access to stalk current/former/potential partners, I'm begging you to please follow up on the consequences these cops face for getting caught, because a lot of the time it's barely more than a slap on the wrist.",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtzfaxefd22i",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Argues some offenders should face delayed justice or consequences",
-          "quote": "Everyone deserves to be free. But some people deserve to be freed last.",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mu65w6scc22g",
           "platform": "bluesky"
         },
         {
@@ -45,6 +135,15 @@
           "summary": "Sarcastically condemns sexual harassment or stalking behavior",
           "quote": "Really, he should be flattered. They're probably just flirting.",
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mu3lro5qlk2h",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Demands stronger accountability for police misuse of surveillance tools",
+          "quote": "If you're writing a story about police abusing Flock access to stalk current/former/potential partners, I'm begging you to please follow up on the consequences these cops face for getting caught, because a lot of the time it's barely more than a slap on the wrist.",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtzfaxefd22i",
           "platform": "bluesky"
         },
         {
@@ -92,128 +191,13 @@
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mse2r4w5hk25",
           "platform": "bluesky"
         }
-      ]
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 12,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Private accounts needed for harassment protection on social platforms",
-          "quote": "There are a lot of people who want alternatives to Facebook or X for whom BlueSky is not a viable solution because they can't have private posts or accounts. Taking your account private and locking your posts is also an important tool for fighting harassment/pile-ons.",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtkv24nbxs2x",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Expresses frustration with Meta privacy settlement terms",
-          "quote": "Reading the Meta settlement and I'm very tired and I just want someone else to tell me why I hate this.",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtzgbw6l4c2l",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Targeting security researchers with malware has serious consequences",
-          "quote": "When you target security researchers with malware, getting caught and written up is honestly one of the less unpleasant possible outcomes: techcrunch.com/2026/08/20/s...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtk335zc622y",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Criticizes Meta's AR glasses as privacy-invasive surveillance",
-          "quote": "Please enjoy this interview with @hypervisible.blacksky.app about Meta's pervert glasses. \n\nwww.bloodinthemachine.com/p/the-revolt...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mu5u7o4i6k2g",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Supports development of private account features on platforms",
-          "quote": "I think this is really cool and I'm excited to see what people build with it. Locked/private accounts would be a really useful feature for a variety of reasons.",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtkurseb4k2x",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Warns non-technical people about real cybersecurity threat",
-          "quote": "Sometimes I hear non-technical people speculating that this is a thing that could happen and I am posting it here to let them know that yes, this is a thing that happens.",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtytkntg2k2v",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Highlights Apple spyware threat, directs to security resources",
-          "quote": "If you got a notification from Apple that you have been targeted by spyware, Access Now has written up what you need to know: www.accessnow.org/apple-threat...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtyr5csu3k2u",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Skeptical of zero-knowledge proofs as age verification solution",
-          "quote": "So you think you have solved your age verification problem with zero-knowledge proofs...  www.eff.org/deeplinks/20...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtjxt4bnt22y",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Criticizes surveillance AI tool misuse and victim-blaming language",
-          "quote": "Please note that even after being caught using Flock to stalk a woman, he dehumanizes her as a \"shiny thing,\" and describes her as \"teasing\" and \"leading him on.\"\n\nwww.404media.co/i-saw-a-shin...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mthbj6f3a225",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Exposes Flock's deceptive claims about tracking capabilities",
-          "quote": "NEW: Flock has said for years that its cameras \"cannot track individuals.\" We found the code for its new AI tool. It's preloaded w/ prompts like \"Find me witness\" & \"find relatives.\" \n\nOne tracks visitors of multiple hotels, another if you visit banks after midnight.\n\nwww.wired.c",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtgsrptyus2p",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Warns against using AI tools for professional work subject to legal discovery",
-          "quote": "If you are an expert witness, do not use ChatGPT to write the report you are charging $475/hour for. All of your chat prompts are subpoenable and we are all going to laugh so hard.\n\nwww.404media.co/show-how-3m-...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtcic3uryc2e",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Concerned about surveillance capabilities of Meta glasses",
-          "quote": "Today in Pervert Glasses news, Meta glasses have been banned from court in England and Wales: Meta glasses have been banned from courts in England and Wales: www.theguardian.com/technology/2...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mstjkph2b22k",
-          "platform": "bluesky"
-        }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
-      "count": 3,
+      "count": 5,
       "lastActive": "2026-08-27",
       "stances": [
         {
@@ -235,6 +219,24 @@
           "platform": "bluesky"
         },
         {
+          "date": "2026-08-21",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Advocates for private accounts as harassment mitigation tool",
+          "quote": "There are a lot of people who want alternatives to Facebook or X for whom BlueSky is not a viable solution because they can't have private posts or accounts. Taking your account private and locking your posts is also an important tool for fighting harassment/pile-ons.",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtkv24nbxs2x",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Supports platform features enabling user privacy and account control",
+          "quote": "I think this is really cool and I'm excited to see what people build with it. Locked/private accounts would be a really useful feature for a variety of reasons.",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtkurseb4k2x",
+          "platform": "bluesky"
+        },
+        {
           "date": "2026-08-17",
           "topic": "free-speech-censorship",
           "stance": "lean",
@@ -243,7 +245,8 @@
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtc6tqg24c2a",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "gender-lgbtq",
@@ -260,7 +263,8 @@
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtap4wkdz22z",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "protests-activism",
@@ -277,7 +281,8 @@
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtaoxfz5ls2z",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "trump-policy",
@@ -303,7 +308,8 @@
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3msblm27ka222",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "education",
@@ -320,7 +326,8 @@
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3msbo4imzb222",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

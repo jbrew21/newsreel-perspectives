@@ -1,71 +1,10 @@
 {
   "voiceId": "matt-pearce",
   "voiceName": "Matt Pearce",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-28",
   "topicCount": 10,
   "stanceCount": 39,
   "topics": [
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes perceived threat to Social Security benefits",
-          "quote": "[George Carlin voice] AND NOW THEY\u2019RE COMING FOR YOUR SOCIAL SECURITY",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mtyinmae2222",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Criticizes Democratic tax cut messaging as populist",
-          "quote": "ATTENTION TO ALL DEM TAX CUT SLOPULISTS",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mscmuh3i7k2g",
-          "platform": "bluesky"
-        }
-      ]
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 3,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Critiques educational standards or attention spans",
-          "quote": "Seems to be missing a requirement to read one (1) book in between Reels.",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mtyjj7uf2c2t",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Examines America's failure to teach literacy effectively",
-          "quote": "THE READING MACHINE\nHow America Lost the Plot on Literacy\nTK TK TK DATE idk bro I haven't even started\n\n(ty Matt for giving me my first opportunity for this)",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mst3ba276s26",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Literacy education needs deeper cultural examination beyond surface-level reporting",
-          "quote": "Reporting on what literacy means and why it feels so broken these days made me realize I had far more to say than could be captured in one feature. I\u2019m so, so thrilled to say that now I get to write a whole book about it!",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mssvlxebt227",
-          "platform": "bluesky"
-        }
-      ]
-    },
     {
       "topic": "media-press",
       "label": "Media & Press",
@@ -180,7 +119,8 @@
           "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msge62ymu423",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "ai-technology",
@@ -296,33 +236,71 @@
           "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msqoodm5j22r",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": true
     },
     {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 2,
-      "lastActive": "2026-08-12",
+      "topic": "education",
+      "label": "Education",
+      "count": 3,
+      "lastActive": "2026-08-27",
       "stances": [
         {
-          "date": "2026-08-12",
-          "topic": "elections",
+          "date": "2026-08-27",
+          "topic": "education",
           "stance": "lean",
-          "summary": "Wisconsin election officials made errors during ballot counting",
-          "quote": "This bit just now with Kornacki getting word Wisconsin election officials fucked up was pure cinema.",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msudwm4elc2s",
+          "summary": "Critiques educational standards or attention spans",
+          "quote": "Seems to be missing a requirement to read one (1) book in between Reels.",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mtyjj7uf2c2t",
           "platform": "bluesky"
         },
         {
-          "date": "2026-08-12",
-          "topic": "elections",
+          "date": "2026-08-11",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Examines America's failure to teach literacy effectively",
+          "quote": "THE READING MACHINE\nHow America Lost the Plot on Literacy\nTK TK TK DATE idk bro I haven't even started\n\n(ty Matt for giving me my first opportunity for this)",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mst3ba276s26",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "education",
           "stance": "lean",
-          "summary": "Self-deprecating concern about electoral performance being recorded",
-          "quote": "Please don\u2019t write in the newspaper 700 years from now that I got absolutely smoked.",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mstporynvs23",
+          "summary": "Literacy education needs deeper cultural examination beyond surface-level reporting",
+          "quote": "Reporting on what literacy means and why it feels so broken these days made me realize I had far more to say than could be captured in one feature. I\u2019m so, so thrilled to say that now I get to write a whole book about it!",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mssvlxebt227",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": true
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 2,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Opposes proposed changes to Social Security",
+          "quote": "[George Carlin voice] AND NOW THEY\u2019RE COMING FOR YOUR SOCIAL SECURITY",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mtyinmae2222",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Critiques expansion of government scope and power",
+          "quote": "the era of big government is here",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msa67ctjxk2d",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "culture-war",
@@ -366,7 +344,35 @@
           "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mrs5c4brqc24",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 2,
+      "lastActive": "2026-08-12",
+      "stances": [
+        {
+          "date": "2026-08-12",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Wisconsin election officials made errors during ballot counting",
+          "quote": "This bit just now with Kornacki getting word Wisconsin election officials fucked up was pure cinema.",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msudwm4elc2s",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Self-deprecating concern about electoral performance being recorded",
+          "quote": "Please don\u2019t write in the newspaper 700 years from now that I got absolutely smoked.",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mstporynvs23",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "state-local-politics",
@@ -383,24 +389,26 @@
           "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msaz3qpiic2n",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     },
     {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
       "count": 1,
-      "lastActive": "2026-08-04",
+      "lastActive": "2026-08-05",
       "stances": [
         {
-          "date": "2026-08-04",
-          "topic": "congress-legislation",
+          "date": "2026-08-05",
+          "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Critiques expansion of government scope and power",
-          "quote": "the era of big government is here",
-          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3msa67ctjxk2d",
+          "summary": "Criticizes Democratic tax cut messaging as populist",
+          "quote": "ATTENTION TO ALL DEM TAX CUT SLOPULISTS",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mscmuh3i7k2g",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "media-personalities",
@@ -417,7 +425,8 @@
           "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mrt7bsv7kk2u",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "billionaires-wealth",
@@ -434,7 +443,8 @@
           "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mrpdqqfw5k2y",
           "platform": "bluesky"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

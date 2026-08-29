@@ -6,32 +6,6 @@
   "stanceCount": 20,
   "topics": [
     {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Frames defense buildup as catching up on lost production capacity",
-          "quote": "Duffey acknowledges the push to ramp up manufacturing capacity, stating the administration is \u201cmaking up for lost time\u201d by accelerating multi-billion-dollar procurement deals with defense contractors to rapidly scale up production and rebuild the defense industrial base. #pentago",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675814104501669151",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Highlights large missile contract as landmark defense industrial expansion",
-          "quote": "Pentagon Undersecretary Michael Duffey details a landmark $22.9 billion Tomahawk missile contract designed to ramp up U.S. weapons production and create 3,000 jobs. #military #pentagon #defense #nationalsecurity",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675804038310415646",
-          "platform": "tiktok"
-        }
-      ]
-    },
-    {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 8,
@@ -109,7 +83,35 @@
           "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7672533314045218079",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": true
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Frames defense buildup as catching up on lost production capacity",
+          "quote": "Duffey acknowledges the push to ramp up manufacturing capacity, stating the administration is \u201cmaking up for lost time\u201d by accelerating multi-billion-dollar procurement deals with defense contractors to rapidly scale up production and rebuild the defense industrial base. #pentago",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675814104501669151",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Highlights large missile contract as landmark defense industrial expansion",
+          "quote": "Pentagon Undersecretary Michael Duffey details a landmark $22.9 billion Tomahawk missile contract designed to ramp up U.S. weapons production and create 3,000 jobs. #military #pentagon #defense #nationalsecurity",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675804038310415646",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "immigration",
@@ -126,7 +128,8 @@
           "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675871610057805086",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "trump-administration",
@@ -143,7 +146,8 @@
           "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7674057402433441054",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "covid-pandemic",
@@ -178,24 +182,8 @@
           "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7667335935922572575",
           "platform": "tiktok"
         }
-      ]
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 1,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Zelenskyy reports Ukraine not losing ground militarily",
-          "quote": "\u201cWe are not losing\u201d In an exclusive sit-down with Ukrainian President Volodymyr Zelenskyy he breaks down where the war stands during his visit to Washington last week. #ukraine #zelensky #war",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7670961250959936798",
-          "platform": "tiktok"
-        }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "economy-trade",
@@ -221,7 +209,26 @@
           "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7667342112861474079",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-08-07",
+      "stances": [
+        {
+          "date": "2026-08-07",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Zelenskyy reports Ukraine not losing ground militarily",
+          "quote": "\u201cWe are not losing\u201d In an exclusive sit-down with Ukrainian President Volodymyr Zelenskyy he breaks down where the war stands during his visit to Washington last week. #ukraine #zelensky #war",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7670961250959936798",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "supreme-court-legal",
@@ -238,7 +245,8 @@
           "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7667711176788299039",
           "platform": "tiktok"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "topic": "elections",
@@ -255,7 +263,8 @@
           "sourceUrl": "https://x.com/BretBaier/status/2081424768226529770",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

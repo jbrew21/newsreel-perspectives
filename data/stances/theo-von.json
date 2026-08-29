@@ -1,53 +1,10 @@
 {
   "voiceId": "theo-von",
   "voiceName": "Theo Von",
-  "updatedAt": "2026-08-29",
-  "topicCount": 6,
-  "stanceCount": 7,
+  "updatedAt": "2026-08-28",
+  "topicCount": 5,
+  "stanceCount": 5,
   "topics": [
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Platforms expert discussion on psychiatric medication withdrawal risks",
-          "quote": "Psych Med Withdrawal Expert Laura Delano | This Past Weekend w/ Theo Von #678",
-          "sourceUrl": "https://www.youtube.com/watch?v=QK1q5yTRY7s",
-          "platform": "youtube"
-        }
-      ]
-    },
-    {
-      "topic": "drugs-addiction",
-      "label": "Drugs & Addiction",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "drugs-addiction",
-          "stance": "lean",
-          "summary": "Examining addictive mechanisms of pornography on young men",
-          "quote": "why p*rn is so addictive to young men",
-          "sourceUrl": "https://www.youtube.com/shorts/SA_eJwrlLGY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "drugs-addiction",
-          "stance": "lean",
-          "summary": "Frames porn addiction as struggle men face",
-          "quote": "why do men struggle w/ p*rn addiction?",
-          "sourceUrl": "https://www.tiktok.com/@theovon/video/7660566277295017229",
-          "platform": "tiktok"
-        }
-      ]
-    },
     {
       "topic": "religion-faith",
       "label": "Religion & Faith",
@@ -63,7 +20,8 @@
           "sourceUrl": "https://www.youtube.com/watch?v=_gfPQsRkacI",
           "platform": "youtube"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "criminal-justice",
@@ -80,7 +38,8 @@
           "sourceUrl": "https://www.youtube.com/watch?v=YhMRREG7sM8",
           "platform": "youtube"
         }
-      ]
+      ],
+      "active": true
     },
     {
       "topic": "sports",
@@ -97,7 +56,26 @@
           "sourceUrl": "https://x.com/TheoVon/status/2067856047235092698",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
+    },
+    {
+      "topic": "drugs-addiction",
+      "label": "Drugs & Addiction",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Frames porn addiction as struggle men face",
+          "quote": "why do men struggle w/ p*rn addiction?",
+          "sourceUrl": "https://www.tiktok.com/@theovon/video/7660566277295017229",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "state-local-politics",
@@ -114,7 +92,8 @@
           "sourceUrl": "https://x.com/TheoVon/status/2072468979914768653",
           "platform": "x"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

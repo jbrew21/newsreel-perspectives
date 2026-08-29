@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Perspectives · All Voices</title>
-<meta name="description" content="Browse all voices tracked by Perspectives. 257+ commentators, creators, and journalists across the political spectrum.">
+<meta name="description" content="Browse the commentators, politicians, journalists, and creators tracked by Perspectives across the political spectrum.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -342,7 +342,25 @@
   .tile-stat {
     font-size: var(--text-xs); color: var(--text-dim); font-weight: 500;
     margin-top: var(--space-3);
+    display: flex; align-items: center; gap: var(--space-2);
   }
+  .tile-live {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent); flex-shrink: 0;
+  }
+  .tile-stat--idle { color: var(--text-dim); opacity: 0.75; }
+
+  .voice-more {
+    display: block; width: 100%; max-width: 680px;
+    margin: var(--space-5) auto 0;
+    padding: var(--space-4);
+    background: var(--bg-card); color: var(--text-secondary);
+    border: 1px solid var(--border); border-radius: var(--radius-md);
+    font-family: inherit; font-size: var(--text-sm); font-weight: 600;
+    cursor: pointer;
+    transition: border-color var(--duration-fast), color var(--duration-fast);
+  }
+  .voice-more:hover { border-color: var(--accent); color: var(--text-primary); }
   .tile-arrow {
     flex-shrink: 0; color: var(--text-dim);
     transition: color var(--duration-fast), transform var(--duration-fast);
@@ -600,9 +618,11 @@
 
   /* -- STATE -- */
   var _voices = {};
-  var _voicePosts = {};
+  var _activity = {};
   var _currentFilter = '';
   var _activeCategory = '';
+  var PAGE_SIZE = 60;
+  var _limit = PAGE_SIZE;
   var _activePlatform = '';
 
   /* -- UTILITIES -- */
@@ -659,6 +679,14 @@
         _currentFilter = '';
         renderGrid();
       }
+      return;
+    }
+
+    // Show more voices
+    if (e.target.closest('#voiceMore')) {
+      e.preventDefault();
+      _limit += PAGE_SIZE;
+      renderGrid(true);
       return;
     }
 
@@ -765,18 +793,16 @@
 
   /* -- GET ALL UNIQUE CATEGORIES FROM VOICES -- */
   function getCategories() {
+    /* The real 11-value taxonomy (commentator / politician / journalist /...),
+       not the free-form tag long tail this used to show under a "CATEGORY"
+       label. Tags stay searchable; they just aren't the filter axis. */
     var cats = {};
     var ids = Object.keys(_voices);
     for (var i = 0; i < ids.length; i++) {
-      var v = _voices[ids[i]];
-      var tags = v.tags || [];
-      for (var j = 0; j < tags.length; j++) {
-        cats[tags[j]] = (cats[tags[j]] || 0) + 1;
-      }
+      var c = _voices[ids[i]].category;
+      if (c) cats[c] = (cats[c] || 0) + 1;
     }
-    // Sort by count descending
-    var sorted = Object.keys(cats).sort(function(a, b) { return cats[b] - cats[a]; });
-    return sorted.slice(0, 12);
+    return Object.keys(cats).sort(function(a, b) { return cats[b] - cats[a]; });
   }
 
   /* -- GET ALL UNIQUE PLATFORMS FROM VOICES -- */
@@ -795,8 +821,11 @@
     return Object.keys(plats).sort(function(a, b) { return plats[b] - plats[a]; });
   }
 
-  /* -- RENDER GRID -- */
-  function renderGrid() {
+  /* -- RENDER GRID --
+     Any filter change resets to the first page; only the "Show more" button
+     grows _limit, so a filtered view never inherits a previous deep scroll. */
+  function renderGrid(keepLimit) {
+    if (!keepLimit) _limit = PAGE_SIZE;
     var gridEl = document.getElementById('voiceGrid');
     var countEl = document.getElementById('shownCount');
     if (!gridEl) return;
@@ -806,8 +835,8 @@
 
     // Sort: voices with post data first, then by follower count
     voices.sort(function(a, b) {
-      var aHas = _voicePosts[a.id] ? 1 : 0;
-      var bHas = _voicePosts[b.id] ? 1 : 0;
+      var aHas = (_activity[a.id] && _activity[a.id].active) ? 1 : 0;
+      var bHas = (_activity[b.id] && _activity[b.id].active) ? 1 : 0;
       if (aHas !== bHas) return bHas - aHas;
       return (b.followers || 0) - (a.followers || 0);
     });
@@ -817,9 +846,9 @@
 
     for (var i = 0; i < voices.length; i++) {
       var voice = voices[i];
-      var data = _voicePosts[voice.id];
-      var topics = data ? Object.keys(data.topicSummary || {}) : [];
-      var postCount = data ? (data.posts || []).length : 0;
+      var data = _activity[voice.id];
+      var topics = data ? (data.topics || []) : [];
+      var postCount = data ? (data.posts || 0) : 0;
 
       // Text filter
       if (filterLower) {
@@ -838,14 +867,7 @@
       }
 
       // Category filter
-      if (_activeCategory) {
-        var hasCat = false;
-        var cTags = voice.tags || [];
-        for (var c = 0; c < cTags.length; c++) {
-          if (cTags[c] === _activeCategory) { hasCat = true; break; }
-        }
-        if (!hasCat) continue;
-      }
+      if (_activeCategory && voice.category !== _activeCategory) continue;
 
       // Platform filter
       if (_activePlatform) {
@@ -854,6 +876,7 @@
       }
 
       shown++;
+      if (shown > _limit) continue;   // paged below; keeps the DOM small
 
       var photo = voice.photo || initialsAvatar(voice.name);
       var platformCount = countPlatforms(voice);
@@ -886,9 +909,15 @@
       // Social links
       html += buildSocialLinks(voice);
 
-      // Post stat
-      if (postCount > 0) {
-        html += '<div class="tile-stat">' + postCount + ' recent post' + (postCount !== 1 ? 's' : '') + ' collected</div>';
+      // Status: say plainly whether this voice is currently tracked. A card
+      // that silently shows nothing reads as a broken profile.
+      if (data && data.active) {
+        html += '<div class="tile-stat"><span class="tile-live"></span>' + postCount +
+                ' post' + (postCount !== 1 ? 's' : '') + ' tracked</div>';
+      } else if (data) {
+        html += '<div class="tile-stat tile-stat--idle">Last posted ' + esc(data.lastActive) + '</div>';
+      } else {
+        html += '<div class="tile-stat tile-stat--idle">Not yet collected</div>';
       }
 
       html += '</div>';
@@ -903,7 +932,22 @@
     }
 
     gridEl.innerHTML = html;
-    if (countEl) countEl.textContent = shown + ' shown';
+
+    var rendered = Math.min(shown, _limit);
+    if (countEl) {
+      countEl.textContent = shown === rendered
+        ? shown + ' voices'
+        : 'Showing ' + rendered + ' of ' + shown;
+    }
+
+    var moreEl = document.getElementById('voiceMore');
+    if (moreEl) {
+      var remaining = shown - rendered;
+      moreEl.hidden = remaining <= 0;
+      if (remaining > 0) {
+        moreEl.textContent = 'Show ' + Math.min(remaining, PAGE_SIZE) + ' more';
+      }
+    }
   }
 
   /* -- RENDER FULL PAGE -- */
@@ -961,16 +1005,13 @@
 
       '<section class="stats-section" aria-label="Voice statistics">' +
         '<div class="stats-row">' +
-          '<span class="stat-item"><span class="stat-value">' + stats.voiceCount + '</span> voices tracked</span>' +
-          '<span class="stat-item"><span class="stat-value">' + stats.collectedCount + '</span> collected today</span>' +
-          '<span class="stat-item"><span class="stat-value">' + stats.postCount + '</span> posts</span>' +
-          '<span class="stat-item"><span class="stat-value">' + stats.topicCount + '</span> topics</span>' +
           '<span class="stat-item" id="shownCount"></span>' +
         '</div>' +
       '</section>' +
 
       '<section class="voices-section" aria-label="Voice directory">' +
         '<div class="voice-grid" id="voiceGrid" role="list"></div>' +
+        '<button type="button" class="voice-more" id="voiceMore" hidden></button>' +
       '</section>';
 
     renderGrid();
@@ -1005,38 +1046,27 @@
     var totalTopics = {};
     var voicesWithData = {};
 
-    var topicsLoaded = fetch(BASE + '/api/topics')
+    /* Activity summary (counts + topic slugs + recency) rather than the full
+       topic index: same information this page actually renders, ~11x smaller. */
+    var topicsLoaded = fetch(BASE + '/api/voice-activity')
       .then(function(r) {
-        if (!r.ok) throw new Error('Topics unavailable');
+        if (!r.ok) throw new Error('Activity unavailable');
         return r.json();
       })
-      .then(function(topicIndex) {
-        var topicKeys = Object.keys(topicIndex);
-        for (var t = 0; t < topicKeys.length; t++) {
-          var topic = topicKeys[t];
-          totalTopics[topic] = true;
-          var entries = topicIndex[topic];
-          for (var e = 0; e < entries.length; e++) {
-            var entry = entries[e];
-            totalPosts++;
-            voicesWithData[entry.voiceId] = true;
-            if (!_voicePosts[entry.voiceId]) {
-              _voicePosts[entry.voiceId] = { posts: [], topicSummary: {} };
-            }
-            if (!_voicePosts[entry.voiceId].topicSummary[topic]) {
-              _voicePosts[entry.voiceId].topicSummary[topic] = [];
-            }
-            _voicePosts[entry.voiceId].topicSummary[topic].push({
-              quote: entry.quote,
-              sourceUrl: entry.sourceUrl,
-              platform: entry.platform
-            });
-            _voicePosts[entry.voiceId].posts.push(entry);
+      .then(function(activity) {
+        var ids = Object.keys(activity);
+        for (var i = 0; i < ids.length; i++) {
+          var rec = activity[ids[i]];
+          _activity[ids[i]] = rec;
+          totalPosts += rec.posts || 0;
+          voicesWithData[ids[i]] = true;
+          for (var t = 0; t < (rec.topics || []).length; t++) {
+            totalTopics[rec.topics[t]] = true;
           }
         }
       })
       .catch(function(err) {
-        console.warn('[Perspectives] Could not load topic index:', err.message);
+        console.warn('[Perspectives] Could not load voice activity:', err.message);
       });
 
     Promise.all([voicesLoaded, topicsLoaded])

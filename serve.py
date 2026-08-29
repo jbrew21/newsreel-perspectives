@@ -88,6 +88,8 @@ _cache_lock = threading.Lock()
 _wire_build_lock = threading.Lock()
 # Same thundering-herd guard for the agenda rebuild (5-min TTL).
 _agenda_build_lock = threading.Lock()
+# ...and for the voice-activity summary (/voices browse page).
+_voice_activity_lock = threading.Lock()
 
 
 def cache_get(key):
@@ -264,6 +266,60 @@ def decluster(posts, max_per_voice=WIRE_MAX_PER_VOICE,
         recent.append(p.get('voiceId'))
 
     return wire[:limit]
+
+
+VOICE_ACTIVE_DAYS = 7    # a voice is "active" if it posted within this window
+
+
+def build_voice_activity(root=None):
+    """Summarize each voice's recent coverage for the /voices browse page.
+
+    Returns {voiceId: {topics: [slug...], posts: N, lastActive: 'YYYY-MM-DD',
+    active: bool}} built from the dated topic-index files, newest first. Only
+    counts, slugs and a date — no quote text — so the browse page downloads a
+    fraction of what the full topic index costs.
+    """
+    base = root or ROOT
+    posts_dir = os.path.join(base, 'data', 'posts')
+    try:
+        files = sorted(
+            (f for f in os.listdir(posts_dir)
+             if f.startswith('topic-index-') and f.endswith('.json')),
+            reverse=True,
+        )[:30]
+    except OSError:
+        return {}
+
+    activity = {}
+    for fname in files:
+        date = fname[len('topic-index-'):-len('.json')]
+        data = load_json_file(os.path.join(posts_dir, fname)) or {}
+        if not isinstance(data, dict):
+            continue
+        for topic, entries in data.items():
+            if not isinstance(entries, list):
+                continue
+            for e in entries:
+                vid = e.get('voiceId')
+                if not vid:
+                    continue
+                rec = activity.get(vid)
+                if rec is None:
+                    rec = activity[vid] = {'topics': [], 'posts': 0, 'lastActive': date}
+                rec['posts'] += 1
+                if topic not in rec['topics']:
+                    rec['topics'].append(topic)
+                # Files are walked newest-first, so the first date wins.
+                if date > rec['lastActive']:
+                    rec['lastActive'] = date
+
+    cutoff = (datetime.now() - timedelta(days=VOICE_ACTIVE_DAYS)).strftime('%Y-%m-%d')
+    for rec in activity.values():
+        rec['active'] = rec['lastActive'] >= cutoff
+        # Cap the topic list: a card shows a handful, and the long tail is
+        # pure payload.
+        rec['topics'] = rec['topics'][:8]
+    return activity
 
 
 def build_wire(root=None):
@@ -868,6 +924,22 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     self.send_json(data, cache_ttl=CACHE_TTL_TOPICS)
                     return
             self.send_json({}, cache_ttl=60)
+            return
+
+        # ── API: Voice activity (summary for the /voices browse page) ──
+        # The browse page used to pull the whole topic index (~760KB of quotes)
+        # just to learn which voices are active and what they cover. This
+        # returns the summary only — ~30x smaller — and carries the recency
+        # each voice's card needs to state its own status honestly.
+        if path == '/api/voice-activity':
+            cached = cache_get('voice_activity')
+            if cached is None:
+                with _voice_activity_lock:
+                    cached = cache_get('voice_activity')
+                    if cached is None:
+                        cached = build_voice_activity()
+                        cache_set('voice_activity', cached, CACHE_TTL_TOPICS)
+            self.send_json(cached, cache_ttl=CACHE_TTL_TOPICS)
             return
 
         # ── API: Wire ──
