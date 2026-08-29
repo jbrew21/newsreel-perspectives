@@ -1,9 +1,26 @@
 {
   "voiceId": "david-pakman",
   "voiceName": "David Pakman",
-  "collectedAt": "2026-08-29T02:29:46.550749",
+  "collectedAt": "2026-08-29T12:56:57.268674",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "david-pakman",
+      "voiceName": "David Pakman",
+      "platform": "youtube",
+      "text": "Trump was told NO. His response is INSANE",
+      "sourceUrl": "https://www.youtube.com/watch?v=vA2l8ti94jg",
+      "timestamp": "2026-08-29T01:00:08+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Trump's reaction to being refused a request",
+      "quote": "Trump was told NO. His response is INSANE"
+    },
     {
       "voiceId": "david-pakman",
       "voiceName": "David Pakman",
@@ -37,6 +54,23 @@
       "stance": "strong",
       "summary": "Trump's inner circle management exposed as dysfunctional",
       "quote": "Trump\u2019s inner circle disaster blown WIDE OPEN"
+    },
+    {
+      "voiceId": "david-pakman",
+      "voiceName": "David Pakman",
+      "platform": "youtube",
+      "text": "Millions of people watched this AI video attacking Ken Paxton. #shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/6EFa0TlN1f8",
+      "timestamp": "2026-08-28T22:02:31+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights AI-generated attack video targeting political figure",
+      "quote": "Millions of people watched this AI video attacking Ken Paxton. #shorts"
     },
     {
       "voiceId": "david-pakman",
@@ -140,44 +174,16 @@
       "stance": "lean",
       "summary": "Criticizes GOP's midterm strategy as desperate",
       "quote": "Laura Ingraham reveals the GOP\u2019s desperate midterm plan #shorts"
-    },
-    {
-      "voiceId": "david-pakman",
-      "voiceName": "David Pakman",
-      "platform": "youtube",
-      "text": "Trump was told NO. His response is INSANE",
-      "sourceUrl": "https://www.youtube.com/watch?v=vA2l8ti94jg",
-      "timestamp": "2026-08-29T01:00:08+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Trump's reaction to being refused a request",
-      "quote": "Trump was told NO. His response is INSANE"
-    },
-    {
-      "voiceId": "david-pakman",
-      "voiceName": "David Pakman",
-      "platform": "youtube",
-      "text": "Millions of people watched this AI video attacking Ken Paxton. #shorts",
-      "sourceUrl": "https://www.youtube.com/shorts/6EFa0TlN1f8",
-      "timestamp": "2026-08-28T22:02:31+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights AI-generated attack video targeting political figure",
-      "quote": "Millions of people watched this AI video attacking Ken Paxton. #shorts"
     }
   ],
   "topicSummary": {
     "trump-administration": [
+      {
+        "quote": "Trump was told NO. His response is INSANE",
+        "sourceUrl": "https://www.youtube.com/watch?v=vA2l8ti94jg",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T01:00:08+00:00"
+      },
       {
         "quote": "Trump just gave Dems a HUGE gift",
         "sourceUrl": "https://www.youtube.com/watch?v=9Wt6EIHrrRQ",
@@ -219,20 +225,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/Zp1zCy5N3qw",
         "platform": "youtube",
         "timestamp": "2026-08-28T16:00:11+00:00"
-      },
-      {
-        "quote": "Trump was told NO. His response is INSANE",
-        "sourceUrl": "https://www.youtube.com/watch?v=vA2l8ti94jg",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T01:00:08+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "Laura Ingraham reveals the GOP\u2019s desperate midterm plan #shorts",
-        "sourceUrl": "https://www.youtube.com/shorts/MU6jV-uPS6Y",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T15:00:33+00:00"
       }
     ],
     "ai-technology": [
@@ -241,6 +233,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/6EFa0TlN1f8",
         "platform": "youtube",
         "timestamp": "2026-08-28T22:02:31+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "Laura Ingraham reveals the GOP\u2019s desperate midterm plan #shorts",
+        "sourceUrl": "https://www.youtube.com/shorts/MU6jV-uPS6Y",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T15:00:33+00:00"
       }
     ]
   }

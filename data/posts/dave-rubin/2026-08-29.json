@@ -1,9 +1,26 @@
 {
   "voiceId": "dave-rubin",
   "voiceName": "Dave Rubin",
-  "collectedAt": "2026-08-29T02:29:46.558940",
+  "collectedAt": "2026-08-29T12:56:57.275240",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "dave-rubin",
+      "voiceName": "Dave Rubin",
+      "platform": "youtube",
+      "text": "Joe Rogan Still Holds a Major Grudge Against This Person Who He Thinks Should Be in Jail",
+      "sourceUrl": "https://www.youtube.com/shorts/Xa7w7YVsVLY",
+      "timestamp": "2026-08-28T23:15:06+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Reports on Rogan's criticism of unnamed person",
+      "quote": "Joe Rogan Still Holds a Major Grudge Against This Person Who He Thinks Should Be in Jail"
+    },
     {
       "voiceId": "dave-rubin",
       "voiceName": "Dave Rubin",
@@ -140,26 +157,23 @@
       "stance": "lean",
       "summary": "Bill Maher confronts CNN host, audience reaction suggests disapproval",
       "quote": "\u2018Real Time\u2019 Crowd Eerily Silent as Bill Maher Puts CNN Host in Her Place"
-    },
-    {
-      "voiceId": "dave-rubin",
-      "voiceName": "Dave Rubin",
-      "platform": "youtube",
-      "text": "Joe Rogan Still Holds a Major Grudge Against This Person Who He Thinks Should Be in Jail",
-      "sourceUrl": "https://www.youtube.com/shorts/Xa7w7YVsVLY",
-      "timestamp": "2026-08-28T23:15:06+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "topics": [
-        "media-personalities"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Reports on Rogan's criticism of unnamed person",
-      "quote": "Joe Rogan Still Holds a Major Grudge Against This Person Who He Thinks Should Be in Jail"
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "Joe Rogan Still Holds a Major Grudge Against This Person Who He Thinks Should Be in Jail",
+        "sourceUrl": "https://www.youtube.com/shorts/Xa7w7YVsVLY",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T23:15:06+00:00"
+      },
+      {
+        "quote": "\u2018Real Time\u2019 Crowd Eerily Silent as Bill Maher Puts CNN Host in Her Place",
+        "sourceUrl": "https://www.youtube.com/watch?v=1aYx0dU-sy4",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T19:15:25+00:00"
+      }
+    ],
     "gender-lgbtq": [
       {
         "quote": "JD Vance Shocks Host with Terrifying New Details of Gender Surgery Scandal",
@@ -210,20 +224,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=TqjgG1uV3C0",
         "platform": "youtube",
         "timestamp": "2026-08-27T21:15:25+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "\u2018Real Time\u2019 Crowd Eerily Silent as Bill Maher Puts CNN Host in Her Place",
-        "sourceUrl": "https://www.youtube.com/watch?v=1aYx0dU-sy4",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T19:15:25+00:00"
-      },
-      {
-        "quote": "Joe Rogan Still Holds a Major Grudge Against This Person Who He Thinks Should Be in Jail",
-        "sourceUrl": "https://www.youtube.com/shorts/Xa7w7YVsVLY",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T23:15:06+00:00"
       }
     ]
   }

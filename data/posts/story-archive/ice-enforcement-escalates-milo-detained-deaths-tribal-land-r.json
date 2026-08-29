@@ -1,6 +1,6 @@
 {
   "headline": "ICE Enforcement Escalates: Milo Detained, Deaths, Tribal Land Raid",
-  "summary": "Milo Yiannopoulos's ICE detention sparks reactions spanning left-right media, while deeper enforcement abuses draw bipartisan criticism.",
+  "summary": "Multiple ICE stories converge\u2014Milo's detention, deaths in custody, and a tribal land raid\u2014drawing bipartisan criticism of enforcement tactics.",
   "type": "spectrum",
   "source": "voices",
   "coverUrl": "",
@@ -8,11 +8,11 @@
   "topicSlugs": [
     "immigration"
   ],
-  "voiceCount": 15,
+  "voiceCount": 14,
   "clusterCount": 4,
   "clusters": [
     {
-      "name": "ICE Overreach & Accountability",
+      "name": "ICE Overreach Critics",
       "voices": [
         {
           "voiceId": "radley-balko",
@@ -55,16 +55,6 @@
           "quoteQuality": 4
         },
         {
-          "voiceId": "brian-tyler-cohen",
-          "voiceName": "Brian Tyler Cohen",
-          "photo": "/photos/brian-tyler-cohen.jpg",
-          "quote": "FINALLY: CONSEQUENCES for ICE agents over Minnesota shootings",
-          "sourceUrl": "https://www.youtube.com/watch?v=T4u4XQeOF0w",
-          "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 1
-        },
-        {
           "voiceId": "pod-save-america",
           "voiceName": "Pod Save America",
           "photo": "/photos/pod-save-america.jpg",
@@ -72,6 +62,16 @@
           "sourceUrl": "https://www.youtube.com/shorts/Ktei1X1cns4",
           "platform": "youtube",
           "fit": 8,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "brian-tyler-cohen",
+          "voiceName": "Brian Tyler Cohen",
+          "photo": "/photos/brian-tyler-cohen.jpg",
+          "quote": "FINALLY: CONSEQUENCES for ICE agents over Minnesota shootings",
+          "sourceUrl": "https://www.youtube.com/watch?v=T4u4XQeOF0w",
+          "platform": "youtube",
+          "fit": 7,
           "quoteQuality": 1
         }
       ],
@@ -84,7 +84,7 @@
       }
     },
     {
-      "name": "Milo Arrest Coverage",
+      "name": "MAGA Infighting Coverage",
       "voices": [
         {
           "voiceId": "young-turks",
@@ -103,7 +103,7 @@
           "quote": "MILO YIANNOPOULOS ARRESTED BY ICE",
           "sourceUrl": "https://www.youtube.com/watch?v=LHhkIWGPwjM",
           "platform": "youtube",
-          "fit": 9,
+          "fit": 6,
           "quoteQuality": 1
         },
         {
@@ -113,7 +113,7 @@
           "quote": "BREAKING: Prominent MAGA influencer Milo Yiannopoulos arrested by ICE",
           "sourceUrl": "https://www.youtube.com/shorts/zZjsuxkjHCc",
           "platform": "youtube",
-          "fit": 9,
+          "fit": 5,
           "quoteQuality": 1
         },
         {
@@ -133,7 +133,7 @@
           "quote": "\ud83d\udea8Milo Yiannopoulos Arrested And DEPORTED by ICE | BANNED from America FOREVER, MUGSHOT Released\u2026",
           "sourceUrl": "https://www.youtube.com/watch?v=6wAZJb0e-qs",
           "platform": "youtube",
-          "fit": 9,
+          "fit": 5,
           "quoteQuality": 1
         }
       ],
@@ -146,39 +146,7 @@
       }
     },
     {
-      "name": "Immigration Policy Skepticism",
-      "voices": [
-        {
-          "voiceId": "joey-politano",
-          "voiceName": "Joey Politano",
-          "photo": "/photos/joey-politano.jpg",
-          "quote": "The big worry for America should not be that immigrants cause rising illiberalism, but that rising domestic illiberalism will cause immigrants who like Democracy to pick other destination countries\u2014a ",
-          "sourceUrl": "https://bsky.app/profile/josephpolitano.bsky.social/post/3mu6eju6kms2n",
-          "platform": "bluesky",
-          "fit": 7,
-          "quoteQuality": 6
-        },
-        {
-          "voiceId": "tucker-carlson",
-          "voiceName": "Tucker Carlson",
-          "photo": "/photos/tucker-carlson.jpg",
-          "quote": "What Happened to Building a Wall?",
-          "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
-          "platform": "youtube",
-          "fit": 6,
-          "quoteQuality": 1
-        }
-      ],
-      "voiceCount": 2,
-      "bestQuote": {
-        "voiceName": "Joey Politano",
-        "quote": "The big worry for America should not be that immigrants cause rising illiberalism, but that rising domestic illiberalism will cause immigrants who like Democracy to pick other destination countries\u2014a ",
-        "platform": "bluesky",
-        "quality": 6
-      }
-    },
-    {
-      "name": "General News Roundup",
+      "name": "News Roundup / Data Tracking",
       "voices": [
         {
           "voiceId": "ryan-grim",
@@ -208,25 +176,38 @@
         "platform": "substack",
         "quality": 6
       }
+    },
+    {
+      "name": "Enforcement Skeptic Right",
+      "voices": [
+        {
+          "voiceId": "tucker-carlson",
+          "voiceName": "Tucker Carlson",
+          "photo": "/photos/tucker-carlson.jpg",
+          "quote": "What Happened to Building a Wall?",
+          "sourceUrl": "https://www.youtube.com/shorts/BWpCqdhQHjM",
+          "platform": "youtube",
+          "fit": 7,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 1,
+      "bestQuote": {
+        "voiceName": "Tucker Carlson",
+        "quote": "What Happened to Building a Wall?",
+        "platform": "youtube",
+        "quality": 1
+      }
     }
   ],
-  "confidence": 6,
+  "confidence": 5,
   "relevance": {
-    "direct": 9,
-    "related": 6,
+    "direct": 7,
+    "related": 8,
     "unrelated": 0
   },
   "validated": true,
-  "heatScore": 79,
+  "heatScore": 73,
   "belowThreshold": false,
-  "counterNarrative": {
-    "dominantCluster": "ICE Overreach & Accountability",
-    "dominantCount": 6,
-    "counterCluster": "Immigration Policy Skepticism",
-    "counterCount": 2,
-    "axis": "whether enforcement itself is legitimate",
-    "tensionScore": 6,
-    "tension": "6 voices say \"ICE Overreach & Accountability\" \u2014 but 2 push back: \"Immigration Policy Skepticism\""
-  },
   "slug": "ice-enforcement-sparks-backlash-over-tactics-deaths-detentio"
 }

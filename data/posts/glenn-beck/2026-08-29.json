@@ -1,9 +1,27 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-08-29T01:18:14.858770",
+  "collectedAt": "2026-08-29T12:56:57.348703",
   "date": "2026-08-29",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "THIS Is Trump's Real Plan To Rewrite The World Order",
+      "sourceUrl": "https://www.youtube.com/watch?v=E4PYIuaDEVQ",
+      "timestamp": "2026-08-28T23:00:26+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "topics": [
+        "trump-policy",
+        "foreign-policy-diplomacy"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Claims Trump intends to fundamentally reshape international order",
+      "quote": "THIS Is Trump's Real Plan To Rewrite The World Order"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -20,6 +38,23 @@
       "stance": "strong",
       "summary": "Praises Trump's support for farmers as beneficial policy",
       "quote": "Trump Is Helping Farmers Thanks To YOU!"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Trump did warn you. &quot;Lake America&quot; shirts available now.",
+      "sourceUrl": "https://www.youtube.com/shorts/cTvAGGXYKNQ",
+      "timestamp": "2026-08-28T18:23:53+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "topics": [
+        "trump-policy"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Suggests Trump warned about climate/environmental crisis outcome",
+      "quote": "Trump did warn you. &quot;Lake America&quot; shirts available now."
     },
     {
       "voiceId": "glenn-beck",
@@ -106,44 +141,29 @@
       "stance": "strong",
       "summary": "Portrays Trump's response to Canada as aggressive retaliation",
       "quote": "Trump Retaliates BRUTALLY To Canada's &quot;War&quot; On America"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "THIS Is Trump's Real Plan To Rewrite The World Order",
-      "sourceUrl": "https://www.youtube.com/watch?v=E4PYIuaDEVQ",
-      "timestamp": "2026-08-28T23:00:26+00:00",
-      "type": "video_title",
-      "topic": "trump-policy",
-      "topics": [
-        "trump-policy",
-        "foreign-policy-diplomacy"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Claims Trump intends to fundamentally reshape international order",
-      "quote": "THIS Is Trump's Real Plan To Rewrite The World Order"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Trump did warn you. &quot;Lake America&quot; shirts available now.",
-      "sourceUrl": "https://www.youtube.com/shorts/cTvAGGXYKNQ",
-      "timestamp": "2026-08-28T18:23:53+00:00",
-      "type": "video_title",
-      "topic": "trump-policy",
-      "topics": [
-        "trump-policy"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Suggests Trump warned about climate/environmental crisis outcome",
-      "quote": "Trump did warn you. &quot;Lake America&quot; shirts available now."
     }
   ],
   "topicSummary": {
+    "trump-policy": [
+      {
+        "quote": "THIS Is Trump's Real Plan To Rewrite The World Order",
+        "sourceUrl": "https://www.youtube.com/watch?v=E4PYIuaDEVQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T23:00:26+00:00"
+      },
+      {
+        "quote": "Trump did warn you. &quot;Lake America&quot; shirts available now.",
+        "sourceUrl": "https://www.youtube.com/shorts/cTvAGGXYKNQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T18:23:53+00:00"
+      },
+      {
+        "quote": "Will Trump BAN Sharia Law?",
+        "sourceUrl": "https://www.youtube.com/shorts/dGN1P8XfWI4",
+        "platform": "youtube",
+        "timestamp": "2026-08-27T20:00:29+00:00"
+      }
+    ],
     "economy-trade": [
       {
         "quote": "Trump Is Helping Farmers Thanks To YOU!",
@@ -180,26 +200,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=_Y3l1gax6YI",
         "platform": "youtube",
         "timestamp": "2026-08-27T18:00:02+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "Will Trump BAN Sharia Law?",
-        "sourceUrl": "https://www.youtube.com/shorts/dGN1P8XfWI4",
-        "platform": "youtube",
-        "timestamp": "2026-08-27T20:00:29+00:00"
-      },
-      {
-        "quote": "THIS Is Trump's Real Plan To Rewrite The World Order",
-        "sourceUrl": "https://www.youtube.com/watch?v=E4PYIuaDEVQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T23:00:26+00:00"
-      },
-      {
-        "quote": "Trump did warn you. &quot;Lake America&quot; shirts available now.",
-        "sourceUrl": "https://www.youtube.com/shorts/cTvAGGXYKNQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T18:23:53+00:00"
       }
     ]
   }
