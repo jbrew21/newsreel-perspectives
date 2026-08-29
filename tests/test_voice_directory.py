@@ -195,3 +195,47 @@ class StanceOrderingTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DataCacheHeaderTests(unittest.TestCase):
+    """data/*.json is rewritten by the daily pipeline. Without an explicit
+    policy it carried only Last-Modified, so browsers applied heuristic
+    caching and could pin a profile to stale stances (Aug 29 2026)."""
+
+    @classmethod
+    def setUpClass(cls):
+        import http.server
+        import threading
+        cls.httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), serve.Handler)
+        cls.port = cls.httpd.server_address[1]
+        cls.thread = threading.Thread(target=cls.httpd.serve_forever, daemon=True)
+        cls.thread.start()
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.httpd.shutdown()
+        cls.httpd.server_close()
+
+    def _get(self, path):
+        import urllib.request
+        url = f"http://127.0.0.1:{self.port}{path}"
+        with urllib.request.urlopen(url, timeout=10) as r:
+            return r.headers, r.read()
+
+    def test_data_json_must_revalidate(self):
+        headers, _ = self._get("/data/taxonomy.json")
+        cc = (headers.get("Cache-Control") or "").lower()
+        self.assertIn("no-cache", cc)
+        self.assertIn("must-revalidate", cc)
+
+    def test_photos_keep_their_long_cache(self):
+        # The revalidation rule must not bleed into immutable assets.
+        headers, _ = self._get("/photos/aoc.jpg")
+        self.assertIn("max-age=604800", headers.get("Cache-Control", ""))
+
+    def test_header_does_not_leak_to_the_next_response(self):
+        # end_headers() consumes a per-request flag; a stale flag would make
+        # every later asset uncacheable.
+        self._get("/data/taxonomy.json")
+        headers, _ = self._get("/photos/aoc.jpg")
+        self.assertNotIn("no-cache", (headers.get("Cache-Control") or "").lower())
