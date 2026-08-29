@@ -2,26 +2,26 @@
   "voiceId": "tulsi-gabbard",
   "voiceName": "Tulsi Gabbard",
   "updatedAt": "2026-08-29",
-  "topicCount": 12,
+  "topicCount": 11,
   "stanceCount": 17,
   "topics": [
     {
       "topic": "military-defense",
       "label": "Military & Defense",
       "count": 3,
-      "lastActive": "2026-07-30",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-07-30",
+          "date": "2026-08-29",
           "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Raises awareness of toxic burn pit health risks affecting service members",
+          "stance": "strong",
+          "summary": "Criticizes military exposure to toxic burn pit hazards",
           "quote": "Tulsi Gabbard on Toxic Burn Pits",
           "sourceUrl": "https://www.youtube.com/shorts/ARk2aRBtjLE",
           "platform": "youtube"
         },
         {
-          "date": "2026-07-30",
+          "date": "2026-08-29",
           "topic": "military-defense",
           "stance": "lean",
           "summary": "Highlights elevated cancer rates among Air Force personnel",
@@ -39,68 +39,23 @@
           "platform": "tiktok"
         }
       ],
-      "active": false
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 2,
-      "lastActive": "2026-07-30",
-      "stances": [
-        {
-          "date": "2026-07-30",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "",
-          "quote": "&quot;You'll never have lunch in this town again!&quot;",
-          "sourceUrl": "https://www.youtube.com/shorts/EmiZx7Ouah8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "",
-          "quote": "&quot;How dumb do you think everyone is?&quot;",
-          "sourceUrl": "https://www.youtube.com/shorts/CZ0hdw8bU8E",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "free-speech-censorship",
-      "label": "Free Speech & Censorship",
-      "count": 2,
-      "lastActive": "2026-07-30",
-      "stances": [
-        {
-          "date": "2026-07-30",
-          "topic": "free-speech-censorship",
-          "stance": "strong",
-          "summary": "Criticizes pervasive culture of self-censorship in society",
-          "quote": "Tulsi Gabbard on the Culture of Self-Censorship",
-          "sourceUrl": "https://www.youtube.com/shorts/sYnSYTvrLzQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "free-speech-censorship",
-          "stance": "strong",
-          "summary": "Calls for upholding God-given freedoms as nation's foundation",
-          "quote": "250 years ago our founders enshrined the fundamental truth that \u201call men are created equal, endowed by our Creator with certain unalienable rights, among those, life, liberty and the pursuit of happiness\u201d as the bedrock of our nation.  It's up to us to uphold our God-given freedo",
-          "sourceUrl": "https://x.com/TulsiGabbard/status/2073477406116258078",
-          "platform": "x"
-        }
-      ],
-      "active": false
+      "active": true
     },
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 2,
-      "lastActive": "2026-07-30",
+      "count": 3,
+      "lastActive": "2026-08-29",
       "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "",
+          "quote": "The Real Situation in the American Political System",
+          "sourceUrl": "https://www.youtube.com/shorts/pA5ZzwHo8_s",
+          "platform": "youtube"
+        },
         {
           "date": "2026-07-30",
           "topic": "trump-administration",
@@ -120,79 +75,115 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 1,
-      "lastActive": "2026-07-30",
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-07-30",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "",
-          "quote": "The Real Situation in the American Political System",
-          "sourceUrl": "https://www.youtube.com/shorts/pA5ZzwHo8_s",
+          "date": "2026-08-29",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes media power and exclusionary practices",
+          "quote": "&quot;You'll never have lunch in this town again!&quot;",
+          "sourceUrl": "https://www.youtube.com/shorts/EmiZx7Ouah8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Questions media credibility and public manipulation",
+          "quote": "&quot;How dumb do you think everyone is?&quot;",
+          "sourceUrl": "https://www.youtube.com/shorts/CZ0hdw8bU8E",
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
+    },
+    {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 2,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Warns against self-censorship in political and cultural discourse",
+          "quote": "Tulsi Gabbard on the Culture of Self-Censorship",
+          "sourceUrl": "https://www.youtube.com/shorts/sYnSYTvrLzQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Calls for upholding God-given freedoms as nation's foundation",
+          "quote": "250 years ago our founders enshrined the fundamental truth that \u201call men are created equal, endowed by our Creator with certain unalienable rights, among those, life, liberty and the pursuit of happiness\u201d as the bedrock of our nation.  It's up to us to uphold our God-given freedo",
+          "sourceUrl": "https://x.com/TulsiGabbard/status/2073477406116258078",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 1,
-      "lastActive": "2026-07-30",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-07-30",
+          "date": "2026-08-29",
           "topic": "supreme-court-legal",
           "stance": "lean",
-          "summary": "",
+          "summary": "Supports Supreme Court expansion of rights",
           "quote": "Ira Glasser on the Supreme Court expanding rights",
           "sourceUrl": "https://www.youtube.com/shorts/XLoPZ713bB0",
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "education",
       "label": "Education",
       "count": 1,
-      "lastActive": "2026-07-30",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-07-30",
+          "date": "2026-08-29",
           "topic": "education",
           "stance": "strong",
-          "summary": "Critiques American school system as fundamentally broken",
+          "summary": "Argues education system requires fundamental reform",
           "quote": "The School System is Broken",
           "sourceUrl": "https://www.youtube.com/shorts/Zpjv8Ai2MA4",
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 1,
-      "lastActive": "2026-07-30",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-07-30",
+          "date": "2026-08-29",
           "topic": "billionaires-wealth",
           "stance": "lean",
-          "summary": "",
+          "summary": "Highlights corporate executive financial transactions",
           "quote": "&quot;He cashed out $43 million in stock...&quot;",
           "sourceUrl": "https://www.youtube.com/shorts/CoTArVmUejk",
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "covid-pandemic",

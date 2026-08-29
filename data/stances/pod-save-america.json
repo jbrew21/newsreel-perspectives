@@ -2,7 +2,7 @@
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
   "updatedAt": "2026-08-29",
-  "topicCount": 16,
+  "topicCount": 15,
   "stanceCount": 61,
   "topics": [
     {
@@ -126,8 +126,26 @@
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 12,
-      "lastActive": "2026-08-19",
+      "lastActive": "2026-08-29",
       "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Questions DSCC strategy and commitment to Mississippi",
+          "quote": "Why Did the DSCC Leave Mississippi Out? Scott Colom Responds",
+          "sourceUrl": "https://www.youtube.com/shorts/cm2E-bjIA1g",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "South Carolina Republicans resist top-down party pressure",
+          "quote": "These South Carolina Republican Voters Aren\u2019t Taking Orders",
+          "sourceUrl": "https://www.youtube.com/watch?v=hMm054844bc",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-19",
           "topic": "elections",
@@ -145,24 +163,6 @@
           "quote": "If Kamala gave a better answer on The View, then we may have never even heard about World Liberty Financial.",
           "sourceUrl": "https://x.com/PodSaveAmerica/status/2089823551192809908",
           "platform": "x"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Questions Democratic campaign committee's resource allocation strategy",
-          "quote": "Why Did the DSCC Leave Mississippi Out? Scott Colom Responds",
-          "sourceUrl": "https://www.youtube.com/shorts/cm2E-bjIA1g",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Highlights Republican voter independence from party leadership",
-          "quote": "These South Carolina Republican Voters Aren\u2019t Taking Orders",
-          "sourceUrl": "https://www.youtube.com/watch?v=hMm054844bc",
-          "platform": "youtube"
         },
         {
           "date": "2026-08-12",
@@ -243,15 +243,24 @@
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 9,
-      "lastActive": "2026-08-27",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-27",
+          "date": "2026-08-29",
           "topic": "state-local-politics",
           "stance": "lean",
-          "summary": "Modern political coverage misunderstands Southern regional identity",
+          "summary": "Southern politics misrepresented in modern national discourse",
           "quote": "Why Wright Thompson Says Modern Politics Gets the South Wrong",
           "sourceUrl": "https://www.youtube.com/shorts/ALnr5GnSkdc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Mississippi underrepresented in national political attention",
+          "quote": "Why Does America Ignore Mississippi? Politics, Race &amp; the Fight for Change",
+          "sourceUrl": "https://www.youtube.com/watch?v=ygfyBHyBpTM",
           "platform": "youtube"
         },
         {
@@ -261,15 +270,6 @@
           "summary": "Examining Democratic strategy and voter sentiment in Tennessee",
           "quote": "Jen Palmieri on Morning Joe: What Long Play Is Learning About Tennesee",
           "sourceUrl": "https://www.youtube.com/watch?v=3Etk2pUY4Ck",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Highlights bipartisan cooperation between Democratic and Republican senators",
-          "quote": "Jim Clyburn on Working Across the Aisle with Lindsey Graham",
-          "sourceUrl": "https://www.youtube.com/shorts/biDnLPOXlx8",
           "platform": "youtube"
         },
         {
@@ -375,6 +375,42 @@
       "active": true
     },
     {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 3,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Bipartisan cooperation possible across ideological divides",
+          "quote": "Jim Clyburn on Working Across the Aisle with Lindsey Graham",
+          "sourceUrl": "https://www.youtube.com/shorts/biDnLPOXlx8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Criticizes DNC dysfunction and internal conflict",
+          "quote": "Phones and blame fly at the DNC.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/2082200971359273447",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Moderate Democrats must actively compete for media attention",
+          "quote": "Moderate Democrats can't complain about who gets attention if they won't fight for it.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/2081380550015693124",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "immigration",
       "label": "Immigration",
       "count": 3,
@@ -414,13 +450,13 @@
       "topic": "culture-war",
       "label": "Culture War",
       "count": 3,
-      "lastActive": "2026-08-19",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-19",
+          "date": "2026-08-29",
           "topic": "culture-war",
           "stance": "lean",
-          "summary": "Highlights challenges for liberal women in conservative regions",
+          "summary": "Highlights challenges for liberals in conservative regions",
           "quote": "Kyle Tibbs Jones on What It\u2019s Like Being a Liberal Woman in the South",
           "sourceUrl": "https://www.youtube.com/shorts/_HcW25G9FdY",
           "platform": "youtube"
@@ -598,51 +634,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 2,
-      "lastActive": "2026-07-30",
-      "stances": [
-        {
-          "date": "2026-07-30",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Criticizes DNC dysfunction and internal conflict",
-          "quote": "Phones and blame fly at the DNC.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2082200971359273447",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Moderate Democrats must actively compete for media attention",
-          "quote": "Moderate Democrats can't complain about who gets attention if they won't fight for it.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2081380550015693124",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 1,
-      "lastActive": "2026-08-24",
-      "stances": [
-        {
-          "date": "2026-08-24",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Highlights Mississippi's systemic inequities and political marginalization",
-          "quote": "Why Does America Ignore Mississippi? Politics, Race &amp; the Fight for Change",
-          "sourceUrl": "https://www.youtube.com/watch?v=ygfyBHyBpTM",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "military-defense",

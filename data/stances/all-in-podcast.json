@@ -2,49 +2,49 @@
   "voiceId": "all-in-podcast",
   "voiceName": "All-In Podcast",
   "updatedAt": "2026-08-29",
-  "topicCount": 9,
-  "stanceCount": 27,
+  "topicCount": 10,
+  "stanceCount": 29,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-08-26",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-26",
+          "date": "2026-08-29",
           "topic": "ai-technology",
           "stance": "strong",
-          "summary": "Argues open-source AI development is patriotic imperative",
+          "summary": "Argues open-source AI is patriotic and necessary",
           "quote": "Gavin Baker: If you're a patriot, you should be pro-open source AI",
           "sourceUrl": "https://www.youtube.com/shorts/hTLXWbfVi8w",
           "platform": "youtube"
         },
         {
-          "date": "2026-08-25",
+          "date": "2026-08-29",
           "topic": "ai-technology",
           "stance": "strong",
-          "summary": "Opposes AI regulation that would harm industry competitiveness",
+          "summary": "Opposes AI regulation as destructive to open competition",
           "quote": "David Sacks: If Dario Got His Way on AI Regulation, It Would Destroy Anthropic",
           "sourceUrl": "https://www.youtube.com/shorts/J0QFTXCabGQ",
           "platform": "youtube"
         },
         {
-          "date": "2026-08-25",
+          "date": "2026-08-29",
           "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Discusses Trump science agenda, critiques on anti-science claims and DEI",
-          "quote": "Inside Trump's Science Agenda: Anti-Science Claims, Fauci's Damage, DEI &amp; China w/ Michael Kratsios",
-          "sourceUrl": "https://www.youtube.com/watch?v=Xj4pTYsVSWQ",
+          "stance": "strong",
+          "summary": "Warns AI regulation will capture market and ban open-source",
+          "quote": "David Sacks Predicts the Regulatory Capture Playbook to Ban Open Source AI, Step by Step",
+          "sourceUrl": "https://www.youtube.com/shorts/EpqCeH_YcIc",
           "platform": "youtube"
         },
         {
-          "date": "2026-08-24",
+          "date": "2026-08-29",
           "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Warns of regulatory capture to restrict open source AI development",
-          "quote": "David Sacks Predicts the Regulatory Capture Playbook to Ban Open Source AI, Step by Step",
-          "sourceUrl": "https://www.youtube.com/shorts/EpqCeH_YcIc",
+          "stance": "lean",
+          "summary": "China's cultural optimism gives it AI development advantage",
+          "quote": "Sacks: China\u2019s Biggest AI Advantage Over America Is Optimism",
+          "sourceUrl": "https://www.youtube.com/shorts/heZBlRiD_sM",
           "platform": "youtube"
         },
         {
@@ -168,6 +168,42 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Warns of economic downturn or systemic collapse risk",
+          "quote": "Chamath: \u201cThis could be the beginning of a death spiral.\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/WkTC8Hn60Gs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Chip market decline driven by momentum, not fundamentals",
+          "quote": "David Sacks: The Chip Stock Crash is Based on Momentum, NOT Fundamentals\n\n@DavidSacks:\n\n\u201cThat is the key question here, this correction in the markets, is it driven by fundamentals or is it driven by momentum?\n\nI think it's driven by momentum. Meaning that over the past year, you",
+          "sourceUrl": "https://x.com/theallinpod/status/2083406645468528701",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Warns of private credit crisis from data center borrowing surge",
+          "quote": "Mark Cuban: \u201cA lot of data centers will be turned into pickleball courts.\u201d\n\n@mcuban:\n\n\u201cWhat's happening now is the market leaders, Google, Meta. etc, they're borrowing hundreds of billions of dollars.\n\nAnd there's already a private credit problem right now. Just layer on private ",
+          "sourceUrl": "https://x.com/theallinpod/status/2081775136026296622",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 3,
@@ -231,40 +267,31 @@
       "active": false
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 2,
-      "lastActive": "2026-08-01",
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-01",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Chip market decline driven by momentum, not fundamentals",
-          "quote": "David Sacks: The Chip Stock Crash is Based on Momentum, NOT Fundamentals\n\n@DavidSacks:\n\n\u201cThat is the key question here, this correction in the markets, is it driven by fundamentals or is it driven by momentum?\n\nI think it's driven by momentum. Meaning that over the past year, you",
-          "sourceUrl": "https://x.com/theallinpod/status/2083406645468528701",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Warns of private credit crisis from data center borrowing surge",
-          "quote": "Mark Cuban: \u201cA lot of data centers will be turned into pickleball courts.\u201d\n\n@mcuban:\n\n\u201cWhat's happening now is the market leaders, Google, Meta. etc, they're borrowing hundreds of billions of dollars.\n\nAnd there's already a private credit problem right now. Just layer on private ",
-          "sourceUrl": "https://x.com/theallinpod/status/2081775136026296622",
-          "platform": "x"
+          "date": "2026-08-29",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Fauci, backs Trump science agenda, opposes DEI",
+          "quote": "Inside Trump's Science Agenda: Anti-Science Claims, Fauci's Damage, DEI &amp; China w/ Michael Kratsios",
+          "sourceUrl": "https://www.youtube.com/watch?v=Xj4pTYsVSWQ",
+          "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "science-space",
       "label": "Science & Space",
       "count": 1,
-      "lastActive": "2026-08-28",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "topic": "science-space",
           "stance": "strong",
           "summary": "Alleges government suppression of scientific breakthroughs",
@@ -279,13 +306,13 @@
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
       "count": 1,
-      "lastActive": "2026-08-26",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-26",
+          "date": "2026-08-29",
           "topic": "covid-pandemic",
           "stance": "strong",
-          "summary": "Criticizes Fauci for damaging scientific integrity and public trust",
+          "summary": "Claims Fauci caused more scientific damage than anyone",
           "quote": "&quot;Fauci hurt science than anyone in modern history.&quot;",
           "sourceUrl": "https://www.youtube.com/shorts/2GTgVP81G2M",
           "platform": "youtube"
@@ -297,13 +324,13 @@
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 1,
-      "lastActive": "2026-08-25",
+      "lastActive": "2026-08-29",
       "stances": [
         {
-          "date": "2026-08-25",
+          "date": "2026-08-29",
           "topic": "criminal-justice",
           "stance": "lean",
-          "summary": "Technology can effectively identify and document police misconduct",
+          "summary": "Highlights technology for identifying police misconduct",
           "quote": "Flock CEO on Catching Bad Cops: \u201cIt\u2019s a Ton. It\u2019s More Than I Ever Would\u2019ve Hoped.\u201d",
           "sourceUrl": "https://www.youtube.com/shorts/r9QIYJ-xh68",
           "platform": "youtube"

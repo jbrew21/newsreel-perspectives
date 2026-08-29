@@ -1,0 +1,108 @@
+{
+  "headline": "Media Figures Clash Over Hasan Piker, Charlie Kirk Fallout",
+  "summary": "Only a handful directly engage the Hasan Piker/Charlie Kirk controversy; most listed voices are covering unrelated stories.",
+  "type": "split",
+  "source": "voices",
+  "coverUrl": "",
+  "storyType": "",
+  "topicSlugs": [
+    "media-personalities"
+  ],
+  "voiceCount": 5,
+  "clusterCount": 2,
+  "clusters": [
+    {
+      "name": "Hasan Piker Defenders",
+      "voices": [
+        {
+          "voiceId": "mehdi-hasan",
+          "voiceName": "Mehdi Hasan",
+          "photo": "/photos/mehdi-hasan.jpg",
+          "quote": "Hasan Piker is Being Smeared for Saying What Others Have",
+          "sourceUrl": "https://www.youtube.com/shorts/h4IxFPQvtNo",
+          "platform": "youtube",
+          "fit": 9,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "kyle-kulinski",
+          "voiceName": "Kyle Kulinski",
+          "photo": "/photos/kyle-kulinski.jpg",
+          "quote": "CNN Guest SHUTS DOWN Hasan Slander Effortlessly Without Even Trying | The Kyle Kulinski Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=BLgNSOufeso",
+          "platform": "youtube",
+          "fit": 9,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "breaking-points",
+          "voiceName": "Breaking Points",
+          "photo": "/photos/breaking-points.jpg",
+          "quote": "Norm Finkelstein RESPONDS to Hasan Piker Outrage",
+          "sourceUrl": "https://www.youtube.com/watch?v=p_ldJU9PGW4",
+          "platform": "youtube",
+          "fit": 5,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 3,
+      "bestQuote": {
+        "voiceName": "Mehdi Hasan",
+        "quote": "Hasan Piker is Being Smeared for Saying What Others Have",
+        "platform": "youtube",
+        "quality": 1
+      }
+    },
+    {
+      "name": "Charlie Kirk Coverage",
+      "voices": [
+        {
+          "voiceId": "young-turks",
+          "voiceName": "The Young Turks",
+          "photo": "/photos/young-turks.jpg",
+          "quote": "Candace Owens Details Secret Charlie Kirk Video She Was Shown",
+          "sourceUrl": "https://www.youtube.com/watch?v=lnf516XLG9k",
+          "platform": "youtube",
+          "fit": 6,
+          "quoteQuality": 1
+        },
+        {
+          "voiceId": "cenk-uygur",
+          "voiceName": "Cenk Uygur",
+          "photo": "/photos/cenk-uygur.jpg",
+          "quote": "Candace Owens Details Secret Charlie Kirk Video She Was Shown",
+          "sourceUrl": "https://www.youtube.com/watch?v=lnf516XLG9k",
+          "platform": "youtube",
+          "fit": 6,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 2,
+      "bestQuote": {
+        "voiceName": "The Young Turks",
+        "quote": "Candace Owens Details Secret Charlie Kirk Video She Was Shown",
+        "platform": "youtube",
+        "quality": 1
+      }
+    }
+  ],
+  "confidence": 4,
+  "relevance": {
+    "direct": 6,
+    "related": 0,
+    "unrelated": 10
+  },
+  "validated": true,
+  "heatScore": 47,
+  "belowThreshold": false,
+  "counterNarrative": {
+    "dominantCluster": "Hasan Piker Defenders",
+    "dominantCount": 3,
+    "counterCluster": "Charlie Kirk Coverage",
+    "counterCount": 2,
+    "axis": "who deserves sympathy vs scrutiny",
+    "tensionScore": 7,
+    "tension": "3 voices say \"Hasan Piker Defenders\" \u2014 but 2 push back: \"Charlie Kirk Coverage\""
+  },
+  "slug": "media-figures-clash-over-hasan-piker-charlie-kirk-fallout"
+}
