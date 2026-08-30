@@ -1,0 +1,19 @@
+{
+  "_comment": "Platforms we expect to collect every day, with a floor on daily post volume. Checked by scripts/check_collection_health.py INDEPENDENTLY of the trailing baseline, because a trailing average silently absorbs an outage: X died 2026-08-19 and by 2026-08-30 the 7-day baseline had normalized zero as normal. Changing a number here is a deliberate decision to expect less; it should never be edited to make a red build green.",
+  "_updated": "2026-08-30",
+  "expected": {
+    "bluesky": 400,
+    "youtube": 300,
+    "substack": 120,
+    "podcast": 15
+  },
+  "degraded": {
+    "x": "DEAD since 2026-08-19. Public Nitter shut down (nitter.net 410; every mirror dead, 429 or 400). syndication.twitter.com 429s from datacenter IPs; twikit guest auth no longer completes. Was 1,614 posts/day. voices.json also carried 121 rss.app feed URLs of the form /feeds/v1.1/twitter/<handle>.json \u2014 all 404, never valid, removed 2026-08-30; do not mistake them for a working subscription. Restoring X means a real paid source (rss.app feeds generated per voice, or the X API). 68 voices depend on it and nothing else.",
+    "tiktok": "DEGRADED since 2026-08-19 \u2014 was ~400/day, now intermittent tens.",
+    "instagram": "NEVER runs in CI \u2014 fetch_instagram_posts reads session cookies from a local Chrome profile, which does not exist on a GitHub runner. Works only on Jack's Mac."
+  },
+  "recovery": {
+    "bluesky_backfill": "scripts/discover_bluesky.py wired 35 stale voices to verified Bluesky accounts (deterministic scoring + Haiku identity check; .gov/.edu domain handles are DNS-verified). Coverage 67% -> 79%. Rerun after adding voices; --verify-ai needs ANTHROPIC_API_KEY.",
+    "remaining_gap": "68 voices are X-only and either absent from Bluesky, present but not posting, or have only impostor accounts (Elon Musk's best match is a jet tracker; DeSantis's is @desantisjet). These cannot be recovered for free."
+  }
+}

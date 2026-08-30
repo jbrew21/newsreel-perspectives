@@ -86,6 +86,14 @@ jobs:
             exit 1
           fi
 
+      # The check above only asks "is there anything at all", which stayed true
+      # on 2026-08-19 when X collection died: Bluesky and YouTube kept the index
+      # fat while a third of the roster silently stopped updating for 11 days.
+      # This compares against both a trailing baseline and the committed floors
+      # in data/collection-baseline.json, so a dead source fails the run.
+      - name: Check collection health
+        run: python scripts/check_collection_health.py
+
       - name: Sync to Supabase
         continue-on-error: true
         env:

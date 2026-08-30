@@ -90,12 +90,18 @@ def load_voices():
 
 # ─── X/TWITTER VIA NITTER RSS ────────────────────────────────────────────────
 
-NITTER_INSTANCES = [
-    'https://nitter.net',
-    'https://nitter.privacydev.net',
-    'https://nitter.poast.org',
-    'https://nitter.esmailelbob.xyz',
-]
+# The public Nitter ecosystem shut down. Verified 2026-08-30: nitter.net
+# returns 410 Gone, and privacydev / poast / esmailelbob / kavin / 1d4 /
+# moomoo / lucabased are dead, refused or NXDOMAIN; tiekoetter and xcancel
+# answer but 429/400 every request. syndication.twitter.com 429s from any
+# datacenter IP and twikit's guest-token flow no longer completes.
+#
+# Left as an empty list rather than deleted so the fallback chain stays intact
+# for whenever a working instance exists again. X collection now depends on a
+# per-voice rss.app feed URL in voices.json (feeds.x), which is checked first
+# and still works; without one, a voice's X posts are simply not collected and
+# fetch_x_posts says so rather than failing silently.
+NITTER_INSTANCES = []
 
 
 def strip_quoted_tweet(text):
@@ -1607,7 +1613,13 @@ def main():
             if len(_x_failures['failed_voices']) > 10:
                 print(f"    ... and {len(_x_failures['failed_voices']) - 10} more")
         if success_rate < 50:
-            print(f"  🚨 CRITICAL: X collection below 50%. Nitter may be down. Consider rss.app migration.")
+            configured = sum(1 for v in load_voices()
+                             if ((v.get('feeds') or {}).get('x') or ''))
+            print(f"  🚨 X collection is below 50%. Public Nitter is gone (see NITTER_INSTANCES),")
+            print(f"     so a voice only collects from X if it has a WORKING feeds.x URL:")
+            print(f"     {configured} of {_x_failures['total_attempts']} attempted have one.")
+            print(f"     Restore options: add rss.app feeds to voices.json (feeds.x), or cover")
+            print(f"     these voices from Bluesky (scripts/discover_bluesky.py).")
 
     print(f"\n  Done!\n")
 
