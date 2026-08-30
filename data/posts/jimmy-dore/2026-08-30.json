@@ -1,9 +1,26 @@
 {
   "voiceId": "jimmy-dore",
   "voiceName": "Jimmy Dore",
-  "collectedAt": "2026-08-30T12:11:11.316283",
+  "collectedAt": "2026-08-30T14:10:04.917739",
   "date": "2026-08-30",
   "posts": [
+    {
+      "voiceId": "jimmy-dore",
+      "voiceName": "Jimmy Dore",
+      "platform": "youtube",
+      "text": "Jeff Bridges: \u201cThe Surveillance State Is Not Cool, Man\u201d \u2014 Flock Cameras",
+      "sourceUrl": "https://www.youtube.com/watch?v=0mfhv-YSrSw",
+      "timestamp": "2026-08-29T22:52:25+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Opposes surveillance camera proliferation as privacy threat",
+      "quote": "Jeff Bridges: \u201cThe Surveillance State Is Not Cool, Man\u201d \u2014 Flock Cameras"
+    },
     {
       "voiceId": "jimmy-dore",
       "voiceName": "Jimmy Dore",
@@ -141,26 +158,17 @@
       "stance": "strong",
       "summary": "Criticizes Treasury Secretary's aggressive Iran sanctions threats",
       "quote": "Treasury Sec. Scott Bessent THREATENS Countries Doing Business w/ Iran!"
-    },
-    {
-      "voiceId": "jimmy-dore",
-      "voiceName": "Jimmy Dore",
-      "platform": "youtube",
-      "text": "Jeff Bridges: \u201cThe Surveillance State Is Not Cool, Man\u201d \u2014 Flock Cameras",
-      "sourceUrl": "https://www.youtube.com/watch?v=0mfhv-YSrSw",
-      "timestamp": "2026-08-29T22:52:25+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Opposes surveillance camera proliferation as privacy threat",
-      "quote": "Jeff Bridges: \u201cThe Surveillance State Is Not Cool, Man\u201d \u2014 Flock Cameras"
     }
   ],
   "topicSummary": {
+    "ai-technology": [
+      {
+        "quote": "Jeff Bridges: \u201cThe Surveillance State Is Not Cool, Man\u201d \u2014 Flock Cameras",
+        "sourceUrl": "https://www.youtube.com/watch?v=0mfhv-YSrSw",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T22:52:25+00:00"
+      }
+    ],
     "iran-conflict": [
       {
         "quote": "Iran Hits TWO Oil Tankers \u2014 One Kuwaiti, On Fire!",
@@ -213,14 +221,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=iF45ZvRkG28",
         "platform": "youtube",
         "timestamp": "2026-08-29T15:56:29+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "Jeff Bridges: \u201cThe Surveillance State Is Not Cool, Man\u201d \u2014 Flock Cameras",
-        "sourceUrl": "https://www.youtube.com/watch?v=0mfhv-YSrSw",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T22:52:25+00:00"
       }
     ]
   }

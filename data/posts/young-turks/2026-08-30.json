@@ -1,9 +1,44 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "collectedAt": "2026-08-30T12:11:11.303523",
+  "collectedAt": "2026-08-30T14:10:04.903107",
   "date": "2026-08-30",
   "posts": [
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "BREAKING: Tump Considering USING NUKES!",
+      "sourceUrl": "https://www.youtube.com/watch?v=eoN3EvWj4Oc",
+      "timestamp": "2026-08-30T00:38:49+00:00",
+      "type": "video_title",
+      "topic": "military-defense",
+      "topics": [
+        "military-defense"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Nuclear weapons use under consideration is alarming",
+      "quote": "BREAKING: Tump Considering USING NUKES!"
+    },
+    {
+      "voiceId": "young-turks",
+      "voiceName": "The Young Turks",
+      "platform": "youtube",
+      "text": "Iran War Threatens Global Financial MELTDOWN",
+      "sourceUrl": "https://www.youtube.com/watch?v=sasLi07TpV4",
+      "timestamp": "2026-08-29T22:00:37+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "topics": [
+        "iran-conflict",
+        "economy-trade"
+      ],
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Iran conflict poses serious economic risks",
+      "quote": "Iran War Threatens Global Financial MELTDOWN"
+    },
     {
       "voiceId": "young-turks",
       "voiceName": "The Young Turks",
@@ -124,44 +159,37 @@
       "stance": "lean",
       "summary": "Reports ICE enforcement action against right-wing figure",
       "quote": "Milo Yiannopoulos Nabbed By ICE"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "BREAKING: Tump Considering USING NUKES!",
-      "sourceUrl": "https://www.youtube.com/watch?v=eoN3EvWj4Oc",
-      "timestamp": "2026-08-30T00:38:49+00:00",
-      "type": "video_title",
-      "topic": "military-defense",
-      "topics": [
-        "military-defense"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Nuclear weapons use under consideration is alarming",
-      "quote": "BREAKING: Tump Considering USING NUKES!"
-    },
-    {
-      "voiceId": "young-turks",
-      "voiceName": "The Young Turks",
-      "platform": "youtube",
-      "text": "Iran War Threatens Global Financial MELTDOWN",
-      "sourceUrl": "https://www.youtube.com/watch?v=sasLi07TpV4",
-      "timestamp": "2026-08-29T22:00:37+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "topics": [
-        "iran-conflict",
-        "economy-trade"
-      ],
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Iran conflict poses serious economic risks",
-      "quote": "Iran War Threatens Global Financial MELTDOWN"
     }
   ],
   "topicSummary": {
+    "military-defense": [
+      {
+        "quote": "BREAKING: Tump Considering USING NUKES!",
+        "sourceUrl": "https://www.youtube.com/watch?v=eoN3EvWj4Oc",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T00:38:49+00:00"
+      }
+    ],
+    "iran-conflict": [
+      {
+        "quote": "Iran War Threatens Global Financial MELTDOWN",
+        "sourceUrl": "https://www.youtube.com/watch?v=sasLi07TpV4",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T22:00:37+00:00"
+      },
+      {
+        "quote": "Breaking: US Talking About Using Nukes! Tucker Carlson Says Trump Should be Removed from Office!",
+        "sourceUrl": "https://www.youtube.com/shorts/yVAqrCBLpSM",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T18:52:02+00:00"
+      },
+      {
+        "quote": "Dr. Nazarian Will Do ANYTHING To Keep Disastrous War Going",
+        "sourceUrl": "https://www.youtube.com/watch?v=O-7waQ604LY",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T18:00:29+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "Israel Is Getting CREATIVE In How They Bribe Our Politicians",
@@ -174,26 +202,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=n2bH3bdoHdg",
         "platform": "youtube",
         "timestamp": "2026-08-29T04:15:26+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "Breaking: US Talking About Using Nukes! Tucker Carlson Says Trump Should be Removed from Office!",
-        "sourceUrl": "https://www.youtube.com/shorts/yVAqrCBLpSM",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T18:52:02+00:00"
-      },
-      {
-        "quote": "Dr. Nazarian Will Do ANYTHING To Keep Disastrous War Going",
-        "sourceUrl": "https://www.youtube.com/watch?v=O-7waQ604LY",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T18:00:29+00:00"
-      },
-      {
-        "quote": "Iran War Threatens Global Financial MELTDOWN",
-        "sourceUrl": "https://www.youtube.com/watch?v=sasLi07TpV4",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T22:00:37+00:00"
       }
     ],
     "media-personalities": [
@@ -218,14 +226,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=RA5o8gdoquk",
         "platform": "youtube",
         "timestamp": "2026-08-29T03:30:23+00:00"
-      }
-    ],
-    "military-defense": [
-      {
-        "quote": "BREAKING: Tump Considering USING NUKES!",
-        "sourceUrl": "https://www.youtube.com/watch?v=eoN3EvWj4Oc",
-        "platform": "youtube",
-        "timestamp": "2026-08-30T00:38:49+00:00"
       }
     ]
   }

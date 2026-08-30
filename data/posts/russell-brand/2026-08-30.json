@@ -1,26 +1,9 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-30T12:11:11.304148",
+  "collectedAt": "2026-08-30T14:10:04.903880",
   "date": "2026-08-30",
   "posts": [
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Former NBA player claims to be transgender now?!",
-      "sourceUrl": "https://www.youtube.com/shorts/iE3FKniaPDM",
-      "timestamp": "2026-08-29T19:15:08+00:00",
-      "type": "video_title",
-      "topic": "gender-lgbtq",
-      "topics": [
-        "gender-lgbtq"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Expresses skepticism or concern about transgender identity claims",
-      "quote": "Former NBA player claims to be transgender now?!"
-    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -71,17 +54,43 @@
       "stance": "lean",
       "summary": "Expresses skepticism about polling accuracy",
       "quote": "Can we even take these polls seriously?"
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
+      "text": "Something changed in Tucker Carlson...",
+      "sourceUrl": "https://www.youtube.com/shorts/JKjBoyRlQhc",
+      "timestamp": "2026-08-30T13:00:08+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Suggests Tucker Carlson has undergone a significant shift",
+      "quote": "Something changed in Tucker Carlson..."
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
+      "text": "Piers Morgan defends &quot;government water&quot;...",
+      "sourceUrl": "https://www.youtube.com/shorts/hD36snGUtVo",
+      "timestamp": "2026-08-30T11:54:14+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions or critiques Piers Morgan's defense of government water policies",
+      "quote": "Piers Morgan defends &quot;government water&quot;..."
     }
   ],
   "topicSummary": {
-    "gender-lgbtq": [
-      {
-        "quote": "Former NBA player claims to be transgender now?!",
-        "sourceUrl": "https://www.youtube.com/shorts/iE3FKniaPDM",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T19:15:08+00:00"
-      }
-    ],
     "culture-war": [
       {
         "quote": "Did he expose America's materialism?",
@@ -104,6 +113,20 @@
         "sourceUrl": "https://www.youtube.com/shorts/MulAlAeHYXs",
         "platform": "youtube",
         "timestamp": "2026-08-29T22:30:05+00:00"
+      }
+    ],
+    "media-personalities": [
+      {
+        "quote": "Something changed in Tucker Carlson...",
+        "sourceUrl": "https://www.youtube.com/shorts/JKjBoyRlQhc",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T13:00:08+00:00"
+      },
+      {
+        "quote": "Piers Morgan defends &quot;government water&quot;...",
+        "sourceUrl": "https://www.youtube.com/shorts/hD36snGUtVo",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T11:54:14+00:00"
       }
     ]
   }
