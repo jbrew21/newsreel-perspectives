@@ -1,9 +1,26 @@
 {
   "voiceId": "bernie-sanders",
   "voiceName": "Bernie Sanders",
-  "collectedAt": "2026-08-30T14:10:04.919285",
+  "collectedAt": "2026-08-30T19:03:43.524440",
   "date": "2026-08-30",
   "posts": [
+    {
+      "voiceId": "bernie-sanders",
+      "voiceName": "Bernie Sanders",
+      "platform": "youtube",
+      "text": "Why is Trump calling everybody a communist?",
+      "sourceUrl": "https://www.youtube.com/shorts/8n-PUrpxqVs",
+      "timestamp": "2026-08-30T13:15:39+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions Trump's rhetorical use of communist label",
+      "quote": "Why is Trump calling everybody a communist?"
+    },
     {
       "voiceId": "bernie-sanders",
       "voiceName": "Bernie Sanders",
@@ -157,26 +174,23 @@
       "stance": "lean",
       "summary": "Attributes progressive electoral wins to grassroots organizing",
       "quote": "What is behind progressives\u2019 national success?"
-    },
-    {
-      "voiceId": "bernie-sanders",
-      "voiceName": "Bernie Sanders",
-      "platform": "youtube",
-      "text": "Why is Trump calling everybody a communist?",
-      "sourceUrl": "https://www.youtube.com/shorts/8n-PUrpxqVs",
-      "timestamp": "2026-08-30T13:15:39+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions Trump's rhetorical use of communist label",
-      "quote": "Why is Trump calling everybody a communist?"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Why is Trump calling everybody a communist?",
+        "sourceUrl": "https://www.youtube.com/shorts/8n-PUrpxqVs",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T13:15:39+00:00"
+      },
+      {
+        "quote": "Trump: \u201cI could be the greatest communist in history\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/hW3d03OxWaY",
+        "platform": "youtube",
+        "timestamp": "2026-08-20T16:21:57+00:00"
+      }
+    ],
     "civil-rights-race": [
       {
         "quote": "Dr. King\u2019s dream is under unprecedented attack. FIGHT BACK.",
@@ -231,20 +245,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/Kb7UpCfh_F4",
         "platform": "youtube",
         "timestamp": "2026-08-21T19:28:50+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Trump: \u201cI could be the greatest communist in history\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/hW3d03OxWaY",
-        "platform": "youtube",
-        "timestamp": "2026-08-20T16:21:57+00:00"
-      },
-      {
-        "quote": "Why is Trump calling everybody a communist?",
-        "sourceUrl": "https://www.youtube.com/shorts/8n-PUrpxqVs",
-        "platform": "youtube",
-        "timestamp": "2026-08-30T13:15:39+00:00"
       }
     ]
   }

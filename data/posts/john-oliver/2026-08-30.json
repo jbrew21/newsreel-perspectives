@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "collectedAt": "2026-08-30T14:10:04.905757",
+  "collectedAt": "2026-08-30T19:03:43.512374",
   "date": "2026-08-30",
   "posts": [
     {
@@ -127,18 +127,35 @@
       "voiceId": "john-oliver",
       "voiceName": "John Oliver",
       "platform": "youtube",
-      "text": "Sean Duffy's Road Trip #lastweektonight",
-      "sourceUrl": "https://www.youtube.com/shorts/UuesMLxBZL4",
-      "timestamp": "2026-08-24T13:00:21+00:00",
+      "text": "S10 E20: Mike Johnson &amp; Freight Trains: Last Week Tonight with John Oliver",
+      "sourceUrl": "https://www.youtube.com/watch?v=U5378zFEVLQ",
+      "timestamp": "2026-08-30T16:00:21+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "congress-legislation",
       "topics": [
-        "trump-administration"
+        "congress-legislation"
       ],
       "relevance": "high",
       "stance": "strong",
-      "summary": "Critiques Secretary of Transportation Sean Duffy's record and qualifications",
-      "quote": "Sean Duffy's Road Trip #lastweektonight"
+      "summary": "Criticizes Speaker Mike Johnson and freight train safety regulation failures",
+      "quote": "S10 E20: Mike Johnson &amp; Freight Trains: Last Week Tonight with John Oliver"
+    },
+    {
+      "voiceId": "john-oliver",
+      "voiceName": "John Oliver",
+      "platform": "youtube",
+      "text": "S10 E19: Organ and Body Donations &amp; George Santos: Last Week Tonight with John Oliver",
+      "sourceUrl": "https://www.youtube.com/watch?v=xD7i7CYmuSs",
+      "timestamp": "2026-08-29T16:00:31+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
+      "topics": [
+        "congress-legislation"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Examines organ donation policy and critiques George Santos' congressional conduct",
+      "quote": "S10 E19: Organ and Body Donations &amp; George Santos: Last Week Tonight with John Oliver"
     }
   ],
   "topicSummary": {
@@ -154,6 +171,18 @@
         "sourceUrl": "https://www.youtube.com/watch?v=-BRWR6iK2iY",
         "platform": "youtube",
         "timestamp": "2026-08-24T16:00:26+00:00"
+      },
+      {
+        "quote": "S10 E20: Mike Johnson &amp; Freight Trains: Last Week Tonight with John Oliver",
+        "sourceUrl": "https://www.youtube.com/watch?v=U5378zFEVLQ",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T16:00:21+00:00"
+      },
+      {
+        "quote": "S10 E19: Organ and Body Donations &amp; George Santos: Last Week Tonight with John Oliver",
+        "sourceUrl": "https://www.youtube.com/watch?v=xD7i7CYmuSs",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T16:00:31+00:00"
       }
     ],
     "israel-palestine": [
@@ -192,14 +221,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
         "platform": "youtube",
         "timestamp": "2026-08-25T16:00:19+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "Sean Duffy's Road Trip #lastweektonight",
-        "sourceUrl": "https://www.youtube.com/shorts/UuesMLxBZL4",
-        "platform": "youtube",
-        "timestamp": "2026-08-24T13:00:21+00:00"
       }
     ]
   }

@@ -1,16 +1,25 @@
 {
   "voiceId": "gary-marcus",
   "voiceName": "Gary Marcus",
-  "updatedAt": "2026-08-29",
-  "topicCount": 9,
-  "stanceCount": 28,
+  "updatedAt": "2026-08-30",
+  "topicCount": 10,
+  "stanceCount": 31,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-08-18",
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "OpenAI departed from mission; profit-driven now, not safety-focused",
+          "quote": "Crux of Musk-OpenAI trial so far is that Brockman keeps acting as if selling chatbots & API access for profit (which is what they do now) is exactly the same as the original mission (working on the AI safety problem for public benefit).\n\nThey aren\u2019t.\n\nIf the jury figures that out",
+          "sourceUrl": "https://bsky.app/profile/garymarcus.bsky.social/post/3ml4uevl44c25",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-18",
           "topic": "ai-technology",
@@ -109,14 +118,95 @@
           "quote": "anyone remember how GPT-5 was supposed to be AGI? \ud83e\udd23",
           "sourceUrl": "https://x.com/GaryMarcus/status/2088728473733038176",
           "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 4,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Reality now surpasses satire; The Onion's mission becomes impossible",
+          "quote": "What the F is The Onion supposed to do, when this actually happened?",
+          "sourceUrl": "https://bsky.app/profile/garymarcus.bsky.social/post/3mk4kmvpzv22e",
+          "platform": "bluesky"
         },
         {
-          "date": "2026-08-16",
-          "topic": "ai-technology",
+          "date": "2026-08-10",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Notes apparent double standard in media coverage of AI research claims",
+          "quote": "When @QualiaQuanta took a shot at the Riemann, half in jest, people called her a crackpot.\n\nWhen Anthropic uses Claude to do the same thing, it gets a hundred thousand views in 30 minutes.\n\nIt might well be that the latter is more progress, but I do also smell a double standard.",
+          "sourceUrl": "https://x.com/GaryMarcus/status/2086881797129073075",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "media-press",
           "stance": "strong",
-          "summary": "Defends neurosymbolic AI definition, rejects definitional shifting",
-          "quote": "Wrong!\n\nIf an AI leverages symbolic operations (conditionals, operations over variables, code interpreters, etc) and neural networks it is neurosymbolic.\n \nIf it doesn\u2019t, it\u2019s not. ( I laid all of this out in 2001 and dozens of articles since then.)\n\nWhat has changed is NOT the d",
-          "sourceUrl": "https://x.com/GaryMarcus/status/2088597427599331783",
+          "summary": "Criticizes major outlets for misreporting open-source vs. open-weight distinction",
+          "quote": "Sad to see the @nytimes confuse open-source (fully transparent) with open-weight models (less transparent; no access eg to training data).\n\nThe new Meta model is open-weight but not open-source. NYT got it wrong.  \n\nIt is time for both the media and the public to learn this disti",
+          "sourceUrl": "https://x.com/GaryMarcus/status/2086806296532255072",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Calls out media bungling of open-source and open-weight terminology",
+          "quote": "Why open-weight \u2260 open-source and why it matter when places like @Nytimes and @DeItaone bungle it (as both did today).\n\ngarymarcus.substack.com/p/op\u2026",
+          "sourceUrl": "https://x.com/GaryMarcus/status/2086837786116841715",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 4,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Criticizes Sam Altman for contradictory statements or hypocritical behavior",
+          "quote": "\u201cDraw a cartoon of Sam Altman talking out of both sides of his mouth\u201d",
+          "sourceUrl": "https://bsky.app/profile/garymarcus.bsky.social/post/3mtshceljts23",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Questions SpaceX IPO fairness, criticizes retail investor treatment",
+          "quote": "How can anyone be *surprised* that SpaceX minted a fortune for its bankers and then left retail investors holding the bag?",
+          "sourceUrl": "https://x.com/GaryMarcus/status/2082917734409707991",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Suggests SoftBank faces larger financial consequences than Leopold",
+          "quote": "Leopold is taking on it the chin now, but in the end SoftBank may take the bigger hit.",
+          "sourceUrl": "https://x.com/GaryMarcus/status/2083195427978105154",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Claims prior warnings about risk were ignored by buyer",
+          "quote": "and the buyer (emptor) was warned. many times, by me and many others. \ud83e\udd26\u200d\u2642\ufe0f",
+          "sourceUrl": "https://x.com/GaryMarcus/status/2083180508503310588",
           "platform": "x"
         }
       ],
@@ -186,78 +276,6 @@
       "active": true
     },
     {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 3,
-      "lastActive": "2026-08-10",
-      "stances": [
-        {
-          "date": "2026-08-10",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Notes apparent double standard in media coverage of AI research claims",
-          "quote": "When @QualiaQuanta took a shot at the Riemann, half in jest, people called her a crackpot.\n\nWhen Anthropic uses Claude to do the same thing, it gets a hundred thousand views in 30 minutes.\n\nIt might well be that the latter is more progress, but I do also smell a double standard.",
-          "sourceUrl": "https://x.com/GaryMarcus/status/2086881797129073075",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes major outlets for misreporting open-source vs. open-weight distinction",
-          "quote": "Sad to see the @nytimes confuse open-source (fully transparent) with open-weight models (less transparent; no access eg to training data).\n\nThe new Meta model is open-weight but not open-source. NYT got it wrong.  \n\nIt is time for both the media and the public to learn this disti",
-          "sourceUrl": "https://x.com/GaryMarcus/status/2086806296532255072",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Calls out media bungling of open-source and open-weight terminology",
-          "quote": "Why open-weight \u2260 open-source and why it matter when places like @Nytimes and @DeItaone bungle it (as both did today).\n\ngarymarcus.substack.com/p/op\u2026",
-          "sourceUrl": "https://x.com/GaryMarcus/status/2086837786116841715",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "billionaires-wealth",
-      "label": "Billionaires & Wealth",
-      "count": 3,
-      "lastActive": "2026-07-31",
-      "stances": [
-        {
-          "date": "2026-07-31",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Questions SpaceX IPO fairness, criticizes retail investor treatment",
-          "quote": "How can anyone be *surprised* that SpaceX minted a fortune for its bankers and then left retail investors holding the bag?",
-          "sourceUrl": "https://x.com/GaryMarcus/status/2082917734409707991",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "billionaires-wealth",
-          "stance": "lean",
-          "summary": "Suggests SoftBank faces larger financial consequences than Leopold",
-          "quote": "Leopold is taking on it the chin now, but in the end SoftBank may take the bigger hit.",
-          "sourceUrl": "https://x.com/GaryMarcus/status/2083195427978105154",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Claims prior warnings about risk were ignored by buyer",
-          "quote": "and the buyer (emptor) was warned. many times, by me and many others. \ud83e\udd26\u200d\u2642\ufe0f",
-          "sourceUrl": "https://x.com/GaryMarcus/status/2083180508503310588",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
       "count": 2,
@@ -283,6 +301,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "gun-policy",
+      "label": "Guns & Gun Policy",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "gun-policy",
+          "stance": "strong",
+          "summary": "Hotel security inadequate to protect against assassins; gun control insufficient response",
+          "quote": "A deranged shooter racing through a hotel to shoot the President is a real wake-up call \u2026 on the need for g\u0335u\u0335n\u0335 \u0335c\u0335o\u0335n\u0335t\u0335r\u0335o\u0335l\u0335 a gigantic ballroom.\n\nwww.washingtonpost.com/politics/202...",
+          "sourceUrl": "https://bsky.app/profile/garymarcus.bsky.social/post/3mkgbo2ws4k2b",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "elections",

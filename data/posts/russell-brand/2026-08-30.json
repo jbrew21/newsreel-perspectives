@@ -1,9 +1,43 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "collectedAt": "2026-08-30T14:10:04.903880",
+  "collectedAt": "2026-08-30T19:03:43.510389",
   "date": "2026-08-30",
   "posts": [
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
+      "text": "Something changed in Tucker Carlson...",
+      "sourceUrl": "https://www.youtube.com/shorts/JKjBoyRlQhc",
+      "timestamp": "2026-08-30T13:00:08+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Suggests Tucker Carlson has undergone a significant shift",
+      "quote": "Something changed in Tucker Carlson..."
+    },
+    {
+      "voiceId": "russell-brand",
+      "voiceName": "Russell Brand",
+      "platform": "youtube",
+      "text": "Piers Morgan defends &quot;government water&quot;...",
+      "sourceUrl": "https://www.youtube.com/shorts/hD36snGUtVo",
+      "timestamp": "2026-08-30T11:54:14+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions or critiques Piers Morgan's defense of government water policies",
+      "quote": "Piers Morgan defends &quot;government water&quot;..."
+    },
     {
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
@@ -59,38 +93,35 @@
       "voiceId": "russell-brand",
       "voiceName": "Russell Brand",
       "platform": "youtube",
-      "text": "Something changed in Tucker Carlson...",
-      "sourceUrl": "https://www.youtube.com/shorts/JKjBoyRlQhc",
-      "timestamp": "2026-08-30T13:00:08+00:00",
+      "text": "Pediatricians made millions off Covid vaccines...",
+      "sourceUrl": "https://www.youtube.com/shorts/16XcrJB-fSU",
+      "timestamp": "2026-08-30T14:00:00+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "covid-pandemic",
       "topics": [
-        "media-personalities"
+        "covid-pandemic"
       ],
       "relevance": "medium",
-      "stance": "lean",
-      "summary": "Suggests Tucker Carlson has undergone a significant shift",
-      "quote": "Something changed in Tucker Carlson..."
-    },
-    {
-      "voiceId": "russell-brand",
-      "voiceName": "Russell Brand",
-      "platform": "youtube",
-      "text": "Piers Morgan defends &quot;government water&quot;...",
-      "sourceUrl": "https://www.youtube.com/shorts/hD36snGUtVo",
-      "timestamp": "2026-08-30T11:54:14+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "topics": [
-        "media-personalities"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions or critiques Piers Morgan's defense of government water policies",
-      "quote": "Piers Morgan defends &quot;government water&quot;..."
+      "stance": "strong",
+      "summary": "Alleges financial corruption in vaccine industry by pediatricians",
+      "quote": "Pediatricians made millions off Covid vaccines..."
     }
   ],
   "topicSummary": {
+    "media-personalities": [
+      {
+        "quote": "Something changed in Tucker Carlson...",
+        "sourceUrl": "https://www.youtube.com/shorts/JKjBoyRlQhc",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T13:00:08+00:00"
+      },
+      {
+        "quote": "Piers Morgan defends &quot;government water&quot;...",
+        "sourceUrl": "https://www.youtube.com/shorts/hD36snGUtVo",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T11:54:14+00:00"
+      }
+    ],
     "culture-war": [
       {
         "quote": "Did he expose America's materialism?",
@@ -115,18 +146,12 @@
         "timestamp": "2026-08-29T22:30:05+00:00"
       }
     ],
-    "media-personalities": [
+    "covid-pandemic": [
       {
-        "quote": "Something changed in Tucker Carlson...",
-        "sourceUrl": "https://www.youtube.com/shorts/JKjBoyRlQhc",
+        "quote": "Pediatricians made millions off Covid vaccines...",
+        "sourceUrl": "https://www.youtube.com/shorts/16XcrJB-fSU",
         "platform": "youtube",
-        "timestamp": "2026-08-30T13:00:08+00:00"
-      },
-      {
-        "quote": "Piers Morgan defends &quot;government water&quot;...",
-        "sourceUrl": "https://www.youtube.com/shorts/hD36snGUtVo",
-        "platform": "youtube",
-        "timestamp": "2026-08-30T11:54:14+00:00"
+        "timestamp": "2026-08-30T14:00:00+00:00"
       }
     ]
   }

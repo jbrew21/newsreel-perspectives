@@ -1,27 +1,9 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-08-30T14:10:04.902848",
+  "collectedAt": "2026-08-30T19:03:43.509329",
   "date": "2026-08-30",
   "posts": [
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "Impeachment Looms Over Trump After the Pentagon\u2019s Leaked Nuclear Plans. Joe Kent on What Comes Next.",
-      "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
-      "timestamp": "2026-08-28T17:00:06+00:00",
-      "type": "video_title",
-      "topic": "military-defense",
-      "topics": [
-        "military-defense",
-        "iran-conflict"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes U.S. military strategy as desperate, warns of escalation risk",
-      "quote": "Impeachment Looms Over Trump After the Pentagon\u2019s Leaked Nuclear Plans. Joe Kent on What Comes Next."
-    },
     {
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
@@ -124,17 +106,61 @@
       "stance": "lean",
       "summary": "Notes reversal or policy shift by Trump official",
       "quote": "\u201cHe Flipped on a Dime\u201d"
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "Impeachment Looms Over Trump After the Pentagon\u2019s Leaked Nuclear Plans. Joe Kent on What Comes Next.",
+      "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
+      "timestamp": "2026-08-28T17:00:06+00:00",
+      "type": "video_title",
+      "topic": "military-defense",
+      "topics": [
+        "military-defense",
+        "iran-conflict"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes U.S. military strategy as desperate, warns of escalation risk",
+      "quote": "Impeachment Looms Over Trump After the Pentagon\u2019s Leaked Nuclear Plans. Joe Kent on What Comes Next."
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "\u201cAgents Show Up at My House\u201d",
+      "sourceUrl": "https://www.youtube.com/shorts/WTdBzv3Urhs",
+      "timestamp": "2026-08-30T18:00:20+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "topics": [
+        "criminal-justice"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Expresses concern about government agents targeting him",
+      "quote": "\u201cAgents Show Up at My House\u201d"
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
+      "text": "They Want Me Dead...",
+      "sourceUrl": "https://www.youtube.com/shorts/6Hg0rw3SYZ8",
+      "timestamp": "2026-08-29T16:00:18+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "topics": [
+        "criminal-justice"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Claims he is being threatened or targeted for elimination",
+      "quote": "They Want Me Dead..."
     }
   ],
   "topicSummary": {
-    "military-defense": [
-      {
-        "quote": "Impeachment Looms Over Trump After the Pentagon\u2019s Leaked Nuclear Plans. Joe Kent on What Comes Next.",
-        "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
-        "platform": "youtube",
-        "timestamp": "2026-08-28T17:00:06+00:00"
-      }
-    ],
     "immigration": [
       {
         "quote": "Epic Rant Against Trump's Border Czar",
@@ -175,6 +201,28 @@
         "sourceUrl": "https://www.youtube.com/shorts/98T8udYmZk8",
         "platform": "youtube",
         "timestamp": "2026-08-28T22:00:00+00:00"
+      }
+    ],
+    "military-defense": [
+      {
+        "quote": "Impeachment Looms Over Trump After the Pentagon\u2019s Leaked Nuclear Plans. Joe Kent on What Comes Next.",
+        "sourceUrl": "https://www.youtube.com/watch?v=9POOfL7fo7c",
+        "platform": "youtube",
+        "timestamp": "2026-08-28T17:00:06+00:00"
+      }
+    ],
+    "criminal-justice": [
+      {
+        "quote": "\u201cAgents Show Up at My House\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/WTdBzv3Urhs",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T18:00:20+00:00"
+      },
+      {
+        "quote": "They Want Me Dead...",
+        "sourceUrl": "https://www.youtube.com/shorts/6Hg0rw3SYZ8",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T16:00:18+00:00"
       }
     ]
   }

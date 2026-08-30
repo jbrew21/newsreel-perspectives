@@ -3,7 +3,7 @@
   "voiceName": "Don Lemon",
   "updatedAt": "2026-08-30",
   "topicCount": 26,
-  "stanceCount": 135,
+  "stanceCount": 136,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1176,6 +1176,42 @@
       "active": true
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Celebrates journalist victory against major media outlet",
+          "quote": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post",
+          "sourceUrl": "https://www.youtube.com/watch?v=i3jGaWGHc_U",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Criticizes public speculation fueled by inadequate disclosure",
+          "quote": "If you want the public to stop speculating, why give the public another thing to speculate about?",
+          "sourceUrl": "https://www.youtube.com/shorts/Na1FvelbRuE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Argues media spectacle obscures substantive case details",
+          "quote": "The spectacle surrounding the Nolan Wells case is overshadowing the case itself",
+          "sourceUrl": "https://www.youtube.com/shorts/1615RVAfcuU",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 2,
@@ -1332,33 +1368,6 @@
           "summary": "Highlights security lapse leaving officials exposed to assassination threat",
           "quote": "BREAKING: Top Trump officials were left on Air Force One despite credible assassination attempt.",
           "sourceUrl": "https://www.youtube.com/shorts/vF_TxyZyVXM",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 2,
-      "lastActive": "2026-08-10",
-      "stances": [
-        {
-          "date": "2026-08-10",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Criticizes public speculation fueled by inadequate disclosure",
-          "quote": "If you want the public to stop speculating, why give the public another thing to speculate about?",
-          "sourceUrl": "https://www.youtube.com/shorts/Na1FvelbRuE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Argues media spectacle obscures substantive case details",
-          "quote": "The spectacle surrounding the Nolan Wells case is overshadowing the case itself",
-          "sourceUrl": "https://www.youtube.com/shorts/1615RVAfcuU",
           "platform": "youtube"
         }
       ],

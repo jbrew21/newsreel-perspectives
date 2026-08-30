@@ -1,16 +1,25 @@
 {
   "voiceId": "ted-lieu",
   "voiceName": "Ted Lieu",
-  "updatedAt": "2026-08-29",
-  "topicCount": 7,
-  "stanceCount": 18,
+  "updatedAt": "2026-08-30",
+  "topicCount": 8,
+  "stanceCount": 23,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 7,
-      "lastActive": "2026-08-20",
+      "count": 8,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Introduced bipartisan bill requiring humans to control runaway AI systems",
+          "quote": "Rep Nathaniel Moran and I introduced the urgent, bipartisan AI Kill Switch Act based on a common sense principle:\n\nWHEN AI SYSTEMS GO OFF THE RAILS, HUMANS MUST BE ABLE TO TURN THEM OFF.\n\nwww.foxnews.com/opinion/rep-...",
+          "sourceUrl": "https://bsky.app/profile/tedlieu.bsky.social/post/3mt2x3fj6qk2x",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-20",
           "topic": "ai-technology",
@@ -134,9 +143,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 2,
-      "lastActive": "2026-08-14",
+      "count": 3,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Reminds public Trump was found liable for sexual abuse by jury",
+          "quote": "Your regular reminder that a jury found trump sexually abused E. Jean Carroll.",
+          "sourceUrl": "https://bsky.app/profile/tedlieu.bsky.social/post/3mtc7ghyjv22p",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-14",
           "topic": "trump-administration",
@@ -156,7 +174,61 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Rising prices signal economic problems heading into election",
+          "quote": "Gas prices are up\n\nGrocery prices are up\n\nUtility prices are up\n\nNovember is coming",
+          "sourceUrl": "https://bsky.app/profile/tedlieu.bsky.social/post/3msvujptidk2f",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Job losses and weak labor participation indicate bad economic conditions",
+          "quote": "This is a very bad jobs report.\n\nMay and June: Jobs revised DOWNWARD by 103,000.\n\nJuly: LOST 23,000 jobs.\n\nLabor force participation is the lowest in over 5 years.\n\nNovember is coming.",
+          "sourceUrl": "https://bsky.app/profile/tedlieu.bsky.social/post/3msiwrwhafc2e",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Identifies cost of living crisis affecting Americans",
+          "quote": "We\u2019re in a cost of living crisis in America.",
+          "sourceUrl": "https://x.com/RepTedLieu/status/2087553615678312609",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "U.S. military strategy flawed, needs overhaul on acquisitions and force posture",
+          "quote": "We need a new defense strategy. Iran war showed the US cannot sustain a war, defend our bases or defend our allies.\n\nThese flaws came from years of doing the wrong things, from the first trump administration to Biden to now. Acquisitions, tactics/strategy and force postures need ",
+          "sourceUrl": "https://bsky.app/profile/tedlieu.bsky.social/post/3mucxuzb3w22e",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "elections",
@@ -193,24 +265,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-08-12",
-      "stances": [
-        {
-          "date": "2026-08-12",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Identifies cost of living crisis affecting Americans",
-          "quote": "We\u2019re in a cost of living crisis in America.",
-          "sourceUrl": "https://x.com/RepTedLieu/status/2087553615678312609",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "climate-environment",

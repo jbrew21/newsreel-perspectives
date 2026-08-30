@@ -3,7 +3,7 @@
   "voiceName": "Destiny",
   "updatedAt": "2026-08-30",
   "topicCount": 20,
-  "stanceCount": 78,
+  "stanceCount": 79,
   "topics": [
     {
       "topic": "culture-war",
@@ -636,6 +636,33 @@
       "active": true
     },
     {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Criticizes suppression of conservative speech",
+          "quote": "Insane Conservative Rant Gets Silenced",
+          "sourceUrl": "https://www.youtube.com/shorts/xkMljDR8Of8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Defends free speech rights, criticizes selective platform access",
+          "quote": "Hey @RepJayapal, appreciate you standing up for free speech, especially for college events (the same kind of audience that @hasanthehun blocked me from speaking to due to personal malice and cowardice).\n\nHowever, do you really think it's wise to spend time defending someone who c",
+          "sourceUrl": "https://x.com/TheOmniLiberal/status/2088015162649276423",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 2,
@@ -796,24 +823,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "free-speech-censorship",
-      "label": "Free Speech & Censorship",
-      "count": 1,
-      "lastActive": "2026-08-14",
-      "stances": [
-        {
-          "date": "2026-08-14",
-          "topic": "free-speech-censorship",
-          "stance": "strong",
-          "summary": "Defends free speech rights, criticizes selective platform access",
-          "quote": "Hey @RepJayapal, appreciate you standing up for free speech, especially for college events (the same kind of audience that @hasanthehun blocked me from speaking to due to personal malice and cowardice).\n\nHowever, do you really think it's wise to spend time defending someone who c",
-          "sourceUrl": "https://x.com/TheOmniLiberal/status/2088015162649276423",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "immigration",
