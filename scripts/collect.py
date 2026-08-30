@@ -90,6 +90,10 @@ def load_voices():
 
 # ─── X/TWITTER VIA NITTER RSS ────────────────────────────────────────────────
 
+# Nitter is retired as a source; X now comes from scripts/x_guest.py (logged-out
+# GraphQL via a guest token), which is the same mechanism Nitter used internally.
+# Kept here only so the fallback chain stays intact.
+#
 # The public Nitter ecosystem shut down. Verified 2026-08-30: nitter.net
 # returns 410 Gone, and privacydev / poast / esmailelbob / kavin / 1d4 /
 # moomoo / lucabased are dead, refused or NXDOMAIN; tiekoetter and xcancel
@@ -236,6 +240,19 @@ def _parse_nitter_rss(voice, rss, nitter_host):
 # Track X/Twitter collection failures for monitoring
 _x_failures = {'rssapp': 0, 'nitter': 0, 'total_attempts': 0, 'successes': 0, 'failed_voices': []}
 
+# One guest client per run: the token and the handle->id cache are shared
+# across every voice, so the per-voice cost is a single request after the
+# first pass and rate limits stay far away.
+_x_guest_client = None
+
+
+def _x_client():
+    global _x_guest_client
+    if _x_guest_client is None:
+        from x_guest import XGuestClient
+        _x_guest_client = XGuestClient()
+    return _x_guest_client
+
 
 def fetch_x_posts(voice):
     """Pull recent tweets from X/Twitter via rss.app (if configured) or Nitter RSS (free, no auth)."""
@@ -260,6 +277,30 @@ def fetch_x_posts(voice):
                 return posts
         except Exception:
             _x_failures['rssapp'] += 1
+
+    # Primary path since 2026-08-30: logged-out GraphQL via a guest token —
+    # the same mechanism Nitter used, driven directly. See scripts/x_guest.py.
+    try:
+        client = _x_client()
+        posts = []
+        for p in client.recent_posts(x_handle, count=20):
+            text = strip_quoted_tweet(p['text'])
+            if not text or len(text) < 15:
+                continue
+            posts.append({
+                'voiceId': voice['id'],
+                'voiceName': voice['name'],
+                'platform': 'x',
+                'text': text[:500],
+                'sourceUrl': p['url'],
+                'timestamp': p['created_at'].isoformat(),
+                'type': 'tweet',
+            })
+        if posts:
+            _x_failures['successes'] += 1
+            return posts
+    except Exception as e:
+        print(f"    x guest fetch failed for @{x_handle}: {str(e)[:60]}")
 
     # Try each Nitter instance in order. NOTE: the public Nitter ecosystem has
     # degraded to ~1 reliable instance (nitter.net), and the GitHub-runner IP
@@ -1620,6 +1661,11 @@ def main():
             print(f"     {configured} of {_x_failures['total_attempts']} attempted have one.")
             print(f"     Restore options: add rss.app feeds to voices.json (feeds.x), or cover")
             print(f"     these voices from Bluesky (scripts/discover_bluesky.py).")
+
+    # Persist the handle->id cache so subsequent runs skip the lookup call.
+    if _x_guest_client is not None:
+        _x_guest_client.save_cache()
+        print(f"  X guest client: {_x_guest_client.stats}")
 
     print(f"\n  Done!\n")
 
