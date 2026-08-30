@@ -21,6 +21,7 @@ Usage:
   python scripts/discover_bluesky.py --stale-days 7   # what counts as stale
   python scripts/discover_bluesky.py --apply          # write accepted handles
   python scripts/discover_bluesky.py --voice aoc      # single voice
+  python scripts/discover_bluesky.py --validate       # check configured handles still resolve
 """
 
 import json
@@ -355,6 +356,27 @@ def find_for_voice(voice, verbose=True):
     }
 
 
+def validate_existing(voices):
+    """Check every configured Bluesky handle still resolves.
+
+    A handle that stops resolving fails silently inside collect.py — the voice
+    just quietly returns no posts, which is exactly the failure mode that hid
+    the X outage for eleven days. stacey-abrams carried a dead
+    @staceyabrams.bsky.social this way. Returns [(voiceId, handle, code)].
+    """
+    bad = []
+    configured = [(v['id'], (v.get('handles') or {}).get('bluesky'))
+                  for v in voices if (v.get('handles') or {}).get('bluesky')]
+    print(f"  Validating {len(configured)} configured Bluesky handles...")
+    for vid, h in configured:
+        if not get_profile(h):
+            bad.append((vid, h))
+            print(f"    DEAD  {vid:<26} @{h}")
+        time.sleep(0.12)
+    print(f"  {len(bad)} dead handle(s)\n")
+    return bad
+
+
 def stale_voices(voices, days):
     cutoff = {(datetime.now() - timedelta(days=i)).strftime('%Y-%m-%d') for i in range(days)}
     out = []
@@ -387,6 +409,16 @@ def main():
         use_ai = False
 
     voices = load_voices()
+
+    if '--validate' in args:
+        bad = validate_existing(voices)
+        if bad:
+            print("  Re-run discovery for these voices to replace them, e.g.:")
+            for vid, _ in bad[:5]:
+                print(f"    python scripts/discover_bluesky.py --voice {vid} --verify-ai")
+            print()
+        return
+
     if only:
         targets = [v for v in voices if v['id'] == only]
     else:
