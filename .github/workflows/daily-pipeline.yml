@@ -162,7 +162,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/posts/ data/cluster-history.json data/stances/
+          # x-user-ids.json is the guest-token handle->id cache; collect.py
+          # rewrites it every run. It is tracked, so leaving it out of the commit
+          # left an uncommitted tracked file in the tree, which makes `git rebase`
+          # refuse to run — every push attempt then failed and the run's data was
+          # discarded (2026-08-30, run 33331377085 lost 5,891 X posts this way).
+          git add data/posts/ data/cluster-history.json data/stances/ data/x-user-ids.json
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else
@@ -175,6 +180,12 @@ jobs:
             # rebase before retrying so we never loop on unmerged files.
             pushed=false
             for attempt in 1 2 3 4 5; do
+              # Any other regenerated-but-unstaged file under data/ would block
+              # the rebase the same way; fold it into the commit instead of
+              # failing the run.
+              if ! git diff --quiet -- data/; then
+                git add data/ && git commit -q --amend --no-edit --no-verify || true
+              fi
               git fetch origin main || true
               if ! git rebase origin/main; then
                 git checkout --theirs -- data/ 2>/dev/null || true
