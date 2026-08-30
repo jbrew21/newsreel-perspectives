@@ -1,9 +1,9 @@
 {
   "voiceId": "george-sedberry",
   "voiceName": "George Sedberry Jr. (White George)",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-30",
   "topicCount": 8,
-  "stanceCount": 12,
+  "stanceCount": 14,
   "topics": [
     {
       "topic": "civil-rights-race",
@@ -51,6 +51,42 @@
       "active": true
     },
     {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Mourns death of iconic entertainer Dolly Parton",
+          "quote": "RIP Dolly Parton. You\u2019re a legend. \ud83d\udc94 #dollyparton #news #rip",
+          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678077896883244319",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Celebrates Tim Curry's legacy and personal connection",
+          "quote": "I just found out the iconic and legendary actor Tim Curry passed away today. I got to take a weekend road trip with Tim and his team (the amazing Marcia, Ramon, and Scott) to San Francisco for the 40th anniversary of the screening of the movie \"Clue\" a few months ago. Tim was a w",
+          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678449216045321502",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Honors Tim Curry's memory and shared road trip experience",
+          "quote": "**RIP Tim Curry** A few months ago I got to take a road trip with Tim Curry from LA to San Francisco for the 40th anniversary of the movie \u201cClue.\u201d I got to spend time with Tim and his team (Marcia and Ramon) and we had a great weekend. Tim did so good on the trip! It saddens me t",
+          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678387337541209375",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 2,
@@ -75,34 +111,16 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
-      "count": 1,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "celebrity-entertainment",
-          "stance": "strong",
-          "summary": "Mourns death of iconic entertainer Dolly Parton",
-          "quote": "RIP Dolly Parton. You\u2019re a legend. \ud83d\udc94 #dollyparton #news #rip",
-          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678077896883244319",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 1,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "trump-policy",
           "stance": "lean",
           "summary": "Expresses support for Trump and conservative politics",

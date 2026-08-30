@@ -2,8 +2,8 @@
   "voiceId": "rand-corporation",
   "voiceName": "RAND Corporation",
   "updatedAt": "2026-08-30",
-  "topicCount": 11,
-  "stanceCount": 58,
+  "topicCount": 15,
+  "stanceCount": 70,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -359,9 +359,18 @@
     {
       "topic": "education",
       "label": "Education",
-      "count": 5,
-      "lastActive": "2026-08-18",
+      "count": 6,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Civic education key to reversing truth decay",
+          "quote": "We're living in an era of #TruthDecay: Americans increasingly disagree about basic facts. This can have dire consequences.\n\nCivic education is key to reversing the course. Our new report identifies ways to spark an American civics revival. [thread] https://t.co/3vbeMeuiQP",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1336176355017371648",
+          "platform": "x"
+        },
         {
           "date": "2026-08-18",
           "topic": "education",
@@ -405,6 +414,60 @@
           "summary": "Warns school districts facing budget pressures and enrollment decline",
           "quote": "Many school districts are operating in a more competitive and financially precarious landscape than in the past, with potential implications for student learning.\n\nNew research: bit.ly/4ph0RMU\n\nLink\n\n\n\nSchool District Leaders Are Facing Shrinking Budgets and Fewer Students\n\nBudge",
           "sourceUrl": "https://x.com/RANDCorporation/status/2082464918687686806",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 5,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "U.S. users dominate racially motivated violent extremism online discourse",
+          "quote": "We analyzed more than 27 million sampled messages across 6 social media platforms and from more than 2 million users around the world.\n\nWe found that racially and ethnically motivated violent extremism networks were dominated by users in the United States. https://t.co/94SsUyCtwc",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1568306242984022017",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "U.S. overwhelmingly responsible for online racial extremism discourse",
+          "quote": "Our research shows the United States is overwhelmingly responsible for racially and ethnically motivated violent extremism (REMVE) discourse online. https://t.co/X4A7kJF1YN",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1561894243274203144",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "China conducted systematic detention campaign against Uyghurs",
+          "quote": "Satellite images provided new and visual evidence of how China carried out its detention campaign against the Uyghurs and other ethnic minority groups in Xinjiang. https://t.co/zuIfbBPf7E https://t.co/Ou1QMeZRkg",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1421835937391300609",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "China detained over one million Uyghurs in sprawling camp network",
+          "quote": "One million Uyghurs and other ethnic minorities, maybe more, have vanished into a sprawling network of camps and prisons in China's far west.\n\nRAND researchers have been using satellite data to investigate what's happening in Xinjiang: https://t.co/Jo0DPDjCDW",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1394038704809955329",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Satellite data documents Chinese detention camps in Xinjiang",
+          "quote": "Satellite data from Xinjiang show bright-lit compounds in the desert dark, wall after wall of barbed wire, and a sudden rush to build what appear to be fortified preschools. https://t.co/h1ieVvnQhY",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1390172221944082432",
           "platform": "x"
         }
       ],
@@ -510,27 +573,90 @@
       "active": true
     },
     {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Identifies gaps in mental health crisis response awareness",
+          "quote": "Many Americans don't know about the 988 Suicide &amp; Crisis Lifeline. Instead, 911 remains the default option for mental health crises.\n\nRAND's Stephanie Brooks Holliday explains the challenges this poses: https://t.co/5fEIrVCtyJ",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1726019453916168604",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "U.S. prescription drug prices are 2.56 times higher than other developed nations",
+          "quote": "Prescription drug prices in the United States are *significantly* higher than in other countries.\n\nAccording to our new study, U.S. prices are 2.56 times those in other developed nations. [thread] https://t.co/9MCWuEAxNj",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1354657137864171522",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Private health plans overpay hospitals 247% compared to Medicare rates",
+          "quote": "Private health plans in the U.S. paid hospitals 247% of what Medicare would have paid for the same services.\n\nThat's the latest takeaway from our project on hospital price transparency. [thread] https://t.co/aYWVH8m61t",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1306805886778773504",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
       "count": 2,
       "lastActive": "2026-08-30",
       "stances": [
         {
           "date": "2026-08-30",
-          "topic": "civil-rights-race",
+          "topic": "iran-conflict",
           "stance": "lean",
-          "summary": "U.S. users dominate racially motivated violent extremism online discourse",
-          "quote": "We analyzed more than 27 million sampled messages across 6 social media platforms and from more than 2 million users around the world.\n\nWe found that racially and ethnically motivated violent extremism networks were dominated by users in the United States. https://t.co/94SsUyCtwc",
-          "sourceUrl": "https://x.com/RANDCorporation/status/1568306242984022017",
+          "summary": "Russian Orthodox Church misused religious authority to justify war",
+          "quote": "\"Even globally, the World Council of Churches, which represents more than 580 million Christians, has condemned Russia's role in the war in Ukraine, as well as the Russian Orthodox Church's 'misuse of religious language and authority to justify' it.\"\nhttps://t.co/YsnO28pKqg",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1596704867565043714",
           "platform": "x"
         },
         {
           "date": "2026-08-30",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "U.S. overwhelmingly responsible for online racial extremism discourse",
-          "quote": "Our research shows the United States is overwhelmingly responsible for racially and ethnically motivated violent extremism (REMVE) discourse online. https://t.co/X4A7kJF1YN",
-          "sourceUrl": "https://x.com/RANDCorporation/status/1561894243274203144",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Kremlin propaganda model lacks commitment to truth and consistency",
+          "quote": "Russia's \"firehose of falsehood\" approach to propaganda has 4 distinctive features, say experts:\n\n1\ufe0f\u20e3 high-volume and multichannel\n2\ufe0f\u20e3 rapid, continuous, and repetitive\n3\ufe0f\u20e3 lacks commitment to objective reality\n4\ufe0f\u20e3 lacks commitment to consistency\nhttps://t.co/u67qyqfSOn",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1505367273313378309",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Russia and China manipulated Americans on COVID-19 vaccines",
+          "quote": "Sources linked to Russia and China have targeted Americans with information efforts on #COVID19.\n\nWith high rates of vaccine hesitancy in the U.S., public health communications should account for the potential effects of such messaging on vaccine uptake. https://t.co/jKqDoAd2Uz",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1389805052769013768",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Russia and China conducted malign information campaigns on COVID-19",
+          "quote": "Russia and China have targeted Americans with malign and subversive information campaigns during the #COVID19 pandemic.\n\nNew RAND research examines these campaigns \u2014 and what they might suggest about future activities by Moscow and Beijing. [thread] https://t.co/DQhRnNpe7h",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1387838199993708545",
           "platform": "x"
         }
       ],
@@ -573,24 +699,6 @@
       "active": false
     },
     {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-08-30",
-      "stances": [
-        {
-          "date": "2026-08-30",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Identifies gaps in mental health crisis response awareness",
-          "quote": "Many Americans don't know about the 988 Suicide &amp; Crisis Lifeline. Instead, 911 remains the default option for mental health crises.\n\nRAND's Stephanie Brooks Holliday explains the challenges this poses: https://t.co/5fEIrVCtyJ",
-          "sourceUrl": "https://x.com/RANDCorporation/status/1726019453916168604",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 1,
@@ -603,6 +711,42 @@
           "summary": "RFE/RL should restart shortwave broadcasts to Ukraine and Russia",
           "quote": "RAND expert: The U.S. may want to consider whether Radio Free Europe/Radio Liberty should return to its roots and follow the BBC's lead in restarting shortwave services to Ukraine and southeastern Russia. https://t.co/oLhZaQKGwK",
           "sourceUrl": "https://x.com/RANDCorporation/status/1508919932016369669",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Biden-Harris should increase transparency and elevate experts",
+          "quote": "Four ways the Biden-Harris administration could rebuild trust in government and public institutions:\n\n\ud83d\udd38 increase transparency\n\ud83d\udd38 elevate experts\n\ud83d\udd38 build a diverse administration\n\ud83d\udd38 invest in civic education and development\n\nhttps://t.co/erMGJM9XcC via @michaeldrich @jekavanagh",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1348368518614556674",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Russia uses social media to create distrust and paralyze U.S. politics",
+          "quote": "Russian interference in U.S. elections focuses on creating distrust. The goal? Paralyze the American political process.\n\nAs election season progresses, Russia might try again to manipulate and divide voters via social media. Here's how. [thread] https://t.co/pgzEsd0jrw",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1311517236541173761",
           "platform": "x"
         }
       ],

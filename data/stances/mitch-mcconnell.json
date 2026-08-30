@@ -2,8 +2,8 @@
   "voiceId": "mitch-mcconnell",
   "voiceName": "Mitch McConnell",
   "updatedAt": "2026-08-30",
-  "topicCount": 6,
-  "stanceCount": 10,
+  "topicCount": 8,
+  "stanceCount": 13,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -96,6 +96,33 @@
       "active": true
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Emphasizes Guard and Reserve importance, calls for adaptation to modern warfare",
+          "quote": "Glad to lead discussion with @USNationalGuard and Reserve leaders on FY2027 funding and the future of warfare. A majority of the servicemembers killed in action since March 1st, including two Kentuckians, have been members of the Guard and Reserve. It\u2019s critical that our entire f",
+          "sourceUrl": "https://x.com/SenMcConnell/status/2046640988441952500",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Honors military service and sacrifice on Memorial Day",
+          "quote": "On Memorial Day, we remember those who put their lives on the line in defense of American freedom. My father was a foot soldier who fought during World War II on the Eastern front. His bravery, and the bravery and determination of his fellow soldiers helped us achieve victory ove",
+          "sourceUrl": "https://x.com/SenMcConnell/status/2058944959420453273",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "immigration",
       "label": "Immigration",
       "count": 1,
@@ -132,18 +159,36 @@
       "active": true
     },
     {
-      "topic": "military-defense",
-      "label": "Military & Defense",
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
       "count": 1,
       "lastActive": "2026-08-30",
       "stances": [
         {
           "date": "2026-08-30",
-          "topic": "military-defense",
+          "topic": "criminal-justice",
           "stance": "lean",
-          "summary": "Emphasizes Guard and Reserve importance, calls for adaptation to modern warfare",
-          "quote": "Glad to lead discussion with @USNationalGuard and Reserve leaders on FY2027 funding and the future of warfare. A majority of the servicemembers killed in action since March 1st, including two Kentuckians, have been members of the Guard and Reserve. It\u2019s critical that our entire f",
-          "sourceUrl": "https://x.com/SenMcConnell/status/2046640988441952500",
+          "summary": "Supports law enforcement during National Police Week",
+          "quote": "This week, I\u2019m honored to join communities throughout the U.S. in celebrating National Police Week. Every day, law enforcement officers across the country answer the call to serve and defend our communities. I\u2019m proud to continue my work in the Senate supporting these devoted pub",
+          "sourceUrl": "https://x.com/SenMcConnell/status/2054295888546435239",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Champions bipartisan infrastructure funding for bridge project",
+          "quote": "It was great to attend the groundbreaking of the Brent Spence Bridge today. I was proud to champion this project in the Senate, and the Bipartisan Infrastructure Law that provided billions in federal funding for Kentucky\u2019s infrastructure. Many thanks to all those involved with ge",
+          "sourceUrl": "https://x.com/SenMcConnell/status/2052833502949712163",
           "platform": "x"
         }
       ],

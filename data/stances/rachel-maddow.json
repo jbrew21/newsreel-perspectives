@@ -2,8 +2,8 @@
   "voiceId": "rachel-maddow",
   "voiceName": "Rachel Maddow",
   "updatedAt": "2026-08-30",
-  "topicCount": 10,
-  "stanceCount": 33,
+  "topicCount": 11,
+  "stanceCount": 36,
   "topics": [
     {
       "topic": "trump-administration",
@@ -125,7 +125,7 @@
     {
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
-      "count": 9,
+      "count": 11,
       "lastActive": "2026-08-30",
       "stances": [
         {
@@ -207,6 +207,24 @@
           "summary": "Federal officials needed immediately; COVID response is catastrophic",
           "quote": "Hi. If you're a federal government official nominally in charge of any part of our nation's response to this crisis, you are needed here. This is a catastrophe. It requires intervention.",
           "sourceUrl": "https://x.com/maddow/status/1239040053264949248",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Questions Pence and administration's unfulfilled COVID-19 testing promises",
+          "quote": "Why, then, did Vice President Pence say every American could be tested. \n\nWhy did the Administration say they'd have a million tests available by the end of last week.",
+          "sourceUrl": "https://x.com/maddow/status/1237138303079587841",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Criticizes Trump's inappropriate remarks at first US coronavirus death announcement",
+          "quote": "I admit to being stuck on the fact that the President just convened reporters to announce the 1st US coronavirus death, a man in his 50s in Washington State.\n\nThe president said \"She was a wonderful woman.\"\n\nThis is ridiculous.\n\nJust stop. Stop talking. Let the scientists talk.",
+          "sourceUrl": "https://x.com/maddow/status/1233867551903535111",
           "platform": "x"
         }
       ],
@@ -387,6 +405,24 @@
           "summary": "24 million people losing insurance equals combined population of 15 states",
           "quote": "24 million people losing insurance is roughly equivalent to the population of:\n\nVT\nAL\nND\nSD\nDE\nMT\nRI\nME\nNH\nID\nWV\nNE\nNM\nKS\nWY\n\n**combined**.",
           "sourceUrl": "https://x.com/maddow/status/841400284790312961",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Defends journalism against accusation of organizing Trump family news",
+          "quote": "Oh please. \n\nIf reporting that something is happening is the same thing as \"organizing\" it, I'm happy to take credit for organizing the new Trump family patent on Chinese sausage casings, too. And the resignation of Spiro Agnew; that was a tough one, but I'm a diligent organizer!",
+          "sourceUrl": "https://x.com/maddow/status/1060577097926828033",
           "platform": "x"
         }
       ],

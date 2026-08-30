@@ -3,7 +3,7 @@
   "voiceName": "Jim Jordan",
   "updatedAt": "2026-08-30",
   "topicCount": 13,
-  "stanceCount": 50,
+  "stanceCount": 51,
   "topics": [
     {
       "topic": "immigration",
@@ -108,12 +108,12 @@
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 10,
-      "lastActive": "2026-08-18",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-18",
+          "date": "2026-08-30",
           "topic": "trump-administration",
-          "stance": "strong",
+          "stance": "lean",
           "summary": "Praises Trump administration for fulfilling campaign promises",
           "quote": "Promises made. \n\nPromises kept.",
           "sourceUrl": "https://x.com/Jim_Jordan/status/2089370720362958856",
@@ -440,9 +440,18 @@
     {
       "topic": "military-defense",
       "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-08-08",
+      "count": 3,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Honors fallen service members from Afghanistan Abbey Gate bombing",
+          "quote": "13 brave Americans paid the ultimate sacrifice for our freedom at the Abbey Gate in Afghanistan 5 years ago today.\n\nOne of those individuals was Max Soviak, from Ohio.\n\nGod bless his family and all the Gold Star families. https://t.co/unLLFDzRbj",
+          "sourceUrl": "https://x.com/Jim_Jordan/status/2092718959514558696",
+          "platform": "x"
+        },
         {
           "date": "2026-08-08",
           "topic": "military-defense",
@@ -462,7 +471,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "culture-war",

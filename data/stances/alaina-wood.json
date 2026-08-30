@@ -2,8 +2,8 @@
   "voiceId": "alaina-wood",
   "voiceName": "Alaina Wood",
   "updatedAt": "2026-08-30",
-  "topicCount": 11,
-  "stanceCount": 27,
+  "topicCount": 12,
+  "stanceCount": 29,
   "topics": [
     {
       "topic": "climate-environment",
@@ -177,6 +177,33 @@
       "active": true
     },
     {
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Utility marking system failed to prevent underground line hazard",
+          "quote": "Thankfully it was inactive, but I had no idea there were any lines in my backyard! I even called to get the utilities marked before I dug my pond, and no one caught it..",
+          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3mua235kq3c2g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "housing-infrastructure",
+          "stance": "strong",
+          "summary": "Urges support for wildfire relief in Spokane via community organizations",
+          "quote": "If you're looking for a way to support folks in Spokane, we're sending support directly to community organizations.\n\nDonate here:\ndonate.rebuild.us/page/wa-fires",
+          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3ms7orqfxq22h",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 3,
@@ -294,22 +321,22 @@
       "active": true
     },
     {
-      "topic": "housing-infrastructure",
-      "label": "Housing & Infrastructure",
+      "topic": "ai-technology",
+      "label": "AI & Technology",
       "count": 1,
-      "lastActive": "2026-08-04",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-04",
-          "topic": "housing-infrastructure",
-          "stance": "strong",
-          "summary": "Urges support for wildfire relief in Spokane via community organizations",
-          "quote": "If you're looking for a way to support folks in Spokane, we're sending support directly to community organizations.\n\nDonate here:\ndonate.rebuild.us/page/wa-fires",
-          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3ms7orqfxq22h",
+          "date": "2026-08-30",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Interested in EV conversion technology but cost-prohibitive for average households",
+          "quote": "I think I found my household's next vehicle!!!\n\nWe loathe our Ford work van that keeps having recalls, but all the other EV van options cost more than we make in a year combined. This Slate conversion kit looks like it'll be perfect for our needs!!\n\nNow if only we had an extra $2",
+          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3mucr3eub222t",
           "platform": "bluesky"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "gender-lgbtq",

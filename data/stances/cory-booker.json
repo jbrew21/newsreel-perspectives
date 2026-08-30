@@ -2,8 +2,8 @@
   "voiceId": "cory-booker",
   "voiceName": "Cory Booker",
   "updatedAt": "2026-08-30",
-  "topicCount": 21,
-  "stanceCount": 56,
+  "topicCount": 22,
+  "stanceCount": 64,
   "topics": [
     {
       "topic": "trump-administration",
@@ -125,9 +125,18 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 10,
-      "lastActive": "2026-08-18",
+      "count": 11,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Advocates for baby bonds program to reduce wealth inequality for children",
+          "quote": "What truly matters isn\u2019t a name on an account\u2014it\u2019s the purpose. I\u2019ve worked across the aisle to make  baby bonds a reality because they will transform the lives of millions of kids. \n\nGive every American child a dream, the strength to chase it, and  There are no limits to what th",
+          "sourceUrl": "https://bsky.app/profile/booker.senate.gov/post/3mpowcdwgbk2d",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-18",
           "topic": "economy-trade",
@@ -224,7 +233,7 @@
     {
       "topic": "healthcare",
       "label": "Healthcare",
-      "count": 6,
+      "count": 7,
       "lastActive": "2026-08-30",
       "stances": [
         {
@@ -253,6 +262,15 @@
           "quote": "Trump wants to rename Lake Ontario \u201cLake America,\u201d but I\u2019d rather see every hospital shuttered by his cruel policies renamed the Donald Trump Memorial Hospital.\n\nWe need a president focused on our healthcare and families\u2014not his own ego. https://t.co/pkdsDM5kVe",
           "sourceUrl": "https://x.com/CoryBooker/status/2093113629499334970",
           "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Supports maternal health services and community food security programs",
+          "quote": "Proud to tour Trenton with Salvation and Social Justice. From the Food Pantry serving hundreds each month, to their upcoming Birthing Center tackling maternal health deserts, to the new Restorative Justice Hub where Street Teams mentor our youth.",
+          "sourceUrl": "https://bsky.app/profile/booker.senate.gov/post/3mu2x4t2uhs2l",
+          "platform": "bluesky"
         },
         {
           "date": "2026-08-08",
@@ -348,6 +366,78 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Supports restorative justice and community-based crime prevention approaches",
+          "quote": "Day 5 of my 21 county tour, started In Paramus, where I stood with  fellow New Jersey leaders to honor  57 of our great veterans from Korea, Vietnam, and Desert Storm with medals. Then to Trenton at Salvation and Social Justice\u2019s Restorative Justice Hub\u2014where street teams and com",
+          "sourceUrl": "https://x.com/CoryBooker/status/2092975568396423456",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Questions ICE use of electroshock devices for compliance",
+          "quote": "AP: \u201cICE officers may soon be outfitted with gloves that can deliver painful electric shocks intended to gain compliance from combative individuals.\u201d ICE plans to spend up to $20 million to purchase thousands of the devices.",
+          "sourceUrl": "https://x.com/CoryBooker/status/2088036153781833935",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Opposes Trump DOJ fund for January 6 defendants, defends police victims",
+          "quote": "The Trump DOJ claims this slush fund is dead. It\u2019s not. This is a fund for people who attacked our Capitol.\n\nThese are the people who beat police officers like Brian Sicknick of New Jersey, who died days later. And he\u2019s calling them \u201cfine people\u201d? That\u2019s disgusting. But the bigge",
+          "sourceUrl": "https://x.com/CoryBooker/status/2084278211966321085",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "food-agriculture",
+          "stance": "lean",
+          "summary": "Acknowledges agricultural damage, seeks federal disaster assistance",
+          "quote": "I visited Cedar Rose Vineyards with some of New Jersey\u2019s remarkable growers. Even after the April freeze, their grit, pride in this land, and love for the work came through in every conversation. I saw the damage, got a briefing on the statewide impact, and talked through the fig",
+          "sourceUrl": "https://x.com/CoryBooker/status/2093712883326542035",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "food-agriculture",
+          "stance": "strong",
+          "summary": "Opposes selling wild horses for slaughter",
+          "quote": "These horses should be protected\u2014not sold off for slaughter. https://t.co/R19Ke6jLpn",
+          "sourceUrl": "https://x.com/CoryBooker/status/2092251140511478265",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "food-agriculture",
+          "stance": "strong",
+          "summary": "Condemns USDA/FDA/CDC firings as reckless threat to food safety",
+          "quote": "The Trump administration fired dedicated public servants at USDA, FDA, and CDC who worked every day to keep our food safe. Now American families are left dealing with the consequences. This is reckless. This is dangerous. And we will not accept it.\n\nI will continue to fight to re",
+          "sourceUrl": "https://x.com/CoryBooker/status/2082496447279161347",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "epstein-scandal",
       "label": "Epstein Scandal",
       "count": 2,
@@ -402,6 +492,60 @@
       "active": true
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes military leadership as failing, prioritizing campaigning",
+          "quote": "The war is failing. The Secretary is campaigning. https://t.co/LLSFCvgN6D",
+          "sourceUrl": "https://x.com/CoryBooker/status/2093051039825977814",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Commits to veteran care, dignity, and support services",
+          "quote": "I was honored to host a town hall last night with veterans, service members, and military families at the New Jersey Vietnam Veterans Memorial & Museum.\n\nTheir sacrifice built the freedoms we enjoy. Our job now is to make sure they have the care, dignity, and support they\u2019ve earn",
+          "sourceUrl": "https://bsky.app/profile/booker.senate.gov/post/3mu46yjcuts27",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Highlights community investment and economic growth in Opportunity Zone",
+          "quote": "Had the chance to tour The Orange Loop in Atlantic City\u2014an Opportunity Zone that\u2019s showing what\u2019s possible when we invest in communities. I stopped at local businesses and saw firsthand the jobs and growth happening in New Jersey! https://t.co/JjOl4NInJm",
+          "sourceUrl": "https://x.com/CoryBooker/status/2094134901209436209",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "housing-infrastructure",
+          "stance": "strong",
+          "summary": "Opposes border wall as corrupt corporate giveaway, doubts effectiveness",
+          "quote": "Trump\u2019s latest border wall push isn\u2019t about security\u2014it\u2019s a $19.4 billion corrupt giveaway to firms with deep GOP ties. Taxpayer dollars for something that will never achieve the objectives they keep selling. \nOp: @thebulwark",
+          "sourceUrl": "https://x.com/CoryBooker/status/2087901744407683149",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 2,
@@ -427,33 +571,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-08-14",
-      "stances": [
-        {
-          "date": "2026-08-14",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Questions ICE use of electroshock devices for compliance",
-          "quote": "AP: \u201cICE officers may soon be outfitted with gloves that can deliver painful electric shocks intended to gain compliance from combative individuals.\u201d ICE plans to spend up to $20 million to purchase thousands of the devices.",
-          "sourceUrl": "https://x.com/CoryBooker/status/2088036153781833935",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Opposes Trump DOJ fund for January 6 defendants, defends police victims",
-          "quote": "The Trump DOJ claims this slush fund is dead. It\u2019s not. This is a fund for people who attacked our Capitol.\n\nThese are the people who beat police officers like Brian Sicknick of New Jersey, who died days later. And he\u2019s calling them \u201cfine people\u201d? That\u2019s disgusting. But the bigge",
-          "sourceUrl": "https://x.com/CoryBooker/status/2084278211966321085",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "iran-conflict",
@@ -501,19 +618,19 @@
       "active": true
     },
     {
-      "topic": "military-defense",
-      "label": "Military & Defense",
+      "topic": "education",
+      "label": "Education",
       "count": 1,
       "lastActive": "2026-08-30",
       "stances": [
         {
           "date": "2026-08-30",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Criticizes military leadership as failing, prioritizing campaigning",
-          "quote": "The war is failing. The Secretary is campaigning. https://t.co/LLSFCvgN6D",
-          "sourceUrl": "https://x.com/CoryBooker/status/2093051039825977814",
-          "platform": "x"
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Funds science education expansion through congressional spending",
+          "quote": "Proud to present a $559,000 FY26 Congressionally Directed Spending award to Liberty Science Center in Hudson County to enhance educational programming, including the expansion of a portable planetarium fleet, which is helping more curious kids reach for the stars!",
+          "sourceUrl": "https://bsky.app/profile/booker.senate.gov/post/3mtyn6zzxas2x",
+          "platform": "bluesky"
         }
       ],
       "active": true
@@ -535,24 +652,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "housing-infrastructure",
-      "label": "Housing & Infrastructure",
-      "count": 1,
-      "lastActive": "2026-08-13",
-      "stances": [
-        {
-          "date": "2026-08-13",
-          "topic": "housing-infrastructure",
-          "stance": "strong",
-          "summary": "Opposes border wall as corrupt corporate giveaway, doubts effectiveness",
-          "quote": "Trump\u2019s latest border wall push isn\u2019t about security\u2014it\u2019s a $19.4 billion corrupt giveaway to firms with deep GOP ties. Taxpayer dollars for something that will never achieve the objectives they keep selling. \nOp: @thebulwark",
-          "sourceUrl": "https://x.com/CoryBooker/status/2087901744407683149",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "science-space",
@@ -675,24 +774,6 @@
           "summary": "Backs Ukraine aid, calls for harsher Russia sanctions",
           "quote": "I remain awestruck by the extraordinary bravery and unbreakable resilience of the Ukrainian people as they stand firm against Putin\u2019s illegal invasion. We must answer their call by providing continued support in this fight for freedom and democracy. Congress needs to pass harsher",
           "sourceUrl": "https://x.com/CoryBooker/status/2082583199595544811",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "food-agriculture",
-      "label": "Food & Agriculture",
-      "count": 1,
-      "lastActive": "2026-07-30",
-      "stances": [
-        {
-          "date": "2026-07-30",
-          "topic": "food-agriculture",
-          "stance": "strong",
-          "summary": "Condemns USDA/FDA/CDC firings as reckless threat to food safety",
-          "quote": "The Trump administration fired dedicated public servants at USDA, FDA, and CDC who worked every day to keep our food safe. Now American families are left dealing with the consequences. This is reckless. This is dangerous. And we will not accept it.\n\nI will continue to fight to re",
-          "sourceUrl": "https://x.com/CoryBooker/status/2082496447279161347",
           "platform": "x"
         }
       ],

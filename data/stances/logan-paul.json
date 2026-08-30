@@ -3,7 +3,7 @@
   "voiceName": "Logan Paul",
   "updatedAt": "2026-08-30",
   "topicCount": 8,
-  "stanceCount": 16,
+  "stanceCount": 17,
   "topics": [
     {
       "topic": "media-personalities",
@@ -60,38 +60,20 @@
       "active": true
     },
     {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 2,
+      "topic": "sports",
+      "label": "Sports",
+      "count": 4,
       "lastActive": "2026-08-30",
       "stances": [
         {
           "date": "2026-08-30",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Demands apology from Yahoo for inaccurate reporting",
-          "quote": "i demand an apology @yahoo https://t.co/3iBrSZvlRp",
-          "sourceUrl": "https://x.com/LoganPaul/status/1268789887689342976",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Celebrates KSI's boxing victory, emphasizes perseverance",
+          "quote": "two random kids who made stupid videos turned into professional boxers, sold out the staples center, and fought in front of millions. anything is possible. congrats to the champ @KSIOlajidebt i can\u2019t wait to see what you do next https://t.co/isfGcNFMQc",
+          "sourceUrl": "https://x.com/LoganPaul/status/1193687324514648064",
           "platform": "x"
         },
-        {
-          "date": "2026-08-11",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Admits to using ragebait tactics for engagement",
-          "quote": "Oh no that was just ragebait to get more impressions promoting my video\n\nwhat\u2019s a movie btw",
-          "sourceUrl": "https://x.com/LoganPaul/status/2081469736718844046",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "sports",
-      "label": "Sports",
-      "count": 3,
-      "lastActive": "2026-07-30",
-      "stances": [
         {
           "date": "2026-07-30",
           "topic": "sports",
@@ -120,7 +102,34 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Demands apology from Yahoo for inaccurate reporting",
+          "quote": "i demand an apology @yahoo https://t.co/3iBrSZvlRp",
+          "sourceUrl": "https://x.com/LoganPaul/status/1268789887689342976",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Admits to using ragebait tactics for engagement",
+          "quote": "Oh no that was just ragebait to get more impressions promoting my video\n\nwhat\u2019s a movie btw",
+          "sourceUrl": "https://x.com/LoganPaul/status/2081469736718844046",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "celebrity-entertainment",

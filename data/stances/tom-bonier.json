@@ -2,8 +2,8 @@
   "voiceId": "tom-bonier",
   "voiceName": "Tom Bonier",
   "updatedAt": "2026-08-30",
-  "topicCount": 11,
-  "stanceCount": 41,
+  "topicCount": 13,
+  "stanceCount": 47,
   "topics": [
     {
       "topic": "elections",
@@ -125,7 +125,7 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 11,
+      "count": 12,
       "lastActive": "2026-08-30",
       "stances": [
         {
@@ -198,6 +198,15 @@
           "summary": "Blames Musk influence for FAA administrator removal over safety violations",
           "quote": "We currently do not have an FAA Administrator, because the previous one was forced out by the billionaire who got Trump elected and was given unchecked authority in return. He was forced out because he tried to fine the billionaire's space company for operating unsafely.",
           "sourceUrl": "https://x.com/tbonier/status/1884986282117316616",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Accuses Trump administration of treason",
+          "quote": "It's like \"The TWITTER FILES\" but with actual scandals, including treason.",
+          "sourceUrl": "https://x.com/tbonier/status/1602462087619518465",
           "platform": "x"
         },
         {
@@ -303,6 +312,78 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Media underreported worsening inflation compared to prior year",
+          "quote": "What's weird about this is, a year ago all the media talked about was how awful inflation was. Here we are, a year later, and it is worse. Yet I'd bet it gets only a tiny fraction of the press attention it got last year.",
+          "sourceUrl": "https://x.com/tbonier/status/1973937772290584997",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Disputes Trump's claim that tariffs don't affect consumer prices",
+          "quote": "Attention Walmart shoppers: despite what you\u2019ve been told, you\u2019re paying the tariffs.",
+          "sourceUrl": "https://x.com/tbonier/status/1922999539683700919",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Sarcastically criticizes Trump tariffs policy",
+          "quote": "I'll be damned, the tariffs worked. We're even making Popes in America now.",
+          "sourceUrl": "https://x.com/tbonier/status/1920534298735599783",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Criticizes Trump administration scapegoating DEI for airline crash",
+          "quote": "First Trump blamed DEI for the crash. Then Duffy and Hegseth dutifully agreed, it was DEI. Now JD Vance is saying that, even if no one involved was part of a diversity program, it is still the fault of DEI, because DEI \"exhausts\" and strains everyone working in its midst.",
+          "sourceUrl": "https://x.com/tbonier/status/1885006501820911972",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Criticizes double standard requiring minorities to overcome grievances",
+          "quote": "It\u2019s weird that it\u2019s apparently only women and people of color who have to get over things and stop being offended.",
+          "sourceUrl": "https://x.com/tbonier/status/1851073369099080100",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Condemns voter suppression targeting Black Americans",
+          "quote": "They should wait in line for an extra 7 or 8 hours, then they'll know what it feels like to be a Black American trying to cast their ballot.",
+          "sourceUrl": "https://x.com/tbonier/status/1349205443382566914",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 2,
@@ -357,33 +438,6 @@
       "active": true
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 2,
-      "lastActive": "2026-08-30",
-      "stances": [
-        {
-          "date": "2026-08-30",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Media underreported worsening inflation compared to prior year",
-          "quote": "What's weird about this is, a year ago all the media talked about was how awful inflation was. Here we are, a year later, and it is worse. Yet I'd bet it gets only a tiny fraction of the press attention it got last year.",
-          "sourceUrl": "https://x.com/tbonier/status/1973937772290584997",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-30",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Disputes Trump's claim that tariffs don't affect consumer prices",
-          "quote": "Attention Walmart shoppers: despite what you\u2019ve been told, you\u2019re paying the tariffs.",
-          "sourceUrl": "https://x.com/tbonier/status/1922999539683700919",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
       "count": 1,
@@ -402,18 +456,36 @@
       "active": true
     },
     {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
+      "topic": "immigration",
+      "label": "Immigration",
       "count": 1,
       "lastActive": "2026-08-30",
       "stances": [
         {
           "date": "2026-08-30",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Criticizes Trump administration scapegoating DEI for airline crash",
-          "quote": "First Trump blamed DEI for the crash. Then Duffy and Hegseth dutifully agreed, it was DEI. Now JD Vance is saying that, even if no one involved was part of a diversity program, it is still the fault of DEI, because DEI \"exhausts\" and strains everyone working in its midst.",
-          "sourceUrl": "https://x.com/tbonier/status/1885006501820911972",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Skeptical of Trump's Mexico border deployment claims",
+          "quote": "How long until we find out Mexico already has 10k soldiers on the border doing this work?",
+          "sourceUrl": "https://x.com/tbonier/status/1886442889778966643",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Questions RNC strategy regarding Kavanaugh Supreme Court seat",
+          "quote": "Brett Kavanaugh is a registered Republican. He donated to George Bush's presidential campaign - and even worked for his campaign as a recount attorney.\n\n...is the RNC low key arguing to remove Kavanaugh from the bench?",
+          "sourceUrl": "https://x.com/tbonier/status/1497383327833239555",
           "platform": "x"
         }
       ],
