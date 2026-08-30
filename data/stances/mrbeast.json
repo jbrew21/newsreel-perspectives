@@ -1,16 +1,25 @@
 {
   "voiceId": "mrbeast",
   "voiceName": "MrBeast",
-  "updatedAt": "2026-08-29",
-  "topicCount": 4,
-  "stanceCount": 4,
+  "updatedAt": "2026-08-30",
+  "topicCount": 7,
+  "stanceCount": 8,
   "topics": [
     {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
-      "count": 1,
-      "lastActive": "2026-08-19",
+      "count": 2,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Criticizes Twitter's double standard on charitable giving by the wealthy",
+          "quote": "Twitter - Rich people should help others with their money\n\nMe - Okay, I\u2019ll use my money to help people and I promise to give away all my money before I die. Every single penny.\n\nTwitter - MrBeast bad",
+          "sourceUrl": "https://x.com/MrBeast/status/1620195967008907264",
+          "platform": "x"
+        },
         {
           "date": "2026-08-19",
           "topic": "billionaires-wealth",
@@ -18,6 +27,60 @@
           "summary": "Highlights philanthropic impact and scale of charitable work",
           "quote": "It\u2019s kind of crazy the amount of good we\u2019ve been able to do thru a YouTube channel\n\n23,000,000 Trees planted\n33,000,000 Pounds of trash from ocean\n10,000,000+ Meals to people in need\n500,000 People getting water from our wells we built\n$3,000,000 To war refugees for supplies\n$1,0",
           "sourceUrl": "https://x.com/MrBeast/status/1941802940768850033",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes news outlet for spreading false quotes about him",
+          "quote": "A news site lied and said I said \u201clife is so much easier when you\u2019re broke\u201d which I didn\u2019t say. Now I\u2019m waking up to millions of people believing the lie and hating me. Being famous is so much fun \ud83d\udc4d\ud83c\udffb https://t.co/B2UvdaQIgl",
+          "sourceUrl": "https://x.com/MrBeast/status/1895849826979651873",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Opposes Ava Tyson's alleged unacceptable behavior, orders independent investigation",
+          "quote": "Over the last few days, I\u2019ve become aware of the serious allegations of Ava Tyson's behavior online and I am disgusted and opposed to such unacceptable acts.\n\nDuring that time, I have been focused on hiring an independent third party to conduct a thorough investigation to ensure ",
+          "sourceUrl": "https://x.com/MrBeast/status/1816299504674464113",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Questions why governments don't address curable blindness despite financial ROI",
+          "quote": "I don\u2019t understand why curable blindness is a thing. Why don\u2019t governments step in and help? Even if you\u2019re thinking purely from a financial standpoint it\u2019s hard to see how they don\u2019t roi on taxes from people being able to work again.",
+          "sourceUrl": "https://x.com/MrBeast/status/1620062824776216577",
           "platform": "x"
         }
       ],

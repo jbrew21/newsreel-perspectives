@@ -1,16 +1,34 @@
 {
   "voiceId": "tom-cotton",
   "voiceName": "Tom Cotton",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-30",
   "topicCount": 10,
-  "stanceCount": 27,
+  "stanceCount": 30,
   "topics": [
     {
       "topic": "immigration",
       "label": "Immigration",
-      "count": 7,
-      "lastActive": "2026-08-12",
+      "count": 9,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Links ICE enforcement to reduced crime and overdose deaths in Arkansas",
+          "quote": "Arkansas is safer because our state and local law enforcement partners with ICE.\n\nIt\u2019s common sense that criminals who are here illegally should be deported.\n\nAnd it\u2019s no coincidence that crime and overdose deaths have dropped as our immigration laws are finally being enforced. h",
+          "sourceUrl": "https://x.com/TomCottonAR/status/2093387422629318966",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Opposes defunding ICE, cites cartel criminal arrest in Arkansas",
+          "quote": "The border is secure. But illegal immigration is still a major problem in Arkansas. \n\nArkansas police just arrested a Mexican cartel member wanted for multiple murders. \n\nDefunding ICE--as the Democrats want--would mean these criminals get to stay\n\nhttps://t.co/YmkumY6lOZ",
+          "sourceUrl": "https://x.com/TomCottonAR/status/2091953594694037967",
+          "platform": "x"
+        },
         {
           "date": "2026-08-12",
           "topic": "immigration",
@@ -75,7 +93,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "covid-pandemic",
@@ -175,6 +193,33 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Sponsors bill targeting Medicaid fraud, criticizes California's approach",
+          "quote": "California\u2019s response to massive Medicaid fraud has been to target the whistleblowers instead of the fraudsters.\n\nArkansans and taxpayers across America pay the price for this fraud. \n\nThat\u2019s why I\u2019m proud to sponsor the STOP Fraud in Medicaid Act.",
+          "sourceUrl": "https://x.com/TomCottonAR/status/2092641607824576961",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Praises drug price decline as affordability win, credits Republican policies",
+          "quote": "The price of prescription drugs declined by the most in more than 60 years. \n\nThis is a great affordability win, especially for seniors. \n\nAnd it shows that Republican policies like TrumpRx, more competition, and more choices can work.",
+          "sourceUrl": "https://x.com/TomCottonAR/status/2089728777077059719",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "gender-lgbtq",
@@ -283,24 +328,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Praises drug price decline as affordability win, credits Republican policies",
-          "quote": "The price of prescription drugs declined by the most in more than 60 years. \n\nThis is a great affordability win, especially for seniors. \n\nAnd it shows that Republican policies like TrumpRx, more competition, and more choices can work.",
-          "sourceUrl": "https://x.com/TomCottonAR/status/2089728777077059719",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "economy-trade",

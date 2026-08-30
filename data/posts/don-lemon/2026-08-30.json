@@ -1,9 +1,26 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-08-30T19:03:43.515096",
+  "collectedAt": "2026-08-30T20:48:10.158207",
   "date": "2026-08-30",
   "posts": [
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post",
+      "sourceUrl": "https://www.youtube.com/watch?v=i3jGaWGHc_U",
+      "timestamp": "2026-08-30T18:00:20+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Celebrates journalist victory against major media outlet",
+      "quote": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post"
+    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -128,38 +145,30 @@
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
       "platform": "youtube",
-      "text": "LEMON DROP - It's Over! Andrew and Tristan Tate Are Stuck In Jail",
-      "sourceUrl": "https://www.youtube.com/watch?v=rxEoEQyMO1o",
-      "timestamp": "2026-08-28T18:00:18+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "topics": [
-        "criminal-justice"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Celebrates criminal conviction and incarceration of defendants",
-      "quote": "LEMON DROP - It's Over! Andrew and Tristan Tate Are Stuck In Jail"
+      "text": "ST. PETERSBURG! Tickets are on sale now for DL + DL on September 26th!",
+      "sourceUrl": "https://www.youtube.com/shorts/8VFFG8DLLoA",
+      "timestamp": "2026-08-30T20:00:10+00:00",
+      "type": "video_title"
     },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
       "platform": "youtube",
-      "text": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post",
-      "sourceUrl": "https://www.youtube.com/watch?v=i3jGaWGHc_U",
-      "timestamp": "2026-08-30T18:00:20+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "topics": [
-        "media-press"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Celebrates journalist victory against major media outlet",
-      "quote": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post"
+      "text": "Happy Tan Suit Day!",
+      "sourceUrl": "https://www.youtube.com/shorts/_xAJzwE-r4o",
+      "timestamp": "2026-08-28T22:10:16+00:00",
+      "type": "video_title"
     }
   ],
   "topicSummary": {
+    "media-press": [
+      {
+        "quote": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post",
+        "sourceUrl": "https://www.youtube.com/watch?v=i3jGaWGHc_U",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T18:00:20+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Trump has to be guided across the stage after appearing lost and confused",
@@ -212,20 +221,18 @@
         "timestamp": "2026-08-28T21:00:06+00:00"
       }
     ],
-    "criminal-justice": [
+    "uncategorized": [
       {
-        "quote": "LEMON DROP - It's Over! Andrew and Tristan Tate Are Stuck In Jail",
-        "sourceUrl": "https://www.youtube.com/watch?v=rxEoEQyMO1o",
+        "quote": "ST. PETERSBURG! Tickets are on sale now for DL + DL on September 26th!",
+        "sourceUrl": "https://www.youtube.com/shorts/8VFFG8DLLoA",
         "platform": "youtube",
-        "timestamp": "2026-08-28T18:00:18+00:00"
-      }
-    ],
-    "media-press": [
+        "timestamp": "2026-08-30T20:00:10+00:00"
+      },
       {
-        "quote": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post",
-        "sourceUrl": "https://www.youtube.com/watch?v=i3jGaWGHc_U",
+        "quote": "Happy Tan Suit Day!",
+        "sourceUrl": "https://www.youtube.com/shorts/_xAJzwE-r4o",
         "platform": "youtube",
-        "timestamp": "2026-08-30T18:00:20+00:00"
+        "timestamp": "2026-08-28T22:10:16+00:00"
       }
     ]
   }

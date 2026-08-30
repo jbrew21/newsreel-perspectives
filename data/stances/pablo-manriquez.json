@@ -3,7 +3,7 @@
   "voiceName": "Pablo Manriquez",
   "updatedAt": "2026-08-30",
   "topicCount": 10,
-  "stanceCount": 35,
+  "stanceCount": 36,
   "topics": [
     {
       "topic": "immigration",
@@ -240,6 +240,33 @@
       "active": false
     },
     {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Highlights Epstein survivors' presence and public recognition at congressional event",
+          "quote": "WOW ... two Epstein survivors are seated with the Grijalvas.\n\nAdelita introduces them from the floor.\n\nSurvivors get a standing ovation. Even Speaker Johnson applauds the Epstein survivors.",
+          "sourceUrl": "https://x.com/PabloReports/status/1988718688292466987",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Questions whether Senator Murkowski believes Epstein survivors' allegations against Blanche",
+          "quote": "Me: Do you believe the Epstein survivors when they say Todd Blanche treated them badly when they met with him? \n\nMurkowski:",
+          "sourceUrl": "https://x.com/PabloReports/status/2085539699406327874",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 3,
@@ -355,24 +382,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "epstein-scandal",
-      "label": "Epstein Scandal",
-      "count": 1,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "epstein-scandal",
-          "stance": "lean",
-          "summary": "Questions whether Senator Murkowski believes Epstein survivors' allegations against Blanche",
-          "quote": "Me: Do you believe the Epstein survivors when they say Todd Blanche treated them badly when they met with him? \n\nMurkowski:",
-          "sourceUrl": "https://x.com/PabloReports/status/2085539699406327874",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "media-press",

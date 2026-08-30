@@ -1,16 +1,25 @@
 {
   "voiceId": "logan-paul",
   "voiceName": "Logan Paul",
-  "updatedAt": "2026-08-29",
-  "topicCount": 6,
-  "stanceCount": 12,
+  "updatedAt": "2026-08-30",
+  "topicCount": 8,
+  "stanceCount": 16,
   "topics": [
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
-      "count": 4,
-      "lastActive": "2026-08-17",
+      "count": 5,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Criticizes online antagonist for talk without action, praises public exposure",
+          "quote": "I think Dillion perfectly embodies the problem with society. All shit talk behind a screen. No action. Just another peasant running his mouth contributing nothing to this world but negativity. So happy I got to expose this clown https://t.co/N6DTMhSttD",
+          "sourceUrl": "https://x.com/LoganPaul/status/1713557350072631429",
+          "platform": "x"
+        },
         {
           "date": "2026-08-17",
           "topic": "media-personalities",
@@ -45,6 +54,33 @@
           "summary": "Frames podcast discussion of personal allegations as expos\u00e9 content",
           "quote": "new IMPAULSIVE podcast\nGary Vee EXPOSES Logan Paul Allegations, ROASTS Mike for Dating 25-\nYear-Olds, Jake Paul Team 10 Fail \ud83d\ude2c\nwatch or you\u2019re old\n\npiped.video/E4DWzUsti3U?si=b7_m\u2026",
           "sourceUrl": "https://x.com/LoganPaul/status/2084744573843382555",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Demands apology from Yahoo for inaccurate reporting",
+          "quote": "i demand an apology @yahoo https://t.co/3iBrSZvlRp",
+          "sourceUrl": "https://x.com/LoganPaul/status/1268789887689342976",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Admits to using ragebait tactics for engagement",
+          "quote": "Oh no that was just ragebait to get more impressions promoting my video\n\nwhat\u2019s a movie btw",
+          "sourceUrl": "https://x.com/LoganPaul/status/2081469736718844046",
           "platform": "x"
         }
       ],
@@ -114,22 +150,40 @@
       "active": false
     },
     {
-      "topic": "media-press",
-      "label": "Media & Press",
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
       "count": 1,
-      "lastActive": "2026-08-11",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-11",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Admits to using ragebait tactics for engagement",
-          "quote": "Oh no that was just ragebait to get more impressions promoting my video\n\nwhat\u2019s a movie btw",
-          "sourceUrl": "https://x.com/LoganPaul/status/2081469736718844046",
+          "date": "2026-08-30",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Praises defiant response to assassination attempt, calls for shooter apprehension",
+          "quote": "To survive an assassination attempt by mere millimeters then stop your security so you can raise your fist in defiance of death is the most badass thing I\u2019ve ever seen in my life\n\nI hope everyone is okay\n\nFind the shooter",
+          "sourceUrl": "https://x.com/LoganPaul/status/1812264550731043074",
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
+    },
+    {
+      "topic": "abortion-reproductive",
+      "label": "Abortion & Reproductive Rights",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "abortion-reproductive",
+          "stance": "strong",
+          "summary": "Opposes senators' vote to ban abortion in Alabama",
+          "quote": "i took the liberty of drawing tiny dicks on the 25 male senators who voted to ban abortion in Alabama https://t.co/ns0x02MzY1",
+          "sourceUrl": "https://x.com/LoganPaul/status/1129073518262362113",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "ai-technology",

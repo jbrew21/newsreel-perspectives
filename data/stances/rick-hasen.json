@@ -2,8 +2,8 @@
   "voiceId": "rick-hasen",
   "voiceName": "Rick Hasen",
   "updatedAt": "2026-08-30",
-  "topicCount": 8,
-  "stanceCount": 29,
+  "topicCount": 10,
+  "stanceCount": 39,
   "topics": [
     {
       "topic": "elections",
@@ -111,13 +111,112 @@
           "platform": "blog"
         },
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "elections",
+          "stance": "strong",
+          "summary": "Accuses Musk of illegal vote buying via lottery scheme",
+          "quote": "Blog post at #ELB: Elon Musk Veers Into Clearly Illegal Vote Buying, Offering $1 Million Per Day Lottery Prize Only to Registered Voters https://t.co/ztDaw5kVau",
+          "sourceUrl": "https://x.com/rickhasen/status/1847815311388790839",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 10,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Says Jack Smith brief indicts Supreme Court on January 6",
+          "quote": "My new one @Slate: Jack Smith\u2019s Big New Jan. 6 Brief Is a Major Indictment of the Supreme Court \nhttps://t.co/b28LdmgX5w https://t.co/YPOdDDEW9T",
+          "sourceUrl": "https://x.com/rickhasen/status/1841596771262161265",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Calls for Justice Alito recusal over flag incidents",
+          "quote": "WTF Justice Alito? https://t.co/r7PxDbZt2E I was uncertain if revelation of first flag merited J Alito's recusal in the first case, but I now believe he must recuse in the Trump immunity and related cases. His impartiality could be reasonably questioned;no blaming it on spouse",
+          "sourceUrl": "https://x.com/rickhasen/status/1793404292889817089",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Denounces Alito immunity argument as insane",
+          "quote": "Alito tries to turn things on their head, by saying to encourage peaceful transitions of power, you need to give incumbents absolute immunity so they will leave and won't worry about prosecution later. This is the most insane thing I've heard today there have been  crazy things).",
+          "sourceUrl": "https://x.com/rickhasen/status/1783521981616603249",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Warns Supreme Court will radically reorder law in 15 months",
+          "quote": "I don't think most Americans appreciate how much the Supreme Court is going to reorder law and American society in the next 15 months (that is, by the end of the term next year in June). Guns, abortion, affirmative action is just the start.",
+          "sourceUrl": "https://x.com/rickhasen/status/1511724112208547843",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "supreme-court-legal",
           "stance": "lean",
-          "summary": "DOJ election monitoring characterized as aggressive overreach",
-          "quote": "&#8220;Wyoming\u2019s Republican governor raises concerns over \u2018aggressive\u2019 DOJ election monitors&#8221;. NBC News:\nWyoming Republican Gov. Mark Gordon expressed concern Wednesday over how election observers from the U.S. Justice Department observed the state\u2019s primaries last week, sa",
-          "sourceUrl": "https://electionlawblog.org/2026/wyomings-republican-governor-raises-concerns-over-aggressive-doj-election-monitors/",
+          "summary": "Suggests Supreme Court applies different standards to abortion versus gun rights",
+          "quote": "I don\u2019t believe today\u2019s Supreme Court decision would have offered such a shaky and delayed remedy to plaintiffs if they were gun owners facing a California restriction rather than Texas abortion providers.",
+          "sourceUrl": "https://x.com/rickhasen/status/1469363416175312897",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Criticizes Supreme Court for abandoning fact-finding role",
+          "quote": "&#8220;The Supreme Court Isn\u2019t Interested in Facts&#8221;. Duncan Hosie in The Atlantic:\nThe Roberts Court is abdicating\u00a0one of its most important roles, that of truth-teller.\nThis much was apparent on Monday in\u00a0Trump v. California, when the Supreme Court\u2019s Republican appointees ",
+          "sourceUrl": "https://electionlawblog.org/2026/the-supreme-court-isnt-interested-in-facts/",
           "platform": "blog"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Criticizes Supreme Court slowness in election law decisions",
+          "quote": "The Supreme Court&#8217;s recent sluggishness in getting out election law decisions (by Derek Muller). Louisiana v. Callais was (re-)argued October 15, 2025, but the Court\u2019s decision was not released until April 29, 2026. In the ensuing decision on May 4 to permit the judgment to",
+          "sourceUrl": "https://electionlawblog.org/2026/the-supreme-courts-recent-sluggishness-in-getting-out-election-law-decisions/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Highlights judicial concerns about Trump mail voting executive order",
+          "quote": "My New One at Slate: &#8220;KBJ Warns of &#8216;Kafkaesque Nightmare&#8217; After Pro-Trump Supreme Court Ruling on Mail Voting. We\u2019ll Know Soon Enough.&#8221;. I have written this piece for Slate. It begins:\nLast March, Donald Trump\u00a0issued another one\u00a0of his executive orders try",
+          "sourceUrl": "https://electionlawblog.org/2026/my-new-one-at-slate-kbj-warns-of-kafkaesque-nightmare-after-pro-trump-supreme-court-ruling-on-mail-voting-well-know-soon-enough/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Critical of colorblind constitution framing in racial cases",
+          "quote": "#ELB: Justice Alito, in Friendly WSJ Interview Where He Says He\u2019s in for Another Term, Comments on His Use of \u201cColorblind Constitution\u201d in Allen v. Milligan Order ift.tt/c2J9MZ6",
+          "sourceUrl": "https://x.com/rickhasen/status/2085805208538366107",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Criticizes SCOTUS decision gutting Voting Rights Act Section 2",
+          "quote": "#ELB: One Year Ago, SCOTUS Issued Late Summer Friday Obscure Order That Led to the Murder of Section 2 of the Voting Rights Act. ift.tt/FpEtmJS",
+          "sourceUrl": "https://x.com/rickhasen/status/2083327778703691935",
+          "platform": "x"
         }
       ],
       "active": true
@@ -186,63 +285,9 @@
       "active": true
     },
     {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 5,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Criticizes Supreme Court for abandoning fact-finding role",
-          "quote": "&#8220;The Supreme Court Isn\u2019t Interested in Facts&#8221;. Duncan Hosie in The Atlantic:\nThe Roberts Court is abdicating\u00a0one of its most important roles, that of truth-teller.\nThis much was apparent on Monday in\u00a0Trump v. California, when the Supreme Court\u2019s Republican appointees ",
-          "sourceUrl": "https://electionlawblog.org/2026/the-supreme-court-isnt-interested-in-facts/",
-          "platform": "blog"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "Criticizes Supreme Court slowness in election law decisions",
-          "quote": "The Supreme Court&#8217;s recent sluggishness in getting out election law decisions (by Derek Muller). Louisiana v. Callais was (re-)argued October 15, 2025, but the Court\u2019s decision was not released until April 29, 2026. In the ensuing decision on May 4 to permit the judgment to",
-          "sourceUrl": "https://electionlawblog.org/2026/the-supreme-courts-recent-sluggishness-in-getting-out-election-law-decisions/",
-          "platform": "blog"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "Highlights judicial concerns about Trump mail voting executive order",
-          "quote": "My New One at Slate: &#8220;KBJ Warns of &#8216;Kafkaesque Nightmare&#8217; After Pro-Trump Supreme Court Ruling on Mail Voting. We\u2019ll Know Soon Enough.&#8221;. I have written this piece for Slate. It begins:\nLast March, Donald Trump\u00a0issued another one\u00a0of his executive orders try",
-          "sourceUrl": "https://electionlawblog.org/2026/my-new-one-at-slate-kbj-warns-of-kafkaesque-nightmare-after-pro-trump-supreme-court-ruling-on-mail-voting-well-know-soon-enough/",
-          "platform": "blog"
-        },
-        {
-          "date": "2026-08-08",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "Critical of colorblind constitution framing in racial cases",
-          "quote": "#ELB: Justice Alito, in Friendly WSJ Interview Where He Says He\u2019s in for Another Term, Comments on His Use of \u201cColorblind Constitution\u201d in Allen v. Milligan Order ift.tt/c2J9MZ6",
-          "sourceUrl": "https://x.com/rickhasen/status/2085805208538366107",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Criticizes SCOTUS decision gutting Voting Rights Act Section 2",
-          "quote": "#ELB: One Year Ago, SCOTUS Issued Late Summer Friday Obscure Order That Led to the Murder of Section 2 of the Voting Rights Act. ift.tt/FpEtmJS",
-          "sourceUrl": "https://x.com/rickhasen/status/2083327778703691935",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
-      "count": 2,
+      "count": 3,
       "lastActive": "2026-08-30",
       "stances": [
         {
@@ -255,6 +300,15 @@
           "platform": "blog"
         },
         {
+          "date": "2026-08-30",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Frames pressure on companies to exclude seditious speech as patriotic",
+          "quote": "Public pressure to get private companies to exclude speech meant to bring down American democracy is not censorship. It is patriotism.",
+          "sourceUrl": "https://x.com/rickhasen/status/1347720517604659201",
+          "platform": "x"
+        },
+        {
           "date": "2026-08-25",
           "topic": "free-speech-censorship",
           "stance": "lean",
@@ -262,6 +316,60 @@
           "quote": "&#8220;Corporate Spending, Foreign Spending, and the Case for Democratic Interests in Campaign Finance Regulation&#8221;. Caleb Yong has posted this draft on SSRN. Here is the abstract:\nUnder\u00a0Citizens United v. FEC\u00a0, the First Amendment bars restrictions on corporations\u2019 independ",
           "sourceUrl": "https://electionlawblog.org/2026/corporate-spending-foreign-spending-and-the-case-for-democratic-interests-in-campaign-finance-regulation/",
           "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Calls for investigation and prosecution of ballot box arson",
+          "quote": "Lighting ballot boxes on fire in a federal election is a serious crime. It is going to need to be investigated and the perpetrators brought to justice in federal and state courts.",
+          "sourceUrl": "https://x.com/rickhasen/status/1850927319713464480",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Argues Trump should be prosecuted for Georgia shakedown",
+          "quote": "My new one @Slate: Donald Trump Should Be Prosecuted for His Shakedown of Georgia\u2019s Brad Raffensperger \n\nhttps://t.co/EtI4YqcHmC",
+          "sourceUrl": "https://x.com/rickhasen/status/1346118701037174785",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes political reporters delaying democracy-relevant stories for books",
+          "quote": "Brian---when are we going to have a national conversation about political reporters failing to report issues of interest to national security/democracy until they can sell it in a book months or years later?",
+          "sourceUrl": "https://x.com/rickhasen/status/1459999113190121474",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Demands ATT and Comcast stop broadcasting election misinformation",
+          "quote": "Why are ATT and Comcast allowing Newsmax and OAN to broadcast dangerous seditious bullshit about a stolen election? \nWhat about the corporate responsibility movement? This stuff is going to get people killed.",
+          "sourceUrl": "https://x.com/rickhasen/status/1349023195974742021",
+          "platform": "x"
         }
       ],
       "active": true
