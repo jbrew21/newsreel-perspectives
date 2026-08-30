@@ -1,16 +1,25 @@
 {
   "voiceId": "paris-marx",
   "voiceName": "Paris Marx",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-30",
   "topicCount": 15,
-  "stanceCount": 59,
+  "stanceCount": 60,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 11,
-      "lastActive": "2026-08-29",
+      "count": 12,
+      "lastActive": "2026-08-30",
       "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes U.S. tech dominance as geopolitical control mechanism",
+          "quote": "A great example of how the United States sees dominating the computing capacities of countries around the world as a geopolitical priority, because it knows if countries are locked into its tech it can maintain power over them.",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mub6hymu2c2e",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-29",
           "topic": "ai-technology",
@@ -117,10 +126,10 @@
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 11,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "billionaires-wealth",
           "stance": "lean",
           "summary": "Examines billionaire backlash effects on tech worker organizing",
@@ -483,42 +492,6 @@
       "active": true
     },
     {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 3,
-      "lastActive": "2026-08-15",
-      "stances": [
-        {
-          "date": "2026-08-15",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Calls for sanctions against U.S. and Israeli officials for illegal war and war crimes",
-          "quote": "How about some sanctions on US and Israeli officials who launched an illegal war and committed war crimes?",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mt3b72xk3k2r",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Accuses Taylor Lorenz of Palestine performativism while using Israeli company",
-          "quote": "Taylor Lorenz often points to being such a big supporter of Palestine when she\u2019s called out for pushing increasingly reactionary and right-wing perspectives.\n\nYet after all this time, she\u2019s still using Israeli company Riverside when there are plenty of alternatives.",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3ms76aefva22g",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Argues Israeli demands on Palestinians have escalated progressively toward colonization",
-          "quote": "2024:\n\"All they have to do is release the hostages\"\n\n2025:\n\"All they have to do is fully disarm\"\n\n2026:\n\"All they have to do is allow us to keep killing them and fully colonize Gaza\"",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mrzgttkcm226",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "housing-infrastructure",
       "label": "Housing & Infrastructure",
       "count": 2,
@@ -598,6 +571,42 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 3,
+      "lastActive": "2026-08-15",
+      "stances": [
+        {
+          "date": "2026-08-15",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Calls for sanctions against U.S. and Israeli officials for illegal war and war crimes",
+          "quote": "How about some sanctions on US and Israeli officials who launched an illegal war and committed war crimes?",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mt3b72xk3k2r",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Accuses Taylor Lorenz of Palestine performativism while using Israeli company",
+          "quote": "Taylor Lorenz often points to being such a big supporter of Palestine when she\u2019s called out for pushing increasingly reactionary and right-wing perspectives.\n\nYet after all this time, she\u2019s still using Israeli company Riverside when there are plenty of alternatives.",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3ms76aefva22g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Argues Israeli demands on Palestinians have escalated progressively toward colonization",
+          "quote": "2024:\n\"All they have to do is release the hostages\"\n\n2025:\n\"All they have to do is fully disarm\"\n\n2026:\n\"All they have to do is allow us to keep killing them and fully colonize Gaza\"",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mrzgttkcm226",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "culture-war",

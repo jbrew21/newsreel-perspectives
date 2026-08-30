@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-30",
   "topicCount": 23,
   "stanceCount": 65,
   "topics": [
@@ -9,10 +9,10 @@
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 9,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "trump-administration",
           "stance": "strong",
           "summary": "Critiques Secretary of Transportation Sean Duffy's record and qualifications",
@@ -180,10 +180,10 @@
       "topic": "abortion-reproductive",
       "label": "Abortion & Reproductive Rights",
       "count": 5,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "abortion-reproductive",
           "stance": "strong",
           "summary": "Opposes abortion restrictions, defends reproductive rights",
@@ -234,10 +234,10 @@
       "topic": "uk-world-politics",
       "label": "UK & World Politics",
       "count": 5,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "uk-world-politics",
           "stance": "lean",
           "summary": "Critiques Argentina's economic policies and chocolate industry practices",
@@ -288,10 +288,10 @@
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 4,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "congress-legislation",
           "stance": "lean",
           "summary": "Critiques congressional dysfunction and dollar store regulation",
@@ -300,7 +300,7 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "congress-legislation",
           "stance": "strong",
           "summary": "Criticizes congressional corruption and corporate consulting influence",
@@ -333,10 +333,10 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 4,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "ai-technology",
           "stance": "strong",
           "summary": "Opposes corporate data collection through subscription services",
@@ -345,7 +345,7 @@
           "platform": "youtube"
         },
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "ai-technology",
           "stance": "strong",
           "summary": "Criticizes exploitative design in smart product subscriptions",
@@ -456,42 +456,6 @@
       "active": true
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 3,
-      "lastActive": "2026-08-15",
-      "stances": [
-        {
-          "date": "2026-08-15",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Silicon Valley Bank collapse and predatory timeshare practices",
-          "quote": "S10 E5: Silicon Valley Bank &amp; Timeshares: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=7WRG9UVcGgU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Critiques inflation policies and economic management",
-          "quote": "S9 E17: Inflation &amp; Beach Dolls Update: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=D10nBR4m9rg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Examines Trump's relationship with cryptocurrency industry",
-          "quote": "Trump &amp; Crypto: Last Week Tonight with John Oliver (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=A9iZ10yIRwM",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 4,
@@ -540,10 +504,10 @@
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 2,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "israel-palestine",
           "stance": "strong",
           "summary": "Criticizes Israeli military conduct, advocates for Palestinian protection",
@@ -562,6 +526,42 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-15",
+      "stances": [
+        {
+          "date": "2026-08-15",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Silicon Valley Bank collapse and predatory timeshare practices",
+          "quote": "S10 E5: Silicon Valley Bank &amp; Timeshares: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=7WRG9UVcGgU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Critiques inflation policies and economic management",
+          "quote": "S9 E17: Inflation &amp; Beach Dolls Update: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=D10nBR4m9rg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Examines Trump's relationship with cryptocurrency industry",
+          "quote": "Trump &amp; Crypto: Last Week Tonight with John Oliver (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=A9iZ10yIRwM",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "billionaires-wealth",

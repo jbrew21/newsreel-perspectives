@@ -1,23 +1,41 @@
 {
   "voiceId": "david-pakman",
   "voiceName": "David Pakman",
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-08-30",
   "topicCount": 22,
-  "stanceCount": 128,
+  "stanceCount": 129,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 12,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "trump-administration",
           "stance": "strong",
           "summary": "Criticizes Trump's reaction to being refused a request",
           "quote": "Trump was told NO. His response is INSANE",
           "sourceUrl": "https://www.youtube.com/watch?v=vA2l8ti94jg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Suggests Trump will not act on unspecified issue",
+          "quote": "Do you realize Trump will DO NOTHING if this happens?",
+          "sourceUrl": "https://www.youtube.com/watch?v=iU4HIopEbUA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump over unspecified toilet-related issue",
+          "quote": "WIPEOUT: Trump\u2019s toilet problem gets MUCH WORSE",
+          "sourceUrl": "https://www.youtube.com/watch?v=Ivpg0grJado",
           "platform": "youtube"
         },
         {
@@ -45,15 +63,6 @@
           "summary": "Questions stability or legitimacy of Treasury Secretary appointment",
           "quote": "What is happening to Trump\u2019s Treasury Secretary?",
           "sourceUrl": "https://www.youtube.com/watch?v=c7A6j__hJe0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Suggests Trump will not act on unspecified issue",
-          "quote": "Do you realize Trump will DO NOTHING if this happens?",
-          "sourceUrl": "https://www.youtube.com/watch?v=iU4HIopEbUA",
           "platform": "youtube"
         },
         {
@@ -109,15 +118,6 @@
           "quote": "Every Trump answer somehow comes back to Trump. #shorts",
           "sourceUrl": "https://www.youtube.com/shorts/JzYbMDkGtAg",
           "platform": "youtube"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Highlights Trump's loss in confrontation with unnamed person",
-          "quote": "Trump thought he WON. Then she said THIS",
-          "sourceUrl": "https://www.youtube.com/watch?v=JtJGFmemFkU",
-          "platform": "youtube"
         }
       ],
       "active": true
@@ -126,10 +126,10 @@
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 12,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "elections",
           "stance": "lean",
           "summary": "Critiques focus on Trump despite him not being on ballot",
@@ -825,6 +825,69 @@
       "active": true
     },
     {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 6,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "",
+          "quote": "Texas is about to SHOCK the entire country",
+          "sourceUrl": "https://www.youtube.com/watch?v=nzCU19BidKw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Highlights Ken Paxton campaign's financial difficulties",
+          "quote": "Ken Paxton\u2019s campaign has a massive money problem #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/3OYyawtAtDk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Questions McConnell's absence from primary endorsements during recovery",
+          "quote": "Has Mitch McConnell put out a statement congratulating yesterday\u2019s primary winners as he continues to recover nicely in rehab?",
+          "sourceUrl": "https://x.com/dpakman/status/2084981768097018167",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Frames McConnell's health episodes as matter of public concern",
+          "quote": "Nodding off at a funeral sparks new debate",
+          "sourceUrl": "https://x.com/davidpakmanshow/status/2082511706941518050",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Appeared on Governor Newsom's podcast to promote forthcoming book",
+          "quote": "I WAS ON GOVERNOR GAVIN C. NEWSOM'S VERY NASTY PODCAST TO TALK ABOUT MY FORTHCOMING BOOK, NOW AVAILABLE FOR COMPLETELY DERANGED PREORDER. Thank you for having me!",
+          "sourceUrl": "https://x.com/dpakman/status/2080006711512068320",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Reports on government action regarding McConnell's status",
+          "quote": "Gov gives MISSING Mitch McConnell an ultimatum",
+          "sourceUrl": "https://www.youtube.com/watch?v=wqjed36KOcg",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 6,
@@ -891,10 +954,10 @@
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 5,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-08-30",
       "stances": [
         {
-          "date": "2026-08-29",
+          "date": "2026-08-30",
           "topic": "foreign-policy-diplomacy",
           "stance": "lean",
           "summary": "Defends Canada's negotiating position against criticism",
@@ -1057,60 +1120,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 5,
-      "lastActive": "2026-08-13",
-      "stances": [
-        {
-          "date": "2026-08-13",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Highlights Ken Paxton campaign's financial difficulties",
-          "quote": "Ken Paxton\u2019s campaign has a massive money problem #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/3OYyawtAtDk",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Questions McConnell's absence from primary endorsements during recovery",
-          "quote": "Has Mitch McConnell put out a statement congratulating yesterday\u2019s primary winners as he continues to recover nicely in rehab?",
-          "sourceUrl": "https://x.com/dpakman/status/2084981768097018167",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Frames McConnell's health episodes as matter of public concern",
-          "quote": "Nodding off at a funeral sparks new debate",
-          "sourceUrl": "https://x.com/davidpakmanshow/status/2082511706941518050",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Appeared on Governor Newsom's podcast to promote forthcoming book",
-          "quote": "I WAS ON GOVERNOR GAVIN C. NEWSOM'S VERY NASTY PODCAST TO TALK ABOUT MY FORTHCOMING BOOK, NOW AVAILABLE FOR COMPLETELY DERANGED PREORDER. Thank you for having me!",
-          "sourceUrl": "https://x.com/dpakman/status/2080006711512068320",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Reports on government action regarding McConnell's status",
-          "quote": "Gov gives MISSING Mitch McConnell an ultimatum",
-          "sourceUrl": "https://www.youtube.com/watch?v=wqjed36KOcg",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "ai-technology",
