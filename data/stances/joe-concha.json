@@ -2,8 +2,8 @@
   "voiceId": "joe-concha",
   "voiceName": "Joe Concha",
   "updatedAt": "2026-08-31",
-  "topicCount": 12,
-  "stanceCount": 49,
+  "topicCount": 13,
+  "stanceCount": 50,
   "topics": [
     {
       "topic": "media-press",
@@ -445,6 +445,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Secretary Duffy warns against hiring non-English-speaking illegal immigrants as truck drivers",
+          "quote": "Secretary Duffy drives the message home:\n\n\"This is not a conversation about illegals. You can have that debate.\"\n\n\"If you're here illegally and you can't speak the language...you don't deserve to be in a big rig driving on American roads, endangering American citizens.\"",
+          "sourceUrl": "https://bsky.app/profile/joeconcha.bsky.social/post/3mufbwifnes23",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "economy-trade",

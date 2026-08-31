@@ -2,7 +2,7 @@
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
   "updatedAt": "2026-08-31",
-  "topicCount": 21,
+  "topicCount": 20,
   "stanceCount": 48,
   "topics": [
     {
@@ -14,8 +14,8 @@
         {
           "date": "2026-08-26",
           "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Meta's settlement highlights serious child safety concerns in tech design",
+          "stance": "strong",
+          "summary": "Criticizes Meta's settlement as inadequate response to child harm",
           "quote": "Meta's $18 Billion Child Addiction Payout is Bigger Than You Think",
           "sourceUrl": "https://www.youtube.com/watch?v=iyyBlxDSXd4",
           "platform": "youtube"
@@ -125,14 +125,23 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 7,
-      "lastActive": "2026-08-18",
+      "count": 8,
+      "lastActive": "2026-08-25",
       "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Expresses concern about Trump's mail-in voting position and implications",
+          "quote": "The Trump Mail-In Voting Problem Should Terrify You BUT What Everyone is Getting Wrong About It",
+          "sourceUrl": "https://www.youtube.com/watch?v=SDlk0jOjqiE",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-18",
           "topic": "trump-administration",
           "stance": "strong",
-          "summary": "Criticizes Trump's behavior as pathetic and expose-worthy",
+          "summary": "Criticizes Trump's behavior toward Natalie Harp as unhinged",
           "quote": "Trump Accidentally Exposed Himself in Pathetic Natalie Harp Meltdown",
           "sourceUrl": "https://www.youtube.com/watch?v=8-siKZ2SEsY",
           "platform": "youtube"
@@ -222,7 +231,7 @@
           "date": "2026-08-19",
           "topic": "media-personalities",
           "stance": "lean",
-          "summary": "Joe Rogan-Candace Owens situation warrants serious attention",
+          "summary": "Presents Joe Rogan-Candace Owens situation as consequential",
           "quote": "The Joe Rogan Candace Owens Situation is Bigger Than You Think",
           "sourceUrl": "https://www.youtube.com/watch?v=heacPnqC4jU",
           "platform": "youtube"
@@ -276,7 +285,7 @@
           "date": "2026-08-17",
           "topic": "celebrity-entertainment",
           "stance": "lean",
-          "summary": "Child stars face exploitation and harm from fame pressures",
+          "summary": "Raises concerns about child star exploitation and fame's harmful effects",
           "quote": "Hayden Panettiere's Death Sparks Hard Conversations About Child Stars &amp; Fame",
           "sourceUrl": "https://www.youtube.com/watch?v=AjTZjhHpBq0",
           "platform": "youtube"
@@ -339,7 +348,7 @@
           "date": "2026-08-13",
           "topic": "media-press",
           "stance": "strong",
-          "summary": "Criticizes Honey browser extension for deceptive practices",
+          "summary": "Criticizes sponsorship practices and corporate accountability in media",
           "quote": "The Honey Scandal Exposed an Even Bigger Problem",
           "sourceUrl": "https://www.youtube.com/watch?v=LyTpZ327ixY",
           "platform": "youtube"
@@ -409,24 +418,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 1,
-      "lastActive": "2026-08-25",
-      "stances": [
-        {
-          "date": "2026-08-25",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Expresses concern about Trump mail-in voting vulnerabilities",
-          "quote": "The Trump Mail-In Voting Problem Should Terrify You BUT What Everyone is Getting Wrong About It",
-          "sourceUrl": "https://www.youtube.com/watch?v=SDlk0jOjqiE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "healthcare",

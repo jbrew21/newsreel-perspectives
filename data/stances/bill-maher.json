@@ -8,7 +8,7 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 5,
+      "count": 6,
       "lastActive": "2026-08-29",
       "stances": [
         {
@@ -27,6 +27,15 @@
           "summary": "",
           "quote": "Overtime with Bill Maher: Dana Bash, Jeremy Peters (HBO)",
           "sourceUrl": "https://www.youtube.com/watch?v=W9VyM8blMJU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Hunter Biden seeking redemption after conviction",
+          "quote": "Hunter Biden on Making Amends | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=xEGP_dd2zig",
           "platform": "youtube"
         },
         {
@@ -98,18 +107,9 @@
     {
       "topic": "immigration",
       "label": "Immigration",
-      "count": 3,
+      "count": 2,
       "lastActive": "2026-08-15",
       "stances": [
-        {
-          "date": "2026-08-15",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Immigrants should assimilate into American culture",
-          "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
-          "platform": "youtube"
-        },
         {
           "date": "2026-08-15",
           "topic": "immigration",
@@ -204,24 +204,6 @@
       "active": true
     },
     {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 1,
-      "lastActive": "2026-08-22",
-      "stances": [
-        {
-          "date": "2026-08-22",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Platforms convicted felon's perspective on redemption and accountability",
-          "quote": "Hunter Biden on Making Amends | Real Time with Bill Maher (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=xEGP_dd2zig",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 1,
@@ -231,13 +213,31 @@
           "date": "2026-08-18",
           "topic": "billionaires-wealth",
           "stance": "lean",
-          "summary": "Critiques private equity industry and its business practices",
+          "summary": "Critiques private equity industry influence",
           "quote": "Private Equity Boyfriends | Real Time with Bill Maher (HBO)",
           "sourceUrl": "https://www.youtube.com/watch?v=bnDFT-xc7nk",
           "platform": "youtube"
         }
       ],
       "active": true
+    },
+    {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 1,
+      "lastActive": "2026-08-15",
+      "stances": [
+        {
+          "date": "2026-08-15",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Criticizes America's inability to address climate change",
+          "quote": "New Rule: Melt in America | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=zKJKGe-12Jg",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "education",

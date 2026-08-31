@@ -1,9 +1,44 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-08-31T14:13:06.875418",
+  "collectedAt": "2026-08-31T16:26:48.295133",
   "date": "2026-08-31",
   "posts": [
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "You need to see what Laura Loomer just said\u2026",
+      "sourceUrl": "https://www.youtube.com/shorts/CQSHYgaZNwM",
+      "timestamp": "2026-08-31T00:46:42+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Critical framing of Laura Loomer's statements",
+      "quote": "You need to see what Laura Loomer just said\u2026"
+    },
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "NASA scientists are SILENT as Trump awkwardly rambles",
+      "sourceUrl": "https://www.youtube.com/shorts/yILpjQa6OpY",
+      "timestamp": "2026-08-30T22:00:23+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration",
+        "science-space"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticism of Trump's rambling during NASA remarks",
+      "quote": "NASA scientists are SILENT as Trump awkwardly rambles"
+    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -106,53 +141,24 @@
       "stance": "lean",
       "summary": "Reports ICE arrest of MAGA figure with implied criticism of enforcement targeting",
       "quote": "BREAKING: Prominent MAGA influencer Milo Yiannopoulos arrested by ICE"
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "You need to see what Laura Loomer just said\u2026",
-      "sourceUrl": "https://www.youtube.com/shorts/CQSHYgaZNwM",
-      "timestamp": "2026-08-31T00:46:42+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "topics": [
-        "media-personalities"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Critical framing of Laura Loomer's statements",
-      "quote": "You need to see what Laura Loomer just said\u2026"
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "NASA scientists are SILENT as Trump awkwardly rambles",
-      "sourceUrl": "https://www.youtube.com/shorts/yILpjQa6OpY",
-      "timestamp": "2026-08-30T22:00:23+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration",
-        "science-space"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Criticism of Trump's rambling during NASA remarks",
-      "quote": "NASA scientists are SILENT as Trump awkwardly rambles"
     }
   ],
   "topicSummary": {
-    "media-press": [
+    "media-personalities": [
       {
-        "quote": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post",
-        "sourceUrl": "https://www.youtube.com/watch?v=i3jGaWGHc_U",
+        "quote": "You need to see what Laura Loomer just said\u2026",
+        "sourceUrl": "https://www.youtube.com/shorts/CQSHYgaZNwM",
         "platform": "youtube",
-        "timestamp": "2026-08-30T18:00:20+00:00"
+        "timestamp": "2026-08-31T00:46:42+00:00"
       }
     ],
     "trump-administration": [
+      {
+        "quote": "NASA scientists are SILENT as Trump awkwardly rambles",
+        "sourceUrl": "https://www.youtube.com/shorts/yILpjQa6OpY",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T22:00:23+00:00"
+      },
       {
         "quote": "Trump has to be guided across the stage after appearing lost and confused",
         "sourceUrl": "https://www.youtube.com/shorts/DzV19-fDmDo",
@@ -164,12 +170,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/iESKQedZr1g",
         "platform": "youtube",
         "timestamp": "2026-08-28T23:30:11+00:00"
-      },
+      }
+    ],
+    "media-press": [
       {
-        "quote": "NASA scientists are SILENT as Trump awkwardly rambles",
-        "sourceUrl": "https://www.youtube.com/shorts/yILpjQa6OpY",
+        "quote": "LEMON DROP - Karen Attiah Gets HUGE Win Against Jeff Bezos' Washington Post",
+        "sourceUrl": "https://www.youtube.com/watch?v=i3jGaWGHc_U",
         "platform": "youtube",
-        "timestamp": "2026-08-30T22:00:23+00:00"
+        "timestamp": "2026-08-30T18:00:20+00:00"
       }
     ],
     "ai-technology": [
@@ -194,14 +202,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/zZjsuxkjHCc",
         "platform": "youtube",
         "timestamp": "2026-08-28T22:48:22+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "You need to see what Laura Loomer just said\u2026",
-        "sourceUrl": "https://www.youtube.com/shorts/CQSHYgaZNwM",
-        "platform": "youtube",
-        "timestamp": "2026-08-31T00:46:42+00:00"
       }
     ]
   }

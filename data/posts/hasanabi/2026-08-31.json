@@ -1,9 +1,26 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-08-31T14:13:06.863233",
+  "collectedAt": "2026-08-31T16:26:48.282428",
   "date": "2026-08-31",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "TRUMP BOMBS LARAK ISLAND IN IRAN AS GENERALS TURN ON HIM",
+      "sourceUrl": "https://www.youtube.com/watch?v=45mluQaPbBk",
+      "timestamp": "2026-08-31T03:26:00+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "topics": [
+        "iran-conflict"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Trump military action against Iran",
+      "quote": "TRUMP BOMBS LARAK ISLAND IN IRAN AS GENERALS TURN ON HIM"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -105,26 +122,17 @@
       "stance": "lean",
       "summary": "Expresses concern about food safety and recall issues",
       "quote": "ALL OUR FOOD IS BEING RECALLED"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "TRUMP BOMBS LARAK ISLAND IN IRAN AS GENERALS TURN ON HIM",
-      "sourceUrl": "https://www.youtube.com/watch?v=45mluQaPbBk",
-      "timestamp": "2026-08-31T03:26:00+00:00",
-      "type": "video_title",
-      "topic": "iran-conflict",
-      "topics": [
-        "iran-conflict"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Trump military action against Iran",
-      "quote": "TRUMP BOMBS LARAK ISLAND IN IRAN AS GENERALS TURN ON HIM"
     }
   ],
   "topicSummary": {
+    "iran-conflict": [
+      {
+        "quote": "TRUMP BOMBS LARAK ISLAND IN IRAN AS GENERALS TURN ON HIM",
+        "sourceUrl": "https://www.youtube.com/watch?v=45mluQaPbBk",
+        "platform": "youtube",
+        "timestamp": "2026-08-31T03:26:00+00:00"
+      }
+    ],
     "free-speech-censorship": [
       {
         "quote": "AMERICANS ARE ACTUALLY FIGHTING THE SURVEILLANCE STATE",
@@ -169,14 +177,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Kl-0nAlwFU8",
         "platform": "youtube",
         "timestamp": "2026-08-28T19:30:48+00:00"
-      }
-    ],
-    "iran-conflict": [
-      {
-        "quote": "TRUMP BOMBS LARAK ISLAND IN IRAN AS GENERALS TURN ON HIM",
-        "sourceUrl": "https://www.youtube.com/watch?v=45mluQaPbBk",
-        "platform": "youtube",
-        "timestamp": "2026-08-31T03:26:00+00:00"
       }
     ]
   }

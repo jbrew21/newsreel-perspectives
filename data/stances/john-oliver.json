@@ -3,7 +3,7 @@
   "voiceName": "John Oliver",
   "updatedAt": "2026-08-31",
   "topicCount": 19,
-  "stanceCount": 55,
+  "stanceCount": 54,
   "topics": [
     {
       "topic": "trump-administration",
@@ -195,7 +195,7 @@
           "date": "2026-08-24",
           "topic": "congress-legislation",
           "stance": "strong",
-          "summary": "Criticizes Senator Menendez and McKinsey's influence on policy",
+          "summary": "Criticizes congressional corruption and corporate consulting influence",
           "quote": "S10 E14: Bob Menendez &amp; McKinsey: Last Week Tonight with John Oliver",
           "sourceUrl": "https://www.youtube.com/watch?v=-BRWR6iK2iY",
           "platform": "youtube"
@@ -222,7 +222,7 @@
           "date": "2026-08-26",
           "topic": "abortion-reproductive",
           "stance": "strong",
-          "summary": "Defends abortion rights against restrictions",
+          "summary": "Opposes abortion restrictions, defends reproductive rights",
           "quote": "S10 E16: Bird of the Year &amp; Abortion Rights: Last Week Tonight with John Oliver",
           "sourceUrl": "https://www.youtube.com/watch?v=kYjRBnFKNN4",
           "platform": "youtube"
@@ -267,63 +267,18 @@
       "active": true
     },
     {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 4,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Critiques data collection practices by subscription services",
-          "quote": "Subscriptions &amp; Personal Data #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/znUIOZcJkn4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Criticizes privacy risks and data vulnerabilities in smart products",
-          "quote": "Subscriptions &amp; Smart Products #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/JKMWHq6s1wE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Critiques subscription service business models and practices",
-          "quote": "Subscriptions #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/9XtHItb_Cvs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-24",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Critiques subscription service business models and practices",
-          "quote": "Subscriptions: Last Week Tonight with John Oliver (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=Wko-2c7lZL8",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "uk-world-politics",
       "label": "UK & World Politics",
       "count": 5,
-      "lastActive": "2026-08-16",
+      "lastActive": "2026-08-25",
       "stances": [
         {
-          "date": "2026-08-16",
+          "date": "2026-08-25",
           "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Critiques French retirement age increase and solitary confinement practices",
-          "quote": "S10 E6: French Retirement Protests &amp; Solitary Confinement: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=0y91DFVClQ8",
+          "stance": "lean",
+          "summary": "Critiques Argentina's economic policies and chocolate industry practices",
+          "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
           "platform": "youtube"
         },
         {
@@ -363,7 +318,52 @@
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 4,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Opposes corporate data collection through subscription services",
+          "quote": "Subscriptions &amp; Personal Data #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/znUIOZcJkn4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes exploitative design in smart product subscriptions",
+          "quote": "Subscriptions &amp; Smart Products #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/JKMWHq6s1wE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Critiques subscription service business models and practices",
+          "quote": "Subscriptions #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/9XtHItb_Cvs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Critiques subscription service business models and practices",
+          "quote": "Subscriptions: Last Week Tonight with John Oliver (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=Wko-2c7lZL8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "state-local-politics",
@@ -432,33 +432,6 @@
           "summary": "Examines Iran protests and government response to civil unrest",
           "quote": "S9 E25: Iran Protests &amp; Crime Reporting: Last Week Tonight with John Oliver",
           "sourceUrl": "https://www.youtube.com/watch?v=Z4pKbk20QkY",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "food-agriculture",
-      "label": "Food & Agriculture",
-      "count": 2,
-      "lastActive": "2026-08-25",
-      "stances": [
-        {
-          "date": "2026-08-25",
-          "topic": "food-agriculture",
-          "stance": "lean",
-          "summary": "Examines labor and production issues in chocolate industry",
-          "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "food-agriculture",
-          "stance": "lean",
-          "summary": "Examines food safety failures during Trump administration",
-          "quote": "Cyclospora Outbreak &amp; The Trump Administration #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/Zl79TSscerI",
           "platform": "youtube"
         }
       ],
@@ -555,7 +528,7 @@
           "date": "2026-08-27",
           "topic": "israel-palestine",
           "stance": "strong",
-          "summary": "Critiques Israeli military conduct, expresses concern for Gaza civilians",
+          "summary": "Criticizes Israeli military conduct, advocates for Palestinian protection",
           "quote": "S10 E17: Bird of the Year Update &amp; Gaza War: Last Week Tonight with John Oliver",
           "sourceUrl": "https://www.youtube.com/watch?v=Rsgqav1Ua2U",
           "platform": "youtube"
@@ -616,6 +589,24 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
+      "count": 1,
+      "lastActive": "2026-08-03",
+      "stances": [
+        {
+          "date": "2026-08-03",
+          "topic": "food-agriculture",
+          "stance": "lean",
+          "summary": "Examines food safety failures during Trump administration",
+          "quote": "Cyclospora Outbreak &amp; The Trump Administration #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/Zl79TSscerI",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "foreign-policy-diplomacy",

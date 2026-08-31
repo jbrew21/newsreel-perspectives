@@ -2,8 +2,8 @@
   "voiceId": "chris-williamson",
   "voiceName": "Chris Williamson",
   "updatedAt": "2026-08-31",
-  "topicCount": 12,
-  "stanceCount": 38,
+  "topicCount": 13,
+  "stanceCount": 39,
   "topics": [
     {
       "topic": "culture-war",
@@ -382,6 +382,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Expresses concern about global instability and potential conflict escalation",
+          "quote": "WW3 DEBATE: \u201cWe\u2019re On the Brink of Global Collapse\u201d",
+          "sourceUrl": "https://www.youtube.com/watch?v=4klivapz4Gw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "military-defense",

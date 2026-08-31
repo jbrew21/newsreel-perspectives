@@ -2,85 +2,31 @@
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
   "updatedAt": "2026-08-31",
-  "topicCount": 13,
-  "stanceCount": 19,
+  "topicCount": 12,
+  "stanceCount": 18,
   "topics": [
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 3,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Critiques Federal Reserve independence and monetary policy decisions",
-          "quote": "The Fed's Independence | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/gkdS5RgFR7k",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Critiques rising cost of living issues",
-          "quote": "Cost Of Living | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/rgDQPVF6_60",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-24",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Examines economic pressures driving working-class migration patterns",
-          "quote": "Working Class Exodus | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/KsjELQ-SoTk",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 2,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes government inaction on corruption and accountability",
-          "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes lack of congressional planning or policy direction",
-          "quote": "Still No Plan | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/h9xreruPKo4",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 3,
-      "lastActive": "2026-08-12",
+      "count": 4,
+      "lastActive": "2026-08-25",
       "stances": [
         {
-          "date": "2026-08-12",
+          "date": "2026-08-25",
           "topic": "trump-administration",
           "stance": "strong",
-          "summary": "Criticizes Trump's cancel culture practices",
-          "quote": "Trump's Cancel Culture | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/_oYjeHdMMAw",
+          "summary": "Criticizes Tucker Carlson and Trump-aligned politics",
+          "quote": "Tucker's Party | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/KqjR-_Akry4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Contrasts Trump administration action with corruption concerns",
+          "quote": "Action vs. Corruption | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/2pOlxFioi-E",
           "platform": "youtube"
         },
         {
@@ -102,7 +48,43 @@
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critiques Federal Reserve independence and economic policy",
+          "quote": "The Fed's Independence | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/gkdS5RgFR7k",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Examines cost of living and economic pressures",
+          "quote": "Cost Of Living | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/rgDQPVF6_60",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-24",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Examines economic pressures driving working-class migration patterns",
+          "quote": "Working Class Exodus | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/KsjELQ-SoTk",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "israel-palestine",
@@ -132,24 +114,6 @@
       "active": false
     },
     {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 1,
-      "lastActive": "2026-08-25",
-      "stances": [
-        {
-          "date": "2026-08-25",
-          "topic": "media-personalities",
-          "stance": "strong",
-          "summary": "Critiques Tucker Carlson's political positioning and media presence",
-          "quote": "Tucker's Party | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/KqjR-_Akry4",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 1,
@@ -159,7 +123,7 @@
           "date": "2026-08-19",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Examines Democratic Party strategy for 2028 presidential race",
+          "summary": "Questions Democratic Party strategy for 2028 election",
           "quote": "Dems 2028 Plan? | The Weekly Show with Jon Stewart",
           "sourceUrl": "https://www.youtube.com/shorts/CVgXLd7usdA",
           "platform": "youtube"
@@ -177,7 +141,7 @@
           "date": "2026-08-14",
           "topic": "free-speech-censorship",
           "stance": "lean",
-          "summary": "Examines relationship between cynicism and free speech protections",
+          "summary": "Explores cynicism and free speech implications",
           "quote": "Cynicism &amp; Free Speech | The Weekly Show with Jon Stewart",
           "sourceUrl": "https://www.youtube.com/shorts/_irAAr88mwc",
           "platform": "youtube"
@@ -195,7 +159,7 @@
           "date": "2026-08-13",
           "topic": "trump-policy",
           "stance": "strong",
-          "summary": "Satirizes and questions MAGA movement authenticity",
+          "summary": "Critiques MAGA movement and Trump political ideology",
           "quote": "The &quot;Real&quot; MAGA | The Weekly Show with Jon Stewart",
           "sourceUrl": "https://www.youtube.com/shorts/guPx_6ixYes",
           "platform": "youtube"
@@ -252,6 +216,24 @@
           "summary": "Examines artificial intelligence impact on workers and employment",
           "quote": "AI vs. Labor | The Weekly Show with Jon Stewart",
           "sourceUrl": "https://www.youtube.com/shorts/R4iAqDB7uPM",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 1,
+      "lastActive": "2026-07-29",
+      "stances": [
+        {
+          "date": "2026-07-29",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes lack of congressional planning or policy direction",
+          "quote": "Still No Plan | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/h9xreruPKo4",
           "platform": "youtube"
         }
       ],

@@ -2,8 +2,8 @@
   "voiceId": "merrill-goozner",
   "voiceName": "Merrill Goozner",
   "updatedAt": "2026-08-31",
-  "topicCount": 7,
-  "stanceCount": 10,
+  "topicCount": 9,
+  "stanceCount": 12,
   "topics": [
     {
       "topic": "economy-trade",
@@ -141,6 +141,24 @@
       "active": false
     },
     {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-07-09",
+      "stances": [
+        {
+          "date": "2026-07-09",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "",
+          "quote": "gooznews.substack.com/p/trump-regi...",
+          "sourceUrl": "https://bsky.app/profile/gooznews.bsky.social/post/3mq7tmwqyfk2b",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 1,
@@ -153,6 +171,24 @@
           "summary": "Finds encouragement in opinion on political/cultural matters",
           "quote": "I'm not a religious man, but I found this  opinion piece by E.J. Dionne encouraging. \nwww.nytimes.com/2026/06/10/o...",
           "sourceUrl": "https://bsky.app/profile/gooznews.bsky.social/post/3mnx2liegn223",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 1,
+      "lastActive": "2026-05-14",
+      "stances": [
+        {
+          "date": "2026-05-14",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Questions conventional wisdom on hantavirus transmission",
+          "quote": "Most experts seem to agree the Andes strain of the hantavirus poses no immediate threat to the general public. But at least one questions the conventional wisdom about how it spreads.",
+          "sourceUrl": "https://bsky.app/profile/gooznews.bsky.social/post/3mlsv5yp2hc2r",
           "platform": "bluesky"
         }
       ],

@@ -2,8 +2,8 @@
   "voiceId": "viet-thanh-nguyen",
   "voiceName": "Viet Thanh Nguyen",
   "updatedAt": "2026-08-31",
-  "topicCount": 7,
-  "stanceCount": 11,
+  "topicCount": 8,
+  "stanceCount": 12,
   "topics": [
     {
       "topic": "immigration",
@@ -166,6 +166,24 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-08-06",
+      "stances": [
+        {
+          "date": "2026-08-06",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Criticizes perceived contradiction between stated values and actual outcomes",
+          "quote": "The same level of tragic irony as when Obama got the Nobel Peace Prize",
+          "sourceUrl": "https://bsky.app/profile/vietthanhnguyen.bsky.social/post/3msgiqrq36s2q",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
     }
   ]
 }
