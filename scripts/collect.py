@@ -1596,6 +1596,18 @@ def main():
             pass
 
     topic_index = {}
+    if single_voice:
+        # A --voice run only holds that one voice's posts. Start from the
+        # existing day index and replace just this voice's entries — otherwise
+        # the write below clobbers every other voice's index for the day.
+        existing_index_path = POSTS_DIR / f'topic-index-{date}.json'
+        if existing_index_path.exists():
+            try:
+                existing = json.loads(existing_index_path.read_text())
+                topic_index = {t: [e for e in entries if e.get('voiceId') != single_voice]
+                               for t, entries in existing.items()}
+            except Exception:
+                topic_index = {}
     uncategorized_fixed = 0
     for vid, data in all_voice_posts.items():
         for p in data['posts']:
@@ -1637,6 +1649,7 @@ def main():
                 })
 
     index_path = POSTS_DIR / f'topic-index-{date}.json'
+    topic_index = {t: entries for t, entries in topic_index.items() if entries}
     index_path.write_text(json.dumps(topic_index, indent=2))
 
     print(f"\n  ✓ Saved posts for {len(all_voice_posts)} voices")

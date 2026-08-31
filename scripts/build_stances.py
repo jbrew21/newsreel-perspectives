@@ -275,7 +275,10 @@ def main():
     for d in ingest_dates:
         for vid, vname, posts in collect_posts_for_date(d):
             for p in posts:
-                p.setdefault('date', d)
+                # Prefer the post's real publish timestamp; the day-file date is
+                # when we COLLECTED it, which for backfilled feeds can be years
+                # after the post (a Jan 2025 tweet must not display as today).
+                p.setdefault('date', (p.get('timestamp') or '')[:10] or d)
                 entry = stance_from_post(p)
                 if entry:
                     rec = new_by_voice.setdefault(vid, {'name': vname, 'stances': []})
