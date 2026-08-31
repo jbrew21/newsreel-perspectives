@@ -3,7 +3,7 @@
   "voiceName": "John Oliver",
   "updatedAt": "2026-08-31",
   "topicCount": 19,
-  "stanceCount": 54,
+  "stanceCount": 55,
   "topics": [
     {
       "topic": "trump-administration",
@@ -366,6 +366,42 @@
       "active": true
     },
     {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 3,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Critiques Elon Musk's influence and business practices",
+          "quote": "S10 E21: Elon Musk &amp; Season Finale: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=AMzHGmgjQfo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Critiques Elon Musk's Twitter acquisition and corporate practices",
+          "quote": "S9 E30: Elon Musk, Twitter &amp; Qatar World Cup: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=14xmIVd1I78",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Criticizes Trump family for promoting unregulated cryptocurrency schemes",
+          "quote": "Trump Family &amp; Memecoins #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/mdwOm2p_sCg",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 3,
@@ -459,33 +495,6 @@
           "summary": "Critiques inflation policies and economic management",
           "quote": "S9 E17: Inflation &amp; Beach Dolls Update: Last Week Tonight with John Oliver",
           "sourceUrl": "https://www.youtube.com/watch?v=D10nBR4m9rg",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "billionaires-wealth",
-      "label": "Billionaires & Wealth",
-      "count": 2,
-      "lastActive": "2026-08-10",
-      "stances": [
-        {
-          "date": "2026-08-10",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Critiques Elon Musk's Twitter acquisition and corporate practices",
-          "quote": "S9 E30: Elon Musk, Twitter &amp; Qatar World Cup: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=14xmIVd1I78",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Criticizes Trump family for promoting unregulated cryptocurrency schemes",
-          "quote": "Trump Family &amp; Memecoins #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/mdwOm2p_sCg",
           "platform": "youtube"
         }
       ],

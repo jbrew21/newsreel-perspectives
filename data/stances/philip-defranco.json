@@ -3,7 +3,7 @@
   "voiceName": "Philip DeFranco",
   "updatedAt": "2026-08-31",
   "topicCount": 20,
-  "stanceCount": 48,
+  "stanceCount": 49,
   "topics": [
     {
       "topic": "ai-technology",
@@ -204,6 +204,42 @@
       "active": true
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 3,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Implies scandal and controversial behavior by media figures",
+          "quote": "The Secret Pentagon Influencer Scandal Nobody Is Talking About &amp; Tucker Carlson Goes Nuclear",
+          "sourceUrl": "https://www.youtube.com/watch?v=-tvQqh7VUbQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes sponsorship practices and corporate accountability in media",
+          "quote": "The Honey Scandal Exposed an Even Bigger Problem",
+          "sourceUrl": "https://www.youtube.com/watch?v=LyTpZ327ixY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Labels harassment case as extreme or notable",
+          "quote": "Ebay Settles Insane Harassment Case",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7668384038293490974",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 3,
@@ -337,33 +373,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 2,
-      "lastActive": "2026-08-13",
-      "stances": [
-        {
-          "date": "2026-08-13",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes sponsorship practices and corporate accountability in media",
-          "quote": "The Honey Scandal Exposed an Even Bigger Problem",
-          "sourceUrl": "https://www.youtube.com/watch?v=LyTpZ327ixY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Labels harassment case as extreme or notable",
-          "quote": "Ebay Settles Insane Harassment Case",
-          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7668384038293490974",
-          "platform": "tiktok"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "culture-war",

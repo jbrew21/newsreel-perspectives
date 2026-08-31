@@ -2,8 +2,8 @@
   "voiceId": "casey-newton",
   "voiceName": "Casey Newton",
   "updatedAt": "2026-08-31",
-  "topicCount": 2,
-  "stanceCount": 14,
+  "topicCount": 3,
+  "stanceCount": 15,
   "topics": [
     {
       "topic": "ai-technology",
@@ -148,6 +148,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Criticizes Biden administration data center announcement as tone-deaf",
+          "quote": "This is the message local communities have been waiting to hear to get them really excited about data centers. A masterstroke by the president",
+          "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3mufi7a3fz22u",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     }
   ]
 }

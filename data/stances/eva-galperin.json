@@ -2,15 +2,24 @@
   "voiceId": "eva-galperin",
   "voiceName": "Eva Galperin",
   "updatedAt": "2026-08-31",
-  "topicCount": 7,
-  "stanceCount": 28,
+  "topicCount": 8,
+  "stanceCount": 29,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-08-28",
+      "lastActive": "2026-08-31",
       "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Mass surveillance tools warrant public attention and resistance",
+          "quote": "Is Flock the only mass surveillance tool/network that people should be worried about? No. But it is an entry point for people from all walks of life to the fight against mass surveillance and I'm glad people are paying attention and taking action.",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mufpiaf7t22m",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-28",
           "topic": "ai-technology",
@@ -108,15 +117,6 @@
           "summary": "Warns against using AI tools for professional work subject to legal discovery",
           "quote": "If you are an expert witness, do not use ChatGPT to write the report you are charging $475/hour for. All of your chat prompts are subpoenable and we are all going to laugh so hard.\n\nwww.404media.co/show-how-3m-...",
           "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mtcic3uryc2e",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Concerned about surveillance capabilities of Meta glasses",
-          "quote": "Today in Pervert Glasses news, Meta glasses have been banned from court in England and Wales: Meta glasses have been banned from courts in England and Wales: www.theguardian.com/technology/2...",
-          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mstjkph2b22k",
           "platform": "bluesky"
         }
       ],
@@ -265,6 +265,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Activists should monitor Trump administration policies closely",
+          "quote": "Organizers and activists who oppose the Trump administration's policies should absolutely be paying close attention to this story: theintercept.com/2026/08/28/t...",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mufoukryv22m",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "gender-lgbtq",

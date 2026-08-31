@@ -2,8 +2,8 @@
   "voiceId": "ted-lieu",
   "voiceName": "Ted Lieu",
   "updatedAt": "2026-08-31",
-  "topicCount": 10,
-  "stanceCount": 35,
+  "topicCount": 11,
+  "stanceCount": 36,
   "topics": [
     {
       "topic": "ai-technology",
@@ -373,6 +373,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Calls for Senate to pass worker protection and criminal accountability legislation",
+          "quote": "We must protect American workers and hold criminals accountable.\n\nNow it\u2019s time for the Senate to pass this important piece of legislation. https://t.co/nE2mu6Ujqm",
+          "sourceUrl": "https://x.com/RepTedLieu/status/2094540938672546057",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",

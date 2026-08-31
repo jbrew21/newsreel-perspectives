@@ -3,7 +3,7 @@
   "voiceName": "Matt Walsh",
   "updatedAt": "2026-08-31",
   "topicCount": 22,
-  "stanceCount": 95,
+  "stanceCount": 97,
   "topics": [
     {
       "topic": "culture-war",
@@ -458,9 +458,18 @@
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 8,
-      "lastActive": "2026-08-18",
+      "count": 9,
+      "lastActive": "2026-08-31",
       "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Suggests privacy protections are conditional rather than absolute",
+          "quote": "Privacy is conditional",
+          "sourceUrl": "https://www.youtube.com/shorts/8iz3TWBHBMg",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-18",
           "topic": "ai-technology",
@@ -861,6 +870,33 @@
       "active": false
     },
     {
+      "topic": "abortion-reproductive",
+      "label": "Abortion & Reproductive Rights",
+      "count": 2,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "abortion-reproductive",
+          "stance": "lean",
+          "summary": "Questions historical legitimacy of abortion rights",
+          "quote": "The shaky origin of abortion rights",
+          "sourceUrl": "https://www.youtube.com/shorts/39ppeB8cJ-0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "abortion-reproductive",
+          "stance": "strong",
+          "summary": "Links women's sympathy for child killer to abortion culture",
+          "quote": "Shocking to see the number of women on social media now confessing openly that they understand and can relate to Lindsay Clancy's desire to strangle her children to death. I guess I shouldn't be surprised, given the ubiquity of abortion. But still, this is dark. Very dark.",
+          "sourceUrl": "https://x.com/MattWalshBlog/status/2088009788265201879",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 2,
@@ -949,24 +985,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "abortion-reproductive",
-      "label": "Abortion & Reproductive Rights",
-      "count": 1,
-      "lastActive": "2026-08-13",
-      "stances": [
-        {
-          "date": "2026-08-13",
-          "topic": "abortion-reproductive",
-          "stance": "strong",
-          "summary": "Links women's sympathy for child killer to abortion culture",
-          "quote": "Shocking to see the number of women on social media now confessing openly that they understand and can relate to Lindsay Clancy's desire to strangle her children to death. I guess I shouldn't be surprised, given the ubiquity of abortion. But still, this is dark. Very dark.",
-          "sourceUrl": "https://x.com/MattWalshBlog/status/2088009788265201879",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "elections",

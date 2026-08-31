@@ -2,8 +2,8 @@
   "voiceId": "dan-crenshaw",
   "voiceName": "Dan Crenshaw",
   "updatedAt": "2026-08-31",
-  "topicCount": 10,
-  "stanceCount": 25,
+  "topicCount": 12,
+  "stanceCount": 28,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -168,6 +168,33 @@
       "active": false
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Backs Trump on AI dominance, warns against Chinese influence operations",
+          "quote": "President Trump is right. China would absolutely love for America to talk itself out of building the infrastructure necessary to dominate AI. In fact, they\u2019re already running influence operations to encourage exactly that.\n\nPoliticians who join the anti-data center frenzy aren\u2019t ",
+          "sourceUrl": "https://x.com/DanCrenshawTX/status/2094481384337510808",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Promotes DATA Act to solve data center energy and power concerns",
+          "quote": "The concerns about power and water are very real. But these are also very solvable problems. For instance, we\u2019ve introduced the DATA Act which allows data centers to keep their energy usage off your monthly bills. It paves the way for data centers nationwide to connect to their o",
+          "sourceUrl": "https://x.com/DanCrenshawTX/status/2094481387080360091",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 2,
@@ -247,6 +274,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors Flight 93 passengers as heroes who fought terrorism",
+          "quote": "The first battle in the War on Terror was on Flight 93, when forty Americans made the decision to fight back against evil. Today I visited the Flight 93 National Memorial in Shanksville, PA.\n\nIt\u2019s an incredible place, and reminds us how quickly ordinary people can become heroes. ",
+          "sourceUrl": "https://x.com/DanCrenshawTX/status/2094531565900709947",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "immigration",

@@ -2,8 +2,8 @@
   "voiceId": "manhattan-institute",
   "voiceName": "Manhattan Institute",
   "updatedAt": "2026-08-31",
-  "topicCount": 20,
-  "stanceCount": 65,
+  "topicCount": 21,
+  "stanceCount": 67,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -348,6 +348,51 @@
       "active": true
     },
     {
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
+      "count": 4,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "housing-infrastructure",
+          "stance": "strong",
+          "summary": "Argues homelessness driven by addiction/mental illness, rejects housing-first approach",
+          "quote": ".@HMDatMI: \"The reason people are colonizing public streets is that they are drug addicted and mentally ill.\n\nThey have no interest in joining bourgeois society. You can offer them housing and services until you're blue in the face. They will not accept it. Shelter resistance is ",
+          "sourceUrl": "https://x.com/ManhattanInst/status/2094515954537406754",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "housing-infrastructure",
+          "stance": "strong",
+          "summary": "Condemns homelessness as parasitic burden on law-abiding communities",
+          "quote": "The great @HMDatMI responds to L.A. City Councilman Hugo Soto-Martinez calling the homeless \"our neighbors\":\n\n\"The vagrants share no characteristics of neighbors. They're parasites on the efforts of the law-abiding, the stable, the hardworking to create a stable community.\n\nThey ",
+          "sourceUrl": "https://x.com/ManhattanInst/status/2092619318240456769",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "housing-infrastructure",
+          "stance": "strong",
+          "summary": "NYCHA failed to inspect building despite years-long tiger presence",
+          "quote": "This is an insane story. \n\nA 400 pound tiger lived in a New York City Housing Authority building for years, and *everyone in the building knew he was there*. For YEARS. \n\nNYCHA is supposed to inspect their buildings regularly.",
+          "sourceUrl": "https://x.com/ManhattanInst/status/2085445064986173901",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "housing-infrastructure",
+          "stance": "strong",
+          "summary": "Opposes city-run grocery stores as inefficient taxpayer burden",
+          "quote": ". @JKetcham91 on Mamdani's city-run grocery store plan: \n\n\"Mamdani's plan would have the city-run grocery stores not pay taxes, not pay rent, and have to use taxpayer dollars to subsidize the stores on an ongoing basis. So the taxpayer loses, and the bodega owners lose, and they ",
+          "sourceUrl": "https://x.com/ManhattanInst/status/2083345343274504697",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 4,
@@ -387,42 +432,6 @@
           "summary": "Schools should focus on education, not mental health treatment",
           "quote": "Schools are not mental health clinics. They are education centers.\n\n\"A lot of times we think about...merging the mental health system and the education system, because we think of it as breaking down silos.\n\nBut what we don't understand is that a lot of times the goals of those t",
           "sourceUrl": "https://x.com/ManhattanInst/status/2085779434984935799",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "housing-infrastructure",
-      "label": "Housing & Infrastructure",
-      "count": 3,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "housing-infrastructure",
-          "stance": "strong",
-          "summary": "Condemns homelessness as parasitic burden on law-abiding communities",
-          "quote": "The great @HMDatMI responds to L.A. City Councilman Hugo Soto-Martinez calling the homeless \"our neighbors\":\n\n\"The vagrants share no characteristics of neighbors. They're parasites on the efforts of the law-abiding, the stable, the hardworking to create a stable community.\n\nThey ",
-          "sourceUrl": "https://x.com/ManhattanInst/status/2092619318240456769",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "housing-infrastructure",
-          "stance": "strong",
-          "summary": "NYCHA failed to inspect building despite years-long tiger presence",
-          "quote": "This is an insane story. \n\nA 400 pound tiger lived in a New York City Housing Authority building for years, and *everyone in the building knew he was there*. For YEARS. \n\nNYCHA is supposed to inspect their buildings regularly.",
-          "sourceUrl": "https://x.com/ManhattanInst/status/2085445064986173901",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "housing-infrastructure",
-          "stance": "strong",
-          "summary": "Opposes city-run grocery stores as inefficient taxpayer burden",
-          "quote": ". @JKetcham91 on Mamdani's city-run grocery store plan: \n\n\"Mamdani's plan would have the city-run grocery stores not pay taxes, not pay rent, and have to use taxpayer dollars to subsidize the stores on an ongoing basis. So the taxpayer loses, and the bodega owners lose, and they ",
-          "sourceUrl": "https://x.com/ManhattanInst/status/2083345343274504697",
           "platform": "x"
         }
       ],
@@ -643,6 +652,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Warns socialism threatens America, praises DeSantis governance",
+          "quote": ".@DanielDiMartino, who fled Venezuela after it was destroyed by socialism, has a warning for America: \n\n \"The greatest threat America faces in the long run is the rise of support for socialism among the youth.\n\nI think the best thing that Governor @RonDeSantis has done as governo",
+          "sourceUrl": "https://x.com/ManhattanInst/status/2094501962851188894",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",

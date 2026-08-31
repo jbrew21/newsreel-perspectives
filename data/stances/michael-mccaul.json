@@ -2,8 +2,8 @@
   "voiceId": "michael-mccaul",
   "voiceName": "Michael McCaul",
   "updatedAt": "2026-08-31",
-  "topicCount": 9,
-  "stanceCount": 25,
+  "topicCount": 10,
+  "stanceCount": 26,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -238,6 +238,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Opposes U.S. tech companies selling AI expertise to Chinese military-linked firms",
+          "quote": "America is in an AI race with the Chinese Communist Party. We cannot spend billions trying to protect our technological advantage while American companies package up our best human expertise and sell it to companies tied to the Chinese military. If you want to do business with th",
+          "sourceUrl": "https://x.com/RepMcCaul/status/2094462820091838633",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "economy-trade",

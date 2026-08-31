@@ -2,8 +2,8 @@
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
   "updatedAt": "2026-08-31",
-  "topicCount": 15,
-  "stanceCount": 49,
+  "topicCount": 16,
+  "stanceCount": 50,
   "topics": [
     {
       "topic": "culture-war",
@@ -454,6 +454,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Defends business leader's critique of economic policy",
+          "quote": "Palmer Luckey is right. America is not an economic zone.",
+          "sourceUrl": "https://www.youtube.com/shorts/gOO5tLOoUrY",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",

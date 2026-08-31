@@ -2,8 +2,8 @@
   "voiceId": "john-kennedy",
   "voiceName": "John Kennedy",
   "updatedAt": "2026-08-31",
-  "topicCount": 13,
-  "stanceCount": 36,
+  "topicCount": 14,
+  "stanceCount": 37,
   "topics": [
     {
       "topic": "congress-legislation",
@@ -355,6 +355,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Opposes U.S. as world policeman, backs Russia sanctions bill",
+          "quote": "I don\u2019t want America to be the world\u2019s policeman, but I don\u2019t want Xi Jinping, Vladimir Putin or the Ayatollah to be either.\n\nThese are not warm and loving people. They understand one thing: hitting them right between the eyes.\n\nIt\u2019s time to pass the Russia sanctions bill. https:",
+          "sourceUrl": "https://x.com/SenJohnKennedy/status/2094462719605010779",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "state-local-politics",

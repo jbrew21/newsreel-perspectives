@@ -2,8 +2,8 @@
   "voiceId": "paris-marx",
   "voiceName": "Paris Marx",
   "updatedAt": "2026-08-31",
-  "topicCount": 15,
-  "stanceCount": 55,
+  "topicCount": 16,
+  "stanceCount": 56,
   "topics": [
     {
       "topic": "ai-technology",
@@ -544,6 +544,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump's pressure on Google Maps naming, advocates switching platforms",
+          "quote": "Google has outlined how it\u2019s handling Donald Trump\u2019s latest tantrum.\n\nIn the US, it will display \u201cLake America.\u201d\n\nIn Canada, it will show \u201cLake Ontario.\u201d\n\nIn the rest of the world, it will make it seem like a debate: \u201cLake Ontario (Lake America).\u201d\n\nMore reason to replace Google M",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mufekfpee225",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",
