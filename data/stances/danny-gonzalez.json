@@ -1,18 +1,18 @@
 {
   "voiceId": "danny-gonzalez",
   "voiceName": "Danny Gonzalez",
-  "updatedAt": "2026-08-30",
+  "updatedAt": "2026-08-31",
   "topicCount": 5,
-  "stanceCount": 7,
+  "stanceCount": 8,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 2,
-      "lastActive": "2026-08-30",
+      "lastActive": "2026-08-31",
       "stances": [
         {
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "topic": "ai-technology",
           "stance": "lean",
           "summary": "Presents his AI as competitive with ChatGPT",
@@ -36,10 +36,10 @@
       "topic": "celebrity-entertainment",
       "label": "Celebrity & Entertainment",
       "count": 2,
-      "lastActive": "2026-08-30",
+      "lastActive": "2026-08-31",
       "stances": [
         {
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "topic": "celebrity-entertainment",
           "stance": "strong",
           "summary": "Criticizes influencers collaborating with alleged pedophiles for money",
@@ -48,7 +48,7 @@
           "platform": "x"
         },
         {
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "topic": "celebrity-entertainment",
           "stance": "lean",
           "summary": "Criticizes management's legal threat over unpaid photo rights",
@@ -60,13 +60,40 @@
       "active": true
     },
     {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 2,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Makes joking skepticism about vaccine side effects",
+          "quote": "yo what are they putting in this vax im starting to feel kinda funny \ud83d\udc40 https://t.co/RomVh7NEvb",
+          "sourceUrl": "https://x.com/DannyGonzalez/status/1387539829378985985",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Expresses positive sentiment about COVID-19 vaccination",
+          "quote": "fully vaxxed pog https://t.co/4VxXo3jNcU",
+          "sourceUrl": "https://x.com/DannyGonzalez/status/1387449430094360578",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 1,
-      "lastActive": "2026-08-30",
+      "lastActive": "2026-08-31",
       "stances": [
         {
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "topic": "media-personalities",
           "stance": "strong",
           "summary": "Mocks Jake Paul's attempt to cancel Cody Ko as hypocritical",
@@ -81,33 +108,15 @@
       "topic": "media-press",
       "label": "Media & Press",
       "count": 1,
-      "lastActive": "2026-08-30",
+      "lastActive": "2026-08-31",
       "stances": [
         {
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "topic": "media-press",
           "stance": "strong",
           "summary": "Criticizes author for profiting from vine quotes without permission or credit",
           "quote": "This dude made a book out of vine quotes without asking or crediting anyone. And it\u2019s an Amazon bestseller. At the very least use the profit to bring back Vine https://t.co/UOkeJqza1N",
           "sourceUrl": "https://x.com/DannyGonzalez/status/929186916368445440",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "covid-pandemic",
-      "label": "COVID & Pandemic",
-      "count": 1,
-      "lastActive": "2026-08-30",
-      "stances": [
-        {
-          "date": "2026-08-30",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Makes joking skepticism about vaccine side effects",
-          "quote": "yo what are they putting in this vax im starting to feel kinda funny \ud83d\udc40 https://t.co/RomVh7NEvb",
-          "sourceUrl": "https://x.com/DannyGonzalez/status/1387539829378985985",
           "platform": "x"
         }
       ],
