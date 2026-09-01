@@ -1,7 +1,7 @@
 {
   "voiceId": "timnit-gebru",
   "voiceName": "Timnit Gebru",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "topicCount": 7,
   "stanceCount": 37,
   "topics": [
@@ -276,6 +276,42 @@
       "active": true
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 3,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Questions fairness of investigation outcome allowing remote work",
+          "quote": "Although the result isn't what Cofnas claims. He's not allowed to teach or be on campus but is allowed to work on the project he was hired for remotely while the investigation goes right?",
+          "sourceUrl": "https://bsky.app/profile/timnitgebru.blacksky.app/post/3muajnj5m4c2n",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Criticizes selective media coverage of academic misconduct by prominent figures",
+          "quote": "Lol the former Stanford president who derailed generations of Alzheimer\u2019s research through misconduct and coverup was still a professor there and I don\u2019t remember his case generating cross Atlantic news \ud83d\ude44",
+          "sourceUrl": "https://x.com/timnitGebru/status/2086490983064084647",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Questions disproportionate media attention to university lecturer misconduct case",
+          "quote": "RT @lafillemalgarde: Maybe it\u2019s my echo chamber but I don\u2019t think I have seen misconduct from a uni lecturer generate this level of media c\u2026",
+          "sourceUrl": "https://x.com/timnitGebru/status/2086432673594065301",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 4,
@@ -318,43 +354,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 3,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Questions fairness of investigation outcome allowing remote work",
-          "quote": "Although the result isn't what Cofnas claims. He's not allowed to teach or be on campus but is allowed to work on the project he was hired for remotely while the investigation goes right?",
-          "sourceUrl": "https://bsky.app/profile/timnitgebru.blacksky.app/post/3muajnj5m4c2n",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Criticizes selective media coverage of academic misconduct by prominent figures",
-          "quote": "Lol the former Stanford president who derailed generations of Alzheimer\u2019s research through misconduct and coverup was still a professor there and I don\u2019t remember his case generating cross Atlantic news \ud83d\ude44",
-          "sourceUrl": "https://x.com/timnitGebru/status/2086490983064084647",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Questions disproportionate media attention to university lecturer misconduct case",
-          "quote": "RT @lafillemalgarde: Maybe it\u2019s my echo chamber but I don\u2019t think I have seen misconduct from a uni lecturer generate this level of media c\u2026",
-          "sourceUrl": "https://x.com/timnitGebru/status/2086432673594065301",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "billionaires-wealth",
@@ -381,7 +381,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "epstein-scandal",

@@ -1,9 +1,9 @@
 {
   "voiceId": "chris-williamson",
   "voiceName": "Chris Williamson",
-  "updatedAt": "2026-08-31",
-  "topicCount": 13,
-  "stanceCount": 39,
+  "updatedAt": "2026-09-01",
+  "topicCount": 14,
+  "stanceCount": 41,
   "topics": [
     {
       "topic": "culture-war",
@@ -186,6 +186,42 @@
       "active": true
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 3,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Questions causes of widespread obesity prevalence",
+          "quote": "Why Is Obesity So Common?",
+          "sourceUrl": "https://www.youtube.com/shorts/izzxZ56E6wI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Promotes fasting health benefits based on longevity research",
+          "quote": "\u201cAfter 3 Days\u2026 I Start To Feel Amazing\u201d - Dr David Sinclair",
+          "sourceUrl": "https://www.youtube.com/watch?v=8Rwzl9Fjhd8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Harvard professor critiques restrictive diet approach",
+          "quote": "Harvard Professor: \u201cI Tried Every Diet. This Is By Far The Worst.\u201d - Daniel Lieberman",
+          "sourceUrl": "https://www.youtube.com/watch?v=f2p1YH0-BaI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "science-space",
       "label": "Science & Space",
       "count": 3,
@@ -217,42 +253,6 @@
           "quote": "Having kids is neuroprotective.\n\n\u201cMen with two children had an estimated brain age that was 0.6 years younger than their childless peers had, and for men with three children, it was 0.7 years younger.\n\nThat\u2019s similar to the brain benefit associated with exercising 2.5 hours a wee",
           "sourceUrl": "https://x.com/ChrisWillx/status/2082096833711550811",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 3,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Warns of potential catastrophic AI risk event",
-          "quote": "AI DEBATE: \u201cWe\u2019re Due For A Chernobyl Event\u201d",
-          "sourceUrl": "https://www.youtube.com/watch?v=mSjaMyP5QjY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Expresses alarm about Hugging Face AI security threat",
-          "quote": "The Hugging Face AI Attack Should Terrify Us",
-          "sourceUrl": "https://www.youtube.com/watch?v=4dIgq-efQpY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Explores government surveillance capabilities and concerns",
-          "quote": "Ex-Military Hacker: The Secret World Of Government Surveillance - Bill Thompson",
-          "sourceUrl": "https://www.youtube.com/watch?v=cx4e3FaInA4",
-          "platform": "youtube"
         }
       ],
       "active": true
@@ -303,33 +303,6 @@
       "active": false
     },
     {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 2,
-      "lastActive": "2026-08-19",
-      "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Promotes fasting health benefits based on longevity research",
-          "quote": "\u201cAfter 3 Days\u2026 I Start To Feel Amazing\u201d - Dr David Sinclair",
-          "sourceUrl": "https://www.youtube.com/watch?v=8Rwzl9Fjhd8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-15",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Harvard professor critiques restrictive diet approach",
-          "quote": "Harvard Professor: \u201cI Tried Every Diet. This Is By Far The Worst.\u201d - Daniel Lieberman",
-          "sourceUrl": "https://www.youtube.com/watch?v=f2p1YH0-BaI",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 2,
@@ -355,6 +328,42 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 3,
+      "lastActive": "2026-08-17",
+      "stances": [
+        {
+          "date": "2026-08-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Warns of potential catastrophic AI risk event",
+          "quote": "AI DEBATE: \u201cWe\u2019re Due For A Chernobyl Event\u201d",
+          "sourceUrl": "https://www.youtube.com/watch?v=mSjaMyP5QjY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Expresses alarm about Hugging Face AI security threat",
+          "quote": "The Hugging Face AI Attack Should Terrify Us",
+          "sourceUrl": "https://www.youtube.com/watch?v=4dIgq-efQpY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Explores government surveillance capabilities and concerns",
+          "quote": "Ex-Military Hacker: The Secret World Of Government Surveillance - Bill Thompson",
+          "sourceUrl": "https://www.youtube.com/watch?v=cx4e3FaInA4",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "billionaires-wealth",
@@ -396,6 +405,24 @@
           "summary": "Expresses concern about global instability and potential conflict escalation",
           "quote": "WW3 DEBATE: \u201cWe\u2019re On the Brink of Global Collapse\u201d",
           "sourceUrl": "https://www.youtube.com/watch?v=4klivapz4Gw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "food-agriculture",
+          "stance": "lean",
+          "summary": "Challenges assumed health benefits of Mediterranean diet",
+          "quote": "The Hidden Bias Behind The Mediterranean Diet",
+          "sourceUrl": "https://www.youtube.com/shorts/_l8NtTfnhV0",
           "platform": "youtube"
         }
       ],

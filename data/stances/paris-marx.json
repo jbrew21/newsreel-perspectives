@@ -1,9 +1,9 @@
 {
   "voiceId": "paris-marx",
   "voiceName": "Paris Marx",
-  "updatedAt": "2026-08-31",
-  "topicCount": 16,
-  "stanceCount": 56,
+  "updatedAt": "2026-09-01",
+  "topicCount": 17,
+  "stanceCount": 57,
   "topics": [
     {
       "topic": "ai-technology",
@@ -408,7 +408,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "climate-environment",
@@ -453,7 +453,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "military-defense",
@@ -546,6 +546,24 @@
       "active": false
     },
     {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Canada should reduce economic dependence on U.S.",
+          "quote": "\u201cCanada may invest in its economy and military to protect its independence, but Marx said the country will still be vulnerable unless it also finds ways to move away from relying on the U.S.\u201d\n\nI spoke to the Canadian Press about how Google changing Lake Ontario has more people se",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mugbzwt4ck23",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 1,
@@ -615,7 +633,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "celebrity-entertainment",

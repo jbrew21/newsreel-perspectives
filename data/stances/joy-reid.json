@@ -1,9 +1,9 @@
 {
   "voiceId": "joy-reid",
   "voiceName": "Joy Reid",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "topicCount": 17,
-  "stanceCount": 42,
+  "stanceCount": 43,
   "topics": [
     {
       "topic": "trump-administration",
@@ -276,6 +276,33 @@
       "active": false
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes media for covering Democrats while ignoring Republican ties to extremists in government",
+          "quote": "The corporate media is obsessed with Hasan Piker (and so are moderate Democrats.) But the other side is giving racists, Nazi and Klan cosplayers and online trolls direct access to the Pentagon and the White House. Why won't major media ask Republicans about that? www.youtube.com/",
+          "sourceUrl": "https://bsky.app/profile/joyannreid.bsky.social/post/3mugnhjnpt22u",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes media for misreporting white nationalism as economic anxiety",
+          "quote": "All of this tracks. Most white journalists cant conceive of white nationalism as anything but fringe, so they report the open white supremacy of the MAGA movement as something else (economic anxiety!) as they did with the tea party. Tough to admit that it's just the same old basi",
+          "sourceUrl": "https://bsky.app/profile/joyannreid.bsky.social/post/3mucum4d2zs2r",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 2,
@@ -409,24 +436,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 1,
-      "lastActive": "2026-08-30",
-      "stances": [
-        {
-          "date": "2026-08-30",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes media for misreporting white nationalism as economic anxiety",
-          "quote": "All of this tracks. Most white journalists cant conceive of white nationalism as anything but fringe, so they report the open white supremacy of the MAGA movement as something else (economic anxiety!) as they did with the tea party. Tough to admit that it's just the same old basi",
-          "sourceUrl": "https://bsky.app/profile/joyannreid.bsky.social/post/3mucum4d2zs2r",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "housing-infrastructure",

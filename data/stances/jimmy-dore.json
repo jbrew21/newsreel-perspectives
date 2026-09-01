@@ -1,7 +1,7 @@
 {
   "voiceId": "jimmy-dore",
   "voiceName": "Jimmy Dore",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "topicCount": 25,
   "stanceCount": 131,
   "topics": [
@@ -1113,42 +1113,6 @@
       "active": true
     },
     {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 3,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes identity politics as destructive to Democratic party",
-          "quote": "Insider Reveals How Identity Politics DESTROYED The Democrats! w/ Evan Barker",
-          "sourceUrl": "https://www.youtube.com/watch?v=2mw_d1L-OLA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Claims AOC abandoning progressive positions",
-          "quote": "AOC PANICS &amp; Abandons Wokeness! Full Breakdown w/ Evan Barker\u201d",
-          "sourceUrl": "https://www.youtube.com/watch?v=u3D8fEijCzU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Criticizes U.S. decline compared to China, citing homelessness and infrastructure",
-          "quote": "America is in a hurry to become China - but with more homeless,more street crime &amp;  slower trains:",
-          "sourceUrl": "https://x.com/jimmy_dore/status/2087598848109957533",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 4,
@@ -1219,6 +1183,42 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 3,
+      "lastActive": "2026-08-17",
+      "stances": [
+        {
+          "date": "2026-08-17",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes identity politics as destructive to Democratic party",
+          "quote": "Insider Reveals How Identity Politics DESTROYED The Democrats! w/ Evan Barker",
+          "sourceUrl": "https://www.youtube.com/watch?v=2mw_d1L-OLA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Claims AOC abandoning progressive positions",
+          "quote": "AOC PANICS &amp; Abandons Wokeness! Full Breakdown w/ Evan Barker\u201d",
+          "sourceUrl": "https://www.youtube.com/watch?v=u3D8fEijCzU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Criticizes U.S. decline compared to China, citing homelessness and infrastructure",
+          "quote": "America is in a hurry to become China - but with more homeless,more street crime &amp;  slower trains:",
+          "sourceUrl": "https://x.com/jimmy_dore/status/2087598848109957533",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "congress-legislation",
@@ -1353,7 +1353,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "state-local-politics",
@@ -1371,7 +1371,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "food-agriculture",

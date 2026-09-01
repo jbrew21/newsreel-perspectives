@@ -1,10 +1,64 @@
 {
   "voiceId": "quincy-institute",
   "voiceName": "Quincy Institute",
-  "updatedAt": "2026-08-31",
-  "topicCount": 3,
-  "stanceCount": 3,
+  "updatedAt": "2026-09-01",
+  "topicCount": 8,
+  "stanceCount": 10,
   "topics": [
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Questions Trump's reframing of science policy as competitive rather than collaborative",
+          "quote": "Trump's 'golden age of science' is not just another war to be won (by Denis Simon). In July 2026, the White House released what it called the most ambitious rethinking of American science policy in decades. Michael Kratsios, President Trump\u2019s science advisor, penned a report titl",
+          "sourceUrl": "https://responsiblestatecraft.org/us-china-scientific-competition/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Warns Trump administration conflates protest with terrorism",
+          "quote": "Trump designates protesters terrorists. How far will it go? (by Elizabeth Beavers). Protesting is terrorism. At least, that is the message that the Trump administration has communicated in a series of recent actions, culminating last week in its designation of the U.K.-based Pale",
+          "sourceUrl": "https://responsiblestatecraft.org/palestine-action-terrorists/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 2,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Analyzes Trump's Middle East security shift favoring Gulf partnerships",
+          "quote": "After Iran, US signals major security shift in the Middle East (by Abdelrahim Shalaby). When President Donald Trump congratulated Saudi Arabia, Turkey, and Pakistan for signing the Mecca Pact, describing it as a \u201cBIG, BOLD, IMPORTANT FIRST STEP,\u201d he was not simply trafficking in ",
+          "sourceUrl": "https://responsiblestatecraft.org/us-withdrawal-from-middle-east/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Suggests Trump's Iran strikes contradict his stated goal of freezing escalation",
+          "quote": "New US strikes on Iran may restart war Trump wants to freeze (by Trita Parsi). Despite the excitement around Donald Trump\u2019s new sanctions and even the US strikes against the Iranian island of Larak just hours ago, much suggests that Trump is not seeking a dramatic ratcheting up o",
+          "sourceUrl": "https://responsiblestatecraft.org/larak-island-iran-strikes/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
@@ -24,36 +78,90 @@
       "active": true
     },
     {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
       "count": 1,
-      "lastActive": "2026-08-31",
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-08-31",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Warns Trump administration conflates protest with terrorism",
-          "quote": "Trump designates protesters terrorists. How far will it go? (by Elizabeth Beavers). Protesting is terrorism. At least, that is the message that the Trump administration has communicated in a series of recent actions, culminating last week in its designation of the U.K.-based Pale",
-          "sourceUrl": "https://responsiblestatecraft.org/palestine-action-terrorists/",
+          "date": "2026-08-28",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Warns of Israeli surveillance technology operating domestically in U.S. cities",
+          "quote": "This creepy Israeli spy tech is likely operating in a city near you (by Hayden Long). Since the 2013 Edward Snowden leaks, surveillance and debates surrounding it have become part of the American experience. In recent years, Ring video doorbell users have successfully pushed back",
+          "sourceUrl": "https://responsiblestatecraft.org/israel-surveillance-tech/",
           "platform": "blog"
         }
       ],
       "active": true
     },
     {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
       "count": 1,
-      "lastActive": "2026-08-31",
+      "lastActive": "2026-08-28",
       "stances": [
         {
-          "date": "2026-08-31",
-          "topic": "iran-conflict",
+          "date": "2026-08-28",
+          "topic": "trump-policy",
           "stance": "lean",
-          "summary": "Analyzes Trump's Middle East security shift favoring Gulf partnerships",
-          "quote": "After Iran, US signals major security shift in the Middle East (by Abdelrahim Shalaby). When President Donald Trump congratulated Saudi Arabia, Turkey, and Pakistan for signing the Mecca Pact, describing it as a \u201cBIG, BOLD, IMPORTANT FIRST STEP,\u201d he was not simply trafficking in ",
-          "sourceUrl": "https://responsiblestatecraft.org/us-withdrawal-from-middle-east/",
+          "summary": "Questions whether Trump's Saudi nuclear deal requirements may sabotage the agreement",
+          "quote": "Did Trump put a poison pill in his own Saudi nuclear deal? (by Yazen Zarour). This week, President Donald Trump formally submitted the U.S.-Saudi civil nuclear agreement to Congress for review, moving the deal forward despite continuing to insist that Saudi Arabia normalize relat",
+          "sourceUrl": "https://responsiblestatecraft.org/us-saudi-arabia-nuclear/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Frames Vindman's loss as rejection of hawkish foreign policy approach",
+          "quote": "The rise and fall of 'resistance' hero Alexander Vindman (by Blaise Malley). On paper, Alexander Vindman\u2019s loss in last week\u2019s Florida Democratic Senate was a shocking upset. After all, Vindman had a 16-to-1 fundraising advantage and far more national name recognition than the wi",
+          "sourceUrl": "https://responsiblestatecraft.org/alex-vindman-resistance-foreign-policy/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 1,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Links Trump's tariffs and military spending to rising interest rates and financial instability",
+          "quote": "Trump's war and tariffs are having a nasty effect on interest rates (by Karthik Sankaran). Over the last month, Treasury Secretary Scott Bessent has engaged in two controversial and rare interventions in financial markets. The first came in early August when the U.S. Treasury joi",
+          "sourceUrl": "https://responsiblestatecraft.org/trump-interest-rates-war/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 1,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes Graham successor as continuing hawkish war party foreign policy",
+          "quote": "Lindsey Graham's sister wins. The War Party wins. We lose, again. (by Jack Hunter). Darline Graham won the Republican primary Tuesday and will likely win a full-term to fill her late brother Lindsey Graham\u2019s U.S. Senate seat in the ruby red state of South Carolina in the upcoming",
+          "sourceUrl": "https://responsiblestatecraft.org/lindsey-graham-sister-wins/",
           "platform": "blog"
         }
       ],

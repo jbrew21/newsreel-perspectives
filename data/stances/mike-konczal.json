@@ -1,9 +1,9 @@
 {
   "voiceId": "mike-konczal",
   "voiceName": "Mike Konczal",
-  "updatedAt": "2026-08-31",
-  "topicCount": 6,
-  "stanceCount": 18,
+  "updatedAt": "2026-09-01",
+  "topicCount": 7,
+  "stanceCount": 19,
   "topics": [
     {
       "topic": "economy-trade",
@@ -148,6 +148,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Expresses concern about White House pressure on appointees",
+          "quote": "So it's officially in the bad place now? Even if it's a \"good\" political appointee the White House itself will lean on them, right?",
+          "sourceUrl": "https://bsky.app/profile/mtkonczal.bsky.social/post/3mug4hhmyk224",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",

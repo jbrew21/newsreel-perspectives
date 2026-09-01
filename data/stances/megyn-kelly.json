@@ -1,9 +1,9 @@
 {
   "voiceId": "megyn-kelly",
   "voiceName": "Megyn Kelly",
-  "updatedAt": "2026-08-31",
-  "topicCount": 13,
-  "stanceCount": 53,
+  "updatedAt": "2026-09-01",
+  "topicCount": 14,
+  "stanceCount": 54,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -544,6 +544,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Scrutinizes Ken Paxton's relationship with GOP establishment",
+          "quote": "Breaking Down What's REALLY Happening with Ken Paxton and the GOP Establishment, w/ Jesse Kelly",
+          "sourceUrl": "https://www.youtube.com/watch?v=LpS5k1suiCQ",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "science-space",

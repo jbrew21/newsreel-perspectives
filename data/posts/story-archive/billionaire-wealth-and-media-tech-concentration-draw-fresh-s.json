@@ -1,0 +1,140 @@
+{
+  "headline": "Billionaire wealth and media/tech concentration draw fresh scrutiny",
+  "summary": "Progressive voices decry record wealth concentration while tech-aligned figures defend billionaires' innovation and influence.",
+  "type": "split",
+  "source": "voices",
+  "coverUrl": "",
+  "storyType": "",
+  "topicSlugs": [
+    "billionaires-wealth"
+  ],
+  "voiceCount": 7,
+  "clusterCount": 3,
+  "clusters": [
+    {
+      "name": "Inequality Critics",
+      "voices": [
+        {
+          "voiceId": "david-sirota",
+          "voiceName": "David Sirota",
+          "photo": "/photos/david-sirota.jpg",
+          "quote": "614 Reasons To Tax The Rich  (by Veronica Riccobene). CEOs at the lowest-paying corporations made roughly 614 times more than their median worker in 2025.",
+          "sourceUrl": "https://www.levernews.com/614-reasons-to-tax-the-rich/",
+          "platform": "substack",
+          "fit": 9,
+          "quoteQuality": 6
+        },
+        {
+          "voiceId": "robert-reich",
+          "voiceName": "Robert Reich",
+          "photo": "/photos/robert-reich.jpg",
+          "quote": "The richest man owns X.\n\nThe second and fourth richest men control Google.\n\nThe third richest man owns The Washington Post. \n\nThe sixth richest man owns Facebook, Instagram, and WhatsApp.\n\nAnd now the",
+          "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3muflqbkfti2r",
+          "platform": "bluesky",
+          "fit": 8,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "bernie-sanders",
+          "voiceName": "Bernie Sanders",
+          "photo": "/photos/bernie-sanders.jpg",
+          "quote": "This is what a rigged economy looks like:\n\nToday, we have more income and wealth inequality than at any time in American history, worse than the \u201cGilded Age\u201d of Rockefeller, J.P. Morgan and Carnegie.\n",
+          "sourceUrl": "https://x.com/SenSanders/status/2094138148661940273",
+          "platform": "x",
+          "fit": 10,
+          "quoteQuality": 4
+        }
+      ],
+      "voiceCount": 3,
+      "bestQuote": {
+        "voiceName": "David Sirota",
+        "quote": "614 Reasons To Tax The Rich  (by Veronica Riccobene). CEOs at the lowest-paying corporations made roughly 614 times more than their median worker in 2025.",
+        "platform": "substack",
+        "quality": 6
+      }
+    },
+    {
+      "name": "Media/Tech Concentration Concerns",
+      "voices": [
+        {
+          "voiceId": "charlie-sykes",
+          "voiceName": "Charlie Sykes",
+          "photo": "/photos/charlie-sykes.jpg",
+          "quote": "If a Twitch influencer who has campaigned with a handful of Democrats is a big issue, then what ought we to make of Elon Musk \u2014 the richest and most virulent antisemite and racist on the planet \u2014 bank",
+          "sourceUrl": "https://bsky.app/profile/sykescharlie.bsky.social/post/3muf2a23dms2g",
+          "platform": "bluesky",
+          "fit": 6,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "phillips-obrien",
+          "voiceName": "Phillips Payson O'Brien",
+          "photo": "/photos/phillips-obrien.jpg",
+          "quote": "Well, looks like the \u201cdon\u2019t do evil\u201d phase is well and truly over.",
+          "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3muf2m73t6s2c",
+          "platform": "bluesky",
+          "fit": 7,
+          "quoteQuality": 4
+        }
+      ],
+      "voiceCount": 2,
+      "bestQuote": {
+        "voiceName": "Charlie Sykes",
+        "quote": "If a Twitch influencer who has campaigned with a handful of Democrats is a big issue, then what ought we to make of Elon Musk \u2014 the richest and most virulent antisemite and racist on the planet \u2014 bank",
+        "platform": "bluesky",
+        "quality": 5
+      }
+    },
+    {
+      "name": "Pro-Wealth/Tech Defenders",
+      "voices": [
+        {
+          "voiceId": "all-in-podcast",
+          "voiceName": "All-In Podcast",
+          "photo": "/photos/all-in-podcast.jpg",
+          "quote": "Jason Calacanis: \u201cOptimus will be the best-selling product of all time.\u201d\n\n@Jason:\n\n\u201cI saw the latest Optimus. It would win half of (the Robot Olympics competitions) already.\n\nWhen you guys see it, it'",
+          "sourceUrl": "https://x.com/theallinpod/status/2093862491168141642",
+          "platform": "x",
+          "fit": 8,
+          "quoteQuality": 4
+        },
+        {
+          "voiceId": "steven-crowder",
+          "voiceName": "Steven Crowder",
+          "photo": "/photos/steven-crowder.jpg",
+          "quote": "Palmer Luckey is right. America is not an economic zone.",
+          "sourceUrl": "https://www.youtube.com/shorts/gOO5tLOoUrY",
+          "platform": "youtube",
+          "fit": 9,
+          "quoteQuality": 2
+        }
+      ],
+      "voiceCount": 2,
+      "bestQuote": {
+        "voiceName": "All-In Podcast",
+        "quote": "Jason Calacanis: \u201cOptimus will be the best-selling product of all time.\u201d\n\n@Jason:\n\n\u201cI saw the latest Optimus. It would win half of (the Robot Olympics competitions) already.\n\nWhen you guys see it, it'",
+        "platform": "x",
+        "quality": 4
+      }
+    }
+  ],
+  "confidence": 5,
+  "relevance": {
+    "direct": 5,
+    "related": 5,
+    "unrelated": 1
+  },
+  "validated": true,
+  "heatScore": 52,
+  "belowThreshold": false,
+  "counterNarrative": {
+    "dominantCluster": "Inequality Critics",
+    "dominantCount": 3,
+    "counterCluster": "Pro-Wealth/Tech Defenders",
+    "counterCount": 2,
+    "axis": "whether concentrated wealth is legitimate",
+    "tensionScore": 8,
+    "tension": "3 voices say \"Inequality Critics\" \u2014 but 2 push back: \"Pro-Wealth/Tech Defenders\""
+  },
+  "slug": "billionaire-wealth-and-media-tech-concentration-draw-fresh-s"
+}

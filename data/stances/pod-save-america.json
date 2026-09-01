@@ -1,7 +1,7 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "topicCount": 15,
   "stanceCount": 60,
   "topics": [
@@ -375,42 +375,6 @@
       "active": true
     },
     {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 3,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Bipartisan cooperation possible across ideological divides",
-          "quote": "Jim Clyburn on Working Across the Aisle with Lindsey Graham",
-          "sourceUrl": "https://www.youtube.com/shorts/biDnLPOXlx8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-28",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Criticizes DNC dysfunction and internal conflict",
-          "quote": "Phones and blame fly at the DNC.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2082200971359273447",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-26",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Moderate Democrats must actively compete for media attention",
-          "quote": "Moderate Democrats can't complain about who gets attention if they won't fight for it.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2081380550015693124",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 4,
@@ -450,6 +414,42 @@
           "summary": "Democrats should lead on AI to improve party image",
           "quote": "If Democrats lead on AI, they could reshape the image of the party.",
           "sourceUrl": "https://x.com/PodSaveAmerica/status/2083003403282608178",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 3,
+      "lastActive": "2026-08-17",
+      "stances": [
+        {
+          "date": "2026-08-17",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Bipartisan cooperation possible across ideological divides",
+          "quote": "Jim Clyburn on Working Across the Aisle with Lindsey Graham",
+          "sourceUrl": "https://www.youtube.com/shorts/biDnLPOXlx8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-28",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Criticizes DNC dysfunction and internal conflict",
+          "quote": "Phones and blame fly at the DNC.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/2082200971359273447",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-26",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Moderate Democrats must actively compete for media attention",
+          "quote": "Moderate Democrats can't complain about who gets attention if they won't fight for it.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/2081380550015693124",
           "platform": "x"
         }
       ],

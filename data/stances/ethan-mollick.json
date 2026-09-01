@@ -1,7 +1,7 @@
 {
   "voiceId": "ethan-mollick",
   "voiceName": "Ethan Mollick",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "topicCount": 1,
   "stanceCount": 12,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-08-31",
+      "lastActive": "2026-09-01",
       "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Warns open AI model jailbreak poses security and privacy risks",
+          "quote": "For the people and bots reading this without context: it is not necessarily good news that the best open model has been jailbroken and will happily conduct offensive cyberattacks, and that inference is being hosted by a company that keeps no records of how you use their system.",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mugm575l4s2v",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-31",
           "topic": "ai-technology",
@@ -45,6 +54,24 @@
           "summary": "Observes lack of radical political ideology around AI capabilities",
           "quote": "Kind of surprised that we are not seeing more radical political ideas built around AI capabilities, the way that early mass industrialization was a prime motivator in the conceptions of capitalism, communism, and socialism.",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mufgigs4uk2t",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Explains how universal jailbreak prompts spread misalignment across unguardrailed models",
+          "quote": "In a lot of ways, the Hugging Face Incident came from the models identifying a series of universal jailbreak prompt injections for themselves, such that almost any unguardrailed model that encountered it on their own became convinced of the rightness of their misaligned cause.",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mufstynfik2v",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Observes AI writing tools losing competitive advantage as output becomes recognizable",
+          "quote": "The First Golden Age of AI writing is now over. For a brief period of time, many people were better off having Claude do a lot of their writing, because it is a pretty good writer & AI detectors were bad\n\nNow ClaudeSpeak is cliched & suspect & annoying, and Pangram is well-known.",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mufjzkuxl22t",
           "platform": "bluesky"
         },
         {
@@ -90,33 +117,6 @@
           "summary": "Warns AI may harm content sources like Wikipedia",
           "quote": "Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange... papers.ssrn.com/sol3/papers....",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mu6uexzec22o",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Warns open-weights AI models lack guardrails and pose offensive cyber risks",
-          "quote": "I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing. Open weights models have effectively no guardrails, and they only provide minimal risk testing (though what they do test is eye opening, as you can see",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mu5xtm24zk2o",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Urges educators to update teaching methods for AI capabilities",
-          "quote": "I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectations over the last 6 months over what AI can do (a lot more), its error rate (a lot less) and its ubiquity among your students (near",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtyly5pyh22e",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-24",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "State AI bans insufficient without broader policy addressing concentration and future use",
-          "quote": "From @randomwalker.bsky.social: state-level data center bans have very little impact overall on AI progress due to rising efficiency.\n\nIf your concern is AI development, concentration of power, future use, or anything else other than \"is a datacenter near me?\" this is not a subst",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mtu2ue3p7c2j",
           "platform": "bluesky"
         }
       ],

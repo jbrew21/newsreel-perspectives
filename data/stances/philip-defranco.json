@@ -1,9 +1,9 @@
 {
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "topicCount": 20,
-  "stanceCount": 49,
+  "stanceCount": 50,
   "topics": [
     {
       "topic": "ai-technology",
@@ -312,6 +312,60 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-08-24",
+      "stances": [
+        {
+          "date": "2026-08-24",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Frames abuse as serious harm requiring intervention",
+          "quote": "Horrible Mom's Abusive Meltdown Accidentally Saved This Teen's Life",
+          "sourceUrl": "https://www.youtube.com/watch?v=ZVT05AYT0fA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-20",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Arrest reveals serious criminal charges against Tate",
+          "quote": "Andrew Tate's Arrest Is Way Worse Than You Think",
+          "sourceUrl": "https://www.youtube.com/watch?v=rqxGaIfcF9c",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 2,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Highlights North Korea's dismissal of Trump's diplomatic claims",
+          "quote": "North Korea Ignores Trump, Denies Talking to Him, and Everyone Is Scrambling",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7676559133927165215",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's false claim about US control of Strait of Hormuz",
+          "quote": "Trump declares the Strait of Hormuz is \"US territory,\" not how that works.",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7675445289263598878",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "celebrity-entertainment",
       "label": "Celebrity & Entertainment",
       "count": 3,
@@ -345,34 +399,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 2,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Highlights North Korea's dismissal of Trump's diplomatic claims",
-          "quote": "North Korea Ignores Trump, Denies Talking to Him, and Everyone Is Scrambling",
-          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7676559133927165215",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Criticizes Trump's false claim about US control of Strait of Hormuz",
-          "quote": "Trump declares the Strait of Hormuz is \"US territory,\" not how that works.",
-          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7675445289263598878",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "culture-war",
@@ -462,7 +489,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "economy-trade",
@@ -586,24 +613,6 @@
           "quote": "Mamdani Calls Netanyahu a War Criminal and Calls For His Arrest",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7665431421862825246",
           "platform": "tiktok"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 1,
-      "lastActive": "2026-07-20",
-      "stances": [
-        {
-          "date": "2026-07-20",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Arrest reveals serious criminal charges against Tate",
-          "quote": "Andrew Tate's Arrest Is Way Worse Than You Think",
-          "sourceUrl": "https://www.youtube.com/watch?v=rqxGaIfcF9c",
-          "platform": "youtube"
         }
       ],
       "active": false

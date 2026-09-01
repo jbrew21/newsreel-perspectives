@@ -1,9 +1,9 @@
 {
   "voiceId": "judd-legum",
   "voiceName": "Judd Legum",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "topicCount": 12,
-  "stanceCount": 57,
+  "stanceCount": 60,
   "topics": [
     {
       "topic": "media-press",
@@ -384,6 +384,60 @@
       "active": false
     },
     {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 5,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Reports ICE leaving hospitals with unpaid bills from enforcement operations",
+          "quote": "UPDATE: ICE is leaving hospitals with millions in unpaid bills. Last year, Popular Information broke the news that on October 3, 2025, U.S.",
+          "sourceUrl": "https://popular.info/p/update-ice-is-leaving-hospitals-with",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Exposes misleading promises about welfare benefits in EB-5 visa program marketing",
+          "quote": "3. At a July 2015 presentation by Sonderling, a banner promised investors who received green cards would have access to \u201cAmerica\u2019s Comprehensive Welfare.\u201d This included \u201cunemployment benefits,\u201d \u201cfood stamps,\u201d \u201cfree school meals,\u201d \u201clow-cost public housing,\u201d \u201cMedicaid,\u201d and \u201cRetire",
+          "sourceUrl": "https://bsky.app/profile/juddlegum.bsky.social/post/3muevw2pqp22x",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Reports on EB-5 visa program promotion to Chinese investors for green cards",
+          "quote": "4. The trips, which have not been previously reported, were documented extensively by Sonderling himself, who posted hundreds of photos on a public Flickr account.",
+          "sourceUrl": "https://bsky.app/profile/juddlegum.bsky.social/post/3muevw36bk22e",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Investigates EB-5 visa program design to attract Chinese investors",
+          "quote": "2. These events were designed to entice potential Chinese investors by emphasizing that their investment would make their entire family eligible for green cards, allowing them to live and work permanently in the United States through a controversial program known as EB-5.",
+          "sourceUrl": "https://bsky.app/profile/juddlegum.bsky.social/post/3muevw265a42q",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-20",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes ICE crackdown, condemns corporate funding of restrictive immigration policy",
+          "quote": "These consumer brands are bankrolling the biggest ICE supporters in Congress. From the outset of President Trump\u2019s second term, US Immigration and Customs Enforcement (ICE) has engaged in a deadly immigration crackdown that has trampled the constitutional rights of migrants and U",
+          "sourceUrl": "https://popular.info/p/these-consumer-brands-are-bankrolling",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 4,
@@ -490,33 +544,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 2,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Exposes misleading promises about welfare benefits in EB-5 visa program marketing",
-          "quote": "3. At a July 2015 presentation by Sonderling, a banner promised investors who received green cards would have access to \u201cAmerica\u2019s Comprehensive Welfare.\u201d This included \u201cunemployment benefits,\u201d \u201cfood stamps,\u201d \u201cfree school meals,\u201d \u201clow-cost public housing,\u201d \u201cMedicaid,\u201d and \u201cRetire",
-          "sourceUrl": "https://bsky.app/profile/juddlegum.bsky.social/post/3muevw2pqp22x",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-20",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Criticizes ICE crackdown, condemns corporate funding of restrictive immigration policy",
-          "quote": "These consumer brands are bankrolling the biggest ICE supporters in Congress. From the outset of President Trump\u2019s second term, US Immigration and Customs Enforcement (ICE) has engaged in a deadly immigration crackdown that has trampled the constitutional rights of migrants and U",
-          "sourceUrl": "https://popular.info/p/these-consumer-brands-are-bankrolling",
-          "platform": "substack"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "economy-trade",
