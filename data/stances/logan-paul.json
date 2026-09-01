@@ -2,13 +2,49 @@
   "voiceId": "logan-paul",
   "voiceName": "Logan Paul",
   "updatedAt": "2026-09-01",
-  "topicCount": 6,
-  "stanceCount": 11,
+  "topicCount": 7,
+  "stanceCount": 12,
   "topics": [
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 3,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Claims career is ending",
+          "quote": "My Career Is Over",
+          "sourceUrl": "https://www.youtube.com/watch?v=vhUnl5kcWec",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-27",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Honors Oliver Tree's legacy through charitable product release",
+          "quote": "Released a limited run of Slime to honor Oliver\u2019s legacy. All proceeds go to his foundation for young artists @Olivertree",
+          "sourceUrl": "https://x.com/LoganPaul/status/2081572096585724099",
+          "platform": "x"
+        },
+        {
+          "date": "2026-06-24",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Highlights athlete collectible sale, frames as culturally significant",
+          "quote": "What\u2019s it worth now?? The greatest card of generational athlete @Erling Haaland is leaving my personal collection  3 years ago I bought Erling Haaland\u2019s 1/1 Rookie Superfractor for $365,000 \u2014 a decision I made after spending some time with him and seeing firsthand his unbelievabl",
+          "sourceUrl": "https://www.tiktok.com/@loganpaul/video/7654966015075290381",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
-      "count": 4,
+      "count": 3,
       "lastActive": "2026-08-11",
       "stances": [
         {
@@ -30,15 +66,6 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-30",
-          "topic": "media-personalities",
-          "stance": "strong",
-          "summary": "Engaged in dispute with Tom, threatening legal action",
-          "quote": "See you in court, Tom",
-          "sourceUrl": "https://www.youtube.com/watch?v=7ynH-DVfaDE",
-          "platform": "youtube"
-        },
-        {
           "date": "2026-07-28",
           "topic": "media-personalities",
           "stance": "lean",
@@ -46,33 +73,6 @@
           "quote": "new IMPAULSIVE podcast\nN3on Calls Out Ray to Fight, Exposes Relationship w/ Iggy Azalea, Jack Doherty Going to PRISON \ud83d\ude31\nwatch or get friendzoned\n\npiped.video/NHK-vzwNsLs",
           "sourceUrl": "https://x.com/LoganPaul/status/2082182160086081747",
           "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
-      "count": 2,
-      "lastActive": "2026-07-27",
-      "stances": [
-        {
-          "date": "2026-07-27",
-          "topic": "celebrity-entertainment",
-          "stance": "lean",
-          "summary": "Honors Oliver Tree's legacy through charitable product release",
-          "quote": "Released a limited run of Slime to honor Oliver\u2019s legacy. All proceeds go to his foundation for young artists @Olivertree",
-          "sourceUrl": "https://x.com/LoganPaul/status/2081572096585724099",
-          "platform": "x"
-        },
-        {
-          "date": "2026-06-24",
-          "topic": "celebrity-entertainment",
-          "stance": "lean",
-          "summary": "Highlights athlete collectible sale, frames as culturally significant",
-          "quote": "What\u2019s it worth now?? The greatest card of generational athlete @Erling Haaland is leaving my personal collection  3 years ago I bought Erling Haaland\u2019s 1/1 Rookie Superfractor for $365,000 \u2014 a decision I made after spending some time with him and seeing firsthand his unbelievabl",
-          "sourceUrl": "https://www.tiktok.com/@loganpaul/video/7654966015075290381",
-          "platform": "tiktok"
         }
       ],
       "active": false
@@ -100,6 +100,24 @@
           "quote": "LET\u2019S GO KNICKS @Polymarket",
           "sourceUrl": "https://www.tiktok.com/@loganpaul/video/7651107473142697229",
           "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 1,
+      "lastActive": "2026-07-30",
+      "stances": [
+        {
+          "date": "2026-07-30",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Announces legal action against Tom",
+          "quote": "See you in court, Tom",
+          "sourceUrl": "https://www.youtube.com/watch?v=7ynH-DVfaDE",
+          "platform": "youtube"
         }
       ],
       "active": false

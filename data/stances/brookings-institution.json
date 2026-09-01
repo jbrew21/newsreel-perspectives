@@ -2,8 +2,8 @@
   "voiceId": "brookings-institution",
   "voiceName": "Brookings Institution",
   "updatedAt": "2026-09-01",
-  "topicCount": 12,
-  "stanceCount": 27,
+  "topicCount": 13,
+  "stanceCount": 29,
   "topics": [
     {
       "topic": "economy-trade",
@@ -141,6 +141,42 @@
       "active": false
     },
     {
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
+      "count": 3,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Examines health-economy cycles affecting rural communities",
+          "quote": "Poor health outcomes and limited economic opportunity can create a self-reinforcing cycle in rural communities. Anthony Pipa and co-authors examine how health challenges affect workforce participation, local institutions, and long-term economic vitality, and highlight priorities ",
+          "sourceUrl": "https://bsky.app/profile/brookings.edu/post/3mtys72gzbk2m",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-22",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Rural counties face disproportionate disaster burden with fewer recovery resources",
+          "quote": "As Congress debates FEMA's future, new analysis from Tony Pipa and Julia Davatzes finds rural counties bore a disproportionate share of major disasters over the past decade\u2014often with fewer resources to recover. brook.gs/4witHiU\n\nLink\n\n\n\nHow do rural communities fit into FEMA\u2019s d",
+          "sourceUrl": "https://x.com/BrookingsInst/status/2079946002165887275",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-08",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Childcare costs create financial crisis, states must intervene",
+          "quote": "More than 4 million U.S. families with young children are pushed into financial instability by childcare costs alone. Glencora Haskins examines what's driving the crisis\u2014and what states can do about it. brook.gs/4gLiX7R",
+          "sourceUrl": "https://x.com/BrookingsInst/status/2074859141797933084",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 2,
@@ -222,31 +258,22 @@
       "active": false
     },
     {
-      "topic": "housing-infrastructure",
-      "label": "Housing & Infrastructure",
-      "count": 2,
-      "lastActive": "2026-07-22",
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-09-01",
       "stances": [
         {
-          "date": "2026-07-22",
-          "topic": "housing-infrastructure",
+          "date": "2026-09-01",
+          "topic": "education",
           "stance": "lean",
-          "summary": "Rural counties face disproportionate disaster burden with fewer recovery resources",
-          "quote": "As Congress debates FEMA's future, new analysis from Tony Pipa and Julia Davatzes finds rural counties bore a disproportionate share of major disasters over the past decade\u2014often with fewer resources to recover. brook.gs/4witHiU\n\nLink\n\n\n\nHow do rural communities fit into FEMA\u2019s d",
-          "sourceUrl": "https://x.com/BrookingsInst/status/2079946002165887275",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-08",
-          "topic": "housing-infrastructure",
-          "stance": "lean",
-          "summary": "Childcare costs create financial crisis, states must intervene",
-          "quote": "More than 4 million U.S. families with young children are pushed into financial instability by childcare costs alone. Glencora Haskins examines what's driving the crisis\u2014and what states can do about it. brook.gs/4gLiX7R",
-          "sourceUrl": "https://x.com/BrookingsInst/status/2074859141797933084",
-          "platform": "x"
+          "summary": "Advocates intellectual humility development in schools",
+          "quote": "Intellectual humility\u2014the ability to recognize the limits of your own knowledge and beliefs\u2014is a virtue that requires cultivation. A new report explores why intellectual humility is important for adolescents and how schools can help them develop it.",
+          "sourceUrl": "https://bsky.app/profile/brookings.edu/post/3muhodyxo4s2l",
+          "platform": "bluesky"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "military-defense",

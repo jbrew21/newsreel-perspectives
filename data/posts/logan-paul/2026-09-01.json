@@ -1,7 +1,7 @@
 {
   "voiceId": "logan-paul",
   "voiceName": "Logan Paul",
-  "collectedAt": "2026-09-01T20:22:58.075306",
+  "collectedAt": "2026-09-01T22:12:13.452497",
   "date": "2026-09-01",
   "posts": [
     {
@@ -343,6 +343,40 @@
       "stance": "lean",
       "summary": "Apologizes for unspecified controversy",
       "quote": "So sorry. https://t.co/JkYXzYsrLX"
+    },
+    {
+      "voiceId": "logan-paul",
+      "voiceName": "Logan Paul",
+      "platform": "youtube",
+      "text": "My Career Is Over",
+      "sourceUrl": "https://www.youtube.com/watch?v=vhUnl5kcWec",
+      "timestamp": "2026-08-26T16:46:55+00:00",
+      "type": "video_title",
+      "topic": "celebrity-entertainment",
+      "topics": [
+        "celebrity-entertainment"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Claims career is ending",
+      "quote": "My Career Is Over"
+    },
+    {
+      "voiceId": "logan-paul",
+      "voiceName": "Logan Paul",
+      "platform": "youtube",
+      "text": "See you in court, Tom",
+      "sourceUrl": "https://www.youtube.com/watch?v=7ynH-DVfaDE",
+      "timestamp": "2026-07-30T12:56:00+00:00",
+      "type": "video_title",
+      "topic": "supreme-court-legal",
+      "topics": [
+        "supreme-court-legal"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Announces legal action against Tom",
+      "quote": "See you in court, Tom"
     }
   ],
   "topicSummary": {
@@ -454,6 +488,12 @@
         "sourceUrl": "https://x.com/LoganPaul/status/948233761665171456",
         "platform": "x",
         "timestamp": "2018-01-02T16:45:20+00:00"
+      },
+      {
+        "quote": "My Career Is Over",
+        "sourceUrl": "https://www.youtube.com/watch?v=vhUnl5kcWec",
+        "platform": "youtube",
+        "timestamp": "2026-08-26T16:46:55+00:00"
       }
     ],
     "media-press": [
@@ -478,6 +518,14 @@
         "sourceUrl": "https://x.com/LoganPaul/status/956232972104908800",
         "platform": "x",
         "timestamp": "2018-01-24T18:31:21+00:00"
+      }
+    ],
+    "supreme-court-legal": [
+      {
+        "quote": "See you in court, Tom",
+        "sourceUrl": "https://www.youtube.com/watch?v=7ynH-DVfaDE",
+        "platform": "youtube",
+        "timestamp": "2026-07-30T12:56:00+00:00"
       }
     ]
   }

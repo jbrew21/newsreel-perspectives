@@ -1,9 +1,43 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-01T20:22:58.313552",
+  "collectedAt": "2026-09-01T22:12:13.703139",
   "date": "2026-09-01",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It",
+      "sourceUrl": "https://www.youtube.com/watch?v=tZXjYJsVdmI",
+      "timestamp": "2026-09-01T18:00:20+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Opposes Big Tech expansion, advocates local resistance",
+      "quote": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "How to Win the War with Data Centers | Hour 1 | 9/1/26",
+      "sourceUrl": "https://www.youtube.com/watch?v=Cfc1d-aAT4E",
+      "timestamp": "2026-09-01T14:03:40+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames data centers as competitive threat requiring strategic response",
+      "quote": "How to Win the War with Data Centers | Hour 1 | 9/1/26"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -77,55 +111,36 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "Democrat Actually Thought THIS Was A Good Argument?!",
-      "sourceUrl": "https://www.youtube.com/shorts/gIMIO5Kss3E",
-      "timestamp": "2026-08-30T00:00:24+00:00",
+      "text": "The Democrat\u2019s Affordability Solution Is TERRIFYING",
+      "sourceUrl": "https://www.youtube.com/shorts/9BpESqH80as",
+      "timestamp": "2026-09-01T21:15:18+00:00",
       "type": "video_title",
-      "topic": "culture-war",
+      "topic": "economy-trade",
       "topics": [
-        "culture-war"
+        "economy-trade",
+        "healthcare"
       ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Democratic argument as flawed or absurd",
-      "quote": "Democrat Actually Thought THIS Was A Good Argument?!"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It",
-      "sourceUrl": "https://www.youtube.com/watch?v=tZXjYJsVdmI",
-      "timestamp": "2026-09-01T18:00:20+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Opposes Big Tech expansion, advocates local resistance",
-      "quote": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "How to Win the War with Data Centers | Hour 1 | 9/1/26",
-      "sourceUrl": "https://www.youtube.com/watch?v=Cfc1d-aAT4E",
-      "timestamp": "2026-09-01T14:03:40+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames data centers as competitive threat requiring strategic response",
-      "quote": "How to Win the War with Data Centers | Hour 1 | 9/1/26"
+      "summary": "Criticizes Democratic affordability policy as dangerous or alarming",
+      "quote": "The Democrat\u2019s Affordability Solution Is TERRIFYING"
     }
   ],
   "topicSummary": {
+    "ai-technology": [
+      {
+        "quote": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It",
+        "sourceUrl": "https://www.youtube.com/watch?v=tZXjYJsVdmI",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T18:00:20+00:00"
+      },
+      {
+        "quote": "How to Win the War with Data Centers | Hour 1 | 9/1/26",
+        "sourceUrl": "https://www.youtube.com/watch?v=Cfc1d-aAT4E",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T14:03:40+00:00"
+      }
+    ],
     "trump-policy": [
       {
         "quote": "Trump BROKE The Left With Lake America",
@@ -146,6 +161,12 @@
         "sourceUrl": "https://www.youtube.com/shorts/K0rAQnVNBCM",
         "platform": "youtube",
         "timestamp": "2026-08-31T00:00:36+00:00"
+      },
+      {
+        "quote": "The Democrat\u2019s Affordability Solution Is TERRIFYING",
+        "sourceUrl": "https://www.youtube.com/shorts/9BpESqH80as",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T21:15:18+00:00"
       }
     ],
     "food-agriculture": [
@@ -154,28 +175,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Huq-9QhccA8",
         "platform": "youtube",
         "timestamp": "2026-08-31T14:03:23+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "Democrat Actually Thought THIS Was A Good Argument?!",
-        "sourceUrl": "https://www.youtube.com/shorts/gIMIO5Kss3E",
-        "platform": "youtube",
-        "timestamp": "2026-08-30T00:00:24+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It",
-        "sourceUrl": "https://www.youtube.com/watch?v=tZXjYJsVdmI",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T18:00:20+00:00"
-      },
-      {
-        "quote": "How to Win the War with Data Centers | Hour 1 | 9/1/26",
-        "sourceUrl": "https://www.youtube.com/watch?v=Cfc1d-aAT4E",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T14:03:40+00:00"
       }
     ]
   }

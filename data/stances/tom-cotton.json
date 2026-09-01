@@ -3,7 +3,7 @@
   "voiceName": "Tom Cotton",
   "updatedAt": "2026-09-01",
   "topicCount": 11,
-  "stanceCount": 34,
+  "stanceCount": 35,
   "topics": [
     {
       "topic": "immigration",
@@ -240,6 +240,33 @@
       "active": true
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Celebrates defense industry success or military achievement",
+          "quote": "Another huge win for the defense capital of America.",
+          "sourceUrl": "https://x.com/TomCottonAR/status/2094887684065943798",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Praises defense industry growth in Arkansas, frames as strengthening America",
+          "quote": "More great news. Arkansas truly is the defense capital of America. \n\nThis means good-paying jobs and a stronger America. \n\nAnd many more announcements are coming.",
+          "sourceUrl": "https://x.com/TomCottonAR/status/2084339873255731671",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 2,
@@ -391,24 +418,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 1,
-      "lastActive": "2026-08-03",
-      "stances": [
-        {
-          "date": "2026-08-03",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Praises defense industry growth in Arkansas, frames as strengthening America",
-          "quote": "More great news. Arkansas truly is the defense capital of America. \n\nThis means good-paying jobs and a stronger America. \n\nAnd many more announcements are coming.",
-          "sourceUrl": "https://x.com/TomCottonAR/status/2084339873255731671",
-          "platform": "x"
-        }
-      ],
-      "active": false
     }
   ]
 }

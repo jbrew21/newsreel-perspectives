@@ -1,7 +1,7 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "collectedAt": "2026-09-01T20:22:58.022788",
+  "collectedAt": "2026-09-01T22:12:13.399827",
   "date": "2026-09-01",
   "posts": [
     {
@@ -20,6 +20,23 @@
       "stance": "lean",
       "summary": "Defends business leader's critique of economic policy",
       "quote": "Palmer Luckey is right. America is not an economic zone."
+    },
+    {
+      "voiceId": "steven-crowder",
+      "voiceName": "Steven Crowder",
+      "platform": "youtube",
+      "text": "Palmer Luckey Destroyed This Clown",
+      "sourceUrl": "https://www.youtube.com/watch?v=L7PDnmRMnOU",
+      "timestamp": "2026-08-31T20:00:22+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes opposing commentator or public figure",
+      "quote": "Palmer Luckey Destroyed This Clown"
     },
     {
       "voiceId": "steven-crowder",
@@ -76,9 +93,9 @@
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
       "platform": "youtube",
-      "text": "Canada Is Absolutely Cooked, Eh",
-      "sourceUrl": "https://www.youtube.com/watch?v=dqR6Bd_HYcs",
-      "timestamp": "2026-08-27T20:00:25+00:00",
+      "text": "Canada should start acting like the sidekick it is.",
+      "sourceUrl": "https://www.youtube.com/shorts/Jhxs067Q7yU",
+      "timestamp": "2026-09-01T20:30:06+00:00",
       "type": "video_title",
       "topic": "uk-world-politics",
       "topics": [
@@ -86,25 +103,25 @@
       ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Canada's economic and political situation",
-      "quote": "Canada Is Absolutely Cooked, Eh"
+      "summary": "Criticizes Canada's geopolitical status and independence",
+      "quote": "Canada should start acting like the sidekick it is."
     },
     {
       "voiceId": "steven-crowder",
       "voiceName": "Steven Crowder",
       "platform": "youtube",
-      "text": "Palmer Luckey Destroyed This Clown",
-      "sourceUrl": "https://www.youtube.com/watch?v=L7PDnmRMnOU",
-      "timestamp": "2026-08-31T20:00:22+00:00",
+      "text": "Scott Bessent Humiliates Canada at G20",
+      "sourceUrl": "https://www.youtube.com/watch?v=J3W0U1cLj58",
+      "timestamp": "2026-09-01T20:00:17+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "uk-world-politics",
       "topics": [
-        "media-personalities"
+        "uk-world-politics"
       ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes opposing commentator or public figure",
-      "quote": "Palmer Luckey Destroyed This Clown"
+      "summary": "Praises U.S. Treasury Secretary confronting Canada at G20",
+      "quote": "Scott Bessent Humiliates Canada at G20"
     }
   ],
   "topicSummary": {
@@ -114,6 +131,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/gOO5tLOoUrY",
         "platform": "youtube",
         "timestamp": "2026-08-31T20:30:28+00:00"
+      }
+    ],
+    "media-personalities": [
+      {
+        "quote": "Palmer Luckey Destroyed This Clown",
+        "sourceUrl": "https://www.youtube.com/watch?v=L7PDnmRMnOU",
+        "platform": "youtube",
+        "timestamp": "2026-08-31T20:00:22+00:00"
       }
     ],
     "criminal-justice": [
@@ -140,18 +165,16 @@
     ],
     "uk-world-politics": [
       {
-        "quote": "Canada Is Absolutely Cooked, Eh",
-        "sourceUrl": "https://www.youtube.com/watch?v=dqR6Bd_HYcs",
+        "quote": "Canada should start acting like the sidekick it is.",
+        "sourceUrl": "https://www.youtube.com/shorts/Jhxs067Q7yU",
         "platform": "youtube",
-        "timestamp": "2026-08-27T20:00:25+00:00"
-      }
-    ],
-    "media-personalities": [
+        "timestamp": "2026-09-01T20:30:06+00:00"
+      },
       {
-        "quote": "Palmer Luckey Destroyed This Clown",
-        "sourceUrl": "https://www.youtube.com/watch?v=L7PDnmRMnOU",
+        "quote": "Scott Bessent Humiliates Canada at G20",
+        "sourceUrl": "https://www.youtube.com/watch?v=J3W0U1cLj58",
         "platform": "youtube",
-        "timestamp": "2026-08-31T20:00:22+00:00"
+        "timestamp": "2026-09-01T20:00:17+00:00"
       }
     ]
   }

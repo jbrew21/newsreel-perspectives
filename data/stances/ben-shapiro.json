@@ -3,7 +3,7 @@
   "voiceName": "Ben Shapiro",
   "updatedAt": "2026-09-01",
   "topicCount": 29,
-  "stanceCount": 126,
+  "stanceCount": 129,
   "topics": [
     {
       "topic": "culture-war",
@@ -440,9 +440,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 8,
-      "lastActive": "2026-08-27",
+      "count": 9,
+      "lastActive": "2026-09-01",
       "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Portrays JD Vance as forcefully confronting political opponent",
+          "quote": "JD Vance Goes NUCLEAR On Abdul El-Sayed",
+          "sourceUrl": "https://www.youtube.com/watch?v=nT40p96B4Sc",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-27",
           "topic": "trump-administration",
@@ -514,6 +523,87 @@
           "quote": "Fauci's Pardon Might Not Save Him",
           "sourceUrl": "https://www.youtube.com/watch?v=X_1u6wW8uMI",
           "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 8,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Questions the prominence of male cheerleaders in culture",
+          "quote": "The Disturbing Rise of Male Cheerleaders",
+          "sourceUrl": "https://www.youtube.com/watch?v=gHmYaYecQlk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Frames LGBTQ+ sports participation as culturally notable or controversial",
+          "quote": "Introducing the Gaytriots \ud83c\udfc8\u2728",
+          "sourceUrl": "https://www.youtube.com/shorts/GgU-CkL6OGs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Questions medical protocols for transgender youth hormone treatment",
+          "quote": "The Alleged Scheme to Keep Kids on Hormones",
+          "sourceUrl": "https://www.youtube.com/watch?v=GkHQ0-OwLNA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Criticizes WNBA for inability to define women",
+          "quote": "The WNBA Held a Meeting About Women \u2014 and Couldn't Define One",
+          "sourceUrl": "https://www.youtube.com/watch?v=0PHmOWte2Pg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Criticizes trans medical standards organization for alleged problematic admission",
+          "quote": "The Trans Group Just Admitted It Was All Fake",
+          "sourceUrl": "https://www.youtube.com/watch?v=ClRYUTQf4RU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Criticizes transgender athletes competing in women's sports",
+          "quote": "Two Biological Males Just 'Declared' for the WNBA Draft",
+          "sourceUrl": "https://www.youtube.com/watch?v=aw_eTceSuAc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Implies women's sports is collapsing due to transgender inclusion",
+          "quote": "The Slow-Motion Collapse of Women's Sports",
+          "sourceUrl": "https://www.youtube.com/watch?v=gOutL8b8S7Q",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Opposes transgender athletes competing in women's sports",
+          "quote": "Because she's a bigot, of course. We all know that the greatest female players of all time have been blocked from the WNBA just because they aren't female. Where's the empathy? We eagerly await the WNBA's own Jacqueline Robinson: a burly 240 lb., 6'9\" woman with a dingaling.",
+          "sourceUrl": "https://x.com/benshapiro/status/2084033577306472517",
+          "platform": "x"
         }
       ],
       "active": true
@@ -841,69 +931,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "gender-lgbtq",
-      "label": "Gender & LGBTQ+",
-      "count": 6,
-      "lastActive": "2026-08-14",
-      "stances": [
-        {
-          "date": "2026-08-14",
-          "topic": "gender-lgbtq",
-          "stance": "lean",
-          "summary": "Questions medical protocols for transgender youth hormone treatment",
-          "quote": "The Alleged Scheme to Keep Kids on Hormones",
-          "sourceUrl": "https://www.youtube.com/watch?v=GkHQ0-OwLNA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Criticizes WNBA for inability to define women",
-          "quote": "The WNBA Held a Meeting About Women \u2014 and Couldn't Define One",
-          "sourceUrl": "https://www.youtube.com/watch?v=0PHmOWte2Pg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Criticizes trans medical standards organization for alleged problematic admission",
-          "quote": "The Trans Group Just Admitted It Was All Fake",
-          "sourceUrl": "https://www.youtube.com/watch?v=ClRYUTQf4RU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Criticizes transgender athletes competing in women's sports",
-          "quote": "Two Biological Males Just 'Declared' for the WNBA Draft",
-          "sourceUrl": "https://www.youtube.com/watch?v=aw_eTceSuAc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "gender-lgbtq",
-          "stance": "lean",
-          "summary": "Implies women's sports is collapsing due to transgender inclusion",
-          "quote": "The Slow-Motion Collapse of Women's Sports",
-          "sourceUrl": "https://www.youtube.com/watch?v=gOutL8b8S7Q",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-02",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Opposes transgender athletes competing in women's sports",
-          "quote": "Because she's a bigot, of course. We all know that the greatest female players of all time have been blocked from the WNBA just because they aren't female. Where's the empathy? We eagerly await the WNBA's own Jacqueline Robinson: a burly 240 lb., 6'9\" woman with a dingaling.",
-          "sourceUrl": "https://x.com/benshapiro/status/2084033577306472517",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "covid-pandemic",

@@ -1,7 +1,990 @@
 [
   {
-    "headline": "Six Months In, Iran War Escalates as Military Leaders Push Back",
-    "summary": "Broad bipartisan chorus calls the Iran war a failing quagmire, while a small MAGA faction insists it's succeeding.",
+    "headline": "AI Boom Fuels Data Center, Safety, and Energy Cost Debates",
+    "summary": "Voices split between framing AI as a China-race imperative, a safety threat, or a consumer cost burden.",
+    "type": "spectrum",
+    "source": "voices",
+    "coverUrl": "",
+    "storyType": "",
+    "topicSlugs": [
+      "ai-technology"
+    ],
+    "voiceCount": 24,
+    "clusterCount": 5,
+    "clusters": [
+      {
+        "name": "AI Risk & Safety Warnings",
+        "voices": [
+          {
+            "voiceId": "gary-marcus",
+            "voiceName": "Gary Marcus",
+            "photo": "/photos/gary-marcus.jpg",
+            "quote": "what Dwarkesh got wrong and why it matters, a detailed dissection: garymarcus.substack.com/p/dwarkesh-p...",
+            "sourceUrl": "https://bsky.app/profile/garymarcus.bsky.social/post/3mufea36xzc2x",
+            "platform": "bluesky",
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "bernie-sanders",
+            "voiceName": "Bernie Sanders",
+            "photo": "/photos/bernie-sanders.jpg",
+            "quote": "The CEOs of major AI companies acknowledge that they are losing control of their incredibly dangerous technology. \n\nIt is irresponsible to let them make it even more powerful.  \n\nFor the sake of human",
+            "sourceUrl": "https://x.com/SenSanders/status/2094775659574730975",
+            "platform": "x",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "ian-bremmer",
+            "voiceName": "Ian Bremmer",
+            "photo": "/photos/ian-bremmer.jpg",
+            "quote": "i've never seen a technology with more potential to advance humanity.\n\ni also recognize there's next to zero governance.\n\nthat's an unsustainable combination.\n\n@gzeromedia.com",
+            "sourceUrl": "https://bsky.app/profile/ianbremmer.com/post/3mufq5ci5e22z",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "casey-newton",
+            "voiceName": "Casey Newton",
+            "photo": "/photos/casey-newton.jpg",
+            "quote": "Anthropic has done some research that certain 'neurons' light up associated with certain desires / emotions that never make it into the CoT. This suggests they may take actions that never show up ther",
+            "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3muhykzhwdc23",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "ethan-mollick",
+            "voiceName": "Ethan Mollick",
+            "photo": "/photos/ethan-mollick.jpg",
+            "quote": "For the people and bots reading this without context: it is not necessarily good news that the best open model has been jailbroken and will happily conduct offensive cyberattacks, and that inference i",
+            "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mugm575l4s2v",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "breaking-points",
+            "voiceName": "Breaking Points",
+            "photo": "/photos/breaking-points.jpg",
+            "quote": "Tech FREAKOUT After AI Civilizations Form Criminal Collective",
+            "sourceUrl": "https://www.youtube.com/watch?v=zobHP8dW2P4",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "krystal-ball",
+            "voiceName": "Krystal Ball",
+            "photo": "/photos/krystal-ball.jpg",
+            "quote": "Tech FREAKOUT After AI Civilizations Form Criminal Collective",
+            "sourceUrl": "https://www.youtube.com/watch?v=zobHP8dW2P4",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 7,
+        "bestQuote": {
+          "voiceName": "Gary Marcus",
+          "quote": "what Dwarkesh got wrong and why it matters, a detailed dissection: garymarcus.substack.com/p/dwarkesh-p...",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Tech Industry & Market Watchers",
+        "voices": [
+          {
+            "voiceId": "joey-politano",
+            "voiceName": "Joey Politano",
+            "photo": "/photos/joey-politano.jpg",
+            "quote": "US data center construction reached another new record high in official data released today, exceeding a pace of $75B/yr (and this only includes data center facilities, not the expensive computers wit",
+            "sourceUrl": "https://bsky.app/profile/josephpolitano.bsky.social/post/3muifhqvcss2b",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "matt-yglesias",
+            "voiceName": "Matt Yglesias",
+            "photo": "/photos/matt-yglesias.jpg",
+            "quote": "Bruenig\u2019s AI enthusiasm seems like \u201ccorrect\u201d leftist doctrine based on the canonical texts and it\u2019s interesting to me that so few on the left share his viewpoint.\n\nmattbruenig.com/2026/08/31/m...",
+            "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mufzt2t7k22u",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "all-in-podcast",
+            "voiceName": "All-In Podcast",
+            "photo": "/photos/all-in-podcast.jpg",
+            "quote": "Chamath Called the SaaS Comeback on May 15th: Salesforce Is Up 50% Since!\n\n@Jason:\n\n\u201cChamath, what's your take on this? You've been pretty critical of the SaaS space in previous episodes.\u201d\n\n@chamath:",
+            "sourceUrl": "https://x.com/theallinpod/status/2094454189342540173",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "noah-smith",
+            "voiceName": "Noah Smith",
+            "photo": "/photos/noah-smith.jpg",
+            "quote": "In this week's roundup:\n* Why the Hugging Face attack means AI won't take your job\n* Why smartphones, not TV, are the Bad Technology\n* Acemoglu attacks AI in yet another paper, and it's...not a good p",
+            "sourceUrl": "https://x.com/Noahpinion/status/2094613230673154068",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "scott-galloway",
+            "voiceName": "Scott Galloway",
+            "photo": "/photos/scott-galloway.jpg",
+            "quote": "Is China Winning the Global AI Trust War? | China Decode",
+            "sourceUrl": "https://www.youtube.com/watch?v=IfIzGTsgMdU",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 5,
+        "bestQuote": {
+          "voiceName": "Joey Politano",
+          "quote": "US data center construction reached another new record high in official data released today, exceeding a pace of $75B/yr (and this only includes data center facilities, not the expensive computers wit",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Big Tech Skepticism & Accountability",
+        "voices": [
+          {
+            "voiceId": "paris-marx",
+            "voiceName": "Paris Marx",
+            "photo": "/photos/paris-marx.jpg",
+            "quote": "yet another example of how companies used the shift to digital as an excuse serve themselves and revoke (in this case) consumer rights. it\u2019s long past time for governments to legislate on this.",
+            "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mui3bj5xmc2y",
+            "platform": "bluesky",
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "molly-white",
+            "voiceName": "Molly White",
+            "photo": "/photos/molly-white.jpg",
+            "quote": "A report from the Anti-Corruption Data Collective flagged 556 wallets on Polymarket that exhibit characteristics of insider trading. 152 of them were betting on military and defense markets. Polymarke",
+            "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mufekmucjk2x",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "mike-lee",
+            "voiceName": "Mike Lee",
+            "photo": "/photos/mike-lee.jpg",
+            "quote": "I\u2019m glad the @FTC is holding anticompetitive behavior accountable. \n\nI introduced the bipartisan AMERICA ACT to restore competition in digital advertising, eliminating conflicts of interest where lead",
+            "sourceUrl": "https://x.com/SenMikeLee/status/2094804701237629339",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "trevor-noah",
+            "voiceName": "Trevor Noah",
+            "photo": "/photos/trevor-noah.jpg",
+            "quote": "Cindy Cohn breaks down why AI companies won't tell you what they're actually doing with your data",
+            "sourceUrl": "https://www.youtube.com/shorts/EFHOdjCahLM",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "tucker-carlson",
+            "voiceName": "Tucker Carlson",
+            "photo": "/photos/tucker-carlson.jpg",
+            "quote": "\u201cIt\u2019s Targeted by the CIA\u2026\u201d",
+            "sourceUrl": "https://www.youtube.com/shorts/V7zk3s3IsV0",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 5,
+        "bestQuote": {
+          "voiceName": "Paris Marx",
+          "quote": "yet another example of how companies used the shift to digital as an excuse serve themselves and revoke (in this case) consumer rights. it\u2019s long past time for governments to legislate on this.",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Data Center Cost & Consumer Concerns",
+        "voices": [
+          {
+            "voiceId": "katie-britt",
+            "voiceName": "Katie Britt",
+            "photo": "/photos/katie-britt.jpg",
+            "quote": "I was proud to stand with @POTUS as major technology companies signed the Ratepayer Protection Pledge to ensure the costs of data centers developments are not passed on to consumers. \n\nThis was an out",
+            "sourceUrl": "https://x.com/SenKatieBritt/status/2094503930784801241",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "elizabeth-warren",
+            "voiceName": "Elizabeth Warren",
+            "photo": "/photos/elizabeth-warren.jpg",
+            "quote": "According to Donald Trump, if you don\u2019t want a giant AI data center in your backyard, you\u2019re \u201cbackwards and poor.\u201d\n\nYou know what\u2019s backwards?\n\nTelling American families to shut up and pay higher elec",
+            "sourceUrl": "https://x.com/ewarren/status/2094881981259509778",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "ted-cruz",
+            "voiceName": "Ted Cruz",
+            "photo": "/photos/ted-cruz.jpg",
+            "quote": "Data Centers Should LOWER People's Electric Bill. Ted Cruz Explains How.",
+            "sourceUrl": "https://www.youtube.com/shorts/zg-29uEasKY",
+            "platform": "youtube",
+            "quoteQuality": 2
+          },
+          {
+            "voiceId": "mark-levin",
+            "voiceName": "Mark Levin",
+            "photo": "/photos/mark-levin.jpg",
+            "quote": "Are You Being Lied To About AI? The Reality of Data Centers",
+            "sourceUrl": "https://www.youtube.com/watch?v=k5V6zaqnkp8",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "Katie Britt",
+          "quote": "I was proud to stand with @POTUS as major technology companies signed the Ratepayer Protection Pledge to ensure the costs of data centers developments are not passed on to consumers. \n\nThis was an out",
+          "platform": "x",
+          "quality": 4
+        }
+      },
+      {
+        "name": "AI Dominance Over China",
+        "voices": [
+          {
+            "voiceId": "dan-crenshaw",
+            "voiceName": "Dan Crenshaw",
+            "photo": "/photos/dan-crenshaw.jpg",
+            "quote": "President Trump is right. China would absolutely love for America to talk itself out of building the infrastructure necessary to dominate AI. In fact, they\u2019re already running influence operations to e",
+            "sourceUrl": "https://x.com/DanCrenshawTX/status/2094481384337510808",
+            "platform": "x",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "john-fetterman",
+            "voiceName": "John Fetterman",
+            "photo": "/photos/john-fetterman.jpg",
+            "quote": "Agreed.\n\nWe must win the war for AI supremacy over China. They foment the \u2018anti\u2019 argument through misinformation. \n\nThere\u2019s nothing more damaging to a Democrat than agreeing with Trump AND data center",
+            "sourceUrl": "https://x.com/SenFettermanPA/status/2094478069486813210",
+            "platform": "x",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "michael-mccaul",
+            "voiceName": "Michael McCaul",
+            "photo": "/photos/michael-mccaul.jpg",
+            "quote": "America is in an AI race with the Chinese Communist Party. We cannot spend billions trying to protect our technological advantage while American companies package up our best human expertise and sell ",
+            "sourceUrl": "https://x.com/RepMcCaul/status/2094462820091838633",
+            "platform": "x",
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "Dan Crenshaw",
+          "quote": "President Trump is right. China would absolutely love for America to talk itself out of building the infrastructure necessary to dominate AI. In fact, they\u2019re already running influence operations to e",
+          "platform": "x",
+          "quality": 5
+        }
+      }
+    ],
+    "confidence": 5,
+    "relevance": {
+      "direct": 14,
+      "related": 12,
+      "unrelated": 6
+    },
+    "validated": false,
+    "heatScore": 79,
+    "belowThreshold": false,
+    "counterNarrative": {
+      "dominantCluster": "AI Risk & Safety Warnings",
+      "dominantCount": 7,
+      "counterCluster": "AI Dominance Over China",
+      "counterCount": 3,
+      "axis": "racing ahead vs. slowing down",
+      "tensionScore": 8,
+      "tension": "7 voices say \"AI Risk & Safety Warnings\" \u2014 but 3 push back: \"AI Dominance Over China\""
+    },
+    "slug": "ai-boom-fuels-data-center-safety-and-energy-cost-debates"
+  },
+  {
+    "headline": "ICE Enforcement Sparks Debate: Deportations, Robot Dogs, Welfare Limits",
+    "summary": "Sharp partisan split: Democrats decry ICE tactics as authoritarian while Republicans defend aggressive enforcement.",
+    "type": "split",
+    "source": "voices",
+    "coverUrl": "",
+    "storyType": "",
+    "topicSlugs": [
+      "immigration"
+    ],
+    "voiceCount": 21,
+    "clusterCount": 5,
+    "clusters": [
+      {
+        "name": "Enforcement Overreach Concerns",
+        "voices": [
+          {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "This is why you can't have healthcare. https://www.nbcnews.com/politics/immigration/ice-buy-robot-dogs-immigration-enforcement-rcna594897",
+            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3muhtr7hbbf2n",
+            "platform": "bluesky",
+            "fit": 6,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "viet-thanh-nguyen",
+            "voiceName": "Viet Thanh Nguyen",
+            "photo": "/photos/viet-thanh-nguyen.jpg",
+            "quote": "The most disturbing thing about Milo Yiannopoulos' deportation is this from Homan:\n\n\"A lot of people tipped ICE off,\u201d Homan replied. \u201cThere are a lot of people who\u2019s calling ICE.\"\n\nIn other words, a l",
+            "sourceUrl": "https://bsky.app/profile/vietthanhnguyen.bsky.social/post/3mufh75biv22c",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "bill-kristol",
+            "voiceName": "Bill Kristol",
+            "photo": "/photos/bill-kristol.jpg",
+            "quote": "I don\u2019t think we should be sending one taxpayer dollar to ICE.",
+            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3muhuy5q2hk2o",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "adam-schiff",
+            "voiceName": "Adam Schiff",
+            "photo": "/photos/adam-schiff.jpg",
+            "quote": "Checking people's papers randomly on the street is stuff of the 1930s. \n\nI never thought I'd see the day where that was happening here, and yet, it's reality for millions of Americans. \n\nOur democracy",
+            "sourceUrl": "https://x.com/SenAdamSchiff/status/2094160062738518394",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "cory-booker",
+            "voiceName": "Cory Booker",
+            "photo": "/photos/cory-booker.jpg",
+            "quote": "5-year-old boy wanted to play soccer. Instead, ICE pulled over his family, cuffed his father, took him away crying as he clung to his dad\u2019s shackled hands. This is cruelty inflicted on a child. Kids s",
+            "sourceUrl": "https://x.com/CoryBooker/status/2094878023757545859",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "chris-murphy",
+            "voiceName": "Chris Murphy",
+            "photo": "/photos/chris-murphy.jpg",
+            "quote": "a. Check your story. Homan does NOT deny making arrests at school bus stops. The opposite - he seems to imply it DID happen. \n\nb. Multiple sources on the ground in Danbury report that this happened. h",
+            "sourceUrl": "https://x.com/ChrisMurphyCT/status/2094584275207119228",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "pramila-jayapal",
+            "voiceName": "Pramila Jayapal",
+            "photo": "/photos/pramila-jayapal.jpg",
+            "quote": "Republicans claim to care about public safety and \u201clegal immigration,\u201d but their policies say otherwise. https://t.co/AGGAc8fHRo",
+            "sourceUrl": "https://x.com/RepJayapal/status/2094840553594618227",
+            "platform": "x",
+            "fit": 6,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 7,
+        "bestQuote": {
+          "voiceName": "Robert Reich",
+          "quote": "This is why you can't have healthcare. https://www.nbcnews.com/politics/immigration/ice-buy-robot-dogs-immigration-enforcement-rcna594897",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Immigration Media Coverage",
+        "voices": [
+          {
+            "voiceId": "judd-legum",
+            "voiceName": "Judd Legum",
+            "photo": "/photos/judd-legum.jpg",
+            "quote": "4. The trips, which have not been previously reported, were documented extensively by Sonderling himself, who posted hundreds of photos on a public Flickr account.",
+            "sourceUrl": "https://bsky.app/profile/juddlegum.bsky.social/post/3muevw36bk22e",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "rick-hasen",
+            "voiceName": "Rick Hasen",
+            "photo": "/photos/rick-hasen.jpg",
+            "quote": "&#8220;Mullin says DHS could deploy to polling sites for &#8216;specific&#8217; threats, arrests&#8221;. Politico:\nHomeland Security Secretary\u00a0Markwayne Mullin\u00a0provided more details Tuesday about the ",
+            "sourceUrl": "https://electionlawblog.org/2026/mullin-says-dhs-could-deploy-to-polling-sites-for-specific-threats-arrests/",
+            "platform": "blog",
+            "fit": 7,
+            "quoteQuality": 3
+          },
+          {
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "The Biggest LIE About Mass Immigration",
+            "sourceUrl": "https://www.youtube.com/shorts/EbMQY1jkfwA",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "dave-rubin",
+            "voiceName": "Dave Rubin",
+            "photo": "/photos/dave-rubin.jpg",
+            "quote": "Dem Senate Hopeful Scrubs 9/11 Tweet; ICE Plans Robot Dogs | 9/1/26 FIRST LOOK",
+            "sourceUrl": "https://www.youtube.com/watch?v=oNxddKVGj2o",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "ryan-grim",
+            "voiceName": "Ryan Grim",
+            "photo": "/photos/ryan-grim.jpg",
+            "quote": "Capitol Hill Reacts: ICE plans to purchase $2 million worth of \u201crobot dogs\u201d",
+            "sourceUrl": "https://www.youtube.com/shorts/bFjGWsRXlyk",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "jeremy-scahill",
+            "voiceName": "Jeremy Scahill",
+            "photo": "/photos/jeremy-scahill.jpg",
+            "quote": "Capitol Hill Reacts: ICE plans to purchase $2 million worth of \u201crobot dogs\u201d",
+            "sourceUrl": "https://www.youtube.com/shorts/bFjGWsRXlyk",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 6,
+        "bestQuote": {
+          "voiceName": "Judd Legum",
+          "quote": "4. The trips, which have not been previously reported, were documented extensively by Sonderling himself, who posted hundreds of photos on a public Flickr account.",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Border Security Advocates",
+        "voices": [
+          {
+            "voiceId": "jim-jordan",
+            "voiceName": "Jim Jordan",
+            "photo": "/photos/jim-jordan.jpg",
+            "quote": "Maryland is trying to stop their sheriffs from working with ICE after arresting dangerous CRIMINAL aliens. \n\nWhy is Maryland making it harder for law enforcement to protect Americans?",
+            "sourceUrl": "https://x.com/Jim_Jordan/status/2094826231623459255",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "heritage-foundation",
+            "voiceName": "Heritage Foundation",
+            "photo": "/photos/heritage-foundation.jpg",
+            "quote": "One rare case doesn't define thousands of agents doing a dangerous job every day. The real story is how quickly ICE and DOJ moved to hold one bad actor accountable.\n\n@BensmanTodd is a Senior Research ",
+            "sourceUrl": "https://x.com/Heritage/status/2094867742708969671",
+            "platform": "x",
+            "fit": 7,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "rand-paul",
+            "voiceName": "Rand Paul",
+            "photo": "/photos/rand-paul.jpg",
+            "quote": "We have a $40 trillion debt and an affordability crisis. Congress created these welfare programs, and Congress can decide who gets them. My bill says federal welfare benefits are for Americans, not il",
+            "sourceUrl": "https://x.com/RandPaul/status/2094877956728590837",
+            "platform": "x",
+            "fit": 7,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "anna-paulina-luna",
+            "voiceName": "Anna Paulina Luna",
+            "photo": "/photos/anna-paulina-luna.jpg",
+            "quote": "An estimated 200,000 children have been born through birth tourism over the last decade, many from China!\n\nOur enemy is walking in through the front gate and we\u2019re allowing it to happen. This a SERIOU",
+            "sourceUrl": "https://x.com/RepLuna/status/2094859953731174909",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "Jim Jordan",
+          "quote": "Maryland is trying to stop their sheriffs from working with ICE after arresting dangerous CRIMINAL aliens. \n\nWhy is Maryland making it harder for law enforcement to protect Americans?",
+          "platform": "x",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Milo Deportation Coverage",
+        "voices": [
+          {
+            "voiceId": "ben-shapiro",
+            "voiceName": "Ben Shapiro",
+            "photo": "/photos/ben-shapiro.jpg",
+            "quote": "The Deportation of Milo Yiannopoulos",
+            "sourceUrl": "https://www.youtube.com/watch?v=G1gHIymvlMs",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "breaking-points",
+            "voiceName": "Breaking Points",
+            "photo": "/photos/breaking-points.jpg",
+            "quote": "Krystal And Saagar REACT: Milo DEPORTED On Laura Loomer Orders",
+            "sourceUrl": "https://www.youtube.com/watch?v=zC1dL8MoKSo",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "krystal-ball",
+            "voiceName": "Krystal Ball",
+            "photo": "/photos/krystal-ball.jpg",
+            "quote": "Krystal And Saagar REACT: Milo DEPORTED On Laura Loomer Orders",
+            "sourceUrl": "https://www.youtube.com/watch?v=zC1dL8MoKSo",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "Ben Shapiro",
+          "quote": "The Deportation of Milo Yiannopoulos",
+          "platform": "youtube",
+          "quality": 1
+        }
+      },
+      {
+        "name": "Legal Immigration Reform",
+        "voices": [
+          {
+            "voiceId": "cato-institute",
+            "voiceName": "Cato Institute",
+            "photo": "/photos/cato-institute.jpg",
+            "quote": "\u201cOur immigrant coworkers, neighbors, friends, and family want to contribute legally to this nation. Let them. Fix legal immigration.\u201d \u2013 Cato Institute\u2019s David J. Bier in testimony before a House Judic",
+            "sourceUrl": "https://bsky.app/profile/cato.org/post/3mui2suqmlh2c",
+            "platform": "bluesky",
+            "fit": 10,
+            "quoteQuality": 5
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Cato Institute",
+          "quote": "\u201cOur immigrant coworkers, neighbors, friends, and family want to contribute legally to this nation. Let them. Fix legal immigration.\u201d \u2013 Cato Institute\u2019s David J. Bier in testimony before a House Judic",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      }
+    ],
+    "confidence": 5,
+    "relevance": {
+      "direct": 9,
+      "related": 12,
+      "unrelated": 0
+    },
+    "validated": true,
+    "heatScore": 76,
+    "belowThreshold": false,
+    "counterNarrative": {
+      "dominantCluster": "Enforcement Overreach Concerns",
+      "dominantCount": 7,
+      "counterCluster": "Border Security Advocates",
+      "counterCount": 4,
+      "axis": "whether ICE tactics are justified",
+      "tensionScore": 8,
+      "tension": "7 voices say \"Enforcement Overreach Concerns\" \u2014 but 4 push back: \"Border Security Advocates\""
+    },
+    "slug": "ice-enforcement-sparks-backlash-over-tactics-deaths-detentio"
+  },
+  {
+    "headline": "Whistleblower Alleges Trump Admin Weaponizing USPS Against Mail-In Voting",
+    "summary": "A USPS whistleblower report on mail-in voting dominates Democratic reaction, while others focus on separate midterm horserace dynamics.",
+    "type": "split",
+    "source": "voices",
+    "coverUrl": "",
+    "storyType": "",
+    "topicSlugs": [
+      "elections"
+    ],
+    "voiceCount": 26,
+    "clusterCount": 7,
+    "clusters": [
+      {
+        "name": "USPS Mail Voting Threat",
+        "voices": [
+          {
+            "voiceId": "jake-tapper",
+            "voiceName": "Jake Tapper",
+            "photo": "/photos/jake-tapper.jpg",
+            "quote": "USPS whistleblower describes new plans for voting by mail hidden from the public\n\nwww.cnn.com/2026/09/01/p...",
+            "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3muhymzshes23",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "chuck-schumer",
+            "voiceName": "Chuck Schumer",
+            "photo": "/photos/chuck-schumer.jpg",
+            "quote": "A whistleblower is warning of a \u201ccatastrophic failure\u201d in our mail-ballot system\u2014all because Trump is turning USPS into a voter suppression machine.\n\nVote-by-mail is safe and secure. Trump himself vot",
+            "sourceUrl": "https://x.com/SenSchumer/status/2094799557150347594",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "mark-kelly",
+            "voiceName": "Mark Kelly",
+            "photo": "/photos/mark-kelly.jpg",
+            "quote": "Many Americans prefer voting by mail because it\u2019s safe and convenient. But Trump doesn't want to protect our elections, he wants to protect his own power. This will make it harder for millions of Amer",
+            "sourceUrl": "https://x.com/SenMarkKelly/status/2094891799105994784",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "center-for-american-progress",
+            "voiceName": "Center for American Progress",
+            "photo": "/photos/center-for-american-progress.jpg",
+            "quote": "The Trump administration wants to weaponize the U.S. Postal Service against voters and unconstitutionally take election powers away from the states. CAP\u2019s @michaelsozan.bsky.social explains where thin",
+            "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3mui46tjhx42h",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "chris-geidner",
+            "voiceName": "Chris Geidner",
+            "photo": "/photos/chris-geidner.jpg",
+            "quote": "NEW: EPIC has sued in federal court in Maryland over the implementation of the state citizenship lists aspect of the Trump election \"integrity\" order, alleging APA and constitutional violations. The c",
+            "sourceUrl": "https://bsky.app/profile/chrisgeidner.bsky.social/post/3muhz5yssds22",
+            "platform": "bluesky",
+            "fit": 5,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "adam-schiff",
+            "voiceName": "Adam Schiff",
+            "photo": "/photos/adam-schiff.jpg",
+            "quote": "A whistleblower is sounding the alarm that Trump is violating a court order ahead of the midterm elections.\n\nThis is a brazen threat to mail-in voting that could prevent voters from receiving ballots ",
+            "sourceUrl": "https://x.com/SenAdamSchiff/status/2094904156624482523",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "robert-garcia",
+            "voiceName": "Robert Garcia",
+            "photo": "/photos/robert-garcia.jpg",
+            "quote": "Last night @OversightDems received an alarming whistleblower report from a USPS federal official that President Trump's attack on vote-by-mail is much more serious than previously known.\n\nTrump is cre",
+            "sourceUrl": "https://x.com/RepRobertGarcia/status/2094799132246335556",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "don-lemon",
+            "voiceName": "Don Lemon",
+            "photo": "/photos/don-lemon.jpg",
+            "quote": "BREAKING: WHISTLEBLOWER REVEALS SECRET WFFORT BY TRUMP TO UNDERMINE MAIL-IN VOTING BEFORE MIDTERMS",
+            "sourceUrl": "https://www.youtube.com/shorts/HRJ0s0FcvqA",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 8,
+        "bestQuote": {
+          "voiceName": "Jake Tapper",
+          "quote": "USPS whistleblower describes new plans for voting by mail hidden from the public\n\nwww.cnn.com/2026/09/01/p...",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Midterm Horserace Analysis",
+        "voices": [
+          {
+            "voiceId": "matt-yglesias",
+            "voiceName": "Matt Yglesias",
+            "photo": "/photos/matt-yglesias.jpg",
+            "quote": "Republicans have a big midterm cash advantage (by Matthew Yglesias). Democrats have alienated billionaires without winning back the working class.",
+            "sourceUrl": "https://www.slowboring.com/p/republicans-have-a-big-midterm-cash",
+            "platform": "substack",
+            "fit": 9,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "phillips-obrien",
+            "voiceName": "Phillips Payson O'Brien",
+            "photo": "/photos/phillips-obrien.jpg",
+            "quote": "One poll, but a Democrat is leading a Republican in a race for the US Senate.\n\nI believe that is a sign of something in the Book of Revelations.",
+            "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3muhf5t2wzk23",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "ben-shapiro",
+            "voiceName": "Ben Shapiro",
+            "photo": "/photos/ben-shapiro.jpg",
+            "quote": "Why Republicans Are About to Lose Big \u2014 and What They Can Do",
+            "sourceUrl": "https://www.youtube.com/watch?v=7jWshq8MRCs",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "david-pakman",
+            "voiceName": "David Pakman",
+            "photo": "/photos/david-pakman.jpg",
+            "quote": "Credit if Republicans win. Someone else\u2019s fault if they lose. #shorts",
+            "sourceUrl": "https://www.youtube.com/shorts/ZfCrHPzNmhI",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "breaking-points",
+            "voiceName": "Breaking Points",
+            "photo": "/photos/breaking-points.jpg",
+            "quote": "LEAKED AUDIO: Republican PANICS OVER MIDTERM DISASTER",
+            "sourceUrl": "https://www.youtube.com/watch?v=v6whgLzqZUQ",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "krystal-ball",
+            "voiceName": "Krystal Ball",
+            "photo": "/photos/krystal-ball.jpg",
+            "quote": "LEAKED AUDIO: Republican PANICS OVER MIDTERM DISASTER",
+            "sourceUrl": "https://www.youtube.com/watch?v=v6whgLzqZUQ",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "dave-rubin",
+            "voiceName": "Dave Rubin",
+            "photo": "/photos/dave-rubin.jpg",
+            "quote": "Loyal Dem Charlamagne tha God Just Noticed Dem\u2019s Huge Mistake That Will Doom Them",
+            "sourceUrl": "https://www.youtube.com/watch?v=at7aq3sUA5s",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 7,
+        "bestQuote": {
+          "voiceName": "Matt Yglesias",
+          "quote": "Republicans have a big midterm cash advantage (by Matthew Yglesias). Democrats have alienated billionaires without winning back the working class.",
+          "platform": "substack",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Democratic Strategy Debate",
+        "voices": [
+          {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "You're going to be hearing more and more about this particular issue \u2014 and rightfully so. \n\nLet me explain what's going on \u2014 and provide some solutions. https://robertreich.substack.com/p/the-biggest-",
+            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mui5t5jmp327",
+            "platform": "bluesky",
+            "fit": 5,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "chris-murphy",
+            "voiceName": "Chris Murphy",
+            "photo": "/photos/chris-murphy.jpg",
+            "quote": "He\u2019s given up on politics. But he\u2019s an example of why Democrats shouldn\u2019t give up on Trump voters. Even those who spout racist tropes. \n\nDavid is angry and knows he\u2019s getting screwed. He just needs to",
+            "sourceUrl": "https://x.com/ChrisMurphyCT/status/2094797966447931870",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "jennifer-rubin",
+            "voiceName": "Jennifer Rubin",
+            "photo": "/photos/jennifer-rubin.jpg",
+            "quote": "Any coverage that doesn\u2019t make a clear distinction between a normal \u201cd\u201ddemocratic party and a bunch of radical loons is just enabling fascism. The Contrarian takes a different approach with this barn ",
+            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mui6ztcofc2v",
+            "platform": "bluesky",
+            "fit": 7,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "pod-save-america",
+            "voiceName": "Pod Save America",
+            "photo": "/photos/pod-save-america.jpg",
+            "quote": "Rep. Benny Thompson on Trump's &quot;post-racial&quot; America",
+            "sourceUrl": "https://www.youtube.com/shorts/cT6zxn2Ab2Q",
+            "platform": "youtube",
+            "fit": 4,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "briahna-joy-gray",
+            "voiceName": "Briahna Joy Gray",
+            "photo": "/photos/briahna-joy-gray.jpg",
+            "quote": "The Fight Inside DSA Over Whether to ENDORSE AOC for President (w/ James Ray)",
+            "sourceUrl": "https://www.youtube.com/watch?v=1dEV5Trcm3s",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "mehdi-hasan",
+            "voiceName": "Mehdi Hasan",
+            "photo": "/photos/mehdi-hasan.jpg",
+            "quote": "Kamala Harris Was Not \u2018Loyal to a Fault\u2019 to My Dad",
+            "sourceUrl": "https://www.youtube.com/shorts/uJPr_h83PlM",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 6,
+        "bestQuote": {
+          "voiceName": "Robert Reich",
+          "quote": "You're going to be hearing more and more about this particular issue \u2014 and rightfully so. \n\nLet me explain what's going on \u2014 and provide some solutions. https://robertreich.substack.com/p/the-biggest-",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Democratic Mobilization",
+        "voices": [
+          {
+            "voiceId": "ted-lieu",
+            "voiceName": "Ted Lieu",
+            "photo": "/photos/ted-lieu.jpg",
+            "quote": "Just go fucking vote. https://t.co/WFzMeNuMkV",
+            "sourceUrl": "https://x.com/RepTedLieu/status/2094837800654741853",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 3
+          },
+          {
+            "voiceId": "aoc",
+            "voiceName": "Alexandria Ocasio-Cortez",
+            "photo": "/photos/aoc.jpg",
+            "quote": "The future is ours and we intend to win it all.",
+            "sourceUrl": "https://www.youtube.com/shorts/K43Uzx-dIaA",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Ted Lieu",
+          "quote": "Just go fucking vote. https://t.co/WFzMeNuMkV",
+          "platform": "x",
+          "quality": 3
+        }
+      },
+      {
+        "name": "Election Integrity Concerns",
+        "voices": [
+          {
+            "voiceId": "mike-johnson",
+            "voiceName": "Mike Johnson",
+            "photo": "/photos/mike-johnson.jpg",
+            "quote": "Every Democrat in Congress made their position clear:\n\nThey would rather let non-citizens vote illegally in our country than take easy, simple actions to secure our elections!\n\nThe American people des",
+            "sourceUrl": "https://x.com/SpeakerJohnson/status/2094080621958107296",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Mike Johnson",
+          "quote": "Every Democrat in Congress made their position clear:\n\nThey would rather let non-citizens vote illegally in our country than take easy, simple actions to secure our elections!\n\nThe American people des",
+          "platform": "x",
+          "quality": 4
+        }
+      },
+      {
+        "name": "GOP Campaign Push",
+        "voices": [
+          {
+            "voiceId": "jd-vance",
+            "voiceName": "JD Vance",
+            "photo": "/photos/jd-vance.jpg",
+            "quote": "Here in Michigan with the great @MikeRogersforMI.\n\nWe need this man in the Senate, Michigan! Let's make it happen this November\ud83c\uddfa\ud83c\uddf8 https://t.co/kBbnOmFmH7",
+            "sourceUrl": "https://x.com/JDVance/status/2094501283524743493",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "JD Vance",
+          "quote": "Here in Michigan with the great @MikeRogersforMI.\n\nWe need this man in the Senate, Michigan! Let's make it happen this November\ud83c\uddfa\ud83c\uddf8 https://t.co/kBbnOmFmH7",
+          "platform": "x",
+          "quality": 4
+        }
+      },
+      {
+        "name": "Anti-Trump Republican Warning",
+        "voices": [
+          {
+            "voiceId": "lincoln-project",
+            "voiceName": "Lincoln Project",
+            "photo": "/photos/lincoln-project.jpg",
+            "quote": "Trump will sink the GOP",
+            "sourceUrl": "https://www.youtube.com/shorts/IwMrSHlY9eI",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Lincoln Project",
+          "quote": "Trump will sink the GOP",
+          "platform": "youtube",
+          "quality": 1
+        }
+      }
+    ],
+    "confidence": 5,
+    "relevance": {
+      "direct": 8,
+      "related": 16,
+      "unrelated": 3
+    },
+    "validated": true,
+    "heatScore": 74,
+    "belowThreshold": false,
+    "slug": "trump-wins-narrow-gop-primaries-as-progressives-surge-elsewh"
+  },
+  {
+    "headline": "US-Iran war grinds on six months in, no clear end",
+    "summary": "Six months into an unresolved Iran war, bipartisan critics call it a failing quagmire while a few conservatives insist Iran is crippled.",
     "type": "split",
     "source": "voices",
     "coverUrl": "",
@@ -9,21 +992,21 @@
     "topicSlugs": [
       "iran-conflict"
     ],
-    "voiceCount": 27,
+    "voiceCount": 30,
     "clusterCount": 5,
     "clusters": [
       {
-        "name": "War Is Failing/Should End",
+        "name": "War Is Failing/End It",
         "voices": [
           {
-            "voiceId": "meidastouch",
-            "voiceName": "MeidasTouch",
-            "photo": "/photos/meidastouch.jpg",
-            "quote": "Trump\u2019s Iran war is escalating. His Canada trade war is getting uglier. His Venezuela oil \"deal\" is raising huge red flags. And now the Pentagon is unraveling from the inside with another resignation.",
-            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mug37apsos27",
+            "voiceId": "cato-institute",
+            "voiceName": "Cato Institute",
+            "photo": "/photos/cato-institute.jpg",
+            "quote": "Russia and China backing Iran isn't a startling betrayal of norms, it\u2019s the predictable response to America's intervention in the world. We should deny foreign enemies a vehicle for retaliation by end",
+            "sourceUrl": "https://bsky.app/profile/cato.org/post/3mui7k3bd2h2q",
             "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 5
+            "fit": 9,
+            "quoteQuality": 6
           },
           {
             "voiceId": "jennifer-rubin",
@@ -32,7 +1015,7 @@
             "quote": "Trump produced a defeat of unprecedented proportions, handed the Iranian leadership a new lease on life, and given Tehran control of the Strait of Hormuz \u2014 a benefit of more utility than nuclear weapo",
             "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3muhj7zk6pc2r",
             "platform": "bluesky",
-            "fit": 10,
+            "fit": 9,
             "quoteQuality": 5
           },
           {
@@ -42,7 +1025,7 @@
             "quote": "Trump spent yesterday posting violent AI slop about bombing Iran's Kharg Island and falling asleep in the middle of afternoon Oval Office meetings.\n\nHe is visibly and rapidly declining before our eyes",
             "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mui2yhrsg22z",
             "platform": "bluesky",
-            "fit": 5,
+            "fit": 6,
             "quoteQuality": 5
           },
           {
@@ -52,7 +1035,7 @@
             "quote": "At the six-month mark of an irresponsible war of choice in Iran, the Trump administration has become stuck in a Middle East predicament it can't win or easily exit. https://www.americanprogress.org/ar",
             "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3mufbnidv5w2u",
             "platform": "bluesky",
-            "fit": 9,
+            "fit": 10,
             "quoteQuality": 5
           },
           {
@@ -82,7 +1065,7 @@
             "quote": "For the first time in history, the national average price of gas for the month of August has been above $4 per gallon every single day.\n\nIf it feels like it\u2019s been the most expensive August at the pum",
             "sourceUrl": "https://x.com/SenDuckworth/status/2094555960274468982",
             "platform": "x",
-            "fit": 9,
+            "fit": 10,
             "quoteQuality": 4
           },
           {
@@ -106,6 +1089,16 @@
             "quoteQuality": 4
           },
           {
+            "voiceId": "quincy-institute",
+            "voiceName": "Quincy Institute",
+            "photo": "/photos/quincy-institute.jpg",
+            "quote": "After Iran, US signals major security shift in the Middle East (by Abdelrahim Shalaby). When President Donald Trump congratulated Saudi Arabia, Turkey, and Pakistan for signing the Mecca Pact, describ",
+            "sourceUrl": "https://responsiblestatecraft.org/us-withdrawal-from-middle-east/",
+            "platform": "blog",
+            "fit": 5,
+            "quoteQuality": 3
+          },
+          {
             "voiceId": "david-pakman",
             "voiceName": "David Pakman",
             "photo": "/photos/david-pakman.jpg",
@@ -116,34 +1109,46 @@
             "quoteQuality": 1
           },
           {
-            "voiceId": "brian-tyler-cohen",
-            "voiceName": "Brian Tyler Cohen",
-            "photo": "/photos/brian-tyler-cohen.jpg",
-            "quote": "Voters CALL OUT Trump\u2019s Iran war: \u201cHe severely underestimated what he was going up against\u201d",
-            "sourceUrl": "https://www.youtube.com/shorts/KZ0BL3Upp-Y",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "hasanabi",
-            "voiceName": "HasanAbi",
-            "photo": "/photos/hasanabi.jpg",
-            "quote": "TRUMP BOMBS LARAK ISLAND IN IRAN AS GENERALS TURN ON HIM",
-            "sourceUrl": "https://www.youtube.com/watch?v=45mluQaPbBk",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
-          },
-          {
             "voiceId": "tim-pool",
             "voiceName": "Tim Pool",
             "photo": "/photos/tim-pool.jpg",
             "quote": "The US Will NOT WIN Against Iran #shorts",
             "sourceUrl": "https://www.youtube.com/shorts/wnpx8hG9Vq8",
             "platform": "youtube",
-            "fit": 10,
+            "fit": 8,
             "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 12,
+        "bestQuote": {
+          "voiceName": "Cato Institute",
+          "quote": "Russia and China backing Iran isn't a startling betrayal of norms, it\u2019s the predictable response to America's intervention in the world. We should deny foreign enemies a vehicle for retaliation by end",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Anti-War Left Critique",
+        "voices": [
+          {
+            "voiceId": "jeremy-scahill",
+            "voiceName": "Jeremy Scahill",
+            "photo": "/photos/jeremy-scahill.jpg",
+            "quote": "U.S. reignites Iran war; Israel\u2019s $3.5B defense deal with Greece; Details of Venezuela oil deal (by Drop Site News)",
+            "sourceUrl": "https://www.dropsitenews.com/p/us-iran-war-larak-israel-greece-defense-venezuela-oil-deal",
+            "platform": "substack",
+            "fit": 4,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "Trump\u2019s Iran war escalates. Global bond markets flash warning signs. A USPS whistleblower sounds the alarm. Hegseth\u2019s Pentagon implodes. And Democrats get more good midterm news.\n\nYour midday update:",
+            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3muhy53eiu22v",
+            "platform": "bluesky",
+            "fit": 5,
+            "quoteQuality": 5
           },
           {
             "voiceId": "jimmy-dore",
@@ -152,50 +1157,8 @@
             "quote": "Iran NOT Messing Around!",
             "sourceUrl": "https://www.youtube.com/shorts/khtkS4bfwJs",
             "platform": "youtube",
-            "fit": 6,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 14,
-        "bestQuote": {
-          "voiceName": "MeidasTouch",
-          "quote": "Trump\u2019s Iran war is escalating. His Canada trade war is getting uglier. His Venezuela oil \"deal\" is raising huge red flags. And now the Pentagon is unraveling from the inside with another resignation.",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Restraint/Anti-Intervention Critique",
-        "voices": [
-          {
-            "voiceId": "cato-institute",
-            "voiceName": "Cato Institute",
-            "photo": "/photos/cato-institute.jpg",
-            "quote": "Russia and China backing Iran isn't a startling betrayal of norms, it\u2019s the predictable response to America's intervention in the world. We should deny foreign enemies a vehicle for retaliation by end",
-            "sourceUrl": "https://bsky.app/profile/cato.org/post/3mui7k3bd2h2q",
-            "platform": "bluesky",
-            "fit": 10,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "jeremy-scahill",
-            "voiceName": "Jeremy Scahill",
-            "photo": "/photos/jeremy-scahill.jpg",
-            "quote": "U.S. reignites Iran war; Israel\u2019s $3.5B defense deal with Greece; Details of Venezuela oil deal (by Drop Site News)",
-            "sourceUrl": "https://www.dropsitenews.com/p/us-iran-war-larak-israel-greece-defense-venezuela-oil-deal",
-            "platform": "substack",
             "fit": 5,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "quincy-institute",
-            "voiceName": "Quincy Institute",
-            "photo": "/photos/quincy-institute.jpg",
-            "quote": "After Iran, US signals major security shift in the Middle East (by Abdelrahim Shalaby). When President Donald Trump congratulated Saudi Arabia, Turkey, and Pakistan for signing the Mecca Pact, describ",
-            "sourceUrl": "https://responsiblestatecraft.org/us-withdrawal-from-middle-east/",
-            "platform": "blog",
-            "fit": 7,
-            "quoteQuality": 3
+            "quoteQuality": 1
           },
           {
             "voiceId": "glenn-greenwald",
@@ -206,14 +1169,148 @@
             "platform": "youtube",
             "fit": 6,
             "quoteQuality": 1
+          },
+          {
+            "voiceId": "young-turks",
+            "voiceName": "The Young Turks",
+            "photo": "/photos/young-turks.jpg",
+            "quote": "Full-Scale War with Iran Begins! An Outraged Congressman Joins Us!",
+            "sourceUrl": "https://www.youtube.com/watch?v=UTivGIjDlKs",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "cenk-uygur",
+            "voiceName": "Cenk Uygur",
+            "photo": "/photos/cenk-uygur.jpg",
+            "quote": "Full-Scale War with Iran Begins! An Outraged Congressman Joins Us!",
+            "sourceUrl": "https://www.youtube.com/watch?v=UTivGIjDlKs",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "ryan-grim",
+            "voiceName": "Ryan Grim",
+            "photo": "/photos/ryan-grim.jpg",
+            "quote": "Iran Strikes Two Tankers Laden with Oil w/ Hormuz on the Brink",
+            "sourceUrl": "https://www.youtube.com/watch?v=vW_3vetVuQ8",
+            "platform": "youtube",
+            "fit": 4,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "brian-tyler-cohen",
+            "voiceName": "Brian Tyler Cohen",
+            "photo": "/photos/brian-tyler-cohen.jpg",
+            "quote": "Voters CALL OUT Trump\u2019s Iran war: \u201cHe severely underestimated what he was going up against\u201d",
+            "sourceUrl": "https://www.youtube.com/shorts/KZ0BL3Upp-Y",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 8,
+        "bestQuote": {
+          "voiceName": "Jeremy Scahill",
+          "quote": "U.S. reignites Iran war; Israel\u2019s $3.5B defense deal with Greece; Details of Venezuela oil deal (by Drop Site News)",
+          "platform": "substack",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Military Leadership Warns Against Escalation",
+        "voices": [
+          {
+            "voiceId": "bill-kristol",
+            "voiceName": "Bill Kristol",
+            "photo": "/photos/bill-kristol.jpg",
+            "quote": "\"The commanders of European, Pacific, and Southern Commands, along with the CNO, non-concurred with continuing some of the forces being provided for the Iran war. Non-concurrence means I would recomme",
+            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3muhaq2dyfc2i",
+            "platform": "bluesky",
+            "fit": 10,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "scott-lincicome",
+            "voiceName": "Scott Lincicome",
+            "photo": "/photos/scott-lincicome.jpg",
+            "quote": "\"Several U.S. military leaders have advised Defense Secretary Pete Hegseth that prolonging large-scale operations against Iran is unsustainable and risks weakening their ability to confront threats el",
+            "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mucmdmlvln25",
+            "platform": "bluesky",
+            "fit": 10,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "hasanabi",
+            "voiceName": "HasanAbi",
+            "photo": "/photos/hasanabi.jpg",
+            "quote": "US GENERALS RESIGN AS IRAN STRIKES US BASES",
+            "sourceUrl": "https://www.youtube.com/watch?v=LQVfHFP-OaM",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "ben-shapiro",
+            "voiceName": "Ben Shapiro",
+            "photo": "/photos/ben-shapiro.jpg",
+            "quote": "Why the Iran War Leak Is a Serious Problem",
+            "sourceUrl": "https://www.youtube.com/watch?v=BEvdNAyPAv8",
+            "platform": "youtube",
+            "fit": 5,
+            "quoteQuality": 1
           }
         ],
         "voiceCount": 4,
         "bestQuote": {
-          "voiceName": "Cato Institute",
-          "quote": "Russia and China backing Iran isn't a startling betrayal of norms, it\u2019s the predictable response to America's intervention in the world. We should deny foreign enemies a vehicle for retaliation by end",
+          "voiceName": "Bill Kristol",
+          "quote": "\"The commanders of European, Pacific, and Southern Commands, along with the CNO, non-concurred with continuing some of the forces being provided for the Iran war. Non-concurrence means I would recomme",
           "platform": "bluesky",
-          "quality": 6
+          "quality": 5
+        }
+      },
+      {
+        "name": "Administration Claims Success",
+        "voices": [
+          {
+            "voiceId": "john-kennedy",
+            "voiceName": "John Kennedy",
+            "photo": "/photos/john-kennedy.jpg",
+            "quote": "The leadership in Iran is nutty as a fruitcake. You can\u2019t take their word for anything. That\u2019s why we took action. \n\nWe have degraded their country to the point that they are being held together by du",
+            "sourceUrl": "https://x.com/SenJohnKennedy/status/2094792622204223573",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "katie-britt",
+            "voiceName": "Katie Britt",
+            "photo": "/photos/katie-britt.jpg",
+            "quote": "The Lindsey O. Graham Sanctioning Russia and Iran Act gives @POTUS powerful tools to cut off the funding for Putin\u2019s war machine and hold bad actors accountable. I was proud to help champion his legis",
+            "sourceUrl": "https://x.com/SenKatieBritt/status/2094459442049769981",
+            "platform": "x",
+            "fit": 6,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "\ud83d\udea8Iran\u2019s Leaders FLEE Country in FEAR as Nation in Total COLLAPSE: Gas Lines, Military, Economy GONE\u2026",
+            "sourceUrl": "https://www.youtube.com/watch?v=8DIzQPdOgGU",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "John Kennedy",
+          "quote": "The leadership in Iran is nutty as a fruitcake. You can\u2019t take their word for anything. That\u2019s why we took action. \n\nWe have degraded their country to the point that they are being held together by du",
+          "platform": "x",
+          "quality": 4
         }
       },
       {
@@ -236,18 +1333,8 @@
             "quote": "Poor Natalie got confused between Kharg Island and Larak Island--worshipping can be such exhausting business.",
             "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3muev4monbs2s",
             "platform": "bluesky",
-            "fit": 6,
+            "fit": 5,
             "quoteQuality": 5
-          },
-          {
-            "voiceId": "ben-shapiro",
-            "voiceName": "Ben Shapiro",
-            "photo": "/photos/ben-shapiro.jpg",
-            "quote": "Why the Iran War Leak Is a Serious Problem",
-            "sourceUrl": "https://www.youtube.com/watch?v=BEvdNAyPAv8",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
           },
           {
             "voiceId": "hasan-minhaj",
@@ -256,870 +1343,332 @@
             "quote": "Is a nuclear Saudi Arabia\u2026 bad?",
             "sourceUrl": "https://www.youtube.com/shorts/X1zzCxLSKOI",
             "platform": "youtube",
-            "fit": 5,
+            "fit": 6,
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 4,
+        "voiceCount": 3,
         "bestQuote": {
           "voiceName": "Justin Wolfers",
           "quote": "Some thoughts on the Canadian trade war, Bessent's fight with the bond market, and the hot war in Iran. (And why can't we all just get along?)\nnewsletter.platypuseconomics.com/p/different-...",
           "platform": "bluesky",
           "quality": 5
         }
-      },
-      {
-        "name": "War Is Succeeding",
-        "voices": [
-          {
-            "voiceId": "john-kennedy",
-            "voiceName": "John Kennedy",
-            "photo": "/photos/john-kennedy.jpg",
-            "quote": "The crunchy granola types in the Democratic Party and the media are utterly wrong about Iran.\n\nAmerica\u2019s military might and crushing economic pressure have brought Iran to its knees. https://t.co/bTYx",
-            "sourceUrl": "https://x.com/SenJohnKennedy/status/2094442013802271145",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "katie-britt",
-            "voiceName": "Katie Britt",
-            "photo": "/photos/katie-britt.jpg",
-            "quote": "The Lindsey O. Graham Sanctioning Russia and Iran Act gives @POTUS powerful tools to cut off the funding for Putin\u2019s war machine and hold bad actors accountable. I was proud to help champion his legis",
-            "sourceUrl": "https://x.com/SenKatieBritt/status/2094459442049769981",
-            "platform": "x",
-            "fit": 4,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "benny-johnson",
-            "voiceName": "Benny Johnson",
-            "photo": "/photos/benny-johnson.jpg",
-            "quote": "\ud83d\udea8Iran\u2019s Leaders FLEE Country in FEAR as Nation in Total COLLAPSE: Gas Lines, Military, Economy GONE\u2026",
-            "sourceUrl": "https://www.youtube.com/watch?v=8DIzQPdOgGU",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "John Kennedy",
-          "quote": "The crunchy granola types in the Democratic Party and the media are utterly wrong about Iran.\n\nAmerica\u2019s military might and crushing economic pressure have brought Iran to its knees. https://t.co/bTYx",
-          "platform": "x",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Military Leadership Concerns",
-        "voices": [
-          {
-            "voiceId": "bill-kristol",
-            "voiceName": "Bill Kristol",
-            "photo": "/photos/bill-kristol.jpg",
-            "quote": "\"The commanders of European, Pacific, and Southern Commands, along with the CNO, non-concurred with continuing some of the forces being provided for the Iran war. Non-concurrence means I would recomme",
-            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3muhaq2dyfc2i",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "scott-lincicome",
-            "voiceName": "Scott Lincicome",
-            "photo": "/photos/scott-lincicome.jpg",
-            "quote": "\"Several U.S. military leaders have advised Defense Secretary Pete Hegseth that prolonging large-scale operations against Iran is unsustainable and risks weakening their ability to confront threats el",
-            "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mucmdmlvln25",
-            "platform": "bluesky",
-            "fit": 10,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Bill Kristol",
-          "quote": "\"The commanders of European, Pacific, and Southern Commands, along with the CNO, non-concurred with continuing some of the forces being provided for the Iran war. Non-concurrence means I would recomme",
-          "platform": "bluesky",
-          "quality": 5
-        }
       }
     ],
-    "confidence": 8,
+    "confidence": 7,
     "relevance": {
-      "direct": 18,
-      "related": 6,
-      "unrelated": 1
+      "direct": 20,
+      "total": 25
     },
     "validated": true,
-    "heatScore": 85,
+    "heatScore": 70,
     "belowThreshold": false,
     "counterNarrative": {
-      "dominantCluster": "War Is Failing/Should End",
-      "dominantCount": 14,
-      "counterCluster": "War Is Succeeding",
+      "dominantCluster": "War Is Failing/End It",
+      "dominantCount": 12,
+      "counterCluster": "Administration Claims Success",
       "counterCount": 3,
-      "axis": "whether the war is working",
+      "axis": "whether the war is succeeding",
       "tensionScore": 9,
-      "tension": "14 voices say \"War Is Failing/Should End\" \u2014 but 3 push back: \"War Is Succeeding\""
+      "tension": "12 voices say \"War Is Failing/End It\" \u2014 but 3 push back: \"Administration Claims Success\""
     },
     "slug": "iran-war-drags-on-past-trump-s-promised-timeline-casualties-"
   },
   {
-    "headline": "ICE Enforcement Surge Sparks Deportation and Tactics Backlash",
-    "summary": "Sharp split between officials decrying ICE tactics and cruelty versus conservatives defending aggressive enforcement.",
+    "headline": "Trump Trade Policies Spark Beef, Tariff, Oil Deal Debates",
+    "summary": "Voices split between celebrating Trump's trade/resource wins and warning of economic pain, corruption, and government overreach.",
     "type": "split",
     "source": "voices",
     "coverUrl": "",
     "storyType": "",
     "topicSlugs": [
-      "immigration"
+      "economy-trade"
     ],
-    "voiceCount": 19,
-    "clusterCount": 4,
+    "voiceCount": 25,
+    "clusterCount": 6,
     "clusters": [
       {
-        "name": "Enforcement Is Overreach",
+        "name": "Economic Anxiety and Debt Concerns",
         "voices": [
           {
-            "voiceId": "bill-kristol",
-            "voiceName": "Bill Kristol",
-            "photo": "/photos/bill-kristol.jpg",
-            "quote": "\"The Haitians being fitted with monitors are not fugitives. They are showing up when the government tells them to...One woman had given birth twenty days earlier and lost the baby. 'She came to the of",
-            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3muf23yv5ok2u",
-            "platform": "bluesky",
-            "fit": 9,
+            "voiceId": "all-in-podcast",
+            "voiceName": "All-In Podcast",
+            "photo": "/photos/all-in-podcast.jpg",
+            "quote": "David Friedberg: Higher Interest Rates Are About to Make America\u2019s $40 Trillion Debt Problem Much Worse\n\n\u201cThe federal government has a problem because over the next 12 months they have to refinance $1",
+            "sourceUrl": "https://x.com/theallinpod/status/2094130282941001838",
+            "platform": "x",
+            "fit": 10,
             "quoteQuality": 5
           },
           {
-            "voiceId": "viet-thanh-nguyen",
-            "voiceName": "Viet Thanh Nguyen",
-            "photo": "/photos/viet-thanh-nguyen.jpg",
-            "quote": "The most disturbing thing about Milo Yiannopoulos' deportation is this from Homan:\n\n\"A lot of people tipped ICE off,\u201d Homan replied. \u201cThere are a lot of people who\u2019s calling ICE.\"\n\nIn other words, a l",
-            "sourceUrl": "https://bsky.app/profile/vietthanhnguyen.bsky.social/post/3mufh75biv22c",
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "Trump\u2019s Iran war escalates. Global bond markets flash warning signs. A USPS whistleblower sounds the alarm. Hegseth\u2019s Pentagon implodes. And Democrats get more good midterm news.\n\nYour midday update:",
+            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3muhy53eiu22v",
             "platform": "bluesky",
             "fit": 7,
             "quoteQuality": 5
           },
           {
-            "voiceId": "adam-schiff",
-            "voiceName": "Adam Schiff",
-            "photo": "/photos/adam-schiff.jpg",
-            "quote": "Checking people's papers randomly on the street is stuff of the 1930s. \n\nI never thought I'd see the day where that was happening here, and yet, it's reality for millions of Americans. \n\nOur democracy",
-            "sourceUrl": "https://x.com/SenAdamSchiff/status/2094160062738518394",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "cory-booker",
-            "voiceName": "Cory Booker",
-            "photo": "/photos/cory-booker.jpg",
-            "quote": "5-year-old boy wanted to play soccer. Instead, ICE pulled over his family, cuffed his father, took him away crying as he clung to his dad\u2019s shackled hands. This is cruelty inflicted on a child. Kids s",
-            "sourceUrl": "https://x.com/CoryBooker/status/2094878023757545859",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "chris-murphy",
-            "voiceName": "Chris Murphy",
-            "photo": "/photos/chris-murphy.jpg",
-            "quote": "a. Check your story. Homan does NOT deny making arrests at school bus stops. The opposite - he seems to imply it DID happen. \n\nb. Multiple sources on the ground in Danbury report that this happened. h",
-            "sourceUrl": "https://x.com/ChrisMurphyCT/status/2094584275207119228",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "pramila-jayapal",
-            "voiceName": "Pramila Jayapal",
-            "photo": "/photos/pramila-jayapal.jpg",
-            "quote": "Brian Morales, a 25-year-old U.S. citizen, was riding in a vehicle that was stopped by police in April. After the police called ICE, Brian explained to immigration officials that he is a U.S. citizen,",
-            "sourceUrl": "https://x.com/RepJayapal/status/2094538232570511488",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 6,
-        "bestQuote": {
-          "voiceName": "Bill Kristol",
-          "quote": "\"The Haitians being fitted with monitors are not fugitives. They are showing up when the government tells them to...One woman had given birth twenty days earlier and lost the baby. 'She came to the of",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Covering the Story",
-        "voices": [
-          {
-            "voiceId": "ben-shapiro",
-            "voiceName": "Ben Shapiro",
-            "photo": "/photos/ben-shapiro.jpg",
-            "quote": "The Deportation of Milo Yiannopoulos",
-            "sourceUrl": "https://www.youtube.com/watch?v=G1gHIymvlMs",
+            "voiceId": "young-turks",
+            "voiceName": "The Young Turks",
+            "photo": "/photos/young-turks.jpg",
+            "quote": "The Economy Is In BIG TROUBLE, Even If Corporations Are Not",
+            "sourceUrl": "https://www.youtube.com/watch?v=j1NRv1s9DuU",
             "platform": "youtube",
-            "fit": 6,
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "cenk-uygur",
+            "voiceName": "Cenk Uygur",
+            "photo": "/photos/cenk-uygur.jpg",
+            "quote": "The Economy Is In BIG TROUBLE, Even If Corporations Are Not",
+            "sourceUrl": "https://www.youtube.com/watch?v=j1NRv1s9DuU",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "chris-cuomo",
+            "voiceName": "Chris Cuomo",
+            "photo": "/photos/chris-cuomo.jpg",
+            "quote": "Why You Don't Feel This Economy",
+            "sourceUrl": "https://www.youtube.com/watch?v=H3d2ps2We70",
+            "platform": "youtube",
+            "fit": 9,
             "quoteQuality": 1
           },
           {
             "voiceId": "breaking-points",
             "voiceName": "Breaking Points",
             "photo": "/photos/breaking-points.jpg",
-            "quote": "Krystal And Saagar REACT: Milo DEPORTED On Laura Loomer Orders",
-            "sourceUrl": "https://www.youtube.com/watch?v=zC1dL8MoKSo",
+            "quote": "BOND Market BACKFIRE After INSANE Trump Maneuvers",
+            "sourceUrl": "https://www.youtube.com/watch?v=aP7I47gKjq4",
             "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "dave-rubin",
-            "voiceName": "Dave Rubin",
-            "photo": "/photos/dave-rubin.jpg",
-            "quote": "Dem Senate Hopeful Scrubs 9/11 Tweet; ICE Plans Robot Dogs | 9/1/26 FIRST LOOK",
-            "sourceUrl": "https://www.youtube.com/watch?v=oNxddKVGj2o",
-            "platform": "youtube",
-            "fit": 7,
+            "fit": 8,
             "quoteQuality": 1
           },
           {
             "voiceId": "krystal-ball",
             "voiceName": "Krystal Ball",
             "photo": "/photos/krystal-ball.jpg",
-            "quote": "Krystal And Saagar REACT: Milo DEPORTED On Laura Loomer Orders",
-            "sourceUrl": "https://www.youtube.com/watch?v=zC1dL8MoKSo",
+            "quote": "BOND Market BACKFIRE After INSANE Trump Maneuvers",
+            "sourceUrl": "https://www.youtube.com/watch?v=aP7I47gKjq4",
             "platform": "youtube",
-            "fit": 7,
+            "fit": 8,
             "quoteQuality": 1
           },
           {
-            "voiceId": "ryan-grim",
-            "voiceName": "Ryan Grim",
-            "photo": "/photos/ryan-grim.jpg",
-            "quote": "Capitol Hill Reacts: ICE plans to purchase $2 million worth of \u201crobot dogs\u201d",
-            "sourceUrl": "https://www.youtube.com/shorts/bFjGWsRXlyk",
+            "voiceId": "scott-galloway",
+            "voiceName": "Scott Galloway",
+            "photo": "/photos/scott-galloway.jpg",
+            "quote": "Why your kids will be poorer than you",
+            "sourceUrl": "https://www.youtube.com/shorts/wwAAwl-FROI",
             "platform": "youtube",
-            "fit": 7,
+            "fit": 9,
             "quoteQuality": 1
           },
+          {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "What's Really Driving Up the Debt?",
+            "sourceUrl": "https://www.youtube.com/shorts/l12jl_KFElE",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "brian-tyler-cohen",
+            "voiceName": "Brian Tyler Cohen",
+            "photo": "/photos/brian-tyler-cohen.jpg",
+            "quote": "Trump claims the economy in his second term \u201cBLOWS AWAY\u201d the economy in his first term",
+            "sourceUrl": "https://www.youtube.com/shorts/AqJnrqfoCMU",
+            "platform": "youtube",
+            "fit": 5,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 10,
+        "bestQuote": {
+          "voiceName": "All-In Podcast",
+          "quote": "David Friedberg: Higher Interest Rates Are About to Make America\u2019s $40 Trillion Debt Problem Much Worse\n\n\u201cThe federal government has a problem because over the next 12 months they have to refinance $1",
+          "platform": "x",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Corruption and Accountability Concerns",
+        "voices": [
           {
             "voiceId": "jeremy-scahill",
             "voiceName": "Jeremy Scahill",
             "photo": "/photos/jeremy-scahill.jpg",
-            "quote": "Capitol Hill Reacts: ICE plans to purchase $2 million worth of \u201crobot dogs\u201d",
-            "sourceUrl": "https://www.youtube.com/shorts/bFjGWsRXlyk",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 6,
-        "bestQuote": {
-          "voiceName": "Ben Shapiro",
-          "quote": "The Deportation of Milo Yiannopoulos",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "Enforcement Is Justified",
-        "voices": [
-          {
-            "voiceId": "jim-jordan",
-            "voiceName": "Jim Jordan",
-            "photo": "/photos/jim-jordan.jpg",
-            "quote": "Soros-backed DA accused of going easy on illegal immigrants gets squeezed by House GOP\nhttps://t.co/xuRIFwmCUN",
-            "sourceUrl": "https://x.com/Jim_Jordan/status/2094474585957658828",
-            "platform": "x",
-            "fit": 6,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "heritage-foundation",
-            "voiceName": "Heritage Foundation",
-            "photo": "/photos/heritage-foundation.jpg",
-            "quote": "When did enforcing immigration law become controversial? With 1.4 million final removal orders already issued, why are so many still being ignored?\n\n@BensmanTodd is a Senior Research Fellow for the Bo",
-            "sourceUrl": "https://x.com/Heritage/status/2094535061576028300",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "anna-paulina-luna",
-            "voiceName": "Anna Paulina Luna",
-            "photo": "/photos/anna-paulina-luna.jpg",
-            "quote": "An estimated 200,000 children have been born through birth tourism over the last decade, many from China!\n\nOur enemy is walking in through the front gate and we\u2019re allowing it to happen. This a SERIOU",
-            "sourceUrl": "https://x.com/RepLuna/status/2094859953731174909",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "rand-paul",
-            "voiceName": "Rand Paul",
-            "photo": "/photos/rand-paul.jpg",
-            "quote": "American families are struggling to make ends meet while Washington funds welfare for people who broke our immigration laws to get here.\n\nMy End Welfare for Non-Citizens Act ends that by cutting off T",
-            "sourceUrl": "https://x.com/RandPaul/status/2094064596193882493",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "benny-johnson",
-            "voiceName": "Benny Johnson",
-            "photo": "/photos/benny-johnson.jpg",
-            "quote": "The Biggest LIE About Mass Immigration",
-            "sourceUrl": "https://www.youtube.com/shorts/EbMQY1jkfwA",
-            "platform": "youtube",
-            "fit": 6,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 5,
-        "bestQuote": {
-          "voiceName": "Jim Jordan",
-          "quote": "Soros-backed DA accused of going easy on illegal immigrants gets squeezed by House GOP\nhttps://t.co/xuRIFwmCUN",
-          "platform": "x",
-          "quality": 4
-        }
-      },
-      {
-        "name": "Costs and Data Skepticism",
-        "voices": [
-          {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "We are projected to spend $268 BILLION on deportations \u2014 costing the average American taxpayer about $2,358 (according to \n@epi.org).\n\nBut somehow we \u201ccan\u2019t afford\u201d to make sure hungry children can ea",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mufp3lhqz62v",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "cato-institute",
-            "voiceName": "Cato Institute",
-            "photo": "/photos/cato-institute.jpg",
-            "quote": "Immigrants are less likely than US-born citizens to receive government disability income, David J. Bier reports. In 2024, just 2.61% of immigrants received disability income, compared with 5.11% of US",
-            "sourceUrl": "https://bsky.app/profile/cato.org/post/3mufsodswn62r",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Robert Reich",
-          "quote": "We are projected to spend $268 BILLION on deportations \u2014 costing the average American taxpayer about $2,358 (according to \n@epi.org).\n\nBut somehow we \u201ccan\u2019t afford\u201d to make sure hungry children can ea",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      }
-    ],
-    "confidence": 6,
-    "relevance": {
-      "direct": 11,
-      "related": 4,
-      "unrelated": 1
-    },
-    "validated": true,
-    "heatScore": 82,
-    "belowThreshold": false,
-    "counterNarrative": {
-      "dominantCluster": "Enforcement Is Overreach",
-      "dominantCount": 6,
-      "counterCluster": "Enforcement Is Justified",
-      "counterCount": 5,
-      "axis": "whether ICE tactics are legitimate",
-      "tensionScore": 9,
-      "tension": "6 voices say \"Enforcement Is Overreach\" \u2014 but 5 push back: \"Enforcement Is Justified\""
-    },
-    "slug": "ice-enforcement-sparks-backlash-over-tactics-deaths-detentio"
-  },
-  {
-    "headline": "Midterm battle: election integrity fights, vote suppression fears collide",
-    "summary": "Democrats and legal experts sound alarms over Trump-era election interference while GOP and Dems both jockey over midterm momentum.",
-    "type": "split",
-    "source": "voices",
-    "coverUrl": "",
-    "storyType": "",
-    "topicSlugs": [
-      "elections"
-    ],
-    "voiceCount": 30,
-    "clusterCount": 5,
-    "clusters": [
-      {
-        "name": "Democratic Midterm Momentum/Strategy",
-        "voices": [
-          {
-            "voiceId": "david-sirota",
-            "voiceName": "David Sirota",
-            "photo": "/photos/david-sirota.jpg",
-            "quote": "Even \"moderate\" Dems now parrot @sanders.senate.gov's populism, as I wrote in my @washingtonpost.com essay about Bernie as a left version of Goldwater.\n\nThese Dems must be held accountable to policy p",
-            "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3mug7ogif5s2l",
-            "platform": "bluesky",
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "You're going to be hearing more and more about this particular issue \u2014 and rightfully so. \n\nLet me explain what's going on \u2014 and provide some solutions. https://robertreich.substack.com/p/the-biggest-",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mui5t5jmp327",
-            "platform": "bluesky",
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "tom-nichols",
-            "voiceName": "Tom Nichols",
-            "photo": "/photos/tom-nichols.jpg",
-            "quote": "Yeah, it's a big deal. If you don't understand that, you don't understand in general why Dems struggle with single-point margins even when they should be winning all the things",
-            "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mui64ycys22k",
-            "platform": "bluesky",
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "matt-yglesias",
-            "voiceName": "Matt Yglesias",
-            "photo": "/photos/matt-yglesias.jpg",
-            "quote": "Republicans have a big midterm cash advantage (by Matthew Yglesias). Democrats have alienated billionaires without winning back the working class.",
-            "sourceUrl": "https://www.slowboring.com/p/republicans-have-a-big-midterm-cash",
+            "quote": "U.S. reignites Iran war; Israel\u2019s $3.5B defense deal with Greece; Details of Venezuela oil deal (by Drop Site News)",
+            "sourceUrl": "https://www.dropsitenews.com/p/us-iran-war-larak-israel-greece-defense-venezuela-oil-deal",
             "platform": "substack",
+            "fit": 6,
             "quoteQuality": 6
-          },
-          {
-            "voiceId": "chris-murphy",
-            "voiceName": "Chris Murphy",
-            "photo": "/photos/chris-murphy.jpg",
-            "quote": "He\u2019s given up on politics. But he\u2019s an example of why Democrats shouldn\u2019t give up on Trump voters. Even those who spout racist tropes. \n\nDavid is angry and knows he\u2019s getting screwed. He just needs to",
-            "sourceUrl": "https://x.com/ChrisMurphyCT/status/2094797966447931870",
-            "platform": "x",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "phillips-obrien",
-            "voiceName": "Phillips Payson O'Brien",
-            "photo": "/photos/phillips-obrien.jpg",
-            "quote": "One poll, but a Democrat is leading a Republican in a race for the US Senate.\n\nI believe that is a sign of something in the Book of Revelations.",
-            "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3muhf5t2wzk23",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "ted-lieu",
-            "voiceName": "Ted Lieu",
-            "photo": "/photos/ted-lieu.jpg",
-            "quote": "Just go fucking vote. https://t.co/WFzMeNuMkV",
-            "sourceUrl": "https://x.com/RepTedLieu/status/2094837800654741853",
-            "platform": "x",
-            "quoteQuality": 3
-          },
-          {
-            "voiceId": "david-pakman",
-            "voiceName": "David Pakman",
-            "photo": "/photos/david-pakman.jpg",
-            "quote": "Credit if Republicans win. Someone else\u2019s fault if they lose. #shorts",
-            "sourceUrl": "https://www.youtube.com/shorts/ZfCrHPzNmhI",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "pod-save-america",
-            "voiceName": "Pod Save America",
-            "photo": "/photos/pod-save-america.jpg",
-            "quote": "Rep. Benny Thompson on Trump's &quot;post-racial&quot; America",
-            "sourceUrl": "https://www.youtube.com/shorts/cT6zxn2Ab2Q",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "LEAKED AUDIO: Republican PANICS OVER MIDTERM DISASTER",
-            "sourceUrl": "https://www.youtube.com/watch?v=v6whgLzqZUQ",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "LEAKED AUDIO: Republican PANICS OVER MIDTERM DISASTER",
-            "sourceUrl": "https://www.youtube.com/watch?v=v6whgLzqZUQ",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "aoc",
-            "voiceName": "Alexandria Ocasio-Cortez",
-            "photo": "/photos/aoc.jpg",
-            "quote": "The future is ours and we intend to win it all.",
-            "sourceUrl": "https://www.youtube.com/shorts/K43Uzx-dIaA",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "roland-martin",
-            "voiceName": "Roland Martin",
-            "photo": "/photos/roland-martin.jpg",
-            "quote": "Tyrese Rejects \u201cBlack Men Don\u2019t Support Black Women\u201d Narrative, Backs Keisha Lance Bottoms #shorts",
-            "sourceUrl": "https://www.youtube.com/shorts/VWRq7f6hQuM",
-            "platform": "youtube",
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 13,
-        "bestQuote": {
-          "voiceName": "David Sirota",
-          "quote": "Even \"moderate\" Dems now parrot @sanders.senate.gov's populism, as I wrote in my @washingtonpost.com essay about Bernie as a left version of Goldwater.\n\nThese Dems must be held accountable to policy p",
-          "platform": "bluesky",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Trump Undermining Election Integrity",
-        "voices": [
-          {
-            "voiceId": "barb-mcquade",
-            "voiceName": "Barb McQuade",
-            "photo": "/photos/barb-mcquade.jpg",
-            "quote": "Since its inception, DOJ has worked to advance voting rights for Americans. Until Trump. His administration is using every lever of power to suppress voting and sow chaos in our upcoming election. \ufffc\nw",
-            "sourceUrl": "https://bsky.app/profile/barbmcquade.bsky.social/post/3mucp6aujik2u",
-            "platform": "bluesky",
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "steve-vladeck",
-            "voiceName": "Steve Vladeck",
-            "photo": "/photos/steve-vladeck.jpg",
-            "quote": "One of the questions #SCOTUS will soon confront in the mail-in ballot cases is whether the so-called \"Purcell principle\" should apply to late-breaking changes in election rules adopted by the *federal",
-            "sourceUrl": "https://bsky.app/profile/stevevladeck.bsky.social/post/3mues5nhsyc2h",
-            "platform": "bluesky",
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "chuck-schumer",
-            "voiceName": "Chuck Schumer",
-            "photo": "/photos/chuck-schumer.jpg",
-            "quote": "A whistleblower is warning of a \u201ccatastrophic failure\u201d in our mail-ballot system\u2014all because Trump is turning USPS into a voter suppression machine.\n\nVote-by-mail is safe and secure. Trump himself vot",
-            "sourceUrl": "https://x.com/SenSchumer/status/2094799557150347594",
-            "platform": "x",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "chris-geidner",
-            "voiceName": "Chris Geidner",
-            "photo": "/photos/chris-geidner.jpg",
-            "quote": "NEW: EPIC has sued in federal court in Maryland over the implementation of the state citizenship lists aspect of the Trump election \"integrity\" order, alleging APA and constitutional violations. The c",
-            "sourceUrl": "https://bsky.app/profile/chrisgeidner.bsky.social/post/3muhz5yssds22",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "center-for-american-progress",
-            "voiceName": "Center for American Progress",
-            "photo": "/photos/center-for-american-progress.jpg",
-            "quote": "\"The Constitution, alongside federal and state laws, will almost certainly prevent the administration from successfully rigging the vote \u2014 but only if pro-democracy Americans of all political stripes ",
-            "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3mufidnbvet2w",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "jennifer-rubin",
-            "voiceName": "Jennifer Rubin",
-            "photo": "/photos/jennifer-rubin.jpg",
-            "quote": "Any coverage that doesn\u2019t make a clear distinction between a normal \u201cd\u201ddemocratic party and a bunch of radical loons is just enabling fascism. The Contrarian takes a different approach with this barn ",
-            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mui6ztcofc2v",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "robert-garcia",
-            "voiceName": "Robert Garcia",
-            "photo": "/photos/robert-garcia.jpg",
-            "quote": "Last night @OversightDems received an alarming whistleblower report from a USPS federal official that President Trump's attack on vote-by-mail is much more serious than previously known.\n\nTrump is cre",
-            "sourceUrl": "https://x.com/RepRobertGarcia/status/2094799132246335556",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "claudio-vallejo",
-            "voiceName": "Claudio Vallejo",
-            "photo": "/photos/claudio-vallejo.jpg",
-            "quote": "1 Bad Ballot, 10,000 Rejected #news #politics #fyp #voting",
-            "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680591156920454430",
-            "platform": "tiktok",
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 8,
-        "bestQuote": {
-          "voiceName": "Barb McQuade",
-          "quote": "Since its inception, DOJ has worked to advance voting rights for Americans. Until Trump. His administration is using every lever of power to suppress voting and sow chaos in our upcoming election. \ufffc\nw",
-          "platform": "bluesky",
-          "quality": 6
-        }
-      },
-      {
-        "name": "GOP Warnings and Turnout Push",
-        "voices": [
-          {
-            "voiceId": "jd-vance",
-            "voiceName": "JD Vance",
-            "photo": "/photos/jd-vance.jpg",
-            "quote": "Here in Michigan with the great @MikeRogersforMI.\n\nWe need this man in the Senate, Michigan! Let's make it happen this November\ud83c\uddfa\ud83c\uddf8 https://t.co/kBbnOmFmH7",
-            "sourceUrl": "https://x.com/JDVance/status/2094501283524743493",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "ben-shapiro",
-            "voiceName": "Ben Shapiro",
-            "photo": "/photos/ben-shapiro.jpg",
-            "quote": "Why Republicans Are About to Lose Big \u2014 and What They Can Do",
-            "sourceUrl": "https://www.youtube.com/watch?v=7jWshq8MRCs",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "dave-rubin",
-            "voiceName": "Dave Rubin",
-            "photo": "/photos/dave-rubin.jpg",
-            "quote": "Loyal Dem Charlamagne tha God Just Noticed Dem\u2019s Huge Mistake That Will Doom Them",
-            "sourceUrl": "https://www.youtube.com/watch?v=at7aq3sUA5s",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "matt-walsh",
-            "voiceName": "Matt Walsh",
-            "photo": "/photos/matt-walsh.jpg",
-            "quote": "These people can vote",
-            "sourceUrl": "https://www.youtube.com/shorts/x6oXJpptGTc",
-            "platform": "youtube",
-            "quoteQuality": 1
           },
           {
             "voiceId": "lincoln-project",
             "voiceName": "Lincoln Project",
             "photo": "/photos/lincoln-project.jpg",
-            "quote": "Trump will sink the GOP",
-            "sourceUrl": "https://www.youtube.com/shorts/IwMrSHlY9eI",
-            "platform": "youtube",
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 5,
-        "bestQuote": {
-          "voiceName": "JD Vance",
-          "quote": "Here in Michigan with the great @MikeRogersforMI.\n\nWe need this man in the Senate, Michigan! Let's make it happen this November\ud83c\uddfa\ud83c\uddf8 https://t.co/kBbnOmFmH7",
-          "platform": "x",
-          "quality": 4
-        }
-      },
-      {
-        "name": "Progressive Establishment Critics",
-        "voices": [
+            "quote": "Trump and the GOP want you to shut up and accept data centers in your backyard, or stay \"poor and backwards\". Americans don\u2019t do that.\nhttps://www.againstallenemies.net/p/data-center-dummies?isFreemai",
+            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mufjyya5se2x",
+            "platform": "bluesky",
+            "fit": 6,
+            "quoteQuality": 5
+          },
           {
-            "voiceId": "maxwell-frost",
-            "voiceName": "Maxwell Frost",
-            "photo": "/photos/maxwell-frost.jpg",
-            "quote": "Finding office space is difficult for campaigns, especially smaller ones. This space will give our endorsed candidates an opportunity to work out of a co-working space that has what they need to be su",
-            "sourceUrl": "https://x.com/MaxwellFrostFL/status/2094551668381655104",
+            "voiceId": "david-sirota",
+            "voiceName": "David Sirota",
+            "photo": "/photos/david-sirota.jpg",
+            "quote": "Quick reminder: All the fancy pundits and politicians on your TV talking only about Hasan Piker and not about the affordability crisis are millionaires who are so rich they don\u2019t have to worry about r",
+            "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3mucmxjnei22b",
+            "platform": "bluesky",
+            "fit": 7,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "elizabeth-warren",
+            "voiceName": "Elizabeth Warren",
+            "photo": "/photos/elizabeth-warren.jpg",
+            "quote": "So let me get this straight:\n\nTrump gets a diamond ring from Belgium\u2019s diamond industry \u2192\n\nWeeks later, the Trump administration exempts European diamonds from new tariffs \u2192\n\nQuite the coincidence, if",
+            "sourceUrl": "https://x.com/ewarren/status/2094522086907605014",
             "platform": "x",
+            "fit": 10,
             "quoteQuality": 4
           },
           {
-            "voiceId": "briahna-joy-gray",
-            "voiceName": "Briahna Joy Gray",
-            "photo": "/photos/briahna-joy-gray.jpg",
-            "quote": "The Fight Inside DSA Over Whether to ENDORSE AOC for President (w/ James Ray)",
-            "sourceUrl": "https://www.youtube.com/watch?v=1dEV5Trcm3s",
+            "voiceId": "don-lemon",
+            "voiceName": "Don Lemon",
+            "photo": "/photos/don-lemon.jpg",
+            "quote": "Dr. Oz says Americans should work \u201cone extra year\u201d to help Trump\u2019s economy",
+            "sourceUrl": "https://www.youtube.com/shorts/-ohAr33w1p0",
             "platform": "youtube",
-            "quoteQuality": 1
+            "fit": 5,
+            "quoteQuality": 2
           },
           {
-            "voiceId": "mehdi-hasan",
-            "voiceName": "Mehdi Hasan",
-            "photo": "/photos/mehdi-hasan.jpg",
-            "quote": "Kamala Harris Was Not \u2018Loyal to a Fault\u2019 to My Dad",
-            "sourceUrl": "https://www.youtube.com/shorts/uJPr_h83PlM",
+            "voiceId": "ryan-grim",
+            "voiceName": "Ryan Grim",
+            "photo": "/photos/ryan-grim.jpg",
+            "quote": "America First!? Why Trump Is Making U.S. Taxpayers Pay to Keep Hormuz Open for the World",
+            "sourceUrl": "https://www.youtube.com/watch?v=W8a054sREgQ",
             "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 6,
+        "bestQuote": {
+          "voiceName": "Jeremy Scahill",
+          "quote": "U.S. reignites Iran war; Israel\u2019s $3.5B defense deal with Greece; Details of Venezuela oil deal (by Drop Site News)",
+          "platform": "substack",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Tariffs Hurting Consumers",
+        "voices": [
+          {
+            "voiceId": "matt-yglesias",
+            "voiceName": "Matt Yglesias",
+            "photo": "/photos/matt-yglesias.jpg",
+            "quote": "Democrats are screwing up the US-Canada relationship and their own political best interests by not clearly committing to undo Trump\u2019s actions here.\n\nwww.slowboring.com/p/democrats-...",
+            "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3muenvrk2pk2y",
+            "platform": "bluesky",
+            "fit": 5,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "chuck-schumer",
+            "voiceName": "Chuck Schumer",
+            "photo": "/photos/chuck-schumer.jpg",
+            "quote": "As Trump doubles down on his trade war: inflation is raging, families are struggling, small businesses are closing.\n\n@SenateDems\u00a0have fought Trump's tariffs at every turn, and we will fight to pass th",
+            "sourceUrl": "https://x.com/SenSchumer/status/2094855934409310211",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "jimmy-dore",
+            "voiceName": "Jimmy Dore",
+            "photo": "/photos/jimmy-dore.jpg",
+            "quote": "Vance: MAGA LOVES Getting Hammered by Canada Tariffs!",
+            "sourceUrl": "https://www.youtube.com/watch?v=AeqvTS8_UnI",
+            "platform": "youtube",
+            "fit": 9,
             "quoteQuality": 1
           }
         ],
         "voiceCount": 3,
         "bestQuote": {
-          "voiceName": "Maxwell Frost",
-          "quote": "Finding office space is difficult for campaigns, especially smaller ones. This space will give our endorsed candidates an opportunity to work out of a co-working space that has what they need to be su",
-          "platform": "x",
-          "quality": 4
-        }
-      },
-      {
-        "name": "Republicans Restricting Voter Access Claims",
-        "voices": [
-          {
-            "voiceId": "mike-johnson",
-            "voiceName": "Mike Johnson",
-            "photo": "/photos/mike-johnson.jpg",
-            "quote": "Every Democrat in Congress made their position clear:\n\nThey would rather let non-citizens vote illegally in our country than take easy, simple actions to secure our elections!\n\nThe American people des",
-            "sourceUrl": "https://x.com/SpeakerJohnson/status/2094080621958107296",
-            "platform": "x",
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Mike Johnson",
-          "quote": "Every Democrat in Congress made their position clear:\n\nThey would rather let non-citizens vote illegally in our country than take easy, simple actions to secure our elections!\n\nThe American people des",
-          "platform": "x",
-          "quality": 4
-        }
-      }
-    ],
-    "confidence": 6,
-    "relevance": {
-      "direct": 12,
-      "related": 15,
-      "unrelated": 3
-    },
-    "validated": false,
-    "heatScore": 78,
-    "belowThreshold": false,
-    "slug": "trump-wins-narrow-gop-primaries-as-progressives-surge-elsewh"
-  },
-  {
-    "headline": "Trump's Economic Record Sparks Affordability, Trade Debate",
-    "summary": "Economic critics and MAGA defenders clash while media voices spotlight Trump's rural data-center remarks.",
-    "type": "split",
-    "source": "voices",
-    "coverUrl": "",
-    "storyType": "",
-    "topicSlugs": [
-      "trump-policy"
-    ],
-    "voiceCount": 17,
-    "clusterCount": 4,
-    "clusters": [
-      {
-        "name": "Economy Failing Americans",
-        "voices": [
-          {
-            "voiceId": "center-for-american-progress",
-            "voiceName": "Center for American Progress",
-            "photo": "/photos/center-for-american-progress.jpg",
-            "quote": "President Trump has clearly failed to keep his promise of making life more affordable for the average American. CAP's @bbkogan.bsky.social breaks it down:",
-            "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3muhlghvttm2o",
-            "platform": "bluesky",
-            "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "scott-lincicome",
-            "voiceName": "Scott Lincicome",
-            "photo": "/photos/scott-lincicome.jpg",
-            "quote": "\"President Donald Trump\u2019s trade war with Canada is a distraction from the incompetence of his broader trade agenda.\"\nwww.syracuse.com/opinion/2026...",
-            "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mucnva26qs25",
-            "platform": "bluesky",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "chris-murphy",
-            "voiceName": "Chris Murphy",
-            "photo": "/photos/chris-murphy.jpg",
-            "quote": "I want to tell you about David, a long time Winsted small business owner who is now living out of his truck. I met him at Dunkin on my walk across the state.\n\n\u201cHow come the government spends a zillion",
-            "sourceUrl": "https://x.com/ChrisMurphyCT/status/2094797952170549530",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "mark-kelly",
-            "voiceName": "Mark Kelly",
-            "photo": "/photos/mark-kelly.jpg",
-            "quote": "What has Trump done well with this war? Nothing. Not a single thing. https://t.co/FXNIs6KpY9",
-            "sourceUrl": "https://x.com/SenMarkKelly/status/2094068287508185514",
-            "platform": "x",
-            "fit": 5,
-            "quoteQuality": 3
-          },
-          {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "How Trump Made America Expensive Again",
-            "sourceUrl": "https://www.youtube.com/watch?v=uXw1QpD2duo",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 5,
-        "bestQuote": {
-          "voiceName": "Center for American Progress",
-          "quote": "President Trump has clearly failed to keep his promise of making life more affordable for the average American. CAP's @bbkogan.bsky.social breaks it down:",
+          "voiceName": "Matt Yglesias",
+          "quote": "Democrats are screwing up the US-Canada relationship and their own political best interests by not clearly committing to undo Trump\u2019s actions here.\n\nwww.slowboring.com/p/democrats-...",
           "platform": "bluesky",
           "quality": 5
         }
       },
       {
-        "name": "Trump Policy Defenders",
+        "name": "Trump Foreign Resource Wins",
         "voices": [
           {
-            "voiceId": "mike-johnson",
-            "voiceName": "Mike Johnson",
-            "photo": "/photos/mike-johnson.jpg",
-            "quote": "The American people gave us a mandate: implement policies to improve their lives, restore common sense and deliver REAL, positive results.\n\nDemocrats REPEATEDLY stood in the way and voted AGAINST:\n\n\u27a1\ufe0f",
-            "sourceUrl": "https://x.com/SpeakerJohnson/status/2094180804259668263",
+            "voiceId": "dan-crenshaw",
+            "voiceName": "Dan Crenshaw",
+            "photo": "/photos/dan-crenshaw.jpg",
+            "quote": "Russia and China spent years looting Venezuela\u2019s oil and expanding their influence in our own backyard. That era is over.\n\nPresident Trump just secured U.S. majority control over 65 billion barrels of",
+            "sourceUrl": "https://x.com/DanCrenshawTX/status/2094808200654578111",
             "platform": "x",
-            "fit": 9,
+            "fit": 10,
             "quoteQuality": 4
           },
           {
-            "voiceId": "manhattan-institute",
-            "voiceName": "Manhattan Institute",
-            "photo": "/photos/manhattan-institute.jpg",
-            "quote": ".@DanielDiMartino, who fled Venezuela after it was destroyed by socialism, has a warning for America: \n\n \"The greatest threat America faces in the long run is the rise of support for socialism among t",
-            "sourceUrl": "https://x.com/ManhattanInst/status/2094501962851188894",
+            "voiceId": "tim-scott",
+            "voiceName": "Tim Scott",
+            "photo": "/photos/tim-scott.jpg",
+            "quote": "Since 2025, billions in private investments have been brought to South Carolina.\n\nThese investments are advancing auto manufacturing, aluminum production, and critical care - strengthening industries ",
+            "sourceUrl": "https://x.com/SenatorTimScott/status/2094433360701452355",
             "platform": "x",
-            "fit": 7,
+            "fit": 5,
             "quoteQuality": 4
           },
           {
-            "voiceId": "tucker-carlson",
-            "voiceName": "Tucker Carlson",
-            "photo": "/photos/tucker-carlson.jpg",
-            "quote": "Trump Was Right.",
-            "sourceUrl": "https://www.youtube.com/shorts/LZ-wnj4LfEM",
+            "voiceId": "benny-johnson",
+            "voiceName": "Benny Johnson",
+            "photo": "/photos/benny-johnson.jpg",
+            "quote": "Iran in Shambles As Trump COLONIZES Venezuela in Secret Oil DEAL of Century...American Empire REVEAL",
+            "sourceUrl": "https://www.youtube.com/watch?v=kQAQok65AnU",
             "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 2
-          },
-          {
-            "voiceId": "vivek-ramaswamy",
-            "voiceName": "Vivek Ramaswamy",
-            "photo": "/photos/vivek-ramaswamy.jpg",
-            "quote": "We\u2019re grateful for it: the American Dream. \ud83d\ude4f",
-            "sourceUrl": "https://www.youtube.com/shorts/Xu_53RcgeYo",
-            "platform": "youtube",
-            "fit": 6,
+            "fit": 10,
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 4,
+        "voiceCount": 3,
         "bestQuote": {
-          "voiceName": "Mike Johnson",
-          "quote": "The American people gave us a mandate: implement policies to improve their lives, restore common sense and deliver REAL, positive results.\n\nDemocrats REPEATEDLY stood in the way and voted AGAINST:\n\n\u27a1\ufe0f",
+          "voiceName": "Dan Crenshaw",
+          "quote": "Russia and China spent years looting Venezuela\u2019s oil and expanding their influence in our own backyard. That era is over.\n\nPresident Trump just secured U.S. majority control over 65 billion barrels of",
           "platform": "x",
           "quality": 4
         }
       },
       {
-        "name": "GOP Overreach Criticism",
+        "name": "Government Overreach Warnings",
         "voices": [
+          {
+            "voiceId": "yascha-mounk",
+            "voiceName": "Yascha Mounk",
+            "photo": "/photos/yascha-mounk.jpg",
+            "quote": "Washington Learns the Wrong Lessons from Beijing (by Shahn Louis). The state can't just prop up the companies it wants to succeed.",
+            "sourceUrl": "https://www.persuasion.community/p/washington-learns-the-wrong-lessons",
+            "platform": "substack",
+            "fit": 9,
+            "quoteQuality": 7
+          },
           {
             "voiceId": "radley-balko",
             "voiceName": "Radley Balko",
@@ -1127,124 +1676,54 @@
             "quote": "We must stop these socialists before they tell companies who they can and can't hire, threaten executives into giving the government part ownership of their companies, pick winners and losers through ",
             "sourceUrl": "https://bsky.app/profile/radleybalko.bsky.social/post/3muhopielr22i",
             "platform": "bluesky",
-            "fit": 9,
+            "fit": 10,
             "quoteQuality": 6
-          },
-          {
-            "voiceId": "bill-kristol",
-            "voiceName": "Bill Kristol",
-            "photo": "/photos/bill-kristol.jpg",
-            "quote": "\u201cRepublican voters are in favor of hurting the out-group. They are in favor of cruelty. They want conspiratorial thinking. They have a preference for corruption. They are in favor of these traits even",
-            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3muhub6wiuk2o",
-            "platform": "bluesky",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "jennifer-rubin",
-            "voiceName": "Jennifer Rubin",
-            "photo": "/photos/jennifer-rubin.jpg",
-            "quote": "Any coverage that doesn\u2019t make a clear distinction between a normal \u201cd\u201ddemocratic party and a bunch of radical loons is just enabling fascism. The Contrarian takes a different approach with this barn ",
-            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mui6ztcofc2v",
-            "platform": "bluesky",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "lincoln-project",
-            "voiceName": "Lincoln Project",
-            "photo": "/photos/lincoln-project.jpg",
-            "quote": "Trump will sink the GOP",
-            "sourceUrl": "https://www.youtube.com/shorts/IwMrSHlY9eI",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
           }
         ],
-        "voiceCount": 4,
+        "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Radley Balko",
-          "quote": "We must stop these socialists before they tell companies who they can and can't hire, threaten executives into giving the government part ownership of their companies, pick winners and losers through ",
-          "platform": "bluesky",
-          "quality": 6
+          "voiceName": "Yascha Mounk",
+          "quote": "Washington Learns the Wrong Lessons from Beijing (by Shahn Louis). The state can't just prop up the companies it wants to succeed.",
+          "platform": "substack",
+          "quality": 7
         }
       },
       {
-        "name": "Media/Rural Backlash Coverage",
+        "name": "Farmers Harmed by Trade Deals",
         "voices": [
           {
-            "voiceId": "brian-tyler-cohen",
-            "voiceName": "Brian Tyler Cohen",
-            "photo": "/photos/brian-tyler-cohen.jpg",
-            "quote": "WTF: GOP Congressman claims \u201cleft-wing media\u201d is lying about Trump\u2019s economy",
-            "sourceUrl": "https://www.youtube.com/shorts/TLNVvtT2puw",
-            "platform": "youtube",
-            "fit": 6,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "Trump: Rural Americans 'BACKWARDS, POOR' For Rejecting Data Centers",
-            "sourceUrl": "https://www.youtube.com/watch?v=dfqW_bGMWhY",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "Trump: Rural Americans 'BACKWARDS, POOR' For Rejecting Data Centers",
-            "sourceUrl": "https://www.youtube.com/watch?v=dfqW_bGMWhY",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "glenn-beck",
-            "voiceName": "Glenn Beck",
-            "photo": "/photos/glenn-beck.jpg",
-            "quote": "Trump BROKE The Left With Lake America",
-            "sourceUrl": "https://www.youtube.com/watch?v=jdI5tH33IM0",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
+            "voiceId": "tucker-carlson",
+            "voiceName": "Tucker Carlson",
+            "photo": "/photos/tucker-carlson.jpg",
+            "quote": "Allowing Argentina to dump 300,000 tons of beef on American markets will inevitably mean bankrupt ranchers and rotten hamburgers. Missouri farmer Joe Maxwell explains.\n\n0:00 Trump Importing Foreign Be",
+            "sourceUrl": "https://x.com/TuckerCarlson/status/2094470448582926722",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
           }
         ],
-        "voiceCount": 4,
+        "voiceCount": 1,
         "bestQuote": {
-          "voiceName": "Brian Tyler Cohen",
-          "quote": "WTF: GOP Congressman claims \u201cleft-wing media\u201d is lying about Trump\u2019s economy",
-          "platform": "youtube",
-          "quality": 1
+          "voiceName": "Tucker Carlson",
+          "quote": "Allowing Argentina to dump 300,000 tons of beef on American markets will inevitably mean bankrupt ranchers and rotten hamburgers. Missouri farmer Joe Maxwell explains.\n\n0:00 Trump Importing Foreign Be",
+          "platform": "x",
+          "quality": 4
         }
       }
     ],
     "confidence": 5,
     "relevance": {
-      "direct": 10,
-      "related": 8,
-      "unrelated": 2
+      "direct": 12,
+      "total": 26
     },
     "validated": true,
-    "heatScore": 78,
+    "heatScore": 65,
     "belowThreshold": false,
-    "counterNarrative": {
-      "dominantCluster": "Economy Failing Americans",
-      "dominantCount": 5,
-      "counterCluster": "Trump Policy Defenders",
-      "counterCount": 4,
-      "axis": "whether Trump's economy is working",
-      "tensionScore": 9,
-      "tension": "5 voices say \"Economy Failing Americans\" \u2014 but 4 push back: \"Trump Policy Defenders\""
-    },
-    "slug": "trump-s-economic-record-sparks-affordability-trade-debate"
+    "slug": "trump-trade-policies-spark-beef-tariff-oil-deal-debates"
   },
   {
-    "headline": "Israeli Settlers Attack NBC Crew in West Bank",
-    "summary": "Multiple outlets spotlight settler violence against journalists while others debate US-Israel leverage and lobby influence.",
+    "headline": "Israeli Settlers Attack NBC Crew Amid West Bank Violence",
+    "summary": "Coverage centers on an NBC crew attacked by Israeli settlers, with progressives condemning violence and calling for accountability.",
     "type": "spectrum",
     "source": "voices",
     "coverUrl": "",
@@ -1252,8 +1731,8 @@
     "topicSlugs": [
       "israel-palestine"
     ],
-    "voiceCount": 13,
-    "clusterCount": 5,
+    "voiceCount": 12,
+    "clusterCount": 6,
     "clusters": [
       {
         "name": "Settler Violence Coverage",
@@ -1269,21 +1748,21 @@
             "quoteQuality": 1
           },
           {
-            "voiceId": "cenk-uygur",
-            "voiceName": "Cenk Uygur",
-            "photo": "/photos/cenk-uygur.jpg",
-            "quote": "VIDEO: Israeli Settlers ATTACK NBC News Team",
-            "sourceUrl": "https://www.youtube.com/watch?v=5anzaIexEDQ",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          },
-          {
             "voiceId": "breaking-points",
             "voiceName": "Breaking Points",
             "photo": "/photos/breaking-points.jpg",
             "quote": "NBC News Crew BEATEN LIVE By Israeli Settlers",
             "sourceUrl": "https://www.youtube.com/watch?v=3CdWulq2NRw",
+            "platform": "youtube",
+            "fit": 10,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "cenk-uygur",
+            "voiceName": "Cenk Uygur",
+            "photo": "/photos/cenk-uygur.jpg",
+            "quote": "VIDEO: Israeli Settlers ATTACK NBC News Team",
+            "sourceUrl": "https://www.youtube.com/watch?v=5anzaIexEDQ",
             "platform": "youtube",
             "fit": 10,
             "quoteQuality": 1
@@ -1297,19 +1776,9 @@
             "platform": "youtube",
             "fit": 10,
             "quoteQuality": 1
-          },
-          {
-            "voiceId": "mehdi-hasan",
-            "voiceName": "Mehdi Hasan",
-            "photo": "/photos/mehdi-hasan.jpg",
-            "quote": "Palestinian American: Israelis Military Always Sides With Illegal Settlers",
-            "sourceUrl": "https://www.youtube.com/shorts/FCA2HPDv63o",
-            "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
           }
         ],
-        "voiceCount": 5,
+        "voiceCount": 4,
         "bestQuote": {
           "voiceName": "The Young Turks",
           "quote": "VIDEO: Israeli Settlers ATTACK NBC News Team",
@@ -1318,7 +1787,7 @@
         }
       },
       {
-        "name": "Condemning Ethnic Cleansing",
+        "name": "Questioning Israeli-US Dynamics",
         "voices": [
           {
             "voiceId": "charlie-sykes",
@@ -1327,31 +1796,9 @@
             "quote": "From this weekend\u2019s \u201cTo the Contrary\u201d podcast with @repauchincloss.bsky.social. Both Trump and Netanyahu have forfeited any trust\u2026\n\nyoutube.com/shorts/RZrvP...",
             "sourceUrl": "https://bsky.app/profile/sykescharlie.bsky.social/post/3muckpcu2i22k",
             "platform": "bluesky",
-            "fit": 5,
+            "fit": 8,
             "quoteQuality": 5
           },
-          {
-            "voiceId": "bernie-sanders",
-            "voiceName": "Bernie Sanders",
-            "photo": "/photos/bernie-sanders.jpg",
-            "quote": "Listen to the words of retired Israeli generals speaking out against Israeli settlers terrorizing Palestinians in the West Bank.\n \n\u201cThis is ethnic cleansing.\"\n \n\u201cOnce a society behaves this way, that ",
-            "sourceUrl": "https://x.com/SenSanders/status/2094546237647192439",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Charlie Sykes",
-          "quote": "From this weekend\u2019s \u201cTo the Contrary\u201d podcast with @repauchincloss.bsky.social. Both Trump and Netanyahu have forfeited any trust\u2026\n\nyoutube.com/shorts/RZrvP...",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Questioning Israeli-US Dynamics",
-        "voices": [
           {
             "voiceId": "tucker-carlson",
             "voiceName": "Tucker Carlson",
@@ -1373,16 +1820,16 @@
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 2,
+        "voiceCount": 3,
         "bestQuote": {
-          "voiceName": "Tucker Carlson",
-          "quote": "The Israelis Ignored Trump's Request...",
-          "platform": "youtube",
-          "quality": 1
+          "voiceName": "Charlie Sykes",
+          "quote": "From this weekend\u2019s \u201cTo the Contrary\u201d podcast with @repauchincloss.bsky.social. Both Trump and Netanyahu have forfeited any trust\u2026\n\nyoutube.com/shorts/RZrvP...",
+          "platform": "bluesky",
+          "quality": 5
         }
       },
       {
-        "name": "Broader Gaza/Region Reporting",
+        "name": "Gaza Humanitarian Conditions",
         "voices": [
           {
             "voiceId": "ryan-grim",
@@ -1391,17 +1838,17 @@
             "quote": "Israel\u2019s Restrictions on Engine Oil Threaten Gaza\u2019s Ability to Generate Electricity (by Mohanad El-Hemrwawi). As Israel continues to restrict the entry of engine oil and spare parts, Gaza\u2019s strained n",
             "sourceUrl": "https://www.dropsitenews.com/p/gaza-engine-oil-generators-electricity-israeli-siege",
             "platform": "substack",
-            "fit": 9,
+            "fit": 10,
             "quoteQuality": 6
           },
           {
             "voiceId": "jeremy-scahill",
             "voiceName": "Jeremy Scahill",
             "photo": "/photos/jeremy-scahill.jpg",
-            "quote": "U.S. reignites Iran war; Israel\u2019s $3.5B defense deal with Greece; Details of Venezuela oil deal (by Drop Site News)",
-            "sourceUrl": "https://www.dropsitenews.com/p/us-iran-war-larak-israel-greece-defense-venezuela-oil-deal",
+            "quote": "Israel\u2019s Restrictions on Engine Oil Threaten Gaza\u2019s Ability to Generate Electricity (by Mohanad El-Hemrwawi). As Israel continues to restrict the entry of engine oil and spare parts, Gaza\u2019s strained n",
+            "sourceUrl": "https://www.dropsitenews.com/p/gaza-engine-oil-generators-electricity-israeli-siege",
             "platform": "substack",
-            "fit": 8,
+            "fit": 10,
             "quoteQuality": 6
           }
         ],
@@ -1414,7 +1861,51 @@
         }
       },
       {
-        "name": "Lobby and Diplomacy Nuance",
+        "name": "Condemning Ethnic Cleansing",
+        "voices": [
+          {
+            "voiceId": "bernie-sanders",
+            "voiceName": "Bernie Sanders",
+            "photo": "/photos/bernie-sanders.jpg",
+            "quote": "Listen to the words of retired Israeli generals speaking out against Israeli settlers terrorizing Palestinians in the West Bank.\n \n\u201cThis is ethnic cleansing.\"\n \n\u201cOnce a society behaves this way, that ",
+            "sourceUrl": "https://x.com/SenSanders/status/2094546237647192439",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Bernie Sanders",
+          "quote": "Listen to the words of retired Israeli generals speaking out against Israeli settlers terrorizing Palestinians in the West Bank.\n \n\u201cThis is ethnic cleansing.\"\n \n\u201cOnce a society behaves this way, that ",
+          "platform": "x",
+          "quality": 4
+        }
+      },
+      {
+        "name": "Peacebuilding Diplomacy",
+        "voices": [
+          {
+            "voiceId": "pramila-jayapal",
+            "voiceName": "Pramila Jayapal",
+            "photo": "/photos/pramila-jayapal.jpg",
+            "quote": "Just wrapped up my time in Ireland and Northern Ireland \u2013 meeting with Fintan O\u2019Toole at Trinity College and joining 30 Palestinian and Israeli women for a conversation on peacebuilding.\n\nI\u2019m grateful",
+            "sourceUrl": "https://x.com/RepJayapal/status/2094514944788382189",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 1,
+        "bestQuote": {
+          "voiceName": "Pramila Jayapal",
+          "quote": "Just wrapped up my time in Ireland and Northern Ireland \u2013 meeting with Fintan O\u2019Toole at Trinity College and joining 30 Palestinian and Israeli women for a conversation on peacebuilding.\n\nI\u2019m grateful",
+          "platform": "x",
+          "quality": 4
+        }
+      },
+      {
+        "name": "Distinguishing Criticism from Bigotry",
         "voices": [
           {
             "voiceId": "thomas-massie",
@@ -1423,21 +1914,11 @@
             "quote": "It\u2019s disingenuous and harmful to equate the Zionist lobby in D.C. with all Jewish people. While it\u2019s true RJC/AIPAC donors get a lot of credit for defeating me, I still harbor no ill feelings toward a",
             "sourceUrl": "https://x.com/RepThomasMassie/status/2094415352608248003",
             "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "pramila-jayapal",
-            "voiceName": "Pramila Jayapal",
-            "photo": "/photos/pramila-jayapal.jpg",
-            "quote": "Just wrapped up my time in Ireland and Northern Ireland \u2013 meeting with Fintan O\u2019Toole at Trinity College and joining 30 Palestinian and Israeli women for a conversation on peacebuilding.\n\nI\u2019m grateful",
-            "sourceUrl": "https://x.com/RepJayapal/status/2094514944788382189",
-            "platform": "x",
-            "fit": 6,
+            "fit": 10,
             "quoteQuality": 4
           }
         ],
-        "voiceCount": 2,
+        "voiceCount": 1,
         "bestQuote": {
           "voiceName": "Thomas Massie",
           "quote": "It\u2019s disingenuous and harmful to equate the Zionist lobby in D.C. with all Jewish people. While it\u2019s true RJC/AIPAC donors get a lot of credit for defeating me, I still harbor no ill feelings toward a",
@@ -1449,59 +1930,325 @@
     "confidence": 6,
     "relevance": {
       "direct": 6,
-      "related": 8,
-      "unrelated": 0
+      "related": 6,
+      "unrelated": 1
     },
     "validated": true,
-    "heatScore": 56,
+    "heatScore": 55,
     "belowThreshold": false,
-    "counterNarrative": {
-      "dominantCluster": "Condemning Ethnic Cleansing",
-      "dominantCount": 2,
-      "counterCluster": "Lobby and Diplomacy Nuance",
-      "counterCount": 2,
-      "axis": "moral framing vs. diplomatic caution",
-      "tensionScore": 7,
-      "tension": "2 voices say \"Condemning Ethnic Cleansing\" \u2014 but 2 push back: \"Lobby and Diplomacy Nuance\""
-    },
     "slug": "israel-gaza-war-fallout-splinters-media-commentary-widely"
   },
   {
-    "headline": "Supreme Court Allows White House Ballroom Construction to Proceed",
-    "summary": "A narrow SCOTUS ruling splits legal commentators on court bias while most other voices are talking about unrelated stories.",
-    "type": "split",
-    "source": "editorial",
-    "coverUrl": "https://cdn.newsreel.co/storage/v1/object/public/story-media/stories/a548d6de-a238-4058-a608-40de05418ffa/cover/bcbb516f-81ee-4c8d-b111-fe29a3dbe4da.mp4",
-    "storyType": "Politics",
+    "headline": "Congress passes CR; Epstein files petition, Massie fight continue",
+    "summary": "Congress touts a bipartisan funding deal while Epstein files fight and dark-money critiques simmer beneath the surface.",
+    "type": "spectrum",
+    "source": "voices",
+    "coverUrl": "",
+    "storyType": "",
     "topicSlugs": [
-      "supreme-court-legal",
-      "trump-administration"
+      "congress-legislation"
     ],
-    "voiceCount": 10,
-    "clusterCount": 4,
+    "voiceCount": 17,
+    "clusterCount": 6,
     "clusters": [
       {
-        "name": "Court Bias & Legal Analysis",
+        "name": "Money in Politics Critique",
         "voices": [
           {
-            "voiceId": "chris-geidner",
-            "voiceName": "Chris Geidner",
-            "photo": "/photos/chris-geidner.jpg",
-            "quote": "Breaking: Supreme Court\u2019s GOP appointees, on a 5-4 vote, allow Trump\u2019s ballroom construction to proceed. Chief Justice John Roberts dissented, for himself and the three Democratic appointees. And, for",
-            "sourceUrl": "https://www.lawdork.com/p/breaking-supreme-courts-gop-appointees",
-            "platform": "substack",
-            "fit": 9,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "jamelle-bouie",
-            "voiceName": "Jamelle Bouie",
-            "photo": "/photos/jamelle-bouie.jpg",
-            "quote": "why would any agency abide an injunction knowing there is a decent chance the supreme court will lift it because the president is a special birthday boy? www.nytimes.com/2026/09/01/u...",
-            "sourceUrl": "https://bsky.app/profile/jamellebouie.net/post/3muhaysuigs26",
+            "voiceId": "david-sirota",
+            "voiceName": "David Sirota",
+            "photo": "/photos/david-sirota.jpg",
+            "quote": "The reason Corporate Dems are freaking out is because for the first time in decades, they are losing their power to help their donors control Democrats\u2019 agenda. \n\nExample \ud83d\udc47",
+            "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3muhjnls4ms2k",
             "platform": "bluesky",
             "fit": 8,
             "quoteQuality": 6
+          },
+          {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "This is how our government has been corrupted: \n\n1) Donors give huge sums to elect politicians to office\n2) Elected officials rewrite rules in the donors' favor\n3) Donors make huge profit\n4) Repeat\n\nW",
+            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mufsfbtyna2j",
+            "platform": "bluesky",
+            "fit": 10,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "mark-kelly",
+            "voiceName": "Mark Kelly",
+            "photo": "/photos/mark-kelly.jpg",
+            "quote": "No one in Congress should be trading stocks. It\u2019s that simple.",
+            "sourceUrl": "https://bsky.app/profile/captmarkkelly.bsky.social/post/3mufsujnpdd2b",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "sheldon-whitehouse",
+            "voiceName": "Sheldon Whitehouse",
+            "photo": "/photos/sheldon-whitehouse.jpg",
+            "quote": "It matters when huge methane leakers get busted by satellites. Of course Republicans in Congress went out of their way (changed Senate rules!) to protect our worst methane leakers (aka their stinky fo",
+            "sourceUrl": "https://x.com/SenWhitehouse/status/2094826699183595696",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "David Sirota",
+          "quote": "The reason Corporate Dems are freaking out is because for the first time in decades, they are losing their power to help their donors control Democrats\u2019 agenda. \n\nExample \ud83d\udc47",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Democratic Accountability & Advocacy",
+        "voices": [
+          {
+            "voiceId": "jasmine-crockett",
+            "voiceName": "Jasmine Crockett",
+            "photo": "/photos/jasmine-crockett.jpg",
+            "quote": "62 years ago TODAY, President Johnson signed SNAP into law with a promise that hunger should never stand between a family and getting by. \n\nSix decades later, SNAP is still a lifeline for millions. \n\n",
+            "sourceUrl": "https://x.com/RepJasmine/status/2094549953809154264",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "ted-lieu",
+            "voiceName": "Ted Lieu",
+            "photo": "/photos/ted-lieu.jpg",
+            "quote": "We must protect American workers and hold criminals accountable.\n\nNow it\u2019s time for the Senate to pass this important piece of legislation. https://t.co/nE2mu6Ujqm",
+            "sourceUrl": "https://x.com/RepTedLieu/status/2094540938672546057",
+            "platform": "x",
+            "fit": 6,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "roland-martin",
+            "voiceName": "Roland Martin",
+            "photo": "/photos/roland-martin.jpg",
+            "quote": "DeSantis Admin Misused Taxpayer Millions. Jeffries Talks Affordability. Clyburn Regrets Thomas",
+            "sourceUrl": "https://www.youtube.com/watch?v=p_rqkbK-f14",
+            "platform": "youtube",
+            "fit": 5,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "mehdi-hasan",
+            "voiceName": "Mehdi Hasan",
+            "photo": "/photos/mehdi-hasan.jpg",
+            "quote": "AOC Calls Out GOP Silence on Loomer's Racist Attack",
+            "sourceUrl": "https://www.youtube.com/shorts/T8XdLW7AL34",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "Jasmine Crockett",
+          "quote": "62 years ago TODAY, President Johnson signed SNAP into law with a promise that hunger should never stand between a family and getting by. \n\nSix decades later, SNAP is still a lifeline for millions. \n\n",
+          "platform": "x",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Comedic/Media Commentary",
+        "voices": [
+          {
+            "voiceId": "hasanabi",
+            "voiceName": "HasanAbi",
+            "photo": "/photos/hasanabi.jpg",
+            "quote": "JASMINE CROCKETT WONT HELP JAMES TALARICO",
+            "sourceUrl": "https://www.youtube.com/watch?v=mQWSPykVGWU",
+            "platform": "youtube",
+            "fit": 5,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "jon-stewart",
+            "voiceName": "Jon Stewart",
+            "photo": "/photos/jon-stewart.jpg",
+            "quote": "Democrats' Leverage | The Weekly Show with Jon Stewart",
+            "sourceUrl": "https://www.youtube.com/shorts/802em4qfq0w",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "john-oliver",
+            "voiceName": "John Oliver",
+            "photo": "/photos/john-oliver.jpg",
+            "quote": "S10 E20: Mike Johnson &amp; Freight Trains: Last Week Tonight with John Oliver",
+            "sourceUrl": "https://www.youtube.com/watch?v=U5378zFEVLQ",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "HasanAbi",
+          "quote": "JASMINE CROCKETT WONT HELP JAMES TALARICO",
+          "platform": "youtube",
+          "quality": 1
+        }
+      },
+      {
+        "name": "Government Funding Success",
+        "voices": [
+          {
+            "voiceId": "john-thune",
+            "voiceName": "John Thune",
+            "photo": "/photos/john-thune.jpg",
+            "quote": "I\u2019m glad that congressional Republicans not only prioritized removing the threat of another dangerous government shutdown, but we did our job weeks before the deadline and with bipartisan support. Whi",
+            "sourceUrl": "https://x.com/LeaderJohnThune/status/2094853926801580520",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "katie-britt",
+            "voiceName": "Katie Britt",
+            "photo": "/photos/katie-britt.jpg",
+            "quote": "Thrilled to see the House pass the CR with overwhelming bipartisan support and fund the government through December 11, avoiding another senseless shutdown.\n\nThere is still more work to do, and we mus",
+            "sourceUrl": "https://x.com/SenKatieBritt/status/2094856409393308097",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "John Thune",
+          "quote": "I\u2019m glad that congressional Republicans not only prioritized removing the threat of another dangerous government shutdown, but we did our job weeks before the deadline and with bipartisan support. Whi",
+          "platform": "x",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Epstein Files Transparency Push",
+        "voices": [
+          {
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "NEW: Thomas Massie\u2019s new Epstein files discharge petition is gaining signatures, with 16 Democrats joining the effort to force a House vote.\n\nBut Massie remains the ONLY Republican to sign.",
+            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mui5gka6jk2l",
+            "platform": "bluesky",
+            "fit": 10,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "thomas-massie",
+            "voiceName": "Thomas Massie",
+            "photo": "/photos/thomas-massie.jpg",
+            "quote": "Yesterday, @RoKhanna, @RepTeresaLF, and I launched a discharge petition to collect 218 signatures to force a vote on Epstein Files Transparency Act II.\n\nNow there are rumors @SpeakerJohnson will soon ",
+            "sourceUrl": "https://x.com/RepThomasMassie/status/2094788606825017457",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "MeidasTouch",
+          "quote": "NEW: Thomas Massie\u2019s new Epstein files discharge petition is gaining signatures, with 16 Democrats joining the effort to force a House vote.\n\nBut Massie remains the ONLY Republican to sign.",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Immigration & Welfare Restriction",
+        "voices": [
+          {
+            "voiceId": "nancy-mace",
+            "voiceName": "Nancy Mace",
+            "photo": "/photos/nancy-mace.jpg",
+            "quote": "The American people are tired of a government working against them. They deserve to know the people running federal agencies, handling their data, and accessing classified information are Americans fi",
+            "sourceUrl": "https://x.com/RepNancyMace/status/2094508078762758641",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "rand-paul",
+            "voiceName": "Rand Paul",
+            "photo": "/photos/rand-paul.jpg",
+            "quote": "We have a $40 trillion debt and an affordability crisis. Congress created these welfare programs, and Congress can decide who gets them. My bill says federal welfare benefits are for Americans, not il",
+            "sourceUrl": "https://x.com/RandPaul/status/2094877956728590837",
+            "platform": "x",
+            "fit": 10,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Nancy Mace",
+          "quote": "The American people are tired of a government working against them. They deserve to know the people running federal agencies, handling their data, and accessing classified information are Americans fi",
+          "platform": "x",
+          "quality": 4
+        }
+      }
+    ],
+    "confidence": 4,
+    "relevance": {
+      "direct": 6,
+      "related": 12,
+      "unrelated": 1
+    },
+    "validated": true,
+    "heatScore": 54,
+    "belowThreshold": false,
+    "counterNarrative": {
+      "dominantCluster": "Money in Politics Critique",
+      "dominantCount": 4,
+      "counterCluster": "Government Funding Success",
+      "counterCount": 2,
+      "axis": "whether the deal is legitimate",
+      "tensionScore": 7,
+      "tension": "4 voices say \"Money in Politics Critique\" \u2014 but 2 push back: \"Government Funding Success\""
+    },
+    "slug": "congress-tackles-epstein-files-dark-money-stock-trading-bill"
+  },
+  {
+    "headline": "Supreme Court allows Trump ballroom demolition to proceed",
+    "summary": "Progressive legal voices blast the Court's Trump ballroom ruling as further evidence for structural reform, while conservatives frame it as a win.",
+    "type": "split",
+    "source": "voices",
+    "coverUrl": "",
+    "storyType": "",
+    "topicSlugs": [
+      "supreme-court-legal"
+    ],
+    "voiceCount": 11,
+    "clusterCount": 4,
+    "clusters": [
+      {
+        "name": "Court Enabled Trump's Overreach",
+        "voices": [
+          {
+            "voiceId": "joyce-vance",
+            "voiceName": "Joyce Vance",
+            "photo": "/photos/joyce-vance.jpg",
+            "quote": "5 justices told Trump all was forgiven for tearing down the historic East Wing of the WH & he could carry on with his ballroom project while litigation about its legality proceeded. Justices Kagan, So",
+            "sourceUrl": "https://bsky.app/profile/joycewhitevance.bsky.social/post/3mugnb3i5qs2j",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "If a future Democratic president wants to demolish Trump\u2019s ballroom, no one would have standing to complain. https://robertreich.substack.com/p/next-move-on-trumps-billionaire-ballroom",
+            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3muhpkzw3b42x",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
           },
           {
             "voiceId": "steve-vladeck",
@@ -1512,61 +2259,91 @@
             "platform": "bluesky",
             "fit": 9,
             "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Chris Geidner",
-          "quote": "Breaking: Supreme Court\u2019s GOP appointees, on a 5-4 vote, allow Trump\u2019s ballroom construction to proceed. Chief Justice John Roberts dissented, for himself and the three Democratic appointees. And, for",
-          "platform": "substack",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Ballroom Criticism & Outrage",
-        "voices": [
-          {
-            "voiceId": "rachel-maddow",
-            "voiceName": "Rachel Maddow",
-            "photo": "/photos/rachel-maddow.jpg",
-            "quote": "Trump BUSTED in bogus ballroom claim by Obama era secret. Rachel Maddow explains how a secret bomb shelter installed under the White House during the Obama administration undercuts Donald Trump's lega",
-            "sourceUrl": "https://www.ms.now/",
-            "platform": "podcast",
-            "fit": 7,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "jennifer-rubin",
-            "voiceName": "Jennifer Rubin",
-            "photo": "/photos/jennifer-rubin.jpg",
-            "quote": "Any Democrat elected must vow to tear down the monstrous, hideoous Trump ballroom",
-            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mufrdxk3e22w",
-            "platform": "bluesky",
-            "fit": 10,
-            "quoteQuality": 5
           },
           {
             "voiceId": "sheldon-whitehouse",
             "voiceName": "Sheldon Whitehouse",
             "photo": "/photos/sheldon-whitehouse.jpg",
-            "quote": "One thing courts can do is put failing institutions into supervision, whether the failures are financial or fiduciary. It is increasingly obvious that the present Kennedy Center board sees its duty no",
-            "sourceUrl": "https://x.com/SenWhitehouse/status/2094520956228161994",
+            "quote": "What is it about Trump that gives the Republican justices such spines of foam?  \nhttps://t.co/Ni3MixAZQ4",
+            "sourceUrl": "https://x.com/SenWhitehouse/status/2094793040636395555",
             "platform": "x",
-            "fit": 6,
+            "fit": 8,
             "quoteQuality": 4
+          },
+          {
+            "voiceId": "jennifer-rubin",
+            "voiceName": "Jennifer Rubin",
+            "photo": "/photos/jennifer-rubin.jpg",
+            "quote": "and the rest are craven MAGA enablers, making the case for court expansion and term limits",
+            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mufrh3sn6k2w",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "kyle-kulinski",
+            "voiceName": "Kyle Kulinski",
+            "photo": "/photos/kyle-kulinski.jpg",
+            "quote": "THE SUPREME COURT IS A DISGRACE",
+            "sourceUrl": "https://www.youtube.com/watch?v=aQ_i_DOK0k8",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
           }
         ],
-        "voiceCount": 3,
+        "voiceCount": 6,
         "bestQuote": {
-          "voiceName": "Rachel Maddow",
-          "quote": "Trump BUSTED in bogus ballroom claim by Obama era secret. Rachel Maddow explains how a secret bomb shelter installed under the White House during the Obama administration undercuts Donald Trump's lega",
-          "platform": "podcast",
+          "voiceName": "Joyce Vance",
+          "quote": "5 justices told Trump all was forgiven for tearing down the historic East Wing of the WH & he could carry on with his ballroom project while litigation about its legality proceeded. Justices Kagan, So",
+          "platform": "bluesky",
           "quality": 5
         }
       },
       {
-        "name": "Trump Legal Win",
+        "name": "Calls for Court Reform",
         "voices": [
+          {
+            "voiceId": "joy-reid",
+            "voiceName": "Joy Reid",
+            "photo": "/photos/joy-reid.jpg",
+            "quote": "But let's be clear: this should ONLY happen once a constitutional presidency has been restored. Trump should not get four more picks. Nor should Peter Thiel's puppet, John Donal Hamel Vance. Or Megalo",
+            "sourceUrl": "https://bsky.app/profile/joyannreid.bsky.social/post/3mucskpgvns2r",
+            "platform": "bluesky",
+            "fit": 7,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "leah-litman",
+            "voiceName": "Leah Litman",
+            "photo": "/photos/leah-litman.jpg",
+            "quote": "That *Rep. Jim Clyburn* is announcing his support for SCOTUS expansion is huge.",
+            "sourceUrl": "https://bsky.app/profile/leahlitman.bsky.social/post/3mucn4avm6c2w",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Joy Reid",
+          "quote": "But let's be clear: this should ONLY happen once a constitutional presidency has been restored. Trump should not get four more picks. Nor should Peter Thiel's puppet, John Donal Hamel Vance. Or Megalo",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Trump/Conservative Wins Framing",
+        "voices": [
+          {
+            "voiceId": "ted-cruz",
+            "voiceName": "Ted Cruz",
+            "photo": "/photos/ted-cruz.jpg",
+            "quote": "America has no shortage of celebrities. We have a shortage of heroes.\n\nClarence Thomas endured poverty, racism, anger and extraordinary adversity without allowing any of them to define the limits of h",
+            "sourceUrl": "https://x.com/tedcruz/status/2094871647945671092",
+            "platform": "x",
+            "fit": 5,
+            "quoteQuality": 4
+          },
           {
             "voiceId": "michael-knowles",
             "voiceName": "Michael Knowles",
@@ -1576,55 +2353,35 @@
             "platform": "youtube",
             "fit": 10,
             "quoteQuality": 1
-          },
-          {
-            "voiceId": "ted-cruz",
-            "voiceName": "Ted Cruz",
-            "photo": "/photos/ted-cruz.jpg",
-            "quote": "BONUS POD: Trump\u2019s Massive Supreme Court Win Keeps The Cranes Keep Moving",
-            "sourceUrl": "https://www.youtube.com/watch?v=kIA3sN21NN0",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
           }
         ],
         "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Michael Knowles",
-          "quote": "Trump Secures Huge Win In The Supreme Court",
-          "platform": "youtube",
-          "quality": 1
+          "voiceName": "Ted Cruz",
+          "quote": "America has no shortage of celebrities. We have a shortage of heroes.\n\nClarence Thomas endured poverty, racism, anger and extraordinary adversity without allowing any of them to define the limits of h",
+          "platform": "x",
+          "quality": 4
         }
       },
       {
-        "name": "Broader Democracy Concerns",
+        "name": "Rule of Law Concerns",
         "voices": [
           {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "The lesson of history is that tyrants cannot be appeased. \n\nAppeasement only feeds their insatiable hunger for power.\n\nTyrants prey on people who feel unsafe and vulnerable. \n\nBut without mass submiss",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mufk2mp45m2g",
-            "platform": "bluesky",
+            "voiceId": "adam-schiff",
+            "voiceName": "Adam Schiff",
+            "photo": "/photos/adam-schiff.jpg",
+            "quote": "I believe our Constitution is the strongest in the world. \n\nBut it means nothing if those who swear an oath to uphold it refuse to accept basic facts or distinguish between right and wrong. https://t.",
+            "sourceUrl": "https://x.com/SenAdamSchiff/status/2094472069949915600",
+            "platform": "x",
             "fit": 8,
             "quoteQuality": 5
-          },
-          {
-            "voiceId": "leah-litman",
-            "voiceName": "Leah Litman",
-            "photo": "/photos/leah-litman.jpg",
-            "quote": "That *Rep. Jim Clyburn* is announcing his support for SCOTUS expansion is huge.",
-            "sourceUrl": "https://bsky.app/profile/leahlitman.bsky.social/post/3mucn4avm6c2w",
-            "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 4
           }
         ],
-        "voiceCount": 2,
+        "voiceCount": 1,
         "bestQuote": {
-          "voiceName": "Robert Reich",
-          "quote": "The lesson of history is that tyrants cannot be appeased. \n\nAppeasement only feeds their insatiable hunger for power.\n\nTyrants prey on people who feel unsafe and vulnerable. \n\nBut without mass submiss",
-          "platform": "bluesky",
+          "voiceName": "Adam Schiff",
+          "quote": "I believe our Constitution is the strongest in the world. \n\nBut it means nothing if those who swear an oath to uphold it refuse to accept basic facts or distinguish between right and wrong. https://t.",
+          "platform": "x",
           "quality": 5
         }
       }
@@ -1632,26 +2389,26 @@
     "confidence": 6,
     "relevance": {
       "direct": 8,
-      "related": 3,
-      "unrelated": 20
+      "related": 4,
+      "unrelated": 3
     },
     "validated": true,
-    "heatScore": 53,
+    "heatScore": 54,
     "belowThreshold": false,
     "counterNarrative": {
-      "dominantCluster": "Court Bias & Legal Analysis",
-      "dominantCount": 3,
-      "counterCluster": "Trump Legal Win",
+      "dominantCluster": "Court Enabled Trump's Overreach",
+      "dominantCount": 6,
+      "counterCluster": "Trump/Conservative Wins Framing",
       "counterCount": 2,
-      "axis": "whether ruling was legitimate/fair",
-      "tensionScore": 7,
-      "tension": "3 voices say \"Court Bias & Legal Analysis\" \u2014 but 2 push back: \"Trump Legal Win\""
+      "axis": "whether ruling is legitimate or corrupt",
+      "tensionScore": 8,
+      "tension": "6 voices say \"Court Enabled Trump's Overreach\" \u2014 but 2 push back: \"Trump/Conservative Wins Framing\""
     },
     "slug": "supreme-court-rulings-spark-court-expansion-debate"
   },
   {
-    "headline": "Billionaire power grows across tech, media, and politics",
-    "summary": "Progressives and Never-Trump conservatives converge in alarm over billionaire power, while a few voices defend or merely report on it.",
+    "headline": "Billionaire wealth and power concentration draw fire",
+    "summary": "Progressive voices decry billionaire wealth concentration while tech critics warn of AI-industry excess and unaccountable power.",
     "type": "spectrum",
     "source": "voices",
     "coverUrl": "",
@@ -1660,72 +2417,10 @@
       "billionaires-wealth"
     ],
     "voiceCount": 11,
-    "clusterCount": 3,
+    "clusterCount": 4,
     "clusters": [
       {
-        "name": "Alarmed by Tech Oligarchs",
-        "voices": [
-          {
-            "voiceId": "bill-kristol",
-            "voiceName": "Bill Kristol",
-            "photo": "/photos/bill-kristol.jpg",
-            "quote": "Dems Have a Hasan Piker Problem. But the GOP Has a Much, Much Bigger Elon Musk Problem.\ncharliesykes.substack.com/p/dems-have-...",
-            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3muhbdijhvs25",
-            "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "charlie-sykes",
-            "voiceName": "Charlie Sykes",
-            "photo": "/photos/charlie-sykes.jpg",
-            "quote": "If a Twitch influencer who has campaigned with a handful of Democrats is a big issue, then what ought we to make of Elon Musk \u2014 the richest and most virulent antisemite and racist on the planet \u2014 bank",
-            "sourceUrl": "https://bsky.app/profile/sykescharlie.bsky.social/post/3muf2a23dms2g",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "ed-zitron",
-            "voiceName": "Ed Zitron",
-            "photo": "/photos/ed-zitron.jpg",
-            "quote": "Understanding the motives behind the trillions in spending requires you to shift your perception of the bubble from the financials toward perception management.  NVIDIA has invested billions to keep t",
-            "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3muhyrjwmnc2a",
-            "platform": "bluesky",
-            "fit": 6,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "spencer-ackerman",
-            "voiceName": "Spencer Ackerman",
-            "photo": "/photos/spencer-ackerman.jpg",
-            "quote": "Thiel is the likeliest figure there is to being the Antichrist",
-            "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3muhzwm4nhs2n",
-            "platform": "bluesky",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "phillips-obrien",
-            "voiceName": "Phillips Payson O'Brien",
-            "photo": "/photos/phillips-obrien.jpg",
-            "quote": "Well, looks like the \u201cdon\u2019t do evil\u201d phase is well and truly over.",
-            "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3muf2m73t6s2c",
-            "platform": "bluesky",
-            "fit": 6,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 5,
-        "bestQuote": {
-          "voiceName": "Bill Kristol",
-          "quote": "Dems Have a Hasan Piker Problem. But the GOP Has a Much, Much Bigger Elon Musk Problem.\ncharliesykes.substack.com/p/dems-have-...",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Critiquing Concentrated Wealth",
+        "name": "Inequality Demands Action",
         "voices": [
           {
             "voiceId": "david-sirota",
@@ -1744,7 +2439,7 @@
             "quote": "The richest man owns X.\n\nThe second and fourth richest men control Google.\n\nThe third richest man owns The Washington Post. \n\nThe sixth richest man owns Facebook, Instagram, and WhatsApp.\n\nAnd now the",
             "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3muflqbkfti2r",
             "platform": "bluesky",
-            "fit": 8,
+            "fit": 7,
             "quoteQuality": 5
           },
           {
@@ -1764,7 +2459,7 @@
             "quote": "\u201cLet Data Reign\u201d? Seriously? I think billionaires are already reigning quite enough, thank you. https://t.co/6qfIbxwDzu",
             "sourceUrl": "https://x.com/SenWhitehouse/status/2094802840183042242",
             "platform": "x",
-            "fit": 8,
+            "fit": 7,
             "quoteQuality": 4
           }
         ],
@@ -1777,7 +2472,81 @@
         }
       },
       {
-        "name": "Defending Wealth/Innovation",
+        "name": "Tech Power Skepticism",
+        "voices": [
+          {
+            "voiceId": "ed-zitron",
+            "voiceName": "Ed Zitron",
+            "photo": "/photos/ed-zitron.jpg",
+            "quote": "Understanding the motives behind the trillions in spending requires you to shift your perception of the bubble from the financials toward perception management.  NVIDIA has invested billions to keep t",
+            "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3muhyrjwmnc2a",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "phillips-obrien",
+            "voiceName": "Phillips Payson O'Brien",
+            "photo": "/photos/phillips-obrien.jpg",
+            "quote": "Well, looks like the \u201cdon\u2019t do evil\u201d phase is well and truly over.",
+            "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3muf2m73t6s2c",
+            "platform": "bluesky",
+            "fit": 6,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "spencer-ackerman",
+            "voiceName": "Spencer Ackerman",
+            "photo": "/photos/spencer-ackerman.jpg",
+            "quote": "Thiel is the likeliest figure there is to being the Antichrist",
+            "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3muhzwm4nhs2n",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "Ed Zitron",
+          "quote": "Understanding the motives behind the trillions in spending requires you to shift your perception of the bubble from the financials toward perception management.  NVIDIA has invested billions to keep t",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Elon Musk Politics Debate",
+        "voices": [
+          {
+            "voiceId": "bill-kristol",
+            "voiceName": "Bill Kristol",
+            "photo": "/photos/bill-kristol.jpg",
+            "quote": "Dems Have a Hasan Piker Problem. But the GOP Has a Much, Much Bigger Elon Musk Problem.\ncharliesykes.substack.com/p/dems-have-...",
+            "sourceUrl": "https://bsky.app/profile/billkristolbulwark.bsky.social/post/3muhbdijhvs25",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "charlie-sykes",
+            "voiceName": "Charlie Sykes",
+            "photo": "/photos/charlie-sykes.jpg",
+            "quote": "If a Twitch influencer who has campaigned with a handful of Democrats is a big issue, then what ought we to make of Elon Musk \u2014 the richest and most virulent antisemite and racist on the planet \u2014 bank",
+            "sourceUrl": "https://bsky.app/profile/sykescharlie.bsky.social/post/3muf2a23dms2g",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Bill Kristol",
+          "quote": "Dems Have a Hasan Piker Problem. But the GOP Has a Much, Much Bigger Elon Musk Problem.\ncharliesykes.substack.com/p/dems-have-...",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Tech Optimism",
         "voices": [
           {
             "voiceId": "all-in-podcast",
@@ -1796,7 +2565,7 @@
             "quote": "Palmer Luckey is right. America is not an economic zone.",
             "sourceUrl": "https://www.youtube.com/shorts/gOO5tLOoUrY",
             "platform": "youtube",
-            "fit": 8,
+            "fit": 6,
             "quoteQuality": 2
           }
         ],
@@ -1813,438 +2582,20 @@
     "relevance": {
       "direct": 6,
       "related": 6,
-      "unrelated": 2
+      "unrelated": 3
     },
     "validated": true,
     "heatScore": 52,
     "belowThreshold": false,
     "counterNarrative": {
-      "dominantCluster": "Critiquing Concentrated Wealth",
-      "dominantCount": 4,
-      "counterCluster": "Defending Wealth/Innovation",
+      "dominantCluster": "Tech Power Skepticism",
+      "dominantCount": 3,
+      "counterCluster": "Tech Optimism",
       "counterCount": 2,
-      "axis": "whether concentrated wealth benefits society",
+      "axis": "whether tech power benefits society",
       "tensionScore": 8,
-      "tension": "4 voices say \"Critiquing Concentrated Wealth\" \u2014 but 2 push back: \"Defending Wealth/Innovation\""
+      "tension": "3 voices say \"Tech Power Skepticism\" \u2014 but 2 push back: \"Tech Optimism\""
     },
     "slug": "billionaire-wealth-and-media-tech-concentration-draw-fresh-s"
-  },
-  {
-    "headline": "Congress tackles Epstein files, dark money, stock trading bills",
-    "summary": "A scattered mix of Epstein files pressure, dark-money reform, and unrelated legislative wins dominate the conversation.",
-    "type": "spectrum",
-    "source": "voices",
-    "coverUrl": "",
-    "storyType": "",
-    "topicSlugs": [
-      "congress-legislation"
-    ],
-    "voiceCount": 14,
-    "clusterCount": 5,
-    "clusters": [
-      {
-        "name": "Money-in-Politics Reform",
-        "voices": [
-          {
-            "voiceId": "david-sirota",
-            "voiceName": "David Sirota",
-            "photo": "/photos/david-sirota.jpg",
-            "quote": "Lever Weekly: Surveillance, Swipe Fees, And Super PACs  (by The Lever). Suspiciously timed donations, corporate double agents, and more from The Lever this week.",
-            "sourceUrl": "https://www.levernews.com/lever-weekly-surveillance-swipe-fees-and-super-pacs/",
-            "platform": "substack",
-            "fit": 8,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "This is how our government has been corrupted: \n\n1) Donors give huge sums to elect politicians to office\n2) Elected officials rewrite rules in the donors' favor\n3) Donors make huge profit\n4) Repeat\n\nW",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mufsfbtyna2j",
-            "platform": "bluesky",
-            "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "sheldon-whitehouse",
-            "voiceName": "Sheldon Whitehouse",
-            "photo": "/photos/sheldon-whitehouse.jpg",
-            "quote": "This damned dark money is a toxin in our body politic and for the health of our democracy we need to GET RID OF IT.\nwww.nytimes.com/2026/08/31/u...",
-            "sourceUrl": "https://bsky.app/profile/whitehouse.senate.gov/post/3muf6nvan3s2f",
-            "platform": "bluesky",
-            "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "mark-kelly",
-            "voiceName": "Mark Kelly",
-            "photo": "/photos/mark-kelly.jpg",
-            "quote": "No one in Congress should be trading stocks. It\u2019s that simple.",
-            "sourceUrl": "https://bsky.app/profile/captmarkkelly.bsky.social/post/3mufsujnpdd2b",
-            "platform": "bluesky",
-            "fit": 6,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 4,
-        "bestQuote": {
-          "voiceName": "David Sirota",
-          "quote": "Lever Weekly: Surveillance, Swipe Fees, And Super PACs  (by The Lever). Suspiciously timed donations, corporate double agents, and more from The Lever this week.",
-          "platform": "substack",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Democratic Accountability & Priorities",
-        "voices": [
-          {
-            "voiceId": "jasmine-crockett",
-            "voiceName": "Jasmine Crockett",
-            "photo": "/photos/jasmine-crockett.jpg",
-            "quote": "62 years ago TODAY, President Johnson signed SNAP into law with a promise that hunger should never stand between a family and getting by. \n\nSix decades later, SNAP is still a lifeline for millions. \n\n",
-            "sourceUrl": "https://x.com/RepJasmine/status/2094549953809154264",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "roland-martin",
-            "voiceName": "Roland Martin",
-            "photo": "/photos/roland-martin.jpg",
-            "quote": "DeSantis Admin Misused Taxpayer Millions. Jeffries Talks Affordability. Clyburn Regrets Thomas",
-            "sourceUrl": "https://www.youtube.com/watch?v=p_rqkbK-f14",
-            "platform": "youtube",
-            "fit": 6,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "hasanabi",
-            "voiceName": "HasanAbi",
-            "photo": "/photos/hasanabi.jpg",
-            "quote": "JASMINE CROCKETT WONT HELP JAMES TALARICO",
-            "sourceUrl": "https://www.youtube.com/watch?v=mQWSPykVGWU",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "jon-stewart",
-            "voiceName": "Jon Stewart",
-            "photo": "/photos/jon-stewart.jpg",
-            "quote": "Democrats' Leverage | The Weekly Show with Jon Stewart",
-            "sourceUrl": "https://www.youtube.com/shorts/802em4qfq0w",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 4,
-        "bestQuote": {
-          "voiceName": "Jasmine Crockett",
-          "quote": "62 years ago TODAY, President Johnson signed SNAP into law with a promise that hunger should never stand between a family and getting by. \n\nSix decades later, SNAP is still a lifeline for millions. \n\n",
-          "platform": "x",
-          "quality": 5
-        }
-      },
-      {
-        "name": "GOP Oversight & Governance Wins",
-        "voices": [
-          {
-            "voiceId": "john-thune",
-            "voiceName": "John Thune",
-            "photo": "/photos/john-thune.jpg",
-            "quote": "I\u2019m glad that congressional Republicans not only prioritized removing the threat of another dangerous government shutdown, but we did our job weeks before the deadline and with bipartisan support. Whi",
-            "sourceUrl": "https://x.com/LeaderJohnThune/status/2094853926801580520",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "jim-jordan",
-            "voiceName": "Jim Jordan",
-            "photo": "/photos/jim-jordan.jpg",
-            "quote": "Soros-backed DA accused of going easy on illegal immigrants gets squeezed by House GOP\nhttps://t.co/xuRIFwmCUN",
-            "sourceUrl": "https://x.com/Jim_Jordan/status/2094474585957658828",
-            "platform": "x",
-            "fit": 6,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "katie-britt",
-            "voiceName": "Katie Britt",
-            "photo": "/photos/katie-britt.jpg",
-            "quote": "The Lindsey O. Graham Sanctioning Russia and Iran Act gives @POTUS powerful tools to cut off the funding for Putin\u2019s war machine and hold bad actors accountable. I was proud to help champion his legis",
-            "sourceUrl": "https://x.com/SenKatieBritt/status/2094459442049769981",
-            "platform": "x",
-            "fit": 7,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "John Thune",
-          "quote": "I\u2019m glad that congressional Republicans not only prioritized removing the threat of another dangerous government shutdown, but we did our job weeks before the deadline and with bipartisan support. Whi",
-          "platform": "x",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Immigration & Welfare Restriction",
-        "voices": [
-          {
-            "voiceId": "rand-paul",
-            "voiceName": "Rand Paul",
-            "photo": "/photos/rand-paul.jpg",
-            "quote": "We have a $40 trillion debt and an affordability crisis. Congress created these welfare programs, and Congress can decide who gets them. My bill says federal welfare benefits are for Americans, not il",
-            "sourceUrl": "https://x.com/RandPaul/status/2094877956728590837",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "nancy-mace",
-            "voiceName": "Nancy Mace",
-            "photo": "/photos/nancy-mace.jpg",
-            "quote": "The American people are tired of a government working against them. They deserve to know the people running federal agencies, handling their data, and accessing classified information are Americans fi",
-            "sourceUrl": "https://x.com/RepNancyMace/status/2094508078762758641",
-            "platform": "x",
-            "fit": 7,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Rand Paul",
-          "quote": "We have a $40 trillion debt and an affordability crisis. Congress created these welfare programs, and Congress can decide who gets them. My bill says federal welfare benefits are for Americans, not il",
-          "platform": "x",
-          "quality": 4
-        }
-      },
-      {
-        "name": "Epstein Files Transparency Push",
-        "voices": [
-          {
-            "voiceId": "meidastouch",
-            "voiceName": "MeidasTouch",
-            "photo": "/photos/meidastouch.jpg",
-            "quote": "NEW: Thomas Massie\u2019s new Epstein files discharge petition is gaining signatures, with 16 Democrats joining the effort to force a House vote.\n\nBut Massie remains the ONLY Republican to sign.",
-            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mui5gka6jk2l",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "MeidasTouch",
-          "quote": "NEW: Thomas Massie\u2019s new Epstein files discharge petition is gaining signatures, with 16 Democrats joining the effort to force a House vote.\n\nBut Massie remains the ONLY Republican to sign.",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      }
-    ],
-    "confidence": 4,
-    "relevance": {
-      "direct": 6,
-      "related": 14,
-      "unrelated": 2
-    },
-    "validated": true,
-    "heatScore": 51,
-    "belowThreshold": false,
-    "counterNarrative": {
-      "dominantCluster": "Money-in-Politics Reform",
-      "dominantCount": 4,
-      "counterCluster": "GOP Oversight & Governance Wins",
-      "counterCount": 3,
-      "axis": "dark money disclosure vs deregulation",
-      "tensionScore": 7,
-      "tension": "4 voices say \"Money-in-Politics Reform\" \u2014 but 3 push back: \"GOP Oversight & Governance Wins\""
-    },
-    "slug": "congress-tackles-epstein-files-dark-money-stock-trading-bill"
-  },
-  {
-    "headline": "State Leaders Push Back on Trump's Data Center Praise",
-    "summary": "Republicans split between championing data centers for AI dominance and warning about costs to constituents.",
-    "type": "split",
-    "source": "editorial",
-    "coverUrl": "https://cdn.newsreel.co/storage/v1/object/public/story-media/stories/4b8f3239-01e1-4567-b2ea-e9051da5b1e1/cover/480cb254-b2a8-4ba5-8a9e-84100d99b630.mp4",
-    "storyType": "Technology",
-    "topicSlugs": [
-      "ai-technology",
-      "trump-administration",
-      "state-local-politics"
-    ],
-    "voiceCount": 10,
-    "clusterCount": 4,
-    "clusters": [
-      {
-        "name": "AI Race Requires Data Centers",
-        "voices": [
-          {
-            "voiceId": "dan-crenshaw",
-            "voiceName": "Dan Crenshaw",
-            "photo": "/photos/dan-crenshaw.jpg",
-            "quote": "President Trump is right. China would absolutely love for America to talk itself out of building the infrastructure necessary to dominate AI. In fact, they\u2019re already running influence operations to e",
-            "sourceUrl": "https://x.com/DanCrenshawTX/status/2094481384337510808",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "john-fetterman",
-            "voiceName": "John Fetterman",
-            "photo": "/photos/john-fetterman.jpg",
-            "quote": "Agreed.\n\nWe must win the war for AI supremacy over China. They foment the \u2018anti\u2019 argument through misinformation. \n\nThere\u2019s nothing more damaging to a Democrat than agreeing with Trump AND data center",
-            "sourceUrl": "https://x.com/SenFettermanPA/status/2094478069486813210",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "michael-mccaul",
-            "voiceName": "Michael McCaul",
-            "photo": "/photos/michael-mccaul.jpg",
-            "quote": "America is in an AI race with the Chinese Communist Party. We cannot spend billions trying to protect our technological advantage while American companies package up our best human expertise and sell ",
-            "sourceUrl": "https://x.com/RepMcCaul/status/2094462820091838633",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Dan Crenshaw",
-          "quote": "President Trump is right. China would absolutely love for America to talk itself out of building the infrastructure necessary to dominate AI. In fact, they\u2019re already running influence operations to e",
-          "platform": "x",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Skeptical of Data Center Hype",
-        "voices": [
-          {
-            "voiceId": "mark-levin",
-            "voiceName": "Mark Levin",
-            "photo": "/photos/mark-levin.jpg",
-            "quote": "Are You Being Lied To About AI? The Reality of Data Centers",
-            "sourceUrl": "https://www.youtube.com/watch?v=k5V6zaqnkp8",
-            "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "glenn-beck",
-            "voiceName": "Glenn Beck",
-            "photo": "/photos/glenn-beck.jpg",
-            "quote": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It",
-            "sourceUrl": "https://www.youtube.com/watch?v=tZXjYJsVdmI",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "claudio-vallejo",
-            "voiceName": "Claudio Vallejo",
-            "photo": "/photos/claudio-vallejo.jpg",
-            "quote": "Trump vs. His Own Comment Section on Data Centers #news #politics #funny #datacenter",
-            "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680274785837878559",
-            "platform": "tiktok",
-            "fit": 6,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Mark Levin",
-          "quote": "Are You Being Lied To About AI? The Reality of Data Centers",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "Broader AI Governance Concerns",
-        "voices": [
-          {
-            "voiceId": "ian-bremmer",
-            "voiceName": "Ian Bremmer",
-            "photo": "/photos/ian-bremmer.jpg",
-            "quote": "i've never seen a technology with more potential to advance humanity.\n\ni also recognize there's next to zero governance.\n\nthat's an unsustainable combination.\n\n@gzeromedia.com",
-            "sourceUrl": "https://bsky.app/profile/ianbremmer.com/post/3mufq5ci5e22z",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "noah-smith",
-            "voiceName": "Noah Smith",
-            "photo": "/photos/noah-smith.jpg",
-            "quote": "In this week's roundup:\n* Why the Hugging Face attack means AI won't take your job\n* Why smartphones, not TV, are the Bad Technology\n* Acemoglu attacks AI in yet another paper, and it's...not a good p",
-            "sourceUrl": "https://x.com/Noahpinion/status/2094613230673154068",
-            "platform": "x",
-            "fit": 4,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "scott-galloway",
-            "voiceName": "Scott Galloway",
-            "photo": "/photos/scott-galloway.jpg",
-            "quote": "Is China Winning the Global AI Trust War? | China Decode",
-            "sourceUrl": "https://www.youtube.com/watch?v=IfIzGTsgMdU",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Ian Bremmer",
-          "quote": "i've never seen a technology with more potential to advance humanity.\n\ni also recognize there's next to zero governance.\n\nthat's an unsustainable combination.\n\n@gzeromedia.com",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Consumer Protection Measures",
-        "voices": [
-          {
-            "voiceId": "katie-britt",
-            "voiceName": "Katie Britt",
-            "photo": "/photos/katie-britt.jpg",
-            "quote": "I was proud to stand with @POTUS as major technology companies signed the Ratepayer Protection Pledge to ensure the costs of data centers developments are not passed on to consumers. \n\nThis was an out",
-            "sourceUrl": "https://x.com/SenKatieBritt/status/2094503930784801241",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Katie Britt",
-          "quote": "I was proud to stand with @POTUS as major technology companies signed the Ratepayer Protection Pledge to ensure the costs of data centers developments are not passed on to consumers. \n\nThis was an out",
-          "platform": "x",
-          "quality": 4
-        }
-      }
-    ],
-    "confidence": 5,
-    "relevance": {
-      "direct": 7,
-      "related": 6,
-      "unrelated": 15
-    },
-    "validated": true,
-    "heatScore": 50,
-    "belowThreshold": false,
-    "counterNarrative": {
-      "dominantCluster": "AI Race Requires Data Centers",
-      "dominantCount": 3,
-      "counterCluster": "Skeptical of Data Center Hype",
-      "counterCount": 3,
-      "axis": "whether data center boom is beneficial",
-      "tensionScore": 8,
-      "tension": "3 voices say \"AI Race Requires Data Centers\" \u2014 but 3 push back: \"Skeptical of Data Center Hype\""
-    },
-    "slug": "trump-backs-data-centers-as-state-leaders-voice-concerns"
   }
 ]
