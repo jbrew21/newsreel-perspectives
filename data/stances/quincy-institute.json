@@ -2,8 +2,8 @@
   "voiceId": "quincy-institute",
   "voiceName": "Quincy Institute",
   "updatedAt": "2026-09-01",
-  "topicCount": 8,
-  "stanceCount": 10,
+  "topicCount": 9,
+  "stanceCount": 13,
   "topics": [
     {
       "topic": "trump-administration",
@@ -27,6 +27,33 @@
           "summary": "Warns Trump administration conflates protest with terrorism",
           "quote": "Trump designates protesters terrorists. How far will it go? (by Elizabeth Beavers). Protesting is terrorism. At least, that is the message that the Trump administration has communicated in a series of recent actions, culminating last week in its designation of the U.K.-based Pale",
           "sourceUrl": "https://responsiblestatecraft.org/palestine-action-terrorists/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Criticizes Trump's Venezuelan oil agreement as poorly conceived",
+          "quote": "Trump plan to control Venezuelan oil has more holes than Swiss cheese (by Orlando P\u00e9rez). President Donald Trump announced Friday that the United States \u201chas just entered into an Agreement\u201d with Venezuela covering more than 65 billion barrels of proven oil reserves, secured \u201cat n",
+          "sourceUrl": "https://responsiblestatecraft.org/trump-oil-venezuela/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Links Trump's tariffs and military spending to rising interest rates and financial instability",
+          "quote": "Trump's war and tariffs are having a nasty effect on interest rates (by Karthik Sankaran). Over the last month, Treasury Secretary Scott Bessent has engaged in two controversial and rare interventions in financial markets. The first came in early August when the U.S. Treasury joi",
+          "sourceUrl": "https://responsiblestatecraft.org/trump-interest-rates-war/",
           "platform": "blog"
         }
       ],
@@ -62,7 +89,7 @@
     {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
-      "count": 1,
+      "count": 2,
       "lastActive": "2026-08-31",
       "stances": [
         {
@@ -72,6 +99,15 @@
           "summary": "Criticizes U.S. pressure on Ukraine to draft women instead of seek peace",
           "quote": "Western hawks are pushing Ukraine to draft its women (by Branko Marcetic). Ukraine is already suffering a severe demographic crisis as a result of the decision to eschew peace talks and pursue military victory instead \u2014 a decision backed emphatically by U.S. and European leaders ",
           "sourceUrl": "https://responsiblestatecraft.org/ukraine-draft-women/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Questions viability of U.S. stabilization efforts in Libya",
+          "quote": "Trump wants to stabilize Libya. Militants have other plans. (by Khaled Mahmoud). A series of crises have roiled Libya over the last month, undermining a U.S.-led initiative to resolve the country\u2019s profound political predicament and open its markets to American investment.Violent",
+          "sourceUrl": "https://responsiblestatecraft.org/libya-trump/",
           "platform": "blog"
         }
       ],
@@ -132,24 +168,6 @@
       "active": true
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Links Trump's tariffs and military spending to rising interest rates and financial instability",
-          "quote": "Trump's war and tariffs are having a nasty effect on interest rates (by Karthik Sankaran). Over the last month, Treasury Secretary Scott Bessent has engaged in two controversial and rare interventions in financial markets. The first came in early August when the U.S. Treasury joi",
-          "sourceUrl": "https://responsiblestatecraft.org/trump-interest-rates-war/",
-          "platform": "blog"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 1,
@@ -162,6 +180,24 @@
           "summary": "Criticizes Graham successor as continuing hawkish war party foreign policy",
           "quote": "Lindsey Graham's sister wins. The War Party wins. We lose, again. (by Jack Hunter). Darline Graham won the Republican primary Tuesday and will likely win a full-term to fill her late brother Lindsey Graham\u2019s U.S. Senate seat in the ruby red state of South Carolina in the upcoming",
           "sourceUrl": "https://responsiblestatecraft.org/lindsey-graham-sister-wins/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 1,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Analyzes evolution of pro-Israel advocacy and lobbying in U.S. politics",
+          "quote": "Israel's Lobby 2.0: What Walt &amp; Mearsheimer didn't anticipate (by John B. Judis). In March 2006, the Anti-Defamation League (ADL) denounced the essay by John Mearsheimer and Stephen Walt, \"The Israel Lobby and U.S. Foreign Policy,\" as a \"a classical conspiratorial anti-Semiti",
+          "sourceUrl": "https://responsiblestatecraft.org/israel-lobby-book/",
           "platform": "blog"
         }
       ],

@@ -2,8 +2,8 @@
   "voiceId": "julio-ricardo-varela",
   "voiceName": "Julio Ricardo Varela",
   "updatedAt": "2026-09-01",
-  "topicCount": 6,
-  "stanceCount": 9,
+  "topicCount": 7,
+  "stanceCount": 10,
   "topics": [
     {
       "topic": "media-press",
@@ -67,6 +67,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 1,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Studios risk peril by abandoning LGBTQ representation in film",
+          "quote": "New Pressing Issues from @freepress.bsky.social \n\nStudios Forsake LGBTQ Representation at Their Own Peril\n\nQ&A with @glaad.bsky.social\u2019s Associate Director of Entertainment Research and Analysis Raina Deerwater about the \u201cWhere We Are in Film\u201d report \n\nBy Cristina Escobar",
+          "sourceUrl": "https://bsky.app/profile/juliorvarela.com/post/3muhwheccok2m",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "immigration",

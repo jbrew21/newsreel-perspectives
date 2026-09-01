@@ -3,7 +3,7 @@
   "voiceName": "Yascha Mounk",
   "updatedAt": "2026-09-01",
   "topicCount": 10,
-  "stanceCount": 24,
+  "stanceCount": 25,
   "topics": [
     {
       "topic": "culture-war",
@@ -114,6 +114,42 @@
       "active": false
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Warns against government picking winners in business competition",
+          "quote": "Washington Learns the Wrong Lessons from Beijing (by Shahn Louis). The state can't just prop up the companies it wants to succeed.",
+          "sourceUrl": "https://www.persuasion.community/p/washington-learns-the-wrong-lessons",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Critiques wealth taxes as populist policy",
+          "quote": "Wealth Taxes Are Slopulism (by Joseph Heath)",
+          "sourceUrl": "https://www.persuasion.community/p/wealth-taxes-are-slopulism",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Digital age severed link between economic growth and shared prosperity",
+          "quote": "Daron Acemoglu on Why Liberalism Became a Victim of Its Own Success. Yascha Mounk and Daron Acemoglu examine how the digital age severed the link between economic growth and shared prosperity.",
+          "sourceUrl": "https://www.persuasion.community/p/daron-acemoglu-2",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 2,
@@ -162,33 +198,6 @@
           "summary": "Warns Trump expanded executive power dangerously, difficult to reverse",
           "quote": "Trump Has Revolutionized Executive Power (by Francis Fukuyama). It will take a supreme act of will for the next administration to put the genie back in the bottle.",
           "sourceUrl": "https://www.persuasion.community/p/the-grave-choice-facing-the-next",
-          "platform": "substack"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 2,
-      "lastActive": "2026-08-12",
-      "stances": [
-        {
-          "date": "2026-08-12",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Critiques wealth taxes as populist policy",
-          "quote": "Wealth Taxes Are Slopulism (by Joseph Heath)",
-          "sourceUrl": "https://www.persuasion.community/p/wealth-taxes-are-slopulism",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Digital age severed link between economic growth and shared prosperity",
-          "quote": "Daron Acemoglu on Why Liberalism Became a Victim of Its Own Success. Yascha Mounk and Daron Acemoglu examine how the digital age severed the link between economic growth and shared prosperity.",
-          "sourceUrl": "https://www.persuasion.community/p/daron-acemoglu-2",
           "platform": "substack"
         }
       ],

@@ -2,8 +2,8 @@
   "voiceId": "chris-cuomo",
   "voiceName": "Chris Cuomo",
   "updatedAt": "2026-09-01",
-  "topicCount": 17,
-  "stanceCount": 75,
+  "topicCount": 18,
+  "stanceCount": 76,
   "topics": [
     {
       "topic": "trump-administration",
@@ -742,6 +742,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ufo-paranormal",
+      "label": "UFOs & Paranormal",
+      "count": 1,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "ufo-paranormal",
+          "stance": "lean",
+          "summary": "Highlights undisclosed information about UAPs",
+          "quote": "What They\u2019re Still Not Telling Us About UAPs",
+          "sourceUrl": "https://www.youtube.com/watch?v=zXhjZIEPQZg",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",

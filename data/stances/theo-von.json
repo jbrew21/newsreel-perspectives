@@ -3,8 +3,44 @@
   "voiceName": "Theo Von",
   "updatedAt": "2026-09-01",
   "topicCount": 6,
-  "stanceCount": 7,
+  "stanceCount": 9,
   "topics": [
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 3,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Warns against psychiatric medication withdrawal risks",
+          "quote": "Getting Off Psych Meds Nightmare",
+          "sourceUrl": "https://www.youtube.com/shorts/E8scW4SFzFQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Questions psychiatric medication effects on mental health",
+          "quote": "Psych Meds and Disconnection to Self",
+          "sourceUrl": "https://www.youtube.com/shorts/xttmOLKWFYQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Platforms expert discussion on psychiatric medication withdrawal risks",
+          "quote": "Psych Med Withdrawal Expert Laura Delano | This Past Weekend w/ Theo Von #678",
+          "sourceUrl": "https://www.youtube.com/watch?v=QK1q5yTRY7s",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "drugs-addiction",
       "label": "Drugs & Addiction",
@@ -28,24 +64,6 @@
           "quote": "why do men struggle w/ p*rn addiction?",
           "sourceUrl": "https://www.tiktok.com/@theovon/video/7660566277295017229",
           "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Platforms expert discussion on psychiatric medication withdrawal risks",
-          "quote": "Psych Med Withdrawal Expert Laura Delano | This Past Weekend w/ Theo Von #678",
-          "sourceUrl": "https://www.youtube.com/watch?v=QK1q5yTRY7s",
-          "platform": "youtube"
         }
       ],
       "active": true

@@ -2,8 +2,8 @@
   "voiceId": "pete-buttigieg",
   "voiceName": "Pete Buttigieg",
   "updatedAt": "2026-09-01",
-  "topicCount": 14,
-  "stanceCount": 51,
+  "topicCount": 15,
+  "stanceCount": 53,
   "topics": [
     {
       "topic": "elections",
@@ -391,6 +391,33 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 2,
+      "lastActive": "2026-08-25",
+      "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Praises Dolly Parton's legacy and cultural impact",
+          "quote": "And America is a better place because the inspiring and unifying example she set with her spirit of generosity and belonging will endure far into the future, just like her timeless music.",
+          "sourceUrl": "https://bsky.app/profile/petebuttigieg.bsky.social/post/3mtwpj3z7gs25",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Honors Dolly Parton as influential country music icon",
+          "quote": "There will not be another like the Queen of Country, Dolly Parton. Her music spoke to millions across generations, including in our family.",
+          "sourceUrl": "https://bsky.app/profile/petebuttigieg.bsky.social/post/3mtwpj3yvoc25",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",

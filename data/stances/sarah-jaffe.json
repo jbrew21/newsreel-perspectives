@@ -2,9 +2,27 @@
   "voiceId": "sarah-jaffe",
   "voiceName": "Sarah Jaffe",
   "updatedAt": "2026-09-01",
-  "topicCount": 1,
-  "stanceCount": 1,
+  "topicCount": 2,
+  "stanceCount": 2,
   "topics": [
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 1,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Expresses solidarity with unionizing workers",
+          "quote": "all solidarity to the lovely people at the Baffler union, who've offered me a platform time and again to write about the catastrophe that is the modern workplace",
+          "sourceUrl": "https://bsky.app/profile/sarahljaffe.bsky.social/post/3muhpdo7td224",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "immigration",
       "label": "Immigration",

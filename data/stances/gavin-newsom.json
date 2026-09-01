@@ -2,8 +2,8 @@
   "voiceId": "gavin-newsom",
   "voiceName": "Gavin Newsom",
   "updatedAt": "2026-09-01",
-  "topicCount": 19,
-  "stanceCount": 68,
+  "topicCount": 20,
+  "stanceCount": 69,
   "topics": [
     {
       "topic": "economy-trade",
@@ -643,6 +643,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 1,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Highlights California crime rate reductions as policy success",
+          "quote": "Governor Newsom on Record-Low California Crime Rates",
+          "sourceUrl": "https://www.youtube.com/shorts/fRDS2nWJDZU",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "supreme-court-legal",

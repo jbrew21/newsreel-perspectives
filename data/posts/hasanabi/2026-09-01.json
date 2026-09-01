@@ -1,9 +1,26 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-01T11:58:39.523637",
+  "collectedAt": "2026-09-01T20:22:58.030099",
   "date": "2026-09-01",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "JASMINE CROCKETT WONT HELP JAMES TALARICO",
+      "sourceUrl": "https://www.youtube.com/watch?v=mQWSPykVGWU",
+      "timestamp": "2026-09-01T00:25:12+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
+      "topics": [
+        "congress-legislation"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Jasmine Crockett for not supporting James Talarico's legislation",
+      "quote": "JASMINE CROCKETT WONT HELP JAMES TALARICO"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -42,6 +59,23 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
+      "text": "ETHAN KLEIN IS ADDICTED TO LOSING LAWSUITS",
+      "sourceUrl": "https://www.youtube.com/watch?v=PE9b-T3vEbc",
+      "timestamp": "2026-08-30T21:39:37+00:00",
+      "type": "video_title",
+      "topic": "media-personalities",
+      "topics": [
+        "media-personalities"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Mocks Ethan Klein for repeatedly losing lawsuits",
+      "quote": "ETHAN KLEIN IS ADDICTED TO LOSING LAWSUITS"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
       "text": "AMERICANS ARE ACTUALLY FIGHTING THE SURVEILLANCE STATE",
       "sourceUrl": "https://www.youtube.com/watch?v=qhr7N9pHf6k",
       "timestamp": "2026-08-30T15:00:17+00:00",
@@ -59,55 +93,29 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
-      "text": "NORM FINKELSTEIN COOKED ME ON BREAKING POINTS",
-      "sourceUrl": "https://www.youtube.com/watch?v=uvS2El8tNsk",
-      "timestamp": "2026-08-30T00:30:17+00:00",
+      "text": "US GENERALS RESIGN AS IRAN STRIKES US BASES",
+      "sourceUrl": "https://www.youtube.com/watch?v=LQVfHFP-OaM",
+      "timestamp": "2026-09-01T17:57:59+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "iran-conflict",
       "topics": [
-        "media-personalities"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Encountered critical pushback from fellow commentator on policy debate",
-      "quote": "NORM FINKELSTEIN COOKED ME ON BREAKING POINTS"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "JASMINE CROCKETT WONT HELP JAMES TALARICO",
-      "sourceUrl": "https://www.youtube.com/watch?v=mQWSPykVGWU",
-      "timestamp": "2026-09-01T00:25:12+00:00",
-      "type": "video_title",
-      "topic": "congress-legislation",
-      "topics": [
-        "congress-legislation"
+        "iran-conflict"
       ],
       "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Jasmine Crockett for not supporting James Talarico's legislation",
-      "quote": "JASMINE CROCKETT WONT HELP JAMES TALARICO"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "ETHAN KLEIN IS ADDICTED TO LOSING LAWSUITS",
-      "sourceUrl": "https://www.youtube.com/watch?v=PE9b-T3vEbc",
-      "timestamp": "2026-08-30T21:39:37+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "topics": [
-        "media-personalities"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Mocks Ethan Klein for repeatedly losing lawsuits",
-      "quote": "ETHAN KLEIN IS ADDICTED TO LOSING LAWSUITS"
+      "stance": "lean",
+      "summary": "Critiques U.S. military response to Iranian strikes",
+      "quote": "US GENERALS RESIGN AS IRAN STRIKES US BASES"
     }
   ],
   "topicSummary": {
+    "congress-legislation": [
+      {
+        "quote": "JASMINE CROCKETT WONT HELP JAMES TALARICO",
+        "sourceUrl": "https://www.youtube.com/watch?v=mQWSPykVGWU",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T00:25:12+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "WHAT A LOSER",
@@ -122,6 +130,20 @@
         "sourceUrl": "https://www.youtube.com/watch?v=45mluQaPbBk",
         "platform": "youtube",
         "timestamp": "2026-08-31T03:26:00+00:00"
+      },
+      {
+        "quote": "US GENERALS RESIGN AS IRAN STRIKES US BASES",
+        "sourceUrl": "https://www.youtube.com/watch?v=LQVfHFP-OaM",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T17:57:59+00:00"
+      }
+    ],
+    "media-personalities": [
+      {
+        "quote": "ETHAN KLEIN IS ADDICTED TO LOSING LAWSUITS",
+        "sourceUrl": "https://www.youtube.com/watch?v=PE9b-T3vEbc",
+        "platform": "youtube",
+        "timestamp": "2026-08-30T21:39:37+00:00"
       }
     ],
     "free-speech-censorship": [
@@ -130,28 +152,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=qhr7N9pHf6k",
         "platform": "youtube",
         "timestamp": "2026-08-30T15:00:17+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "NORM FINKELSTEIN COOKED ME ON BREAKING POINTS",
-        "sourceUrl": "https://www.youtube.com/watch?v=uvS2El8tNsk",
-        "platform": "youtube",
-        "timestamp": "2026-08-30T00:30:17+00:00"
-      },
-      {
-        "quote": "ETHAN KLEIN IS ADDICTED TO LOSING LAWSUITS",
-        "sourceUrl": "https://www.youtube.com/watch?v=PE9b-T3vEbc",
-        "platform": "youtube",
-        "timestamp": "2026-08-30T21:39:37+00:00"
-      }
-    ],
-    "congress-legislation": [
-      {
-        "quote": "JASMINE CROCKETT WONT HELP JAMES TALARICO",
-        "sourceUrl": "https://www.youtube.com/watch?v=mQWSPykVGWU",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T00:25:12+00:00"
       }
     ]
   }
