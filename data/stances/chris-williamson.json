@@ -1,7 +1,7 @@
 {
   "voiceId": "chris-williamson",
   "voiceName": "Chris Williamson",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 14,
   "stanceCount": 41,
   "topics": [
@@ -120,7 +120,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "criminal-justice",
@@ -303,33 +303,6 @@
       "active": false
     },
     {
-      "topic": "gender-lgbtq",
-      "label": "Gender & LGBTQ+",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Expresses critical perspective on autism representation in dating",
-          "quote": "\u201cI Have A Problem With Love On The Spectrum\u201d - Jeff Dye",
-          "sourceUrl": "https://www.youtube.com/watch?v=SNrw-C_RBck",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-02",
-          "topic": "gender-lgbtq",
-          "stance": "lean",
-          "summary": "Critiques gender dynamics in marriage framework",
-          "quote": "Marriage Is Basically Affirmative Action For Men",
-          "sourceUrl": "https://www.youtube.com/watch?v=BPNpK0nAbt0",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 3,
@@ -360,6 +333,33 @@
           "summary": "Explores government surveillance capabilities and concerns",
           "quote": "Ex-Military Hacker: The Secret World Of Government Surveillance - Bill Thompson",
           "sourceUrl": "https://www.youtube.com/watch?v=cx4e3FaInA4",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Expresses critical perspective on autism representation in dating",
+          "quote": "\u201cI Have A Problem With Love On The Spectrum\u201d - Jeff Dye",
+          "sourceUrl": "https://www.youtube.com/watch?v=SNrw-C_RBck",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Critiques gender dynamics in marriage framework",
+          "quote": "Marriage Is Basically Affirmative Action For Men",
+          "sourceUrl": "https://www.youtube.com/watch?v=BPNpK0nAbt0",
           "platform": "youtube"
         }
       ],

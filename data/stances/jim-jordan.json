@@ -1,9 +1,9 @@
 {
   "voiceId": "jim-jordan",
   "voiceName": "Jim Jordan",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 13,
-  "stanceCount": 55,
+  "stanceCount": 56,
   "topics": [
     {
       "topic": "immigration",
@@ -501,6 +501,33 @@
       "active": true
     },
     {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Seeks transparency in federal judge investigation",
+          "quote": "House Republicans press for details on investigation of Atlanta federal judge\nhttps://t.co/WVZJwI5ROB",
+          "sourceUrl": "https://x.com/Jim_Jordan/status/2094907573652627718",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-28",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Criticizes Biden for improperly retaining and sharing classified information",
+          "quote": "Joe Biden shared classified information with his ghostwriter in exchange for an $8 million advance for his book.\n\n8 million reasons to improperly retain and share classified information.",
+          "sourceUrl": "https://x.com/Jim_Jordan/status/2081901062919754160",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 2,
@@ -576,24 +603,6 @@
           "summary": "Criticizes censorship of lab leak theory, attacks Fauci credibility",
           "quote": "Fauci said the lab leak theory was \"highly likely\" in private.\n\nAmericans who said it publicly were censored. thefederalist.com/2026/07/27\u2026\n\nLink\n\n\n\nFauci Toadies Privately Called Lab Leak &apos;Highly Likely&apos;\n\nThe greatest threat to public trust comes when powerful people a",
           "sourceUrl": "https://x.com/Jim_Jordan/status/2082105462799896963",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2026-07-28",
-      "stances": [
-        {
-          "date": "2026-07-28",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Criticizes Biden for improperly retaining and sharing classified information",
-          "quote": "Joe Biden shared classified information with his ghostwriter in exchange for an $8 million advance for his book.\n\n8 million reasons to improperly retain and share classified information.",
-          "sourceUrl": "https://x.com/Jim_Jordan/status/2081901062919754160",
           "platform": "x"
         }
       ],

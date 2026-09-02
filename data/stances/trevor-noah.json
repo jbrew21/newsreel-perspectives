@@ -1,9 +1,9 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 20,
-  "stanceCount": 70,
+  "stanceCount": 71,
   "topics": [
     {
       "topic": "trump-administration",
@@ -125,9 +125,18 @@
     {
       "topic": "culture-war",
       "label": "Culture War",
-      "count": 10,
-      "lastActive": "2026-08-29",
+      "count": 11,
+      "lastActive": "2026-09-01",
       "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Questions men's communication challenges with both genders",
+          "quote": "Men are not only having trouble talking to women, but to other men, too? #DailyShow",
+          "sourceUrl": "https://www.youtube.com/shorts/2mRqWaGMTKM",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-29",
           "topic": "culture-war",
@@ -759,7 +768,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "criminal-justice",

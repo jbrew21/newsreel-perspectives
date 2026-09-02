@@ -1,9 +1,9 @@
 {
   "voiceId": "megyn-kelly",
   "voiceName": "Megyn Kelly",
-  "updatedAt": "2026-09-01",
-  "topicCount": 14,
-  "stanceCount": 55,
+  "updatedAt": "2026-09-02",
+  "topicCount": 15,
+  "stanceCount": 57,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -45,6 +45,15 @@
           "summary": "Criticizes judge for slow decision-making in case proceedings",
           "quote": "Megyn Reacts to Tyler Robinson Judge Stalling and Taking Forever To Make Ruling: &quot;F*cking Annoying&quot;",
           "sourceUrl": "https://www.youtube.com/shorts/y4WZnopsGx0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Emphasizes credibility of other victims despite one recantation",
+          "quote": "One Jerry Sandusky Accuser RECANTS... But What About the MANY Other Victims?",
+          "sourceUrl": "https://www.youtube.com/watch?v=bGmjMDGDXs8",
           "platform": "youtube"
         },
         {
@@ -108,15 +117,6 @@
           "summary": "Analyzes courtroom dynamics in Lindsay Clancy trial",
           "quote": "What's REALLY Happening Inside the Lindsay Clancy Trial Courtroom",
           "sourceUrl": "https://www.youtube.com/watch?v=qHrjfV9Kf-4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Identifies weaknesses in Lindsay Clancy's defense arguments",
-          "quote": "Megyn Kelly Breaks Down the Bad Facts For Lindsay Clancy's Defense",
-          "sourceUrl": "https://www.youtube.com/shorts/xoZlk8NZaPE",
           "platform": "youtube"
         }
       ],
@@ -465,6 +465,33 @@
       "active": true
     },
     {
+      "topic": "drugs-addiction",
+      "label": "Drugs & Addiction",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Argues drugs and doctors bear responsibility for criminal actions",
+          "quote": "The Very Real Argument For Blaming the DRUGS and Doctors For Lindsay Clancy's Actions",
+          "sourceUrl": "https://www.youtube.com/watch?v=J4FPYfRZyBk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Amplifies argument linking medications and doctors to criminal conduct",
+          "quote": "Megyn Kelly Reacts to &quot;Wrap-Up Show&quot; Caller Who Blames Meds and Doctors For Lindsay Clancy's Actions",
+          "sourceUrl": "https://www.youtube.com/shorts/LSDuOzDoB9E",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 2,
@@ -486,33 +513,6 @@
           "summary": "Criticizes Meta settlement and social platform targeting of children",
           "quote": "Megyn on Meta's Multi-Billion Dollar Settlement and How Social Platforms are Targeting Children",
           "sourceUrl": "https://www.youtube.com/shorts/FpcMhBG2wZE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "media-personalities",
-          "stance": "strong",
-          "summary": "Criticizes Jon Ossoff's attack on Trump female aide",
-          "quote": "Jon Ossoff's DISGUSTING Attack on Trump's Female Aide",
-          "sourceUrl": "https://www.youtube.com/watch?v=NTns3OQdadk",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Criticizes Jimmy Fallon's joke about press secretary as inappropriate",
-          "quote": "&quot;Not Great&quot;: Megyn on Jimmy Fallon's Joke About Karoline Leavitt Stepping Down as Press Secretary",
-          "sourceUrl": "https://www.youtube.com/shorts/eMlwyQNXqmY",
           "platform": "youtube"
         }
       ],
@@ -549,6 +549,33 @@
           "summary": "Questions transgender athlete participation in women's sports",
           "quote": "Megyn Reacts to Former NBA Player Announcing He's &quot;Trans&quot; and Wants to Join WNBA: &quot;He's My Hero&quot;",
           "sourceUrl": "https://www.youtube.com/shorts/ZP7yiTC80GQ",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Criticizes Jon Ossoff's attack on Trump female aide",
+          "quote": "Jon Ossoff's DISGUSTING Attack on Trump's Female Aide",
+          "sourceUrl": "https://www.youtube.com/watch?v=NTns3OQdadk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Criticizes Jimmy Fallon's joke about press secretary as inappropriate",
+          "quote": "&quot;Not Great&quot;: Megyn on Jimmy Fallon's Joke About Karoline Leavitt Stepping Down as Press Secretary",
+          "sourceUrl": "https://www.youtube.com/shorts/eMlwyQNXqmY",
           "platform": "youtube"
         }
       ],

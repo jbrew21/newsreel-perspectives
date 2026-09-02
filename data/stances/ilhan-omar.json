@@ -1,9 +1,9 @@
 {
   "voiceId": "ilhan-omar",
   "voiceName": "Ilhan Omar",
-  "updatedAt": "2026-09-01",
-  "topicCount": 6,
-  "stanceCount": 19,
+  "updatedAt": "2026-09-02",
+  "topicCount": 7,
+  "stanceCount": 20,
   "topics": [
     {
       "topic": "elections",
@@ -175,6 +175,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 1,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Encourages community service and activism in memory of others",
+          "quote": "One powerful way to honor and remember them is to show up for others and move your feet. Through service and generosity, we can carry forward the love, courage, and care that have sustained the Annunciation community this past year.",
+          "sourceUrl": "https://bsky.app/profile/ilhanmn.bsky.social/post/3mu2uztza3s2h",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "trump-administration",

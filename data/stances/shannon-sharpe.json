@@ -1,9 +1,9 @@
 {
   "voiceId": "shannon-sharpe",
   "voiceName": "Shannon Sharpe",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 3,
-  "stanceCount": 13,
+  "stanceCount": 14,
   "topics": [
     {
       "topic": "sports",
@@ -93,6 +93,33 @@
           "platform": "youtube"
         }
       ],
+      "active": false
+    },
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Implies robbery involving gangs/criminals is deplorable",
+          "quote": "Rod Wave's Dad Reacts To His Robbery: &quot;Junkies do... Lame.&quot; I CLUB SHAY SHAY",
+          "sourceUrl": "https://www.youtube.com/shorts/fW2o3MvmRPM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Discusses Kim Kardashian's relationship with Reggie Bush, implies romantic connection affected his career",
+          "quote": "Kim Kardashian Cursed Reggie Bush? I CLUB SHAY SHAY",
+          "sourceUrl": "https://www.youtube.com/shorts/trPajH3XSic",
+          "platform": "youtube"
+        }
+      ],
       "active": true
     },
     {
@@ -126,24 +153,6 @@
           "summary": "Discusses successful legal challenge to police lawsuit",
           "quote": "Afroman Beats $4M Lawsuit, Talks America, &quot;Because I Got High,&quot; Soulja Boy &amp; Real Estate",
           "sourceUrl": "https://www.youtube.com/watch?v=xLrTkjFPpG4",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
-      "count": 1,
-      "lastActive": "2026-07-31",
-      "stances": [
-        {
-          "date": "2026-07-31",
-          "topic": "celebrity-entertainment",
-          "stance": "lean",
-          "summary": "Discusses Kim Kardashian's relationship with Reggie Bush, implies romantic connection affected his career",
-          "quote": "Kim Kardashian Cursed Reggie Bush? I CLUB SHAY SHAY",
-          "sourceUrl": "https://www.youtube.com/shorts/trPajH3XSic",
           "platform": "youtube"
         }
       ],

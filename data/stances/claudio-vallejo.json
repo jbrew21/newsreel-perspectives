@@ -1,9 +1,9 @@
 {
   "voiceId": "claudio-vallejo",
   "voiceName": "Claudio Vallejo",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 16,
-  "stanceCount": 45,
+  "stanceCount": 47,
   "topics": [
     {
       "topic": "state-local-politics",
@@ -125,9 +125,18 @@
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 5,
-      "lastActive": "2026-09-01",
+      "count": 6,
+      "lastActive": "2026-09-02",
       "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Criticizes polling place closures as voter suppression",
+          "quote": "Tarrant County Just Closed A Third Of Its Polling Places #news #tarrantcounty #texas #fyp",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680726196962856222",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-01",
           "topic": "elections",
@@ -330,6 +339,33 @@
       "active": true
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Critiques big tech's misplaced priorities and speed disparities",
+          "quote": "Google Renamed a Great Lake Faster Than They\u2019ll Fix Your Address #news #politics #fyp #google #lakeontario",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7679851169073696030",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Frames AI as tool for political warning against Democrats",
+          "quote": "He used AI to warn you about the Democrats #news #texas #fyp #politics",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7675376007943064862",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 2,
@@ -513,24 +549,6 @@
           "summary": "Criticizes introduction of intelligent design into medical policy",
           "quote": "Intelligent Design Is Back, And Now It\u2019s Your Medicine #news #politics #fyp #science",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7676889515193109791",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Frames AI as tool for political warning against Democrats",
-          "quote": "He used AI to warn you about the Democrats #news #texas #fyp #politics",
-          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7675376007943064862",
           "platform": "tiktok"
         }
       ],

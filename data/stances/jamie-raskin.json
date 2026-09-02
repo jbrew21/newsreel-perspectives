@@ -1,16 +1,25 @@
 {
   "voiceId": "jamie-raskin",
   "voiceName": "Jamie Raskin",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 15,
-  "stanceCount": 30,
+  "stanceCount": 31,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 12,
-      "lastActive": "2026-08-25",
+      "lastActive": "2026-09-02",
       "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump White House as fundamentally corrupt, pledges Democratic alternative",
+          "quote": "Corruption isn't a part of the Trump White House. Corruption is the Trump White House.\n\nIt\u2019s a scam, it\u2019s a shakedown and it\u2019s a scandal. The Democrats are working to replace all the corruption with a government guided by the rule of law. https://t.co/wCgFRlpPxj",
+          "sourceUrl": "https://x.com/RepRaskin/status/2094967314852520282",
+          "platform": "x"
+        },
         {
           "date": "2026-08-25",
           "topic": "trump-administration",
@@ -109,14 +118,32 @@
           "quote": "We've got every House Democrat signed on to our discharge petition to permanently reject President Trump's corrupt $1.8 billion slush fund, his payoffs to MAGA foot soldiers and his corrupt Super Pardon.\n\nWe need just six self-respecting Republicans to join us to protect taxpayer",
           "sourceUrl": "https://x.com/RepRaskin/status/2084990283423354991",
           "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 2,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes ICE raids targeting law-abiding immigrants, cites constituent harm",
+          "quote": "ICE chaos in Maryland is making our communities less safe. Masked federal agents are harassing, intimidating and pursuing not the \u201cworst of the worst,\u201d but our law-abiding immigrant neighbors. I\u2019ve even had citizen constituents swept up in ICE raids and detained. The overwhelming",
+          "sourceUrl": "https://x.com/RepRaskin/status/2092690367434908103",
+          "platform": "x"
         },
         {
-          "date": "2026-07-31",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump's incompetent mismanagement, celebrates DOJ withdrawal of charges",
-          "quote": "Great news: The Department of Justice and U.S. Attorney Jeanine Pirro have just withdrawn all criminal charges against Montgomery County\u2019s Davey Hearn, the three-time Olympian who they tried to blame for Trump\u2019s pathetically incompetent mismanagement of the Reflecting Pool, AKA t",
-          "sourceUrl": "https://x.com/RepRaskin/status/2083336946198143304",
+          "date": "2026-08-21",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Highlights immigrant advocacy organization uplifting immigrant dignity and community inclusion",
+          "quote": "This week\u2019s MD-08 Local Hero is George Escobar, the new Executive Director of We Are CASA, the organization dedicated to uplifting the dignity, strength, and contributions of our immigrant neighbors and building stronger, more inclusive communities for all Marylanders. https://t.",
+          "sourceUrl": "https://x.com/RepRaskin/status/2090765772268204377",
           "platform": "x"
         }
       ],
@@ -211,24 +238,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 1,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Criticizes ICE raids targeting law-abiding immigrants, cites constituent harm",
-          "quote": "ICE chaos in Maryland is making our communities less safe. Masked federal agents are harassing, intimidating and pursuing not the \u201cworst of the worst,\u201d but our law-abiding immigrant neighbors. I\u2019ve even had citizen constituents swept up in ICE raids and detained. The overwhelming",
-          "sourceUrl": "https://x.com/RepRaskin/status/2092690367434908103",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "elections",

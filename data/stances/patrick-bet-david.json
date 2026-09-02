@@ -1,7 +1,7 @@
 {
   "voiceId": "patrick-bet-david",
   "voiceName": "Patrick Bet-David",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 30,
   "stanceCount": 129,
   "topics": [
@@ -9,13 +9,22 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-08-27",
+      "lastActive": "2026-09-01",
       "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses concern about corporate encroachment on personal space via AI",
+          "quote": "Companies Can Put Ads in Your Dreams Now",
+          "sourceUrl": "https://www.youtube.com/shorts/JOWRcI-QQSI",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-27",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Suggests UBI as potential response to AI-driven job displacement",
+          "summary": "Suggests UBI as potential solution to AI-driven job displacement",
           "quote": "Universal basic income could support people when AI takes over most work.",
           "sourceUrl": "https://www.tiktok.com/@patrickbetdavid/video/7678746463643372814",
           "platform": "tiktok"
@@ -51,7 +60,7 @@
           "date": "2026-08-26",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Highlights AI decision-making excludes human welfare considerations",
+          "summary": "Warns that AI superintelligence may disregard human interests in decision-making",
           "quote": "Roman V. Yampolskiy says the real threat is that AI decisions simply will not factor humans in",
           "sourceUrl": "https://www.tiktok.com/@patrickbetdavid/video/7678488002091355423",
           "platform": "tiktok"
@@ -60,7 +69,7 @@
           "date": "2026-08-26",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Warns superintelligence could retaliate against AI restriction advocates",
+          "summary": "Raises concern that superintelligent AI could retaliate against human resistance",
           "quote": "Roman V. Yampolskiy says superintelligence could one day target people who tried to prevent its creation and development.",
           "sourceUrl": "https://www.tiktok.com/@patrickbetdavid/video/7678451939201289503",
           "platform": "tiktok"
@@ -108,15 +117,6 @@
           "summary": "Bot accounts weaponized to spread division and confusion",
           "quote": "Bot accounts are made to spread division and confusion.",
           "sourceUrl": "https://www.tiktok.com/@patrickbetdavid/video/7672456418485636366",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Expresses concern about rapid AI advancement",
-          "quote": "AI is getting too good.",
-          "sourceUrl": "https://www.tiktok.com/@patrickbetdavid/video/7672156622415727885",
           "platform": "tiktok"
         }
       ],
@@ -960,6 +960,42 @@
       "active": true
     },
     {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Questions presidential rankings that omit Reagan from great list",
+          "quote": "How Do You Rank U.S. Presidents and Leave Reagan Off the \u201cGreat\u201d List?",
+          "sourceUrl": "https://www.youtube.com/shorts/rC-BobiWBXE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "",
+          "quote": "Joel Webbon Explains His America First Views",
+          "sourceUrl": "https://www.youtube.com/shorts/sPfDrS-rTpI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Suggests Massie follows Trump's political approach",
+          "quote": "Thomas Massie is Following the Playbook of Trump",
+          "sourceUrl": "https://www.youtube.com/shorts/5wE8M9__OKc",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 4,
@@ -1002,7 +1038,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "state-local-politics",
@@ -1047,43 +1083,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 3,
-      "lastActive": "2026-08-30",
-      "stances": [
-        {
-          "date": "2026-08-30",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Questions presidential rankings that omit Reagan from great list",
-          "quote": "How Do You Rank U.S. Presidents and Leave Reagan Off the \u201cGreat\u201d List?",
-          "sourceUrl": "https://www.youtube.com/shorts/rC-BobiWBXE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "",
-          "quote": "Joel Webbon Explains His America First Views",
-          "sourceUrl": "https://www.youtube.com/shorts/sPfDrS-rTpI",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "trump-policy",
-          "stance": "lean",
-          "summary": "Suggests Massie follows Trump's political approach",
-          "quote": "Thomas Massie is Following the Playbook of Trump",
-          "sourceUrl": "https://www.youtube.com/shorts/5wE8M9__OKc",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "israel-palestine",

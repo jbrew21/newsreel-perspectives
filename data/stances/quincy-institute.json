@@ -1,10 +1,46 @@
 {
   "voiceId": "quincy-institute",
   "voiceName": "Quincy Institute",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 9,
-  "stanceCount": 14,
+  "stanceCount": 16,
   "topics": [
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 3,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Questions whether Trump war policy skeptics are being pushed out",
+          "quote": "Why are so many Vance allies leaving the Trump administration? (by Connor Echols). Army Secretary Dan Driscoll resigned this week, raising a flurry of questions about whether his departure is part of a larger political reordering that has pushed skeptics of President Donald Trump",
+          "sourceUrl": "https://responsiblestatecraft.org/vance-rubio-rivalry/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Questions Trump's reframing of science policy as competitive rather than collaborative",
+          "quote": "Trump's 'golden age of science' is not just another war to be won (by Denis Simon). In July 2026, the White House released what it called the most ambitious rethinking of American science policy in decades. Michael Kratsios, President Trump\u2019s science advisor, penned a report titl",
+          "sourceUrl": "https://responsiblestatecraft.org/us-china-scientific-competition/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Warns Trump administration conflates protest with terrorism",
+          "quote": "Trump designates protesters terrorists. How far will it go? (by Elizabeth Beavers). Protesting is terrorism. At least, that is the message that the Trump administration has communicated in a series of recent actions, culminating last week in its designation of the U.K.-based Pale",
+          "sourceUrl": "https://responsiblestatecraft.org/palestine-action-terrorists/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
@@ -42,27 +78,27 @@
       "active": true
     },
     {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
       "count": 2,
-      "lastActive": "2026-09-01",
+      "lastActive": "2026-09-02",
       "stances": [
         {
-          "date": "2026-09-01",
-          "topic": "trump-administration",
+          "date": "2026-09-02",
+          "topic": "israel-palestine",
           "stance": "lean",
-          "summary": "Questions Trump's reframing of science policy as competitive rather than collaborative",
-          "quote": "Trump's 'golden age of science' is not just another war to be won (by Denis Simon). In July 2026, the White House released what it called the most ambitious rethinking of American science policy in decades. Michael Kratsios, President Trump\u2019s science advisor, penned a report titl",
-          "sourceUrl": "https://responsiblestatecraft.org/us-china-scientific-competition/",
+          "summary": "Scrutinizes Secretary Huckabee's response to settlers' attack on journalists",
+          "quote": "What Huckabee is doing about dead Americans in the West Bank (by Blaise Malley). Israeli settlers attacked an NBC News crew in the village of Jalud over the weekend, injuring the network\u2019s correspondent, Matt Bradley, as well as two other crew members and Aida Ahmed Abdullah, the",
+          "sourceUrl": "https://responsiblestatecraft.org/mike-huckabee-israel-settlements/",
           "platform": "blog"
         },
         {
-          "date": "2026-08-31",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Warns Trump administration conflates protest with terrorism",
-          "quote": "Trump designates protesters terrorists. How far will it go? (by Elizabeth Beavers). Protesting is terrorism. At least, that is the message that the Trump administration has communicated in a series of recent actions, culminating last week in its designation of the U.K.-based Pale",
-          "sourceUrl": "https://responsiblestatecraft.org/palestine-action-terrorists/",
+          "date": "2026-08-26",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Analyzes evolution of pro-Israel advocacy and lobbying in U.S. politics",
+          "quote": "Israel's Lobby 2.0: What Walt &amp; Mearsheimer didn't anticipate (by John B. Judis). In March 2006, the Anti-Defamation League (ADL) denounced the essay by John Mearsheimer and Stephen Walt, \"The Israel Lobby and U.S. Foreign Policy,\" as a \"a classical conspiratorial anti-Semiti",
+          "sourceUrl": "https://responsiblestatecraft.org/israel-lobby-book/",
           "platform": "blog"
         }
       ],
@@ -189,24 +225,6 @@
           "summary": "Criticizes Graham successor as continuing hawkish war party foreign policy",
           "quote": "Lindsey Graham's sister wins. The War Party wins. We lose, again. (by Jack Hunter). Darline Graham won the Republican primary Tuesday and will likely win a full-term to fill her late brother Lindsey Graham\u2019s U.S. Senate seat in the ruby red state of South Carolina in the upcoming",
           "sourceUrl": "https://responsiblestatecraft.org/lindsey-graham-sister-wins/",
-          "platform": "blog"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 1,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Analyzes evolution of pro-Israel advocacy and lobbying in U.S. politics",
-          "quote": "Israel's Lobby 2.0: What Walt &amp; Mearsheimer didn't anticipate (by John B. Judis). In March 2006, the Anti-Defamation League (ADL) denounced the essay by John Mearsheimer and Stephen Walt, \"The Israel Lobby and U.S. Foreign Policy,\" as a \"a classical conspiratorial anti-Semiti",
-          "sourceUrl": "https://responsiblestatecraft.org/israel-lobby-book/",
           "platform": "blog"
         }
       ],

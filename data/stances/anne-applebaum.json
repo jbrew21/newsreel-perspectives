@@ -1,9 +1,9 @@
 {
   "voiceId": "anne-applebaum",
   "voiceName": "Anne Applebaum",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 15,
-  "stanceCount": 50,
+  "stanceCount": 51,
   "topics": [
     {
       "topic": "trump-administration",
@@ -420,6 +420,33 @@
       "active": false
     },
     {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes ICE for escalating brutality and inhumanity",
+          "quote": "The brutality and inhumanity of ICE continues to grow \n\nwww.nytimes.com/2026/08/30/w...",
+          "sourceUrl": "https://bsky.app/profile/anneapplebaum.wsocial.eu/post/3muj2tqedek2d",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes politicians for spreading false migrant crisis narratives without retraction",
+          "quote": "Vance, Farage and Weidel posted fear-mongering messages about a Spanish migrant crisis that weren't true. They haven't retracted them. \n\nwww.theatlantic.com/ideas/2026/0...",
+          "sourceUrl": "https://bsky.app/profile/anneapplebaum.wsocial.eu/post/3ms4upgvjks2l",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 2,
@@ -549,24 +576,6 @@
           "summary": "Highlights president's undisclosed crypto wealth from anonymous sources",
           "quote": "\"The president\u2019s recent financial disclosure form shows that he collected $1.4 billion from his crypto businesses last year, the majority of it from anonymous sources\" www.nytimes.com/2026/08/09/u...",
           "sourceUrl": "https://bsky.app/profile/anneapplebaum.wsocial.eu/post/3msqh4sem7c2f",
-          "platform": "bluesky"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 1,
-      "lastActive": "2026-08-02",
-      "stances": [
-        {
-          "date": "2026-08-02",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Criticizes politicians for spreading false migrant crisis narratives without retraction",
-          "quote": "Vance, Farage and Weidel posted fear-mongering messages about a Spanish migrant crisis that weren't true. They haven't retracted them. \n\nwww.theatlantic.com/ideas/2026/0...",
-          "sourceUrl": "https://bsky.app/profile/anneapplebaum.wsocial.eu/post/3ms4upgvjks2l",
           "platform": "bluesky"
         }
       ],

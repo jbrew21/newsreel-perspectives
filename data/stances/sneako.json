@@ -1,7 +1,7 @@
 {
   "voiceId": "sneako",
   "voiceName": "SNEAKO",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 21,
   "stanceCount": 74,
   "topics": [
@@ -237,7 +237,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "culture-war",
@@ -354,7 +354,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "billionaires-wealth",
@@ -528,33 +528,6 @@
       "active": false
     },
     {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump administration fraud, market rigging, crypto scams, Epstein coverup",
-          "quote": "Why do you never speak about the endless fraud in the Trump administration? Rigging the markets, crypto scams, Epstein coverup, happy to speak to you about this on stream.",
-          "sourceUrl": "https://x.com/sneako/status/2089844310006960429",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Attacks Trump administration representative with personal insults",
-          "quote": "Trump just sends this little retard around to make a youtube video in every place he hates",
-          "sourceUrl": "https://x.com/sneako/status/2089823507580432835",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "epstein-scandal",
       "label": "Epstein Scandal",
       "count": 3,
@@ -585,6 +558,33 @@
           "summary": "Critiques society's rapid normalization of Epstein scandal",
           "quote": "Society became comfortable with Jeffrey Epstein uncomfortably quickly",
           "sourceUrl": "https://x.com/sneako/status/2087387155735679389",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump administration fraud, market rigging, crypto scams, Epstein coverup",
+          "quote": "Why do you never speak about the endless fraud in the Trump administration? Rigging the markets, crypto scams, Epstein coverup, happy to speak to you about this on stream.",
+          "sourceUrl": "https://x.com/sneako/status/2089844310006960429",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Attacks Trump administration representative with personal insults",
+          "quote": "Trump just sends this little retard around to make a youtube video in every place he hates",
+          "sourceUrl": "https://x.com/sneako/status/2089823507580432835",
           "platform": "x"
         }
       ],

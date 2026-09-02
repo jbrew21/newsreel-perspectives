@@ -1,7 +1,7 @@
 {
   "voiceId": "joe-concha",
   "voiceName": "Joe Concha",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 13,
   "stanceCount": 50,
   "topics": [
@@ -120,7 +120,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-personalities",
@@ -357,33 +357,6 @@
       "active": false
     },
     {
-      "topic": "sports",
-      "label": "Sports",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "sports",
-          "stance": "strong",
-          "summary": "Criticizes WNBA for self-inflicted organizational wounds",
-          "quote": "My latest for The Washington Examiner: washingtonexaminer.com/in_fo\u2026\n\nLink\n\n\n\nAll the WNBA&apos;s wounds are self-inflicted\n\nThe WNBA has a chance to be relevant for a long time due to its breakout stars. But for some reason, it insists on self-inflicted wounds.\nwashingtonexamine",
-          "sourceUrl": "https://x.com/JoeConchaTV/status/2089727419531841664",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "sports",
-          "stance": "strong",
-          "summary": "Harshly criticizes WNBA leadership and personnel",
-          "quote": "The WNBA has the worst group of people in the history of sports\u2026",
-          "sourceUrl": "https://x.com/JoeConchaTV/status/2086278727713878445",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 3,
@@ -414,6 +387,33 @@
           "summary": "Criticizes government inefficiency and overreach in public services",
           "quote": "Just imagine if you wanted to shovel snow outside of the government-run store that will cost triple to build over budget, needing two IDs before showing ID again to buy something? \n\nAre we getting how ridiculous this approaching to governing is yet? Or is part of the big tent?",
           "sourceUrl": "https://x.com/JoeConchaTV/status/2084271566175535587",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "sports",
+          "stance": "strong",
+          "summary": "Criticizes WNBA for self-inflicted organizational wounds",
+          "quote": "My latest for The Washington Examiner: washingtonexaminer.com/in_fo\u2026\n\nLink\n\n\n\nAll the WNBA&apos;s wounds are self-inflicted\n\nThe WNBA has a chance to be relevant for a long time due to its breakout stars. But for some reason, it insists on self-inflicted wounds.\nwashingtonexamine",
+          "sourceUrl": "https://x.com/JoeConchaTV/status/2089727419531841664",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "sports",
+          "stance": "strong",
+          "summary": "Harshly criticizes WNBA leadership and personnel",
+          "quote": "The WNBA has the worst group of people in the history of sports\u2026",
+          "sourceUrl": "https://x.com/JoeConchaTV/status/2086278727713878445",
           "platform": "x"
         }
       ],

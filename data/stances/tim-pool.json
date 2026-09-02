@@ -1,7 +1,7 @@
 {
   "voiceId": "tim-pool",
   "voiceName": "Tim Pool",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 26,
   "stanceCount": 103,
   "topics": [
@@ -843,33 +843,6 @@
       "active": true
     },
     {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Advocates exercise over medication for mental health crisis",
-          "quote": "People need to start working out more.\n\nAmericans are facing a mental health crisis. Often they're told by doctors to take pills, instead of fixing their health &amp; becoming active.",
-          "sourceUrl": "https://x.com/Timcast/status/2089779359611834552",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Questions effectiveness of therapy system for men and women",
-          "quote": "Men don't need therapy.\n\n@DrChloe_ suggests even women &amp; children don't need it either.\nThe current system just doesn't work.",
-          "sourceUrl": "https://x.com/Timcast/status/2089730286854811921",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 3,
@@ -972,6 +945,33 @@
           "summary": "Asserts Fauci lied to Congress and uses Fifth Amendment as evasion",
           "quote": "Pleading the 5th is not an admission of guilt. \n\nHowever, we know what Fauci is doing. He's using it as a shield. We know he lied to congress. That's a fact.",
           "sourceUrl": "https://x.com/Timcast/status/2082572903933939887",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Advocates exercise over medication for mental health crisis",
+          "quote": "People need to start working out more.\n\nAmericans are facing a mental health crisis. Often they're told by doctors to take pills, instead of fixing their health &amp; becoming active.",
+          "sourceUrl": "https://x.com/Timcast/status/2089779359611834552",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Questions effectiveness of therapy system for men and women",
+          "quote": "Men don't need therapy.\n\n@DrChloe_ suggests even women &amp; children don't need it either.\nThe current system just doesn't work.",
+          "sourceUrl": "https://x.com/Timcast/status/2089730286854811921",
           "platform": "x"
         }
       ],

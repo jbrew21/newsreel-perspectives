@@ -1,7 +1,7 @@
 {
   "voiceId": "breaking-points",
   "voiceName": "Breaking Points",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 26,
   "stanceCount": 117,
   "topics": [
@@ -1077,33 +1077,6 @@
       "active": true
     },
     {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes Fox News for framing Democratic policies negatively on military matters",
-          "quote": "Fox News SHAMES SUFFERING Sailors As Weak Dems",
-          "sourceUrl": "https://www.youtube.com/watch?v=aQIrWieSJXQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Attacks Bari Weiss's Free Press as propaganda disguised as journalism",
-          "quote": "Bari Weiss Free Press Shameless FLOCK Propaganda",
-          "sourceUrl": "https://www.youtube.com/watch?v=qYE_nUG6rY0",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 3,
@@ -1134,6 +1107,33 @@
           "summary": "Covers alleged MAGA figure defending himself against abuse accusations",
           "quote": "Accused MAGA Abuser FLAILS In Heated CNN Interview",
           "sourceUrl": "https://www.youtube.com/watch?v=hf2_sJNiiBI",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes Fox News for framing Democratic policies negatively on military matters",
+          "quote": "Fox News SHAMES SUFFERING Sailors As Weak Dems",
+          "sourceUrl": "https://www.youtube.com/watch?v=aQIrWieSJXQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Attacks Bari Weiss's Free Press as propaganda disguised as journalism",
+          "quote": "Bari Weiss Free Press Shameless FLOCK Propaganda",
+          "sourceUrl": "https://www.youtube.com/watch?v=qYE_nUG6rY0",
           "platform": "youtube"
         }
       ],
@@ -1236,7 +1236,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "civil-rights-race",

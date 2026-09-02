@@ -1,7 +1,7 @@
 {
   "voiceId": "david-sirota",
   "voiceName": "David Sirota",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-02",
   "topicCount": 22,
   "stanceCount": 114,
   "topics": [
@@ -138,6 +138,15 @@
           "platform": "bluesky"
         },
         {
+          "date": "2026-09-01",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Democrats should embrace presidential power tools like Trump does",
+          "quote": "AOC: Democrats Shouldn\u2019t Be Afraid To Use Presidential Power  (by Emily Carmichael). While slamming President Donald Trump\u2019s overreach, Rep. Alexandria Ocasio-Cortez told The Lever \u201cwe must use the tools of the office.\u201d",
+          "sourceUrl": "https://www.levernews.com/aoc-democrats-shouldnt-be-afraid-to-use-presidential-power/",
+          "platform": "substack"
+        },
+        {
           "date": "2026-08-30",
           "topic": "congress-legislation",
           "stance": "lean",
@@ -226,15 +235,6 @@
           "quote": "I did a crack-of-dawn workout with @abdulelsayed.bsky.social.\n\nHe had some choice words for John Fetterman, Hegseth & RFK, Jr.  \n\nHe also invoked Wellstone when envisioning the role he wants to play in the Senate Dem Caucus.   \n\nFind the new interview at The Lever\u2019s YouTube page ",
           "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3mrxxczfeys2b",
           "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Frames Democratic Party divide as populists vs. corporatists on corruption",
-          "quote": "\u201cWe have an affordability crisis because we have a corruption crisis.\u201d\n\nThe entire battle for the future of the Democratic Party is basically a fight between populists who are willing to voice this truth, and corporatists who deny this truth.",
-          "sourceUrl": "https://x.com/davidsirota/status/2083316313275990494",
-          "platform": "x"
         }
       ],
       "active": true
@@ -987,33 +987,6 @@
       "active": true
     },
     {
-      "topic": "free-speech-censorship",
-      "label": "Free Speech & Censorship",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "free-speech-censorship",
-          "stance": "strong",
-          "summary": "Critiques oligarch-controlled algorithmic content moderation systems",
-          "quote": "Here is today's reminder that we are all trying to communicate through an oligarch-owned algorithmic censorship system that determines what everyone sees and talks about - and what nobody sees and nobody talks about. Pass it on.",
-          "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3mteheumfb22b",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-25",
-          "topic": "free-speech-censorship",
-          "stance": "lean",
-          "summary": "Highlights First Amendment rights concerns in fashion and policy advocacy",
-          "quote": "You Love To See It: My Kingdom For A Sweatshirt  (by Lyna Bentahar). First Amendment rights get fashionable, New York takes a data center pause, Lina Khan returns to public service, and retirees get payback.",
-          "sourceUrl": "https://www.levernews.com/you-love-to-see-it-my-kingdom-for-a-sweatshirt/",
-          "platform": "substack"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 3,
@@ -1080,6 +1053,33 @@
           "summary": "Criticizes Whitmer's ties to Blue Cross, opposes her opposition to Medicare for All",
           "quote": "Whitmer\u2019s War Against Medicare For All . Michigan\u2019s Democratic governor is helping her healthcare donors try to stop Abdul El-Sayed\u2019s crusade.",
           "sourceUrl": "https://www.levernews.com/whitmers-war-against-medicare-for-all/",
+          "platform": "substack"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Critiques oligarch-controlled algorithmic content moderation systems",
+          "quote": "Here is today's reminder that we are all trying to communicate through an oligarch-owned algorithmic censorship system that determines what everyone sees and talks about - and what nobody sees and nobody talks about. Pass it on.",
+          "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3mteheumfb22b",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-25",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Highlights First Amendment rights concerns in fashion and policy advocacy",
+          "quote": "You Love To See It: My Kingdom For A Sweatshirt  (by Lyna Bentahar). First Amendment rights get fashionable, New York takes a data center pause, Lina Khan returns to public service, and retirees get payback.",
+          "sourceUrl": "https://www.levernews.com/you-love-to-see-it-my-kingdom-for-a-sweatshirt/",
           "platform": "substack"
         }
       ],

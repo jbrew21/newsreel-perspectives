@@ -1,9 +1,9 @@
 {
   "voiceId": "barb-mcquade",
   "voiceName": "Barb McQuade",
-  "updatedAt": "2026-09-01",
-  "topicCount": 19,
-  "stanceCount": 61,
+  "updatedAt": "2026-09-02",
+  "topicCount": 20,
+  "stanceCount": 62,
   "topics": [
     {
       "topic": "trump-administration",
@@ -546,6 +546,24 @@
       "active": true
     },
     {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Praises a leader for serving constituents",
+          "quote": "So nice to see a leader who serves the people.",
+          "sourceUrl": "https://bsky.app/profile/barbmcquade.bsky.social/post/3much3yzfsk27",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "climate-environment",
       "label": "Climate & Environment",
       "count": 1,
@@ -633,7 +651,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "trump-policy",
