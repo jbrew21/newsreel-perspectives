@@ -2,8 +2,8 @@
   "voiceId": "spencer-ackerman",
   "voiceName": "Spencer Ackerman",
   "updatedAt": "2026-09-02",
-  "topicCount": 19,
-  "stanceCount": 79,
+  "topicCount": 20,
+  "stanceCount": 80,
   "topics": [
     {
       "topic": "media-press",
@@ -814,6 +814,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes religious hypocrisy and exploitation of labor and suffering",
+          "quote": "They preach religiosity but deliver the purest blasphemy. They want not only the fruits of your labor \u2014 or, if you don\u2019t labor for them, your suffering to remain inconspicuous and convenient for them \u2014 they want your souls.",
+          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mukdcgoexs2n",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "terrorism",

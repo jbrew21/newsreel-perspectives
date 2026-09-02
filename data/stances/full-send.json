@@ -2,8 +2,8 @@
   "voiceId": "full-send",
   "voiceName": "Full Send / NELK Boys",
   "updatedAt": "2026-09-02",
-  "topicCount": 1,
-  "stanceCount": 2,
+  "topicCount": 2,
+  "stanceCount": 3,
   "topics": [
     {
       "topic": "sports",
@@ -31,6 +31,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Discusses Trump's policy proposal with apparent interest",
+          "quote": "Nelk Boys on Trump Renaming Lake Ontario and Talk GTA6 Release!",
+          "sourceUrl": "https://www.youtube.com/watch?v=TYqBYWN5H2E",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     }
   ]
 }
