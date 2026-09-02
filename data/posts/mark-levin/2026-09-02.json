@@ -1,7 +1,7 @@
 {
   "voiceId": "mark-levin",
   "voiceName": "Mark Levin",
-  "collectedAt": "2026-09-02T11:52:55.101956",
+  "collectedAt": "2026-09-02T13:12:51.843112",
   "date": "2026-09-02",
   "posts": [
     {
@@ -1604,6 +1604,58 @@
       "voiceId": "mark-levin",
       "voiceName": "Mark Levin",
       "platform": "youtube",
+      "text": "Supreme Court Victory: Trump's Ballroom &amp; The War on Power",
+      "sourceUrl": "https://www.youtube.com/watch?v=KLdYUfmmCWI",
+      "timestamp": "2026-09-02T02:00:06+00:00",
+      "type": "video_title",
+      "topic": "supreme-court-legal",
+      "topics": [
+        "supreme-court-legal",
+        "trump-administration"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Frames Trump Supreme Court decision as victory against power abuse",
+      "quote": "Supreme Court Victory: Trump's Ballroom &amp; The War on Power"
+    },
+    {
+      "voiceId": "mark-levin",
+      "voiceName": "Mark Levin",
+      "platform": "youtube",
+      "text": "Stacy Garrity vs. Josh Shapiro: The Fight for Pennsylvania",
+      "sourceUrl": "https://www.youtube.com/watch?v=HWmpUwl0FSE",
+      "timestamp": "2026-09-02T01:00:21+00:00",
+      "type": "video_title",
+      "topic": "state-local-politics",
+      "topics": [
+        "state-local-politics"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Covers Pennsylvania gubernatorial conflict between candidates",
+      "quote": "Stacy Garrity vs. Josh Shapiro: The Fight for Pennsylvania"
+    },
+    {
+      "voiceId": "mark-levin",
+      "voiceName": "Mark Levin",
+      "platform": "youtube",
+      "text": "The REAL Agenda Behind the Anti-Tech Movement",
+      "sourceUrl": "https://www.youtube.com/watch?v=lYNRmuPdMyM",
+      "timestamp": "2026-09-01T22:45:01+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Questions motives behind anti-tech movement agenda",
+      "quote": "The REAL Agenda Behind the Anti-Tech Movement"
+    },
+    {
+      "voiceId": "mark-levin",
+      "voiceName": "Mark Levin",
+      "platform": "youtube",
       "text": "Are You Being Lied To About AI? The Reality of Data Centers",
       "sourceUrl": "https://www.youtube.com/watch?v=k5V6zaqnkp8",
       "timestamp": "2026-09-01T02:00:06+00:00",
@@ -1702,58 +1754,6 @@
       "stance": "lean",
       "summary": "Examines legal disputes surrounding mail-in voting practices",
       "quote": "The Legal Battle Over Mail-In Voting: What You Need To Know"
-    },
-    {
-      "voiceId": "mark-levin",
-      "voiceName": "Mark Levin",
-      "platform": "youtube",
-      "text": "Supreme Court Victory: Trump's Ballroom &amp; The War on Power",
-      "sourceUrl": "https://www.youtube.com/watch?v=KLdYUfmmCWI",
-      "timestamp": "2026-09-02T02:00:06+00:00",
-      "type": "video_title",
-      "topic": "supreme-court-legal",
-      "topics": [
-        "supreme-court-legal",
-        "trump-administration"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Frames Trump Supreme Court decision as victory against power abuse",
-      "quote": "Supreme Court Victory: Trump's Ballroom &amp; The War on Power"
-    },
-    {
-      "voiceId": "mark-levin",
-      "voiceName": "Mark Levin",
-      "platform": "youtube",
-      "text": "Stacy Garrity vs. Josh Shapiro: The Fight for Pennsylvania",
-      "sourceUrl": "https://www.youtube.com/watch?v=HWmpUwl0FSE",
-      "timestamp": "2026-09-02T01:00:21+00:00",
-      "type": "video_title",
-      "topic": "state-local-politics",
-      "topics": [
-        "state-local-politics"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Covers Pennsylvania gubernatorial conflict between candidates",
-      "quote": "Stacy Garrity vs. Josh Shapiro: The Fight for Pennsylvania"
-    },
-    {
-      "voiceId": "mark-levin",
-      "voiceName": "Mark Levin",
-      "platform": "youtube",
-      "text": "The REAL Agenda Behind the Anti-Tech Movement",
-      "sourceUrl": "https://www.youtube.com/watch?v=lYNRmuPdMyM",
-      "timestamp": "2026-09-01T22:45:01+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Questions motives behind anti-tech movement agenda",
-      "quote": "The REAL Agenda Behind the Anti-Tech Movement"
     }
   ],
   "topicSummary": {
@@ -2391,6 +2391,12 @@
     ],
     "ai-technology": [
       {
+        "quote": "The REAL Agenda Behind the Anti-Tech Movement",
+        "sourceUrl": "https://www.youtube.com/watch?v=lYNRmuPdMyM",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T22:45:01+00:00"
+      },
+      {
         "quote": "Are You Being Lied To About AI? The Reality of Data Centers",
         "sourceUrl": "https://www.youtube.com/watch?v=k5V6zaqnkp8",
         "platform": "youtube",
@@ -2401,12 +2407,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=SpqVw_U0u34",
         "platform": "youtube",
         "timestamp": "2026-08-31T22:42:51+00:00"
-      },
-      {
-        "quote": "The REAL Agenda Behind the Anti-Tech Movement",
-        "sourceUrl": "https://www.youtube.com/watch?v=lYNRmuPdMyM",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T22:45:01+00:00"
       }
     ]
   }

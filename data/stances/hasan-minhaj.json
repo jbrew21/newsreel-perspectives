@@ -2,8 +2,8 @@
   "voiceId": "hasan-minhaj",
   "voiceName": "Hasan Minhaj",
   "updatedAt": "2026-09-02",
-  "topicCount": 15,
-  "stanceCount": 41,
+  "topicCount": 16,
+  "stanceCount": 42,
   "topics": [
     {
       "topic": "trump-policy",
@@ -454,6 +454,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Examines information authenticity and media manipulation tactics",
+          "quote": "Is This Video a Psyop? with Charlie Warzel",
+          "sourceUrl": "https://www.youtube.com/watch?v=z7lQdkiQfo4",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "supreme-court-legal",
