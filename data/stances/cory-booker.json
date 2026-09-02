@@ -2,8 +2,8 @@
   "voiceId": "cory-booker",
   "voiceName": "Cory Booker",
   "updatedAt": "2026-09-02",
-  "topicCount": 23,
-  "stanceCount": 69,
+  "topicCount": 24,
+  "stanceCount": 71,
   "topics": [
     {
       "topic": "trump-administration",
@@ -492,6 +492,33 @@
       "active": true
     },
     {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Criticizes Trump's wealth and Supreme Court inaction while families struggle",
+          "quote": "The Supreme Court just let Donald Trump keep pouring concrete on a $400 million ballroom while families in this country are choosing between rent, groceries, and medicine.\nA president who tells working families to tighten their belts should not get to throw a gilded ballroom up a",
+          "sourceUrl": "https://x.com/CoryBooker/status/2095236573704991198",
+          "platform": "x"
+        },
+        {
+          "date": "2026-06-30",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Criticizes Supreme Court ruling weakening campaign finance restrictions",
+          "quote": "The American people have made clear they want big money out of politics, but the Supreme Court just took a hammer to what few guardrails remain.\n\nCorruption must end in both politics and our courts.",
+          "sourceUrl": "https://bsky.app/profile/booker.senate.gov/post/3mpjbqoe53c2g",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "immigration",
       "label": "Immigration",
       "count": 2,
@@ -654,6 +681,24 @@
       "active": false
     },
     {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Condemns Trump tariffs and foreign policy as reckless and isolationist",
+          "quote": "President Trump\u2019s rhetoric, reckless tariffs, and chaotic foreign policy have strained bonds with our closest friends and pulled us toward isolation. That is not strength. That is not who we are. We must reclaim our role as a nation that leads with purpose, partnership, and moral",
+          "sourceUrl": "https://x.com/CoryBooker/status/2095149795593560078",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 1,
@@ -811,24 +856,6 @@
           "quote": "We can't accept this as normal.",
           "sourceUrl": "https://x.com/CoryBooker/status/2082466659319656458",
           "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2026-06-30",
-      "stances": [
-        {
-          "date": "2026-06-30",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Criticizes Supreme Court ruling weakening campaign finance restrictions",
-          "quote": "The American people have made clear they want big money out of politics, but the Supreme Court just took a hammer to what few guardrails remain.\n\nCorruption must end in both politics and our courts.",
-          "sourceUrl": "https://bsky.app/profile/booker.senate.gov/post/3mpjbqoe53c2g",
-          "platform": "bluesky"
         }
       ],
       "active": false

@@ -2,8 +2,8 @@
   "voiceId": "joyce-vance",
   "voiceName": "Joyce Vance",
   "updatedAt": "2026-09-02",
-  "topicCount": 16,
-  "stanceCount": 72,
+  "topicCount": 17,
+  "stanceCount": 73,
   "topics": [
     {
       "topic": "trump-administration",
@@ -126,8 +126,17 @@
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 12,
-      "lastActive": "2026-09-01",
+      "lastActive": "2026-09-02",
       "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Notes multiple legal cases filed in DC courts",
+          "quote": "They suing\u2014multiple cases in court in DC!",
+          "sourceUrl": "https://bsky.app/profile/joycewhitevance.bsky.social/post/3muk7lvww6k2d",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-01",
           "topic": "supreme-court-legal",
@@ -226,15 +235,6 @@
           "quote": "The suggestion that the president can rewrite a provision in the Constitution just because he disagrees with it is one of the most irresponsible, disgusting and moronic concepts in history of America.",
           "sourceUrl": "https://x.com/JoyceWhiteVance/status/2089033515962601951",
           "platform": "x"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "DOJ non-compliance with court orders signals potential contempt proceedings",
-          "quote": "DOJ went into federal court today and couldn\u2019t\u2014or wouldn\u2019t\u2014tell the judge when it would comply with his orders. Judge Emmett Sullivan brought up the last time he held federal prosecutors in contempt. It didn\u2019t sound like an idle history lesson: joycevance.substack.com/p/judge-sul",
-          "sourceUrl": "https://bsky.app/profile/joycewhitevance.bsky.social/post/3mszcovob3s2n",
-          "platform": "bluesky"
         }
       ],
       "active": true
@@ -688,6 +688,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Questions whether science can recover from recent challenges",
+          "quote": "Can science recover? joycevance.substack.com/p/live-with-...",
+          "sourceUrl": "https://bsky.app/profile/joycewhitevance.bsky.social/post/3muke6aros22i",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "trump-policy",

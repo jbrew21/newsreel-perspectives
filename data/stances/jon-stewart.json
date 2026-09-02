@@ -2,8 +2,8 @@
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
   "updatedAt": "2026-09-02",
-  "topicCount": 12,
-  "stanceCount": 18,
+  "topicCount": 13,
+  "stanceCount": 19,
   "topics": [
     {
       "topic": "trump-administration",
@@ -112,6 +112,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Examines Staten Island politics and governance issues",
+          "quote": "Mamdani &amp; Staten Island | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/f-bN8LgOZFY",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "congress-legislation",

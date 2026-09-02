@@ -2,8 +2,8 @@
   "voiceId": "tim-pool",
   "voiceName": "Tim Pool",
   "updatedAt": "2026-09-02",
-  "topicCount": 26,
-  "stanceCount": 103,
+  "topicCount": 27,
+  "stanceCount": 104,
   "topics": [
     {
       "topic": "elections",
@@ -1111,6 +1111,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Reports Gen Z activism on student loan forgiveness",
+          "quote": "Gen Z is DEMANDING Student Loan Forgiveness #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/ufvTtO9IO4E",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",

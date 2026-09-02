@@ -2,8 +2,8 @@
   "voiceId": "chris-murphy",
   "voiceName": "Chris Murphy",
   "updatedAt": "2026-09-02",
-  "topicCount": 17,
-  "stanceCount": 77,
+  "topicCount": 18,
+  "stanceCount": 79,
   "topics": [
     {
       "topic": "immigration",
@@ -350,9 +350,18 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 8,
-      "lastActive": "2026-09-01",
+      "count": 9,
+      "lastActive": "2026-09-02",
       "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Trump's war policy as cause of high gas prices",
+          "quote": "As I walk across the state this week, gas prices everywhere are over $4.25. That\u2019s totally unaffordable for any family living paycheck to paycheck. \n\nAnd the only reason prices are this high is Trump\u2019s insane, incompetent war. https://t.co/JP2HlFd9Ke",
+          "sourceUrl": "https://x.com/ChrisMurphyCT/status/2095166130386026772",
+          "platform": "x"
+        },
         {
           "date": "2026-09-01",
           "topic": "economy-trade",
@@ -778,6 +787,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Mocks constituent's demand to ban Islam as unconstitutional",
+          "quote": "Just met a guy on my walk across the state who had two messages for me (after calling me a communist):\n\na. obey the Constitution \nb. ban Islam \n\nTough instructions to follow.",
+          "sourceUrl": "https://x.com/ChrisMurphyCT/status/2095151501630976283",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "gun-policy",

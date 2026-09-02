@@ -3,14 +3,23 @@
   "voiceName": "Jimmy Dore",
   "updatedAt": "2026-09-02",
   "topicCount": 25,
-  "stanceCount": 136,
+  "stanceCount": 137,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 12,
-      "lastActive": "2026-09-01",
+      "lastActive": "2026-09-02",
       "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Highlights Trump's trading activity as noteworthy or suspicious",
+          "quote": "Jim Cramer Freezes When He Sees Trump\u2019s 21,000 Trades",
+          "sourceUrl": "https://www.youtube.com/watch?v=Riy0PZVjBC0",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-01",
           "topic": "trump-administration",
@@ -109,15 +118,6 @@
           "quote": "Trump Administration Declares WITCH HUNT Against Dissidents! w/ Kit Cabello",
           "sourceUrl": "https://www.youtube.com/watch?v=wX8CzCb-y20",
           "platform": "youtube"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Accuses Trump of betraying MAHA promises, compares to Nigerian prince scam",
-          "quote": "Trum continues his complete betrayal of what ever is left of MAHA. \n\nI haven\u2019t seen a con this big since Nigerian princes learned how to email:",
-          "sourceUrl": "https://x.com/jimmy_dore/status/2083283437444579537",
-          "platform": "x"
         }
       ],
       "active": true
@@ -924,6 +924,69 @@
       "active": true
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 6,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes 'Jewish Space Lasers' conspiracy as validated by mainstream source",
+          "quote": "Jewish Space Lasers Are REAL \u2014 Jerusalem Post Admits It",
+          "sourceUrl": "https://www.youtube.com/watch?v=EHOWjzHo4z0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes false reporting about Kirk assassination",
+          "quote": "Outrageous Kirk Assassination Lies CALLED OUT!",
+          "sourceUrl": "https://www.youtube.com/watch?v=v-zaR1mgmc8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Alleges U.S. media operating under censorship restrictions",
+          "quote": "Rick Sanchez Reveals What U.S. Media Are NOT ALLOWED To Say!",
+          "sourceUrl": "https://www.youtube.com/watch?v=fedryLNpkRE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Exposes religious leader for lying about violent video evidence",
+          "quote": "TPUSA Pastor CAUGHT LYING About Rooftop Shooter Video!",
+          "sourceUrl": "https://www.youtube.com/watch?v=gYnwjEzaOMM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes narrative control, accuses media of suppressing skepticism",
+          "quote": "The Tyler Robinson timeline you\u2019re supposed to believe. And if you doubt it, then you are a Jew hating conspiracy nut:",
+          "sourceUrl": "https://x.com/jimmy_dore/status/2087617451169366415",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Frames Dershowitz statement as controversial, implies problematic framing of Jewish people",
+          "quote": "SHOCKER: Alan Dershowitz Says \u201cJEWS ARE THE PROBLEM!\u201d",
+          "sourceUrl": "https://www.youtube.com/watch?v=8lt60t0iQJw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 6,
@@ -981,60 +1044,6 @@
           "summary": "Advocates for reclaiming American sovereignty and national direction",
           "quote": "Joe Kent On Charlie Kirk, Trump Shooting &amp; How Americans Can Take Our Country Back!",
           "sourceUrl": "https://www.youtube.com/watch?v=_wOylvcuM9M",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 5,
-      "lastActive": "2026-09-01",
-      "stances": [
-        {
-          "date": "2026-09-01",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes false reporting about Kirk assassination",
-          "quote": "Outrageous Kirk Assassination Lies CALLED OUT!",
-          "sourceUrl": "https://www.youtube.com/watch?v=v-zaR1mgmc8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-15",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Alleges U.S. media operating under censorship restrictions",
-          "quote": "Rick Sanchez Reveals What U.S. Media Are NOT ALLOWED To Say!",
-          "sourceUrl": "https://www.youtube.com/watch?v=fedryLNpkRE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Exposes religious leader for lying about violent video evidence",
-          "quote": "TPUSA Pastor CAUGHT LYING About Rooftop Shooter Video!",
-          "sourceUrl": "https://www.youtube.com/watch?v=gYnwjEzaOMM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes narrative control, accuses media of suppressing skepticism",
-          "quote": "The Tyler Robinson timeline you\u2019re supposed to believe. And if you doubt it, then you are a Jew hating conspiracy nut:",
-          "sourceUrl": "https://x.com/jimmy_dore/status/2087617451169366415",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Frames Dershowitz statement as controversial, implies problematic framing of Jewish people",
-          "quote": "SHOCKER: Alan Dershowitz Says \u201cJEWS ARE THE PROBLEM!\u201d",
-          "sourceUrl": "https://www.youtube.com/watch?v=8lt60t0iQJw",
           "platform": "youtube"
         }
       ],

@@ -2,8 +2,8 @@
   "voiceId": "mike-lee",
   "voiceName": "Mike Lee",
   "updatedAt": "2026-09-02",
-  "topicCount": 16,
-  "stanceCount": 51,
+  "topicCount": 17,
+  "stanceCount": 52,
   "topics": [
     {
       "topic": "immigration",
@@ -517,6 +517,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Probation is inadequate penalty for terror plots",
+          "quote": "To say the least, probation is insufficient punishment for terror plots.",
+          "sourceUrl": "https://x.com/SenMikeLee/status/2095235373550977273",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "ai-technology",

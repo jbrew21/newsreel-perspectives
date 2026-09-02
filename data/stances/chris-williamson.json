@@ -2,8 +2,8 @@
   "voiceId": "chris-williamson",
   "voiceName": "Chris Williamson",
   "updatedAt": "2026-09-02",
-  "topicCount": 14,
-  "stanceCount": 41,
+  "topicCount": 15,
+  "stanceCount": 42,
   "topics": [
     {
       "topic": "culture-war",
@@ -391,6 +391,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Suggests Trump administration will pursue controversial policies",
+          "quote": "\u201cTrump Might Actually Do the Unthinkable\u201d",
+          "sourceUrl": "https://www.youtube.com/watch?v=4vr65t9n_uI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",

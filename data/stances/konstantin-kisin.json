@@ -2,8 +2,8 @@
   "voiceId": "konstantin-kisin",
   "voiceName": "Konstantin Kisin",
   "updatedAt": "2026-09-02",
-  "topicCount": 10,
-  "stanceCount": 31,
+  "topicCount": 11,
+  "stanceCount": 32,
   "topics": [
     {
       "topic": "uk-world-politics",
@@ -301,6 +301,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Whistleblower challenges police institutional practices",
+          "quote": "Police Whistleblower: &quot;I Quit to Share the Truth&quot;",
+          "sourceUrl": "https://www.youtube.com/watch?v=cAIjIOuVabM",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",

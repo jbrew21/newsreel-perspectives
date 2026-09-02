@@ -1,9 +1,26 @@
 {
   "voiceId": "hasan-minhaj",
   "voiceName": "Hasan Minhaj",
-  "collectedAt": "2026-09-02T13:12:51.826287",
+  "collectedAt": "2026-09-02T21:04:00.262872",
   "date": "2026-09-02",
   "posts": [
+    {
+      "voiceId": "hasan-minhaj",
+      "voiceName": "Hasan Minhaj",
+      "platform": "youtube",
+      "text": "The Internet Is Fake - with Charlie Warzel",
+      "sourceUrl": "https://www.youtube.com/watch?v=z7lQdkiQfo4",
+      "timestamp": "2026-09-02T12:30:39+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Examines information authenticity and media manipulation tactics",
+      "quote": "The Internet Is Fake - with Charlie Warzel"
+    },
     {
       "voiceId": "hasan-minhaj",
       "voiceName": "Hasan Minhaj",
@@ -130,39 +147,29 @@
       "voiceId": "hasan-minhaj",
       "voiceName": "Hasan Minhaj",
       "platform": "youtube",
-      "text": "Will Trump Start World War 3? with Ben Rhodes",
-      "sourceUrl": "https://www.youtube.com/watch?v=dmCmfdUvxdQ",
-      "timestamp": "2026-08-26T12:30:26+00:00",
+      "text": "Will Google become\u2026 poison?",
+      "sourceUrl": "https://www.youtube.com/shorts/Gqig_a4xybI",
+      "timestamp": "2026-09-02T14:17:25+00:00",
       "type": "video_title",
-      "topic": "trump-policy",
+      "topic": "ai-technology",
       "topics": [
-        "trump-policy",
-        "military-defense"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Discusses risks of Trump escalating military conflicts globally",
-      "quote": "Will Trump Start World War 3? with Ben Rhodes"
-    },
-    {
-      "voiceId": "hasan-minhaj",
-      "voiceName": "Hasan Minhaj",
-      "platform": "youtube",
-      "text": "Is This Video a Psyop? with Charlie Warzel",
-      "sourceUrl": "https://www.youtube.com/watch?v=z7lQdkiQfo4",
-      "timestamp": "2026-09-02T12:30:39+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "topics": [
-        "media-press"
+        "ai-technology"
       ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Examines information authenticity and media manipulation tactics",
-      "quote": "Is This Video a Psyop? with Charlie Warzel"
+      "summary": "Expresses concern about Google's direction or influence",
+      "quote": "Will Google become\u2026 poison?"
     }
   ],
   "topicSummary": {
+    "media-press": [
+      {
+        "quote": "The Internet Is Fake - with Charlie Warzel",
+        "sourceUrl": "https://www.youtube.com/watch?v=z7lQdkiQfo4",
+        "platform": "youtube",
+        "timestamp": "2026-09-02T12:30:39+00:00"
+      }
+    ],
     "trump-policy": [
       {
         "quote": "Will Trump attack Greenland?",
@@ -175,12 +182,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/XIXZwjVo_mM",
         "platform": "youtube",
         "timestamp": "2026-08-27T12:13:22+00:00"
-      },
-      {
-        "quote": "Will Trump Start World War 3? with Ben Rhodes",
-        "sourceUrl": "https://www.youtube.com/watch?v=dmCmfdUvxdQ",
-        "platform": "youtube",
-        "timestamp": "2026-08-26T12:30:26+00:00"
       }
     ],
     "iran-conflict": [
@@ -219,12 +220,12 @@
         "timestamp": "2026-08-27T17:22:52+00:00"
       }
     ],
-    "media-press": [
+    "ai-technology": [
       {
-        "quote": "Is This Video a Psyop? with Charlie Warzel",
-        "sourceUrl": "https://www.youtube.com/watch?v=z7lQdkiQfo4",
+        "quote": "Will Google become\u2026 poison?",
+        "sourceUrl": "https://www.youtube.com/shorts/Gqig_a4xybI",
         "platform": "youtube",
-        "timestamp": "2026-09-02T12:30:39+00:00"
+        "timestamp": "2026-09-02T14:17:25+00:00"
       }
     ]
   }
