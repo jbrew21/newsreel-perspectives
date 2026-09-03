@@ -2,8 +2,8 @@
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
   "updatedAt": "2026-09-03",
-  "topicCount": 15,
-  "stanceCount": 60,
+  "topicCount": 16,
+  "stanceCount": 61,
   "topics": [
     {
       "topic": "sports",
@@ -589,6 +589,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 1,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Discusses ICE enforcement and Senate campaign platform",
+          "quote": "Abdul El-Sayed Opens Up About Israel, ICE and His Senate Campaign",
+          "sourceUrl": "https://www.youtube.com/watch?v=bKSuv0kGExU",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "media-press",

@@ -1,7 +1,7 @@
 {
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
-  "collectedAt": "2026-09-03T20:12:10.187065",
+  "collectedAt": "2026-09-03T22:58:54.253177",
   "date": "2026-09-03",
   "posts": [
     {
@@ -654,6 +654,23 @@
       "voiceId": "stephen-a-smith",
       "voiceName": "Stephen A. Smith",
       "platform": "youtube",
+      "text": "Dr. Abdul El-Sayed Say The Vice-President Should Talk To His Boss!",
+      "sourceUrl": "https://www.youtube.com/shorts/Ol50hO9Rq1A",
+      "timestamp": "2026-09-03T16:16:22+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Suggests VP should communicate with President on policy",
+      "quote": "Dr. Abdul El-Sayed Say The Vice-President Should Talk To His Boss!"
+    },
+    {
+      "voiceId": "stephen-a-smith",
+      "voiceName": "Stephen A. Smith",
+      "platform": "youtube",
       "text": "Laura Loomer Let's Call Things OUT | SSWSA",
       "sourceUrl": "https://www.youtube.com/shorts/hOaqTaAphlA",
       "timestamp": "2026-09-03T01:09:06+00:00",
@@ -722,18 +739,19 @@
       "voiceId": "stephen-a-smith",
       "voiceName": "Stephen A. Smith",
       "platform": "youtube",
-      "text": "Dr. Abdul El-Sayed Say The Vice-President Should Talk To His Boss!",
-      "sourceUrl": "https://www.youtube.com/shorts/Ol50hO9Rq1A",
-      "timestamp": "2026-09-03T16:16:22+00:00",
+      "text": "Abdul El-Sayed Opens Up About Israel, ICE and His Senate Campaign",
+      "sourceUrl": "https://www.youtube.com/watch?v=bKSuv0kGExU",
+      "timestamp": "2026-09-03T16:00:33+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "immigration",
       "topics": [
-        "trump-administration"
+        "immigration",
+        "elections"
       ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Suggests VP should communicate with President on policy",
-      "quote": "Dr. Abdul El-Sayed Say The Vice-President Should Talk To His Boss!"
+      "summary": "Discusses ICE enforcement and Senate campaign platform",
+      "quote": "Abdul El-Sayed Opens Up About Israel, ICE and His Senate Campaign"
     }
   ],
   "topicSummary": {
@@ -973,6 +991,14 @@
         "timestamp": "2019-06-21T03:01:07+00:00"
       }
     ],
+    "trump-administration": [
+      {
+        "quote": "Dr. Abdul El-Sayed Say The Vice-President Should Talk To His Boss!",
+        "sourceUrl": "https://www.youtube.com/shorts/Ol50hO9Rq1A",
+        "platform": "youtube",
+        "timestamp": "2026-09-03T16:16:22+00:00"
+      }
+    ],
     "media-personalities": [
       {
         "quote": "Laura Loomer Let's Call Things OUT | SSWSA",
@@ -1001,12 +1027,12 @@
         "timestamp": "2026-08-26T01:00:05+00:00"
       }
     ],
-    "trump-administration": [
+    "immigration": [
       {
-        "quote": "Dr. Abdul El-Sayed Say The Vice-President Should Talk To His Boss!",
-        "sourceUrl": "https://www.youtube.com/shorts/Ol50hO9Rq1A",
+        "quote": "Abdul El-Sayed Opens Up About Israel, ICE and His Senate Campaign",
+        "sourceUrl": "https://www.youtube.com/watch?v=bKSuv0kGExU",
         "platform": "youtube",
-        "timestamp": "2026-09-03T16:16:22+00:00"
+        "timestamp": "2026-09-03T16:00:33+00:00"
       }
     ]
   }

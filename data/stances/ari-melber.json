@@ -2,15 +2,24 @@
   "voiceId": "ari-melber",
   "voiceName": "Ari Melber",
   "updatedAt": "2026-09-03",
-  "topicCount": 9,
-  "stanceCount": 19,
+  "topicCount": 11,
+  "stanceCount": 23,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 7,
-      "lastActive": "2026-08-20",
+      "count": 8,
+      "lastActive": "2026-08-26",
       "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Reports Trump allegedly intervened in DOJ antitrust case",
+          "quote": "Reporting on a bombshell Wall Street Journal investigation detailing how President Trump allegedly intervened in the DOJ\u2019s antitrust case against Live Nation, urging officials to settle just days before the trial began.",
+          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7678421185650035982",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-08-20",
           "topic": "trump-administration",
@@ -72,6 +81,33 @@
           "summary": "GOP 'Jail Fauci' campaign validates Biden's position",
           "quote": "Reporting on how the GOP\u2019s \u201cJail Fauci\u201d crusade proves Biden right.",
           "sourceUrl": "https://www.tiktok.com/@arimelber/video/7668428308253609229",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Bill Gates warns about risks of AI boom",
+          "quote": "SEE IT: Microsoft founder Bill Gates sounds the alarm on the AI boom. Full breakdown on YouTube at ms.now/ari \ud83d\udcfa",
+          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7680630498250607886",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "MAGA allies using deregulation to reshape AI and media landscape",
+          "quote": "Special report on the tech boom, deregulation and the MAGA allies reshaping AI and media. Full report on YouTube at ms.now/ari \ud83d\udcfa",
+          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7675111502109576461",
           "platform": "tiktok"
         }
       ],
@@ -168,22 +204,40 @@
       "active": false
     },
     {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
+      "topic": "elections",
+      "label": "Elections & Campaigns",
       "count": 1,
-      "lastActive": "2026-08-17",
+      "lastActive": "2026-09-02",
       "stances": [
         {
-          "date": "2026-08-17",
-          "topic": "ai-technology",
+          "date": "2026-09-02",
+          "topic": "elections",
           "stance": "lean",
-          "summary": "MAGA allies using deregulation to reshape AI and media landscape",
-          "quote": "Special report on the tech boom, deregulation and the MAGA allies reshaping AI and media. Full report on YouTube at ms.now/ari \ud83d\udcfa",
-          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7675111502109576461",
+          "summary": "Highlights concerns about mail-in ballot rollout risks to elections",
+          "quote": "A whistleblower complaint alleges USPS\u2019s rollout of President Trump\u2019s mail-in ballot order could trigger a \u201ccatastrophic failure which could derail the midterm elections\u201d.",
+          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7680989655067577613",
           "platform": "tiktok"
         }
       ],
-      "active": false
+      "active": true
+    },
+    {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 1,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Questions Trump DOJ's handling of Epstein case",
+          "quote": "The Trump DOJ is facing new questions about the handling of the Epstein case.",
+          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7680717654444772622",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "culture-war",

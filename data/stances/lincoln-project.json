@@ -2,8 +2,8 @@
   "voiceId": "lincoln-project",
   "voiceName": "Lincoln Project",
   "updatedAt": "2026-09-03",
-  "topicCount": 20,
-  "stanceCount": 121,
+  "topicCount": 21,
+  "stanceCount": 122,
   "topics": [
     {
       "topic": "elections",
@@ -1201,6 +1201,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 1,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Criticizes tech billionaires' political influence and candidate funding",
+          "quote": "The Tech Overlords want to buy politicians who will force you to build their data centers in your backyard. Here\u2019s 5 of our #26in2026 Republican targets Elon has purchased this cycle.",
+          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3munagsx5cg2c",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",

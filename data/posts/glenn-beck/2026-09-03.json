@@ -1,9 +1,43 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-03T20:12:10.487677",
+  "collectedAt": "2026-09-03T22:58:54.537358",
   "date": "2026-09-03",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Trump Makes BIG Announcement About Midterms",
+      "sourceUrl": "https://www.youtube.com/watch?v=K7OpkOM2Zfw",
+      "timestamp": "2026-09-03T18:30:13+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Promotes Trump's midterm strategy and electoral plans",
+      "quote": "Trump Makes BIG Announcement About Midterms"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "What we do to the meat monopolies... echoes in eternity.",
+      "sourceUrl": "https://www.youtube.com/shorts/M3rxeQiHW3o",
+      "timestamp": "2026-09-03T15:40:49+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "topics": [
+        "economy-trade"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Opposes meat industry monopolies, advocates antitrust action",
+      "quote": "What we do to the meat monopolies... echoes in eternity."
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -88,61 +122,31 @@
       "stance": "strong",
       "summary": "Emphasizes importance of understanding Trump's recent executive action",
       "quote": "THIS Is What You Need To Understand About What Trump Just Did"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "The Democrat\u2019s Affordability Solution Is TERRIFYING",
-      "sourceUrl": "https://www.youtube.com/shorts/9BpESqH80as",
-      "timestamp": "2026-09-01T21:15:18+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "topics": [
-        "economy-trade",
-        "healthcare"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Democratic affordability policy as dangerous or alarming",
-      "quote": "The Democrat\u2019s Affordability Solution Is TERRIFYING"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Trump Makes BIG Announcement About Midterms",
-      "sourceUrl": "https://www.youtube.com/watch?v=K7OpkOM2Zfw",
-      "timestamp": "2026-09-03T18:30:13+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Promotes Trump's midterm strategy and electoral plans",
-      "quote": "Trump Makes BIG Announcement About Midterms"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "What we do to the meat monopolies... echoes in eternity.",
-      "sourceUrl": "https://www.youtube.com/shorts/M3rxeQiHW3o",
-      "timestamp": "2026-09-03T15:40:49+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "topics": [
-        "economy-trade"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Opposes meat industry monopolies, advocates antitrust action",
-      "quote": "What we do to the meat monopolies... echoes in eternity."
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "Trump Makes BIG Announcement About Midterms",
+        "sourceUrl": "https://www.youtube.com/watch?v=K7OpkOM2Zfw",
+        "platform": "youtube",
+        "timestamp": "2026-09-03T18:30:13+00:00"
+      },
+      {
+        "quote": "THIS Is What You Need To Understand About What Trump Just Did",
+        "sourceUrl": "https://www.youtube.com/watch?v=YajAebWotTg",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T23:00:32+00:00"
+      }
+    ],
+    "economy-trade": [
+      {
+        "quote": "What we do to the meat monopolies... echoes in eternity.",
+        "sourceUrl": "https://www.youtube.com/shorts/M3rxeQiHW3o",
+        "platform": "youtube",
+        "timestamp": "2026-09-03T15:40:49+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "The TRUTH About Data Centers. It\u2019s Not What You Think...",
@@ -171,34 +175,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/mZU6haKokP4",
         "platform": "youtube",
         "timestamp": "2026-09-02T00:15:30+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "THIS Is What You Need To Understand About What Trump Just Did",
-        "sourceUrl": "https://www.youtube.com/watch?v=YajAebWotTg",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T23:00:32+00:00"
-      },
-      {
-        "quote": "Trump Makes BIG Announcement About Midterms",
-        "sourceUrl": "https://www.youtube.com/watch?v=K7OpkOM2Zfw",
-        "platform": "youtube",
-        "timestamp": "2026-09-03T18:30:13+00:00"
-      }
-    ],
-    "economy-trade": [
-      {
-        "quote": "The Democrat\u2019s Affordability Solution Is TERRIFYING",
-        "sourceUrl": "https://www.youtube.com/shorts/9BpESqH80as",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T21:15:18+00:00"
-      },
-      {
-        "quote": "What we do to the meat monopolies... echoes in eternity.",
-        "sourceUrl": "https://www.youtube.com/shorts/M3rxeQiHW3o",
-        "platform": "youtube",
-        "timestamp": "2026-09-03T15:40:49+00:00"
       }
     ]
   }

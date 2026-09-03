@@ -2,8 +2,8 @@
   "voiceId": "pramila-jayapal",
   "voiceName": "Pramila Jayapal",
   "updatedAt": "2026-09-03",
-  "topicCount": 20,
-  "stanceCount": 100,
+  "topicCount": 21,
+  "stanceCount": 102,
   "topics": [
     {
       "topic": "immigration",
@@ -870,6 +870,33 @@
       "active": false
     },
     {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 2,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Opposes Trump's mail-voting restrictions as voter suppression",
+          "quote": "Trump votes by mail. But he wants to make it harder for others because it's the only way Republicans can win.\n\nHis new plan to withhold and reject ballots that don't meet his arbitrary standards will disenfranchise millions of Americans.\n\nThe Supreme Court must reject this.\n\nhttp",
+          "sourceUrl": "https://x.com/RepJayapal/status/2095623777573068869",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Democrats should articulate positive policy agenda and vision",
+          "quote": "Democrats need to stand FOR something \u2014 a real proposition agenda.",
+          "sourceUrl": "https://bsky.app/profile/jayapal.house.gov/post/3muae36pyid2l",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 3,
@@ -996,19 +1023,19 @@
       "active": true
     },
     {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
       "count": 1,
-      "lastActive": "2026-08-29",
+      "lastActive": "2026-09-03",
       "stances": [
         {
-          "date": "2026-08-29",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Democrats should articulate positive policy agenda and vision",
-          "quote": "Democrats need to stand FOR something \u2014 a real proposition agenda.",
-          "sourceUrl": "https://bsky.app/profile/jayapal.house.gov/post/3muae36pyid2l",
-          "platform": "bluesky"
+          "date": "2026-09-03",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Calls for higher taxes on billionaires to address inequality",
+          "quote": "This is one of the biggest issues in our country \u2014 the rich keep tipping the scales, buying politicians, and rigging the tax system.\n\nMeanwhile, everyone else is stuck with medical debt, higher costs, and low wages.\n\nWe need to make billionaires finally pay their fair share.",
+          "sourceUrl": "https://x.com/RepJayapal/status/2095617562834764032",
+          "platform": "x"
         }
       ],
       "active": true
