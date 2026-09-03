@@ -2,8 +2,8 @@
   "voiceId": "jimmy-dore",
   "voiceName": "Jimmy Dore",
   "updatedAt": "2026-09-03",
-  "topicCount": 25,
-  "stanceCount": 139,
+  "topicCount": 26,
+  "stanceCount": 142,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1212,6 +1212,42 @@
       "active": false
     },
     {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Reports congressman publicly names alleged Epstein associates",
+          "quote": "Massie Names 14 Epstein Associates on House Floor",
+          "sourceUrl": "https://www.youtube.com/watch?v=oqUNsvIYRf8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Highlights controversial statement by Epstein's lawyer, implies problematic framing",
+          "quote": "&quot;The Real Problem Are The Jews&quot; Says Jeffrey Epstein\u2019s Lawyer",
+          "sourceUrl": "https://www.youtube.com/shorts/GrNyqUNY1WU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "epstein-scandal",
+          "stance": "strong",
+          "summary": "Attacks Alan Dershowitz as Epstein associate and genocide supporter",
+          "quote": "Professor Marandi SMACKS DOWN Epstein Pal &amp; Genocidal Maniac Alan Dershowitz! w/ Nick Cruse",
+          "sourceUrl": "https://www.youtube.com/watch?v=mOJSYdefjko",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 3,
@@ -1242,6 +1278,33 @@
           "summary": "Exposes secret meetings between TPUSA and Miriam Adelson's organization",
           "quote": "REVEALED: Secret Airplane Meetings Between TPUSA &amp; Miriam Adelson\u2019s Org. w/ Stew Peters",
           "sourceUrl": "https://www.youtube.com/watch?v=DNPjKLuDNC8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 2,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes ICE use of shock devices as torture",
+          "quote": "ICE Agents Get Shock Gloves \u2014 The New Torture Tool",
+          "sourceUrl": "https://www.youtube.com/watch?v=zVFDSWDRjYc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Frames Joe Kent as fearful of ICE prison revelations",
+          "quote": "Here\u2019s Why Joe Kent Is Afraid Of ICE Prisons!",
+          "sourceUrl": "https://www.youtube.com/watch?v=bIAshS2bxfI",
           "platform": "youtube"
         }
       ],
@@ -1365,31 +1428,22 @@
       "active": false
     },
     {
-      "topic": "epstein-scandal",
-      "label": "Epstein Scandal",
-      "count": 2,
-      "lastActive": "2026-08-05",
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 1,
+      "lastActive": "2026-09-03",
       "stances": [
         {
-          "date": "2026-08-05",
-          "topic": "epstein-scandal",
-          "stance": "lean",
-          "summary": "Highlights controversial statement by Epstein's lawyer, implies problematic framing",
-          "quote": "&quot;The Real Problem Are The Jews&quot; Says Jeffrey Epstein\u2019s Lawyer",
-          "sourceUrl": "https://www.youtube.com/shorts/GrNyqUNY1WU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "epstein-scandal",
+          "date": "2026-09-03",
+          "topic": "science-space",
           "stance": "strong",
-          "summary": "Attacks Alan Dershowitz as Epstein associate and genocide supporter",
-          "quote": "Professor Marandi SMACKS DOWN Epstein Pal &amp; Genocidal Maniac Alan Dershowitz! w/ Nick Cruse",
-          "sourceUrl": "https://www.youtube.com/watch?v=mOJSYdefjko",
+          "summary": "Alleges Bill Gates funds creation of dangerous AI-designed viruses",
+          "quote": "Bill Gates Is Funding Deadly Viruses Designed by AI",
+          "sourceUrl": "https://www.youtube.com/watch?v=OiZV98Gxq-g",
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "ai-technology",
@@ -1423,24 +1477,6 @@
           "quote": "The \u201coverwhelming evidence\u201d is that Tyler Robinson is a patsy &amp; this is an obvious coverup:",
           "sourceUrl": "https://x.com/jimmy_dore/status/2089529603547418902",
           "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 1,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Frames Joe Kent as fearful of ICE prison revelations",
-          "quote": "Here\u2019s Why Joe Kent Is Afraid Of ICE Prisons!",
-          "sourceUrl": "https://www.youtube.com/watch?v=bIAshS2bxfI",
-          "platform": "youtube"
         }
       ],
       "active": false

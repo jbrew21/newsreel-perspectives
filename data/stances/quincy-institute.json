@@ -3,7 +3,7 @@
   "voiceName": "Quincy Institute",
   "updatedAt": "2026-09-03",
   "topicCount": 10,
-  "stanceCount": 21,
+  "stanceCount": 22,
   "topics": [
     {
       "topic": "military-defense",
@@ -96,6 +96,42 @@
       "active": true
     },
     {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Warns House Israel boycott bill risks chilling political expression",
+          "quote": "House to universities: Don't you dare boycott Israel (by Blaise Malley). The House passed legislation Thursday that would put federal funding at risk for universities that participate in certain boycotts of Israel, despite warnings from critics that the measure could chill politi",
+          "sourceUrl": "https://responsiblestatecraft.org/house-passes-bill-israel-boycott/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Scrutinizes Secretary Huckabee's response to settlers' attack on journalists",
+          "quote": "What Huckabee is doing about dead Americans in the West Bank (by Blaise Malley). Israeli settlers attacked an NBC News crew in the village of Jalud over the weekend, injuring the network\u2019s correspondent, Matt Bradley, as well as two other crew members and Aida Ahmed Abdullah, the",
+          "sourceUrl": "https://responsiblestatecraft.org/mike-huckabee-israel-settlements/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Analyzes evolution of pro-Israel advocacy and lobbying in U.S. politics",
+          "quote": "Israel's Lobby 2.0: What Walt &amp; Mearsheimer didn't anticipate (by John B. Judis). In March 2006, the Anti-Defamation League (ADL) denounced the essay by John Mearsheimer and Stephen Walt, \"The Israel Lobby and U.S. Foreign Policy,\" as a \"a classical conspiratorial anti-Semiti",
+          "sourceUrl": "https://responsiblestatecraft.org/israel-lobby-book/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 3,
@@ -126,33 +162,6 @@
           "summary": "Warns Trump administration conflates protest with terrorism",
           "quote": "Trump designates protesters terrorists. How far will it go? (by Elizabeth Beavers). Protesting is terrorism. At least, that is the message that the Trump administration has communicated in a series of recent actions, culminating last week in its designation of the U.K.-based Pale",
           "sourceUrl": "https://responsiblestatecraft.org/palestine-action-terrorists/",
-          "platform": "blog"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 2,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Scrutinizes Secretary Huckabee's response to settlers' attack on journalists",
-          "quote": "What Huckabee is doing about dead Americans in the West Bank (by Blaise Malley). Israeli settlers attacked an NBC News crew in the village of Jalud over the weekend, injuring the network\u2019s correspondent, Matt Bradley, as well as two other crew members and Aida Ahmed Abdullah, the",
-          "sourceUrl": "https://responsiblestatecraft.org/mike-huckabee-israel-settlements/",
-          "platform": "blog"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Analyzes evolution of pro-Israel advocacy and lobbying in U.S. politics",
-          "quote": "Israel's Lobby 2.0: What Walt &amp; Mearsheimer didn't anticipate (by John B. Judis). In March 2006, the Anti-Defamation League (ADL) denounced the essay by John Mearsheimer and Stephen Walt, \"The Israel Lobby and U.S. Foreign Policy,\" as a \"a classical conspiratorial anti-Semiti",
-          "sourceUrl": "https://responsiblestatecraft.org/israel-lobby-book/",
           "platform": "blog"
         }
       ],

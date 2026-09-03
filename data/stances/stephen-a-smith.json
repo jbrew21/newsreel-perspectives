@@ -3,7 +3,7 @@
   "voiceName": "Stephen A. Smith",
   "updatedAt": "2026-09-03",
   "topicCount": 15,
-  "stanceCount": 59,
+  "stanceCount": 60,
   "topics": [
     {
       "topic": "sports",
@@ -224,9 +224,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 7,
-      "lastActive": "2026-08-07",
+      "count": 8,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Suggests VP should communicate with President on policy",
+          "quote": "Dr. Abdul El-Sayed Say The Vice-President Should Talk To His Boss!",
+          "sourceUrl": "https://www.youtube.com/shorts/Ol50hO9Rq1A",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-07",
           "topic": "trump-administration",
@@ -291,7 +300,7 @@
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "elections",

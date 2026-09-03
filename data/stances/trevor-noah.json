@@ -2,8 +2,8 @@
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
   "updatedAt": "2026-09-03",
-  "topicCount": 20,
-  "stanceCount": 73,
+  "topicCount": 22,
+  "stanceCount": 75,
   "topics": [
     {
       "topic": "culture-war",
@@ -751,6 +751,42 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 1,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "epstein-scandal",
+          "stance": "strong",
+          "summary": "Criticizes selective focus on Democratic Epstein ties while ignoring Trump connection",
+          "quote": "MAGA is obsessed with Epstein's involvement with Democrats, but who\u2019s gonna tell them about Trump?",
+          "sourceUrl": "https://www.youtube.com/shorts/wYMEEdqi268",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 1,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Investigates questionable tax practices in Saratoga Springs",
+          "quote": "Stephen Colbert Investigates the Saratoga Springs Tax Scandal | The Daily Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=M5Mktrf7784",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",
