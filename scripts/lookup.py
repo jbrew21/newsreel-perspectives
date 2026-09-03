@@ -18,7 +18,7 @@ import re
 import sys
 import urllib.request
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 ROOT = Path(__file__).parent.parent
 POSTS_DIR = ROOT / "data" / "posts"
@@ -398,6 +398,8 @@ def fulltext_search(headline, dates):
     if isinstance(dates, str):
         dates = [dates]
 
+    _now = datetime.now(timezone.utc)
+
     voices_found = {}
     seen_urls = set()
 
@@ -453,6 +455,15 @@ def fulltext_search(headline, dates):
                 word_count = max(len(quote_text.split()), 1)
                 keyword_density = len(matched_words) / word_count
                 quote_score += keyword_density * 10
+                # Recency: daily collections carry each voice's older popular
+                # posts too, so without this a keyword-dense years-old tweet
+                # outranks yesterday's take on the same story. Undated posts
+                # parse to epoch and sink with the stale ones.
+                age_days = (_now - search_helpers.parse_timestamp(p.get('timestamp'))).total_seconds() / 86400
+                if age_days <= 7:
+                    quote_score += 5 - age_days * 0.5
+                elif age_days > 30:
+                    quote_score -= min((age_days - 30) / 30, 12)
                 # Sink subscription/product solicitations below any real quote
                 if is_promo_quote(quote_text):
                     quote_score -= 100
