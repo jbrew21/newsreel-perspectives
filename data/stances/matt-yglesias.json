@@ -3,7 +3,7 @@
   "voiceName": "Matt Yglesias",
   "updatedAt": "2026-09-03",
   "topicCount": 21,
-  "stanceCount": 146,
+  "stanceCount": 147,
   "topics": [
     {
       "topic": "elections",
@@ -243,8 +243,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-08-31",
+      "lastActive": "2026-09-02",
       "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights practical AI applications for data visualization",
+          "quote": "I've played around a ton with AI but the main actually useful thing I do with it have ordinary language conversations generate ggplot graphics which is super useful in a banal way. \n\nwww.slowboring.com/p/the-great-...",
+          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mujy4bp6v22z",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-31",
           "topic": "ai-technology",
@@ -342,15 +351,6 @@
           "summary": "Notes data center backlash rhetoric disconnects from actual construction",
           "quote": "A lot of data center backlash coverage, but it seems like data centers are getting built.",
           "sourceUrl": "https://x.com/mattyglesias/status/2086814086864486423",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-08",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Data centers face political opposition, proposes solutions for acceptance",
-          "quote": "My plan to make data centers more politically palatable",
-          "sourceUrl": "https://x.com/mattyglesias/status/2086142617834639699",
           "platform": "x"
         }
       ],
@@ -1086,6 +1086,60 @@
       "active": false
     },
     {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 5,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Frames policy as net benefit to humanity, not just climate",
+          "quote": "It's not \"better for the climate\" it's just on net better for humanity.",
+          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mujy624ckk2z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Opposes status-quo-biased regulation as destructive to human freedom",
+          "quote": "Yes, this idea that we should regulate on the basis of pecuniary externalities in favor of the status quo like this would be incredibly destructive to human freedom.",
+          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mu2tpoq72k26",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Supports distributed solar expansion in Africa despite Western downsides",
+          "quote": "Distributed solar has a lot of downsides relative to the existing power systems in the West but it\u2019s a huge winner in Africa that\u2019s going to transform hundreds of millions of lives.",
+          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mu2tmddjgc26",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Criticizes failure to credit Trump climate policies",
+          "quote": "Trump is a climate hero but the libs won\u2019t give him credit",
+          "sourceUrl": "https://x.com/mattyglesias/status/2088414721414246654",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Questions scalability assumptions about distributed renewable energy deployment",
+          "quote": "The idea that DERs can be deployed faster than large-scale projects seems to implicitly depend on the DERs remaining niche \u2014 if 25% of Americans wake up tomorrow and decide to install rooftop solar there will be huge delays and bottlenecks.",
+          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3ms56jqfw5c2a",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 7,
@@ -1156,51 +1210,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
-      "count": 4,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "climate-environment",
-          "stance": "strong",
-          "summary": "Opposes status-quo-biased regulation as destructive to human freedom",
-          "quote": "Yes, this idea that we should regulate on the basis of pecuniary externalities in favor of the status quo like this would be incredibly destructive to human freedom.",
-          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mu2tpoq72k26",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-27",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Supports distributed solar expansion in Africa despite Western downsides",
-          "quote": "Distributed solar has a lot of downsides relative to the existing power systems in the West but it\u2019s a huge winner in Africa that\u2019s going to transform hundreds of millions of lives.",
-          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mu2tmddjgc26",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "climate-environment",
-          "stance": "strong",
-          "summary": "Criticizes failure to credit Trump climate policies",
-          "quote": "Trump is a climate hero but the libs won\u2019t give him credit",
-          "sourceUrl": "https://x.com/mattyglesias/status/2088414721414246654",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-02",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Questions scalability assumptions about distributed renewable energy deployment",
-          "quote": "The idea that DERs can be deployed faster than large-scale projects seems to implicitly depend on the DERs remaining niche \u2014 if 25% of Americans wake up tomorrow and decide to install rooftop solar there will be huge delays and bottlenecks.",
-          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3ms56jqfw5c2a",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "healthcare",

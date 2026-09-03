@@ -1,9 +1,26 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-03T11:29:32.162418",
+  "collectedAt": "2026-09-03T13:09:26.070971",
   "date": "2026-09-03",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "The TRUTH About Data Centers. It\u2019s Not What You Think...",
+      "sourceUrl": "https://www.youtube.com/watch?v=zk4lpDeRDzg",
+      "timestamp": "2026-09-02T23:00:06+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Suggests data center narrative is misleading or incomplete",
+      "quote": "The TRUTH About Data Centers. It\u2019s Not What You Think..."
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -123,43 +140,29 @@
       "stance": "lean",
       "summary": "Frames data centers as competitive threat requiring strategic response",
       "quote": "How to Win the War with Data Centers | Hour 1 | 9/1/26"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "The Left Is Now MAD About Renaming Things?!",
-      "sourceUrl": "https://www.youtube.com/shorts/VJV8GMPyGeo",
-      "timestamp": "2026-09-01T01:00:19+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "topics": [
-        "culture-war"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Criticizes left-wing position on renaming initiatives",
-      "quote": "The Left Is Now MAD About Renaming Things?!"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "The TRUTH About Data Centers. It\u2019s Not What You Think...",
-      "sourceUrl": "https://www.youtube.com/watch?v=zk4lpDeRDzg",
-      "timestamp": "2026-09-02T23:00:06+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Suggests data center narrative is misleading or incomplete",
-      "quote": "The TRUTH About Data Centers. It\u2019s Not What You Think..."
     }
   ],
   "topicSummary": {
+    "ai-technology": [
+      {
+        "quote": "The TRUTH About Data Centers. It\u2019s Not What You Think...",
+        "sourceUrl": "https://www.youtube.com/watch?v=zk4lpDeRDzg",
+        "platform": "youtube",
+        "timestamp": "2026-09-02T23:00:06+00:00"
+      },
+      {
+        "quote": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It",
+        "sourceUrl": "https://www.youtube.com/watch?v=tZXjYJsVdmI",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T18:00:20+00:00"
+      },
+      {
+        "quote": "How to Win the War with Data Centers | Hour 1 | 9/1/26",
+        "sourceUrl": "https://www.youtube.com/watch?v=Cfc1d-aAT4E",
+        "platform": "youtube",
+        "timestamp": "2026-09-01T14:03:40+00:00"
+      }
+    ],
     "criminal-justice": [
       {
         "quote": "THIS Just Happened With The Lindsay Clancy Murder Trial...",
@@ -196,34 +199,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/9BpESqH80as",
         "platform": "youtube",
         "timestamp": "2026-09-01T21:15:18+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "Big Tech Wants Your Town... Here\u2019s How To Make Them Pay For It",
-        "sourceUrl": "https://www.youtube.com/watch?v=tZXjYJsVdmI",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T18:00:20+00:00"
-      },
-      {
-        "quote": "How to Win the War with Data Centers | Hour 1 | 9/1/26",
-        "sourceUrl": "https://www.youtube.com/watch?v=Cfc1d-aAT4E",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T14:03:40+00:00"
-      },
-      {
-        "quote": "The TRUTH About Data Centers. It\u2019s Not What You Think...",
-        "sourceUrl": "https://www.youtube.com/watch?v=zk4lpDeRDzg",
-        "platform": "youtube",
-        "timestamp": "2026-09-02T23:00:06+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "The Left Is Now MAD About Renaming Things?!",
-        "sourceUrl": "https://www.youtube.com/shorts/VJV8GMPyGeo",
-        "platform": "youtube",
-        "timestamp": "2026-09-01T01:00:19+00:00"
       }
     ]
   }

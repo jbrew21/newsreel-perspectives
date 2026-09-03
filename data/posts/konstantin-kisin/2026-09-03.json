@@ -1,9 +1,26 @@
 {
   "voiceId": "konstantin-kisin",
   "voiceName": "Konstantin Kisin",
-  "collectedAt": "2026-09-03T11:29:32.163102",
+  "collectedAt": "2026-09-03T13:09:26.071855",
   "date": "2026-09-03",
   "posts": [
+    {
+      "voiceId": "konstantin-kisin",
+      "voiceName": "Konstantin Kisin",
+      "platform": "youtube",
+      "text": "Why the Met Police is Collapsing",
+      "sourceUrl": "https://www.youtube.com/shorts/pk_fNcFqMqk",
+      "timestamp": "2026-09-03T10:47:43+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "topics": [
+        "uk-world-politics"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes Metropolitan Police institutional decline",
+      "quote": "Why the Met Police is Collapsing"
+    },
     {
       "voiceId": "konstantin-kisin",
       "voiceName": "Konstantin Kisin",
@@ -20,6 +37,23 @@
       "stance": "lean",
       "summary": "Whistleblower challenges police institutional practices",
       "quote": "Police Whistleblower: &quot;I Quit to Share the Truth&quot;"
+    },
+    {
+      "voiceId": "konstantin-kisin",
+      "voiceName": "Konstantin Kisin",
+      "platform": "youtube",
+      "text": "Are We Really Any Different From The Past?",
+      "sourceUrl": "https://www.youtube.com/shorts/BoDCjjgiloM",
+      "timestamp": "2026-09-02T11:01:48+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "topics": [
+        "culture-war"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies modern society has lost past virtues or standards",
+      "quote": "Are We Really Any Different From The Past?"
     },
     {
       "voiceId": "konstantin-kisin",
@@ -123,52 +157,16 @@
       "stance": "lean",
       "summary": "Explores historical roots of Israel-Palestine conflict",
       "quote": "What Hitler Said to the Grand Mufti in 1941"
-    },
-    {
-      "voiceId": "konstantin-kisin",
-      "voiceName": "Konstantin Kisin",
-      "platform": "youtube",
-      "text": "Why the Met Police is Collapsing",
-      "sourceUrl": "https://www.youtube.com/shorts/pk_fNcFqMqk",
-      "timestamp": "2026-09-03T10:47:43+00:00",
-      "type": "video_title",
-      "topic": "uk-world-politics",
-      "topics": [
-        "uk-world-politics"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes Metropolitan Police institutional decline",
-      "quote": "Why the Met Police is Collapsing"
-    },
-    {
-      "voiceId": "konstantin-kisin",
-      "voiceName": "Konstantin Kisin",
-      "platform": "youtube",
-      "text": "Are We Really Any Different From The Past?",
-      "sourceUrl": "https://www.youtube.com/shorts/BoDCjjgiloM",
-      "timestamp": "2026-09-02T11:01:48+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "topics": [
-        "culture-war"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies modern society has lost past virtues or standards",
-      "quote": "Are We Really Any Different From The Past?"
     }
   ],
   "topicSummary": {
-    "criminal-justice": [
-      {
-        "quote": "Police Whistleblower: &quot;I Quit to Share the Truth&quot;",
-        "sourceUrl": "https://www.youtube.com/watch?v=cAIjIOuVabM",
-        "platform": "youtube",
-        "timestamp": "2026-09-02T18:00:18+00:00"
-      }
-    ],
     "uk-world-politics": [
+      {
+        "quote": "Why the Met Police is Collapsing",
+        "sourceUrl": "https://www.youtube.com/shorts/pk_fNcFqMqk",
+        "platform": "youtube",
+        "timestamp": "2026-09-03T10:47:43+00:00"
+      },
       {
         "quote": "The Cost of Forgetting History",
         "sourceUrl": "https://www.youtube.com/shorts/xodkSAQVRFo",
@@ -180,26 +178,28 @@
         "sourceUrl": "https://www.youtube.com/watch?v=KCcGxGX__ls",
         "platform": "youtube",
         "timestamp": "2026-08-28T18:00:38+00:00"
-      },
+      }
+    ],
+    "criminal-justice": [
       {
-        "quote": "Why the Met Police is Collapsing",
-        "sourceUrl": "https://www.youtube.com/shorts/pk_fNcFqMqk",
+        "quote": "Police Whistleblower: &quot;I Quit to Share the Truth&quot;",
+        "sourceUrl": "https://www.youtube.com/watch?v=cAIjIOuVabM",
         "platform": "youtube",
-        "timestamp": "2026-09-03T10:47:43+00:00"
+        "timestamp": "2026-09-02T18:00:18+00:00"
       }
     ],
     "culture-war": [
-      {
-        "quote": "The Historians Who've Had Enough of Woke History - Nigel Biggar and Robert Tombs",
-        "sourceUrl": "https://www.youtube.com/watch?v=vp3mav_I8o8",
-        "platform": "youtube",
-        "timestamp": "2026-08-29T18:00:14+00:00"
-      },
       {
         "quote": "Are We Really Any Different From The Past?",
         "sourceUrl": "https://www.youtube.com/shorts/BoDCjjgiloM",
         "platform": "youtube",
         "timestamp": "2026-09-02T11:01:48+00:00"
+      },
+      {
+        "quote": "The Historians Who've Had Enough of Woke History - Nigel Biggar and Robert Tombs",
+        "sourceUrl": "https://www.youtube.com/watch?v=vp3mav_I8o8",
+        "platform": "youtube",
+        "timestamp": "2026-08-29T18:00:14+00:00"
       }
     ],
     "foreign-policy-diplomacy": [
