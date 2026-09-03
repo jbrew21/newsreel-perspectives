@@ -1,9 +1,9 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 16,
-  "stanceCount": 53,
+  "stanceCount": 54,
   "topics": [
     {
       "topic": "culture-war",
@@ -447,6 +447,33 @@
       "active": false
     },
     {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Mocks immigration enforcement through food/deportation wordplay",
+          "quote": "Times Square Torta Gets Deported... TO HELL",
+          "sourceUrl": "https://www.youtube.com/watch?v=_z1-0HwHcBo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Sarcastically frames migrant concerns as economic, implying skepticism of asylum claims",
+          "quote": "What's the problem? It's just a bunch of women and children seeking a better life.",
+          "sourceUrl": "https://www.youtube.com/shorts/k-Su6oCz7eg",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 2,
@@ -603,24 +630,6 @@
           "summary": "Implies damning clientele details in Epstein case",
           "quote": "The clientele is exactly what you'd expect.",
           "sourceUrl": "https://www.youtube.com/shorts/uAVP5wtHzFM",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 1,
-      "lastActive": "2026-07-31",
-      "stances": [
-        {
-          "date": "2026-07-31",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Sarcastically frames migrant concerns as economic, implying skepticism of asylum claims",
-          "quote": "What's the problem? It's just a bunch of women and children seeking a better life.",
-          "sourceUrl": "https://www.youtube.com/shorts/k-Su6oCz7eg",
           "platform": "youtube"
         }
       ],

@@ -1,16 +1,25 @@
 {
   "voiceId": "elon-musk",
   "voiceName": "Elon Musk",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 7,
-  "stanceCount": 22,
+  "stanceCount": 23,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 11,
-      "lastActive": "2026-08-15",
+      "count": 12,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Promotes Tesla Cybercab autonomous vehicle technology",
+          "quote": "A Storm of Cybercabs",
+          "sourceUrl": "https://x.com/elonmusk/status/2095364595326263447",
+          "platform": "x"
+        },
         {
           "date": "2026-08-15",
           "topic": "ai-technology",
@@ -111,7 +120,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "free-speech-censorship",

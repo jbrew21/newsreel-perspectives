@@ -1,16 +1,25 @@
 {
   "voiceId": "chris-cuomo",
   "voiceName": "Chris Cuomo",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 18,
-  "stanceCount": 76,
+  "stanceCount": 78,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 10,
-      "lastActive": "2026-08-27",
+      "count": 11,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Advocates strategy to defeat Trump",
+          "quote": "How You Actually Beat Trump",
+          "sourceUrl": "https://www.youtube.com/watch?v=n7udDwZzSdY",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-27",
           "topic": "trump-administration",
@@ -195,6 +204,78 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 7,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Economic conditions not translating to consumer confidence or wellbeing",
+          "quote": "Why You Don't Feel This Economy",
+          "sourceUrl": "https://www.youtube.com/watch?v=H3d2ps2We70",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes blaming individuals for systemic economic problems",
+          "quote": "There's Money in Blaming the Victim",
+          "sourceUrl": "https://www.youtube.com/watch?v=BGL4cYsMDKQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Presents data center investment as economic opportunity",
+          "quote": "Kevin O'Leary Defends the Data Center Boom",
+          "sourceUrl": "https://www.youtube.com/watch?v=SW-ZEWpExVo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-23",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Frames economic policy debate as individual choice rather than socialism",
+          "quote": "This Isn't Socialism. It's Choices.",
+          "sourceUrl": "https://www.youtube.com/shorts/VME8BSAAvw8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Walmart for executive pay while workers rely on food stamps",
+          "quote": "Who cares if Walmart management salaries compare favorably to certain doctors? The real issue is why do they have money for those salaries but not enough to keep so many workers off food stamps? instagram.com/p/DcCT44Tz0FS/\u2026",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/2090129644271948243",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critiques current capitalist system as fundamentally broken",
+          "quote": "Capitalism Isn\u2019t Supposed To Work Like This",
+          "sourceUrl": "https://www.youtube.com/shorts/0gOKHKyMbqs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Trump for failing to hold oil companies accountable",
+          "quote": "Trump won't do shit to the oil companies...but they sure are shitting on you",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/2084441484367913421",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 7,
@@ -261,69 +342,6 @@
           "summary": "Criticizes voter choice in recent election",
           "quote": "You voted for this?",
           "sourceUrl": "https://x.com/ChrisCuomo/status/2082888565118112053",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 6,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Economic conditions not translating to consumer confidence or wellbeing",
-          "quote": "Why You Don't Feel This Economy",
-          "sourceUrl": "https://www.youtube.com/watch?v=H3d2ps2We70",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-30",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes blaming individuals for systemic economic problems",
-          "quote": "There's Money in Blaming the Victim",
-          "sourceUrl": "https://www.youtube.com/watch?v=BGL4cYsMDKQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-23",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Frames economic policy debate as individual choice rather than socialism",
-          "quote": "This Isn't Socialism. It's Choices.",
-          "sourceUrl": "https://www.youtube.com/shorts/VME8BSAAvw8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Walmart for executive pay while workers rely on food stamps",
-          "quote": "Who cares if Walmart management salaries compare favorably to certain doctors? The real issue is why do they have money for those salaries but not enough to keep so many workers off food stamps? instagram.com/p/DcCT44Tz0FS/\u2026",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/2090129644271948243",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Critiques current capitalist system as fundamentally broken",
-          "quote": "Capitalism Isn\u2019t Supposed To Work Like This",
-          "sourceUrl": "https://www.youtube.com/shorts/0gOKHKyMbqs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Trump for failing to hold oil companies accountable",
-          "quote": "Trump won't do shit to the oil companies...but they sure are shitting on you",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/2084441484367913421",
           "platform": "x"
         }
       ],
@@ -777,7 +795,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "trump-policy",

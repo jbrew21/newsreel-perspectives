@@ -1,9 +1,9 @@
 {
   "voiceId": "matt-pearce",
   "voiceName": "Matt Pearce",
-  "updatedAt": "2026-09-02",
-  "topicCount": 10,
-  "stanceCount": 42,
+  "updatedAt": "2026-09-03",
+  "topicCount": 11,
+  "stanceCount": 43,
   "topics": [
     {
       "topic": "media-press",
@@ -436,6 +436,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 1,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "NBA salary cap restricts worker compensation and bargaining power",
+          "quote": "You know this wouldn\u2019t have happened if the NBA were less anti-worker and didn\u2019t have a salary cap.\n\nwww.wsj.com/sports/baske...",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mulh7zwamk2z",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "billionaires-wealth",

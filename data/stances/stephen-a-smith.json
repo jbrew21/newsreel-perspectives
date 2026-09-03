@@ -1,9 +1,9 @@
 {
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 15,
-  "stanceCount": 57,
+  "stanceCount": 59,
   "topics": [
     {
       "topic": "sports",
@@ -125,9 +125,27 @@
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
-      "count": 8,
-      "lastActive": "2026-08-26",
+      "count": 10,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Platforms Laura Loomer commentary, implies endorsement of calling things out",
+          "quote": "Laura Loomer Let's Call Things OUT | SSWSA",
+          "sourceUrl": "https://www.youtube.com/shorts/hOaqTaAphlA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Frames Loomer's comments negatively, suggests political damage to Republicans",
+          "quote": "Laura Loomer\u2019s \u201cGhetto\u201d Comments Could Cost Republicans the Midterms",
+          "sourceUrl": "https://www.youtube.com/watch?v=XJPL1duRCPM",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-26",
           "topic": "media-personalities",
@@ -384,42 +402,6 @@
       "active": false
     },
     {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 3,
-      "lastActive": "2026-08-19",
-      "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Commits to opening doors and creating opportunities for Black journalists",
-          "quote": "The work speaks for itself. I\u2019ll keep opening doors and creating opportunities for Black journalist.",
-          "sourceUrl": "https://www.youtube.com/shorts/2H5t0tlv3jg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Defends work against criticism, emphasizes factual foundation of advocacy",
-          "quote": "They can try to discredit the work, but the facts speak for themselves.",
-          "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7675417495611739405",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Celebrates Black women",
-          "quote": "The greatest woman I have ever known is a Black woman.",
-          "sourceUrl": "https://www.youtube.com/shorts/qKcrM7sbBb4",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 4,
@@ -460,6 +442,42 @@
           "quote": "I'm not backing down from this one.\n\nYou can support people's rights AND believe biological men shouldn't compete in women's sports. Those two things are not mutually exclusive.\n\nMy issue isn't hate. It's protecting women, protecting girls, and asking why a WNBA coach chose to in",
           "sourceUrl": "https://x.com/stephenasmith/status/2084723639140892956",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 3,
+      "lastActive": "2026-08-19",
+      "stances": [
+        {
+          "date": "2026-08-19",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Commits to opening doors and creating opportunities for Black journalists",
+          "quote": "The work speaks for itself. I\u2019ll keep opening doors and creating opportunities for Black journalist.",
+          "sourceUrl": "https://www.youtube.com/shorts/2H5t0tlv3jg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Defends work against criticism, emphasizes factual foundation of advocacy",
+          "quote": "They can try to discredit the work, but the facts speak for themselves.",
+          "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7675417495611739405",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Celebrates Black women",
+          "quote": "The greatest woman I have ever known is a Black woman.",
+          "sourceUrl": "https://www.youtube.com/shorts/qKcrM7sbBb4",
+          "platform": "youtube"
         }
       ],
       "active": false

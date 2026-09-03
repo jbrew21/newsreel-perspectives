@@ -1,10 +1,55 @@
 {
   "voiceId": "quincy-institute",
   "voiceName": "Quincy Institute",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 10,
-  "stanceCount": 18,
+  "stanceCount": 21,
   "topics": [
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 4,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Criticizes Trump administration military spending and aircraft design priorities",
+          "quote": "Pentagon puts possible $131 billion price tag on 1970s-era fighter (by Mark Thompson). The Bunker appears originally at the Project on Government Oversight and is republished here with permission.President Trump designs aircraft carriers the way kids build paper airplanes. It\u2019s j",
+          "sourceUrl": "https://responsiblestatecraft.org/f15-fighter-jet/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Questions Pentagon loyalty demands on NATO allies regarding U.S. foreign policy priorities",
+          "quote": "Want to save NATO? Ask its members to do less. (by Johan  Wennstrom). This summer the Pentagon handed NATO members a questionnaire asking whether they support in part, \u201cU.S. foreign policy priorities.\u201d Dubbed a \u201cloyalty test\u201d in the press, it was seen by many Europeans as the mos",
+          "sourceUrl": "https://responsiblestatecraft.org/nato-europe-trump/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Highlights U.S. university military research partnerships with Israeli defense",
+          "quote": "US universities get millions to do military research for Israel (by Mila Halgren). See an insect crawling in the corner of the room? It might be a surveillance robot, thanks to research at Carnegie Mellon University to develop cockroach-like robots with, and for, the Israeli mili",
+          "sourceUrl": "https://responsiblestatecraft.org/israel-military-us-universities/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Questions scope and rationale of expanding U.S. military operations in Latin America",
+          "quote": "What do current US military ops in Latin America actually look like? (by Andrew  M. Leonard). On Thursday, U.S. SOUTHCOM Commander Gen. Francis L. Donovan met with the Colombian and Ecuadorian defense ministers in San Lorenzo, Ecuador. The trio agreed on a plan to significantly e",
+          "sourceUrl": "https://responsiblestatecraft.org/us-military-latin-america/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
@@ -162,24 +207,6 @@
           "summary": "Questions viability of U.S. stabilization efforts in Libya",
           "quote": "Trump wants to stabilize Libya. Militants have other plans. (by Khaled Mahmoud). A series of crises have roiled Libya over the last month, undermining a U.S.-led initiative to resolve the country\u2019s profound political predicament and open its markets to American investment.Violent",
           "sourceUrl": "https://responsiblestatecraft.org/libya-trump/",
-          "platform": "blog"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 1,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Questions scope and rationale of expanding U.S. military operations in Latin America",
-          "quote": "What do current US military ops in Latin America actually look like? (by Andrew  M. Leonard). On Thursday, U.S. SOUTHCOM Commander Gen. Francis L. Donovan met with the Colombian and Ecuadorian defense ministers in San Lorenzo, Ecuador. The trio agreed on a plan to significantly e",
-          "sourceUrl": "https://responsiblestatecraft.org/us-military-latin-america/",
           "platform": "blog"
         }
       ],

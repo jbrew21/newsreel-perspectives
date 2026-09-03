@@ -1,7 +1,7 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 24,
   "stanceCount": 100,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-01",
+      "lastActive": "2026-09-02",
       "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Suggests data center narrative is misleading or incomplete",
+          "quote": "The TRUTH About Data Centers. It\u2019s Not What You Think...",
+          "sourceUrl": "https://www.youtube.com/watch?v=zk4lpDeRDzg",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-01",
           "topic": "ai-technology",
@@ -108,15 +117,6 @@
           "summary": "Government and corporations conducting surveillance without public knowledge",
           "quote": "You're Being Watched And Don't Even Know It",
           "sourceUrl": "https://www.youtube.com/shorts/0sqo9VLN3vM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-02",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Warns about privacy risks and dangers of surveillance camera technology",
-          "quote": "The Dark Side Of Flock Cameras: What NO ONE Ever Told You",
-          "sourceUrl": "https://www.youtube.com/watch?v=tyNprEYSQOw",
           "platform": "youtube"
         }
       ],
@@ -726,6 +726,51 @@
       "active": true
     },
     {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 4,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Questions DSA candidate's competence or strategy through framing",
+          "quote": "Is this DSA Candidate Crazy Or Genius?",
+          "sourceUrl": "https://www.youtube.com/shorts/XwO59bBI_v0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Criticizes Georgia's electoral procedures as unprecedented and potentially dangerous",
+          "quote": "Georgia Just Did Something We\u2019ve NEVER Seen Before. It Could Be Very Dangerous.",
+          "sourceUrl": "https://www.youtube.com/watch?v=4GjNKdkYJWs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Criticizes Democratic loss in Michigan, warns of national implications",
+          "quote": "We Just Lost In Michigan, THIS Is What It Means For The Country...",
+          "sourceUrl": "https://www.youtube.com/watch?v=HAaJyYl8-u4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Criticizes Michigan Senate candidate's associations as problematic",
+          "quote": "Meet Michigan\u2019s \u201cCapitalist\u201d Senate Candidate\u2026 With Some DISTURBING Friends",
+          "sourceUrl": "https://www.youtube.com/watch?v=ktGis2mGwPQ",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 5,
@@ -777,52 +822,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 4,
-      "lastActive": "2026-08-28",
-      "stances": [
-        {
-          "date": "2026-08-28",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Questions DSA candidate's competence or strategy through framing",
-          "quote": "Is this DSA Candidate Crazy Or Genius?",
-          "sourceUrl": "https://www.youtube.com/shorts/XwO59bBI_v0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-08",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Criticizes Georgia's electoral procedures as unprecedented and potentially dangerous",
-          "quote": "Georgia Just Did Something We\u2019ve NEVER Seen Before. It Could Be Very Dangerous.",
-          "sourceUrl": "https://www.youtube.com/watch?v=4GjNKdkYJWs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Criticizes Democratic loss in Michigan, warns of national implications",
-          "quote": "We Just Lost In Michigan, THIS Is What It Means For The Country...",
-          "sourceUrl": "https://www.youtube.com/watch?v=HAaJyYl8-u4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Criticizes Michigan Senate candidate's associations as problematic",
-          "quote": "Meet Michigan\u2019s \u201cCapitalist\u201d Senate Candidate\u2026 With Some DISTURBING Friends",
-          "sourceUrl": "https://www.youtube.com/watch?v=ktGis2mGwPQ",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-personalities",
@@ -1029,7 +1029,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "immigration",

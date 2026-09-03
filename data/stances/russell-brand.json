@@ -1,9 +1,9 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "updatedAt": "2026-09-02",
-  "topicCount": 25,
-  "stanceCount": 79,
+  "updatedAt": "2026-09-03",
+  "topicCount": 26,
+  "stanceCount": 80,
   "topics": [
     {
       "topic": "culture-war",
@@ -778,6 +778,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Suggests BlackRock exerts improper influence over world leaders",
+          "quote": "This is how BlackRock gets to world leaders...",
+          "sourceUrl": "https://www.youtube.com/shorts/ort_91QUDd4",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",

@@ -1,7 +1,7 @@
 {
   "voiceId": "isabel-brown",
   "voiceName": "Isabel Brown",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 16,
   "stanceCount": 61,
   "topics": [
@@ -465,33 +465,6 @@
       "active": true
     },
     {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 2,
-      "lastActive": "2026-08-19",
-      "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Questions whether Google discriminates against Christians and white people",
-          "quote": "Is Google biased against Christians & white people? \ud83e\uddd0\ud83e\uddd0\ud83e\uddd0",
-          "sourceUrl": "https://www.tiktok.com/@theisabelbrown/video/7675797673760312607",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-07-27",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Characterizes content as child abuse",
-          "quote": "this is objectively child abuse",
-          "sourceUrl": "https://www.tiktok.com/@theisabelbrown/video/7667252959515774239",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 3,
@@ -523,6 +496,33 @@
           "quote": "Just to be clear, the evolution of AI we\u2019re watching this week isn\u2019t to miraculously cure rare diseases or build affordable housing \u2014 but to destroy every rare book on the planet and to outsource the most basic emotional connection we have with our loved ones to a machine so we c",
           "sourceUrl": "https://x.com/theisabelb/status/2082825819655929916",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 2,
+      "lastActive": "2026-08-19",
+      "stances": [
+        {
+          "date": "2026-08-19",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Questions whether Google discriminates against Christians and white people",
+          "quote": "Is Google biased against Christians & white people? \ud83e\uddd0\ud83e\uddd0\ud83e\uddd0",
+          "sourceUrl": "https://www.tiktok.com/@theisabelbrown/video/7675797673760312607",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-07-27",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Characterizes content as child abuse",
+          "quote": "this is objectively child abuse",
+          "sourceUrl": "https://www.tiktok.com/@theisabelbrown/video/7667252959515774239",
+          "platform": "tiktok"
         }
       ],
       "active": false
@@ -624,7 +624,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "religion-faith",

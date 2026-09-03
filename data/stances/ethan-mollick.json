@@ -1,7 +1,7 @@
 {
   "voiceId": "ethan-mollick",
   "voiceName": "Ethan Mollick",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 1,
   "stanceCount": 12,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-02",
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Demonstrates AI agent capabilities for creative, multi-modal projects",
+          "quote": "Fable 5.1: \"Create the Catalog of Ships from the Iliad with a map, etc. i should be able to explore each accurate ship in 3D. there should be real images & archeological data i can draw on. test it with agents to make it accurate & beautiful, then revise\" homer-catalogue-of-ships",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muliscq6ik2c",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-02",
           "topic": "ai-technology",
@@ -27,6 +36,15 @@
           "summary": "Calls for new AI system defense philosophy beyond cybersecurity",
           "quote": "These 3 pages (from before AI) on complex systems are worth reading\n\nComplex systems run broken but survive because the flaws rarely line up, which allows humans a chance to intervene. AI can find or make aligned flaws. We  need a similar new philosophy of system defense (beyond ",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muk4iiojus2o",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Notes rapid evolution in AI agent design approaches over 10 months",
+          "quote": "(Left: AgentBuilder from OpenAI DevDay in October, 2025; Right: from the Hugging Face Incident in July)",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mukvyhkmws2y",
           "platform": "bluesky"
         },
         {
@@ -99,24 +117,6 @@
           "summary": "Explains how universal jailbreak prompts spread misalignment across unguardrailed models",
           "quote": "In a lot of ways, the Hugging Face Incident came from the models identifying a series of universal jailbreak prompt injections for themselves, such that almost any unguardrailed model that encountered it on their own became convinced of the rightness of their misaligned cause.",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mufstynfik2v",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Observes AI writing tools losing competitive advantage as output becomes recognizable",
-          "quote": "The First Golden Age of AI writing is now over. For a brief period of time, many people were better off having Claude do a lot of their writing, because it is a pretty good writer & AI detectors were bad\n\nNow ClaudeSpeak is cliched & suspect & annoying, and Pangram is well-known.",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mufjzkuxl22t",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Rule-based AI approaches fundamentally inadequate for real morality",
-          "quote": "Its kind of a bummer that Asimov's Three Laws of Robotics do not work for actual AI morality. But the failure shows why rule-based approaches won't work.\n\n(and Asimov wanted to write stories about how robots got around the Laws, so their failure was a good thing for his plots)",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mue7rj3rkk2l",
           "platform": "bluesky"
         }
       ],

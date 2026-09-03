@@ -1,9 +1,9 @@
 {
   "voiceId": "vivek-ramaswamy",
   "voiceName": "Vivek Ramaswamy",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 17,
-  "stanceCount": 76,
+  "stanceCount": 77,
   "topics": [
     {
       "topic": "state-local-politics",
@@ -233,9 +233,18 @@
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 9,
-      "lastActive": "2026-09-02",
+      "count": 10,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Challenges opponent's fitness for office, demands debate participation",
+          "quote": "Just publicly accepted a third debate invitation on live TV tonight. If Acton can\u2019t debate, she certainly can\u2019t lead the state. https://t.co/gsCfve4eZ8",
+          "sourceUrl": "https://x.com/VivekGRamaswamy/status/2095309339309556182",
+          "platform": "x"
+        },
         {
           "date": "2026-09-02",
           "topic": "elections",
@@ -564,42 +573,6 @@
       "active": false
     },
     {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 3,
-      "lastActive": "2026-08-19",
-      "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Criticizes opponent for comparing law enforcement to KKK",
-          "quote": "My opponent compares law enforcement to the KKK (yes that\u2019s real).",
-          "sourceUrl": "https://www.youtube.com/shorts/l_ZvcviZGgc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Criticizes law enforcement by comparing to KKK",
-          "quote": "Compares law enforcement to the Ku Klux Klan. Listen for yourself.",
-          "sourceUrl": "https://www.tiktok.com/@vivekramaswamy/video/7673137270043561230",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Calls for restoring law and order in cities",
-          "quote": "Time to restore law & order in our cities.",
-          "sourceUrl": "https://www.tiktok.com/@vivekramaswamy/video/7670231129877761293",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "education",
       "label": "Education",
       "count": 4,
@@ -684,6 +657,42 @@
           "summary": "Honors Gold Star families and military sacrifice",
           "quote": "Never forget about Gold Star. Live from Evendale, OH.",
           "sourceUrl": "https://www.tiktok.com/@vivekramaswamy/video/7668073020388314382",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 3,
+      "lastActive": "2026-08-19",
+      "stances": [
+        {
+          "date": "2026-08-19",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes opponent for comparing law enforcement to KKK",
+          "quote": "My opponent compares law enforcement to the KKK (yes that\u2019s real).",
+          "sourceUrl": "https://www.youtube.com/shorts/l_ZvcviZGgc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes law enforcement by comparing to KKK",
+          "quote": "Compares law enforcement to the Ku Klux Klan. Listen for yourself.",
+          "sourceUrl": "https://www.tiktok.com/@vivekramaswamy/video/7673137270043561230",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Calls for restoring law and order in cities",
+          "quote": "Time to restore law & order in our cities.",
+          "sourceUrl": "https://www.tiktok.com/@vivekramaswamy/video/7670231129877761293",
           "platform": "tiktok"
         }
       ],

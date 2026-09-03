@@ -1,9 +1,9 @@
 {
   "voiceId": "eva-galperin",
   "voiceName": "Eva Galperin",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 8,
-  "stanceCount": 31,
+  "stanceCount": 32,
   "topics": [
     {
       "topic": "ai-technology",
@@ -125,9 +125,18 @@
     {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
-      "count": 8,
-      "lastActive": "2026-08-28",
+      "count": 9,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes police use of surveillance technology for harassment and intimidation",
+          "quote": "I post a lot of stories about cops using Flock to stalk former or current partners, but don't forget that cops also use Flock to intimidate and harass people who try to hold them accountable.",
+          "sourceUrl": "https://bsky.app/profile/evacide.bsky.social/post/3mul5kppjzc26",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-28",
           "topic": "criminal-justice",

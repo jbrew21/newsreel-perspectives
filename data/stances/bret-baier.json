@@ -1,7 +1,7 @@
 {
   "voiceId": "bret-baier",
   "voiceName": "Bret Baier",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 8,
   "stanceCount": 21,
   "topics": [
@@ -84,7 +84,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "economy-trade",
@@ -150,33 +150,6 @@
       "active": true
     },
     {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-08-19",
-      "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Frames defense buildup as catching up on lost production capacity",
-          "quote": "Duffey acknowledges the push to ramp up manufacturing capacity, stating the administration is \u201cmaking up for lost time\u201d by accelerating multi-billion-dollar procurement deals with defense contractors to rapidly scale up production and rebuild the defense industrial base. #pentago",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675814104501669151",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Highlights large missile contract as landmark defense industrial expansion",
-          "quote": "Pentagon Undersecretary Michael Duffey details a landmark $22.9 billion Tomahawk missile contract designed to ramp up U.S. weapons production and create 3,000 jobs. #military #pentagon #defense #nationalsecurity",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675804038310415646",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
       "count": 3,
@@ -207,6 +180,33 @@
           "summary": "Fauci privately disagreed on reopening, sought personal prominence",
           "quote": "FAUCI'S SECRET DIARIES REVEALED: Disagreements over reopening, frustration with colleagues, and embracing global stardom\u2014newly released diary entries show what Dr. Anthony Fauci was privately writing during 2020.",
           "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7667335935922572575",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-08-19",
+      "stances": [
+        {
+          "date": "2026-08-19",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Frames defense buildup as catching up on lost production capacity",
+          "quote": "Duffey acknowledges the push to ramp up manufacturing capacity, stating the administration is \u201cmaking up for lost time\u201d by accelerating multi-billion-dollar procurement deals with defense contractors to rapidly scale up production and rebuild the defense industrial base. #pentago",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675814104501669151",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Highlights large missile contract as landmark defense industrial expansion",
+          "quote": "Pentagon Undersecretary Michael Duffey details a landmark $22.9 billion Tomahawk missile contract designed to ramp up U.S. weapons production and create 3,000 jobs. #military #pentagon #defense #nationalsecurity",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675804038310415646",
           "platform": "tiktok"
         }
       ],

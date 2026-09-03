@@ -1,9 +1,9 @@
 {
   "voiceId": "bernie-sanders",
   "voiceName": "Bernie Sanders",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 17,
-  "stanceCount": 100,
+  "stanceCount": 101,
   "topics": [
     {
       "topic": "healthcare",
@@ -933,6 +933,33 @@
       "active": true
     },
     {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Opposes Trump's Iran military actions, criticizes fuel price increases",
+          "quote": "No, Mr. Trump. The American people don\u2019t want you to rename the Strait of Hormuz after yourself.\n\nThey want you to end your illegal war in Iran that has raised diesel prices to $5.69 a gallon &amp; gas prices to $4.12 a gallon.\n\nYou\u2019re the President, not a mad king. Act like it. ",
+          "sourceUrl": "https://x.com/SenSanders/status/2095289418667966662",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Opposes Iran war spending while domestic infrastructure crumbles",
+          "quote": "The U.S. is the richest and most advanced nation on earth.\n\nWe are spending huge amounts on AI to bomb Iran and destroy infrastructure.\n\nYet after nearly 2 weeks, we can't restore electricity to Gary, IN, a low-income Black city?\n\nUnacceptable. Let\u2019s get our priorities straight.",
+          "sourceUrl": "https://x.com/SenSanders/status/2091970263856394274",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "military-defense",
       "label": "Military & Defense",
       "count": 3,
@@ -981,24 +1008,6 @@
           "summary": "Condemns ICE enforcement as terrorizing communities, demands immigration reform",
           "quote": "ICE is terrorizing our communities and separating families at a record rate this summer.\n \nTrump's domestic army is rounding up children and deporting people who have not committed a single crime.\n \nThis must end. We need real immigration reform, not a militarized ICE.",
           "sourceUrl": "https://x.com/SenSanders/status/2093375280467370343",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 1,
-      "lastActive": "2026-08-24",
-      "stances": [
-        {
-          "date": "2026-08-24",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Opposes Iran war spending while domestic infrastructure crumbles",
-          "quote": "The U.S. is the richest and most advanced nation on earth.\n\nWe are spending huge amounts on AI to bomb Iran and destroy infrastructure.\n\nYet after nearly 2 weeks, we can't restore electricity to Gary, IN, a low-income Black city?\n\nUnacceptable. Let\u2019s get our priorities straight.",
-          "sourceUrl": "https://x.com/SenSanders/status/2091970263856394274",
           "platform": "x"
         }
       ],

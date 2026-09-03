@@ -1,9 +1,9 @@
 {
   "voiceId": "megyn-kelly",
   "voiceName": "Megyn Kelly",
-  "updatedAt": "2026-09-02",
-  "topicCount": 15,
-  "stanceCount": 58,
+  "updatedAt": "2026-09-03",
+  "topicCount": 17,
+  "stanceCount": 62,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -125,9 +125,18 @@
     {
       "topic": "culture-war",
       "label": "Culture War",
-      "count": 9,
-      "lastActive": "2026-09-02",
+      "count": 10,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes Charlie Kirk's treatment of LGBTQ+ people",
+          "quote": "Megyn Kelly Brings Receipts on How Charlie Kirk Treated Everyone... Including Gay and &quot;Trans&quot; People",
+          "sourceUrl": "https://www.youtube.com/shorts/qWg68xdBWpk",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-02",
           "topic": "culture-war",
@@ -474,6 +483,33 @@
       "active": true
     },
     {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 2,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Highlights father's criticism of Democratic immigration policies",
+          "quote": "Furious Father UNLOADS on Dems Over Soft Immigration Policies",
+          "sourceUrl": "https://www.youtube.com/watch?v=yKaMqGwgFMM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Amplifies father's anger at Democratic immigration policies",
+          "quote": "Watch OUTRAGED Father Tear Into Democratic Politicians Over Their Illegal Immigration Policies",
+          "sourceUrl": "https://www.youtube.com/shorts/ReSwwIiQ_8U",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "drugs-addiction",
       "label": "Drugs & Addiction",
       "count": 2,
@@ -589,6 +625,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 1,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Opposes protecting civil rights of mentally ill individuals",
+          "quote": "Megyn Kelly is SICK of Hearing about &quot;Civil Rights&quot; of Mentally Ill: &quot;Sick of This Bullsh*t&quot;",
+          "sourceUrl": "https://www.youtube.com/shorts/CCgIVojJRKE",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "trump-administration",

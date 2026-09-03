@@ -1,7 +1,7 @@
 {
   "voiceId": "jake-tapper",
   "voiceName": "Jake Tapper",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 14,
   "stanceCount": 44,
   "topics": [
@@ -240,6 +240,42 @@
       "active": false
     },
     {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 3,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Criticizes Trump and Hegseth for lack of accountability over civilian casualties",
+          "quote": "6 months ago today, as the US and Israel began attacking Iran, a tomahawk missile hit a school in Iran, killing more than 160 children. Neither Trump nor Hegseth has demonstrated any accountability or transparency.\n\nwww.cnn.com/2026/07/28/w...",
+          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mu6atg5kgs2p",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Expresses concern for Iranian political prisoner's fate",
+          "quote": "RT @NazaninBoniadi: I am horrified by this news. Mr. Pashaei is a kind and decent man who loves Iran deeply. I am praying for his swift and\u2026",
+          "sourceUrl": "https://x.com/jaketapper/status/2089901799788429756",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Highlights Iran's brutality against journalists and activists",
+          "quote": "RT @JeffStorobinsky: .@jaketapper Anchor of @TheLeadCNN w/\n\nIranian Journalist and Activist  @AlinejadMasih \n\nIran's horrific brutality of\u2026",
+          "sourceUrl": "https://x.com/jaketapper/status/2085170754128158914",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 4,
@@ -282,43 +318,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 3,
-      "lastActive": "2026-08-28",
-      "stances": [
-        {
-          "date": "2026-08-28",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Criticizes Trump and Hegseth for lack of accountability over civilian casualties",
-          "quote": "6 months ago today, as the US and Israel began attacking Iran, a tomahawk missile hit a school in Iran, killing more than 160 children. Neither Trump nor Hegseth has demonstrated any accountability or transparency.\n\nwww.cnn.com/2026/07/28/w...",
-          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mu6atg5kgs2p",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Expresses concern for Iranian political prisoner's fate",
-          "quote": "RT @NazaninBoniadi: I am horrified by this news. Mr. Pashaei is a kind and decent man who loves Iran deeply. I am praying for his swift and\u2026",
-          "sourceUrl": "https://x.com/jaketapper/status/2089901799788429756",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Highlights Iran's brutality against journalists and activists",
-          "quote": "RT @JeffStorobinsky: .@jaketapper Anchor of @TheLeadCNN w/\n\nIranian Journalist and Activist  @AlinejadMasih \n\nIran's horrific brutality of\u2026",
-          "sourceUrl": "https://x.com/jaketapper/status/2085170754128158914",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-press",

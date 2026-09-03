@@ -1,16 +1,25 @@
 {
   "voiceId": "scott-galloway",
   "voiceName": "Scott Galloway",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 23,
-  "stanceCount": 91,
+  "stanceCount": 93,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-01",
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions feasibility of AI kill switch",
+          "quote": "Is It Too Late for an AI Kill Switch?",
+          "sourceUrl": "https://www.youtube.com/shorts/KIsagRu0gK8",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-01",
           "topic": "ai-technology",
@@ -109,15 +118,6 @@
           "quote": "We fail to understand that tech CEOs do not have our best interests at heart and make decisions that harm teen girls and radicalize young men.",
           "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7673872098854554894",
           "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Critiques self-reinforcing economic dynamics of AI investment",
-          "quote": "The Half-Trillion-Dollar AI Loop | The Week",
-          "sourceUrl": "https://www.youtube.com/watch?v=81JWLqRRjqw",
-          "platform": "youtube"
         }
       ],
       "active": true
@@ -438,6 +438,78 @@
       "active": true
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 7,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Suggests therapy may not be necessary for everyone",
+          "quote": "You may not need therapy",
+          "sourceUrl": "https://www.youtube.com/shorts/YE6NB34WWIg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Questions widespread adoption of GLP-1 drugs",
+          "quote": "Are we all going to be on GLP-1s?",
+          "sourceUrl": "https://www.youtube.com/shorts/PUizckJmdcs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "GLP-1 drugs present overlooked health risks warranting caution",
+          "quote": "The overlooked risk of GLP-1s",
+          "sourceUrl": "https://www.youtube.com/shorts/cx3Apy7fq-U",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Critiques U.S. healthcare system accessibility and affordability",
+          "quote": "Why I don't have health insurance",
+          "sourceUrl": "https://www.youtube.com/shorts/rTDGUBdtpmU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Critiques health insurance as regressive wealth transfer mechanism",
+          "quote": "Health insurance in America is a transfer of wealth from the poor to the rich.",
+          "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7671258773264141582",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Criticizes health insurance system as fundamentally exploitative",
+          "quote": "Scott Galloway: Health Insurance Is a Scam | Office Hours",
+          "sourceUrl": "https://www.youtube.com/watch?v=3V_4pGPpouo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Sweden model reconciles billionaires with universal healthcare",
+          "quote": "Billionaires AND Universal Healthcare? The Sweden Answer",
+          "sourceUrl": "https://www.youtube.com/watch?v=V1KFrNTPdiA",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "climate-environment",
       "label": "Climate & Environment",
       "count": 6,
@@ -612,60 +684,6 @@
           "summary": "Critiques Trump's pattern of finding legal workarounds",
           "quote": "The Real Reason Trump Always Finds a Workaround",
           "sourceUrl": "https://www.youtube.com/watch?v=vQ4mTcw5l7Y",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 5,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "GLP-1 drugs present overlooked health risks warranting caution",
-          "quote": "The overlooked risk of GLP-1s",
-          "sourceUrl": "https://www.youtube.com/shorts/cx3Apy7fq-U",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-08",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Critiques U.S. healthcare system accessibility and affordability",
-          "quote": "Why I don't have health insurance",
-          "sourceUrl": "https://www.youtube.com/shorts/rTDGUBdtpmU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Critiques health insurance as regressive wealth transfer mechanism",
-          "quote": "Health insurance in America is a transfer of wealth from the poor to the rich.",
-          "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7671258773264141582",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Criticizes health insurance system as fundamentally exploitative",
-          "quote": "Scott Galloway: Health Insurance Is a Scam | Office Hours",
-          "sourceUrl": "https://www.youtube.com/watch?v=3V_4pGPpouo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Sweden model reconciles billionaires with universal healthcare",
-          "quote": "Billionaires AND Universal Healthcare? The Sweden Answer",
-          "sourceUrl": "https://www.youtube.com/watch?v=V1KFrNTPdiA",
           "platform": "youtube"
         }
       ],

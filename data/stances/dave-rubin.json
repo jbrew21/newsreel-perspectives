@@ -1,9 +1,9 @@
 {
   "voiceId": "dave-rubin",
   "voiceName": "Dave Rubin",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-03",
   "topicCount": 28,
-  "stanceCount": 106,
+  "stanceCount": 107,
   "topics": [
     {
       "topic": "media-personalities",
@@ -960,6 +960,33 @@
       "active": false
     },
     {
+      "topic": "religion-faith",
+      "label": "Religion & Faith",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Frames Muslim facility expansion as encountering local opposition",
+          "quote": "Muslim Center Tries Huge Expansion, They Were Shocked by What Happened Next",
+          "sourceUrl": "https://www.youtube.com/watch?v=m6MVlDHVVoQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Questions airport religious accommodation policies",
+          "quote": "Airport Scraps Islamic Foot-Washing Stations; Leavitt Succession Race Is On | 8/17/26 FIRST LOOK",
+          "sourceUrl": "https://www.youtube.com/watch?v=MHQwp9h8AEE",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "sports",
       "label": "Sports",
       "count": 2,
@@ -1066,24 +1093,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "religion-faith",
-      "label": "Religion & Faith",
-      "count": 1,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Questions airport religious accommodation policies",
-          "quote": "Airport Scraps Islamic Foot-Washing Stations; Leavitt Succession Race Is On | 8/17/26 FIRST LOOK",
-          "sourceUrl": "https://www.youtube.com/watch?v=MHQwp9h8AEE",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "protests-activism",
