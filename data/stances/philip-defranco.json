@@ -1,9 +1,9 @@
 {
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 21,
-  "stanceCount": 52,
+  "stanceCount": 55,
   "topics": [
     {
       "topic": "ai-technology",
@@ -213,11 +213,74 @@
       "active": true
     },
     {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 5,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Presents situation as more complex than initially appears",
+          "quote": "The Markiplier GoPro Situation is Crazier Than You Think",
+          "sourceUrl": "https://www.youtube.com/watch?v=lJyuOY9VE9s",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Frames leaks as significantly consequential",
+          "quote": "The GTA 6 Leaks Change Everything",
+          "sourceUrl": "https://www.youtube.com/watch?v=gxY4lIfwoYo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Raises concerns about child star exploitation and fame's harmful effects",
+          "quote": "Hayden Panettiere's Death Sparks Hard Conversations About Child Stars &amp; Fame",
+          "sourceUrl": "https://www.youtube.com/watch?v=AjTZjhHpBq0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Critiques public breakdown as revealing problematic behavior",
+          "quote": "What Perez Hilton's Disturbing Breakdown Accidentally Exposes",
+          "sourceUrl": "https://www.youtube.com/watch?v=0FvS11yACzY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-16",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "World Cup outcomes and athlete conduct warrant scrutiny",
+          "quote": "The Messi World Cup Conspiracy Is Getting Worse &amp; Joe Rogan Might Have Exposed JD Vance",
+          "sourceUrl": "https://www.youtube.com/watch?v=qJTQZj6xUUc",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 3,
-      "lastActive": "2026-08-31",
+      "count": 4,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Criticizes YouTube's use of paid AI for news coverage",
+          "quote": "The Lindsay Clancy Trial Is Splitting The Country &amp; Exposing Youtube's Paid AI News Problem",
+          "sourceUrl": "https://www.youtube.com/watch?v=I1n-cMvA_sA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-31",
           "topic": "media-press",
@@ -285,42 +348,6 @@
       "active": true
     },
     {
-      "topic": "food-agriculture",
-      "label": "Food & Agriculture",
-      "count": 3,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "food-agriculture",
-          "stance": "lean",
-          "summary": "Warns of food safety risks in blueberry supply",
-          "quote": "FOOD WARNING: This Time Blueberries Have the Highest Safety Concerns",
-          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7676163757021728031",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "food-agriculture",
-          "stance": "lean",
-          "summary": "Highlights aggressive pricing practices by restaurant chains",
-          "quote": "Shake Shack Seemingly Increasing Prices If You Don\u2019t Tip #ShakeShack #Food",
-          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7673221199270317342",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-07-23",
-          "topic": "food-agriculture",
-          "stance": "strong",
-          "summary": "Criticizes food safety, highlights outbreak risks",
-          "quote": "Our Food Is Unsafe, Another Cyclospora Outbreak and Salmonella on Eggs",
-          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7665825421035867423",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 2,
@@ -375,37 +402,37 @@
       "active": true
     },
     {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
       "count": 3,
-      "lastActive": "2026-08-17",
+      "lastActive": "2026-08-20",
       "stances": [
         {
-          "date": "2026-08-17",
-          "topic": "celebrity-entertainment",
+          "date": "2026-08-20",
+          "topic": "food-agriculture",
           "stance": "lean",
-          "summary": "Raises concerns about child star exploitation and fame's harmful effects",
-          "quote": "Hayden Panettiere's Death Sparks Hard Conversations About Child Stars &amp; Fame",
-          "sourceUrl": "https://www.youtube.com/watch?v=AjTZjhHpBq0",
-          "platform": "youtube"
+          "summary": "Warns of food safety risks in blueberry supply",
+          "quote": "FOOD WARNING: This Time Blueberries Have the Highest Safety Concerns",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7676163757021728031",
+          "platform": "tiktok"
         },
         {
-          "date": "2026-08-05",
-          "topic": "celebrity-entertainment",
+          "date": "2026-08-12",
+          "topic": "food-agriculture",
           "stance": "lean",
-          "summary": "Critiques public breakdown as revealing problematic behavior",
-          "quote": "What Perez Hilton's Disturbing Breakdown Accidentally Exposes",
-          "sourceUrl": "https://www.youtube.com/watch?v=0FvS11yACzY",
-          "platform": "youtube"
+          "summary": "Highlights aggressive pricing practices by restaurant chains",
+          "quote": "Shake Shack Seemingly Increasing Prices If You Don\u2019t Tip #ShakeShack #Food",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7673221199270317342",
+          "platform": "tiktok"
         },
         {
-          "date": "2026-07-16",
-          "topic": "celebrity-entertainment",
-          "stance": "lean",
-          "summary": "World Cup outcomes and athlete conduct warrant scrutiny",
-          "quote": "The Messi World Cup Conspiracy Is Getting Worse &amp; Joe Rogan Might Have Exposed JD Vance",
-          "sourceUrl": "https://www.youtube.com/watch?v=qJTQZj6xUUc",
-          "platform": "youtube"
+          "date": "2026-07-23",
+          "topic": "food-agriculture",
+          "stance": "strong",
+          "summary": "Criticizes food safety, highlights outbreak risks",
+          "quote": "Our Food Is Unsafe, Another Cyclospora Outbreak and Salmonella on Eggs",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7665825421035867423",
+          "platform": "tiktok"
         }
       ],
       "active": false

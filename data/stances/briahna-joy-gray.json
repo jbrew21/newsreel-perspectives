@@ -1,7 +1,7 @@
 {
   "voiceId": "briahna-joy-gray",
   "voiceName": "Briahna Joy Gray",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 10,
   "stanceCount": 19,
   "topics": [
@@ -69,6 +69,33 @@
       "active": true
     },
     {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 2,
+      "lastActive": "2026-08-24",
+      "stances": [
+        {
+          "date": "2026-08-24",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Questions whether defund-police rhetoric undermines left electoral strategy",
+          "quote": "Is &quot;Defund&quot; The Left's &quot;Sister Soulja&quot; Moment? (w/ Eddie Glaude)",
+          "sourceUrl": "https://www.youtube.com/watch?v=mY0beRrMyLI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Criticizes left figures for reversing position on defund-police messaging",
+          "quote": "&quot;Woke 1&quot; EXPLAINED: AOC &amp; Mamdani's INSANE Flip Flops on Defund (w/ F.D. Signifier)",
+          "sourceUrl": "https://www.youtube.com/watch?v=OrppyeHLWaE",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 3,
@@ -102,34 +129,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "protests-activism",
-      "label": "Protests & Activism",
-      "count": 2,
-      "lastActive": "2026-08-24",
-      "stances": [
-        {
-          "date": "2026-08-24",
-          "topic": "protests-activism",
-          "stance": "lean",
-          "summary": "Questions whether defund-police rhetoric undermines left electoral strategy",
-          "quote": "Is &quot;Defund&quot; The Left's &quot;Sister Soulja&quot; Moment? (w/ Eddie Glaude)",
-          "sourceUrl": "https://www.youtube.com/watch?v=mY0beRrMyLI",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Criticizes left figures for reversing position on defund-police messaging",
-          "quote": "&quot;Woke 1&quot; EXPLAINED: AOC &amp; Mamdani's INSANE Flip Flops on Defund (w/ F.D. Signifier)",
-          "sourceUrl": "https://www.youtube.com/watch?v=OrppyeHLWaE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-personalities",

@@ -1,9 +1,9 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "updatedAt": "2026-09-03",
-  "topicCount": 19,
-  "stanceCount": 73,
+  "updatedAt": "2026-09-04",
+  "topicCount": 20,
+  "stanceCount": 76,
   "topics": [
     {
       "topic": "media-personalities",
@@ -242,9 +242,18 @@
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 10,
-      "lastActive": "2026-09-02",
+      "count": 11,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes media coverage as insufficient or misplaced priorities",
+          "quote": "How is this news??",
+          "sourceUrl": "https://www.youtube.com/shorts/4ItWIR_geiA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-02",
           "topic": "media-press",
@@ -341,9 +350,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 8,
-      "lastActive": "2026-08-31",
+      "count": 9,
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Responds critically to Hunter Biden contact or Trump-related action",
+          "quote": "Hunter Biden called me",
+          "sourceUrl": "https://www.youtube.com/shorts/rw5jJggVLHA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-31",
           "topic": "trump-administration",
@@ -678,7 +696,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "culture-war",
@@ -706,6 +724,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Critiques AI developments as concerning or problematic",
+          "quote": "Bernie Sanders Faces AI Horrors Beyond His Comprehension",
+          "sourceUrl": "https://www.youtube.com/watch?v=_ucbKOAYYFY",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "free-speech-censorship",

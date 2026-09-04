@@ -1,7 +1,7 @@
 {
   "voiceId": "chris-cuomo",
   "voiceName": "Chris Cuomo",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 18,
   "stanceCount": 78,
   "topics": [
@@ -492,60 +492,6 @@
       "active": true
     },
     {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 5,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes inconsistent or biased media standards",
-          "quote": "The Stilted Standard Has To Stop",
-          "sourceUrl": "https://www.youtube.com/shorts/WVr4QHf0gA0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Defends accountability for media commentary and criticism",
-          "quote": "I got called out today and it was righteous. Here\u2019s what I said and what needs to be said:",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/2089884491447730232",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes Twitter as unreliable source of information",
-          "quote": "This is NOT a fact...but it will pass as one in the twitter dumpster fire",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/2089363506281721976",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes media outlets for sensationalizing and blaming victims for clicks",
-          "quote": "When you only care about clicks...you say stupid stuff...like blaming the guthrie family for their own pain. This aged well:  instagram.com/reel/DU3qjiPCW\u2026",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/2087608418043359669",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-08",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Examines why factual evidence fails to persuade people",
-          "quote": "Why Facts Don\u2019t Change Minds Anymore",
-          "sourceUrl": "https://www.youtube.com/shorts/gbueRqrxD44",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
       "count": 7,
@@ -618,6 +564,96 @@
       "active": false
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 5,
+      "lastActive": "2026-08-20",
+      "stances": [
+        {
+          "date": "2026-08-20",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes inconsistent or biased media standards",
+          "quote": "The Stilted Standard Has To Stop",
+          "sourceUrl": "https://www.youtube.com/shorts/WVr4QHf0gA0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Defends accountability for media commentary and criticism",
+          "quote": "I got called out today and it was righteous. Here\u2019s what I said and what needs to be said:",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/2089884491447730232",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes Twitter as unreliable source of information",
+          "quote": "This is NOT a fact...but it will pass as one in the twitter dumpster fire",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/2089363506281721976",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes media outlets for sensationalizing and blaming victims for clicks",
+          "quote": "When you only care about clicks...you say stupid stuff...like blaming the guthrie family for their own pain. This aged well:  instagram.com/reel/DU3qjiPCW\u2026",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/2087608418043359669",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Examines why factual evidence fails to persuade people",
+          "quote": "Why Facts Don\u2019t Change Minds Anymore",
+          "sourceUrl": "https://www.youtube.com/shorts/gbueRqrxD44",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "religion-faith",
+      "label": "Religion & Faith",
+      "count": 3,
+      "lastActive": "2026-08-23",
+      "stances": [
+        {
+          "date": "2026-08-23",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Examines reasons for Christian support of Trump",
+          "quote": "Why So Many Christians Still Back Trump",
+          "sourceUrl": "https://www.youtube.com/watch?v=u2dW77xu-0U",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Critiques Trump's relationship with religious authority",
+          "quote": "When Trump Replaced the Bible",
+          "sourceUrl": "https://www.youtube.com/shorts/X2bZGO3vk6M",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "religion-faith",
+          "stance": "strong",
+          "summary": "Critiques Trump's influence and takeover of Christian institutions",
+          "quote": "Former Pastor John Pavlovitz On How Trump Took Over Christianity",
+          "sourceUrl": "https://www.youtube.com/watch?v=o-EyiF3jfPA",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 4,
@@ -660,70 +696,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "religion-faith",
-      "label": "Religion & Faith",
-      "count": 3,
-      "lastActive": "2026-08-23",
-      "stances": [
-        {
-          "date": "2026-08-23",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Examines reasons for Christian support of Trump",
-          "quote": "Why So Many Christians Still Back Trump",
-          "sourceUrl": "https://www.youtube.com/watch?v=u2dW77xu-0U",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-22",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Critiques Trump's relationship with religious authority",
-          "quote": "When Trump Replaced the Bible",
-          "sourceUrl": "https://www.youtube.com/shorts/X2bZGO3vk6M",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "religion-faith",
-          "stance": "strong",
-          "summary": "Critiques Trump's influence and takeover of Christian institutions",
-          "quote": "Former Pastor John Pavlovitz On How Trump Took Over Christianity",
-          "sourceUrl": "https://www.youtube.com/watch?v=o-EyiF3jfPA",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Solicits public feedback on U.S. troop presence in communities",
-          "quote": "US Troops in communities - sound off in the comments \ud83d\udc47",
-          "sourceUrl": "https://www.youtube.com/shorts/OiY0OorgPYo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Criticizes war as costly and ineffective",
-          "quote": "A bold statement when your assessment is competing with the war, that cost a fortune and achieved nothing",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/2090129389002391985",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "immigration",
@@ -756,6 +729,33 @@
           "summary": "Questions allowing unrepresented children in immigration court",
           "quote": "Are you ok with kids representing themselves in immigration court?\nThe administration seems to be. Proof:",
           "sourceUrl": "https://x.com/ChrisCuomo/status/2082994292084121854",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-08-20",
+      "stances": [
+        {
+          "date": "2026-08-20",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Solicits public feedback on U.S. troop presence in communities",
+          "quote": "US Troops in communities - sound off in the comments \ud83d\udc47",
+          "sourceUrl": "https://www.youtube.com/shorts/OiY0OorgPYo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes war as costly and ineffective",
+          "quote": "A bold statement when your assessment is competing with the war, that cost a fortune and achieved nothing",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/2090129389002391985",
           "platform": "x"
         }
       ],

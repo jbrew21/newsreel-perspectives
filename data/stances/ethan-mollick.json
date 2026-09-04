@@ -1,7 +1,7 @@
 {
   "voiceId": "ethan-mollick",
   "voiceName": "Ethan Mollick",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 1,
   "stanceCount": 12,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Powerful AI capabilities create dual-use risks without proper guardrails",
+          "quote": "I was trying Astra at the time I wrote about the HuggingFace Incident, and it helped with context.\n\nEverything that makes Astra great (running subagents, cleverness when faced with barriers, long-run ability) is also what can make it risky without the right guardrails. Double-edg",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3munrzfkmu22i",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-03",
           "topic": "ai-technology",
@@ -36,6 +45,15 @@
           "summary": "Identifies organizational AI collaboration as unsolved problem",
           "quote": "Multiplayer AI, where many people in an organization can use AI together to accomplish goals, remains one of the biggest (non-technical) problems in using AI. Approaches tend to be pretty primitive and based around AI-as-a-person-in-your-group-chat. It encourages automation, not ",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mun4tzchis2n",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Advanced AI can autonomously build knowledge systems from personal data",
+          "quote": "An example of useful knowledge work: I assigned GPT-6 to read through tens of thousands of my emails, my writings, my calendar appointments and more to assemble a personal knowledge base of research, contacts, ideas, relationships, and tasks over my recent career.1/",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3munds3sxrc2n",
           "platform": "bluesky"
         },
         {
@@ -99,24 +117,6 @@
           "summary": "AI labs should produce their own documentation and tutorials",
           "quote": "Good guide. And the AI labs need to stop making people like Simon (and, to a lesser extent, me) be the ones who explain how to use the modes that they release.\n\nCome on, lab folks, you have an AI that can write documentation! And make explainers! And be a tutor! You can do this!",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mue5aqgszs2t",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "AI cybersecurity risks are severe and underestimated",
-          "quote": "An account from am economist who was not worried about AI but now is worried because of the Hugging Face Incident\n\nI think it is very hard to ignore the fact that cybersecurity will become a very big issue very quickly and we can only hope AI defense beats offense joshuagans.subs",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mudusne3is2o",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Autonomous AI agents need more human oversight and input",
-          "quote": "I wrote about how AI agents are starting to spontaneously coordinate in complex (and very risky) ways in the Hugging Face Incident, but also about why we need AIs to reach out to humans more for decisions and input as agentic work becomes more automated.\nwww.oneusefulthing.org/p/",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mudnl6dq7c27",
           "platform": "bluesky"
         }
       ],

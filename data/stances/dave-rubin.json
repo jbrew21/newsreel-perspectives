@@ -1,16 +1,25 @@
 {
   "voiceId": "dave-rubin",
   "voiceName": "Dave Rubin",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 28,
-  "stanceCount": 109,
+  "stanceCount": 110,
   "topics": [
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 12,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Reports on Cruz attacking Vance amid 2028 positioning",
+          "quote": "Ted Cruz Makes 2028 Move, Attacks JD Vance; Hate Crimes Surge in Mamdani\u2019s NYC | 9/4/26 FIRST LOOK",
+          "sourceUrl": "https://www.youtube.com/watch?v=qNNYyePiDW8",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-03",
           "topic": "elections",
@@ -108,15 +117,6 @@
           "summary": "Democrats face midterm electoral challenges",
           "quote": "Bill Maher Reveals Why Dems Are Headed for Midterm Disaster",
           "sourceUrl": "https://www.youtube.com/shorts/UXBmtpg1lWM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Criticizes Democrats, frames their position as deteriorating",
-          "quote": "\u2018The View\u2019 Fight Over 2028 Proves How Much Worse It Just Got for Democrats",
-          "sourceUrl": "https://www.youtube.com/shorts/Xwdr4OK9Feg",
           "platform": "youtube"
         }
       ],
@@ -789,6 +789,42 @@
       "active": true
     },
     {
+      "topic": "religion-faith",
+      "label": "Religion & Faith",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Presents Muslim scholar's perspective on future outcomes",
+          "quote": "Muslim Scholar Gives a Scary Honest Take on What Comes Next",
+          "sourceUrl": "https://www.youtube.com/watch?v=-G19G8oxjSA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Frames Muslim facility expansion as encountering local opposition",
+          "quote": "Muslim Center Tries Huge Expansion, They Were Shocked by What Happened Next",
+          "sourceUrl": "https://www.youtube.com/watch?v=m6MVlDHVVoQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Questions airport religious accommodation policies",
+          "quote": "Airport Scraps Islamic Foot-Washing Stations; Leavitt Succession Race Is On | 8/17/26 FIRST LOOK",
+          "sourceUrl": "https://www.youtube.com/watch?v=MHQwp9h8AEE",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "uk-world-politics",
       "label": "UK & World Politics",
       "count": 3,
@@ -976,33 +1012,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "religion-faith",
-      "label": "Religion & Faith",
-      "count": 2,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Frames Muslim facility expansion as encountering local opposition",
-          "quote": "Muslim Center Tries Huge Expansion, They Were Shocked by What Happened Next",
-          "sourceUrl": "https://www.youtube.com/watch?v=m6MVlDHVVoQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Questions airport religious accommodation policies",
-          "quote": "Airport Scraps Islamic Foot-Washing Stations; Leavitt Succession Race Is On | 8/17/26 FIRST LOOK",
-          "sourceUrl": "https://www.youtube.com/watch?v=MHQwp9h8AEE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "sports",

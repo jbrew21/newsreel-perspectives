@@ -1,9 +1,9 @@
 {
   "voiceId": "patrick-bet-david",
   "voiceName": "Patrick Bet-David",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 30,
-  "stanceCount": 136,
+  "stanceCount": 137,
   "topics": [
     {
       "topic": "trump-administration",
@@ -548,7 +548,7 @@
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 7,
+      "count": 8,
       "lastActive": "2026-09-03",
       "stances": [
         {
@@ -558,6 +558,15 @@
           "summary": "Argues Republican Party has shifted toward blue-collar coalition",
           "quote": "Republicans Are Now the Blue-Collar Party (The Parties Have Switched)",
           "sourceUrl": "https://www.youtube.com/shorts/lhwp8-CzwPY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Questions whether Democrats' actions contributed to Trump's political rise",
+          "quote": "Did Democrats Help Create President Trump?",
+          "sourceUrl": "https://www.youtube.com/shorts/SmQqQAhjU40",
           "platform": "youtube"
         },
         {
@@ -1002,7 +1011,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "covid-pandemic",
@@ -1047,7 +1056,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "education",
@@ -1248,33 +1257,6 @@
       "active": true
     },
     {
-      "topic": "housing-infrastructure",
-      "label": "Housing & Infrastructure",
-      "count": 2,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "housing-infrastructure",
-          "stance": "lean",
-          "summary": "",
-          "quote": "The Hidden Impact of New York City\u2019s Property Taxes",
-          "sourceUrl": "https://www.youtube.com/shorts/yMG1BlLKrZM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "housing-infrastructure",
-          "stance": "strong",
-          "summary": "Claims high-speed rail program involves financial waste",
-          "quote": "The High-Speed Rail Scam Just Got EXPOSED",
-          "sourceUrl": "https://www.youtube.com/shorts/yfL4KDEm37E",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 3,
@@ -1378,6 +1360,33 @@
           "quote": "Rand Paul Wants Fauci Prosecuted",
           "sourceUrl": "https://www.tiktok.com/@patrickbetdavid/video/7667671736179002637",
           "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
+      "count": 2,
+      "lastActive": "2026-08-20",
+      "stances": [
+        {
+          "date": "2026-08-20",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "",
+          "quote": "The Hidden Impact of New York City\u2019s Property Taxes",
+          "sourceUrl": "https://www.youtube.com/shorts/yMG1BlLKrZM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "housing-infrastructure",
+          "stance": "strong",
+          "summary": "Claims high-speed rail program involves financial waste",
+          "quote": "The High-Speed Rail Scam Just Got EXPOSED",
+          "sourceUrl": "https://www.youtube.com/shorts/yfL4KDEm37E",
+          "platform": "youtube"
         }
       ],
       "active": false

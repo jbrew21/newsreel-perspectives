@@ -1,16 +1,25 @@
 {
   "voiceId": "david-pakman",
   "voiceName": "David Pakman",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 23,
-  "stanceCount": 123,
+  "stanceCount": 124,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 12,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Lara Trump for demanding loyalty to Trump",
+          "quote": "Lara Trump demands CULT LOYALTY NOW on live TV",
+          "sourceUrl": "https://www.youtube.com/watch?v=a9wjCDUs6_Q",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-03",
           "topic": "trump-administration",
@@ -57,6 +66,33 @@
           "platform": "youtube"
         },
         {
+          "date": "2026-09-03",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump for harming his party",
+          "quote": "Trump finds NEW WAY to SCREW his party",
+          "sourceUrl": "https://www.youtube.com/watch?v=WSRb2y3vbTk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump's erratic public behavior",
+          "quote": "Trump has SERIOUS EPISODE on live TV",
+          "sourceUrl": "https://www.youtube.com/watch?v=27-CS33eZfA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump's on-camera malfunction",
+          "quote": "Trump GLITCHES BADLY, STUNS audience",
+          "sourceUrl": "https://www.youtube.com/watch?v=0O7cYF5fAgw",
+          "platform": "youtube"
+        },
+        {
           "date": "2026-09-02",
           "topic": "trump-administration",
           "stance": "strong",
@@ -81,42 +117,6 @@
           "summary": "Implies Trump's appearance warrants scrutiny or raises concerns",
           "quote": "Trump\u2019s appearance raises even more questions #shorts",
           "sourceUrl": "https://www.youtube.com/shorts/nzF0fHL2BXU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump administration actions as dangerous escalation",
-          "quote": "Trump\u2019s war just took a TERRIFYING turn",
-          "sourceUrl": "https://www.youtube.com/watch?v=1kiLTccShog",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Reports Trump allies distancing themselves from Trump",
-          "quote": "Trump\u2019s allies see what\u2019s coming\u2026and they\u2019re LEAVING",
-          "sourceUrl": "https://www.youtube.com/watch?v=XdElrLYVTew",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Suggests Trump exhibited concerning psychological behavior",
-          "quote": "Did he just have a psychotic break?",
-          "sourceUrl": "https://www.youtube.com/watch?v=Q3hJYzz_-Pc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-01",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump's public performance and audience reception",
-          "quote": "Trump tries his routine, gets BRUTAL response",
-          "sourceUrl": "https://www.youtube.com/watch?v=acGiO8ZZvZU",
           "platform": "youtube"
         }
       ],
@@ -1077,6 +1077,33 @@
       "active": false
     },
     {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Frames governor's response to protester negatively",
+          "quote": "Washed up Governor LOSES HIS MIND at protester",
+          "sourceUrl": "https://www.youtube.com/watch?v=cMkeQvObN0Y",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Criticizes efforts to discourage political participation",
+          "quote": "They are DESPERATE for you to STAY HOME",
+          "sourceUrl": "https://www.youtube.com/watch?v=vt21lp5kBJA",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 2,
@@ -1242,24 +1269,6 @@
           "summary": "Warns political intimidation suppresses free expression",
           "quote": "This is exactly how political intimidation creates self-censorship. #shorts",
           "sourceUrl": "https://www.youtube.com/shorts/wl8UvysBZDE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "protests-activism",
-      "label": "Protests & Activism",
-      "count": 1,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Criticizes efforts to discourage political participation",
-          "quote": "They are DESPERATE for you to STAY HOME",
-          "sourceUrl": "https://www.youtube.com/watch?v=vt21lp5kBJA",
           "platform": "youtube"
         }
       ],

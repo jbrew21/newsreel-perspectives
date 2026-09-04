@@ -1,9 +1,9 @@
 {
   "voiceId": "noah-smith",
   "voiceName": "Noah Smith",
-  "updatedAt": "2026-09-03",
-  "topicCount": 21,
-  "stanceCount": 83,
+  "updatedAt": "2026-09-04",
+  "topicCount": 22,
+  "stanceCount": 84,
   "topics": [
     {
       "topic": "ai-technology",
@@ -796,6 +796,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 1,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Opposes playoff format allowing sub-.500 teams",
+          "quote": "Wow. There\u2019s a pretty good chance that one of the American League wildcard teams is gonna make it into the postseason with a sub-.500 record.  Don\u2019t love that.",
+          "sourceUrl": "https://bsky.app/profile/smithnoah.bsky.social/post/3mudpwaigzs2t",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "state-local-politics",

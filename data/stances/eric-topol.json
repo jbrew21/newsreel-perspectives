@@ -1,9 +1,9 @@
 {
   "voiceId": "eric-topol",
   "voiceName": "Eric Topol",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 9,
-  "stanceCount": 48,
+  "stanceCount": 49,
   "topics": [
     {
       "topic": "ai-technology",
@@ -123,6 +123,105 @@
       "active": true
     },
     {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 10,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Questions prior study claiming mRNA vaccine survival benefit before cancer immunotherapy",
+          "quote": "This new report questions the previous one that found a survival benefit specifically conferred to mRNA Covid vaccine before cancer immunotherapy. Similar benefit was also seen with the J&J adenovirus Covid and flu vaccines\nwww.pnas.org/doi/epdf/10....",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3munhwnypxc2t",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Criticizes insufficient response to long COVID research and treatment",
+          "quote": "What is being done vs #LongCovid and other post-viral serious chronic illness? Not enough. \nwww.nature.com/articles/d41...",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mujzadoxec2c",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Brain discovery identified as one of many recent important findings",
+          "quote": "One of the most important discoveries about our brain in many years!\nerictopol.substack.com/p/two-landma...",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mudj5ug7xk2b",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Self-directed antibodies found in Long COVID patients",
+          "quote": "Self-directed antibodies are found in people with #LongCovid. A key source of these was identified, and  these autoantibodies and cell origin are also seen in lupus. @cp-immunity.bsky.social \nwww.cell.com/immunity/ful...",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mu5lzcimx22e",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Thymus health assessed by AI shows link to cancer outcomes",
+          "quote": "More validation for how critical health of the thymus is in adults, as assessed by AI of a chest CT.\nThymus radiation exposure is linked to worse outcomes for cancer (non-small cell lung cancer) for distant metastasis and reduced survival \n\nannalsofoncology.org/article/S092...",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mtwy4ilbts2v",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Highlights vaccine effectiveness in preventing childhood deaths",
+          "quote": "Vaccine benefit in children\n\"Since 1974, vaccination has averted 154 million deaths, including 146 million among children younger than 5 years of whom 101 million were infants younger than 1 year.\"\nwww.thelancet.com/journals/lan...\nThe most striking benefit was for vaccination vs",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3msrnajmgds2a",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Notes mRNA vaccine approval despite HHS defunding",
+          "quote": "Against all odds, with an HHS that has defunded mRNA research programs, the FDA just approved the first mRNA flu vaccine",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3msez5732n22m",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Highlighting concerning mechanism in long COVID pathology",
+          "quote": "Covid reactivating latent viruses\nwww.nature.com/articles/d41...",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3msdwirqdys23",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Identifies persistent immune dysregulation in long COVID",
+          "quote": "Consistent with this recent report of killer T cells directed to virus antigens (Epstein Barr, CMV) in people with Long Covid www.cell.com/cell-reports...",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3msdst5pwfc2p",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Reports persistent killer T cells may play causal role in Long Covid",
+          "quote": "Killer T cells (CD8+) in Long Covid directed to SARS-CoV-2 and Herpes virus antigens are persistent and may have a causal role \nwww.cell.com/cell-reports...",
+          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mrttz6rh4k2v",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 10,
@@ -217,96 +316,6 @@
           "quote": "Sleep, regarded as a symptom when disrupted, has emerged as a rich source of data for predicting diseases and can be regarded as therapy\nfeature by @edbites @NatureMedicine \nnature.com/articles/s41591-0\u2026",
           "sourceUrl": "https://x.com/EricTopol/status/2088336111248744918",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "covid-pandemic",
-      "label": "COVID & Pandemic",
-      "count": 9,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Criticizes insufficient response to long COVID research and treatment",
-          "quote": "What is being done vs #LongCovid and other post-viral serious chronic illness? Not enough. \nwww.nature.com/articles/d41...",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mujzadoxec2c",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-30",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Brain discovery identified as one of many recent important findings",
-          "quote": "One of the most important discoveries about our brain in many years!\nerictopol.substack.com/p/two-landma...",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mudj5ug7xk2b",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Self-directed antibodies found in Long COVID patients",
-          "quote": "Self-directed antibodies are found in people with #LongCovid. A key source of these was identified, and  these autoantibodies and cell origin are also seen in lupus. @cp-immunity.bsky.social \nwww.cell.com/immunity/ful...",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mu5lzcimx22e",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Thymus health assessed by AI shows link to cancer outcomes",
-          "quote": "More validation for how critical health of the thymus is in adults, as assessed by AI of a chest CT.\nThymus radiation exposure is linked to worse outcomes for cancer (non-small cell lung cancer) for distant metastasis and reduced survival \n\nannalsofoncology.org/article/S092...",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mtwy4ilbts2v",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "covid-pandemic",
-          "stance": "strong",
-          "summary": "Highlights vaccine effectiveness in preventing childhood deaths",
-          "quote": "Vaccine benefit in children\n\"Since 1974, vaccination has averted 154 million deaths, including 146 million among children younger than 5 years of whom 101 million were infants younger than 1 year.\"\nwww.thelancet.com/journals/lan...\nThe most striking benefit was for vaccination vs",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3msrnajmgds2a",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Notes mRNA vaccine approval despite HHS defunding",
-          "quote": "Against all odds, with an HHS that has defunded mRNA research programs, the FDA just approved the first mRNA flu vaccine",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3msez5732n22m",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Highlighting concerning mechanism in long COVID pathology",
-          "quote": "Covid reactivating latent viruses\nwww.nature.com/articles/d41...",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3msdwirqdys23",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Identifies persistent immune dysregulation in long COVID",
-          "quote": "Consistent with this recent report of killer T cells directed to virus antigens (Epstein Barr, CMV) in people with Long Covid www.cell.com/cell-reports...",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3msdst5pwfc2p",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Reports persistent killer T cells may play causal role in Long Covid",
-          "quote": "Killer T cells (CD8+) in Long Covid directed to SARS-CoV-2 and Herpes virus antigens are persistent and may have a causal role \nwww.cell.com/cell-reports...",
-          "sourceUrl": "https://bsky.app/profile/erictopol.bsky.social/post/3mrttz6rh4k2v",
-          "platform": "bluesky"
         }
       ],
       "active": true

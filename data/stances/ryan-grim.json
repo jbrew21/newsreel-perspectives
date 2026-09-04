@@ -1,9 +1,9 @@
 {
   "voiceId": "ryan-grim",
   "voiceName": "Ryan Grim",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 22,
-  "stanceCount": 103,
+  "stanceCount": 104,
   "topics": [
     {
       "topic": "iran-conflict",
@@ -126,8 +126,26 @@
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 12,
-      "lastActive": "2026-09-02",
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Highlights congressional efforts to punish universities divesting from Israel",
+          "quote": "Capitol Hill Reacts: Bill to Deny Funding to Universities Divesting from Israel",
+          "sourceUrl": "https://www.youtube.com/shorts/LPGM1Q-I2dY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Frames Palestinian football's return as resilience amid genocide",
+          "quote": "The Thousand Martyrs Cup: Football Returns to Palestine After Three Years of Genocide (by Abubaker Abed). The resumption of the Palestinian Football Association's leagues is being met by players and coaches with a mix of despair and resilience.",
+          "sourceUrl": "https://www.dropsitenews.com/p/the-thousand-martyrs-cup-football",
+          "platform": "substack"
+        },
         {
           "date": "2026-09-02",
           "topic": "israel-palestine",
@@ -217,24 +235,6 @@
           "quote": "First photo of Palestinian journlist released after two years in Israeli detention",
           "sourceUrl": "https://www.youtube.com/shorts/-FZ2LZRdxfY",
           "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Criticizes Israeli military enabling settler violence in West Bank",
-          "quote": "Settlers given &quot;carte blanche to do what they want&quot; in West Bank",
-          "sourceUrl": "https://www.youtube.com/shorts/XNyqp4Jabvs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Describes Israeli settlers forcing Palestinians from West Bank homes",
-          "quote": "The Israeli Siege of Palestinian Families in Qusra Is Part of an Escalating Tactic (by Zena Tahhan). Israeli settlers and soldiers are increasingly targeting Palestinians in Area B of the occupied West Bank to force them from their homes.",
-          "sourceUrl": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
-          "platform": "substack"
         }
       ],
       "active": true
@@ -807,6 +807,42 @@
       "active": true
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Reports U.S. military escalation in Somalia with concern",
+          "quote": "Secretive U.S. Base in Somalia Signals New Phase of War (by Mohamed Gabobe). Puntland security officials told Drop Site they expect the U.S. air campaign\u2014and CIA operations\u2014in Somalia to intensify.",
+          "sourceUrl": "https://www.dropsitenews.com/p/new-us-base-somalia-airstrikes-isis-al-shabaab-cia",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Reports US extrajudicial killing and Israeli military action",
+          "quote": "U.S. kills two in extrajudicial boat strike; 47 killed in Haiti gang raid; Israel seizes Jerusalem UNRWA center (by Drop Site News)",
+          "sourceUrl": "https://www.dropsitenews.com/p/us-boat-strike-haiti-gang-raid-israel-palestine-jerusalem-unrwa",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Reports sailor distress and military deployment issues",
+          "quote": "USS Abraham Lincoln sailors try to jump overboard after 250 days at sea; Third person dies after Newark ICE facility detention; Israel sets wildfires in Lebanon (by Drop Site News)",
+          "sourceUrl": "https://www.dropsitenews.com/p/uss-abraham-lincoln-overboard-newark-ice-detention-israel-lebanon-wildfires",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 4,
@@ -874,33 +910,6 @@
           "quote": "Owners of homes worth more than $5M, that they don\u2019t live in, air their grievances",
           "sourceUrl": "https://x.com/ryangrim/status/2089782237999010088",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-08-25",
-      "stances": [
-        {
-          "date": "2026-08-25",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Reports US extrajudicial killing and Israeli military action",
-          "quote": "U.S. kills two in extrajudicial boat strike; 47 killed in Haiti gang raid; Israel seizes Jerusalem UNRWA center (by Drop Site News)",
-          "sourceUrl": "https://www.dropsitenews.com/p/us-boat-strike-haiti-gang-raid-israel-palestine-jerusalem-unrwa",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Reports sailor distress and military deployment issues",
-          "quote": "USS Abraham Lincoln sailors try to jump overboard after 250 days at sea; Third person dies after Newark ICE facility detention; Israel sets wildfires in Lebanon (by Drop Site News)",
-          "sourceUrl": "https://www.dropsitenews.com/p/uss-abraham-lincoln-overboard-newark-ice-detention-israel-lebanon-wildfires",
-          "platform": "substack"
         }
       ],
       "active": true

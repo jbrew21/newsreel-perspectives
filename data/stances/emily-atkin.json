@@ -1,7 +1,7 @@
 {
   "voiceId": "emily-atkin",
   "voiceName": "Emily Atkin",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 10,
   "stanceCount": 30,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "climate-environment",
       "label": "Climate & Environment",
       "count": 12,
-      "lastActive": "2026-08-19",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Opposes oil industry wastewater dumping in waterways and cropland",
+          "quote": "Oil executives just accidentally exposed the industry\u2019s greatest weakness (by Saul Elbein). To keep drilling, Big Oil needs permission to dump treated fracking wastewater into rivers and onto cropland. We don\u2019t have to give it to them.",
+          "sourceUrl": "https://heated.world/p/oil-executives-just-accidentally",
+          "platform": "substack"
+        },
         {
           "date": "2026-08-19",
           "topic": "climate-environment",
@@ -109,18 +118,9 @@
           "quote": "my latest: i can confirm there's been a concerted campaign to develop a data center in northern virginia within a historically important national park site \n\nrelying on help from a senior advisor to the interior department under the first trump admin\n\nwill the land swap happen?\n\n",
           "sourceUrl": "https://bsky.app/profile/emorwee.bsky.social/post/3msj4chwazs2s",
           "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Highlights emerging phenomenon of fossil fuel industry influence in US",
-          "quote": "Check out @emorwee.bsky.social covering this emerging phenomenon in the US\nheated.world/p/the-influe...",
-          "sourceUrl": "https://bsky.app/profile/emorwee.bsky.social/post/3mscxrcanec2e",
-          "platform": "bluesky"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "civil-rights-race",
@@ -309,7 +309,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "culture-war",

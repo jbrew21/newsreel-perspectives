@@ -1,9 +1,9 @@
 {
   "voiceId": "jake-tapper",
   "voiceName": "Jake Tapper",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 14,
-  "stanceCount": 44,
+  "stanceCount": 46,
   "topics": [
     {
       "topic": "elections",
@@ -240,6 +240,51 @@
       "active": false
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 4,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Highlights injustice in criminal case framing",
+          "quote": "The Framing of Chris Duncan, by Radley Balko:\n\nradleybalko.substack.com/p/the-framin...",
+          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mumyrveldk23",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Notes rare judicial scrutiny of grand jury materials in case",
+          "quote": "Laura Provinzino - district judge in the Don Lemon case (and a former federal prosecutor) - requiring the government to give her the grand jury materials for in camera review including the grand jury minutes. Seldom happens; it\u2019s what exploded the Broadview 6 case in Chicago.",
+          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mtfcr7q5m224",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Amplifies abuse survivors' accusations against Graham Platner",
+          "quote": "INBOX\n\nJoint statement from Jenny Racicot and Lyndsey Fifield:\n\n\u201cLast month, we came forward at great personal cost to tell the world who we knew Graham Platner to be. We shed light on some of the darkest, most painful days of our lives and detailed the toll \u2013 physical and emotio",
+          "sourceUrl": "https://x.com/jaketapper/status/2087990835308793979",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Criticizes congressman for placing staffers in untenable position",
+          "quote": "\u201c\u2026but were put in an untenable position by virtue of his status as their boss and a\nMember of Congress. Representative Edwards was at minimum blind to that reality,\u2026",
+          "sourceUrl": "https://x.com/jaketapper/status/2084982926098280624",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 3,
@@ -405,33 +450,6 @@
           "summary": "Hegseth deflects blame to deputy for supply chain failures",
           "quote": "\u201cHegseth defended himself and blamed his deputy, Stephen Feinberg, for the shortages and for not ensuring Trump was fully apprised of the issue, both persons familiar said.\u201d",
           "sourceUrl": "https://x.com/jaketapper/status/2085185485157118125",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-08-13",
-      "stances": [
-        {
-          "date": "2026-08-13",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Amplifies abuse survivors' accusations against Graham Platner",
-          "quote": "INBOX\n\nJoint statement from Jenny Racicot and Lyndsey Fifield:\n\n\u201cLast month, we came forward at great personal cost to tell the world who we knew Graham Platner to be. We shed light on some of the darkest, most painful days of our lives and detailed the toll \u2013 physical and emotio",
-          "sourceUrl": "https://x.com/jaketapper/status/2087990835308793979",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Criticizes congressman for placing staffers in untenable position",
-          "quote": "\u201c\u2026but were put in an untenable position by virtue of his status as their boss and a\nMember of Congress. Representative Edwards was at minimum blind to that reality,\u2026",
-          "sourceUrl": "https://x.com/jaketapper/status/2084982926098280624",
           "platform": "x"
         }
       ],

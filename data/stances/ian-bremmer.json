@@ -1,9 +1,9 @@
 {
   "voiceId": "ian-bremmer",
   "voiceName": "Ian Bremmer",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 16,
-  "stanceCount": 54,
+  "stanceCount": 55,
   "topics": [
     {
       "topic": "iran-conflict",
@@ -429,6 +429,33 @@
       "active": false
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Notes China's naval quantity advantage while minimizing quality concern",
+          "quote": "china navy now outnumbers usa fleet\n\n(quantity \u2260 quality)\n \nwww.ibtimes.co.uk/chinas-navy-...",
+          "sourceUrl": "https://bsky.app/profile/ianbremmer.com/post/3munvkraor22m",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Russian missile escalation reflects Ukraine's expanding strike capability",
+          "quote": "russian missiles into ukraine now at highest levels, putin\u2019s response to ukraine bringing his war to his own country.",
+          "sourceUrl": "https://x.com/ianbremmer/status/2084661338735775834",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 3,
@@ -576,24 +603,6 @@
           "summary": "Suggests Washington Post leak claims are logically inconsistent",
           "quote": "if the washington post claims are false, how could the \"leakers\" have revealed classified information? it\u2019s a mystery.",
           "sourceUrl": "https://x.com/ianbremmer/status/2085329688126189652",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 1,
-      "lastActive": "2026-08-04",
-      "stances": [
-        {
-          "date": "2026-08-04",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Russian missile escalation reflects Ukraine's expanding strike capability",
-          "quote": "russian missiles into ukraine now at highest levels, putin\u2019s response to ukraine bringing his war to his own country.",
-          "sourceUrl": "https://x.com/ianbremmer/status/2084661338735775834",
           "platform": "x"
         }
       ],

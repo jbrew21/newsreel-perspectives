@@ -1,9 +1,9 @@
 {
   "voiceId": "scott-lincicome",
   "voiceName": "Scott Lincicome",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 17,
-  "stanceCount": 41,
+  "stanceCount": 42,
   "topics": [
     {
       "topic": "economy-trade",
@@ -123,6 +123,51 @@
       "active": true
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 4,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "AI transforming work rather than eliminating jobs",
+          "quote": "\"Businesses Are Using AI to Transform Work, Not Cut Jobs\" via @NewYorkFed libertystreeteconomics.newyorkfed.org/2026/09/busi...\n\n\"Retraining employees in response to AI remains the primary way firms are adjusting their workforces.\"",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3muotnakmn52y",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Notes corporate lobbying efforts in autonomous vehicle competition",
+          "quote": "\"Waymo doubles spending on lobbying in robotaxi battle with Uber\"\nwww.ft.com/content/de7f...\n\"Critics have accused Uber of seeking regulatory capture by attempting to keep rides flowing through its platform as it grapples with rising competition.\"",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtoj24tmot2r",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Optimistic about AI potential for solving material challenges",
+          "quote": "\"there has probably never been a better time to solve the world\u2019s material challenges.... the increasingly widespread adoption of AI may be opening up novel ways of developing completely new materials.\"\nwww.ft.com/content/49c3...",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtloids5x32r",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "White House AI framework threatens trust and innovation",
+          "quote": "\"The White House\u2019s Secret AI Testing Framework Threatens Trust and Innovation\" via @CatoInstitute\nwww.cato.org/blog/hidden-...",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mssjt7l2xe25",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 4,
@@ -210,43 +255,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 3,
-      "lastActive": "2026-08-22",
-      "stances": [
-        {
-          "date": "2026-08-22",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Notes corporate lobbying efforts in autonomous vehicle competition",
-          "quote": "\"Waymo doubles spending on lobbying in robotaxi battle with Uber\"\nwww.ft.com/content/de7f...\n\"Critics have accused Uber of seeking regulatory capture by attempting to keep rides flowing through its platform as it grapples with rising competition.\"",
-          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtoj24tmot2r",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Optimistic about AI potential for solving material challenges",
-          "quote": "\"there has probably never been a better time to solve the world\u2019s material challenges.... the increasingly widespread adoption of AI may be opening up novel ways of developing completely new materials.\"\nwww.ft.com/content/49c3...",
-          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mtloids5x32r",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "White House AI framework threatens trust and innovation",
-          "quote": "\"The White House\u2019s Secret AI Testing Framework Threatens Trust and Innovation\" via @CatoInstitute\nwww.cato.org/blog/hidden-...",
-          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mssjt7l2xe25",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "healthcare",

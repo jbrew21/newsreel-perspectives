@@ -1,16 +1,25 @@
 {
   "voiceId": "derek-lowe",
   "voiceName": "Derek Lowe",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-04",
   "topicCount": 7,
-  "stanceCount": 11,
+  "stanceCount": 12,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 5,
-      "lastActive": "2026-08-26",
+      "count": 6,
+      "lastActive": "2026-08-31",
       "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Criticizes AI-generated image spam flooding search results",
+          "quote": "Not sure why \"Blue Moon\" is in the name. There's a photo of this exact one online from the New England Dahlia Society, and it was hybridized in Rhode Island as part of a \"Bay State\" series. But if you do an image search for the name you will see endless, ridiculous AI slop of ima",
+          "sourceUrl": "https://bsky.app/profile/dereklowe.bsky.social/post/3mudos4gw2s2v",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-26",
           "topic": "ai-technology",
@@ -75,7 +84,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "immigration",
@@ -93,7 +102,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "science-space",

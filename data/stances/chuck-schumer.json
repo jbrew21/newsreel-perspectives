@@ -1,9 +1,9 @@
 {
   "voiceId": "chuck-schumer",
   "voiceName": "Chuck Schumer",
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-04",
   "topicCount": 18,
-  "stanceCount": 76,
+  "stanceCount": 77,
   "topics": [
     {
       "topic": "economy-trade",
@@ -359,9 +359,18 @@
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 9,
-      "lastActive": "2026-09-01",
+      "count": 10,
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Opposes Trump administration attempt to restrict mail-in voting",
+          "quote": "In its latest attempt to destroy the integrity of our elections, the Trump administration asked the Supreme Court to allow mail-in ballot limits.\n\nAmerican voters will pick their leaders\u2014not Donald Trump.\n\nMy statement: https://t.co/TsBHAP8Sys",
+          "sourceUrl": "https://x.com/SenSchumer/status/2095667810173174075",
+          "platform": "x"
+        },
         {
           "date": "2026-09-01",
           "topic": "elections",
@@ -501,6 +510,42 @@
       "active": true
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Demands investigation into troubling DOD internal reports",
+          "quote": "These reports are troubling and I am demanding that CENTCOM immediately open a fact-finding investigation.\n\nSecretary Hegseth needs to understand that these types of internal checks reflect our values and make the DOD stronger. https://t.co/X8iDJapDvg",
+          "sourceUrl": "https://x.com/SenSchumer/status/2095554680394842589",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Attacks $275B Navy spending plan as wasteful ego project over cost relief",
+          "quote": "Trump\u2019s latest waste of time and money:\n\n$275 BILLION in taxpayer dollars for a \u201cgolden fleet\u201d of Navy battleships with his name on them.\n\nNot a single penny to lower costs for the American people.\n\nPlenty\u00a0to serve Trump\u2019s egomania and narcissism.\nnytimes.com/2026/08/05/us/po\u2026\n\nL",
+          "sourceUrl": "https://x.com/SenSchumer/status/2085395812259959080",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes Republicans for cutting servicemember benefits amid rising costs",
+          "quote": "As costs skyrocket and our servicemembers remain in danger\u2026\n\nRepublicans\u00a0want to\u00a0take\u00a0away more of\u00a0the\u00a0benefits\u00a0you earned.",
+          "sourceUrl": "https://x.com/SenSchumer/status/2082577913791058142",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 4,
@@ -543,43 +588,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 3,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Demands investigation into troubling DOD internal reports",
-          "quote": "These reports are troubling and I am demanding that CENTCOM immediately open a fact-finding investigation.\n\nSecretary Hegseth needs to understand that these types of internal checks reflect our values and make the DOD stronger. https://t.co/X8iDJapDvg",
-          "sourceUrl": "https://x.com/SenSchumer/status/2095554680394842589",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Attacks $275B Navy spending plan as wasteful ego project over cost relief",
-          "quote": "Trump\u2019s latest waste of time and money:\n\n$275 BILLION in taxpayer dollars for a \u201cgolden fleet\u201d of Navy battleships with his name on them.\n\nNot a single penny to lower costs for the American people.\n\nPlenty\u00a0to serve Trump\u2019s egomania and narcissism.\nnytimes.com/2026/08/05/us/po\u2026\n\nL",
-          "sourceUrl": "https://x.com/SenSchumer/status/2085395812259959080",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Criticizes Republicans for cutting servicemember benefits amid rising costs",
-          "quote": "As costs skyrocket and our servicemembers remain in danger\u2026\n\nRepublicans\u00a0want to\u00a0take\u00a0away more of\u00a0the\u00a0benefits\u00a0you earned.",
-          "sourceUrl": "https://x.com/SenSchumer/status/2082577913791058142",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "congress-legislation",
@@ -732,7 +741,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "civil-rights-race",
@@ -777,7 +786,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "trump-policy",
