@@ -3,7 +3,7 @@
   "voiceName": "Glenn Beck",
   "updatedAt": "2026-09-04",
   "topicCount": 24,
-  "stanceCount": 104,
+  "stanceCount": 105,
   "topics": [
     {
       "topic": "ai-technology",
@@ -933,6 +933,33 @@
       "active": true
     },
     {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Questions Canada's hostile rhetoric toward the U.S.",
+          "quote": "Wait. Canada Literally Thinks We're At War With Them?!",
+          "sourceUrl": "https://www.youtube.com/shorts/RoSEec3cUpU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Claims U.S. is entering military conflict with Canada",
+          "quote": "We're Now At War With Canada (Yes Really)",
+          "sourceUrl": "https://www.youtube.com/watch?v=v6oNLdS4PbI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "food-agriculture",
       "label": "Food & Agriculture",
       "count": 2,
@@ -1012,24 +1039,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 1,
-      "lastActive": "2026-08-25",
-      "stances": [
-        {
-          "date": "2026-08-25",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Claims U.S. is entering military conflict with Canada",
-          "quote": "We're Now At War With Canada (Yes Really)",
-          "sourceUrl": "https://www.youtube.com/watch?v=v6oNLdS4PbI",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "science-space",

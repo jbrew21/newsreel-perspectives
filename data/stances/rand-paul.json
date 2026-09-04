@@ -3,7 +3,7 @@
   "voiceName": "Rand Paul",
   "updatedAt": "2026-09-04",
   "topicCount": 17,
-  "stanceCount": 71,
+  "stanceCount": 73,
   "topics": [
     {
       "topic": "covid-pandemic",
@@ -458,9 +458,18 @@
     {
       "topic": "immigration",
       "label": "Immigration",
-      "count": 5,
-      "lastActive": "2026-09-03",
+      "count": 6,
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Opposes welfare benefits and birthright citizenship for illegal immigrants",
+          "quote": "Mr. Coleman is right. We shouldn\u2019t be rewarding people who come to our country illegally. They\u2019re able to get welfare benefits, and their children are given automatic birthright citizenship.\n\nAll of it is wrong. All of it MUST end. https://t.co/IvnIv4mWVF",
+          "sourceUrl": "https://x.com/RandPaul/status/2095980223023985092",
+          "platform": "x"
+        },
         {
           "date": "2026-09-03",
           "topic": "immigration",
@@ -591,6 +600,33 @@
       "active": true
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Suggests FDA-to-Pfizer revolving door raises conflict of interest concerns",
+          "quote": "You know what\u2019s interesting? Dr. Scott Gottlieb served as the Commissioner of the FDA before his board membership at Pfizer.\n\nHe joined Pfizer\u2019s board of directors shortly after resigning from his post at the FDA in 2019.",
+          "sourceUrl": "https://x.com/RandPaul/status/2095960899987341446",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Promotes market-based healthcare alternative to government monopoly",
+          "quote": "Costco will allow Medicare beneficiaries to have access to its bulk discounts on prescriptions.\n\nWith my Health Marketplace for All Act, membership-driven organizations like Costco could challenge the current government-controlled oligopoly in the employer and individual insuranc",
+          "sourceUrl": "https://x.com/RandPaul/status/2090444518629810226",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 2,
@@ -702,24 +738,6 @@
           "summary": "Opposes mass surveillance camera networks as unconstitutional",
           "quote": "Flock has 120,000 cameras tracking cars across America, no warrant required. Over 5,000 police agencies have signed on. This isn't crime fighting. This is mass surveillance of every American, and a violation of our 4th Amendment rights.",
           "sourceUrl": "https://x.com/RandPaul/status/2090453806127690150",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Promotes market-based healthcare alternative to government monopoly",
-          "quote": "Costco will allow Medicare beneficiaries to have access to its bulk discounts on prescriptions.\n\nWith my Health Marketplace for All Act, membership-driven organizations like Costco could challenge the current government-controlled oligopoly in the employer and individual insuranc",
-          "sourceUrl": "https://x.com/RandPaul/status/2090444518629810226",
           "platform": "x"
         }
       ],

@@ -3,7 +3,7 @@
   "voiceName": "HasanAbi",
   "updatedAt": "2026-09-04",
   "topicCount": 20,
-  "stanceCount": 76,
+  "stanceCount": 77,
   "topics": [
     {
       "topic": "media-personalities",
@@ -591,6 +591,33 @@
       "active": true
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes deteriorating state of U.S. military infrastructure",
+          "quote": "OUR WARSHIPS ARE FALLING APART",
+          "sourceUrl": "https://www.youtube.com/watch?v=bkqtdk78sAs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes poor conditions aboard U.S. Navy vessel",
+          "quote": "CATASTROPHIC CONDITIONS EXPOSED ON USS ABRAHAM LINCOLN...",
+          "sourceUrl": "https://www.youtube.com/watch?v=uiaKsOLzQl8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 2,
@@ -828,24 +855,6 @@
           "summary": "Criticizes Fox News for selectively amplifying AOC's past pro-trans statements",
           "quote": "Why Republicans DOMINATE The Trans Debate",
           "sourceUrl": "https://www.youtube.com/watch?v=O5vn_impEYA",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 1,
-      "lastActive": "2026-08-15",
-      "stances": [
-        {
-          "date": "2026-08-15",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Criticizes poor conditions aboard U.S. Navy vessel",
-          "quote": "CATASTROPHIC CONDITIONS EXPOSED ON USS ABRAHAM LINCOLN...",
-          "sourceUrl": "https://www.youtube.com/watch?v=uiaKsOLzQl8",
           "platform": "youtube"
         }
       ],
