@@ -893,6 +893,11 @@ def lookup_story(headline, days=None, skip_clusters=False):
     print(f"  ║   {len(voices_found)} VOICES ON THIS STORY{' ' * (25 - len(str(len(voices_found))))}║")
     print(f"  ╚══════════════════════════════════════════════╝")
 
+    # Old posts survive in per-day files (pinned/top posts), so a 2020 tweet can
+    # render next to yesterday's take with nothing distinguishing them. Stamp
+    # each quote with its date and flag anything over 45 days so stale material
+    # can't be mistaken for a current position.
+    _display_now = datetime.now(timezone.utc)
     for vid, data in sorted(voices_found.items(), key=lambda x: x[1]['_score']):
         meta = voices_meta.get(vid, {})
         cluster = clusters.get(vid, '')
@@ -904,7 +909,14 @@ def lookup_story(headline, days=None, skip_clusters=False):
         for q in data['quotes'][:3]:  # Max 3 quotes per voice
             platform_icon = {'x': 'X', 'youtube': 'YT', 'bluesky': 'BS'}.get(q['platform'], q['platform'])
             quote_text = q['quote'][:200]
-            print(f"    [{platform_icon}] \"{quote_text}\"")
+            ts_raw = q.get('timestamp', '')
+            if ts_raw:
+                ts = search_helpers.parse_timestamp(ts_raw)
+                age_days = (_display_now - ts).days
+                age_note = f" · {ts.date()}" + (" ⚠ STALE" if age_days > 45 else "")
+            else:
+                age_note = " · undated"
+            print(f"    [{platform_icon}{age_note}] \"{quote_text}\"")
             print(f"        {q['sourceUrl']}")
 
     # ── Match precision detection ──
