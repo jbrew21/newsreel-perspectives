@@ -1,9 +1,26 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-04T14:00:46.285334",
+  "collectedAt": "2026-09-04T19:57:05.966484",
   "date": "2026-09-04",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Canada Has Completely Lost It",
+      "sourceUrl": "https://www.youtube.com/watch?v=cr7-SWyidKo",
+      "timestamp": "2026-09-03T23:00:19+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "topics": [
+        "uk-world-politics"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Canada for political or policy decisions",
+      "quote": "Canada Has Completely Lost It"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -42,6 +59,23 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
+      "text": "What the GOP Needs to Do to Avoid A Disastrous Midterm | Hour 1 | 9/3/26",
+      "sourceUrl": "https://www.youtube.com/watch?v=Wr2ag0eIzUU",
+      "timestamp": "2026-09-03T14:04:18+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "topics": [
+        "elections"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Advises GOP strategy to prevent midterm losses",
+      "quote": "What the GOP Needs to Do to Avoid A Disastrous Midterm | Hour 1 | 9/3/26"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
       "text": "The TRUTH About Data Centers. It\u2019s Not What You Think...",
       "sourceUrl": "https://www.youtube.com/watch?v=zk4lpDeRDzg",
       "timestamp": "2026-09-02T23:00:06+00:00",
@@ -71,60 +105,17 @@
       "stance": "lean",
       "summary": "Commentary on high-profile murder trial proceedings",
       "quote": "THIS Just Happened With The Lindsay Clancy Murder Trial..."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "DISGUSTING: Tyler Robinson's Defense Attorney Attacked Charlie Kirk In Court | Hour 1 | 9/2/26",
-      "sourceUrl": "https://www.youtube.com/watch?v=ty8tMJq3S94",
-      "timestamp": "2026-09-02T14:03:33+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "topics": [
-        "criminal-justice"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes defense attorney's courtroom conduct toward commentator",
-      "quote": "DISGUSTING: Tyler Robinson's Defense Attorney Attacked Charlie Kirk In Court | Hour 1 | 9/2/26"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Canada Has Completely Lost It",
-      "sourceUrl": "https://www.youtube.com/watch?v=cr7-SWyidKo",
-      "timestamp": "2026-09-03T23:00:19+00:00",
-      "type": "video_title",
-      "topic": "uk-world-politics",
-      "topics": [
-        "uk-world-politics"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Canada for political or policy decisions",
-      "quote": "Canada Has Completely Lost It"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "What The GOP Needs To Do To Avoid A Disastrous Midterms | Hour 1 | 9/3/26",
-      "sourceUrl": "https://www.youtube.com/watch?v=Wr2ag0eIzUU",
-      "timestamp": "2026-09-03T14:04:18+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "topics": [
-        "elections"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Advises GOP strategy to prevent midterm losses",
-      "quote": "What The GOP Needs To Do To Avoid A Disastrous Midterms | Hour 1 | 9/3/26"
     }
   ],
   "topicSummary": {
+    "uk-world-politics": [
+      {
+        "quote": "Canada Has Completely Lost It",
+        "sourceUrl": "https://www.youtube.com/watch?v=cr7-SWyidKo",
+        "platform": "youtube",
+        "timestamp": "2026-09-03T23:00:19+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Trump Makes BIG Announcement About Midterms",
@@ -141,6 +132,14 @@
         "timestamp": "2026-09-03T15:40:49+00:00"
       }
     ],
+    "elections": [
+      {
+        "quote": "What the GOP Needs to Do to Avoid A Disastrous Midterm | Hour 1 | 9/3/26",
+        "sourceUrl": "https://www.youtube.com/watch?v=Wr2ag0eIzUU",
+        "platform": "youtube",
+        "timestamp": "2026-09-03T14:04:18+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "The TRUTH About Data Centers. It\u2019s Not What You Think...",
@@ -155,28 +154,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=v5_ZBIcmLAI",
         "platform": "youtube",
         "timestamp": "2026-09-02T18:00:19+00:00"
-      },
-      {
-        "quote": "DISGUSTING: Tyler Robinson's Defense Attorney Attacked Charlie Kirk In Court | Hour 1 | 9/2/26",
-        "sourceUrl": "https://www.youtube.com/watch?v=ty8tMJq3S94",
-        "platform": "youtube",
-        "timestamp": "2026-09-02T14:03:33+00:00"
-      }
-    ],
-    "uk-world-politics": [
-      {
-        "quote": "Canada Has Completely Lost It",
-        "sourceUrl": "https://www.youtube.com/watch?v=cr7-SWyidKo",
-        "platform": "youtube",
-        "timestamp": "2026-09-03T23:00:19+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "What The GOP Needs To Do To Avoid A Disastrous Midterms | Hour 1 | 9/3/26",
-        "sourceUrl": "https://www.youtube.com/watch?v=Wr2ag0eIzUU",
-        "platform": "youtube",
-        "timestamp": "2026-09-03T14:04:18+00:00"
       }
     ]
   }

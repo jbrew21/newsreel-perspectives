@@ -2,8 +2,8 @@
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
   "updatedAt": "2026-09-04",
-  "topicCount": 26,
-  "stanceCount": 81,
+  "topicCount": 28,
+  "stanceCount": 83,
   "topics": [
     {
       "topic": "culture-war",
@@ -787,6 +787,42 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 1,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Suggests Washington forced to address Epstein case",
+          "quote": "Washington Is Finally Being Forced to Confront Epstein - SF754",
+          "sourceUrl": "https://www.youtube.com/watch?v=sTosNK3B02E",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 1,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Questions public defense of Lindsay Clancy",
+          "quote": "Why won't people stop defending Lindsay Clancy?",
+          "sourceUrl": "https://www.youtube.com/shorts/AvPgGEbTD6I",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "billionaires-wealth",

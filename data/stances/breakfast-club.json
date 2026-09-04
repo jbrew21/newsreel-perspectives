@@ -3,7 +3,7 @@
   "voiceName": "The Breakfast Club",
   "updatedAt": "2026-09-04",
   "topicCount": 17,
-  "stanceCount": 55,
+  "stanceCount": 57,
   "topics": [
     {
       "topic": "media-personalities",
@@ -294,6 +294,51 @@
       "active": true
     },
     {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 4,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "sports",
+          "stance": "strong",
+          "summary": "Criticizes Jay-Z for compromising with NFL over activism",
+          "quote": "Colin Kaepernick Criticizes Jay-Z For \u2018Serving The Culture Up\u2019 To The NFL",
+          "sourceUrl": "https://www.youtube.com/watch?v=5CR6VwyFSmw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Reacting to WNBA player ejection incident",
+          "quote": "Charles Barkley &amp; Stephen Jackson React To Enes Kanter Freedom Being Ejected From WNBA Game",
+          "sourceUrl": "https://www.youtube.com/watch?v=T73_9R9nwCw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Reporting on WNBA player ejection and confrontation",
+          "quote": "Enes Kanter Freedom Ejected From WNBA Game After Confrontation With Natasha Cloud",
+          "sourceUrl": "https://www.youtube.com/watch?v=IAFzALLA3j8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Debating LeBron James' NBA legacy status",
+          "quote": "The Breakfast Club Debates Who Is The NBA G.O.A.T. After LeBron James ESPN Doc Reports",
+          "sourceUrl": "https://www.youtube.com/watch?v=jIYyt1-ldyM",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 4,
@@ -438,36 +483,27 @@
       "active": false
     },
     {
-      "topic": "sports",
-      "label": "Sports",
-      "count": 3,
-      "lastActive": "2026-08-25",
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-09-04",
       "stances": [
         {
-          "date": "2026-08-25",
-          "topic": "sports",
+          "date": "2026-09-04",
+          "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Reacting to WNBA player ejection incident",
-          "quote": "Charles Barkley &amp; Stephen Jackson React To Enes Kanter Freedom Being Ejected From WNBA Game",
-          "sourceUrl": "https://www.youtube.com/watch?v=T73_9R9nwCw",
+          "summary": "Raises concerns about unauthorized AI use in commercial ads",
+          "quote": "Mary J. Blige's AI Music Ad Pulled After It Was Revealed Ad Was Never Officially Approved",
+          "sourceUrl": "https://www.youtube.com/watch?v=wqDoZCIP0LY",
           "platform": "youtube"
         },
         {
-          "date": "2026-08-24",
-          "topic": "sports",
+          "date": "2026-08-27",
+          "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Reporting on WNBA player ejection and confrontation",
-          "quote": "Enes Kanter Freedom Ejected From WNBA Game After Confrontation With Natasha Cloud",
-          "sourceUrl": "https://www.youtube.com/watch?v=IAFzALLA3j8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "sports",
-          "stance": "lean",
-          "summary": "Debating LeBron James' NBA legacy status",
-          "quote": "The Breakfast Club Debates Who Is The NBA G.O.A.T. After LeBron James ESPN Doc Reports",
-          "sourceUrl": "https://www.youtube.com/watch?v=jIYyt1-ldyM",
+          "summary": "Meta held accountable for social media addiction harms",
+          "quote": "So Meta has agreed to pay up to $18 billion dollar to settle claims that Facebook and Instagram were designed to addict children and were harming their mental health. So 29 states they brought the case, accusing Meta of knowing that its platforms could harm children but failing t",
+          "sourceUrl": "https://www.youtube.com/watch?v=3jscYdnSTuo",
           "platform": "youtube"
         }
       ],
@@ -540,24 +576,6 @@
           "summary": "Critiques capitalism, expresses anti-Zionist position",
           "quote": "Hasan Piker On Technofeudalism Replacing Capitalism, Anti-Zionism + More",
           "sourceUrl": "https://www.youtube.com/watch?v=wFcm7QjNo3w",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Meta held accountable for social media addiction harms",
-          "quote": "So Meta has agreed to pay up to $18 billion dollar to settle claims that Facebook and Instagram were designed to addict children and were harming their mental health. So 29 states they brought the case, accusing Meta of knowing that its platforms could harm children but failing t",
-          "sourceUrl": "https://www.youtube.com/watch?v=3jscYdnSTuo",
           "platform": "youtube"
         }
       ],

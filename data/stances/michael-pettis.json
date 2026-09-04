@@ -2,15 +2,24 @@
   "voiceId": "michael-pettis",
   "voiceName": "Michael Pettis",
   "updatedAt": "2026-09-04",
-  "topicCount": 2,
-  "stanceCount": 13,
+  "topicCount": 3,
+  "stanceCount": 14,
   "topics": [
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 12,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "New market conditions may provide modest stabilization",
+          "quote": "2/2\nJune 25. Meanwhile, short positions on stocks rose to 29.2 billion yuan, near a two-year high.\"\n\nThe Chinese stock market has been pretty bumpy this year, but less margin and larger short positions should help a little.",
+          "sourceUrl": "https://bsky.app/profile/michaelpettis.bsky.social/post/3muoe2rb6wc2o",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-03",
           "topic": "economy-trade",
@@ -109,14 +118,23 @@
           "quote": "2/4\nChevron's shareholders, but it does nothing for American workers or the middle class. As it is, most Venezuelan oil is already processed in the US.\n\nThe point is that the only sustainable way to make Americans collectively richer is to increase the productivity of American wo",
           "sourceUrl": "https://bsky.app/profile/michaelpettis.bsky.social/post/3mubo45cad222",
           "platform": "bluesky"
-        },
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-09-04",
+      "stances": [
         {
-          "date": "2026-08-30",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Opposes Chevron's control of Venezuelan oil reserves",
-          "quote": "1/4\nIt was never hard to predict that most Venezuelans would oppose this deal. Most Americans should too. Putting Chevron in control of a substantial portion of the development, production and commercialization of Venezuela's oil reserves may be great for...\nwww.ft.com/content/b3",
-          "sourceUrl": "https://bsky.app/profile/michaelpettis.bsky.social/post/3mubo3yp3dk22",
+          "date": "2026-09-04",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "European national policymakers more pessimistic than EU-level officials",
+          "quote": "You may be right about the EU, Judah, but I have spent much of my time in the past year speaking to European policymakers and advisors, both in Brussels and in the national capitals, and I would say that in general the former are more optimistic than the latter.",
+          "sourceUrl": "https://bsky.app/profile/michaelpettis.bsky.social/post/3mupcnpdggk2g",
           "platform": "bluesky"
         }
       ],

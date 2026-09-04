@@ -1,10 +1,46 @@
 {
   "voiceId": "george-sedberry",
   "voiceName": "George Sedberry Jr. (White George)",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-04",
   "topicCount": 8,
   "stanceCount": 14,
   "topics": [
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 3,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Praises Tim Curry as wonderful person, expresses sadness at death",
+          "quote": "I just found out the iconic and legendary actor Tim Curry passed away today. I got to take a weekend road trip with Tim and his team (the amazing Marcia, Ramon, and Scott) to San Francisco for the 40th anniversary of the screening of the movie \"Clue\" a few months ago. Tim was a w",
+          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678449216045321502",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Mourns Tim Curry's passing, celebrates shared experience with actor",
+          "quote": "**RIP Tim Curry** A few months ago I got to take a road trip with Tim Curry from LA to San Francisco for the 40th anniversary of the movie \u201cClue.\u201d I got to spend time with Tim and his team (Marcia and Ramon) and we had a great weekend. Tim did so good on the trip! It saddens me t",
+          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678387337541209375",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Mourns Dolly Parton's death, calls her a legend",
+          "quote": "RIP Dolly Parton. You\u2019re a legend. \ud83d\udc94 #dollyparton #news #rip",
+          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678077896883244319",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
@@ -48,43 +84,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
-      "count": 3,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "celebrity-entertainment",
-          "stance": "lean",
-          "summary": "Celebrates Tim Curry's legacy and personal connection",
-          "quote": "I just found out the iconic and legendary actor Tim Curry passed away today. I got to take a weekend road trip with Tim and his team (the amazing Marcia, Ramon, and Scott) to San Francisco for the 40th anniversary of the screening of the movie \"Clue\" a few months ago. Tim was a w",
-          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678449216045321502",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "celebrity-entertainment",
-          "stance": "lean",
-          "summary": "Honors Tim Curry's memory and shared road trip experience",
-          "quote": "**RIP Tim Curry** A few months ago I got to take a road trip with Tim Curry from LA to San Francisco for the 40th anniversary of the movie \u201cClue.\u201d I got to spend time with Tim and his team (Marcia and Ramon) and we had a great weekend. Tim did so good on the trip! It saddens me t",
-          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678387337541209375",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "celebrity-entertainment",
-          "stance": "strong",
-          "summary": "Mourns death of iconic entertainer Dolly Parton",
-          "quote": "RIP Dolly Parton. You\u2019re a legend. \ud83d\udc94 #dollyparton #news #rip",
-          "sourceUrl": "https://www.tiktok.com/@whitegeorge/video/7678077896883244319",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "criminal-justice",
@@ -147,7 +147,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "free-speech-censorship",

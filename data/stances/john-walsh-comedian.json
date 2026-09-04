@@ -1,25 +1,16 @@
 {
   "voiceId": "john-walsh-comedian",
   "voiceName": "John Walsh",
-  "updatedAt": "2026-09-01",
-  "topicCount": 4,
+  "updatedAt": "2026-09-04",
+  "topicCount": 6,
   "stanceCount": 10,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 6,
-      "lastActive": "2026-08-19",
+      "count": 5,
+      "lastActive": "2026-08-13",
       "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Calls for Congress to reject crypto bill without ethics protections",
-          "quote": "POV: You\u2019re the White House staffer assigned to the crypto portfolio. Congress should vote NO on the CLARITY Act unless real ethics and accountability protections are included. #Crypto #WhiteHouse #Trump #CLARITYAct #Fyp",
-          "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7675803952675360031",
-          "platform": "tiktok"
-        },
         {
           "date": "2026-08-13",
           "topic": "trump-administration",
@@ -42,7 +33,7 @@
           "date": "2026-08-04",
           "topic": "trump-administration",
           "stance": "lean",
-          "summary": "Jokes about Judge Jeanine Pirro leaving White House with boxed evidence",
+          "summary": "Implies Jeanine Pirro carried evidence from White House meeting with Trump",
           "quote": "#JeaninePirro seen leaving the #WhiteHouse with boxed wine... I mean, boxed evidence. \ud83d\udce6\ud83c\udf77#Trump #judgejeaninepirro #fyp",
           "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7670256885198556446",
           "platform": "tiktok"
@@ -66,33 +57,6 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 2,
-      "lastActive": "2026-08-05",
-      "stances": [
-        {
-          "date": "2026-08-05",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Notes Trump's gubernatorial endorsement, implies candidate lacks independent positions",
-          "quote": "Trump endorsed Stacy Garrity for Governor of Pennsylvania again\u2026.. and she didn\u2019t disagree with a single thing \ud83d\ude10 #trump #pennsylvania #pa #midterms #fyp",
-          "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7670584777300299038",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-07-27",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Calls for voting to achieve affordable America",
-          "quote": "In 100 days, you can VOTE! Lets fight for an AFFORDABLE AMERICA\ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83d\udc4f #HakeemJeffries #JoshShapiro #PA #Midterms #FYP",
-          "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7667259572976946445",
-          "platform": "tiktok"
-        }
-      ],
       "active": false
     },
     {
@@ -105,13 +69,49 @@
           "date": "2026-08-28",
           "topic": "trump-policy",
           "stance": "lean",
-          "summary": "Mocks Trump's proposal to rename Lake Ontario",
+          "summary": "Mocks Trump's territorial ambitions as humorous overreach",
           "quote": "Lake Ontario is now Lake America\u2026 \ud83c\uddfa\ud83c\uddf8\ud83d\ude02 and there may be a few more bodies of water #Trump is considering renaming. \ud83d\udc40\ud83c\udde8\ud83c\udde6 #lakeontario #lakeamerica #canada #fyp",
           "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7678890762322464030",
           "platform": "tiktok"
         }
       ],
       "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 1,
+      "lastActive": "2026-08-19",
+      "stances": [
+        {
+          "date": "2026-08-19",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Demands ethics and accountability in crypto regulation bill",
+          "quote": "POV: You\u2019re the White House staffer assigned to the crypto portfolio. Congress should vote NO on the CLARITY Act unless real ethics and accountability protections are included. #Crypto #WhiteHouse #Trump #CLARITYAct #Fyp",
+          "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7675803952675360031",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 1,
+      "lastActive": "2026-08-05",
+      "stances": [
+        {
+          "date": "2026-08-05",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Suggests Pennsylvania governor candidate is obsequious to Trump endorsement",
+          "quote": "Trump endorsed Stacy Garrity for Governor of Pennsylvania again\u2026.. and she didn\u2019t disagree with a single thing \ud83d\ude10 #trump #pennsylvania #pa #midterms #fyp",
+          "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7670584777300299038",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "culture-war",
@@ -126,6 +126,24 @@
           "summary": "Criticizes MAGA movement as detrimental",
           "quote": "MAGA. They make everything worse \ud83c\udf7f\ud83c\uddfa\ud83c\uddf8 #NicoleKidman would never\u203c\ufe0f #AMC #Trump #maga #fyp",
           "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7670045018844843294",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-07-27",
+      "stances": [
+        {
+          "date": "2026-07-27",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Calls for voting to achieve affordable America",
+          "quote": "In 100 days, you can VOTE! Lets fight for an AFFORDABLE AMERICA\ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83d\udc4f #HakeemJeffries #JoshShapiro #PA #Midterms #FYP",
+          "sourceUrl": "https://www.tiktok.com/@itsjohnwalsh/video/7667259572976946445",
           "platform": "tiktok"
         }
       ],

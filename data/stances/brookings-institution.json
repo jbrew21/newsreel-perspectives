@@ -2,8 +2,8 @@
   "voiceId": "brookings-institution",
   "voiceName": "Brookings Institution",
   "updatedAt": "2026-09-04",
-  "topicCount": 14,
-  "stanceCount": 33,
+  "topicCount": 15,
+  "stanceCount": 34,
   "topics": [
     {
       "topic": "ai-technology",
@@ -283,6 +283,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 1,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Warns AfD electoral success may trigger significant political upheaval",
+          "quote": "On Sunday, the Alternative for Germany party are predicted to win elections in Saxony-Anhalt. Constanze Stelzenm\u00fcller and Mathilda Silbiger explain why such a win may trigger a political earthquake that will reverberate all the way to Berlin.",
+          "sourceUrl": "https://bsky.app/profile/brookings.edu/post/3mupnznzkds22",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "education",

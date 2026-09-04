@@ -3,7 +3,7 @@
   "voiceName": "Tom Nichols",
   "updatedAt": "2026-09-04",
   "topicCount": 22,
-  "stanceCount": 100,
+  "stanceCount": 101,
   "topics": [
     {
       "topic": "elections",
@@ -789,6 +789,33 @@
       "active": true
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Criticizes USG health coverage disparity, favors universal approach",
+          "quote": "I think it's very telling (and a point in favor of liberal arguments) that the USG gives fantastic health care insurance to its own employees but not to anyone else.",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muo2etj4m22d",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-04",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Americans unlikely to accept European-style healthcare model",
+          "quote": "You cannot imagine how much I don't want to argue about heath care with Bluesky folks. My only point is that most Americans will not take the European deal. You can argue about why, or whether they should, but they won't.",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muo2dn7xjk2d",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 2,
@@ -994,24 +1021,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Criticizes USG health coverage disparity, favors universal approach",
-          "quote": "I think it's very telling (and a point in favor of liberal arguments) that the USG gives fantastic health care insurance to its own employees but not to anyone else.",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muo2etj4m22d",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "ai-technology",

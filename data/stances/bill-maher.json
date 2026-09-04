@@ -3,7 +3,7 @@
   "voiceName": "Bill Maher",
   "updatedAt": "2026-09-04",
   "topicCount": 13,
-  "stanceCount": 23,
+  "stanceCount": 24,
   "topics": [
     {
       "topic": "trump-administration",
@@ -105,6 +105,42 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "",
+          "quote": "New Rule: Staff Infection | Real Time with Bill Maher (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=GVBL5BnrCBU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Highlights labor force participation crisis among young men",
+          "quote": "There are 7 million able-bodied men, mostly young, who are what they call NILF (Not in the Labor Force).",
+          "sourceUrl": "https://x.com/billmaher/status/2087226786832892078",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Discussion of economic issues and business topics",
+          "quote": "Overtime with Bill Maher: Erin Brockovich, Scott Galloway, Peter Hamby (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=upSPfx1dp9w",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "immigration",
       "label": "Immigration",
       "count": 2,
@@ -127,33 +163,6 @@
           "quote": "Spain has been having a rough time. The northern part of the country is on fire, and the southern border is being overrun by migrants. So basically, it's California.",
           "sourceUrl": "https://x.com/billmaher/status/2083390577375420520",
           "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 2,
-      "lastActive": "2026-08-11",
-      "stances": [
-        {
-          "date": "2026-08-11",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Highlights labor force participation crisis among young men",
-          "quote": "There are 7 million able-bodied men, mostly young, who are what they call NILF (Not in the Labor Force).",
-          "sourceUrl": "https://x.com/billmaher/status/2087226786832892078",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Discussion of economic issues and business topics",
-          "quote": "Overtime with Bill Maher: Erin Brockovich, Scott Galloway, Peter Hamby (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=upSPfx1dp9w",
-          "platform": "youtube"
         }
       ],
       "active": false

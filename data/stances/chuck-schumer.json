@@ -2,15 +2,24 @@
   "voiceId": "chuck-schumer",
   "voiceName": "Chuck Schumer",
   "updatedAt": "2026-09-04",
-  "topicCount": 18,
-  "stanceCount": 77,
+  "topicCount": 19,
+  "stanceCount": 78,
   "topics": [
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 12,
-      "lastActive": "2026-09-02",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Blames Trump-Vance administration for record diesel prices",
+          "quote": "$5.84 a gallon for diesel is a new all-time high.\n\nDonald Trump and JD Vance own this.\n\nAnd instead of taking responsibility, they want you to be grateful for it. https://t.co/uD8Mn7vWkg",
+          "sourceUrl": "https://x.com/SenSchumer/status/2095901158011244605",
+          "platform": "x"
+        },
         {
           "date": "2026-09-02",
           "topic": "economy-trade",
@@ -108,15 +117,6 @@
           "summary": "Catalogs Trump failures: inflation, war, debt, FDA collapse",
           "quote": "Gas above $4/gal. National debt at $40 trillion. Another endless war in the Middle East. The FDA gutted and foods being recalled every day.\n\u00a0\nAnd this is what Donald Trump is focused on.",
           "sourceUrl": "https://x.com/SenSchumer/status/2090538869649269247",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Trump's trade policies harming consumers and farmers",
-          "quote": "Donald Trump\u2019s war on the American consumer and our farmers has no end in sight.\n\nAnd he doesn\u2019t care at all.",
-          "sourceUrl": "https://x.com/SenSchumer/status/2089443879720284303",
           "platform": "x"
         }
       ],
@@ -769,6 +769,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 1,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Calls for ICE reforms due to inadequate vetting and officer misconduct",
+          "quote": "In their rush to meet arrest quotas ICE cut corners and hired officers without basic vetting leading to the abuses and deaths we\u2019ve seen on our streets.\n\nThis is yet another reason ICE needs wholesale reforms to ensure ICE hires don\u2019t put our communities at risk and are held acco",
+          "sourceUrl": "https://x.com/SenSchumer/status/2095880009944572406",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "terrorism",

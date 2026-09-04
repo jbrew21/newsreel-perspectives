@@ -3,7 +3,7 @@
   "voiceName": "Oren Cass",
   "updatedAt": "2026-09-04",
   "topicCount": 9,
-  "stanceCount": 20,
+  "stanceCount": 21,
   "topics": [
     {
       "topic": "economy-trade",
@@ -69,6 +69,51 @@
       "active": true
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 4,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Explores conservative approaches to youth formation and civic education",
+          "quote": "What Citizenship Requires with Yuval Levin. How should conservatives help form the youngest generation?",
+          "sourceUrl": "https://www.commonplace.org/p/what-citizenship-requires-with-yuval",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-23",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Emphasizes civic education's role in building shared values",
+          "quote": "The Citizenship Test. Public education must instill civic virtues and shared allegiances.",
+          "sourceUrl": "https://www.commonplace.org/p/the-citizenship-test",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Argues meritocratic systems require moral foundations",
+          "quote": "Making Meritocrats Moral (by Yuval Levin)",
+          "sourceUrl": "https://www.commonplace.org/p/yuval-levin-making-meritocrats-moral",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Promotes self-governance and civic participation in education",
+          "quote": "The School of Self-Rule (by Bruno V. Manno)",
+          "sourceUrl": "https://www.commonplace.org/p/the-school-of-self-rule",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 4,
@@ -108,42 +153,6 @@
           "summary": "Questions whether AI singularity is occurring and its implications",
           "quote": "Is the AI Apocalypse Already Here? with Gregory Conti. Are we living through the singularity? Does it matter?",
           "sourceUrl": "https://www.commonplace.org/p/is-the-ai-apocalypse-already-here",
-          "platform": "substack"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 3,
-      "lastActive": "2026-08-23",
-      "stances": [
-        {
-          "date": "2026-08-23",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Emphasizes civic education's role in building shared values",
-          "quote": "The Citizenship Test. Public education must instill civic virtues and shared allegiances.",
-          "sourceUrl": "https://www.commonplace.org/p/the-citizenship-test",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Argues meritocratic systems require moral foundations",
-          "quote": "Making Meritocrats Moral (by Yuval Levin)",
-          "sourceUrl": "https://www.commonplace.org/p/yuval-levin-making-meritocrats-moral",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Promotes self-governance and civic participation in education",
-          "quote": "The School of Self-Rule (by Bruno V. Manno)",
-          "sourceUrl": "https://www.commonplace.org/p/the-school-of-self-rule",
           "platform": "substack"
         }
       ],
