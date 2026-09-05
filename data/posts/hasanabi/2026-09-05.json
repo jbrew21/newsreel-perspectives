@@ -1,9 +1,43 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-05T19:19:18.475634",
+  "collectedAt": "2026-09-05T21:29:48.216344",
   "date": "2026-09-05",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "RIGHT WING POLITICAL NETWORK EXPOSED AS FIVERR ACTORS",
+      "sourceUrl": "https://www.youtube.com/watch?v=rdcjQyESJwE",
+      "timestamp": "2026-09-05T17:00:12+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Exposes right-wing political network operating with paid actors",
+      "quote": "RIGHT WING POLITICAL NETWORK EXPOSED AS FIVERR ACTORS"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "How We Decolonize Israel w/ Professor Noura Erakat",
+      "sourceUrl": "https://www.youtube.com/watch?v=TuBMKhObhgs",
+      "timestamp": "2026-09-05T13:30:39+00:00",
+      "type": "video_title",
+      "topic": "israel-palestine",
+      "topics": [
+        "israel-palestine"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Discusses decolonization framework for Israel-Palestine conflict",
+      "quote": "How We Decolonize Israel w/ Professor Noura Erakat"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -93,55 +127,60 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
-      "text": "THIS IS HOW THE GRIFT ENDS",
-      "sourceUrl": "https://www.youtube.com/watch?v=bNwWCtDX7U0",
-      "timestamp": "2026-09-02T22:04:31+00:00",
+      "text": "EVEN CONSERVATIVES LOVE ABDUL EL-SAYED",
+      "sourceUrl": "https://www.youtube.com/watch?v=kD4UsJMBn4Q",
+      "timestamp": "2026-09-05T20:30:28+00:00",
       "type": "video_title",
-      "topic": "media-personalities",
+      "topic": "elections",
       "topics": [
-        "media-personalities"
+        "elections"
       ],
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes someone's financial or ideological opportunism",
-      "quote": "THIS IS HOW THE GRIFT ENDS"
+      "stance": "lean",
+      "summary": "Highlights cross-partisan appeal of progressive candidate",
+      "quote": "EVEN CONSERVATIVES LOVE ABDUL EL-SAYED"
     },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
-      "text": "RIGHT WING POLITICAL NETWORK EXPOSED AS FIVERR ACTORS",
-      "sourceUrl": "https://www.youtube.com/watch?v=rdcjQyESJwE",
-      "timestamp": "2026-09-05T17:00:12+00:00",
+      "text": "Senate Democrats are abandoning Angie Nixon",
+      "sourceUrl": "https://www.youtube.com/shorts/p3yWFkS6hic",
+      "timestamp": "2026-09-05T20:15:07+00:00",
       "type": "video_title",
-      "topic": "media-press",
+      "topic": "elections",
       "topics": [
-        "media-press"
+        "elections"
       ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Exposes right-wing political network operating with paid actors",
-      "quote": "RIGHT WING POLITICAL NETWORK EXPOSED AS FIVERR ACTORS"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "How We Decolonize Israel w/ Professor Noura Erakat",
-      "sourceUrl": "https://www.youtube.com/watch?v=TuBMKhObhgs",
-      "timestamp": "2026-09-05T13:30:39+00:00",
-      "type": "video_title",
-      "topic": "israel-palestine",
-      "topics": [
-        "israel-palestine"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Discusses decolonization framework for Israel-Palestine conflict",
-      "quote": "How We Decolonize Israel w/ Professor Noura Erakat"
+      "summary": "Criticizes Democratic Party abandonment of progressive candidate",
+      "quote": "Senate Democrats are abandoning Angie Nixon"
     }
   ],
   "topicSummary": {
+    "media-press": [
+      {
+        "quote": "RIGHT WING POLITICAL NETWORK EXPOSED AS FIVERR ACTORS",
+        "sourceUrl": "https://www.youtube.com/watch?v=rdcjQyESJwE",
+        "platform": "youtube",
+        "timestamp": "2026-09-05T17:00:12+00:00"
+      },
+      {
+        "quote": "How is this news??",
+        "sourceUrl": "https://www.youtube.com/shorts/4ItWIR_geiA",
+        "platform": "youtube",
+        "timestamp": "2026-09-03T15:59:58+00:00"
+      }
+    ],
+    "israel-palestine": [
+      {
+        "quote": "How We Decolonize Israel w/ Professor Noura Erakat",
+        "sourceUrl": "https://www.youtube.com/watch?v=TuBMKhObhgs",
+        "platform": "youtube",
+        "timestamp": "2026-09-05T13:30:39+00:00"
+      }
+    ],
     "military-defense": [
       {
         "quote": "TRUMP HAS DESTROYED AMERICA'S MILITARY!",
@@ -172,34 +211,20 @@
         "sourceUrl": "https://www.youtube.com/watch?v=pTMUXlbyw-k",
         "platform": "youtube",
         "timestamp": "2026-09-03T17:05:47+00:00"
-      },
-      {
-        "quote": "THIS IS HOW THE GRIFT ENDS",
-        "sourceUrl": "https://www.youtube.com/watch?v=bNwWCtDX7U0",
-        "platform": "youtube",
-        "timestamp": "2026-09-02T22:04:31+00:00"
       }
     ],
-    "media-press": [
+    "elections": [
       {
-        "quote": "How is this news??",
-        "sourceUrl": "https://www.youtube.com/shorts/4ItWIR_geiA",
+        "quote": "EVEN CONSERVATIVES LOVE ABDUL EL-SAYED",
+        "sourceUrl": "https://www.youtube.com/watch?v=kD4UsJMBn4Q",
         "platform": "youtube",
-        "timestamp": "2026-09-03T15:59:58+00:00"
+        "timestamp": "2026-09-05T20:30:28+00:00"
       },
       {
-        "quote": "RIGHT WING POLITICAL NETWORK EXPOSED AS FIVERR ACTORS",
-        "sourceUrl": "https://www.youtube.com/watch?v=rdcjQyESJwE",
+        "quote": "Senate Democrats are abandoning Angie Nixon",
+        "sourceUrl": "https://www.youtube.com/shorts/p3yWFkS6hic",
         "platform": "youtube",
-        "timestamp": "2026-09-05T17:00:12+00:00"
-      }
-    ],
-    "israel-palestine": [
-      {
-        "quote": "How We Decolonize Israel w/ Professor Noura Erakat",
-        "sourceUrl": "https://www.youtube.com/watch?v=TuBMKhObhgs",
-        "platform": "youtube",
-        "timestamp": "2026-09-05T13:30:39+00:00"
+        "timestamp": "2026-09-05T20:15:07+00:00"
       }
     ]
   }

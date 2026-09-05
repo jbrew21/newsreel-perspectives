@@ -1,9 +1,26 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-05T19:19:18.767449",
+  "collectedAt": "2026-09-05T21:29:48.520686",
   "date": "2026-09-05",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "THIS Is How Trump Could Fix Education.",
+      "sourceUrl": "https://www.youtube.com/shorts/oAH00P4TIAU",
+      "timestamp": "2026-09-05T14:00:36+00:00",
+      "type": "video_title",
+      "topic": "education",
+      "topics": [
+        "education"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Advocates for Trump-backed education reforms",
+      "quote": "THIS Is How Trump Could Fix Education."
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -20,6 +37,23 @@
       "stance": "strong",
       "summary": "Questions or criticizes regulatory proposals targeting AI companies",
       "quote": "\u201cDeath Penalty\u201d For AI Companies?!"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "I Asked AI What It FEARS. It Gave a TERRIFYING Answer...",
+      "sourceUrl": "https://www.youtube.com/watch?v=d40Fl7xDR5w",
+      "timestamp": "2026-09-04T23:00:19+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Expresses concern about AI capabilities and risks",
+      "quote": "I Asked AI What It FEARS. It Gave a TERRIFYING Answer..."
     },
     {
       "voiceId": "glenn-beck",
@@ -88,43 +122,17 @@
       "stance": "strong",
       "summary": "Opposes meat industry monopolies, advocates antitrust action",
       "quote": "What we do to the meat monopolies... echoes in eternity."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "THIS Is How Trump Could Fix Education.",
-      "sourceUrl": "https://www.youtube.com/shorts/oAH00P4TIAU",
-      "timestamp": "2026-09-05T14:00:36+00:00",
-      "type": "video_title",
-      "topic": "education",
-      "topics": [
-        "education"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Advocates for Trump-backed education reforms",
-      "quote": "THIS Is How Trump Could Fix Education."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "I Asked AI What It FEARS. It Gave a TERRIFYING Answer...",
-      "sourceUrl": "https://www.youtube.com/watch?v=d40Fl7xDR5w",
-      "timestamp": "2026-09-04T23:00:19+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Expresses concern about AI capabilities and risks",
-      "quote": "I Asked AI What It FEARS. It Gave a TERRIFYING Answer..."
     }
   ],
   "topicSummary": {
+    "education": [
+      {
+        "quote": "THIS Is How Trump Could Fix Education.",
+        "sourceUrl": "https://www.youtube.com/shorts/oAH00P4TIAU",
+        "platform": "youtube",
+        "timestamp": "2026-09-05T14:00:36+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "\u201cDeath Penalty\u201d For AI Companies?!",
@@ -169,14 +177,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/M3rxeQiHW3o",
         "platform": "youtube",
         "timestamp": "2026-09-03T15:40:49+00:00"
-      }
-    ],
-    "education": [
-      {
-        "quote": "THIS Is How Trump Could Fix Education.",
-        "sourceUrl": "https://www.youtube.com/shorts/oAH00P4TIAU",
-        "platform": "youtube",
-        "timestamp": "2026-09-05T14:00:36+00:00"
       }
     ]
   }
