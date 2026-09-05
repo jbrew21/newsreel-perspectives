@@ -3,7 +3,7 @@
   "voiceName": "Ethan Klein",
   "updatedAt": "2026-09-05",
   "topicCount": 4,
-  "stanceCount": 22,
+  "stanceCount": 23,
   "topics": [
     {
       "topic": "celebrity-entertainment",
@@ -204,6 +204,33 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Discusses potential serial killer case with implied concern",
+          "quote": "Does South Korea Have a New Serial Killer? (Jeju Island Murders) - H3 After Dark #96",
+          "sourceUrl": "https://www.youtube.com/watch?v=AyyIPUYcLwk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Discusses murder case involving domestic abuse allegations",
+          "quote": "Sara Gilson: TikToker Murdered After Accusing Husband of CSA - H3 After Dark #88",
+          "sourceUrl": "https://www.youtube.com/watch?v=-EallpncCPI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "terrorism",
       "label": "Terrorism & Security",
       "count": 1,
@@ -220,24 +247,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 1,
-      "lastActive": "2026-08-11",
-      "stances": [
-        {
-          "date": "2026-08-11",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Discusses murder case involving domestic abuse allegations",
-          "quote": "Sara Gilson: TikToker Murdered After Accusing Husband of CSA - H3 After Dark #88",
-          "sourceUrl": "https://www.youtube.com/watch?v=-EallpncCPI",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
     }
   ]
 }

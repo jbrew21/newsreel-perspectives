@@ -3,7 +3,7 @@
   "voiceName": "Allie Beth Stuckey",
   "updatedAt": "2026-09-05",
   "topicCount": 11,
-  "stanceCount": 34,
+  "stanceCount": 35,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -267,6 +267,33 @@
       "active": false
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Economic barriers prevent family formation for some",
+          "quote": "When Finances Stop You from Having Kids | Ron Simmons",
+          "sourceUrl": "https://www.youtube.com/watch?v=xO760WYNMD8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Evaluates Dave Ramsey's financial advice relevance to current economic conditions",
+          "quote": "Does the Dave Ramsey Method Work for Today\u2019s Economy? | George Kamel | Ep 1378",
+          "sourceUrl": "https://www.youtube.com/watch?v=Os7j8Q87zRw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 3,
@@ -351,24 +378,6 @@
           "summary": "Criticizes gubernatorial candidate as communist or far-left",
           "quote": "Is This Communist Chef Wisconsin\u2019s Next Governor? | Ron Simmons",
           "sourceUrl": "https://www.youtube.com/watch?v=NHfg2FqsyDk",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-07-31",
-      "stances": [
-        {
-          "date": "2026-07-31",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Evaluates Dave Ramsey's financial advice relevance to current economic conditions",
-          "quote": "Does the Dave Ramsey Method Work for Today\u2019s Economy? | George Kamel | Ep 1378",
-          "sourceUrl": "https://www.youtube.com/watch?v=Os7j8Q87zRw",
           "platform": "youtube"
         }
       ],

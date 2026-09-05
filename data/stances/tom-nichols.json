@@ -3,7 +3,7 @@
   "voiceName": "Tom Nichols",
   "updatedAt": "2026-09-05",
   "topicCount": 22,
-  "stanceCount": 108,
+  "stanceCount": 110,
   "topics": [
     {
       "topic": "media-press",
@@ -183,6 +183,15 @@
           "platform": "bluesky"
         },
         {
+          "date": "2026-09-05",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Clarifies Iraq WMD intelligence: Saddam pursued nukes, not possessed them",
+          "quote": "WMD doesn't mean \"except chems,\" but the Duelfer Report noted that Saddam was trying (not successfully at that point) to restart his nuke program.\n\nNo one thought he had operational nukes, only that he was trying.",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muqhnndf4s2g",
+          "platform": "bluesky"
+        },
+        {
           "date": "2026-08-25",
           "topic": "foreign-policy-diplomacy",
           "stance": "lean",
@@ -225,15 +234,6 @@
           "summary": "Reports Western military responses to Russia-China multifront threat lack substance",
           "quote": "The U.S. and its allies could be at risk for a Russia-China multifront attack, Simon Shuster reports. He asked a range of military experts and strategists what the West would do in such a situation and found that the responses rang surprisingly hollow.",
           "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtbylhh3q42b",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Opposes scaling back military exercises, warns of appearing weak to adversaries",
-          "quote": "\"Scaling back the exercise is, of course, an insane decision, which does nothing but hurt an ally, and tempt an adversary to think\u2014correctly\u2014that American leadership is feckless.\"\n\nwww.theatlantic.com/ideas/2026/0...",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtanpxj5s22i",
           "platform": "bluesky"
         }
       ],
@@ -843,6 +843,87 @@
       "active": true
     },
     {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 4,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Iran possessed weapons before U.S. intervention",
+          "quote": "They had them at least five years before you got there. Ask the Iranians.",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muqhhuvsk22g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Criticizes president for enabling Iranian nuclear weapons development",
+          "quote": "Great job from the president yesterday, basically telling Iran \"yes, you should get a nuke ASAP, so you can get the same treatment I give my friends in North Korea.\"\n\nwww.theatlantic.com/ideas/2026/0...",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtjpxdhm3k2b",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Criticizes weapons depletion in failed Iran regime-change attempt",
+          "quote": "Tom Nichols about the missile stocks: \u201cYears ago, we could\u2019ve given a fraction of this many weapons to Ukraine to great strategic effect against Russia. Now we\u2019ve spent them down in a fruitless attempt to topple the Iranian regime.\u201d\n\n@radiofreetom.bsky.social",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3msqsrxhfzs2i",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Criticizes repeated Iran deal negotiations as futile",
+          "quote": "I can\u2019t believe we\u2019re doing another cycle of pretending to have a deal with Iran. This is so stupid.",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3ms54zr6ptc2v",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 3,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Red tape in healthcare is causing practitioners to leave state",
+          "quote": "I live in a state that's bleeding practitioners because of red tape.",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muqhiktdr22g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-04",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Criticizes USG health coverage disparity, favors universal approach",
+          "quote": "I think it's very telling (and a point in favor of liberal arguments) that the USG gives fantastic health care insurance to its own employees but not to anyone else.",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muo2etj4m22d",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-04",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Americans unlikely to accept European-style healthcare model",
+          "quote": "You cannot imagine how much I don't want to argue about heath care with Bluesky folks. My only point is that most Americans will not take the European deal. You can argue about why, or whether they should, but they won't.",
+          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muo2dn7xjk2d",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 3,
@@ -879,33 +960,6 @@
       "active": true
     },
     {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 2,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Criticizes USG health coverage disparity, favors universal approach",
-          "quote": "I think it's very telling (and a point in favor of liberal arguments) that the USG gives fantastic health care insurance to its own employees but not to anyone else.",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muo2etj4m22d",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-04",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Americans unlikely to accept European-style healthcare model",
-          "quote": "You cannot imagine how much I don't want to argue about heath care with Bluesky folks. My only point is that most Americans will not take the European deal. You can argue about why, or whether they should, but they won't.",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3muo2dn7xjk2d",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 2,
@@ -931,42 +985,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 3,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Criticizes president for enabling Iranian nuclear weapons development",
-          "quote": "Great job from the president yesterday, basically telling Iran \"yes, you should get a nuke ASAP, so you can get the same treatment I give my friends in North Korea.\"\n\nwww.theatlantic.com/ideas/2026/0...",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mtjpxdhm3k2b",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Criticizes weapons depletion in failed Iran regime-change attempt",
-          "quote": "Tom Nichols about the missile stocks: \u201cYears ago, we could\u2019ve given a fraction of this many weapons to Ukraine to great strategic effect against Russia. Now we\u2019ve spent them down in a fruitless attempt to topple the Iranian regime.\u201d\n\n@radiofreetom.bsky.social",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3msqsrxhfzs2i",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-02",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Criticizes repeated Iran deal negotiations as futile",
-          "quote": "I can\u2019t believe we\u2019re doing another cycle of pretending to have a deal with Iran. This is so stupid.",
-          "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3ms54zr6ptc2v",
-          "platform": "bluesky"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "trump-policy",

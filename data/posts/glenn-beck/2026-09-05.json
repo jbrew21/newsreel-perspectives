@@ -1,9 +1,26 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-05T10:50:39.695858",
+  "collectedAt": "2026-09-05T12:06:51.182492",
   "date": "2026-09-05",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "\u201cDeath Penalty\u201d For AI Companies?!",
+      "sourceUrl": "https://www.youtube.com/shorts/6uKqzeRTq8E",
+      "timestamp": "2026-09-05T00:15:04+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Questions or criticizes regulatory proposals targeting AI companies",
+      "quote": "\u201cDeath Penalty\u201d For AI Companies?!"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -88,26 +105,17 @@
       "stance": "strong",
       "summary": "Advises GOP strategy to prevent midterm losses",
       "quote": "What the GOP Needs to Do to Avoid A Disastrous Midterm | Hour 1 | 9/3/26"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "\u201cDeath Penalty\u201d For AI Companies?!",
-      "sourceUrl": "https://www.youtube.com/shorts/6uKqzeRTq8E",
-      "timestamp": "2026-09-05T00:15:04+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Questions or criticizes regulatory proposals targeting AI companies",
-      "quote": "\u201cDeath Penalty\u201d For AI Companies?!"
     }
   ],
   "topicSummary": {
+    "ai-technology": [
+      {
+        "quote": "\u201cDeath Penalty\u201d For AI Companies?!",
+        "sourceUrl": "https://www.youtube.com/shorts/6uKqzeRTq8E",
+        "platform": "youtube",
+        "timestamp": "2026-09-05T00:15:04+00:00"
+      }
+    ],
     "foreign-policy-diplomacy": [
       {
         "quote": "Wait. Canada Literally Thinks We're At War With Them?!",
@@ -146,14 +154,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Wr2ag0eIzUU",
         "platform": "youtube",
         "timestamp": "2026-09-03T14:04:18+00:00"
-      }
-    ],
-    "ai-technology": [
-      {
-        "quote": "\u201cDeath Penalty\u201d For AI Companies?!",
-        "sourceUrl": "https://www.youtube.com/shorts/6uKqzeRTq8E",
-        "platform": "youtube",
-        "timestamp": "2026-09-05T00:15:04+00:00"
       }
     ]
   }

@@ -3,14 +3,23 @@
   "voiceName": "Russell Brand",
   "updatedAt": "2026-09-05",
   "topicCount": 28,
-  "stanceCount": 84,
+  "stanceCount": 85,
   "topics": [
     {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 12,
-      "lastActive": "2026-09-01",
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes destructive aspects of his former cultural milieu",
+          "quote": "The culture I was part of destroyed me.",
+          "sourceUrl": "https://www.youtube.com/shorts/cF8LApXFowY",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-01",
           "topic": "culture-war",
@@ -108,15 +117,6 @@
           "summary": "Suggests Hollywood functions as instrument of satanic forces",
           "quote": "Is Hollywood really the agency of Satan?",
           "sourceUrl": "https://www.youtube.com/shorts/5Csv7kIJJvU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-15",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Public understands hidden agenda or truth",
-          "quote": "Everyone knows what's going on...",
-          "sourceUrl": "https://www.youtube.com/watch?v=EBUVJFIEtws",
           "platform": "youtube"
         }
       ],
@@ -546,6 +546,42 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Covers significant development in high-profile criminal case",
+          "quote": "Bombshell Just Dropped in Lindsay Clancy Case...",
+          "sourceUrl": "https://www.youtube.com/watch?v=OI5doRhFERE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes UK police conduct as oppressive toward citizens",
+          "quote": "UK police is still terrorizing its own people...",
+          "sourceUrl": "https://www.youtube.com/shorts/T7fjZ8qFcso",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Highlights exoneration case, questions justice system failures",
+          "quote": "Update: UK man cleared of all charges...",
+          "sourceUrl": "https://x.com/rustyrockets/status/2087267932686442829",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 2,
@@ -568,33 +604,6 @@
           "quote": "Fauci's in big trouble",
           "sourceUrl": "https://www.youtube.com/watch?v=-JWI6WFn8Lk",
           "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-08-28",
-      "stances": [
-        {
-          "date": "2026-08-28",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Criticizes UK police conduct as oppressive toward citizens",
-          "quote": "UK police is still terrorizing its own people...",
-          "sourceUrl": "https://www.youtube.com/shorts/T7fjZ8qFcso",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Highlights exoneration case, questions justice system failures",
-          "quote": "Update: UK man cleared of all charges...",
-          "sourceUrl": "https://x.com/rustyrockets/status/2087267932686442829",
-          "platform": "x"
         }
       ],
       "active": true
