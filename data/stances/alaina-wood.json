@@ -2,8 +2,8 @@
   "voiceId": "alaina-wood",
   "voiceName": "Alaina Wood",
   "updatedAt": "2026-09-05",
-  "topicCount": 12,
-  "stanceCount": 31,
+  "topicCount": 13,
+  "stanceCount": 32,
   "topics": [
     {
       "topic": "climate-environment",
@@ -301,6 +301,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 1,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Questions government surveillance overreach and privacy violations",
+          "quote": "It now costs $200 to obtain data on Flock camera logs in my city. Someone recently paid it, and there\u2019s over 130,000 pages worth of outside agency searches from the last month alone.\n\nI wonder how many were watching the camera that got moved to record directly into a woman\u2019s bedr",
+          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3murgd4zpkc2x",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "ai-technology",

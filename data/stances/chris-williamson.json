@@ -2,8 +2,8 @@
   "voiceId": "chris-williamson",
   "voiceName": "Chris Williamson",
   "updatedAt": "2026-09-05",
-  "topicCount": 15,
-  "stanceCount": 43,
+  "topicCount": 16,
+  "stanceCount": 44,
   "topics": [
     {
       "topic": "culture-war",
@@ -400,6 +400,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Expresses concern about decline of reading and writing skills",
+          "quote": "Is Reading &amp; Writing Going Extinct?",
+          "sourceUrl": "https://www.youtube.com/shorts/Il53UHCjZ4E",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "trump-administration",

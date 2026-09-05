@@ -2,15 +2,24 @@
   "voiceId": "tim-dillon",
   "voiceName": "Tim Dillon",
   "updatedAt": "2026-09-05",
-  "topicCount": 11,
-  "stanceCount": 30,
+  "topicCount": 12,
+  "stanceCount": 32,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 8,
-      "lastActive": "2026-08-24",
+      "count": 9,
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Critiques JD Vance and Iran escalation concerns",
+          "quote": "JD Vance, Drafted To Iran, &amp; The End Times | The Tim Dillon Show #511",
+          "sourceUrl": "https://www.youtube.com/watch?v=2SxlaOTMmaQ",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-24",
           "topic": "trump-administration",
@@ -301,6 +310,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 1,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Comments on Lindsay Clancy case with implicit judgment",
+          "quote": "Lindsay Clancy, Friend Of The Show! \ud83d\udc69\ud83c\udffb - Tim Dillon",
+          "sourceUrl": "https://www.youtube.com/shorts/SReuLN3ZbO8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "military-defense",

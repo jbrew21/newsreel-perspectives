@@ -3,7 +3,7 @@
   "voiceName": "Glenn Beck",
   "updatedAt": "2026-09-05",
   "topicCount": 24,
-  "stanceCount": 105,
+  "stanceCount": 106,
   "topics": [
     {
       "topic": "ai-technology",
@@ -18,6 +18,15 @@
           "summary": "Questions or criticizes regulatory proposals targeting AI companies",
           "quote": "\u201cDeath Penalty\u201d For AI Companies?!",
           "sourceUrl": "https://www.youtube.com/shorts/6uKqzeRTq8E",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses concern about AI capabilities and risks",
+          "quote": "I Asked AI What It FEARS. It Gave a TERRIFYING Answer...",
+          "sourceUrl": "https://www.youtube.com/watch?v=d40Fl7xDR5w",
           "platform": "youtube"
         },
         {
@@ -108,15 +117,6 @@
           "summary": "Warns AI development poses authoritarian control risk",
           "quote": "The Rise Of A.I. Tyrants Just Began And We Had NO IDEA",
           "sourceUrl": "https://www.youtube.com/watch?v=CbXi8TuttHs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Critical of AI company's impact on books",
-          "quote": "AI Company Is DESTROYING Books?!",
-          "sourceUrl": "https://www.youtube.com/shorts/DTrqs3n7iq4",
           "platform": "youtube"
         }
       ],
@@ -897,6 +897,42 @@
       "active": false
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 3,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Advocates for Trump-backed education reforms",
+          "quote": "THIS Is How Trump Could Fix Education.",
+          "sourceUrl": "https://www.youtube.com/shorts/oAH00P4TIAU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Criticizes education system, proposes reform solutions",
+          "quote": "Our Education System Is A DISASTER! Here's How We Fix It.",
+          "sourceUrl": "https://www.youtube.com/watch?v=Yop5_eGy094",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Historical framing suggests nostalgia for religious education access",
+          "quote": "That Time Congress Wanted The BIBLE In Schools...",
+          "sourceUrl": "https://www.youtube.com/shorts/EOUHy6EhMyk",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 3,
@@ -981,33 +1017,6 @@
           "summary": "Raises alarm about potential threats to drinking water supply",
           "quote": "Someone Is Attacking Your Drinking Water, THIS Could Be Who...",
           "sourceUrl": "https://www.youtube.com/watch?v=eIDTa4ffqP0",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 2,
-      "lastActive": "2026-08-22",
-      "stances": [
-        {
-          "date": "2026-08-22",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Criticizes education system, proposes reform solutions",
-          "quote": "Our Education System Is A DISASTER! Here's How We Fix It.",
-          "sourceUrl": "https://www.youtube.com/watch?v=Yop5_eGy094",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Historical framing suggests nostalgia for religious education access",
-          "quote": "That Time Congress Wanted The BIBLE In Schools...",
-          "sourceUrl": "https://www.youtube.com/shorts/EOUHy6EhMyk",
           "platform": "youtube"
         }
       ],

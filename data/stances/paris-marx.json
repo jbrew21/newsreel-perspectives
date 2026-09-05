@@ -2,15 +2,24 @@
   "voiceId": "paris-marx",
   "voiceName": "Paris Marx",
   "updatedAt": "2026-09-05",
-  "topicCount": 17,
-  "stanceCount": 61,
+  "topicCount": 18,
+  "stanceCount": 62,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes EFF for backing AI industry practices under false pretense of advocacy",
+          "quote": "No surprise seeing EFF openly back the AI industry\u2019s mass theft, in the same way it supported the crypto industry\u2019s scams under the guise of ~decentralization~\n\nAnother org that so often defends the industry while trying to present itself as doing the opposite.",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3murlitwaok2w",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-03",
           "topic": "ai-technology",
@@ -108,15 +117,6 @@
           "summary": "Criticizes AI outsourcing human thought and intellectual capacity",
           "quote": "\u201ci can\u2019t even come up with insults myself, i\u2019ve outsourced my capacity for thought entirely to the computer\u201d",
           "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mucqcj52rk2t",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-30",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Criticizes Google's geopolitical content manipulation, advocates tech alternatives",
-          "quote": "Google has now renamed Lake Ontario for US users. They don\u2019t even show the real name in brackets.\n\nI used a VPN to compare: Apple hasn\u2019t renamed it (at least not yet), nor has Dutch service Here WeGo or OpenStreetMap.\n\nYet another reason to ditch Google, and US tech more broadly.",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mucp3svcss2t",
           "platform": "bluesky"
         }
       ],
@@ -616,6 +616,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 1,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Expresses hope that campaign timing will reverse an announced policy",
+          "quote": "hopefully the fact this is being announced in the middle of an election campaign causes it to be reversed",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3murptwoqo22w",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",

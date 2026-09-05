@@ -3,7 +3,7 @@
   "voiceName": "Patrick Bet-David",
   "updatedAt": "2026-09-05",
   "topicCount": 30,
-  "stanceCount": 138,
+  "stanceCount": 139,
   "topics": [
     {
       "topic": "trump-administration",
@@ -126,8 +126,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-01",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Frames Elon Musk as confident and unconcerned about competition",
+          "quote": "Elon Musk Doesn\u2019t Fear Copycats",
+          "sourceUrl": "https://www.youtube.com/shorts/xhx3uPXSZpg",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-01",
           "topic": "ai-technology",
@@ -226,15 +235,6 @@
           "quote": "X Is Being FLOODED With Bots",
           "sourceUrl": "https://www.youtube.com/shorts/i_q1TqnrL7M",
           "platform": "youtube"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Bot accounts weaponized to spread division and confusion",
-          "quote": "Bot accounts are made to spread division and confusion.",
-          "sourceUrl": "https://www.tiktok.com/@patrickbetdavid/video/7672456418485636366",
-          "platform": "tiktok"
         }
       ],
       "active": true
@@ -978,6 +978,42 @@
       "active": true
     },
     {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 3,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Criticizes Biden administration for providing financial support to Iran",
+          "quote": "Biden Gave Iran Billions",
+          "sourceUrl": "https://www.youtube.com/shorts/4yTB5iKR-ws",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Criticizes Tucker Carlson's denial of Iranian assassination attempt on Trump",
+          "quote": "Tucker Carlson Denied Iran Tried to Kill Trump (The Evidence Says Otherwise)",
+          "sourceUrl": "https://www.youtube.com/shorts/KZx-pQzUxS0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "References Trump's Iran diplomatic off-ramp option",
+          "quote": "WNBA Defines \u201cWoman,\u201d America's Farmer Crisis, &amp; Bibi Rejects Gaza Peace Plan | PBD Podcast #841",
+          "sourceUrl": "https://www.youtube.com/watch?v=t0OELhTf_es",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "religion-faith",
       "label": "Religion & Faith",
       "count": 4,
@@ -1156,33 +1192,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 2,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Criticizes Tucker Carlson's denial of Iranian assassination attempt on Trump",
-          "quote": "Tucker Carlson Denied Iran Tried to Kill Trump (The Evidence Says Otherwise)",
-          "sourceUrl": "https://www.youtube.com/shorts/KZx-pQzUxS0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "References Trump's Iran diplomatic off-ramp option",
-          "quote": "WNBA Defines \u201cWoman,\u201d America's Farmer Crisis, &amp; Bibi Rejects Gaza Peace Plan | PBD Podcast #841",
-          "sourceUrl": "https://www.youtube.com/watch?v=t0OELhTf_es",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "israel-palestine",
