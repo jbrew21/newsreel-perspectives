@@ -1,9 +1,9 @@
 {
   "voiceId": "kyle-kulinski",
   "voiceName": "Kyle Kulinski",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 26,
-  "stanceCount": 155,
+  "stanceCount": 156,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1302,6 +1302,42 @@
       "active": false
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 3,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Suggests AI systems operating beyond intended control",
+          "quote": "AI Has Fully Gone Rogue",
+          "sourceUrl": "https://www.youtube.com/watch?v=1jOMMoq564o",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Expresses concern about AI systems ignoring human commands",
+          "quote": "\u2018IT\u2019S HAPPENING\u2019: AI Is COMPLETELY IGNORING Human Commands | The Kyle Kulinski Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=txEmFM5cg2Q",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes YouTube for unspecified error or policy decision",
+          "quote": "YouTube Makes FATAL ERROR You Have To See To Believe | The Kyle Kulinski Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=XjdZWQACQlw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 3,
@@ -1462,33 +1498,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 2,
-      "lastActive": "2026-09-01",
-      "stances": [
-        {
-          "date": "2026-09-01",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Expresses concern about AI systems ignoring human commands",
-          "quote": "\u2018IT\u2019S HAPPENING\u2019: AI Is COMPLETELY IGNORING Human Commands | The Kyle Kulinski Show",
-          "sourceUrl": "https://www.youtube.com/watch?v=txEmFM5cg2Q",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Criticizes YouTube for unspecified error or policy decision",
-          "quote": "YouTube Makes FATAL ERROR You Have To See To Believe | The Kyle Kulinski Show",
-          "sourceUrl": "https://www.youtube.com/watch?v=XjdZWQACQlw",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "food-agriculture",

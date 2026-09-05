@@ -1,9 +1,9 @@
 {
   "voiceId": "andrew-klavan",
   "voiceName": "Andrew Klavan",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 9,
-  "stanceCount": 23,
+  "stanceCount": 24,
   "topics": [
     {
       "topic": "culture-war",
@@ -123,6 +123,42 @@
       "active": true
     },
     {
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 3,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Engages with gender identity debate through philosophical framing",
+          "quote": "Ep. 1294 - What Is A Man?",
+          "sourceUrl": "https://www.youtube.com/watch?v=cNvjE5v6SZI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Criticizes transgender representation in Spider-Man media",
+          "quote": "The Trans Delusion That Spider-Man Shares",
+          "sourceUrl": "https://www.youtube.com/watch?v=Uqm-w0Xf_5c",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Criticizes efforts to desexualize women's sports",
+          "quote": "The Reason Broadcasters Want to Desexualize Women's Sports Will Make You LOL",
+          "sourceUrl": "https://www.youtube.com/watch?v=q4nBKQKT-FI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "religion-faith",
       "label": "Religion & Faith",
       "count": 2,
@@ -144,33 +180,6 @@
           "summary": "Criticizes perceived hostility toward Christianity in culture",
           "quote": "Ep. 1290 - The War on Christ",
           "sourceUrl": "https://www.youtube.com/watch?v=Nm_LHAvOSAk",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "gender-lgbtq",
-      "label": "Gender & LGBTQ+",
-      "count": 2,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Criticizes transgender representation in Spider-Man media",
-          "quote": "The Trans Delusion That Spider-Man Shares",
-          "sourceUrl": "https://www.youtube.com/watch?v=Uqm-w0Xf_5c",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "gender-lgbtq",
-          "stance": "strong",
-          "summary": "Criticizes efforts to desexualize women's sports",
-          "quote": "The Reason Broadcasters Want to Desexualize Women's Sports Will Make You LOL",
-          "sourceUrl": "https://www.youtube.com/watch?v=q4nBKQKT-FI",
           "platform": "youtube"
         }
       ],

@@ -1,9 +1,9 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 28,
-  "stanceCount": 83,
+  "stanceCount": 84,
   "topics": [
     {
       "topic": "culture-war",
@@ -242,9 +242,18 @@
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 9,
-      "lastActive": "2026-09-02",
+      "count": 10,
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Questions whether centralized media spreads misinformation",
+          "quote": "Is centralized media the real misinformation?",
+          "sourceUrl": "https://www.youtube.com/shorts/-Q1T97wA3EA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-02",
           "topic": "media-press",
@@ -699,60 +708,6 @@
       "active": true
     },
     {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 2,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Highlights racial violence and discrimination against family",
-          "quote": "Racist neighbors firebombed his family's house!",
-          "sourceUrl": "https://www.youtube.com/shorts/8wOk8-LBOL8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Challenges Jewish people on unspecified truth claims",
-          "quote": "Candace Owens challenges Jews to learn this truth...",
-          "sourceUrl": "https://x.com/rustyrockets/status/2082964461791723885",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "protests-activism",
-      "label": "Protests & Activism",
-      "count": 2,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Calls for collective awareness and action on systemic issues",
-          "quote": "Everyone sees what's happening...",
-          "sourceUrl": "https://www.youtube.com/watch?v=ow6VwqAsue0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Criticizes large-scale coordinated population control",
-          "quote": "Was this the largest mass control event ever?",
-          "sourceUrl": "https://x.com/rustyrockets/status/2087260344846872963",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 3,
@@ -783,6 +738,60 @@
           "summary": "Suggests economic crisis comparable to 2008 financial collapse",
           "quote": "2008 all over again?",
           "sourceUrl": "https://x.com/rustyrockets/status/2085854667888529825",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 2,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Highlights racial violence and discrimination against family",
+          "quote": "Racist neighbors firebombed his family's house!",
+          "sourceUrl": "https://www.youtube.com/shorts/8wOk8-LBOL8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Challenges Jewish people on unspecified truth claims",
+          "quote": "Candace Owens challenges Jews to learn this truth...",
+          "sourceUrl": "https://x.com/rustyrockets/status/2082964461791723885",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 2,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Calls for collective awareness and action on systemic issues",
+          "quote": "Everyone sees what's happening...",
+          "sourceUrl": "https://www.youtube.com/watch?v=ow6VwqAsue0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Criticizes large-scale coordinated population control",
+          "quote": "Was this the largest mass control event ever?",
+          "sourceUrl": "https://x.com/rustyrockets/status/2087260344846872963",
           "platform": "x"
         }
       ],
@@ -948,7 +957,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "state-local-politics",

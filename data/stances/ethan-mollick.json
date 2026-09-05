@@ -1,7 +1,7 @@
 {
   "voiceId": "ethan-mollick",
   "voiceName": "Ethan Mollick",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 1,
   "stanceCount": 12,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-04",
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "People hold nuanced, non-binary views on AI risks and benefits",
+          "quote": "One thing I have learned talking to lots of people about AI is that they can be both worried about the implications of AI and very excited about using AI themselves. I think people on this site tend to view many people's attitudes to AI as much less complicated than they are.",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muqr6aawqc2t",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-04",
           "topic": "ai-technology",
@@ -108,15 +117,6 @@
           "summary": "AI agents pose systemic risks through unintended cascade effects",
           "quote": "The Hugging Face Incident showed you don\u2019t even need a malicious attacker to cause a cascade, enough agents pressure systems in new ways and find aligned flaws as part of accomplishing other goals  www.researchgate.net/publication/...",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muk4iqgek22o",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Calls for new AI system defense philosophy beyond cybersecurity",
-          "quote": "These 3 pages (from before AI) on complex systems are worth reading\n\nComplex systems run broken but survive because the flaws rarely line up, which allows humans a chance to intervene. AI can find or make aligned flaws. We  need a similar new philosophy of system defense (beyond ",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muk4iiojus2o",
           "platform": "bluesky"
         }
       ],

@@ -1,16 +1,25 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 15,
-  "stanceCount": 61,
+  "stanceCount": 62,
   "topics": [
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 12,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Criticizes Collins as disastrous GOP nominee",
+          "quote": "Sen. Jon Ossoff on Mike Collins: &quot;This is a disastrous nominee for the GOP&quot;",
+          "sourceUrl": "https://www.youtube.com/shorts/dgEiOi5LKrA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-03",
           "topic": "elections",
@@ -108,15 +117,6 @@
           "summary": "Criticizes Republican governor candidate as authoritarian and temperamentally unfit",
           "quote": "Jon Lovett on the Wisconsin gubernatorial election: \u201cDo you want a governor who was in a bad mood at Christmas in 2020 or one who wants to send people to a foreign gulag?\u201d",
           "sourceUrl": "https://x.com/PodSaveAmerica/status/2087215557204398425",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Notes positive momentum for progressive political candidates",
-          "quote": "Chris Hayes on the momentum progressive candidates are having right now.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2086454666322162171",
           "platform": "x"
         }
       ],
@@ -348,6 +348,51 @@
       "active": true
     },
     {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 4,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Highlights challenges for outspoken liberal women in conservative regions",
+          "quote": "MUST WATCH: What it means to be an outspoken liberal woman in the South",
+          "sourceUrl": "https://www.youtube.com/shorts/NYnHjUZlIBU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Highlights challenges for liberal women in conservative regions",
+          "quote": "Kyle Tibbs Jones on What It\u2019s Like Being a Liberal Woman in the South",
+          "sourceUrl": "https://www.youtube.com/shorts/_HcW25G9FdY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Suggests momentum or optimism among Democrats has dissipated",
+          "quote": "The vibe shift is over.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/2082825051158487518",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-24",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes MAGA voters, suggests they were misled",
+          "quote": "Jennifer Palmieri on moms who voted MAGA feeling duped.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/2080788350269559221",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "immigration",
       "label": "Immigration",
       "count": 3,
@@ -459,42 +504,6 @@
           "summary": "Moderate Democrats must actively compete for media attention",
           "quote": "Moderate Democrats can't complain about who gets attention if they won't fight for it.",
           "sourceUrl": "https://x.com/PodSaveAmerica/status/2081380550015693124",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 3,
-      "lastActive": "2026-08-13",
-      "stances": [
-        {
-          "date": "2026-08-13",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Highlights challenges for liberal women in conservative regions",
-          "quote": "Kyle Tibbs Jones on What It\u2019s Like Being a Liberal Woman in the South",
-          "sourceUrl": "https://www.youtube.com/shorts/_HcW25G9FdY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Suggests momentum or optimism among Democrats has dissipated",
-          "quote": "The vibe shift is over.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2082825051158487518",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-24",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes MAGA voters, suggests they were misled",
-          "quote": "Jennifer Palmieri on moms who voted MAGA feeling duped.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2080788350269559221",
           "platform": "x"
         }
       ],

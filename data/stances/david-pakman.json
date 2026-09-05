@@ -1,16 +1,25 @@
 {
   "voiceId": "david-pakman",
   "voiceName": "David Pakman",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 23,
-  "stanceCount": 124,
+  "stanceCount": 125,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 12,
-      "lastActive": "2026-09-04",
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes someone for being caught in a false position",
+          "quote": "DAMN: He got his bluff CALLED",
+          "sourceUrl": "https://www.youtube.com/watch?v=mAE83Rtdepc",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-04",
           "topic": "trump-administration",
@@ -84,6 +93,15 @@
           "platform": "youtube"
         },
         {
+          "date": "2026-09-04",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Reports firing of official accused of leaking to Trump",
+          "quote": "She got FIRED for LEAKING to Trump",
+          "sourceUrl": "https://www.youtube.com/watch?v=HGsIpqkSRLc",
+          "platform": "youtube"
+        },
+        {
           "date": "2026-09-03",
           "topic": "trump-administration",
           "stance": "strong",
@@ -99,24 +117,6 @@
           "summary": "Mocks or expresses strong disapproval of Trump-related behavior",
           "quote": "This must be a disease of some kind",
           "sourceUrl": "https://www.youtube.com/watch?v=spNb5N1Pwms",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-03",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump's leadership and Republican panic over MAGA movement",
-          "quote": "Trump checks out as Republicans panic and MAGA goes insane",
-          "sourceUrl": "https://www.youtube.com/watch?v=YCrdOAzu5SU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-03",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Frames Trump appearing to doze off as noteworthy concern",
-          "quote": "Trump caught dozing off again during Howard Lutnick remarks #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/3ESf5OE1qHQ",
           "platform": "youtube"
         }
       ],
@@ -593,9 +593,18 @@
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 10,
-      "lastActive": "2026-09-02",
+      "count": 11,
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Implies Fox News aired segment to influence Trump",
+          "quote": "They put this on Fox SPECIFICALLY so Trump would see it",
+          "sourceUrl": "https://www.youtube.com/watch?v=O2cWok-i0E0",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-02",
           "topic": "media-press",
@@ -870,60 +879,6 @@
       "active": true
     },
     {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 5,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Criticizes Fox News for selective concern about feminism",
-          "quote": "Suddenly Fox News is deeply concerned about feminism #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/v2QaRgBw6BE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Criticizes progressive policies as excessive or problematic",
-          "quote": "UH-OH: They\u2019re saying \u201cWOKE 1.0\u201d was CRAZY?",
-          "sourceUrl": "https://www.youtube.com/watch?v=Pyo4ddKs0Y0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Critiques effectiveness or truthfulness of conservative messaging",
-          "quote": "The uncomfortable truth about conservative messaging #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/xDcXW0rrye0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "References criticism of MAGA movement as cult-like",
-          "quote": "He called MAGA a cult #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/qzzzQetI33I",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Laments decline of character as political value",
-          "quote": "Character used to matter. What changed? #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/mIhdrG1RS4E",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 7,
@@ -990,6 +945,60 @@
           "summary": "Reports Trump associate emotional breakdown when confronted by Fox host",
           "quote": "Trump tool MELTS DOWN when FOX HOST confronts him!",
           "sourceUrl": "https://www.youtube.com/watch?v=VWT5YcOrvyk",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 5,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Criticizes Fox News for selective concern about feminism",
+          "quote": "Suddenly Fox News is deeply concerned about feminism #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/v2QaRgBw6BE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Criticizes progressive policies as excessive or problematic",
+          "quote": "UH-OH: They\u2019re saying \u201cWOKE 1.0\u201d was CRAZY?",
+          "sourceUrl": "https://www.youtube.com/watch?v=Pyo4ddKs0Y0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Critiques effectiveness or truthfulness of conservative messaging",
+          "quote": "The uncomfortable truth about conservative messaging #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/xDcXW0rrye0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "References criticism of MAGA movement as cult-like",
+          "quote": "He called MAGA a cult #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/qzzzQetI33I",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Laments decline of character as political value",
+          "quote": "Character used to matter. What changed? #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/mIhdrG1RS4E",
           "platform": "youtube"
         }
       ],

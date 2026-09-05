@@ -1,7 +1,7 @@
 {
   "voiceId": "tim-pool",
   "voiceName": "Tim Pool",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 27,
   "stanceCount": 105,
   "topics": [
@@ -789,33 +789,6 @@
       "active": true
     },
     {
-      "topic": "science-space",
-      "label": "Science & Space",
-      "count": 2,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "science-space",
-          "stance": "lean",
-          "summary": "mRNA cancer vaccine represents significant medical breakthrough",
-          "quote": "Moderna's New mRNA Cancer Vaccine Could Change Everything #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/VOJTWaCtxLQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "science-space",
-          "stance": "lean",
-          "summary": "Notes Earth magnetic pole shift overdue, warns of unknown consequences",
-          "quote": "It is true that we are way overdue for a major pole shift on Earth. Some say it will be a doomsday scenario for Earth.\n\nHowever, nobody knows when it will happen &amp; nobody knows exactly what will happen.",
-          "sourceUrl": "https://x.com/Timcast/status/2088034109880967644",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 3,
@@ -954,6 +927,33 @@
           "summary": "Asserts Fauci lied to Congress and uses Fifth Amendment as evasion",
           "quote": "Pleading the 5th is not an admission of guilt. \n\nHowever, we know what Fauci is doing. He's using it as a shield. We know he lied to congress. That's a fact.",
           "sourceUrl": "https://x.com/Timcast/status/2082572903933939887",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 2,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "mRNA cancer vaccine represents significant medical breakthrough",
+          "quote": "Moderna's New mRNA Cancer Vaccine Could Change Everything #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/VOJTWaCtxLQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Notes Earth magnetic pole shift overdue, warns of unknown consequences",
+          "quote": "It is true that we are way overdue for a major pole shift on Earth. Some say it will be a doomsday scenario for Earth.\n\nHowever, nobody knows when it will happen &amp; nobody knows exactly what will happen.",
+          "sourceUrl": "https://x.com/Timcast/status/2088034109880967644",
           "platform": "x"
         }
       ],

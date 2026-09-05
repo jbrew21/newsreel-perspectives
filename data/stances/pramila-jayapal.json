@@ -1,9 +1,9 @@
 {
   "voiceId": "pramila-jayapal",
   "voiceName": "Pramila Jayapal",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 21,
-  "stanceCount": 104,
+  "stanceCount": 105,
   "topics": [
     {
       "topic": "immigration",
@@ -951,6 +951,33 @@
       "active": false
     },
     {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Opposes Trump's executive orders restricting birthright citizenship as unconstitutional",
+          "quote": "Trump is ignoring the Supreme Court\u2019s decision and using executive orders to restrict birthright citizenship. And Republicans are spending our final days in the legislative calendar to oppose birthright citizenship entirely.\n\nIt\u2019s remarkable and blatantly unconstitutional. https:",
+          "sourceUrl": "https://x.com/RepJayapal/status/2095988153475592617",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Opposes Todd Blanche nomination, urges Republicans to deny confirmation",
+          "quote": "The vote to advance Todd Blanche\u2019s nomination by Senate Republicans on the Judiciary Committee is disrespectful to survivors and Americans who want accountability.\n\nI call on Republican senators to find some courage and deny Todd Blanche confirmation. Full statement:",
+          "sourceUrl": "https://x.com/RepJayapal/status/2084662154813136924",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 3,
@@ -1107,24 +1134,6 @@
           "summary": "Criticizes tech corporations for prioritizing profits over child safety, calls for congressional guardrails",
           "quote": "This is good news. For far too long, big tech corporations have put their bottom lines ahead of the health and safety of kids on their platforms.\n\nCongress must continue to push for accountability and real guardrails for companies like Meta as tech giants continue to grow. bit.ly",
           "sourceUrl": "https://x.com/RepJayapal/status/2085822012908269807",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2026-08-04",
-      "stances": [
-        {
-          "date": "2026-08-04",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Opposes Todd Blanche nomination, urges Republicans to deny confirmation",
-          "quote": "The vote to advance Todd Blanche\u2019s nomination by Senate Republicans on the Judiciary Committee is disrespectful to survivors and Americans who want accountability.\n\nI call on Republican senators to find some courage and deny Todd Blanche confirmation. Full statement:",
-          "sourceUrl": "https://x.com/RepJayapal/status/2084662154813136924",
           "platform": "x"
         }
       ],

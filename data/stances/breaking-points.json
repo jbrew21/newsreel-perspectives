@@ -1,7 +1,7 @@
 {
   "voiceId": "breaking-points",
   "voiceName": "Breaking Points",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 26,
   "stanceCount": 124,
   "topics": [
@@ -1167,33 +1167,6 @@
       "active": true
     },
     {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 2,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Confronts candidate on policy positions during campaign",
-          "quote": "FL Candidate CONFRONTED On Support Of Fishback",
-          "sourceUrl": "https://www.youtube.com/watch?v=V7KZxPDFE9U",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Critical framing of Hillary Clinton and Michigan Democratic politics",
-          "quote": "2 X Michigan LOSER Hillary GIVES ADVICE To Abdul El Sayed",
-          "sourceUrl": "https://www.youtube.com/watch?v=UmzohqzU7vQ",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 3,
@@ -1224,6 +1197,33 @@
           "summary": "Covers alleged MAGA figure defending himself against abuse accusations",
           "quote": "Accused MAGA Abuser FLAILS In Heated CNN Interview",
           "sourceUrl": "https://www.youtube.com/watch?v=hf2_sJNiiBI",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 2,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Confronts candidate on policy positions during campaign",
+          "quote": "FL Candidate CONFRONTED On Support Of Fishback",
+          "sourceUrl": "https://www.youtube.com/watch?v=V7KZxPDFE9U",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Critical framing of Hillary Clinton and Michigan Democratic politics",
+          "quote": "2 X Michigan LOSER Hillary GIVES ADVICE To Abdul El Sayed",
+          "sourceUrl": "https://www.youtube.com/watch?v=UmzohqzU7vQ",
           "platform": "youtube"
         }
       ],

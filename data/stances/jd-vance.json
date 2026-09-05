@@ -1,9 +1,9 @@
 {
   "voiceId": "jd-vance",
   "voiceName": "JD Vance",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 10,
-  "stanceCount": 30,
+  "stanceCount": 31,
   "topics": [
     {
       "topic": "trump-administration",
@@ -120,7 +120,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "elections",
@@ -222,6 +222,33 @@
       "active": false
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Credits Trump policies with job creation and wage gains for citizens",
+          "quote": "Close the border, put up tariffs, cut taxes for the working class, and what do you get? \n\nOne million new jobs since the start of this administration. 100% of the gains to American citizens.",
+          "sourceUrl": "https://x.com/JDVance/status/2096009512448663672",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Argues American corporations should prioritize hiring and training domestic workers",
+          "quote": "If an American corporation needs workers, it should hire and train Americans.",
+          "sourceUrl": "https://x.com/JDVance/status/2091979408537960769",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 2,
@@ -274,24 +301,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-08-24",
-      "stances": [
-        {
-          "date": "2026-08-24",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Argues American corporations should prioritize hiring and training domestic workers",
-          "quote": "If an American corporation needs workers, it should hire and train Americans.",
-          "sourceUrl": "https://x.com/JDVance/status/2091979408537960769",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "trump-policy",

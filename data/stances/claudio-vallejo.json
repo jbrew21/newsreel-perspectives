@@ -1,9 +1,9 @@
 {
   "voiceId": "claudio-vallejo",
   "voiceName": "Claudio Vallejo",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-05",
   "topicCount": 16,
-  "stanceCount": 47,
+  "stanceCount": 49,
   "topics": [
     {
       "topic": "state-local-politics",
@@ -125,23 +125,41 @@
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 6,
-      "lastActive": "2026-09-02",
+      "count": 8,
+      "lastActive": "2026-09-03",
       "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Highlights unexpected polling results favoring Democratic candidate in conservative sample",
+          "quote": "A conservative group polled a conservative crowd and got a Talarico lead. #news #politics #texas #talarico #poll",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7681298819190902047",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-02",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Criticizes polling place closures as voter suppression",
+          "summary": "Highlights polling place closures reducing voter access in Texas county",
           "quote": "Tarrant County Just Closed A Third Of Its Polling Places #news #tarrantcounty #texas #fyp",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680726196962856222",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Criticizes Republican AG candidate's anti-Muslim rhetoric; notes judicial rebuke and close race",
+          "quote": "The man running to be the top lawyer in Texas says we are a Christian state and calls a religion organized crime.  Two Republican-appointed justices heard it and backed the Democrat.  Nathan Johnson is within five points.  #news #politics #texas #fyp",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680935402022243614",
           "platform": "tiktok"
         },
         {
           "date": "2026-09-01",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Highlights voting irregularities and ballot rejection issues",
+          "summary": "Raises concerns about ballot quality and mass rejection of votes",
           "quote": "1 Bad Ballot, 10,000 Rejected #news #politics #fyp #voting",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680591156920454430",
           "platform": "tiktok"
@@ -149,8 +167,8 @@
         {
           "date": "2026-09-01",
           "topic": "elections",
-          "stance": "lean",
-          "summary": "Encourages poll worker participation over poll observation",
+          "stance": "strong",
+          "summary": "Calls for poll workers to counter partisan election observers",
           "quote": "They\u2019re Sending Watchers. Be a Worker. #news #politics #fyp #pollworker",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680412208865611039",
           "platform": "tiktok"
@@ -276,36 +294,36 @@
       "active": true
     },
     {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
       "count": 3,
       "lastActive": "2026-08-30",
       "stances": [
         {
           "date": "2026-08-30",
-          "topic": "congress-legislation",
+          "topic": "criminal-justice",
           "stance": "lean",
-          "summary": "Reports congressional security breach or internal disruption incident",
+          "summary": "Frames January 6 breach as Congress storming itself",
           "quote": "Congress Stormed Itself, Apparently #news #politics #fyp",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7679976689803218206",
           "platform": "tiktok"
         },
         {
-          "date": "2026-08-18",
-          "topic": "congress-legislation",
+          "date": "2026-08-01",
+          "topic": "criminal-justice",
           "stance": "lean",
-          "summary": "Frames White House responsiveness to congressional figure as noteworthy",
-          "quote": "Jon Ossoff Said One Name And The White House Snapped #news #fyp #natalieharp #politics",
-          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7675443466226126111",
+          "summary": "Criticizes Texas cannabis penalty as disproportionately harsh",
+          "quote": "A Gummy Is Now a Felony. A DWI Isn\u2019t. #news #politics #fyp #texas",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7669193100165795103",
           "platform": "tiktok"
         },
         {
-          "date": "2026-08-11",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Highlights how legislative procedures create unintended institutional power",
-          "quote": "This Is How A Fake Power Becomes A Real One #news #politics #fyp #saveact",
-          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7672801561545821471",
+          "date": "2026-07-31",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes felony charge against canoeist for memorial damage caused by contractor negligence",
+          "quote": "They charged an Olympic canoeist with a felony because a $14 million paint job Trump ordered started peeling off the Lincoln Memorial Reflecting Pool.  Now the Justice Department admits in a court filing that the contractor botched the install while rushing to finish before July ",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7668829479908691230",
           "platform": "tiktok"
         }
       ],
@@ -444,7 +462,34 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 2,
+      "lastActive": "2026-08-18",
+      "stances": [
+        {
+          "date": "2026-08-18",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Frames White House responsiveness to congressional figure as noteworthy",
+          "quote": "Jon Ossoff Said One Name And The White House Snapped #news #fyp #natalieharp #politics",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7675443466226126111",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Highlights how legislative procedures create unintended institutional power",
+          "quote": "This Is How A Fake Power Becomes A Real One #news #politics #fyp #saveact",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7672801561545821471",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "trump-policy",
@@ -468,33 +513,6 @@
           "summary": "Implies Trump should examine evidence before blaming China",
           "quote": "Before Trump Blames China, Watch This #news #politics #fyp #arizona",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7663153185384713502",
-          "platform": "tiktok"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-08-01",
-      "stances": [
-        {
-          "date": "2026-08-01",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Criticizes Texas cannabis penalty as disproportionately harsh",
-          "quote": "A Gummy Is Now a Felony. A DWI Isn\u2019t. #news #politics #fyp #texas",
-          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7669193100165795103",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Criticizes felony charge against canoeist for memorial damage caused by contractor negligence",
-          "quote": "They charged an Olympic canoeist with a felony because a $14 million paint job Trump ordered started peeling off the Lincoln Memorial Reflecting Pool.  Now the Justice Department admits in a court filing that the contractor botched the install while rushing to finish before July ",
-          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7668829479908691230",
           "platform": "tiktok"
         }
       ],

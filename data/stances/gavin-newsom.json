@@ -1,7 +1,7 @@
 {
   "voiceId": "gavin-newsom",
   "voiceName": "Gavin Newsom",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 20,
   "stanceCount": 69,
   "topics": [
@@ -546,33 +546,6 @@
       "active": true
     },
     {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 2,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "State manufacturing generic drugs to lower prescription costs",
-          "quote": "California is doing what NO state has ever done before \u2014 making our OWN prescription drugs to take on Big Pharma and drive down costs. Insulin, naloxone, and asthma inhalers. EpiPens are next. We\u2019re making lifesaving drugs CHEAPER and more accessible for everyone.",
-          "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7676274741434453262",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Promotes free asthma medication access in schools",
-          "quote": "California Provides FREE Asthma Medication to Schools Across State",
-          "sourceUrl": "https://www.youtube.com/shorts/wDF7qQLFr9c",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 3,
@@ -640,6 +613,33 @@
           "quote": "The world just got its first trillionaire. At the same time, millions of people are struggling to get by and a generation is falling behind their parents. If that\u2019s not a five-alarm fire, I don\u2019t know what is.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7662596818181573919",
           "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "State manufacturing generic drugs to lower prescription costs",
+          "quote": "California is doing what NO state has ever done before \u2014 making our OWN prescription drugs to take on Big Pharma and drive down costs. Insulin, naloxone, and asthma inhalers. EpiPens are next. We\u2019re making lifesaving drugs CHEAPER and more accessible for everyone.",
+          "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7676274741434453262",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Promotes free asthma medication access in schools",
+          "quote": "California Provides FREE Asthma Medication to Schools Across State",
+          "sourceUrl": "https://www.youtube.com/shorts/wDF7qQLFr9c",
+          "platform": "youtube"
         }
       ],
       "active": false

@@ -1,7 +1,7 @@
 {
   "voiceId": "clay-travis",
   "voiceName": "Clay Travis",
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "topicCount": 16,
   "stanceCount": 86,
   "topics": [
@@ -345,7 +345,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "covid-pandemic",
@@ -528,51 +528,6 @@
       "active": false
     },
     {
-      "topic": "education",
-      "label": "Education",
-      "count": 4,
-      "lastActive": "2026-08-21",
-      "stances": [
-        {
-          "date": "2026-08-21",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Questions teacher vs. social media influencer role tension",
-          "quote": "Teacher or TikTok influencer? \ud83d\udc40",
-          "sourceUrl": "https://www.youtube.com/shorts/Zn0UUkcIRbw",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Supports Protect College Sports Act to regulate NIL deals",
-          "quote": "College sports are broken and need basic rules in place. The protect college sports act is endorsed by every conference and @tedcruz &amp; @Eric_Schmitt did great work on it. It\u2019s a bipartisan bill that should pass with 80+ votes. I support it too.",
-          "sourceUrl": "https://x.com/ClayTravis/status/2085083048182157741",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Highlights significant financial losses in college women's basketball programs",
-          "quote": "Fascinating graphic here. Penn State football covers often gargantuan losses in every other college sport but men\u2019s basketball. Women\u2019s basketball lost nearly $5 million!",
-          "sourceUrl": "https://x.com/ClayTravis/status/2083596189220417779",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Criticizes NCAA for unfair treatment of Tennessee athlete",
-          "quote": "The NCAA just screwed over Tennessee's Arion Carter",
-          "sourceUrl": "https://www.youtube.com/shorts/1dzGokbAqIs",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 6,
@@ -694,6 +649,51 @@
           "quote": "New York City will require IDs to prove you live in the city in order to shop in the city owned grocery stores. So you need an ID to shop in the city\u2019s stores, but it would be racist to require an ID to vote. Perfection.",
           "sourceUrl": "https://x.com/ClayTravis/status/2084291657046843729",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 4,
+      "lastActive": "2026-08-21",
+      "stances": [
+        {
+          "date": "2026-08-21",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Questions teacher vs. social media influencer role tension",
+          "quote": "Teacher or TikTok influencer? \ud83d\udc40",
+          "sourceUrl": "https://www.youtube.com/shorts/Zn0UUkcIRbw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Supports Protect College Sports Act to regulate NIL deals",
+          "quote": "College sports are broken and need basic rules in place. The protect college sports act is endorsed by every conference and @tedcruz &amp; @Eric_Schmitt did great work on it. It\u2019s a bipartisan bill that should pass with 80+ votes. I support it too.",
+          "sourceUrl": "https://x.com/ClayTravis/status/2085083048182157741",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Highlights significant financial losses in college women's basketball programs",
+          "quote": "Fascinating graphic here. Penn State football covers often gargantuan losses in every other college sport but men\u2019s basketball. Women\u2019s basketball lost nearly $5 million!",
+          "sourceUrl": "https://x.com/ClayTravis/status/2083596189220417779",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Criticizes NCAA for unfair treatment of Tennessee athlete",
+          "quote": "The NCAA just screwed over Tennessee's Arion Carter",
+          "sourceUrl": "https://www.youtube.com/shorts/1dzGokbAqIs",
+          "platform": "youtube"
         }
       ],
       "active": false
