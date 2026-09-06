@@ -1,7 +1,7 @@
 {
   "voiceId": "ethan-mollick",
   "voiceName": "Ethan Mollick",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 1,
   "stanceCount": 12,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-05",
+      "lastActive": "2026-09-06",
       "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Credits prescient AI research despite initial skepticism",
+          "quote": "Sparks of AGI was a remarkably prescient paper that got a lot of pushback at the time, but absolutely sensed where the vibes were heading with LLMs based on a lot of qualitative experiments. It deserves credit in retrospect.\n\nwww.microsoft.com/en-us/resear...",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3musqxshmjk2h",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-05",
           "topic": "ai-technology",
@@ -108,15 +117,6 @@
           "summary": "Notes Claude's achievement in formalizing Fermat's Last Theorem",
           "quote": "Hey, Claude formalized Fermat's Last Theorem www.anthropic.com/research/for...",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muppeq2ey22t",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-03",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Demonstrates AI agent capabilities for creative, multi-modal projects",
-          "quote": "Fable 5.1: \"Create the Catalog of Ships from the Iliad with a map, etc. i should be able to explore each accurate ship in 3D. there should be real images & archeological data i can draw on. test it with agents to make it accurate & beautiful, then revise\" homer-catalogue-of-ships",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muliscq6ik2c",
           "platform": "bluesky"
         }
       ],

@@ -1,9 +1,9 @@
 {
   "voiceId": "adam-schiff",
   "voiceName": "Adam Schiff",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 25,
-  "stanceCount": 136,
+  "stanceCount": 137,
   "topics": [
     {
       "topic": "economy-trade",
@@ -1221,6 +1221,33 @@
       "active": true
     },
     {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 2,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Condemns bigotry against Muslim Americans, affirms their belonging",
+          "quote": "Americans come from all faiths and backgrounds.\n\nMuslim Americans are part of the essential fabric of our communities and country.\n\nI stand with our Muslim neighbors and strongly condemn this hateful bigotry.",
+          "sourceUrl": "https://x.com/SenAdamSchiff/status/2096448074532958321",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-28",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Condemns antisemitic vandalism of Jewish temple and community mural",
+          "quote": "I\u2019m appalled by the vandalization of the Pasadena Jewish Temple and Center and that a community mural meant to inspire hope and resilience after the Eaton Fire was defiled with antisemitic bile.\n\nHate has no home in California, and we must condemn it wherever it rears its ugly he",
+          "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3mro6biizds2u",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
       "count": 3,
@@ -1431,24 +1458,6 @@
           "summary": "Criticizes Blanche for covering up Epstein documents to protect Trump",
           "quote": "His efforts to protect the president and others in the Epstein Files were a scandalous abuse of power in which he covered up and withheld documents to protect Donald Trump and further injured the victims by publishing their names and photos.",
           "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3msl5oyvcae2n",
-          "platform": "bluesky"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 1,
-      "lastActive": "2026-07-28",
-      "stances": [
-        {
-          "date": "2026-07-28",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Condemns antisemitic vandalism of Jewish temple and community mural",
-          "quote": "I\u2019m appalled by the vandalization of the Pasadena Jewish Temple and Center and that a community mural meant to inspire hope and resilience after the Eaton Fire was defiled with antisemitic bile.\n\nHate has no home in California, and we must condemn it wherever it rears its ugly he",
-          "sourceUrl": "https://bsky.app/profile/schiff.senate.gov/post/3mro6biizds2u",
           "platform": "bluesky"
         }
       ],

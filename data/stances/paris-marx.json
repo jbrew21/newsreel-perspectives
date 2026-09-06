@@ -1,7 +1,7 @@
 {
   "voiceId": "paris-marx",
   "voiceName": "Paris Marx",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 18,
   "stanceCount": 62,
   "topics": [
@@ -330,6 +330,42 @@
       "active": true
     },
     {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Criticizes evasive response from White House spokesperson",
+          "quote": "carney was asked about this in the presser but largely sidestepped it because the question was asked in a convoluted way",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mun76wbfnc24",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Frames Trump's petty Lake Ontario rename as moment to reconsider tech alternatives",
+          "quote": "Apple has now caved to the Trump administration\u2019s petty renaming of Lake Ontario, following Google\u2019s lead. It\u2019s as good a moment as any to consider alternatives.",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mukq3qhygk2u",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump's pressure on Google Maps naming, advocates switching platforms",
+          "quote": "Google has outlined how it\u2019s handling Donald Trump\u2019s latest tantrum.\n\nIn the US, it will display \u201cLake America.\u201d\n\nIn Canada, it will show \u201cLake Ontario.\u201d\n\nIn the rest of the world, it will make it seem like a debate: \u201cLake Ontario (Lake America).\u201d\n\nMore reason to replace Google M",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mufekfpee225",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 4,
@@ -372,43 +408,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 3,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Criticizes evasive response from White House spokesperson",
-          "quote": "carney was asked about this in the presser but largely sidestepped it because the question was asked in a convoluted way",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mun76wbfnc24",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Frames Trump's petty Lake Ontario rename as moment to reconsider tech alternatives",
-          "quote": "Apple has now caved to the Trump administration\u2019s petty renaming of Lake Ontario, following Google\u2019s lead. It\u2019s as good a moment as any to consider alternatives.",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mukq3qhygk2u",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Criticizes Trump's pressure on Google Maps naming, advocates switching platforms",
-          "quote": "Google has outlined how it\u2019s handling Donald Trump\u2019s latest tantrum.\n\nIn the US, it will display \u201cLake America.\u201d\n\nIn Canada, it will show \u201cLake Ontario.\u201d\n\nIn the rest of the world, it will make it seem like a debate: \u201cLake Ontario (Lake America).\u201d\n\nMore reason to replace Google M",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mufekfpee225",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-press",
@@ -528,33 +528,6 @@
       "active": true
     },
     {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-08-22",
-      "stances": [
-        {
-          "date": "2026-08-22",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Calls for cancellation of F-35 fighter jet contract",
-          "quote": "it would be a good day for mark carney to finally cancel the f-35 fighter jet contract",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtpddgwtxs2e",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Criticizes military recruitment tactics as abnormal and concerning",
-          "quote": "US soldiers can play GTA VI for 4 days if they agree to reenlist for a minimum of two years and up to six years.\n\nVery normal country.",
-          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtha7ubocs2b",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 3,
@@ -585,6 +558,33 @@
           "summary": "Argues Israeli demands on Palestinians have escalated progressively toward colonization",
           "quote": "2024:\n\"All they have to do is release the hostages\"\n\n2025:\n\"All they have to do is fully disarm\"\n\n2026:\n\"All they have to do is allow us to keep killing them and fully colonize Gaza\"",
           "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mrzgttkcm226",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-08-22",
+      "stances": [
+        {
+          "date": "2026-08-22",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Calls for cancellation of F-35 fighter jet contract",
+          "quote": "it would be a good day for mark carney to finally cancel the f-35 fighter jet contract",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtpddgwtxs2e",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes military recruitment tactics as abnormal and concerning",
+          "quote": "US soldiers can play GTA VI for 4 days if they agree to reenlist for a minimum of two years and up to six years.\n\nVery normal country.",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mtha7ubocs2b",
           "platform": "bluesky"
         }
       ],
@@ -669,7 +669,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "healthcare",

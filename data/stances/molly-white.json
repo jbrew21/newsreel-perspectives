@@ -1,9 +1,9 @@
 {
   "voiceId": "molly-white",
   "voiceName": "Molly White",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 8,
-  "stanceCount": 45,
+  "stanceCount": 46,
   "topics": [
     {
       "topic": "trump-administration",
@@ -125,9 +125,18 @@
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 9,
-      "lastActive": "2026-08-31",
+      "count": 10,
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Critiques AI systems' potential for deception and misuse",
+          "quote": "www.lawfaremedia.org/article/grok...",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3muru4nnwcc2w",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-31",
           "topic": "ai-technology",

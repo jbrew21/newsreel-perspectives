@@ -1,9 +1,9 @@
 {
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 16,
-  "stanceCount": 64,
+  "stanceCount": 65,
   "topics": [
     {
       "topic": "sports",
@@ -125,9 +125,18 @@
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
-      "count": 10,
-      "lastActive": "2026-09-03",
+      "count": 11,
+      "lastActive": "2026-09-06",
       "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Responds to criticism from fellow media figures about interview handling",
+          "quote": "\u201cPut the Whole Interview Out!\u201d Stephen A. Responds to Jemele Hill &amp; Cari Champion",
+          "sourceUrl": "https://www.youtube.com/watch?v=SJP3CPfXIP4",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-03",
           "topic": "media-personalities",

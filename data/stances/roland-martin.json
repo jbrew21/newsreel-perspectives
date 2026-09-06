@@ -1,7 +1,7 @@
 {
   "voiceId": "roland-martin",
   "voiceName": "Roland Martin",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 22,
   "stanceCount": 161,
   "topics": [
@@ -9,15 +9,24 @@
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 12,
-      "lastActive": "2026-09-05",
+      "lastActive": "2026-09-06",
       "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Questions film's portrayal of civil rights history",
+          "quote": "#RolandMartinUnfiltered 8th Anniversary. #BlackStarNetwork Turns 5. Vernon Dahmer Family Blasts Film",
+          "sourceUrl": "https://www.youtube.com/watch?v=KRZGGp5FTp0",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-05",
           "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Highlights civil rights history and family's concerns about film portrayal",
-          "quote": "#RolandMartinUnfiltered 8th Anniversary. #BlackStarNetwork Turns 5. Vernon Dahmer Family Blasts Film",
-          "sourceUrl": "https://www.youtube.com/watch?v=gYva9baQcsA",
+          "stance": "strong",
+          "summary": "Criticizes film for white savior narrative",
+          "quote": "Son of Civil Rights Warrior Vernon F. Dahmer Sr. Blasts By Any Means\u2019 \u201cWhite Savior Trope\u201d",
+          "sourceUrl": "https://www.youtube.com/watch?v=izfAhMn-hkk",
           "platform": "youtube"
         },
         {
@@ -108,15 +117,6 @@
           "summary": "Condemns Target costume as racially insensitive, expresses outrage",
           "quote": "'Don't Care About Black Folks': Outrage Over Target\u2019s Blackface-Evoking Kids Costume",
           "sourceUrl": "https://www.youtube.com/watch?v=BR7hw1QiHYc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-27",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Calls for investigation into pattern of Black deaths",
-          "quote": "\u201cNot In This Number, Not With This Frequency.\u201d LDF Demands Probe Into Suspicious Black Deaths",
-          "sourceUrl": "https://www.youtube.com/watch?v=jwH6NfX9bt8",
           "platform": "youtube"
         }
       ],
@@ -1362,7 +1362,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "billionaires-wealth",

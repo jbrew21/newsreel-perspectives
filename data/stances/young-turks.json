@@ -1,7 +1,7 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 23,
   "stanceCount": 138,
   "topics": [
@@ -360,8 +360,17 @@
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 12,
-      "lastActive": "2026-09-04",
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "JD Vance desperately seeking donor money",
+          "quote": "Cenk And Ana EXPOSE JD Vance's Desperate Bid For Donor Money",
+          "sourceUrl": "https://www.youtube.com/watch?v=StUYvVxjA4c",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-04",
           "topic": "trump-administration",
@@ -459,15 +468,6 @@
           "summary": "Questions backroom deal between Democratic leader and Trump official",
           "quote": "We Learned What Hakeem Jeffries Promised Jared Kushner",
           "sourceUrl": "https://www.youtube.com/watch?v=f0lOcA0uWLM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-22",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Questions Pete Hegseth wife's presence and role within Pentagon",
-          "quote": "WTF Is Pete Hegseth\u2019s Wife Doing INSIDE The Pentagon???",
-          "sourceUrl": "https://www.youtube.com/watch?v=jkNl1ktGGA0",
           "platform": "youtube"
         }
       ],
@@ -1434,7 +1434,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "protests-activism",

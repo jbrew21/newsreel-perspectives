@@ -1,9 +1,9 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 15,
-  "stanceCount": 62,
+  "stanceCount": 63,
   "topics": [
     {
       "topic": "elections",
@@ -348,6 +348,51 @@
       "active": true
     },
     {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 4,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "ICE enforcement shifts voter support away from Trump",
+          "quote": "Texas Trump voters on how ICE changed their minds about him",
+          "sourceUrl": "https://www.youtube.com/shorts/WOnA4Os1wJo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Documents Texans opposing ICE killing of undocumented immigrant",
+          "quote": "Texans speak out against the killing of Lorenzo Salgado Araujo: &quot;We are not animals&quot;",
+          "sourceUrl": "https://www.youtube.com/shorts/Ktei1X1cns4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes ICE shock gloves as abuse risk",
+          "quote": "The potential for abuse with ICE\u2019s shock gloves is vast.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/2088295787591581878",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes ICE detention practices as authoritarian overreach",
+          "quote": "\"This is like the Gestapo,\" \u2013Lifelong Republican speaks on how ICE detained his fianc\u00e9e.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/2086160560698130766",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 4,
@@ -387,42 +432,6 @@
           "summary": "Criticizes MAGA voters, suggests they were misled",
           "quote": "Jennifer Palmieri on moms who voted MAGA feeling duped.",
           "sourceUrl": "https://x.com/PodSaveAmerica/status/2080788350269559221",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 3,
-      "lastActive": "2026-08-28",
-      "stances": [
-        {
-          "date": "2026-08-28",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Documents Texans opposing ICE killing of undocumented immigrant",
-          "quote": "Texans speak out against the killing of Lorenzo Salgado Araujo: &quot;We are not animals&quot;",
-          "sourceUrl": "https://www.youtube.com/shorts/Ktei1X1cns4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Criticizes ICE shock gloves as abuse risk",
-          "quote": "The potential for abuse with ICE\u2019s shock gloves is vast.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2088295787591581878",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-08",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Criticizes ICE detention practices as authoritarian overreach",
-          "quote": "\"This is like the Gestapo,\" \u2013Lifelong Republican speaks on how ICE detained his fianc\u00e9e.",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/2086160560698130766",
           "platform": "x"
         }
       ],

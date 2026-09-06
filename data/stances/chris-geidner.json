@@ -1,9 +1,9 @@
 {
   "voiceId": "chris-geidner",
   "voiceName": "Chris Geidner",
-  "updatedAt": "2026-09-05",
-  "topicCount": 20,
-  "stanceCount": 102,
+  "updatedAt": "2026-09-06",
+  "topicCount": 21,
+  "stanceCount": 103,
   "topics": [
     {
       "topic": "gender-lgbtq",
@@ -1012,6 +1012,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 1,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "DOJ settlement claim questioned as limited to patient privacy",
+          "quote": "I have received the following statement from Mount Sinai about DOJ's statement from earlier today. \n\nMount Sinai's statement acknowledges the \"settlement,\" but insists it is about their \"commitment to safeguarding our patients\u2019 confidential information and protecting our clinicia",
+          "sourceUrl": "https://bsky.app/profile/chrisgeidner.bsky.social/post/3muqhvnfh3k22",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "education",

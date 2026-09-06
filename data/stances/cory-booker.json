@@ -1,16 +1,25 @@
 {
   "voiceId": "cory-booker",
   "voiceName": "Cory Booker",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "topicCount": 24,
-  "stanceCount": 79,
+  "stanceCount": 80,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 12,
-      "lastActive": "2026-09-04",
+      "lastActive": "2026-09-05",
       "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump administration record as historically unsuccessful",
+          "quote": "A record breaking failure. https://t.co/fZHwnGrv0k",
+          "sourceUrl": "https://x.com/CoryBooker/status/2096357801459155306",
+          "platform": "x"
+        },
         {
           "date": "2026-09-04",
           "topic": "trump-administration",
@@ -108,15 +117,6 @@
           "summary": "Criticizes DOGE's inflated savings claims, says cuts harm national safety",
           "quote": "DOGE\u2019s website claimed $110 billion in \u201csavings.\u201d The Government Accountability Office just confirmed those numbers were vastly inflated and completely unreliable. Trump\u2019s reckless cuts didn\u2019t make our government more efficient\u2014they made America less safe.\n\nOp: @abcnews",
           "sourceUrl": "https://x.com/CoryBooker/status/2086814391387738491",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Asserts public ownership of White House, implied criticism of Trump",
-          "quote": "Trump doesn\u2019t own the White House. The American people do.",
-          "sourceUrl": "https://x.com/CoryBooker/status/2086528705443106840",
           "platform": "x"
         }
       ],
@@ -447,6 +447,51 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 4,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Advocates de-escalation and community-based approaches to youth conflict",
+          "quote": "In an era when \u201ccalling the police\u201d on kids simply playing can divide a community, escalate a situation, or even put lives at risk, here is to those who find another way.\n\nWho turn conflict into connection.\nA complaint into community.\nA tense moment into an opportunity for joy.\n\n",
+          "sourceUrl": "https://x.com/CoryBooker/status/2096403025539608828",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Supports restorative justice and community-based crime prevention approaches",
+          "quote": "Day 5 of my 21 county tour, started In Paramus, where I stood with  fellow New Jersey leaders to honor  57 of our great veterans from Korea, Vietnam, and Desert Storm with medals. Then to Trenton at Salvation and Social Justice\u2019s Restorative Justice Hub\u2014where street teams and com",
+          "sourceUrl": "https://x.com/CoryBooker/status/2092975568396423456",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Questions ICE use of electroshock devices for compliance",
+          "quote": "AP: \u201cICE officers may soon be outfitted with gloves that can deliver painful electric shocks intended to gain compliance from combative individuals.\u201d ICE plans to spend up to $20 million to purchase thousands of the devices.",
+          "sourceUrl": "https://x.com/CoryBooker/status/2088036153781833935",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Opposes Trump DOJ fund for January 6 defendants, defends police victims",
+          "quote": "The Trump DOJ claims this slush fund is dead. It\u2019s not. This is a fund for people who attacked our Capitol.\n\nThese are the people who beat police officers like Brian Sicknick of New Jersey, who died days later. And he\u2019s calling them \u201cfine people\u201d? That\u2019s disgusting. But the bigge",
+          "sourceUrl": "https://x.com/CoryBooker/status/2084278211966321085",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "epstein-scandal",
       "label": "Epstein Scandal",
       "count": 3,
@@ -549,42 +594,6 @@
           "summary": "Condemns USDA/FDA/CDC firings as reckless threat to food safety",
           "quote": "The Trump administration fired dedicated public servants at USDA, FDA, and CDC who worked every day to keep our food safe. Now American families are left dealing with the consequences. This is reckless. This is dangerous. And we will not accept it.\n\nI will continue to fight to re",
           "sourceUrl": "https://x.com/CoryBooker/status/2082496447279161347",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 3,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Supports restorative justice and community-based crime prevention approaches",
-          "quote": "Day 5 of my 21 county tour, started In Paramus, where I stood with  fellow New Jersey leaders to honor  57 of our great veterans from Korea, Vietnam, and Desert Storm with medals. Then to Trenton at Salvation and Social Justice\u2019s Restorative Justice Hub\u2014where street teams and com",
-          "sourceUrl": "https://x.com/CoryBooker/status/2092975568396423456",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Questions ICE use of electroshock devices for compliance",
-          "quote": "AP: \u201cICE officers may soon be outfitted with gloves that can deliver painful electric shocks intended to gain compliance from combative individuals.\u201d ICE plans to spend up to $20 million to purchase thousands of the devices.",
-          "sourceUrl": "https://x.com/CoryBooker/status/2088036153781833935",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Opposes Trump DOJ fund for January 6 defendants, defends police victims",
-          "quote": "The Trump DOJ claims this slush fund is dead. It\u2019s not. This is a fund for people who attacked our Capitol.\n\nThese are the people who beat police officers like Brian Sicknick of New Jersey, who died days later. And he\u2019s calling them \u201cfine people\u201d? That\u2019s disgusting. But the bigge",
-          "sourceUrl": "https://x.com/CoryBooker/status/2084278211966321085",
           "platform": "x"
         }
       ],
