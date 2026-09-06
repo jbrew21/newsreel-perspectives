@@ -1,9 +1,43 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-06T11:13:36.570838",
+  "collectedAt": "2026-09-06T12:25:46.613417",
   "date": "2026-09-06",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "The Lindsay Clancy Case Isn't What You Think",
+      "sourceUrl": "https://www.youtube.com/watch?v=OElMt8EW-Q4",
+      "timestamp": "2026-09-06T00:40:39+00:00",
+      "type": "video_title",
+      "topic": "criminal-justice",
+      "topics": [
+        "criminal-justice"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Challenges mainstream narrative around a criminal case",
+      "quote": "The Lindsay Clancy Case Isn't What You Think"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "FETTERMAN TEXTS LEAKED BY HIS OWN STAFF",
+      "sourceUrl": "https://www.youtube.com/watch?v=wwfs9oCUtmo",
+      "timestamp": "2026-09-05T22:25:05+00:00",
+      "type": "video_title",
+      "topic": "congress-legislation",
+      "topics": [
+        "congress-legislation"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes senator's private communications leaked by staff",
+      "quote": "FETTERMAN TEXTS LEAKED BY HIS OWN STAFF"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -122,43 +156,25 @@
       "stance": "strong",
       "summary": "Responds critically to Hunter Biden contact or Trump-related action",
       "quote": "Hunter Biden called me"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "The Lindsay Clancy Case Isn't What You Think",
-      "sourceUrl": "https://www.youtube.com/watch?v=OElMt8EW-Q4",
-      "timestamp": "2026-09-06T00:40:39+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "topics": [
-        "criminal-justice"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Challenges mainstream narrative around a criminal case",
-      "quote": "The Lindsay Clancy Case Isn't What You Think"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "FETTERMAN TEXTS LEAKED BY HIS OWN STAFF",
-      "sourceUrl": "https://www.youtube.com/watch?v=wwfs9oCUtmo",
-      "timestamp": "2026-09-05T22:25:05+00:00",
-      "type": "video_title",
-      "topic": "congress-legislation",
-      "topics": [
-        "congress-legislation"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes senator's private communications leaked by staff",
-      "quote": "FETTERMAN TEXTS LEAKED BY HIS OWN STAFF"
     }
   ],
   "topicSummary": {
+    "criminal-justice": [
+      {
+        "quote": "The Lindsay Clancy Case Isn't What You Think",
+        "sourceUrl": "https://www.youtube.com/watch?v=OElMt8EW-Q4",
+        "platform": "youtube",
+        "timestamp": "2026-09-06T00:40:39+00:00"
+      }
+    ],
+    "congress-legislation": [
+      {
+        "quote": "FETTERMAN TEXTS LEAKED BY HIS OWN STAFF",
+        "sourceUrl": "https://www.youtube.com/watch?v=wwfs9oCUtmo",
+        "platform": "youtube",
+        "timestamp": "2026-09-05T22:25:05+00:00"
+      }
+    ],
     "elections": [
       {
         "quote": "CONSERVATIVES LIKE ABDUL NOW?",
@@ -211,22 +227,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/rw5jJggVLHA",
         "platform": "youtube",
         "timestamp": "2026-09-04T00:33:38+00:00"
-      }
-    ],
-    "criminal-justice": [
-      {
-        "quote": "The Lindsay Clancy Case Isn't What You Think",
-        "sourceUrl": "https://www.youtube.com/watch?v=OElMt8EW-Q4",
-        "platform": "youtube",
-        "timestamp": "2026-09-06T00:40:39+00:00"
-      }
-    ],
-    "congress-legislation": [
-      {
-        "quote": "FETTERMAN TEXTS LEAKED BY HIS OWN STAFF",
-        "sourceUrl": "https://www.youtube.com/watch?v=wwfs9oCUtmo",
-        "platform": "youtube",
-        "timestamp": "2026-09-05T22:25:05+00:00"
       }
     ]
   }

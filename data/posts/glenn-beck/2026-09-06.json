@@ -1,9 +1,27 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-06T11:13:36.816740",
+  "collectedAt": "2026-09-06T12:25:46.912803",
   "date": "2026-09-06",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "How Trump Just Outmaneuvered Everyone On Venezuelan Oil",
+      "sourceUrl": "https://www.youtube.com/watch?v=GsqGC9lX-_Q",
+      "timestamp": "2026-09-06T00:00:26+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "topics": [
+        "trump-policy",
+        "economy-trade"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Praises Trump's strategic handling of Venezuelan oil policy",
+      "quote": "How Trump Just Outmaneuvered Everyone On Venezuelan Oil"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -105,27 +123,17 @@
       "stance": "lean",
       "summary": "Promotes Trump's midterm strategy and electoral plans",
       "quote": "Trump Makes BIG Announcement About Midterms"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "How Trump Just Outmaneuvered Everyone On Venezuelan Oil",
-      "sourceUrl": "https://www.youtube.com/watch?v=GsqGC9lX-_Q",
-      "timestamp": "2026-09-06T00:00:26+00:00",
-      "type": "video_title",
-      "topic": "trump-policy",
-      "topics": [
-        "trump-policy",
-        "economy-trade"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Praises Trump's strategic handling of Venezuelan oil policy",
-      "quote": "How Trump Just Outmaneuvered Everyone On Venezuelan Oil"
     }
   ],
   "topicSummary": {
+    "trump-policy": [
+      {
+        "quote": "How Trump Just Outmaneuvered Everyone On Venezuelan Oil",
+        "sourceUrl": "https://www.youtube.com/watch?v=GsqGC9lX-_Q",
+        "platform": "youtube",
+        "timestamp": "2026-09-06T00:00:26+00:00"
+      }
+    ],
     "education": [
       {
         "quote": "THIS Is How Trump Could Fix Education.",
@@ -170,14 +178,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=K7OpkOM2Zfw",
         "platform": "youtube",
         "timestamp": "2026-09-03T18:30:13+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "How Trump Just Outmaneuvered Everyone On Venezuelan Oil",
-        "sourceUrl": "https://www.youtube.com/watch?v=GsqGC9lX-_Q",
-        "platform": "youtube",
-        "timestamp": "2026-09-06T00:00:26+00:00"
       }
     ]
   }
