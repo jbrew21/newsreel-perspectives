@@ -2,8 +2,8 @@
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
   "updatedAt": "2026-09-06",
-  "topicCount": 20,
-  "stanceCount": 81,
+  "topicCount": 21,
+  "stanceCount": 82,
   "topics": [
     {
       "topic": "media-press",
@@ -787,6 +787,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 1,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Acknowledges Steinem's feminist legacy and CIA involvement",
+          "quote": "Feminist CIA Icon Gloria Steinem Dead at 92",
+          "sourceUrl": "https://www.youtube.com/watch?v=n0l3WsUIfhI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "ai-technology",

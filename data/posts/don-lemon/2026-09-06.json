@@ -1,9 +1,26 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-09-06T19:29:50.911396",
+  "collectedAt": "2026-09-06T21:35:19.529561",
   "date": "2026-09-06",
   "posts": [
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "Trump says data centers are FABULOUS despite majority of Americans disapproving them",
+      "sourceUrl": "https://www.youtube.com/shorts/bBSFwfD85kQ",
+      "timestamp": "2026-09-06T19:00:07+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "topics": [
+        "trump-policy"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights disconnect between Trump's approval and public opinion on data centers",
+      "quote": "Trump says data centers are FABULOUS despite majority of Americans disapproving them"
+    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -88,26 +105,17 @@
       "stance": "strong",
       "summary": "Criticizes Trump for dismissing American deaths in Iran conflict",
       "quote": "Trump claimed 18 Americans dying in the Iran War was &quot;small potatoes.&quot;"
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "Trump says data centers are FABULOUS despite majority of Americans disapproving them",
-      "sourceUrl": "https://www.youtube.com/shorts/bBSFwfD85kQ",
-      "timestamp": "2026-09-06T19:00:07+00:00",
-      "type": "video_title",
-      "topic": "trump-policy",
-      "topics": [
-        "trump-policy"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights disconnect between Trump's approval and public opinion on data centers",
-      "quote": "Trump says data centers are FABULOUS despite majority of Americans disapproving them"
     }
   ],
   "topicSummary": {
+    "trump-policy": [
+      {
+        "quote": "Trump says data centers are FABULOUS despite majority of Americans disapproving them",
+        "sourceUrl": "https://www.youtube.com/shorts/bBSFwfD85kQ",
+        "platform": "youtube",
+        "timestamp": "2026-09-06T19:00:07+00:00"
+      }
+    ],
     "healthcare": [
       {
         "quote": "The Lindsay Clancy trial sheds light on how postpartum psychosis affects motherhood",
@@ -146,14 +154,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/t9lLmQrQd60",
         "platform": "youtube",
         "timestamp": "2026-09-04T21:05:46+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "Trump says data centers are FABULOUS despite majority of Americans disapproving them",
-        "sourceUrl": "https://www.youtube.com/shorts/bBSFwfD85kQ",
-        "platform": "youtube",
-        "timestamp": "2026-09-06T19:00:07+00:00"
       }
     ]
   }
