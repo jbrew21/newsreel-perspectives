@@ -3,7 +3,7 @@
   "voiceName": "Center for American Progress",
   "updatedAt": "2026-09-06",
   "topicCount": 17,
-  "stanceCount": 79,
+  "stanceCount": 80,
   "topics": [
     {
       "topic": "economy-trade",
@@ -699,6 +699,33 @@
       "active": true
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Emphasizes need for representation in AI development",
+          "quote": "\"Who's coding your future? Not you.\" CEO of Black Girls Code, Cristina Mancini, explains the critical importance of representation when developing technology meant to serve all communities.",
+          "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3muu5qitiyo2z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes Trump admin AI licensing framework as dangerous executive overreach",
+          "quote": "The Trump administration's new, secretive \u201cvoluntary framework\u201d is a de facto AI model licensing system that represents unprecedented and dangerous executive branch authority over frontier AI models. ampr.gs/4wMjsU0\n\nLink\n\n\n\nThe Trump Administration Has Created a De Facto Licensi",
+          "sourceUrl": "https://x.com/amprog/status/2085806950885834954",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "military-defense",
       "label": "Military & Defense",
       "count": 2,
@@ -832,24 +859,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Criticizes Trump admin AI licensing framework as dangerous executive overreach",
-          "quote": "The Trump administration's new, secretive \u201cvoluntary framework\u201d is a de facto AI model licensing system that represents unprecedented and dangerous executive branch authority over frontier AI models. ampr.gs/4wMjsU0\n\nLink\n\n\n\nThe Trump Administration Has Created a De Facto Licensi",
-          "sourceUrl": "https://x.com/amprog/status/2085806950885834954",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "criminal-justice",

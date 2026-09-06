@@ -1,9 +1,26 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-09-06T12:25:46.627968",
+  "collectedAt": "2026-09-06T19:29:50.911396",
   "date": "2026-09-06",
   "posts": [
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "The Lindsay Clancy trial sheds light on how postpartum psychosis affects motherhood",
+      "sourceUrl": "https://www.youtube.com/shorts/eFzt7WEoLgk",
+      "timestamp": "2026-09-05T22:30:24+00:00",
+      "type": "video_title",
+      "topic": "healthcare",
+      "topics": [
+        "healthcare"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights postpartum psychosis as serious maternal health issue",
+      "quote": "The Lindsay Clancy trial sheds light on how postpartum psychosis affects motherhood"
+    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -76,55 +93,29 @@
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
       "platform": "youtube",
-      "text": "People are so busy protecting Nolan Wells\u2019 \u201cfriends\u201d that they forget his grieving mother",
-      "sourceUrl": "https://www.youtube.com/shorts/RDA4wF1Ty6A",
-      "timestamp": "2026-09-04T19:19:13+00:00",
+      "text": "Trump says data centers are FABULOUS despite majority of Americans disapproving them",
+      "sourceUrl": "https://www.youtube.com/shorts/bBSFwfD85kQ",
+      "timestamp": "2026-09-06T19:00:07+00:00",
       "type": "video_title",
-      "topic": "criminal-justice",
+      "topic": "trump-policy",
       "topics": [
-        "criminal-justice"
+        "trump-policy"
       ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Highlights victim's family perspective in criminal case coverage",
-      "quote": "People are so busy protecting Nolan Wells\u2019 \u201cfriends\u201d that they forget his grieving mother"
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "LEMON DROP - Maria Bartiromo OUT at Fox News!",
-      "sourceUrl": "https://www.youtube.com/watch?v=HQlqSavLyj0",
-      "timestamp": "2026-09-04T18:00:38+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "topics": [
-        "media-personalities"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Reports Fox News personnel change with implied criticism or commentary",
-      "quote": "LEMON DROP - Maria Bartiromo OUT at Fox News!"
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "The Lindsay Clancy trial sheds light on how postpartum psychosis affects motherhood",
-      "sourceUrl": "https://www.youtube.com/shorts/eFzt7WEoLgk",
-      "timestamp": "2026-09-05T22:30:24+00:00",
-      "type": "video_title",
-      "topic": "healthcare",
-      "topics": [
-        "healthcare"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights postpartum psychosis as serious maternal health issue",
-      "quote": "The Lindsay Clancy trial sheds light on how postpartum psychosis affects motherhood"
+      "summary": "Highlights disconnect between Trump's approval and public opinion on data centers",
+      "quote": "Trump says data centers are FABULOUS despite majority of Americans disapproving them"
     }
   ],
   "topicSummary": {
+    "healthcare": [
+      {
+        "quote": "The Lindsay Clancy trial sheds light on how postpartum psychosis affects motherhood",
+        "sourceUrl": "https://www.youtube.com/shorts/eFzt7WEoLgk",
+        "platform": "youtube",
+        "timestamp": "2026-09-05T22:30:24+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "Trump whines about not winning a Nobel Peace Prize",
@@ -139,12 +130,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/ZF6zcB9SPoA",
         "platform": "youtube",
         "timestamp": "2026-09-05T19:27:16+00:00"
-      },
-      {
-        "quote": "People are so busy protecting Nolan Wells\u2019 \u201cfriends\u201d that they forget his grieving mother",
-        "sourceUrl": "https://www.youtube.com/shorts/RDA4wF1Ty6A",
-        "platform": "youtube",
-        "timestamp": "2026-09-04T19:19:13+00:00"
       }
     ],
     "civil-rights-race": [
@@ -163,20 +148,12 @@
         "timestamp": "2026-09-04T21:05:46+00:00"
       }
     ],
-    "media-personalities": [
+    "trump-policy": [
       {
-        "quote": "LEMON DROP - Maria Bartiromo OUT at Fox News!",
-        "sourceUrl": "https://www.youtube.com/watch?v=HQlqSavLyj0",
+        "quote": "Trump says data centers are FABULOUS despite majority of Americans disapproving them",
+        "sourceUrl": "https://www.youtube.com/shorts/bBSFwfD85kQ",
         "platform": "youtube",
-        "timestamp": "2026-09-04T18:00:38+00:00"
-      }
-    ],
-    "healthcare": [
-      {
-        "quote": "The Lindsay Clancy trial sheds light on how postpartum psychosis affects motherhood",
-        "sourceUrl": "https://www.youtube.com/shorts/eFzt7WEoLgk",
-        "platform": "youtube",
-        "timestamp": "2026-09-05T22:30:24+00:00"
+        "timestamp": "2026-09-06T19:00:07+00:00"
       }
     ]
   }

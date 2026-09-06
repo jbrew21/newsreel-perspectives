@@ -2,8 +2,8 @@
   "voiceId": "pete-ricketts",
   "voiceName": "Pete Ricketts",
   "updatedAt": "2026-09-06",
-  "topicCount": 19,
-  "stanceCount": 64,
+  "topicCount": 20,
+  "stanceCount": 65,
   "topics": [
     {
       "topic": "economy-trade",
@@ -607,6 +607,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 victims and military service",
+          "quote": "This week marks the 25th anniversary of 9/11. We will never forget the American lives lost and those who answered the call to serve.\nhttps://t.co/GgCJK8Qczh",
+          "sourceUrl": "https://x.com/SenatorRicketts/status/2096626101409780189",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "abortion-reproductive",
