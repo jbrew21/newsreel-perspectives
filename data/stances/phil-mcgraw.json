@@ -1,10 +1,28 @@
 {
   "voiceId": "phil-mcgraw",
   "voiceName": "Phil McGraw (Dr. Phil)",
-  "updatedAt": "2026-08-31",
-  "topicCount": 1,
-  "stanceCount": 1,
+  "updatedAt": "2026-09-07",
+  "topicCount": 2,
+  "stanceCount": 2,
   "topics": [
+    {
+      "topic": "drugs-addiction",
+      "label": "Drugs & Addiction",
+      "count": 1,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Highlights dangers of prescription painkiller addiction",
+          "quote": "Mom Admits to Taking 60 Prescription Pain Killers a Day #mother #drphil #help",
+          "sourceUrl": "https://www.youtube.com/shorts/bJcNfee9rLM",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",

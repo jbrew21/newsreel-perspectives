@@ -3,7 +3,7 @@
   "voiceName": "Russell Brand",
   "updatedAt": "2026-09-07",
   "topicCount": 28,
-  "stanceCount": 87,
+  "stanceCount": 89,
   "topics": [
     {
       "topic": "culture-war",
@@ -519,6 +519,51 @@
       "active": true
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 4,
+      "lastActive": "2026-09-07",
+      "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Questions CDC's handling of health testing procedures",
+          "quote": "Why did the CDC ignore this test?",
+          "sourceUrl": "https://www.youtube.com/shorts/FLaQHa81YLU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-07",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Criticizes delayed acknowledgment of asbestos health dangers",
+          "quote": "It took 50 years to admit the asbestos...",
+          "sourceUrl": "https://www.youtube.com/shorts/Ic3cr7GqKDs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Questions Whoopi Goldberg's pharmaceutical industry defense",
+          "quote": "Whoopi Goldberg is now defending Big Pharma?!",
+          "sourceUrl": "https://www.youtube.com/shorts/8MkxX9fTFkk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Claims Anthony Fauci faces serious legal trouble",
+          "quote": "Fauci's in big trouble",
+          "sourceUrl": "https://www.youtube.com/watch?v=-JWI6WFn8Lk",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 4,
@@ -595,33 +640,6 @@
           "quote": "Update: UK man cleared of all charges...",
           "sourceUrl": "https://x.com/rustyrockets/status/2087267932686442829",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 2,
-      "lastActive": "2026-08-30",
-      "stances": [
-        {
-          "date": "2026-08-30",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Questions Whoopi Goldberg's pharmaceutical industry defense",
-          "quote": "Whoopi Goldberg is now defending Big Pharma?!",
-          "sourceUrl": "https://www.youtube.com/shorts/8MkxX9fTFkk",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Claims Anthony Fauci faces serious legal trouble",
-          "quote": "Fauci's in big trouble",
-          "sourceUrl": "https://www.youtube.com/watch?v=-JWI6WFn8Lk",
-          "platform": "youtube"
         }
       ],
       "active": true

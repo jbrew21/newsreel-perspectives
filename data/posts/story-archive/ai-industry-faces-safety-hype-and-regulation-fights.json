@@ -1,28 +1,38 @@
 {
-  "headline": "AI Boom Sparks Debate Over Bubble Risk, Data Centers",
-  "summary": "Voices split between AI-industry boosters and financial/ethical skeptics, with little agreement on whether the boom is sustainable.",
-  "type": "spectrum",
+  "headline": "AI boom sparks debate over bubble risk and data centers",
+  "summary": "Optimists tout AI job growth while skeptics warn of a financial bubble and data-center backlash.",
+  "type": "split",
   "source": "voices",
   "coverUrl": "",
   "storyType": "",
   "topicSlugs": [
     "ai-technology"
   ],
-  "voiceCount": 12,
+  "voiceCount": 11,
   "clusterCount": 4,
   "clusters": [
     {
-      "name": "Cautious Optimists",
+      "name": "AI Boom Boosters",
       "voices": [
         {
-          "voiceId": "matt-yglesias",
-          "voiceName": "Matt Yglesias",
-          "photo": "/photos/matt-yglesias.jpg",
-          "quote": "The return of institutional purpose (by Halina Bennet). Generative A.I. gives institutions the chance to re-evaluate their values.",
-          "sourceUrl": "https://www.slowboring.com/p/the-return-of-institutional-purpose",
-          "platform": "substack",
-          "fit": 6,
-          "quoteQuality": 6
+          "voiceId": "all-in-podcast",
+          "voiceName": "All-In Podcast",
+          "photo": "/photos/all-in-podcast.jpg",
+          "quote": "David Sacks: Trump\u2019s Instincts on AI and Data Centers Are Right\n\n@Jason:\n\n\u201cTrump is going to turn out to be right about this data center issue.\u201d\n\n@DavidSacks:\n\n\u201cI have told you guys before that Trump ",
+          "sourceUrl": "https://x.com/theallinpod/status/2096793141932171676",
+          "platform": "x",
+          "fit": 9,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "scott-lincicome",
+          "voiceName": "Scott Lincicome",
+          "photo": "/photos/scott-lincicome.jpg",
+          "quote": "\"The jobs apocalypse is postponed. An AI jobs boom is here\" \ud83d\ude32 www.economist.com/finance-and-...\n\n\"Add it all up, and The Economist estimates that AI has so far created around 1m new jobs in America.\"",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mux6fx6o7a2g",
+          "platform": "bluesky",
+          "fit": 10,
+          "quoteQuality": 5
         },
         {
           "voiceId": "ethan-mollick",
@@ -31,40 +41,20 @@
           "quote": "This is both an interesting experiment and a sign of a tsunami coming for academia. AIs retroactively reading the research and finding both opportunities and issues with published papers, then sharing",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muuhy3m6jc2o",
           "platform": "bluesky",
-          "fit": 7,
+          "fit": 6,
           "quoteQuality": 5
-        },
-        {
-          "voiceId": "noah-smith",
-          "voiceName": "Noah Smith",
-          "photo": "/photos/noah-smith.jpg",
-          "quote": "For Labor Day, I wrote a post about how everyone expects AI to be a job-killer, and AI keeps refusing to kill jobs.\n\nhttps://t.co/UrjPkGksLh",
-          "sourceUrl": "https://x.com/Noahpinion/status/2096874774861611507",
-          "platform": "x",
-          "fit": 8,
-          "quoteQuality": 4
-        },
-        {
-          "voiceId": "scott-galloway",
-          "voiceName": "Scott Galloway",
-          "photo": "/photos/scott-galloway.jpg",
-          "quote": "The skill AI can't give you: knowing who you are",
-          "sourceUrl": "https://www.youtube.com/shorts/rjV1mRHYcFE",
-          "platform": "youtube",
-          "fit": 5,
-          "quoteQuality": 1
         }
       ],
-      "voiceCount": 4,
+      "voiceCount": 3,
       "bestQuote": {
-        "voiceName": "Matt Yglesias",
-        "quote": "The return of institutional purpose (by Halina Bennet). Generative A.I. gives institutions the chance to re-evaluate their values.",
-        "platform": "substack",
-        "quality": 6
+        "voiceName": "All-In Podcast",
+        "quote": "David Sacks: Trump\u2019s Instincts on AI and Data Centers Are Right\n\n@Jason:\n\n\u201cTrump is going to turn out to be right about this data center issue.\u201d\n\n@DavidSacks:\n\n\u201cI have told you guys before that Trump ",
+        "platform": "x",
+        "quality": 5
       }
     },
     {
-      "name": "Bubble Skeptics",
+      "name": "Bubble and Instability Warnings",
       "voices": [
         {
           "voiceId": "tyler-cowen",
@@ -73,7 +63,7 @@
           "quote": "Insurance price sentences to ponder. NYU Stern researcher @NateWitkin questions why cyber insurance rates keep falling if AI cyber risk is accelerating: \u201cInsurance rates for cyber risk declined by abo",
           "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/09/sentences-to-ponder-140.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sentences-to-ponder-140",
           "platform": "substack",
-          "fit": 6,
+          "fit": 7,
           "quoteQuality": 6
         },
         {
@@ -83,7 +73,7 @@
           "quote": "Joined The Times Tech Report to talk about the instability of the AI industry as new Ramp data reveal that the 80% of OpenAI and Anthropic\u2019s revenue come from 1% of their customers, and the deep conve",
           "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3muqi7ousfk24",
           "platform": "bluesky",
-          "fit": 9,
+          "fit": 10,
           "quoteQuality": 5
         },
         {
@@ -106,28 +96,8 @@
       }
     },
     {
-      "name": "Ethics and Equity Concerns",
+      "name": "Data Center Policy Concerns",
       "voices": [
-        {
-          "voiceId": "center-for-american-progress",
-          "voiceName": "Center for American Progress",
-          "photo": "/photos/center-for-american-progress.jpg",
-          "quote": "\"Who's coding your future? Not you.\" CEO of Black Girls Code, Cristina Mancini, explains the critical importance of representation when developing technology meant to serve all communities.",
-          "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3muu5qitiyo2z",
-          "platform": "bluesky",
-          "fit": 8,
-          "quoteQuality": 5
-        },
-        {
-          "voiceId": "timnit-gebru",
-          "voiceName": "Timnit Gebru",
-          "photo": "/photos/timnit-gebru.jpg",
-          "quote": "and plagiarism \"Stephen Miller, a mathematician at Yeshiva University, who argues that OpenAI has effectively plagiarized his own research.\"",
-          "sourceUrl": "https://bsky.app/profile/timnitgebru.blacksky.app/post/3muvrf7nlq22x",
-          "platform": "bluesky",
-          "fit": 6,
-          "quoteQuality": 5
-        },
         {
           "voiceId": "paris-marx",
           "voiceName": "Paris Marx",
@@ -135,28 +105,6 @@
           "quote": "\u201cThe Senate GOP campaign arm, in a private memo to top AI companies, warns that toxic views of U.S. data centers are killing the party's chances of holding a vital seat in Ohio.\u201d",
           "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3muuzheaooc2x",
           "platform": "bluesky",
-          "fit": 4,
-          "quoteQuality": 5
-        }
-      ],
-      "voiceCount": 3,
-      "bestQuote": {
-        "voiceName": "Center for American Progress",
-        "quote": "\"Who's coding your future? Not you.\" CEO of Black Girls Code, Cristina Mancini, explains the critical importance of representation when developing technology meant to serve all communities.",
-        "platform": "bluesky",
-        "quality": 5
-      }
-    },
-    {
-      "name": "AI Buildout Boosters",
-      "voices": [
-        {
-          "voiceId": "all-in-podcast",
-          "voiceName": "All-In Podcast",
-          "photo": "/photos/all-in-podcast.jpg",
-          "quote": "David Sacks: Trump\u2019s Instincts on AI and Data Centers Are Right\n\n@Jason:\n\n\u201cTrump is going to turn out to be right about this data center issue.\u201d\n\n@DavidSacks:\n\n\u201cI have told you guys before that Trump ",
-          "sourceUrl": "https://x.com/theallinpod/status/2096793141932171676",
-          "platform": "x",
           "fit": 9,
           "quoteQuality": 5
         },
@@ -167,36 +115,78 @@
           "quote": "Data centers are a national security issue. We need to lead on AI. China is nipping at our heels.\n\nBut we don't steal people's property to build them and make taxpayers foot the bill.\n\nThere's a bette",
           "sourceUrl": "https://x.com/RepNancyMace/status/2096772943279706179",
           "platform": "x",
-          "fit": 6,
+          "fit": 9,
           "quoteQuality": 4
+        },
+        {
+          "voiceId": "glenn-beck",
+          "voiceName": "Glenn Beck",
+          "photo": "/photos/glenn-beck.jpg",
+          "quote": "\u201cDeath Penalty\u201d For AI Companies?!",
+          "sourceUrl": "https://www.youtube.com/shorts/6uKqzeRTq8E",
+          "platform": "youtube",
+          "fit": 7,
+          "quoteQuality": 1
+        }
+      ],
+      "voiceCount": 3,
+      "bestQuote": {
+        "voiceName": "Paris Marx",
+        "quote": "\u201cThe Senate GOP campaign arm, in a private memo to top AI companies, warns that toxic views of U.S. data centers are killing the party's chances of holding a vital seat in Ohio.\u201d",
+        "platform": "bluesky",
+        "quality": 5
+      }
+    },
+    {
+      "name": "AI Ethics and Equity Critics",
+      "voices": [
+        {
+          "voiceId": "timnit-gebru",
+          "voiceName": "Timnit Gebru",
+          "photo": "/photos/timnit-gebru.jpg",
+          "quote": "If you constantly \"accidentally\" find yourself taking advice from and being around eugenicists, and propping them up, what does that say about you?",
+          "sourceUrl": "https://bsky.app/profile/timnitgebru.blacksky.app/post/3muwyuo64ec2z",
+          "platform": "bluesky",
+          "fit": 8,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "center-for-american-progress",
+          "voiceName": "Center for American Progress",
+          "photo": "/photos/center-for-american-progress.jpg",
+          "quote": "\"Who's coding your future? Not you.\" CEO of Black Girls Code, Cristina Mancini, explains the critical importance of representation when developing technology meant to serve all communities.",
+          "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3muu5qitiyo2z",
+          "platform": "bluesky",
+          "fit": 10,
+          "quoteQuality": 5
         }
       ],
       "voiceCount": 2,
       "bestQuote": {
-        "voiceName": "All-In Podcast",
-        "quote": "David Sacks: Trump\u2019s Instincts on AI and Data Centers Are Right\n\n@Jason:\n\n\u201cTrump is going to turn out to be right about this data center issue.\u201d\n\n@DavidSacks:\n\n\u201cI have told you guys before that Trump ",
-        "platform": "x",
+        "voiceName": "Timnit Gebru",
+        "quote": "If you constantly \"accidentally\" find yourself taking advice from and being around eugenicists, and propping them up, what does that say about you?",
+        "platform": "bluesky",
         "quality": 5
       }
     }
   ],
   "confidence": 5,
   "relevance": {
-    "direct": 6,
-    "related": 8,
-    "unrelated": 2
+    "direct": 8,
+    "related": 6,
+    "unrelated": 4
   },
   "validated": true,
-  "heatScore": 54,
+  "heatScore": 55,
   "belowThreshold": false,
   "counterNarrative": {
-    "dominantCluster": "Bubble Skeptics",
+    "dominantCluster": "AI Boom Boosters",
     "dominantCount": 3,
-    "counterCluster": "AI Buildout Boosters",
-    "counterCount": 2,
-    "axis": "whether AI investment is overvalued",
-    "tensionScore": 8,
-    "tension": "3 voices say \"Bubble Skeptics\" \u2014 but 2 push back: \"AI Buildout Boosters\""
+    "counterCluster": "Bubble and Instability Warnings",
+    "counterCount": 3,
+    "axis": "whether AI investment is sustainable",
+    "tensionScore": 9,
+    "tension": "3 voices say \"AI Boom Boosters\" \u2014 but 3 push back: \"Bubble and Instability Warnings\""
   },
   "slug": "ai-industry-faces-safety-hype-and-regulation-fights"
 }

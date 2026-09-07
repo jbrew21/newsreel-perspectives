@@ -1,19 +1,29 @@
 {
   "headline": "Mistrial Declared in Lindsay Clancy Murder Trial",
-  "summary": "Commentators dissect the Clancy mistrial and jury dynamics while most other voices react to unrelated political violence and policy stories.",
-  "type": "spectrum",
+  "summary": "Media and legal commentators dissect the Clancy mistrial while most political voices quoted are actually discussing unrelated stories.",
+  "type": "reaction",
   "source": "editorial",
   "coverUrl": "https://cdn.newsreel.co/storage/v1/object/public/story-media/stories/2416a434-c04d-4237-9873-36024701fcde/cover/d2e93079-d02a-45ce-ace9-0d5dead5335b.mp4",
   "storyType": "Breaking",
   "topicSlugs": [
     "criminal-justice"
   ],
-  "voiceCount": 8,
-  "clusterCount": 3,
+  "voiceCount": 5,
+  "clusterCount": 1,
   "clusters": [
     {
-      "name": "Case Coverage & Analysis",
+      "name": "Analyzing the Mistrial",
       "voices": [
+        {
+          "voiceId": "mark-levin",
+          "voiceName": "Mark Levin",
+          "photo": "/photos/mark-levin.jpg",
+          "quote": "Mark Levin: Why 11 Jurors Got It Wrong in the Clancy Case",
+          "sourceUrl": "https://www.youtube.com/watch?v=ncyCzOKejFg",
+          "platform": "youtube",
+          "fit": 10,
+          "quoteQuality": 2
+        },
         {
           "voiceId": "chris-williamson",
           "voiceName": "Chris Williamson",
@@ -21,7 +31,7 @@
           "quote": "Psychiatrist: \u201cEveryone Is Wrong About The Lindsay Clancy Case\u201d",
           "sourceUrl": "https://www.youtube.com/watch?v=wOtNDXOypQg",
           "platform": "youtube",
-          "fit": 8,
+          "fit": 9,
           "quoteQuality": 2
         },
         {
@@ -31,17 +41,7 @@
           "quote": "The Lindsay Clancy Case Isn't What You Think",
           "sourceUrl": "https://www.youtube.com/watch?v=OElMt8EW-Q4",
           "platform": "youtube",
-          "fit": 8,
-          "quoteQuality": 1
-        },
-        {
-          "voiceId": "don-lemon",
-          "voiceName": "Don Lemon",
-          "photo": "/photos/don-lemon.jpg",
-          "quote": "Lindsay Clancy\u2019s children are not just supporting characters in her trial",
-          "sourceUrl": "https://www.youtube.com/shorts/ZF6zcB9SPoA",
-          "platform": "youtube",
-          "fit": 8,
+          "fit": 9,
           "quoteQuality": 1
         },
         {
@@ -51,7 +51,7 @@
           "quote": "Psychiatrist Spots a Major Problem w/ Lindsay Clancy\u2019s Defense | Hannah Spier",
           "sourceUrl": "https://www.youtube.com/watch?v=W3cTU7uWDxE",
           "platform": "youtube",
-          "fit": 8,
+          "fit": 9,
           "quoteQuality": 1
         },
         {
@@ -67,75 +67,21 @@
       ],
       "voiceCount": 5,
       "bestQuote": {
-        "voiceName": "Chris Williamson",
-        "quote": "Psychiatrist: \u201cEveryone Is Wrong About The Lindsay Clancy Case\u201d",
+        "voiceName": "Mark Levin",
+        "quote": "Mark Levin: Why 11 Jurors Got It Wrong in the Clancy Case",
         "platform": "youtube",
         "quality": 2
-      }
-    },
-    {
-      "name": "Jury/Legal Process Critique",
-      "voices": [
-        {
-          "voiceId": "cato-institute",
-          "voiceName": "Cato Institute",
-          "photo": "/photos/cato-institute.jpg",
-          "quote": "Today, 95% of cases end in plea deals and mandatory minimum sentences keep judges from tailoring punishment to individual defendants.\n\nThe jury\u2019s role as a safeguard has never been more important or m",
-          "sourceUrl": "https://bsky.app/profile/cato.org/post/3murxcvl5vy2w",
-          "platform": "bluesky",
-          "fit": 9,
-          "quoteQuality": 6
-        },
-        {
-          "voiceId": "mark-levin",
-          "voiceName": "Mark Levin",
-          "photo": "/photos/mark-levin.jpg",
-          "quote": "Mark Levin: Why 11 Jurors Got It Wrong in the Clancy Case",
-          "sourceUrl": "https://www.youtube.com/watch?v=ncyCzOKejFg",
-          "platform": "youtube",
-          "fit": 10,
-          "quoteQuality": 2
-        }
-      ],
-      "voiceCount": 2,
-      "bestQuote": {
-        "voiceName": "Cato Institute",
-        "quote": "Today, 95% of cases end in plea deals and mandatory minimum sentences keep judges from tailoring punishment to individual defendants.\n\nThe jury\u2019s role as a safeguard has never been more important or m",
-        "platform": "bluesky",
-        "quality": 6
-      }
-    },
-    {
-      "name": "Harsh Punishment Advocacy",
-      "voices": [
-        {
-          "voiceId": "nancy-mace",
-          "voiceName": "Nancy Mace",
-          "photo": "/photos/nancy-mace.jpg",
-          "quote": "The only justifiable punishment for a crime this horrific is the death penalty.\n\nOur Death Penalty for Child Rapists Act will make it federal law: anyone who r*pes a child is put to death.\n\nNo other w",
-          "sourceUrl": "https://x.com/RepNancyMace/status/2096742797432775090",
-          "platform": "x",
-          "fit": 9,
-          "quoteQuality": 4
-        }
-      ],
-      "voiceCount": 1,
-      "bestQuote": {
-        "voiceName": "Nancy Mace",
-        "quote": "The only justifiable punishment for a crime this horrific is the death penalty.\n\nOur Death Penalty for Child Rapists Act will make it federal law: anyone who r*pes a child is put to death.\n\nNo other w",
-        "platform": "x",
-        "quality": 4
       }
     }
   ],
   "confidence": 4,
   "relevance": {
-    "direct": 7,
+    "direct": 5,
     "related": 1,
-    "unrelated": 8
+    "unrelated": 9
   },
   "validated": true,
-  "heatScore": 67,
+  "heatScore": 22,
   "belowThreshold": false,
   "slug": "lindsay-clancy-child-murder-trial-ends-in-mistrial"
 }
