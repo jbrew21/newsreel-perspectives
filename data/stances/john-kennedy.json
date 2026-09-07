@@ -1,9 +1,9 @@
 {
   "voiceId": "john-kennedy",
   "voiceName": "John Kennedy",
-  "updatedAt": "2026-09-06",
+  "updatedAt": "2026-09-07",
   "topicCount": 16,
-  "stanceCount": 43,
+  "stanceCount": 44,
   "topics": [
     {
       "topic": "congress-legislation",
@@ -258,6 +258,33 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Advocates Congress use reconciliation to combat inflation",
+          "quote": "Congress should tackle inflation. \n\nWe should be on it like a hobo on a ham sandwich\u2014using reconciliation to get it done. https://t.co/hrqKaEcNIi",
+          "sourceUrl": "https://x.com/SenJohnKennedy/status/2096740448828059655",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-21",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Praises Trump bill blocking welfare payments to deceased individuals",
+          "quote": "You don\u2019t need to be Einstein\u2019s cousin to know dead people don\u2019t need welfare.\n\nPresident Trump signed my bill, and Treasury has already blocked $99 million from going to dead people.\n\nnypost.com/2026/07/21/us-new\u2026\n\nLink\n\n\n\nExclusive | Treasury stopped nearly $100M in taxpayer mo",
+          "sourceUrl": "https://x.com/SenJohnKennedy/status/2079582964610920539",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 2,
@@ -477,24 +504,6 @@
           "summary": "Criticizes states for Medicaid fraud and mismanagement",
           "quote": "If you say states aren\u2019t cheating with Medicaid, you should check your pants because they\u2019re probably on fire.",
           "sourceUrl": "https://x.com/SenJohnKennedy/status/2084691417666916599",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-07-21",
-      "stances": [
-        {
-          "date": "2026-07-21",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Praises Trump bill blocking welfare payments to deceased individuals",
-          "quote": "You don\u2019t need to be Einstein\u2019s cousin to know dead people don\u2019t need welfare.\n\nPresident Trump signed my bill, and Treasury has already blocked $99 million from going to dead people.\n\nnypost.com/2026/07/21/us-new\u2026\n\nLink\n\n\n\nExclusive | Treasury stopped nearly $100M in taxpayer mo",
-          "sourceUrl": "https://x.com/SenJohnKennedy/status/2079582964610920539",
           "platform": "x"
         }
       ],

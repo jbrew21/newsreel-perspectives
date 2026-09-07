@@ -1,9 +1,9 @@
 {
   "voiceId": "quincy-institute",
   "voiceName": "Quincy Institute",
-  "updatedAt": "2026-09-06",
+  "updatedAt": "2026-09-07",
   "topicCount": 10,
-  "stanceCount": 25,
+  "stanceCount": 26,
   "topics": [
     {
       "topic": "iran-conflict",
@@ -222,6 +222,33 @@
       "active": true
     },
     {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-09-07",
+      "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Criticizes Trump's opposition to Labor Day as anti-worker",
+          "quote": "On this Labor Day, Trump offers no sympathy to working Americans (by Harrison Berger). A Truth Social post in which President Donald Trump declared that there are \"too many non-working holidays in America\u201d and demanded that \u201cit must change,\u201d went viral on X this week, with analys",
+          "sourceUrl": "https://responsiblestatecraft.org/labor-day-trump-war/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Questions whether Trump's Saudi nuclear deal requirements may sabotage the agreement",
+          "quote": "Did Trump put a poison pill in his own Saudi nuclear deal? (by Yazen Zarour). This week, President Donald Trump formally submitted the U.S.-Saudi civil nuclear agreement to Congress for review, moving the deal forward despite continuing to insist that Saudi Arabia normalize relat",
+          "sourceUrl": "https://responsiblestatecraft.org/us-saudi-arabia-nuclear/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 2,
@@ -261,24 +288,6 @@
           "summary": "Warns of Israeli surveillance technology operating domestically in U.S. cities",
           "quote": "This creepy Israeli spy tech is likely operating in a city near you (by Hayden Long). Since the 2013 Edward Snowden leaks, surveillance and debates surrounding it have become part of the American experience. In recent years, Ring video doorbell users have successfully pushed back",
           "sourceUrl": "https://responsiblestatecraft.org/israel-surveillance-tech/",
-          "platform": "blog"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 1,
-      "lastActive": "2026-08-28",
-      "stances": [
-        {
-          "date": "2026-08-28",
-          "topic": "trump-policy",
-          "stance": "lean",
-          "summary": "Questions whether Trump's Saudi nuclear deal requirements may sabotage the agreement",
-          "quote": "Did Trump put a poison pill in his own Saudi nuclear deal? (by Yazen Zarour). This week, President Donald Trump formally submitted the U.S.-Saudi civil nuclear agreement to Congress for review, moving the deal forward despite continuing to insist that Saudi Arabia normalize relat",
-          "sourceUrl": "https://responsiblestatecraft.org/us-saudi-arabia-nuclear/",
           "platform": "blog"
         }
       ],

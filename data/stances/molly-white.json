@@ -1,9 +1,9 @@
 {
   "voiceId": "molly-white",
   "voiceName": "Molly White",
-  "updatedAt": "2026-09-06",
+  "updatedAt": "2026-09-07",
   "topicCount": 8,
-  "stanceCount": 46,
+  "stanceCount": 47,
   "topics": [
     {
       "topic": "trump-administration",
@@ -125,9 +125,18 @@
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 10,
-      "lastActive": "2026-09-05",
+      "count": 11,
+      "lastActive": "2026-09-06",
       "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses concern about potential cryptocurrency security breach",
+          "quote": "Blockstream better hope these are actually whitehats, because this is otherwise the biggest crypto exploit this year",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3muuzu6ains2w",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-05",
           "topic": "ai-technology",

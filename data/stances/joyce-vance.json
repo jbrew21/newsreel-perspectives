@@ -1,9 +1,9 @@
 {
   "voiceId": "joyce-vance",
   "voiceName": "Joyce Vance",
-  "updatedAt": "2026-09-06",
-  "topicCount": 17,
-  "stanceCount": 74,
+  "updatedAt": "2026-09-07",
+  "topicCount": 18,
+  "stanceCount": 75,
   "topics": [
     {
       "topic": "elections",
@@ -579,7 +579,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "state-local-politics",
@@ -715,6 +715,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 1,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Observes Germany's political shift rightward with implicit concern",
+          "quote": "Germany Takes A Right Turn\njoycevance.substack.com/p/germany-ta...",
+          "sourceUrl": "https://bsky.app/profile/joycewhitevance.bsky.social/post/3muv3uvyjcs2z",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "science-space",

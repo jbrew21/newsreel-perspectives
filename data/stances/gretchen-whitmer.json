@@ -1,9 +1,9 @@
 {
   "voiceId": "gretchen-whitmer",
   "voiceName": "Gretchen Whitmer",
-  "updatedAt": "2026-09-06",
-  "topicCount": 14,
-  "stanceCount": 47,
+  "updatedAt": "2026-09-07",
+  "topicCount": 15,
+  "stanceCount": 48,
   "topics": [
     {
       "topic": "housing-infrastructure",
@@ -427,6 +427,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 1,
+      "lastActive": "2026-09-07",
+      "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Condemns political violence, calls for national unity",
+          "quote": "I'm thankful that Dr. Acton and her family are safe after being attacked earlier today at the Canfield Fair. I'm hoping for the speedy recovery of those injured.\n\nWe must come together and reject political violence in all forms. It has no place in our nation -- not now, not ever.",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2096758235361398812",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "gender-lgbtq",

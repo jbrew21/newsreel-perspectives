@@ -1,9 +1,9 @@
 {
   "voiceId": "konstantin-kisin",
   "voiceName": "Konstantin Kisin",
-  "updatedAt": "2026-09-06",
-  "topicCount": 11,
-  "stanceCount": 37,
+  "updatedAt": "2026-09-07",
+  "topicCount": 12,
+  "stanceCount": 38,
   "topics": [
     {
       "topic": "uk-world-politics",
@@ -346,6 +346,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-09-07",
+      "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Suggests Trump's House majority is weakening or at risk",
+          "quote": "Trump\u2019s House Majority Could Be COLLAPSING",
+          "sourceUrl": "https://www.youtube.com/shorts/x0oCo8OrfLo",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "criminal-justice",

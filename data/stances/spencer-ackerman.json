@@ -1,9 +1,9 @@
 {
   "voiceId": "spencer-ackerman",
   "voiceName": "Spencer Ackerman",
-  "updatedAt": "2026-09-06",
+  "updatedAt": "2026-09-07",
   "topicCount": 20,
-  "stanceCount": 84,
+  "stanceCount": 85,
   "topics": [
     {
       "topic": "media-press",
@@ -681,6 +681,33 @@
       "active": false
     },
     {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 2,
+      "lastActive": "2026-09-07",
+      "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes museum for promoting bloodlust and victimhood narratives",
+          "quote": "You were the only one crying because you were the only one there willing to have a human reaction in a disgraceful museum designed to engender bloodlust and righteous victimhood.",
+          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3muwitxqlm22p",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes religious hypocrisy and exploitation of labor and suffering",
+          "quote": "They preach religiosity but deliver the purest blasphemy. They want not only the fruits of your labor \u2014 or, if you don\u2019t labor for them, your suffering to remain inconspicuous and convenient for them \u2014 they want your souls.",
+          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mukdcgoexs2n",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 2,
@@ -850,24 +877,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 1,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes religious hypocrisy and exploitation of labor and suffering",
-          "quote": "They preach religiosity but deliver the purest blasphemy. They want not only the fruits of your labor \u2014 or, if you don\u2019t labor for them, your suffering to remain inconspicuous and convenient for them \u2014 they want your souls.",
-          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mukdcgoexs2n",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "terrorism",
