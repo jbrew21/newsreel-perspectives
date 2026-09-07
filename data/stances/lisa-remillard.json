@@ -2,8 +2,8 @@
   "voiceId": "lisa-remillard",
   "voiceName": "Lisa Remillard",
   "updatedAt": "2026-09-07",
-  "topicCount": 8,
-  "stanceCount": 21,
+  "topicCount": 9,
+  "stanceCount": 23,
   "topics": [
     {
       "topic": "trump-administration",
@@ -141,6 +141,33 @@
       "active": true
     },
     {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Highlights problems with Trump USPS mail ballot rules",
+          "quote": "#midterms #usps #presidenttrump Explosive allegations were raised in an official whistleblower complaint today. This unnamed whistleblower said there are several glaring problems with USPS\u2019s new mail in ballot rule and procedures for mail in ballots as ordered by President Trump.",
+          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7680724761172872462",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Highlights failed voter ID requirement bill",
+          "quote": "#voterid #votingrights #senate The Senate failed to pass a bill that would have required all voters nationwide to present a valid government ID (with expiration date) before being allowed to cast a ballot in a federal election. The Senate decided to vote on this random bill inste",
+          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7671612822328986894",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 2,
@@ -150,7 +177,7 @@
           "date": "2026-08-29",
           "topic": "iran-conflict",
           "stance": "lean",
-          "summary": "Questions Trump's Iran war success narrative",
+          "summary": "Questions Trump's Iran war success claims as premature",
           "quote": "#iranwar #presidenttrump #usmilitary Today marks 6 months since Presdient Trump launched the war with Iran. Last night he posted a \u201cmission accomplished\u201d photo. But is it REALLY mission accomplished in Iran or is this Presdient Trump\u2019s President George W. Bush moment?",
           "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7679245147539819790",
           "platform": "tiktok"
@@ -195,22 +222,22 @@
       "active": false
     },
     {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
       "count": 1,
-      "lastActive": "2026-08-08",
+      "lastActive": "2026-09-01",
       "stances": [
         {
-          "date": "2026-08-08",
-          "topic": "elections",
+          "date": "2026-09-01",
+          "topic": "supreme-court-legal",
           "stance": "lean",
-          "summary": "Highlights failed voter ID requirement bill",
-          "quote": "#voterid #votingrights #senate The Senate failed to pass a bill that would have required all voters nationwide to present a valid government ID (with expiration date) before being allowed to cast a ballot in a federal election. The Senate decided to vote on this random bill inste",
-          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7671612822328986894",
+          "summary": "Notes Chief Justice concerns construction likely illegal",
+          "quote": "#presidenttrump #supremecourt #whitehouse the Supreme Court ruled that Presdient Trump can continue building his ballroom but it\u2019s the dissent that\u2019s consequential. The Chief Justice said the construction is \u201clikely illegal\u201d. So why can it continue?",
+          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7680372120701947150",
           "platform": "tiktok"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "immigration",

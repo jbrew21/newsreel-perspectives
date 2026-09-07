@@ -1,9 +1,43 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-07T12:49:13.412544",
+  "collectedAt": "2026-09-07T14:34:27.114756",
   "date": "2026-09-07",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Canada Has Lost It.",
+      "sourceUrl": "https://www.youtube.com/shorts/Pmw4L0n-2lE",
+      "timestamp": "2026-09-07T00:00:18+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "topics": [
+        "uk-world-politics"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Canada's political direction as unstable",
+      "quote": "Canada Has Lost It."
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Mamdani WANTED This To Happen In NYC",
+      "sourceUrl": "https://www.youtube.com/watch?v=19eRVZ0NjwQ",
+      "timestamp": "2026-09-06T14:00:27+00:00",
+      "type": "video_title",
+      "topic": "protests-activism",
+      "topics": [
+        "protests-activism"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Implies activist ideology contributed to NYC incident",
+      "quote": "Mamdani WANTED This To Happen In NYC"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -106,43 +140,31 @@
       "stance": "strong",
       "summary": "Criticizes Canada for political or policy decisions",
       "quote": "Canada Has Completely Lost It"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Canada Has Lost It.",
-      "sourceUrl": "https://www.youtube.com/shorts/Pmw4L0n-2lE",
-      "timestamp": "2026-09-07T00:00:18+00:00",
-      "type": "video_title",
-      "topic": "uk-world-politics",
-      "topics": [
-        "uk-world-politics"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Canada's political direction as unstable",
-      "quote": "Canada Has Lost It."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Mamdani WANTED This To Happen In NYC",
-      "sourceUrl": "https://www.youtube.com/watch?v=19eRVZ0NjwQ",
-      "timestamp": "2026-09-06T14:00:27+00:00",
-      "type": "video_title",
-      "topic": "protests-activism",
-      "topics": [
-        "protests-activism"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Implies activist ideology contributed to NYC incident",
-      "quote": "Mamdani WANTED This To Happen In NYC"
     }
   ],
   "topicSummary": {
+    "uk-world-politics": [
+      {
+        "quote": "Canada Has Lost It.",
+        "sourceUrl": "https://www.youtube.com/shorts/Pmw4L0n-2lE",
+        "platform": "youtube",
+        "timestamp": "2026-09-07T00:00:18+00:00"
+      },
+      {
+        "quote": "Canada Has Completely Lost It",
+        "sourceUrl": "https://www.youtube.com/watch?v=cr7-SWyidKo",
+        "platform": "youtube",
+        "timestamp": "2026-09-03T23:00:19+00:00"
+      }
+    ],
+    "protests-activism": [
+      {
+        "quote": "Mamdani WANTED This To Happen In NYC",
+        "sourceUrl": "https://www.youtube.com/watch?v=19eRVZ0NjwQ",
+        "platform": "youtube",
+        "timestamp": "2026-09-06T14:00:27+00:00"
+      }
+    ],
     "trump-policy": [
       {
         "quote": "How Trump Just Outmaneuvered Everyone On Venezuelan Oil",
@@ -179,28 +201,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/RoSEec3cUpU",
         "platform": "youtube",
         "timestamp": "2026-09-04T20:15:07+00:00"
-      }
-    ],
-    "uk-world-politics": [
-      {
-        "quote": "Canada Has Completely Lost It",
-        "sourceUrl": "https://www.youtube.com/watch?v=cr7-SWyidKo",
-        "platform": "youtube",
-        "timestamp": "2026-09-03T23:00:19+00:00"
-      },
-      {
-        "quote": "Canada Has Lost It.",
-        "sourceUrl": "https://www.youtube.com/shorts/Pmw4L0n-2lE",
-        "platform": "youtube",
-        "timestamp": "2026-09-07T00:00:18+00:00"
-      }
-    ],
-    "protests-activism": [
-      {
-        "quote": "Mamdani WANTED This To Happen In NYC",
-        "sourceUrl": "https://www.youtube.com/watch?v=19eRVZ0NjwQ",
-        "platform": "youtube",
-        "timestamp": "2026-09-06T14:00:27+00:00"
       }
     ]
   }
