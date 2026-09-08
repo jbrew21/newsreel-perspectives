@@ -1,16 +1,34 @@
 {
   "voiceId": "young-turks",
   "voiceName": "The Young Turks",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-08",
   "topicCount": 23,
-  "stanceCount": 141,
+  "stanceCount": 142,
   "topics": [
     {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 12,
-      "lastActive": "2026-09-07",
+      "lastActive": "2026-09-08",
       "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Expresses concern over U.S. envoy alarm regarding Israel's Syria actions",
+          "quote": "U.S. Envoy Sounds ALARM Over Israel\u2019s Syria Attack",
+          "sourceUrl": "https://www.youtube.com/watch?v=W13IEchM6qY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Criticizes Israeli court ruling on nun attack as excessively lenient",
+          "quote": "Israeli Court\u2019s Nun Attack Ruling Is Even WORSE Than It Looks",
+          "sourceUrl": "https://www.youtube.com/watch?v=H1I4OCaP-4I",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-07",
           "topic": "israel-palestine",
@@ -18,6 +36,15 @@
           "summary": "Condemns IDF military actions in Lebanon as war crimes",
           "quote": "The IDF's War Crimes In Lebanon Are SICK",
           "sourceUrl": "https://www.youtube.com/watch?v=aMZwgloXFEg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-07",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Israeli media host threatens Ana Kasparian; backfires publicly",
+          "quote": "Israeli Media Host Threatens Ana\u2014It BACKFIRES Instantly",
+          "sourceUrl": "https://www.youtube.com/watch?v=y8doazVq0S4",
           "platform": "youtube"
         },
         {
@@ -90,33 +117,6 @@
           "summary": "Reports Israeli settlers attacking international news crew",
           "quote": "VIDEO: Israeli Settlers ATTACK NBC News Team",
           "sourceUrl": "https://www.youtube.com/watch?v=5anzaIexEDQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-01",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Characterizes Israel-Gaza strategy as disastrous war plan",
-          "quote": "&quot;Mowing The Lawn&quot;: Our New DISASTROUS War Plan",
-          "sourceUrl": "https://www.youtube.com/watch?v=_CazHxiLGBs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-30",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Questions why Israel is Fetterman's singular priority",
-          "quote": "Why Is Israel Fetterman\u2019s ONE Non-Negotiable Issue?",
-          "sourceUrl": "https://www.youtube.com/watch?v=ptALIqVJB6E",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-30",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Challenges Fetterman's unwavering support for Israeli policy",
-          "quote": "Jon Stewart Questions Why Israel Is Fetterman\u2019s 'Red Line'",
-          "sourceUrl": "https://www.youtube.com/watch?v=TP0-gRq0wpI",
           "platform": "youtube"
         }
       ],
@@ -1239,6 +1239,42 @@
       "active": false
     },
     {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 3,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Conservatives criticize Turning Point USA tour",
+          "quote": "Conservatives SHRED The Turning Point USA Tour",
+          "sourceUrl": "https://www.youtube.com/watch?v=hZPYJp56Sbg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Covers internal right-wing dispute over surveillance technology",
+          "quote": "Right-Wing AT WAR Over Flock Cameras",
+          "sourceUrl": "https://www.youtube.com/watch?v=NOJluAIUNtg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes Van Jones for adopting fascist rhetoric or positions",
+          "quote": "Van Jones Goes FASCIST",
+          "sourceUrl": "https://www.youtube.com/watch?v=4U7ChD-estc",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
       "count": 2,
@@ -1287,33 +1323,6 @@
           "summary": "Criticizes Fox News promotion of data center expansion",
           "quote": "Fox News Wants You to Love Data Centers",
           "sourceUrl": "https://www.youtube.com/watch?v=3URWf4MJplE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Covers internal right-wing dispute over surveillance technology",
-          "quote": "Right-Wing AT WAR Over Flock Cameras",
-          "sourceUrl": "https://www.youtube.com/watch?v=NOJluAIUNtg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-22",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes Van Jones for adopting fascist rhetoric or positions",
-          "quote": "Van Jones Goes FASCIST",
-          "sourceUrl": "https://www.youtube.com/watch?v=4U7ChD-estc",
           "platform": "youtube"
         }
       ],

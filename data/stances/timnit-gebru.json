@@ -1,16 +1,25 @@
 {
   "voiceId": "timnit-gebru",
   "voiceName": "Timnit Gebru",
-  "updatedAt": "2026-09-07",
-  "topicCount": 7,
-  "stanceCount": 42,
+  "updatedAt": "2026-09-08",
+  "topicCount": 8,
+  "stanceCount": 43,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-07",
+      "lastActive": "2026-09-08",
       "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Skeptical of claimed intellectual novelty, waiting for peer review",
+          "quote": "I'll wait to see the peer reviewed work and the analysis later on. Just like these mathematicians whose works were plagiarized had said that they were pretty stunned initially until they realized things weren't as novel as were claimed and that there was no \"profound intellectual",
+          "sourceUrl": "https://bsky.app/profile/timnitgebru.blacksky.app/post/3muxuo4b6v22h",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-07",
           "topic": "ai-technology",
@@ -108,15 +117,6 @@
           "summary": "Questions LLM capability claims, disputes breakthrough attribution",
           "quote": "\"Once again, the LLM\u2019s trick is its superhuman patience for assembling puzzle pieces, not the ability to make some profound intellectual leap.\"\n\nI haven't kept track with every claim but most of the ones I saw was generation of examples disproving a theorem.",
           "sourceUrl": "https://bsky.app/profile/timnitgebru.blacksky.app/post/3muvrd2dgbs2x",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-07",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Skeptical of LLM mathematical breakthrough claims",
-          "quote": "Another one. \n\n\"The discovery stunned Francesco Fournier-Facio, a mathematician at the University of Cambridge, who studies group theory\u2014at least until he \u201cengaged with this breakthrough as I would if a human had written it,\u201d he says.",
-          "sourceUrl": "https://bsky.app/profile/timnitgebru.blacksky.app/post/3muvqooeh2c2x",
           "platform": "bluesky"
         }
       ],
@@ -427,6 +427,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Trump administration intentionally selecting specific personnel",
+          "quote": "It's not like his staffers know we exist BTW. They are intentionally choosing these people.",
+          "sourceUrl": "https://bsky.app/profile/timnitgebru.blacksky.app/post/3muxwj2aj322p",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "epstein-scandal",

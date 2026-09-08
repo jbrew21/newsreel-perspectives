@@ -1,7 +1,7 @@
 {
   "voiceId": "ethan-mollick",
   "voiceName": "Ethan Mollick",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-08",
   "topicCount": 1,
   "stanceCount": 12,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-07",
+      "lastActive": "2026-09-08",
       "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "AI systems are advancing toward creative task competency",
+          "quote": "Another informal nerd benchmark that AIs had struggled with has been passed: Astra successfully designed a Magic the Gathering deck and then used it to defeat a bot on Arena.\n\n(the deck may not be stunning, but it does seem to be original, and it worked)",
+          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3muy6d3lnwk2u",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-07",
           "topic": "ai-technology",
@@ -108,15 +117,6 @@
           "summary": "Powerful AI capabilities create dual-use risks without proper guardrails",
           "quote": "I was trying Astra at the time I wrote about the HuggingFace Incident, and it helped with context.\n\nEverything that makes Astra great (running subagents, cleverness when faced with barriers, long-run ability) is also what can make it risky without the right guardrails. Double-edg",
           "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3munrzfkmu22i",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-04",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Warns AI collusion poses emerging cybersecurity risk",
-          "quote": "Another agent message board. So far, there isn't evidence that production models with guardrails collude in this way, but both smarter closed models (which may be less compliant) & Mythos-class open models (that can be ablated) are coming.\n\nCybersecurity is going to become a mess",
-          "sourceUrl": "https://bsky.app/profile/emollick.bsky.social/post/3mup6ewbst22i",
           "platform": "bluesky"
         }
       ],

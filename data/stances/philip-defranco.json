@@ -1,7 +1,7 @@
 {
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-08",
   "topicCount": 21,
   "stanceCount": 57,
   "topics": [
@@ -15,7 +15,7 @@
           "date": "2026-09-02",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Criticizes billionaire spending to promote data centers rejected by public",
+          "summary": "Billionaires lobbying for unpopular data center expansion",
           "quote": "AI Billionaires Are Spending Millions To Sell You On The Data Centers You Rejected",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7681051759858453791",
           "platform": "tiktok"
@@ -321,7 +321,7 @@
           "date": "2026-09-03",
           "topic": "housing-infrastructure",
           "stance": "lean",
-          "summary": "Raises concerns about surveillance in government housing programs",
+          "summary": "Government surveillance of residents raises privacy concerns",
           "quote": "Government Housing Tracking Residents With Minut Sensors",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7681437323703110943",
           "platform": "tiktok"
@@ -384,33 +384,6 @@
       "active": true
     },
     {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-08-24",
-      "stances": [
-        {
-          "date": "2026-08-24",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Frames abuse as serious harm requiring intervention",
-          "quote": "Horrible Mom's Abusive Meltdown Accidentally Saved This Teen's Life",
-          "sourceUrl": "https://www.youtube.com/watch?v=ZVT05AYT0fA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-20",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Arrest reveals serious criminal charges against Tate",
-          "quote": "Andrew Tate's Arrest Is Way Worse Than You Think",
-          "sourceUrl": "https://www.youtube.com/watch?v=rqxGaIfcF9c",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "food-agriculture",
       "label": "Food & Agriculture",
       "count": 3,
@@ -442,6 +415,33 @@
           "quote": "Our Food Is Unsafe, Another Cyclospora Outbreak and Salmonella on Eggs",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7665825421035867423",
           "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-08-24",
+      "stances": [
+        {
+          "date": "2026-08-24",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Frames abuse as serious harm requiring intervention",
+          "quote": "Horrible Mom's Abusive Meltdown Accidentally Saved This Teen's Life",
+          "sourceUrl": "https://www.youtube.com/watch?v=ZVT05AYT0fA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-20",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Arrest reveals serious criminal charges against Tate",
+          "quote": "Andrew Tate's Arrest Is Way Worse Than You Think",
+          "sourceUrl": "https://www.youtube.com/watch?v=rqxGaIfcF9c",
+          "platform": "youtube"
         }
       ],
       "active": false

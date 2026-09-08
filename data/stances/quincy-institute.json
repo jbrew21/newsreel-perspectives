@@ -1,16 +1,25 @@
 {
   "voiceId": "quincy-institute",
   "voiceName": "Quincy Institute",
-  "updatedAt": "2026-09-07",
-  "topicCount": 11,
-  "stanceCount": 27,
+  "updatedAt": "2026-09-08",
+  "topicCount": 12,
+  "stanceCount": 30,
   "topics": [
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
-      "count": 6,
-      "lastActive": "2026-09-05",
+      "count": 7,
+      "lastActive": "2026-09-08",
       "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Critiques U.S.-Iran conflict producing unintended regional consequences",
+          "quote": "Somali piracy was under control. Then came the Iran war. (by Khaled Mahmoud). From the start, the U.S.-Israeli war on Iran has been a story of unintended consequences. Contrary to President Donald Trump\u2019s hopes for a quick victory, the conflict has morphed into a sustained crisis",
+          "sourceUrl": "https://responsiblestatecraft.org/iran-war-piracy/",
+          "platform": "blog"
+        },
         {
           "date": "2026-09-05",
           "topic": "iran-conflict",
@@ -216,6 +225,33 @@
           "summary": "Warns Trump administration conflates protest with terrorism",
           "quote": "Trump designates protesters terrorists. How far will it go? (by Elizabeth Beavers). Protesting is terrorism. At least, that is the message that the Trump administration has communicated in a series of recent actions, culminating last week in its designation of the U.K.-based Pale",
           "sourceUrl": "https://responsiblestatecraft.org/palestine-action-terrorists/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 2,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Questions U.S. understanding of jihadist motivations post-9/11",
+          "quote": "25 years after 9/11, the US still doesn't know 'why they hate us' (by Scott Hibbard). Twenty-five years ago, 19 hijackers took control of four American airliners and crashed them into symbols of American power, killing upwards of 3000 people. The American population watched the e",
+          "sourceUrl": "https://responsiblestatecraft.org/911-25th-anniversary/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Highlights prolonged legal limbo in 9/11 prosecution case",
+          "quote": "After a quarter century, the 9/11 mastermind is still awaiting trial (by John Ryan). This year\u2019s anniversary of the Sept. 11, 2001, terrorist attacks should serve as another reminder that the criminal prosecution of the accused plotters remains in limbo. One of the biggest cases ",
+          "sourceUrl": "https://responsiblestatecraft.org/9-11-trial-guantanamo-bay/",
           "platform": "blog"
         }
       ],

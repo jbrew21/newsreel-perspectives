@@ -1,9 +1,9 @@
 {
   "voiceId": "chris-williamson",
   "voiceName": "Chris Williamson",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-08",
   "topicCount": 16,
-  "stanceCount": 45,
+  "stanceCount": 46,
   "topics": [
     {
       "topic": "culture-war",
@@ -197,9 +197,18 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 5,
-      "lastActive": "2026-09-03",
+      "count": 6,
+      "lastActive": "2026-09-08",
       "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critiques UK wealth tax as economically counterproductive",
+          "quote": "The U.K's New Wealth Tax",
+          "sourceUrl": "https://www.youtube.com/shorts/pNsKE9xLAYg",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-03",
           "topic": "economy-trade",
@@ -318,7 +327,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "ai-technology",

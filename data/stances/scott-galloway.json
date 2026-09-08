@@ -1,16 +1,25 @@
 {
   "voiceId": "scott-galloway",
   "voiceName": "Scott Galloway",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-08",
   "topicCount": 23,
-  "stanceCount": 96,
+  "stanceCount": 97,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 12,
-      "lastActive": "2026-09-05",
+      "lastActive": "2026-09-06",
       "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Big tech exploiting social isolation to replace genuine friendships",
+          "quote": "Big tech is trying to convince young people: Why go through the effort to develop a friend group when you have Reddit and Discord?",
+          "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7682406752687590670",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-05",
           "topic": "ai-technology",
@@ -109,15 +118,6 @@
           "quote": "AI isn't the real threat to young workers",
           "sourceUrl": "https://www.youtube.com/shorts/ILUpSdb-4uY",
           "platform": "youtube"
-        },
-        {
-          "date": "2026-08-23",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "AI job displacement effects diminish when controlling for remote work",
-          "quote": "The story goes that AI is coming for entry-level jobs. But when economists control for remote work, the AI effect nearly disappears.",
-          "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7677227175002590478",
-          "platform": "tiktok"
         }
       ],
       "active": true
@@ -762,6 +762,33 @@
       "active": false
     },
     {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-09-05",
+      "stances": [
+        {
+          "date": "2026-09-05",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Trump's health policies worsened outcomes, contradicting campaign promises",
+          "quote": "People who initially aligned with the \"Make America Healthy Again\" movement have realized that Trump's policies have made things worse,,, not better. From my discussion with Dr. Jessica Knurick.",
+          "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7682074131860360462",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump deportation policy targeting talented workers",
+          "quote": "We will likely see a geographic arbitrage, especially since Trump is hell-bent on deporting some of the most talented people from the U.S.",
+          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3msvhi6w5ac2h",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "uk-world-politics",
       "label": "UK & World Politics",
       "count": 2,
@@ -928,24 +955,6 @@
           "quote": "Trump's lawless mass deportation campaign confirms that we\u2019re plunging down a vertical drop. But there is a silver lining: Many Americans are standing up. If you\u2019re one of them: Thank you,,, and keep going.",
           "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7674660575611292941",
           "platform": "tiktok"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 1,
-      "lastActive": "2026-08-12",
-      "stances": [
-        {
-          "date": "2026-08-12",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump deportation policy targeting talented workers",
-          "quote": "We will likely see a geographic arbitrage, especially since Trump is hell-bent on deporting some of the most talented people from the U.S.",
-          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3msvhi6w5ac2h",
-          "platform": "bluesky"
         }
       ],
       "active": false
