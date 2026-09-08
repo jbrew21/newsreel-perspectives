@@ -2,8 +2,8 @@
   "voiceId": "chris-williamson",
   "voiceName": "Chris Williamson",
   "updatedAt": "2026-09-08",
-  "topicCount": 16,
-  "stanceCount": 46,
+  "topicCount": 18,
+  "stanceCount": 48,
   "topics": [
     {
       "topic": "culture-war",
@@ -418,6 +418,42 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Frames Trump border policy as aggressive territorial redefinition",
+          "quote": "How Trump Is Redrawing The Canadian Border",
+          "sourceUrl": "https://www.youtube.com/shorts/WtYzFJi8c6k",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 1,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Warns of escalating Iran and Ukraine conflicts merging into broader war",
+          "quote": "\u201cThe Wars in Iran &amp; Ukraine Will Merge Very Soon\u201d",
+          "sourceUrl": "https://www.youtube.com/watch?v=d1BAL1623v4",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "education",

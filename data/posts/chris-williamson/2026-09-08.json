@@ -1,7 +1,7 @@
 {
   "voiceId": "chris-williamson",
   "voiceName": "Chris Williamson",
-  "collectedAt": "2026-09-08T11:35:15.299384",
+  "collectedAt": "2026-09-08T20:30:10.145969",
   "date": "2026-09-08",
   "posts": [
     {
@@ -195,18 +195,36 @@
       "voiceId": "chris-williamson",
       "voiceName": "Chris Williamson",
       "platform": "youtube",
-      "text": "The U.K's New Wealth Tax",
-      "sourceUrl": "https://www.youtube.com/shorts/pNsKE9xLAYg",
-      "timestamp": "2026-09-08T01:00:40+00:00",
+      "text": "How Trump Is Redrawing The Canadian Border",
+      "sourceUrl": "https://www.youtube.com/shorts/WtYzFJi8c6k",
+      "timestamp": "2026-09-08T17:00:39+00:00",
       "type": "video_title",
-      "topic": "economy-trade",
+      "topic": "trump-policy",
       "topics": [
-        "economy-trade"
+        "trump-policy"
       ],
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Critiques UK wealth tax as economically counterproductive",
-      "quote": "The U.K's New Wealth Tax"
+      "summary": "Frames Trump border policy as aggressive territorial redefinition",
+      "quote": "How Trump Is Redrawing The Canadian Border"
+    },
+    {
+      "voiceId": "chris-williamson",
+      "voiceName": "Chris Williamson",
+      "platform": "youtube",
+      "text": "\u201cThe Wars in Iran &amp; Ukraine Will Merge Very Soon\u201d",
+      "sourceUrl": "https://www.youtube.com/watch?v=d1BAL1623v4",
+      "timestamp": "2026-09-08T15:00:37+00:00",
+      "type": "video_title",
+      "topic": "iran-conflict",
+      "topics": [
+        "iran-conflict",
+        "military-defense"
+      ],
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Warns of escalating Iran and Ukraine conflicts merging into broader war",
+      "quote": "\u201cThe Wars in Iran &amp; Ukraine Will Merge Very Soon\u201d"
     }
   ],
   "topicSummary": {
@@ -290,12 +308,20 @@
         "timestamp": "2026-09-05T17:00:26+00:00"
       }
     ],
-    "economy-trade": [
+    "trump-policy": [
       {
-        "quote": "The U.K's New Wealth Tax",
-        "sourceUrl": "https://www.youtube.com/shorts/pNsKE9xLAYg",
+        "quote": "How Trump Is Redrawing The Canadian Border",
+        "sourceUrl": "https://www.youtube.com/shorts/WtYzFJi8c6k",
         "platform": "youtube",
-        "timestamp": "2026-09-08T01:00:40+00:00"
+        "timestamp": "2026-09-08T17:00:39+00:00"
+      }
+    ],
+    "iran-conflict": [
+      {
+        "quote": "\u201cThe Wars in Iran &amp; Ukraine Will Merge Very Soon\u201d",
+        "sourceUrl": "https://www.youtube.com/watch?v=d1BAL1623v4",
+        "platform": "youtube",
+        "timestamp": "2026-09-08T15:00:37+00:00"
       }
     ]
   }

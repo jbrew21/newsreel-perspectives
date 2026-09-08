@@ -2,8 +2,8 @@
   "voiceId": "rand-paul",
   "voiceName": "Rand Paul",
   "updatedAt": "2026-09-08",
-  "topicCount": 17,
-  "stanceCount": 78,
+  "topicCount": 18,
+  "stanceCount": 79,
   "topics": [
     {
       "topic": "economy-trade",
@@ -751,6 +751,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Opposes warrantless surveillance, invokes Fourth Amendment protection",
+          "quote": "When the Pentagon's former AI policy director says we are drifting toward China's surveillance model, that should stop everyone in their tracks. No warrant. No probable cause. Just a permanent record of where you\u2019ve been and where you drive.\n\nThis is precisely why the Fourth Amen",
+          "sourceUrl": "https://x.com/RandPaul/status/2097362452119716097",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "military-defense",
