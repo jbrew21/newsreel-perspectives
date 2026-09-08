@@ -1,9 +1,9 @@
 {
   "voiceId": "claudio-vallejo",
   "voiceName": "Claudio Vallejo",
-  "updatedAt": "2026-09-06",
+  "updatedAt": "2026-09-08",
   "topicCount": 16,
-  "stanceCount": 49,
+  "stanceCount": 50,
   "topics": [
     {
       "topic": "state-local-politics",
@@ -132,7 +132,7 @@
           "date": "2026-09-03",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Highlights unexpected polling results favoring Democratic candidate in conservative sample",
+          "summary": "Conservative polling showing competitive Democrat performance in Texas",
           "quote": "A conservative group polled a conservative crowd and got a Talarico lead. #news #politics #texas #talarico #poll",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7681298819190902047",
           "platform": "tiktok"
@@ -141,7 +141,7 @@
           "date": "2026-09-02",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Highlights polling place closures reducing voter access in Texas county",
+          "summary": "Polling place closures reduce voter access in Texas county",
           "quote": "Tarrant County Just Closed A Third Of Its Polling Places #news #tarrantcounty #texas #fyp",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680726196962856222",
           "platform": "tiktok"
@@ -149,8 +149,8 @@
         {
           "date": "2026-09-02",
           "topic": "elections",
-          "stance": "strong",
-          "summary": "Criticizes Republican AG candidate's anti-Muslim rhetoric; notes judicial rebuke and close race",
+          "stance": "lean",
+          "summary": "Democrat within striking distance in Texas attorney general race",
           "quote": "The man running to be the top lawyer in Texas says we are a Christian state and calls a religion organized crime.  Two Republican-appointed justices heard it and backed the Democrat.  Nathan Johnson is within five points.  #news #politics #texas #fyp",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680935402022243614",
           "platform": "tiktok"
@@ -159,7 +159,7 @@
           "date": "2026-09-01",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Raises concerns about ballot quality and mass rejection of votes",
+          "summary": "Ballot errors causing widespread vote rejection",
           "quote": "1 Bad Ballot, 10,000 Rejected #news #politics #fyp #voting",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680591156920454430",
           "platform": "tiktok"
@@ -168,7 +168,7 @@
           "date": "2026-09-01",
           "topic": "elections",
           "stance": "strong",
-          "summary": "Calls for poll workers to counter partisan election observers",
+          "summary": "Calls for poll workers instead of partisan election observers",
           "quote": "They\u2019re Sending Watchers. Be a Worker. #news #politics #fyp #pollworker",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680412208865611039",
           "platform": "tiktok"
@@ -258,6 +258,42 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 3,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Highlights record gas prices as negative economic indicator",
+          "quote": "Most expensive Labor Day gas in American history #news #politics #gas #oil #fyp",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7682483812273491230",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Trump for ineffective tariff policy approach",
+          "quote": "He Colored on a Map Instead of Fixing the Tariffs #news #tariffs #canada #fyp",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7678768737008373023",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-07-15",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes defense spending priorities over domestic social programs",
+          "quote": "$350B for Imaginary Communists, $0 for Hungry Kids #news #politics #fyp",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7662541478882839838",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 3,
@@ -267,7 +303,7 @@
           "date": "2026-08-31",
           "topic": "trump-administration",
           "stance": "lean",
-          "summary": "Highlights disconnect between Trump's stated positions and public response",
+          "summary": "Trump's data center policy contradicted by public comments",
           "quote": "Trump vs. His Own Comment Section on Data Centers #news #politics #funny #datacenter",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680274785837878559",
           "platform": "tiktok"
@@ -303,7 +339,7 @@
           "date": "2026-08-30",
           "topic": "criminal-justice",
           "stance": "lean",
-          "summary": "Frames January 6 breach as Congress storming itself",
+          "summary": "Congress disrupted by internal security incident",
           "quote": "Congress Stormed Itself, Apparently #news #politics #fyp",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7679976689803218206",
           "platform": "tiktok"
@@ -339,7 +375,7 @@
           "date": "2026-08-31",
           "topic": "military-defense",
           "stance": "lean",
-          "summary": "Questions Pentagon's use of influencers for messaging",
+          "summary": "Pentagon employs social media influencers for messaging",
           "quote": "The Pentagon Has Influencers On Staff #news #politics #fyp",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680189609468267807",
           "platform": "tiktok"
@@ -384,33 +420,6 @@
       "active": true
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 2,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Trump for ineffective tariff policy approach",
-          "quote": "He Colored on a Map Instead of Fixing the Tariffs #news #tariffs #canada #fyp",
-          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7678768737008373023",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-07-15",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes defense spending priorities over domestic social programs",
-          "quote": "$350B for Imaginary Communists, $0 for Hungry Kids #news #politics #fyp",
-          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7662541478882839838",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 2,
@@ -435,7 +444,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "food-agriculture",

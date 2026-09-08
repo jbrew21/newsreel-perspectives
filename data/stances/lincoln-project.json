@@ -2,8 +2,8 @@
   "voiceId": "lincoln-project",
   "voiceName": "Lincoln Project",
   "updatedAt": "2026-09-08",
-  "topicCount": 21,
-  "stanceCount": 125,
+  "topicCount": 22,
+  "stanceCount": 126,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1246,6 +1246,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Implies Haberman has unrevealed information worth sharing",
+          "quote": "What Maggie Haberman Hasn\u2019t Shared\u2026 Until Now",
+          "sourceUrl": "https://www.youtube.com/watch?v=SqB3zmBIzrQ",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",

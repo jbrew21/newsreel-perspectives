@@ -3,7 +3,7 @@
   "voiceName": "Ben Shapiro",
   "updatedAt": "2026-09-08",
   "topicCount": 29,
-  "stanceCount": 142,
+  "stanceCount": 144,
   "topics": [
     {
       "topic": "culture-war",
@@ -1203,6 +1203,42 @@
       "active": false
     },
     {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 3,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Critical of celebrity activism for Palestinian cause",
+          "quote": "Macklemore Hijacked an Ed Sheeran Concert for 'Free Palestine'",
+          "sourceUrl": "https://www.youtube.com/watch?v=clF3DvhrWa4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Questions narrative or conduct of pro-Palestine event",
+          "quote": "What Really Happened at Mamdani's 9/11 Ceremony",
+          "sourceUrl": "https://www.youtube.com/watch?v=gag1m6xsgY4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "References disputed territorial or water rights question",
+          "quote": "Which river, which sea? \ud83e\udd14",
+          "sourceUrl": "https://www.youtube.com/shorts/eFopnBhuGy0",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 3,
@@ -1435,24 +1471,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 1,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "References disputed territorial or water rights question",
-          "quote": "Which river, which sea? \ud83e\udd14",
-          "sourceUrl": "https://www.youtube.com/shorts/eFopnBhuGy0",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "billionaires-wealth",

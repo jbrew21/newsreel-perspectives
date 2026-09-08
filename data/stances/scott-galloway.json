@@ -2,8 +2,8 @@
   "voiceId": "scott-galloway",
   "voiceName": "Scott Galloway",
   "updatedAt": "2026-09-08",
-  "topicCount": 23,
-  "stanceCount": 97,
+  "topicCount": 24,
+  "stanceCount": 99,
   "topics": [
     {
       "topic": "ai-technology",
@@ -762,6 +762,33 @@
       "active": false
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-09-06",
+      "stances": [
+        {
+          "date": "2026-09-06",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Examines Chinese rare earth leverage over U.S. military",
+          "quote": "How China's Rare Earths Sway the U.S. Military",
+          "sourceUrl": "https://www.youtube.com/shorts/ntnYgCkdmtw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Argues defense spending is strategically obsolete",
+          "quote": "Why $1.4 Trillion in Defense Just Got Rendered Obsolete",
+          "sourceUrl": "https://www.youtube.com/watch?v=6kwBd_q-gR8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 2,
@@ -942,6 +969,24 @@
       "active": false
     },
     {
+      "topic": "drugs-addiction",
+      "label": "Drugs & Addiction",
+      "count": 1,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Highlights underresearched addiction problem",
+          "quote": "The most under researched addiction",
+          "sourceUrl": "https://www.youtube.com/shorts/bW-8-G2uIxo",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "immigration",
       "label": "Immigration",
       "count": 1,
@@ -955,24 +1000,6 @@
           "quote": "Trump's lawless mass deportation campaign confirms that we\u2019re plunging down a vertical drop. But there is a silver lining: Many Americans are standing up. If you\u2019re one of them: Thank you,,, and keep going.",
           "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7674660575611292941",
           "platform": "tiktok"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 1,
-      "lastActive": "2026-08-10",
-      "stances": [
-        {
-          "date": "2026-08-10",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Argues defense spending is strategically obsolete",
-          "quote": "Why $1.4 Trillion in Defense Just Got Rendered Obsolete",
-          "sourceUrl": "https://www.youtube.com/watch?v=6kwBd_q-gR8",
-          "platform": "youtube"
         }
       ],
       "active": false

@@ -2,8 +2,8 @@
   "voiceId": "amy-klobuchar",
   "voiceName": "Amy Klobuchar",
   "updatedAt": "2026-09-08",
-  "topicCount": 22,
-  "stanceCount": 127,
+  "topicCount": 23,
+  "stanceCount": 128,
   "topics": [
     {
       "topic": "housing-infrastructure",
@@ -1291,6 +1291,24 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 1,
+      "lastActive": "2026-08-10",
+      "stances": [
+        {
+          "date": "2026-08-10",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Celebrates Minnesota's Olympic curling success",
+          "quote": "There\u2019s no U.S. Olympic Curling Team without Minnesota!\u00a0\n\u00a0\nGreat to join Coach Phill, our Mixed Doubles Silver Medalists \u2014 MN\u2019s own Korey Dropkin & Cory Thiesse \u2014 and their teammates. Can\u2019t wait for the next big win! \ud83e\udd4c \ud83c\uddfa\ud83c\uddf8",
+          "sourceUrl": "https://bsky.app/profile/klobuchar.senate.gov/post/3msqaq3x3fc24",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "refugees-humanitarian",
