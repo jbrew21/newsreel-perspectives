@@ -2,8 +2,8 @@
   "voiceId": "shawn-ryan-show",
   "voiceName": "Shawn Ryan Show",
   "updatedAt": "2026-09-09",
-  "topicCount": 20,
-  "stanceCount": 80,
+  "topicCount": 21,
+  "stanceCount": 83,
   "topics": [
     {
       "topic": "military-defense",
@@ -422,9 +422,27 @@
     {
       "topic": "culture-war",
       "label": "Culture War",
-      "count": 5,
-      "lastActive": "2026-08-30",
+      "count": 7,
+      "lastActive": "2026-09-09",
       "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Implies modern society mirrors biblical moral decline",
+          "quote": "Are We Repeating Sodom and Gomorrah? \ud83d\ude33\n\n@cardinalrlburke https://t.co/nFKnq8qEJe",
+          "sourceUrl": "https://x.com/ShawnRyanShow/status/2097746864481157176",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Implies modern society mirrors biblical moral decline",
+          "quote": "Are We Repeating Sodom and Gomorrah? \ud83d\ude33 #shawnryanshow #catholic #christian #bible #currentaffairs",
+          "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7683583187838160158",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-08-30",
           "topic": "culture-war",
@@ -778,6 +796,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "gender-lgbtq",
+          "stance": "lean",
+          "summary": "Frames transgender identity as contested philosophical question",
+          "quote": "Can a Man Turn Into a Woman?",
+          "sourceUrl": "https://www.youtube.com/shorts/ZrMAqewSBV8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "media-press",

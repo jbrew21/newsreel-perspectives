@@ -2,8 +2,8 @@
   "voiceId": "tom-cotton",
   "voiceName": "Tom Cotton",
   "updatedAt": "2026-09-09",
-  "topicCount": 12,
-  "stanceCount": 36,
+  "topicCount": 13,
+  "stanceCount": 37,
   "topics": [
     {
       "topic": "immigration",
@@ -400,6 +400,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "gun-policy",
+      "label": "Guns & Gun Policy",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "gun-policy",
+          "stance": "strong",
+          "summary": "Backs Second Amendment rights, celebrates NRA endorsement",
+          "quote": "I'm honored to receive the full endorsement of the National Rifle Association and an A rating.\n\nI will always for Arkansans' God-given right to own firearms. https://t.co/lUL8DdafnR",
+          "sourceUrl": "https://x.com/TomCottonAR/status/2097748655759360508",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "drugs-addiction",

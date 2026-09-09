@@ -2,8 +2,8 @@
   "voiceId": "tim-scott",
   "voiceName": "Tim Scott",
   "updatedAt": "2026-09-09",
-  "topicCount": 16,
-  "stanceCount": 56,
+  "topicCount": 17,
+  "stanceCount": 57,
   "topics": [
     {
       "topic": "economy-trade",
@@ -526,6 +526,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "food-agriculture",
+          "stance": "strong",
+          "summary": "Praises tax cuts and crop insurance savings for farmers",
+          "quote": "Stronger farms mean a stronger America.\n\nFrom slashing the unfair death tax to saving farmers more than $400 million each year on crop insurance premiums, the Working Families Tax Cuts are putting more money back into the hands of those who feed our nation.\n\nHear from South Carol",
+          "sourceUrl": "https://x.com/SenatorTimScott/status/2097724958143033637",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "healthcare",

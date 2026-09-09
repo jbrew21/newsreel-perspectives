@@ -3,7 +3,7 @@
   "voiceName": "Russell Brand",
   "updatedAt": "2026-09-09",
   "topicCount": 28,
-  "stanceCount": 92,
+  "stanceCount": 94,
   "topics": [
     {
       "topic": "media-press",
@@ -483,6 +483,51 @@
       "active": true
     },
     {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 4,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Criticizes Dover immigration situation, suggests Germany's AfD represents needed change",
+          "quote": "Dover ERUPTS, Britons Face Arrest &amp; Germany Swings to AfD - SF755",
+          "sourceUrl": "https://www.youtube.com/watch?v=wnKw1T0Wm-Y",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Questions whether AfD represents positive political change for Germany",
+          "quote": "Is this the change Germany needs?",
+          "sourceUrl": "https://www.youtube.com/shorts/fkexnNTNvew",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-07",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Criticizes EU governance",
+          "quote": "Russell Brand exposes the EU...",
+          "sourceUrl": "https://www.youtube.com/shorts/pr8IlHhBZOQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Examines Trudeau political situation with implied criticism",
+          "quote": "What's happening with Justin Trudeau?",
+          "sourceUrl": "https://www.youtube.com/shorts/IFMxHL1gQJw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 4,
@@ -658,33 +703,6 @@
           "quote": "Update: UK man cleared of all charges...",
           "sourceUrl": "https://x.com/rustyrockets/status/2087267932686442829",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 2,
-      "lastActive": "2026-09-07",
-      "stances": [
-        {
-          "date": "2026-09-07",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Criticizes EU governance",
-          "quote": "Russell Brand exposes the EU...",
-          "sourceUrl": "https://www.youtube.com/shorts/pr8IlHhBZOQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Examines Trudeau political situation with implied criticism",
-          "quote": "What's happening with Justin Trudeau?",
-          "sourceUrl": "https://www.youtube.com/shorts/IFMxHL1gQJw",
-          "platform": "youtube"
         }
       ],
       "active": true

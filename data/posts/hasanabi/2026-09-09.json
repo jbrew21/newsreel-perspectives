@@ -1,9 +1,26 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-09T11:44:46.174309",
+  "collectedAt": "2026-09-09T20:10:42.598442",
   "date": "2026-09-09",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "TRUMP SAYS HE WAS RESCUED DURING 9/11",
+      "sourceUrl": "https://www.youtube.com/watch?v=F56Avj3fhmg",
+      "timestamp": "2026-09-09T00:51:30+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Trump's false 9/11 rescue claim",
+      "quote": "TRUMP SAYS HE WAS RESCUED DURING 9/11"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -113,21 +130,29 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
-      "text": "TRUMP SAYS HE WAS RESCUED DURING 9/11",
-      "sourceUrl": "https://www.youtube.com/watch?v=F56Avj3fhmg",
-      "timestamp": "2026-09-09T00:51:30+00:00",
+      "text": "FOX NEWS FINALLY INTERVIEWS HASAN",
+      "sourceUrl": "https://www.youtube.com/watch?v=eQV5kpjpDIQ",
+      "timestamp": "2026-09-08T00:54:55+00:00",
       "type": "video_title",
-      "topic": "trump-administration",
+      "topic": "media-press",
       "topics": [
-        "trump-administration"
+        "media-press"
       ],
       "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Trump's false 9/11 rescue claim",
-      "quote": "TRUMP SAYS HE WAS RESCUED DURING 9/11"
+      "stance": "lean",
+      "summary": "Frames Fox News interview as noteworthy or surprising event",
+      "quote": "FOX NEWS FINALLY INTERVIEWS HASAN"
     }
   ],
   "topicSummary": {
+    "trump-administration": [
+      {
+        "quote": "TRUMP SAYS HE WAS RESCUED DURING 9/11",
+        "sourceUrl": "https://www.youtube.com/watch?v=F56Avj3fhmg",
+        "platform": "youtube",
+        "timestamp": "2026-09-09T00:51:30+00:00"
+      }
+    ],
     "uk-world-politics": [
       {
         "quote": "GERMAN FAR RIGHT JUST WON FOR THE FIRST TIME SINCE WWII",
@@ -174,12 +199,12 @@
         "timestamp": "2026-09-06T00:40:39+00:00"
       }
     ],
-    "trump-administration": [
+    "media-press": [
       {
-        "quote": "TRUMP SAYS HE WAS RESCUED DURING 9/11",
-        "sourceUrl": "https://www.youtube.com/watch?v=F56Avj3fhmg",
+        "quote": "FOX NEWS FINALLY INTERVIEWS HASAN",
+        "sourceUrl": "https://www.youtube.com/watch?v=eQV5kpjpDIQ",
         "platform": "youtube",
-        "timestamp": "2026-09-09T00:51:30+00:00"
+        "timestamp": "2026-09-08T00:54:55+00:00"
       }
     ]
   }

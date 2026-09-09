@@ -2,8 +2,8 @@
   "voiceId": "coleman-hughes",
   "voiceName": "Coleman Hughes",
   "updatedAt": "2026-09-09",
-  "topicCount": 11,
-  "stanceCount": 17,
+  "topicCount": 12,
+  "stanceCount": 18,
   "topics": [
     {
       "topic": "civil-rights-race",
@@ -130,6 +130,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Challenges conventional historical interpretations of Cold War",
+          "quote": "What We've Been Getting Wrong About the Cold War",
+          "sourceUrl": "https://www.youtube.com/shorts/ZjuB-bwDycc",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "ai-technology",

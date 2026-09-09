@@ -2,8 +2,8 @@
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
   "updatedAt": "2026-09-09",
-  "topicCount": 13,
-  "stanceCount": 18,
+  "topicCount": 14,
+  "stanceCount": 19,
   "topics": [
     {
       "topic": "trump-administration",
@@ -103,6 +103,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Critiques U.S. regime change foreign policy and its consequences",
+          "quote": "'Regime Change' Fallout | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/l0EsCRo2_Kw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "state-local-politics",

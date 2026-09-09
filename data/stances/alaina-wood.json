@@ -2,8 +2,8 @@
   "voiceId": "alaina-wood",
   "voiceName": "Alaina Wood",
   "updatedAt": "2026-09-09",
-  "topicCount": 13,
-  "stanceCount": 32,
+  "topicCount": 14,
+  "stanceCount": 33,
   "topics": [
     {
       "topic": "climate-environment",
@@ -301,6 +301,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Defends activism messaging against criticism of discouraging action",
+          "quote": "They believe my messages of hope [that always include calls to action] discourage people from taking action.",
+          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3mv3mrpm5e22q",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",
