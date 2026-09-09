@@ -2,8 +2,8 @@
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
   "updatedAt": "2026-09-09",
-  "topicCount": 23,
-  "stanceCount": 98,
+  "topicCount": 24,
+  "stanceCount": 100,
   "topics": [
     {
       "topic": "trump-administration",
@@ -222,6 +222,87 @@
       "active": true
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 8,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Criticizes AI as a scam causing personal harm",
+          "quote": "The AI scam that ruined his life\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/hIGgojwVsGs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions government oversight of technology platforms",
+          "quote": "\u201cIt\u2019s Targeted by the CIA\u2026\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/V7zk3s3IsV0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Opposes expansion of data center infrastructure",
+          "quote": "Data Centers Must Be Stopped\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/E90DepKeEKU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Implies corporate-government collusion on surveillance",
+          "quote": "Amazon Is Working With the CIA",
+          "sourceUrl": "https://www.youtube.com/shorts/BFoxMIh8p3E",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Warns AI task force threatens freedom, risks blackouts and automation control",
+          "quote": "Blackouts &amp; Water Shortage Imminent: Tech Overlords Build AI Dystopia &amp; Crush Anyone Who Resists",
+          "sourceUrl": "https://www.youtube.com/watch?v=KMsklsr_nBM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Raises concerns about digital surveillance and privacy threats",
+          "quote": "Kim Dotcom knows what it\u2019s like to be spied on. He\u2019s a hacker, and therefore an expert on digital surveillance. He watched our new docuseries on internet privacy, so we invited him to talk to us. What followed was very dark. Watch:",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2085772961102139753",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Investigates surveillance capitalism and data collection practices",
+          "quote": "Our 3-part investigative report on surveillance capitalism, \u201cThe World Is Watching You,\u201d is available now at TuckerCarlson.com.\n\nPaid partnerships:\n\nVulnerable People Project: Stand with Christians in the land where Christianity began, go to SaveWestBankChristians.com\n\nDose: Dail",
+          "sourceUrl": "https://x.com/TuckerCarlson/status/2085773411993682372",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights concerns about surveillance, AI, and propaganda risks",
+          "quote": "World-Renowned Hacker Issues Dark Warning on Surveillance, AI, Propaganda, &amp; Trump\u2019s Agenda",
+          "sourceUrl": "https://www.youtube.com/watch?v=eLZuL52Qp6U",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 8,
@@ -370,78 +451,6 @@
           "quote": "The Great Replacement is no longer a theory, as what\u2019s happening in Spain makes clear. Darryl Cooper on who\u2019s behind the invasion and why.\n\n0:00 How the Iran War Is Different\n10:20 The Descent Into Primitive Tendencies Due to War\n18:20 Trump, the Iranian Girls\u2019 School Attack, and",
           "sourceUrl": "https://x.com/TuckerCarlson/status/2084406802213470439",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 7,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Questions government oversight of technology platforms",
-          "quote": "\u201cIt\u2019s Targeted by the CIA\u2026\u201d",
-          "sourceUrl": "https://www.youtube.com/shorts/V7zk3s3IsV0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-22",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Opposes expansion of data center infrastructure",
-          "quote": "Data Centers Must Be Stopped\u2026",
-          "sourceUrl": "https://www.youtube.com/shorts/E90DepKeEKU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Implies corporate-government collusion on surveillance",
-          "quote": "Amazon Is Working With the CIA",
-          "sourceUrl": "https://www.youtube.com/shorts/BFoxMIh8p3E",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Warns AI task force threatens freedom, risks blackouts and automation control",
-          "quote": "Blackouts &amp; Water Shortage Imminent: Tech Overlords Build AI Dystopia &amp; Crush Anyone Who Resists",
-          "sourceUrl": "https://www.youtube.com/watch?v=KMsklsr_nBM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Raises concerns about digital surveillance and privacy threats",
-          "quote": "Kim Dotcom knows what it\u2019s like to be spied on. He\u2019s a hacker, and therefore an expert on digital surveillance. He watched our new docuseries on internet privacy, so we invited him to talk to us. What followed was very dark. Watch:",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2085772961102139753",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Investigates surveillance capitalism and data collection practices",
-          "quote": "Our 3-part investigative report on surveillance capitalism, \u201cThe World Is Watching You,\u201d is available now at TuckerCarlson.com.\n\nPaid partnerships:\n\nVulnerable People Project: Stand with Christians in the land where Christianity began, go to SaveWestBankChristians.com\n\nDose: Dail",
-          "sourceUrl": "https://x.com/TuckerCarlson/status/2085773411993682372",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Highlights concerns about surveillance, AI, and propaganda risks",
-          "quote": "World-Renowned Hacker Issues Dark Warning on Surveillance, AI, Propaganda, &amp; Trump\u2019s Agenda",
-          "sourceUrl": "https://www.youtube.com/watch?v=eLZuL52Qp6U",
-          "platform": "youtube"
         }
       ],
       "active": true
@@ -967,6 +976,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Questions validity of algebra curriculum",
+          "quote": "Algebra Is Fake?",
+          "sourceUrl": "https://www.youtube.com/shorts/oI0u-Jv5OU0",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "uk-world-politics",

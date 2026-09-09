@@ -2,8 +2,8 @@
   "voiceId": "andrew-klavan",
   "voiceName": "Andrew Klavan",
   "updatedAt": "2026-09-09",
-  "topicCount": 9,
-  "stanceCount": 25,
+  "topicCount": 10,
+  "stanceCount": 26,
   "topics": [
     {
       "topic": "culture-war",
@@ -220,6 +220,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Critiques U.S. counterterrorism strategy as ineffective",
+          "quote": "The Unsettling Reasons America is Losing the War on Terror w/Sarah Adams",
+          "sourceUrl": "https://www.youtube.com/watch?v=LfreOY5Gcuo",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "trump-policy",

@@ -1,7 +1,7 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-09T20:10:42.598442",
+  "collectedAt": "2026-09-09T22:06:30.887152",
   "date": "2026-09-09",
   "posts": [
     {
@@ -60,6 +60,23 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
+      "text": "FOX NEWS FINALLY INTERVIEWS HASAN",
+      "sourceUrl": "https://www.youtube.com/watch?v=eQV5kpjpDIQ",
+      "timestamp": "2026-09-08T00:54:55+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames Fox News interview as noteworthy or surprising event",
+      "quote": "FOX NEWS FINALLY INTERVIEWS HASAN"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
       "text": "CHINA STARTS MAKING MOVES TO END IRAN WAR",
       "sourceUrl": "https://www.youtube.com/watch?v=jR8z7AU14J8",
       "timestamp": "2026-09-07T17:11:23+00:00",
@@ -108,40 +125,6 @@
       "stance": "lean",
       "summary": "Acknowledges Steinem's feminist legacy and CIA involvement",
       "quote": "Feminist CIA Icon Gloria Steinem Dead at 92"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "The Lindsay Clancy Case Isn't What You Think",
-      "sourceUrl": "https://www.youtube.com/watch?v=OElMt8EW-Q4",
-      "timestamp": "2026-09-06T00:40:39+00:00",
-      "type": "video_title",
-      "topic": "criminal-justice",
-      "topics": [
-        "criminal-justice"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Challenges mainstream narrative around a criminal case",
-      "quote": "The Lindsay Clancy Case Isn't What You Think"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "FOX NEWS FINALLY INTERVIEWS HASAN",
-      "sourceUrl": "https://www.youtube.com/watch?v=eQV5kpjpDIQ",
-      "timestamp": "2026-09-08T00:54:55+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "topics": [
-        "media-press"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames Fox News interview as noteworthy or surprising event",
-      "quote": "FOX NEWS FINALLY INTERVIEWS HASAN"
     }
   ],
   "topicSummary": {
@@ -169,6 +152,14 @@
         "timestamp": "2026-09-08T14:00:34+00:00"
       }
     ],
+    "media-press": [
+      {
+        "quote": "FOX NEWS FINALLY INTERVIEWS HASAN",
+        "sourceUrl": "https://www.youtube.com/watch?v=eQV5kpjpDIQ",
+        "platform": "youtube",
+        "timestamp": "2026-09-08T00:54:55+00:00"
+      }
+    ],
     "iran-conflict": [
       {
         "quote": "CHINA STARTS MAKING MOVES TO END IRAN WAR",
@@ -189,22 +180,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=n0l3WsUIfhI",
         "platform": "youtube",
         "timestamp": "2026-09-06T14:36:16+00:00"
-      }
-    ],
-    "criminal-justice": [
-      {
-        "quote": "The Lindsay Clancy Case Isn't What You Think",
-        "sourceUrl": "https://www.youtube.com/watch?v=OElMt8EW-Q4",
-        "platform": "youtube",
-        "timestamp": "2026-09-06T00:40:39+00:00"
-      }
-    ],
-    "media-press": [
-      {
-        "quote": "FOX NEWS FINALLY INTERVIEWS HASAN",
-        "sourceUrl": "https://www.youtube.com/watch?v=eQV5kpjpDIQ",
-        "platform": "youtube",
-        "timestamp": "2026-09-08T00:54:55+00:00"
       }
     ]
   }
