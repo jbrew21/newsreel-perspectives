@@ -1,7 +1,7 @@
 {
   "voiceId": "nate-silver",
   "voiceName": "Nate Silver",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 10,
   "stanceCount": 38,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 12,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Democrats positioned to gain House seats from redistricting",
+          "quote": "Democrats just got one seat closer to retaking the House (by Eli McKown-Dawson). Missouri\u2019s new old map has diminished Republicans\u2019 redistricting gains.",
+          "sourceUrl": "https://www.natesilver.net/p/democrats-just-got-one-seat-closer",
+          "platform": "substack"
+        },
         {
           "date": "2026-09-03",
           "topic": "elections",
@@ -18,6 +27,15 @@
           "summary": "Cautions against overweighting polling swings in midterm forecasts",
           "quote": "Beware big swings in midterm forecasts. As Labor Day approaches, we\u2019re entering the traditional stretch run of the campaign. But history says the national picture probably won\u2019t change much before Election Day.",
           "sourceUrl": "https://www.natesilver.net/p/beware-big-swings-in-midterm-forecasts",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Democrats likely to govern more Americans than Republicans",
+          "quote": "A tour of the 9 key governor races (by Eli McKown-Dawson). Democrats are almost certain to govern more Americans than Republicans, but can they flip swing states like Georgia?",
+          "sourceUrl": "https://www.natesilver.net/p/a-tour-of-the-9-key-governor-races",
           "platform": "substack"
         },
         {
@@ -100,24 +118,6 @@
           "quote": "Prediction markets aren't magic. My chat with Galen Druke on Wisconsin, models, polls and prediction markets.",
           "sourceUrl": "https://www.natesilver.net/p/prediction-markets-arent-magic",
           "platform": "substack"
-        },
-        {
-          "date": "2026-08-13",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Prediction markets useful but overrated, polls preferable for modeling",
-          "quote": "All right, a few thoughts about the prediction markets debate after Wisconsin and Michigan. I think prediction markets are cool. But people should stop treating them as magic, and I don't think they're a good substitute for polls, or belong in models.\n\nnatesilver.net/p/prediction",
-          "sourceUrl": "https://x.com/NateSilver538/status/2087947133835981004",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "El-Sayed achieved stronger result than Hong given competitive field dynamics",
-          "quote": "I buy that El-Sayed's result was a pretty impressive result for the left even though he underperformed polls. But I don't buy that for Hong. It's not because she lost; both primaries were basically a tie. It's because the rest of the field was a complete mess behind her.",
-          "sourceUrl": "https://x.com/NateSilver538/status/2087643935892013238",
-          "platform": "x"
         }
       ],
       "active": true

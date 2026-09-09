@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 19,
   "stanceCount": 55,
   "topics": [
@@ -204,60 +204,6 @@
       "active": true
     },
     {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 5,
-      "lastActive": "2026-08-25",
-      "stances": [
-        {
-          "date": "2026-08-25",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Critiques Argentina's economic policies and chocolate industry practices",
-          "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Critiques Rishi Sunak's leadership and bail reform policies",
-          "quote": "S9 E27: Rishi Sunak &amp; Bail Reform: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=vo7cYJHVpUQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Covers Ukraine war developments and implications",
-          "quote": "S9 E26: Ukraine War &amp; Transgender Rights: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=ikFe0NcKv2c",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Critiques Liz Truss's brief tenure and policy failures",
-          "quote": "S9 E24: Liz Truss &amp; Museums: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=oMEbXtaFVnE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Examines UK PM candidates and mental health care policy implications",
-          "quote": "S9 E18: UK PM Candidates &amp; Mental Health Care: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=22wIXBLLVZg",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 4,
@@ -360,6 +306,60 @@
           "summary": "Criticizes police surveillance technology overreach and lack of oversight",
           "quote": "Police Surveillance Technology: Last Week Tonight with John Oliver (HBO)",
           "sourceUrl": "https://www.youtube.com/watch?v=lnBPhelCdWE",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 5,
+      "lastActive": "2026-08-25",
+      "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Critiques Argentina's economic policies and chocolate industry practices",
+          "quote": "S10 E15: Argentina &amp; Chocolate: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=SqLJz--S-1w",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Critiques Rishi Sunak's leadership and bail reform policies",
+          "quote": "S9 E27: Rishi Sunak &amp; Bail Reform: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=vo7cYJHVpUQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Covers Ukraine war developments and implications",
+          "quote": "S9 E26: Ukraine War &amp; Transgender Rights: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=ikFe0NcKv2c",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Critiques Liz Truss's brief tenure and policy failures",
+          "quote": "S9 E24: Liz Truss &amp; Museums: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=oMEbXtaFVnE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Examines UK PM candidates and mental health care policy implications",
+          "quote": "S9 E18: UK PM Candidates &amp; Mental Health Care: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=22wIXBLLVZg",
           "platform": "youtube"
         }
       ],

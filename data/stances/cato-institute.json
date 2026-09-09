@@ -1,9 +1,9 @@
 {
   "voiceId": "cato-institute",
   "voiceName": "Cato Institute",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 25,
-  "stanceCount": 119,
+  "stanceCount": 120,
   "topics": [
     {
       "topic": "economy-trade",
@@ -1131,6 +1131,33 @@
       "active": true
     },
     {
+      "topic": "religion-faith",
+      "label": "Religion & Faith",
+      "count": 2,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Advocates separating Islamic law from state authority",
+          "quote": "Sharia, or Islamic law, is a contentious issue in Muslim-majority countries, and lately even in the West. Why and how can Sharia be separated from the state?\n \nWatch Live: https://ow.ly/me8E50ZKJX6",
+          "sourceUrl": "https://bsky.app/profile/cato.org/post/3muzdrpujc52q",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Advocates state neutrality on religion, personal conscience protected",
+          "quote": "Faith and morality are matters of personal conscience, not state enforcement. In a piece for the Pakistani paper Dunya News, Cato's Mustafa Akyol makes the case, from Islam's own sources, for a state that protects rights and leaves belief to the individual.\n\nhttps://ow.ly/XVHZ50Z",
+          "sourceUrl": "https://bsky.app/profile/cato.org/post/3mufvr6pfdi25",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "drugs-addiction",
       "label": "Drugs & Addiction",
       "count": 2,
@@ -1206,24 +1233,6 @@
           "summary": "Discusses Trump Education Department potentially curbing ABA accreditation power",
           "quote": "The ABA has long abused its accreditation power, including pressuring law schools to work around state anti-discrimination laws. Now the Trump Education Department may strip it of that power. Cato's Andrew Gillen breaks down what's at stake.\n\nhttps://ow.ly/4amN50ZJBBy",
           "sourceUrl": "https://bsky.app/profile/cato.org/post/3muz6pfk2s227",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "religion-faith",
-      "label": "Religion & Faith",
-      "count": 1,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Advocates state neutrality on religion, personal conscience protected",
-          "quote": "Faith and morality are matters of personal conscience, not state enforcement. In a piece for the Pakistani paper Dunya News, Cato's Mustafa Akyol makes the case, from Islam's own sources, for a state that protects rights and leaves belief to the individual.\n\nhttps://ow.ly/XVHZ50Z",
-          "sourceUrl": "https://bsky.app/profile/cato.org/post/3mufvr6pfdi25",
           "platform": "bluesky"
         }
       ],

@@ -1,7 +1,7 @@
 {
   "voiceId": "shawn-ryan-show",
   "voiceName": "Shawn Ryan Show",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 20,
   "stanceCount": 80,
   "topics": [
@@ -519,6 +519,42 @@
       "active": true
     },
     {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Claims Iran was pursuing nuclear weapons development",
+          "quote": "Could Iran Hold All of Europe Hostage? \ud83e\udd14",
+          "sourceUrl": "https://www.youtube.com/shorts/yTUnDv-KIfs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Warns soldiers about potential Iran deployment risks",
+          "quote": "A Navy SEAL\u2019s Warning to Soldiers Going to Iran \u26a0\ufe0f",
+          "sourceUrl": "https://www.youtube.com/shorts/piIvbzEjQ-A",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Examines North Korea's nuclear funding mechanisms and methods",
+          "quote": "How North Korea is Funding Their Nukes?! \ud83e\udd2f",
+          "sourceUrl": "https://x.com/ShawnRyanShow/status/2085523820081709258",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "drugs-addiction",
       "label": "Drugs & Addiction",
       "count": 4,
@@ -561,43 +597,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 3,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Claims Iran was pursuing nuclear weapons development",
-          "quote": "Could Iran Hold All of Europe Hostage? \ud83e\udd14",
-          "sourceUrl": "https://www.youtube.com/shorts/yTUnDv-KIfs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-22",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Warns soldiers about potential Iran deployment risks",
-          "quote": "A Navy SEAL\u2019s Warning to Soldiers Going to Iran \u26a0\ufe0f",
-          "sourceUrl": "https://www.youtube.com/shorts/piIvbzEjQ-A",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Examines North Korea's nuclear funding mechanisms and methods",
-          "quote": "How North Korea is Funding Their Nukes?! \ud83e\udd2f",
-          "sourceUrl": "https://x.com/ShawnRyanShow/status/2085523820081709258",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "religion-faith",

@@ -1,9 +1,9 @@
 {
   "voiceId": "elizabeth-warren",
   "voiceName": "Elizabeth Warren",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 16,
-  "stanceCount": 77,
+  "stanceCount": 76,
   "topics": [
     {
       "topic": "elections",
@@ -303,7 +303,7 @@
           "date": "2026-08-06",
           "topic": "housing-infrastructure",
           "stance": "lean",
-          "summary": "Questions rising rental costs and affordability",
+          "summary": "Questions causes of rising rental costs",
           "quote": "Want to know why your rent keeps going up?",
           "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7670914970384665886",
           "platform": "tiktok"
@@ -366,7 +366,7 @@
           "date": "2026-08-27",
           "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Questions airline industry consumer protection standards",
+          "summary": "Questions airline compensation policies for flight cancellations",
           "quote": "Why are airlines not required to compensate you when your flight gets canceled?",
           "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7678838031888977182",
           "platform": "tiktok"
@@ -645,7 +645,7 @@
           "date": "2026-08-07",
           "topic": "education",
           "stance": "lean",
-          "summary": "Criticizes student debt burden on young Americans",
+          "summary": "Criticizes student debt burden as barrier to economic mobility",
           "quote": "You shouldn\u2019t have to win Love Island to get out of student debt.",
           "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7671372733464268062",
           "platform": "tiktok"
@@ -679,42 +679,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 3,
-      "lastActive": "2026-08-06",
-      "stances": [
-        {
-          "date": "2026-08-06",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump tax cuts benefiting wealthy individuals",
-          "quote": "While Americans struggle to afford groceries and health care, Donald Trump is bragging about how his tax law helped his friend buy a private jet.",
-          "sourceUrl": "https://www.tiktok.com/@elizabethwarren/video/7670913732301655326",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Attacks Trump for dismissing affordability concerns, ignoring families",
-          "quote": "Donald Trump has said all along that he thinks affordability is a hoax.\n\nThat it doesn't really exist. A ho-hum.\n\nHe has made clear he doesn't care about families in America.",
-          "sourceUrl": "https://x.com/ewarren/status/2085082463160697234",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-26",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump's tax cuts for billionaires, lack of price action",
-          "quote": "Trump talks about bringing back jobs and lowering prices. But his record?\n\n\u2705Tax cuts for billionaires.\n\n\u2705No action on price-gouging.\n\n\u2705Deficit explosion.\n\nWorking families deserve better than failed trickle-down economics.",
-          "sourceUrl": "https://x.com/ewarren/status/2081387165573923125",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "military-defense",
@@ -765,6 +729,33 @@
           "summary": "Criticizes Trump company's pay-to-play scheme as corruption benefiting the wealthy",
           "quote": "$100,000 a month.\n\nThat's what Trump\u2019s company is charging Wall Street insiders for early access to his market-moving announcements.\n\nIt\u2019s corruption\u2014and the rich get richer while everyone else falls further behind.\n\nnpr.org/2026/08/01/nx-s1-591\u2026\n\nLink\n\n\n\nFor sale: early access t",
           "sourceUrl": "https://x.com/ewarren/status/2084686921435934757",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-08-05",
+      "stances": [
+        {
+          "date": "2026-08-05",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Attacks Trump for dismissing affordability concerns, ignoring families",
+          "quote": "Donald Trump has said all along that he thinks affordability is a hoax.\n\nThat it doesn't really exist. A ho-hum.\n\nHe has made clear he doesn't care about families in America.",
+          "sourceUrl": "https://x.com/ewarren/status/2085082463160697234",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-26",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's tax cuts for billionaires, lack of price action",
+          "quote": "Trump talks about bringing back jobs and lowering prices. But his record?\n\n\u2705Tax cuts for billionaires.\n\n\u2705No action on price-gouging.\n\n\u2705Deficit explosion.\n\nWorking families deserve better than failed trickle-down economics.",
+          "sourceUrl": "https://x.com/ewarren/status/2081387165573923125",
           "platform": "x"
         }
       ],

@@ -1,9 +1,9 @@
 {
   "voiceId": "ari-melber",
   "voiceName": "Ari Melber",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 11,
-  "stanceCount": 23,
+  "stanceCount": 24,
   "topics": [
     {
       "topic": "trump-administration",
@@ -15,7 +15,7 @@
           "date": "2026-08-26",
           "topic": "trump-administration",
           "stance": "lean",
-          "summary": "Reports Trump allegedly intervened in DOJ antitrust case",
+          "summary": "Trump allegedly pressured DOJ to settle antitrust case against Live Nation",
           "quote": "Reporting on a bombshell Wall Street Journal investigation detailing how President Trump allegedly intervened in the DOJ\u2019s antitrust case against Live Nation, urging officials to settle just days before the trial began.",
           "sourceUrl": "https://www.tiktok.com/@arimelber/video/7678421185650035982",
           "platform": "tiktok"
@@ -87,6 +87,33 @@
       "active": true
     },
     {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Judge blocked Trump mail ballot control order before midterms",
+          "quote": "A federal judge temporarily halted a Trump-directed Postal Service requirement that would exert control over mail-in ballots ahead of the midterms.",
+          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7681816722613095693",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "USPS whistleblower warns Trump ballot order risks election disruption",
+          "quote": "A whistleblower complaint alleges USPS\u2019s rollout of President Trump\u2019s mail-in ballot order could trigger a \u201ccatastrophic failure which could derail the midterm elections\u201d.",
+          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7680989655067577613",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 2,
@@ -96,7 +123,7 @@
           "date": "2026-09-01",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Bill Gates warns about risks of AI boom",
+          "summary": "Reports Gates warns AI boom poses significant risks",
           "quote": "SEE IT: Microsoft founder Bill Gates sounds the alarm on the AI boom. Full breakdown on YouTube at ms.now/ari \ud83d\udcfa",
           "sourceUrl": "https://www.tiktok.com/@arimelber/video/7680630498250607886",
           "platform": "tiktok"
@@ -202,24 +229,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 1,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Highlights concerns about mail-in ballot rollout risks to elections",
-          "quote": "A whistleblower complaint alleges USPS\u2019s rollout of President Trump\u2019s mail-in ballot order could trigger a \u201ccatastrophic failure which could derail the midterm elections\u201d.",
-          "sourceUrl": "https://www.tiktok.com/@arimelber/video/7680989655067577613",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "epstein-scandal",

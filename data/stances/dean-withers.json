@@ -1,16 +1,25 @@
 {
   "voiceId": "dean-withers",
   "voiceName": "Dean Withers",
-  "updatedAt": "2026-09-08",
-  "topicCount": 9,
-  "stanceCount": 26,
+  "updatedAt": "2026-09-09",
+  "topicCount": 10,
+  "stanceCount": 27,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 12,
-      "lastActive": "2026-08-18",
+      "lastActive": "2026-09-07",
       "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Calls for Congress to impeach Trump, suggests mental unfitness",
+          "quote": "Our President Has Lost His Mind. Congress, Impeach Him Now.",
+          "sourceUrl": "https://www.tiktok.com/@itsdeaann/video/7682920321975897374",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-08-18",
           "topic": "trump-administration",
@@ -30,15 +39,6 @@
           "platform": "tiktok"
         },
         {
-          "date": "2026-07-31",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Highlights criticism of Trump as pedophile; frames as embarrassing moment",
-          "quote": "Fox News Host Rushes To End Segment After Guest Calls Trump A \u201cP*dophile President\u201d\ud83d\ude2d",
-          "sourceUrl": "https://www.tiktok.com/@itsdeaann/video/7668816334511181086",
-          "platform": "tiktok"
-        },
-        {
           "date": "2026-07-20",
           "topic": "trump-administration",
           "stance": "lean",
@@ -51,7 +51,7 @@
           "date": "2026-07-18",
           "topic": "trump-administration",
           "stance": "strong",
-          "summary": "Trump's address backfired; calls for congressional impeachment",
+          "summary": "Calls Trump's address failed and recommends Congress impeach",
           "quote": "Trumps Address To The Nation Has COMPLETELY Backfired. Congress, Its Time To Impeach.",
           "sourceUrl": "https://www.tiktok.com/@itsdeaann/video/7663979241016528159",
           "platform": "tiktok"
@@ -69,7 +69,7 @@
           "date": "2026-07-13",
           "topic": "trump-administration",
           "stance": "strong",
-          "summary": "Celebrates Trump loss as major American victory",
+          "summary": "Declares America won and Trump lost on unspecified issue",
           "quote": "Today, America Has Won & Trump Has Lost. This is a HUGE WIN!",
           "sourceUrl": "https://www.tiktok.com/@itsdeaann/video/7662124710565612830",
           "platform": "tiktok"
@@ -120,7 +120,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "culture-war",
@@ -240,7 +240,7 @@
           "date": "2026-09-01",
           "topic": "epstein-scandal",
           "stance": "lean",
-          "summary": "Supports calling out Trump admin on Epstein; wishes more names included",
+          "summary": "Approves Massie's Trump admin Epstein criticism, wants more names",
           "quote": "Massie CALLS OUT The Trump Admin For Lying About Epstein. I wish he included a few more names\u2026 but this is still a step in the right direction.",
           "sourceUrl": "https://www.tiktok.com/@itsdeaann/video/7680673172735233310",
           "platform": "tiktok"
@@ -264,7 +264,25 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-07-31",
+      "stances": [
+        {
+          "date": "2026-07-31",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Highlights Trump called pedophile president, frames as uncomfortable for Fox",
+          "quote": "Fox News Host Rushes To End Segment After Guest Calls Trump A \u201cP*dophile President\u201d\ud83d\ude2d",
+          "sourceUrl": "https://www.tiktok.com/@itsdeaann/video/7668816334511181086",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "uk-world-politics",

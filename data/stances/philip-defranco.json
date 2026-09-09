@@ -1,9 +1,9 @@
 {
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 21,
-  "stanceCount": 57,
+  "stanceCount": 61,
   "topics": [
     {
       "topic": "ai-technology",
@@ -15,7 +15,7 @@
           "date": "2026-09-02",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Billionaires lobbying for unpopular data center expansion",
+          "summary": "Criticizes billionaire influence in promoting rejected data center projects",
           "quote": "AI Billionaires Are Spending Millions To Sell You On The Data Centers You Rejected",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7681051759858453791",
           "platform": "tiktok"
@@ -125,9 +125,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 9,
-      "lastActive": "2026-09-02",
+      "count": 10,
+      "lastActive": "2026-09-08",
       "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Questions Trump pardon decisions, implies they warrant scrutiny",
+          "quote": "The 9/11 Cover Up Nobody Talks About &amp; The Lindsay Clancy Trump Pardon Panic Explained",
+          "sourceUrl": "https://www.youtube.com/watch?v=rnxbpUIiqv0",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-02",
           "topic": "trump-administration",
@@ -321,7 +330,7 @@
           "date": "2026-09-03",
           "topic": "housing-infrastructure",
           "stance": "lean",
-          "summary": "Government surveillance of residents raises privacy concerns",
+          "summary": "Raises concerns about resident surveillance in government housing programs",
           "quote": "Government Housing Tracking Residents With Minut Sensors",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7681437323703110943",
           "platform": "tiktok"
@@ -343,6 +352,42 @@
           "quote": "Even Texas Is Tired of Datacenters As Abbott Demands Audits",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7670301343273323807",
           "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 3,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Highlights severe child endangerment case, implies outrage over conditions",
+          "quote": "4 Kids Were Trapped In A Semi-Truck Cab For 6 Years",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7680953376065998110",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Frames abuse as serious harm requiring intervention",
+          "quote": "Horrible Mom's Abusive Meltdown Accidentally Saved This Teen's Life",
+          "sourceUrl": "https://www.youtube.com/watch?v=ZVT05AYT0fA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-20",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Arrest reveals serious criminal charges against Tate",
+          "quote": "Andrew Tate's Arrest Is Way Worse Than You Think",
+          "sourceUrl": "https://www.youtube.com/watch?v=rqxGaIfcF9c",
+          "platform": "youtube"
         }
       ],
       "active": true
@@ -384,6 +429,60 @@
       "active": true
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Criticizes medical debt collection practices, implies healthcare billing abuses",
+          "quote": "A Doctor Sued A Mom Over Her C-Section Bill And She Got Handcuffed. Now He\u2019s A Senator",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7683295647092542750",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Criticizes public health response to measles outbreak",
+          "quote": "Measles Is Making a Comeback And We\u2019re Letting It Happen",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7675469608974945566",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 2,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Reports international sanctions on Israeli settlements, frames as negative development for Israel",
+          "quote": "Israel Freaks Out After 12 Countries Sanction Illegal West Bank Settlements",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7683243555913059614",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-07-22",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Calls for arrest of Netanyahu as war criminal",
+          "quote": "Mamdani Calls Netanyahu a War Criminal and Calls For His Arrest",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7665431421862825246",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "food-agriculture",
       "label": "Food & Agriculture",
       "count": 3,
@@ -415,33 +514,6 @@
           "quote": "Our Food Is Unsafe, Another Cyclospora Outbreak and Salmonella on Eggs",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7665825421035867423",
           "platform": "tiktok"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-08-24",
-      "stances": [
-        {
-          "date": "2026-08-24",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Frames abuse as serious harm requiring intervention",
-          "quote": "Horrible Mom's Abusive Meltdown Accidentally Saved This Teen's Life",
-          "sourceUrl": "https://www.youtube.com/watch?v=ZVT05AYT0fA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-20",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Arrest reveals serious criminal charges against Tate",
-          "quote": "Andrew Tate's Arrest Is Way Worse Than You Think",
-          "sourceUrl": "https://www.youtube.com/watch?v=rqxGaIfcF9c",
-          "platform": "youtube"
         }
       ],
       "active": false
@@ -544,24 +616,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Criticizes public health response to measles outbreak",
-          "quote": "Measles Is Making a Comeback And We\u2019re Letting It Happen",
-          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7675469608974945566",
-          "platform": "tiktok"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "trump-policy",
@@ -667,24 +721,6 @@
           "quote": "Why This Epstein Recruiter Situation Has People Questioning Everything",
           "sourceUrl": "https://www.youtube.com/watch?v=4tm4lZdc71A",
           "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 1,
-      "lastActive": "2026-07-22",
-      "stances": [
-        {
-          "date": "2026-07-22",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Calls for arrest of Netanyahu as war criminal",
-          "quote": "Mamdani Calls Netanyahu a War Criminal and Calls For His Arrest",
-          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7665431421862825246",
-          "platform": "tiktok"
         }
       ],
       "active": false

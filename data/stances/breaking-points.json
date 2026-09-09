@@ -1,7 +1,7 @@
 {
   "voiceId": "breaking-points",
   "voiceName": "Breaking Points",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 26,
   "stanceCount": 127,
   "topics": [
@@ -1140,33 +1140,6 @@
       "active": true
     },
     {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 2,
-      "lastActive": "2026-08-25",
-      "stances": [
-        {
-          "date": "2026-08-25",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Characterizes Supreme Court ruling as enabling Trump election power",
-          "quote": "SCOTUS Hands Trump Election Takeover Victory",
-          "sourceUrl": "https://www.youtube.com/watch?v=XXR3zuiBzT0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-24",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Celebrates O'Keefe's legal victory and case reversal",
-          "quote": "James O'Keefe Wins Stunning Reversal In 2016 Sting Case",
-          "sourceUrl": "https://www.youtube.com/watch?v=Z3sIw8pyLBE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 3,
@@ -1197,6 +1170,33 @@
           "summary": "Covers alleged MAGA figure defending himself against abuse accusations",
           "quote": "Accused MAGA Abuser FLAILS In Heated CNN Interview",
           "sourceUrl": "https://www.youtube.com/watch?v=hf2_sJNiiBI",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 2,
+      "lastActive": "2026-08-25",
+      "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Characterizes Supreme Court ruling as enabling Trump election power",
+          "quote": "SCOTUS Hands Trump Election Takeover Victory",
+          "sourceUrl": "https://www.youtube.com/watch?v=XXR3zuiBzT0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Celebrates O'Keefe's legal victory and case reversal",
+          "quote": "James O'Keefe Wins Stunning Reversal In 2016 Sting Case",
+          "sourceUrl": "https://www.youtube.com/watch?v=Z3sIw8pyLBE",
           "platform": "youtube"
         }
       ],
@@ -1290,7 +1290,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "protests-activism",

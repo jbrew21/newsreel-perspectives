@@ -1,7 +1,7 @@
 {
   "voiceId": "roland-martin",
   "voiceName": "Roland Martin",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 22,
   "stanceCount": 162,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 12,
-      "lastActive": "2026-09-08",
+      "lastActive": "2026-09-09",
       "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Criticizes ICE officer charges and Trump ally's racist tweets",
+          "quote": "Smithsonian's First Black Secretary Retires. ICE Officer Charged. Trump Ally's Racist Tweets",
+          "sourceUrl": "https://www.youtube.com/watch?v=i4xftvCWMA4",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-08",
           "topic": "civil-rights-race",
@@ -108,15 +117,6 @@
           "summary": "Criticizes institutional silence on racial issues; demands direct accountability confrontation",
           "quote": "Roland Erupts: 'Why Y\u2019all So Afraid To Talk?' St. Augustine Board Under Fire. Judge Rebukes Them.",
           "sourceUrl": "https://www.youtube.com/watch?v=9AlANTD8oPs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Prioritizes Black community needs over voting bloc analysis",
-          "quote": "Before You Ask How Black Men Vote, Ask What Black Men Need | #NoTranslation SERIES PREMIERE",
-          "sourceUrl": "https://www.youtube.com/watch?v=wwxWStYBWIE",
           "platform": "youtube"
         }
       ],
@@ -1551,7 +1551,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "climate-environment",

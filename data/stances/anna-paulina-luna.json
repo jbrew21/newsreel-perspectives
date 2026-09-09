@@ -1,9 +1,9 @@
 {
   "voiceId": "anna-paulina-luna",
   "voiceName": "Anna Paulina Luna",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 26,
-  "stanceCount": 86,
+  "stanceCount": 87,
   "topics": [
     {
       "topic": "congress-legislation",
@@ -654,6 +654,33 @@
       "active": false
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Calls for congressional special session on AI governance and existential risks",
+          "quote": "Congress needs to convene a special session on AI and what the future of the U.S. looks like. There are very real impacts to society as we know it. Partisan politics aside, there are massive implications of a race towards super intelligence. This is not a doomer post, as some of ",
+          "sourceUrl": "https://x.com/RepLuna/status/2097641199196684682",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Proposes requiring influencers to disclose foreign funding sources",
+          "quote": ".@RepGallagherCA1 &amp;  @PeteSessions have signed onto my bill to require influencers to disclose foreign funding! Thank you!",
+          "sourceUrl": "https://x.com/RepLuna/status/2095531699501203892",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 2,
@@ -864,24 +891,6 @@
           "summary": "Praises AfD's election victory in Germany",
           "quote": "Congratulations to our friends at @AfD for a massive victory! @UlrichSiegmund and @Alice_Weidel well done! \ud83c\uddfa\ud83c\uddf8\ud83d\udc4f\ud83c\udffb\ud83c\udde9\ud83c\uddea https://t.co/0iAUxeL9Xm",
           "sourceUrl": "https://x.com/RepLuna/status/2096682098723545364",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Proposes requiring influencers to disclose foreign funding sources",
-          "quote": ".@RepGallagherCA1 &amp;  @PeteSessions have signed onto my bill to require influencers to disclose foreign funding! Thank you!",
-          "sourceUrl": "https://x.com/RepLuna/status/2095531699501203892",
           "platform": "x"
         }
       ],

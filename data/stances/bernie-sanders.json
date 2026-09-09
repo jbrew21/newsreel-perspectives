@@ -1,9 +1,9 @@
 {
   "voiceId": "bernie-sanders",
   "voiceName": "Bernie Sanders",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 18,
-  "stanceCount": 112,
+  "stanceCount": 113,
   "topics": [
     {
       "topic": "ai-technology",
@@ -126,13 +126,22 @@
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 12,
-      "lastActive": "2026-09-07",
+      "lastActive": "2026-09-08",
       "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Advocates expanding Medicare to include dental, vision, hearing",
+          "quote": "AOC is right: We must expand Medicare to cover dental, vision and hearing and lower the eligibility age to 55 as part of the movement toward Medicare for All.   Let\u2019s get it done.",
+          "sourceUrl": "https://www.tiktok.com/@bernie/video/7683157460244368653",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-07",
           "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Questions whether current U.S. healthcare system is functional",
+          "stance": "lean",
+          "summary": "Questions whether current U.S. healthcare system is functioning",
           "quote": "Everywhere I go in America, I ask the same question: does anyone think our current healthcare system is working? The answer is true in red states and blue states alike.",
           "sourceUrl": "https://www.tiktok.com/@bernie/video/7682792900438150413",
           "platform": "tiktok"
@@ -226,15 +235,6 @@
           "quote": "The American healthcare system is broken.\n\nInsurance and drug companies make billions, while healthcare is unaffordable.\n\nHealthcare is a human right, not a privilege.\n\nDemocrats must pass Medicare for All.",
           "sourceUrl": "https://x.com/SenSanders/status/2086150888272318906",
           "platform": "x"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Criticizes hospital system for low wages, demands fair contract negotiations",
-          "quote": "It's unacceptable that Mass General Brigham refuses to meet its nurses at the bargaining table to negotiate a fair contract.\n\nMGB made $2.4 billion last year and pays its CEO over $8 million/year.\n\nMGB must treat nurses and home care workers with the respect they deserve.",
-          "sourceUrl": "https://x.com/SenSanders/status/2082964596323746183",
-          "platform": "x"
         }
       ],
       "active": true
@@ -249,7 +249,7 @@
           "date": "2026-09-05",
           "topic": "billionaires-wealth",
           "stance": "strong",
-          "summary": "Criticizes wealth concentration, calls for systemic economic change",
+          "summary": "Condemns wealth inequality, calls for systemic economic change",
           "quote": "One man (Mr. Musk) owns more wealth than the bottom half of American households. Meanwhile, 60% of Americans live paycheck to paycheck, nearly 800,000 are homeless and 85 million are uninsured. We can do better. We must do better.",
           "sourceUrl": "https://www.tiktok.com/@bernie/video/7682100407459499277",
           "platform": "tiktok"
@@ -897,6 +897,60 @@
       "active": true
     },
     {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 5,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Platforms Israeli critic of Netanyahu government",
+          "quote": "What an Israeli thinks of Netanyahu:",
+          "sourceUrl": "https://www.youtube.com/shorts/3zLPcl8um20",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Criticizes Israeli military and settler violence in West Bank",
+          "quote": "Since October 7th, Israeli soldiers and civilians have killed 1,000+ Palestinians in the occupied West Bank, 241 of them children. Israeli settlers have burned homes and businesses with the Israeli government\u2019s backing. Don't believe me? Hear it from a former Israeli soldier.",
+          "sourceUrl": "https://www.tiktok.com/@bernie/video/7683240288223005965",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Opposes Israeli settler violence, calls it ethnic cleansing, demands aid cutoff",
+          "quote": "Listen to the words of retired Israeli generals speaking out against Israeli settlers terrorizing Palestinians in the West Bank.\n \n\u201cThis is ethnic cleansing.\"\n \n\u201cOnce a society behaves this way, that society is doomed.\u201d\n \nNot another nickel for the extremist Netanyahu government.",
+          "sourceUrl": "https://x.com/SenSanders/status/2094546237647192439",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Distinguishes Gaza opposition from antisemitism, defends genocide criticism",
+          "quote": "Let me be very clear: opposing the genocide in Gaza is not antisemitism.",
+          "sourceUrl": "https://x.com/SenSanders/status/2082907211651580316",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-26",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Criticizes media neglect of Gaza suffering, emphasizes ongoing Palestinian crisis",
+          "quote": "GAZA: THE SUFFERING CONTINUES\n \nToday in Gaza, most of the TV cameras are gone and media interest has declined. But, more than nine months after the announcement of a supposed \u201cceasefire\u201d, the suffering of the Palestinian people continues.\n \nToday, 92% of housing units in Gaza ar",
+          "sourceUrl": "https://x.com/SenSanders/status/2081514845971927481",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 5,
@@ -933,7 +987,7 @@
           "date": "2026-09-02",
           "topic": "iran-conflict",
           "stance": "strong",
-          "summary": "Condemns U.S. military strikes on Iran as illegal war",
+          "summary": "Condemns Trump's Iran attack as illegal war, demands immediate halt",
           "quote": "Trump ran on ending \u201cendless wars.\u201d He lied. Without provocation, he attacked Iran. The result: 3,400 dead \u2014 including 18 US troops \u2014 & costs are soaring. We can't spend billions on endless wars while Americans struggle to afford the basics.  WE MUST END THIS ILLEGAL WAR NOW.",
           "sourceUrl": "https://www.tiktok.com/@bernie/video/7680982076908244237",
           "platform": "tiktok"
@@ -945,51 +999,6 @@
           "summary": "Opposes Iran war spending while domestic infrastructure crumbles",
           "quote": "The U.S. is the richest and most advanced nation on earth.\n\nWe are spending huge amounts on AI to bomb Iran and destroy infrastructure.\n\nYet after nearly 2 weeks, we can't restore electricity to Gary, IN, a low-income Black city?\n\nUnacceptable. Let\u2019s get our priorities straight.",
           "sourceUrl": "https://x.com/SenSanders/status/2091970263856394274",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 4,
-      "lastActive": "2026-09-08",
-      "stances": [
-        {
-          "date": "2026-09-08",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Platforms Israeli critic of Netanyahu government",
-          "quote": "What an Israeli thinks of Netanyahu:",
-          "sourceUrl": "https://www.youtube.com/shorts/3zLPcl8um20",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Opposes Israeli settler violence, calls it ethnic cleansing, demands aid cutoff",
-          "quote": "Listen to the words of retired Israeli generals speaking out against Israeli settlers terrorizing Palestinians in the West Bank.\n \n\u201cThis is ethnic cleansing.\"\n \n\u201cOnce a society behaves this way, that society is doomed.\u201d\n \nNot another nickel for the extremist Netanyahu government.",
-          "sourceUrl": "https://x.com/SenSanders/status/2094546237647192439",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Distinguishes Gaza opposition from antisemitism, defends genocide criticism",
-          "quote": "Let me be very clear: opposing the genocide in Gaza is not antisemitism.",
-          "sourceUrl": "https://x.com/SenSanders/status/2082907211651580316",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-26",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Criticizes media neglect of Gaza suffering, emphasizes ongoing Palestinian crisis",
-          "quote": "GAZA: THE SUFFERING CONTINUES\n \nToday in Gaza, most of the TV cameras are gone and media interest has declined. But, more than nine months after the announcement of a supposed \u201cceasefire\u201d, the suffering of the Palestinian people continues.\n \nToday, 92% of housing units in Gaza ar",
-          "sourceUrl": "https://x.com/SenSanders/status/2081514845971927481",
           "platform": "x"
         }
       ],

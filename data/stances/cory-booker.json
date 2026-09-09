@@ -1,9 +1,9 @@
 {
   "voiceId": "cory-booker",
   "voiceName": "Cory Booker",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 24,
-  "stanceCount": 84,
+  "stanceCount": 85,
   "topics": [
     {
       "topic": "trump-administration",
@@ -546,6 +546,42 @@
       "active": true
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 3,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes president for starting war of choice and minimizing service member deaths",
+          "quote": "18 American service members are not \u201csmall potatoes.\u201d They are sons and daughters. Husbands and wives. Heroes whose families will carry this loss for the rest of their lives. A president who starts a war of choice and then minimizes their deaths has forgotten what honor requires.",
+          "sourceUrl": "https://x.com/CoryBooker/status/2097459986729165205",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Commits to veteran care, dignity, and support services",
+          "quote": "I was honored to host a town hall last night with veterans, service members, and military families at the New Jersey Vietnam Veterans Memorial & Museum.\n\nTheir sacrifice built the freedoms we enjoy. Our job now is to make sure they have the care, dignity, and support they\u2019ve earn",
+          "sourceUrl": "https://bsky.app/profile/booker.senate.gov/post/3mu46yjcuts27",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes military leadership as failing, prioritizing campaigning",
+          "quote": "The war is failing. The Secretary is campaigning. https://t.co/LLSFCvgN6D",
+          "sourceUrl": "https://x.com/CoryBooker/status/2093051039825977814",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 3,
@@ -792,33 +828,6 @@
           "summary": "Opposes border wall as corrupt corporate giveaway, doubts effectiveness",
           "quote": "Trump\u2019s latest border wall push isn\u2019t about security\u2014it\u2019s a $19.4 billion corrupt giveaway to firms with deep GOP ties. Taxpayer dollars for something that will never achieve the objectives they keep selling. \nOp: @thebulwark",
           "sourceUrl": "https://x.com/CoryBooker/status/2087901744407683149",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-08-28",
-      "stances": [
-        {
-          "date": "2026-08-28",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Commits to veteran care, dignity, and support services",
-          "quote": "I was honored to host a town hall last night with veterans, service members, and military families at the New Jersey Vietnam Veterans Memorial & Museum.\n\nTheir sacrifice built the freedoms we enjoy. Our job now is to make sure they have the care, dignity, and support they\u2019ve earn",
-          "sourceUrl": "https://bsky.app/profile/booker.senate.gov/post/3mu46yjcuts27",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-27",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Criticizes military leadership as failing, prioritizing campaigning",
-          "quote": "The war is failing. The Secretary is campaigning. https://t.co/LLSFCvgN6D",
-          "sourceUrl": "https://x.com/CoryBooker/status/2093051039825977814",
           "platform": "x"
         }
       ],

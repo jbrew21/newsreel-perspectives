@@ -1,7 +1,7 @@
 {
   "voiceId": "raphael-warnock",
   "voiceName": "Raphael Warnock",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "topicCount": 16,
   "stanceCount": 59,
   "topics": [
@@ -474,6 +474,33 @@
       "active": false
     },
     {
+      "topic": "gun-policy",
+      "label": "Guns & Gun Policy",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "gun-policy",
+          "stance": "strong",
+          "summary": "Commits to ending gun violence and protecting school safety",
+          "quote": "Two years ago today, an unspeakable tragedy struck Apalachee High School. I\u2019m thinking of the victims, their families, and the entire Apalachee community as we remember the four souls we lost. I will never stop working to end gun violence and make our schools and communities safe",
+          "sourceUrl": "https://x.com/SenatorWarnock/status/2095877544847261813",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "gun-policy",
+          "stance": "lean",
+          "summary": "Expresses concern for shooting victims, thanks first responders",
+          "quote": "I\u2019m closely following reports of a shooting at Warner Robins High School. My prayers are with the two students who were injured, their families, and the entire Warner Robins community. I\u2019m grateful to the law enforcement officers and first responders on the scene.",
+          "sourceUrl": "https://x.com/SenatorWarnock/status/2087632026396504543",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 3,
@@ -507,34 +534,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "gun-policy",
-      "label": "Guns & Gun Policy",
-      "count": 2,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "gun-policy",
-          "stance": "strong",
-          "summary": "Commits to ending gun violence and protecting school safety",
-          "quote": "Two years ago today, an unspeakable tragedy struck Apalachee High School. I\u2019m thinking of the victims, their families, and the entire Apalachee community as we remember the four souls we lost. I will never stop working to end gun violence and make our schools and communities safe",
-          "sourceUrl": "https://x.com/SenatorWarnock/status/2095877544847261813",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "gun-policy",
-          "stance": "lean",
-          "summary": "Expresses concern for shooting victims, thanks first responders",
-          "quote": "I\u2019m closely following reports of a shooting at Warner Robins High School. My prayers are with the two students who were injured, their families, and the entire Warner Robins community. I\u2019m grateful to the law enforcement officers and first responders on the scene.",
-          "sourceUrl": "https://x.com/SenatorWarnock/status/2087632026396504543",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "housing-infrastructure",
