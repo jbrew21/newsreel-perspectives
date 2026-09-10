@@ -139,12 +139,10 @@ class StanceOrderingTests(unittest.TestCase):
     def _build(self, posts):
         stances = [build_stances.stance_from_post(p) for p in posts]
         stances = [s for s in stances if s]
-        cutoff = (datetime.now() - timedelta(days=build_stances.MAX_AGE_DAYS)
-                  ).strftime('%Y-%m-%d')
         today = datetime.now().strftime('%Y-%m-%d')
         return build_stances.build_store(
             "v", "V", stances, None, build_stances.load_topic_labels(),
-            cutoff, today)
+            today)
 
     def test_volume_outranks_a_single_newer_post(self):
         posts = ([self._post("culture-war", 3, i) for i in range(6)] +

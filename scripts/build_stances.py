@@ -31,9 +31,11 @@ POSTS_DIR = ROOT / "data" / "posts"
 STANCES_DIR = ROOT / "data" / "stances"
 TAXONOMY_PATH = ROOT / "data" / "taxonomy.json"
 
-# Keep the store bounded.
-MAX_STANCES_PER_TOPIC = 12      # most recent N per topic
-MAX_AGE_DAYS = 120              # drop stances older than this
+# Never delete a tagged perspective. The per-voice store keeps every stance a
+# voice has ever taken — no age-out, no per-topic cap. The profile UI
+# (voice.html) slices topics/stances for display (slice(0, 8) topics,
+# slice(0, N) per topic), so an unbounded store never bloats the rendered page,
+# and each voice's file is fetched lazily one at a time.
 ACTIVE_DAYS = 14                # a topic is "live" if touched within this many days
 ACTIVE_BOOST = 1.5              # freshness weight applied to a live topic's volume
 
@@ -173,14 +175,14 @@ def dedupe_quotes(stances):
     return kept
 
 
-def build_store(voice_id, voice_name, new_stances, existing_store, labels, cutoff_date, updated_at):
-    """Merge new stances into the existing store, dedup, group, cap, age out."""
+def build_store(voice_id, voice_name, new_stances, existing_store, labels, updated_at):
+    """Merge new stances into the existing store, dedup, group. Never drops a
+    tagged perspective (no age-out, no per-topic cap) — the store is the
+    complete record of every stance this voice has taken."""
     merged = {}  # sourceUrl -> stance (dedup, prefer newest seen)
     for s in flatten_store(existing_store) + new_stances:
         if not s or not s.get('sourceUrl'):
             continue
-        if s.get('date', '') and s['date'] < cutoff_date:
-            continue  # too old
         merged[s['sourceUrl']] = s
 
     # Group by topic (skip any entry missing a topic — defensive against a
@@ -197,7 +199,6 @@ def build_store(voice_id, voice_name, new_stances, existing_store, labels, cutof
     for slug, stances in by_topic.items():
         stances.sort(key=lambda x: x.get('date', ''), reverse=True)
         stances = dedupe_quotes(stances)
-        stances = stances[:MAX_STANCES_PER_TOPIC]
         if not stances:
             continue  # everything in this topic was a dupe/empty — no header
         total += len(stances)
@@ -258,12 +259,6 @@ def main():
     if not date:
         date = dates[0]
 
-    # Cutoff for aging out old stances
-    try:
-        cutoff_date = (datetime.strptime(date, '%Y-%m-%d') - timedelta(days=MAX_AGE_DAYS)).strftime('%Y-%m-%d')
-    except ValueError:
-        cutoff_date = '0000-00-00'
-
     labels = load_topic_labels()
     STANCES_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -293,7 +288,7 @@ def main():
     total_stances = 0
     for vid, rec in new_by_voice.items():
         existing = None if rebuild else load_store(vid)
-        store = build_store(vid, rec['name'], rec['stances'], existing, labels, cutoff_date, date)
+        store = build_store(vid, rec['name'], rec['stances'], existing, labels, date)
         if store['stanceCount'] == 0:
             continue
         (STANCES_DIR / f'{vid}.json').write_text(json.dumps(store, indent=2))
