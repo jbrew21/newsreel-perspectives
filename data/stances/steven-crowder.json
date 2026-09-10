@@ -2,8 +2,8 @@
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
   "updatedAt": "2026-09-10",
-  "topicCount": 16,
-  "stanceCount": 60,
+  "topicCount": 17,
+  "stanceCount": 61,
   "topics": [
     {
       "topic": "culture-war",
@@ -616,6 +616,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Links Islamic terrorism concerns to Trump policy messaging",
+          "quote": "\ud83d\udd34 Charlie Kirk, Islamic Terrorists, and Trump's Giving You $5k: Let's Dig In",
+          "sourceUrl": "https://www.youtube.com/watch?v=P9CJFa6xFss",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "billionaires-wealth",

@@ -2,8 +2,8 @@
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
   "updatedAt": "2026-09-10",
-  "topicCount": 25,
-  "stanceCount": 114,
+  "topicCount": 26,
+  "stanceCount": 115,
   "topics": [
     {
       "topic": "culture-war",
@@ -1111,6 +1111,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "religion-faith",
+      "label": "Religion & Faith",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "religion-faith",
+          "stance": "strong",
+          "summary": "Opposes merging religions into single belief system",
+          "quote": "No, Talarico... You CANNOT Merge All Religions",
+          "sourceUrl": "https://www.youtube.com/watch?v=USUqP53bmX4",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "protests-activism",

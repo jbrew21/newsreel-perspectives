@@ -2,8 +2,8 @@
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
   "updatedAt": "2026-09-10",
-  "topicCount": 17,
-  "stanceCount": 109,
+  "topicCount": 18,
+  "stanceCount": 111,
   "topics": [
     {
       "topic": "sports",
@@ -395,7 +395,7 @@
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
-      "count": 12,
+      "count": 13,
       "lastActive": "2026-09-06",
       "stances": [
         {
@@ -415,6 +415,15 @@
           "quote": "Chill the hell out. Calm the hell down with the threats. I said what I said people! Watch my full response on YouTube especially after it was agreed there would be NO edits to the show.",
           "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7682441494405467406",
           "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-06",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Addresses accusations or speculation about his public conduct",
+          "quote": "Stephen A. Smith Says He Is Not Hiding",
+          "sourceUrl": "https://www.youtube.com/shorts/0i3tEt698Gw",
+          "platform": "youtube"
         },
         {
           "date": "2026-09-03",
@@ -1066,6 +1075,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Discusses political division and common good with Democratic senator",
+          "quote": "Crisis Of The Common Good: Sen. Chris Murphy On Fixing A Divided America | Stephen A. Smith",
+          "sourceUrl": "https://www.youtube.com/watch?v=lDf5AAukiH0",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "immigration",
