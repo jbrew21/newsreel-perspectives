@@ -2,8 +2,8 @@
   "voiceId": "wes-moore",
   "voiceName": "Wes Moore",
   "updatedAt": "2026-09-10",
-  "topicCount": 16,
-  "stanceCount": 77,
+  "topicCount": 17,
+  "stanceCount": 78,
   "topics": [
     {
       "topic": "state-local-politics",
@@ -805,6 +805,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Promotes vaccine access and safety using science-based approach",
+          "quote": "The Vax Act is keeping Marylanders safe using science, not politics. \n\nWe\u2019re doing everything we can to make essential vaccines free, accessible, and convenient for everyone. \n\nTo view the 2026-2027 vaccine schedule and recommendations, visit https://t.co/kIE2IvLhm5. https://t.co",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2098073180187271620",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "congress-legislation",

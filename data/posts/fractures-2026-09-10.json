@@ -1,96 +1,164 @@
 [
   {
-    "topic": "iran-conflict",
-    "topicDisplay": "Iran Conflict",
-    "headline": "US-Iran War Escalates as Costs Mount Domestically",
+    "topic": "elections",
+    "topicDisplay": "Elections",
+    "headline": "Trump Rallies GOP at Midterm Convention; Critics Pounce",
     "voiceCount": 20,
-    "clusterCount": 5,
-    "insight": "Beyond the war's dramatic escalation, a strong cross-partisan chorus criticizes its rising economic and strategic costs.",
+    "clusterCount": 4,
+    "insight": "Progressive media frames the GOP convention as a self-inflicted disaster while Republicans tout unity and achievements.",
     "clusters": [
       {
-        "name": "War Escalation Coverage",
+        "name": "Broader Anti-Trump Policy Critique",
         "voices": [
           {
-            "voiceId": "jeremy-scahill",
-            "voiceName": "Jeremy Scahill",
-            "photo": "/photos/jeremy-scahill.jpg",
-            "quote": "Iran and U.S. renew Hormuz attacks; Trump escalates Canada trade war; 13 killed in Sudan drone strike (by Drop Site News)",
-            "sourceUrl": "https://www.dropsitenews.com/p/iran-us-hormuz-trump-canada-trade-sudan-drone-strike",
+            "voiceId": "david-sirota",
+            "voiceName": "David Sirota",
+            "photo": "/photos/david-sirota.jpg",
+            "quote": "How Status Quo Democrats Could Create Another Trump . A new study suggests Democrats\u2019 broken promises won\u2019t just cost them elections \u2014 they could fuel an even more dangerous MAGA backlash.",
+            "sourceUrl": "https://www.levernews.com/how-status-quo-democrats-could-create-another-trump/",
             "platform": "substack",
-            "fit": 8,
+            "quoteQuality": 7
+          },
+          {
+            "voiceId": "joyce-vance",
+            "voiceName": "Joyce Vance",
+            "photo": "/photos/joyce-vance.jpg",
+            "quote": "\u201cThis order is\u2026not just outlandish, but wildly dangerous and destructive.\u201d @kateshaw.bsky.social joins me to discuss Trump\u2019s mail-in voting EO on a new @cafedotcom.bsky.social Insider podcast: cafe.vi",
+            "sourceUrl": "https://bsky.app/profile/joycewhitevance.bsky.social/post/3mv2ds4jauk2f",
+            "platform": "bluesky",
             "quoteQuality": 6
           },
           {
-            "voiceId": "kyle-kulinski",
-            "voiceName": "Kyle Kulinski",
-            "photo": "/photos/kyle-kulinski.jpg",
-            "quote": "ALL HELL BREAKS LOOSE As Iran CAPTURES US SUBMARINE &amp; MISSILES RAIN DOWN!! | The Kyle Kulinski Show",
-            "sourceUrl": "https://www.youtube.com/watch?v=ICWzk_uMMc0",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 2
+            "voiceId": "center-for-american-progress",
+            "voiceName": "Center for American Progress",
+            "photo": "/photos/center-for-american-progress.jpg",
+            "quote": "Today, the Trump administration released a proposal to change the U.S. census in ways that would significantly affect voting maps. www.americanprogress.org/press/statem...",
+            "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3mv4d3kgoxs23",
+            "platform": "bluesky",
+            "quoteQuality": 5
           },
           {
-            "voiceId": "benny-johnson",
-            "voiceName": "Benny Johnson",
-            "photo": "/photos/benny-johnson.jpg",
-            "quote": "Iran Thought Trump Would NEVER Do It\u2026He Finally  Just BOMBED Iran's Most Important Asset into ASH\u2026\ud83d\udd25",
-            "sourceUrl": "https://www.youtube.com/watch?v=-5yCNmfg6lU",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 2
+            "voiceId": "yascha-mounk",
+            "voiceName": "Yascha Mounk",
+            "photo": "/photos/yascha-mounk.jpg",
+            "quote": "Sarah Longwell on How Democrats Can Defeat Trump. Yascha Mounk and Sarah Longwell discuss why the pro-democracy coalition keeps losing the narrative war\u2014and how it can fight back.\n\nSarah Longwell is p",
+            "sourceUrl": "",
+            "platform": "podcast",
+            "quoteQuality": 5
           },
           {
-            "voiceId": "young-turks",
-            "voiceName": "The Young Turks",
-            "photo": "/photos/young-turks.jpg",
-            "quote": "Iran Retaliates as War SPIRALS Out of Control",
-            "sourceUrl": "https://www.youtube.com/watch?v=W7Hc7fZbrnY",
+            "voiceId": "elizabeth-warren",
+            "voiceName": "Elizabeth Warren",
+            "photo": "/photos/elizabeth-warren.jpg",
+            "quote": "I've spent years going after waste: corporate contractors overcharging taxpayers, insurers gaming Medicare, billionaires dodging taxes.\n\nBut DOGE wasn't about any of that.\n\nIt served the rich and powe",
+            "sourceUrl": "https://x.com/ewarren/status/2097400555521863834",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "jennifer-rubin",
+            "voiceName": "Jennifer Rubin",
+            "photo": "/photos/jennifer-rubin.jpg",
+            "quote": "\"Promising\" is a nice word for bribing",
+            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mv64iakuwk2f",
+            "platform": "bluesky",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "gretchen-whitmer",
+            "voiceName": "Gretchen Whitmer",
+            "photo": "/photos/gretchen-whitmer.jpg",
+            "quote": "We've seen it time and time again: while Republicans in DC alienate our allies and enact unconstitutional tariffs, working Michigan families pay the price.\n\nMichiganders need relief, not more uncertai",
+            "sourceUrl": "https://x.com/GovWhitmer/status/2098044409891672206",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "pramila-jayapal",
+            "voiceName": "Pramila Jayapal",
+            "photo": "/photos/pramila-jayapal.jpg",
+            "quote": "Digging through private medical records to kick out trans servicemembers is a new low for this administration.\n\nOur servicemembers\u2019 identities have nothing to do with their ability to serve this count",
+            "sourceUrl": "https://x.com/RepJayapal/status/2097790566444519817",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "Trump Is an Economic Illiterate",
+            "sourceUrl": "https://www.youtube.com/shorts/3G8ml4XuI4g",
             "platform": "youtube",
-            "fit": 10,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "lincoln-project",
+            "voiceName": "Lincoln Project",
+            "photo": "/photos/lincoln-project.jpg",
+            "quote": "What comes after Trump?",
+            "sourceUrl": "https://www.youtube.com/shorts/xWjr-3A92u0",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 10,
+        "bestQuote": {
+          "voiceName": "David Sirota",
+          "quote": "How Status Quo Democrats Could Create Another Trump . A new study suggests Democrats\u2019 broken promises won\u2019t just cost them elections \u2014 they could fuel an even more dangerous MAGA backlash.",
+          "platform": "substack",
+          "quality": 7
+        }
+      },
+      {
+        "name": "Convention Mockery/Backfire",
+        "voices": [
+          {
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "LIVE: TRUMP CONVENTION BACKFIRES\u2026 9/10/2026",
+            "sourceUrl": "https://www.youtube.com/watch?v=q6kQXYsUtqY",
+            "platform": "youtube",
             "quoteQuality": 1
           },
           {
             "voiceId": "cenk-uygur",
             "voiceName": "Cenk Uygur",
             "photo": "/photos/cenk-uygur.jpg",
-            "quote": "Iran Retaliates as War SPIRALS Out of Control",
-            "sourceUrl": "https://www.youtube.com/watch?v=W7Hc7fZbrnY",
+            "quote": "Trump's Midterm Convention Goes Sideways FAST",
+            "sourceUrl": "https://www.youtube.com/watch?v=x2N6j8WbC8k",
             "platform": "youtube",
-            "fit": 10,
             "quoteQuality": 1
           },
           {
-            "voiceId": "meidastouch",
-            "voiceName": "MeidasTouch",
-            "photo": "/photos/meidastouch.jpg",
-            "quote": "\ud83d\udea8Iran INFLICTS MASSIVE DAMAGE\u2026",
-            "sourceUrl": "https://www.youtube.com/watch?v=0Q14rxG0AZ8",
+            "voiceId": "pod-save-america",
+            "voiceName": "Pod Save America",
+            "photo": "/photos/pod-save-america.jpg",
+            "quote": "This pastor believes one party rule in Tennessee is \u201cnot American.\u201d",
+            "sourceUrl": "https://www.youtube.com/shorts/5JrVGCqNFr4",
             "platform": "youtube",
-            "fit": 9,
             "quoteQuality": 1
           },
           {
-            "voiceId": "chris-cuomo",
-            "voiceName": "Chris Cuomo",
-            "photo": "/photos/chris-cuomo.jpg",
-            "quote": "Trump Has No Way Out Of Iran",
-            "sourceUrl": "https://www.youtube.com/watch?v=dtBN8ZRAfKc",
+            "voiceId": "michael-knowles",
+            "voiceName": "Michael Knowles",
+            "photo": "/photos/michael-knowles.jpg",
+            "quote": "Republicans May Get Slaughtered In The Elections If This Is True",
+            "sourceUrl": "https://www.youtube.com/watch?v=IqDowug2W5g",
             "platform": "youtube",
-            "fit": 7,
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 7,
+        "voiceCount": 4,
         "bestQuote": {
-          "voiceName": "Jeremy Scahill",
-          "quote": "Iran and U.S. renew Hormuz attacks; Trump escalates Canada trade war; 13 killed in Sudan drone strike (by Drop Site News)",
-          "platform": "substack",
-          "quality": 6
+          "voiceName": "MeidasTouch",
+          "quote": "LIVE: TRUMP CONVENTION BACKFIRES\u2026 9/10/2026",
+          "platform": "youtube",
+          "quality": 1
         }
       },
       {
-        "name": "Economic Cost Critics",
+        "name": "Trump Erratic/Dangerous Behavior",
         "voices": [
           {
             "voiceId": "mark-kelly",
@@ -99,71 +167,37 @@
             "quote": "Last week, it wasn't even a \"war\" according to Trump. Before that, he's said dozens of times that Iran was totally defeated already.\n\nTrump is making it all up as he goes because he has no idea what h",
             "sourceUrl": "https://bsky.app/profile/captmarkkelly.bsky.social/post/3muzjn4b44622",
             "platform": "bluesky",
-            "fit": 8,
             "quoteQuality": 6
           },
           {
-            "voiceId": "robert-reich",
-            "voiceName": "Robert Reich",
-            "photo": "/photos/robert-reich.jpg",
-            "quote": "Trump\u2019s illegal war on Iran has cost the average U.S. household more than $760 in higher energy costs.\n\nThat\u2019s on top of the military spending an estimated $1B per DAY to keep waging it, with no end i",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mv23eozxcs2x",
+            "voiceId": "mehdi-hasan",
+            "voiceName": "Mehdi Hasan",
+            "photo": "/photos/mehdi-hasan.jpg",
+            "quote": "\"First Draft: Trump Is Insane. Just Check Out What He Posted All Over Labor Day Weekend\"\n\nThe U.S. president, once again, makes his own strong case for his own removal from office.",
+            "sourceUrl": "https://bsky.app/profile/mehdirhasan.bsky.social/post/3muyza3vhhc2r",
             "platform": "bluesky",
-            "fit": 10,
             "quoteQuality": 5
           },
           {
-            "voiceId": "center-for-american-progress",
-            "voiceName": "Center for American Progress",
-            "photo": "/photos/center-for-american-progress.jpg",
-            "quote": "Trump's war of choice in Iran has spiked diesel prices to a record high, making it all the more difficult for American farmers like Aaron Lehman to earn a living and get by.",
-            "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3mv47wmzozf27",
+            "voiceId": "judd-legum",
+            "voiceName": "Judd Legum",
+            "photo": "/photos/judd-legum.jpg",
+            "quote": "2. As the years have passed, Trump's account of the day has become even more dramatic and implausible. \n\nWe review the actual facts in today's Popular Information:",
+            "sourceUrl": "https://bsky.app/profile/juddlegum.bsky.social/post/3mv3k7h3hiy2z",
             "platform": "bluesky",
-            "fit": 10,
             "quoteQuality": 5
           },
           {
-            "voiceId": "amy-klobuchar",
-            "voiceName": "Amy Klobuchar",
-            "photo": "/photos/amy-klobuchar.jpg",
-            "quote": "With diesel prices hitting a record $5.75 a gallon in Minnesota, schools are limiting field trips and consolidating bus routes. That\u2019s the cost of Trump\u2019s war in Iran: higher fuel prices that are putt",
-            "sourceUrl": "https://x.com/amyklobuchar/status/2097822442064429464",
+            "voiceId": "ted-lieu",
+            "voiceName": "Ted Lieu",
+            "photo": "/photos/ted-lieu.jpg",
+            "quote": "Trump only acts for his own benefit. Americans pay the price. https://t.co/ppT2ogm9dP",
+            "sourceUrl": "https://x.com/RepTedLieu/status/2097704180261478601",
             "platform": "x",
-            "fit": 10,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "chris-murphy",
-            "voiceName": "Chris Murphy",
-            "photo": "/photos/chris-murphy.jpg",
-            "quote": "This war has gone completely off the rails and Republicans in Congress could put an end to it next week if they chose. \n\nThe only reason this war - and the misery and death and inflation it brings - c",
-            "sourceUrl": "https://x.com/ChrisMurphyCT/status/2097686571470229961",
-            "platform": "x",
-            "fit": 7,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "Iran BRUTALLY MOCKS U.S. Bond Market IMPLOSION",
-            "sourceUrl": "https://www.youtube.com/watch?v=EecM-rgpzx8",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "Iran BRUTALLY MOCKS U.S. Bond Market IMPLOSION",
-            "sourceUrl": "https://www.youtube.com/watch?v=EecM-rgpzx8",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
+            "quoteQuality": 3
           }
         ],
-        "voiceCount": 7,
+        "voiceCount": 4,
         "bestQuote": {
           "voiceName": "Mark Kelly",
           "quote": "Last week, it wasn't even a \"war\" according to Trump. Before that, he's said dozens of times that Iran was totally defeated already.\n\nTrump is making it all up as he goes because he has no idea what h",
@@ -172,36 +206,325 @@
         }
       },
       {
-        "name": "War Powers/Restraint Critics",
+        "name": "GOP Convention Enthusiasm",
         "voices": [
+          {
+            "voiceId": "dan-crenshaw",
+            "voiceName": "Dan Crenshaw",
+            "photo": "/photos/dan-crenshaw.jpg",
+            "quote": "This isn\u2019t hyperbole. It\u2019s true. I hope the voters in Michigan make the right choice and elect Mike Rogers.",
+            "sourceUrl": "https://x.com/DanCrenshawTX/status/2098129128071348519",
+            "platform": "x",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "ted-cruz",
+            "voiceName": "Ted Cruz",
+            "photo": "/photos/ted-cruz.jpg",
+            "quote": "Appreciate President Trump\u2019s kind words tonight. Proud of the work we\u2019ve done together, from Trump Accounts, historic school choice, and the largest tax cut for working families in a generation. \n\nAlw",
+            "sourceUrl": "https://x.com/tedcruz/status/2097868677127225762",
+            "platform": "x",
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Dan Crenshaw",
+          "quote": "This isn\u2019t hyperbole. It\u2019s true. I hope the voters in Michigan make the right choice and elect Mike Rogers.",
+          "platform": "x",
+          "quality": 5
+        }
+      }
+    ],
+    "belowThreshold": false
+  },
+  {
+    "topic": "foreign-policy-diplomacy",
+    "topicDisplay": "Foreign Policy Diplomacy",
+    "headline": "No single story: voices scattered across foreign policy topics",
+    "voiceCount": 24,
+    "clusterCount": 5,
+    "insight": "No unified story here\u2014voices are split across Ukraine diplomacy, 9/11's legacy, and China rivalry.",
+    "clusters": [
+      {
+        "name": "War on Terror Retrospective",
+        "voices": [
+          {
+            "voiceId": "mehdi-hasan",
+            "voiceName": "Mehdi Hasan",
+            "photo": "/photos/mehdi-hasan.jpg",
+            "quote": "\"How the \u2018War on Terror\u2019 Went Global - and Backfired on the United States\"\n\n#mustread essay from Pulitzer Prize-winning natsec journalist and Zeteo contributor \n@attackerman.bsky.social on the 25th an",
+            "sourceUrl": "https://bsky.app/profile/mehdirhasan.bsky.social/post/3mv4dbv3inc2r",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "spencer-ackerman",
+            "voiceName": "Spencer Ackerman",
+            "photo": "/photos/spencer-ackerman.jpg",
+            "quote": "How The War on Terror Went Global (Director's Cut). Twenty-five years ago, the 9/11 attacks prompted the U.S. to launch a disastrous and endless war. And to the rising powers of the 21st century, incl",
+            "sourceUrl": "https://www.forever-wars.com/how-the-war-on-terror-went-global-directors-cut/",
+            "platform": "substack",
+            "fit": 10,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "matt-yglesias",
+            "voiceName": "Matt Yglesias",
+            "photo": "/photos/matt-yglesias.jpg",
+            "quote": "The 9/11 attacks and the crisis of global liberalism  (by Matthew Yglesias)",
+            "sourceUrl": "https://www.slowboring.com/p/the-911-attacks-and-the-crisis-of",
+            "platform": "substack",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "center-for-american-progress",
+            "voiceName": "Center for American Progress",
+            "photo": "/photos/center-for-american-progress.jpg",
+            "quote": "The Trump administration\u2019s reckless national security agenda has cost lives around the world and threatened our democracy here at home.\n\nJoin CAP and our distinguished speakers on Wednesday, September",
+            "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3mv42tyl6uq2c",
+            "platform": "bluesky",
+            "fit": 4,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "mark-levin",
+            "voiceName": "Mark Levin",
+            "photo": "/photos/mark-levin.jpg",
+            "quote": "The 9/11 Anniversary: A Time to Reflect on the Enemy We Face",
+            "sourceUrl": "https://www.youtube.com/watch?v=x0k9O3X-eOw",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "hasanabi",
+            "voiceName": "HasanAbi",
+            "photo": "/photos/hasanabi.jpg",
+            "quote": "He Found The Families of the Fisherman The CIA Killed | Full Interview with Josh Rushing",
+            "sourceUrl": "https://www.youtube.com/watch?v=4pjEowgT8gU",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "jon-stewart",
+            "voiceName": "Jon Stewart",
+            "photo": "/photos/jon-stewart.jpg",
+            "quote": "'Regime Change' Fallout | The Weekly Show with Jon Stewart",
+            "sourceUrl": "https://www.youtube.com/shorts/l0EsCRo2_Kw",
+            "platform": "youtube",
+            "fit": 5,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 7,
+        "bestQuote": {
+          "voiceName": "Mehdi Hasan",
+          "quote": "\"How the \u2018War on Terror\u2019 Went Global - and Backfired on the United States\"\n\n#mustread essay from Pulitzer Prize-winning natsec journalist and Zeteo contributor \n@attackerman.bsky.social on the 25th an",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Ukraine/Russia Policy",
+        "voices": [
+          {
+            "voiceId": "lincoln-project",
+            "voiceName": "Lincoln Project",
+            "photo": "/photos/lincoln-project.jpg",
+            "quote": "If Trump could end this war he'd do it right now. Don't fall for his desperate midterm lies. Watch LP Senior Advisor Stuart Stevens on MSNOW.",
+            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mv6n2ptsmk2u",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 6
+          },
           {
             "voiceId": "phillips-obrien",
             "voiceName": "Phillips Payson O'Brien",
             "photo": "/photos/phillips-obrien.jpg",
-            "quote": "The strategic position of the USA would\u2019ve been immeasurably better if it had not started this ludicrous war with Iran and instead given the Patriot interceptors its wasted to Ukraine, to defend Ukr a",
-            "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3mv32fram3c27",
+            "quote": "Just a reminder. It was exactly 2 months ago that Trump \u201cpromised\u201d to get Ukraine a license to build Patriots. Since then it\u2019s been all backtracking and lies. \nIt was always a plan to help Putin by fu",
+            "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3muytxomjf22d",
             "platform": "bluesky",
             "fit": 9,
             "quoteQuality": 5
           },
           {
-            "voiceId": "cato-institute",
-            "voiceName": "Cato Institute",
-            "photo": "/photos/cato-institute.jpg",
-            "quote": "America\u2019s defense problem isn\u2019t too little spending. It\u2019s too many unclear missions. An open-ended Iran war and the costly Golden Dome missile-defense project risk wasting money and resources. Defense",
-            "sourceUrl": "https://bsky.app/profile/cato.org/post/3mv3sihcn5k2p",
+            "voiceId": "ian-bremmer",
+            "voiceName": "Ian Bremmer",
+            "photo": "/photos/ian-bremmer.jpg",
+            "quote": "ukraine\u2019s extraordinary capacity to defend their territory against a far more powerful enemy",
+            "sourceUrl": "https://bsky.app/profile/ianbremmer.com/post/3mv4dpv5h3s2z",
             "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
+            "fit": 8,
+            "quoteQuality": 4
           },
           {
-            "voiceId": "chris-murphy",
-            "voiceName": "Chris Murphy",
-            "photo": "/photos/chris-murphy.jpg",
-            "quote": "This war has gone completely off the rails and Republicans in Congress could put an end to it next week if they chose. \n\nThe only reason this war - and the misery and death and inflation it brings - c",
-            "sourceUrl": "https://x.com/ChrisMurphyCT/status/2097686571470229961",
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "All HELL BREAKS LOOSE as Zelenskyy IS TARGETED?!!",
+            "sourceUrl": "https://www.youtube.com/watch?v=DOG8M604qCU",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "jimmy-dore",
+            "voiceName": "Jimmy Dore",
+            "photo": "/photos/jimmy-dore.jpg",
+            "quote": "Zelensky Threatens To Shoot Down Commercial Aircraft",
+            "sourceUrl": "https://www.youtube.com/watch?v=lAI7hlzbwYk",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "ted-cruz",
+            "voiceName": "Ted Cruz",
+            "photo": "/photos/ted-cruz.jpg",
+            "quote": "BONUS POD: Zelensky Crowned the \u2018Free World\u2019 Leader as Democrats Ditch America",
+            "sourceUrl": "https://www.youtube.com/watch?v=1hbmA6HemRk",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 6,
+        "bestQuote": {
+          "voiceName": "Lincoln Project",
+          "quote": "If Trump could end this war he'd do it right now. Don't fall for his desperate midterm lies. Watch LP Senior Advisor Stuart Stevens on MSNOW.",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "China Threat Focus",
+        "voices": [
+          {
+            "voiceId": "bill-bishop",
+            "voiceName": "Bill Bishop",
+            "photo": "/photos/bill-bishop.jpg",
+            "quote": "Deflation over for now; MOFCOM responds to US distillation advisory; DeepSeek IPO and new model; Xi-Trump summit. Expectations should be low for US-China AI discussions around Xi\u2019s upcoming visit, not",
+            "sourceUrl": "https://sinocism.com/p/deflation-over-for-now-mofcom-responds",
+            "platform": "substack",
+            "fit": 7,
+            "quoteQuality": 7
+          },
+          {
+            "voiceId": "pete-ricketts",
+            "voiceName": "Pete Ricketts",
+            "photo": "/photos/pete-ricketts.jpg",
+            "quote": "Any potential efforts by Communist China to interfere with our public discourse should not surprise us. The CCP is our greatest existential threat.\n\nhttps://t.co/5UGOvaBwG9",
+            "sourceUrl": "https://x.com/SenatorRicketts/status/2097328676069052456",
             "platform": "x",
             "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "michael-mccaul",
+            "voiceName": "Michael McCaul",
+            "photo": "/photos/michael-mccaul.jpg",
+            "quote": "It's an honor to lead a bipartisan congressional delegation to New Zealand and Australia this week and to meet with officials including @NewZealandMFA Minister Peters.\n\nThe U.S. remains committed to w",
+            "sourceUrl": "https://x.com/RepMcCaul/status/2098081842138399076",
+            "platform": "x",
+            "fit": 7,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "heritage-foundation",
+            "voiceName": "Heritage Foundation",
+            "photo": "/photos/heritage-foundation.jpg",
+            "quote": "\ud83c\udde8\ud83c\uddf3 Over the last decade, entities linked to China have spent hundreds of millions of dollars influencing policymakers in Washington.\n\nOn September 23, Heritage will unveil the China Lobbying Tracker, ",
+            "sourceUrl": "https://x.com/Heritage/status/2097672176920866934",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "Bill Bishop",
+          "quote": "Deflation over for now; MOFCOM responds to US distillation advisory; DeepSeek IPO and new model; Xi-Trump summit. Expectations should be low for US-China AI discussions around Xi\u2019s upcoming visit, not",
+          "platform": "substack",
+          "quality": 7
+        }
+      },
+      {
+        "name": "Institutional/Regional Diplomacy",
+        "voices": [
+          {
+            "voiceId": "marco-rubio",
+            "voiceName": "Marco Rubio",
+            "photo": "/photos/marco-rubio.jpg",
+            "quote": "The United States stands shoulder-to-shoulder with Ecuador in the fight against narcoterrorism threatening our hemisphere. I worked together with President @DanielNoboaOk and Foreign Minister Kury thi",
+            "sourceUrl": "https://x.com/SecRubio/status/2098014879101669758",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "justin-wolfers",
+            "voiceName": "Justin Wolfers",
+            "photo": "/photos/justin-wolfers.jpg",
+            "quote": "Advice for the president: your job is to make it easy for other countries to say yes to deals that help Americans. Stop the \"51st state\" jokes, the insults toward Canada's government, and the memes. E",
+            "sourceUrl": "https://bsky.app/profile/justinwolfers.bsky.social/post/3mv4k2ibqp626",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "war-on-the-rocks",
+            "voiceName": "War on the Rocks",
+            "photo": "/photos/war-on-the-rocks.jpg",
+            "quote": "The Mecca Pact\u2019s Credibility Gap (by Doga Eralp). Collective-defense pacts are meant to make war less likely. Poorly designed ones can do the opposite. If allies make sweeping promises without the mil",
+            "sourceUrl": "https://warontherocks.com/the-mecca-pacts-credibility-gap/",
+            "platform": "blog",
+            "fit": 8,
+            "quoteQuality": 3
+          },
+          {
+            "voiceId": "coleman-hughes",
+            "voiceName": "Coleman Hughes",
+            "photo": "/photos/coleman-hughes.jpg",
+            "quote": "What We've Been Getting Wrong About the Cold War",
+            "sourceUrl": "https://www.youtube.com/shorts/ZjuB-bwDycc",
+            "platform": "youtube",
+            "fit": 4,
+            "quoteQuality": 2
+          }
+        ],
+        "voiceCount": 4,
+        "bestQuote": {
+          "voiceName": "Marco Rubio",
+          "quote": "The United States stands shoulder-to-shoulder with Ecuador in the fight against narcoterrorism threatening our hemisphere. I worked together with President @DanielNoboaOk and Foreign Minister Kury thi",
+          "platform": "x",
+          "quality": 5
+        }
+      },
+      {
+        "name": "Restraint/Anti-Intervention",
+        "voices": [
+          {
+            "voiceId": "trita-parsi",
+            "voiceName": "Trita Parsi",
+            "photo": "/photos/trita-parsi.jpg",
+            "quote": "Something has happened in the last few months. We went from hearing Western officials describe the US as a challenge, unreliable, unpredictable, and incompetent.\n\nNow, Western officials publicly refer",
+            "sourceUrl": "https://bsky.app/profile/tparsi.bsky.social/post/3mv3pf5cazk22",
+            "platform": "bluesky",
+            "fit": 7,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "thomas-massie",
+            "voiceName": "Thomas Massie",
+            "photo": "/photos/thomas-massie.jpg",
+            "quote": "@BasedMikeLee The U.S. should never have to fight a war for anyone.",
+            "sourceUrl": "https://x.com/RepThomasMassie/status/2097301203214369207",
+            "platform": "x",
+            "fit": 10,
             "quoteQuality": 4
           },
           {
@@ -211,75 +534,260 @@
             "quote": "The Iran war looms large as BRICS leaders gather in New Delhi (by Michael Corbin). As diplomats prepare for the BRICS Summit in New Delhi this weekend, the Iran war is looming large.India, which assum",
             "sourceUrl": "https://responsiblestatecraft.org/brics-summit-2026/",
             "platform": "blog",
-            "fit": 6,
+            "fit": 7,
             "quoteQuality": 3
+          }
+        ],
+        "voiceCount": 3,
+        "bestQuote": {
+          "voiceName": "Trita Parsi",
+          "quote": "Something has happened in the last few months. We went from hearing Western officials describe the US as a challenge, unreliable, unpredictable, and incompetent.\n\nNow, Western officials publicly refer",
+          "platform": "bluesky",
+          "quality": 5
+        }
+      }
+    ],
+    "belowThreshold": true
+  },
+  {
+    "topic": "congress-legislation",
+    "topicDisplay": "Congress Legislation",
+    "headline": "\"Congress Legislation\" is too vague to be one story",
+    "voiceCount": 17,
+    "clusterCount": 4,
+    "insight": "Voices scatter across unrelated congressional stories\u2014SNAP cuts, war powers, insider trading, oversight\u2014with no shared news event.",
+    "clusters": [
+      {
+        "name": "Oversight & Accountability Failures",
+        "voices": [
+          {
+            "voiceId": "barb-mcquade",
+            "voiceName": "Barb McQuade",
+            "photo": "/photos/barb-mcquade.jpg",
+            "quote": "Regardless of where you stand on other issues, the most important issue on the ballot in November is electing a Congress that fulfills its constitutional responsibility to check a lawless president. \n",
+            "sourceUrl": "https://bsky.app/profile/barbmcquade.bsky.social/post/3mv675fx4wc2n",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "joyce-vance",
+            "voiceName": "Joyce Vance",
+            "photo": "/photos/joyce-vance.jpg",
+            "quote": "Missouri has 2 congressional maps, conflicting court orders, a Secy of State facing a contempt hearing & a 2nd emergency trip to SCOTUS. It\u2019s a mess. I sorted it out tonight at Civil Discourse. joycev",
+            "sourceUrl": "https://bsky.app/profile/joycewhitevance.bsky.social/post/3mv5appjr722i",
+            "platform": "bluesky",
+            "fit": 5,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "david-sirota",
+            "voiceName": "David Sirota",
+            "photo": "/photos/david-sirota.jpg",
+            "quote": "\ud83d\udea8NEW from me: Dems overpromising & underdelivering enriched their donors & created backlash conditions for Trump's ascent.\n\nA new study offers a big warning: If Corporate Dems remain in control of the",
+            "sourceUrl": "https://bsky.app/profile/davidsirota.com/post/3mv6bry6te22e",
+            "platform": "bluesky",
+            "fit": 4,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "jennifer-rubin",
+            "voiceName": "Jennifer Rubin",
+            "photo": "/photos/jennifer-rubin.jpg",
+            "quote": "Republicans are culpable \u2026 it is time for Congress to do its job on matters of war and peace",
+            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mv63qorqxc2x",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "anna-paulina-luna",
+            "voiceName": "Anna Paulina Luna",
+            "photo": "/photos/anna-paulina-luna.jpg",
+            "quote": "Nancy Pelosi and too many others have increased their net worth exponentially by abusing their access to non-public information. \n\nPublic service is NOT a pathway to private wealth. \n\nThe American peo",
+            "sourceUrl": "https://x.com/RepLuna/status/2097862380059267396",
+            "platform": "x",
+            "fit": 7,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "rand-paul",
+            "voiceName": "Rand Paul",
+            "photo": "/photos/rand-paul.jpg",
+            "quote": "Good work exposing this, @nickshirleyy\n\nWhen will Congress take up these matters and get serious about ending waste, fraud, and abuse?",
+            "sourceUrl": "https://x.com/RandPaul/status/2097839471131529573",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "quincy-institute",
+            "voiceName": "Quincy Institute",
+            "photo": "/photos/quincy-institute.jpg",
+            "quote": "How Congress gave up its power over war and peace (by Alex Jordan). In 1973, after it was discovered that the U.S. had secretly bombed Cambodia, Congress took action. In an effort to assert its power ",
+            "sourceUrl": "https://responsiblestatecraft.org/congress-iran-war/",
+            "platform": "blog",
+            "fit": 9,
+            "quoteQuality": 3
+          },
+          {
+            "voiceId": "jim-jordan",
+            "voiceName": "Jim Jordan",
+            "photo": "/photos/jim-jordan.jpg",
+            "quote": "This is what Democrats use your tax dollars for.\n\nCrazy.",
+            "sourceUrl": "https://x.com/Jim_Jordan/status/2097720875462082833",
+            "platform": "x",
+            "fit": 5,
+            "quoteQuality": 3
+          },
+          {
+            "voiceId": "jon-stewart",
+            "voiceName": "Jon Stewart",
+            "photo": "/photos/jon-stewart.jpg",
+            "quote": "The Limits Of Oversight | The Weekly Show with Jon Stewart",
+            "sourceUrl": "https://www.youtube.com/shorts/XB3qCP1Y6H4",
+            "platform": "youtube",
+            "fit": 6,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 9,
+        "bestQuote": {
+          "voiceName": "Barb McQuade",
+          "quote": "Regardless of where you stand on other issues, the most important issue on the ballot in November is electing a Congress that fulfills its constitutional responsibility to check a lawless president. \n",
+          "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Political Commentary & Punditry",
+        "voices": [
+          {
+            "voiceId": "ramesh-ponnuru",
+            "voiceName": "Ramesh Ponnuru",
+            "photo": "/photos/ramesh-ponnuru.jpg",
+            "quote": "What Social Security Promises. Senator Bernie Moreno attempts to convert his perverse decision into an inarguable moral obligation.",
+            "sourceUrl": "https://www.nationalreview.com/corner/what-social-security-promises/",
+            "platform": "substack",
+            "fit": 7,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "charlie-sykes",
+            "voiceName": "Charlie Sykes",
+            "photo": "/photos/charlie-sykes.jpg",
+            "quote": "The shockwaves hit the tech world hard and are now rolling through the halls of Congress. Public opinion has already soured on the Brave New World of data centers and the TechBroligarchy, but we may b",
+            "sourceUrl": "https://bsky.app/profile/sykescharlie.bsky.social/post/3mv6klcok522y",
+            "platform": "bluesky",
+            "fit": 8,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "trevor-noah",
+            "voiceName": "Trevor Noah",
+            "photo": "/photos/trevor-noah.jpg",
+            "quote": "GOP RSVP's &quot;No&quot; to Trump Convention &amp; Push to Ban Mamdani from 9/11 Ceremony | The Daily Show",
+            "sourceUrl": "https://www.youtube.com/watch?v=wituhGL4BFU",
+            "platform": "youtube",
+            "fit": 8,
+            "quoteQuality": 2
+          },
+          {
+            "voiceId": "stephen-a-smith",
+            "voiceName": "Stephen A. Smith",
+            "photo": "/photos/stephen-a-smith.jpg",
+            "quote": "Crisis Of The Common Good: Sen. Chris Murphy On Fixing A Divided America | Stephen A. Smith",
+            "sourceUrl": "https://www.youtube.com/watch?v=lDf5AAukiH0",
+            "platform": "youtube",
+            "fit": 7,
+            "quoteQuality": 1
           }
         ],
         "voiceCount": 4,
         "bestQuote": {
-          "voiceName": "Phillips Payson O'Brien",
-          "quote": "The strategic position of the USA would\u2019ve been immeasurably better if it had not started this ludicrous war with Iran and instead given the Patriot interceptors its wasted to Ukraine, to defend Ukr a",
-          "platform": "bluesky",
-          "quality": 5
+          "voiceName": "Ramesh Ponnuru",
+          "quote": "What Social Security Promises. Senator Bernie Moreno attempts to convert his perverse decision into an inarguable moral obligation.",
+          "platform": "substack",
+          "quality": 6
         }
       },
       {
-        "name": "Pro-Pressure Regime Skeptics",
+        "name": "SNAP/Welfare Spending Fight",
         "voices": [
           {
-            "voiceId": "mark-dubowitz",
-            "voiceName": "Mark Dubowitz",
-            "photo": "/photos/mark-dubowitz.jpg",
-            "quote": "Iran\u2019s Nightmare: No War, No Relief (feat. Miad Maleki). The Islamic Republic may discover that surviving the war was the easy part. Its military has been mauled, its deterrence shattered, its proxies",
-            "sourceUrl": "https://youtube.com/playlist?list=PLmEsAFBNkqsMQnt5pypwEX0ul0NyIjd3E&amp;si=zt9NVffOHrJKdXS1",
-            "platform": "podcast",
-            "fit": 8,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Mark Dubowitz",
-          "quote": "Iran\u2019s Nightmare: No War, No Relief (feat. Miad Maleki). The Islamic Republic may discover that surviving the war was the easy part. Its military has been mauled, its deterrence shattered, its proxies",
-          "platform": "podcast",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Anti-Trump Mockery",
-        "voices": [
-          {
-            "voiceId": "lincoln-project",
-            "voiceName": "Lincoln Project",
-            "photo": "/photos/lincoln-project.jpg",
-            "quote": "Don\u2019t know how Trump expects to win a war in the Middle East when he can\u2019t even clean a pool.",
-            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mv467bfc7j2j",
+            "voiceId": "cato-institute",
+            "voiceName": "Cato Institute",
+            "photo": "/photos/cato-institute.jpg",
+            "quote": "The 1996 welfare reform put TANF on a budget. States now shift costs to federal taxpayers through SNAP and Medicaid. Congress should restore fiscal discipline by making states pay for welfare expansio",
+            "sourceUrl": "https://bsky.app/profile/cato.org/post/3muzm4pkhpq2d",
             "platform": "bluesky",
+            "fit": 10,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "elizabeth-warren",
+            "voiceName": "Elizabeth Warren",
+            "photo": "/photos/elizabeth-warren.jpg",
+            "quote": "4 MILLION people have already lost food aid since the Republican tax package became law.  \n\nThat includes over 1 MILLION CHILDREN.  \n\nIn October, states will have to pay 75% of SNAP costs themselves\u2014f",
+            "sourceUrl": "https://x.com/ewarren/status/2097434269626900824",
+            "platform": "x",
             "fit": 10,
             "quoteQuality": 4
           }
         ],
-        "voiceCount": 1,
+        "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Lincoln Project",
-          "quote": "Don\u2019t know how Trump expects to win a war in the Middle East when he can\u2019t even clean a pool.",
+          "voiceName": "Cato Institute",
+          "quote": "The 1996 welfare reform put TANF on a budget. States now shift costs to federal taxpayers through SNAP and Medicaid. Congress should restore fiscal discipline by making states pay for welfare expansio",
           "platform": "bluesky",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Party & Politician Statements",
+        "voices": [
+          {
+            "voiceId": "nancy-mace",
+            "voiceName": "Nancy Mace",
+            "photo": "/photos/nancy-mace.jpg",
+            "quote": "We hope Senator Mitch McConnell shows up next week. But if he is as bad off, or worse, than President Biden was, it\u2019s time for him to retire. https://t.co/GdN3PjGoH1",
+            "sourceUrl": "https://x.com/RepNancyMace/status/2097860124450644000",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "amy-klobuchar",
+            "voiceName": "Amy Klobuchar",
+            "photo": "/photos/amy-klobuchar.jpg",
+            "quote": "Labor Day isn\u2019t just one day, it\u2019s every day. I wouldn\u2019t be here without unions. Unions made the Zenith underground iron ore mine on the Range where my grandpa worked safe. Unions gave my mom good wag",
+            "sourceUrl": "https://x.com/amyklobuchar/status/2097392924237471902",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          }
+        ],
+        "voiceCount": 2,
+        "bestQuote": {
+          "voiceName": "Nancy Mace",
+          "quote": "We hope Senator Mitch McConnell shows up next week. But if he is as bad off, or worse, than President Biden was, it\u2019s time for him to retire. https://t.co/GdN3PjGoH1",
+          "platform": "x",
           "quality": 4
         }
       }
     ],
-    "belowThreshold": false
+    "belowThreshold": true
   },
   {
     "topic": "economy-trade",
     "topicDisplay": "Economy Trade",
-    "headline": "Rising Prices, Debt, and Oil Costs Fuel Economic Blame Game",
+    "headline": "Rising prices, debt, and tariffs strain Americans amid Trump economy claims",
     "voiceCount": 28,
     "clusterCount": 4,
-    "insight": "Progressives and Democrats hammer Trump over inflation, debt, and oil prices while Republicans tout tax cuts and manufacturing wins.",
+    "insight": "Overwhelming progressive and centrist criticism of rising costs and debt overshadows Republicans' attempts to celebrate the economy.",
     "clusters": [
       {
-        "name": "Affordability Crisis Under Trump",
+        "name": "Economic Pain Under Trump",
         "voices": [
           {
             "voiceId": "philip-defranco",
@@ -288,6 +796,15 @@
             "quote": "Make Bootlickers Feel Shame Again\n\nMore important than his ability to troll is that Trump and his elected enablers are:\n\n- Why your gas is so expensive\n- Why your insurance is getting worse\n- Why your",
             "sourceUrl": "https://x.com/PhillyD/status/2098053774736498907",
             "platform": "x",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "Trump is getting increasingly desperate as the Iran war drags on and Americans face rising gas prices and inflation.\n\nNow he\u2019s resorting to increasingly desperate promises about what will magically ch",
+            "sourceUrl": "https://bsky.app/profile/meidastouch.com/post/3mv6cfziydk2s",
+            "platform": "bluesky",
             "quoteQuality": 5
           },
           {
@@ -300,12 +817,30 @@
             "quoteQuality": 5
           },
           {
+            "voiceId": "robert-reich",
+            "voiceName": "Robert Reich",
+            "photo": "/photos/robert-reich.jpg",
+            "quote": "Billionaire tax cuts are a choice.\n\nCutting healthcare is a choice.\n\nGutting food stamps is a choice.\n\nSpending billions on an illegal war is a choice.\n\nSlapping tariffs on everything is a choice.\n\nA ",
+            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mv6qfiipld2j",
+            "platform": "bluesky",
+            "quoteQuality": 5
+          },
+          {
             "voiceId": "chris-murphy",
             "voiceName": "Chris Murphy",
             "photo": "/photos/chris-murphy.jpg",
             "quote": "Trump lost control of the war right from the start. But he continues it because he simply doesn't care about the cost that is mounting on American consumers, farms, and businesses.\n\nOil is back over $",
             "sourceUrl": "https://x.com/ChrisMurphyCT/status/2097668272267145656",
             "platform": "x",
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "tammy-duckworth",
+            "voiceName": "Tammy Duckworth",
+            "photo": "/photos/tammy-duckworth.jpg",
+            "quote": "Child care in Illinois costs as much as $1,633 a month.\n\nTrump promised to lower costs. Instead, he\u2019s attacking Head Start and making life harder for middle-class families.\n\nEnough. It\u2019s past time we ",
+            "sourceUrl": "https://bsky.app/profile/duckworth.senate.gov/post/3mv6jggeng22u",
+            "platform": "bluesky",
             "quoteQuality": 5
           },
           {
@@ -327,11 +862,11 @@
             "quoteQuality": 5
           },
           {
-            "voiceId": "adam-schiff",
-            "voiceName": "Adam Schiff",
-            "photo": "/photos/adam-schiff.jpg",
-            "quote": "Other countries offer tax incentives that have driven American filmmaking overseas.\n\nI've been pushing for a federal film tax credit for years. \n\nIt's past time for Congress to act to protect American",
-            "sourceUrl": "https://x.com/SenAdamSchiff/status/2097783978904453313",
+            "voiceId": "raphael-warnock",
+            "voiceName": "Raphael Warnock",
+            "photo": "/photos/raphael-warnock.jpg",
+            "quote": "Remember when Donald Trump promised to eliminate the debt?\n\nThe national debt just hit $40 trillion. He's added trillions by giving tax breaks to billionaires.",
+            "sourceUrl": "https://x.com/SenatorWarnock/status/2097765917056745796",
             "platform": "x",
             "quoteQuality": 4
           },
@@ -345,21 +880,21 @@
             "quoteQuality": 4
           },
           {
-            "voiceId": "ian-bremmer",
-            "voiceName": "Ian Bremmer",
-            "photo": "/photos/ian-bremmer.jpg",
-            "quote": "oil soars. trump ignores.",
-            "sourceUrl": "https://bsky.app/profile/ianbremmer.com/post/3mv3t2n4tgk2s",
-            "platform": "bluesky",
+            "voiceId": "jamie-raskin",
+            "voiceName": "Jamie Raskin",
+            "photo": "/photos/jamie-raskin.jpg",
+            "quote": "So after adding trillions of dollars to the national debt, driving it over an unprecedented $40 trillion, Trump now offers everyone a $5,000 political bribe (\u201cthe Trump Dividend\u201d) if we elect Republic",
+            "sourceUrl": "https://x.com/RepRaskin/status/2097896269834309773",
+            "platform": "x",
             "quoteQuality": 4
           },
           {
-            "voiceId": "amy-klobuchar",
-            "voiceName": "Amy Klobuchar",
-            "photo": "/photos/amy-klobuchar.jpg",
-            "quote": "With diesel prices hitting a record $5.75 a gallon in Minnesota, schools are limiting field trips and consolidating bus routes. That\u2019s the cost of Trump\u2019s war in Iran: higher fuel prices that are putt",
-            "sourceUrl": "https://x.com/amyklobuchar/status/2097822442064429464",
-            "platform": "x",
+            "voiceId": "jennifer-rubin",
+            "voiceName": "Jennifer Rubin",
+            "photo": "/photos/jennifer-rubin.jpg",
+            "quote": "Trump loves \"tariffs\" which are TAXES. Commie.",
+            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mv4xrbwynk2t",
+            "platform": "bluesky",
             "quoteQuality": 4
           },
           {
@@ -381,16 +916,25 @@
             "quoteQuality": 1
           },
           {
-            "voiceId": "roland-martin",
-            "voiceName": "Roland Martin",
-            "photo": "/photos/roland-martin.jpg",
-            "quote": "Taxes WERE CRAZY! WWII vs. TODAY - SHOCKING Truth! #shorts",
-            "sourceUrl": "https://www.youtube.com/shorts/oSzSaDFZwD0",
+            "voiceId": "brian-tyler-cohen",
+            "voiceName": "Brian Tyler Cohen",
+            "photo": "/photos/brian-tyler-cohen.jpg",
+            "quote": "Trump makes INSANE claim about the economy",
+            "sourceUrl": "https://www.youtube.com/shorts/8yX8E616BAE",
+            "platform": "youtube",
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "krystal-ball",
+            "voiceName": "Krystal Ball",
+            "photo": "/photos/krystal-ball.jpg",
+            "quote": "Iran BRUTALLY MOCKS U.S. Bond Market IMPLOSION",
+            "sourceUrl": "https://www.youtube.com/watch?v=EecM-rgpzx8",
             "platform": "youtube",
             "quoteQuality": 1
           }
         ],
-        "voiceCount": 12,
+        "voiceCount": 16,
         "bestQuote": {
           "voiceName": "Philip DeFranco",
           "quote": "Make Bootlickers Feel Shame Again\n\nMore important than his ability to troll is that Trump and his elected enablers are:\n\n- Why your gas is so expensive\n- Why your insurance is getting worse\n- Why your",
@@ -399,8 +943,17 @@
         }
       },
       {
-        "name": "Debt and Fiscal Alarm",
+        "name": "Policy Substance Debates",
         "voices": [
+          {
+            "voiceId": "matt-yglesias",
+            "voiceName": "Matt Yglesias",
+            "photo": "/photos/matt-yglesias.jpg",
+            "quote": "The economy could survive a downtick in A.I. (by Matthew Yglesias). Plus what happened to college and what\u2019s wrong with Tucker Carlson",
+            "sourceUrl": "https://www.slowboring.com/p/the-economy-could-survive-a-downtick",
+            "platform": "substack",
+            "quoteQuality": 7
+          },
           {
             "voiceId": "david-sirota",
             "voiceName": "David Sirota",
@@ -411,31 +964,52 @@
             "quoteQuality": 6
           },
           {
-            "voiceId": "jennifer-rubin",
-            "voiceName": "Jennifer Rubin",
-            "photo": "/photos/jennifer-rubin.jpg",
-            "quote": "Trump loves \"tariffs\" which are TAXES. Commie.",
-            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mv4xrbwynk2t",
+            "voiceId": "adam-schiff",
+            "voiceName": "Adam Schiff",
+            "photo": "/photos/adam-schiff.jpg",
+            "quote": "Other countries offer tax incentives that have driven American filmmaking overseas.\n\nI've been pushing for a federal film tax credit for years. \n\nIt's past time for Congress to act to protect American",
+            "sourceUrl": "https://x.com/SenAdamSchiff/status/2097783978904453313",
+            "platform": "x",
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "stephen-a-smith",
+            "voiceName": "Stephen A. Smith",
+            "photo": "/photos/stephen-a-smith.jpg",
+            "quote": "Sen. Chris Murphy Tells Stephen A. that Minimum Wage Should Be a Living Wage!",
+            "sourceUrl": "https://www.youtube.com/shorts/vq1wup-Bhyo",
+            "platform": "youtube",
+            "quoteQuality": 2
+          },
+          {
+            "voiceId": "scott-galloway",
+            "voiceName": "Scott Galloway",
+            "photo": "/photos/scott-galloway.jpg",
+            "quote": "Why rich people want more debt, not less",
+            "sourceUrl": "https://www.youtube.com/shorts/Ei6z2U5OUcw",
+            "platform": "youtube",
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 5,
+        "bestQuote": {
+          "voiceName": "Matt Yglesias",
+          "quote": "The economy could survive a downtick in A.I. (by Matthew Yglesias). Plus what happened to college and what\u2019s wrong with Tucker Carlson",
+          "platform": "substack",
+          "quality": 7
+        }
+      },
+      {
+        "name": "Debt and Fiscal Warnings",
+        "voices": [
+          {
+            "voiceId": "cato-institute",
+            "voiceName": "Cato Institute",
+            "photo": "/photos/cato-institute.jpg",
+            "quote": "The current transformation of international trade places the US on the outside looking in, where it will watch its middling share of global exports shrink more in the years ahead, argues James Bacchus",
+            "sourceUrl": "https://bsky.app/profile/cato.org/post/3mv64awamzq2w",
             "platform": "bluesky",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "raphael-warnock",
-            "voiceName": "Raphael Warnock",
-            "photo": "/photos/raphael-warnock.jpg",
-            "quote": "Remember when Donald Trump promised to eliminate the debt?\n\nThe national debt just hit $40 trillion. He's added trillions by giving tax breaks to billionaires.",
-            "sourceUrl": "https://x.com/SenatorWarnock/status/2097765917056745796",
-            "platform": "x",
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "jamie-raskin",
-            "voiceName": "Jamie Raskin",
-            "photo": "/photos/jamie-raskin.jpg",
-            "quote": "So after adding trillions of dollars to the national debt, driving it over an unprecedented $40 trillion, Trump now offers everyone a $5,000 political bribe (\u201cthe Trump Dividend\u201d) if we elect Republic",
-            "sourceUrl": "https://x.com/RepRaskin/status/2097896269834309773",
-            "platform": "x",
-            "quoteQuality": 4
+            "quoteQuality": 5
           },
           {
             "voiceId": "young-turks",
@@ -456,24 +1030,6 @@
             "quoteQuality": 1
           },
           {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "Iran BRUTALLY MOCKS U.S. Bond Market IMPLOSION",
-            "sourceUrl": "https://www.youtube.com/watch?v=EecM-rgpzx8",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "Iran BRUTALLY MOCKS U.S. Bond Market IMPLOSION",
-            "sourceUrl": "https://www.youtube.com/watch?v=EecM-rgpzx8",
-            "platform": "youtube",
-            "quoteQuality": 1
-          },
-          {
             "voiceId": "jimmy-dore",
             "voiceName": "Jimmy Dore",
             "photo": "/photos/jimmy-dore.jpg",
@@ -481,27 +1037,18 @@
             "sourceUrl": "https://www.youtube.com/watch?v=ktZyySGqfuI",
             "platform": "youtube",
             "quoteQuality": 1
-          },
-          {
-            "voiceId": "meidastouch",
-            "voiceName": "MeidasTouch",
-            "photo": "/photos/meidastouch.jpg",
-            "quote": "Trump\u2019s treasury secretary really said this\u2026",
-            "sourceUrl": "https://www.youtube.com/shorts/ouQ8SMLAUkM",
-            "platform": "youtube",
-            "quoteQuality": 1
           }
         ],
-        "voiceCount": 10,
+        "voiceCount": 4,
         "bestQuote": {
-          "voiceName": "David Sirota",
-          "quote": "Trump&#x27;s Fed Chief Missed The AI-flation Memo  (by Freddy Brewster). New Federal Reserve Chair Kevin Warsh ignored the U.S. central bank\u2019s own research when he said AI\u2019s economic impacts are unkno",
-          "platform": "substack",
-          "quality": 6
+          "voiceName": "Cato Institute",
+          "quote": "The current transformation of international trade places the US on the outside looking in, where it will watch its middling share of global exports shrink more in the years ahead, argues James Bacchus",
+          "platform": "bluesky",
+          "quality": 5
         }
       },
       {
-        "name": "Republican Economic Wins",
+        "name": "Conservative Economic Wins",
         "voices": [
           {
             "voiceId": "tim-scott",
@@ -538,337 +1085,47 @@
           "platform": "x",
           "quality": 4
         }
-      },
-      {
-        "name": "Free Market Policy Critique",
-        "voices": [
-          {
-            "voiceId": "matt-yglesias",
-            "voiceName": "Matt Yglesias",
-            "photo": "/photos/matt-yglesias.jpg",
-            "quote": "The economy could survive a downtick in A.I. (by Matthew Yglesias). Plus what happened to college and what\u2019s wrong with Tucker Carlson",
-            "sourceUrl": "https://www.slowboring.com/p/the-economy-could-survive-a-downtick",
-            "platform": "substack",
-            "quoteQuality": 7
-          },
-          {
-            "voiceId": "cato-institute",
-            "voiceName": "Cato Institute",
-            "photo": "/photos/cato-institute.jpg",
-            "quote": "Gas. Groceries. Rent. Childcare. High prices are hurting Americans everywhere \u2014 and Washington isn\u2019t fixing it. \n\nCato's new \u201cHandbook on Affordability\u201d offers 100+ better policy ideas to bring costs ",
-            "sourceUrl": "https://bsky.app/profile/cato.org/post/3muzpg7ebye2s",
-            "platform": "bluesky",
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "scott-galloway",
-            "voiceName": "Scott Galloway",
-            "photo": "/photos/scott-galloway.jpg",
-            "quote": "Why rich people want more debt, not less",
-            "sourceUrl": "https://www.youtube.com/shorts/Ei6z2U5OUcw",
-            "platform": "youtube",
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Matt Yglesias",
-          "quote": "The economy could survive a downtick in A.I. (by Matthew Yglesias). Plus what happened to college and what\u2019s wrong with Tucker Carlson",
-          "platform": "substack",
-          "quality": 7
-        }
       }
     ],
     "belowThreshold": false
   },
   {
-    "topic": "elections",
-    "topicDisplay": "Elections",
-    "headline": "Voices React to Republican Midterm Convention and 2026 Election Stakes",
-    "voiceCount": 20,
-    "clusterCount": 5,
-    "insight": "Coverage of the GOP convention is thin; most voices instead debate broader 2026 midterm stakes, money, and voting rules.",
+    "topic": "iran-conflict",
+    "topicDisplay": "Iran Conflict",
+    "headline": "US-Iran War Escalates, Hits Hormuz Shipping and Oil Prices",
+    "voiceCount": 22,
+    "clusterCount": 4,
+    "insight": "Near-unanimous criticism of Trump's Iran war centers on rising fuel prices and strategic missteps, while a small pro-strike camp calls it a decisive win.",
     "clusters": [
       {
-        "name": "Democratic Accountability & Mobilization",
+        "name": "Anti-War Economic Critique",
         "voices": [
-          {
-            "voiceId": "center-for-american-progress",
-            "voiceName": "Center for American Progress",
-            "photo": "/photos/center-for-american-progress.jpg",
-            "quote": "All Americans must push back on antidemocratic efforts to discourage people from voting. Our democracy is stronger when more Americans can participate, regardless of whom they support.",
-            "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3mv4evr2fkv2z",
-            "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 6
-          },
           {
             "voiceId": "mark-kelly",
             "voiceName": "Mark Kelly",
             "photo": "/photos/mark-kelly.jpg",
-            "quote": "Congratulations to my friend, Chris Pappas. New Hampshire families have always been able to count on Chris, and that's why they're going to make him their next Senator this November.",
-            "sourceUrl": "https://bsky.app/profile/captmarkkelly.bsky.social/post/3mv2gcgwp7s22",
+            "quote": "Last week, it wasn't even a \"war\" according to Trump. Before that, he's said dozens of times that Iran was totally defeated already.\n\nTrump is making it all up as he goes because he has no idea what h",
+            "sourceUrl": "https://bsky.app/profile/captmarkkelly.bsky.social/post/3muzjn4b44622",
             "platform": "bluesky",
             "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "elizabeth-warren",
-            "voiceName": "Elizabeth Warren",
-            "photo": "/photos/elizabeth-warren.jpg",
-            "quote": "4 MILLION people have already lost food aid since the Republican tax package became law.  \n\nThat includes over 1 MILLION CHILDREN.  \n\nIn October, states will have to pay 75% of SNAP costs themselves\u2014f",
-            "sourceUrl": "https://x.com/ewarren/status/2097434269626900824",
-            "platform": "x",
-            "fit": 7,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "maxwell-frost",
-            "voiceName": "Maxwell Frost",
-            "photo": "/photos/maxwell-frost.jpg",
-            "quote": "ALL OUT FOR @AngieNixon! Great canvass launch + Latino roundtable in Kissimmee today to elect Angie to the US Senate. And a huge shoutout to my sister @AOC for always believing in Florida. Not her fir",
-            "sourceUrl": "https://x.com/MaxwellFrostFL/status/2097859821424742514",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "pramila-jayapal",
-            "voiceName": "Pramila Jayapal",
-            "photo": "/photos/pramila-jayapal.jpg",
-            "quote": "There has been over 3X the amount of corporate spending SO FAR in the 2026 midterms compared to 2022, according to @Public_Citizen\u2019s new report.\n\n$646 MILLION. And it\u2019s not even November yet.\n\nIf Demo",
-            "sourceUrl": "https://x.com/RepJayapal/status/2097355326324359657",
-            "platform": "x",
-            "fit": 6,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "ted-lieu",
-            "voiceName": "Ted Lieu",
-            "photo": "/photos/ted-lieu.jpg",
-            "quote": "November is coming. https://t.co/A8vUYcKizL",
-            "sourceUrl": "https://x.com/RepTedLieu/status/2097345052951347520",
-            "platform": "x",
-            "fit": 6,
-            "quoteQuality": 3
-          },
-          {
-            "voiceId": "pod-save-america",
-            "voiceName": "Pod Save America",
-            "photo": "/photos/pod-save-america.jpg",
-            "quote": "This pastor believes one party rule in Tennessee is \u201cnot American.\u201d",
-            "sourceUrl": "https://www.youtube.com/shorts/5JrVGCqNFr4",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 7,
-        "bestQuote": {
-          "voiceName": "Center for American Progress",
-          "quote": "All Americans must push back on antidemocratic efforts to discourage people from voting. Our democracy is stronger when more Americans can participate, regardless of whom they support.",
-          "platform": "bluesky",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Money, Courts & Voting Rights Warnings",
-        "voices": [
-          {
-            "voiceId": "david-sirota",
-            "voiceName": "David Sirota",
-            "photo": "/photos/david-sirota.jpg",
-            "quote": "Midterm Madness: K Street Has Entered The Chat  (by The Lever). Joe Crowley resurfaced on CNN to champion centrist Democrats \u2014 without dwelling on his lucrative second act representing corporate inter",
-            "sourceUrl": "https://www.levernews.com/midterm-madness-k-street-has-entered-the-chat/",
-            "platform": "substack",
-            "fit": 6,
             "quoteQuality": 6
           },
-          {
-            "voiceId": "leah-litman",
-            "voiceName": "Leah Litman",
-            "photo": "/photos/leah-litman.jpg",
-            "quote": "Given that SCOTUS (w/ a Trump admin assist) nullified what remains of the Voting Rights Act, is it going to be awkward to say this is all necessary to enforce the VRA??\n\n(I wouldn't put it past them. ",
-            "sourceUrl": "https://bsky.app/profile/leahlitman.bsky.social/post/3mv3n56qjls2s",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "judd-legum",
-            "voiceName": "Judd Legum",
-            "photo": "/photos/judd-legum.jpg",
-            "quote": "1. Elon Musk is spending millions pushing Americans to VoteSafe, which bills itself as a voter registration site but is actually a digital surveillance machine.",
-            "sourceUrl": "https://bsky.app/profile/juddlegum.bsky.social/post/3muzcalxxxk2c",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "joyce-vance",
-            "voiceName": "Joyce Vance",
-            "photo": "/photos/joyce-vance.jpg",
-            "quote": "Missouri has 2 congressional maps, conflicting court orders, a Secy of State facing a contempt hearing & a 2nd emergency trip to SCOTUS. It\u2019s a mess. I sorted it out tonight at Civil Discourse. joycev",
-            "sourceUrl": "https://bsky.app/profile/joycewhitevance.bsky.social/post/3mv5appjr722i",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "steve-vladeck",
-            "voiceName": "Steve Vladeck",
-            "photo": "/photos/steve-vladeck.jpg",
-            "quote": "This ought to make the contempt hearing against Missouri Secretary of State Hoskins in the Missouri Supreme Court (which starts in 27 minutes) that much \u2026 spicier.",
-            "sourceUrl": "https://bsky.app/profile/stevevladeck.bsky.social/post/3mv6bg7zqtc2v",
-            "platform": "bluesky",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "ilya-somin",
-            "voiceName": "Ilya Somin",
-            "photo": "/photos/ilya-somin.jpg",
-            "quote": "In this post, I explain why Trump's executive order seeking to curb mail-in ballots is an affront to constitutional federalism and separation of powers: reason.com/volokh/2026/...",
-            "sourceUrl": "https://bsky.app/profile/ilyasomin.bsky.social/post/3mv22ao4qck2z",
-            "platform": "bluesky",
-            "fit": 8,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "heritage-foundation",
-            "voiceName": "Heritage Foundation",
-            "photo": "/photos/heritage-foundation.jpg",
-            "quote": "They called it controversial. The numbers say otherwise.\n\nElection monitors are already being deployed nationwide as the push for voter ID, proof of citizenship, and stronger election safeguards gains",
-            "sourceUrl": "https://x.com/Heritage/status/2097687110677332314",
-            "platform": "x",
-            "fit": 5,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 7,
-        "bestQuote": {
-          "voiceName": "David Sirota",
-          "quote": "Midterm Madness: K Street Has Entered The Chat  (by The Lever). Joe Crowley resurfaced on CNN to champion centrist Democrats \u2014 without dwelling on his lucrative second act representing corporate inter",
-          "platform": "substack",
-          "quality": 6
-        }
-      },
-      {
-        "name": "Convention Mockery/Dysfunction",
-        "voices": [
-          {
-            "voiceId": "lincoln-project",
-            "voiceName": "Lincoln Project",
-            "photo": "/photos/lincoln-project.jpg",
-            "quote": "RNC already taking Ls. Great start guys.",
-            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mv4garqulw2u",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "cenk-uygur",
-            "voiceName": "Cenk Uygur",
-            "photo": "/photos/cenk-uygur.jpg",
-            "quote": "Trump's Midterm Convention Already A DUMPSTER FIRE",
-            "sourceUrl": "https://www.youtube.com/watch?v=x2N6j8WbC8k",
-            "platform": "youtube",
-            "fit": 10,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "dave-rubin",
-            "voiceName": "Dave Rubin",
-            "photo": "/photos/dave-rubin.jpg",
-            "quote": "Watch Pollster's Face as He Realizes How Much Worse It Just Got for Dems",
-            "sourceUrl": "https://www.youtube.com/watch?v=V6cNVUbdykY",
-            "platform": "youtube",
-            "fit": 4,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Lincoln Project",
-          "quote": "RNC already taking Ls. Great start guys.",
-          "platform": "bluesky",
-          "quality": 4
-        }
-      },
-      {
-        "name": "Democratic Strategy Debate",
-        "voices": [
-          {
-            "voiceId": "yascha-mounk",
-            "voiceName": "Yascha Mounk",
-            "photo": "/photos/yascha-mounk.jpg",
-            "quote": "Sarah Longwell on How Democrats Can Defeat Trump. Yascha Mounk and Sarah Longwell discuss why the pro-democracy coalition keeps losing the narrative war\u2014and how it can fight back.",
-            "sourceUrl": "https://www.persuasion.community/p/sarah-longwell",
-            "platform": "substack",
-            "fit": 9,
-            "quoteQuality": 6
-          },
-          {
-            "voiceId": "tom-nichols",
-            "voiceName": "Tom Nichols",
-            "photo": "/photos/tom-nichols.jpg",
-            "quote": "I said \"if.\" But candidate quality matters. Both of those are a dead heat right now when they shouldn't even be close.",
-            "sourceUrl": "https://bsky.app/profile/radiofreetom.bsky.social/post/3mv4tuyu3n22k",
-            "platform": "bluesky",
-            "fit": 7,
-            "quoteQuality": 6
-          }
-        ],
-        "voiceCount": 2,
-        "bestQuote": {
-          "voiceName": "Yascha Mounk",
-          "quote": "Sarah Longwell on How Democrats Can Defeat Trump. Yascha Mounk and Sarah Longwell discuss why the pro-democracy coalition keeps losing the narrative war\u2014and how it can fight back.",
-          "platform": "substack",
-          "quality": 6
-        }
-      },
-      {
-        "name": "GOP Turnout Rallying",
-        "voices": [
-          {
-            "voiceId": "ted-cruz",
-            "voiceName": "Ted Cruz",
-            "photo": "/photos/ted-cruz.jpg",
-            "quote": "This election is about turnout, turnout, turnout. Here in Dallas, Texas, the energy is contagious.\n\nIf you don\u2019t want to hand the country over to the crazies, you\u2019ve got to come out and vote in Novemb",
-            "sourceUrl": "https://x.com/tedcruz/status/2097876365580161414",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Ted Cruz",
-          "quote": "This election is about turnout, turnout, turnout. Here in Dallas, Texas, the energy is contagious.\n\nIf you don\u2019t want to hand the country over to the crazies, you\u2019ve got to come out and vote in Novemb",
-          "platform": "x",
-          "quality": 4
-        }
-      }
-    ],
-    "belowThreshold": false
-  },
-  {
-    "topic": "military-defense",
-    "topicDisplay": "Military Defense",
-    "headline": "Trump's Iran War Sparks Cost, Casualty, and Legality Backlash",
-    "voiceCount": 19,
-    "clusterCount": 5,
-    "insight": "Democrats and analysts hammer Trump's Iran war costs and legality while conservatives spotlight military heroism and investment.",
-    "clusters": [
-      {
-        "name": "Iran War Critics",
-        "voices": [
           {
             "voiceId": "robert-reich",
             "voiceName": "Robert Reich",
             "photo": "/photos/robert-reich.jpg",
-            "quote": "Trump\u2019s illegal war on Iran has cost the average U.S. household more than $760 in higher energy costs.\n\nThat\u2019s on top of the military spending an estimated $1B per DAY to keep waging it, with no end i",
-            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mv23eozxcs2x",
+            "quote": "Trump has promised multiple stimulus checks (have you received one?)\n\nHe promised his tariffs would revive U.S. manufacturing (we've lost manufacturing jobs).\n\nHe promised lower gas prices (they're hi",
+            "sourceUrl": "https://bsky.app/profile/rbreich.bsky.social/post/3mv6id3fjfp2l",
+            "platform": "bluesky",
+            "fit": 9,
+            "quoteQuality": 5
+          },
+          {
+            "voiceId": "center-for-american-progress",
+            "voiceName": "Center for American Progress",
+            "photo": "/photos/center-for-american-progress.jpg",
+            "quote": "Trump's war of choice in Iran has spiked diesel prices to a record high, making it all the more difficult for American farmers like Aaron Lehman to earn a living and get by.",
+            "sourceUrl": "https://bsky.app/profile/americanprogress.bsky.social/post/3mv47wmzozf27",
             "platform": "bluesky",
             "fit": 10,
             "quoteQuality": 5
@@ -880,51 +1137,9 @@
             "quote": "The strategic position of the USA would\u2019ve been immeasurably better if it had not started this ludicrous war with Iran and instead given the Patriot interceptors its wasted to Ukraine, to defend Ukr a",
             "sourceUrl": "https://bsky.app/profile/phillipspobrien.bsky.social/post/3mv32fram3c27",
             "platform": "bluesky",
-            "fit": 10,
+            "fit": 7,
             "quoteQuality": 5
           },
-          {
-            "voiceId": "jennifer-rubin",
-            "voiceName": "Jennifer Rubin",
-            "photo": "/photos/jennifer-rubin.jpg",
-            "quote": "Republicans are culpable \u2026 it is time for Congress to do its job on matters of war and peace",
-            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mv63qorqxc2x",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "chuck-schumer",
-            "voiceName": "Chuck Schumer",
-            "photo": "/photos/chuck-schumer.jpg",
-            "quote": "They can lie and call it whatever they want but the American people know the truth:\n \nDonald Trump got us into an endless WAR that has caused skyrocketing prices at home while putting our servicemembe",
-            "sourceUrl": "https://x.com/SenSchumer/status/2097432030350832123",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "cory-booker",
-            "voiceName": "Cory Booker",
-            "photo": "/photos/cory-booker.jpg",
-            "quote": "18 American service members are not \u201csmall potatoes.\u201d They are sons and daughters. Husbands and wives. Heroes whose families will carry this loss for the rest of their lives. A president who starts a ",
-            "sourceUrl": "https://x.com/CoryBooker/status/2097459986729165205",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 5,
-        "bestQuote": {
-          "voiceName": "Robert Reich",
-          "quote": "Trump\u2019s illegal war on Iran has cost the average U.S. household more than $760 in higher energy costs.\n\nThat\u2019s on top of the military spending an estimated $1B per DAY to keep waging it, with no end i",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Military Dysfunction Watchdogs",
-        "voices": [
           {
             "voiceId": "cato-institute",
             "voiceName": "Cato Institute",
@@ -932,435 +1147,222 @@
             "quote": "America\u2019s defense problem isn\u2019t too little spending. It\u2019s too many unclear missions. An open-ended Iran war and the costly Golden Dome missile-defense project risk wasting money and resources. Defense",
             "sourceUrl": "https://bsky.app/profile/cato.org/post/3mv3sihcn5k2p",
             "platform": "bluesky",
-            "fit": 9,
+            "fit": 8,
             "quoteQuality": 5
           },
           {
-            "voiceId": "sheldon-whitehouse",
-            "voiceName": "Sheldon Whitehouse",
-            "photo": "/photos/sheldon-whitehouse.jpg",
-            "quote": "Calling out an \u201cidiocracy\u201d at the Pentagon \u201cof corruption, stupidity and sycophancy.\u201d Don\u2019t we deserve better?\nhttps://t.co/Otw1GiESWg",
-            "sourceUrl": "https://x.com/SenWhitehouse/status/2097701245943160935",
+            "voiceId": "lincoln-project",
+            "voiceName": "Lincoln Project",
+            "photo": "/photos/lincoln-project.jpg",
+            "quote": "Don\u2019t know how Trump expects to win a war in the Middle East when he can\u2019t even clean a pool.",
+            "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mv467bfc7j2j",
+            "platform": "bluesky",
+            "fit": 4,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "jennifer-rubin",
+            "voiceName": "Jennifer Rubin",
+            "photo": "/photos/jennifer-rubin.jpg",
+            "quote": "Defund ICE. Defund FCC. Defund the Iran War. Other suggestions?",
+            "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mv6hbx547s2m",
+            "platform": "bluesky",
+            "fit": 7,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "chris-murphy",
+            "voiceName": "Chris Murphy",
+            "photo": "/photos/chris-murphy.jpg",
+            "quote": "This war has gone completely off the rails and Republicans in Congress could put an end to it next week if they chose. \n\nThe only reason this war - and the misery and death and inflation it brings - c",
+            "sourceUrl": "https://x.com/ChrisMurphyCT/status/2097686571470229961",
+            "platform": "x",
+            "fit": 8,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "amy-klobuchar",
+            "voiceName": "Amy Klobuchar",
+            "photo": "/photos/amy-klobuchar.jpg",
+            "quote": "With diesel prices hitting a record $5.75 a gallon in Minnesota, schools are limiting field trips and consolidating bus routes. That\u2019s the cost of Trump\u2019s war in Iran: higher fuel prices that are putt",
+            "sourceUrl": "https://x.com/amyklobuchar/status/2097822442064429464",
             "platform": "x",
             "fit": 10,
             "quoteQuality": 4
           },
           {
-            "voiceId": "war-on-the-rocks",
-            "voiceName": "War on the Rocks",
-            "photo": "/photos/war-on-the-rocks.jpg",
-            "quote": "The Tyranny of Shipyard Cost-Plus Contracting (by Kavon Hakimzadeh). As a naval shipyard commander, my mandate from Navy leadership is straightforward:\u00a0return warships to the fleet as quickly as possi",
-            "sourceUrl": "https://warontherocks.com/cogs-of-war/the-tyranny-of-shipyard-cost-plus-contracting/",
+            "voiceId": "pramila-jayapal",
+            "voiceName": "Pramila Jayapal",
+            "photo": "/photos/pramila-jayapal.jpg",
+            "quote": "Trump could end the Iran War and stop his reckless trade policies that have raised prices TODAY. But instead, he's promising \"dividends\" if Republicans win the midterms.\n\nDon't trust him. He promised ",
+            "sourceUrl": "https://x.com/RepJayapal/status/2098103753089912902",
+            "platform": "x",
+            "fit": 9,
+            "quoteQuality": 4
+          },
+          {
+            "voiceId": "quincy-institute",
+            "voiceName": "Quincy Institute",
+            "photo": "/photos/quincy-institute.jpg",
+            "quote": "The Iran war looms large as BRICS leaders gather in New Delhi (by Michael Corbin). As diplomats prepare for the BRICS Summit in New Delhi this weekend, the Iran war is looming large.India, which assum",
+            "sourceUrl": "https://responsiblestatecraft.org/brics-summit-2026/",
             "platform": "blog",
-            "fit": 8,
+            "fit": 5,
             "quoteQuality": 3
           },
           {
-            "voiceId": "trevor-noah",
-            "voiceName": "Trevor Noah",
-            "photo": "/photos/trevor-noah.jpg",
-            "quote": "Jon on the rust-covered USS Lincoln: &quot;The actual Abraham Lincoln is in better shape than this ship.&quot;",
-            "sourceUrl": "https://www.youtube.com/shorts/g00C5cgzQNk",
+            "voiceId": "krystal-ball",
+            "voiceName": "Krystal Ball",
+            "photo": "/photos/krystal-ball.jpg",
+            "quote": "Iran BRUTALLY MOCKS U.S. Bond Market IMPLOSION",
+            "sourceUrl": "https://www.youtube.com/watch?v=EecM-rgpzx8",
             "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 2
+            "fit": 6,
+            "quoteQuality": 1
           }
         ],
-        "voiceCount": 4,
+        "voiceCount": 12,
         "bestQuote": {
-          "voiceName": "Cato Institute",
-          "quote": "America\u2019s defense problem isn\u2019t too little spending. It\u2019s too many unclear missions. An open-ended Iran war and the costly Golden Dome missile-defense project risk wasting money and resources. Defense",
+          "voiceName": "Mark Kelly",
+          "quote": "Last week, it wasn't even a \"war\" according to Trump. Before that, he's said dozens of times that Iran was totally defeated already.\n\nTrump is making it all up as he goes because he has no idea what h",
           "platform": "bluesky",
-          "quality": 5
+          "quality": 6
         }
       },
       {
-        "name": "Military Culture/Stories",
+        "name": "War Escalation Coverage",
         "voices": [
           {
-            "voiceId": "pete-buttigieg",
-            "voiceName": "Pete Buttigieg",
-            "photo": "/photos/pete-buttigieg.jpg",
-            "quote": "On a recent trip, I got to talking with a young officer, newly commissioned from one of our military academies. He shared how Washington politics is impacting his choice to serve in the military. It's",
-            "sourceUrl": "https://bsky.app/profile/petebuttigieg.bsky.social/post/3mv3pfoxvmc25",
-            "platform": "bluesky",
+            "voiceId": "jeremy-scahill",
+            "voiceName": "Jeremy Scahill",
+            "photo": "/photos/jeremy-scahill.jpg",
+            "quote": "Iran and U.S. renew Hormuz attacks; Trump escalates Canada trade war; 13 killed in Sudan drone strike (by Drop Site News)",
+            "sourceUrl": "https://www.dropsitenews.com/p/iran-us-hormuz-trump-canada-trade-sudan-drone-strike",
+            "platform": "substack",
             "fit": 8,
+            "quoteQuality": 6
+          },
+          {
+            "voiceId": "ian-bremmer",
+            "voiceName": "Ian Bremmer",
+            "photo": "/photos/ian-bremmer.jpg",
+            "quote": "bad news for anyone hoping oil prices drop:\n\nhouthis rapidly advance toward bab al-mandab, reportedly have captured port city mokha and zuqar island.",
+            "sourceUrl": "https://bsky.app/profile/ianbremmer.com/post/3mv67imiq722e",
+            "platform": "bluesky",
+            "fit": 7,
             "quoteQuality": 5
           },
           {
-            "voiceId": "mark-hertling",
-            "voiceName": "Mark Hertling",
-            "photo": "/photos/mark-hertling.jpg",
-            "quote": "The @thebulwark.com editors asked me to do a \u201cletter to myself\u201d imagining I could go back to 9/11 to tell myself what I would experience over the next 25 years. \n\nwww.thebulwark.com/p/a-letter-t...",
-            "sourceUrl": "https://bsky.app/profile/markhertling.bsky.social/post/3muziruwog22a",
-            "platform": "bluesky",
+            "voiceId": "kyle-kulinski",
+            "voiceName": "Kyle Kulinski",
+            "photo": "/photos/kyle-kulinski.jpg",
+            "quote": "ALL HELL BREAKS LOOSE As Iran CAPTURES US SUBMARINE &amp; MISSILES RAIN DOWN!! | The Kyle Kulinski Show",
+            "sourceUrl": "https://www.youtube.com/watch?v=ICWzk_uMMc0",
+            "platform": "youtube",
+            "fit": 10,
+            "quoteQuality": 2
+          },
+          {
+            "voiceId": "young-turks",
+            "voiceName": "The Young Turks",
+            "photo": "/photos/young-turks.jpg",
+            "quote": "Iran Retaliates as War SPIRALS Out of Control",
+            "sourceUrl": "https://www.youtube.com/watch?v=W7Hc7fZbrnY",
+            "platform": "youtube",
+            "fit": 10,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "cenk-uygur",
+            "voiceName": "Cenk Uygur",
+            "photo": "/photos/cenk-uygur.jpg",
+            "quote": "Iran Retaliates as War SPIRALS Out of Control",
+            "sourceUrl": "https://www.youtube.com/watch?v=W7Hc7fZbrnY",
+            "platform": "youtube",
+            "fit": 10,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "chris-cuomo",
+            "voiceName": "Chris Cuomo",
+            "photo": "/photos/chris-cuomo.jpg",
+            "quote": "Trump Has No Way Out Of Iran",
+            "sourceUrl": "https://www.youtube.com/watch?v=dtBN8ZRAfKc",
+            "platform": "youtube",
             "fit": 8,
+            "quoteQuality": 1
+          },
+          {
+            "voiceId": "meidastouch",
+            "voiceName": "MeidasTouch",
+            "photo": "/photos/meidastouch.jpg",
+            "quote": "\ud83d\udea8Iran INFLICTS MASSIVE DAMAGE\u2026",
+            "sourceUrl": "https://www.youtube.com/watch?v=0Q14rxG0AZ8",
+            "platform": "youtube",
+            "fit": 9,
+            "quoteQuality": 1
+          }
+        ],
+        "voiceCount": 7,
+        "bestQuote": {
+          "voiceName": "Jeremy Scahill",
+          "quote": "Iran and U.S. renew Hormuz attacks; Trump escalates Canada trade war; 13 killed in Sudan drone strike (by Drop Site News)",
+          "platform": "substack",
+          "quality": 6
+        }
+      },
+      {
+        "name": "Pro-Strike Framing",
+        "voices": [
+          {
+            "voiceId": "mark-dubowitz",
+            "voiceName": "Mark Dubowitz",
+            "photo": "/photos/mark-dubowitz.jpg",
+            "quote": "Iran\u2019s Nightmare: No War, No Relief (feat. Miad Maleki). The Islamic Republic may discover that surviving the war was the easy part. Its military has been mauled, its deterrence shattered, its proxies",
+            "sourceUrl": "https://youtube.com/playlist?list=PLmEsAFBNkqsMQnt5pypwEX0ul0NyIjd3E&amp;si=zt9NVffOHrJKdXS1",
+            "platform": "podcast",
+            "fit": 9,
             "quoteQuality": 5
           },
           {
             "voiceId": "benny-johnson",
             "voiceName": "Benny Johnson",
             "photo": "/photos/benny-johnson.jpg",
-            "quote": "U.S. Military Pilot Shot Down &amp; Survived 3 Days in Iran Finally Breaks Silence | Story is\u2026\ud83d\udd25",
-            "sourceUrl": "https://www.youtube.com/watch?v=1XsDhpeem7U",
+            "quote": "Iran Thought Trump Would NEVER Do It\u2026He Finally  Just BOMBED Iran's Most Important Asset into ASH\u2026\ud83d\udd25",
+            "sourceUrl": "https://www.youtube.com/watch?v=-5yCNmfg6lU",
             "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "chris-williamson",
-            "voiceName": "Chris Williamson",
-            "photo": "/photos/chris-williamson.jpg",
-            "quote": "\u201cThe Wars in Iran &amp; Ukraine Will Merge Very Soon\u201d",
-            "sourceUrl": "https://www.youtube.com/watch?v=d1BAL1623v4",
-            "platform": "youtube",
-            "fit": 4,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 4,
-        "bestQuote": {
-          "voiceName": "Pete Buttigieg",
-          "quote": "On a recent trip, I got to talking with a young officer, newly commissioned from one of our military academies. He shared how Washington politics is impacting his choice to serve in the military. It's",
-          "platform": "bluesky",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Boat Strike Investigators",
-        "voices": [
-          {
-            "voiceId": "hasanabi",
-            "voiceName": "HasanAbi",
-            "photo": "/photos/hasanabi.jpg",
-            "quote": "He Found The Families of the Fisherman The CIA Killed | Full Interview with Josh Rushing",
-            "sourceUrl": "https://www.youtube.com/watch?v=4pjEowgT8gU",
-            "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "breaking-points",
-            "voiceName": "Breaking Points",
-            "photo": "/photos/breaking-points.jpg",
-            "quote": "New Doc EXPOSES Trump Murder War Crime Boat Strikes",
-            "sourceUrl": "https://www.youtube.com/watch?v=frgqlSqMORg",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "krystal-ball",
-            "voiceName": "Krystal Ball",
-            "photo": "/photos/krystal-ball.jpg",
-            "quote": "New Doc EXPOSES Trump Murder War Crime Boat Strikes",
-            "sourceUrl": "https://www.youtube.com/watch?v=frgqlSqMORg",
-            "platform": "youtube",
-            "fit": 9,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "HasanAbi",
-          "quote": "He Found The Families of the Fisherman The CIA Killed | Full Interview with Josh Rushing",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "Defense Investment & Tradition",
-        "voices": [
-          {
-            "voiceId": "katie-britt",
-            "voiceName": "Katie Britt",
-            "photo": "/photos/katie-britt.jpg",
-            "quote": "Exciting news for the Shoals! When I joined Hadrian and @USNavy leaders earlier this year to celebrate this historic investment, we knew it would result in good-paying jobs that would strengthen our c",
-            "sourceUrl": "https://x.com/SenKatieBritt/status/2097745331429466566",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "pete-ricketts",
-            "voiceName": "Pete Ricketts",
-            "photo": "/photos/pete-ricketts.jpg",
-            "quote": "This week, Crawford welcomed The Traveling Vietnam Wall and Cost of Freedom Tribute.\n\nThe wall is an 80% scale replica of the Vietnam Veterans Memorial in Washington, DC. It pays tribute to those who ",
-            "sourceUrl": "https://x.com/SenatorRicketts/status/2097780526266360277",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "ian-bremmer",
-            "voiceName": "Ian Bremmer",
-            "photo": "/photos/ian-bremmer.jpg",
-            "quote": "ukraine\u2019s extraordinary capacity to defend their territory against a far more powerful enemy",
-            "sourceUrl": "https://bsky.app/profile/ianbremmer.com/post/3mv4dpv5h3s2z",
-            "platform": "bluesky",
-            "fit": 4,
-            "quoteQuality": 4
-          }
-        ],
-        "voiceCount": 3,
-        "bestQuote": {
-          "voiceName": "Katie Britt",
-          "quote": "Exciting news for the Shoals! When I joined Hadrian and @USNavy leaders earlier this year to celebrate this historic investment, we knew it would result in good-paying jobs that would strengthen our c",
-          "platform": "x",
-          "quality": 4
-        }
-      }
-    ],
-    "belowThreshold": false
-  },
-  {
-    "topic": "trump-policy",
-    "topicDisplay": "Trump Policy",
-    "headline": "Republicans' Midterm Convention Highlights $5K Pledge Amid Record Gas Prices",
-    "voiceCount": 17,
-    "clusterCount": 6,
-    "insight": "Democrats hammer record gas prices and costs while Republicans tout Trump's $5,000 pledge and agenda at midterm convention.",
-    "clusters": [
-      {
-        "name": "Rising Costs Under Trump",
-        "voices": [
-          {
-            "voiceId": "randi-weingarten",
-            "voiceName": "Randi Weingarten",
-            "photo": "/photos/randi-weingarten.jpg",
-            "quote": "Gas hit a record Labor Day high this year\u2014$4.14/gallon. Where are the lower prices Trump promised on the campaign trail? Americans need relief now. www.pbs.org/newshour/nat...",
-            "sourceUrl": "https://bsky.app/profile/rweingarten.bsky.social/post/3mv524mri5k23",
-            "platform": "bluesky",
             "fit": 10,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "chuck-schumer",
-            "voiceName": "Chuck Schumer",
-            "photo": "/photos/chuck-schumer.jpg",
-            "quote": "They can lie and call it whatever they want but the American people know the truth:\n \nDonald Trump got us into an endless WAR that has caused skyrocketing prices at home while putting our servicemembe",
-            "sourceUrl": "https://x.com/SenSchumer/status/2097432030350832123",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "hakeem-jeffries",
-            "voiceName": "Hakeem Jeffries",
-            "photo": "/photos/hakeem-jeffries.jpg",
-            "quote": "Americans paid record-high gas prices on Labor Day. \n\nRepublicans promised to lower costs.\n\nTheir reckless war of choice in Iran and the Trump Tariffs have instead made life way more expensive. \n\nThey",
-            "sourceUrl": "https://x.com/RepJeffries/status/2097370013879407061",
-            "platform": "x",
-            "fit": 10,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "robert-garcia",
-            "voiceName": "Robert Garcia",
-            "photo": "/photos/robert-garcia.jpg",
-            "quote": "Trump's insults to Canada are shameful and embarrassing. We depend on our Northern ally for trade and tourism. \n\nWhat people actually need is affordable health care, groceries, and housing, not derang",
-            "sourceUrl": "https://x.com/RepRobertGarcia/status/2097487549451100584",
-            "platform": "x",
-            "fit": 5,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "david-pakman",
-            "voiceName": "David Pakman",
-            "photo": "/photos/david-pakman.jpg",
-            "quote": "Trump\u2019s 9/11 story falls apart as prices hit record high",
-            "sourceUrl": "https://www.youtube.com/watch?v=oPDnwHj1hXI",
-            "platform": "youtube",
-            "fit": 6,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "trevor-noah",
-            "voiceName": "Trevor Noah",
-            "photo": "/photos/trevor-noah.jpg",
-            "quote": "Trump found a way to gas-gaslight Americans over rising fuel costs #dailyshow",
-            "sourceUrl": "https://www.youtube.com/shorts/LNWdzejMdKw",
-            "platform": "youtube",
-            "fit": 7,
-            "quoteQuality": 1
+            "quoteQuality": 2
           }
         ],
-        "voiceCount": 6,
+        "voiceCount": 2,
         "bestQuote": {
-          "voiceName": "Randi Weingarten",
-          "quote": "Gas hit a record Labor Day high this year\u2014$4.14/gallon. Where are the lower prices Trump promised on the campaign trail? Americans need relief now. www.pbs.org/newshour/nat...",
-          "platform": "bluesky",
+          "voiceName": "Mark Dubowitz",
+          "quote": "Iran\u2019s Nightmare: No War, No Relief (feat. Miad Maleki). The Islamic Republic may discover that surviving the war was the easy part. Its military has been mauled, its deterrence shattered, its proxies",
+          "platform": "podcast",
           "quality": 5
         }
       },
       {
-        "name": "Defending Trump Agenda",
+        "name": "Sanctions/Restraint Analysis",
         "voices": [
           {
-            "voiceId": "ted-cruz",
-            "voiceName": "Ted Cruz",
-            "photo": "/photos/ted-cruz.jpg",
-            "quote": "I believe this is the most important midterm of our lifetimes.\n\nIf Democrats take the House, or, God forbid, the House and Senate, the entire Trump legislative agenda of more jobs and bringing investm",
-            "sourceUrl": "https://x.com/tedcruz/status/2097746373475008894",
-            "platform": "x",
+            "voiceId": "ryan-grim",
+            "voiceName": "Ryan Grim",
+            "photo": "/photos/ryan-grim.jpg",
+            "quote": "Many Iranians Forced to Take Out Loans to Pay for Daily Essentials (by Fateme Karimkhan). While the Trump administration\u2019s sanctions are driving many Iranians into debt, there is little indication the",
+            "sourceUrl": "https://www.dropsitenews.com/p/iran-economy-debt-us-war",
+            "platform": "substack",
             "fit": 9,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "dan-bongino",
-            "voiceName": "Dan Bongino",
-            "photo": "/photos/dan-bongino.jpg",
-            "quote": "This Explains Everything (Ep. 2591). In this episode, I remember the traumatic 9/11 terrorist attacks and how they shaped President Trump and his present policies.\n\n\n\n1776 Live Club: No purchase neces",
-            "sourceUrl": "",
-            "platform": "podcast",
-            "fit": 4,
-            "quoteQuality": 5
-          },
-          {
-            "voiceId": "mike-johnson",
-            "voiceName": "Mike Johnson",
-            "photo": "/photos/mike-johnson.jpg",
-            "quote": "Republicans are working hard every day to lower costs and make life easier for American workers and families.\n\nWe\u2019ll keep fighting for common sense and REFUSE to let Democrats lead us down the dangero",
-            "sourceUrl": "https://x.com/SpeakerJohnson/status/2097481201250435397",
-            "platform": "x",
-            "fit": 8,
-            "quoteQuality": 4
-          },
-          {
-            "voiceId": "nancy-mace",
-            "voiceName": "Nancy Mace",
-            "photo": "/photos/nancy-mace.jpg",
-            "quote": "America will never be a Socialist nation.\n\nHold the Line. https://t.co/AxL4vv61D5",
-            "sourceUrl": "https://x.com/RepNancyMace/status/2097799771217858837",
-            "platform": "x",
-            "fit": 5,
-            "quoteQuality": 3
-          }
-        ],
-        "voiceCount": 4,
-        "bestQuote": {
-          "voiceName": "Ted Cruz",
-          "quote": "I believe this is the most important midterm of our lifetimes.\n\nIf Democrats take the House, or, God forbid, the House and Senate, the entire Trump legislative agenda of more jobs and bringing investm",
-          "platform": "x",
-          "quality": 5
-        }
-      },
-      {
-        "name": "Covering the Convention Spectacle",
-        "voices": [
-          {
-            "voiceId": "don-lemon",
-            "voiceName": "Don Lemon",
-            "photo": "/photos/don-lemon.jpg",
-            "quote": "Trump's midterm convention is currently underway, and it's just as crazy as you're imagining.",
-            "sourceUrl": "https://www.youtube.com/shorts/070XpPXwDVo",
-            "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "brian-tyler-cohen",
-            "voiceName": "Brian Tyler Cohen",
-            "photo": "/photos/brian-tyler-cohen.jpg",
-            "quote": "Trump makes SHOCK MISTAKE at midterm convention | Another Day",
-            "sourceUrl": "https://www.youtube.com/watch?v=e1MdCeo_fao",
-            "platform": "youtube",
-            "fit": 8,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "jon-stewart",
-            "voiceName": "Jon Stewart",
-            "photo": "/photos/jon-stewart.jpg",
-            "quote": "Trump 1 vs. Trump 2 | The Weekly Show with Jon Stewart",
-            "sourceUrl": "https://www.youtube.com/shorts/uB4SF7HNqbo",
-            "platform": "youtube",
-            "fit": 6,
-            "quoteQuality": 1
-          },
-          {
-            "voiceId": "lincoln-project",
-            "voiceName": "Lincoln Project",
-            "photo": "/photos/lincoln-project.jpg",
-            "quote": "Republicans reveal their plan",
-            "sourceUrl": "https://www.youtube.com/shorts/sSXdoZoDwbE",
-            "platform": "youtube",
-            "fit": 5,
-            "quoteQuality": 1
-          }
-        ],
-        "voiceCount": 4,
-        "bestQuote": {
-          "voiceName": "Don Lemon",
-          "quote": "Trump's midterm convention is currently underway, and it's just as crazy as you're imagining.",
-          "platform": "youtube",
-          "quality": 1
-        }
-      },
-      {
-        "name": "GOP Betrayal on Priorities",
-        "voices": [
-          {
-            "voiceId": "tucker-carlson",
-            "voiceName": "Tucker Carlson",
-            "photo": "/photos/tucker-carlson.jpg",
-            "quote": "Republicans are going to lose in November because Trump chose a foreign country over his own voters. Here\u2019s how deep the betrayal is. https://t.co/WneZ2Gm1Fa",
-            "sourceUrl": "https://x.com/TuckerCarlson/status/2097853622411219010",
-            "platform": "x",
-            "fit": 9,
-            "quoteQuality": 5
+            "quoteQuality": 6
           }
         ],
         "voiceCount": 1,
         "bestQuote": {
-          "voiceName": "Tucker Carlson",
-          "quote": "Republicans are going to lose in November because Trump chose a foreign country over his own voters. Here\u2019s how deep the betrayal is. https://t.co/WneZ2Gm1Fa",
-          "platform": "x",
-          "quality": 5
-        }
-      },
-      {
-        "name": "$5K Pledge Legal Analysis",
-        "voices": [
-          {
-            "voiceId": "rick-hasen",
-            "voiceName": "Rick Hasen",
-            "photo": "/photos/rick-hasen.jpg",
-            "quote": "Trump&#8217;s (Hard to Believe) Pledge to Give Every American Adult $5,000 If Republicans Win Control of House and Senate is Almost Certainly Protected by the First Amendment Against Bribery or Vote B",
-            "sourceUrl": "https://electionlawblog.org/2026/trumps-hard-to-believe-pledge-to-give-every-american-adult-5000-if-republicans-win-control-of-house-and-senate-is-almost-certainly-protected-by-the-first-amendment-against-bribery-or-vote-buying/",
-            "platform": "blog",
-            "fit": 10,
-            "quoteQuality": 3
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Rick Hasen",
-          "quote": "Trump&#8217;s (Hard to Believe) Pledge to Give Every American Adult $5,000 If Republicans Win Control of House and Senate is Almost Certainly Protected by the First Amendment Against Bribery or Vote B",
-          "platform": "blog",
-          "quality": 3
-        }
-      },
-      {
-        "name": "Immigration Policy Critique",
-        "voices": [
-          {
-            "voiceId": "matt-yglesias",
-            "voiceName": "Matt Yglesias",
-            "photo": "/photos/matt-yglesias.jpg",
-            "quote": "Trump is rolling out plans to kill off work opportunities for foreign-born recent graduates of American colleges and universities and tilt the H-1B pipeline even more to outsourcing shops.\n\nwww.slowbo",
-            "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mv3covxavk2z",
-            "platform": "bluesky",
-            "fit": 9,
-            "quoteQuality": 5
-          }
-        ],
-        "voiceCount": 1,
-        "bestQuote": {
-          "voiceName": "Matt Yglesias",
-          "quote": "Trump is rolling out plans to kill off work opportunities for foreign-born recent graduates of American colleges and universities and tilt the H-1B pipeline even more to outsourcing shops.\n\nwww.slowbo",
-          "platform": "bluesky",
-          "quality": 5
+          "voiceName": "Ryan Grim",
+          "quote": "Many Iranians Forced to Take Out Loans to Pay for Daily Essentials (by Fateme Karimkhan). While the Trump administration\u2019s sanctions are driving many Iranians into debt, there is little indication the",
+          "platform": "substack",
+          "quality": 6
         }
       }
     ],

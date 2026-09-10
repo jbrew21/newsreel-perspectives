@@ -2,8 +2,8 @@
   "voiceId": "heather-cox-richardson",
   "voiceName": "Heather Cox Richardson",
   "updatedAt": "2026-09-10",
-  "topicCount": 18,
-  "stanceCount": 88,
+  "topicCount": 19,
+  "stanceCount": 89,
   "topics": [
     {
       "topic": "trump-administration",
@@ -868,6 +868,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Highlights broader significance of 9/11 commemoration",
+          "quote": "This is a powerful piece. It is not just about 9/11.",
+          "sourceUrl": "https://bsky.app/profile/hcrichardson.bsky.social/post/3mv6amwvwqk2u",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",

@@ -2,15 +2,33 @@
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
   "updatedAt": "2026-09-10",
-  "topicCount": 18,
-  "stanceCount": 111,
+  "topicCount": 19,
+  "stanceCount": 114,
   "topics": [
     {
       "topic": "sports",
       "label": "Sports",
-      "count": 42,
-      "lastActive": "2026-09-08",
+      "count": 44,
+      "lastActive": "2026-09-10",
       "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Highlights Ryan Garcia's focus and fight readiness",
+          "quote": "Ryan Garcia has tunnel vision and is ready to kick A**! Watch the full interview and how he is preparing for his upcoming fight on YouTube today!",
+          "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7683689575075630349",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Emphasizes Ryan Garcia's determination and comeback focus",
+          "quote": "Ryan Garcia is locked in as he prepares for his fight against Conor Benn. \u201cIt\u2019s never too late to get back on the horse.\u201d Watch the full interview now on YouTube.",
+          "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7683658760845397262",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-08",
           "topic": "sports",
@@ -1089,6 +1107,24 @@
           "summary": "Discusses political division and common good with Democratic senator",
           "quote": "Crisis Of The Common Good: Sen. Chris Murphy On Fixing A Divided America | Stephen A. Smith",
           "sourceUrl": "https://www.youtube.com/watch?v=lDf5AAukiH0",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Supports raising minimum wage to living wage standard",
+          "quote": "Sen. Chris Murphy Tells Stephen A. that Minimum Wage Should Be a Living Wage!",
+          "sourceUrl": "https://www.youtube.com/shorts/vq1wup-Bhyo",
           "platform": "youtube"
         }
       ],
