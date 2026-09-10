@@ -2,8 +2,8 @@
   "voiceId": "ted-lieu",
   "voiceName": "Ted Lieu",
   "updatedAt": "2026-09-10",
-  "topicCount": 11,
-  "stanceCount": 52,
+  "topicCount": 12,
+  "stanceCount": 53,
   "topics": [
     {
       "topic": "ai-technology",
@@ -535,6 +535,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Opposes Trump's mass detention policy as inhumane",
+          "quote": "More than 460 federal judges have rejected Trump\u2019s awful and inhumane mass detention policy. \n\nhttps://t.co/5ZXJu1Qjzz",
+          "sourceUrl": "https://x.com/RepTedLieu/status/2098138019651813797",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",

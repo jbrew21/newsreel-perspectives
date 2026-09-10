@@ -3,7 +3,7 @@
   "voiceName": "Megyn Kelly",
   "updatedAt": "2026-09-10",
   "topicCount": 19,
-  "stanceCount": 81,
+  "stanceCount": 82,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -717,6 +717,33 @@
       "active": false
     },
     {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Praises Trump's campaign energy and messaging",
+          "quote": "Trump Brings CLASSIC Energy to Midterm RNC",
+          "sourceUrl": "https://www.youtube.com/watch?v=Viiu-kObkYw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Analyzes future direction of MAGA movement and Republican Party",
+          "quote": "What the Future of MAGA and the GOP Looks Like",
+          "sourceUrl": "https://www.youtube.com/watch?v=bBynoMyeqfk",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "sports",
       "label": "Sports",
       "count": 2,
@@ -864,24 +891,6 @@
           "summary": "Suggests Trump needed to observe Iran conflict to develop strategy",
           "quote": "Why Trump Needed to Watch the Iran War Play Out to Learn the Right Strategy, w/ Megyn Kelly and VDH",
           "sourceUrl": "https://www.youtube.com/shorts/gKs2NuO6cbo",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 1,
-      "lastActive": "2026-09-08",
-      "stances": [
-        {
-          "date": "2026-09-08",
-          "topic": "trump-policy",
-          "stance": "lean",
-          "summary": "Analyzes future direction of MAGA movement and Republican Party",
-          "quote": "What the Future of MAGA and the GOP Looks Like",
-          "sourceUrl": "https://www.youtube.com/watch?v=bBynoMyeqfk",
           "platform": "youtube"
         }
       ],

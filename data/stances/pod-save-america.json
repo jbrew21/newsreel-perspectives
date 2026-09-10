@@ -3,7 +3,7 @@
   "voiceName": "Pod Save America",
   "updatedAt": "2026-09-10",
   "topicCount": 19,
-  "stanceCount": 143,
+  "stanceCount": 144,
   "topics": [
     {
       "topic": "elections",
@@ -1230,6 +1230,33 @@
       "active": false
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 2,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "School board activism framed as making boards less politicized",
+          "quote": "These Republican Moms from Texas want to \u201cmake school board boring again.\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/4W3rT-gWk04",
+          "platform": "youtube"
+        },
+        {
+          "date": "2025-08-15",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Praises UCLA for resisting DEI pressure unlike peer institutions",
+          "quote": "\"UCLA is not going to sell their soul like Harvard or Brown or Penn or Columbia.\" \u2013Governor @GavinNewsom https://t.co/XcCRSwhTR0",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/1956341233531433256",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 3,
@@ -1440,24 +1467,6 @@
           "summary": "Trump and Defense Secretary disrespected sailors and lied about conditions",
           "quote": "Vietor: For the sailors on that ship, for their families, and for the people who actually understand what's going on: to have your president belittle your service like that, to have the secretary of defense just lie about the conditions you're living in \u2014 it's messed up.",
           "sourceUrl": "https://x.com/PodSaveAmerica/status/2089706820302475401",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 1,
-      "lastActive": "2025-08-15",
-      "stances": [
-        {
-          "date": "2025-08-15",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Praises UCLA for resisting DEI pressure unlike peer institutions",
-          "quote": "\"UCLA is not going to sell their soul like Harvard or Brown or Penn or Columbia.\" \u2013Governor @GavinNewsom https://t.co/XcCRSwhTR0",
-          "sourceUrl": "https://x.com/PodSaveAmerica/status/1956341233531433256",
           "platform": "x"
         }
       ],

@@ -3,7 +3,7 @@
   "voiceName": "Jon Stewart",
   "updatedAt": "2026-09-10",
   "topicCount": 20,
-  "stanceCount": 79,
+  "stanceCount": 81,
   "topics": [
     {
       "topic": "military-defense",
@@ -332,7 +332,7 @@
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 11,
+      "count": 12,
       "lastActive": "2026-08-12",
       "stances": [
         {
@@ -423,6 +423,15 @@
           "summary": "Expresses enthusiasm for C-SPAN programming",
           "quote": "This is the best season of cspan\u2026ever.",
           "sourceUrl": "https://x.com/jonstewart/status/1610705363451494426",
+          "platform": "x"
+        },
+        {
+          "date": "2022-11-18",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Critical of Twitter's direction under new ownership",
+          "quote": "See you on the other side Arbys\u2026#RIPTwitter",
+          "sourceUrl": "https://x.com/jonstewart/status/1593435007938338827",
           "platform": "x"
         },
         {
@@ -654,6 +663,33 @@
       "active": false
     },
     {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 2,
+      "lastActive": "2026-08-19",
+      "stances": [
+        {
+          "date": "2026-08-19",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Questions Democratic Party strategy for 2028 election",
+          "quote": "Dems 2028 Plan? | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/CVgXLd7usdA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2021-01-29",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Satirically mocks prospect of becoming president via social media",
+          "quote": "So...if I do really well on here I get to be President, yes?",
+          "sourceUrl": "https://x.com/jonstewart/status/1355276142262050817",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 2,
@@ -751,24 +787,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 1,
-      "lastActive": "2026-08-19",
-      "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Questions Democratic Party strategy for 2028 election",
-          "quote": "Dems 2028 Plan? | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/CVgXLd7usdA",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "free-speech-censorship",

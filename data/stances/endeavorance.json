@@ -2,8 +2,8 @@
   "voiceId": "endeavorance",
   "voiceName": "Endeavorance",
   "updatedAt": "2026-09-10",
-  "topicCount": 19,
-  "stanceCount": 45,
+  "topicCount": 20,
+  "stanceCount": 47,
   "topics": [
     {
       "topic": "ai-technology",
@@ -283,6 +283,33 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Dismisses Trump's promised policy commitments as unlikely to materialize",
+          "quote": "Of course, none of that is relevant because it\u2019s not happening and the man is more likely to shit himself to death on live TV than actually follow through on such a promise",
+          "sourceUrl": "https://bsky.app/profile/endeavorance.camp/post/3mv6xftxo7k2l",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's $5,000 check promise as grift with government cash-flow control",
+          "quote": "The \"I'll give everyone a $5,000 check\" promise from Trump was wild enough but I didn't realize he had added that there would be a stipulation on disallowing using that money to buy foreign products\n\nNot only going for essentially UBI-as-a-grift, but also declaring \"we'd control ",
+          "sourceUrl": "https://bsky.app/profile/endeavorance.camp/post/3mv6xehekia2y",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",
