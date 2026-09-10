@@ -1,16 +1,52 @@
 {
   "voiceId": "ed-zitron",
   "voiceName": "Ed Zitron",
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "topicCount": 5,
-  "stanceCount": 21,
+  "stanceCount": 34,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 12,
-      "lastActive": "2026-09-09",
+      "count": 23,
+      "lastActive": "2026-09-10",
       "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Accuses AI executive of opportunistic publicity stunt, questions sincerity of safety concerns",
+          "quote": "Or he saw an opportunity for publicity and took it. Nothing about this feels driven by any sincere concerns for anyone or specific harms he\u2019s actually upset about other than a vague sense of \u201cinadequate safety\u201d referring to a non existent super intelligence  \nbsky.app/profile/imd",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mv4td245nc2g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes AI companies for massive infrastructure deployment, says actual harms are overlooked",
+          "quote": "Notice that he isn\u2019t worried about (nor did he quit over) the fact that both anthropic and OpenAI mobilized - deliberately or otherwise - billions of dollars of infrastructure to hack multiple systems. It doesn\u2019t have to be conscious or actually intelligent to be dangerous. Why i",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mv4ta75aa22g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Denounces vague AI safety claims as evasive and offensive, demands concrete explanation of harms",
+          "quote": "All this bullshit about \u201coh we don\u2019t understand it, it\u2019s so powerful\u201d while not explaining with any clarity what it is you\u2019re scared of or critiquing the actual harms about this is offensive to me. It\u2019s something big is happening all over again except he has media training",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mv4sxge5rc2g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes Anthropic/OpenAI executive's media tour for vague safety concerns without specifics",
+          "quote": "This Jacob Coxon thing is weird. He worked at Anthropic for six weeks and OpenAI for nearly three years. He\u2019s doing a whole media tour without any real statements about what it is he\u2019s scared of other than vague references to recursive self improvement, a theoretical ai that teac",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mv4suhyexc2g",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-09",
           "topic": "ai-technology",
@@ -118,6 +154,69 @@
           "quote": "The AI bubble will survive right until it doesn't - and that moment will be when the money stops flowing, and the dangers posed by this circular dealing and market concentration are exposed. \n\nwww.wheresyoured.at/concentratio...",
           "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3muzd3wwxmg2c",
           "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-04",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Explains mechanics of NVIDIA-OpenAI circular financing arrangement",
+          "quote": "Premium: The Hater's Guide To Circular Financing (Part Two). You know, sometimes it\u2019s kind of hard to explain the \u201ccircular\u201d part of circular financing to people, in the sense that some of the agreements are kind of clunky. NVIDIA funds OpenAI, who then spends that money to rent ",
+          "sourceUrl": "https://www.wheresyoured.at/premium-the-haters-guide-to-circular-financing-part-two/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Satirizes NVIDIA leadership and AI industry circular financing model",
+          "quote": "Premium: The Hater's Guide To Circular Financing (Part One). [NVIDIA Company Meeting, the present day, YMCA playing]JENSEN HUANG: We love NVIDIA, don\u2019t we folks? We\u2019re the biggest, most-beautiful semiconductor company, we make the biggest, hottest GPUs for Clammy Sammy and Wario ",
+          "sourceUrl": "https://www.wheresyoured.at/premium-the-haters-guide-to-circular-financing-part-one/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Critiques excessive capital requirements and financial unsustainability of AI development",
+          "quote": "Premium: How Much Money Does AI Need?. I\u2019ve heard from people in the past that my articles are too long, and I wanted to start by saying that, for the most part, they\u2019re going to stay long, because I feel like the only way for me to make my arguments is to be",
+          "sourceUrl": "https://www.wheresyoured.at/premium-how-much-money-does-ai-need/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Compares NVIDIA to historical corporate frauds like Enron and WorldCom",
+          "quote": "Premium: The Hater's Guide To NVIDIA (Part 2). For a little under a year, everyone \u2014 myself included \u2014 has compared NVIDIA to Enron, largely because NVIDIA insisted, in detail, that it was nothing like Enron, WorldCom, or Lucent, a potent example of the Streisand Effect that woul",
+          "sourceUrl": "https://www.wheresyoured.at/premium-the-haters-guide-to-nvidia-part-2/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Reports Microsoft's AI revenue largely dependent on single customer OpenAI",
+          "quote": "News: Microsoft Disclosures Suggest OpenAI Sales Account For Around 70% Of FY26 AI Revenue, More Than 7% of FY26 Revenue. Executive Summary:Microsoft disclosures and Bloomberg analyses show that OpenAI's compute spend and revenue share accounted for 70% or more of Microsoft's FY2",
+          "sourceUrl": "https://www.wheresyoured.at/news-microsoft-disclosures-suggest-openai-sales-account-for-around-70-of-fy26-ai-revenue-more-than-7-of-fy26-revenue/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Contends AI development costs are economically unjustifiable",
+          "quote": "Premium: AI Is Getting Way Too Expensive. A great deal of the discussion of the so-called benefits or problems with AI comes down to the theoretical jobs that are (or are not) lost as a result of things LLMs can (or cannot do), or the equally theoretical productivity benefits tha",
+          "sourceUrl": "https://www.wheresyoured.at/premium-ai-is-getting-way-too-expensive/",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-07-24",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Analyzes Oracle's inflated industry mythology and business practices",
+          "quote": "Premium: The Hater\u2019s Guide To Oracle (Part 2). Good morning premium subscribers! As ever, please ping me at ez@betteroffline.com if you have any questions.Oracle has one of the strongest mythologies in the tech industry. Ask a regular person and they\u2019ll tell you that it\u2019s \u201cincred",
+          "sourceUrl": "https://www.wheresyoured.at/premium-the-haters-guide-to-oracle-part-2/",
+          "platform": "substack"
         }
       ],
       "active": true
@@ -125,9 +224,27 @@
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 3,
-      "lastActive": "2026-09-03",
+      "count": 5,
+      "lastActive": "2026-09-10",
       "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Criticizes media outlet for stealth-editing story without correction notice",
+          "quote": "I got six weeks from this business insider story\n archive.ph/2026.09.09-0...\nWhich has now been stealth edited to say \u201cearlier this year,\u201d seems like four months is the consensus. Doesn\u2019t change much about what I said!",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mv55h55dzk2m",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes media for failing to ask follow-up questions on AI safety claims",
+          "quote": "This is yet another example of many media outlets failing the basic test of asking \u201ccan you explain?\u201d and further interrogatories based on the answer.",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mv4suhyrnk2g",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-03",
           "topic": "media-press",
@@ -192,7 +309,7 @@
           "platform": "substack"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "economy-trade",
@@ -219,7 +336,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-personalities",

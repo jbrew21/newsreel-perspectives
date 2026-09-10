@@ -1,36 +1,36 @@
 {
   "voiceId": "austan-goolsbee",
   "voiceName": "Austan Goolsbee",
-  "updatedAt": "2026-09-09",
-  "topicCount": 3,
-  "stanceCount": 3,
+  "updatedAt": "2026-09-10",
+  "topicCount": 4,
+  "stanceCount": 6,
   "topics": [
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 1,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Tax return backlog should be administration priority",
-          "quote": "@marcorubio Off the bat? Working through the 21.3 million backlog of unprocessed tax returns.",
-          "sourceUrl": "https://x.com/Austan_Goolsbee/status/1556803071270871041",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-08-31",
+      "count": 3,
+      "lastActive": "2023-06-28",
       "stances": [
         {
-          "date": "2026-08-31",
+          "date": "2023-06-28",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Inflation dynamics warrant cross-economy comparison analysis",
+          "quote": "Important to consider the situation in other big economies, too, when thinking about what\u2019s driving core inflation. https://t.co/ycSoVITlK4",
+          "sourceUrl": "https://x.com/Austan_Goolsbee/status/1673853406610440192",
+          "platform": "x"
+        },
+        {
+          "date": "2022-12-01",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Offers economic perspective on upcoming employment data",
+          "quote": "A bit of personal take on the forthcoming jobs numbers:\n\nhttps://t.co/i8u6acfQWo\n\n@ChicagoFed",
+          "sourceUrl": "https://x.com/Austan_Goolsbee/status/1598404154518634513",
+          "platform": "x"
+        },
+        {
+          "date": "2022-07-08",
           "topic": "economy-trade",
           "stance": "lean",
           "summary": "Job growth significant given current low unemployment",
@@ -39,16 +39,52 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2023-12-22",
+      "stances": [
+        {
+          "date": "2023-12-22",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "AI field should adopt different acronym to avoid tax concept confusion",
+          "quote": "AGI is a tax concept. The artificial intelligence people need to choose a different acronym. https://t.co/YoBWSssOdf",
+          "sourceUrl": "https://x.com/Austan_Goolsbee/status/1738026334138347797",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 1,
+      "lastActive": "2022-08-09",
+      "stances": [
+        {
+          "date": "2022-08-09",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Tax return backlog should be administration priority",
+          "quote": "@marcorubio Off the bat? Working through the 21.3 million backlog of unprocessed tax returns.",
+          "sourceUrl": "https://x.com/Austan_Goolsbee/status/1556803071270871041",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 1,
-      "lastActive": "2026-08-31",
+      "lastActive": "2022-03-02",
       "stances": [
         {
-          "date": "2026-08-31",
+          "date": "2022-03-02",
           "topic": "state-local-politics",
           "stance": "lean",
           "summary": "Supports mother's Democratic state legislative campaign",
@@ -57,7 +93,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     }
   ]
 }

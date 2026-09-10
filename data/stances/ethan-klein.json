@@ -1,9 +1,9 @@
 {
   "voiceId": "ethan-klein",
   "voiceName": "Ethan Klein",
-  "updatedAt": "2026-09-09",
-  "topicCount": 5,
-  "stanceCount": 24,
+  "updatedAt": "2026-09-10",
+  "topicCount": 6,
+  "stanceCount": 25,
   "topics": [
     {
       "topic": "celebrity-entertainment",
@@ -265,6 +265,24 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 1,
+      "lastActive": "2025-12-05",
+      "stances": [
+        {
+          "date": "2025-12-05",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Compiles historical statements on Israel-Palestine conflict",
+          "quote": "Clips of me speaking on Israel/Palestine throughout the years #ethanklein #h3 #h3h3 #h3podcast",
+          "sourceUrl": "https://www.tiktok.com/@ethankleinh3/video/7580253831615810830",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
     }
   ]
 }

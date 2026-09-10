@@ -1,16 +1,25 @@
 {
   "voiceId": "maxwell-frost",
   "voiceName": "Maxwell Frost",
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "topicCount": 7,
-  "stanceCount": 21,
+  "stanceCount": 22,
   "topics": [
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 12,
-      "lastActive": "2026-08-31",
+      "count": 13,
+      "lastActive": "2026-09-10",
       "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Endorses and campaigns for Angie Nixon's US Senate run",
+          "quote": "ALL OUT FOR @AngieNixon! Great canvass launch + Latino roundtable in Kissimmee today to elect Angie to the US Senate. And a huge shoutout to my sister @AOC for always believing in Florida. Not her first time in Central Florida and def not the last. Let's win! https://t.co/PdmxH3A",
+          "sourceUrl": "https://x.com/MaxwellFrostFL/status/2097859821424742514",
+          "platform": "x"
+        },
         {
           "date": "2026-08-31",
           "topic": "elections",
@@ -219,7 +228,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "gun-policy",

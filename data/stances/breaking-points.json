@@ -1,7 +1,7 @@
 {
   "voiceId": "breaking-points",
   "voiceName": "Breaking Points",
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "topicCount": 26,
   "stanceCount": 128,
   "topics": [
@@ -951,6 +951,42 @@
       "active": true
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 3,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Fox News internal conflict signals potential White House pressure on media",
+          "quote": "Fox FIRES Maria Bartiromo Over LEAKS To White House",
+          "sourceUrl": "https://www.youtube.com/watch?v=E02Sbj32_Vc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes Fox News for framing Democratic policies negatively on military matters",
+          "quote": "Fox News SHAMES SUFFERING Sailors As Weak Dems",
+          "sourceUrl": "https://www.youtube.com/watch?v=aQIrWieSJXQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Attacks Bari Weiss's Free Press as propaganda disguised as journalism",
+          "quote": "Bari Weiss Free Press Shameless FLOCK Propaganda",
+          "sourceUrl": "https://www.youtube.com/watch?v=qYE_nUG6rY0",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 4,
@@ -993,43 +1029,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 3,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Fox News internal conflict signals potential White House pressure on media",
-          "quote": "Fox FIRES Maria Bartiromo Over LEAKS To White House",
-          "sourceUrl": "https://www.youtube.com/watch?v=E02Sbj32_Vc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes Fox News for framing Democratic policies negatively on military matters",
-          "quote": "Fox News SHAMES SUFFERING Sailors As Weak Dems",
-          "sourceUrl": "https://www.youtube.com/watch?v=aQIrWieSJXQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Attacks Bari Weiss's Free Press as propaganda disguised as journalism",
-          "quote": "Bari Weiss Free Press Shameless FLOCK Propaganda",
-          "sourceUrl": "https://www.youtube.com/watch?v=qYE_nUG6rY0",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "billionaires-wealth",

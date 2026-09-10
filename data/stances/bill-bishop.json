@@ -1,10 +1,73 @@
 {
   "voiceId": "bill-bishop",
   "voiceName": "Bill Bishop",
-  "updatedAt": "2026-09-09",
-  "topicCount": 2,
-  "stanceCount": 2,
+  "updatedAt": "2026-09-10",
+  "topicCount": 5,
+  "stanceCount": 8,
   "topics": [
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Skeptical about substantive US-China AI progress during Xi visit",
+          "quote": "Deflation over for now; MOFCOM responds to US distillation advisory; DeepSeek IPO and new model; Xi-Trump summit. Expectations should be low for US-China AI discussions around Xi\u2019s upcoming visit, not only because of this advisory and the response but also because the US side is ",
+          "sourceUrl": "https://sinocism.com/p/deflation-over-for-now-mofcom-responds",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Signals marginal, incremental policy support insufficient",
+          "quote": "July 2026 Politburo meeting; Fifth Plenum set for October; Signals of marginal, incremental policy support. The Politburo held its July meeting today. Some of the highlights:\n\n\n\n\n\nFifth Plenum scheduled for October, agenda is \u201cto study major issues concerning the unremitting adva",
+          "sourceUrl": "https://sinocism.com/p/july-2026-politburo-meeting-fifth",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 3,
+      "lastActive": "2025-11-09",
+      "stances": [
+        {
+          "date": "2025-11-09",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes congressional leadership for not addressing air traffic control issues",
+          "quote": "Why haven\u2019t @SenSchumer and @RepJeffries demanded the immediate grounding of all private jets, to relieve pressure on air traffic control?",
+          "sourceUrl": "https://bsky.app/profile/billbishop.bsky.social/post/3m57rci447k2k",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2025-11-09",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Blames Ezra Klein's op-ed for government shutdown, demands accountability",
+          "quote": "Ezra Klein should take a lot of blame for this shutdown. He recommended the democrats shut the government in this column in September www.nytimes.com/2025/09/07/o... and now people are going hungry. Op-Ed\u2019s have consequences, and oped writers should have accountability @ezraklein",
+          "sourceUrl": "https://bsky.app/profile/billbishop.bsky.social/post/3m57mpjmikk2o",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2025-01-19",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes Democrat lawmaker for suggesting president ignore law",
+          "quote": "What is wrong with these politicians.  This Dem lawmaker is suggesting the president ignore a law for political reasons. 48 hours before trump becomes president.  open.substack.com/pub/lisaremi...",
+          "sourceUrl": "https://bsky.app/profile/billbishop.bsky.social/post/3lg2v33krts2q",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
@@ -24,19 +87,37 @@
       "active": false
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
       "count": 1,
-      "lastActive": "2026-07-30",
+      "lastActive": "2026-01-20",
       "stances": [
         {
-          "date": "2026-07-30",
-          "topic": "economy-trade",
+          "date": "2026-01-20",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Criticizes Democratic Socialist ties to Chinese Communist Party officials",
+          "quote": "Members of New York Mayor Zohran Mamdani\u2019s Democratic Socialists of America have been cultivating ties with officials of the Chinese Communist Party and agreeing to take pro-China positions, according to extensive minutes of internal meetings seen by Newsweek www.newsweek.com/mam",
+          "sourceUrl": "https://bsky.app/profile/billbishop.bsky.social/post/3mcufaaduyk2j",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2025-05-13",
+      "stances": [
+        {
+          "date": "2025-05-13",
+          "topic": "foreign-policy-diplomacy",
           "stance": "lean",
-          "summary": "Signals marginal, incremental policy support insufficient",
-          "quote": "July 2026 Politburo meeting; Fifth Plenum set for October; Signals of marginal, incremental policy support. The Politburo held its July meeting today. Some of the highlights:\n\n\n\n\n\nFifth Plenum scheduled for October, agenda is \u201cto study major issues concerning the unremitting adva",
-          "sourceUrl": "https://sinocism.com/p/july-2026-politburo-meeting-fifth",
-          "platform": "substack"
+          "summary": "Urges China to initiate Trump call to advance negotiations",
+          "quote": "Trump suggested he may have a call w Xi Jinping soon. I do not know if that is under active discussion, or if this is another appeal 4 a call, but Chinese side should harness the momentum & arrange a call. Who knows what else Xi might get in a friendly conversation sinocism.com/p",
+          "sourceUrl": "https://bsky.app/profile/billbishop.bsky.social/post/3lp2d7ez6ps2b",
+          "platform": "bluesky"
         }
       ],
       "active": false

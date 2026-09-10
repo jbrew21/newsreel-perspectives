@@ -1,9 +1,9 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "topicCount": 26,
-  "stanceCount": 158,
+  "stanceCount": 160,
   "topics": [
     {
       "topic": "state-local-politics",
@@ -367,7 +367,7 @@
           "topic": "elections",
           "stance": "strong",
           "summary": "Amplifies concern Trump will attempt election theft",
-          "quote": "Gavin Newsom Warns Trump Will Try To \u201cSteal\u201d The Midterms",
+          "quote": "Exclusive: Gavin Newsom Warns Trump Will Try To \u201cSteal\u201d The Midterms",
           "sourceUrl": "https://www.youtube.com/watch?v=k6T204wps5A",
           "platform": "youtube"
         },
@@ -827,9 +827,18 @@
     {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
-      "count": 10,
-      "lastActive": "2026-09-06",
+      "count": 11,
+      "lastActive": "2026-09-10",
       "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's midterm convention as chaotic",
+          "quote": "Trump's midterm convention is currently underway, and it's just as crazy as you're imagining.",
+          "sourceUrl": "https://www.youtube.com/shorts/070XpPXwDVo",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-06",
           "topic": "trump-policy",
@@ -1437,6 +1446,33 @@
       "active": false
     },
     {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 2,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Highlights Trump's luxury asset deterioration",
+          "quote": "Trump\u2019s $400 MILLION jet is FALLING APART",
+          "sourceUrl": "https://www.youtube.com/shorts/wK9Pu43gYBA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Criticizes billionaires avoiding tax obligations",
+          "quote": "Sophie Rain calls out billionaires who don't want to pay taxes",
+          "sourceUrl": "https://www.youtube.com/shorts/Vq9TeNycBfA",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "epstein-scandal",
       "label": "Epstein Scandal",
       "count": 2,
@@ -1602,24 +1638,6 @@
           "summary": "Praises LGBTQ+ acceptance and love",
           "quote": "Dolly Parton defends the LGBTQ+ community: &quot;We should be more loving. We are who we are.&quot;",
           "sourceUrl": "https://www.youtube.com/shorts/_asn1mR7Zz8",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "billionaires-wealth",
-      "label": "Billionaires & Wealth",
-      "count": 1,
-      "lastActive": "2026-08-22",
-      "stances": [
-        {
-          "date": "2026-08-22",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Criticizes billionaires avoiding tax obligations",
-          "quote": "Sophie Rain calls out billionaires who don't want to pay taxes",
-          "sourceUrl": "https://www.youtube.com/shorts/Vq9TeNycBfA",
           "platform": "youtube"
         }
       ],

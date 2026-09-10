@@ -1,9 +1,9 @@
 {
   "voiceId": "gretchen-whitmer",
   "voiceName": "Gretchen Whitmer",
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "topicCount": 15,
-  "stanceCount": 52,
+  "stanceCount": 53,
   "topics": [
     {
       "topic": "economy-trade",
@@ -240,6 +240,60 @@
       "active": true
     },
     {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 5,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Opposes Line 5 pipelines, orders permit review",
+          "quote": "Line 5\u2019s 73-year-old pipelines are a ticking time bomb in the Great Lakes. After a recent MI Supreme Court decision, I\u2019ve announced the state will review the tunnel permits. https://t.co/Xk9glTjjxk",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2097721203398222263",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Demands Enbridge remove oil from water immediately",
+          "quote": "Additionally, I am calling on Enbridge to get the oil out of the water in months, not the 10+ years a tunnel would take. Michigan has waited long enough.",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2097721205981937918",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Demands Enbridge remove oil from Line 5 pipeline in Straits of Mackinac",
+          "quote": "Line 5's 73-year-old pipelines are a ticking time bomb in the Straits of Mackinac. Today I told Enbridge's CEO to get the oil out of our water. \u202fMichigan has waited long enough. https://t.co/oIJcv22uo5",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2097823762695536722",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Continuing fight to stop Enbridge Line 5 oil pipeline",
+          "quote": "Today, I\u2019m continuing my 7-year fight on Line 5 to stop Enbridge from pumping oil through the Great Lakes. https://t.co/UPzFonleJh",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2093378909240701067",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Michigan investing in parks and conservation projects statewide",
+          "quote": "Big news for our public lands: we just secured $45 million in Trust Fund grants for 75 parks and conservation projects statewide, including protecting nearly 22,650 acres in the Keweenaw Peninsula. That's Michigan investing in the outdoors we love. https://t.co/Q58nlujLal",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2090547783858028566",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 5,
@@ -288,51 +342,6 @@
           "summary": "Supports expanding tuition-free higher education access",
           "quote": "A great education opens doors - that's why we\u2019re lowering the cost of higher ed to ensure more Michiganders are set up for success.\n\nThis year, we're expanding Michigan reconnect to learners 21 or older, giving more Michiganders a tuition-free pathway to a higher education.",
           "sourceUrl": "https://x.com/GovWhitmer/status/2084693517197086796",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
-      "count": 4,
-      "lastActive": "2026-09-09",
-      "stances": [
-        {
-          "date": "2026-09-09",
-          "topic": "climate-environment",
-          "stance": "strong",
-          "summary": "Opposes Line 5 pipelines, orders permit review",
-          "quote": "Line 5\u2019s 73-year-old pipelines are a ticking time bomb in the Great Lakes. After a recent MI Supreme Court decision, I\u2019ve announced the state will review the tunnel permits. https://t.co/Xk9glTjjxk",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2097721203398222263",
-          "platform": "x"
-        },
-        {
-          "date": "2026-09-09",
-          "topic": "climate-environment",
-          "stance": "strong",
-          "summary": "Demands Enbridge remove oil from water immediately",
-          "quote": "Additionally, I am calling on Enbridge to get the oil out of the water in months, not the 10+ years a tunnel would take. Michigan has waited long enough.",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2097721205981937918",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "climate-environment",
-          "stance": "strong",
-          "summary": "Continuing fight to stop Enbridge Line 5 oil pipeline",
-          "quote": "Today, I\u2019m continuing my 7-year fight on Line 5 to stop Enbridge from pumping oil through the Great Lakes. https://t.co/UPzFonleJh",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2093378909240701067",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Michigan investing in parks and conservation projects statewide",
-          "quote": "Big news for our public lands: we just secured $45 million in Trust Fund grants for 75 parks and conservation projects statewide, including protecting nearly 22,650 acres in the Keweenaw Peninsula. That's Michigan investing in the outdoors we love. https://t.co/Q58nlujLal",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2090547783858028566",
           "platform": "x"
         }
       ],
@@ -462,7 +471,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "protests-activism",

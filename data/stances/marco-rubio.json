@@ -1,7 +1,7 @@
 {
   "voiceId": "marco-rubio",
   "voiceName": "Marco Rubio",
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "topicCount": 8,
   "stanceCount": 28,
   "topics": [
@@ -222,33 +222,6 @@
       "active": true
     },
     {
-      "topic": "refugees-humanitarian",
-      "label": "Refugees & Humanitarian",
-      "count": 2,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "refugees-humanitarian",
-          "stance": "strong",
-          "summary": "Expresses solidarity, pledges humanitarian assistance to Nepal",
-          "quote": "We express our solidarity and are united in prayer for the Nepali people following the devastating floods. \n\n@StateDept stands ready to support the Government of Nepal with needed humanitarian assistance.",
-          "sourceUrl": "https://x.com/SecRubio/status/2092685986438250726",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "refugees-humanitarian",
-          "stance": "strong",
-          "summary": "Pledges U.S. support to Colombia following earthquake disaster",
-          "quote": "The Trump Administration is closely monitoring the large earthquake that struck Colombia and stands ready to support the people of Colombia and President @ABDELAESPRIELLA\u2019s Administration. American citizens in Colombia should enroll at https://t.co/KxoOEQejkZ and follow @USEmbass",
-          "sourceUrl": "https://x.com/SecRubio/status/2086840247531241829",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 3,
@@ -279,6 +252,33 @@
           "summary": "Announces visa restrictions for foreign nationals engaged in cybercrime",
           "quote": "President Trump has made clear that his administration will take action to counter cybercrime, fraud, and predatory schemes against Americans. Today I am announcing a new policy that will restrict visas to foreign nationals responsible for or complicit in cybercrime and cyber-ena",
           "sourceUrl": "https://x.com/SecRubio/status/2080304750541562361",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "refugees-humanitarian",
+      "label": "Refugees & Humanitarian",
+      "count": 2,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "refugees-humanitarian",
+          "stance": "strong",
+          "summary": "Expresses solidarity, pledges humanitarian assistance to Nepal",
+          "quote": "We express our solidarity and are united in prayer for the Nepali people following the devastating floods. \n\n@StateDept stands ready to support the Government of Nepal with needed humanitarian assistance.",
+          "sourceUrl": "https://x.com/SecRubio/status/2092685986438250726",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "refugees-humanitarian",
+          "stance": "strong",
+          "summary": "Pledges U.S. support to Colombia following earthquake disaster",
+          "quote": "The Trump Administration is closely monitoring the large earthquake that struck Colombia and stands ready to support the people of Colombia and President @ABDELAESPRIELLA\u2019s Administration. American citizens in Colombia should enroll at https://t.co/KxoOEQejkZ and follow @USEmbass",
+          "sourceUrl": "https://x.com/SecRubio/status/2086840247531241829",
           "platform": "x"
         }
       ],

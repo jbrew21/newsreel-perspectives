@@ -1,16 +1,25 @@
 {
   "voiceId": "alaina-wood",
   "voiceName": "Alaina Wood",
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "topicCount": 14,
-  "stanceCount": 33,
+  "stanceCount": 34,
   "topics": [
     {
       "topic": "climate-environment",
       "label": "Climate & Environment",
-      "count": 12,
-      "lastActive": "2026-09-08",
+      "count": 13,
+      "lastActive": "2026-09-09",
       "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Shares positive climate/nature observation from climate news source",
+          "quote": "I saw my first hummingbirds of the migration season while filming this \ud83e\udd79\n\ngoodclimatenews.substack.com/p/edition-52...",
+          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3mv3mpyvgvc2q",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-08",
           "topic": "climate-environment",
@@ -213,33 +222,6 @@
       "active": true
     },
     {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Criticizes bail as too low for drunk driver who killed cyclists",
-          "quote": "UPDATE: The driver was arrested today for violating his bail. It\u2019s almost like a $300,000 bail for killing two people and sending several others to the hospital was ridiculously low \u2014 especially considering the man has a long history of drunk and reckless driving. His new bond is",
-          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3mtzjeitjd227",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Demands accountability for cop who hit cyclist with no charges filed",
-          "quote": "Less than a week after a reckless driver killed and injured a group of collegiate cyclists, a cop in the same county hit a cyclist and no charges are being filed despite the cyclist being sent to the local trauma center.",
-          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3mtvz5hz4vk2p",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 3,
@@ -270,6 +252,33 @@
           "summary": "Celebrates removal of school board member accused of assault",
           "quote": "Last night Washington County, TN residents (including myself) voted out the school board member who called a female student hot then touched her during a recorded public meeting, and today he has a court date for the assault charge stemming from that incident. Love to see the acc",
           "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3msij5a72p22p",
+          "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-08-26",
+      "stances": [
+        {
+          "date": "2026-08-26",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes bail as too low for drunk driver who killed cyclists",
+          "quote": "UPDATE: The driver was arrested today for violating his bail. It\u2019s almost like a $300,000 bail for killing two people and sending several others to the hospital was ridiculously low \u2014 especially considering the man has a long history of drunk and reckless driving. His new bond is",
+          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3mtzjeitjd227",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Demands accountability for cop who hit cyclist with no charges filed",
+          "quote": "Less than a week after a reckless driver killed and injured a group of collegiate cyclists, a cop in the same county hit a cyclist and no charges are being filed despite the cyclist being sent to the local trauma center.",
+          "sourceUrl": "https://bsky.app/profile/thegarbagequeen.bsky.social/post/3mtvz5hz4vk2p",
           "platform": "bluesky"
         }
       ],
@@ -372,7 +381,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "covid-pandemic",
@@ -390,7 +399,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "terrorism",
