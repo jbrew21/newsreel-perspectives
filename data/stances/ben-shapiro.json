@@ -3,7 +3,7 @@
   "voiceName": "Ben Shapiro",
   "updatedAt": "2026-09-11",
   "topicCount": 34,
-  "stanceCount": 238,
+  "stanceCount": 240,
   "topics": [
     {
       "topic": "elections",
@@ -755,9 +755,18 @@
     {
       "topic": "culture-war",
       "label": "Culture War",
-      "count": 16,
-      "lastActive": "2026-09-08",
+      "count": 17,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Calls for national awareness or action on unspecified issue",
+          "quote": "Wake up, America.",
+          "sourceUrl": "https://www.youtube.com/shorts/cRl6qrPg7sQ",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-08",
           "topic": "culture-war",
@@ -1410,74 +1419,20 @@
       "active": true
     },
     {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 6,
-      "lastActive": "2026-09-01",
-      "stances": [
-        {
-          "date": "2026-09-01",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Implies NYC is in decline or deteriorating condition",
-          "quote": "NYC is looking a little rough.",
-          "sourceUrl": "https://www.youtube.com/shorts/BWcO75O3-Ck",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Questions unspecified New York policy or incident",
-          "quote": "What's going on in New York??",
-          "sourceUrl": "https://www.youtube.com/shorts/KEsoAV0yW70",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Criticizes California state governance",
-          "quote": "You're doing just great, California. #puretalkpartner",
-          "sourceUrl": "https://www.youtube.com/shorts/PaoJ9xfyL-w",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Implies James Talarico is hiding or deflecting from a controversial event",
-          "quote": "The Event James Talarico Doesn't Want You Asking About",
-          "sourceUrl": "https://www.youtube.com/watch?v=thplfCHR4hA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-28",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Criticizes NYC official for releasing names and addresses of property owners",
-          "quote": "Zohran Mamdani is going full Bane from The Dark Knight Rises. He\u2019s clearly trying to get apartment owners in NYC hurt.\n\nWhy else release names and addresses of people who might have to pay certain taxes?\n\nIt\u2019s both disgusting and dangerous. But that\u2019s the name of the game for a m",
-          "sourceUrl": "https://x.com/benshapiro/status/2082173201510277540",
-          "platform": "x"
-        },
-        {
-          "date": "2020-09-03",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Criticizes Pelosi's deflection over salon visit during lockdown",
-          "quote": "The fact that Nancy Pelosi is blaming the salon owner for her own Marie Antoinette behavior is even more Marie Antoinette.",
-          "sourceUrl": "https://x.com/benshapiro/status/1301325629321654273",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "terrorism",
       "label": "Terrorism & Security",
-      "count": 8,
-      "lastActive": "2026-08-21",
+      "count": 9,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Examines 9/11 origins and motivations",
+          "quote": "Remember WHO Did 9/11... And WHY",
+          "sourceUrl": "https://www.youtube.com/watch?v=F6J8HZve9_E",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-21",
           "topic": "terrorism",
@@ -1551,7 +1506,70 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 6,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Implies NYC is in decline or deteriorating condition",
+          "quote": "NYC is looking a little rough.",
+          "sourceUrl": "https://www.youtube.com/shorts/BWcO75O3-Ck",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Questions unspecified New York policy or incident",
+          "quote": "What's going on in New York??",
+          "sourceUrl": "https://www.youtube.com/shorts/KEsoAV0yW70",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Criticizes California state governance",
+          "quote": "You're doing just great, California. #puretalkpartner",
+          "sourceUrl": "https://www.youtube.com/shorts/PaoJ9xfyL-w",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Implies James Talarico is hiding or deflecting from a controversial event",
+          "quote": "The Event James Talarico Doesn't Want You Asking About",
+          "sourceUrl": "https://www.youtube.com/watch?v=thplfCHR4hA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-28",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Criticizes NYC official for releasing names and addresses of property owners",
+          "quote": "Zohran Mamdani is going full Bane from The Dark Knight Rises. He\u2019s clearly trying to get apartment owners in NYC hurt.\n\nWhy else release names and addresses of people who might have to pay certain taxes?\n\nIt\u2019s both disgusting and dangerous. But that\u2019s the name of the game for a m",
+          "sourceUrl": "https://x.com/benshapiro/status/2082173201510277540",
+          "platform": "x"
+        },
+        {
+          "date": "2020-09-03",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Criticizes Pelosi's deflection over salon visit during lockdown",
+          "quote": "The fact that Nancy Pelosi is blaming the salon owner for her own Marie Antoinette behavior is even more Marie Antoinette.",
+          "sourceUrl": "https://x.com/benshapiro/status/1301325629321654273",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "covid-pandemic",

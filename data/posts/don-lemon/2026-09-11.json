@@ -1,26 +1,9 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-09-11T20:04:36.897166",
+  "collectedAt": "2026-09-11T22:09:11.591921",
   "date": "2026-09-11",
   "posts": [
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "Lemon Legend SLAMS John Fetterman for RNC video: \u201cHe\u2019s bought and paid for.\u201d",
-      "sourceUrl": "https://www.youtube.com/shorts/6h5rxTJdqXY",
-      "timestamp": "2026-09-11T00:26:11+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes Fetterman for appearing in RNC video, suggests political corruption",
-      "quote": "Lemon Legend SLAMS John Fetterman for RNC video: \u201cHe\u2019s bought and paid for.\u201d"
-    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -141,16 +124,35 @@
       "stance": "lean",
       "summary": "Reports Trump's repeated personal attacks on GOP Senate candidate's appearance",
       "quote": "Trump has now criticized GOP Senate candidate Ken Paxton's appearance multiple times on stage."
+    },
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "Don Lemon &amp; Jennifer Welch Can't Believe What's Happening At The RNC Convention",
+      "sourceUrl": "https://www.youtube.com/watch?v=eCvy5UHbmmo",
+      "timestamp": "2026-09-11T21:00:07+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "topics": [
+        "elections"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Critical reaction to RNC Convention events",
+      "quote": "Don Lemon &amp; Jennifer Welch Can't Believe What's Happening At The RNC Convention"
     }
   ],
   "topicSummary": {
-    "trump-administration": [
+    "culture-war": [
       {
-        "quote": "Lemon Legend SLAMS John Fetterman for RNC video: \u201cHe\u2019s bought and paid for.\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/6h5rxTJdqXY",
+        "quote": "In the United States, we pledge allegiance to the country, not a president.",
+        "sourceUrl": "https://www.youtube.com/shorts/GSUS8wAQbaM",
         "platform": "youtube",
-        "timestamp": "2026-09-11T00:26:11+00:00"
-      },
+        "timestamp": "2026-09-11T18:57:43+00:00"
+      }
+    ],
+    "trump-administration": [
       {
         "quote": "LEMON DROP - MAGA Always Eats Their Own! with Franchesca Ramsey",
         "sourceUrl": "https://www.youtube.com/watch?v=iq3qwyvbPUU",
@@ -176,14 +178,6 @@
         "timestamp": "2026-09-11T15:09:07+00:00"
       }
     ],
-    "culture-war": [
-      {
-        "quote": "In the United States, we pledge allegiance to the country, not a president.",
-        "sourceUrl": "https://www.youtube.com/shorts/GSUS8wAQbaM",
-        "platform": "youtube",
-        "timestamp": "2026-09-11T18:57:43+00:00"
-      }
-    ],
     "trump-policy": [
       {
         "quote": "Trump LUNGES at reporter when pressed about trying to bribe voters with fake promises",
@@ -196,6 +190,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/fX2M-TnJRv4",
         "platform": "youtube",
         "timestamp": "2026-09-11T16:36:46+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "Don Lemon &amp; Jennifer Welch Can't Believe What's Happening At The RNC Convention",
+        "sourceUrl": "https://www.youtube.com/watch?v=eCvy5UHbmmo",
+        "platform": "youtube",
+        "timestamp": "2026-09-11T21:00:07+00:00"
       }
     ]
   }

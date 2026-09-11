@@ -2,8 +2,8 @@
   "voiceId": "john-kennedy",
   "voiceName": "John Kennedy",
   "updatedAt": "2026-09-11",
-  "topicCount": 18,
-  "stanceCount": 48,
+  "topicCount": 19,
+  "stanceCount": 49,
   "topics": [
     {
       "topic": "iran-conflict",
@@ -472,6 +472,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 victims, commemorates loss to terrorism",
+          "quote": "Twenty-five years ago, America changed forever.\n\nToday, Louisiana remembers five sons and daughters whose lives were stolen on September 11, 2001:\n\nElizabeth Ann \u201cBetty\u201d Farmer, 62.\nRetired U.S. Air Force Lt. Col. Robert Joseph Hymel, 55.\nU.S. Navy Lt. Michael Scott Lamana, 31.\nL",
+          "sourceUrl": "https://x.com/SenJohnKennedy/status/2098381053907837144",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "education",

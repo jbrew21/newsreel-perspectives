@@ -2,8 +2,8 @@
   "voiceId": "ritchie-torres",
   "voiceName": "Ritchie Torres",
   "updatedAt": "2026-09-11",
-  "topicCount": 11,
-  "stanceCount": 33,
+  "topicCount": 12,
+  "stanceCount": 35,
   "topics": [
     {
       "topic": "immigration",
@@ -159,6 +159,51 @@
       "active": false
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 4,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Expresses concern for affected community, urges medical attention",
+          "quote": "The Legionnaires\u2019 disease outbreak in Melrose and Morrisania is a serious matter for our community. My heart is with the Bronxites affected and their families. \n\nIf you were in this area and develop flu-like symptoms, seek medical attention. Early treatment matters. \n\nRead my ful",
+          "sourceUrl": "https://x.com/RepRitchie/status/2098517177246629925",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Promotes suicide prevention resources and support",
+          "quote": "Suicide prevention is personal to me. On World Suicide Prevention Day, I want to remind anyone struggling that you are not alone. There is help, there is hope, and you do not have to face it alone. Call or text 988 for support. https://t.co/gK7zMc1pQR",
+          "sourceUrl": "https://x.com/RepRitchie/status/2098129559648411739",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Credits own advocacy and governor's delivery of cardiac lab funding to Bronx hospital",
+          "quote": "Thank you to Governor Hochul for delivering nearly $10 million for a cath lab at Lincoln Hospital.\n\nWithout a cath lab, Bronx patients experiencing a major heart attack would have to be transferred to Manhattan.\n\nI fought for the funding. Governor Hochul delivered for the people ",
+          "sourceUrl": "https://bsky.app/profile/ritchietorres.bsky.social/post/3mt2f275ndc22",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Praises state investment in cardiac care access for South Bronx residents",
+          "quote": "Proud to join @GovKathyHochul in announcing a $9.7 million investment to complete a cardiac catheterization lab at @NYCHealthSystem/ Lincoln, bringing this kind of lifesaving emergency care to the Bronx for the first time. South Bronx families deserve critical care close to home,",
+          "sourceUrl": "https://x.com/RepRitchie/status/2086888727016874275",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "housing-infrastructure",
       "label": "Housing & Infrastructure",
       "count": 5,
@@ -211,42 +256,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 3,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Promotes suicide prevention resources and support",
-          "quote": "Suicide prevention is personal to me. On World Suicide Prevention Day, I want to remind anyone struggling that you are not alone. There is help, there is hope, and you do not have to face it alone. Call or text 988 for support. https://t.co/gK7zMc1pQR",
-          "sourceUrl": "https://x.com/RepRitchie/status/2098129559648411739",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Credits own advocacy and governor's delivery of cardiac lab funding to Bronx hospital",
-          "quote": "Thank you to Governor Hochul for delivering nearly $10 million for a cath lab at Lincoln Hospital.\n\nWithout a cath lab, Bronx patients experiencing a major heart attack would have to be transferred to Manhattan.\n\nI fought for the funding. Governor Hochul delivered for the people ",
-          "sourceUrl": "https://bsky.app/profile/ritchietorres.bsky.social/post/3mt2f275ndc22",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-10",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Praises state investment in cardiac care access for South Bronx residents",
-          "quote": "Proud to join @GovKathyHochul in announcing a $9.7 million investment to complete a cardiac catheterization lab at @NYCHealthSystem/ Lincoln, bringing this kind of lifesaving emergency care to the Bronx for the first time. South Bronx families deserve critical care close to home,",
-          "sourceUrl": "https://x.com/RepRitchie/status/2086888727016874275",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "refugees-humanitarian",
@@ -310,6 +319,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Honors 9/11 victims, survivors, and first responders",
+          "quote": "September 11 changed our city, our country, and countless lives forever.\n\nToday, I remember every family who lost someone they loved, every survivor who carries the memories of that day, and every first responder who ran toward danger to save others.\n\nWe will never forget. https:",
+          "sourceUrl": "https://x.com/RepRitchie/status/2098437342319001786",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "education",

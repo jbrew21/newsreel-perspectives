@@ -2,8 +2,8 @@
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
   "updatedAt": "2026-09-11",
-  "topicCount": 29,
-  "stanceCount": 171,
+  "topicCount": 30,
+  "stanceCount": 173,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -1534,6 +1534,33 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 2,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Suggests unusual connection between Epstein and 9/11",
+          "quote": "Epstein\u2019s Creepy 9/11 Connection",
+          "sourceUrl": "https://www.youtube.com/shorts/J6tgS9RqpzM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Suggests Epstein's communications contained questionable content",
+          "quote": "Tucker on Epstein\u2019s Strange Emails\u2026",
+          "sourceUrl": "https://www.youtube.com/shorts/BDbZOjJ-jlg",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "healthcare",

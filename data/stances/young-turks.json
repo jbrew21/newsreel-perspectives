@@ -3,7 +3,7 @@
   "voiceName": "The Young Turks",
   "updatedAt": "2026-09-11",
   "topicCount": 29,
-  "stanceCount": 242,
+  "stanceCount": 244,
   "topics": [
     {
       "topic": "elections",
@@ -404,7 +404,7 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 21,
+      "count": 22,
       "lastActive": "2026-09-11",
       "stances": [
         {
@@ -432,6 +432,15 @@
           "summary": "Frames Trump convention as unusual or problematic",
           "quote": "Trump's Convention Takes BIZARRE Turn",
           "sourceUrl": "https://www.youtube.com/watch?v=HGp6oGaRH4g",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Journalist removed from Trump event for asking about Epstein",
+          "quote": "Tara Palmeri KICKED OUT Of Trump-Con For Asking About JEFFREY EPSTEIN",
+          "sourceUrl": "https://www.youtube.com/watch?v=u566VkJrAog",
           "platform": "youtube"
         },
         {
@@ -1761,6 +1770,69 @@
       "active": true
     },
     {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 6,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Commentary on Republican use of Hasan Piker's video at convention",
+          "quote": "Hasan Piker Reacts To Republicans Airing His Video At Convention",
+          "sourceUrl": "https://www.youtube.com/watch?v=Dkqe_3CJJ2o",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Accuses Ben Shapiro of attempting deception",
+          "quote": "You Think You're Tricking People Ben?!?",
+          "sourceUrl": "https://www.youtube.com/shorts/RqOO3GgT_0c",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Conservatives criticize Turning Point USA tour",
+          "quote": "Conservatives SHRED The Turning Point USA Tour",
+          "sourceUrl": "https://www.youtube.com/watch?v=hZPYJp56Sbg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Covers internal right-wing dispute over surveillance technology",
+          "quote": "Right-Wing AT WAR Over Flock Cameras",
+          "sourceUrl": "https://www.youtube.com/watch?v=NOJluAIUNtg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes Van Jones for adopting fascist rhetoric or positions",
+          "quote": "Van Jones Goes FASCIST",
+          "sourceUrl": "https://www.youtube.com/watch?v=4U7ChD-estc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2017-07-17",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes Tomi Lahren as hypocritical conservative",
+          "quote": ".@TomiLahren whines about \"Snowflakes\" like the true conservative snowflake she is. ft @hasanthehun https://t.co/UUZ8EInbmj",
+          "sourceUrl": "https://x.com/TheYoungTurks/status/886978868996751360",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 8,
@@ -1840,60 +1912,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 5,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Accuses Ben Shapiro of attempting deception",
-          "quote": "You Think You're Tricking People Ben?!?",
-          "sourceUrl": "https://www.youtube.com/shorts/RqOO3GgT_0c",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-08",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Conservatives criticize Turning Point USA tour",
-          "quote": "Conservatives SHRED The Turning Point USA Tour",
-          "sourceUrl": "https://www.youtube.com/watch?v=hZPYJp56Sbg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "culture-war",
-          "stance": "lean",
-          "summary": "Covers internal right-wing dispute over surveillance technology",
-          "quote": "Right-Wing AT WAR Over Flock Cameras",
-          "sourceUrl": "https://www.youtube.com/watch?v=NOJluAIUNtg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-22",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes Van Jones for adopting fascist rhetoric or positions",
-          "quote": "Van Jones Goes FASCIST",
-          "sourceUrl": "https://www.youtube.com/watch?v=4U7ChD-estc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2017-07-17",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes Tomi Lahren as hypocritical conservative",
-          "quote": ".@TomiLahren whines about \"Snowflakes\" like the true conservative snowflake she is. ft @hasanthehun https://t.co/UUZ8EInbmj",
-          "sourceUrl": "https://x.com/TheYoungTurks/status/886978868996751360",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",
