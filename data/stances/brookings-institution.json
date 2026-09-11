@@ -1,7 +1,7 @@
 {
   "voiceId": "brookings-institution",
   "voiceName": "Brookings Institution",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 26,
   "stanceCount": 107,
   "topics": [
@@ -735,6 +735,33 @@
       "active": false
     },
     {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Warns AfD electoral success may trigger significant political upheaval",
+          "quote": "On Sunday, the Alternative for Germany party are predicted to win elections in Saxony-Anhalt. Constanze Stelzenm\u00fcller and Mathilda Silbiger explain why such a win may trigger a political earthquake that will reverberate all the way to Berlin.",
+          "sourceUrl": "https://bsky.app/profile/brookings.edu/post/3mupnznzkds22",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2023-05-31",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Frames Khan as victim of military establishment power struggle",
+          "quote": "\u201cIt is Khan versus Pakistan\u2019s military establishment. And the gloves are off.\u201d @MadihaAfzal explains what\u2019s happening with Pakistan\u2019s ongoing political crisis and how the Biden administration might respond. https://t.co/eayYlgjuqT",
+          "sourceUrl": "https://x.com/BrookingsInst/status/1663703841102077953",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "military-defense",
       "label": "Military & Defense",
       "count": 3,
@@ -768,34 +795,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 2,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Warns AfD electoral success may trigger significant political upheaval",
-          "quote": "On Sunday, the Alternative for Germany party are predicted to win elections in Saxony-Anhalt. Constanze Stelzenm\u00fcller and Mathilda Silbiger explain why such a win may trigger a political earthquake that will reverberate all the way to Berlin.",
-          "sourceUrl": "https://bsky.app/profile/brookings.edu/post/3mupnznzkds22",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2023-05-31",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Frames Khan as victim of military establishment power struggle",
-          "quote": "\u201cIt is Khan versus Pakistan\u2019s military establishment. And the gloves are off.\u201d @MadihaAfzal explains what\u2019s happening with Pakistan\u2019s ongoing political crisis and how the Biden administration might respond. https://t.co/eayYlgjuqT",
-          "sourceUrl": "https://x.com/BrookingsInst/status/1663703841102077953",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "housing-infrastructure",

@@ -1,9 +1,9 @@
 {
   "voiceId": "allie-beth-stuckey",
   "voiceName": "Allie Beth Stuckey",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 11,
-  "stanceCount": 38,
+  "stanceCount": 39,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -330,6 +330,33 @@
       "active": false
     },
     {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 2,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Reflects on friendship and personal lessons from Charlie Kirk",
+          "quote": "Charlie Kirk, My Friend. What I\u2019ve Learned This Year | Ep 1393",
+          "sourceUrl": "https://www.youtube.com/watch?v=zjoak2tPn1Q",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-25",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Critiques perceived double standards in media treatment of conservative figures",
+          "quote": "Don't Listen to the Critics\u2013 Trump Unveiled an Election Nightmare | Ron Simmons",
+          "sourceUrl": "https://www.youtube.com/watch?v=6aKEYQ1KMDM",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 2,
@@ -423,24 +450,6 @@
           "summary": "Frames liberal opposition to homeschooling as noteworthy criticism",
           "quote": "Liberal Podcasters Hate Homeschooling",
           "sourceUrl": "https://www.youtube.com/shorts/GJvLwTDCkLk",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 1,
-      "lastActive": "2026-07-25",
-      "stances": [
-        {
-          "date": "2026-07-25",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Critiques perceived double standards in media treatment of conservative figures",
-          "quote": "Don't Listen to the Critics\u2013 Trump Unveiled an Election Nightmare | Ron Simmons",
-          "sourceUrl": "https://www.youtube.com/watch?v=6aKEYQ1KMDM",
           "platform": "youtube"
         }
       ],

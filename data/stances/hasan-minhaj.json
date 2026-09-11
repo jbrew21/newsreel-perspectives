@@ -1,7 +1,7 @@
 {
   "voiceId": "hasan-minhaj",
   "voiceName": "Hasan Minhaj",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 18,
   "stanceCount": 56,
   "topics": [
@@ -393,33 +393,6 @@
       "active": true
     },
     {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Expresses concern about escalating geopolitical tensions",
-          "quote": "Are we moving towards WW3?",
-          "sourceUrl": "https://www.youtube.com/shorts/wyTItpa5HHE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Highlights bioweapon threat as national security concern",
-          "quote": "Who is the biggest threat when it comes to bioweapons?",
-          "sourceUrl": "https://www.youtube.com/shorts/G-3_I9utpjs",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "science-space",
       "label": "Science & Space",
       "count": 3,
@@ -486,6 +459,33 @@
           "summary": "Argues Democrats misappropriate MLK's legacy and message",
           "quote": "Ta-Nehisi Coates on Democrats using MLK the wrong way",
           "sourceUrl": "https://www.youtube.com/shorts/jSKY5Gj_HlI",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 2,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Expresses concern about escalating geopolitical tensions",
+          "quote": "Are we moving towards WW3?",
+          "sourceUrl": "https://www.youtube.com/shorts/wyTItpa5HHE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Highlights bioweapon threat as national security concern",
+          "quote": "Who is the biggest threat when it comes to bioweapons?",
+          "sourceUrl": "https://www.youtube.com/shorts/G-3_I9utpjs",
           "platform": "youtube"
         }
       ],

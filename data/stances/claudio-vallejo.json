@@ -1,32 +1,23 @@
 {
   "voiceId": "claudio-vallejo",
   "voiceName": "Claudio Vallejo",
-  "updatedAt": "2026-09-09",
-  "topicCount": 16,
-  "stanceCount": 50,
+  "updatedAt": "2026-09-11",
+  "topicCount": 17,
+  "stanceCount": 52,
   "topics": [
     {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
-      "count": 12,
+      "count": 11,
       "lastActive": "2026-09-09",
       "stances": [
         {
           "date": "2026-09-09",
           "topic": "state-local-politics",
           "stance": "lean",
-          "summary": "Criticizes Abbott's handling of flag imagery in campaign materials",
+          "summary": "Questions governor's decision to remove flag from photo",
           "quote": "Why Abbott Removed an American Flag From This Photo #news #texas #fyp #ginahinojosa",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7683363371235773726",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-09-08",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Suggests Ken Paxton's opponent lacks substance or qualifications",
-          "quote": "Ken Paxton is running against a computer #news #politics #texas #fyp #talarico",
-          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7683289237520747806",
           "platform": "tiktok"
         },
         {
@@ -125,14 +116,32 @@
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 8,
-      "lastActive": "2026-09-03",
+      "count": 10,
+      "lastActive": "2026-09-10",
       "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Frames campaign event as free media for candidate",
+          "quote": "Talarico's campaign got this one for free #news #texas #talarico #fyp #dallas",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7683729632905940254",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Suggests attorney general race is mismatched competition",
+          "quote": "Ken Paxton is running against a computer #news #politics #texas #fyp #talarico",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7683289237520747806",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-03",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Conservative polling showing competitive Democrat performance in Texas",
+          "summary": "Highlights surprising polling result favoring Democratic candidate",
           "quote": "A conservative group polled a conservative crowd and got a Talarico lead. #news #politics #texas #talarico #poll",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7681298819190902047",
           "platform": "tiktok"
@@ -141,7 +150,7 @@
           "date": "2026-09-02",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Polling place closures reduce voter access in Texas county",
+          "summary": "Reports significant reduction in voting locations in county",
           "quote": "Tarrant County Just Closed A Third Of Its Polling Places #news #tarrantcounty #texas #fyp",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680726196962856222",
           "platform": "tiktok"
@@ -149,8 +158,8 @@
         {
           "date": "2026-09-02",
           "topic": "elections",
-          "stance": "lean",
-          "summary": "Democrat within striking distance in Texas attorney general race",
+          "stance": "strong",
+          "summary": "Criticizes Republican AG candidate's religious statements, notes judicial backing for Democrat",
           "quote": "The man running to be the top lawyer in Texas says we are a Christian state and calls a religion organized crime.  Two Republican-appointed justices heard it and backed the Democrat.  Nathan Johnson is within five points.  #news #politics #texas #fyp",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680935402022243614",
           "platform": "tiktok"
@@ -159,7 +168,7 @@
           "date": "2026-09-01",
           "topic": "elections",
           "stance": "lean",
-          "summary": "Ballot errors causing widespread vote rejection",
+          "summary": "Highlights large number of rejected ballots due to ballot design issue",
           "quote": "1 Bad Ballot, 10,000 Rejected #news #politics #fyp #voting",
           "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7680591156920454430",
           "platform": "tiktok"
@@ -528,6 +537,24 @@
       "active": false
     },
     {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Criticizes censorship of political figure",
+          "quote": "They Censored Him Twice in Six Months #news #talarico #fyp #texas",
+          "sourceUrl": "https://www.tiktok.com/@whatsupcv/video/7683880744141262110",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 1,
@@ -543,7 +570,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "healthcare",

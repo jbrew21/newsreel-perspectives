@@ -1,9 +1,9 @@
 {
   "voiceId": "jasmine-crockett",
   "voiceName": "Jasmine Crockett",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 15,
-  "stanceCount": 33,
+  "stanceCount": 34,
   "topics": [
     {
       "topic": "trump-administration",
@@ -195,6 +195,33 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Republican economic record, rising costs under their control",
+          "quote": "Republicans love to talk a big game. \n\nBut the reality is that, under their control, families are paying more at the grocery store, insurance premiums have gone up, and we\u2019re still engaged in this unconstitutional, illegal war.\n\nEnough with the talking points. The American people",
+          "sourceUrl": "https://x.com/RepJasmine/status/2098166757810635258",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Republican tax policy for billionaires, deficit spending",
+          "quote": "$40 TRILLION.\n\nThat\u2019s our national debt.\n\nRepublicans ran up the tab, handed billionaires another tax break, and now wanna lecture working families about \u201cfiscal responsibility.\u201d\n\nYou can\u2019t max out the card AND pretend you\u2019re the accountant.\n\nPick a struggle.",
+          "sourceUrl": "https://x.com/RepJasmine/status/2090241638169727032",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 2,
@@ -346,24 +373,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Republican tax policy for billionaires, deficit spending",
-          "quote": "$40 TRILLION.\n\nThat\u2019s our national debt.\n\nRepublicans ran up the tab, handed billionaires another tax break, and now wanna lecture working families about \u201cfiscal responsibility.\u201d\n\nYou can\u2019t max out the card AND pretend you\u2019re the accountant.\n\nPick a struggle.",
-          "sourceUrl": "https://x.com/RepJasmine/status/2090241638169727032",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "trump-policy",

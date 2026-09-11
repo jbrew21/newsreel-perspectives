@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 28,
   "stanceCount": 92,
   "topics": [
@@ -384,60 +384,6 @@
       "active": true
     },
     {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 5,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Opposes corporate data collection through subscription services",
-          "quote": "Subscriptions &amp; Personal Data #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/znUIOZcJkn4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Criticizes exploitative design in smart product subscriptions",
-          "quote": "Subscriptions &amp; Smart Products #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/JKMWHq6s1wE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Critiques subscription service business models and practices",
-          "quote": "Subscriptions #lastweektonight",
-          "sourceUrl": "https://www.youtube.com/shorts/9XtHItb_Cvs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-24",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Critiques subscription service business models and practices",
-          "quote": "Subscriptions: Last Week Tonight with John Oliver (HBO)",
-          "sourceUrl": "https://www.youtube.com/watch?v=Wko-2c7lZL8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2017-05-08",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Calls for strong net neutrality rules under Title II",
-          "quote": "You can visit https://t.co/IO1tIHnfBU and urge the FCC to keep strong net neutrality rules backed by Title II.",
-          "sourceUrl": "https://x.com/iamjohnoliver/status/861588056431894528",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 4,
@@ -540,6 +486,60 @@
           "summary": "Criticizes Crisis Pregnancy Centers' deceptive practices",
           "quote": "Here's our piece on Crisis Pregnancy Centers from last night...https://t.co/pTeLtlYOBU",
           "sourceUrl": "https://x.com/iamjohnoliver/status/983396990691217410",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 5,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Opposes corporate data collection through subscription services",
+          "quote": "Subscriptions &amp; Personal Data #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/znUIOZcJkn4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes exploitative design in smart product subscriptions",
+          "quote": "Subscriptions &amp; Smart Products #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/JKMWHq6s1wE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Critiques subscription service business models and practices",
+          "quote": "Subscriptions #lastweektonight",
+          "sourceUrl": "https://www.youtube.com/shorts/9XtHItb_Cvs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Critiques subscription service business models and practices",
+          "quote": "Subscriptions: Last Week Tonight with John Oliver (HBO)",
+          "sourceUrl": "https://www.youtube.com/watch?v=Wko-2c7lZL8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2017-05-08",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Calls for strong net neutrality rules under Title II",
+          "quote": "You can visit https://t.co/IO1tIHnfBU and urge the FCC to keep strong net neutrality rules backed by Title II.",
+          "sourceUrl": "https://x.com/iamjohnoliver/status/861588056431894528",
           "platform": "x"
         }
       ],
@@ -939,7 +939,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "immigration",

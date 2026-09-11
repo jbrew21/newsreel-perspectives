@@ -1,9 +1,9 @@
 {
   "voiceId": "jeremy-scahill",
   "voiceName": "Jeremy Scahill",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 20,
-  "stanceCount": 184,
+  "stanceCount": 185,
   "topics": [
     {
       "topic": "israel-palestine",
@@ -1196,9 +1196,18 @@
     {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
-      "count": 8,
-      "lastActive": "2026-09-02",
+      "count": 9,
+      "lastActive": "2026-09-10",
       "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Documents humanitarian crisis from escalating Yemen conflict",
+          "quote": "\u201cAll I Want Is for the War to End\u201d: Displacement Behind the Front Lines in Yemen (by Carolina Pedrazzi). Residents of Taiz are grappling with a war that has fully reignited and now arrived, once again, at their doors.",
+          "sourceUrl": "https://www.dropsitenews.com/p/yemen-ansarallah-saudi-taiz-displacement-bab-al-mandab",
+          "platform": "substack"
+        },
         {
           "date": "2026-09-02",
           "topic": "foreign-policy-diplomacy",
@@ -1749,7 +1758,7 @@
           "platform": "substack"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "civil-rights-race",

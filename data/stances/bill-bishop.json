@@ -1,9 +1,9 @@
 {
   "voiceId": "bill-bishop",
   "voiceName": "Bill Bishop",
-  "updatedAt": "2026-09-10",
-  "topicCount": 5,
-  "stanceCount": 8,
+  "updatedAt": "2026-09-11",
+  "topicCount": 6,
+  "stanceCount": 9,
   "topics": [
     {
       "topic": "economy-trade",
@@ -67,6 +67,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights problematic behavior by Chinese AI firms",
+          "quote": "Xi going to India; Plan for Building a Financial Powerhouse; Anthropic drops bombs in PRC AI firms; \u201cEnemy-state clauses\u201d; US-China. Anthropic\u2019s September report is not just about China but includes multiple examples of what it says is problematic behavior by Chinese firms and in",
+          "sourceUrl": "https://sinocism.com/p/xi-going-to-india-plan-for-building",
+          "platform": "substack"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",

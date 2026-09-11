@@ -1,9 +1,9 @@
 {
   "voiceId": "quincy-institute",
   "voiceName": "Quincy Institute",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 14,
-  "stanceCount": 136,
+  "stanceCount": 138,
   "topics": [
     {
       "topic": "military-defense",
@@ -440,9 +440,18 @@
     {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
-      "count": 29,
-      "lastActive": "2026-09-03",
+      "count": 30,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Supports Britain's settlement import ban, urges EU to follow",
+          "quote": "Britain banned settlement imports. Will Europe finally follow suit? (by Anchal Vohra). Britain's decision this week to ban all imports from illegal Israeli settlements carries huge moral resonance, but the real test comes next: Will the European Union (EU) \u2013 the single largest ma",
+          "sourceUrl": "https://responsiblestatecraft.org/eu-sanctions-israel/",
+          "platform": "blog"
+        },
         {
           "date": "2026-09-03",
           "topic": "israel-palestine",
@@ -710,9 +719,18 @@
     {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
-      "count": 25,
-      "lastActive": "2026-09-10",
+      "count": 26,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Analyzes Rubio's Latin America strategy under Trump administration",
+          "quote": "Rubio's LatAm pep rally shows the limits of the Donroe Doctrine (by Lee Schlenker). This week, Secretary of State Marco Rubio traveled to Colombia, Ecuador and Peru, where he pledged increased security assistance, signed critical minerals deals and warned the three countries\u2019 rec",
+          "sourceUrl": "https://responsiblestatecraft.org/rubio-latin-america-trip/",
+          "platform": "blog"
+        },
         {
           "date": "2026-09-10",
           "topic": "foreign-policy-diplomacy",
@@ -1335,7 +1353,7 @@
           "platform": "blog"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-press",

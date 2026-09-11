@@ -1,9 +1,9 @@
 {
   "voiceId": "matt-yglesias",
   "voiceName": "Matt Yglesias",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 28,
-  "stanceCount": 240,
+  "stanceCount": 243,
   "topics": [
     {
       "topic": "elections",
@@ -2022,6 +2022,51 @@
       "active": false
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 4,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Characterizes post-9/11 Global War on Terror as extreme",
+          "quote": "Global War on Terror 1 was craaaaazy\n\nwww.slowboring.com/p/911-was-a-...",
+          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mvaeiwps5s27",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Argues 9/11's impact underrated; random events caused long-term global harm",
+          "quote": "We\u2019re still underrating 9/11\u2019s impact  (by Matthew Yglesias). Flukey events and eccentric decisions changed the world for the worse forever.",
+          "sourceUrl": "https://www.slowboring.com/p/911-was-a-hinge-point-of-history",
+          "platform": "substack"
+        },
+        {
+          "date": "2024-02-11",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Corrects misconception about NATO contribution structure",
+          "quote": "I wish reporting on this would indicate to people that there is no NATO fund that these countries are in arrears to. https://t.co/SasDMpXa7S",
+          "sourceUrl": "https://x.com/mattyglesias/status/1756518266581717482",
+          "platform": "x"
+        },
+        {
+          "date": "2024-01-12",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Defends military intervention to protect international shipping",
+          "quote": "Bombing people who disrupt international shipping is in fact the core function of the American military.",
+          "sourceUrl": "https://x.com/mattyglesias/status/1745601668937367631",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 5,
@@ -2193,6 +2238,33 @@
       "active": false
     },
     {
+      "topic": "abortion-reproductive",
+      "label": "Abortion & Reproductive Rights",
+      "count": 2,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "abortion-reproductive",
+          "stance": "lean",
+          "summary": "Notes pro-life movement prioritized Trump despite abortion stance concerns",
+          "quote": "It\u2019s interesting that when Trump tried to mitigate backlash against Dobbs by promising no federal abortion ban, the pro-life movement decided that he was still the more anti-abortion candidate compared to Kamala Harris so they should vote for him.",
+          "sourceUrl": "https://bsky.app/profile/mattyglesias.bsky.social/post/3mvagk2y5ec26",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2024-02-29",
+          "topic": "abortion-reproductive",
+          "stance": "strong",
+          "summary": "Warns of federal abortion prosecution laws under Trump-appointed judges",
+          "quote": "This is where it\u2019s going \u2014 prosecuting people who cross state lines to get abortions and the politicians who talk moderate will be appointing and confirming the hard right judges who facilitate it.",
+          "sourceUrl": "https://x.com/mattyglesias/status/1763268450825224422",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "immigration",
       "label": "Immigration",
       "count": 3,
@@ -2301,33 +2373,6 @@
       "active": false
     },
     {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 2,
-      "lastActive": "2024-02-11",
-      "stances": [
-        {
-          "date": "2024-02-11",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Corrects misconception about NATO contribution structure",
-          "quote": "I wish reporting on this would indicate to people that there is no NATO fund that these countries are in arrears to. https://t.co/SasDMpXa7S",
-          "sourceUrl": "https://x.com/mattyglesias/status/1756518266581717482",
-          "platform": "x"
-        },
-        {
-          "date": "2024-01-12",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Defends military intervention to protect international shipping",
-          "quote": "Bombing people who disrupt international shipping is in fact the core function of the American military.",
-          "sourceUrl": "https://x.com/mattyglesias/status/1745601668937367631",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "protests-activism",
       "label": "Protests & Activism",
       "count": 2,
@@ -2398,24 +2443,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "abortion-reproductive",
-      "label": "Abortion & Reproductive Rights",
-      "count": 1,
-      "lastActive": "2024-02-29",
-      "stances": [
-        {
-          "date": "2024-02-29",
-          "topic": "abortion-reproductive",
-          "stance": "strong",
-          "summary": "Warns of federal abortion prosecution laws under Trump-appointed judges",
-          "quote": "This is where it\u2019s going \u2014 prosecuting people who cross state lines to get abortions and the politicians who talk moderate will be appointing and confirming the hard right judges who facilitate it.",
-          "sourceUrl": "https://x.com/mattyglesias/status/1763268450825224422",
-          "platform": "x"
-        }
-      ],
-      "active": false
     }
   ]
 }

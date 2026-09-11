@@ -1,7 +1,7 @@
 {
   "voiceId": "russell-brand",
   "voiceName": "Russell Brand",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 30,
   "stanceCount": 156,
   "topics": [
@@ -1338,33 +1338,6 @@
       "active": true
     },
     {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 2,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Criticizes Fauci seeking public funding for legal defense",
-          "quote": "Fauci wants YOU to pay his legal bills...",
-          "sourceUrl": "https://www.youtube.com/shorts/OC5tsaGzFPY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Anticipates Fauci legal accountability or consequences",
-          "quote": "Will Fauci go down today?",
-          "sourceUrl": "https://x.com/rustyrockets/status/2082408541550162039",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 3,
@@ -1431,6 +1404,33 @@
           "summary": "Compares UK gang crisis to hypothetical US scenario, demands Trump-like response",
           "quote": "Dear Americans,\n\nImagine this for a moment:\n\nWhat if 15 to 20 U.S. states were overrun by gangs, raping adults/children every single day?\n\nNow imagine if Trump never addressed it \u2014 never spoke about it or acknowledged it.\n\nThat\u2019s happening in Britain right now. https://t.co/NTyY3",
           "sourceUrl": "https://x.com/rustyrockets/status/1918008518562783447",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 2,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Criticizes Fauci seeking public funding for legal defense",
+          "quote": "Fauci wants YOU to pay his legal bills...",
+          "sourceUrl": "https://www.youtube.com/shorts/OC5tsaGzFPY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Anticipates Fauci legal accountability or consequences",
+          "quote": "Will Fauci go down today?",
+          "sourceUrl": "https://x.com/rustyrockets/status/2082408541550162039",
           "platform": "x"
         }
       ],

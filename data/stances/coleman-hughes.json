@@ -1,9 +1,9 @@
 {
   "voiceId": "coleman-hughes",
   "voiceName": "Coleman Hughes",
-  "updatedAt": "2026-09-10",
-  "topicCount": 12,
-  "stanceCount": 18,
+  "updatedAt": "2026-09-11",
+  "topicCount": 13,
+  "stanceCount": 19,
   "topics": [
     {
       "topic": "civil-rights-race",
@@ -39,7 +39,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "culture-war",
@@ -144,6 +144,24 @@
           "summary": "Challenges conventional historical interpretations of Cold War",
           "quote": "What We've Been Getting Wrong About the Cold War",
           "sourceUrl": "https://www.youtube.com/shorts/ZjuB-bwDycc",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Secret recordings reveal authentic presidential decision-making",
+          "quote": "The Secret Recordings That Reveal How Presidents Really Think",
+          "sourceUrl": "https://www.youtube.com/watch?v=Fc6TQIr8Mhg",
           "platform": "youtube"
         }
       ],

@@ -1,7 +1,7 @@
 {
   "voiceId": "gavin-newsom",
   "voiceName": "Gavin Newsom",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 27,
   "stanceCount": 138,
   "topics": [
@@ -294,7 +294,7 @@
           "date": "2026-09-08",
           "topic": "elections",
           "stance": "strong",
-          "summary": "Opposes Trump, urges voting to stop election rigging",
+          "summary": "Opposes Trump election efforts, urges voter participation",
           "quote": "Donald Trump is trying to rig our elections and we have to stop him. Show up and VOTE this November.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7683300786360700191",
           "platform": "tiktok"
@@ -303,7 +303,7 @@
           "date": "2026-09-07",
           "topic": "elections",
           "stance": "strong",
-          "summary": "Celebrates Democratic gains in state legislative races, argues momentum favors Democrats",
+          "summary": "Celebrates Democratic state legislative gains, claims momentum advantage",
           "quote": "Americans are fed up \u2014 and they\u2019re SHOWING UP. Democrats have flipped over 30 state legislative seats from red to blue. Republicans have flipped ZERO. Democrats are WINNING.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7682617546113060127",
           "platform": "tiktok"
@@ -321,7 +321,7 @@
           "date": "2026-08-26",
           "topic": "elections",
           "stance": "strong",
-          "summary": "Announces California legal challenge to Trump's mail-in voting restrictions",
+          "summary": "Opposes Trump mail voting restrictions, announces legal challenge",
           "quote": "Donald Trump is trying to make it harder for Americans to vote by mail ahead of the midterms. California is taking him to court.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7678408795881540877",
           "platform": "tiktok"
@@ -465,7 +465,7 @@
           "date": "2026-09-08",
           "topic": "economy-trade",
           "stance": "strong",
-          "summary": "Criticizes rising grocery and gas prices, calls for economic change",
+          "summary": "Argues cost of living pressures families, calls for electoral change",
           "quote": "From California to the South, people are fed up. Groceries and gas are up. Wages aren\u2019t keeping pace. Families are getting squeezed. This November, we have the power to change it.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7683301125965090078",
           "platform": "tiktok"
@@ -951,42 +951,6 @@
       "active": false
     },
     {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 3,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes Fox News coverage of California",
-          "quote": "Governor #Newsom DESTROYS #FoxNews Attacks on #California \u00a0#shorts #gavinnewsom #politics #economy",
-          "sourceUrl": "https://www.youtube.com/shorts/j5P9FIFBxlQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Calls for accountability against Fox News for dishonesty",
-          "quote": "Fox News: Accountability for lying is coming.",
-          "sourceUrl": "https://x.com/GavinNewsom/status/2085574980159553873",
-          "platform": "x"
-        },
-        {
-          "date": "2025-06-27",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Suing Fox News for 787 million for disinformation",
-          "quote": "No more lies.\n\nI\u2019m suing Fox News for $787 million.\n\nhttps://t.co/L73VUsPsuB https://t.co/qKoRaxHRDW",
-          "sourceUrl": "https://x.com/GavinNewsom/status/1938587950704677237",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 4,
@@ -1113,7 +1077,7 @@
           "date": "2026-09-07",
           "topic": "trump-policy",
           "stance": "strong",
-          "summary": "Criticizes Trump's economic record, claims Americans worse off while Trump enriches himself",
+          "summary": "Claims Trump policies harm health and wealth while enriching himself",
           "quote": "Donald Trump promised to make us healthier and wealthier. Instead, Americans are sicker and poorer, while he gets richer.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7682616204602871071",
           "platform": "tiktok"
@@ -1129,6 +1093,42 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 3,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes Fox News coverage of California",
+          "quote": "Governor #Newsom DESTROYS #FoxNews Attacks on #California \u00a0#shorts #gavinnewsom #politics #economy",
+          "sourceUrl": "https://www.youtube.com/shorts/j5P9FIFBxlQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Calls for accountability against Fox News for dishonesty",
+          "quote": "Fox News: Accountability for lying is coming.",
+          "sourceUrl": "https://x.com/GavinNewsom/status/2085574980159553873",
+          "platform": "x"
+        },
+        {
+          "date": "2025-06-27",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Suing Fox News for 787 million for disinformation",
+          "quote": "No more lies.\n\nI\u2019m suing Fox News for $787 million.\n\nhttps://t.co/L73VUsPsuB https://t.co/qKoRaxHRDW",
+          "sourceUrl": "https://x.com/GavinNewsom/status/1938587950704677237",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "civil-rights-race",

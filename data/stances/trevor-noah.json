@@ -1,16 +1,25 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 30,
-  "stanceCount": 132,
+  "stanceCount": 134,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 21,
-      "lastActive": "2026-09-10",
+      "count": 22,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump's dividend proposal as bribery, mocks GOP convention",
+          "quote": "Trump Bribes Americans with $5K &quot;Dividends&quot; &amp; GOP Gets Weird at Midterm Convention | The Daily Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=mFicjWgWf9k",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-10",
           "topic": "trump-administration",
@@ -438,6 +447,78 @@
       "active": true
     },
     {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 7,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Questions Trump's credibility and claim about women thanking him",
+          "quote": "Is Trump delusional, or are &quot;young, beautiful girls&quot; really thanking him on a daily basis?",
+          "sourceUrl": "https://www.youtube.com/shorts/OL0TPtj70PY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Mocks Trump's alternate reality claims about Canada",
+          "quote": "Jon on Trump's Meme Assault on Canada &amp; the Alternate Reality He's Constructed | The Daily Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=rDZ_gaUQab4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Mocks Trump's misleading claims about fuel costs",
+          "quote": "Trump found a way to gas-gaslight Americans over rising fuel costs #dailyshow",
+          "sourceUrl": "https://www.youtube.com/shorts/LNWdzejMdKw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's trade war tactics as trolling",
+          "quote": "Trump's trade war strategy against Canada? Troll them into submission #dailyshow",
+          "sourceUrl": "https://www.youtube.com/shorts/ywHbLbctjQA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Critiques Trump's foreign policy approach through European perspective",
+          "quote": "Jordan Klepper traveled to Norway to see how Europeans feel about Trump's quest of not-peace #fyc",
+          "sourceUrl": "https://www.youtube.com/shorts/AdP4ItkhZAo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Questions MAGA rhetoric about American greatness",
+          "quote": "We asked MAGA a simple question: When was America last great? #TDS30 #DailyShow #MAGA #Trump",
+          "sourceUrl": "https://www.youtube.com/shorts/-BisVGzwcJg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's pursuit of NFL team ownership as destabilizing",
+          "quote": "WTF, NFL? We're on the brink of nuclear war because you wouldn't let Trump have the Buffalo Bills?",
+          "sourceUrl": "https://www.youtube.com/shorts/jvcPhsAfy1Q",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 7,
@@ -679,69 +760,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 6,
-      "lastActive": "2026-09-09",
-      "stances": [
-        {
-          "date": "2026-09-09",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Mocks Trump's alternate reality claims about Canada",
-          "quote": "Jon on Trump's Meme Assault on Canada &amp; the Alternate Reality He's Constructed | The Daily Show",
-          "sourceUrl": "https://www.youtube.com/watch?v=rDZ_gaUQab4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-09",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Mocks Trump's misleading claims about fuel costs",
-          "quote": "Trump found a way to gas-gaslight Americans over rising fuel costs #dailyshow",
-          "sourceUrl": "https://www.youtube.com/shorts/LNWdzejMdKw",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-09",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump's trade war tactics as trolling",
-          "quote": "Trump's trade war strategy against Canada? Troll them into submission #dailyshow",
-          "sourceUrl": "https://www.youtube.com/shorts/ywHbLbctjQA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "trump-policy",
-          "stance": "lean",
-          "summary": "Critiques Trump's foreign policy approach through European perspective",
-          "quote": "Jordan Klepper traveled to Norway to see how Europeans feel about Trump's quest of not-peace #fyc",
-          "sourceUrl": "https://www.youtube.com/shorts/AdP4ItkhZAo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-08",
-          "topic": "trump-policy",
-          "stance": "lean",
-          "summary": "Questions MAGA rhetoric about American greatness",
-          "quote": "We asked MAGA a simple question: When was America last great? #TDS30 #DailyShow #MAGA #Trump",
-          "sourceUrl": "https://www.youtube.com/shorts/-BisVGzwcJg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump's pursuit of NFL team ownership as destabilizing",
-          "quote": "WTF, NFL? We're on the brink of nuclear war because you wouldn't let Trump have the Buffalo Bills?",
-          "sourceUrl": "https://www.youtube.com/shorts/jvcPhsAfy1Q",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "media-press",
@@ -1149,6 +1167,33 @@
       "active": true
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 2,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Geography education is oversimplified or irrelevant to actual knowledge",
+          "quote": "@RoyWoodJrOfficial breaks down the only geography you really need to know #TDS30",
+          "sourceUrl": "https://www.youtube.com/shorts/qRSPdCNLU6s",
+          "platform": "youtube"
+        },
+        {
+          "date": "2020-04-27",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Supports teachers with technology donations during pandemic",
+          "quote": "TEACHERS who are forced to do all your work online! I\u2019ve got 50 more Surface Laptops to give away to any educators who need a new device. Please tag your favourite teachers and I\u2019ll pick 50 at random. PS- Teachers, you\u2019re allowed to be your own favourite and tag yourself! \ud83d\ude4c\ud83c\udffe http",
+          "sourceUrl": "https://x.com/Trevornoah/status/1254914407831871489",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "gun-policy",
       "label": "Guns & Gun Policy",
       "count": 3,
@@ -1182,34 +1227,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 2,
-      "lastActive": "2026-09-08",
-      "stances": [
-        {
-          "date": "2026-09-08",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Geography education is oversimplified or irrelevant to actual knowledge",
-          "quote": "@RoyWoodJrOfficial breaks down the only geography you really need to know #TDS30",
-          "sourceUrl": "https://www.youtube.com/shorts/qRSPdCNLU6s",
-          "platform": "youtube"
-        },
-        {
-          "date": "2020-04-27",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Supports teachers with technology donations during pandemic",
-          "quote": "TEACHERS who are forced to do all your work online! I\u2019ve got 50 more Surface Laptops to give away to any educators who need a new device. Please tag your favourite teachers and I\u2019ll pick 50 at random. PS- Teachers, you\u2019re allowed to be your own favourite and tag yourself! \ud83d\ude4c\ud83c\udffe http",
-          "sourceUrl": "https://x.com/Trevornoah/status/1254914407831871489",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "criminal-justice",

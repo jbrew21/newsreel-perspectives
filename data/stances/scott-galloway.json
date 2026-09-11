@@ -1,9 +1,9 @@
 {
   "voiceId": "scott-galloway",
   "voiceName": "Scott Galloway",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 30,
-  "stanceCount": 172,
+  "stanceCount": 173,
   "topics": [
     {
       "topic": "billionaires-wealth",
@@ -777,7 +777,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "healthcare",
@@ -1014,6 +1014,69 @@
       "active": true
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 6,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Argues against organizing life primarily around children",
+          "quote": "Stanford Professor: Don\u2019t Build Your Life Around Your Kids",
+          "sourceUrl": "https://www.youtube.com/watch?v=0eq-Oz-xtm8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Acknowledges privilege of UC education, grateful for institutional opportunity",
+          "quote": "He\u2019s (partially) right, I am educated beyond my intelligence. CA taxpayers, and the Regents of UC, gave me opportunities that weren\u2019t my fault.\n\nGo Bruins\nGo Bears",
+          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3msdvhdsqic25",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Questions whether Ivy League degrees justify their cost and prestige",
+          "quote": "Do Ivy League Degrees Actually Matter? | Office Hours",
+          "sourceUrl": "https://www.youtube.com/watch?v=fYBPmf_Qbl0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-23",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Advocates for public education accessibility as national priority",
+          "quote": "Public education is America\u2019s superpower. UC gave me mine\u2014this isn\u2019t lost on me. My aim/mission will be simple: accessibility. \ud83c\uddfa\ud83c\uddf8\ud83d\udcda\ud83d\udcaa",
+          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mrbsgvlrus2q",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2020-03-14",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Teachers and doctors will save the world",
+          "quote": "Teachers (and doctors) will save the world\n\n\"Why is it important to wash your hands?\" https://t.co/0mrFw7I3qD",
+          "sourceUrl": "https://x.com/profgalloway/status/1238842830384173057",
+          "platform": "x"
+        },
+        {
+          "date": "2018-07-31",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Praises LeBron James's comprehensive free school program",
+          "quote": "LeBron James's school:\n\u2014tuition is free\n\u2014uniforms are free\n\u2014transportation is free\n\u2014kids get free bikes\n\u2014breakfast, lunch &amp; snacks\n\u2014program for students' parents to complete their high school education\n\u2014kids who complete it get free tuition at UofAkron https://t.co/D7Y8qtIa9S",
+          "sourceUrl": "https://x.com/profgalloway/status/1024400011528994816",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 6,
@@ -1072,69 +1135,6 @@
           "quote": "Good news: Over 860,000 Americans have already voted, compared to fewer than 10,000 by this point in 2016\n\nhttps://t.co/QTcuYqh4l9",
           "sourceUrl": "https://x.com/profgalloway/status/1310649539196530689",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
-      "count": 6,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Challenges apocalyptic climate narratives with data-driven analysis",
-          "quote": "The China Climate Paradox, Explained by a Data Scientist",
-          "sourceUrl": "https://www.youtube.com/watch?v=iig22YoMRhg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Refutes go-woke-go-broke claim with renewable energy success",
-          "quote": "&quot;Go Woke, Go Broke&quot;? Texas Runs on Renewables Now",
-          "sourceUrl": "https://www.youtube.com/watch?v=cDTQLiAv9ms",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-24",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Warns U.S. falling behind global EV adoption",
-          "quote": "As the rest of the world adopts electric vehicles, the U.S. falls behind.",
-          "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7677582733916376333",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-22",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Highlights inefficiency of gas vehicles, implies EV superiority",
-          "quote": "Your gas car wastes 80% of its energy",
-          "sourceUrl": "https://www.youtube.com/shorts/T7vLo_OGVxE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Highlights China's rapid energy expansion and intensifying global energy competition",
-          "quote": "Every year, China's electricity generation increases by a Germany-sized grid, explains environmental researcher Hannah Ritchie. In our conversation, we dive into the new global energy race.",
-          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mtjqhkkzjc2d",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "U.S. falling behind China in energy transition and grid expansion",
-          "quote": "Why the U.S. is losing the energy race to China",
-          "sourceUrl": "https://www.youtube.com/shorts/gLdkgVJiHQ0",
-          "platform": "youtube"
         }
       ],
       "active": true
@@ -1320,55 +1320,64 @@
       "active": false
     },
     {
-      "topic": "education",
-      "label": "Education",
-      "count": 5,
-      "lastActive": "2026-08-05",
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 6,
+      "lastActive": "2026-08-27",
       "stances": [
         {
-          "date": "2026-08-05",
-          "topic": "education",
+          "date": "2026-08-27",
+          "topic": "climate-environment",
           "stance": "lean",
-          "summary": "Acknowledges privilege of UC education, grateful for institutional opportunity",
-          "quote": "He\u2019s (partially) right, I am educated beyond my intelligence. CA taxpayers, and the Regents of UC, gave me opportunities that weren\u2019t my fault.\n\nGo Bruins\nGo Bears",
-          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3msdvhdsqic25",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Questions whether Ivy League degrees justify their cost and prestige",
-          "quote": "Do Ivy League Degrees Actually Matter? | Office Hours",
-          "sourceUrl": "https://www.youtube.com/watch?v=fYBPmf_Qbl0",
+          "summary": "Challenges apocalyptic climate narratives with data-driven analysis",
+          "quote": "The China Climate Paradox, Explained by a Data Scientist",
+          "sourceUrl": "https://www.youtube.com/watch?v=iig22YoMRhg",
           "platform": "youtube"
         },
         {
-          "date": "2026-07-23",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Advocates for public education accessibility as national priority",
-          "quote": "Public education is America\u2019s superpower. UC gave me mine\u2014this isn\u2019t lost on me. My aim/mission will be simple: accessibility. \ud83c\uddfa\ud83c\uddf8\ud83d\udcda\ud83d\udcaa",
-          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mrbsgvlrus2q",
+          "date": "2026-08-26",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Refutes go-woke-go-broke claim with renewable energy success",
+          "quote": "&quot;Go Woke, Go Broke&quot;? Texas Runs on Renewables Now",
+          "sourceUrl": "https://www.youtube.com/watch?v=cDTQLiAv9ms",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Warns U.S. falling behind global EV adoption",
+          "quote": "As the rest of the world adopts electric vehicles, the U.S. falls behind.",
+          "sourceUrl": "https://www.tiktok.com/@profgalloway/video/7677582733916376333",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Highlights inefficiency of gas vehicles, implies EV superiority",
+          "quote": "Your gas car wastes 80% of its energy",
+          "sourceUrl": "https://www.youtube.com/shorts/T7vLo_OGVxE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Highlights China's rapid energy expansion and intensifying global energy competition",
+          "quote": "Every year, China's electricity generation increases by a Germany-sized grid, explains environmental researcher Hannah Ritchie. In our conversation, we dive into the new global energy race.",
+          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mtjqhkkzjc2d",
           "platform": "bluesky"
         },
         {
-          "date": "2020-03-14",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Teachers and doctors will save the world",
-          "quote": "Teachers (and doctors) will save the world\n\n\"Why is it important to wash your hands?\" https://t.co/0mrFw7I3qD",
-          "sourceUrl": "https://x.com/profgalloway/status/1238842830384173057",
-          "platform": "x"
-        },
-        {
-          "date": "2018-07-31",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Praises LeBron James's comprehensive free school program",
-          "quote": "LeBron James's school:\n\u2014tuition is free\n\u2014uniforms are free\n\u2014transportation is free\n\u2014kids get free bikes\n\u2014breakfast, lunch &amp; snacks\n\u2014program for students' parents to complete their high school education\n\u2014kids who complete it get free tuition at UofAkron https://t.co/D7Y8qtIa9S",
-          "sourceUrl": "https://x.com/profgalloway/status/1024400011528994816",
-          "platform": "x"
+          "date": "2026-08-20",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "U.S. falling behind China in energy transition and grid expansion",
+          "quote": "Why the U.S. is losing the energy race to China",
+          "sourceUrl": "https://www.youtube.com/shorts/gLdkgVJiHQ0",
+          "platform": "youtube"
         }
       ],
       "active": false

@@ -1,9 +1,9 @@
 {
   "voiceId": "rfk-jr",
   "voiceName": "Robert F. Kennedy Jr.",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 9,
-  "stanceCount": 15,
+  "stanceCount": 16,
   "topics": [
     {
       "topic": "healthcare",
@@ -132,6 +132,33 @@
       "active": false
     },
     {
+      "topic": "drugs-addiction",
+      "label": "Drugs & Addiction",
+      "count": 2,
+      "lastActive": "2024-11-11",
+      "stances": [
+        {
+          "date": "2024-11-11",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Advocates psychedelic therapy for veteran mental health",
+          "quote": "Rogan: psychedelics for veterans",
+          "sourceUrl": "https://www.youtube.com/shorts/eBt-U6dL9bI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2024-11-11",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Supports psychedelic therapy for veterans",
+          "quote": "Yes, Joe Rogan, veterans are the most deserving of benefiting from psychedelic therapy.",
+          "sourceUrl": "https://www.tiktok.com/@robertfkennedyjrofficial/video/7435810066890099998",
+          "platform": "tiktok"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
       "count": 1,
@@ -198,24 +225,6 @@
           "summary": "Corporate consolidation harms small business competition",
           "quote": "RFK Jr. Podcast: Corporate Capture Kills Small Business with Lloyd Chapman",
           "sourceUrl": "https://www.youtube.com/watch?v=1mAZTceKpRM",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "drugs-addiction",
-      "label": "Drugs & Addiction",
-      "count": 1,
-      "lastActive": "2024-11-11",
-      "stances": [
-        {
-          "date": "2024-11-11",
-          "topic": "drugs-addiction",
-          "stance": "lean",
-          "summary": "Advocates psychedelic therapy for veteran mental health",
-          "quote": "Rogan: psychedelics for veterans",
-          "sourceUrl": "https://www.youtube.com/shorts/eBt-U6dL9bI",
           "platform": "youtube"
         }
       ],

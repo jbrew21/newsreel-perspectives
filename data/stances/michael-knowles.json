@@ -1,7 +1,7 @@
 {
   "voiceId": "michael-knowles",
   "voiceName": "Michael Knowles",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "topicCount": 31,
   "stanceCount": 191,
   "topics": [
@@ -1245,7 +1245,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "religion-faith",
@@ -1716,33 +1716,6 @@
       "active": true
     },
     {
-      "topic": "refugees-humanitarian",
-      "label": "Refugees & Humanitarian",
-      "count": 2,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "refugees-humanitarian",
-          "stance": "strong",
-          "summary": "Portrays refugee resettlement program as enabling fraud",
-          "quote": "Even the award-winning Somali refugees are fraudsters...",
-          "sourceUrl": "https://www.youtube.com/shorts/t1-t62s5tq4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "refugees-humanitarian",
-          "stance": "strong",
-          "summary": "Criticizes UK migrant policy response as inadequate",
-          "quote": "UK's Embarrassing &quot;Solution&quot; To Migrant Problem: The Anti-Rape Book",
-          "sourceUrl": "https://www.youtube.com/watch?v=k_WY10z7zRc",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "protests-activism",
       "label": "Protests & Activism",
       "count": 3,
@@ -1774,6 +1747,33 @@
           "quote": "Mocking murdered children for praying. Scum of the earth.",
           "sourceUrl": "https://x.com/michaeljknowles/status/1961262863571431434",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "refugees-humanitarian",
+      "label": "Refugees & Humanitarian",
+      "count": 2,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "refugees-humanitarian",
+          "stance": "strong",
+          "summary": "Portrays refugee resettlement program as enabling fraud",
+          "quote": "Even the award-winning Somali refugees are fraudsters...",
+          "sourceUrl": "https://www.youtube.com/shorts/t1-t62s5tq4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "refugees-humanitarian",
+          "stance": "strong",
+          "summary": "Criticizes UK migrant policy response as inadequate",
+          "quote": "UK's Embarrassing &quot;Solution&quot; To Migrant Problem: The Anti-Rape Book",
+          "sourceUrl": "https://www.youtube.com/watch?v=k_WY10z7zRc",
+          "platform": "youtube"
         }
       ],
       "active": false
