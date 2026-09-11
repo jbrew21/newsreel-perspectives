@@ -2,8 +2,8 @@
   "voiceId": "tim-scott",
   "voiceName": "Tim Scott",
   "updatedAt": "2026-09-11",
-  "topicCount": 17,
-  "stanceCount": 58,
+  "topicCount": 18,
+  "stanceCount": 59,
   "topics": [
     {
       "topic": "economy-trade",
@@ -535,6 +535,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Honors 9/11 victims and first responders, affirms remembrance",
+          "quote": "25 years ago today, our nation was changed forever.\n\nWe will never forget the victims of the September 11 terrorist attacks and the families and loved ones who endured unimaginable loss. We honor the first responders and heroes who risked their lives to protect and save others.\n\n",
+          "sourceUrl": "https://x.com/SenatorTimScott/status/2098382439974305834",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "food-agriculture",
