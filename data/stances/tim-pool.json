@@ -2,8 +2,8 @@
   "voiceId": "tim-pool",
   "voiceName": "Tim Pool",
   "updatedAt": "2026-09-11",
-  "topicCount": 33,
-  "stanceCount": 194,
+  "topicCount": 34,
+  "stanceCount": 195,
   "topics": [
     {
       "topic": "media-personalities",
@@ -1885,6 +1885,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Promotes Trump's proposed cash payment policy to Americans",
+          "quote": "Trump Promises $5,000 TO EVERY AMERICAN #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/4o-r1K_Ni_g",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "education",

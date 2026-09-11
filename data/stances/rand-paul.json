@@ -2,8 +2,8 @@
   "voiceId": "rand-paul",
   "voiceName": "Rand Paul",
   "updatedAt": "2026-09-11",
-  "topicCount": 18,
-  "stanceCount": 88,
+  "topicCount": 19,
+  "stanceCount": 89,
   "topics": [
     {
       "topic": "economy-trade",
@@ -832,6 +832,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Commemorates 9/11 victims and honors first responders and service members",
+          "quote": "25 years ago, terrorists attacked our nation and forever changed America. Today, we remember the 2,977 innocent lives lost, honor the first responders who ran toward danger, pay tribute to all who served and sacrificed in the events that followed, and stand with the families who ",
+          "sourceUrl": "https://x.com/RandPaul/status/2098441448563658926",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "ai-technology",

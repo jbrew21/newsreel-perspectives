@@ -2,8 +2,8 @@
   "voiceId": "john-fetterman",
   "voiceName": "John Fetterman",
   "updatedAt": "2026-09-11",
-  "topicCount": 12,
-  "stanceCount": 21,
+  "topicCount": 13,
+  "stanceCount": 22,
   "topics": [
     {
       "topic": "israel-palestine",
@@ -157,6 +157,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 victims and their resistance to terrorism",
+          "quote": "Hallowed ground here at the Flight 93 Memorial in Shanksville commemorating 25 years since the Sept. 11 terrorist attacks.\n\nThis sacred land honors the Americans who fought back to prevent another, larger attack. The precise timing of the wreath layings marked the times of each a",
+          "sourceUrl": "https://x.com/SenFettermanPA/status/2098422820145336766",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "congress-legislation",

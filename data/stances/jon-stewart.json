@@ -3,7 +3,7 @@
   "voiceName": "Jon Stewart",
   "updatedAt": "2026-09-11",
   "topicCount": 20,
-  "stanceCount": 81,
+  "stanceCount": 83,
   "topics": [
     {
       "topic": "military-defense",
@@ -215,9 +215,27 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 12,
-      "lastActive": "2026-09-10",
+      "count": 13,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Examines Trump's actual beliefs and motivations",
+          "quote": "What Does Trump Believe? | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/idpKWQng-Bs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Critiques Trump's isolation from opposing viewpoints",
+          "quote": "Puncturing Trump's Bubble | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/tmviUFDqw8A",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-10",
           "topic": "trump-administration",
@@ -225,15 +243,6 @@
           "summary": "Compares Trump's first and second terms, implies continuity or escalation of policies",
           "quote": "Trump 1 vs. Trump 2 | The Weekly Show with Jon Stewart",
           "sourceUrl": "https://www.youtube.com/shorts/uB4SF7HNqbo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-10",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Critiques Trump's grip on reality and political worldview",
-          "quote": "Jonathan Swan\u2019s Dive into Trump\u2019s Reality | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/watch?v=9PNBKR09_BY",
           "platform": "youtube"
         },
         {
@@ -332,9 +341,18 @@
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 12,
-      "lastActive": "2026-08-12",
+      "count": 13,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Advocates for incentivizing quality journalism",
+          "quote": "Incentivizing Good Journalism | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/1Yuu04qUZdE",
+          "platform": "youtube"
+        },
         {
           "date": "2026-08-12",
           "topic": "media-press",
@@ -444,7 +462,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "culture-war",

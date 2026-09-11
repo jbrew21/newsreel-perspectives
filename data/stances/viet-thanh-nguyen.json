@@ -2,8 +2,8 @@
   "voiceId": "viet-thanh-nguyen",
   "voiceName": "Viet Thanh Nguyen",
   "updatedAt": "2026-09-11",
-  "topicCount": 8,
-  "stanceCount": 13,
+  "topicCount": 9,
+  "stanceCount": 14,
   "topics": [
     {
       "topic": "immigration",
@@ -85,6 +85,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "9/11 foreshadowed broader global instability and conflict",
+          "quote": "The Burning Towers Foreshadowed a Burning World \u2013 Viet Thanh Nguyen on the 25 Years After 9/11\n\nzeteo.com/p/the-burnin...",
+          "sourceUrl": "https://bsky.app/profile/vietthanhnguyen.bsky.social/post/3mvb3rv7jfc2v",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "free-speech-censorship",

@@ -2,8 +2,8 @@
   "voiceId": "leeja-miller",
   "voiceName": "Leeja Miller",
   "updatedAt": "2026-09-11",
-  "topicCount": 25,
-  "stanceCount": 78,
+  "topicCount": 26,
+  "stanceCount": 79,
   "topics": [
     {
       "topic": "elections",
@@ -805,6 +805,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Highlights lack of access to clean water as a rights issue",
+          "quote": "You Don't Have A Right To Clean Water",
+          "sourceUrl": "https://www.youtube.com/watch?v=Ki09WkPU3T8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "protests-activism",

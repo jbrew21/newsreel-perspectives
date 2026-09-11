@@ -3,14 +3,23 @@
   "voiceName": "Hasan Minhaj",
   "updatedAt": "2026-09-11",
   "topicCount": 18,
-  "stanceCount": 56,
+  "stanceCount": 57,
   "topics": [
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 7,
-      "lastActive": "2026-09-08",
+      "count": 8,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Questions whether online video content primarily functions as advertising",
+          "quote": "Are most clips just ads?",
+          "sourceUrl": "https://www.youtube.com/shorts/3tNDMasyajI",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-08",
           "topic": "media-press",
@@ -24,7 +33,7 @@
           "date": "2026-09-08",
           "topic": "media-press",
           "stance": "lean",
-          "summary": "Critiques spread and mechanics of conspiracy theories",
+          "summary": "Examines emergence and spread of conspiracy theories in media landscape",
           "quote": "New conspiracy theory just dropped - with Charlie Warzel",
           "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7683190324365184269",
           "platform": "tiktok"
@@ -51,7 +60,7 @@
           "date": "2026-09-03",
           "topic": "media-press",
           "stance": "lean",
-          "summary": "Explores how media framing and messaging can shift perspectives",
+          "summary": "Explores how media narratives and information can shift public opinion",
           "quote": "\u201cIt changed my mind about how minds can be changed\u201d - Charlie Warzel",
           "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7681289804847336718",
           "platform": "tiktok"
@@ -186,7 +195,7 @@
           "date": "2026-09-02",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Expresses concern about Google's influence and power",
+          "summary": "Examines Google's growing power and potential negative societal impact",
           "quote": "Is Google becoming a poison genie? with Charlie Warzel",
           "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7680922005570456845",
           "platform": "tiktok"
@@ -231,7 +240,7 @@
           "date": "2026-09-01",
           "topic": "trump-policy",
           "stance": "lean",
-          "summary": "Questions feasibility and implications of Trump's Greenland rhetoric",
+          "summary": "Questions Trump's potential military or territorial ambitions toward Greenland",
           "quote": "Will Trump attack Greenland? - with Ben Rhodes",
           "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7680534359480208653",
           "platform": "tiktok"
@@ -330,6 +339,42 @@
       "active": false
     },
     {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 3,
+      "lastActive": "2026-09-07",
+      "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Questions the actual popularity and influence of far-right political figure",
+          "quote": "Is Nick Fuentes actually popular? with Charlie Warzel",
+          "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7682773574213553422",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-10",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Critiques white male behavior and historical patterns as problematic",
+          "quote": "\u201cAre we here to just act like white men have acted every time before?\u201d - Ta-Nehisi Coates",
+          "sourceUrl": "https://www.youtube.com/shorts/ArW-Jk_pl5g",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Critiques rhetorical bad faith in political arguments",
+          "quote": "Just because you can make an argument doesn\u2019t make it right",
+          "sourceUrl": "https://www.youtube.com/shorts/Y72NMIVR_mo",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
       "count": 3,
@@ -360,33 +405,6 @@
           "summary": "Criticizes U.S. oil-driven foreign policy in Iran",
           "quote": "Even President Jimmy Carter sounded like Bane when talking about oil",
           "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7678325014877261070",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 2,
-      "lastActive": "2026-09-07",
-      "stances": [
-        {
-          "date": "2026-09-07",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Questions the actual size and influence of Nick Fuentes's audience",
-          "quote": "Is Nick Fuentes actually popular?",
-          "sourceUrl": "https://www.youtube.com/shorts/DTWTrmjp-5Q",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-07",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Questions Nick Fuentes's actual popularity and influence",
-          "quote": "Is Nick Fuentes actually popular? with Charlie Warzel",
-          "sourceUrl": "https://www.tiktok.com/@hasanminhaj/video/7682773574213553422",
           "platform": "tiktok"
         }
       ],
@@ -573,31 +591,22 @@
       "active": false
     },
     {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 2,
-      "lastActive": "2026-08-10",
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 1,
+      "lastActive": "2026-09-07",
       "stances": [
         {
-          "date": "2026-08-10",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Critiques white male behavior and historical patterns as problematic",
-          "quote": "\u201cAre we here to just act like white men have acted every time before?\u201d - Ta-Nehisi Coates",
-          "sourceUrl": "https://www.youtube.com/shorts/ArW-Jk_pl5g",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "culture-war",
+          "date": "2026-09-07",
+          "topic": "media-personalities",
           "stance": "lean",
-          "summary": "Critiques rhetorical bad faith in political arguments",
-          "quote": "Just because you can make an argument doesn\u2019t make it right",
-          "sourceUrl": "https://www.youtube.com/shorts/Y72NMIVR_mo",
+          "summary": "Questions the actual size and influence of Nick Fuentes's audience",
+          "quote": "Is Nick Fuentes actually popular?",
+          "sourceUrl": "https://www.youtube.com/shorts/DTWTrmjp-5Q",
           "platform": "youtube"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "refugees-humanitarian",

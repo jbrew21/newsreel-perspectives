@@ -3,7 +3,7 @@
   "voiceName": "Dave Rubin",
   "updatedAt": "2026-09-11",
   "topicCount": 34,
-  "stanceCount": 222,
+  "stanceCount": 224,
   "topics": [
     {
       "topic": "elections",
@@ -1304,9 +1304,18 @@
     {
       "topic": "immigration",
       "label": "Immigration",
-      "count": 8,
-      "lastActive": "2026-09-03",
+      "count": 9,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Frames immigration as invasion, suggests public opposition to government policy",
+          "quote": "Illegal Immigrant Invasion Takes a Turn as Citizens Turn Against Their Gov\u2019t",
+          "sourceUrl": "https://www.youtube.com/watch?v=ovs3dthdkS8",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-03",
           "topic": "immigration",
@@ -1716,6 +1725,51 @@
       "active": false
     },
     {
+      "topic": "religion-faith",
+      "label": "Religion & Faith",
+      "count": 4,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "religion-faith",
+          "stance": "strong",
+          "summary": "Warns of Islamic demographic change in NYC, implies threat post-9/11",
+          "quote": "Exposing the Islamic Takeover of NYC 25 Years After 9/11 That No One Could Have Predicted",
+          "sourceUrl": "https://www.youtube.com/watch?v=ad0wPkN9dYQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Presents Muslim scholar's perspective on future outcomes",
+          "quote": "Muslim Scholar Gives a Scary Honest Take on What Comes Next",
+          "sourceUrl": "https://www.youtube.com/watch?v=-G19G8oxjSA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Frames Muslim facility expansion as encountering local opposition",
+          "quote": "Muslim Center Tries Huge Expansion, They Were Shocked by What Happened Next",
+          "sourceUrl": "https://www.youtube.com/watch?v=m6MVlDHVVoQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Questions airport religious accommodation policies",
+          "quote": "Airport Scraps Islamic Foot-Washing Stations; Leavitt Succession Race Is On | 8/17/26 FIRST LOOK",
+          "sourceUrl": "https://www.youtube.com/watch?v=MHQwp9h8AEE",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 4,
@@ -1876,42 +1930,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "religion-faith",
-      "label": "Religion & Faith",
-      "count": 3,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Presents Muslim scholar's perspective on future outcomes",
-          "quote": "Muslim Scholar Gives a Scary Honest Take on What Comes Next",
-          "sourceUrl": "https://www.youtube.com/watch?v=-G19G8oxjSA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Frames Muslim facility expansion as encountering local opposition",
-          "quote": "Muslim Center Tries Huge Expansion, They Were Shocked by What Happened Next",
-          "sourceUrl": "https://www.youtube.com/watch?v=m6MVlDHVVoQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Questions airport religious accommodation policies",
-          "quote": "Airport Scraps Islamic Foot-Washing Stations; Leavitt Succession Race Is On | 8/17/26 FIRST LOOK",
-          "sourceUrl": "https://www.youtube.com/watch?v=MHQwp9h8AEE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "protests-activism",

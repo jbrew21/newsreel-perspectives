@@ -3,7 +3,7 @@
   "voiceName": "Glenn Beck",
   "updatedAt": "2026-09-11",
   "topicCount": 26,
-  "stanceCount": 118,
+  "stanceCount": 120,
   "topics": [
     {
       "topic": "culture-war",
@@ -987,6 +987,42 @@
       "active": false
     },
     {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 3,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Reflects on 9/11 tragedy and its lasting impact",
+          "quote": "What I Saw in the Ash of the World Trade Center",
+          "sourceUrl": "https://www.youtube.com/watch?v=heGAjZOP4cI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Commemorates personal 9/11 coverage and broadcasting role",
+          "quote": "On Septemer 11, 2001 Glenn Did Something NO Broadcaster Did | Hour 1 | 9/11/26",
+          "sourceUrl": "https://www.youtube.com/watch?v=0KEp5ts4OIY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "9/11 families object to particular figure or policy position",
+          "quote": "9/11 Families Are CLEAR About Mamdani",
+          "sourceUrl": "https://www.youtube.com/shorts/FwZ-wweACrU",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 3,
@@ -1278,24 +1314,6 @@
           "summary": "Implies gun incident was serious but preventable with better measures",
           "quote": "Devasting Shootout In Idaho Could Have Been Even Worse...",
           "sourceUrl": "https://www.youtube.com/watch?v=ADfnBwpTPMI",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2026-08-02",
-      "stances": [
-        {
-          "date": "2026-08-02",
-          "topic": "terrorism",
-          "stance": "lean",
-          "summary": "9/11 families object to particular figure or policy position",
-          "quote": "9/11 Families Are CLEAR About Mamdani",
-          "sourceUrl": "https://www.youtube.com/shorts/FwZ-wweACrU",
           "platform": "youtube"
         }
       ],

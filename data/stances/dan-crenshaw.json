@@ -3,7 +3,7 @@
   "voiceName": "Dan Crenshaw",
   "updatedAt": "2026-09-11",
   "topicCount": 16,
-  "stanceCount": 44,
+  "stanceCount": 45,
   "topics": [
     {
       "topic": "military-defense",
@@ -285,6 +285,33 @@
       "active": false
     },
     {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 2,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Honors 9/11 victims and first responders, reaffirms commitment to accountability",
+          "quote": "25 years ago, 2,977 innocent people were murdered on September 11th. \n\nWe remember them.\n\nWe remember the first responders who ran toward danger. We remember the heroes of Flight 93. We remember those who made the ultimate sacrifice to hold the enemy accountable. \n\nNever Forget.",
+          "sourceUrl": "https://x.com/DanCrenshawTX/status/2098427558605783352",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors Flight 93 passengers as heroes who fought terrorism",
+          "quote": "The first battle in the War on Terror was on Flight 93, when forty Americans made the decision to fight back against evil. Today I visited the Flight 93 National Memorial in Shanksville, PA.\n\nIt\u2019s an incredible place, and reminds us how quickly ordinary people can become heroes. ",
+          "sourceUrl": "https://x.com/DanCrenshawTX/status/2094531565900709947",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 2,
@@ -454,24 +481,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "terrorism",
-          "stance": "lean",
-          "summary": "Honors Flight 93 passengers as heroes who fought terrorism",
-          "quote": "The first battle in the War on Terror was on Flight 93, when forty Americans made the decision to fight back against evil. Today I visited the Flight 93 National Memorial in Shanksville, PA.\n\nIt\u2019s an incredible place, and reminds us how quickly ordinary people can become heroes. ",
-          "sourceUrl": "https://x.com/DanCrenshawTX/status/2094531565900709947",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "immigration",

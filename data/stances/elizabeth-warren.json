@@ -2,8 +2,8 @@
   "voiceId": "elizabeth-warren",
   "voiceName": "Elizabeth Warren",
   "updatedAt": "2026-09-11",
-  "topicCount": 17,
-  "stanceCount": 84,
+  "topicCount": 18,
+  "stanceCount": 85,
   "topics": [
     {
       "topic": "trump-administration",
@@ -823,6 +823,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Honors 9/11 victims and first responders, calls for remembrance",
+          "quote": "On the 25th anniversary of the September 11th attacks, I'm thinking about the nearly 3,000 Americans who were killed, the first responders who showed us what true courage looks like, and the families whose lives were forever changed after that day.\n\nWe must never, ever forget.",
+          "sourceUrl": "https://x.com/ewarren/status/2098425168473313524",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "food-agriculture",

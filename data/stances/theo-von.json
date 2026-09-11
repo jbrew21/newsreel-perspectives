@@ -2,8 +2,8 @@
   "voiceId": "theo-von",
   "voiceName": "Theo Von",
   "updatedAt": "2026-09-11",
-  "topicCount": 26,
-  "stanceCount": 47,
+  "topicCount": 27,
+  "stanceCount": 48,
   "topics": [
     {
       "topic": "drugs-addiction",
@@ -409,6 +409,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 first responder and service member",
+          "quote": "thank you Tony Bonfiglio for sharing your 9/11 story and for your service \ud83d\ude4f \ud83d\udd4a\ufe0f",
+          "sourceUrl": "https://www.youtube.com/shorts/BpM2TgQ6Y_s",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "state-local-politics",
