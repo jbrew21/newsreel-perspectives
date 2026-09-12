@@ -1,10 +1,28 @@
 {
   "voiceId": "phil-mcgraw",
   "voiceName": "Phil McGraw (Dr. Phil)",
-  "updatedAt": "2026-09-11",
-  "topicCount": 2,
-  "stanceCount": 2,
+  "updatedAt": "2026-09-12",
+  "topicCount": 3,
+  "stanceCount": 3,
   "topics": [
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "9/11 first responder expresses loss of pride and personal struggle",
+          "quote": "9/11 First Responder: \u2018I\u2019m Not Proud of Myself Anymore\u2019 #drphil #911 #september11",
+          "sourceUrl": "https://www.youtube.com/shorts/3lnSr5R_ypk",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "drugs-addiction",
       "label": "Drugs & Addiction",

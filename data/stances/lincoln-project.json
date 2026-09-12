@@ -1,9 +1,9 @@
 {
   "voiceId": "lincoln-project",
   "voiceName": "Lincoln Project",
-  "updatedAt": "2026-09-11",
-  "topicCount": 25,
-  "stanceCount": 226,
+  "updatedAt": "2026-09-12",
+  "topicCount": 26,
+  "stanceCount": 228,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1466,9 +1466,18 @@
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
-      "count": 9,
-      "lastActive": "2026-08-19",
+      "count": 10,
+      "lastActive": "2026-09-11",
       "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Criticizes GOP for allowing Iran War to drive diesel prices to record highs",
+          "quote": "Rep. Ashley Hinson: \"The Iran War is out of sight, out of mind for so many Americans.\u201d \n\nIt is on my minds of Iowa's farmers. Diesel prices just hit another record high, shooting past $6 a gallon. The GOP is keeping this problem going.",
+          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mvbkwfl3g72q",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-19",
           "topic": "iran-conflict",
@@ -1551,7 +1560,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "epstein-scandal",
@@ -2155,6 +2164,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 victims and first responders, emphasizes remembrance",
+          "quote": "Twenty five years ago, extremists attacked America. The destruction, loss, and images of that day will never leave anyone who witnessed them. Today we honor the memories of the lives lost, and the heros who saved so many on 9/11.",
+          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mvaqmaj57a2u",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "media-press",

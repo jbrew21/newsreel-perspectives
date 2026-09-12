@@ -1,9 +1,9 @@
 {
   "voiceId": "dave-rubin",
   "voiceName": "Dave Rubin",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 34,
-  "stanceCount": 228,
+  "stanceCount": 229,
   "topics": [
     {
       "topic": "elections",
@@ -863,7 +863,7 @@
     {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
-      "count": 13,
+      "count": 14,
       "lastActive": "2026-09-11",
       "stances": [
         {
@@ -873,6 +873,15 @@
           "summary": "Mocks Democratic lawmaker's intelligence on live television",
           "quote": "Dem Shocks CNN Panel by Accidentally Showing How Dumb He Really Is",
           "sourceUrl": "https://www.youtube.com/watch?v=d1jpa-RbFdc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Zohran Mamdani caught in logical contradiction or admission",
+          "quote": "Zohran Mamdani Humiliated as He Is Forced to Admit This",
+          "sourceUrl": "https://www.youtube.com/shorts/X-aSHb_roEg",
           "platform": "youtube"
         },
         {
@@ -1563,6 +1572,69 @@
       "active": true
     },
     {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 6,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Elon Musk identifies noteworthy pattern in German election results",
+          "quote": "Elon Musk Notices Something About German Election No One Noticed",
+          "sourceUrl": "https://www.youtube.com/shorts/_bFXUDfO5I0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-04",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Questions whether UK has reached irreversible decline",
+          "quote": "Did the UK Just Pass the Point of No Return? | Andrew Gold",
+          "sourceUrl": "https://www.youtube.com/watch?v=Wsy_v20buvE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "UK figure warns West of unspecified threat or trend",
+          "quote": "UK YouTuber Has a Chilling Warning for the West | Andrew Gold",
+          "sourceUrl": "https://www.youtube.com/watch?v=MbTFlibmYy0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "UK's decline characterized as irreversible without intervention",
+          "quote": "If This Isn\u2019t Stopped, UK\u2019s Fall Is Irreversible | Andrew Gold",
+          "sourceUrl": "https://www.youtube.com/watch?v=xNn0EG-Sf-0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Presents UK MP claims about elite conspiracy without verification",
+          "quote": "Joe Rogan Visibly Shocked as UK MP Shares Proof of Dark Elite Plan",
+          "sourceUrl": "https://www.youtube.com/shorts/C6EnjVa7-zM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2024-11-23",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Frames Trudeau's resignation as defining career moment, implies criticism",
+          "quote": "The defining moment of Trudeau\u2019s career right here\u2026",
+          "sourceUrl": "https://x.com/RubinReport/status/1860140812274933771",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 6,
@@ -1620,69 +1692,6 @@
           "summary": "Celebrates Trump rally attendance and energy",
           "quote": "Only one way to end a Trump rally.\n\n@sagesteele @michaeljknowles https://t.co/ihKV7DrtW2",
           "sourceUrl": "https://x.com/RubinReport/status/1850705021098455239",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 6,
-      "lastActive": "2026-09-08",
-      "stances": [
-        {
-          "date": "2026-09-08",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Elon Musk identified overlooked pattern in German election",
-          "quote": "Elon Musk Notices Something About German Election No One Noticed",
-          "sourceUrl": "https://www.youtube.com/watch?v=7wElCF1Oixg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-04",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Questions whether UK has reached irreversible decline",
-          "quote": "Did the UK Just Pass the Point of No Return? | Andrew Gold",
-          "sourceUrl": "https://www.youtube.com/watch?v=Wsy_v20buvE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "UK figure warns West of unspecified threat or trend",
-          "quote": "UK YouTuber Has a Chilling Warning for the West | Andrew Gold",
-          "sourceUrl": "https://www.youtube.com/watch?v=MbTFlibmYy0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "UK's decline characterized as irreversible without intervention",
-          "quote": "If This Isn\u2019t Stopped, UK\u2019s Fall Is Irreversible | Andrew Gold",
-          "sourceUrl": "https://www.youtube.com/watch?v=xNn0EG-Sf-0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Presents UK MP claims about elite conspiracy without verification",
-          "quote": "Joe Rogan Visibly Shocked as UK MP Shares Proof of Dark Elite Plan",
-          "sourceUrl": "https://www.youtube.com/shorts/C6EnjVa7-zM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2024-11-23",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Frames Trudeau's resignation as defining career moment, implies criticism",
-          "quote": "The defining moment of Trudeau\u2019s career right here\u2026",
-          "sourceUrl": "https://x.com/RubinReport/status/1860140812274933771",
           "platform": "x"
         }
       ],

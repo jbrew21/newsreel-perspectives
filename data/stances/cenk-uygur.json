@@ -1,16 +1,34 @@
 {
   "voiceId": "cenk-uygur",
   "voiceName": "Cenk Uygur",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 25,
-  "stanceCount": 264,
+  "stanceCount": 268,
   "topics": [
     {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
-      "count": 38,
-      "lastActive": "2026-09-11",
+      "count": 40,
+      "lastActive": "2026-09-12",
       "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Criticizes Netanyahu for prioritizing military goals over hostage safety",
+          "quote": "Did Netanyahu Throw Israeli Hostages UNDER THE BUS?!?!",
+          "sourceUrl": "https://www.youtube.com/watch?v=PSv-FkliBHU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-12",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Ro Khanna opposes Israel-focused U.S. foreign policy approach",
+          "quote": "Ro Khanna Goes To WAR With Israel-First",
+          "sourceUrl": "https://www.youtube.com/watch?v=lwIWmEtVt6M",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-11",
           "topic": "israel-palestine",
@@ -863,9 +881,18 @@
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
-      "count": 18,
-      "lastActive": "2026-09-11",
+      "count": 19,
+      "lastActive": "2026-09-12",
       "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Reports Saudi Arabia pushing for military action against Iran",
+          "quote": "Saudi Arabia Calls For MILITARY ACTION, Reportedly",
+          "sourceUrl": "https://www.youtube.com/watch?v=zt1NCmxrSVs",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-11",
           "topic": "iran-conflict",
@@ -1773,10 +1800,10 @@
       "topic": "epstein-scandal",
       "label": "Epstein Scandal",
       "count": 10,
-      "lastActive": "2026-09-11",
+      "lastActive": "2026-09-12",
       "stances": [
         {
-          "date": "2026-09-11",
+          "date": "2026-09-12",
           "topic": "epstein-scandal",
           "stance": "strong",
           "summary": "Criticizes removal of journalist questioning Trump about Epstein",
@@ -1968,6 +1995,87 @@
       "active": true
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 8,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Congress ignoring serious warnings about AI risks and dangers",
+          "quote": "Congress Gets BLASTED For IGNORING Apocalyptic AI Warnings",
+          "sourceUrl": "https://www.youtube.com/watch?v=V2g6YYZXAXw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "AI whistleblowers' warnings about AI risks are credible and concerning",
+          "quote": "AI Whistleblowers Have SHOCKING Doomsday Predictions - And Anthropic Admits They\u2019re Right!!!!",
+          "sourceUrl": "https://www.youtube.com/watch?v=ckylrFd5Ro8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights serious concerns about AI safety from former researcher",
+          "quote": "Ex-OpenAI Researcher Drops MAJOR Warning",
+          "sourceUrl": "https://www.youtube.com/watch?v=KXDfQlqKJXU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights Republican denial of data center water consumption",
+          "quote": "Republican Gives Hilarious Response To Trump Data-Center Quote",
+          "sourceUrl": "https://www.youtube.com/watch?v=R2TorTB09n0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Criticizes Fox News promotion of data center expansion",
+          "quote": "Fox News Wants You to Love Data Centers",
+          "sourceUrl": "https://www.youtube.com/watch?v=3URWf4MJplE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Raises concerns about AI data centers as local nuisance or environmental problem",
+          "quote": "New AI Data Centers Are Neighbors from Hell",
+          "sourceUrl": "https://www.youtube.com/watch?v=J76_SGord4A",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Skeptical of AI market valuation and investor claims",
+          "quote": "Famous Investor EXPOSES The AI Bubble",
+          "sourceUrl": "https://www.youtube.com/watch?v=jmmaBcRduwQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Frames Musk's position on AI-generated imagery as resistance to content moderation",
+          "quote": "Elon Musk Is Fighting The 'Nudification' Ban",
+          "sourceUrl": "https://www.youtube.com/watch?v=2GzQp8OEoUw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 8,
@@ -2044,78 +2152,6 @@
           "quote": "Some folks just won't ever get it. Saying the Sydney Sweeney ad is \"Nazi propaganda\" because they're implying a blond, white woman has good genes is ... mental. That is not the hill to die on! Yes, it's ok to say white people have good genes from time to time, like everyone else!",
           "sourceUrl": "https://x.com/cenkuygur/status/1950239992011509913",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 7,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "AI whistleblowers' warnings about AI risks are credible and concerning",
-          "quote": "AI Whistleblowers Have SHOCKING Doomsday Predictions - And Anthropic Admits They\u2019re Right!!!!",
-          "sourceUrl": "https://www.youtube.com/watch?v=ckylrFd5Ro8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-10",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Highlights serious concerns about AI safety from former researcher",
-          "quote": "Ex-OpenAI Researcher Drops MAJOR Warning",
-          "sourceUrl": "https://www.youtube.com/watch?v=KXDfQlqKJXU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-03",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Highlights Republican denial of data center water consumption",
-          "quote": "Republican Gives Hilarious Response To Trump Data-Center Quote",
-          "sourceUrl": "https://www.youtube.com/watch?v=R2TorTB09n0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Criticizes Fox News promotion of data center expansion",
-          "quote": "Fox News Wants You to Love Data Centers",
-          "sourceUrl": "https://www.youtube.com/watch?v=3URWf4MJplE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Raises concerns about AI data centers as local nuisance or environmental problem",
-          "quote": "New AI Data Centers Are Neighbors from Hell",
-          "sourceUrl": "https://www.youtube.com/watch?v=J76_SGord4A",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Skeptical of AI market valuation and investor claims",
-          "quote": "Famous Investor EXPOSES The AI Bubble",
-          "sourceUrl": "https://www.youtube.com/watch?v=jmmaBcRduwQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Frames Musk's position on AI-generated imagery as resistance to content moderation",
-          "quote": "Elon Musk Is Fighting The 'Nudification' Ban",
-          "sourceUrl": "https://www.youtube.com/watch?v=2GzQp8OEoUw",
-          "platform": "youtube"
         }
       ],
       "active": true

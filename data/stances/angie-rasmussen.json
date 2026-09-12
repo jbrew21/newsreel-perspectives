@@ -1,9 +1,9 @@
 {
   "voiceId": "angie-rasmussen",
   "voiceName": "Angie Rasmussen",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 11,
-  "stanceCount": 43,
+  "stanceCount": 44,
   "topics": [
     {
       "topic": "covid-pandemic",
@@ -348,6 +348,33 @@
       "active": true
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes Anthropic for undisclosed use of foreign military researcher",
+          "quote": "Now we know whose paper Anthropic stole to enable this secret foreign military scientist working on their chikungunya research",
+          "sourceUrl": "https://bsky.app/profile/angierasmussen.bsky.social/post/3mvbto2i3us22",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Discusses AI applications in biology and emerging security threats",
+          "quote": "Today I\u2019m prowling for souls to ruin at the National Academies, where I shared my plans to use AI to destroy you and all your fascist friends",
+          "sourceUrl": "https://bsky.app/profile/angierasmussen.bsky.social/post/3msucd6dzs225",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "science-space",
       "label": "Science & Space",
       "count": 2,
@@ -418,24 +445,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-08-12",
-      "stances": [
-        {
-          "date": "2026-08-12",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Discusses AI applications in biology and emerging security threats",
-          "quote": "Today I\u2019m prowling for souls to ruin at the National Academies, where I shared my plans to use AI to destroy you and all your fascist friends",
-          "sourceUrl": "https://bsky.app/profile/angierasmussen.bsky.social/post/3msucd6dzs225",
-          "platform": "bluesky"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "civil-rights-race",

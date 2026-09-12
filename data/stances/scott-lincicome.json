@@ -1,16 +1,43 @@
 {
   "voiceId": "scott-lincicome",
   "voiceName": "Scott Lincicome",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 22,
-  "stanceCount": 111,
+  "stanceCount": 115,
   "topics": [
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 54,
-      "lastActive": "2026-09-11",
+      "count": 58,
+      "lastActive": "2026-09-12",
       "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critiques trade policy implementation or reasoning",
+          "quote": "Oh hey, Trade Policy 101 called again: \n\n share.google/hoCOpY3ZfKuQ...",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mvdp7z4c6w2r",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-12",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Highlights negative trade war effects on GOP congressional control",
+          "quote": "\"U.S.-Canada trade war hits GOP efforts to keep control of Congress\" \ud83d\ude32 www.washingtonpost.com/business/202...",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mvdoxgt2dw2g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-12",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Notes semiconductor supply chain disruption from policy changes",
+          "quote": "\"Arizona\u2019s lifeline for chip manufacturing is drying up\" www.theverge.com/science/9935...",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mvdotdv7jg24",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-11",
           "topic": "economy-trade",
@@ -45,6 +72,15 @@
           "summary": "Notes diesel price surge straining goods transportation costs",
           "quote": "\"US diesel prices soar past $6 a gallon, deepening strain for hauling everyday goods\" www.npr.org/2026/09/11/g...",
           "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mvahn4yfhy24",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Questions industrial policy reliance on company size",
+          "quote": "\"Growth through innovation bursts: Why industrial policy should not bet on size\" cepr.org/voxeu/column... via @voxeu",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mvahf4m5562g",
           "platform": "bluesky"
         },
         {
@@ -834,42 +870,6 @@
       "active": false
     },
     {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 3,
-      "lastActive": "2026-08-28",
-      "stances": [
-        {
-          "date": "2026-08-28",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Warns borrowing delays necessary Social Security reform",
-          "quote": "\"Borrowing to Avoid Social Security Reform Could Add $46 Trillion to the Debt by 2056\" www.cato.org/blog/borrowi...",
-          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mu5bnilopm2o",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2025-04-06",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Calls on Congress to immediately halt tariff policy",
-          "quote": "Your periodic - and increasingly urgent - reminder that Congress could stop this tomorrow.",
-          "sourceUrl": "https://x.com/scottlincicome/status/1909016056527544456",
-          "platform": "x"
-        },
-        {
-          "date": "2024-11-10",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Endorses Democratic effort to eliminate unnecessary regulations and enforcement",
-          "quote": "Dems going after dumb, costly regulations and the \"licensing officials and regulators\" who mindlessly enforce \"the rules.\"\n\nMore, please.",
-          "sourceUrl": "https://x.com/scottlincicome/status/1855402976103292936",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "climate-environment",
       "label": "Climate & Environment",
       "count": 4,
@@ -967,6 +967,42 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 3,
+      "lastActive": "2026-08-28",
+      "stances": [
+        {
+          "date": "2026-08-28",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Warns borrowing delays necessary Social Security reform",
+          "quote": "\"Borrowing to Avoid Social Security Reform Could Add $46 Trillion to the Debt by 2056\" www.cato.org/blog/borrowi...",
+          "sourceUrl": "https://bsky.app/profile/scottlincicome.bsky.social/post/3mu5bnilopm2o",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2025-04-06",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Calls on Congress to immediately halt tariff policy",
+          "quote": "Your periodic - and increasingly urgent - reminder that Congress could stop this tomorrow.",
+          "sourceUrl": "https://x.com/scottlincicome/status/1909016056527544456",
+          "platform": "x"
+        },
+        {
+          "date": "2024-11-10",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Endorses Democratic effort to eliminate unnecessary regulations and enforcement",
+          "quote": "Dems going after dumb, costly regulations and the \"licensing officials and regulators\" who mindlessly enforce \"the rules.\"\n\nMore, please.",
+          "sourceUrl": "https://x.com/scottlincicome/status/1855402976103292936",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "media-press",

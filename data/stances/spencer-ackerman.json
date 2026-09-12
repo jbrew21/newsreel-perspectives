@@ -1,9 +1,9 @@
 {
   "voiceId": "spencer-ackerman",
   "voiceName": "Spencer Ackerman",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 21,
-  "stanceCount": 101,
+  "stanceCount": 102,
   "topics": [
     {
       "topic": "iran-conflict",
@@ -638,7 +638,7 @@
     {
       "topic": "terrorism",
       "label": "Terrorism & Security",
-      "count": 4,
+      "count": 5,
       "lastActive": "2026-09-11",
       "stances": [
         {
@@ -649,6 +649,15 @@
           "quote": "Today We Must Finally Remember What The 9/11 Commemorations Ignore. Righteous victimhood fueled the War on Terror. 25 years later, we also have to remember all of those slain under its banner",
           "sourceUrl": "https://www.forever-wars.com/today-we-must-finally-remember-what-the-9-11-commemorations-ignore/",
           "platform": "substack"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Reflects critically on War on Terror legacy on 9/11 anniversary",
+          "quote": "I've spent my entire career reporting on the War on Terror. Many this week have asked me for my extended thoughts on the 25th anniversary of 9/11. Here they are.",
+          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mvamknq5mc2c",
+          "platform": "bluesky"
         },
         {
           "date": "2026-09-07",
@@ -726,6 +735,42 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 3,
+      "lastActive": "2026-09-08",
+      "stances": [
+        {
+          "date": "2026-09-08",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Opposes predictive policing as unconstitutional pre-crime surveillance",
+          "quote": "Extremely important story. Predictive policing is a euphemistic way of saying DHS is doing pre-crime, because of its improper access to your data. As @jakelaperruque.bsky.social says here, this takes a sledgehammer to the concept of probable cause of the commission of a crime. It",
+          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3muz6k4csr22u",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Criticizes politicians for abandoning police abolition advocacy",
+          "quote": "Hey thanks to every politician, including and frankly especially on the left, who decided that advocating for police abolition was too scary for their chances at gaining or staying in power.",
+          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mu33qwhe7k26",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Attacks Rogers for NSA privacy violations and hypocrisy seeking impunity for election denial",
+          "quote": "Rogers was chairman of the House intelligence committee. He knows his election wasn\u2019t stolen, he lost. I saw up close his efforts, post-Snowden, to protect the NSA & ensure it continues to nullify your constitutionally-protected privacy. He was for impunity then & wants the same ",
+          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3msofrothg22b",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 4,
@@ -768,43 +813,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 3,
-      "lastActive": "2026-09-08",
-      "stances": [
-        {
-          "date": "2026-09-08",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Opposes predictive policing as unconstitutional pre-crime surveillance",
-          "quote": "Extremely important story. Predictive policing is a euphemistic way of saying DHS is doing pre-crime, because of its improper access to your data. As @jakelaperruque.bsky.social says here, this takes a sledgehammer to the concept of probable cause of the commission of a crime. It",
-          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3muz6k4csr22u",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-27",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Criticizes politicians for abandoning police abolition advocacy",
-          "quote": "Hey thanks to every politician, including and frankly especially on the left, who decided that advocating for police abolition was too scary for their chances at gaining or staying in power.",
-          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3mu33qwhe7k26",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Attacks Rogers for NSA privacy violations and hypocrisy seeking impunity for election denial",
-          "quote": "Rogers was chairman of the House intelligence committee. He knows his election wasn\u2019t stolen, he lost. I saw up close his efforts, post-Snowden, to protect the NSA & ensure it continues to nullify your constitutionally-protected privacy. He was for impunity then & wants the same ",
-          "sourceUrl": "https://bsky.app/profile/attackerman.bsky.social/post/3msofrothg22b",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "ai-technology",

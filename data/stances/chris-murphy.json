@@ -1,9 +1,9 @@
 {
   "voiceId": "chris-murphy",
   "voiceName": "Chris Murphy",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 20,
-  "stanceCount": 100,
+  "stanceCount": 101,
   "topics": [
     {
       "topic": "trump-administration",
@@ -897,6 +897,33 @@
       "active": true
     },
     {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 2,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 victims and first responders' lasting trauma",
+          "quote": "In Connecticut, the ripples of pain and trauma from 9/11 are endless. Kids who grew up without a mom or dad. Communities that lost countless neighbors in an instant. Scores of first responders who returned home with wounds that endured. \n\nHere, we will never forget. https://t.co/",
+          "sourceUrl": "https://x.com/ChrisMurphyCT/status/2098393278403989710",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 victims and commemorates their personal impact",
+          "quote": "I knew all three of Wethersfield\u2019s 9/11 victims. I grew up with Jeff Bittner and Dave Winton, both stand out students and humans. Dick Keane was a legendary youth sports advocate. Everyone knew the Keane family. \n\nIt was touching to be in town tonight to remember them. https://t.",
+          "sourceUrl": "https://x.com/ChrisMurphyCT/status/2098552160011035103",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "housing-infrastructure",
       "label": "Housing & Infrastructure",
       "count": 2,
@@ -976,24 +1003,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2026-09-11",
-      "stances": [
-        {
-          "date": "2026-09-11",
-          "topic": "terrorism",
-          "stance": "lean",
-          "summary": "Honors 9/11 victims and first responders' lasting trauma",
-          "quote": "In Connecticut, the ripples of pain and trauma from 9/11 are endless. Kids who grew up without a mom or dad. Communities that lost countless neighbors in an instant. Scores of first responders who returned home with wounds that endured. \n\nHere, we will never forget. https://t.co/",
-          "sourceUrl": "https://x.com/ChrisMurphyCT/status/2098393278403989710",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "protests-activism",

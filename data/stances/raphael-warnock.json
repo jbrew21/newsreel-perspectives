@@ -1,9 +1,9 @@
 {
   "voiceId": "raphael-warnock",
   "voiceName": "Raphael Warnock",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 16,
-  "stanceCount": 62,
+  "stanceCount": 63,
   "topics": [
     {
       "topic": "trump-administration",
@@ -134,9 +134,18 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 11,
-      "lastActive": "2026-09-09",
+      "count": 12,
+      "lastActive": "2026-09-12",
       "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes President for failing to lower energy bills as promised",
+          "quote": "This President said he was going to cut energy bills by 50% within 1 year. \n  \nIt's been nearly two years. \n  \nPower bills are higher than ever and he hasn't lifted a finger to bring them down.",
+          "sourceUrl": "https://x.com/SenatorWarnock/status/2098846104280334633",
+          "platform": "x"
+        },
         {
           "date": "2026-09-09",
           "topic": "economy-trade",
@@ -615,7 +624,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "abortion-reproductive",

@@ -1,9 +1,9 @@
 {
   "voiceId": "endeavorance",
   "voiceName": "Endeavorance",
-  "updatedAt": "2026-09-11",
-  "topicCount": 20,
-  "stanceCount": 47,
+  "updatedAt": "2026-09-12",
+  "topicCount": 21,
+  "stanceCount": 48,
   "topics": [
     {
       "topic": "ai-technology",
@@ -465,6 +465,24 @@
       "active": false
     },
     {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 1,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Opposes military conflict with Iran at present time",
+          "quote": "The wild part is that we absolutely do not need to be at war with Iran right now",
+          "sourceUrl": "https://bsky.app/profile/endeavorance.camp/post/3mvczpxaxej2n",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 1,
@@ -498,7 +516,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "gender-lgbtq",

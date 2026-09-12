@@ -1,9 +1,9 @@
 {
   "voiceId": "tulsi-gabbard",
   "voiceName": "Tulsi Gabbard",
-  "updatedAt": "2026-09-11",
-  "topicCount": 11,
-  "stanceCount": 17,
+  "updatedAt": "2026-09-12",
+  "topicCount": 12,
+  "stanceCount": 18,
   "topics": [
     {
       "topic": "trump-administration",
@@ -130,6 +130,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Honors 9/11 victims, calls for action against radical Islamism",
+          "quote": "It\u2019s been 25 years since Al-Qaeda launched a horrific attack on our nation, killing nearly 3,000 Americans in the World Trade Center and the first responders who ran into those crumbling towers to save others.\nRemembering those lost on this tragic day is not enough. We must act. ",
+          "sourceUrl": "https://x.com/TulsiGabbard/status/2098538813836624013",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",

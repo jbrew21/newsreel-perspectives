@@ -1,7 +1,7 @@
 {
   "voiceId": "leeja-miller",
   "voiceName": "Leeja Miller",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 26,
   "stanceCount": 79,
   "topics": [
@@ -78,6 +78,60 @@
       "active": true
     },
     {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 5,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump policies as harmful to children",
+          "quote": "MAGA Hates Children",
+          "sourceUrl": "https://www.youtube.com/watch?v=AdZ_Xbo_Cqs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Critiques Trump expansionist rhetoric toward Canada as aggressive imperialism",
+          "quote": "Manifest Destiny Includes Canada, Too",
+          "sourceUrl": "https://www.youtube.com/watch?v=7UVJJI2ebcY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2024-08-13",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Dismisses Project 2025 proposals as intellectually incoherent",
+          "quote": "initial thoughts on leaked project 2025 training videos:\n1. bunch of weirdos\n2. these ppl need teleprompter training\n3. Rasputin\n4. that's it. these ideas are too stupid to even engage with intellectually",
+          "sourceUrl": "https://x.com/LeejaMiller/status/1823460965264056537",
+          "platform": "x"
+        },
+        {
+          "date": "2024-07-30",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Promotes audiobook of Project 2025 to expose controversial policies",
+          "quote": "An audiobook of the Project 2025 manifesto has been made to make people more aware of how nuts this thing is. So you can listen at your leisure and get a better understanding of the horrors that lie within: https://t.co/bg029uuTtj",
+          "sourceUrl": "https://x.com/LeejaMiller/status/1818318433723007296",
+          "platform": "x"
+        },
+        {
+          "date": "2024-05-09",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Argues second Trump presidency would undermine democratic governance",
+          "quote": "Might make some people mad with this one. View the full video now on YT. How A Second Trump Presidency Will Ruin Democracy. https://t.co/4tjoK3Wr0s https://t.co/OmAX3yIp5Q",
+          "sourceUrl": "https://x.com/LeejaMiller/status/1788617472666415546",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 7,
@@ -147,61 +201,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 5,
-      "lastActive": "2026-09-09",
-      "stances": [
-        {
-          "date": "2026-09-09",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump policies as harmful to children",
-          "quote": "MAGA Hates Children",
-          "sourceUrl": "https://www.youtube.com/watch?v=AdZ_Xbo_Cqs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Critiques Trump expansionist rhetoric toward Canada as aggressive imperialism",
-          "quote": "Manifest Destiny Includes Canada, Too",
-          "sourceUrl": "https://www.youtube.com/watch?v=7UVJJI2ebcY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2024-08-13",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Dismisses Project 2025 proposals as intellectually incoherent",
-          "quote": "initial thoughts on leaked project 2025 training videos:\n1. bunch of weirdos\n2. these ppl need teleprompter training\n3. Rasputin\n4. that's it. these ideas are too stupid to even engage with intellectually",
-          "sourceUrl": "https://x.com/LeejaMiller/status/1823460965264056537",
-          "platform": "x"
-        },
-        {
-          "date": "2024-07-30",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Promotes audiobook of Project 2025 to expose controversial policies",
-          "quote": "An audiobook of the Project 2025 manifesto has been made to make people more aware of how nuts this thing is. So you can listen at your leisure and get a better understanding of the horrors that lie within: https://t.co/bg029uuTtj",
-          "sourceUrl": "https://x.com/LeejaMiller/status/1818318433723007296",
-          "platform": "x"
-        },
-        {
-          "date": "2024-05-09",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Argues second Trump presidency would undermine democratic governance",
-          "quote": "Might make some people mad with this one. View the full video now on YT. How A Second Trump Presidency Will Ruin Democracy. https://t.co/4tjoK3Wr0s https://t.co/OmAX3yIp5Q",
-          "sourceUrl": "https://x.com/LeejaMiller/status/1788617472666415546",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "civil-rights-race",

@@ -1,9 +1,9 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "topicCount": 26,
-  "stanceCount": 176,
+  "stanceCount": 178,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1070,7 +1070,7 @@
     {
       "topic": "culture-war",
       "label": "Culture War",
-      "count": 10,
+      "count": 11,
       "lastActive": "2026-09-11",
       "stances": [
         {
@@ -1080,6 +1080,15 @@
           "summary": "Argues allegiance belongs to country, not individual leaders",
           "quote": "In the United States, we pledge allegiance to the country, not a president.",
           "sourceUrl": "https://www.youtube.com/shorts/GSUS8wAQbaM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Highlights app outage during Republican event as comedic contrast",
+          "quote": "A Grindr outage happened during the Republican Midterm Convention in Dallas",
+          "sourceUrl": "https://www.youtube.com/shorts/UypSSOCoGMo",
           "platform": "youtube"
         },
         {
@@ -1509,6 +1518,42 @@
       "active": true
     },
     {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 3,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Questions Trump FCC attempt to suppress late-night interview",
+          "quote": "Jimmy Kimmel\u2019s interview with James Talarico is going VIRAL after Trump\u2019s FCC tried to cancel it",
+          "sourceUrl": "https://www.youtube.com/shorts/fCPp6sz4BrM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Reports ABC and Disney suing Trump's FCC over censorship allegations",
+          "quote": "ABC and Disney are suing Trump\u2019s FCC after ongoing censorship",
+          "sourceUrl": "https://www.youtube.com/shorts/27MVv-EIG8A",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "free-speech-censorship",
+          "stance": "strong",
+          "summary": "Calls for moderation and transparency on social media platforms",
+          "quote": "We must have moderation and transparency on all social media platforms.",
+          "sourceUrl": "https://www.tiktok.com/@donlemon/video/7670685061120937246",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 3,
@@ -1692,33 +1737,6 @@
           "summary": "Notes Trump reduced military support to South Korea after Kim Jong Un praise",
           "quote": "After Kim Jong Un\u2019s public praise of Donald Trump, Trump has scaled back military for support for longtime US ally South Korea",
           "sourceUrl": "https://www.tiktok.com/@donlemon/video/7675443217357180190",
-          "platform": "tiktok"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "free-speech-censorship",
-      "label": "Free Speech & Censorship",
-      "count": 2,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "free-speech-censorship",
-          "stance": "lean",
-          "summary": "Reports ABC and Disney suing Trump's FCC over censorship allegations",
-          "quote": "ABC and Disney are suing Trump\u2019s FCC after ongoing censorship",
-          "sourceUrl": "https://www.youtube.com/shorts/27MVv-EIG8A",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "free-speech-censorship",
-          "stance": "strong",
-          "summary": "Calls for moderation and transparency on social media platforms",
-          "quote": "We must have moderation and transparency on all social media platforms.",
-          "sourceUrl": "https://www.tiktok.com/@donlemon/video/7670685061120937246",
           "platform": "tiktok"
         }
       ],
