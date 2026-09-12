@@ -2,8 +2,8 @@
   "voiceId": "wes-moore",
   "voiceName": "Wes Moore",
   "updatedAt": "2026-09-12",
-  "topicCount": 17,
-  "stanceCount": 81,
+  "topicCount": 18,
+  "stanceCount": 82,
   "topics": [
     {
       "topic": "state-local-politics",
@@ -832,6 +832,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Honors 9/11 victims and first responders, calls for remembrance",
+          "quote": "25 years ago, our world changed forever. The terrorist attacks that day took nearly 3,000 lives, including the lives of 68 Marylanders.\n\nToday we honor those we lost, their families, and the brave first responders who risked their safety to save others. We must never and will nev",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2098396307949769097",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "covid-pandemic",

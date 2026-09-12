@@ -2,8 +2,8 @@
   "voiceId": "sheldon-whitehouse",
   "voiceName": "Sheldon Whitehouse",
   "updatedAt": "2026-09-12",
-  "topicCount": 17,
-  "stanceCount": 120,
+  "topicCount": 18,
+  "stanceCount": 123,
   "topics": [
     {
       "topic": "climate-environment",
@@ -1075,6 +1075,42 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 3,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 first responders and their sacrifice",
+          "quote": "Retired Deputy Chief Tom Verdi and his fellow Providence finest were some of the brave first responders who answered the call on 9/11, changing his life forever.\nhttps://t.co/xhouYaxf2X",
+          "sourceUrl": "https://x.com/SenWhitehouse/status/2098448792034906210",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Commemorates 9/11 victims, calls for national unity",
+          "quote": "The events of 9/11 tore at the fabric of our country, but in our shared sorrow, we also found unity and renewed patriotism. Today, as we honor those lost and the survivors who still bear scars, let\u2019s recommit to building a better America.",
+          "sourceUrl": "https://bsky.app/profile/whitehouse.senate.gov/post/3mvamr5vav22x",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Honors 9/11 victims and first responders' heroism",
+          "quote": "It\u2019s been 25 years since the September 11 attacks, but we will never forget the victims, the families forever changed, and the brave heroes who ran toward danger. I am eternally grateful to the first responders who risked their lives to save others. They are the best of humanity.",
+          "sourceUrl": "https://bsky.app/profile/whitehouse.senate.gov/post/3mvamr5usac2x",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",

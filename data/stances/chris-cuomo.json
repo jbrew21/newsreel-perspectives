@@ -2,8 +2,8 @@
   "voiceId": "chris-cuomo",
   "voiceName": "Chris Cuomo",
   "updatedAt": "2026-09-12",
-  "topicCount": 23,
-  "stanceCount": 156,
+  "topicCount": 24,
+  "stanceCount": 157,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1525,6 +1525,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 1,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Belief in aliens resembles religious conviction",
+          "quote": "Neil deGrasse Tyson Says Belief In Aliens Is Becoming A Religion",
+          "sourceUrl": "https://www.youtube.com/watch?v=eOfHtuKsjNM",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",

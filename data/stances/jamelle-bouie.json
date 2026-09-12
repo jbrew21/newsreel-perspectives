@@ -2,8 +2,8 @@
   "voiceId": "jamelle-bouie",
   "voiceName": "Jamelle Bouie",
   "updatedAt": "2026-09-12",
-  "topicCount": 26,
-  "stanceCount": 136,
+  "topicCount": 27,
+  "stanceCount": 137,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1336,6 +1336,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 1,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "billionaires-wealth",
+          "stance": "lean",
+          "summary": "Praises MacKenzie Scott's philanthropic approach as effective model",
+          "quote": "mackenzie scott really seems like the only billionaire to figure out that you can be a literal hero to millions with a relative pittance",
+          "sourceUrl": "https://bsky.app/profile/jamellebouie.net/post/3mvdanbwtuk2z",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",

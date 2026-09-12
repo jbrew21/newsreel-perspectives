@@ -1,9 +1,26 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-12T19:39:58.190425",
+  "collectedAt": "2026-09-12T21:41:31.122406",
   "date": "2026-09-12",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "He CHEERED for 9/11. Now, He\u2019s WARNING America",
+      "sourceUrl": "https://www.youtube.com/watch?v=WINzxEkMcFI",
+      "timestamp": "2026-09-12T00:00:22+00:00",
+      "type": "video_title",
+      "topic": "terrorism",
+      "topics": [
+        "terrorism"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Warns about terrorism threat from individual who supported 9/11",
+      "quote": "He CHEERED for 9/11. Now, He\u2019s WARNING America"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -72,44 +89,16 @@
       "stance": "lean",
       "summary": "Questions jury decision in high-profile case",
       "quote": "Lindsay Clancy juror accidentally reveals what went WRONG"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "The ONE Thing Republicans MUST Do at the Midterms Convention",
-      "sourceUrl": "https://www.youtube.com/watch?v=q7NzceNQaFc",
-      "timestamp": "2026-09-09T23:00:26+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "topics": [
-        "elections"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Prescribes specific action for Republican strategy",
-      "quote": "The ONE Thing Republicans MUST Do at the Midterms Convention"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "He CHEERED for 9/11. Now, He\u2019s WARNING America",
-      "sourceUrl": "https://www.youtube.com/watch?v=WINzxEkMcFI",
-      "timestamp": "2026-09-12T00:00:22+00:00",
-      "type": "video_title",
-      "topic": "terrorism",
-      "topics": [
-        "terrorism"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Warns about terrorism threat from individual who supported 9/11",
-      "quote": "He CHEERED for 9/11. Now, He\u2019s WARNING America"
     }
   ],
   "topicSummary": {
     "terrorism": [
+      {
+        "quote": "He CHEERED for 9/11. Now, He\u2019s WARNING America",
+        "sourceUrl": "https://www.youtube.com/watch?v=WINzxEkMcFI",
+        "platform": "youtube",
+        "timestamp": "2026-09-12T00:00:22+00:00"
+      },
       {
         "quote": "Glenn Beck Did Something No Other Broadcaster Would Do on 9/11",
         "sourceUrl": "https://www.youtube.com/watch?v=heGAjZOP4cI",
@@ -121,12 +110,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=0KEp5ts4OIY",
         "platform": "youtube",
         "timestamp": "2026-09-11T14:03:32+00:00"
-      },
-      {
-        "quote": "He CHEERED for 9/11. Now, He\u2019s WARNING America",
-        "sourceUrl": "https://www.youtube.com/watch?v=WINzxEkMcFI",
-        "platform": "youtube",
-        "timestamp": "2026-09-12T00:00:22+00:00"
       }
     ],
     "elections": [
@@ -135,12 +118,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=FkzQt7g3S_E",
         "platform": "youtube",
         "timestamp": "2026-09-10T23:45:16+00:00"
-      },
-      {
-        "quote": "The ONE Thing Republicans MUST Do at the Midterms Convention",
-        "sourceUrl": "https://www.youtube.com/watch?v=q7NzceNQaFc",
-        "platform": "youtube",
-        "timestamp": "2026-09-09T23:00:26+00:00"
       }
     ],
     "criminal-justice": [

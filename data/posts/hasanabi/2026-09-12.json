@@ -1,9 +1,43 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-12T19:39:57.899721",
+  "collectedAt": "2026-09-12T21:41:30.824863",
   "date": "2026-09-12",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "They Let Me Into The European Union",
+      "sourceUrl": "https://www.youtube.com/watch?v=UFWchIBUyqo",
+      "timestamp": "2026-09-12T17:00:32+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "topics": [
+        "uk-world-politics"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Explores EU Parliament operations and political perspectives",
+      "quote": "They Let Me Into The European Union"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "FOX NEWS IS CANCELLING ZOHRAN MAMDANI OVER A PEN",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ov68A7g6ZQs",
+      "timestamp": "2026-09-11T23:35:00+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Criticizes Fox News for cancelling progressive political figure",
+      "quote": "FOX NEWS IS CANCELLING ZOHRAN MAMDANI OVER A PEN"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -76,44 +110,90 @@
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
-      "text": "Touring European Union Parliament in Belgium | Full Interview with Marc Botenga",
-      "sourceUrl": "https://www.youtube.com/watch?v=UFWchIBUyqo",
-      "timestamp": "2026-09-12T17:00:32+00:00",
+      "text": "UK SANCTIONS ISRAEL WEST BANK SETTLEMENTS",
+      "sourceUrl": "https://www.youtube.com/watch?v=zsXCk3irQKA",
+      "timestamp": "2026-09-12T21:00:20+00:00",
       "type": "video_title",
-      "topic": "uk-world-politics",
+      "topic": "israel-palestine",
       "topics": [
-        "uk-world-politics"
+        "israel-palestine"
       ],
-      "relevance": "medium",
+      "relevance": "high",
       "stance": "lean",
-      "summary": "Explores EU Parliament operations and political perspectives",
-      "quote": "Touring European Union Parliament in Belgium | Full Interview with Marc Botenga"
+      "summary": "Supports UK sanctions on Israeli West Bank settlements",
+      "quote": "UK SANCTIONS ISRAEL WEST BANK SETTLEMENTS"
     },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
       "platform": "youtube",
-      "text": "FOX NEWS IS CANCELLING ZOHRAN MAMDANI OVER A PEN",
-      "sourceUrl": "https://www.youtube.com/watch?v=Ov68A7g6ZQs",
-      "timestamp": "2026-09-11T23:35:00+00:00",
+      "text": "Conservatives Will Lie About Anything.",
+      "sourceUrl": "https://www.youtube.com/watch?v=euXFuZubFoY",
+      "timestamp": "2026-09-12T13:30:38+00:00",
       "type": "video_title",
       "topic": "media-press",
       "topics": [
-        "media-press"
+        "media-press",
+        "culture-war"
       ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Criticizes Fox News for cancelling progressive political figure",
-      "quote": "FOX NEWS IS CANCELLING ZOHRAN MAMDANI OVER A PEN"
+      "summary": "Criticizes conservative media dishonesty and misinformation",
+      "quote": "Conservatives Will Lie About Anything."
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "WHAT IS GOING ON AT SOCIALISM CONFERENCE 2026??",
+      "sourceUrl": "https://www.youtube.com/watch?v=7wm4CXrqCJI",
+      "timestamp": "2026-09-11T18:12:59+00:00",
+      "type": "video_title",
+      "topic": "protests-activism",
+      "topics": [
+        "protests-activism"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions or critiques socialist organizing efforts",
+      "quote": "WHAT IS GOING ON AT SOCIALISM CONFERENCE 2026??"
     }
   ],
   "topicSummary": {
+    "uk-world-politics": [
+      {
+        "quote": "They Let Me Into The European Union",
+        "sourceUrl": "https://www.youtube.com/watch?v=UFWchIBUyqo",
+        "platform": "youtube",
+        "timestamp": "2026-09-12T17:00:32+00:00"
+      }
+    ],
+    "media-press": [
+      {
+        "quote": "FOX NEWS IS CANCELLING ZOHRAN MAMDANI OVER A PEN",
+        "sourceUrl": "https://www.youtube.com/watch?v=Ov68A7g6ZQs",
+        "platform": "youtube",
+        "timestamp": "2026-09-11T23:35:00+00:00"
+      },
+      {
+        "quote": "Conservatives Will Lie About Anything.",
+        "sourceUrl": "https://www.youtube.com/watch?v=euXFuZubFoY",
+        "platform": "youtube",
+        "timestamp": "2026-09-12T13:30:38+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "Charlie Kirk Never Stopped Fighting For Israel",
         "sourceUrl": "https://www.youtube.com/watch?v=uOWeWL4RhbI",
         "platform": "youtube",
         "timestamp": "2026-09-10T15:45:52+00:00"
+      },
+      {
+        "quote": "UK SANCTIONS ISRAEL WEST BANK SETTLEMENTS",
+        "sourceUrl": "https://www.youtube.com/watch?v=zsXCk3irQKA",
+        "platform": "youtube",
+        "timestamp": "2026-09-12T21:00:20+00:00"
       }
     ],
     "culture-war": [
@@ -140,20 +220,12 @@
         "timestamp": "2026-09-09T00:51:30+00:00"
       }
     ],
-    "uk-world-politics": [
+    "protests-activism": [
       {
-        "quote": "Touring European Union Parliament in Belgium | Full Interview with Marc Botenga",
-        "sourceUrl": "https://www.youtube.com/watch?v=UFWchIBUyqo",
+        "quote": "WHAT IS GOING ON AT SOCIALISM CONFERENCE 2026??",
+        "sourceUrl": "https://www.youtube.com/watch?v=7wm4CXrqCJI",
         "platform": "youtube",
-        "timestamp": "2026-09-12T17:00:32+00:00"
-      }
-    ],
-    "media-press": [
-      {
-        "quote": "FOX NEWS IS CANCELLING ZOHRAN MAMDANI OVER A PEN",
-        "sourceUrl": "https://www.youtube.com/watch?v=Ov68A7g6ZQs",
-        "platform": "youtube",
-        "timestamp": "2026-09-11T23:35:00+00:00"
+        "timestamp": "2026-09-11T18:12:59+00:00"
       }
     ]
   }
