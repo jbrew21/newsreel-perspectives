@@ -1,9 +1,9 @@
 {
   "voiceId": "bret-baier",
   "voiceName": "Bret Baier",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-13",
   "topicCount": 18,
-  "stanceCount": 68,
+  "stanceCount": 69,
   "topics": [
     {
       "topic": "iran-conflict",
@@ -330,6 +330,51 @@
       "active": true
     },
     {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 4,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Reflects on 9/11 impact on career and national security",
+          "quote": "Remembering anchoring the entire day on September 11th 25 years ago today, Brit Hume remembers what it was like from covering it all even if that meant moving so there could be a clear shot of the Capitol dome. That day also changed my career deeply and it will live with me forev",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7684428889350819102",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Frames defense buildup as catching up on lost production capacity",
+          "quote": "Duffey acknowledges the push to ramp up manufacturing capacity, stating the administration is \u201cmaking up for lost time\u201d by accelerating multi-billion-dollar procurement deals with defense contractors to rapidly scale up production and rebuild the defense industrial base. #pentago",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675814104501669151",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Highlights large missile contract as landmark defense industrial expansion",
+          "quote": "Pentagon Undersecretary Michael Duffey details a landmark $22.9 billion Tomahawk missile contract designed to ramp up U.S. weapons production and create 3,000 jobs. #military #pentagon #defense #nationalsecurity",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675804038310415646",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2021-08-26",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Highlights deadliest day for US troops in over a decade",
+          "quote": "According to DOD data\u2014 today is THE deadliest (hostile) day for US troops since an August 5, 2011 helicopter attack \u2014 making this day THE deadliest attack in more than a decade.",
+          "sourceUrl": "https://x.com/BretBaier/status/1430982598633865222",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 6,
@@ -526,42 +571,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 3,
-      "lastActive": "2026-08-19",
-      "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Frames defense buildup as catching up on lost production capacity",
-          "quote": "Duffey acknowledges the push to ramp up manufacturing capacity, stating the administration is \u201cmaking up for lost time\u201d by accelerating multi-billion-dollar procurement deals with defense contractors to rapidly scale up production and rebuild the defense industrial base. #pentago",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675814104501669151",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Highlights large missile contract as landmark defense industrial expansion",
-          "quote": "Pentagon Undersecretary Michael Duffey details a landmark $22.9 billion Tomahawk missile contract designed to ramp up U.S. weapons production and create 3,000 jobs. #military #pentagon #defense #nationalsecurity",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675804038310415646",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2021-08-26",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Highlights deadliest day for US troops in over a decade",
-          "quote": "According to DOD data\u2014 today is THE deadliest (hostile) day for US troops since an August 5, 2011 helicopter attack \u2014 making this day THE deadliest attack in more than a decade.",
-          "sourceUrl": "https://x.com/BretBaier/status/1430982598633865222",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "covid-pandemic",

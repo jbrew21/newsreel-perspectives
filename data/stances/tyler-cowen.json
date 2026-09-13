@@ -1,9 +1,9 @@
 {
   "voiceId": "tyler-cowen",
   "voiceName": "Tyler Cowen",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-13",
   "topicCount": 24,
-  "stanceCount": 125,
+  "stanceCount": 126,
   "topics": [
     {
       "topic": "ai-technology",
@@ -935,9 +935,18 @@
     {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
-      "count": 2,
-      "lastActive": "2026-09-09",
+      "count": 3,
+      "lastActive": "2026-09-13",
       "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Questions scientific evidence for diversity benefits",
+          "quote": "Diversity Is Our Strength? (by Alex Tabarrok). Diversity is our strength is a common motto. Indeed it is one of GMU\u2019s core values but what is the scientific evidence for this thesis? A new scoping review: Recent years have witnessed many strong claims that \u2018diversity\u2019 leads to mo",
+          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/09/diversity-is-our-strength.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=diversity-is-our-strength",
+          "platform": "substack"
+        },
         {
           "date": "2026-09-09",
           "topic": "civil-rights-race",
@@ -982,33 +991,6 @@
           "quote": "Hope you all enjoy that clean fusion power coming down the pike.",
           "sourceUrl": "https://x.com/tylercowen/status/1311132231369453568",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "science-space",
-      "label": "Science & Space",
-      "count": 2,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "science-space",
-          "stance": "lean",
-          "summary": "NSF should fund public goods differently than other funders",
-          "quote": "Scholar Data (by Alex Tabarrok). In our paper, A Skeptical View of the National Science Foundation\u2019s Role in Economic Research, Tyler and I point out that if the NSF is doing what it should, it ought to be doing very different things than other funders: Public goods theory tells ",
-          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/08/scholar-data.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=scholar-data",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "science-space",
-          "stance": "lean",
-          "summary": "Criticizes overreaching causal claims in social science research",
-          "quote": "Overreaching causal language in the social sciences. Across the social sciences, many studies use cross-sectional designs that reveal associations but are generally unable to support direct causal claims, yet authors of such articles may make or imply causal claims anyway. Here, ",
-          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/08/overreaching-causal-language-in-the-social-sciences.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=overreaching-causal-language-in-the-social-sciences",
-          "platform": "substack"
         }
       ],
       "active": true
@@ -1081,6 +1063,33 @@
           "quote": "They promised me riots and a military coup, and all I got was a fluctuating prediction market.",
           "sourceUrl": "https://x.com/tylercowen/status/1323976827652788224",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 2,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "NSF should fund public goods differently than other funders",
+          "quote": "Scholar Data (by Alex Tabarrok). In our paper, A Skeptical View of the National Science Foundation\u2019s Role in Economic Research, Tyler and I point out that if the NSF is doing what it should, it ought to be doing very different things than other funders: Public goods theory tells ",
+          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/08/scholar-data.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=scholar-data",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Criticizes overreaching causal claims in social science research",
+          "quote": "Overreaching causal language in the social sciences. Across the social sciences, many studies use cross-sectional designs that reveal associations but are generally unable to support direct causal claims, yet authors of such articles may make or imply causal claims anyway. Here, ",
+          "sourceUrl": "https://marginalrevolution.com/marginalrevolution/2026/08/overreaching-causal-language-in-the-social-sciences.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=overreaching-causal-language-in-the-social-sciences",
+          "platform": "substack"
         }
       ],
       "active": false

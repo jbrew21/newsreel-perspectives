@@ -1,16 +1,25 @@
 {
   "voiceId": "rand-paul",
   "voiceName": "Rand Paul",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-13",
   "topicCount": 20,
-  "stanceCount": 94,
+  "stanceCount": 95,
   "topics": [
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 16,
-      "lastActive": "2026-09-12",
+      "count": 17,
+      "lastActive": "2026-09-13",
       "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Attributes unaffordability to monetary policy, criticizes fiat currency",
+          "quote": "The real reason you can't afford anything is fake money https://t.co/P3UYDeCfiB",
+          "sourceUrl": "https://x.com/RandPaul/status/2098942601051181411",
+          "platform": "x"
+        },
         {
           "date": "2026-09-12",
           "topic": "economy-trade",
@@ -717,42 +726,6 @@
       "active": true
     },
     {
-      "topic": "culture-war",
-      "label": "Culture War",
-      "count": 3,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Expresses concern about socialism spreading in America",
-          "quote": "I\u2019m concerned about the wave of socialism spreading across our country. Are you?",
-          "sourceUrl": "https://x.com/RandPaul/status/2093719842926784643",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Criticizes Democratic Party socialism as dangerous ideology",
-          "quote": "There's nothing \"healthy\" about the Democratic Party flirting with socialism. Experiments have subjects, and in this one it's the American people.\n\nSocialism has been tried on every continent, and it produced shortages, censorship, and people risking their lives to leave. Young A",
-          "sourceUrl": "https://x.com/RandPaul/status/2093411540745486647",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "culture-war",
-          "stance": "strong",
-          "summary": "Attacks left-wing ideology on gender, socialism, and cultural issues",
-          "quote": "The far-Left would rather be contrarian than correct: Anthony Fauci gets a crown, basic biology is thrown out the window, and we\u2019re told socialism is the answer to all our problems.",
-          "sourceUrl": "https://x.com/RandPaul/status/2084717002778706281",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 2,
@@ -805,6 +778,42 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 3,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Expresses concern about socialism spreading in America",
+          "quote": "I\u2019m concerned about the wave of socialism spreading across our country. Are you?",
+          "sourceUrl": "https://x.com/RandPaul/status/2093719842926784643",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Criticizes Democratic Party socialism as dangerous ideology",
+          "quote": "There's nothing \"healthy\" about the Democratic Party flirting with socialism. Experiments have subjects, and in this one it's the American people.\n\nSocialism has been tried on every continent, and it produced shortages, censorship, and people risking their lives to leave. Young A",
+          "sourceUrl": "https://x.com/RandPaul/status/2093411540745486647",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Attacks left-wing ideology on gender, socialism, and cultural issues",
+          "quote": "The far-Left would rather be contrarian than correct: Anthony Fauci gets a crown, basic biology is thrown out the window, and we\u2019re told socialism is the answer to all our problems.",
+          "sourceUrl": "https://x.com/RandPaul/status/2084717002778706281",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "media-press",

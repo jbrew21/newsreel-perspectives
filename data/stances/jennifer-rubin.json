@@ -1,9 +1,9 @@
 {
   "voiceId": "jennifer-rubin",
   "voiceName": "Jennifer Rubin",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-13",
   "topicCount": 27,
-  "stanceCount": 288,
+  "stanceCount": 290,
   "topics": [
     {
       "topic": "elections",
@@ -422,7 +422,7 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 34,
+      "count": 35,
       "lastActive": "2026-09-12",
       "stances": [
         {
@@ -432,6 +432,15 @@
           "summary": "Warns against dismissing Trump administration actions",
           "quote": "We should not laugh these things off.",
           "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mvbvouwuvk2t",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-12",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump as uninformed and motivated by praise-seeking",
+          "quote": "He's an ignoramus, has no idea what the issues are. Just sucking up to people he thinks will praise him. www.washingtonpost.com/world/2026/0...",
+          "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mvea5oqjrk2i",
           "platform": "bluesky"
         },
         {
@@ -2661,6 +2670,33 @@
       "active": false
     },
     {
+      "topic": "billionaires-wealth",
+      "label": "Billionaires & Wealth",
+      "count": 2,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Warns GOP is controlled by tech billionaires; calls on Democrats to distance themselves",
+          "quote": "GOP has become wholly owned subisidiary of Tech Bros. But ya know what, Cal Dems who have played footsie with Silicon Valley better change their tune. FAST.",
+          "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mve7vizqmc2n",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2022-11-02",
+          "topic": "billionaires-wealth",
+          "stance": "strong",
+          "summary": "Refuses to pay Elon Musk for Twitter access",
+          "quote": "Let me put it this way: I will leave Twitter rather than pay Musk a single dime for anything",
+          "sourceUrl": "https://x.com/JRubinBlogger/status/1587754559866392579",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
       "count": 3,
@@ -2799,24 +2835,6 @@
           "summary": "Implies college football distracts from educational mission",
           "quote": "Wow. College without college football would be .. about education.",
           "sourceUrl": "https://x.com/JRubinBlogger/status/1292830601544970240",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "billionaires-wealth",
-      "label": "Billionaires & Wealth",
-      "count": 1,
-      "lastActive": "2022-11-02",
-      "stances": [
-        {
-          "date": "2022-11-02",
-          "topic": "billionaires-wealth",
-          "stance": "strong",
-          "summary": "Refuses to pay Elon Musk for Twitter access",
-          "quote": "Let me put it this way: I will leave Twitter rather than pay Musk a single dime for anything",
-          "sourceUrl": "https://x.com/JRubinBlogger/status/1587754559866392579",
           "platform": "x"
         }
       ],

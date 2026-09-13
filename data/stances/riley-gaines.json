@@ -1,7 +1,7 @@
 {
   "voiceId": "riley-gaines",
   "voiceName": "Riley Gaines",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-13",
   "topicCount": 18,
   "stanceCount": 72,
   "topics": [
@@ -519,6 +519,42 @@
       "active": true
     },
     {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 3,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Addresses rumors involving Natalie Harp and Trump",
+          "quote": "Natalie Harp, Trump &amp; the Rumors Taking Over the Internet",
+          "sourceUrl": "https://www.youtube.com/watch?v=09QLwUUQ-88",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Frames Trump coverage story as noteworthy or dramatic",
+          "quote": "Reporter Shares INSANE Story Of Covering Trump On Air Force One! \ud83d\udca5 #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/juFL4U2BRQw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Presents favorable personal account of Trump",
+          "quote": "She Travels With Trump. Here\u2019s What He\u2019s REALLY Like | The Riley Gaines Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=iG971st9Kvs",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 4,
@@ -561,43 +597,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
-      "count": 3,
-      "lastActive": "2026-08-30",
-      "stances": [
-        {
-          "date": "2026-08-30",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Addresses rumors involving Natalie Harp and Trump",
-          "quote": "Natalie Harp, Trump &amp; the Rumors Taking Over the Internet",
-          "sourceUrl": "https://www.youtube.com/watch?v=09QLwUUQ-88",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Frames Trump coverage story as noteworthy or dramatic",
-          "quote": "Reporter Shares INSANE Story Of Covering Trump On Air Force One! \ud83d\udca5 #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/juFL4U2BRQw",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Presents favorable personal account of Trump",
-          "quote": "She Travels With Trump. Here\u2019s What He\u2019s REALLY Like | The Riley Gaines Show",
-          "sourceUrl": "https://www.youtube.com/watch?v=iG971st9Kvs",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "abortion-reproductive",

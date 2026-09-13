@@ -1,14 +1,14 @@
 {
   "voiceId": "war-on-the-rocks",
   "voiceName": "War on the Rocks",
-  "updatedAt": "2026-09-12",
-  "topicCount": 10,
-  "stanceCount": 76,
+  "updatedAt": "2026-09-13",
+  "topicCount": 11,
+  "stanceCount": 80,
   "topics": [
     {
       "topic": "military-defense",
       "label": "Military & Defense",
-      "count": 54,
+      "count": 56,
       "lastActive": "2026-09-11",
       "stances": [
         {
@@ -129,6 +129,15 @@
           "platform": "x"
         },
         {
+          "date": "2023-04-17",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Military equipment debate remains unresolved after invasion",
+          "quote": "Debates about appropriate military equipment for Ukraine continue a year after Russia\u2019s full-scale invasion of Ukraine. https://t.co/cbxDmOcnjE",
+          "sourceUrl": "https://x.com/WarOnTheRocks/status/1647963244852654082",
+          "platform": "x"
+        },
+        {
           "date": "2023-02-07",
           "topic": "military-defense",
           "stance": "strong",
@@ -189,6 +198,15 @@
           "summary": "Finland takes pragmatic, hands-on approach to defense",
           "quote": "Finland has always assumed a pragmatic, hands-on approach to national defense. https://t.co/yXYb6yO3w7",
           "sourceUrl": "https://x.com/WarOnTheRocks/status/1525068414271766529",
+          "platform": "x"
+        },
+        {
+          "date": "2022-04-29",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Russia positioned unfavorably in conflict",
+          "quote": "A wide-ranging assessment of Russia's unfavorable position, with Michael Kofman https://t.co/vUc8eIRHbG",
+          "sourceUrl": "https://x.com/WarOnTheRocks/status/1519859029576663041",
           "platform": "x"
         },
         {
@@ -647,9 +665,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 2,
-      "lastActive": "2017-03-26",
+      "count": 3,
+      "lastActive": "2020-02-29",
       "stances": [
+        {
+          "date": "2020-02-29",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Intelligence leadership turnover raises governance questions",
+          "quote": "Intelligence officials resigned or were fired and replacements are on the way. What's behind all this? https://t.co/UWGPwRtdFe",
+          "sourceUrl": "https://x.com/WarOnTheRocks/status/1233698450925027329",
+          "platform": "x"
+        },
         {
           "date": "2017-03-26",
           "topic": "trump-administration",
@@ -670,6 +697,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 1,
+      "lastActive": "2026-09-07",
+      "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Israeli strikes challenge regional geopolitical assumptions",
+          "quote": "Shrinking Buffers: Why Turkey and Israel Are on a Collision Course (by Ali Murat Kursun). When Israeli warplanes struck the Abu al-Duhur airbase in Syria on Aug. 18, 2026, the smoke rose over the demolition of an old geopolitical assumption about the Middle East. This time, Israe",
+          "sourceUrl": "https://warontherocks.com/shrinking-buffers-why-turkey-and-israel-are-on-a-collision-course/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "civil-rights-race",

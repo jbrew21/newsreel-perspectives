@@ -1,7 +1,7 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-13",
   "topicCount": 23,
   "stanceCount": 95,
   "topics": [
@@ -483,69 +483,6 @@
       "active": true
     },
     {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 6,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Finds Curtis Sliwa's political rhetoric absurd or laughable",
-          "quote": "CURTIS SLIWA IS HILARIOUS",
-          "sourceUrl": "https://www.youtube.com/watch?v=xTl_zK6nJR4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Florida local news coverage is problematic or sensationalized",
-          "quote": "FLORIDA LOCAL NEWS IS INSANE",
-          "sourceUrl": "https://www.youtube.com/watch?v=o-aG1B-q5K8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "",
-          "quote": "WISCONSIN GOVERNOR RACE WAS INSANE",
-          "sourceUrl": "https://www.youtube.com/watch?v=hqcMr_saBAY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-08",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Positively covers activist politician's legislative momentum",
-          "quote": "Zohran Mamdani is moving like crazy",
-          "sourceUrl": "https://www.youtube.com/shorts/EN_qzUAXnyA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-03",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Endorses Abdul El-Sayed's electoral campaign",
-          "quote": "TALKING TO ABDUL EL-SAYED BEFORE HE WINS TOMORROW",
-          "sourceUrl": "https://www.youtube.com/watch?v=KTucJVDfPSA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-02",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Explores progressive electoral viability in Detroit",
-          "quote": "CAN DETROIT ELECT A PROGRESSIVE? | Donavan McKinney",
-          "sourceUrl": "https://www.youtube.com/watch?v=PE4LfOyLjkM",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 5,
@@ -556,7 +493,7 @@
           "topic": "israel-palestine",
           "stance": "lean",
           "summary": "Supports UK sanctions on Israeli West Bank settlements",
-          "quote": "UK SANCTIONS ISRAEL WEST BANK SETTLEMENTS",
+          "quote": "ISRAEL MELTS DOWN OVER WEST BANK SANCTIONS",
           "sourceUrl": "https://www.youtube.com/watch?v=zsXCk3irQKA",
           "platform": "youtube"
         },
@@ -706,6 +643,69 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 6,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Finds Curtis Sliwa's political rhetoric absurd or laughable",
+          "quote": "CURTIS SLIWA IS HILARIOUS",
+          "sourceUrl": "https://www.youtube.com/watch?v=xTl_zK6nJR4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Florida local news coverage is problematic or sensationalized",
+          "quote": "FLORIDA LOCAL NEWS IS INSANE",
+          "sourceUrl": "https://www.youtube.com/watch?v=o-aG1B-q5K8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "",
+          "quote": "WISCONSIN GOVERNOR RACE WAS INSANE",
+          "sourceUrl": "https://www.youtube.com/watch?v=hqcMr_saBAY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-08",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Positively covers activist politician's legislative momentum",
+          "quote": "Zohran Mamdani is moving like crazy",
+          "sourceUrl": "https://www.youtube.com/shorts/EN_qzUAXnyA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-03",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Endorses Abdul El-Sayed's electoral campaign",
+          "quote": "TALKING TO ABDUL EL-SAYED BEFORE HE WINS TOMORROW",
+          "sourceUrl": "https://www.youtube.com/watch?v=KTucJVDfPSA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Explores progressive electoral viability in Detroit",
+          "quote": "CAN DETROIT ELECT A PROGRESSIVE? | Donavan McKinney",
+          "sourceUrl": "https://www.youtube.com/watch?v=PE4LfOyLjkM",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "culture-war",
@@ -993,7 +993,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "food-agriculture",

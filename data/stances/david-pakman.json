@@ -1,14 +1,14 @@
 {
   "voiceId": "david-pakman",
   "voiceName": "David Pakman",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-13",
   "topicCount": 28,
-  "stanceCount": 253,
+  "stanceCount": 256,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 48,
+      "count": 50,
       "lastActive": "2026-09-12",
       "stances": [
         {
@@ -43,7 +43,7 @@
           "topic": "trump-administration",
           "stance": "lean",
           "summary": "Suggests Trump support is declining among his base",
-          "quote": "Trump supporters are TAKING DOWN their signs",
+          "quote": "Something is BREAKING in Trump country",
           "sourceUrl": "https://www.youtube.com/watch?v=LQN4AIjIFGk",
           "platform": "youtube"
         },
@@ -63,6 +63,24 @@
           "summary": "Frames Trump's action against Fox News as noteworthy or surprising",
           "quote": "Trump makes SHOCK MOVE against Fox News",
           "sourceUrl": "https://www.youtube.com/watch?v=xTToREhY19c",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-12",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Suggests Trump's inner circle has reached alarming conclusion",
+          "quote": "Trump\u2019s inner circle reaches a TERRIFYING conclusion",
+          "sourceUrl": "https://www.youtube.com/watch?v=JIIuuH5I-aw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-12",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Reports unusual medical or behavioral incident at Trump event",
+          "quote": "He had a \u201cTRUMP SEIZURE\u201d right on stage",
+          "sourceUrl": "https://www.youtube.com/watch?v=HrFMY9fiCQg",
           "platform": "youtube"
         },
         {
@@ -719,9 +737,18 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 20,
-      "lastActive": "2026-09-10",
+      "count": 21,
+      "lastActive": "2026-09-13",
       "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Frames Trump's Canada trade actions as aggressive escalation",
+          "quote": "Trump goes NUCLEAR on Canada as trade war explodes",
+          "sourceUrl": "https://www.youtube.com/watch?v=EIZMqPasHSc",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-10",
           "topic": "economy-trade",
@@ -1761,69 +1788,6 @@
       "active": true
     },
     {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 6,
-      "lastActive": "2026-08-29",
-      "stances": [
-        {
-          "date": "2026-08-29",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Defends Canada's negotiating position against criticism",
-          "quote": "Apparently Canada standing up for itself is now \u201cbad faith\u201d #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/DJ4ikSPuocQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-23",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Criticizes Trump's assertion of U.S. control over the Strait",
-          "quote": "Trump thinks America owns the Strait now #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/s3lDMvVzPhA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-22",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Criticizes Trump's apparent respect for nuclear-armed nations",
-          "quote": "Apparently, getting nukes is how you earn Trump\u2019s respect. #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/5VBe6x4cbPQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Frames Trump's foreign policy approach as unsuccessful",
-          "quote": "Trump's biggest foreign policy failure? #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/Y1g0GhSqnh0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-24",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Disputes Saudi Arabia's stated rationale for conflict involvement",
-          "quote": "This Saudi Arabia explanation doesn't hold up",
-          "sourceUrl": "https://x.com/davidpakmanshow/status/2080690939660517777",
-          "platform": "x"
-        },
-        {
-          "date": "2024-11-06",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "lean",
-          "summary": "Cites Trump's unfulfilled promise to end Russia-Ukraine war",
-          "quote": "The countdown is on. Trump said Russia-Ukraine war would be over within 24 hours of him being declared winner. About 20 hours remain. WILL HE DO IT?",
-          "sourceUrl": "https://x.com/dpakman/status/1854155112328884730",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 8,
@@ -2115,6 +2079,69 @@
           "summary": "Blames Trump for January 6 violence and Capitol attack",
           "quote": "@realDonaldTrump Today's violence is your legacy",
           "sourceUrl": "https://x.com/dpakman/status/1346913246272483332",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 6,
+      "lastActive": "2026-08-29",
+      "stances": [
+        {
+          "date": "2026-08-29",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Defends Canada's negotiating position against criticism",
+          "quote": "Apparently Canada standing up for itself is now \u201cbad faith\u201d #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/DJ4ikSPuocQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-23",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Criticizes Trump's assertion of U.S. control over the Strait",
+          "quote": "Trump thinks America owns the Strait now #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/s3lDMvVzPhA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-22",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's apparent respect for nuclear-armed nations",
+          "quote": "Apparently, getting nukes is how you earn Trump\u2019s respect. #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/5VBe6x4cbPQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Frames Trump's foreign policy approach as unsuccessful",
+          "quote": "Trump's biggest foreign policy failure? #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/Y1g0GhSqnh0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-24",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Disputes Saudi Arabia's stated rationale for conflict involvement",
+          "quote": "This Saudi Arabia explanation doesn't hold up",
+          "sourceUrl": "https://x.com/davidpakmanshow/status/2080690939660517777",
+          "platform": "x"
+        },
+        {
+          "date": "2024-11-06",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Cites Trump's unfulfilled promise to end Russia-Ukraine war",
+          "quote": "The countdown is on. Trump said Russia-Ukraine war would be over within 24 hours of him being declared winner. About 20 hours remain. WILL HE DO IT?",
+          "sourceUrl": "https://x.com/dpakman/status/1854155112328884730",
           "platform": "x"
         }
       ],
