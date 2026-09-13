@@ -2,15 +2,24 @@
   "voiceId": "ezra-klein",
   "voiceName": "Ezra Klein",
   "updatedAt": "2026-09-13",
-  "topicCount": 21,
-  "stanceCount": 144,
+  "topicCount": 22,
+  "stanceCount": 143,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 45,
-      "lastActive": "2026-09-11",
+      "count": 43,
+      "lastActive": "2026-09-13",
       "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Critiques Trump's approach to staffing and governance structure",
+          "quote": "Trump Is \u2018Repatrimonializing\u2019 Government | The Ezra Klein Show",
+          "sourceUrl": "https://www.youtube.com/shorts/6UW1Dkwm_LI",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-11",
           "topic": "trump-administration",
@@ -21,24 +30,6 @@
           "platform": "podcast"
         },
         {
-          "date": "2026-09-09",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Frames Trump as a culturally transformative figure shaping future politics",
-          "quote": "Is Trump a \u2018Tuning Fork for the Future\u2019? | The Ezra Klein Show",
-          "sourceUrl": "https://www.youtube.com/shorts/TuYewDRUPJ0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Trump focused on personal real estate over governance",
-          "quote": "Why \u201870 Percent\u2019 of Trump\u2019s Mind Is on Renovations | The Ezra Klein Show",
-          "sourceUrl": "https://www.youtube.com/shorts/QLa6UH0IxN4",
-          "platform": "youtube"
-        },
-        {
           "date": "2026-07-31",
           "topic": "trump-administration",
           "stance": "lean",
@@ -46,15 +37,6 @@
           "quote": "How Trump Has Changed, With Maggie Haberman. The first year of President Trump\u2019s second term was a whirlwind of action: on immigration, on trade, on political retribution. But things seem to me to be slowing down quite a bit. Trump is incredibly unpopular, and he\u2019s now bogged dow",
           "sourceUrl": "https://www.nytimes.com/2026/07/31/opinion/ezra-klein-podcast-maggie-haberman.html",
           "platform": "podcast"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Questions whether Trump maintains political momentum",
-          "quote": "Is Trump Running Out of Steam? | The Ezra Klein Show",
-          "sourceUrl": "https://www.youtube.com/watch?v=kDFTtJrz7Gk",
-          "platform": "youtube"
         },
         {
           "date": "2025-03-27",
@@ -1345,6 +1327,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Examines ideological challenges to liberal democratic governance",
+          "quote": "Liberalism and Its Discontents | The Ezra Klein Show",
+          "sourceUrl": "https://www.youtube.com/shorts/GL9VX9Z8S-0",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "state-local-politics",

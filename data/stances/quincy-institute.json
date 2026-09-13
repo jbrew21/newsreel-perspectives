@@ -3,7 +3,7 @@
   "voiceName": "Quincy Institute",
   "updatedAt": "2026-09-13",
   "topicCount": 14,
-  "stanceCount": 140,
+  "stanceCount": 142,
   "topics": [
     {
       "topic": "military-defense",
@@ -962,9 +962,18 @@
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
-      "count": 12,
-      "lastActive": "2026-09-10",
+      "count": 13,
+      "lastActive": "2026-09-12",
       "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Houthi military advances threaten regional stability and shipping",
+          "quote": "Will Houthis' rapid advance drag US, Saudi Arabia back into Yemen? (by Mohammed Nail Abdulqader). This week, after launching an unprecedented series of strikes on Saudi Arabia, the Houthis embarked on a sweeping offensive in Yemen, seizing large swathes of territory along the Red",
+          "sourceUrl": "https://responsiblestatecraft.org/houthis-red-sea-iran/",
+          "platform": "blog"
+        },
         {
           "date": "2026-09-10",
           "topic": "iran-conflict",
@@ -1131,6 +1140,51 @@
       "active": true
     },
     {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 4,
+      "lastActive": "2026-09-13",
+      "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "BRICS unity despite internal divisions represents geopolitical realignment",
+          "quote": "Against the odds, BRICS overcomes sharp divisions in New Delhi (by Sarang Shidore). The 18th summit of BRICS, a grouping with ten members including Brazil, China, India, Indonesia, Russia, and South Africa, concluded in New Delhi with a leaders declaration \u2014 a clear success for a",
+          "sourceUrl": "https://responsiblestatecraft.org/2026-brics-summit/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Questions whether Milei will align with Trump on Falkland Islands dispute",
+          "quote": "Milei has staked it all on Trump. Will he follow through? (by Antonio De Loera-Brust). The territorial dispute between Argentina and the United Kingdom over the Falkland Islands (or Islas Malvinas in Spanish) continues to escalate. Last week, Argentine President Javier Milei, a c",
+          "sourceUrl": "https://responsiblestatecraft.org/milei-trump-falklands/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-07",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Notes nationalist-populist AfD's electoral surge in Germany",
+          "quote": "A test of nationalist right, German AfD victory echoes across Europe (by Molly O'Neal). Legislative elections in the eastern German state of Saxony-Anhalt have ended with a huge victory for the nationalist-populist Alternative for Germany (AfD). The final results have AfD with ju",
+          "sourceUrl": "https://responsiblestatecraft.org/afd-elections-victory/",
+          "platform": "blog"
+        },
+        {
+          "date": "2024-02-08",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Reports Pakistan election outcome despite US pressure tactics",
+          "quote": "NEW: Despite jailing &amp; sidelining, Imran Khan\u2019s party leading in Pakistan elections\n\nA showdown over valid election results could, however, place Washington in a precarious position, @AdamNoahWho writes in @RStatecraft https://t.co/ZLpbJr7cnT",
+          "sourceUrl": "https://x.com/QuincyInst/status/1755669703899705850",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "terrorism",
       "label": "Terrorism & Security",
       "count": 4,
@@ -1170,42 +1224,6 @@
           "summary": "Shows war on terror increased African terrorism one-hundredfold",
           "quote": "NEW: Terrorism in Africa increased 100,000% during 'war on terror'\n\nA new DoD report indicates that violence on the continent today is far worse than when the US military went in to \u2018help,\u2019 @nickturse reports in @RStatecraft https://t.co/IALGAVx5YQ",
           "sourceUrl": "https://x.com/QuincyInst/status/1757086013791621481",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 3,
-      "lastActive": "2026-09-11",
-      "stances": [
-        {
-          "date": "2026-09-11",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Questions whether Milei will align with Trump on Falkland Islands dispute",
-          "quote": "Milei has staked it all on Trump. Will he follow through? (by Antonio De Loera-Brust). The territorial dispute between Argentina and the United Kingdom over the Falkland Islands (or Islas Malvinas in Spanish) continues to escalate. Last week, Argentine President Javier Milei, a c",
-          "sourceUrl": "https://responsiblestatecraft.org/milei-trump-falklands/",
-          "platform": "blog"
-        },
-        {
-          "date": "2026-09-07",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Notes nationalist-populist AfD's electoral surge in Germany",
-          "quote": "A test of nationalist right, German AfD victory echoes across Europe (by Molly O'Neal). Legislative elections in the eastern German state of Saxony-Anhalt have ended with a huge victory for the nationalist-populist Alternative for Germany (AfD). The final results have AfD with ju",
-          "sourceUrl": "https://responsiblestatecraft.org/afd-elections-victory/",
-          "platform": "blog"
-        },
-        {
-          "date": "2024-02-08",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Reports Pakistan election outcome despite US pressure tactics",
-          "quote": "NEW: Despite jailing &amp; sidelining, Imran Khan\u2019s party leading in Pakistan elections\n\nA showdown over valid election results could, however, place Washington in a precarious position, @AdamNoahWho writes in @RStatecraft https://t.co/ZLpbJr7cnT",
-          "sourceUrl": "https://x.com/QuincyInst/status/1755669703899705850",
           "platform": "x"
         }
       ],
