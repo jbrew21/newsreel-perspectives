@@ -2,8 +2,8 @@
   "voiceId": "jamie-raskin",
   "voiceName": "Jamie Raskin",
   "updatedAt": "2026-09-13",
-  "topicCount": 16,
-  "stanceCount": 51,
+  "topicCount": 18,
+  "stanceCount": 53,
   "topics": [
     {
       "topic": "trump-administration",
@@ -481,6 +481,42 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
+      "count": 1,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "food-agriculture",
+          "stance": "lean",
+          "summary": "Praises farmers market for food access and community resilience",
+          "quote": "As Crossroads Farmers Market celebrates 20 years of promoting food access and community resilience, we recognize its amazing manager Omar Marroquin as our MD-08 Local Hero. Hear all about how this market became the first in Maryland to accept SNAP and WIC benefits and the first i",
+          "sourceUrl": "https://x.com/RepRaskin/status/2098534120028799329",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 1,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Celebrates union activist's advocacy for workers' rights and economic justice",
+          "quote": "This week's Labor Day Weekend Local Hero is the ubiquitous Derrick Nabors, a committed union activist with ATU Local 689. We thank Derrick for his passionate advocacy for workers\u2019 rights, workplace safety and economic justice. Happy Labor Day!",
+          "sourceUrl": "https://bsky.app/profile/raskin.house.gov/post/3muq3tkgeu22f",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "elections",

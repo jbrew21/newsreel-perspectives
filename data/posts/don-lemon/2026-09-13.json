@@ -1,9 +1,43 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-09-13T12:08:38.975441",
+  "collectedAt": "2026-09-13T13:35:21.243992",
   "date": "2026-09-13",
   "posts": [
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "Trump claims he\u2019ll use TikTok funds to issue $5,000 checks without Congress\u2019 approval",
+      "sourceUrl": "https://www.youtube.com/shorts/Nf-7jYJsIpE",
+      "timestamp": "2026-09-12T23:30:01+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Frames Trump's proposal as circumventing congressional authority",
+      "quote": "Trump claims he\u2019ll use TikTok funds to issue $5,000 checks without Congress\u2019 approval"
+    },
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "Jennifer Welch and I break down the Grindr debacle at the Republican Midterm Convention",
+      "sourceUrl": "https://www.youtube.com/shorts/8X-DbTDHjhs",
+      "timestamp": "2026-09-12T22:15:12+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "topics": [
+        "culture-war"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Highlights LGBTQ controversy at Republican convention",
+      "quote": "Jennifer Welch and I break down the Grindr debacle at the Republican Midterm Convention"
+    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -106,52 +140,30 @@
       "stance": "lean",
       "summary": "Calls for remembrance of a significant event",
       "quote": "We must never forget."
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "Trump claims he\u2019ll use TikTok funds to issue $5,000 checks without Congress\u2019 approval",
-      "sourceUrl": "https://www.youtube.com/shorts/Nf-7jYJsIpE",
-      "timestamp": "2026-09-12T23:30:01+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration"
-      ],
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Frames Trump's proposal as circumventing congressional authority",
-      "quote": "Trump claims he\u2019ll use TikTok funds to issue $5,000 checks without Congress\u2019 approval"
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "Jennifer Welch and I break down the Grindr debacle at the Republican Midterm Convention",
-      "sourceUrl": "https://www.youtube.com/shorts/8X-DbTDHjhs",
-      "timestamp": "2026-09-12T22:15:12+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "topics": [
-        "culture-war"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Highlights LGBTQ controversy at Republican convention",
-      "quote": "Jennifer Welch and I break down the Grindr debacle at the Republican Midterm Convention"
     }
   ],
   "topicSummary": {
-    "free-speech-censorship": [
+    "trump-administration": [
       {
-        "quote": "Jimmy Kimmel\u2019s interview with James Talarico is going VIRAL after Trump\u2019s FCC tried to cancel it",
-        "sourceUrl": "https://www.youtube.com/shorts/fCPp6sz4BrM",
+        "quote": "Trump claims he\u2019ll use TikTok funds to issue $5,000 checks without Congress\u2019 approval",
+        "sourceUrl": "https://www.youtube.com/shorts/Nf-7jYJsIpE",
         "platform": "youtube",
-        "timestamp": "2026-09-11T22:45:22+00:00"
+        "timestamp": "2026-09-12T23:30:01+00:00"
+      },
+      {
+        "quote": "LEMON DROP - MAGA Always Eats Their Own! with Franchesca Ramsey",
+        "sourceUrl": "https://www.youtube.com/watch?v=iq3qwyvbPUU",
+        "platform": "youtube",
+        "timestamp": "2026-09-11T18:00:37+00:00"
       }
     ],
     "culture-war": [
+      {
+        "quote": "Jennifer Welch and I break down the Grindr debacle at the Republican Midterm Convention",
+        "sourceUrl": "https://www.youtube.com/shorts/8X-DbTDHjhs",
+        "platform": "youtube",
+        "timestamp": "2026-09-12T22:15:12+00:00"
+      },
       {
         "quote": "A Grindr outage happened during the Republican Midterm Convention in Dallas",
         "sourceUrl": "https://www.youtube.com/shorts/UypSSOCoGMo",
@@ -163,12 +175,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/GSUS8wAQbaM",
         "platform": "youtube",
         "timestamp": "2026-09-11T18:57:43+00:00"
-      },
+      }
+    ],
+    "free-speech-censorship": [
       {
-        "quote": "Jennifer Welch and I break down the Grindr debacle at the Republican Midterm Convention",
-        "sourceUrl": "https://www.youtube.com/shorts/8X-DbTDHjhs",
+        "quote": "Jimmy Kimmel\u2019s interview with James Talarico is going VIRAL after Trump\u2019s FCC tried to cancel it",
+        "sourceUrl": "https://www.youtube.com/shorts/fCPp6sz4BrM",
         "platform": "youtube",
-        "timestamp": "2026-09-12T22:15:12+00:00"
+        "timestamp": "2026-09-11T22:45:22+00:00"
       }
     ],
     "elections": [
@@ -177,20 +191,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=eCvy5UHbmmo",
         "platform": "youtube",
         "timestamp": "2026-09-11T21:00:07+00:00"
-      }
-    ],
-    "trump-administration": [
-      {
-        "quote": "LEMON DROP - MAGA Always Eats Their Own! with Franchesca Ramsey",
-        "sourceUrl": "https://www.youtube.com/watch?v=iq3qwyvbPUU",
-        "platform": "youtube",
-        "timestamp": "2026-09-11T18:00:37+00:00"
-      },
-      {
-        "quote": "Trump claims he\u2019ll use TikTok funds to issue $5,000 checks without Congress\u2019 approval",
-        "sourceUrl": "https://www.youtube.com/shorts/Nf-7jYJsIpE",
-        "platform": "youtube",
-        "timestamp": "2026-09-12T23:30:01+00:00"
       }
     ],
     "criminal-justice": [
