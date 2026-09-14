@@ -2,8 +2,8 @@
   "voiceId": "raphael-warnock",
   "voiceName": "Raphael Warnock",
   "updatedAt": "2026-09-14",
-  "topicCount": 16,
-  "stanceCount": 65,
+  "topicCount": 17,
+  "stanceCount": 66,
   "topics": [
     {
       "topic": "trump-administration",
@@ -607,6 +607,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Calls for Congress to regulate AI company safety practices",
+          "quote": "We need to hold AI companies accountable for the safety of their products. \n\nWe cannot rely on them to regulate themselves. \n\nCongress must act now.",
+          "sourceUrl": "https://x.com/SenatorWarnock/status/2099618575690473603",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",

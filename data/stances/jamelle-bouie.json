@@ -2,8 +2,8 @@
   "voiceId": "jamelle-bouie",
   "voiceName": "Jamelle Bouie",
   "updatedAt": "2026-09-14",
-  "topicCount": 27,
-  "stanceCount": 146,
+  "topicCount": 28,
+  "stanceCount": 147,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1435,6 +1435,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 1,
+      "lastActive": "2026-09-13",
+      "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Criticizes extreme framing of transgender medical autonomy",
+          "quote": "\"i will shoot myself in the gut if you do not let me cut off my dick!!!\"",
+          "sourceUrl": "https://bsky.app/profile/jamellebouie.net/post/3mvgcoziuls2f",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "billionaires-wealth",

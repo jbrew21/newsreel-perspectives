@@ -2,8 +2,8 @@
   "voiceId": "michael-knowles",
   "voiceName": "Michael Knowles",
   "updatedAt": "2026-09-14",
-  "topicCount": 31,
-  "stanceCount": 200,
+  "topicCount": 32,
+  "stanceCount": 201,
   "topics": [
     {
       "topic": "elections",
@@ -1939,6 +1939,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Questions whether 9/11 curriculum teaching is islamophobic",
+          "quote": "Is Teaching 9/11 ISLAMOPHOBIC?!",
+          "sourceUrl": "https://www.youtube.com/shorts/Ff0HEYfV8Hg",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "supreme-court-legal",

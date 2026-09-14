@@ -1,9 +1,26 @@
 {
   "voiceId": "coleman-hughes",
   "voiceName": "Coleman Hughes",
-  "collectedAt": "2026-09-14T21:14:29.493322",
+  "collectedAt": "2026-09-14T22:53:50.812079",
   "date": "2026-09-14",
   "posts": [
+    {
+      "voiceId": "coleman-hughes",
+      "voiceName": "Coleman Hughes",
+      "platform": "youtube",
+      "text": "He Couldn\u2019t Save His Brother on 9/11. He Spent the Next 25 Years Saving Others.",
+      "sourceUrl": "https://www.youtube.com/watch?v=OgTx4DUeBMk",
+      "timestamp": "2026-09-11T09:00:08+00:00",
+      "type": "video_title",
+      "topic": "terrorism",
+      "topics": [
+        "terrorism"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames post-9/11 service and sacrifice as meaningful response to terrorism",
+      "quote": "He Couldn\u2019t Save His Brother on 9/11. He Spent the Next 25 Years Saving Others."
+    },
     {
       "voiceId": "coleman-hughes",
       "voiceName": "Coleman Hughes",
@@ -147,21 +164,29 @@
       "voiceId": "coleman-hughes",
       "voiceName": "Coleman Hughes",
       "platform": "youtube",
-      "text": "He Couldn\u2019t Save His Brother on 9/11. He Spent the Next 25 Years Saving Others.",
-      "sourceUrl": "https://www.youtube.com/watch?v=OgTx4DUeBMk",
-      "timestamp": "2026-09-11T09:00:08+00:00",
+      "text": "How Do You Talk a Klansman out of the Klan? Ask Daryl Davis.",
+      "sourceUrl": "https://www.youtube.com/watch?v=RE7ys3FRV10",
+      "timestamp": "2026-09-14T09:00:35+00:00",
       "type": "video_title",
-      "topic": "terrorism",
+      "topic": "civil-rights-race",
       "topics": [
-        "terrorism"
+        "civil-rights-race"
       ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Frames post-9/11 service and sacrifice as meaningful response to terrorism",
-      "quote": "He Couldn\u2019t Save His Brother on 9/11. He Spent the Next 25 Years Saving Others."
+      "summary": "Dialogue and personal connection can reduce extremism",
+      "quote": "How Do You Talk a Klansman out of the Klan? Ask Daryl Davis."
     }
   ],
   "topicSummary": {
+    "terrorism": [
+      {
+        "quote": "He Couldn\u2019t Save His Brother on 9/11. He Spent the Next 25 Years Saving Others.",
+        "sourceUrl": "https://www.youtube.com/watch?v=OgTx4DUeBMk",
+        "platform": "youtube",
+        "timestamp": "2026-09-11T09:00:08+00:00"
+      }
+    ],
     "foreign-policy-diplomacy": [
       {
         "quote": "What We've Been Getting Wrong About the Cold War",
@@ -196,6 +221,12 @@
         "sourceUrl": "https://www.youtube.com/watch?v=O5aduP80VAI",
         "platform": "youtube",
         "timestamp": "2026-08-18T13:15:19+00:00"
+      },
+      {
+        "quote": "How Do You Talk a Klansman out of the Klan? Ask Daryl Davis.",
+        "sourceUrl": "https://www.youtube.com/watch?v=RE7ys3FRV10",
+        "platform": "youtube",
+        "timestamp": "2026-09-14T09:00:35+00:00"
       }
     ],
     "ai-technology": [
@@ -220,14 +251,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=uvN5B9ho7gU",
         "platform": "youtube",
         "timestamp": "2026-08-12T21:22:50+00:00"
-      }
-    ],
-    "terrorism": [
-      {
-        "quote": "He Couldn\u2019t Save His Brother on 9/11. He Spent the Next 25 Years Saving Others.",
-        "sourceUrl": "https://www.youtube.com/watch?v=OgTx4DUeBMk",
-        "platform": "youtube",
-        "timestamp": "2026-09-11T09:00:08+00:00"
       }
     ]
   }

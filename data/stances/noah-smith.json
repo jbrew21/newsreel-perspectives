@@ -3,7 +3,7 @@
   "voiceName": "Noah Smith",
   "updatedAt": "2026-09-14",
   "topicCount": 29,
-  "stanceCount": 167,
+  "stanceCount": 169,
   "topics": [
     {
       "topic": "ai-technology",
@@ -827,9 +827,18 @@
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
-      "count": 6,
-      "lastActive": "2026-09-02",
+      "count": 7,
+      "lastActive": "2026-09-07",
       "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Mocks Mitch McConnell as emotionally detached",
+          "quote": "Mitch McConnell is so dead he didn\u2019t cry when the man stopped drawing the deer.",
+          "sourceUrl": "https://bsky.app/profile/smithnoah.bsky.social/post/3muwimvocjs2l",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-02",
           "topic": "media-personalities",
@@ -882,6 +891,60 @@
           "summary": "Criticizes Hasan Piker as unlikable",
           "quote": "Hasan Piker is one of the most unlikable human beings I have ever seen",
           "sourceUrl": "https://x.com/Noahpinion/status/1976697922625716742",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 5,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Criticizes NYT timing of Wordlebot removal as evasive",
+          "quote": "Suddenly I don\u2019t have access to\nWordlebot anymore? Did you pick this date so we couldn\u2019t complain without seeming petty, @nytimes.com ?",
+          "sourceUrl": "https://bsky.app/profile/smithnoah.bsky.social/post/3mvbw7qe5as2r",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2025-01-19",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Critiques imprecise American usage of term 'genocide' for various massacres",
+          "quote": "Reading a recent graphic novel, I'm once again struck by how Americans have just decided to call literally any massacre a \"genocide\" https://t.co/UZ71aAMRf5",
+          "sourceUrl": "https://x.com/Noahpinion/status/1881062184878584289",
+          "platform": "x"
+        },
+        {
+          "date": "2024-07-31",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Expresses frustration with declining web information accessibility",
+          "quote": "A decade ago I felt like I could find anything on the Web. Now I feel like I can barely find anything. People just don't put information on web pages anymore.",
+          "sourceUrl": "https://x.com/Noahpinion/status/1818776478315954200",
+          "platform": "x"
+        },
+        {
+          "date": "2019-12-29",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Disputes conservative criticism of NPR as overly liberal",
+          "quote": "Conservative friends keep telling me how lefty NPR is, and then once a year or so I listen to NPR and it just boggles my mind how much they bend over backwards to present conservative viewpoints.",
+          "sourceUrl": "https://x.com/Noahpinion/status/1211418185808826370",
+          "platform": "x"
+        },
+        {
+          "date": "2017-08-28",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Observes internet's pervasive dominance over physical reality",
+          "quote": "15 years ago, the internet was an escape from the real world. Now, the real world is an escape from the internet.",
+          "sourceUrl": "https://x.com/Noahpinion/status/902301308702515202",
           "platform": "x"
         }
       ],
@@ -1476,51 +1539,6 @@
           "summary": "Condemns NBA ejecting fans for pro-Hong Kong signs",
           "quote": "Basketball fans are being kicked out of games for pro-Hong Kong signs IN AMERICA.",
           "sourceUrl": "https://x.com/Noahpinion/status/1181964700860346368",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 4,
-      "lastActive": "2025-01-19",
-      "stances": [
-        {
-          "date": "2025-01-19",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Critiques imprecise American usage of term 'genocide' for various massacres",
-          "quote": "Reading a recent graphic novel, I'm once again struck by how Americans have just decided to call literally any massacre a \"genocide\" https://t.co/UZ71aAMRf5",
-          "sourceUrl": "https://x.com/Noahpinion/status/1881062184878584289",
-          "platform": "x"
-        },
-        {
-          "date": "2024-07-31",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Expresses frustration with declining web information accessibility",
-          "quote": "A decade ago I felt like I could find anything on the Web. Now I feel like I can barely find anything. People just don't put information on web pages anymore.",
-          "sourceUrl": "https://x.com/Noahpinion/status/1818776478315954200",
-          "platform": "x"
-        },
-        {
-          "date": "2019-12-29",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Disputes conservative criticism of NPR as overly liberal",
-          "quote": "Conservative friends keep telling me how lefty NPR is, and then once a year or so I listen to NPR and it just boggles my mind how much they bend over backwards to present conservative viewpoints.",
-          "sourceUrl": "https://x.com/Noahpinion/status/1211418185808826370",
-          "platform": "x"
-        },
-        {
-          "date": "2017-08-28",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Observes internet's pervasive dominance over physical reality",
-          "quote": "15 years ago, the internet was an escape from the real world. Now, the real world is an escape from the internet.",
-          "sourceUrl": "https://x.com/Noahpinion/status/902301308702515202",
           "platform": "x"
         }
       ],
