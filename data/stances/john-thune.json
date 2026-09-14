@@ -1,9 +1,9 @@
 {
   "voiceId": "john-thune",
   "voiceName": "John Thune",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 9,
-  "stanceCount": 15,
+  "stanceCount": 16,
   "topics": [
     {
       "topic": "food-agriculture",
@@ -69,6 +69,33 @@
       "active": true
     },
     {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 2,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Praises GOP legislative record on economic support for Americans",
+          "quote": "I\u2019m proud of what @SenateGOP has been able to do this Congress to put more money in Americans\u2019 pockets and create new opportunities to help families and businesses get ahead.\n\nHardworking Americans will continue to be at the top of Republicans\u2019 agenda. https://t.co/avmO50lSn5",
+          "sourceUrl": "https://x.com/LeaderJohnThune/status/2099589311700050067",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Praises Republicans for passing bipartisan funding bill ahead of deadline",
+          "quote": "I\u2019m glad that congressional Republicans not only prioritized removing the threat of another dangerous government shutdown, but we did our job weeks before the deadline and with bipartisan support. While funding the government is one of our most basic responsibilities, my hope is ",
+          "sourceUrl": "https://x.com/LeaderJohnThune/status/2094853926801580520",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 2,
@@ -126,24 +153,6 @@
           "summary": "Supports B-21 bomber development and military modernization",
           "quote": "Great to have Army Under Secretary Michael Obadal in West River today to discuss emerging capabilities and the B-21 bomber, recognize airmen at Ellsworth AFB, and meet with leaders of the South Dakota industrial base and academia contributing to the joint force. https://t.co/eVtr",
           "sourceUrl": "https://x.com/LeaderJohnThune/status/2095630311920959899",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 1,
-      "lastActive": "2026-09-01",
-      "stances": [
-        {
-          "date": "2026-09-01",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Praises Republicans for passing bipartisan funding bill ahead of deadline",
-          "quote": "I\u2019m glad that congressional Republicans not only prioritized removing the threat of another dangerous government shutdown, but we did our job weeks before the deadline and with bipartisan support. While funding the government is one of our most basic responsibilities, my hope is ",
-          "sourceUrl": "https://x.com/LeaderJohnThune/status/2094853926801580520",
           "platform": "x"
         }
       ],

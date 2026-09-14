@@ -1,9 +1,9 @@
 {
   "voiceId": "stephen-gutowski",
   "voiceName": "Stephen Gutowski",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 24,
-  "stanceCount": 143,
+  "stanceCount": 144,
   "topics": [
     {
       "topic": "gun-policy",
@@ -861,6 +861,60 @@
       "active": false
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 5,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether AI company's power claims are dubious",
+          "quote": "Is this segment just Douthat repeating all of OpenAI's dubious claims about how uber powerful its AI is?",
+          "sourceUrl": "https://bsky.app/profile/stephengutowski.bsky.social/post/3mvgxplo7ss26",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Observes president uses low-quality AI, notes potential risks",
+          "quote": "Why does the president seem to use some of the worst image generation tech out there? I mean, it's good he's not using something better. Can you imagine how much chaos he could create with better AI videos? But it's very odd he's on the slopiest of slop generators.",
+          "sourceUrl": "https://bsky.app/profile/stephengutowski.bsky.social/post/3mudy7fites23",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Criticizes use of ChatGPT to write fraudulent expert witness report",
+          "quote": "New: An \"expert witness\" in a $61 million lawsuit over an industrial explosion that killed three people and destroyed 200 homes used ChatGPT to write his report for the court. \n\nHe prompted ChatGPT to \"show how 3M is 0% at fault for the explosion at Watson Grinding\"\n\nwww.404media",
+          "sourceUrl": "https://bsky.app/profile/stephengutowski.bsky.social/post/3mtbxqmv4vc2j",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2022-11-09",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Notes Elon's speech restrictions mirror MAGA complaints",
+          "quote": "Elon is now talking about the difference between \"freedom of speech and freedom of reach\" in regard to limiting which tweets get promoted by the site's algorithm. Sounds pretty similar to what a lot of MAGA accounts have long complained about.",
+          "sourceUrl": "https://x.com/StephenGutowski/status/1590415807255052288",
+          "platform": "x"
+        },
+        {
+          "date": "2022-11-09",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Twitter verification paywall limits organic reach for unpaid users",
+          "quote": "Elon just compared non-verified accounts going forward to emails in a spam folder. Sounds like you'll need to pay for Twitter Blue for people to actually read your tweets. No more of those \"this site is free\" jokes, folks.",
+          "sourceUrl": "https://x.com/StephenGutowski/status/1590407495339503616",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 7,
@@ -931,51 +985,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 4,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Observes president uses low-quality AI, notes potential risks",
-          "quote": "Why does the president seem to use some of the worst image generation tech out there? I mean, it's good he's not using something better. Can you imagine how much chaos he could create with better AI videos? But it's very odd he's on the slopiest of slop generators.",
-          "sourceUrl": "https://bsky.app/profile/stephengutowski.bsky.social/post/3mudy7fites23",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Criticizes use of ChatGPT to write fraudulent expert witness report",
-          "quote": "New: An \"expert witness\" in a $61 million lawsuit over an industrial explosion that killed three people and destroyed 200 homes used ChatGPT to write his report for the court. \n\nHe prompted ChatGPT to \"show how 3M is 0% at fault for the explosion at Watson Grinding\"\n\nwww.404media",
-          "sourceUrl": "https://bsky.app/profile/stephengutowski.bsky.social/post/3mtbxqmv4vc2j",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2022-11-09",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Notes Elon's speech restrictions mirror MAGA complaints",
-          "quote": "Elon is now talking about the difference between \"freedom of speech and freedom of reach\" in regard to limiting which tweets get promoted by the site's algorithm. Sounds pretty similar to what a lot of MAGA accounts have long complained about.",
-          "sourceUrl": "https://x.com/StephenGutowski/status/1590415807255052288",
-          "platform": "x"
-        },
-        {
-          "date": "2022-11-09",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Twitter verification paywall limits organic reach for unpaid users",
-          "quote": "Elon just compared non-verified accounts going forward to emails in a spam folder. Sounds like you'll need to pay for Twitter Blue for people to actually read your tweets. No more of those \"this site is free\" jokes, folks.",
-          "sourceUrl": "https://x.com/StephenGutowski/status/1590407495339503616",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "immigration",

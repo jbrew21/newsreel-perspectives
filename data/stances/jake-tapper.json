@@ -1,9 +1,9 @@
 {
   "voiceId": "jake-tapper",
   "voiceName": "Jake Tapper",
-  "updatedAt": "2026-09-13",
-  "topicCount": 19,
-  "stanceCount": 118,
+  "updatedAt": "2026-09-14",
+  "topicCount": 20,
+  "stanceCount": 119,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -1165,6 +1165,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Implies Trump inadequately addressing AI safety concerns",
+          "quote": "Tech CEOs practically begging for government guardrails, with various experts warning of existential dangers. \n\nPresident Trump\u2018s response:",
+          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mvih5a73yc2d",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "protests-activism",

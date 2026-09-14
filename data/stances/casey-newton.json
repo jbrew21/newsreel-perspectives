@@ -1,9 +1,9 @@
 {
   "voiceId": "casey-newton",
   "voiceName": "Casey Newton",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 10,
-  "stanceCount": 101,
+  "stanceCount": 102,
   "topics": [
     {
       "topic": "ai-technology",
@@ -710,9 +710,18 @@
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 8,
-      "lastActive": "2026-07-29",
+      "count": 9,
+      "lastActive": "2026-09-04",
       "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Launching new media project with collaborator",
+          "quote": "Kevin and I are starting a new show! Will reveal all on the final Hard Fork",
+          "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3mupawwf2vk2a",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-07-29",
           "topic": "media-press",
@@ -786,7 +795,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "free-speech-censorship",

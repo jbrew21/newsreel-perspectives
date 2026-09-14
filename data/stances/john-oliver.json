@@ -1,7 +1,7 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 28,
   "stanceCount": 92,
   "topics": [
@@ -330,60 +330,6 @@
       "active": false
     },
     {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 5,
-      "lastActive": "2026-08-30",
-      "stances": [
-        {
-          "date": "2026-08-30",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes Speaker Mike Johnson and freight train safety regulation failures",
-          "quote": "S10 E20: Mike Johnson &amp; Freight Trains: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=U5378zFEVLQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Examines organ donation policy and critiques George Santos' congressional conduct",
-          "quote": "S10 E19: Organ and Body Donations &amp; George Santos: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=xD7i7CYmuSs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "congress-legislation",
-          "stance": "lean",
-          "summary": "Critiques congressional dysfunction and dollar store regulation",
-          "quote": "S10 E18: Congress, Dollar Stores &amp; BOTY Update II: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=RXTJOqZdDe0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-24",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes congressional corruption and corporate consulting influence",
-          "quote": "S10 E14: Bob Menendez &amp; McKinsey: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=-BRWR6iK2iY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Criticizes TANF program inadequacy and dysfunction",
-          "quote": "S10 E4: Randy McNally &amp; TANF: Last Week Tonight with John Oliver",
-          "sourceUrl": "https://www.youtube.com/watch?v=J7GXS7WGgOo",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 4,
@@ -487,6 +433,60 @@
           "quote": "Here's our piece on Crisis Pregnancy Centers from last night...https://t.co/pTeLtlYOBU",
           "sourceUrl": "https://x.com/iamjohnoliver/status/983396990691217410",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 5,
+      "lastActive": "2026-08-30",
+      "stances": [
+        {
+          "date": "2026-08-30",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes Speaker Mike Johnson and freight train safety regulation failures",
+          "quote": "S10 E20: Mike Johnson &amp; Freight Trains: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=U5378zFEVLQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Examines organ donation policy and critiques George Santos' congressional conduct",
+          "quote": "S10 E19: Organ and Body Donations &amp; George Santos: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=xD7i7CYmuSs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Critiques congressional dysfunction and dollar store regulation",
+          "quote": "S10 E18: Congress, Dollar Stores &amp; BOTY Update II: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=RXTJOqZdDe0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-24",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes congressional corruption and corporate consulting influence",
+          "quote": "S10 E14: Bob Menendez &amp; McKinsey: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=-BRWR6iK2iY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Criticizes TANF program inadequacy and dysfunction",
+          "quote": "S10 E4: Randy McNally &amp; TANF: Last Week Tonight with John Oliver",
+          "sourceUrl": "https://www.youtube.com/watch?v=J7GXS7WGgOo",
+          "platform": "youtube"
         }
       ],
       "active": false

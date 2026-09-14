@@ -1,34 +1,16 @@
 {
   "voiceId": "lisa-remillard",
   "voiceName": "Lisa Remillard",
-  "updatedAt": "2026-09-13",
-  "topicCount": 15,
-  "stanceCount": 39,
+  "updatedAt": "2026-09-14",
+  "topicCount": 16,
+  "stanceCount": 41,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 12,
-      "lastActive": "2026-09-12",
+      "count": 10,
+      "lastActive": "2026-08-21",
       "stances": [
-        {
-          "date": "2026-09-12",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Questions credibility of Trump dividend claim",
-          "quote": "#trumpdividend #presidenttrump President Trump REALLY wants you to believe that he\u2019s giving you a $5,000 Trump Dividend. This video explains what he\u2019s saying today.",
-          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7684483563038838030",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-09-10",
-          "topic": "trump-administration",
-          "stance": "lean",
-          "summary": "Highlights major catch in Trump dividend promise",
-          "quote": "#presidenttrump #midterms #trumpdividend President Trump just promised to give every American adult $5000 if voters elect Republicans to keep control of the House & Senate. There\u2019s a BIG catch to this that you must understand.",
-          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7683752409809685774",
-          "platform": "tiktok"
-        },
         {
           "date": "2026-08-21",
           "topic": "trump-administration",
@@ -120,14 +102,32 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 4,
-      "lastActive": "2026-09-02",
+      "count": 6,
+      "lastActive": "2026-09-13",
       "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Flags concerns about aggressive Trump DOJ election monitors",
+          "quote": "#midterms #pollwatcher #votingrights A Republican Governor just raised the red flag about \u201celection monitors\u201d sent to his state by the Trump Dept. of Justice. The governor said he received reports that they were \u201caggressive\u201d with election workers. In a RED state. This video expla",
+          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7685124699516341518",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Reports postal union calls Trump mail-in ballot order catastrophic",
+          "quote": "#postalworker #usps #midterms #supremecourt For the first time the American Postal Workers Union has jumped into the Supreme Court legal fight to block President Trump\u2019s executive order that would significantly restrict mail in ballots. The union says if this plan goes forward it",
+          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7683712496783478030",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-02",
           "topic": "elections",
@@ -265,6 +265,33 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-09-12",
+      "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Skeptical of Trump's promised dividend claim",
+          "quote": "#trumpdividend #presidenttrump President Trump REALLY wants you to believe that he\u2019s giving you a $5,000 Trump Dividend. This video explains what he\u2019s saying today.",
+          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7684483563038838030",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Highlights hidden catch in Trump's promised dividend",
+          "quote": "#presidenttrump #midterms #trumpdividend President Trump just promised to give every American adult $5000 if voters elect Republicans to keep control of the House & Senate. There\u2019s a BIG catch to this that you must understand.",
+          "sourceUrl": "https://www.tiktok.com/@lisaremillard/video/7683752409809685774",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",

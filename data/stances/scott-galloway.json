@@ -1,9 +1,9 @@
 {
   "voiceId": "scott-galloway",
   "voiceName": "Scott Galloway",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 30,
-  "stanceCount": 181,
+  "stanceCount": 186,
   "topics": [
     {
       "topic": "billionaires-wealth",
@@ -260,9 +260,18 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 25,
-      "lastActive": "2026-09-13",
+      "count": 26,
+      "lastActive": "2026-09-14",
       "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Explores economic pressures' impact on marriage stability",
+          "quote": "Did the Economy Kill Marriage? | Office Hours",
+          "sourceUrl": "https://www.youtube.com/watch?v=EKCh8j5NapY",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-13",
           "topic": "economy-trade",
@@ -494,9 +503,36 @@
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 20,
-      "lastActive": "2026-09-12",
+      "count": 23,
+      "lastActive": "2026-09-14",
       "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Critiques AI founders using extinction rhetoric for business purposes",
+          "quote": "Why AI labs want you to fear extinction",
+          "sourceUrl": "https://www.youtube.com/watch?v=IowlusyJqFo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Dismisses AI founder safety concerns as self-interested posturing",
+          "quote": "Tired of hearing AI founders suddenly voice concern for the technology after vesting millions of dollars\u2019 worth in shares.\n\nThat\u2019s not helpful now.",
+          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mvipstrm622z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-13",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Suggests AI competition may align U.S. and Chinese interests",
+          "quote": "Why AI may drive the U.S. and China together",
+          "sourceUrl": "https://www.youtube.com/shorts/wgiKudho6_4",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-12",
           "topic": "ai-technology",
@@ -1329,6 +1365,51 @@
       "active": false
     },
     {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 4,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Praises Canadian leadership as exemplary",
+          "quote": "FYI, what a leader looks like. \ud83c\udde8\ud83c\udde6",
+          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mvgyivnqmk2n",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Contrasts Carney's dignity with Trump's lack thereof",
+          "quote": "One of them is Prime Minister Mark Carney, a leader who acquits himself with dignity and grace,,, the other is Donald Trump.",
+          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mv4kero3m22u",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Highlights UK economic stagnation over past decade",
+          "quote": "&quot;The UK Has Been De-Growing for a Decade&quot; \u2014 Hannah Ritchie",
+          "sourceUrl": "https://www.youtube.com/watch?v=jVLKeBxa7N4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Highlights underreported international story from 2026",
+          "quote": "Anne Applebaum: The Most Under-Reported Story of 2026",
+          "sourceUrl": "https://www.youtube.com/watch?v=vpE52RhjdK8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "climate-environment",
       "label": "Climate & Environment",
       "count": 6,
@@ -1507,42 +1588,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 3,
-      "lastActive": "2026-09-09",
-      "stances": [
-        {
-          "date": "2026-09-09",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Contrasts Carney's dignity with Trump's lack thereof",
-          "quote": "One of them is Prime Minister Mark Carney, a leader who acquits himself with dignity and grace,,, the other is Donald Trump.",
-          "sourceUrl": "https://bsky.app/profile/profgalloway.com/post/3mv4kero3m22u",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-28",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Highlights UK economic stagnation over past decade",
-          "quote": "&quot;The UK Has Been De-Growing for a Decade&quot; \u2014 Hannah Ritchie",
-          "sourceUrl": "https://www.youtube.com/watch?v=jVLKeBxa7N4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Highlights underreported international story from 2026",
-          "quote": "Anne Applebaum: The Most Under-Reported Story of 2026",
-          "sourceUrl": "https://www.youtube.com/watch?v=vpE52RhjdK8",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "iran-conflict",

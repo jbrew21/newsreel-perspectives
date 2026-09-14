@@ -1,9 +1,9 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 23,
-  "stanceCount": 96,
+  "stanceCount": 98,
   "topics": [
     {
       "topic": "media-press",
@@ -654,6 +654,51 @@
       "active": true
     },
     {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 4,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Frames RNC imagery as absurd or noteworthy to UK political figure",
+          "quote": "Jeremy Corbyn saw the RNC Jumbotron Meat Pic",
+          "sourceUrl": "https://www.youtube.com/shorts/vWskPX9LLIM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-13",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Uses interview format to highlight contrast between UK and US politics",
+          "quote": "I SHOWED JEREMY CORBYN THE RNC JUMBOTRON | FULL INTERVIEW",
+          "sourceUrl": "https://www.youtube.com/watch?v=slq0Os5PUmM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-12",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Explores EU Parliament operations and political perspectives",
+          "quote": "They Let Me Into The European Union",
+          "sourceUrl": "https://www.youtube.com/watch?v=UFWchIBUyqo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Critiques far-right political rise in Germany",
+          "quote": "GERMANY DIDN'T EVEN MAKE IT 100 YEARS",
+          "sourceUrl": "https://www.youtube.com/watch?v=K8zqoEo-dJM",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 6,
@@ -825,33 +870,6 @@
       "active": true
     },
     {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 2,
-      "lastActive": "2026-09-12",
-      "stances": [
-        {
-          "date": "2026-09-12",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Explores EU Parliament operations and political perspectives",
-          "quote": "They Let Me Into The European Union",
-          "sourceUrl": "https://www.youtube.com/watch?v=UFWchIBUyqo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-08",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Critiques far-right political rise in Germany",
-          "quote": "GERMANY DIDN'T EVEN MAKE IT 100 YEARS",
-          "sourceUrl": "https://www.youtube.com/watch?v=K8zqoEo-dJM",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "celebrity-entertainment",
       "label": "Celebrity & Entertainment",
       "count": 2,
@@ -984,7 +1002,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "immigration",

@@ -1,16 +1,25 @@
 {
   "voiceId": "jd-vance",
   "voiceName": "JD Vance",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 13,
-  "stanceCount": 35,
+  "stanceCount": 37,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 12,
-      "lastActive": "2026-08-21",
+      "count": 13,
+      "lastActive": "2026-09-14",
       "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Announces suspension of 870K loan fraudsters from future federal aid",
+          "quote": "I am proud to announce alongside many of our task force members that we are going to suspend 870,000 people who defrauded the government from ever being able to apply for these loans again.\n\nIt\u2019s simple, if you screwed the American taxpayer, the federal government is going to cut",
+          "sourceUrl": "https://x.com/JDVance/status/2099558754245116268",
+          "platform": "x"
+        },
         {
           "date": "2026-08-21",
           "topic": "trump-administration",
@@ -120,7 +129,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "immigration",
@@ -225,6 +234,33 @@
           "summary": "Frames midterms as choice between Republican fraud-fighting and Democratic leniency",
           "quote": "The November midterms give us a choice: keep fighting fraud with Republicans or send criminal fraudsters a life boat from the Democrats.\n\nThis is not any old election. This is a fight to maintain the social fabric of our nation and do right by the hardworking Americans we serve.",
           "sourceUrl": "https://x.com/JDVance/status/2074986819989426351",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Pledges corporate accountability for replacing American workers with foreign labor",
+          "quote": "The Trump Administration will hold every corporation accountable for replacing American workers with cheap foreign labor.",
+          "sourceUrl": "https://x.com/JDVance/status/2099501746863091801",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-14",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Credits Trump policies with driving manufacturing boom and economic shift",
+          "quote": "Great article by Steve Cortes on the  manufacturing boom we\u2019re seeing build in the US. Donald Trump\u2019s policies are causing a generational shift in our economy.\n\nhttps://t.co/fmzesvJg11",
+          "sourceUrl": "https://x.com/JDVance/status/2088224009552863276",
           "platform": "x"
         }
       ],
@@ -364,24 +400,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 1,
-      "lastActive": "2026-08-14",
-      "stances": [
-        {
-          "date": "2026-08-14",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Credits Trump policies with driving manufacturing boom and economic shift",
-          "quote": "Great article by Steve Cortes on the  manufacturing boom we\u2019re seeing build in the US. Donald Trump\u2019s policies are causing a generational shift in our economy.\n\nhttps://t.co/fmzesvJg11",
-          "sourceUrl": "https://x.com/JDVance/status/2088224009552863276",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "criminal-justice",

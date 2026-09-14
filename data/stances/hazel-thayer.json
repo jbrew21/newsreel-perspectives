@@ -1,9 +1,9 @@
 {
   "voiceId": "hazel-thayer",
   "voiceName": "Hazel Thayer",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 16,
-  "stanceCount": 64,
+  "stanceCount": 65,
   "topics": [
     {
       "topic": "climate-environment",
@@ -483,6 +483,42 @@
       "active": false
     },
     {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 3,
+      "lastActive": "2026-07-30",
+      "stances": [
+        {
+          "date": "2026-07-30",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Finds current political situation absurdly comedic",
+          "quote": "RT @TabathaSouthey: This is almost like a George Carlin bit.",
+          "sourceUrl": "https://x.com/hazelis_online/status/1900047677087416807",
+          "platform": "x"
+        },
+        {
+          "date": "2024-05-10",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Praises podcast for shaping their political views and solutions-oriented approach",
+          "quote": "srsly wrong has been so influential on my politics AND the solutions-oriented vibe of all my videos. It was such a dang pleasure to finally talk back to a podcast I've probably spent over a hundred hours listening to. thanks for having me on, wrong boys!!!",
+          "sourceUrl": "https://x.com/hazelis_online/status/1788961113096511980",
+          "platform": "x"
+        },
+        {
+          "date": "2022-09-03",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Notes layers of sarcasm in commentary exchange",
+          "quote": "@Innf107 @Hbomberguy He\u2019s saying it sarcastically as well. Hbomberguy is sarcastically quoting someone being sarcastic",
+          "sourceUrl": "https://x.com/hazelis_online/status/1566156708871032832",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "housing-infrastructure",
       "label": "Housing & Infrastructure",
       "count": 3,
@@ -585,33 +621,6 @@
           "summary": "Celebrates asexual identity and visibility",
           "quote": "Are u aware of me? Now u are :) #aceweek https://t.co/y3WYH3Uiu5",
           "sourceUrl": "https://x.com/hazelis_online/status/1585815285381988352",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 2,
-      "lastActive": "2026-07-30",
-      "stances": [
-        {
-          "date": "2026-07-30",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Finds current political situation absurdly comedic",
-          "quote": "RT @TabathaSouthey: This is almost like a George Carlin bit.",
-          "sourceUrl": "https://x.com/hazelis_online/status/1900047677087416807",
-          "platform": "x"
-        },
-        {
-          "date": "2024-05-10",
-          "topic": "media-personalities",
-          "stance": "strong",
-          "summary": "Praises podcast for shaping their political views and solutions-oriented approach",
-          "quote": "srsly wrong has been so influential on my politics AND the solutions-oriented vibe of all my videos. It was such a dang pleasure to finally talk back to a podcast I've probably spent over a hundred hours listening to. thanks for having me on, wrong boys!!!",
-          "sourceUrl": "https://x.com/hazelis_online/status/1788961113096511980",
           "platform": "x"
         }
       ],

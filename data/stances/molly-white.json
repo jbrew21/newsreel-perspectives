@@ -1,16 +1,34 @@
 {
   "voiceId": "molly-white",
   "voiceName": "Molly White",
-  "updatedAt": "2026-09-13",
-  "topicCount": 8,
-  "stanceCount": 50,
+  "updatedAt": "2026-09-14",
+  "topicCount": 9,
+  "stanceCount": 53,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 14,
-      "lastActive": "2026-09-12",
+      "count": 16,
+      "lastActive": "2026-09-14",
       "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions corporate accountability in AI industry partnerships",
+          "quote": "\"why isn't hugging face pressing charges against one of the biggest business partners of its acquirer?\"",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mvh6dddqus27",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Skeptical of AI race framing, opposes unchecked American AI dominance",
+          "quote": "politicians: \"we can't afford to let China get ahead with AI!\"\n\nsweetie i don't think we can afford to let America get ahead",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mvh2ubgzhs27",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-12",
           "topic": "ai-technology",
@@ -508,6 +526,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 1,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "epstein-scandal",
+          "stance": "strong",
+          "summary": "Criticizes JK Rowling's public response to scandal allegations",
+          "quote": "the mold whispering into JK Rowling's subconscious: \"you should put on your website a list of every mean thing you think anyone's ever said about you just in case someone doesn't know you're in the Epstein files\"",
+          "sourceUrl": "https://bsky.app/profile/molly.wiki/post/3mvharu75w227",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "congress-legislation",

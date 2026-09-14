@@ -1,10 +1,37 @@
 {
   "voiceId": "coleman-hughes",
   "voiceName": "Coleman Hughes",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 13,
-  "stanceCount": 19,
+  "stanceCount": 20,
   "topics": [
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 2,
+      "lastActive": "2026-09-11",
+      "stances": [
+        {
+          "date": "2026-09-11",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Frames post-9/11 service and sacrifice as meaningful response to terrorism",
+          "quote": "He Couldn\u2019t Save His Brother on 9/11. He Spent the Next 25 Years Saving Others.",
+          "sourceUrl": "https://www.youtube.com/watch?v=OgTx4DUeBMk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-20",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Highlights left-wing terrorist history as overlooked aspect of American political violence",
+          "quote": "Charlie Kirk and America\u2019s Forgotten History of Left-Wing Terror",
+          "sourceUrl": "https://www.youtube.com/watch?v=yp4uxHovhIA",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
@@ -270,24 +297,6 @@
           "summary": "Critiques Charlie Kirk's conspiracy thinking and echo chamber dynamics",
           "quote": "What Charlie Kirk Conspiracies Tell Us About Echo Chambers",
           "sourceUrl": "https://www.youtube.com/shorts/NNurUNioicQ",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2026-07-20",
-      "stances": [
-        {
-          "date": "2026-07-20",
-          "topic": "terrorism",
-          "stance": "lean",
-          "summary": "Highlights left-wing terrorist history as overlooked aspect of American political violence",
-          "quote": "Charlie Kirk and America\u2019s Forgotten History of Left-Wing Terror",
-          "sourceUrl": "https://www.youtube.com/watch?v=yp4uxHovhIA",
           "platform": "youtube"
         }
       ],

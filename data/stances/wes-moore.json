@@ -1,9 +1,9 @@
 {
   "voiceId": "wes-moore",
   "voiceName": "Wes Moore",
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "topicCount": 18,
-  "stanceCount": 84,
+  "stanceCount": 86,
   "topics": [
     {
       "topic": "state-local-politics",
@@ -600,6 +600,60 @@
       "active": false
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 5,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Opposes federal health protection rollbacks, warns of health and economic harms",
+          "quote": "Rolling back these protections will mean thousands more premature deaths, more kids missing school, and tens of billions of dollars in increased health care costs over the next decade.\n\nHard to call this \u201cMake America Healthy Again.\"",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2099584501923865017",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Urges blood donation to address national shortage",
+          "quote": "Last week, I donated blood with the @RedCross to help during our national blood crisis. \n\nThey still need your help and are looking for all blood types \u2013 especially O positive or negative \u2013 to help reduce surgery wait times, life-saving care, and long awaited cancer treatments. \n",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2092415254491803891",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-23",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Launches fund to address nursing shortage through financial aid",
+          "quote": "Maryland\u2019s healthcare system is facing a significant nursing shortage, with around 7,000 open positions, high turnover that'll make future shortages more likely, and a pipeline of new nurses constrained by financial barriers.\n\nThat\u2019s why we've launched the Maryland Pay It Forward",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2091524864137974262",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-23",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Announces state aid program to address nursing shortage and pipeline constraints",
+          "quote": "Maryland\u2019s healthcare system is facing a significant nursing shortage, and the pipeline for new nurses is constrained by financial barriers \u2013 so we\u2019re taking action to get aspiring nurses the aid they need.",
+          "sourceUrl": "https://bsky.app/profile/govwesmoore.bsky.social/post/3mtquirvcsm2i",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-28",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Urges blood donations to address national shortage",
+          "quote": "The @RedCross has issued a national blood crisis, with blood donations at a four-year summer low.\n\nMarylanders \u2013 especially those with type O blood \u2013 if you\u2019re able to do so, please consider becoming a blood and platelet donor to ensure hospitals have the blood they need for pati",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2082207475462189509",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "food-agriculture",
       "label": "Food & Agriculture",
       "count": 4,
@@ -681,49 +735,31 @@
       "active": true
     },
     {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 4,
-      "lastActive": "2026-08-26",
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 2,
+      "lastActive": "2026-09-14",
       "stances": [
         {
-          "date": "2026-08-26",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Urges blood donation to address national shortage",
-          "quote": "Last week, I donated blood with the @RedCross to help during our national blood crisis. \n\nThey still need your help and are looking for all blood types \u2013 especially O positive or negative \u2013 to help reduce surgery wait times, life-saving care, and long awaited cancer treatments. \n",
-          "sourceUrl": "https://x.com/GovWesMoore/status/2092415254491803891",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-23",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Launches fund to address nursing shortage through financial aid",
-          "quote": "Maryland\u2019s healthcare system is facing a significant nursing shortage, with around 7,000 open positions, high turnover that'll make future shortages more likely, and a pipeline of new nurses constrained by financial barriers.\n\nThat\u2019s why we've launched the Maryland Pay It Forward",
-          "sourceUrl": "https://x.com/GovWesMoore/status/2091524864137974262",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-23",
-          "topic": "healthcare",
+          "date": "2026-09-14",
+          "topic": "climate-environment",
           "stance": "strong",
-          "summary": "Announces state aid program to address nursing shortage and pipeline constraints",
-          "quote": "Maryland\u2019s healthcare system is facing a significant nursing shortage, and the pipeline for new nurses is constrained by financial barriers \u2013 so we\u2019re taking action to get aspiring nurses the aid they need.",
-          "sourceUrl": "https://bsky.app/profile/govwesmoore.bsky.social/post/3mtquirvcsm2i",
-          "platform": "bluesky"
+          "summary": "Defends state environmental protections against federal administration actions",
+          "quote": "Despite the federal administration\u2019s actions, we in Maryland will continue fighting to protect communities from pollution and working to lower energy costs: https://t.co/DE4vvdmkxn",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2099584503739998469",
+          "platform": "x"
         },
         {
-          "date": "2026-07-28",
-          "topic": "healthcare",
+          "date": "2026-08-24",
+          "topic": "climate-environment",
           "stance": "lean",
-          "summary": "Urges blood donations to address national shortage",
-          "quote": "The @RedCross has issued a national blood crisis, with blood donations at a four-year summer low.\n\nMarylanders \u2013 especially those with type O blood \u2013 if you\u2019re able to do so, please consider becoming a blood and platelet donor to ensure hospitals have the blood they need for pati",
-          "sourceUrl": "https://x.com/GovWesMoore/status/2082207475462189509",
+          "summary": "Announces renewable energy agreement reducing costs and emissions",
+          "quote": "We can reduce costs for Maryland taxpayers while also continuing to reach our clean energy goals. \n\nThis new 20-year agreement with REV Renewables will provide about 250,000 megawatt hours of renewable energy from the Jade Meadow III Solar Project in Western Maryland \u2013 keeping en",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2091968061901263329",
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "ai-technology",
@@ -904,24 +940,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
-      "count": 1,
-      "lastActive": "2026-08-24",
-      "stances": [
-        {
-          "date": "2026-08-24",
-          "topic": "climate-environment",
-          "stance": "lean",
-          "summary": "Announces renewable energy agreement reducing costs and emissions",
-          "quote": "We can reduce costs for Maryland taxpayers while also continuing to reach our clean energy goals. \n\nThis new 20-year agreement with REV Renewables will provide about 250,000 megawatt hours of renewable energy from the Jade Meadow III Solar Project in Western Maryland \u2013 keeping en",
-          "sourceUrl": "https://x.com/GovWesMoore/status/2091968061901263329",
-          "platform": "x"
-        }
-      ],
-      "active": false
     }
   ]
 }
