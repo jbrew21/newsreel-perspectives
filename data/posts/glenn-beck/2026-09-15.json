@@ -1,9 +1,26 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-15T12:05:52.013002",
+  "collectedAt": "2026-09-15T13:52:32.419957",
   "date": "2026-09-15",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "A Massive Oil Shortage Is Coming. Here's What This Means For America",
+      "sourceUrl": "https://www.youtube.com/watch?v=fSlXdg92tCw",
+      "timestamp": "2026-09-14T23:00:21+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "topics": [
+        "economy-trade"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Warns of imminent oil shortage, implies economic consequences",
+      "quote": "A Massive Oil Shortage Is Coming. Here's What This Means For America"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -122,43 +139,17 @@
       "stance": "lean",
       "summary": "Commemorates personal 9/11 coverage and broadcasting role",
       "quote": "On Septemer 11, 2001 Glenn Did Something NO Broadcaster Did | Hour 1 | 9/11/26"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Glenn Beck's Powerful Message One Year After Charlie Kirk's Death | Full Speech at UVU",
-      "sourceUrl": "https://www.youtube.com/watch?v=7G9jRsbmGo0",
-      "timestamp": "2026-09-11T04:54:59+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "topics": [
-        "media-personalities"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Celebrates Charlie Kirk's life and political impact",
-      "quote": "Glenn Beck's Powerful Message One Year After Charlie Kirk's Death | Full Speech at UVU"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "A Massive Oil Shortage Is Coming. Here's What This Means For America",
-      "sourceUrl": "https://www.youtube.com/watch?v=fSlXdg92tCw",
-      "timestamp": "2026-09-14T23:00:21+00:00",
-      "type": "video_title",
-      "topic": "economy-trade",
-      "topics": [
-        "economy-trade"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Warns of imminent oil shortage, implies economic consequences",
-      "quote": "A Massive Oil Shortage Is Coming. Here's What This Means For America"
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "A Massive Oil Shortage Is Coming. Here's What This Means For America",
+        "sourceUrl": "https://www.youtube.com/watch?v=fSlXdg92tCw",
+        "platform": "youtube",
+        "timestamp": "2026-09-14T23:00:21+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "AI Tech Elites BEG the Government to do THIS?!",
@@ -187,12 +178,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=RvOAKNQjVd4",
         "platform": "youtube",
         "timestamp": "2026-09-12T20:00:36+00:00"
-      },
-      {
-        "quote": "Glenn Beck's Powerful Message One Year After Charlie Kirk's Death | Full Speech at UVU",
-        "sourceUrl": "https://www.youtube.com/watch?v=7G9jRsbmGo0",
-        "platform": "youtube",
-        "timestamp": "2026-09-11T04:54:59+00:00"
       }
     ],
     "terrorism": [
@@ -213,14 +198,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=0KEp5ts4OIY",
         "platform": "youtube",
         "timestamp": "2026-09-11T14:03:32+00:00"
-      }
-    ],
-    "economy-trade": [
-      {
-        "quote": "A Massive Oil Shortage Is Coming. Here's What This Means For America",
-        "sourceUrl": "https://www.youtube.com/watch?v=fSlXdg92tCw",
-        "platform": "youtube",
-        "timestamp": "2026-09-14T23:00:21+00:00"
       }
     ]
   }

@@ -2,8 +2,8 @@
   "voiceId": "heather-cox-richardson",
   "voiceName": "Heather Cox Richardson",
   "updatedAt": "2026-09-15",
-  "topicCount": 19,
-  "stanceCount": 89,
+  "topicCount": 20,
+  "stanceCount": 91,
   "topics": [
     {
       "topic": "trump-administration",
@@ -519,6 +519,51 @@
       "active": false
     },
     {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 4,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Views court reform as restoring judicial integrity",
+          "quote": "This seems to me to be step one in reclaiming the honesty of the court.",
+          "sourceUrl": "https://bsky.app/profile/hcrichardson.bsky.social/post/3mvkmzqwrn224",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2024-05-15",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Questions disparate legal treatment of Menendez versus Trump",
+          "quote": "How the heck did we get a jury trial so fast for Menendez while Trump, who demonstrably kept classified documents, has managed to put his trial on ice? (Rhetorical question, I admit, but it's shocking.)",
+          "sourceUrl": "https://x.com/HC_Richardson/status/1790794222934589525",
+          "platform": "x"
+        },
+        {
+          "date": "2022-06-30",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Declares Supreme Court rogue, demands congressional action on constitutional crisis",
+          "quote": "The Supreme Court has gone rogue. We are in a full-blown Constitutional crisis. Congress must act. And we must pressure Congress to act, while it still can. #TheMajority",
+          "sourceUrl": "https://x.com/HC_Richardson/status/1542528248227176449",
+          "platform": "x"
+        },
+        {
+          "date": "2022-06-28",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Questions whether RICO conspiracy charges are being prepared",
+          "quote": "Help me out, lawyers. Are they setting up a RICO charge?",
+          "sourceUrl": "https://x.com/HC_Richardson/status/1541861321502769152",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 6,
@@ -753,42 +798,6 @@
       "active": true
     },
     {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 3,
-      "lastActive": "2024-05-15",
-      "stances": [
-        {
-          "date": "2024-05-15",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Questions disparate legal treatment of Menendez versus Trump",
-          "quote": "How the heck did we get a jury trial so fast for Menendez while Trump, who demonstrably kept classified documents, has managed to put his trial on ice? (Rhetorical question, I admit, but it's shocking.)",
-          "sourceUrl": "https://x.com/HC_Richardson/status/1790794222934589525",
-          "platform": "x"
-        },
-        {
-          "date": "2022-06-30",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Declares Supreme Court rogue, demands congressional action on constitutional crisis",
-          "quote": "The Supreme Court has gone rogue. We are in a full-blown Constitutional crisis. Congress must act. And we must pressure Congress to act, while it still can. #TheMajority",
-          "sourceUrl": "https://x.com/HC_Richardson/status/1542528248227176449",
-          "platform": "x"
-        },
-        {
-          "date": "2022-06-28",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "Questions whether RICO conspiracy charges are being prepared",
-          "quote": "Help me out, lawyers. Are they setting up a RICO charge?",
-          "sourceUrl": "https://x.com/HC_Richardson/status/1541861321502769152",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 2,
@@ -868,6 +877,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Believes Epstein Files contain significant damaging material",
+          "quote": "I actually disagree on that. If the Epstein Files weren\u2019t napalm, we\u2019d have seen them already for just the reason you suggest: most everything slides off them. Clearly they think something there will stick.",
+          "sourceUrl": "https://bsky.app/profile/hcrichardson.bsky.social/post/3mvkn7z5vxc24",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "terrorism",

@@ -2,8 +2,8 @@
   "voiceId": "ramesh-ponnuru",
   "voiceName": "Ramesh Ponnuru",
   "updatedAt": "2026-09-15",
-  "topicCount": 22,
-  "stanceCount": 118,
+  "topicCount": 23,
+  "stanceCount": 119,
   "topics": [
     {
       "topic": "elections",
@@ -1120,6 +1120,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "gender-lgbtq",
+      "label": "Gender & LGBTQ+",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "gender-lgbtq",
+          "stance": "strong",
+          "summary": "Criticizes candidate for avoiding record on transgender sports policy",
+          "quote": "Talarico Dashes Away from His Record on Girls&#8217; Sports. If he still believes that \u2018trans children\u2019 are \u2018sacred,\u2019 perhaps he holds even more sacred the chance to win this November.",
+          "sourceUrl": "https://www.nationalreview.com/corner/talarico-dashes-away-from-his-record-on-girls-sports/",
+          "platform": "substack"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "drugs-addiction",
