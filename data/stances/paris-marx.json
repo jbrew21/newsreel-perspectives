@@ -2,8 +2,8 @@
   "voiceId": "paris-marx",
   "voiceName": "Paris Marx",
   "updatedAt": "2026-09-15",
-  "topicCount": 19,
-  "stanceCount": 84,
+  "topicCount": 20,
+  "stanceCount": 85,
   "topics": [
     {
       "topic": "ai-technology",
@@ -805,6 +805,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Questions whether immigration restrictions will undermine economic growth",
+          "quote": "hard not to feel mark carney\u2019s restrictions on immigration will hinder his agenda to deliver this big boost to canada\u2019s economy with a wave of new investment",
+          "sourceUrl": "https://bsky.app/profile/parismarx.com/post/3mvl2sopls22k",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "protests-activism",

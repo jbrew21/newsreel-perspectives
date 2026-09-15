@@ -2,8 +2,8 @@
   "voiceId": "jeremy-scahill",
   "voiceName": "Jeremy Scahill",
   "updatedAt": "2026-09-15",
-  "topicCount": 21,
-  "stanceCount": 192,
+  "topicCount": 23,
+  "stanceCount": 194,
   "topics": [
     {
       "topic": "israel-palestine",
@@ -1795,6 +1795,42 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether Sam Altman and OpenAI should face fraud charges",
+          "quote": "Capitol Hill Reacts: Should Sam Altman and OpenAI be put on trial for computer fraud?",
+          "sourceUrl": "https://www.youtube.com/shorts/kaKMsJUcR-I",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "drugs-addiction",
+      "label": "Drugs & Addiction",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Criticizes Mike Rogers for pharma advocacy promoting opioid prescription",
+          "quote": "Got Oxy? How Michigan\u2019s Mike Rogers Helped Fuel the Opioid Crisis (by Alexander Zaitchik). The Republican Senate candidate spent 10 years in Congress as Pharma\u2019s point man working to push prescription opioids.",
+          "sourceUrl": "https://www.dropsitenews.com/p/mike-rogers-senate-opioids-oxycontin",
+          "platform": "substack"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "trump-policy",

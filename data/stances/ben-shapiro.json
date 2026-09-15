@@ -3,7 +3,7 @@
   "voiceName": "Ben Shapiro",
   "updatedAt": "2026-09-15",
   "topicCount": 34,
-  "stanceCount": 246,
+  "stanceCount": 248,
   "topics": [
     {
       "topic": "elections",
@@ -1689,6 +1689,69 @@
       "active": true
     },
     {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 6,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Criticizes immigrant activist opposing U.S. policies",
+          "quote": "The Anti-America Activist Fighting to Stay in the Country He Hates",
+          "sourceUrl": "https://www.youtube.com/watch?v=4Y2-jcSoxRg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-15",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Opposes immigrants receiving welfare benefits",
+          "quote": "Mamdani Wants Immigrants on Welfare. Here's Why.",
+          "sourceUrl": "https://www.youtube.com/watch?v=shvsMsC0CxU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Comments on deportation of political figure Milo Yiannopoulos",
+          "quote": "The Deportation of Milo Yiannopoulos",
+          "sourceUrl": "https://www.youtube.com/watch?v=G1gHIymvlMs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Frames migration from Muslim-majority regions as sexual assault threat",
+          "quote": "The West To (Mostly Muslim) Migrants: Please Don\u2019t Rape Us",
+          "sourceUrl": "https://www.youtube.com/watch?v=kLk5Nwsg9mI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Celebrates Trump administration ending birth tourism policy",
+          "quote": "FINALLY: Trump ENDS Birth Tourism!",
+          "sourceUrl": "https://www.youtube.com/watch?v=ssBTOLCyTs8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Opposes Muslim immigration, warns of radical voting blocs in Western countries",
+          "quote": "It turns out that importing massive numbers of Muslims from third world countries is a bad idea. Not just because people get beaten in Dearborn for protesting or nearly stabbed in Ceuta for covering the news. But because radical Muslims create voting enclaves in Western countries",
+          "sourceUrl": "https://x.com/benshapiro/status/2084680358943932745",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 6,
@@ -2119,51 +2182,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 4,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Comments on deportation of political figure Milo Yiannopoulos",
-          "quote": "The Deportation of Milo Yiannopoulos",
-          "sourceUrl": "https://www.youtube.com/watch?v=G1gHIymvlMs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-20",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Frames migration from Muslim-majority regions as sexual assault threat",
-          "quote": "The West To (Mostly Muslim) Migrants: Please Don\u2019t Rape Us",
-          "sourceUrl": "https://www.youtube.com/watch?v=kLk5Nwsg9mI",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Celebrates Trump administration ending birth tourism policy",
-          "quote": "FINALLY: Trump ENDS Birth Tourism!",
-          "sourceUrl": "https://www.youtube.com/watch?v=ssBTOLCyTs8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Opposes Muslim immigration, warns of radical voting blocs in Western countries",
-          "quote": "It turns out that importing massive numbers of Muslims from third world countries is a bad idea. Not just because people get beaten in Dearborn for protesting or nearly stabbed in Ceuta for covering the news. But because radical Muslims create voting enclaves in Western countries",
-          "sourceUrl": "https://x.com/benshapiro/status/2084680358943932745",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "healthcare",

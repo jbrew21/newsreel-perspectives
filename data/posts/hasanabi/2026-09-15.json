@@ -1,9 +1,26 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-15T16:41:57.306711",
+  "collectedAt": "2026-09-15T20:54:29.877899",
   "date": "2026-09-15",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "Macklemore dropped from Ed Sheeran tour for saying \u201cFree Palestine\u201d",
+      "sourceUrl": "https://www.youtube.com/shorts/4UG-3JrBrOk",
+      "timestamp": "2026-09-15T15:04:15+00:00",
+      "type": "video_title",
+      "topic": "israel-palestine",
+      "topics": [
+        "israel-palestine"
+      ],
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Criticizes artist removal for Palestine solidarity statement",
+      "quote": "Macklemore dropped from Ed Sheeran tour for saying \u201cFree Palestine\u201d"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -123,26 +140,23 @@
       "stance": "strong",
       "summary": "Criticizes Fox News for cancelling progressive political figure",
       "quote": "FOX NEWS IS CANCELLING ZOHRAN MAMDANI OVER A PEN"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "Macklemore dropped from Ed Sheeran tour for saying \u201cFree Palestine\u201d",
-      "sourceUrl": "https://www.youtube.com/shorts/4UG-3JrBrOk",
-      "timestamp": "2026-09-15T15:04:15+00:00",
-      "type": "video_title",
-      "topic": "israel-palestine",
-      "topics": [
-        "israel-palestine"
-      ],
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Criticizes artist removal for Palestine solidarity statement",
-      "quote": "Macklemore dropped from Ed Sheeran tour for saying \u201cFree Palestine\u201d"
     }
   ],
   "topicSummary": {
+    "israel-palestine": [
+      {
+        "quote": "Macklemore dropped from Ed Sheeran tour for saying \u201cFree Palestine\u201d",
+        "sourceUrl": "https://www.youtube.com/shorts/4UG-3JrBrOk",
+        "platform": "youtube",
+        "timestamp": "2026-09-15T15:04:15+00:00"
+      },
+      {
+        "quote": "ISRAEL MELTS DOWN OVER WEST BANK SANCTIONS",
+        "sourceUrl": "https://www.youtube.com/watch?v=zsXCk3irQKA",
+        "platform": "youtube",
+        "timestamp": "2026-09-12T21:00:20+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "THE AI INDUSTRY IS FREAKING OUT",
@@ -171,20 +185,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Gx3HGaEBPgw",
         "platform": "youtube",
         "timestamp": "2026-09-13T14:01:21+00:00"
-      }
-    ],
-    "israel-palestine": [
-      {
-        "quote": "ISRAEL MELTS DOWN OVER WEST BANK SANCTIONS",
-        "sourceUrl": "https://www.youtube.com/watch?v=zsXCk3irQKA",
-        "platform": "youtube",
-        "timestamp": "2026-09-12T21:00:20+00:00"
-      },
-      {
-        "quote": "Macklemore dropped from Ed Sheeran tour for saying \u201cFree Palestine\u201d",
-        "sourceUrl": "https://www.youtube.com/shorts/4UG-3JrBrOk",
-        "platform": "youtube",
-        "timestamp": "2026-09-15T15:04:15+00:00"
       }
     ],
     "media-press": [

@@ -3,14 +3,23 @@
   "voiceName": "Ryan Grim",
   "updatedAt": "2026-09-15",
   "topicCount": 29,
-  "stanceCount": 198,
+  "stanceCount": 203,
   "topics": [
     {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
-      "count": 49,
-      "lastActive": "2026-09-09",
+      "count": 50,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Frames pro-Palestinian student activism as persecution",
+          "quote": "Mahmoud Khalil sues Columbia for putting pro-Palestinian students &quot;through hell&quot; for years",
+          "sourceUrl": "https://www.youtube.com/shorts/50XtPMfu7G0",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-09",
           "topic": "israel-palestine",
@@ -620,9 +629,18 @@
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
-      "count": 15,
-      "lastActive": "2026-09-10",
+      "count": 16,
+      "lastActive": "2026-09-14",
       "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Reports Trump nuclear threats and Iran-China alignment",
+          "quote": "China COURTING Iran? Trump Threatens Tactical Nukes\u2014and How Ansarallah STORMED Yemen: The War Brief",
+          "sourceUrl": "https://www.youtube.com/watch?v=9gOcQFlYL2U",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-10",
           "topic": "iran-conflict",
@@ -1482,6 +1500,96 @@
       "active": false
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 4,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether AI leaders should face criminal liability",
+          "quote": "Capitol Hill Reacts: Should Sam Altman and OpenAI be put on trial for computer fraud?",
+          "sourceUrl": "https://www.youtube.com/shorts/kaKMsJUcR-I",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-13",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Criticizes Google for appropriating news content without compensation",
+          "quote": "Google\u2019s idea here is that news organizations will spend billions of dollars reporting out the news, publish it, then Google will steal it, and repackage it into chat bot responses. Obviously news organizations cannot sustainably cooperate with that model long term even if they w",
+          "sourceUrl": "https://x.com/ryangrim/status/2087896369885307273",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-28",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Exposes Israel's AI propaganda operation targeting Gaza coverage",
+          "quote": "Israel Is Paying Millions to Train AI Chatbots How to Talk About Gaza. It's Working. (by Nick Cleveland-Stout). Former Trump campaign manager Brad Parscale is overseeing an operation posting hundreds of blog posts on behalf of Israel, with the goal of infiltrating artificial inte",
+          "sourceUrl": "https://www.dropsitenews.com/p/israel-brad-parscale-ai-chatbots-gaza",
+          "platform": "substack"
+        },
+        {
+          "date": "2023-01-25",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Reports Musk censored BBC documentary at request of Indian PM",
+          "quote": "\ud83d\udea8\ud83d\udea8@ElonMusk complied when India\u2019s right-wing prime minister asked him to block a BBC documentary critical of him, and even deleted MP tweets https://t.co/l7LBB6xhDa by me &amp; @mazmhussain",
+          "sourceUrl": "https://x.com/ryangrim/status/1618039241858248709",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 4,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Reports Trump limiting Ukraine strikes and rejecting AI oversight",
+          "quote": "Trump tells Zelenskyy to stop hitting Russian diesel; Nearly 80,000 displaced in Yemen; Trump rejects calls for AI guardrails (by Drop Site News)",
+          "sourceUrl": "https://www.dropsitenews.com/p/trump-zelenskyy-ukraine-russia-yemen-ansarallah-ai",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Reporting on Trump targeting birthright citizenship among other news",
+          "quote": "Dozens reported killed in Ansarallah attacks; Saudi Arabia, Turkey, and Pakistan sign defense deal; Trump targets birthright citizenship (by Drop Site News)",
+          "sourceUrl": "https://www.dropsitenews.com/p/ansarallah-yemen-saudi-turkey-pakistan-defense-pact-trump-birthright-citizenship",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Celebrates rejection of Lindsey Graham's foreign policy legacy",
+          "quote": "My only regret is that Lindsey Graham didn't live to see this. Rejection of his life's work.",
+          "sourceUrl": "https://x.com/ryangrim/status/2085740761060880623",
+          "platform": "x"
+        },
+        {
+          "date": "2026-03-12",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Trump waged war to distract from Epstein scandal",
+          "quote": "Trump went to war to distract from his JE scandal, according to a majority of Americans in a new survey we commissioned.",
+          "sourceUrl": "https://www.tiktok.com/@ryanwgrim/video/7616195736388111629",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "military-defense",
       "label": "Military & Defense",
       "count": 4,
@@ -1725,6 +1833,33 @@
       "active": false
     },
     {
+      "topic": "drugs-addiction",
+      "label": "Drugs & Addiction",
+      "count": 2,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "drugs-addiction",
+          "stance": "strong",
+          "summary": "Criticizes Senate candidate's pharmaceutical industry alignment",
+          "quote": "Got Oxy? How Michigan\u2019s Mike Rogers Helped Fuel the Opioid Crisis (by Alexander Zaitchik). The Republican Senate candidate spent 10 years in Congress as Pharma\u2019s point man working to push prescription opioids.",
+          "sourceUrl": "https://www.dropsitenews.com/p/mike-rogers-senate-opioids-oxycontin",
+          "platform": "substack"
+        },
+        {
+          "date": "2022-08-25",
+          "topic": "drugs-addiction",
+          "stance": "lean",
+          "summary": "Jokingly advocates marijuana legalization",
+          "quote": "Dark Brandon: Do weed next and all your enemies will be vanquished",
+          "sourceUrl": "https://x.com/ryangrim/status/1562943620571070466",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "refugees-humanitarian",
       "label": "Refugees & Humanitarian",
       "count": 2,
@@ -1788,42 +1923,6 @@
       "active": false
     },
     {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 3,
-      "lastActive": "2026-08-13",
-      "stances": [
-        {
-          "date": "2026-08-13",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Criticizes Google for appropriating news content without compensation",
-          "quote": "Google\u2019s idea here is that news organizations will spend billions of dollars reporting out the news, publish it, then Google will steal it, and repackage it into chat bot responses. Obviously news organizations cannot sustainably cooperate with that model long term even if they w",
-          "sourceUrl": "https://x.com/ryangrim/status/2087896369885307273",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-28",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Exposes Israel's AI propaganda operation targeting Gaza coverage",
-          "quote": "Israel Is Paying Millions to Train AI Chatbots How to Talk About Gaza. It's Working. (by Nick Cleveland-Stout). Former Trump campaign manager Brad Parscale is overseeing an operation posting hundreds of blog posts on behalf of Israel, with the goal of infiltrating artificial inte",
-          "sourceUrl": "https://www.dropsitenews.com/p/israel-brad-parscale-ai-chatbots-gaza",
-          "platform": "substack"
-        },
-        {
-          "date": "2023-01-25",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Reports Musk censored BBC documentary at request of Indian PM",
-          "quote": "\ud83d\udea8\ud83d\udea8@ElonMusk complied when India\u2019s right-wing prime minister asked him to block a BBC documentary critical of him, and even deleted MP tweets https://t.co/l7LBB6xhDa by me &amp; @mazmhussain",
-          "sourceUrl": "https://x.com/ryangrim/status/1618039241858248709",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
       "count": 3,
@@ -1855,42 +1954,6 @@
           "quote": "One reason that many scientists believe the natural origin hypothesis is that they heard Fauci say this. He just straight up made this up.",
           "sourceUrl": "https://x.com/ryangrim/status/2084079836717314542",
           "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 3,
-      "lastActive": "2026-08-07",
-      "stances": [
-        {
-          "date": "2026-08-07",
-          "topic": "trump-policy",
-          "stance": "lean",
-          "summary": "Reporting on Trump targeting birthright citizenship among other news",
-          "quote": "Dozens reported killed in Ansarallah attacks; Saudi Arabia, Turkey, and Pakistan sign defense deal; Trump targets birthright citizenship (by Drop Site News)",
-          "sourceUrl": "https://www.dropsitenews.com/p/ansarallah-yemen-saudi-turkey-pakistan-defense-pact-trump-birthright-citizenship",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Celebrates rejection of Lindsey Graham's foreign policy legacy",
-          "quote": "My only regret is that Lindsey Graham didn't live to see this. Rejection of his life's work.",
-          "sourceUrl": "https://x.com/ryangrim/status/2085740761060880623",
-          "platform": "x"
-        },
-        {
-          "date": "2026-03-12",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Trump waged war to distract from Epstein scandal",
-          "quote": "Trump went to war to distract from his JE scandal, according to a majority of Americans in a new survey we commissioned.",
-          "sourceUrl": "https://www.tiktok.com/@ryanwgrim/video/7616195736388111629",
-          "platform": "tiktok"
         }
       ],
       "active": false
@@ -2007,24 +2070,6 @@
           "summary": "Notes insurance company climate science contradicts policy position",
           "quote": "Insurance companies who employ climate scientists disagree but sure",
           "sourceUrl": "https://x.com/ryangrim/status/1658266112788684800",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "drugs-addiction",
-      "label": "Drugs & Addiction",
-      "count": 1,
-      "lastActive": "2022-08-25",
-      "stances": [
-        {
-          "date": "2022-08-25",
-          "topic": "drugs-addiction",
-          "stance": "lean",
-          "summary": "Jokingly advocates marijuana legalization",
-          "quote": "Dark Brandon: Do weed next and all your enemies will be vanquished",
-          "sourceUrl": "https://x.com/ryangrim/status/1562943620571070466",
           "platform": "x"
         }
       ],

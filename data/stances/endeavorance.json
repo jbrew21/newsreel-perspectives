@@ -3,7 +3,7 @@
   "voiceName": "Endeavorance",
   "updatedAt": "2026-09-15",
   "topicCount": 21,
-  "stanceCount": 48,
+  "stanceCount": 49,
   "topics": [
     {
       "topic": "ai-technology",
@@ -294,6 +294,33 @@
       "active": false
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Critiques sensationalism in news headlines through satire",
+          "quote": "A browser extension which appends \"...is that bad?\" to every news headline you see",
+          "sourceUrl": "https://bsky.app/profile/endeavorance.camp/post/3mvl3nyyha62v",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-28",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Critiques doomscrolling as unproductive media consumption habit",
+          "quote": "Would actually put forward that watching grass grow is a better use of time than doomscrolling despite what our brains are wired to tell us",
+          "sourceUrl": "https://bsky.app/profile/endeavorance.camp/post/3mu64fj6apn2v",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 2,
@@ -499,24 +526,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 1,
-      "lastActive": "2026-08-28",
-      "stances": [
-        {
-          "date": "2026-08-28",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Critiques doomscrolling as unproductive media consumption habit",
-          "quote": "Would actually put forward that watching grass grow is a better use of time than doomscrolling despite what our brains are wired to tell us",
-          "sourceUrl": "https://bsky.app/profile/endeavorance.camp/post/3mu64fj6apn2v",
-          "platform": "bluesky"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "gender-lgbtq",

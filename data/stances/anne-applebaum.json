@@ -2,8 +2,8 @@
   "voiceId": "anne-applebaum",
   "voiceName": "Anne Applebaum",
   "updatedAt": "2026-09-15",
-  "topicCount": 15,
-  "stanceCount": 65,
+  "topicCount": 16,
+  "stanceCount": 67,
   "topics": [
     {
       "topic": "trump-administration",
@@ -161,9 +161,18 @@
     {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
-      "count": 8,
-      "lastActive": "2026-09-13",
+      "count": 9,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Highlights Ukrainian sanctions against Putin-linked figure and alleged child abduction operations",
+          "quote": "One nuance: Kremlev was personally sanctioned by Ukraine for his links to Putin. An organization he is associated with, 'Healthy Fatherland', is also sanctiond for helping abduct children from occupied Ukrainian territory and relocate them in Russia",
+          "sourceUrl": "https://bsky.app/profile/anneapplebaum.wsocial.eu/post/3mvl4sdjdc22x",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-13",
           "topic": "foreign-policy-diplomacy",
@@ -670,6 +679,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Criticizes Russian state recruitment of operatives for arson and terror attacks in Europe",
+          "quote": "Amazing. A Cuban dance instructor living in Russia recruits random people to carry out acts of arson and terror in Europe, on behalf of the Russian state \nwww.dw.com/en/cuban-dan...",
+          "sourceUrl": "https://bsky.app/profile/anneapplebaum.wsocial.eu/post/3mvl3jmum5s2x",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "israel-palestine",
