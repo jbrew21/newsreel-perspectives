@@ -3,12 +3,12 @@
   "voiceName": "David Pakman",
   "updatedAt": "2026-09-15",
   "topicCount": 28,
-  "stanceCount": 277,
+  "stanceCount": 280,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 65,
+      "count": 66,
       "lastActive": "2026-09-15",
       "stances": [
         {
@@ -36,6 +36,15 @@
           "summary": "Critiques Trump's standards or hypocrisy",
           "quote": "Trump created this standard #shorts",
           "sourceUrl": "https://www.youtube.com/shorts/PBUO9VtpU1Y",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-15",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Expresses skepticism about JD Vance's potential 2028 viability",
+          "quote": "Nobody is ready for Vance 2028 it seems  #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/tqetJuuYRa0",
           "platform": "youtube"
         },
         {
@@ -602,9 +611,18 @@
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 31,
-      "lastActive": "2026-09-14",
+      "count": 32,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Democrats should develop stronger messaging and media strategy",
+          "quote": "Democrats don\u2019t need to copy the right. But they need to learn how to fight for attention #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/v35akzy8csY",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-14",
           "topic": "elections",
@@ -2274,6 +2292,51 @@
       "active": false
     },
     {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 4,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Notes political figure's awareness of public demonstrations",
+          "quote": "Yeah he definitely saw those protests #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/uyXApbt0GU4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-04",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Frames governor's response to protester negatively",
+          "quote": "Washed up Governor LOSES HIS MIND at protester",
+          "sourceUrl": "https://www.youtube.com/watch?v=cMkeQvObN0Y",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Criticizes efforts to discourage political participation",
+          "quote": "They are DESPERATE for you to STAY HOME",
+          "sourceUrl": "https://www.youtube.com/watch?v=vt21lp5kBJA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2022-03-01",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Mocks trucker convoy overshadowed by Russia-Ukraine invasion",
+          "quote": "Imagine planning and then starting your US trucker convoy and literally as you start driving, Russia invades Ukraine and gets 24/7 attention and absolutely no one pays attention to your stupid convoy",
+          "sourceUrl": "https://x.com/dpakman/status/1498471347760078856",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 6,
@@ -2452,42 +2515,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "protests-activism",
-      "label": "Protests & Activism",
-      "count": 3,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "protests-activism",
-          "stance": "lean",
-          "summary": "Frames governor's response to protester negatively",
-          "quote": "Washed up Governor LOSES HIS MIND at protester",
-          "sourceUrl": "https://www.youtube.com/watch?v=cMkeQvObN0Y",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Criticizes efforts to discourage political participation",
-          "quote": "They are DESPERATE for you to STAY HOME",
-          "sourceUrl": "https://www.youtube.com/watch?v=vt21lp5kBJA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2022-03-01",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Mocks trucker convoy overshadowed by Russia-Ukraine invasion",
-          "quote": "Imagine planning and then starting your US trucker convoy and literally as you start driving, Russia invades Ukraine and gets 24/7 attention and absolutely no one pays attention to your stupid convoy",
-          "sourceUrl": "https://x.com/dpakman/status/1498471347760078856",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "immigration",

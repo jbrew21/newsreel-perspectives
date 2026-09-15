@@ -3,14 +3,23 @@
   "voiceName": "Jimmy Dore",
   "updatedAt": "2026-09-15",
   "topicCount": 28,
-  "stanceCount": 269,
+  "stanceCount": 271,
   "topics": [
     {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
-      "count": 23,
-      "lastActive": "2026-09-14",
+      "count": 24,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Criticizes Biden's Secretary of State for hostage negotiations failure",
+          "quote": "Biden\u2019s Sec Of State DESTROYED For Betraying Hostages In Gaza",
+          "sourceUrl": "https://www.youtube.com/watch?v=mIPMi__EEdA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-14",
           "topic": "israel-palestine",
@@ -2436,6 +2445,42 @@
       "active": false
     },
     {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 3,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Argues immigrants did not cause job losses",
+          "quote": "Why Immigrants Didn\u2019t Cause Job Loss",
+          "sourceUrl": "https://www.youtube.com/shorts/zirrcnqnSiw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes ICE use of shock devices as torture",
+          "quote": "ICE Agents Get Shock Gloves \u2014 The New Torture Tool",
+          "sourceUrl": "https://www.youtube.com/watch?v=zVFDSWDRjYc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Frames Joe Kent as fearful of ICE prison revelations",
+          "quote": "Here\u2019s Why Joe Kent Is Afraid Of ICE Prisons!",
+          "sourceUrl": "https://www.youtube.com/watch?v=bIAshS2bxfI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 3,
@@ -2515,33 +2560,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 2,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Criticizes ICE use of shock devices as torture",
-          "quote": "ICE Agents Get Shock Gloves \u2014 The New Torture Tool",
-          "sourceUrl": "https://www.youtube.com/watch?v=zVFDSWDRjYc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Frames Joe Kent as fearful of ICE prison revelations",
-          "quote": "Here\u2019s Why Joe Kent Is Afraid Of ICE Prisons!",
-          "sourceUrl": "https://www.youtube.com/watch?v=bIAshS2bxfI",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "congress-legislation",
