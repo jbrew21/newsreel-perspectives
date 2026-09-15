@@ -1,9 +1,9 @@
 {
   "voiceId": "gretchen-whitmer",
   "voiceName": "Gretchen Whitmer",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 16,
-  "stanceCount": 59,
+  "stanceCount": 60,
   "topics": [
     {
       "topic": "economy-trade",
@@ -519,6 +519,33 @@
       "active": true
     },
     {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 2,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Opposes Supreme Court rejection of federal mail-in voting rules",
+          "quote": "My statement on the Supreme Court rejecting the federal government\u2019s unlawful attempt to rewrite the rules on mail-in voting: https://t.co/dorR2tlPC2",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2099655847819243780",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Celebrates Michigan Supreme Court restoring consumer protection safeguards",
+          "quote": "Today\u2019s decision is a landmark victory for Michigan consumers. @MIAttyGen Nessel\u2019s successful fight in this case restores the Michigan Consumer Protection Act as a safeguard. michiganadvance.com/briefs/m\u2026\n\nLink\n\n\n\nMichigan Supreme Court sides with Nessel, overrules cases curtaili",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2083336064958152716",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "terrorism",
       "label": "Terrorism & Security",
       "count": 1,
@@ -621,24 +648,6 @@
           "summary": "Highlights Michigan dairy production and corporate investment",
           "quote": "MI cows produce more milk per cow than any other U.S. state. \ud83d\udc04\ud83e\udd47\n\u00a0\nWhen @fairlife needed the good stuff for their $650M Coopersville investment, they knew where to look. ~200 new jobs, 2 new lines, powered by the hardest-working cows in America. That's the Michigan difference.",
           "sourceUrl": "https://x.com/GovWhitmer/status/2087208400371306856",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2026-07-31",
-      "stances": [
-        {
-          "date": "2026-07-31",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Celebrates Michigan Supreme Court restoring consumer protection safeguards",
-          "quote": "Today\u2019s decision is a landmark victory for Michigan consumers. @MIAttyGen Nessel\u2019s successful fight in this case restores the Michigan Consumer Protection Act as a safeguard. michiganadvance.com/briefs/m\u2026\n\nLink\n\n\n\nMichigan Supreme Court sides with Nessel, overrules cases curtaili",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2083336064958152716",
           "platform": "x"
         }
       ],

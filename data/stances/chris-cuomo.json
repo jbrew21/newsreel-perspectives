@@ -1,16 +1,25 @@
 {
   "voiceId": "chris-cuomo",
   "voiceName": "Chris Cuomo",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 24,
-  "stanceCount": 158,
+  "stanceCount": 159,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 32,
-      "lastActive": "2026-09-14",
+      "count": 33,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump on multiple moral and political grounds",
+          "quote": "The 7 Deadly Sins Of Donald Trump",
+          "sourceUrl": "https://www.youtube.com/watch?v=-OS9DI2JLoA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-14",
           "topic": "trump-administration",
@@ -978,87 +987,6 @@
       "active": true
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 8,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Economic conditions not translating to consumer confidence or wellbeing",
-          "quote": "Why You Don't Feel This Economy",
-          "sourceUrl": "https://www.youtube.com/watch?v=H3d2ps2We70",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-30",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes blaming individuals for systemic economic problems",
-          "quote": "There's Money in Blaming the Victim",
-          "sourceUrl": "https://www.youtube.com/watch?v=BGL4cYsMDKQ",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-29",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Presents data center investment as economic opportunity",
-          "quote": "Kevin O'Leary Defends the Data Center Boom",
-          "sourceUrl": "https://www.youtube.com/watch?v=SW-ZEWpExVo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-23",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Frames economic policy debate as individual choice rather than socialism",
-          "quote": "This Isn't Socialism. It's Choices.",
-          "sourceUrl": "https://www.youtube.com/shorts/VME8BSAAvw8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Walmart for executive pay while workers rely on food stamps",
-          "quote": "Who cares if Walmart management salaries compare favorably to certain doctors? The real issue is why do they have money for those salaries but not enough to keep so many workers off food stamps? instagram.com/p/DcCT44Tz0FS/\u2026",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/2090129644271948243",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-09",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Critiques current capitalist system as fundamentally broken",
-          "quote": "Capitalism Isn\u2019t Supposed To Work Like This",
-          "sourceUrl": "https://www.youtube.com/shorts/0gOKHKyMbqs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes Trump for failing to hold oil companies accountable",
-          "quote": "Trump won't do shit to the oil companies...but they sure are shitting on you",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/2084441484367913421",
-          "platform": "x"
-        },
-        {
-          "date": "2021-01-29",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Questions Robinhood's risk management rationale during market volatility",
-          "quote": "Robinhood CEO Vlad Tenev defends the company's decision to limit trading on some symbols following the GameStop stock chaos, saying they must \"prudently manage the risk and the deposit requirements.\" https://t.co/z2Ar8d9YX1",
-          "sourceUrl": "https://x.com/ChrisCuomo/status/1354994000294522881",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 9,
@@ -1143,6 +1071,87 @@
           "summary": "Advocates transparency as essential to truthfulness",
           "quote": "Transparency is truth",
           "sourceUrl": "https://x.com/ChrisCuomo/status/1248330684923621378",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 8,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Economic conditions not translating to consumer confidence or wellbeing",
+          "quote": "Why You Don't Feel This Economy",
+          "sourceUrl": "https://www.youtube.com/watch?v=H3d2ps2We70",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-30",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes blaming individuals for systemic economic problems",
+          "quote": "There's Money in Blaming the Victim",
+          "sourceUrl": "https://www.youtube.com/watch?v=BGL4cYsMDKQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Presents data center investment as economic opportunity",
+          "quote": "Kevin O'Leary Defends the Data Center Boom",
+          "sourceUrl": "https://www.youtube.com/watch?v=SW-ZEWpExVo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-23",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Frames economic policy debate as individual choice rather than socialism",
+          "quote": "This Isn't Socialism. It's Choices.",
+          "sourceUrl": "https://www.youtube.com/shorts/VME8BSAAvw8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Walmart for executive pay while workers rely on food stamps",
+          "quote": "Who cares if Walmart management salaries compare favorably to certain doctors? The real issue is why do they have money for those salaries but not enough to keep so many workers off food stamps? instagram.com/p/DcCT44Tz0FS/\u2026",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/2090129644271948243",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-09",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critiques current capitalist system as fundamentally broken",
+          "quote": "Capitalism Isn\u2019t Supposed To Work Like This",
+          "sourceUrl": "https://www.youtube.com/shorts/0gOKHKyMbqs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Trump for failing to hold oil companies accountable",
+          "quote": "Trump won't do shit to the oil companies...but they sure are shitting on you",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/2084441484367913421",
+          "platform": "x"
+        },
+        {
+          "date": "2021-01-29",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Questions Robinhood's risk management rationale during market volatility",
+          "quote": "Robinhood CEO Vlad Tenev defends the company's decision to limit trading on some symbols following the GameStop stock chaos, saying they must \"prudently manage the risk and the deposit requirements.\" https://t.co/z2Ar8d9YX1",
+          "sourceUrl": "https://x.com/ChrisCuomo/status/1354994000294522881",
           "platform": "x"
         }
       ],

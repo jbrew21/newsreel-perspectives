@@ -1,9 +1,9 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 23,
-  "stanceCount": 98,
+  "stanceCount": 99,
   "topics": [
     {
       "topic": "media-press",
@@ -870,6 +870,33 @@
       "active": true
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "AI industry facing backlash or regulatory pressure",
+          "quote": "THE AI INDUSTRY IS FREAKING OUT",
+          "sourceUrl": "https://www.youtube.com/watch?v=Hd2cUZAmK5s",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Critiques AI developments as concerning or problematic",
+          "quote": "Bernie Sanders Faces AI Horrors Beyond His Comprehension",
+          "sourceUrl": "https://www.youtube.com/watch?v=_ucbKOAYYFY",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "celebrity-entertainment",
       "label": "Celebrity & Entertainment",
       "count": 2,
@@ -963,24 +990,6 @@
           "summary": "Questions or critiques socialist organizing efforts",
           "quote": "WHAT IS GOING ON AT SOCIALISM CONFERENCE 2026??",
           "sourceUrl": "https://www.youtube.com/watch?v=7wm4CXrqCJI",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Critiques AI developments as concerning or problematic",
-          "quote": "Bernie Sanders Faces AI Horrors Beyond His Comprehension",
-          "sourceUrl": "https://www.youtube.com/watch?v=_ucbKOAYYFY",
           "platform": "youtube"
         }
       ],

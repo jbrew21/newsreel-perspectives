@@ -1,9 +1,9 @@
 {
   "voiceId": "chuck-schumer",
   "voiceName": "Chuck Schumer",
-  "updatedAt": "2026-09-14",
-  "topicCount": 21,
-  "stanceCount": 102,
+  "updatedAt": "2026-09-15",
+  "topicCount": 22,
+  "stanceCount": 104,
   "topics": [
     {
       "topic": "elections",
@@ -287,9 +287,18 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 12,
-      "lastActive": "2026-09-04",
+      "count": 13,
+      "lastActive": "2026-09-14",
       "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Blames Trump's Iran policy for rising diesel prices, rejects blame-shifting",
+          "quote": "Trump's newest LIE: Somehow, Ukraine is responsible for diesel prices hitting a record high.\n\nAmericans know it\u2019s Trump and his war with Iran that's driving up costs.\n\nNo amount of Trump's finger-pointing and lies can erase his disaster of an economy.\nhttps://t.co/s3TeIJQg5t",
+          "sourceUrl": "https://x.com/SenSchumer/status/2099634268733325572",
+          "platform": "x"
+        },
         {
           "date": "2026-09-04",
           "topic": "economy-trade",
@@ -1021,6 +1030,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Criticizes Trump's vote-by-mail restrictions as unconstitutional",
+          "quote": "Donald Trump: you lost another one.\n\nThe President\u2019s attempt to screw around with vote by mail was obscene. Finally, his scheme is dead.\u00a0\n\nThis was one of the most important cases to protect voting rights before the Supreme Court.\n\u00a0\nTrump\u2019s plan to make it harder to vote was obvi",
+          "sourceUrl": "https://x.com/SenSchumer/status/2099666878700323184",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",

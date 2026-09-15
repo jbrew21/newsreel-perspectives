@@ -1,10 +1,37 @@
 {
   "voiceId": "bill-bishop",
   "voiceName": "Bill Bishop",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 6,
-  "stanceCount": 9,
+  "stanceCount": 10,
   "topics": [
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Advocates structured US-China dialogue on AI governance despite political skepticism",
+          "quote": "US-China Strategic AI Dialogue (SAID) Proposal . A structured U.S.-PRC government dialogue on strategic artificial intelligence risk reduction - The US and China should be talking about AI safety and governance, and while I am skeptical this can happen given the politics I though",
+          "sourceUrl": "https://sinocism.com/p/us-china-strategic-ai-dialogue-said",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Highlights problematic behavior by Chinese AI firms",
+          "quote": "Xi going to India; Plan for Building a Financial Powerhouse; Anthropic drops bombs in PRC AI firms; \u201cEnemy-state clauses\u201d; US-China. Anthropic\u2019s September report is not just about China but includes multiple examples of what it says is problematic behavior by Chinese firms and in",
+          "sourceUrl": "https://sinocism.com/p/xi-going-to-india-plan-for-building",
+          "platform": "substack"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
@@ -67,24 +94,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 1,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Highlights problematic behavior by Chinese AI firms",
-          "quote": "Xi going to India; Plan for Building a Financial Powerhouse; Anthropic drops bombs in PRC AI firms; \u201cEnemy-state clauses\u201d; US-China. Anthropic\u2019s September report is not just about China but includes multiple examples of what it says is problematic behavior by Chinese firms and in",
-          "sourceUrl": "https://sinocism.com/p/xi-going-to-india-plan-for-building",
-          "platform": "substack"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "iran-conflict",

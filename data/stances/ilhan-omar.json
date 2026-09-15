@@ -1,9 +1,9 @@
 {
   "voiceId": "ilhan-omar",
   "voiceName": "Ilhan Omar",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 21,
-  "stanceCount": 100,
+  "stanceCount": 101,
   "topics": [
     {
       "topic": "elections",
@@ -762,6 +762,33 @@
       "active": false
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Calls medical debt barbaric, advocates Medicare for All",
+          "quote": "It is barbaric that Americans owe $220 BILLION in medical debt.\n\nIn the richest country on Earth, healthcare should be a right\u2014not a debt sentence.\n\nWe must *finally* eliminate medical debt and deliver Medicare for All.",
+          "sourceUrl": "https://bsky.app/profile/ilhanmn.bsky.social/post/3mvj7ur6a5k2p",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2020-04-13",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Affirms healthcare as human right",
+          "quote": "Say it with me: Healthcare is a human right!",
+          "sourceUrl": "https://x.com/IlhanMN/status/1249688128153141255",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "gun-policy",
       "label": "Guns & Gun Policy",
       "count": 3,
@@ -1071,24 +1098,6 @@
           "summary": "Accuses Republicans of religious bias against Muslim judicial nominees",
           "quote": "Let\u2019s be clear about this: if a Muslim woman was nominated to SCOTUS you would see Republicans lose their mind about her religious background...\n\n\u201cSharia law\u201d would be trending right now.\n\nMiss me with the pearl-clutching and all this righteous talk about religious freedom.",
           "sourceUrl": "https://x.com/IlhanMN/status/1315691638849703938",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2020-04-13",
-      "stances": [
-        {
-          "date": "2020-04-13",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Affirms healthcare as human right",
-          "quote": "Say it with me: Healthcare is a human right!",
-          "sourceUrl": "https://x.com/IlhanMN/status/1249688128153141255",
           "platform": "x"
         }
       ],

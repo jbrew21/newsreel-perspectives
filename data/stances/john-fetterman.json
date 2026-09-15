@@ -1,7 +1,7 @@
 {
   "voiceId": "john-fetterman",
   "voiceName": "John Fetterman",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 13,
   "stanceCount": 23,
   "topics": [
@@ -69,6 +69,33 @@
       "active": true
     },
     {
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
+      "count": 2,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Supports transit infrastructure investment in Pennsylvania",
+          "quote": "$96 MILLION last week.\n\n$80 MILLION this week.\n\nHuge investments for @SEPTA and @PGHtransit \ud83d\udc4d\ud83d\ude8a\ud83d\ude83 https://t.co/LSQwr1PJph",
+          "sourceUrl": "https://x.com/SenFettermanPA/status/2098183626915525015",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Supports collaborative approach to homelessness and food insecurity",
+          "quote": "Proud to have joined @SenMcCormickPA to see Erie\u2019s progress on addressing homelessness + food insecurity, and to hear from leaders on how we can work together.\n\nBetter solutions are possible when we collaborate\u2014and that\u2019s what we\u2019ll keep doing.\n\nAlways grateful to be in Erie \ud83e\udd70 ht",
+          "sourceUrl": "https://x.com/SenFettermanPA/status/2094791177753018625",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 3,
@@ -102,34 +129,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "housing-infrastructure",
-      "label": "Housing & Infrastructure",
-      "count": 2,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "housing-infrastructure",
-          "stance": "lean",
-          "summary": "Supports transit infrastructure investment in Pennsylvania",
-          "quote": "$96 MILLION last week.\n\n$80 MILLION this week.\n\nHuge investments for @SEPTA and @PGHtransit \ud83d\udc4d\ud83d\ude8a\ud83d\ude83 https://t.co/LSQwr1PJph",
-          "sourceUrl": "https://x.com/SenFettermanPA/status/2098183626915525015",
-          "platform": "x"
-        },
-        {
-          "date": "2026-09-01",
-          "topic": "housing-infrastructure",
-          "stance": "lean",
-          "summary": "Supports collaborative approach to homelessness and food insecurity",
-          "quote": "Proud to have joined @SenMcCormickPA to see Erie\u2019s progress on addressing homelessness + food insecurity, and to hear from leaders on how we can work together.\n\nBetter solutions are possible when we collaborate\u2014and that\u2019s what we\u2019ll keep doing.\n\nAlways grateful to be in Erie \ud83e\udd70 ht",
-          "sourceUrl": "https://x.com/SenFettermanPA/status/2094791177753018625",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "military-defense",

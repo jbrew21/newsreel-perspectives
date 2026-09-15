@@ -1,7 +1,7 @@
 {
   "voiceId": "under-the-desk-news",
   "voiceName": "Under the Desk News (V Spehar)",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 22,
   "stanceCount": 44,
   "topics": [
@@ -186,6 +186,33 @@
       "active": true
     },
     {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Criticizes sexism and misogyny embedded in legal and social systems",
+          "quote": "The objectification of women is so violently woven into our society that rape is a property crime, and yes the woman is property. This horror is still living in the hearts of zealots today.  When people are sexist and misogynistic, pay attention to what they say and how they say ",
+          "sourceUrl": "https://www.tiktok.com/@underthedesknews/video/7681803063388048654",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "civil-rights-race",
+          "stance": "lean",
+          "summary": "Gloria Steinem legacy deserves institutional commemoration",
+          "quote": "I will be gossiping extra today in Gloria\u2019s honor! I hope they make her Manhattan townhouse into a museum. #gloriasteinham #feminism",
+          "sourceUrl": "https://www.tiktok.com/@underthedesknews/video/7681281296085060878",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 3,
@@ -219,34 +246,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "civil-rights-race",
-      "label": "Civil Rights & Race",
-      "count": 2,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "civil-rights-race",
-          "stance": "strong",
-          "summary": "Criticizes sexism and misogyny embedded in legal and social systems",
-          "quote": "The objectification of women is so violently woven into our society that rape is a property crime, and yes the woman is property. This horror is still living in the hearts of zealots today.  When people are sexist and misogynistic, pay attention to what they say and how they say ",
-          "sourceUrl": "https://www.tiktok.com/@underthedesknews/video/7681803063388048654",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-09-03",
-          "topic": "civil-rights-race",
-          "stance": "lean",
-          "summary": "Gloria Steinem legacy deserves institutional commemoration",
-          "quote": "I will be gossiping extra today in Gloria\u2019s honor! I hope they make her Manhattan townhouse into a museum. #gloriasteinham #feminism",
-          "sourceUrl": "https://www.tiktok.com/@underthedesknews/video/7681281296085060878",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "culture-war",

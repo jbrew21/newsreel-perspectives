@@ -1,16 +1,34 @@
 {
   "voiceId": "all-in-podcast",
   "voiceName": "All-In Podcast",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 11,
-  "stanceCount": 38,
+  "stanceCount": 40,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 17,
-      "lastActive": "2026-09-14",
+      "count": 19,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Proposes adversarial peer review testing for AI safety",
+          "quote": "Elon Proposes Adversarial Peer Reviews for AI Safety\n\n@elonmusk:\n\n\u201cWhat I think would be wise to do as soon as possible, if not immediately, would be to have the major AI competitors test each other's models.\n\nSo that you would have everyone's security test harness testing everyo",
+          "sourceUrl": "https://x.com/theallinpod/status/2099731166530277549",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-15",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Celebrates Trump and Jensen debunking AI 'doomer hoax'",
+          "quote": "The Besties REACT to Trump and Jensen Calling Out the Doomer Hoax",
+          "sourceUrl": "https://www.youtube.com/shorts/zXGso01RBIA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-14",
           "topic": "ai-technology",
@@ -237,7 +255,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "science-space",
@@ -336,7 +354,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "covid-pandemic",

@@ -1,9 +1,9 @@
 {
   "voiceId": "rand-paul",
   "voiceName": "Rand Paul",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 20,
-  "stanceCount": 102,
+  "stanceCount": 103,
   "topics": [
     {
       "topic": "economy-trade",
@@ -206,7 +206,7 @@
     {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
-      "count": 15,
+      "count": 16,
       "lastActive": "2026-09-11",
       "stances": [
         {
@@ -216,6 +216,15 @@
           "summary": "Emphasizes fiscal responsibility, returning unspent office budget",
           "quote": "Proud to announce that I have returned $9.2 million dollars from my Senate office budget to the Treasury!",
           "sourceUrl": "https://x.com/RandPaul/status/2098504974296568178",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-11",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Claims record of fiscal restraint on taxpayer spending",
+          "quote": "And I\u2019ve never taken a taxpayer funded trip overseas, one of the only people who can say that.",
+          "sourceUrl": "https://x.com/RandPaul/status/2098504976393806009",
           "platform": "x"
         },
         {
@@ -1011,7 +1020,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "state-local-politics",
@@ -1029,7 +1038,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "civil-rights-race",

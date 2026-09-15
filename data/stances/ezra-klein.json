@@ -1,9 +1,9 @@
 {
   "voiceId": "ezra-klein",
   "voiceName": "Ezra Klein",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 22,
-  "stanceCount": 143,
+  "stanceCount": 144,
   "topics": [
     {
       "topic": "trump-administration",
@@ -690,6 +690,78 @@
       "active": false
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 7,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses concern about AI regulation challenges amid U.S.-China competition",
+          "quote": "The \u2018But China!\u2019 Dilemma Driving the A.I. Race. America is waking up to the critical risks posed by artificial intelligence. But every conversation about possible regulation tends to hit the same wall: \u201cWell, what about China?\u201d\n\nChinese A.I. models are just slightly behind Americ",
+          "sourceUrl": "https://www.nytimes.com/2026/09/15/opinion/ezra-klein-podcast-matt-sheehan.html",
+          "platform": "podcast"
+        },
+        {
+          "date": "2026-08-20",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Explores security vulnerabilities in AI model platforms",
+          "quote": "The OpenAI Hugging Face Hack, Explained | The Ezra Klein Show",
+          "sourceUrl": "https://www.youtube.com/shorts/qyvDb575GRw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether AI development is adequately prioritizing safety",
+          "quote": "Is A.I. Development Really on a Safe Path? | The Ezra Klein Show",
+          "sourceUrl": "https://www.youtube.com/shorts/AYd3pmY5Up4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Explores deceptive behavior as emergent AI property",
+          "quote": "Why A.I.s Lie, Cheat and Steal | The Ezra Klein Show",
+          "sourceUrl": "https://www.youtube.com/shorts/GSDwGVHxulE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Frontier AI models operating without adequate containment poses serious risks",
+          "quote": "The A.I.s Are Already Out of Control. We are living in the world we were warned about. Frontier artificial intelligence models from OpenAI autonomously coordinated with one another, then broke out of their testing environment and hacked into another company, Hugging Face, to stea",
+          "sourceUrl": "https://www.nytimes.com/2026/08/14/opinion/ezra-klein-podcast-helen-toner.html",
+          "platform": "podcast"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether AI could exacerbate economic inequality",
+          "quote": "Will A.I. Create a \u2018Permanent Underclass\u2019? | The Ezra Klein Show",
+          "sourceUrl": "https://www.youtube.com/shorts/AzSThq_M6Ns",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Public opposition to AI infrastructure expansion reflects serious concerns about data centers",
+          "quote": "The A.I. Revolt Is Here. What\u2019s big and ugly and has united Republicans and Democrats? A.I. data centers.\n\nAn overwhelming majority of Americans say they\u2019d oppose a data center being built near where they live. In New York, Gov. Kathy Hochul just imposed a one-year moratorium on ",
+          "sourceUrl": "https://www.nytimes.com/2026/08/04/opinion/ezra-klein-podcast-jasmine-sun.html",
+          "platform": "podcast"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 10,
@@ -1090,69 +1162,6 @@
           "quote": "Susan Page should insist Pence actually answers her questions.",
           "sourceUrl": "https://x.com/ezraklein/status/1314013474222206981",
           "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 6,
-      "lastActive": "2026-08-20",
-      "stances": [
-        {
-          "date": "2026-08-20",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Explores security vulnerabilities in AI model platforms",
-          "quote": "The OpenAI Hugging Face Hack, Explained | The Ezra Klein Show",
-          "sourceUrl": "https://www.youtube.com/shorts/qyvDb575GRw",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Questions whether AI development is adequately prioritizing safety",
-          "quote": "Is A.I. Development Really on a Safe Path? | The Ezra Klein Show",
-          "sourceUrl": "https://www.youtube.com/shorts/AYd3pmY5Up4",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Explores deceptive behavior as emergent AI property",
-          "quote": "Why A.I.s Lie, Cheat and Steal | The Ezra Klein Show",
-          "sourceUrl": "https://www.youtube.com/shorts/GSDwGVHxulE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Frontier AI models operating without adequate containment poses serious risks",
-          "quote": "The A.I.s Are Already Out of Control. We are living in the world we were warned about. Frontier artificial intelligence models from OpenAI autonomously coordinated with one another, then broke out of their testing environment and hacked into another company, Hugging Face, to stea",
-          "sourceUrl": "https://www.nytimes.com/2026/08/14/opinion/ezra-klein-podcast-helen-toner.html",
-          "platform": "podcast"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Questions whether AI could exacerbate economic inequality",
-          "quote": "Will A.I. Create a \u2018Permanent Underclass\u2019? | The Ezra Klein Show",
-          "sourceUrl": "https://www.youtube.com/shorts/AzSThq_M6Ns",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Public opposition to AI infrastructure expansion reflects serious concerns about data centers",
-          "quote": "The A.I. Revolt Is Here. What\u2019s big and ugly and has united Republicans and Democrats? A.I. data centers.\n\nAn overwhelming majority of Americans say they\u2019d oppose a data center being built near where they live. In New York, Gov. Kathy Hochul just imposed a one-year moratorium on ",
-          "sourceUrl": "https://www.nytimes.com/2026/08/04/opinion/ezra-klein-podcast-jasmine-sun.html",
-          "platform": "podcast"
         }
       ],
       "active": false

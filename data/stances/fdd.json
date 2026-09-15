@@ -1,9 +1,9 @@
 {
   "voiceId": "fdd",
   "voiceName": "Foundation for Defense of Democracies",
-  "updatedAt": "2026-09-14",
-  "topicCount": 6,
-  "stanceCount": 12,
+  "updatedAt": "2026-09-15",
+  "topicCount": 7,
+  "stanceCount": 14,
   "topics": [
     {
       "topic": "iran-conflict",
@@ -114,6 +114,51 @@
       "active": true
     },
     {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 2,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Israeli officials deny documentary allegations",
+          "quote": "Israeli officials \u201ccategorically reject\u201d allegations in  NAZA documentary (by Lt. Col. (Ret.) Jonathan Conricus). The post Israeli officials \u201ccategorically reject\u201d allegations in  NAZA documentary appeared first on FDD.",
+          "sourceUrl": "https://www.fdd.org/in_the_news/2026/09/14/israeli-officials-categorically-reject-allegations-in-naza-documentary/",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-14",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Questions whether Hamas can be fully disarmed",
+          "quote": "Can Hamas be disarmed? (by Jonathan Schanzer). The post Can Hamas be disarmed? appeared first on FDD.",
+          "sourceUrl": "https://www.fdd.org/in_the_news/2026/09/14/can-hamas-be-disarmed/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Proposes strengthened U.S. deterrence posture in Taiwan Strait",
+          "quote": "10 Ways the U.S. Can Strengthen Deterrence in the Taiwan Strait (by RADM (Ret.) Mark Montgomery). The post 10 Ways the U.S. Can Strengthen Deterrence in the Taiwan Strait appeared first on FDD.",
+          "sourceUrl": "https://www.fdd.org/analysis/2026/09/15/10-ways-the-u-s-can-strengthen-deterrence-in-the-taiwan-strait/",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "uk-world-politics",
       "label": "UK & World Politics",
       "count": 1,
@@ -145,24 +190,6 @@
           "quote": "\ud83d\udea8NEW: Trump Administration Foreign Policy Tracker: September | Indo-Pacific is trending negative\n\nWhile Washington sought to reassure Indo-Pacific allies and partners of its commitment to the region, the abrupt redeployment of U.S. forces and military assets will hamper efforts t",
           "sourceUrl": "https://x.com/FDD/status/2099494638595751943",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 1,
-      "lastActive": "2026-09-14",
-      "stances": [
-        {
-          "date": "2026-09-14",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Israeli officials deny documentary allegations",
-          "quote": "Israeli officials \u201ccategorically reject\u201d allegations in  NAZA documentary (by Lt. Col. (Ret.) Jonathan Conricus). The post Israeli officials \u201ccategorically reject\u201d allegations in  NAZA documentary appeared first on FDD.",
-          "sourceUrl": "https://www.fdd.org/in_the_news/2026/09/14/israeli-officials-categorically-reject-allegations-in-naza-documentary/",
-          "platform": "blog"
         }
       ],
       "active": true

@@ -1,7 +1,7 @@
 {
   "voiceId": "roland-martin",
   "voiceName": "Roland Martin",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 28,
   "stanceCount": 268,
   "topics": [
@@ -9,8 +9,17 @@
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 40,
-      "lastActive": "2026-09-14",
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Trump mail ballot rules blocked; criticizes Black MAGA supporter's position",
+          "quote": "Trump Mail Ballot Rules Blocked Again. Black MAGA YouTuber Stumped. Jemele Hill Talks NIL, Transfers",
+          "sourceUrl": "https://www.youtube.com/watch?v=Q-8WW3mrjRA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-14",
           "topic": "elections",
@@ -18,15 +27,6 @@
           "summary": "Criticizes voter suppression through redistricting, celebrates court blocking discriminatory map",
           "quote": "Attack on Black Voting Power Backfires. Texas Supreme Court Blocks New Galveston Map",
           "sourceUrl": "https://www.youtube.com/watch?v=WC76pj036jY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-14",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Criticizes Trump mail ballot policy as blocked by courts",
-          "quote": "Trump Mail Ballot Rules Blocked Again. Black MAGA YouTuber Stumped. Jemele Hill Talks NIL, Transfers",
-          "sourceUrl": "https://www.youtube.com/watch?v=K2oXkKDDlko",
           "platform": "youtube"
         },
         {
@@ -2067,69 +2067,6 @@
       "active": true
     },
     {
-      "topic": "protests-activism",
-      "label": "Protests & Activism",
-      "count": 6,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Calls for national mobilization supporting Keisha",
-          "quote": "\ud83d\udea8 MEN FOR KEISHA \u2014 NATIONAL CALL TO ACTION!",
-          "sourceUrl": "https://www.youtube.com/watch?v=a0zaoo4g8lk",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Highlights faith leaders' arrests protesting voter suppression and activism",
-          "quote": "Faith Leaders Arrested Fighting Voter Suppression. 1,000 Marches Launch. Black Teen Sues Police nitter.net/i/broadcasts/1nxnRRwWn\u2026\n\nLink\n\n\n\nrolandsmartin\n\nFaith Leaders Arrested Fighting Voter Suppression. 1,000 Marches Launch. Black Teen Sues Police\nhttps://nitter.net/i/broadcas",
-          "sourceUrl": "https://x.com/rolandsmartin/status/2084595224924537212",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Advocates building leverage to force political change beyond symbolic presence",
-          "quote": "Presence Isn\u2019t Power. Rashad Robinson Says Build Leverage And Force Political Change.",
-          "sourceUrl": "https://x.com/rolandsmartin/status/2084693651826098533",
-          "platform": "x"
-        },
-        {
-          "date": "2024-07-23",
-          "topic": "protests-activism",
-          "stance": "strong",
-          "summary": "Celebrates massive fundraiser for Black men's engagement",
-          "quote": "I have no words. And not just because I\u2019m tired. My @BlkStarNetwork just told me that 53,862 people registered for our #WinWithBlackMen video call. We raised $1.3M and counting from 17,000 donors. Props to fellow co-hosts @QJames @MrMikeBlake @Bakari_Sellers @DCKhalilT. AMAZING!",
-          "sourceUrl": "https://x.com/RolandSMartin/status/1815619067551617170",
-          "platform": "x"
-        },
-        {
-          "date": "2020-07-25",
-          "topic": "protests-activism",
-          "stance": "lean",
-          "summary": "Expresses concern about Portland protest activity",
-          "quote": "These Portland protests are unbelievable.",
-          "sourceUrl": "https://x.com/RolandSMartin/status/1286921860194734081",
-          "platform": "x"
-        },
-        {
-          "date": "2016-01-03",
-          "topic": "protests-activism",
-          "stance": "lean",
-          "summary": "Questions unequal National Guard deployment in Oregon versus Ferguson/Baltimore",
-          "quote": "Did I miss the call for the national guard in Oregon? I recall them in Ferguson and Baltimore. #OregonUnderAttack",
-          "sourceUrl": "https://x.com/RolandSMartin/status/683506814277783552",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "education",
       "label": "Education",
       "count": 9,
@@ -2376,6 +2313,69 @@
           "summary": "Documents Florida affordability crisis including healthcare subsidy loss",
           "quote": "Florida's affordability crisis is real. High costs, medical debt, and ending ACA subsidies are making it impossible for many to live here. A tough reality. piped.video/f0d4dZhyIjU #RolandMartinUnfiltered #BlackStarNetwork #FloridaRealEstate #AffordabilityCrisis #HealthcareCosts",
           "sourceUrl": "https://x.com/rolandsmartin/status/2088393030290018645",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "protests-activism",
+      "label": "Protests & Activism",
+      "count": 6,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Calls for national mobilization supporting Keisha",
+          "quote": "\ud83d\udea8 MEN FOR KEISHA \u2014 NATIONAL CALL TO ACTION!",
+          "sourceUrl": "https://www.youtube.com/watch?v=a0zaoo4g8lk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Highlights faith leaders' arrests protesting voter suppression and activism",
+          "quote": "Faith Leaders Arrested Fighting Voter Suppression. 1,000 Marches Launch. Black Teen Sues Police nitter.net/i/broadcasts/1nxnRRwWn\u2026\n\nLink\n\n\n\nrolandsmartin\n\nFaith Leaders Arrested Fighting Voter Suppression. 1,000 Marches Launch. Black Teen Sues Police\nhttps://nitter.net/i/broadcas",
+          "sourceUrl": "https://x.com/rolandsmartin/status/2084595224924537212",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Advocates building leverage to force political change beyond symbolic presence",
+          "quote": "Presence Isn\u2019t Power. Rashad Robinson Says Build Leverage And Force Political Change.",
+          "sourceUrl": "https://x.com/rolandsmartin/status/2084693651826098533",
+          "platform": "x"
+        },
+        {
+          "date": "2024-07-23",
+          "topic": "protests-activism",
+          "stance": "strong",
+          "summary": "Celebrates massive fundraiser for Black men's engagement",
+          "quote": "I have no words. And not just because I\u2019m tired. My @BlkStarNetwork just told me that 53,862 people registered for our #WinWithBlackMen video call. We raised $1.3M and counting from 17,000 donors. Props to fellow co-hosts @QJames @MrMikeBlake @Bakari_Sellers @DCKhalilT. AMAZING!",
+          "sourceUrl": "https://x.com/RolandSMartin/status/1815619067551617170",
+          "platform": "x"
+        },
+        {
+          "date": "2020-07-25",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Expresses concern about Portland protest activity",
+          "quote": "These Portland protests are unbelievable.",
+          "sourceUrl": "https://x.com/RolandSMartin/status/1286921860194734081",
+          "platform": "x"
+        },
+        {
+          "date": "2016-01-03",
+          "topic": "protests-activism",
+          "stance": "lean",
+          "summary": "Questions unequal National Guard deployment in Oregon versus Ferguson/Baltimore",
+          "quote": "Did I miss the call for the national guard in Oregon? I recall them in Ferguson and Baltimore. #OregonUnderAttack",
+          "sourceUrl": "https://x.com/RolandSMartin/status/683506814277783552",
           "platform": "x"
         }
       ],

@@ -1,9 +1,9 @@
 {
   "voiceId": "lincoln-project",
   "voiceName": "Lincoln Project",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "topicCount": 26,
-  "stanceCount": 232,
+  "stanceCount": 234,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1160,7 +1160,7 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 18,
+      "count": 19,
       "lastActive": "2026-09-14",
       "stances": [
         {
@@ -1170,6 +1170,15 @@
           "summary": "Attacks Trump administration's economic record",
           "quote": "Trump\u2019s economy is so bad they\u2019re telling you how to \u201chack fast food\u201d.",
           "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mvill26ce42j",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-14",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Notes diesel prices at record high, implies criticism of economic conditions",
+          "quote": "Diesel is now at an all time high: $6.23",
+          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mvj2lvfh6s2j",
           "platform": "bluesky"
         },
         {
@@ -1887,6 +1896,51 @@
       "active": false
     },
     {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 4,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Criticizes Ken Paxton for allegedly hiding vacation video, calls for transparency",
+          "quote": "Here's the video that Texas Attorney General Ken Paxton tried so hard to hide of him vacationing with his mistress in London that he allegedly lunged at an American tourist who recorded it. Share!",
+          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mvje4lpq5p2l",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Texas Republican criticizes Ken Paxton as unfit for office",
+          "quote": "Texas Republican on why she is supporting James Talarico:\n\n\"Ken Paxton is trash. He's a disgrace to my party. He's a disgrace to humanity.\"",
+          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mv4ibcj5zj2t",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Attacks Rep. Evans for avoiding town halls, misusing taxpayer funds on self-promotion",
+          "quote": "Gabe Evans has never held an in-person public town hall since taking office. What would he rather use taxpayer money for? Using $320,000 of it on ads to promote himself ahead of his reelection bid.",
+          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mukfwcc3r226",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Accuses Abbott of favoring tech billionaires over state interests",
+          "quote": "Greg Abbott sold Texas out to data centers and gave big deals to the tech billionaires.",
+          "sourceUrl": "https://x.com/ProjectLincoln/status/2089762627803058356",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 5,
@@ -1939,42 +1993,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 3,
-      "lastActive": "2026-09-09",
-      "stances": [
-        {
-          "date": "2026-09-09",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Texas Republican criticizes Ken Paxton as unfit for office",
-          "quote": "Texas Republican on why she is supporting James Talarico:\n\n\"Ken Paxton is trash. He's a disgrace to my party. He's a disgrace to humanity.\"",
-          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mv4ibcj5zj2t",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Attacks Rep. Evans for avoiding town halls, misusing taxpayer funds on self-promotion",
-          "quote": "Gabe Evans has never held an in-person public town hall since taking office. What would he rather use taxpayer money for? Using $320,000 of it on ads to promote himself ahead of his reelection bid.",
-          "sourceUrl": "https://bsky.app/profile/lincolnproject.us/post/3mukfwcc3r226",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Accuses Abbott of favoring tech billionaires over state interests",
-          "quote": "Greg Abbott sold Texas out to data centers and gave big deals to the tech billionaires.",
-          "sourceUrl": "https://x.com/ProjectLincoln/status/2089762627803058356",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "healthcare",
@@ -2253,7 +2271,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-personalities",
