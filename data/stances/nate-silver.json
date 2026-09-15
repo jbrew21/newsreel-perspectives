@@ -3,7 +3,7 @@
   "voiceName": "Nate Silver",
   "updatedAt": "2026-09-15",
   "topicCount": 15,
-  "stanceCount": 123,
+  "stanceCount": 124,
   "topics": [
     {
       "topic": "elections",
@@ -528,6 +528,96 @@
       "active": true
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 9,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Warns of risks from persistent AI systems",
+          "quote": "We\u2019re not ready for superpersistent AI. Intelligence isn\u2019t the only thing to worry about. What happens when AI just won\u2019t quit?",
+          "sourceUrl": "https://www.natesilver.net/p/were-not-ready-for-superpersistent",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Silicon Valley caught off-guard by data center backlash",
+          "quote": "Why does everyone hate data centers?. My chat with Jasmine Sun about what role data centers could play in the midterms, how the backlash caught Silicon Valley by surprise \u2014 and why Claude can be so weird.",
+          "sourceUrl": "https://www.natesilver.net/p/why-does-everyone-hate-data-centers",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Data center backlash driven by corporate distrust, not AI-risk fears",
+          "quote": "Just published my interview with @jasminewsun on the data center backlash. \n\nShe makes a key point here. It's much more about people not trusting the huge tech firms (\"big corporation scary\") than anything involving AI x-risk (\"big model scary\") or even necessarily job losses.",
+          "sourceUrl": "https://x.com/NateSilver538/status/2089406562829799867",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-16",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Dismisses content moderation debate as unproductive",
+          "quote": "Guys the moderation debate is boring. Nobody is learning anything at this point and we're gonna get a bunch of new data in November.",
+          "sourceUrl": "https://x.com/NateSilver538/status/2089075847701364946",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-16",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Practical user testing superior to formal AI evaluations",
+          "quote": "In practice almost all customers are going to evaluate LLMs by road testing rather than \"evals\" and they're almost certainly right to do so.",
+          "sourceUrl": "https://x.com/NateSilver538/status/2089056357542481936",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-02",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether AI math breakthroughs exceed human mathematician resource allocation",
+          "quote": "Another question I'd have about the AI math breakthroughs is how they compare to the results you would have gotten if you'd budgeted the same amount of resources on human mathematicians and created incentives for them to go super hard on proofs.",
+          "sourceUrl": "https://x.com/NateSilver538/status/2083754199439835277",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Argues AI labs should prioritize consumer-facing results over academic peer recognition",
+          "quote": "The AI math proofs are impressive. But also probably among the hardest things for normies to appreciate. Personally, I think the AI labs underweight the value of putting bandwidth into achieving results that impress normies as opposed to evals/people within the peer group.",
+          "sourceUrl": "https://x.com/NateSilver538/status/2083677657678430328",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-01",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Contends consumer AI applications drive public sentiment more than pure math",
+          "quote": "Of course, it's hard to say to what extent this reflects spiky capabilities rather than resource allocation decisions. But \"AI discovers a new drug\" or \"AI invents a highly popular consumer product from scratch\" probably has a &gt;&gt; impact on public sentiment than pure math.",
+          "sourceUrl": "https://x.com/NateSilver538/status/2083677659121254478",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "AI tools helpful with domain expertise, risky without human expert oversight",
+          "quote": "In the midst of my 3rd big coding/model project since March. I just can't emphasize enough how much a) AI tools are very helpful to someone (me, I suppose) with relevant domain knowledge, but b) would likely produce extremely buggy models without a human expert in the loop.",
+          "sourceUrl": "https://x.com/NateSilver538/status/2082284425446867087",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 13,
@@ -756,87 +846,6 @@
           "summary": "Trump has poor impulse control and is easily triggered",
           "quote": "Alternative hypothesis: Trump has poor impulse control &amp; is easily triggered, especially when being challenged (esp. by women &amp; minorities).",
           "sourceUrl": "https://x.com/NateSilver538/status/912679043476189184",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 8,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Silicon Valley caught off-guard by data center backlash",
-          "quote": "Why does everyone hate data centers?. My chat with Jasmine Sun about what role data centers could play in the midterms, how the backlash caught Silicon Valley by surprise \u2014 and why Claude can be so weird.",
-          "sourceUrl": "https://www.natesilver.net/p/why-does-everyone-hate-data-centers",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-08-17",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Data center backlash driven by corporate distrust, not AI-risk fears",
-          "quote": "Just published my interview with @jasminewsun on the data center backlash. \n\nShe makes a key point here. It's much more about people not trusting the huge tech firms (\"big corporation scary\") than anything involving AI x-risk (\"big model scary\") or even necessarily job losses.",
-          "sourceUrl": "https://x.com/NateSilver538/status/2089406562829799867",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-16",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Dismisses content moderation debate as unproductive",
-          "quote": "Guys the moderation debate is boring. Nobody is learning anything at this point and we're gonna get a bunch of new data in November.",
-          "sourceUrl": "https://x.com/NateSilver538/status/2089075847701364946",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-16",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Practical user testing superior to formal AI evaluations",
-          "quote": "In practice almost all customers are going to evaluate LLMs by road testing rather than \"evals\" and they're almost certainly right to do so.",
-          "sourceUrl": "https://x.com/NateSilver538/status/2089056357542481936",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-02",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Questions whether AI math breakthroughs exceed human mathematician resource allocation",
-          "quote": "Another question I'd have about the AI math breakthroughs is how they compare to the results you would have gotten if you'd budgeted the same amount of resources on human mathematicians and created incentives for them to go super hard on proofs.",
-          "sourceUrl": "https://x.com/NateSilver538/status/2083754199439835277",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Argues AI labs should prioritize consumer-facing results over academic peer recognition",
-          "quote": "The AI math proofs are impressive. But also probably among the hardest things for normies to appreciate. Personally, I think the AI labs underweight the value of putting bandwidth into achieving results that impress normies as opposed to evals/people within the peer group.",
-          "sourceUrl": "https://x.com/NateSilver538/status/2083677657678430328",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-01",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Contends consumer AI applications drive public sentiment more than pure math",
-          "quote": "Of course, it's hard to say to what extent this reflects spiky capabilities rather than resource allocation decisions. But \"AI discovers a new drug\" or \"AI invents a highly popular consumer product from scratch\" probably has a &gt;&gt; impact on public sentiment than pure math.",
-          "sourceUrl": "https://x.com/NateSilver538/status/2083677659121254478",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "AI tools helpful with domain expertise, risky without human expert oversight",
-          "quote": "In the midst of my 3rd big coding/model project since March. I just can't emphasize enough how much a) AI tools are very helpful to someone (me, I suppose) with relevant domain knowledge, but b) would likely produce extremely buggy models without a human expert in the loop.",
-          "sourceUrl": "https://x.com/NateSilver538/status/2082284425446867087",
           "platform": "x"
         }
       ],

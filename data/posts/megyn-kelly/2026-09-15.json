@@ -1,7 +1,7 @@
 {
   "voiceId": "megyn-kelly",
   "voiceName": "Megyn Kelly",
-  "collectedAt": "2026-09-15T20:54:29.878070",
+  "collectedAt": "2026-09-15T22:39:07.581496",
   "date": "2026-09-15",
   "posts": [
     {
@@ -25,18 +25,35 @@
       "voiceId": "megyn-kelly",
       "voiceName": "Megyn Kelly",
       "platform": "youtube",
-      "text": "The BIZARRE Behavior of Casey Anthony on the Day Her Daughter Was Reported Missing After a Month",
-      "sourceUrl": "https://www.youtube.com/watch?v=5_lxowqJwT4",
-      "timestamp": "2026-09-15T12:00:12+00:00",
+      "text": "Megyn Kelly's Message to Parents: If Your Kid is a Pathetic Loner, Don't Give Them Access to Guns",
+      "sourceUrl": "https://www.youtube.com/shorts/AdH0vjIb2Is",
+      "timestamp": "2026-09-15T21:05:21+00:00",
       "type": "video_title",
-      "topic": "criminal-justice",
+      "topic": "gun-policy",
       "topics": [
-        "criminal-justice"
+        "gun-policy"
       ],
-      "relevance": "high",
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Argues against gun access for isolated, troubled youth",
+      "quote": "Megyn Kelly's Message to Parents: If Your Kid is a Pathetic Loner, Don't Give Them Access to Guns"
+    },
+    {
+      "voiceId": "megyn-kelly",
+      "voiceName": "Megyn Kelly",
+      "platform": "youtube",
+      "text": "Ben Shelton REFUSES to Engage in Racial Storyline",
+      "sourceUrl": "https://www.youtube.com/watch?v=OH76NndXcgo",
+      "timestamp": "2026-09-15T21:00:27+00:00",
+      "type": "video_title",
+      "topic": "civil-rights-race",
+      "topics": [
+        "civil-rights-race"
+      ],
+      "relevance": "medium",
       "stance": "lean",
-      "summary": "Highlights suspicious conduct in disappearance case",
-      "quote": "The BIZARRE Behavior of Casey Anthony on the Day Her Daughter Was Reported Missing After a Month"
+      "summary": "Frames refusal to engage racial narrative as noteworthy",
+      "quote": "Ben Shelton REFUSES to Engage in Racial Storyline"
     }
   ],
   "topicSummary": {
@@ -46,12 +63,22 @@
         "sourceUrl": "https://www.youtube.com/watch?v=idh8H86rWIE",
         "platform": "youtube",
         "timestamp": "2026-09-15T20:02:52+00:00"
-      },
+      }
+    ],
+    "gun-policy": [
       {
-        "quote": "The BIZARRE Behavior of Casey Anthony on the Day Her Daughter Was Reported Missing After a Month",
-        "sourceUrl": "https://www.youtube.com/watch?v=5_lxowqJwT4",
+        "quote": "Megyn Kelly's Message to Parents: If Your Kid is a Pathetic Loner, Don't Give Them Access to Guns",
+        "sourceUrl": "https://www.youtube.com/shorts/AdH0vjIb2Is",
         "platform": "youtube",
-        "timestamp": "2026-09-15T12:00:12+00:00"
+        "timestamp": "2026-09-15T21:05:21+00:00"
+      }
+    ],
+    "civil-rights-race": [
+      {
+        "quote": "Ben Shelton REFUSES to Engage in Racial Storyline",
+        "sourceUrl": "https://www.youtube.com/watch?v=OH76NndXcgo",
+        "platform": "youtube",
+        "timestamp": "2026-09-15T21:00:27+00:00"
       }
     ]
   }

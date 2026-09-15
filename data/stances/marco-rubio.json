@@ -2,8 +2,8 @@
   "voiceId": "marco-rubio",
   "voiceName": "Marco Rubio",
   "updatedAt": "2026-09-15",
-  "topicCount": 9,
-  "stanceCount": 32,
+  "topicCount": 10,
+  "stanceCount": 33,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -337,6 +337,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "civil-rights-race",
+      "label": "Civil Rights & Race",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "civil-rights-race",
+          "stance": "strong",
+          "summary": "Criticizes South African government for racial grievance policies harming economy",
+          "quote": "As @POTUS has made clear, the South African people are being failed by a government that is destroying its economy through an obsessive pursuit of racial grievance against the Afrikaner minority. The South African government has consistently failed to adequately address rural cri",
+          "sourceUrl": "https://x.com/SecRubio/status/2099968018272952511",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "culture-war",
