@@ -3,14 +3,23 @@
   "voiceName": "The Breakfast Club",
   "updatedAt": "2026-09-16",
   "topicCount": 18,
-  "stanceCount": 74,
+  "stanceCount": 76,
   "topics": [
     {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
-      "count": 9,
-      "lastActive": "2026-09-14",
+      "count": 10,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "FBI lowering standards disqualifies serious criminal conduct",
+          "quote": "FBI Lowers Hiring Standards To No Longer Disqualify Applicants Who Engaged In Acts Of Bestiality",
+          "sourceUrl": "https://www.youtube.com/watch?v=fZ7Rdq21Bps",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-14",
           "topic": "criminal-justice",
@@ -627,6 +636,33 @@
       "active": false
     },
     {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 2,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Artist punished for expressing pro-Palestinian solidarity",
+          "quote": "Macklemore Dropped From Ed Sheeran\u2019s Tour For Pro-Palestinian Comments",
+          "sourceUrl": "https://www.youtube.com/watch?v=6Suj0fLA6j8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Opposes military aid to Israel, calls for heeding Palestinian suffering",
+          "quote": "\ud83d\udea8 Candidates are being asked to vote on whether Israel should receive military aid, and @TeamTalaricoHQ weighs in on where he plans to use his political influence regarding the Israel-Gaza war. \"We have to heed those cries and destruction\"- James Talarico",
+          "sourceUrl": "https://x.com/breakfastclubam/status/2085455871384199271",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 2,
@@ -793,24 +829,6 @@
           "quote": "Surrogate Mother Flees To Texas To Give Birth To Baby With Heart Condition After Refusing Abortion",
           "sourceUrl": "https://www.youtube.com/watch?v=IPMyc4mlZPQ",
           "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 1,
-      "lastActive": "2026-08-06",
-      "stances": [
-        {
-          "date": "2026-08-06",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Opposes military aid to Israel, calls for heeding Palestinian suffering",
-          "quote": "\ud83d\udea8 Candidates are being asked to vote on whether Israel should receive military aid, and @TeamTalaricoHQ weighs in on where he plans to use his political influence regarding the Israel-Gaza war. \"We have to heed those cries and destruction\"- James Talarico",
-          "sourceUrl": "https://x.com/breakfastclubam/status/2085455871384199271",
-          "platform": "x"
         }
       ],
       "active": false

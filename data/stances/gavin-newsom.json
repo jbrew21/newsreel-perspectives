@@ -8,9 +8,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 30,
-      "lastActive": "2026-08-18",
+      "count": 31,
+      "lastActive": "2026-09-07",
       "stances": [
+        {
+          "date": "2026-09-07",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Accuses Trump of broken promises on health and wealth",
+          "quote": "Donald Trump promised to make us healthier and wealthier. Instead, Americans are sicker and poorer, while he gets richer.",
+          "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7682616204602871071",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-08-18",
           "topic": "trump-administration",
@@ -282,7 +291,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "elections",
@@ -294,7 +303,7 @@
           "date": "2026-09-08",
           "topic": "elections",
           "stance": "strong",
-          "summary": "Opposes Trump election efforts, urges voter participation",
+          "summary": "Accuses Trump of rigging elections, calls for voter mobilization",
           "quote": "Donald Trump is trying to rig our elections and we have to stop him. Show up and VOTE this November.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7683300786360700191",
           "platform": "tiktok"
@@ -302,8 +311,8 @@
         {
           "date": "2026-09-07",
           "topic": "elections",
-          "stance": "strong",
-          "summary": "Celebrates Democratic state legislative gains, claims momentum advantage",
+          "stance": "lean",
+          "summary": "Highlights Democratic electoral gains as momentum indicator",
           "quote": "Americans are fed up \u2014 and they\u2019re SHOWING UP. Democrats have flipped over 30 state legislative seats from red to blue. Republicans have flipped ZERO. Democrats are WINNING.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7682617546113060127",
           "platform": "tiktok"
@@ -321,7 +330,7 @@
           "date": "2026-08-26",
           "topic": "elections",
           "stance": "strong",
-          "summary": "Opposes Trump mail voting restrictions, announces legal challenge",
+          "summary": "Accuses Trump of restricting mail voting, announces legal challenge",
           "quote": "Donald Trump is trying to make it harder for Americans to vote by mail ahead of the midterms. California is taking him to court.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7678408795881540877",
           "platform": "tiktok"
@@ -464,8 +473,8 @@
         {
           "date": "2026-09-08",
           "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Argues cost of living pressures families, calls for electoral change",
+          "stance": "lean",
+          "summary": "Highlights economic hardship, frames as reason to vote for change",
           "quote": "From California to the South, people are fed up. Groceries and gas are up. Wages aren\u2019t keeping pace. Families are getting squeezed. This November, we have the power to change it.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7683301125965090078",
           "platform": "tiktok"
@@ -474,7 +483,7 @@
           "date": "2026-09-03",
           "topic": "economy-trade",
           "stance": "lean",
-          "summary": "Frames future economic opportunity as issue for young people",
+          "summary": "Frames economic future as central concern for young people",
           "quote": "Across the country, young people are asking the same question: what will the economy of the future mean for me? The next generation shouldn\u2019t just inherit the future. They deserve the opportunity to shape it.",
           "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7681357033890680077",
           "platform": "tiktok"
@@ -1068,33 +1077,6 @@
       "active": true
     },
     {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 2,
-      "lastActive": "2026-09-07",
-      "stances": [
-        {
-          "date": "2026-09-07",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Claims Trump policies harm health and wealth while enriching himself",
-          "quote": "Donald Trump promised to make us healthier and wealthier. Instead, Americans are sicker and poorer, while he gets richer.",
-          "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7682616204602871071",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-14",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Warns Trump threatens national progress and direction",
-          "quote": "Donald Trump wants to put America in reverse. We know what\u2019s at stake and we have to meet this moment.",
-          "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7673949464868015390",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 3,
@@ -1396,6 +1378,24 @@
           "quote": "SCOTUS agrees: Trump is a sexual abuser.",
           "sourceUrl": "https://x.com/GavinNewsom/status/2089438126385340736",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-08-14",
+      "stances": [
+        {
+          "date": "2026-08-14",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Warns Trump threatens national progress and direction",
+          "quote": "Donald Trump wants to put America in reverse. We know what\u2019s at stake and we have to meet this moment.",
+          "sourceUrl": "https://www.tiktok.com/@gavinnewsom/video/7673949464868015390",
+          "platform": "tiktok"
         }
       ],
       "active": false

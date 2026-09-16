@@ -1,7 +1,7 @@
 {
-  "headline": "Supreme Court Rejects Trump's Mail-In Voting Restrictions",
-  "summary": "A rare cross-ideological consensus, even libertarians, cheers the Court's 7-2 rejection of Trump's mail-voting scheme.",
-  "type": "consensus",
+  "headline": "Supreme Court Blocks Trump's Mail-In Voting Restrictions",
+  "summary": "Legal experts and progressives celebrate a 7-2 Supreme Court rebuke of Trump's mail-voting rule, while most other voices react to unrelated news.",
+  "type": "reaction",
   "source": "editorial",
   "coverUrl": "https://cdn.newsreel.co/storage/v1/object/public/story-media/stories/a382a863-31c9-4c27-9e28-020b315579d6/cover/249e0fa8-016b-4d74-94d3-ee5f45eadca4.mp4",
   "storyType": "Politics",
@@ -10,11 +10,11 @@
     "elections",
     "trump-administration"
   ],
-  "voiceCount": 8,
+  "voiceCount": 9,
   "clusterCount": 2,
   "clusters": [
     {
-      "name": "Court Ruling Against Trump",
+      "name": "Legal Win Against Trump",
       "voices": [
         {
           "voiceId": "cato-institute",
@@ -23,8 +23,28 @@
           "quote": "\"A 7-2 vote at least got the job done, though the vote should really have been 9-0,\u201d says Cato\u2019s Walter Olson commenting on the Supreme Court's decision to reject President Trump's mail voting restric",
           "sourceUrl": "https://bsky.app/profile/cato.org/post/3mvlcp7fm2w23",
           "platform": "bluesky",
-          "fit": 10,
+          "fit": 9,
           "quoteQuality": 6
+        },
+        {
+          "voiceId": "steve-vladeck",
+          "voiceName": "Steve Vladeck",
+          "photo": "/photos/steve-vladeck.jpg",
+          "quote": "What did we learn from the Supreme Court's three-sentence Monday night ruling leaving on hold the Trump administration's effort to interfere with mail-in voting?\n\nQuite a lot, as it turns out\u2014and at l",
+          "sourceUrl": "https://bsky.app/profile/stevevladeck.bsky.social/post/3mvknqsnrhk2r",
+          "platform": "bluesky",
+          "fit": 9,
+          "quoteQuality": 5
+        },
+        {
+          "voiceId": "mark-joseph-stern",
+          "voiceName": "Mark Joseph Stern",
+          "photo": "/photos/mark-joseph-stern.jpg",
+          "quote": "It\u2019s notable that the majority says BOTH that Trump\u2019s USPS rule is likely illegal AND the equities counsel against implementing it. Seven justices are sending a pretty clear message to Trump that this",
+          "sourceUrl": "https://bsky.app/profile/mjsdc.bsky.social/post/3mvjfan3ah22y",
+          "platform": "bluesky",
+          "fit": 10,
+          "quoteQuality": 5
         },
         {
           "voiceId": "ilya-somin",
@@ -43,7 +63,7 @@
           "quote": "Trump keeps losing and losing and losing. I'm not tired of it at all",
           "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mvl2adegi22p",
           "platform": "bluesky",
-          "fit": 8,
+          "fit": 9,
           "quoteQuality": 4
         },
         {
@@ -55,19 +75,9 @@
           "platform": "youtube",
           "fit": 10,
           "quoteQuality": 1
-        },
-        {
-          "voiceId": "brian-tyler-cohen",
-          "voiceName": "Brian Tyler Cohen",
-          "photo": "/photos/brian-tyler-cohen.jpg",
-          "quote": "LOSS: Trump FLIPS OUT over CRUSHING LEGAL DEFEAT",
-          "sourceUrl": "https://www.youtube.com/watch?v=hCLhOXeZi-0",
-          "platform": "youtube",
-          "fit": 10,
-          "quoteQuality": 1
         }
       ],
-      "voiceCount": 5,
+      "voiceCount": 6,
       "bestQuote": {
         "voiceName": "Cato Institute",
         "quote": "\"A 7-2 vote at least got the job done, though the vote should really have been 9-0,\u201d says Cato\u2019s Walter Olson commenting on the Supreme Court's decision to reject President Trump's mail voting restric",
@@ -76,7 +86,7 @@
       }
     },
     {
-      "name": "Democracy and Voting Rights Advocacy",
+      "name": "Democracy Defenders Rallying",
       "voices": [
         {
           "voiceId": "pramila-jayapal",
@@ -85,7 +95,7 @@
           "quote": "Today is National Voter Registration Day, and we are sending a clear message to Trump: We will not allow him to steal our elections.\n\nWe will show up to the polls, vote by mail, and protect our democr",
           "sourceUrl": "https://x.com/RepJayapal/status/2099957686984901082",
           "platform": "x",
-          "fit": 9,
+          "fit": 8,
           "quoteQuality": 4
         },
         {
@@ -95,7 +105,7 @@
           "quote": "It's National Voter Registration Day, Michigan! \n\nNot registered yet? You can do so online or by mail through Oct. 19; or in person at your clerk's office through Nov. 3.\n\nRegister and make a voting p",
           "sourceUrl": "https://x.com/GovWhitmer/status/2099925699662332200",
           "platform": "x",
-          "fit": 8,
+          "fit": 6,
           "quoteQuality": 4
         },
         {
@@ -105,7 +115,7 @@
           "quote": "Today is National Voter Registration Day, and early voting in Minnesota starts Friday \u2014 so there\u2019s no better time to get registered and make a plan to vote. Visit https://t.co/2KWdmS5QbR to get ready ",
           "sourceUrl": "https://x.com/amyklobuchar/status/2099989528064753979",
           "platform": "x",
-          "fit": 8,
+          "fit": 5,
           "quoteQuality": 4
         }
       ],
@@ -118,14 +128,13 @@
       }
     }
   ],
-  "confidence": 6,
+  "confidence": 5,
   "relevance": {
-    "direct": 5,
-    "related": 3,
-    "unrelated": 22
+    "direct": 9,
+    "total": 30
   },
   "validated": true,
-  "heatScore": 49,
+  "heatScore": 60,
   "belowThreshold": false,
   "slug": "supreme-court-rejects-trump-s-mail-in-voting-restrictions"
 }

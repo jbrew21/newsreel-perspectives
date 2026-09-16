@@ -2,8 +2,8 @@
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
   "updatedAt": "2026-09-16",
-  "topicCount": 27,
-  "stanceCount": 102,
+  "topicCount": 28,
+  "stanceCount": 106,
   "topics": [
     {
       "topic": "ai-technology",
@@ -14,8 +14,8 @@
         {
           "date": "2026-09-14",
           "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Contrasts AI CEOs' warnings with Trump's faith in high IQ alone",
+          "stance": "lean",
+          "summary": "Mocks Trump's confidence in intelligence as counter to AI existential risks",
           "quote": "AI CEOs Warn the End is Near, But Trump Thinks Being \u201cHIGH IQ\u201d Will Save Us",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7685519853322538271",
           "platform": "tiktok"
@@ -170,9 +170,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 13,
-      "lastActive": "2026-09-10",
+      "count": 14,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Criticizes JD Vance's shift from aggressive to conciliatory tone",
+          "quote": "JD Vance went from \"HAVE YOU EVEN SAID \"THANK YOU\" ONCE?!\" energy to \"Guys...you've gotta give us another chance\" energy pretty damn quick.",
+          "sourceUrl": "https://x.com/PhillyD/status/2100310511124398121",
+          "platform": "x"
+        },
         {
           "date": "2026-09-10",
           "topic": "trump-administration",
@@ -296,9 +305,27 @@
     {
       "topic": "celebrity-entertainment",
       "label": "Celebrity & Entertainment",
-      "count": 12,
-      "lastActive": "2026-09-14",
+      "count": 14,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Criticizes Ed Sheeran for escalating conflict with Macklemore",
+          "quote": "Ed Sheeran Just Made The Macklemore Mess So Much Worse",
+          "sourceUrl": "https://www.youtube.com/watch?v=sg92jTsZHmM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-15",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Condemns Ed Sheeran for refusing to address conflict",
+          "quote": "Ed Sheeran is a Coward",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7685859472807316767",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-14",
           "topic": "celebrity-entertainment",
@@ -770,8 +797,8 @@
         {
           "date": "2026-09-15",
           "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Criticizes Trump for indifference to Chinese intelligence role in Iran strikes",
+          "stance": "lean",
+          "summary": "Criticizes Trump's dismissal of Chinese intelligence about Iran strike",
           "quote": "Trump Doesn\u2019t Care that Chinese Intel Lead to Iran Striking American Troops",
           "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7685532934786305311",
           "platform": "tiktok"
@@ -1003,6 +1030,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Reports politician's complaint about racial representation in sports photo",
+          "quote": "Texas Politician Mad That There Wasn\u2019t Enough White People In UT Football Game Photo",
+          "sourceUrl": "https://www.tiktok.com/@philipdefranco/video/7685870009742101791",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "immigration",

@@ -1,7 +1,7 @@
 {
   "voiceId": "ben-shapiro",
   "voiceName": "Ben Shapiro",
-  "collectedAt": "2026-09-16T15:26:20.607014",
+  "collectedAt": "2026-09-16T20:27:29.302922",
   "date": "2026-09-16",
   "posts": [
     {
@@ -1608,18 +1608,52 @@
       "voiceId": "ben-shapiro",
       "voiceName": "Ben Shapiro",
       "platform": "youtube",
-      "text": "Bill Maher Just Said What Democrats Are Too Scared To",
-      "sourceUrl": "https://www.youtube.com/watch?v=49lhG6bRKwk",
-      "timestamp": "2026-09-14T20:00:08+00:00",
+      "text": "How Iran Turned the Houthis Into a Weapon",
+      "sourceUrl": "https://www.youtube.com/watch?v=HErzoaoos_s",
+      "timestamp": "2026-09-16T20:00:31+00:00",
       "type": "video_title",
-      "topic": "media-press",
+      "topic": "iran-conflict",
       "topics": [
-        "media-press"
+        "iran-conflict"
+      ],
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Frames Iranian support for Houthis as weaponization strategy",
+      "quote": "How Iran Turned the Houthis Into a Weapon"
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "We Made a Movie About This. Then It Came True.",
+      "sourceUrl": "https://www.youtube.com/watch?v=tphyf6Y3OcY",
+      "timestamp": "2026-09-16T17:00:58+00:00",
+      "type": "video_title",
+      "topic": "other",
+      "topics": [
+        "other"
       ],
       "relevance": "medium",
       "stance": "lean",
-      "summary": "Frames Bill Maher as willing to express views Democrats avoid",
-      "quote": "Bill Maher Just Said What Democrats Are Too Scared To"
+      "summary": "References movie prediction of real-world events",
+      "quote": "We Made a Movie About This. Then It Came True."
+    },
+    {
+      "voiceId": "ben-shapiro",
+      "voiceName": "Ben Shapiro",
+      "platform": "youtube",
+      "text": "Here's a more cynical take on the AI competition. #kalshipartner",
+      "sourceUrl": "https://www.youtube.com/shorts/xyBm9uyDAEw",
+      "timestamp": "2026-09-14T23:01:51+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Offers cynical perspective on AI competition dynamics",
+      "quote": "Here's a more cynical take on the AI competition. #kalshipartner"
     }
   ],
   "topicSummary": {
@@ -1743,12 +1777,6 @@
         "sourceUrl": "https://x.com/benshapiro/status/1064574091611463680",
         "platform": "x",
         "timestamp": "2018-11-19T17:40:16+00:00"
-      },
-      {
-        "quote": "Bill Maher Just Said What Democrats Are Too Scared To",
-        "sourceUrl": "https://www.youtube.com/watch?v=49lhG6bRKwk",
-        "platform": "youtube",
-        "timestamp": "2026-09-14T20:00:08+00:00"
       }
     ],
     "elections": [
@@ -2221,6 +2249,12 @@
         "sourceUrl": "https://x.com/benshapiro/status/959445155588669440",
         "platform": "x",
         "timestamp": "2018-02-02T15:15:25+00:00"
+      },
+      {
+        "quote": "We Made a Movie About This. Then It Came True.",
+        "sourceUrl": "https://www.youtube.com/watch?v=tphyf6Y3OcY",
+        "platform": "youtube",
+        "timestamp": "2026-09-16T17:00:58+00:00"
       }
     ],
     "immigration": [
@@ -2235,6 +2269,22 @@
         "sourceUrl": "https://www.youtube.com/watch?v=shvsMsC0CxU",
         "platform": "youtube",
         "timestamp": "2026-09-15T16:30:16+00:00"
+      }
+    ],
+    "iran-conflict": [
+      {
+        "quote": "How Iran Turned the Houthis Into a Weapon",
+        "sourceUrl": "https://www.youtube.com/watch?v=HErzoaoos_s",
+        "platform": "youtube",
+        "timestamp": "2026-09-16T20:00:31+00:00"
+      }
+    ],
+    "ai-technology": [
+      {
+        "quote": "Here's a more cynical take on the AI competition. #kalshipartner",
+        "sourceUrl": "https://www.youtube.com/shorts/xyBm9uyDAEw",
+        "platform": "youtube",
+        "timestamp": "2026-09-14T23:01:51+00:00"
       }
     ]
   }

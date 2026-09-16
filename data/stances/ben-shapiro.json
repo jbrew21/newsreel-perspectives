@@ -3,7 +3,7 @@
   "voiceName": "Ben Shapiro",
   "updatedAt": "2026-09-16",
   "topicCount": 34,
-  "stanceCount": 251,
+  "stanceCount": 253,
   "topics": [
     {
       "topic": "elections",
@@ -1565,7 +1565,7 @@
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 8,
+      "count": 9,
       "lastActive": "2026-09-14",
       "stances": [
         {
@@ -1575,6 +1575,15 @@
           "summary": "AI competition warrants serious attention and analysis",
           "quote": "'We're All Going to Die': The AI Panic, Debunked",
           "sourceUrl": "https://www.youtube.com/watch?v=sml4caUm1aY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Offers cynical perspective on AI competition dynamics",
+          "quote": "Here's a more cynical take on the AI competition. #kalshipartner",
+          "sourceUrl": "https://www.youtube.com/shorts/xyBm9uyDAEw",
           "platform": "youtube"
         },
         {
@@ -1860,6 +1869,60 @@
       "active": false
     },
     {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 5,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Frames Iranian support for Houthis as weaponization strategy",
+          "quote": "How Iran Turned the Houthis Into a Weapon",
+          "sourceUrl": "https://www.youtube.com/watch?v=HErzoaoos_s",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Iran sanctions strategy is effective and working",
+          "quote": "The Iran Strategy Is Working. Here's Why.",
+          "sourceUrl": "https://www.youtube.com/watch?v=UuZKrhN5zhA",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Expresses concern about Iran war intelligence leak",
+          "quote": "Why the Iran War Leak Is a Serious Problem",
+          "sourceUrl": "https://www.youtube.com/watch?v=BEvdNAyPAv8",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "Iran facing serious economic or geopolitical difficulties",
+          "quote": "Iran Is in Serious Trouble. Here's Why.",
+          "sourceUrl": "https://www.youtube.com/watch?v=tTI_8j7RNAk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-06",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Frames Islamic presence as threatening invasion",
+          "quote": "Are You Prepared for the Islamic Invasion?",
+          "sourceUrl": "https://www.youtube.com/watch?v=OP1tlb3F6vY",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
       "count": 5,
@@ -1954,51 +2017,6 @@
           "quote": "You were an awful president. And Donald J. Trump has not only cleaned up your mess, he has transformed the Middle East.",
           "sourceUrl": "https://x.com/benshapiro/status/1976549024229474780",
           "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 4,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Iran sanctions strategy is effective and working",
-          "quote": "The Iran Strategy Is Working. Here's Why.",
-          "sourceUrl": "https://www.youtube.com/watch?v=UuZKrhN5zhA",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Expresses concern about Iran war intelligence leak",
-          "quote": "Why the Iran War Leak Is a Serious Problem",
-          "sourceUrl": "https://www.youtube.com/watch?v=BEvdNAyPAv8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "iran-conflict",
-          "stance": "lean",
-          "summary": "Iran facing serious economic or geopolitical difficulties",
-          "quote": "Iran Is in Serious Trouble. Here's Why.",
-          "sourceUrl": "https://www.youtube.com/watch?v=tTI_8j7RNAk",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Frames Islamic presence as threatening invasion",
-          "quote": "Are You Prepared for the Islamic Invasion?",
-          "sourceUrl": "https://www.youtube.com/watch?v=OP1tlb3F6vY",
-          "platform": "youtube"
         }
       ],
       "active": true
