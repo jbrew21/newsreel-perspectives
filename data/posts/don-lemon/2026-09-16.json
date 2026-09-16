@@ -1,9 +1,26 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-09-16T13:48:30.251164",
+  "collectedAt": "2026-09-16T15:26:20.640103",
   "date": "2026-09-16",
   "posts": [
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "HOT TOPICS | Thomas Massie Wants Pete Hegseth Impeached",
+      "sourceUrl": "https://www.youtube.com/watch?v=jxRc41K3B-o",
+      "timestamp": "2026-09-16T13:10:36+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Reports on impeachment call against Trump cabinet nominee",
+      "quote": "HOT TOPICS | Thomas Massie Wants Pete Hegseth Impeached"
+    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -123,35 +140,16 @@
       "stance": "lean",
       "summary": "Highlights concern over honoring artist with domestic violence history",
       "quote": "LEMON DROP - Texas State Rep Apologizes to Domestic Violence Victims For Honoring Chris Brown"
-    },
-    {
-      "voiceId": "don-lemon",
-      "voiceName": "Don Lemon",
-      "platform": "youtube",
-      "text": "HOT TOPICS | Thomas Massie Wants Pete Hegseth Impeached",
-      "sourceUrl": "https://www.youtube.com/watch?v=jxRc41K3B-o",
-      "timestamp": "2026-09-16T13:10:36+00:00",
-      "type": "video_title",
-      "topic": "trump-administration",
-      "topics": [
-        "trump-administration"
-      ],
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Reports on impeachment call against Trump cabinet nominee",
-      "quote": "HOT TOPICS | Thomas Massie Wants Pete Hegseth Impeached"
     }
   ],
   "topicSummary": {
-    "uk-world-politics": [
-      {
-        "quote": "We need to address an uncomfortable truth about Britain and the Royal Family",
-        "sourceUrl": "https://www.youtube.com/shorts/OmGrTW0nZpk",
-        "platform": "youtube",
-        "timestamp": "2026-09-15T23:05:51+00:00"
-      }
-    ],
     "trump-administration": [
+      {
+        "quote": "HOT TOPICS | Thomas Massie Wants Pete Hegseth Impeached",
+        "sourceUrl": "https://www.youtube.com/watch?v=jxRc41K3B-o",
+        "platform": "youtube",
+        "timestamp": "2026-09-16T13:10:36+00:00"
+      },
       {
         "quote": "Lemon LIVE at 5 | A Brutal Day For Trump In Court. Here's What Happened &amp; Why He's Pissed",
         "sourceUrl": "https://www.youtube.com/watch?v=jGPIHUqbClE",
@@ -169,12 +167,14 @@
         "sourceUrl": "https://www.youtube.com/shorts/Qf39HDEBBy4",
         "platform": "youtube",
         "timestamp": "2026-09-15T20:52:15+00:00"
-      },
+      }
+    ],
+    "uk-world-politics": [
       {
-        "quote": "HOT TOPICS | Thomas Massie Wants Pete Hegseth Impeached",
-        "sourceUrl": "https://www.youtube.com/watch?v=jxRc41K3B-o",
+        "quote": "We need to address an uncomfortable truth about Britain and the Royal Family",
+        "sourceUrl": "https://www.youtube.com/shorts/OmGrTW0nZpk",
         "platform": "youtube",
-        "timestamp": "2026-09-16T13:10:36+00:00"
+        "timestamp": "2026-09-15T23:05:51+00:00"
       }
     ],
     "congress-legislation": [
