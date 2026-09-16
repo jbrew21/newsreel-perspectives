@@ -1,9 +1,9 @@
 {
   "voiceId": "gretchen-whitmer",
   "voiceName": "Gretchen Whitmer",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 16,
-  "stanceCount": 60,
+  "stanceCount": 61,
   "topics": [
     {
       "topic": "economy-trade",
@@ -384,6 +384,51 @@
       "active": true
     },
     {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 4,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Encourages voter registration and participation in Michigan elections",
+          "quote": "It's National Voter Registration Day, Michigan! \n\nNot registered yet? You can do so online or by mail through Oct. 19; or in person at your clerk's office through Nov. 3.\n\nRegister and make a voting plan - by mail, early, or on Election Day - at https://t.co/S6Z636Fgk9 https://t.",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2099925699662332200",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Defends state authority over elections, backs mail voting protections",
+          "quote": "This ruling is a step in the right direction. DC Republicans might try to make it harder to vote, but the Constitution authorizes the states to run our elections. That's why @MIAttyGen and I sued to protect mail voting and we'll keep fighting for Michigan. https://t.co/HVExZsdE0w",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2098122361430044971",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Suing Republicans to protect absentee voting rights in Michigan",
+          "quote": "Republicans in DC are trying to make it harder for you to vote, but we're suing to protect absentee voting here in Michigan. Attorney General Nessel and I are committed to protecting your rights. https://t.co/cVGbsatDLI",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2092718347095863296",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Encourages voter registration and participation in upcoming election",
+          "quote": "106 years ago today, the 19th Amendment gave women the right to vote. Michigan helped lead the way, ratifying it early. The best way to honor that fight? VOTE! Register at https://t.co/S6Z636Fgk9 before Nov. 3.",
+          "sourceUrl": "https://x.com/GovWhitmer/status/2092636014569214323",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 6,
@@ -445,42 +490,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 3,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Defends state authority over elections, backs mail voting protections",
-          "quote": "This ruling is a step in the right direction. DC Republicans might try to make it harder to vote, but the Constitution authorizes the states to run our elections. That's why @MIAttyGen and I sued to protect mail voting and we'll keep fighting for Michigan. https://t.co/HVExZsdE0w",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2098122361430044971",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Suing Republicans to protect absentee voting rights in Michigan",
-          "quote": "Republicans in DC are trying to make it harder for you to vote, but we're suing to protect absentee voting here in Michigan. Attorney General Nessel and I are committed to protecting your rights. https://t.co/cVGbsatDLI",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2092718347095863296",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Encourages voter registration and participation in upcoming election",
-          "quote": "106 years ago today, the 19th Amendment gave women the right to vote. Michigan helped lead the way, ratifying it early. The best way to honor that fight? VOTE! Register at https://t.co/S6Z636Fgk9 before Nov. 3.",
-          "sourceUrl": "https://x.com/GovWhitmer/status/2092636014569214323",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "congress-legislation",

@@ -1,9 +1,9 @@
 {
   "voiceId": "michael-knowles",
   "voiceName": "Michael Knowles",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 32,
-  "stanceCount": 205,
+  "stanceCount": 206,
   "topics": [
     {
       "topic": "elections",
@@ -422,9 +422,18 @@
     {
       "topic": "culture-war",
       "label": "Culture War",
-      "count": 18,
-      "lastActive": "2026-09-12",
+      "count": 19,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Objects to treating children as commodities",
+          "quote": "Children are not commodities.",
+          "sourceUrl": "https://www.youtube.com/shorts/A2O4RgJG3_c",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-12",
           "topic": "culture-war",
@@ -2010,7 +2019,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "ai-technology",

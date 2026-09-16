@@ -1,9 +1,9 @@
 {
   "voiceId": "tammy-duckworth",
   "voiceName": "Tammy Duckworth",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 18,
-  "stanceCount": 61,
+  "stanceCount": 63,
   "topics": [
     {
       "topic": "military-defense",
@@ -143,9 +143,18 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 7,
-      "lastActive": "2026-09-07",
+      "count": 8,
+      "lastActive": "2026-09-10",
       "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes Trump for attacking Head Start and raising child care costs",
+          "quote": "Child care in Illinois costs as much as $1,633 a month.\n\nTrump promised to lower costs. Instead, he\u2019s attacking Head Start and making life harder for middle-class families.\n\nEnough. It\u2019s past time we had universal child care in America.",
+          "sourceUrl": "https://bsky.app/profile/duckworth.senate.gov/post/3mv6jggeng22u",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-07",
           "topic": "economy-trade",
@@ -261,6 +270,51 @@
           "summary": "Opposes Clayton nomination, warns of inability to resist illegal orders",
           "quote": "Republicans just handed America's intelligence community to someone too afraid to tell Trump the truth. \n\nIf Clayton wouldn\u2019t speak honestly then, don't expect him to resist illegal orders later.",
           "sourceUrl": "https://x.com/SenDuckworth/status/2082257483490349087",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "elections",
+      "label": "Elections & Campaigns",
+      "count": 4,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Defends voting by mail against Trump administration restrictions",
+          "quote": "Trump tried to stop Americans from doing what he\u2019s already done twice this year: vote by mail. He failed.\n\nVoting by mail is safe, secure and here to stay \ud83c\uddfa\ud83c\uddf8",
+          "sourceUrl": "https://x.com/SenDuckworth/status/2099960639879823403",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-15",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Encourages voter registration and participation",
+          "quote": "It\u2019s National Voter Registration Day, Illinois!\n\u00a0\nTake a moment to make sure you are registered and have a plan to vote.\n\nVote.gov",
+          "sourceUrl": "https://bsky.app/profile/duckworth.senate.gov/post/3mvlrh6e3nc23",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Criticizes voter disenfranchisement",
+          "quote": "Weird way to spell \u201cdisenfranchise millions of voters.\"",
+          "sourceUrl": "https://x.com/SenDuckworth/status/2082449778105852076",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-28",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Highlights Trump's own mail-in voting hypocrisy",
+          "quote": "Reminder: Trump voted by mail in the last election.",
+          "sourceUrl": "https://x.com/SenDuckworth/status/2082230020794196116",
           "platform": "x"
         }
       ],
@@ -393,78 +447,6 @@
       "active": false
     },
     {
-      "topic": "elections",
-      "label": "Elections & Campaigns",
-      "count": 3,
-      "lastActive": "2026-09-15",
-      "stances": [
-        {
-          "date": "2026-09-15",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Defends voting by mail against Trump administration restrictions",
-          "quote": "Trump tried to stop Americans from doing what he\u2019s already done twice this year: vote by mail. He failed.\n\nVoting by mail is safe, secure and here to stay \ud83c\uddfa\ud83c\uddf8",
-          "sourceUrl": "https://x.com/SenDuckworth/status/2099960639879823403",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "elections",
-          "stance": "strong",
-          "summary": "Criticizes voter disenfranchisement",
-          "quote": "Weird way to spell \u201cdisenfranchise millions of voters.\"",
-          "sourceUrl": "https://x.com/SenDuckworth/status/2082449778105852076",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-28",
-          "topic": "elections",
-          "stance": "lean",
-          "summary": "Highlights Trump's own mail-in voting hypocrisy",
-          "quote": "Reminder: Trump voted by mail in the last election.",
-          "sourceUrl": "https://x.com/SenDuckworth/status/2082230020794196116",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 3,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump for attacking Head Start, calls for universal child care",
-          "quote": "Child care in Illinois costs as much as $1,633 a month.\n\nTrump promised to lower costs. Instead, he\u2019s attacking Head Start and making life harder for middle-class families.\n\nEnough. It\u2019s past time we had universal child care in America.",
-          "sourceUrl": "https://bsky.app/profile/duckworth.senate.gov/post/3mv6jggeng22u",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump for failing to lower costs as promised",
-          "quote": "Trump promised to lower costs on day one. He promised immediate relief.\n\nNearly 600 days later, families are still waiting.",
-          "sourceUrl": "https://bsky.app/profile/duckworth.senate.gov/post/3mtukdhra4227",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-07-29",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes Trump for abandoning America First principles",
-          "quote": "Trump ran on America first. Yet, he puts America last. Every time.",
-          "sourceUrl": "https://x.com/SenDuckworth/status/2082552534661541892",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 3,
@@ -573,6 +555,60 @@
       "active": false
     },
     {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 2,
+      "lastActive": "2026-08-31",
+      "stances": [
+        {
+          "date": "2026-08-31",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Links record gas prices to ongoing war, calls for end",
+          "quote": "For the first time in history, the national average price of gas for the month of August has been above $4 per gallon every single day.\n\nIf it feels like it\u2019s been the most expensive August at the pump, that\u2019s because it is.\n\nEnd. The. War.\n\napnews.com/article/stoc...",
+          "sourceUrl": "https://bsky.app/profile/duckworth.senate.gov/post/3mufy6cgeos2t",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-17",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Opposes Trump engagement with dictators, warns against cutting South Korea military exercises",
+          "quote": "When will Trump stop embracing dictators and alienating our allies?\u2028\nWhen I visited South Korea last year, we reaffirmed the importance of joint exercises to keep our troops ready and our allies secure.\u2028\nGutting them to appease nuclear-armed Kim Jong Un is a grave mistake.",
+          "sourceUrl": "https://x.com/SenDuckworth/status/2089391800800731327",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 2,
+      "lastActive": "2026-08-25",
+      "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump for failing to lower costs as promised",
+          "quote": "Trump promised to lower costs on day one. He promised immediate relief.\n\nNearly 600 days later, families are still waiting.",
+          "sourceUrl": "https://bsky.app/profile/duckworth.senate.gov/post/3mtukdhra4227",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-29",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump for abandoning America First principles",
+          "quote": "Trump ran on America first. Yet, he puts America last. Every time.",
+          "sourceUrl": "https://x.com/SenDuckworth/status/2082552534661541892",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 1,
@@ -624,7 +660,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "free-speech-censorship",
@@ -639,24 +675,6 @@
           "summary": "Defends press freedom against Secretary Hegseth censorship",
           "quote": "Speaking out against censorship is as American as it gets.\n\nIf Secretary Hegseth is threatened by that, he should find a new job and let the press do theirs.",
           "sourceUrl": "https://x.com/SenDuckworth/status/2090966812527591566",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 1,
-      "lastActive": "2026-08-17",
-      "stances": [
-        {
-          "date": "2026-08-17",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Opposes Trump engagement with dictators, warns against cutting South Korea military exercises",
-          "quote": "When will Trump stop embracing dictators and alienating our allies?\u2028\nWhen I visited South Korea last year, we reaffirmed the importance of joint exercises to keep our troops ready and our allies secure.\u2028\nGutting them to appease nuclear-armed Kim Jong Un is a grave mistake.",
-          "sourceUrl": "https://x.com/SenDuckworth/status/2089391800800731327",
           "platform": "x"
         }
       ],

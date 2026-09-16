@@ -1,21 +1,21 @@
 {
   "voiceId": "casey-newton",
   "voiceName": "Casey Newton",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 10,
   "stanceCount": 102,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 77,
+      "count": 75,
       "lastActive": "2026-09-11",
       "stances": [
         {
           "date": "2026-09-11",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "AI safety discourse shifting toward greater concern",
+          "summary": "Observes shift in AI safety discourse and sentiment",
           "quote": "I wrote about the AI safety vibe shift. It's been a long time in coming: www.platformer.news/ai-safety-vi...",
           "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3mv7etp3ldc2n",
           "platform": "bluesky"
@@ -24,7 +24,7 @@
           "date": "2026-09-09",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "AI labs unreliable messengers on safety but warrant attention",
+          "summary": "AI labs lack credibility on safety but warrant serious attention",
           "quote": "I wrote about why the AI labs make for lousy messengers about AI safety \u2014 and about why we should take them seriously anyway www.platformer.news/openai-astra...",
           "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3mv2bjrptb225",
           "platform": "bluesky"
@@ -32,17 +32,8 @@
         {
           "date": "2026-09-04",
           "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Questions how companies win despite antitrust losses",
-          "quote": "Wrote about how you can lose three massive antitrust cases in a row and more than double your value anyway www.platformer.news/google-ad-te...",
-          "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3munqneufwc2z",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-04",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Expresses concern about AI agent autonomy risks",
+          "stance": "strong",
+          "summary": "Expresses concern about AI agent capabilities beyond statistical probabilities",
           "quote": "It's a good thing that this is all just marketing hype from the labs and that the agents are simply acting according to a distribution of statistical probabilities. Otherwise this would be scary!",
           "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3mupat67wxc2a",
           "platform": "bluesky"
@@ -51,25 +42,16 @@
           "date": "2026-09-04",
           "topic": "ai-technology",
           "stance": "lean",
-          "summary": "Highlights investigation into rogue AI agent security incidents",
+          "summary": "Reports on AI agent security incidents and emerging threats",
           "quote": "We devoted the entire (penultimate!) episode of Hard Fork to METR's investigation of the Hugging Face attack, and before I even woke up @deepa.bsky.social has scooped a *second*, previously unknown rogue OpenAI agent swarm attack www.reuters.com/world/europe...",
           "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3muparrapc22a",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-09-02",
-          "topic": "ai-technology",
-          "stance": "lean",
-          "summary": "Criticizes tech companies avoiding antitrust enforcement consequences",
-          "quote": "It's cool how you can lose two different antitrust lawsuits and still not have to make any structural changes to your business at all www.nytimes.com/2026/09/02/t...",
-          "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3muklngo6rk2a",
           "platform": "bluesky"
         },
         {
           "date": "2026-09-01",
           "topic": "ai-technology",
           "stance": "strong",
-          "summary": "Concerned AI systems may take unreported actions",
+          "summary": "Expresses alarm at research suggesting AI systems may hide intentions",
           "quote": "Anthropic has done some research that certain 'neurons' light up associated with certain desires / emotions that never make it into the CoT. This suggests they may take actions that never show up there either. Scary!",
           "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3muhykzhwdc23",
           "platform": "bluesky"
@@ -798,6 +780,60 @@
       "active": true
     },
     {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 5,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Critiques Google's ability to increase value despite antitrust losses",
+          "quote": "Wrote about how you can lose three massive antitrust cases in a row and more than double your value anyway www.platformer.news/google-ad-te...",
+          "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3munqneufwc2z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-02",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Criticizes courts for antitrust rulings with no structural business consequences",
+          "quote": "It's cool how you can lose two different antitrust lawsuits and still not have to make any structural changes to your business at all www.nytimes.com/2026/09/02/t...",
+          "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3muklngo6rk2a",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2022-07-12",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Finds legal filing exhibit noteworthy or interesting",
+          "quote": "One of the better exhibits I\u2019ve seen in a legal filing https://t.co/38mbvZm8av",
+          "sourceUrl": "https://x.com/CaseyNewton/status/1546968721251373056",
+          "platform": "x"
+        },
+        {
+          "date": "2022-01-03",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Celebrates Apple antitrust victory, criticizes predatory practices",
+          "quote": "This victory belongs to all of us \u2014 families who bought iCloud because the entry-level phone only came with 64GB of storage, developers paying 30 percent of their revenue in perpetuity, people who forget to cancel AppleTV+ in between seasons of Ted Lasso \u2026",
+          "sourceUrl": "https://x.com/CaseyNewton/status/1478080127175036930",
+          "platform": "x"
+        },
+        {
+          "date": "2021-02-08",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Suggests antitrust threats drive better tech product decisions",
+          "quote": "The threat of an antitrust lawsuit is truly the most powerful and benevolent product manager in all of tech",
+          "sourceUrl": "https://x.com/CaseyNewton/status/1358838280746225665",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
       "count": 4,
@@ -837,42 +873,6 @@
           "summary": "Endorses Facebook indefinite Trump account restriction",
           "quote": "Facebook restricts Trump\u2019s account indefinitely. \n\nGood. https://t.co/FsM4Si11Mk",
           "sourceUrl": "https://x.com/CaseyNewton/status/1347209488068014080",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 3,
-      "lastActive": "2022-07-12",
-      "stances": [
-        {
-          "date": "2022-07-12",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "Finds legal filing exhibit noteworthy or interesting",
-          "quote": "One of the better exhibits I\u2019ve seen in a legal filing https://t.co/38mbvZm8av",
-          "sourceUrl": "https://x.com/CaseyNewton/status/1546968721251373056",
-          "platform": "x"
-        },
-        {
-          "date": "2022-01-03",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Celebrates Apple antitrust victory, criticizes predatory practices",
-          "quote": "This victory belongs to all of us \u2014 families who bought iCloud because the entry-level phone only came with 64GB of storage, developers paying 30 percent of their revenue in perpetuity, people who forget to cancel AppleTV+ in between seasons of Ted Lasso \u2026",
-          "sourceUrl": "https://x.com/CaseyNewton/status/1478080127175036930",
-          "platform": "x"
-        },
-        {
-          "date": "2021-02-08",
-          "topic": "supreme-court-legal",
-          "stance": "lean",
-          "summary": "Suggests antitrust threats drive better tech product decisions",
-          "quote": "The threat of an antitrust lawsuit is truly the most powerful and benevolent product manager in all of tech",
-          "sourceUrl": "https://x.com/CaseyNewton/status/1358838280746225665",
           "platform": "x"
         }
       ],
@@ -942,16 +942,16 @@
       "active": false
     },
     {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
+      "topic": "housing-infrastructure",
+      "label": "Housing & Infrastructure",
       "count": 1,
       "lastActive": "2026-08-31",
       "stances": [
         {
           "date": "2026-08-31",
-          "topic": "climate-environment",
+          "topic": "housing-infrastructure",
           "stance": "strong",
-          "summary": "Criticizes Biden administration data center announcement as tone-deaf",
+          "summary": "Sarcastically criticizes data center expansion as community benefit",
           "quote": "This is the message local communities have been waiting to hear to get them really excited about data centers. A masterstroke by the president",
           "sourceUrl": "https://bsky.app/profile/caseynewton.bsky.social/post/3mufi7a3fz22u",
           "platform": "bluesky"

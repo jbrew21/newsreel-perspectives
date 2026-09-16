@@ -1,7 +1,7 @@
 {
   "voiceId": "bret-baier",
   "voiceName": "Bret Baier",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 19,
   "stanceCount": 71,
   "topics": [
@@ -555,33 +555,6 @@
       "active": true
     },
     {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 2,
-      "lastActive": "2026-09-01",
-      "stances": [
-        {
-          "date": "2026-09-01",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Emphasizes harm from immigration policy failures",
-          "quote": "A grieving father delivers powerful, emotional testimony at a Capitol Hill hearing, lashing out at lawmakers over immigration policies after his daughter was left permanently disabled in a crash. #news",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7680699837108473118",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Highlights border suspect connection in murder investigation",
-          "quote": "FAIRFAX COUNTY INVESTIGATION: Fairfax County Police have arrested 19-year-old Alexis Antonio Cedillos-Campos for the brutal stabbing murder of 42-year-old mother Carmen Lizet Puch near a Great Falls trail, as DHS confirms suspect border records to Fox News. #breakingnews #crime",
-          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675871610057805086",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
       "count": 3,
@@ -685,6 +658,33 @@
           "quote": "This is horrific.",
           "sourceUrl": "https://x.com/BretBaier/status/1053780426425282561",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Emphasizes harm from immigration policy failures",
+          "quote": "A grieving father delivers powerful, emotional testimony at a Capitol Hill hearing, lashing out at lawmakers over immigration policies after his daughter was left permanently disabled in a crash. #news",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7680699837108473118",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Highlights border suspect connection in murder investigation",
+          "quote": "FAIRFAX COUNTY INVESTIGATION: Fairfax County Police have arrested 19-year-old Alexis Antonio Cedillos-Campos for the brutal stabbing murder of 42-year-old mother Carmen Lizet Puch near a Great Falls trail, as DHS confirms suspect border records to Fox News. #breakingnews #crime",
+          "sourceUrl": "https://www.tiktok.com/@bretbaier/video/7675871610057805086",
+          "platform": "tiktok"
         }
       ],
       "active": false

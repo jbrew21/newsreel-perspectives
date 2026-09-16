@@ -1,9 +1,9 @@
 {
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 19,
-  "stanceCount": 121,
+  "stanceCount": 123,
   "topics": [
     {
       "topic": "sports",
@@ -557,9 +557,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 11,
-      "lastActive": "2026-09-11",
+      "count": 12,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Trump's ratings demonstrate a notable trend",
+          "quote": "Trumps ratings are telling a story\u2026",
+          "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7685754599273188639",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-11",
           "topic": "trump-administration",
@@ -996,6 +1005,42 @@
       "active": false
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 3,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Enthusiastically supports HBCU Week and scholarships",
+          "quote": "HBCU Week is about IMPACT!  And I am sure as hell looking forward to the 10th Anniversary of HBCU Week College Career Fair!  #HBCUWeek #HBCU #Education #Scholarships",
+          "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7685441992200932639",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Endorses college athletes accepting NIL compensation",
+          "quote": "In the age of NIL, let\u2019s be real. If you had the opportunity to make half a million dollars before entering the real world, who isn't taking that?",
+          "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7683287662043712781",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2019-12-19",
+          "topic": "education",
+          "stance": "lean",
+          "summary": "Supports athlete's departure from NCAA due to poor governance",
+          "quote": "Don\u2019t blame him one damn bit. Look at the headaches given to him by the NCAA. They keep this up \u2014 and the NBA hones in on making its G-League more attractive \u2014 we might get to the point where athletes won\u2019t be interested in the NCAA at all.",
+          "sourceUrl": "https://x.com/stephenasmith/status/1207758758346182656",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 4,
@@ -1039,33 +1084,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "education",
-      "label": "Education",
-      "count": 2,
-      "lastActive": "2026-09-08",
-      "stances": [
-        {
-          "date": "2026-09-08",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Endorses college athletes accepting NIL compensation",
-          "quote": "In the age of NIL, let\u2019s be real. If you had the opportunity to make half a million dollars before entering the real world, who isn't taking that?",
-          "sourceUrl": "https://www.tiktok.com/@stephenasmith/video/7683287662043712781",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2019-12-19",
-          "topic": "education",
-          "stance": "lean",
-          "summary": "Supports athlete's departure from NCAA due to poor governance",
-          "quote": "Don\u2019t blame him one damn bit. Look at the headaches given to him by the NCAA. They keep this up \u2014 and the NBA hones in on making its G-League more attractive \u2014 we might get to the point where athletes won\u2019t be interested in the NCAA at all.",
-          "sourceUrl": "https://x.com/stephenasmith/status/1207758758346182656",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "free-speech-censorship",

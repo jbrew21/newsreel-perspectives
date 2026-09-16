@@ -1,16 +1,43 @@
 {
   "voiceId": "cenk-uygur",
   "voiceName": "Cenk Uygur",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 25,
-  "stanceCount": 290,
+  "stanceCount": 296,
   "topics": [
     {
       "topic": "israel-palestine",
       "label": "Israel & Palestine",
-      "count": 43,
-      "lastActive": "2026-09-15",
+      "count": 45,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Criticizes Trump for escalating military aid to Israel",
+          "quote": "Tucker Carlson DEMOLISHES TRUMP For Sending EVEN MORE BOMBS To Israel",
+          "sourceUrl": "https://www.youtube.com/watch?v=6l6pINSx8YE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-16",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "IDF whistleblowers speak out amid Israeli government pressure",
+          "quote": "Israeli Government SCRAMBLES As IDF Whistleblowers Speak Out",
+          "sourceUrl": "https://www.youtube.com/watch?v=VdpbnrGGHYo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-16",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Carlson criticizes Trump's Israel aid package",
+          "quote": "Tucker Carlson DECIMATES Trump's New Giveaway To Israel",
+          "sourceUrl": "https://www.youtube.com/watch?v=-pGNo8oi6bQ",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-15",
           "topic": "israel-palestine",
@@ -18,15 +45,6 @@
           "summary": "Criticizes billionaire influence in suppressing pro-Palestinian speech",
           "quote": "Macklemore DROPPED From Tour Thanks To Pro-Israel Billionaire",
           "sourceUrl": "https://www.youtube.com/watch?v=RvXupLVQiZU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-15",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Criticizes Trump for escalating military aid to Israel",
-          "quote": "Tucker Carlson DEMOLISHES TRUMP For Sending EVEN MORE BOMBS To Israel",
-          "sourceUrl": "https://www.youtube.com/watch?v=6l6pINSx8YE",
           "platform": "youtube"
         },
         {
@@ -404,9 +422,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 31,
-      "lastActive": "2026-09-15",
+      "count": 32,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Massie opposes Hegseth, declares conflict with Trump nominee",
+          "quote": "Thomas Massie Declares WAR On Pete Hegseth",
+          "sourceUrl": "https://www.youtube.com/watch?v=1PFMPh18PUs",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-15",
           "topic": "trump-administration",
@@ -1547,9 +1574,18 @@
     {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
-      "count": 15,
-      "lastActive": "2026-09-12",
+      "count": 16,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "McConnell's return generates significant controversy",
+          "quote": "McConnell\u2019s BIZARRE Return Sparks FIRESTORM",
+          "sourceUrl": "https://www.youtube.com/watch?v=EFFYfccySjc",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-12",
           "topic": "congress-legislation",
@@ -2661,6 +2697,42 @@
       "active": true
     },
     {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 3,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "climate-environment",
+          "stance": "lean",
+          "summary": "Energy crisis reaching critical dangerous level",
+          "quote": "The Energy Crisis Hits DANGEROUS Turning Point",
+          "sourceUrl": "https://www.youtube.com/watch?v=fJ_DxXX_mgU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Opposes Trump plan to sell national park land",
+          "quote": "Yosemite AT RISK As Trump Plans To Sell Piece Of Iconic National Park",
+          "sourceUrl": "https://www.youtube.com/watch?v=m-gzY-_gaUI",
+          "platform": "youtube"
+        },
+        {
+          "date": "2019-07-27",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Advocates redirecting defense spending to climate change action",
+          "quote": "I want to thank Supreme Court for giving us the precedent that the President can unilaterally move funds out of the Defense Department through executive orders without Congressional approval. A progressive president should move hundreds of billions out to fight climate change!",
+          "sourceUrl": "https://x.com/cenkuygur/status/1154919808435023872",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
       "count": 4,
@@ -2706,27 +2778,27 @@
       "active": false
     },
     {
-      "topic": "climate-environment",
-      "label": "Climate & Environment",
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
       "count": 2,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-16",
       "stances": [
         {
-          "date": "2026-09-03",
-          "topic": "climate-environment",
+          "date": "2026-09-16",
+          "topic": "supreme-court-legal",
           "stance": "strong",
-          "summary": "Opposes Trump plan to sell national park land",
-          "quote": "Yosemite AT RISK As Trump Plans To Sell Piece Of Iconic National Park",
-          "sourceUrl": "https://www.youtube.com/watch?v=m-gzY-_gaUI",
+          "summary": "Supreme Court blocks Trump voting-related scheme",
+          "quote": "Supreme Court SHUTS DOWN Trump's Voting Scheme",
+          "sourceUrl": "https://www.youtube.com/watch?v=S2k8d-2d3Eg",
           "platform": "youtube"
         },
         {
-          "date": "2019-07-27",
-          "topic": "climate-environment",
+          "date": "2025-01-23",
+          "topic": "supreme-court-legal",
           "stance": "strong",
-          "summary": "Advocates redirecting defense spending to climate change action",
-          "quote": "I want to thank Supreme Court for giving us the precedent that the President can unilaterally move funds out of the Defense Department through executive orders without Congressional approval. A progressive president should move hundreds of billions out to fight climate change!",
-          "sourceUrl": "https://x.com/cenkuygur/status/1154919808435023872",
+          "summary": "Supports government release of classified assassination files",
+          "quote": "Trump ordering the release of government files on JFK, RFK and MLK assassinations is a great thing. I don't know how much of the real evidence is in there, but I'll take it. And I'd like to remind my friends on the left, releasing the files was originally a left-wing position.",
+          "sourceUrl": "https://x.com/cenkuygur/status/1882538393168646494",
           "platform": "x"
         }
       ],
@@ -2817,24 +2889,6 @@
           "summary": "Accuses U.S. media of deliberately fostering Muslim hatred",
           "quote": "You know which prophet returns to save humanity in Islam? Not Mohamed. Jesus. Muslims view the Koran as the third book. They believe Jesus was taken to heaven and will return in end times. How many Americans know that? Almost none. Why? US media had to get you to hate Muslims.",
           "sourceUrl": "https://x.com/cenkuygur/status/1940533913572856223",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "supreme-court-legal",
-      "label": "Supreme Court & Legal",
-      "count": 1,
-      "lastActive": "2025-01-23",
-      "stances": [
-        {
-          "date": "2025-01-23",
-          "topic": "supreme-court-legal",
-          "stance": "strong",
-          "summary": "Supports government release of classified assassination files",
-          "quote": "Trump ordering the release of government files on JFK, RFK and MLK assassinations is a great thing. I don't know how much of the real evidence is in there, but I'll take it. And I'd like to remind my friends on the left, releasing the files was originally a left-wing position.",
-          "sourceUrl": "https://x.com/cenkuygur/status/1882538393168646494",
           "platform": "x"
         }
       ],

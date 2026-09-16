@@ -1,9 +1,9 @@
 {
   "voiceId": "matt-pearce",
   "voiceName": "Matt Pearce",
-  "updatedAt": "2026-09-15",
-  "topicCount": 26,
-  "stanceCount": 125,
+  "updatedAt": "2026-09-16",
+  "topicCount": 27,
+  "stanceCount": 126,
   "topics": [
     {
       "topic": "media-press",
@@ -1237,6 +1237,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 1,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Notes unprecedented data loss from military infrastructure damage",
+          "quote": "\u201cA cloud region losing customer data because of an airstrike\u2014I don\u2019t think that\u2019s ever happened before.\u201d\n\nwww.wsj.com/world/middle...",
+          "sourceUrl": "https://bsky.app/profile/mattdpearce.com/post/3mvlyc2dbxc2z",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "billionaires-wealth",

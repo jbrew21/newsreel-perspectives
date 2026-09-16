@@ -1,9 +1,9 @@
 {
   "voiceId": "manhattan-institute",
   "voiceName": "Manhattan Institute",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 23,
-  "stanceCount": 84,
+  "stanceCount": 85,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -645,6 +645,33 @@
       "active": false
     },
     {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 2,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Calls out double standard in selective condemnation of political figures",
+          "quote": ".@Jesse_Leg shuts down a YouTuber on CNN who gave him a list of people to \"condemn\": \n\n\"Okay, let's play the same game. Do you condemn Abdul El-Sayed for saying that 'hurt people, hurt people' to justify an attack where an Islamist from Dearborn Heights via Lebanon rammed an expl",
+          "sourceUrl": "https://x.com/ManhattanInst/status/2100055820138332454",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Contrasts Western love of life with terrorists' embrace of death",
+          "quote": ".@DouglasKMurray gave a powerful speech about the legacy of 9/11:\n\n\"There's nothing wrong with loving life. That's one of the reasons we'll win.\n\n...If you look at the statements of the hijackers, of the terrorists, their lust for death, their love for death is undeniable.\n\nBut i",
+          "sourceUrl": "https://x.com/ManhattanInst/status/2098099408122392761",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 2,
@@ -855,24 +882,6 @@
           "summary": "Criticizes artist for promoting Hamas fundraisers on streaming platforms",
           "quote": "Mamdani's rap song praising men who funneled $12 million to Hamas is still available on Spotify (so is his own post promoting it) https://t.co/q1wRnT7WPQ https://t.co/C5fuP9a5NQ",
           "sourceUrl": "https://x.com/ManhattanInst/status/2098113596601286840",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "terrorism",
-          "stance": "strong",
-          "summary": "Contrasts Western love of life with terrorists' embrace of death",
-          "quote": ".@DouglasKMurray gave a powerful speech about the legacy of 9/11:\n\n\"There's nothing wrong with loving life. That's one of the reasons we'll win.\n\n...If you look at the statements of the hijackers, of the terrorists, their lust for death, their love for death is undeniable.\n\nBut i",
-          "sourceUrl": "https://x.com/ManhattanInst/status/2098099408122392761",
           "platform": "x"
         }
       ],

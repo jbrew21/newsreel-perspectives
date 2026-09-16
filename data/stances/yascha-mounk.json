@@ -1,7 +1,7 @@
 {
   "voiceId": "yascha-mounk",
   "voiceName": "Yascha Mounk",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 24,
   "stanceCount": 122,
   "topics": [
@@ -1032,6 +1032,33 @@
       "active": false
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Condemns celebrating infanticide while acknowledging postpartum depression context",
+          "quote": "Don\u2019t Celebrate Lindsay Clancy  (by Harry Cheadle). A mother killing her children is heinous. Compassion for postpartum depression doesn't change that.",
+          "sourceUrl": "https://www.persuasion.community/p/dont-celebrate-lindsay-clancy",
+          "platform": "substack"
+        },
+        {
+          "date": "2020-05-31",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Highlights public consensus on appropriate charges in Derek Chauvin case",
+          "quote": "A small ray of light at the end of a very bleak week:\n\n89% (!) of Americans believe either that the charges against Derek Chauvin are appropriate, or that he should have been charged with a *more* serious crime. https://t.co/JE4NQbvGyX",
+          "sourceUrl": "https://x.com/Yascha_Mounk/status/1267214418934484992",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 3,
@@ -1065,34 +1092,7 @@
           "platform": "substack"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Condemns celebrating infanticide while acknowledging postpartum depression context",
-          "quote": "Don\u2019t Celebrate Lindsay Clancy  (by Harry Cheadle). A mother killing her children is heinous. Compassion for postpartum depression doesn't change that.",
-          "sourceUrl": "https://www.persuasion.community/p/dont-celebrate-lindsay-clancy",
-          "platform": "substack"
-        },
-        {
-          "date": "2020-05-31",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Highlights public consensus on appropriate charges in Derek Chauvin case",
-          "quote": "A small ray of light at the end of a very bleak week:\n\n89% (!) of Americans believe either that the charges against Derek Chauvin are appropriate, or that he should have been charged with a *more* serious crime. https://t.co/JE4NQbvGyX",
-          "sourceUrl": "https://x.com/Yascha_Mounk/status/1267214418934484992",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "ai-technology",

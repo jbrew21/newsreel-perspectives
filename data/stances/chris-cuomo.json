@@ -1,9 +1,9 @@
 {
   "voiceId": "chris-cuomo",
   "voiceName": "Chris Cuomo",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 24,
-  "stanceCount": 159,
+  "stanceCount": 160,
   "topics": [
     {
       "topic": "trump-administration",
@@ -1284,6 +1284,42 @@
       "active": false
     },
     {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 3,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "trump-policy",
+          "stance": "lean",
+          "summary": "Criticizes Trump for missing AI opportunity",
+          "quote": "Trump's Missed AI Opportunity",
+          "sourceUrl": "https://www.youtube.com/shorts/EyY0xZCPyXQ",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes MAGA movement for hypocrisy on policy positions",
+          "quote": "MAGA's Hypocrisy on Lindsay Clancy",
+          "sourceUrl": "https://www.youtube.com/shorts/HhtL4jrIg68",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Argues Trump failed to deliver on campaign promises",
+          "quote": "Trump Never Fixed What He Promised To Fix",
+          "sourceUrl": "https://www.youtube.com/watch?v=CljCRZTbrWM",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ufo-paranormal",
       "label": "UFOs & Paranormal",
       "count": 3,
@@ -1363,33 +1399,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "trump-policy",
-      "label": "Trump Policy & Agenda",
-      "count": 2,
-      "lastActive": "2026-09-09",
-      "stances": [
-        {
-          "date": "2026-09-09",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Criticizes MAGA movement for hypocrisy on policy positions",
-          "quote": "MAGA's Hypocrisy on Lindsay Clancy",
-          "sourceUrl": "https://www.youtube.com/shorts/HhtL4jrIg68",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "trump-policy",
-          "stance": "strong",
-          "summary": "Argues Trump failed to deliver on campaign promises",
-          "quote": "Trump Never Fixed What He Promised To Fix",
-          "sourceUrl": "https://www.youtube.com/watch?v=CljCRZTbrWM",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "religion-faith",

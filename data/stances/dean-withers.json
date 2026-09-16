@@ -1,7 +1,7 @@
 {
   "voiceId": "dean-withers",
   "voiceName": "Dean Withers",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 21,
   "stanceCount": 106,
   "topics": [
@@ -825,33 +825,6 @@
       "active": false
     },
     {
-      "topic": "epstein-scandal",
-      "label": "Epstein Scandal",
-      "count": 2,
-      "lastActive": "2026-09-01",
-      "stances": [
-        {
-          "date": "2026-09-01",
-          "topic": "epstein-scandal",
-          "stance": "lean",
-          "summary": "Praises Rep. Massie for questioning Trump admin on Epstein cover-up",
-          "quote": "Massie CALLS OUT The Trump Admin For Lying About Epstein. I wish he included a few more names\u2026 but this is still a step in the right direction.",
-          "sourceUrl": "https://www.tiktok.com/@itsdeaann/video/7680673172735233310",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2025-11-12",
-          "topic": "epstein-scandal",
-          "stance": "strong",
-          "summary": "Claims Epstein said he met Trump and Prince Andrew in 2019",
-          "quote": "BREAKING: Epstein Privately Claimed That He Met With Trump in 2019 in London with Prince Andrew.\n\nIts. Fucking. Over.",
-          "sourceUrl": "https://x.com/itsdeaann/status/1988739784815309135",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "supreme-court-legal",
       "label": "Supreme Court & Legal",
       "count": 3,
@@ -918,6 +891,33 @@
           "summary": "Reports harassment from white supremacists, questions Jesus's race",
           "quote": "I have had Christian White Supremacists swarming my account since my debate with Nick Fuentes last night.\n\nQuestion: What race was Jesus?",
           "sourceUrl": "https://x.com/itsdeaann/status/1841986080263811148",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "epstein-scandal",
+      "label": "Epstein Scandal",
+      "count": 2,
+      "lastActive": "2026-09-01",
+      "stances": [
+        {
+          "date": "2026-09-01",
+          "topic": "epstein-scandal",
+          "stance": "lean",
+          "summary": "Praises Rep. Massie for questioning Trump admin on Epstein cover-up",
+          "quote": "Massie CALLS OUT The Trump Admin For Lying About Epstein. I wish he included a few more names\u2026 but this is still a step in the right direction.",
+          "sourceUrl": "https://www.tiktok.com/@itsdeaann/video/7680673172735233310",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2025-11-12",
+          "topic": "epstein-scandal",
+          "stance": "strong",
+          "summary": "Claims Epstein said he met Trump and Prince Andrew in 2019",
+          "quote": "BREAKING: Epstein Privately Claimed That He Met With Trump in 2019 in London with Prince Andrew.\n\nIts. Fucking. Over.",
+          "sourceUrl": "https://x.com/itsdeaann/status/1988739784815309135",
           "platform": "x"
         }
       ],
