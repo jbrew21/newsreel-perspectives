@@ -2,8 +2,8 @@
   "voiceId": "bogdan-laurentiu",
   "voiceName": "Bogdan Laurentiu",
   "updatedAt": "2026-09-16",
-  "topicCount": 21,
-  "stanceCount": 66,
+  "topicCount": 22,
+  "stanceCount": 67,
   "topics": [
     {
       "topic": "immigration",
@@ -643,6 +643,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 1,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Criticizes vandalism targeting Charlie Kirk, implies disrespect for conservative figures",
+          "quote": "Charlie Kirk\u2019s memorial statue was vandalized within 24 hours",
+          "sourceUrl": "https://www.tiktok.com/@immi.grateful/video/7685352420989291807",
+          "platform": "tiktok"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "terrorism",

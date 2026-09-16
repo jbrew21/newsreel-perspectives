@@ -2,8 +2,8 @@
   "voiceId": "mitch-mcconnell",
   "voiceName": "Mitch McConnell",
   "updatedAt": "2026-09-16",
-  "topicCount": 9,
-  "stanceCount": 14,
+  "topicCount": 10,
+  "stanceCount": 15,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -121,6 +121,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "food-agriculture",
+      "label": "Food & Agriculture",
+      "count": 1,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "food-agriculture",
+          "stance": "strong",
+          "summary": "Praises Farm Bill, backs support for Kentucky farmers",
+          "quote": "I want to commend Chairman Boozman for his work on the Farm Bill. As a member of the Agriculture Committee since my first day in the United States Senate, I was proud to vote yes on the Farm Bill on behalf of the hardworking farm families across Kentucky. America\u2019s farmers are th",
+          "sourceUrl": "https://x.com/SenMcConnell/status/2100327134979862677",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "immigration",

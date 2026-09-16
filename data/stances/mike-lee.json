@@ -2,8 +2,8 @@
   "voiceId": "mike-lee",
   "voiceName": "Mike Lee",
   "updatedAt": "2026-09-16",
-  "topicCount": 19,
-  "stanceCount": 65,
+  "topicCount": 20,
+  "stanceCount": 66,
   "topics": [
     {
       "topic": "immigration",
@@ -670,6 +670,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "education",
+      "label": "Education",
+      "count": 1,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Opposes colleges sharing student voting data without consent",
+          "quote": "Colleges nationwide have participated in the National Study of Learning, Voting, and Engagement (NSLVE), which compels institutions to hand over students' FERPA-protected data. \n\nThis data is then shared through the National Student Clearinghouse (NSC) with third-party voter proc",
+          "sourceUrl": "https://x.com/SenMikeLee/status/2100321090727968805",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "culture-war",

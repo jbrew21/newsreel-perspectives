@@ -2,8 +2,8 @@
   "voiceId": "roland-martin",
   "voiceName": "Roland Martin",
   "updatedAt": "2026-09-16",
-  "topicCount": 29,
-  "stanceCount": 283,
+  "topicCount": 30,
+  "stanceCount": 284,
   "topics": [
     {
       "topic": "elections",
@@ -2722,6 +2722,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "abortion-reproductive",
+      "label": "Abortion & Reproductive Rights",
+      "count": 1,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "abortion-reproductive",
+          "stance": "lean",
+          "summary": "Highlights GOP mailer controversy and racial disparities in abortion policy enforcement",
+          "quote": "GOP Mailer Sparks Outrage. Black Family Sues Over Texas Abortion Ban. College Sports Bill Advances",
+          "sourceUrl": "https://www.youtube.com/watch?v=AD7WWEDVb_Y",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "sports",

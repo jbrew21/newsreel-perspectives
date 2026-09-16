@@ -1,9 +1,9 @@
 {
   "voiceId": "center-for-western-priorities",
   "voiceName": "Center for Western Priorities",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "topicCount": 5,
-  "stanceCount": 30,
+  "stanceCount": 31,
   "topics": [
     {
       "topic": "climate-environment",
@@ -188,9 +188,18 @@
     {
       "topic": "housing-infrastructure",
       "label": "Housing & Infrastructure",
-      "count": 5,
-      "lastActive": "2026-08-31",
+      "count": 6,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "housing-infrastructure",
+          "stance": "lean",
+          "summary": "Opposes Forest Service shortcut that excludes public from landscape management decisions",
+          "quote": "Forest Service plan would cut the public out of Maroon Bells management decision (by Lilly Bock-Brownstein). A legal shortcut, rewritten last year, is about to decide who runs one of Colorado\u2019s most visited landscapes The Maroon Bells Scenic Area draws more than 200,000 visitors ",
+          "sourceUrl": "https://westernpriorities.org/2026/09/forest-service-plan-would-cut-the-public-out-of-maroon-bells-management-decision/",
+          "platform": "substack"
+        },
         {
           "date": "2026-08-31",
           "topic": "housing-infrastructure",
@@ -237,7 +246,7 @@
           "platform": "substack"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "trump-administration",
