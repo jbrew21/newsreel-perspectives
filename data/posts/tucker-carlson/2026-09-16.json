@@ -1,7 +1,7 @@
 {
   "voiceId": "tucker-carlson",
   "voiceName": "Tucker Carlson",
-  "collectedAt": "2026-09-16T11:51:01.530870",
+  "collectedAt": "2026-09-16T13:48:30.225457",
   "date": "2026-09-16",
   "posts": [
     {
@@ -1121,6 +1121,23 @@
       "voiceId": "tucker-carlson",
       "voiceName": "Tucker Carlson",
       "platform": "youtube",
+      "text": "Tucker Reacts to Anthropic AI Scandal",
+      "sourceUrl": "https://www.youtube.com/shorts/1xyE92Jvlhg",
+      "timestamp": "2026-09-15T22:15:33+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Criticizes AI company conduct as scandalous",
+      "quote": "Tucker Reacts to Anthropic AI Scandal"
+    },
+    {
+      "voiceId": "tucker-carlson",
+      "voiceName": "Tucker Carlson",
+      "platform": "youtube",
       "text": "OpenAI Almost Brought Down the Internet\u2026",
       "sourceUrl": "https://www.youtube.com/shorts/NnsJQ2aki7A",
       "timestamp": "2026-09-15T20:46:48+00:00",
@@ -1218,23 +1235,6 @@
       "stance": "strong",
       "summary": "Argues Trump has become part of the established power structure",
       "quote": "Trump Is Now Part of the Deep State\u2026"
-    },
-    {
-      "voiceId": "tucker-carlson",
-      "voiceName": "Tucker Carlson",
-      "platform": "youtube",
-      "text": "Tucker Reacts to Anthropic AI Scandal",
-      "sourceUrl": "https://www.youtube.com/shorts/1xyE92Jvlhg",
-      "timestamp": "2026-09-15T22:15:33+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Criticizes AI company conduct as scandalous",
-      "quote": "Tucker Reacts to Anthropic AI Scandal"
     }
   ],
   "topicSummary": {
@@ -1694,6 +1694,12 @@
     ],
     "ai-technology": [
       {
+        "quote": "Tucker Reacts to Anthropic AI Scandal",
+        "sourceUrl": "https://www.youtube.com/shorts/1xyE92Jvlhg",
+        "platform": "youtube",
+        "timestamp": "2026-09-15T22:15:33+00:00"
+      },
+      {
         "quote": "OpenAI Almost Brought Down the Internet\u2026",
         "sourceUrl": "https://www.youtube.com/shorts/NnsJQ2aki7A",
         "platform": "youtube",
@@ -1704,12 +1710,6 @@
         "sourceUrl": "https://www.youtube.com/shorts/kRuRI2MGmTY",
         "platform": "youtube",
         "timestamp": "2026-09-14T22:05:54+00:00"
-      },
-      {
-        "quote": "Tucker Reacts to Anthropic AI Scandal",
-        "sourceUrl": "https://www.youtube.com/shorts/1xyE92Jvlhg",
-        "platform": "youtube",
-        "timestamp": "2026-09-15T22:15:33+00:00"
       }
     ]
   }

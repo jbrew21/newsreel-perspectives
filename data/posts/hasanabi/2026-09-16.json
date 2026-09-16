@@ -1,9 +1,26 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-16T11:51:01.541532",
+  "collectedAt": "2026-09-16T13:48:30.236703",
   "date": "2026-09-16",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "Abdul El-Sayed Debated an Empty Podium",
+      "sourceUrl": "https://www.youtube.com/watch?v=PeSnXsbvc1c",
+      "timestamp": "2026-09-16T03:44:44+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "topics": [
+        "elections"
+      ],
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Criticizes opponent's absence from debate",
+      "quote": "Abdul El-Sayed Debated an Empty Podium"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -105,26 +122,17 @@
       "stance": "lean",
       "summary": "Explores EU Parliament operations and political perspectives",
       "quote": "They Let Me Into The European Union"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "Abdul El-Sayed Debated an Empty Podium",
-      "sourceUrl": "https://www.youtube.com/watch?v=PeSnXsbvc1c",
-      "timestamp": "2026-09-16T03:44:44+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "topics": [
-        "elections"
-      ],
-      "relevance": "high",
-      "stance": "lean",
-      "summary": "Criticizes opponent's absence from debate",
-      "quote": "Abdul El-Sayed Debated an Empty Podium"
     }
   ],
   "topicSummary": {
+    "elections": [
+      {
+        "quote": "Abdul El-Sayed Debated an Empty Podium",
+        "sourceUrl": "https://www.youtube.com/watch?v=PeSnXsbvc1c",
+        "platform": "youtube",
+        "timestamp": "2026-09-16T03:44:44+00:00"
+      }
+    ],
     "israel-palestine": [
       {
         "quote": "Macklemore dropped from Ed Sheeran tour for saying \u201cFree Palestine\u201d",
@@ -167,14 +175,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Gx3HGaEBPgw",
         "platform": "youtube",
         "timestamp": "2026-09-13T14:01:21+00:00"
-      }
-    ],
-    "elections": [
-      {
-        "quote": "Abdul El-Sayed Debated an Empty Podium",
-        "sourceUrl": "https://www.youtube.com/watch?v=PeSnXsbvc1c",
-        "platform": "youtube",
-        "timestamp": "2026-09-16T03:44:44+00:00"
       }
     ]
   }
