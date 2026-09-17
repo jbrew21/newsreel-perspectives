@@ -2,8 +2,8 @@
   "voiceId": "john-kennedy",
   "voiceName": "John Kennedy",
   "updatedAt": "2026-09-17",
-  "topicCount": 20,
-  "stanceCount": 52,
+  "topicCount": 21,
+  "stanceCount": 53,
   "topics": [
     {
       "topic": "congress-legislation",
@@ -472,6 +472,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "free-speech-censorship",
+      "label": "Free Speech & Censorship",
+      "count": 1,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "free-speech-censorship",
+          "stance": "lean",
+          "summary": "Affirms Constitution protects freedoms and limits government power",
+          "quote": "239 years ago today, our Founding Fathers signed the Constitution.\n\nIt protects our freedoms and reminds the government who\u2019s boss: the American people.\n\nHappy Constitution Day! https://t.co/hYlNqWRLME",
+          "sourceUrl": "https://x.com/SenJohnKennedy/status/2100555379021058167",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "terrorism",

@@ -2,8 +2,8 @@
   "voiceId": "briahna-joy-gray",
   "voiceName": "Briahna Joy Gray",
   "updatedAt": "2026-09-17",
-  "topicCount": 10,
-  "stanceCount": 22,
+  "topicCount": 12,
+  "stanceCount": 24,
   "topics": [
     {
       "topic": "elections",
@@ -202,6 +202,42 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 1,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Critiques U.S. foreign policy impact on Saudi Arabia's economy",
+          "quote": "Saudi Arabia Is Being Brought To Its KNEES (w/ Shireen Al-Adeimi)",
+          "sourceUrl": "https://www.youtube.com/watch?v=JcMcJVyGJAw",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions whether AI extinction risk is substantive or overstated",
+          "quote": "AI Extinction: Hype or Real? (w/ Garrison Lovely)",
+          "sourceUrl": "https://www.youtube.com/watch?v=UMPySpaCGx8",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",

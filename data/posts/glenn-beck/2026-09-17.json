@@ -1,9 +1,44 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-17T11:59:05.165772",
+  "collectedAt": "2026-09-17T13:48:37.647736",
   "date": "2026-09-17",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "AOC Discovers Cancel Culture.",
+      "sourceUrl": "https://www.youtube.com/shorts/xrhK0s9pnNw",
+      "timestamp": "2026-09-17T00:00:21+00:00",
+      "type": "video_title",
+      "topic": "culture-war",
+      "topics": [
+        "culture-war"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Frames cancel culture as a problem affecting prominent figures",
+      "quote": "AOC Discovers Cancel Culture."
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "Trump Just Said THIS And China Is FURIOUS!",
+      "sourceUrl": "https://www.youtube.com/watch?v=yVT0bJ1CDT4",
+      "timestamp": "2026-09-16T23:00:21+00:00",
+      "type": "video_title",
+      "topic": "trump-policy",
+      "topics": [
+        "trump-policy",
+        "economy-trade"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Highlights Trump statement provoking Chinese reaction",
+      "quote": "Trump Just Said THIS And China Is FURIOUS!"
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -54,61 +89,25 @@
       "stance": "lean",
       "summary": "Frames AI competition as existential national priority requiring careful governance",
       "quote": "How America Can Win The AI Race Without Destroying Us All | Hour 1 | 9/15/26"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Hasan Piker is actually complaining that Americans took 9/11 &quot;too seriously&quot; this year... REALLY?",
-      "sourceUrl": "https://www.youtube.com/shorts/pKeZCeKsnXk",
-      "timestamp": "2026-09-15T00:30:11+00:00",
-      "type": "video_title",
-      "topic": "media-personalities",
-      "topics": [
-        "media-personalities"
-      ],
-      "relevance": "medium",
-      "stance": "strong",
-      "summary": "Criticizes commentator for dismissing 9/11 commemoration significance",
-      "quote": "Hasan Piker is actually complaining that Americans took 9/11 &quot;too seriously&quot; this year... REALLY?"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "AOC Discovers Cancel Culture.",
-      "sourceUrl": "https://www.youtube.com/shorts/xrhK0s9pnNw",
-      "timestamp": "2026-09-17T00:00:21+00:00",
-      "type": "video_title",
-      "topic": "culture-war",
-      "topics": [
-        "culture-war"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Frames cancel culture as a problem affecting prominent figures",
-      "quote": "AOC Discovers Cancel Culture."
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "Trump Just Said THIS And China Is FURIOUS!",
-      "sourceUrl": "https://www.youtube.com/watch?v=yVT0bJ1CDT4",
-      "timestamp": "2026-09-16T23:00:21+00:00",
-      "type": "video_title",
-      "topic": "trump-policy",
-      "topics": [
-        "trump-policy",
-        "economy-trade"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Highlights Trump statement provoking Chinese reaction",
-      "quote": "Trump Just Said THIS And China Is FURIOUS!"
     }
   ],
   "topicSummary": {
+    "culture-war": [
+      {
+        "quote": "AOC Discovers Cancel Culture.",
+        "sourceUrl": "https://www.youtube.com/shorts/xrhK0s9pnNw",
+        "platform": "youtube",
+        "timestamp": "2026-09-17T00:00:21+00:00"
+      }
+    ],
+    "trump-policy": [
+      {
+        "quote": "Trump Just Said THIS And China Is FURIOUS!",
+        "sourceUrl": "https://www.youtube.com/watch?v=yVT0bJ1CDT4",
+        "platform": "youtube",
+        "timestamp": "2026-09-16T23:00:21+00:00"
+      }
+    ],
     "ai-technology": [
       {
         "quote": "The AI Trap That Could Turn Out the Lights in America",
@@ -129,30 +128,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=3pofuPv4vAM",
         "platform": "youtube",
         "timestamp": "2026-09-15T20:37:42+00:00"
-      }
-    ],
-    "media-personalities": [
-      {
-        "quote": "Hasan Piker is actually complaining that Americans took 9/11 &quot;too seriously&quot; this year... REALLY?",
-        "sourceUrl": "https://www.youtube.com/shorts/pKeZCeKsnXk",
-        "platform": "youtube",
-        "timestamp": "2026-09-15T00:30:11+00:00"
-      }
-    ],
-    "culture-war": [
-      {
-        "quote": "AOC Discovers Cancel Culture.",
-        "sourceUrl": "https://www.youtube.com/shorts/xrhK0s9pnNw",
-        "platform": "youtube",
-        "timestamp": "2026-09-17T00:00:21+00:00"
-      }
-    ],
-    "trump-policy": [
-      {
-        "quote": "Trump Just Said THIS And China Is FURIOUS!",
-        "sourceUrl": "https://www.youtube.com/watch?v=yVT0bJ1CDT4",
-        "platform": "youtube",
-        "timestamp": "2026-09-16T23:00:21+00:00"
       }
     ]
   }
