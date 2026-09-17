@@ -1,9 +1,9 @@
 {
   "voiceId": "lex-fridman",
   "voiceName": "Lex Fridman",
-  "updatedAt": "2026-09-16",
-  "topicCount": 15,
-  "stanceCount": 54,
+  "updatedAt": "2026-09-17",
+  "topicCount": 16,
+  "stanceCount": 56,
   "topics": [
     {
       "topic": "media-press",
@@ -373,6 +373,33 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Psychiatry has history of inhumane, unethical treatments",
+          "quote": "Here's my conversation with Andrew Scull, all about psychiatry, its long history from Freud/Jung to today, including asylums, icepick lobotomies, electroshock therapy, antidepressants, antipsychotics, and some horrific treatments that were considered mainstream where doctors inje",
+          "sourceUrl": "https://x.com/lexfridman/status/2100388050194837953",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Psychiatry has history of inhumane, unethical treatments",
+          "quote": "Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &amp; Jung | Lex Fridman Podcast #502",
+          "sourceUrl": "https://www.youtube.com/watch?v=s7d2d8FhevU",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "trump-administration",

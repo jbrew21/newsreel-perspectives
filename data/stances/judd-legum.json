@@ -1,16 +1,25 @@
 {
   "voiceId": "judd-legum",
   "voiceName": "Judd Legum",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "topicCount": 28,
-  "stanceCount": 178,
+  "stanceCount": 179,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 36,
-      "lastActive": "2026-09-15",
+      "count": 37,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Trump administration seeks to weaken pension fund protections against corruption",
+          "quote": "Making pensions corrupt again (by Noel Sims). The Trump administration is quietly proposing to rescind a 16-year-old rule enacted to prevent \u201cpay-to-play\u201d schemes involving investment advisers and public pension funds.",
+          "sourceUrl": "https://popular.info/p/making-pensions-corrupt-again",
+          "platform": "substack"
+        },
         {
           "date": "2026-09-15",
           "topic": "trump-administration",
@@ -1749,7 +1758,7 @@
           "platform": "substack"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "epstein-scandal",

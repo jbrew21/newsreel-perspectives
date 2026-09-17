@@ -1,16 +1,25 @@
 {
   "voiceId": "david-pakman",
   "voiceName": "David Pakman",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "topicCount": 28,
-  "stanceCount": 296,
+  "stanceCount": 298,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 74,
-      "lastActive": "2026-09-16",
+      "count": 76,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Mocks Trump with crude satire",
+          "quote": "They told him NO, so Trump P00PS IN THE SANDBOX",
+          "sourceUrl": "https://www.youtube.com/watch?v=EwSjjHeMSeI",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-16",
           "topic": "trump-administration",
@@ -43,7 +52,7 @@
           "topic": "trump-administration",
           "stance": "strong",
           "summary": "Criticizes Trump's mental state and behavior as unstable",
-          "quote": "Trump has serious mental episode",
+          "quote": "Trump blows assassination attempt WIDE OPEN",
           "sourceUrl": "https://www.youtube.com/watch?v=3iOeK-ZVVBg",
           "platform": "youtube"
         },
@@ -54,6 +63,15 @@
           "summary": "Expresses alarm at Trump administration actions or statements",
           "quote": "DEAR GOD: This is OFF THE RAILS",
           "sourceUrl": "https://www.youtube.com/watch?v=okHR4tOAyus",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-16",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Frames Hunter Biden as responding to Trump",
+          "quote": "Hunter Biden ERUPTS on Trump and tells the whole story",
+          "sourceUrl": "https://www.youtube.com/watch?v=1ydHOPUh47s",
           "platform": "youtube"
         },
         {
@@ -2661,33 +2679,6 @@
       "active": false
     },
     {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 2,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Highlights hypocrisy of deportation supporter facing deportation",
-          "quote": "He LOVED IT until Trump deported HIM",
-          "sourceUrl": "https://www.youtube.com/watch?v=liHwhoj8QFU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2025-08-20",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Questions ICE detention of people without criminal records",
-          "quote": "71% of ICE detainees appear to have no criminal record. What are we doing here, folks?",
-          "sourceUrl": "https://x.com/dpakman/status/1958256913466204482",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 3,
@@ -2790,6 +2781,33 @@
           "summary": "Proposes mandatory psychiatric evaluations for gun owners",
           "quote": "If they actually believe the issue is mental health, shouldn't there be mandatory periodic psych evals for gun owners?",
           "sourceUrl": "https://x.com/dpakman/status/1529812407752790018",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Highlights hypocrisy of deportation supporter facing deportation",
+          "quote": "He LOVED IT until Trump deported HIM",
+          "sourceUrl": "https://www.youtube.com/watch?v=liHwhoj8QFU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2025-08-20",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Questions ICE detention of people without criminal records",
+          "quote": "71% of ICE detainees appear to have no criminal record. What are we doing here, folks?",
+          "sourceUrl": "https://x.com/dpakman/status/1958256913466204482",
           "platform": "x"
         }
       ],

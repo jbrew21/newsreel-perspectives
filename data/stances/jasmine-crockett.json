@@ -1,16 +1,25 @@
 {
   "voiceId": "jasmine-crockett",
   "voiceName": "Jasmine Crockett",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "topicCount": 15,
-  "stanceCount": 36,
+  "stanceCount": 37,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 6,
-      "lastActive": "2026-09-04",
+      "count": 7,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes House Republicans for avoiding Hegseth impeachment vote, abandoning legislative work",
+          "quote": "MAGA Mike canceled votes and sent the House home early \u2014 to avoid impeaching failed reality star Pete Hegseth.\n\nCosts are up. Work is unfinished. And Republicans? Headed home to campaign on their failed policies.\n\nThe American people deserve a Congress that actually shows up for ",
+          "sourceUrl": "https://x.com/RepJasmine/status/2100362625645158487",
+          "platform": "x"
+        },
         {
           "date": "2026-09-04",
           "topic": "trump-administration",
@@ -120,7 +129,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "economy-trade",
@@ -264,34 +273,7 @@
           "platform": "x"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Demands DOJ investigation into suspicious deaths of Black Americans",
-          "quote": "Black Americans are being found hanging in 2026.\n\nFor generations, Black people were lynched while institutions stood by and did nothing.\n\nWe cannot repeat that history.\n\nI\u2019m demanding a full investigation from the DOJ. https://t.co/qCD807el5G",
-          "sourceUrl": "https://x.com/RepJasmine/status/2095245580184265190",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-23",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Alleges deaths in custody crisis, demands serious congressional oversight",
-          "quote": "Let's cut the act.\n\nRepublicans don't actually care about what's happening inside Delaney Hall.\n\nPeople are dying in our custody.\n\nIf they were serious about oversight, we'd be holding real hearings on the deadly crisis this administration has created \u2014 and how we're going to fix",
-          "sourceUrl": "https://bsky.app/profile/crockett.house.gov/post/3mrbnn6xuwk25",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "immigration",
@@ -325,6 +307,33 @@
           "quote": "No federal agency should be killing people in our communities.\n\nHe was TWENTY-SIX years old. TWENTY-SIX. \n\nSince Trump took office, ICE has shot and killed at least 10 people. When families are left burying their loved ones, that is not law enforcement. That is cruelty.\n\nWe deser",
           "sourceUrl": "https://x.com/RepJasmine/status/2076768948939628739",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Demands DOJ investigation into suspicious deaths of Black Americans",
+          "quote": "Black Americans are being found hanging in 2026.\n\nFor generations, Black people were lynched while institutions stood by and did nothing.\n\nWe cannot repeat that history.\n\nI\u2019m demanding a full investigation from the DOJ. https://t.co/qCD807el5G",
+          "sourceUrl": "https://x.com/RepJasmine/status/2095245580184265190",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-23",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Alleges deaths in custody crisis, demands serious congressional oversight",
+          "quote": "Let's cut the act.\n\nRepublicans don't actually care about what's happening inside Delaney Hall.\n\nPeople are dying in our custody.\n\nIf they were serious about oversight, we'd be holding real hearings on the deadly crisis this administration has created \u2014 and how we're going to fix",
+          "sourceUrl": "https://bsky.app/profile/crockett.house.gov/post/3mrbnn6xuwk25",
+          "platform": "bluesky"
         }
       ],
       "active": false

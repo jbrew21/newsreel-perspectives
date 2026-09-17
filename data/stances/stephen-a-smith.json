@@ -1,9 +1,9 @@
 {
   "voiceId": "stephen-a-smith",
   "voiceName": "Stephen A. Smith",
-  "updatedAt": "2026-09-16",
-  "topicCount": 19,
-  "stanceCount": 124,
+  "updatedAt": "2026-09-17",
+  "topicCount": 20,
+  "stanceCount": 127,
   "topics": [
     {
       "topic": "sports",
@@ -1095,6 +1095,60 @@
       "active": false
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 2,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses concern about AI advancement and potential risks",
+          "quote": "STEPHEN A. SMITH IS SCARED OF AI",
+          "sourceUrl": "https://www.youtube.com/shorts/LKx0HYKl7og",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Calls for intervention to address existential AI threat to humanity",
+          "quote": "\u201cWe Need Someone to Rescue Humanity!\u201d Stephen A. on the AI Takeover",
+          "sourceUrl": "https://www.youtube.com/watch?v=7y6_cRBx8lU",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 2,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Discusses government's role in supporting American workers and families",
+          "quote": "How Should The Government Support Americans | Stephen A.'s Straight Shooter",
+          "sourceUrl": "https://www.youtube.com/shorts/OP1XhDJPdRo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Supports raising minimum wage to living wage standard",
+          "quote": "Sen. Chris Murphy Tells Stephen A. that Minimum Wage Should Be a Living Wage!",
+          "sourceUrl": "https://www.youtube.com/shorts/vq1wup-Bhyo",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
       "count": 2,
@@ -1197,24 +1251,6 @@
           "summary": "Discusses political division and common good with Democratic senator",
           "quote": "Crisis Of The Common Good: Sen. Chris Murphy On Fixing A Divided America | Stephen A. Smith",
           "sourceUrl": "https://www.youtube.com/watch?v=lDf5AAukiH0",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 1,
-      "lastActive": "2026-09-10",
-      "stances": [
-        {
-          "date": "2026-09-10",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Supports raising minimum wage to living wage standard",
-          "quote": "Sen. Chris Murphy Tells Stephen A. that Minimum Wage Should Be a Living Wage!",
-          "sourceUrl": "https://www.youtube.com/shorts/vq1wup-Bhyo",
           "platform": "youtube"
         }
       ],

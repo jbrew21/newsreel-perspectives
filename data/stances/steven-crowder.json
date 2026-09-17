@@ -1,7 +1,7 @@
 {
   "voiceId": "steven-crowder",
   "voiceName": "Steven Crowder",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "topicCount": 18,
   "stanceCount": 71,
   "topics": [
@@ -591,33 +591,6 @@
       "active": true
     },
     {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 2,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Mocks immigration enforcement through food/deportation wordplay",
-          "quote": "Times Square Torta Gets Deported... TO HELL",
-          "sourceUrl": "https://www.youtube.com/watch?v=_z1-0HwHcBo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Sarcastically frames migrant concerns as economic, implying skepticism of asylum claims",
-          "quote": "What's the problem? It's just a bunch of women and children seeking a better life.",
-          "sourceUrl": "https://www.youtube.com/shorts/k-Su6oCz7eg",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "uk-world-politics",
       "label": "UK & World Politics",
       "count": 3,
@@ -684,6 +657,33 @@
           "summary": "Criticizes public safety conditions in Hawaii",
           "quote": "Nothing says \u201cspirit of aloha\u201d like a knife fight on the beach.",
           "sourceUrl": "https://www.youtube.com/shorts/8OZ-pfqpIFQ",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Mocks immigration enforcement through food/deportation wordplay",
+          "quote": "Times Square Torta Gets Deported... TO HELL",
+          "sourceUrl": "https://www.youtube.com/watch?v=_z1-0HwHcBo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Sarcastically frames migrant concerns as economic, implying skepticism of asylum claims",
+          "quote": "What's the problem? It's just a bunch of women and children seeking a better life.",
+          "sourceUrl": "https://www.youtube.com/shorts/k-Su6oCz7eg",
           "platform": "youtube"
         }
       ],

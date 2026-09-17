@@ -1,7 +1,7 @@
 {
   "voiceId": "riley-gaines",
   "voiceName": "Riley Gaines",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "topicCount": 20,
   "stanceCount": 80,
   "topics": [
@@ -510,6 +510,42 @@
       "active": true
     },
     {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 3,
+      "lastActive": "2026-09-13",
+      "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Criticizes left-wing figures for celebrating a death",
+          "quote": "The GHOULS Of The Left CELEBRATING Charlie\u2019s Murder! #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/fNxV5YOf0ok",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Claims a death radicalized her politically",
+          "quote": "Charlie Kirk's Murder RADICALIZED Me! \ud83e\udd2f #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/QZInORNJTus",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Marks anniversary of a notable death event",
+          "quote": "One Year After Charlie Kirk's Assassination \ud83d\udea8 #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/UZSfC4J-WSI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
       "count": 4,
@@ -552,43 +588,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
-      "count": 3,
-      "lastActive": "2026-09-13",
-      "stances": [
-        {
-          "date": "2026-09-13",
-          "topic": "celebrity-entertainment",
-          "stance": "strong",
-          "summary": "Criticizes left-wing figures for celebrating a death",
-          "quote": "The GHOULS Of The Left CELEBRATING Charlie\u2019s Murder! #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/fNxV5YOf0ok",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-10",
-          "topic": "celebrity-entertainment",
-          "stance": "strong",
-          "summary": "Claims a death radicalized her politically",
-          "quote": "Charlie Kirk's Murder RADICALIZED Me! \ud83e\udd2f #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/QZInORNJTus",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-10",
-          "topic": "celebrity-entertainment",
-          "stance": "lean",
-          "summary": "Marks anniversary of a notable death event",
-          "quote": "One Year After Charlie Kirk's Assassination \ud83d\udea8 #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/UZSfC4J-WSI",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "media-press",
@@ -636,33 +636,6 @@
       "active": false
     },
     {
-      "topic": "abortion-reproductive",
-      "label": "Abortion & Reproductive Rights",
-      "count": 2,
-      "lastActive": "2026-09-02",
-      "stances": [
-        {
-          "date": "2026-09-02",
-          "topic": "abortion-reproductive",
-          "stance": "strong",
-          "summary": "Criticizes Anne Hathaway's abortion stance as lacking mercy",
-          "quote": "Riley Gaines SLAMS Anne Hathaway! CLUELESS TAKE! \ud83d\udd25 #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/0WA5QA3lDiw",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-31",
-          "topic": "abortion-reproductive",
-          "stance": "strong",
-          "summary": "Criticizes celebrity's abortion advocacy as agenda-driven",
-          "quote": "Olivia Rodrigo\u2019s Abortion Agenda EXPOSED! \ud83d\udd25 #shorts",
-          "sourceUrl": "https://www.youtube.com/shorts/e9QW_BpVDfU",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 3,
@@ -693,6 +666,33 @@
           "summary": "Presents favorable personal account of Trump",
           "quote": "She Travels With Trump. Here\u2019s What He\u2019s REALLY Like | The Riley Gaines Show",
           "sourceUrl": "https://www.youtube.com/watch?v=iG971st9Kvs",
+          "platform": "youtube"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "abortion-reproductive",
+      "label": "Abortion & Reproductive Rights",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "abortion-reproductive",
+          "stance": "strong",
+          "summary": "Criticizes Anne Hathaway's abortion stance as lacking mercy",
+          "quote": "Riley Gaines SLAMS Anne Hathaway! CLUELESS TAKE! \ud83d\udd25 #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/0WA5QA3lDiw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "abortion-reproductive",
+          "stance": "strong",
+          "summary": "Criticizes celebrity's abortion advocacy as agenda-driven",
+          "quote": "Olivia Rodrigo\u2019s Abortion Agenda EXPOSED! \ud83d\udd25 #shorts",
+          "sourceUrl": "https://www.youtube.com/shorts/e9QW_BpVDfU",
           "platform": "youtube"
         }
       ],

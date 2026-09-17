@@ -1,9 +1,9 @@
 {
   "voiceId": "jennifer-rubin",
   "voiceName": "Jennifer Rubin",
-  "updatedAt": "2026-09-16",
-  "topicCount": 27,
-  "stanceCount": 349,
+  "updatedAt": "2026-09-17",
+  "topicCount": 28,
+  "stanceCount": 352,
   "topics": [
     {
       "topic": "elections",
@@ -566,9 +566,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 44,
-      "lastActive": "2026-09-15",
+      "count": 45,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Expresses strong disapproval of Trump administration performance",
+          "quote": "what a fucking disaster he's been",
+          "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mvocd7dz4c2p",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-15",
           "topic": "trump-administration",
@@ -3111,6 +3120,42 @@
       "active": false
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 3,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Criticizes RFK Jr. appointment as damaging health legacy",
+          "quote": "it's HIS legacy... he voted for RFK, Jr. ... www.washingtonpost.com/health/2026/...",
+          "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mvocsnterc26",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Criticizes measles resurgence as healthcare disaster",
+          "quote": "MAHA: Measles Are Happening Again... one of several heatlhcare disasters\nsubstack.com/@contrarian/...",
+          "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mrxvozq75s2z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2018-02-15",
+          "topic": "healthcare",
+          "stance": "lean",
+          "summary": "Opposes Medicaid cuts for mental health services",
+          "quote": "if you think this is a mental health problem then dont cut Medicaid that provides 25% of mental health care",
+          "sourceUrl": "https://x.com/JRubinBlogger/status/964135653448601601",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 3,
@@ -3318,33 +3363,6 @@
       "active": false
     },
     {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 2,
-      "lastActive": "2026-07-31",
-      "stances": [
-        {
-          "date": "2026-07-31",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Criticizes measles resurgence as healthcare disaster",
-          "quote": "MAHA: Measles Are Happening Again... one of several heatlhcare disasters\nsubstack.com/@contrarian/...",
-          "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mrxvozq75s2z",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2018-02-15",
-          "topic": "healthcare",
-          "stance": "lean",
-          "summary": "Opposes Medicaid cuts for mental health services",
-          "quote": "if you think this is a mental health problem then dont cut Medicaid that provides 25% of mental health care",
-          "sourceUrl": "https://x.com/JRubinBlogger/status/964135653448601601",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "education",
       "label": "Education",
       "count": 2,
@@ -3370,6 +3388,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "climate-environment",
+      "label": "Climate & Environment",
+      "count": 1,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "climate-environment",
+          "stance": "strong",
+          "summary": "Attacks Trump move to weaken endangered species protections",
+          "quote": "\"Trump Administration Moves to Gut a Core Endangered Species Protection\"... those endangered species should include Rs in any seat Trump didn't win by at least 10 points.",
+          "sourceUrl": "https://bsky.app/profile/jenrubin.bsky.social/post/3mvobjt3kd22p",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "abortion-reproductive",

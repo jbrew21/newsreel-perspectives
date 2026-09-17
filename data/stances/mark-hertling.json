@@ -1,9 +1,9 @@
 {
   "voiceId": "mark-hertling",
   "voiceName": "Mark Hertling",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "topicCount": 8,
-  "stanceCount": 29,
+  "stanceCount": 30,
   "topics": [
     {
       "topic": "military-defense",
@@ -125,9 +125,18 @@
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
-      "count": 7,
-      "lastActive": "2026-08-19",
+      "count": 8,
+      "lastActive": "2026-09-16",
       "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Analyzes Iran developments and U.S. response",
+          "quote": "Lots going on over the last 7 days. My latest in @thebulwark.com \n\nwww.thebulwark.com/p/the-iran-w...",
+          "sourceUrl": "https://bsky.app/profile/markhertling.bsky.social/post/3mvnmtnties2f",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-08-19",
           "topic": "iran-conflict",
@@ -192,7 +201,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "foreign-policy-diplomacy",

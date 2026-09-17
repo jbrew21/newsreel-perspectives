@@ -1,9 +1,9 @@
 {
   "voiceId": "joy-reid",
   "voiceName": "Joy Reid",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "topicCount": 20,
-  "stanceCount": 69,
+  "stanceCount": 70,
   "topics": [
     {
       "topic": "elections",
@@ -402,6 +402,42 @@
       "active": false
     },
     {
+      "topic": "foreign-policy-diplomacy",
+      "label": "Foreign Policy & Diplomacy",
+      "count": 3,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Questions Trump family Russia ties, criticizes constraints on Palestine speech",
+          "quote": "Tonight on TJRS we ask: is Russia still buying the Trumps? Is Mitch non corpus mentis? And why can't you say \"Free Palestine\" in America? Looking at you, Robert Kraft... www.youtube.com/live/9mU7sBX...",
+          "sourceUrl": "https://bsky.app/profile/joyannreid.bsky.social/post/3mvola6ljs22s",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-07-15",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's trade threats against NATO ally Spain over defense spending demands",
+          "quote": "Trump throwing a full toddler tantrum at NATO ally Spain\u2014halting all U.S. trade because they won\u2019t hit his insane 5% GDP defense demand amid the Iran mess? \n\nThis isn\u2019t \u2018America First.\u2019 It\u2019s chaotic isolationism that hurts American workers, farmers & businesses while he plays str",
+          "sourceUrl": "https://x.com/Joyannreid/status/2077418421835219288",
+          "platform": "x"
+        },
+        {
+          "date": "2025-03-02",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "strong",
+          "summary": "Criticizes abandonment of Ukraine, highlights inflation and unspecified backroom deals",
+          "quote": "Reality check: Ukraine\u2019s out there fighting for survival, and now they\u2019re left drifting in the wind. Multiple red states are banning plastic grocery bags, ignoring the average American struggling with high inflation. Word is, some shadowy deals are being cut behind closed doors t",
+          "sourceUrl": "https://x.com/JoyAnnReid/status/1896023023331033468",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 4,
@@ -613,33 +649,6 @@
           "quote": "#ispokewithmitchmcconnell #fyp",
           "sourceUrl": "https://www.tiktok.com/@joyreidofficial/video/7661461511738543374",
           "platform": "tiktok"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "foreign-policy-diplomacy",
-      "label": "Foreign Policy & Diplomacy",
-      "count": 2,
-      "lastActive": "2026-07-15",
-      "stances": [
-        {
-          "date": "2026-07-15",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Criticizes Trump's trade threats against NATO ally Spain over defense spending demands",
-          "quote": "Trump throwing a full toddler tantrum at NATO ally Spain\u2014halting all U.S. trade because they won\u2019t hit his insane 5% GDP defense demand amid the Iran mess? \n\nThis isn\u2019t \u2018America First.\u2019 It\u2019s chaotic isolationism that hurts American workers, farmers & businesses while he plays str",
-          "sourceUrl": "https://x.com/Joyannreid/status/2077418421835219288",
-          "platform": "x"
-        },
-        {
-          "date": "2025-03-02",
-          "topic": "foreign-policy-diplomacy",
-          "stance": "strong",
-          "summary": "Criticizes abandonment of Ukraine, highlights inflation and unspecified backroom deals",
-          "quote": "Reality check: Ukraine\u2019s out there fighting for survival, and now they\u2019re left drifting in the wind. Multiple red states are banning plastic grocery bags, ignoring the average American struggling with high inflation. Word is, some shadowy deals are being cut behind closed doors t",
-          "sourceUrl": "https://x.com/JoyAnnReid/status/1896023023331033468",
-          "platform": "x"
         }
       ],
       "active": false

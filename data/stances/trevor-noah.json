@@ -1,16 +1,25 @@
 {
   "voiceId": "trevor-noah",
   "voiceName": "Trevor Noah",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "topicCount": 32,
-  "stanceCount": 152,
+  "stanceCount": 154,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 26,
-      "lastActive": "2026-09-16",
+      "count": 27,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Kash Patel through comedic scrutiny of his statements",
+          "quote": "Kash Patel Gets Tangled in Bestiality Questions &amp; Don Jr. Gets a Blushing Bribe | The Daily Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=VqtAdUtLGeA",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-16",
           "topic": "trump-administration",
@@ -1122,6 +1131,51 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 4,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Supports Kaepernick's protest activism and civil rights advocacy",
+          "quote": "Colin Kaepernick Continues &quot;The Perilous Fight&quot; 10 Years After Taking a Knee | The Daily Show",
+          "sourceUrl": "https://www.youtube.com/watch?v=N8xOmH-dvGw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-13",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Satirizes celebrity influence over justice system as absurd",
+          "quote": "When the simulation glitches and Kim Kardashian is running the justice system... \ud83d\ude2d\ud83c\udf0d",
+          "sourceUrl": "https://www.tiktok.com/@trevornoah/video/7680337852265286942",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2026-08-12",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Highlights absurdity of American police response protocols",
+          "quote": "What Happens When You Give a South African Cop a Cold Drink at an American Standoff!",
+          "sourceUrl": "https://www.tiktok.com/@trevornoah/video/7670392590377831710",
+          "platform": "tiktok"
+        },
+        {
+          "date": "2022-03-11",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Contrasts Smollett's jail time with opioid crisis executives' minimal accountability",
+          "quote": "What Jussie Smollett did was dumb as hell. But it\u2019s crazy that he\u2019s gonna spend more time in jail than the family who are mostly to blame for America\u2019s opioid epidemic.\ud83e\uddd0",
+          "sourceUrl": "https://x.com/Trevornoah/status/1502369852551725056",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 6,
@@ -1183,42 +1237,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 3,
-      "lastActive": "2026-09-13",
-      "stances": [
-        {
-          "date": "2026-09-13",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Satirizes celebrity influence over justice system as absurd",
-          "quote": "When the simulation glitches and Kim Kardashian is running the justice system... \ud83d\ude2d\ud83c\udf0d",
-          "sourceUrl": "https://www.tiktok.com/@trevornoah/video/7680337852265286942",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2026-08-12",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Highlights absurdity of American police response protocols",
-          "quote": "What Happens When You Give a South African Cop a Cold Drink at an American Standoff!",
-          "sourceUrl": "https://www.tiktok.com/@trevornoah/video/7670392590377831710",
-          "platform": "tiktok"
-        },
-        {
-          "date": "2022-03-11",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Contrasts Smollett's jail time with opioid crisis executives' minimal accountability",
-          "quote": "What Jussie Smollett did was dumb as hell. But it\u2019s crazy that he\u2019s gonna spend more time in jail than the family who are mostly to blame for America\u2019s opioid epidemic.\ud83e\uddd0",
-          "sourceUrl": "https://x.com/Trevornoah/status/1502369852551725056",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "immigration",
