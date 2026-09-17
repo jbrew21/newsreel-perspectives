@@ -1,9 +1,43 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "collectedAt": "2026-09-17T20:42:40.145690",
+  "collectedAt": "2026-09-17T22:24:19.946514",
   "date": "2026-09-17",
   "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "ABDUL CAN'T BELIEVE SHE WON'T ASK A REAL QUESTION",
+      "sourceUrl": "https://www.youtube.com/watch?v=YBQ3JPZp-cY",
+      "timestamp": "2026-09-17T19:35:23+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes CBS for abandoning journalistic standards",
+      "quote": "ABDUL CAN'T BELIEVE SHE WON'T ASK A REAL QUESTION"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "IS BLUE TEXAS REAL",
+      "sourceUrl": "https://www.youtube.com/watch?v=KUG2Pm5sMYQ",
+      "timestamp": "2026-09-17T14:10:14+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "topics": [
+        "elections"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions whether Texas can shift Democratic in elections",
+      "quote": "IS BLUE TEXAS REAL"
+    },
     {
       "voiceId": "hasanabi",
       "voiceName": "HasanAbi",
@@ -54,55 +88,29 @@
       "stance": "lean",
       "summary": "AI industry facing backlash or regulatory pressure",
       "quote": "THE AI INDUSTRY IS FREAKING OUT"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "CBS ISN'T EVEN NEWS ANYMORE",
-      "sourceUrl": "https://www.youtube.com/watch?v=YBQ3JPZp-cY",
-      "timestamp": "2026-09-17T19:35:23+00:00",
-      "type": "video_title",
-      "topic": "media-press",
-      "topics": [
-        "media-press"
-      ],
-      "relevance": "high",
-      "stance": "strong",
-      "summary": "Criticizes CBS for abandoning journalistic standards",
-      "quote": "CBS ISN'T EVEN NEWS ANYMORE"
-    },
-    {
-      "voiceId": "hasanabi",
-      "voiceName": "HasanAbi",
-      "platform": "youtube",
-      "text": "IS BLUE TEXAS REAL",
-      "sourceUrl": "https://www.youtube.com/watch?v=KUG2Pm5sMYQ",
-      "timestamp": "2026-09-17T14:10:14+00:00",
-      "type": "video_title",
-      "topic": "elections",
-      "topics": [
-        "elections"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Questions whether Texas can shift Democratic in elections",
-      "quote": "IS BLUE TEXAS REAL"
     }
   ],
   "topicSummary": {
-    "elections": [
+    "media-press": [
       {
-        "quote": "ABDUL EL-SAYED VS EMPTY PODIUM DEBATE",
-        "sourceUrl": "https://www.youtube.com/watch?v=PeSnXsbvc1c",
+        "quote": "ABDUL CAN'T BELIEVE SHE WON'T ASK A REAL QUESTION",
+        "sourceUrl": "https://www.youtube.com/watch?v=YBQ3JPZp-cY",
         "platform": "youtube",
-        "timestamp": "2026-09-16T03:44:44+00:00"
-      },
+        "timestamp": "2026-09-17T19:35:23+00:00"
+      }
+    ],
+    "elections": [
       {
         "quote": "IS BLUE TEXAS REAL",
         "sourceUrl": "https://www.youtube.com/watch?v=KUG2Pm5sMYQ",
         "platform": "youtube",
         "timestamp": "2026-09-17T14:10:14+00:00"
+      },
+      {
+        "quote": "ABDUL EL-SAYED VS EMPTY PODIUM DEBATE",
+        "sourceUrl": "https://www.youtube.com/watch?v=PeSnXsbvc1c",
+        "platform": "youtube",
+        "timestamp": "2026-09-16T03:44:44+00:00"
       }
     ],
     "israel-palestine": [
@@ -119,14 +127,6 @@
         "sourceUrl": "https://www.youtube.com/watch?v=Hd2cUZAmK5s",
         "platform": "youtube",
         "timestamp": "2026-09-15T02:24:39+00:00"
-      }
-    ],
-    "media-press": [
-      {
-        "quote": "CBS ISN'T EVEN NEWS ANYMORE",
-        "sourceUrl": "https://www.youtube.com/watch?v=YBQ3JPZp-cY",
-        "platform": "youtube",
-        "timestamp": "2026-09-17T19:35:23+00:00"
       }
     ]
   }

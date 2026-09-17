@@ -2,8 +2,8 @@
   "voiceId": "manhattan-institute",
   "voiceName": "Manhattan Institute",
   "updatedAt": "2026-09-17",
-  "topicCount": 24,
-  "stanceCount": 87,
+  "topicCount": 25,
+  "stanceCount": 88,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -877,6 +877,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 1,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "supreme-court-legal",
+          "stance": "lean",
+          "summary": "Pushes for transparency compliance with FOIL requests",
+          "quote": "Mamdani responds to our lawsuit: \n\nREPORTER: \"What is the delay in these records? Why not turn them over?\"\n\nMAMDANI: \"Our law department is reviewing this lawsuit, and we are fully committed to transparency. We are working to returning FOIL requests in full accordance with the la",
+          "sourceUrl": "https://x.com/ManhattanInst/status/2100579440111554956",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "food-agriculture",
