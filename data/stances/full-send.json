@@ -2,8 +2,8 @@
   "voiceId": "full-send",
   "voiceName": "Full Send / NELK Boys",
   "updatedAt": "2026-09-17",
-  "topicCount": 15,
-  "stanceCount": 44,
+  "topicCount": 16,
+  "stanceCount": 45,
   "topics": [
     {
       "topic": "elections",
@@ -355,6 +355,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 1,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Expresses concern about AI existential risk",
+          "quote": "Nelk Boys Predict That AI Will Kill All Humans",
+          "sourceUrl": "https://www.youtube.com/watch?v=QO5-NXt95lE",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "celebrity-entertainment",

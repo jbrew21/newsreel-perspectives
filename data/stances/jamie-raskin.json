@@ -2,8 +2,8 @@
   "voiceId": "jamie-raskin",
   "voiceName": "Jamie Raskin",
   "updatedAt": "2026-09-17",
-  "topicCount": 19,
-  "stanceCount": 63,
+  "topicCount": 20,
+  "stanceCount": 64,
   "topics": [
     {
       "topic": "trump-administration",
@@ -580,6 +580,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "trump-policy",
+      "label": "Trump Policy & Agenda",
+      "count": 1,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "trump-policy",
+          "stance": "strong",
+          "summary": "Criticizes Trump's authoritarian isolationism and alignment with dictators",
+          "quote": "Yes, Trump brought this horrible idea (which never works!) to North America and impressed his close Communist chums and allies Kim Jong Un, President Xi and Vladimir Putin, the former head of the KGB, with his devotion to authoritarian isolationism.",
+          "sourceUrl": "https://x.com/RepRaskin/status/2100590348175049064",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "housing-infrastructure",
