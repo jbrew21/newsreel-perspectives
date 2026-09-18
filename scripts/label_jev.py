@@ -33,6 +33,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# Load .env the same way the rest of the pipeline does (migrate_to_supabase.py,
+# collect.py). Must run before the module constants below, which read the
+# environment at import time. A real environment variable always wins, so CI
+# secrets override the local file.
+for _env_path in [ROOT / '.env', ROOT.parent / 'newsletter' / '.env']:
+    if _env_path.exists():
+        for _line in _env_path.read_text().splitlines():
+            _line = _line.strip()
+            if _line and not _line.startswith('#') and '=' in _line:
+                _k, _, _v = _line.partition('=')
+                if _k.strip() not in os.environ:
+                    os.environ[_k.strip()] = _v.strip()
+
 API_URL = "https://api.typesafe.ai/v1/systemone"
 
 # "jev-latest" is what the docs document. The response echoes the resolved
