@@ -38,13 +38,26 @@ ROOT = Path(__file__).resolve().parent.parent
 # environment at import time. A real environment variable always wins, so CI
 # secrets override the local file.
 for _env_path in [ROOT / '.env', ROOT.parent / 'newsletter' / '.env']:
-    if _env_path.exists():
-        for _line in _env_path.read_text().splitlines():
-            _line = _line.strip()
-            if _line and not _line.startswith('#') and '=' in _line:
-                _k, _, _v = _line.partition('=')
-                if _k.strip() not in os.environ:
-                    os.environ[_k.strip()] = _v.strip()
+    if not _env_path.exists():
+        continue
+    # Decode defensively. A .env with a stray non-UTF-8 byte in it used to
+    # raise UnicodeDecodeError at import and take every script that loads .env
+    # down with it (Sep 18: a bad paste put 23KB of a document in this file and
+    # broke the whole local pipeline). A malformed line is skipped, never fatal.
+    try:
+        _text = _env_path.read_bytes().decode('utf-8', 'replace')
+    except OSError:
+        continue
+    for _line in _text.splitlines():
+        _line = _line.strip()
+        if not _line or _line.startswith('#') or '=' not in _line:
+            continue
+        _k, _, _v = _line.partition('=')
+        _k = _k.strip()
+        # Only accept well-formed names, so prose that happens to contain '='
+        # cannot define an environment variable.
+        if _k.isidentifier() and _k.isupper() and _k not in os.environ:
+            os.environ[_k] = _v.strip()
 
 API_URL = "https://api.typesafe.ai/v1/systemone"
 
