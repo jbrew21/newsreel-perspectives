@@ -212,6 +212,13 @@ def main():
         print(f"  stance exact     {s['stance_exact_pct']:>5}%")
         print(f"  FALSE DROPS      {s['false_drop_pct']:>5}%   (gate 1 passes at <= 10%)")
 
+    # Save the full per-row result so threshold sweeps and confusion analysis
+    # cost nothing. Without this, every re-analysis means paying for the API
+    # again (learned the hard way on the first 400-post run, Sep 18).
+    (OUT_DIR / f"rows-{today}.json").write_text(json.dumps([
+        {k: r[k] for k in r if k not in ("text",)} | {"text": r["text"][:300]}
+        for r in rows], indent=2))
+
     (OUT_DIR / f"summary-{today}.json").write_text(json.dumps(summary, indent=2))
     print(f"\nwrote {OUT_DIR}/summary-{today}.json")
     print("disagreement files carry label_a / label_b with no attribution, "

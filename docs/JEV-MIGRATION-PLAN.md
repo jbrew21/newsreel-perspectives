@@ -144,6 +144,53 @@ After Jev, the kept posts per voice go to Haiku in one short prompt: the posts a
 
 Effort: Claude ~10 h across Stages 1-3; Jack ~1.5 h (key, two settings, two gate reviews). Brijesh: nothing (no Supabase, no Render changes). Calendar: about two weeks, most of it waiting on shadow runs.
 
+## 4b. Gate 1 results (measured Sep 18 2026, n=400 per design)
+
+Both designs FAIL the gate as written (false drops <= 10%). The failure is not general scatter, it is one bucket.
+
+| | Design A (choice) | Design B (41 nouls) |
+|---|---|---|
+| Topic exact | **66.8%** | 55.0% |
+| Topic overlap | **79.0%** | 71.0% |
+| Relevance exact | 43.8% | 44.0% |
+| Stance exact | 68.8% | 69.5% |
+| **False drops** | **27.8%** | 27.8% |
+| Errors | 0 | 0 |
+
+**Design A wins on topic and ties everywhere else, so A is the design.** Design B is dropped.
+
+### Where the 27.8% actually comes from
+
+- **Stance is fine.** 69% exact, and when Jev disagrees it usually rates *higher* (lean -> strong, 70 cases) rather than lower (51 cases). Only **5.8%** of posts fail the stance dial.
+- **Relevance is the whole problem.** **23.5%** fail the relevance dial, and it is concentrated in one place: **42% of Haiku's "medium" posts get dropped, against 9% of Haiku's "high" posts.**
+- Medians are high (relevance_p 0.920, stance_p 1.000), so most posts clear easily. The failures are a distinct tail.
+
+### The structural caveat that decides how to read all of this
+
+Haiku said "low" **zero** times in this sample, because low-relevance posts were filtered out before they ever reached a day file. The corpus we are scoring against contains only medium and high. So this measures agreement on posts Haiku already decided to keep, and the entire disagreement sits in "medium", which is the fuzzy bucket where both models are guessing.
+
+**A "false drop" here does not mean Jev is wrong.** It means Jev is stricter than Haiku on marginal content. That could be a precision improvement. The metric cannot tell us which, and that is exactly why Gate 1 is a blind human review rather than a number.
+
+### Threshold sweep (free, from `data/shadow/rows-2026-09-18.json`)
+
+| Threshold | False drops | Kept of 400 |
+|---|---|---|
+| 0.50 (default) | 27.8% | 289 |
+| 0.30 | 15.2% | 339 |
+| 0.20 | 11.2% | 355 |
+| **0.15** | **8.5%** | 366 |
+| 0.10 | 6.0% | 376 |
+
+0.15 clears the gate mechanically. **Do not take that as the answer.** Lowering a dial until a metric passes is gaming it, and Stage 1 structurally cannot measure false *keeps*, so a lower threshold might simply be letting junk in where nobody can see it.
+
+### What has to happen next, in order
+
+1. **Blind review of the medium-relevance disagreements.** 100 are in `data/shadow/disagreements-A-2026-09-18.json` with no attribution. Review the ones where Haiku said medium and Jev said low, because ~85% of the false drops live there. If the reviewer sides with Jev, the drops are not false and 0.50 stands. If the reviewer sides with Haiku, Jev's relevance calibration is genuinely off.
+2. **If calibration is off, fix the question, not the threshold.** The relevance criteria may need a sharper description of what "tangentially related" means, since that is the level being disputed.
+3. Only then consider Stage 2, which is the only stage that can measure false keeps.
+
+**Data quality note:** 4 of 400 rows carry `None` for Haiku relevance and stance. Small, but worth finding out how a kept post ends up unlabeled.
+
 ## 5. Expected result
 
 | | Today | After cutover |
