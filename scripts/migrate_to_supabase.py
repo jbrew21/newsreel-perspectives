@@ -30,7 +30,7 @@ log = logging.getLogger('migrate')
 # Load env
 for env_path in [ROOT / '.env', ROOT.parent / 'newsletter' / '.env']:
     if env_path.exists():
-        for line in env_path.read_text().splitlines():
+        for line in env_path.read_bytes().decode('utf-8', 'replace').splitlines():  # tolerate a malformed .env (Sep 18 incident)
             line = line.strip()
             if line and not line.startswith('#') and '=' in line:
                 key, _, val = line.partition('=')
