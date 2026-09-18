@@ -3,7 +3,7 @@
   "voiceName": "Michael Knowles",
   "updatedAt": "2026-09-18",
   "topicCount": 32,
-  "stanceCount": 213,
+  "stanceCount": 215,
   "topics": [
     {
       "topic": "elections",
@@ -233,7 +233,7 @@
     {
       "topic": "culture-war",
       "label": "Culture War",
-      "count": 21,
+      "count": 22,
       "lastActive": "2026-09-17",
       "stances": [
         {
@@ -243,6 +243,15 @@
           "summary": "Suggests culture is embracing biological reality",
           "quote": "At least our culture is starting to understand reality \ud83e\udd37\ud83c\udffb\u200d\u2642\ufe0f",
           "sourceUrl": "https://www.youtube.com/shorts/99mnbZ-Ho4A",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "culture-war",
+          "stance": "lean",
+          "summary": "Expresses skepticism about contemporary cultural phenomenon",
+          "quote": "This feels like a parody, but it isn't",
+          "sourceUrl": "https://www.youtube.com/shorts/h8zf7AGdnSU",
           "platform": "youtube"
         },
         {
@@ -1860,6 +1869,42 @@
       "active": false
     },
     {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 3,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Criticizes state legislator for misrepresenting policy positions",
+          "quote": "James Talarico's 'Pastoress' EXPOSES Him For Lying About Views",
+          "sourceUrl": "https://www.youtube.com/watch?v=CjhOnVC_7lg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2025-11-05",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Implies NYC election outcome reflects demographic changes",
+          "quote": "The saddest part is he\u2019d never have won were New York full of New Yorkers.",
+          "sourceUrl": "https://x.com/michaeljknowles/status/1985900872841511000",
+          "platform": "x"
+        },
+        {
+          "date": "2025-01-10",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Criticizes Newsom for seeking protection from constituents' criticism",
+          "quote": "Notice how Newsom isn't asking the White House to protect his constituents from the fires. He's asking the federal government to protect him from his constituents' criticism.\n\nhttps://t.co/rd9PPiiMd1",
+          "sourceUrl": "https://x.com/michaeljknowles/status/1877807713670902211",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 2,
@@ -2053,33 +2098,6 @@
           "quote": "How can Maura Healey be Catholic and support abortion?",
           "sourceUrl": "https://www.youtube.com/shorts/b2k2xpN3rqc",
           "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 2,
-      "lastActive": "2025-11-05",
-      "stances": [
-        {
-          "date": "2025-11-05",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Implies NYC election outcome reflects demographic changes",
-          "quote": "The saddest part is he\u2019d never have won were New York full of New Yorkers.",
-          "sourceUrl": "https://x.com/michaeljknowles/status/1985900872841511000",
-          "platform": "x"
-        },
-        {
-          "date": "2025-01-10",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Criticizes Newsom for seeking protection from constituents' criticism",
-          "quote": "Notice how Newsom isn't asking the White House to protect his constituents from the fires. He's asking the federal government to protect him from his constituents' criticism.\n\nhttps://t.co/rd9PPiiMd1",
-          "sourceUrl": "https://x.com/michaeljknowles/status/1877807713670902211",
-          "platform": "x"
         }
       ],
       "active": false

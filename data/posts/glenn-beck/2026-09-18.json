@@ -1,9 +1,43 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "collectedAt": "2026-09-18T11:31:11.281994",
+  "collectedAt": "2026-09-18T13:24:37.350745",
   "date": "2026-09-18",
   "posts": [
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "The PURGE Of Hungary Could Happen In America!",
+      "sourceUrl": "https://www.youtube.com/shorts/bIQ3NUFBQ9s",
+      "timestamp": "2026-09-18T00:00:35+00:00",
+      "type": "video_title",
+      "topic": "uk-world-politics",
+      "topics": [
+        "uk-world-politics"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Warns Hungarian political situation could replicate in America",
+      "quote": "The PURGE Of Hungary Could Happen In America!"
+    },
+    {
+      "voiceId": "glenn-beck",
+      "voiceName": "Glenn Beck",
+      "platform": "youtube",
+      "text": "The Shocking AI WARNING Everyone Should Hear...",
+      "sourceUrl": "https://www.youtube.com/watch?v=a8zVwR3KvVE",
+      "timestamp": "2026-09-17T23:00:08+00:00",
+      "type": "video_title",
+      "topic": "ai-technology",
+      "topics": [
+        "ai-technology"
+      ],
+      "relevance": "medium",
+      "stance": "strong",
+      "summary": "Presents AI as a significant emerging threat requiring attention",
+      "quote": "The Shocking AI WARNING Everyone Should Hear..."
+    },
     {
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
@@ -94,47 +128,28 @@
       "voiceId": "glenn-beck",
       "voiceName": "Glenn Beck",
       "platform": "youtube",
-      "text": "The PURGE Of Hungary Could Happen In America!",
-      "sourceUrl": "https://www.youtube.com/shorts/bIQ3NUFBQ9s",
-      "timestamp": "2026-09-18T00:00:35+00:00",
+      "text": "Talarico's OWN Pastor Accidentally EXPOSES His New Grift",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ni8qQ_INiYU",
+      "timestamp": "2026-09-18T12:00:13+00:00",
       "type": "video_title",
-      "topic": "uk-world-politics",
+      "topic": "media-personalities",
       "topics": [
-        "uk-world-politics"
-      ],
-      "relevance": "medium",
-      "stance": "lean",
-      "summary": "Warns Hungarian political situation could replicate in America",
-      "quote": "The PURGE Of Hungary Could Happen In America!"
-    },
-    {
-      "voiceId": "glenn-beck",
-      "voiceName": "Glenn Beck",
-      "platform": "youtube",
-      "text": "The Shocking AI WARNING Everyone Should Hear...",
-      "sourceUrl": "https://www.youtube.com/watch?v=a8zVwR3KvVE",
-      "timestamp": "2026-09-17T23:00:08+00:00",
-      "type": "video_title",
-      "topic": "ai-technology",
-      "topics": [
-        "ai-technology"
+        "media-personalities"
       ],
       "relevance": "medium",
       "stance": "strong",
-      "summary": "Presents AI as a significant emerging threat requiring attention",
-      "quote": "The Shocking AI WARNING Everyone Should Hear..."
+      "summary": "Criticizes individual for alleged hypocrisy or deceptive practices",
+      "quote": "Talarico's OWN Pastor Accidentally EXPOSES His New Grift"
     }
   ],
   "topicSummary": {
-    "media-press": [
-      {
-        "quote": "James Talarico Caught LYING To Fox News?!",
-        "sourceUrl": "https://www.youtube.com/shorts/ZQtbCywG0W8",
-        "platform": "youtube",
-        "timestamp": "2026-09-17T20:15:30+00:00"
-      }
-    ],
     "uk-world-politics": [
+      {
+        "quote": "The PURGE Of Hungary Could Happen In America!",
+        "sourceUrl": "https://www.youtube.com/shorts/bIQ3NUFBQ9s",
+        "platform": "youtube",
+        "timestamp": "2026-09-18T00:00:35+00:00"
+      },
       {
         "quote": "What Hungary Is Doing To Conservatives Since Orban Lost Should TERRIFY Republicans",
         "sourceUrl": "https://www.youtube.com/watch?v=2Hdm0xRPxXs",
@@ -146,12 +161,22 @@
         "sourceUrl": "https://www.youtube.com/watch?v=OJ5I76l6fLs",
         "platform": "youtube",
         "timestamp": "2026-09-17T14:03:46+00:00"
-      },
+      }
+    ],
+    "ai-technology": [
       {
-        "quote": "The PURGE Of Hungary Could Happen In America!",
-        "sourceUrl": "https://www.youtube.com/shorts/bIQ3NUFBQ9s",
+        "quote": "The Shocking AI WARNING Everyone Should Hear...",
+        "sourceUrl": "https://www.youtube.com/watch?v=a8zVwR3KvVE",
         "platform": "youtube",
-        "timestamp": "2026-09-18T00:00:35+00:00"
+        "timestamp": "2026-09-17T23:00:08+00:00"
+      }
+    ],
+    "media-press": [
+      {
+        "quote": "James Talarico Caught LYING To Fox News?!",
+        "sourceUrl": "https://www.youtube.com/shorts/ZQtbCywG0W8",
+        "platform": "youtube",
+        "timestamp": "2026-09-17T20:15:30+00:00"
       }
     ],
     "culture-war": [
@@ -170,12 +195,12 @@
         "timestamp": "2026-09-16T23:00:21+00:00"
       }
     ],
-    "ai-technology": [
+    "media-personalities": [
       {
-        "quote": "The Shocking AI WARNING Everyone Should Hear...",
-        "sourceUrl": "https://www.youtube.com/watch?v=a8zVwR3KvVE",
+        "quote": "Talarico's OWN Pastor Accidentally EXPOSES His New Grift",
+        "sourceUrl": "https://www.youtube.com/watch?v=Ni8qQ_INiYU",
         "platform": "youtube",
-        "timestamp": "2026-09-17T23:00:08+00:00"
+        "timestamp": "2026-09-18T12:00:13+00:00"
       }
     ]
   }

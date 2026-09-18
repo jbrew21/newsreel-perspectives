@@ -1,9 +1,27 @@
 {
   "voiceId": "don-lemon",
   "voiceName": "Don Lemon",
-  "collectedAt": "2026-09-18T11:31:10.968189",
+  "collectedAt": "2026-09-18T13:24:37.066678",
   "date": "2026-09-18",
   "posts": [
+    {
+      "voiceId": "don-lemon",
+      "voiceName": "Don Lemon",
+      "platform": "youtube",
+      "text": "Republican Senator Jon Husted claimed that Americans living in poverty don't know how money works.",
+      "sourceUrl": "https://www.youtube.com/shorts/YljZLnBuZVM",
+      "timestamp": "2026-09-17T21:15:29+00:00",
+      "type": "video_title",
+      "topic": "economy-trade",
+      "topics": [
+        "economy-trade",
+        "congress-legislation"
+      ],
+      "relevance": "high",
+      "stance": "lean",
+      "summary": "Highlights senator's dismissive remarks about poverty understanding",
+      "quote": "Republican Senator Jon Husted claimed that Americans living in poverty don't know how money works."
+    },
     {
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
@@ -94,22 +112,29 @@
       "voiceId": "don-lemon",
       "voiceName": "Don Lemon",
       "platform": "youtube",
-      "text": "Republican Senator Jon Husted claimed that Americans living in poverty don't know how money works.",
-      "sourceUrl": "https://www.youtube.com/shorts/YljZLnBuZVM",
-      "timestamp": "2026-09-17T21:15:29+00:00",
+      "text": "83-year-old Mitch McConnell is prompted by Republicans to change his vote",
+      "sourceUrl": "https://www.youtube.com/shorts/KPbgWZUvQbo",
+      "timestamp": "2026-09-17T23:20:39+00:00",
       "type": "video_title",
-      "topic": "economy-trade",
+      "topic": "congress-legislation",
       "topics": [
-        "economy-trade",
         "congress-legislation"
       ],
       "relevance": "high",
       "stance": "lean",
-      "summary": "Highlights senator's dismissive remarks about poverty understanding",
-      "quote": "Republican Senator Jon Husted claimed that Americans living in poverty don't know how money works."
+      "summary": "Reports on Republican pressure affecting McConnell's Senate votes",
+      "quote": "83-year-old Mitch McConnell is prompted by Republicans to change his vote"
     }
   ],
   "topicSummary": {
+    "economy-trade": [
+      {
+        "quote": "Republican Senator Jon Husted claimed that Americans living in poverty don't know how money works.",
+        "sourceUrl": "https://www.youtube.com/shorts/YljZLnBuZVM",
+        "platform": "youtube",
+        "timestamp": "2026-09-17T21:15:29+00:00"
+      }
+    ],
     "trump-administration": [
       {
         "quote": "GOP Rep. Massie believes Mike Johnson canceled votes to save Pete Hegseth from being impeached.",
@@ -146,12 +171,12 @@
         "timestamp": "2026-09-17T15:13:50+00:00"
       }
     ],
-    "economy-trade": [
+    "congress-legislation": [
       {
-        "quote": "Republican Senator Jon Husted claimed that Americans living in poverty don't know how money works.",
-        "sourceUrl": "https://www.youtube.com/shorts/YljZLnBuZVM",
+        "quote": "83-year-old Mitch McConnell is prompted by Republicans to change his vote",
+        "sourceUrl": "https://www.youtube.com/shorts/KPbgWZUvQbo",
         "platform": "youtube",
-        "timestamp": "2026-09-17T21:15:29+00:00"
+        "timestamp": "2026-09-17T23:20:39+00:00"
       }
     ]
   }
