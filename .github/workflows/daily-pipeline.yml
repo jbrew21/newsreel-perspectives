@@ -62,6 +62,8 @@ jobs:
 
       - name: Collect posts from all voices
         env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+          LABELER: ${{ vars.LABELER || 'jev' }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/collect.py
 

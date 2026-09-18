@@ -43,8 +43,21 @@ _usage_stats = {
     'posts_reused': 0,
 }
 
-# Categorization model — Perspectives is intentionally on Haiku 4.5.
+# Categorization model — Haiku 4.5 writes the summaries.
 CLAUDE_MODEL = 'claude-haiku-4-5-20251001'
+
+# Which model assigns topic/relevance/stance (Jack, Sep 18 2026).
+#   'jev'   TypeSafe Jev classifies, Haiku summarizes the survivors
+#   'haiku' the original path, byte for byte, kept as the rollback
+# Flip with the LABELER environment variable or the repo variable in Actions.
+LABELER = os.environ.get('LABELER', 'jev').strip().lower()
+
+# Fail safe, not closed. If LABELER says jev but there is no TypeSafe key
+# (secret not added yet, rotated, revoked), fall back to Haiku and say so
+# loudly rather than crashing the nightly run and publishing nothing.
+if LABELER == 'jev' and not os.environ.get('TYPESAFE_API_KEY', '').strip():
+    print("  ⚠ LABELER=jev but TYPESAFE_API_KEY is not set — using Haiku for this run")
+    LABELER = 'haiku'
 
 # Message Batches polling (Phase 3). Batches usually finish well within the
 # GitHub Action's 90-minute job budget, but cap the poll so a slow batch
@@ -1265,6 +1278,94 @@ def categorize_posts(voice_name, posts):
     return posts
 
 
+def summarize_posts(voice_name, posts):
+    """Haiku writes the 4-8 word position summary, and nothing else.
+
+    Jev cannot generate text, so this is the half of the old categorization
+    prompt that still needs a language model. No taxonomy block, no rules, no
+    relevance or stance instructions, so the prompt is a fraction of the old
+    one and it only runs for posts that already survived the filter.
+    """
+    if not ANTHROPIC_API_KEY or not posts:
+        return posts
+
+    listing = "".join(
+        f"\n[{i}] ({p.get('platform','')}) {p.get('text','')[:300]}\n"
+        for i, p in enumerate(posts))
+    prompt = (
+        f"Here are recent posts from {voice_name}. For each one, summarize the "
+        f"POSITION the author is taking in 4-8 words: a neutral, third-person "
+        f"label, e.g. \"Backs sanctions, opposes unfreezing assets\".\n"
+        f"Do not paraphrase or invent quotes. Return only JSON.\n"
+        f"{listing}\n"
+        f'Return JSON array: [{{"index": 0, "summary": "..."}}]'
+    )
+
+    _usage_stats['claude_calls'] += 1
+    _usage_stats['total_input_chars'] += len(prompt)
+
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                'https://api.anthropic.com/v1/messages',
+                data=json.dumps({
+                    'model': CLAUDE_MODEL,
+                    'max_tokens': 1024,
+                    'messages': [{'role': 'user', 'content': prompt}],
+                }).encode(),
+                headers={
+                    'x-api-key': ANTHROPIC_API_KEY,
+                    'anthropic-version': '2023-06-01',
+                    'content-type': 'application/json',
+                })
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                body = json.loads(resp.read())
+            text = body['content'][0]['text']
+            _usage_stats['total_output_tokens_est'] += len(text) // 4
+            m = re.search(r'\[.*\]', text, re.S)
+            items = json.loads(m.group(0)) if m else []
+            for item in items:
+                if isinstance(item, dict) and isinstance(item.get('index'), int):
+                    i = item['index']
+                    if 0 <= i < len(posts) and item.get('summary'):
+                        posts[i]['summary'] = str(item['summary'])[:120]
+            return posts
+        except Exception as e:
+            if attempt == 2:
+                print(f"    ⚠ summary call failed for {voice_name}: {e}")
+                return posts
+            time.sleep(2 ** attempt)
+    return posts
+
+
+def label_with_jev(voice_name, posts):
+    """Jev classifies, Haiku summarizes the survivors.
+
+    A post Jev could not label (after its own retries) goes through the old
+    full Haiku path instead of being dropped, so a TypeSafe outage degrades
+    the run rather than emptying it.
+    """
+    import label_jev
+
+    labeled = label_jev.label_posts(posts, voice_name)
+    survivors = [p for p in labeled if p.get('labeler') == 'jev']
+    failed = [p for p in labeled if p.get('label_error')]
+
+    for p in survivors:
+        p['quote'] = _quote_from_text(p.get('text', ''))
+
+    if survivors:
+        summarize_posts(voice_name, survivors)
+
+    if failed:
+        print(f"    ⚠ {len(failed)} post(s) fell back to Haiku for {voice_name}")
+        for p in failed:
+            p.pop('label_error', None)
+        survivors += categorize_posts(voice_name, failed)
+
+    return survivors
+
+
 def categorize_posts_batch(voice_entries):
     """Categorize many voices' posts in one Message Batches call (50% price).
 
@@ -1527,7 +1628,7 @@ def main():
 
     # Phase 3: Categorize with Claude (per voice)
     if not skip_categorize:
-        print(f"\n  🤖 Categorizing posts with Claude...")
+        print(f"\n  🤖 Categorizing posts (labeler: {LABELER})...")
         import time
 
         # 3a: Reuse categorizations from recent day files — feeds re-surface
@@ -1548,14 +1649,19 @@ def main():
 
         # 3b: One Message Batch for all new posts (50% price). Any voice the
         # batch can't cover falls back to the sequential per-voice call.
-        batch_results = categorize_posts_batch(pending)
+        batch_results = None
+        if LABELER != 'jev':
+            batch_results = categorize_posts_batch(pending)
         for vid, voice_name, new_posts in pending:
-            items = None if batch_results is None else batch_results.get(vid)
-            if items is not None:
-                categorized = _apply_categorization(new_posts, items)
+            if LABELER == 'jev':
+                categorized = label_with_jev(voice_name, new_posts)
             else:
-                categorized = categorize_posts(voice_name, new_posts)
-                time.sleep(0.5)  # rate limit Claude calls (Haiku handles this)
+                items = None if batch_results is None else batch_results.get(vid)
+                if items is not None:
+                    categorized = _apply_categorization(new_posts, items)
+                else:
+                    categorized = categorize_posts(voice_name, new_posts)
+                    time.sleep(0.5)  # rate limit Claude calls (Haiku handles this)
             data = all_voice_posts[vid]
             data['posts'] = reused_posts[vid] + categorized
             topics = set(p.get('topic', '?') for p in data['posts'])
