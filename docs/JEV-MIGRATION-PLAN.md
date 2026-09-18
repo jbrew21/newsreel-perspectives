@@ -66,7 +66,7 @@ questions = {
     instructions="How clearly the author expresses a position on the story",
     criteria=[
       "Purely informational: a summary, both-sides reporting, or a link with no view",  # -> neutral
-      "A position is implied by framing, word choice, or tone, but is not stated",       # -> lean
+      "A position is implied by framing, word choice, or tone",                       # -> lean  (Sep 18: dropped "but is not stated" — negation, against this section's own rule)
       "A clear opinion, argument, criticism, praise, or call to action",                # -> strong
     ]),
   "topic": Choice(
@@ -111,6 +111,12 @@ After Jev, the kept posts per voice go to Haiku in one short prompt: the posts a
 | `log_usage()` prices and new counters | `stories.py` (Sonnet 5), `lookup.py`, `enrich_transcripts.py` |
 | `check_collection_health.py` (kept-posts floor) | The 4-5 daily cron schedule |
 | Workflow: `TYPESAFE_API_KEY` secret + `LABELER` variable | Render deploy step |
+
+**Schedule correction (Sep 18):** the row above used to say the "4-5 daily cron schedule" does not change. It changed the same day, on Jack's call: **two runs, 10:17 and 22:17 UTC (6:17 AM / 6:17 PM ET)**. Halving the runs halves the labeling bill again on top of this migration, and coverage was verified first (the collector fetches 20 posts per feed; no voice-day in 15,922 rows exceeds 40 posts, so a 12-hour gap fits). What it gives up is the dropped-run backstops; the corpus self-heals on the next run, only site freshness suffers.
+
+**Stage 1 status: BUILT Sep 18.** `scripts/label_jev.py` (both designs, thresholds as module constants, backoff on 429/529, failures returned for the Haiku fallback rather than dropped), `tests/test_label_jev.py` (28 tests, suite green at 233), `scripts/shadow_compare.py` (offline, `--dry-run` costs nothing). Measured on a dry run: 19,168 unique Haiku-kept posts in the last 3 days; a 400-post sample across both designs costs about **$0.06**. Stage 1 cannot run for real until Stage 0 (the key) is done.
+
+**One spec defect found while building:** this document's own stance criterion for "lean" read "...but is not stated", which is a negation, against the no-negations rule stated three lines above it. A unit test caught it. The negative clause was dropped rather than reworded, because the ordering against level 2 already carries the implicit/explicit distinction.
 
 ## 4. Stages and gates
 
