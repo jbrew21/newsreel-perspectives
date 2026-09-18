@@ -46,18 +46,6 @@ _usage_stats = {
 # Categorization model — Haiku 4.5 writes the summaries.
 CLAUDE_MODEL = 'claude-haiku-4-5-20251001'
 
-# Which model assigns topic/relevance/stance (Jack, Sep 18 2026).
-#   'jev'   TypeSafe Jev classifies, Haiku summarizes the survivors
-#   'haiku' the original path, byte for byte, kept as the rollback
-# Flip with the LABELER environment variable or the repo variable in Actions.
-LABELER = os.environ.get('LABELER', 'jev').strip().lower()
-
-# Fail safe, not closed. If LABELER says jev but there is no TypeSafe key
-# (secret not added yet, rotated, revoked), fall back to Haiku and say so
-# loudly rather than crashing the nightly run and publishing nothing.
-if LABELER == 'jev' and not os.environ.get('TYPESAFE_API_KEY', '').strip():
-    print("  ⚠ LABELER=jev but TYPESAFE_API_KEY is not set — using Haiku for this run")
-    LABELER = 'haiku'
 
 # Message Batches polling (Phase 3). Batches usually finish well within the
 # GitHub Action's 90-minute job budget, but cap the poll so a slow batch
@@ -91,6 +79,18 @@ def load_env():
 
 load_env()
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
+# Which model assigns topic/relevance/stance (Jack, Sep 18 2026).
+#   'jev'   TypeSafe Jev classifies, Haiku summarizes the survivors
+#   'haiku' the original path, byte for byte, kept as the rollback
+# Flip with the LABELER environment variable or the repo variable in Actions.
+LABELER = os.environ.get('LABELER', 'jev').strip().lower()
+
+# Fail safe, not closed. If LABELER says jev but there is no TypeSafe key
+# (secret not added yet, rotated, revoked), fall back to Haiku and say so
+# loudly rather than crashing the nightly run and publishing nothing.
+if LABELER == 'jev' and not os.environ.get('TYPESAFE_API_KEY', '').strip():
+    print("  ⚠ LABELER=jev but TYPESAFE_API_KEY is not set — using Haiku for this run")
+    LABELER = 'haiku'
 
 
 sys.path.append(str(Path(__file__).parent))
