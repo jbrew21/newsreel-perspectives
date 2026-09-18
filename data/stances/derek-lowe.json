@@ -1,16 +1,25 @@
 {
   "voiceId": "derek-lowe",
   "voiceName": "Derek Lowe",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 9,
-  "stanceCount": 18,
+  "stanceCount": 20,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 7,
-      "lastActive": "2026-09-10",
+      "count": 8,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "AI has limitations in antibody design optimization",
+          "quote": "How far can AI get you in designing and optimizing new antibodies? Not as far as you might have thought:",
+          "sourceUrl": "https://bsky.app/profile/dereklowe.bsky.social/post/3mvqjo3igr22h",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-10",
           "topic": "ai-technology",
@@ -114,6 +123,33 @@
       "active": true
     },
     {
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 2,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "science-space",
+          "stance": "strong",
+          "summary": "Criticizes government for halting scientific progress",
+          "quote": "Thread. The close personal details of how this government is pulling the plug on a generation of scientific progress.",
+          "sourceUrl": "https://bsky.app/profile/dereklowe.bsky.social/post/3mvprq65zwk2w",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Expresses concern about Alzheimer's research data integrity",
+          "quote": "Thoughts on the latest Alzheimer\u2019s data scandal:",
+          "sourceUrl": "https://bsky.app/profile/dereklowe.bsky.social/post/3mteyddohus2r",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "education",
       "label": "Education",
       "count": 2,
@@ -207,24 +243,6 @@
           "summary": "Criticizes Trump administration's immigrant detention expansion plans",
           "quote": "The Trump regime is looking for immigrant detention camps big enough to hold up to 3,000 children. At an industry roundtable discussion, officials wouldn't say exactly where or when they need them, only that they\u2019re expecting a \u201csurge.\u201d New from me in @prospect.org.",
           "sourceUrl": "https://bsky.app/profile/dereklowe.bsky.social/post/3mtjapgho4s2t",
-          "platform": "bluesky"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "science-space",
-      "label": "Science & Space",
-      "count": 1,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "science-space",
-          "stance": "lean",
-          "summary": "Expresses concern about Alzheimer's research data integrity",
-          "quote": "Thoughts on the latest Alzheimer\u2019s data scandal:",
-          "sourceUrl": "https://bsky.app/profile/dereklowe.bsky.social/post/3mteyddohus2r",
           "platform": "bluesky"
         }
       ],

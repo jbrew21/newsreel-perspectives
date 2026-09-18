@@ -1,9 +1,9 @@
 {
   "voiceId": "breakfast-club",
   "voiceName": "The Breakfast Club",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 18,
-  "stanceCount": 76,
+  "stanceCount": 78,
   "topics": [
     {
       "topic": "criminal-justice",
@@ -510,6 +510,51 @@
       "active": false
     },
     {
+      "topic": "trump-administration",
+      "label": "Trump Administration",
+      "count": 4,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "JD Vance seeks voter support and second chances",
+          "quote": "JD Vance Begs Voters For \u2018Another Chance\u2019",
+          "sourceUrl": "https://www.youtube.com/watch?v=pF0vd8TsYSk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-16",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Highlights controversial FBI hiring policy under Trump appointee",
+          "quote": "Kash Patel Defends FBI Hiring Policy That Permits History Of Prostitution &amp; Bestiality",
+          "sourceUrl": "https://www.youtube.com/watch?v=6uFtF2gH5ns",
+          "platform": "youtube"
+        },
+        {
+          "date": "2018-05-02",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Debated MAGA hat support and Trump backing with Kanye West",
+          "quote": ".@Tip shares details of his debate with @kanyewest over wearing the MAGA hat and supporting Trump.\n\nFull interview here: https://t.co/flE1QBReYJ https://t.co/g9fuzXDeR7",
+          "sourceUrl": "https://x.com/breakfastclubam/status/991701262306594816",
+          "platform": "x"
+        },
+        {
+          "date": "2017-08-07",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Criticizes Trump as worst president, says he believes in nothing",
+          "quote": ".@MaxineWaters says @realDonaldTrump is the worst President she's ever seen because he believes in nothing ---&gt; https://t.co/Low6hoCB6Z https://t.co/ERjIbjQRqm",
+          "sourceUrl": "https://x.com/breakfastclubam/status/894560208361533440",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "sports",
       "label": "Sports",
       "count": 4,
@@ -555,36 +600,36 @@
       "active": true
     },
     {
-      "topic": "trump-administration",
-      "label": "Trump Administration",
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
       "count": 3,
-      "lastActive": "2026-09-16",
+      "lastActive": "2026-09-17",
       "stances": [
         {
-          "date": "2026-09-16",
-          "topic": "trump-administration",
+          "date": "2026-09-17",
+          "topic": "israel-palestine",
           "stance": "lean",
-          "summary": "Highlights controversial FBI hiring policy under Trump appointee",
-          "quote": "Kash Patel Defends FBI Hiring Policy That Permits History Of Prostitution &amp; Bestiality",
-          "sourceUrl": "https://www.youtube.com/watch?v=6uFtF2gH5ns",
+          "summary": "Supports Palestinian aid fundraising efforts",
+          "quote": "Macklemore Pledges $1M For Palestine Aid After Ed Sheeran Tour Drop; Robert Kraft To Match Donation",
+          "sourceUrl": "https://www.youtube.com/watch?v=UJAzdhL69yo",
           "platform": "youtube"
         },
         {
-          "date": "2018-05-02",
-          "topic": "trump-administration",
+          "date": "2026-09-16",
+          "topic": "israel-palestine",
           "stance": "lean",
-          "summary": "Debated MAGA hat support and Trump backing with Kanye West",
-          "quote": ".@Tip shares details of his debate with @kanyewest over wearing the MAGA hat and supporting Trump.\n\nFull interview here: https://t.co/flE1QBReYJ https://t.co/g9fuzXDeR7",
-          "sourceUrl": "https://x.com/breakfastclubam/status/991701262306594816",
-          "platform": "x"
+          "summary": "Artist punished for expressing pro-Palestinian solidarity",
+          "quote": "Macklemore Dropped From Ed Sheeran\u2019s Tour For Pro-Palestinian Comments",
+          "sourceUrl": "https://www.youtube.com/watch?v=6Suj0fLA6j8",
+          "platform": "youtube"
         },
         {
-          "date": "2017-08-07",
-          "topic": "trump-administration",
+          "date": "2026-08-06",
+          "topic": "israel-palestine",
           "stance": "strong",
-          "summary": "Criticizes Trump as worst president, says he believes in nothing",
-          "quote": ".@MaxineWaters says @realDonaldTrump is the worst President she's ever seen because he believes in nothing ---&gt; https://t.co/Low6hoCB6Z https://t.co/ERjIbjQRqm",
-          "sourceUrl": "https://x.com/breakfastclubam/status/894560208361533440",
+          "summary": "Opposes military aid to Israel, calls for heeding Palestinian suffering",
+          "quote": "\ud83d\udea8 Candidates are being asked to vote on whether Israel should receive military aid, and @TeamTalaricoHQ weighs in on where he plans to use his political influence regarding the Israel-Gaza war. \"We have to heed those cries and destruction\"- James Talarico",
+          "sourceUrl": "https://x.com/breakfastclubam/status/2085455871384199271",
           "platform": "x"
         }
       ],
@@ -634,33 +679,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 2,
-      "lastActive": "2026-09-16",
-      "stances": [
-        {
-          "date": "2026-09-16",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Artist punished for expressing pro-Palestinian solidarity",
-          "quote": "Macklemore Dropped From Ed Sheeran\u2019s Tour For Pro-Palestinian Comments",
-          "sourceUrl": "https://www.youtube.com/watch?v=6Suj0fLA6j8",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-06",
-          "topic": "israel-palestine",
-          "stance": "strong",
-          "summary": "Opposes military aid to Israel, calls for heeding Palestinian suffering",
-          "quote": "\ud83d\udea8 Candidates are being asked to vote on whether Israel should receive military aid, and @TeamTalaricoHQ weighs in on where he plans to use his political influence regarding the Israel-Gaza war. \"We have to heed those cries and destruction\"- James Talarico",
-          "sourceUrl": "https://x.com/breakfastclubam/status/2085455871384199271",
-          "platform": "x"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "ai-technology",

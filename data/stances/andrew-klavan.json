@@ -1,9 +1,9 @@
 {
   "voiceId": "andrew-klavan",
   "voiceName": "Andrew Klavan",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 10,
-  "stanceCount": 31,
+  "stanceCount": 33,
   "topics": [
     {
       "topic": "culture-war",
@@ -134,7 +134,7 @@
     {
       "topic": "terrorism",
       "label": "Terrorism & Security",
-      "count": 5,
+      "count": 6,
       "lastActive": "2026-09-17",
       "stances": [
         {
@@ -144,6 +144,15 @@
           "summary": "Promotes counter-terrorism film with implicit endorsement",
           "quote": "Friendly Fire - Run Hide Fight Infidels Edition",
           "sourceUrl": "https://www.youtube.com/watch?v=VzkvaSF5ZQ4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Argues need for aggressive counter-jihadist strategy",
+          "quote": "What It Takes to Fight Jihadist Barbarians w/Sebastian Gorka",
+          "sourceUrl": "https://www.youtube.com/watch?v=rkDOy7Hi-fY",
           "platform": "youtube"
         },
         {
@@ -180,6 +189,42 @@
           "summary": "Critiques U.S. counterterrorism strategy as ineffective",
           "quote": "The Unsettling Reasons America is Losing the War on Terror w/Sarah Adams",
           "sourceUrl": "https://www.youtube.com/watch?v=LfreOY5Gcuo",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "religion-faith",
+      "label": "Religion & Faith",
+      "count": 3,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "religion-faith",
+          "stance": "strong",
+          "summary": "Criticizes Islamic ideology and teachings",
+          "quote": "Islam Has Some Bad Ideas",
+          "sourceUrl": "https://www.youtube.com/shorts/0i9Rkhr22TU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "religion-faith",
+          "stance": "lean",
+          "summary": "Explores tension between Catholic religious freedom and secular pressures",
+          "quote": "Why Is Freedom Becoming a Problem for Catholics? w/Jennifer Frey",
+          "sourceUrl": "https://www.youtube.com/watch?v=OSG0Qr4a3IY",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "religion-faith",
+          "stance": "strong",
+          "summary": "Criticizes perceived hostility toward Christianity in culture",
+          "quote": "Ep. 1290 - The War on Christ",
+          "sourceUrl": "https://www.youtube.com/watch?v=Nm_LHAvOSAk",
           "platform": "youtube"
         }
       ],
@@ -256,33 +301,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "religion-faith",
-      "label": "Religion & Faith",
-      "count": 2,
-      "lastActive": "2026-08-19",
-      "stances": [
-        {
-          "date": "2026-08-19",
-          "topic": "religion-faith",
-          "stance": "lean",
-          "summary": "Explores tension between Catholic religious freedom and secular pressures",
-          "quote": "Why Is Freedom Becoming a Problem for Catholics? w/Jennifer Frey",
-          "sourceUrl": "https://www.youtube.com/watch?v=OSG0Qr4a3IY",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "religion-faith",
-          "stance": "strong",
-          "summary": "Criticizes perceived hostility toward Christianity in culture",
-          "quote": "Ep. 1290 - The War on Christ",
-          "sourceUrl": "https://www.youtube.com/watch?v=Nm_LHAvOSAk",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "trump-policy",

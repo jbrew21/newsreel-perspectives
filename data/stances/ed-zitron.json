@@ -1,16 +1,34 @@
 {
   "voiceId": "ed-zitron",
   "voiceName": "Ed Zitron",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 5,
-  "stanceCount": 99,
+  "stanceCount": 104,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 84,
-      "lastActive": "2026-09-16",
+      "count": 86,
+      "lastActive": "2026-09-18",
       "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Attacks Anthropic CEO Dario Amodei for spreading unscientific claims",
+          "quote": "Total unscientific nonsense spread via the media as a means of pretending they are doing some bastardized form of recursive self-improvement. Takes a lot to make me dislike a company more than OpenAI but Dario truly has taken the lead",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mvqxk7ut5224",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Questions scale of Microsoft's AI infrastructure investment and GPU glut",
+          "quote": "Joined the Tech Report to talk about how Microsoft only has 2GW of AI chips in service, suggesting that it has at least $82 billion of GPUs in warehouses, and that the industry as a whole may have pre-purchased anywhere from $100 billion to $300bn of GPUs.\nwww.youtube.com/watch?v",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mvqospm6jc2d",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-16",
           "topic": "ai-technology",
@@ -773,9 +791,27 @@
     {
       "topic": "media-press",
       "label": "Media & Press",
-      "count": 7,
-      "lastActive": "2026-09-13",
+      "count": 9,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Praises Futurism's reporting and editorial coverage quality",
+          "quote": "Futurism does not get anywhere near as much credit as it deserves for its reporting/coverage in general!",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mvq25hbexs2l",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Expresses concern about news story lack of coverage",
+          "quote": "Cannot find this story anywhere?",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mvpoklokss2j",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-13",
           "topic": "media-press",
@@ -843,6 +879,51 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 4,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes connecting gas prices to presidential responsibility",
+          "quote": "I severely anyone connects the price of gas with who is president, sir!",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mvr4z722422l",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-09",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Expresses skepticism or concern about bond market dynamics",
+          "quote": "Learning about the bond market and shaking my head",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mv44g7r2ek2u",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Implies upcoming earnings report will reveal significant market impact",
+          "quote": "just wait until the earnings when this hits lol",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtylsbzqas2k",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critical of data center boom overexpansion and market correction",
+          "quote": "That headline is brutal, first time I've seen a big business publication say the words \"data center boom go bust\" with its whole chest. Also a line in there has a supplier saying \"when the market turns.\" The clenching has begun",
+          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtmhlxbb4c2g",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 4,
@@ -883,42 +964,6 @@
           "quote": "Premium: The Hater's Guide To SoftBank. Soundtrack: Ozzy Osbourne \u2014 Mr. CrowleyA lot of people have been making a lot of fun of the SoftBank 46th annual shareholder meeting and Masayoshi Son\u2019s (to quote Bryce Elder of the Financial Times) Untethered Goose Game, specifically refer",
           "sourceUrl": "https://www.wheresyoured.at/premium-the-haters-guide-to-softbank/",
           "platform": "substack"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 3,
-      "lastActive": "2026-09-09",
-      "stances": [
-        {
-          "date": "2026-09-09",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Expresses skepticism or concern about bond market dynamics",
-          "quote": "Learning about the bond market and shaking my head",
-          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mv44g7r2ek2u",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-26",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Implies upcoming earnings report will reveal significant market impact",
-          "quote": "just wait until the earnings when this hits lol",
-          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtylsbzqas2k",
-          "platform": "bluesky"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "economy-trade",
-          "stance": "lean",
-          "summary": "Critical of data center boom overexpansion and market correction",
-          "quote": "That headline is brutal, first time I've seen a big business publication say the words \"data center boom go bust\" with its whole chest. Also a line in there has a supplier saying \"when the market turns.\" The clenching has begun",
-          "sourceUrl": "https://bsky.app/profile/edzitron.com/post/3mtmhlxbb4c2g",
-          "platform": "bluesky"
         }
       ],
       "active": true

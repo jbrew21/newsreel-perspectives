@@ -1,9 +1,9 @@
 {
   "voiceId": "war-on-the-rocks",
   "voiceName": "War on the Rocks",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 12,
-  "stanceCount": 89,
+  "stanceCount": 91,
   "topics": [
     {
       "topic": "military-defense",
@@ -566,9 +566,18 @@
     {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
-      "count": 12,
-      "lastActive": "2026-09-17",
+      "count": 13,
+      "lastActive": "2026-09-18",
       "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "foreign-policy-diplomacy",
+          "stance": "lean",
+          "summary": "Emphasizes Eurasian deterrence over Indo-Pacific focus",
+          "quote": "Why Eurasia, Not the Indo-Pacific, Matters Most in Next Phase of Taiwan Deterrence (by Ken Moriyasu). Washington is preparing for the right war, but in the wrong theater. For years, U.S. strategic thinking has centered on the Indo\u2011Pacific: the militarized atolls of the South Chin",
+          "sourceUrl": "https://warontherocks.com/why-eurasia-not-the-indo-pacific-matters-most-in-next-phase-of-taiwan-deterrence/",
+          "platform": "blog"
+        },
         {
           "date": "2026-09-17",
           "topic": "foreign-policy-diplomacy",
@@ -735,6 +744,33 @@
       "active": true
     },
     {
+      "topic": "iran-conflict",
+      "label": "Iran Conflict",
+      "count": 2,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "iran-conflict",
+          "stance": "lean",
+          "summary": "War against Iran strains U.S. military readiness and capabilities",
+          "quote": "A Body Blow? The War on Iran and U.S. Military Readiness (by Mark Cancian). The war against Iran is putting new strains on U.S. military readiness by consuming munitions and missile defense interceptors, as well as through extended deployments, sustained operational demands, and ",
+          "sourceUrl": "https://warontherocks.com/a-body-blow-the-war-on-iran-and-u-s-military-readiness/",
+          "platform": "blog"
+        },
+        {
+          "date": "2017-10-13",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Senator's Iran agreement advocacy masks true political objective",
+          "quote": "The senator's advocacy for a better Iran agreement is a smokescreen for his true objective https://t.co/fJ9ap9Md54",
+          "sourceUrl": "https://x.com/WarOnTheRocks/status/918718117114552320",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 3,
@@ -891,24 +927,6 @@
           "summary": "Highlights prison inspection as noteworthy diplomatic moment",
           "quote": "In 1974, McCain asked Nguyen Van Thieu if he could visit South Vietnam's most notorious prison. Thieu wasn't expecting that https://t.co/n9n7sJdKGd",
           "sourceUrl": "https://x.com/WarOnTheRocks/status/1035663607663603713",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "iran-conflict",
-      "label": "Iran Conflict",
-      "count": 1,
-      "lastActive": "2017-10-13",
-      "stances": [
-        {
-          "date": "2017-10-13",
-          "topic": "iran-conflict",
-          "stance": "strong",
-          "summary": "Senator's Iran agreement advocacy masks true political objective",
-          "quote": "The senator's advocacy for a better Iran agreement is a smokescreen for his true objective https://t.co/fJ9ap9Md54",
-          "sourceUrl": "https://x.com/WarOnTheRocks/status/918718117114552320",
           "platform": "x"
         }
       ],
