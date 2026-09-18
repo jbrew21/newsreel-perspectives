@@ -2,25 +2,30 @@ name: Daily Perspectives Pipeline
 
 on:
   schedule:
-    # Off-peak, odd-minute slots to dodge GitHub's congested top-of-hour
-    # scheduler (which was drifting the old '0 11' run 2-5 hours late and
-    # missing the 7 AM ET deadline). 06:17 UTC = ~2 AM ET primary run;
-    # 08:17 UTC = ~4 AM ET backstop in case the first is dropped. Both
-    # finish well before the 7 AM ET local git-pull. Index date is stamped
-    # from the runner's UTC clock, so any run after 00:00 UTC is "today."
-    - cron: '17 6 * * *'
-    - cron: '17 8 * * *'
-    # Midday refresh so the site is fresh during business hours (~1 PM ET).
-    # 17:17 UTC = 1:17 PM EDT / 12:17 PM EST. Cross-day reuse + Batch API
-    # (Jul 2026) make this run ~$0.75 — mostly re-scrapes, few new posts.
-    - cron: '17 17 * * *'
-    # Midday backstop, mirroring the 06:17/08:17 morning pair. 19:17 UTC =
-    # 3:17 PM ET. The single midday run had no fallback, so when GitHub
-    # dropped it / couldn't acquire a hosted runner (Aug 6 2026, run
-    # 31126229962), the site got no midday refresh until the next morning.
-    # Public repo = free Actions minutes, and the concurrency group below
-    # makes this a no-op re-scrape if the 17:17 run already succeeded.
-    - cron: '17 19 * * *'
+    # Two runs a day (Jack, Sep 18 2026), down from four. Odd-minute slots
+    # dodge GitHub's congested top-of-hour scheduler, which was drifting the
+    # old '0 11' run 2-5 hours late. Index date is stamped from the runner's
+    # UTC clock; both runs land on the same UTC day, so no date rollover.
+    #
+    # 10:17 UTC = 6:17 AM ET (EDT). Morning run: site is fresh for the day.
+    - cron: '17 10 * * *'
+    # 22:17 UTC = 6:17 PM ET (EDT). Evening run.
+    - cron: '17 22 * * *'
+    #
+    # Two things this schedule gives up, both accepted:
+    # 1. The backstops are gone. The old pairs (06:17+08:17, 17:17+19:17)
+    #    existed because GitHub drops scheduled runs (Aug 6 2026, run
+    #    31126229962, no midday refresh until the next morning). With two
+    #    runs a dropped one means the site can be stale up to 24h. The DATA
+    #    self-heals: the next run re-pulls the feed window and picks up what
+    #    was missed, so only freshness suffers, not the corpus.
+    # 2. These are fixed UTC, and GitHub cron has no timezone. When ET falls
+    #    back to EST in November these become 5:17 AM / 5:17 PM ET. Shift to
+    #    '17 11' and '17 23' then if the hour matters.
+    #
+    # Coverage checked Sep 18: the collector fetches the latest 20 posts per
+    # feed, and no voice-day in 15,922 rows exceeds 40 posts (busiest recent:
+    # fdd 27, meidastouch 23). A 12-hour gap fits inside the 20-post window.
   workflow_dispatch:
 
 # Never run two pipelines at once. A manual trigger queues behind an

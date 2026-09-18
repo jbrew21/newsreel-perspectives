@@ -1431,8 +1431,16 @@ def log_usage(voices_collected, posts_collected):
     est_input_tokens = _usage_stats['total_input_chars'] // 4
     est_output_tokens = _usage_stats['total_output_tokens_est']
 
-    # Sonnet pricing: $3/M input, $15/M output
-    est_cost = (est_input_tokens / 1_000_000 * 0.80) + (est_output_tokens / 1_000_000 * 4.0)
+    # Haiku 4.5 list price: $1.00/M input, $5.00/M output (verified Sep 18
+    # 2026). The old table here said $0.80/$4.00 under a comment citing
+    # Sonnet, so every figure logged before Sep 18 is about 25% low.
+    # The Batch API bills at 50%, and categorize_posts_batch() falls back to
+    # the sequential path silently, so this logs BOTH: est_cost is the
+    # sequential (worst case) number and est_cost_batch is what the same run
+    # costs if the batch path actually ran. Until the path is logged, the
+    # true figure is one of these two.
+    est_cost = (est_input_tokens / 1_000_000 * 1.00) + (est_output_tokens / 1_000_000 * 5.00)
+    est_cost_batch = est_cost * 0.50
 
     entry = {
         'date': date,
@@ -1443,6 +1451,7 @@ def log_usage(voices_collected, posts_collected):
         'estimated_input_tokens': est_input_tokens,
         'estimated_output_tokens': est_output_tokens,
         'estimated_cost_usd': round(est_cost, 2),
+        'estimated_cost_usd_if_batched': round(est_cost_batch, 2),
         'x_health': {
             'attempts': _x_failures['total_attempts'],
             'successes': _x_failures['successes'],
