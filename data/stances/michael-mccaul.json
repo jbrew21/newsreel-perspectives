@@ -1,9 +1,9 @@
 {
   "voiceId": "michael-mccaul",
   "voiceName": "Michael McCaul",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 11,
-  "stanceCount": 37,
+  "stanceCount": 38,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -267,6 +267,33 @@
       "active": true
     },
     {
+      "topic": "healthcare",
+      "label": "Healthcare",
+      "count": 2,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Highlights legislative achievements in childhood cancer research and treatment",
+          "quote": "I founded the Congressional Childhood Cancer Caucus in 2009 with one goal: to give children with cancer a voice in Washington. Seventeen years later, we've passed several pieces of game-changing legislation, funded hundreds of millions of dollars of research, and dramatically exp",
+          "sourceUrl": "https://x.com/RepMcCaul/status/2100734682014818702",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-28",
+          "topic": "healthcare",
+          "stance": "strong",
+          "summary": "Urges public blood donation to address national crisis",
+          "quote": "The American @RedCross\u00a0just declared a national blood crisis for only the second time ever. If you are able, please consider donating. Patients can\u2019t wait on this life-saving resource, and each donation can save multiple lives. Visit WhereToDonateBlood.org\u00a0to find a donation cent",
+          "sourceUrl": "https://x.com/RepMcCaul/status/2082128136947270053",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 2,
@@ -396,24 +423,6 @@
           "summary": "Praises Kay Granger's conservative leadership and appropriations work",
           "quote": "A fierce champion for the Lone Star State, Kay Granger broke through barriers to pave the way for generations of conservative women in Texas politics. In the halls of Congress, she wielded her appropriations gavel with grace and resolve, gaining the respect of members across the ",
           "sourceUrl": "https://x.com/RepMcCaul/status/2084297369919566227",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "healthcare",
-      "label": "Healthcare",
-      "count": 1,
-      "lastActive": "2026-07-28",
-      "stances": [
-        {
-          "date": "2026-07-28",
-          "topic": "healthcare",
-          "stance": "strong",
-          "summary": "Urges public blood donation to address national crisis",
-          "quote": "The American @RedCross\u00a0just declared a national blood crisis for only the second time ever. If you are able, please consider donating. Patients can\u2019t wait on this life-saving resource, and each donation can save multiple lives. Visit WhereToDonateBlood.org\u00a0to find a donation cent",
-          "sourceUrl": "https://x.com/RepMcCaul/status/2082128136947270053",
           "platform": "x"
         }
       ],

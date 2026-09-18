@@ -1,9 +1,9 @@
 {
   "voiceId": "jeremy-scahill",
   "voiceName": "Jeremy Scahill",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 23,
-  "stanceCount": 204,
+  "stanceCount": 205,
   "topics": [
     {
       "topic": "israel-palestine",
@@ -818,9 +818,18 @@
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 31,
-      "lastActive": "2026-08-18",
+      "count": 32,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Highlights contradictions in Jewish Democrats backing Republican-aligned candidate",
+          "quote": "Many of the \u201cMichigan Jewish Dems\u201d Backing Mike Rogers Are Actually Already Republican Supporters, Analysis Finds (by Drop Site News). A close look at the signatories reveals many have been involved in past GOP efforts\u2014including \u201cJews For Mitt\u201d in 2012.",
+          "sourceUrl": "https://www.dropsitenews.com/p/michigan-jewish-democrats-mike-rogers",
+          "platform": "substack"
+        },
         {
           "date": "2026-08-18",
           "topic": "elections",
@@ -1101,7 +1110,7 @@
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "iran-conflict",
@@ -1689,42 +1698,6 @@
       "active": true
     },
     {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 3,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "ICE surveillance expansion, Gaza policy described as ethnic cleansing",
-          "quote": "ICE plans national voter database; NYC schools ban AI through 8th grade; Katz: Ethnic cleansing of Gaza the \u201conly solution\u201d (by Drop Site News)",
-          "sourceUrl": "https://www.dropsitenews.com/p/ice-voter-database-new-york-schools-ai-israel-gaza-katz",
-          "platform": "substack"
-        },
-        {
-          "date": "2026-09-01",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Critical of ICE spending on surveillance technology",
-          "quote": "Capitol Hill Reacts: ICE plans to purchase $2 million worth of \u201crobot dogs\u201d",
-          "sourceUrl": "https://www.youtube.com/shorts/bFjGWsRXlyk",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-18",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Criticizes prolonged ICE detention as inhumane",
-          "quote": "\u2018Unending nightmare\u2019: L.A. Family Held in ICE Detention for Over 130 Days",
-          "sourceUrl": "https://www.youtube.com/watch?v=LJOxE3WnttE",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 4,
@@ -1765,6 +1738,42 @@
           "quote": "Early tomorrow morning, we will publish a major story at @theintercept that the government does not want out. Stay tuned.",
           "sourceUrl": "https://x.com/jeremyscahill/status/826252148476370947",
           "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 3,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "ICE surveillance expansion, Gaza policy described as ethnic cleansing",
+          "quote": "ICE plans national voter database; NYC schools ban AI through 8th grade; Katz: Ethnic cleansing of Gaza the \u201conly solution\u201d (by Drop Site News)",
+          "sourceUrl": "https://www.dropsitenews.com/p/ice-voter-database-new-york-schools-ai-israel-gaza-katz",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-09-01",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Critical of ICE spending on surveillance technology",
+          "quote": "Capitol Hill Reacts: ICE plans to purchase $2 million worth of \u201crobot dogs\u201d",
+          "sourceUrl": "https://www.youtube.com/shorts/bFjGWsRXlyk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Criticizes prolonged ICE detention as inhumane",
+          "quote": "\u2018Unending nightmare\u2019: L.A. Family Held in ICE Detention for Over 130 Days",
+          "sourceUrl": "https://www.youtube.com/watch?v=LJOxE3WnttE",
+          "platform": "youtube"
         }
       ],
       "active": false

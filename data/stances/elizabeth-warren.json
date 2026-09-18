@@ -1,9 +1,9 @@
 {
   "voiceId": "elizabeth-warren",
   "voiceName": "Elizabeth Warren",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 18,
-  "stanceCount": 99,
+  "stanceCount": 100,
   "topics": [
     {
       "topic": "trump-administration",
@@ -359,9 +359,18 @@
     {
       "topic": "housing-infrastructure",
       "label": "Housing & Infrastructure",
-      "count": 13,
-      "lastActive": "2026-09-15",
+      "count": 14,
+      "lastActive": "2026-09-18",
       "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "housing-infrastructure",
+          "stance": "strong",
+          "summary": "Supports new housing affordability law to increase supply and lower costs",
+          "quote": "I\u2019ve been saying it for decades: Americans need housing they can afford. \n\nThe new housing affordability law is about building more homes, lowering costs, and making sure the American Dream is within reach for everyone. \n\nProud that we got this done. https://t.co/40zXhnufLj",
+          "sourceUrl": "https://x.com/ewarren/status/2100737196667863238",
+          "platform": "x"
+        },
         {
           "date": "2026-09-15",
           "topic": "housing-infrastructure",
@@ -858,34 +867,7 @@
           "platform": "tiktok"
         }
       ],
-      "active": true
-    },
-    {
-      "topic": "abortion-reproductive",
-      "label": "Abortion & Reproductive Rights",
-      "count": 2,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "abortion-reproductive",
-          "stance": "strong",
-          "summary": "Praises Gloria Steinem's legacy fighting for abortion access and women's equality",
-          "quote": "Gloria Steinem believed women's equality wasn't a side issue\u2014it was everything. She fought for the right to abortion access, credit, and careers. Because of her, women can occupy spaces we were never supposed to. Thank you, Gloria. https://t.co/7RW0zNERYy",
-          "sourceUrl": "https://x.com/ewarren/status/2095527281250689079",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-07",
-          "topic": "abortion-reproductive",
-          "stance": "strong",
-          "summary": "Opposes Blanche's pledge to make Dobbs decision permanent in all states",
-          "quote": "politico.com/news/2026/08/03\u2026\n\nLink\n\n\n\nBlanche assures anti-abortion supporters that Dobbs will be \u2018permanent in every single state\u2019\n\npolitico.com",
-          "sourceUrl": "https://x.com/ewarren/status/2085837349267587142",
-          "platform": "x"
-        }
-      ],
-      "active": true
+      "active": false
     },
     {
       "topic": "billionaires-wealth",
@@ -919,6 +901,33 @@
           "quote": "Elon shitting his panties rn ong",
           "sourceUrl": "https://bsky.app/profile/ewarren.bsky.social/post/3ld6rovxf522u",
           "platform": "bluesky"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "abortion-reproductive",
+      "label": "Abortion & Reproductive Rights",
+      "count": 2,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "abortion-reproductive",
+          "stance": "strong",
+          "summary": "Praises Gloria Steinem's legacy fighting for abortion access and women's equality",
+          "quote": "Gloria Steinem believed women's equality wasn't a side issue\u2014it was everything. She fought for the right to abortion access, credit, and careers. Because of her, women can occupy spaces we were never supposed to. Thank you, Gloria. https://t.co/7RW0zNERYy",
+          "sourceUrl": "https://x.com/ewarren/status/2095527281250689079",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-07",
+          "topic": "abortion-reproductive",
+          "stance": "strong",
+          "summary": "Opposes Blanche's pledge to make Dobbs decision permanent in all states",
+          "quote": "politico.com/news/2026/08/03\u2026\n\nLink\n\n\n\nBlanche assures anti-abortion supporters that Dobbs will be \u2018permanent in every single state\u2019\n\npolitico.com",
+          "sourceUrl": "https://x.com/ewarren/status/2085837349267587142",
+          "platform": "x"
         }
       ],
       "active": false

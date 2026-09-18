@@ -1,16 +1,25 @@
 {
   "voiceId": "glenn-beck",
   "voiceName": "Glenn Beck",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 26,
-  "stanceCount": 136,
+  "stanceCount": 138,
   "topics": [
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 16,
-      "lastActive": "2026-09-16",
+      "count": 17,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Presents AI as a significant emerging threat requiring attention",
+          "quote": "The Shocking AI WARNING Everyone Should Hear...",
+          "sourceUrl": "https://www.youtube.com/watch?v=a8zVwR3KvVE",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-16",
           "topic": "ai-technology",
@@ -591,6 +600,87 @@
       "active": true
     },
     {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 8,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Warns Hungarian political situation could replicate in America",
+          "quote": "The PURGE Of Hungary Could Happen In America!",
+          "sourceUrl": "https://www.youtube.com/shorts/bIQ3NUFBQ9s",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Warns of anti-conservative crackdown in post-Orban Hungary as U.S. cautionary tale",
+          "quote": "What Hungary Is Doing To Conservatives Since Orban Lost Should TERRIFY Republicans",
+          "sourceUrl": "https://www.youtube.com/watch?v=2Hdm0xRPxXs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Warns of anti-conservative crackdown in post-Orban Hungary as U.S. cautionary tale",
+          "quote": "What Hungary Just Did To Conservatives Is A STARK Warning For America | Hour 1 | 9/17/26",
+          "sourceUrl": "https://www.youtube.com/watch?v=OJ5I76l6fLs",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-07",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Criticizes Canada's political direction as unstable",
+          "quote": "Canada Has Lost It.",
+          "sourceUrl": "https://www.youtube.com/shorts/Pmw4L0n-2lE",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Criticizes Canada for political or policy decisions",
+          "quote": "Canada Has Completely Lost It",
+          "sourceUrl": "https://www.youtube.com/watch?v=cr7-SWyidKo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-25",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Expresses disapproval of Canadian policies or governance",
+          "quote": "Canada Has Completely Lost It.",
+          "sourceUrl": "https://www.youtube.com/shorts/0P8n1sdNWVg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-15",
+          "topic": "uk-world-politics",
+          "stance": "lean",
+          "summary": "Revisits Nixon history with implied contemporary relevance",
+          "quote": "The Truth About Nixon...",
+          "sourceUrl": "https://www.youtube.com/shorts/IveCYHcSHPc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-31",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Warns of negative consequences from Moroccan immigration to Spain",
+          "quote": "Glenn's Dire Prediction for Spain After Moroccan Invasion",
+          "sourceUrl": "https://www.youtube.com/watch?v=X-d0tLkX1kk",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "media-press",
       "label": "Media & Press",
       "count": 8,
@@ -747,78 +837,6 @@
           "summary": "Criticizes Michigan Senate candidate's associations as problematic",
           "quote": "Meet Michigan\u2019s \u201cCapitalist\u201d Senate Candidate\u2026 With Some DISTURBING Friends",
           "sourceUrl": "https://www.youtube.com/watch?v=ktGis2mGwPQ",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 7,
-      "lastActive": "2026-09-17",
-      "stances": [
-        {
-          "date": "2026-09-17",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Warns of anti-conservative crackdown in post-Orban Hungary as U.S. cautionary tale",
-          "quote": "What Hungary Is Doing To Conservatives Since Orban Lost Should TERRIFY Republicans",
-          "sourceUrl": "https://www.youtube.com/watch?v=2Hdm0xRPxXs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-17",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Warns of anti-conservative crackdown in post-Orban Hungary as U.S. cautionary tale",
-          "quote": "What Hungary Just Did To Conservatives Is A STARK Warning For America | Hour 1 | 9/17/26",
-          "sourceUrl": "https://www.youtube.com/watch?v=OJ5I76l6fLs",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-07",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Criticizes Canada's political direction as unstable",
-          "quote": "Canada Has Lost It.",
-          "sourceUrl": "https://www.youtube.com/shorts/Pmw4L0n-2lE",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-09-03",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Criticizes Canada for political or policy decisions",
-          "quote": "Canada Has Completely Lost It",
-          "sourceUrl": "https://www.youtube.com/watch?v=cr7-SWyidKo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-25",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Expresses disapproval of Canadian policies or governance",
-          "quote": "Canada Has Completely Lost It.",
-          "sourceUrl": "https://www.youtube.com/shorts/0P8n1sdNWVg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-15",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Revisits Nixon history with implied contemporary relevance",
-          "quote": "The Truth About Nixon...",
-          "sourceUrl": "https://www.youtube.com/shorts/IveCYHcSHPc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-31",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Warns of negative consequences from Moroccan immigration to Spain",
-          "quote": "Glenn's Dire Prediction for Spain After Moroccan Invasion",
-          "sourceUrl": "https://www.youtube.com/watch?v=X-d0tLkX1kk",
           "platform": "youtube"
         }
       ],

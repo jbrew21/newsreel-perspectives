@@ -1,9 +1,9 @@
 {
   "voiceId": "michael-knowles",
   "voiceName": "Michael Knowles",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 32,
-  "stanceCount": 212,
+  "stanceCount": 213,
   "topics": [
     {
       "topic": "elections",
@@ -1860,6 +1860,33 @@
       "active": false
     },
     {
+      "topic": "congress-legislation",
+      "label": "Congress & Legislation",
+      "count": 2,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "congress-legislation",
+          "stance": "lean",
+          "summary": "Questions Senate composition favoring older members",
+          "quote": "HOT TAKE: The Senate was designed for older politicians",
+          "sourceUrl": "https://www.youtube.com/shorts/TMpPS-SkDSw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2020-09-21",
+          "topic": "congress-legislation",
+          "stance": "strong",
+          "summary": "Calls for expulsion of Republicans opposing Trump judicial nominees",
+          "quote": "Any Republican senator who votes against Trump's judicial nominee should be expelled from the party.",
+          "sourceUrl": "https://x.com/michaeljknowles/status/1308143982333980672",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "billionaires-wealth",
       "label": "Billionaires & Wealth",
       "count": 2,
@@ -2178,24 +2205,6 @@
           "summary": "Endorses ivermectin as highly effective medication",
           "quote": "Ivermectin is a wonder drug.",
           "sourceUrl": "https://x.com/michaeljknowles/status/1518697045577682944",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "congress-legislation",
-      "label": "Congress & Legislation",
-      "count": 1,
-      "lastActive": "2020-09-21",
-      "stances": [
-        {
-          "date": "2020-09-21",
-          "topic": "congress-legislation",
-          "stance": "strong",
-          "summary": "Calls for expulsion of Republicans opposing Trump judicial nominees",
-          "quote": "Any Republican senator who votes against Trump's judicial nominee should be expelled from the party.",
-          "sourceUrl": "https://x.com/michaeljknowles/status/1308143982333980672",
           "platform": "x"
         }
       ],

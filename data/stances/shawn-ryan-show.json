@@ -1,16 +1,34 @@
 {
   "voiceId": "shawn-ryan-show",
   "voiceName": "Shawn Ryan Show",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "topicCount": 23,
-  "stanceCount": 99,
+  "stanceCount": 102,
   "topics": [
     {
       "topic": "military-defense",
       "label": "Military & Defense",
-      "count": 14,
-      "lastActive": "2026-09-14",
+      "count": 16,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes UK government for targeting SAS operator who saved lives",
+          "quote": "SAS Operator Saved 700 Lives and the UK Came After Him \ud83d\ude21",
+          "sourceUrl": "https://www.youtube.com/shorts/PrI3PjVuFO4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-15",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Criticizes UK government pursuing SAS operator during interview",
+          "quote": "The UK Came After an SAS Operator Mid-Interview \ud83d\ude21 #shawnryanshow #news #specialforces #politics #military",
+          "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7685812011111894302",
+          "platform": "tiktok"
+        },
         {
           "date": "2026-09-14",
           "topic": "military-defense",
@@ -143,9 +161,18 @@
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 12,
-      "lastActive": "2026-09-17",
+      "count": 14,
+      "lastActive": "2026-09-18",
       "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Raises concerns about surveillance capabilities embedded in consumer technology",
+          "quote": "Can Your Tires Be Used To Spy On You? \ud83d\ude33\n\n@ByronTau https://t.co/R38PXQi73u",
+          "sourceUrl": "https://x.com/ShawnRyanShow/status/2100736565043720494",
+          "platform": "x"
+        },
         {
           "date": "2026-09-17",
           "topic": "ai-technology",
@@ -172,6 +199,15 @@
           "quote": "Who Actually Has Access to Flock Camera Data? \ud83d\ude33\n\n@ByronTau https://t.co/sPCBt1ZfGZ",
           "sourceUrl": "https://x.com/ShawnRyanShow/status/2100706362150060399",
           "platform": "x"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Raises concern about facial recognition determining consumer prices",
+          "quote": "Could Your Face Decide How Much You Pay? \ud83d\ude33 #shawnryanshow #privacy #technology #shopping #surveillance",
+          "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7686574136960896287",
+          "platform": "tiktok"
         },
         {
           "date": "2026-09-01",
@@ -780,60 +816,6 @@
       "active": false
     },
     {
-      "topic": "uk-world-politics",
-      "label": "UK & World Politics",
-      "count": 2,
-      "lastActive": "2026-09-15",
-      "stances": [
-        {
-          "date": "2026-09-15",
-          "topic": "uk-world-politics",
-          "stance": "strong",
-          "summary": "Critical of UK government interference with military personnel",
-          "quote": "The UK Came After an SAS Operator Mid-Interview \ud83d\ude21\n\n@one_man_in https://t.co/nPjxD22LPB",
-          "sourceUrl": "https://x.com/ShawnRyanShow/status/2099664499057791132",
-          "platform": "x"
-        },
-        {
-          "date": "2026-09-15",
-          "topic": "uk-world-politics",
-          "stance": "lean",
-          "summary": "Questions UK government intervention during interview",
-          "quote": "The UK Came After an SAS Operator Mid-Interview \ud83d\ude21 #shawnryanshow #news #specialforces #politics #military",
-          "sourceUrl": "https://www.tiktok.com/@shawnryanshow/video/7685812011111894302",
-          "platform": "tiktok"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 2,
-      "lastActive": "2026-09-03",
-      "stances": [
-        {
-          "date": "2026-09-03",
-          "topic": "media-personalities",
-          "stance": "strong",
-          "summary": "Publicizes Hunter Biden threatening Jake Tapper",
-          "quote": "Why Hunter Biden Almost Fought Jake Tapper at the Super Bowl \ud83e\udd14",
-          "sourceUrl": "https://www.youtube.com/shorts/9Ad8sQRL7uc",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-27",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Frames potential matchup between fighter and political commentator",
-          "quote": "Sean Strickland vs Candace Owens?!",
-          "sourceUrl": "https://x.com/ShawnRyanShow/status/2081790468837269915",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "immigration",
       "label": "Immigration",
       "count": 3,
@@ -942,18 +924,63 @@
       "active": false
     },
     {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 2,
+      "lastActive": "2026-09-03",
+      "stances": [
+        {
+          "date": "2026-09-03",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Publicizes Hunter Biden threatening Jake Tapper",
+          "quote": "Why Hunter Biden Almost Fought Jake Tapper at the Super Bowl \ud83e\udd14",
+          "sourceUrl": "https://www.youtube.com/shorts/9Ad8sQRL7uc",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-27",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Frames potential matchup between fighter and political commentator",
+          "quote": "Sean Strickland vs Candace Owens?!",
+          "sourceUrl": "https://x.com/ShawnRyanShow/status/2081790468837269915",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 1,
-      "lastActive": "2026-09-17",
+      "lastActive": "2026-09-18",
       "stances": [
         {
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "topic": "congress-legislation",
           "stance": "lean",
-          "summary": "Questions relevance and effectiveness of Congress",
-          "quote": "Are the People in Congress Obsolete? \ud83d\ude33\n\n@ByronTau https://t.co/xAI0NrkFiX",
-          "sourceUrl": "https://x.com/ShawnRyanShow/status/2100676162792173944",
+          "summary": "Questions whether congressional representatives remain relevant",
+          "quote": "Are the People in Congress Obsolete? \ud83d\ude33",
+          "sourceUrl": "https://www.youtube.com/shorts/s2ABUVw9RVY",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "uk-world-politics",
+      "label": "UK & World Politics",
+      "count": 1,
+      "lastActive": "2026-09-15",
+      "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "uk-world-politics",
+          "stance": "strong",
+          "summary": "Critical of UK government interference with military personnel",
+          "quote": "The UK Came After an SAS Operator Mid-Interview \ud83d\ude21\n\n@one_man_in https://t.co/nPjxD22LPB",
+          "sourceUrl": "https://x.com/ShawnRyanShow/status/2099664499057791132",
           "platform": "x"
         }
       ],
