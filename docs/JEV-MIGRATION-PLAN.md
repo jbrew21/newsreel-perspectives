@@ -167,6 +167,13 @@ The savings are real but not the reason. The reasons are: the run gets faster in
 
 ## 7. Follow-ons (not this migration)
 
+**Prompt caching, if this migration stalls.** There is no `cache_control` anywhere in `scripts/` (verified Sep 18). Today every one of the ~313 per-voice calls re-sends the taxonomy and the rule block in full. Section 3.2 removes that block from the Haiku call entirely, which is the better fix, but it only lands if Jev ships. If Jev is delayed, cache the stable prefix on the existing Haiku prompt instead: restructure `_build_categorization_prompt` so instructions, taxonomy and rules sit in a cached system prompt and only the posts vary. No quality risk, no new vendor.
+
+**Confirm the Batch API is actually engaging.** `categorize_posts_batch` and the sequential fallback both increment `_usage_stats['claude_calls']`, so the usage log cannot tell you which path ran, and the two differ by 50% on price (`$0.60` vs `$1.20` a run). Log the path taken, then read one GitHub Action run. This is worth more than the model swap if it has been silently falling back.
+
+**Fix the price table first, whatever else happens.** `log_usage()` at `collect.py:1435` prices input at $0.80/M and output at $4.00/M, under a comment citing Sonnet. Haiku 4.5 list is $1.00/M and $5.00/M. Every cost figure in `data/usage-log.json` is about 25% low, which means no before/after measurement of this migration is trustworthy until it is corrected.
+
+
 - `lookup.py` `_match_story_to_topics()`: search-time query-to-topic mapping as a Jev Choice with the same 41 criteria. Sub-second instead of a 10 s-timeout Haiku call; the result cache keeps working.
 - `assign_argument_clusters()`: Haiku still names the 4-6 clusters (text); Jev assigns the 60 voices with one Choice each. Removes the max_tokens overflow that once shipped no clusters at all.
 - `discover_bluesky.py` handle matching ("same person?") as a Noul.
