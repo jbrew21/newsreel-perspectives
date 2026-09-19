@@ -1278,6 +1278,51 @@ def categorize_posts(voice_name, posts):
     return posts
 
 
+def _extract_json_array(text):
+    """Pull the first balanced JSON array out of a model response.
+
+    A greedy bracket-to-bracket regex was the original approach and it broke
+    in production on
+    Sep 19: Haiku echoed the input listing ("[0] (x) ...") and the greedy match
+    spanned from that first bracket to the last one, so json.loads choked on
+    "Extra data". This scans for a balanced array instead, skipping brackets
+    inside strings.
+    """
+    if not text:
+        return None
+    text = text.strip()
+    if text.startswith('```'):
+        text = re.sub(r'^```(?:json)?\s*|\s*```$', '', text).strip()
+    for start in (i for i, c in enumerate(text) if c == '['):
+        depth, in_str, esc = 0, False, False
+        for i in range(start, len(text)):
+            c = text[i]
+            if in_str:
+                if esc:
+                    esc = False
+                elif c == '\\':
+                    esc = True
+                elif c == '"':
+                    in_str = False
+                continue
+            if c == '"':
+                in_str = True
+            elif c == '[':
+                depth += 1
+            elif c == ']':
+                depth -= 1
+                if depth == 0:
+                    try:
+                        parsed = json.loads(text[start:i + 1])
+                    except (ValueError, TypeError):
+                        break
+                    if isinstance(parsed, list) and any(
+                            isinstance(x, dict) for x in parsed):
+                        return parsed
+                    break
+    return None
+
+
 def summarize_posts(voice_name, posts):
     """Haiku writes the 4-8 word position summary, and nothing else.
 
@@ -1285,57 +1330,87 @@ def summarize_posts(voice_name, posts):
     prompt that still needs a language model. No taxonomy block, no rules, no
     relevance or stance instructions, so the prompt is a fraction of the old
     one and it only runs for posts that already survived the filter.
+
+    This function NEVER raises. A summary is a nice-to-have; losing one must
+    not take down a nightly run that has already collected everything else.
     """
     if not ANTHROPIC_API_KEY or not posts:
         return posts
 
-    listing = "".join(
-        f"\n[{i}] ({p.get('platform','')}) {p.get('text','')[:300]}\n"
-        for i, p in enumerate(posts))
-    prompt = (
-        f"Here are recent posts from {voice_name}. For each one, summarize the "
-        f"POSITION the author is taking in 4-8 words: a neutral, third-person "
-        f"label, e.g. \"Backs sanctions, opposes unfreezing assets\".\n"
-        f"Do not paraphrase or invent quotes. Return only JSON.\n"
-        f"{listing}\n"
-        f'Return JSON array: [{{"index": 0, "summary": "..."}}]'
-    )
+    import time as _t
 
-    _usage_stats['claude_calls'] += 1
-    _usage_stats['total_input_chars'] += len(prompt)
+    try:
+        listing = "".join(
+            f"\n[{i}] ({p.get('platform','')}) {p.get('text','')[:300]}\n"
+            for i, p in enumerate(posts))
+        prompt = (
+            f"Here are recent posts from {voice_name}. For each one, summarize "
+            f"the POSITION the author is taking in 4-8 words: a neutral, "
+            f"third-person label, e.g. \"Backs sanctions, opposes unfreezing "
+            f"assets\".\nDo not paraphrase or invent quotes.\n"
+            f"Reply with ONLY a JSON array and nothing else, no preamble and no "
+            f"code fence.\n{listing}\n"
+            f'Format: [{{"index": 0, "summary": "..."}}]'
+        )
 
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(
-                'https://api.anthropic.com/v1/messages',
-                data=json.dumps({
-                    'model': CLAUDE_MODEL,
-                    'max_tokens': 1024,
-                    'messages': [{'role': 'user', 'content': prompt}],
-                }).encode(),
-                headers={
-                    'x-api-key': ANTHROPIC_API_KEY,
-                    'anthropic-version': '2023-06-01',
-                    'content-type': 'application/json',
-                })
-            with urllib.request.urlopen(req, timeout=60) as resp:
-                body = json.loads(resp.read())
-            text = body['content'][0]['text']
-            _usage_stats['total_output_tokens_est'] += len(text) // 4
-            m = re.search(r'\[.*\]', text, re.S)
-            items = json.loads(m.group(0)) if m else []
-            for item in items:
-                if isinstance(item, dict) and isinstance(item.get('index'), int):
-                    i = item['index']
-                    if 0 <= i < len(posts) and item.get('summary'):
-                        posts[i]['summary'] = str(item['summary'])[:120]
+        _usage_stats['claude_calls'] += 1
+        _usage_stats['total_input_chars'] += len(prompt)
+
+        data = None
+        last_error = None
+        for attempt in range(3):
+            try:
+                req = urllib.request.Request(
+                    'https://api.anthropic.com/v1/messages',
+                    data=json.dumps({
+                        'model': CLAUDE_MODEL,
+                        'max_tokens': 1024,
+                        'messages': [{'role': 'user', 'content': prompt}],
+                    }).encode(),
+                    headers={
+                        'x-api-key': ANTHROPIC_API_KEY,
+                        'anthropic-version': '2023-06-01',
+                        'content-type': 'application/json',
+                    })
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    data = json.loads(resp.read().decode())
+                break
+            except Exception as e:
+                last_error = e
+                if attempt < 2:
+                    _t.sleep((attempt + 1) * 2)
+        if data is None:
+            print(f"    ⚠ summary call failed for {voice_name}: {last_error}")
             return posts
-        except Exception as e:
-            if attempt == 2:
-                print(f"    ⚠ summary call failed for {voice_name}: {e}")
-                return posts
-            time.sleep(2 ** attempt)
-    return posts
+
+        text = data.get('content', [{}])[0].get('text', '')
+        usage = data.get('usage', {})
+        _usage_stats['total_output_tokens_est'] += usage.get('output_tokens',
+                                                             len(text) // 4)
+
+        items = _extract_json_array(text)
+        if not items:
+            print(f"    ⚠ no parseable summaries for {voice_name}; "
+                  f"posts keep their labels without summaries")
+            return posts
+
+        applied = 0
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            i = item.get('index')
+            summary = item.get('summary')
+            if isinstance(i, int) and 0 <= i < len(posts) and summary:
+                posts[i]['summary'] = str(summary)[:120]
+                applied += 1
+        if applied < len(posts):
+            print(f"    ⚠ {len(posts) - applied} post(s) for {voice_name} "
+                  f"got no summary")
+        return posts
+
+    except Exception as e:
+        print(f"    ⚠ summarize_posts failed for {voice_name} ({e}); continuing")
+        return posts
 
 
 def label_with_jev(voice_name, posts):
@@ -1347,7 +1422,12 @@ def label_with_jev(voice_name, posts):
     """
     import label_jev
 
-    labeled = label_jev.label_posts(posts, voice_name)
+    try:
+        labeled = label_jev.label_posts(posts, voice_name)
+    except Exception as e:
+        # TypeSafe down, bad key, network. Fall back rather than lose the run.
+        print(f"    ⚠ Jev labeling failed for {voice_name} ({e}); using Haiku")
+        return categorize_posts(voice_name, posts)
     survivors = [p for p in labeled if p.get('labeler') == 'jev']
     failed = [p for p in labeled if p.get('label_error')]
 
