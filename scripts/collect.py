@@ -1323,6 +1323,24 @@ def _extract_json_array(text):
     return None
 
 
+def _jev_usage_for_log():
+    """Jev's side of the bill. Haiku's counters do not include it, so without
+    this the usage log understates what a run actually costs."""
+    try:
+        import label_jev
+        u = label_jev.usage_stats()
+    except Exception:
+        return {}
+    # $0.042 per 1M input tokens; output is free on a System One model.
+    return {
+        'calls': u.get('calls', 0),
+        'input_tokens': u.get('input_tokens', 0),
+        'retries': u.get('retries', 0),
+        'failures': u.get('failures', 0),
+        'estimated_cost_usd': round(u.get('input_tokens', 0) / 1_000_000 * 0.042, 4),
+    }
+
+
 def summarize_posts(voice_name, posts):
     """Haiku writes the 4-8 word position summary, and nothing else.
 
@@ -1627,12 +1645,16 @@ def log_usage(voices_collected, posts_collected):
         'date': date,
         'voices_collected': voices_collected,
         'posts_collected': posts_collected,
+        'labeler': LABELER,
         'claude_calls': _usage_stats['claude_calls'],
         'posts_reused': _usage_stats['posts_reused'],
         'estimated_input_tokens': est_input_tokens,
         'estimated_output_tokens': est_output_tokens,
         'estimated_cost_usd': round(est_cost, 2),
         'estimated_cost_usd_if_batched': round(est_cost_batch, 2),
+        **({} if LABELER != 'jev' else {
+            'jev': _jev_usage_for_log(),
+        }),
         'x_health': {
             'attempts': _x_failures['total_attempts'],
             'successes': _x_failures['successes'],
