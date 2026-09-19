@@ -1,9 +1,9 @@
 {
   "voiceId": "so-informed",
   "voiceName": "So Informed (Jess Natale)",
-  "updatedAt": "2026-09-18",
-  "topicCount": 19,
-  "stanceCount": 99,
+  "updatedAt": "2026-09-19",
+  "topicCount": 21,
+  "stanceCount": 101,
   "topics": [
     {
       "topic": "elections",
@@ -1014,6 +1014,24 @@
       "active": false
     },
     {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 1,
+      "lastActive": "2021-09-14",
+      "stances": [
+        {
+          "date": "2021-09-14",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Supports Cara Delevingne and AOC Met Gala message",
+          "quote": "Cara Delevingne and AOC were onto something at the Met Gala tonight https://t.co/BJzPDFgX3a",
+          "sourceUrl": "https://x.com/_soinformed/status/1437580193179262981",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 1,
@@ -1026,6 +1044,24 @@
           "summary": "Names Democratic senators voting against minimum wage, calls for their removal",
           "quote": "The following Democratic Senators just voted AGAINST a $15 minimum wage:\n\nJoe Manchin\nKyrsten Sinema\nJon Tester\nJeanne Shaheen\nMaggie Hassan\nChris Coons\nTom Carper\n\nVote them out.",
           "sourceUrl": "https://x.com/_soinformed/status/1367912116674560011",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2020-11-08",
+      "stances": [
+        {
+          "date": "2020-11-08",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Criticizes Apple's screen reports timing",
+          "quote": "Apple attacking first thing in the morning with the screen reports \ud83e\udd75",
+          "sourceUrl": "https://x.com/_soinformed/status/1325443621835988993",
           "platform": "x"
         }
       ],

@@ -1,9 +1,9 @@
 {
   "voiceId": "philip-defranco",
   "voiceName": "Philip DeFranco",
-  "updatedAt": "2026-09-18",
-  "topicCount": 27,
-  "stanceCount": 110,
+  "updatedAt": "2026-09-19",
+  "topicCount": 28,
+  "stanceCount": 115,
   "topics": [
     {
       "topic": "trump-administration",
@@ -332,7 +332,7 @@
     {
       "topic": "celebrity-entertainment",
       "label": "Celebrity & Entertainment",
-      "count": 14,
+      "count": 15,
       "lastActive": "2026-09-15",
       "stances": [
         {
@@ -432,6 +432,15 @@
           "summary": "Celebrates creators regaining ownership of their brand",
           "quote": "WOW! Anthony Padilla and Ian Hecox just bought back Smosh. Feels like a piece of the Internet is healing. https://t.co/Hdseax4kNB",
           "sourceUrl": "https://x.com/PhillyD/status/1671204331352387585",
+          "platform": "x"
+        },
+        {
+          "date": "2023-03-09",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Humorously criticizes MrBeast's charitable shoe donation",
+          "quote": "I saw a lot of people angry that Mr. Beast made a video where he gave 20,000 pairs of shoes to kids in South Africa.\n\nDon't worry. He isn't going to get away with this.\n\nI'm booking a flight right now and I'll get back every damn pair of those shoes.\n\nYou're welcome. \ud83c\uddfa\ud83c\uddf8\ud83c\uddfa\ud83c\uddf8\ud83c\uddfa\ud83c\uddf8",
+          "sourceUrl": "https://x.com/PhillyD/status/1633894972767498240",
           "platform": "x"
         },
         {
@@ -663,6 +672,60 @@
       "active": false
     },
     {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 5,
+      "lastActive": "2026-08-27",
+      "stances": [
+        {
+          "date": "2026-08-27",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Suggests Joe Rogan controversy significantly impacts Flock platform",
+          "quote": "Flock's Joe Rogan Problem Changes Everything",
+          "sourceUrl": "https://www.youtube.com/watch?v=cUxgalB3rkk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-27",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Frames Natalie Harp letters as increasingly problematic or revealing",
+          "quote": "The Natalie Harp Letters are Crazier Than We Thought",
+          "sourceUrl": "https://www.youtube.com/watch?v=tzzmikS3WIk",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-19",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Presents Joe Rogan-Candace Owens situation as consequential",
+          "quote": "The Joe Rogan Candace Owens Situation is Bigger Than You Think",
+          "sourceUrl": "https://www.youtube.com/watch?v=heacPnqC4jU",
+          "platform": "youtube"
+        },
+        {
+          "date": "2024-03-12",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Denies being person in viral post",
+          "quote": "I keep getting tagged in his posts so just to confirm. \n\nThis is not:\n\n-Me\n-My evil twin\n-Me with a cocaine problem\n-Me if I melted a little after being locked in a hot car. https://t.co/uk3mOR63K3",
+          "sourceUrl": "https://x.com/PhillyD/status/1767644873866588362",
+          "platform": "x"
+        },
+        {
+          "date": "2023-10-20",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Condemns doxxing behavior, rejects false equivalence with criticism",
+          "quote": "Yall\u2026The more I sit with this, the more it pisses me off. \n\nHow the fuck are they \u201cboth sides\u201d equating SSSniperwolf putting another creator\u2019s life in danger by showing up in the middle of the night and broadcasting the outside of their home to their millions of followers with Ja",
+          "sourceUrl": "https://x.com/PhillyD/status/1715469574781718945",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 3,
@@ -733,51 +796,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 4,
-      "lastActive": "2026-08-27",
-      "stances": [
-        {
-          "date": "2026-08-27",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Suggests Joe Rogan controversy significantly impacts Flock platform",
-          "quote": "Flock's Joe Rogan Problem Changes Everything",
-          "sourceUrl": "https://www.youtube.com/watch?v=cUxgalB3rkk",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-27",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Frames Natalie Harp letters as increasingly problematic or revealing",
-          "quote": "The Natalie Harp Letters are Crazier Than We Thought",
-          "sourceUrl": "https://www.youtube.com/watch?v=tzzmikS3WIk",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-19",
-          "topic": "media-personalities",
-          "stance": "lean",
-          "summary": "Presents Joe Rogan-Candace Owens situation as consequential",
-          "quote": "The Joe Rogan Candace Owens Situation is Bigger Than You Think",
-          "sourceUrl": "https://www.youtube.com/watch?v=heacPnqC4jU",
-          "platform": "youtube"
-        },
-        {
-          "date": "2023-10-20",
-          "topic": "media-personalities",
-          "stance": "strong",
-          "summary": "Condemns doxxing behavior, rejects false equivalence with criticism",
-          "quote": "Yall\u2026The more I sit with this, the more it pisses me off. \n\nHow the fuck are they \u201cboth sides\u201d equating SSSniperwolf putting another creator\u2019s life in danger by showing up in the middle of the night and broadcasting the outside of their home to their millions of followers with Ja",
-          "sourceUrl": "https://x.com/PhillyD/status/1715469574781718945",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "immigration",
@@ -1032,6 +1050,42 @@
       "active": false
     },
     {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 3,
+      "lastActive": "2023-10-04",
+      "stances": [
+        {
+          "date": "2023-10-04",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Jokingly mocks 5G vaccine conspiracy theories",
+          "quote": "oh no....the 5G emergency alert.  its activated the zombie genes in the vaccine. help. braaaains. help oh god.. BRAAAAAAINSS",
+          "sourceUrl": "https://x.com/PhillyD/status/1709634734693994598",
+          "platform": "x"
+        },
+        {
+          "date": "2020-03-12",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Expresses alarm at pandemic escalation",
+          "quote": "HOLY SHIT.\n\nIn just the last 30 minutes we learned that:\n\nTravel from Europe is going to stop for 30 days.\n\nTom Hanks &amp; Rita Wilson have tested positive for coronavirus.\n\nThe NBA season has been suspended.",
+          "sourceUrl": "https://x.com/PhillyD/status/1237916249339752448",
+          "platform": "x"
+        },
+        {
+          "date": "2020-03-08",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "References wife's coronavirus reassurance",
+          "quote": "My wife calming my concerns about coronavirus. \ud83e\udd70 https://t.co/etogXqwL24",
+          "sourceUrl": "https://x.com/PhillyD/status/1236677473980411905",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 2,
@@ -1203,6 +1257,24 @@
       "active": false
     },
     {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 1,
+      "lastActive": "2024-06-06",
+      "stances": [
+        {
+          "date": "2024-06-06",
+          "topic": "sports",
+          "stance": "strong",
+          "summary": "Expresses enthusiasm about USA cricket participation",
+          "quote": "GET UP AMERICA! It's time for a lot of us to act like we even remotely understand how cricket works.\n\nUSA USA USA! \ud83c\uddfa\ud83c\uddf8\ud83c\uddfa\ud83c\uddf8\ud83c\uddfa\ud83c\uddf8\n\nI always dreamed this day would come ever since I learned that it happened 7 minutes ago!!",
+          "sourceUrl": "https://x.com/PhillyD/status/1798810539868737962",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "protests-activism",
       "label": "Protests & Activism",
       "count": 1,
@@ -1215,24 +1287,6 @@
           "summary": "Commits to covering protest conduct and police actions",
           "quote": "Hi. We're currently working on covering the peaceful protests, looting, attacks, police conduct, &amp; updates since our last video etc etc for Monday.\n\nFeel free to use this tweet as a place to post videos from the ground that you found and think are important.",
           "sourceUrl": "https://x.com/PhillyD/status/1267121257838829569",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "covid-pandemic",
-      "label": "COVID & Pandemic",
-      "count": 1,
-      "lastActive": "2020-03-12",
-      "stances": [
-        {
-          "date": "2020-03-12",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Expresses alarm at pandemic escalation",
-          "quote": "HOLY SHIT.\n\nIn just the last 30 minutes we learned that:\n\nTravel from Europe is going to stop for 30 days.\n\nTom Hanks &amp; Rita Wilson have tested positive for coronavirus.\n\nThe NBA season has been suspended.",
-          "sourceUrl": "https://x.com/PhillyD/status/1237916249339752448",
           "platform": "x"
         }
       ],

@@ -1,9 +1,9 @@
 {
   "voiceId": "theo-von",
   "voiceName": "Theo Von",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 28,
-  "stanceCount": 49,
+  "stanceCount": 51,
   "topics": [
     {
       "topic": "drugs-addiction",
@@ -96,6 +96,51 @@
       "active": false
     },
     {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 4,
+      "lastActive": "2025-09-18",
+      "stances": [
+        {
+          "date": "2025-09-18",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Appreciates clarification on unspecified matter",
+          "quote": "I\u2019m glad there was clarification\u2026 https://t.co/pLm0TIBdCU",
+          "sourceUrl": "https://x.com/theovon/status/1968711217024757940",
+          "platform": "x"
+        },
+        {
+          "date": "2025-09-12",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Expresses interest in or contemplation of Charlie Kirk",
+          "quote": "Thinking about Charlie Kirk. https://t.co/9xoZifZuem",
+          "sourceUrl": "https://x.com/theovon/status/1966633118481396116",
+          "platform": "x"
+        },
+        {
+          "date": "2023-09-06",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Publicly warns of podcast fraud by Colin P. Thomson",
+          "quote": "Just wanted to warn folks about @colinpthomson. This man defrauded our podcast and others. Thank you all for your support! https://t.co/wh8gLIE0Bn",
+          "sourceUrl": "https://x.com/theovon/status/1699549042823618581",
+          "platform": "x"
+        },
+        {
+          "date": "2022-02-06",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Defends Joe Rogan, criticizes those attacking him",
+          "quote": "Joe Rogan is a hero. Anyone going after him small af in they truth.",
+          "sourceUrl": "https://x.com/theovon/status/1490204090084872196",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "free-speech-censorship",
       "label": "Free Speech & Censorship",
       "count": 4,
@@ -141,40 +186,31 @@
       "active": false
     },
     {
-      "topic": "media-personalities",
-      "label": "Media Personalities & Feuds",
-      "count": 3,
-      "lastActive": "2025-09-12",
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 2,
+      "lastActive": "2026-09-11",
       "stances": [
         {
-          "date": "2025-09-12",
-          "topic": "media-personalities",
+          "date": "2026-09-11",
+          "topic": "terrorism",
           "stance": "lean",
-          "summary": "Expresses interest in or contemplation of Charlie Kirk",
-          "quote": "Thinking about Charlie Kirk. https://t.co/9xoZifZuem",
-          "sourceUrl": "https://x.com/theovon/status/1966633118481396116",
-          "platform": "x"
+          "summary": "Honors 9/11 first responder and service member",
+          "quote": "thank you Tony Bonfiglio for sharing your 9/11 story and for your service \ud83d\ude4f \ud83d\udd4a\ufe0f",
+          "sourceUrl": "https://www.youtube.com/shorts/BpM2TgQ6Y_s",
+          "platform": "youtube"
         },
         {
-          "date": "2023-09-06",
-          "topic": "media-personalities",
-          "stance": "strong",
-          "summary": "Publicly warns of podcast fraud by Colin P. Thomson",
-          "quote": "Just wanted to warn folks about @colinpthomson. This man defrauded our podcast and others. Thank you all for your support! https://t.co/wh8gLIE0Bn",
-          "sourceUrl": "https://x.com/theovon/status/1699549042823618581",
-          "platform": "x"
-        },
-        {
-          "date": "2022-02-06",
-          "topic": "media-personalities",
-          "stance": "strong",
-          "summary": "Defends Joe Rogan, criticizes those attacking him",
-          "quote": "Joe Rogan is a hero. Anyone going after him small af in they truth.",
-          "sourceUrl": "https://x.com/theovon/status/1490204090084872196",
+          "date": "2025-09-10",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "Expresses sympathy for heartbreaking situation",
+          "quote": "Prayers. This is heartbreaking.",
+          "sourceUrl": "https://x.com/theovon/status/1965886604922466612",
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "trump-administration",
@@ -409,24 +445,6 @@
         }
       ],
       "active": false
-    },
-    {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2026-09-11",
-      "stances": [
-        {
-          "date": "2026-09-11",
-          "topic": "terrorism",
-          "stance": "lean",
-          "summary": "Honors 9/11 first responder and service member",
-          "quote": "thank you Tony Bonfiglio for sharing your 9/11 story and for your service \ud83d\ude4f \ud83d\udd4a\ufe0f",
-          "sourceUrl": "https://www.youtube.com/shorts/BpM2TgQ6Y_s",
-          "platform": "youtube"
-        }
-      ],
-      "active": true
     },
     {
       "topic": "military-defense",

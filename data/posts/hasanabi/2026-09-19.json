@@ -1,0 +1,91 @@
+{
+  "voiceId": "hasanabi",
+  "voiceName": "HasanAbi",
+  "collectedAt": "2026-09-19T15:29:25.209494",
+  "date": "2026-09-19",
+  "posts": [
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "ABDUL CAN'T BELIEVE SHE WON'T ASK A REAL QUESTION",
+      "sourceUrl": "https://www.youtube.com/watch?v=YBQ3JPZp-cY",
+      "timestamp": "2026-09-17T19:35:23+00:00",
+      "type": "video_title",
+      "topic": "media-press",
+      "topics": [
+        "media-press"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "summary": "Criticizes CBS for abandoning journalistic standards",
+      "quote": "ABDUL CAN'T BELIEVE SHE WON'T ASK A REAL QUESTION"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "IS BLUE TEXAS REAL",
+      "sourceUrl": "https://www.youtube.com/watch?v=KUG2Pm5sMYQ",
+      "timestamp": "2026-09-17T14:10:14+00:00",
+      "type": "video_title",
+      "topic": "elections",
+      "topics": [
+        "elections"
+      ],
+      "relevance": "medium",
+      "stance": "lean",
+      "summary": "Questions whether Texas can shift Democratic in elections",
+      "quote": "IS BLUE TEXAS REAL"
+    },
+    {
+      "voiceId": "hasanabi",
+      "voiceName": "HasanAbi",
+      "platform": "youtube",
+      "text": "KASH PATEL JUST ENDED HIS OWN CAREER",
+      "sourceUrl": "https://www.youtube.com/watch?v=QAUR7_jqwV4",
+      "timestamp": "2026-09-18T15:57:47+00:00",
+      "type": "video_title",
+      "topic": "trump-administration",
+      "topics": [
+        "trump-administration"
+      ],
+      "relevance": "high",
+      "stance": "strong",
+      "relevance_p": 0.97,
+      "stance_p": 1.0,
+      "topic_p": 0.68,
+      "topic_confidence": 0.66,
+      "labeler": "jev",
+      "label_model": "jev-1.13.0",
+      "quote": "KASH PATEL JUST ENDED HIS OWN CAREER",
+      "summary": "Claims Kash Patel damaged own political career"
+    }
+  ],
+  "topicSummary": {
+    "media-press": [
+      {
+        "quote": "ABDUL CAN'T BELIEVE SHE WON'T ASK A REAL QUESTION",
+        "sourceUrl": "https://www.youtube.com/watch?v=YBQ3JPZp-cY",
+        "platform": "youtube",
+        "timestamp": "2026-09-17T19:35:23+00:00"
+      }
+    ],
+    "elections": [
+      {
+        "quote": "IS BLUE TEXAS REAL",
+        "sourceUrl": "https://www.youtube.com/watch?v=KUG2Pm5sMYQ",
+        "platform": "youtube",
+        "timestamp": "2026-09-17T14:10:14+00:00"
+      }
+    ],
+    "trump-administration": [
+      {
+        "quote": "KASH PATEL JUST ENDED HIS OWN CAREER",
+        "sourceUrl": "https://www.youtube.com/watch?v=QAUR7_jqwV4",
+        "platform": "youtube",
+        "timestamp": "2026-09-18T15:57:47+00:00"
+      }
+    ]
+  }
+}

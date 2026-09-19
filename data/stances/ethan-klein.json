@@ -1,16 +1,25 @@
 {
   "voiceId": "ethan-klein",
   "voiceName": "Ethan Klein",
-  "updatedAt": "2026-09-18",
-  "topicCount": 6,
-  "stanceCount": 27,
+  "updatedAt": "2026-09-19",
+  "topicCount": 7,
+  "stanceCount": 30,
   "topics": [
     {
       "topic": "celebrity-entertainment",
       "label": "Celebrity & Entertainment",
-      "count": 12,
-      "lastActive": "2026-09-04",
+      "count": 13,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Comments on Emmy Awards outcomes and fashion",
+          "quote": "The Emmys! The Winners, Losers &amp; Fashion - H3 After Dark #101",
+          "sourceUrl": "https://www.youtube.com/watch?v=qmYYhQUufbo",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-04",
           "topic": "celebrity-entertainment",
@@ -125,9 +134,18 @@
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
-      "count": 9,
-      "lastActive": "2026-09-09",
+      "count": 10,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Discusses Kevin Langue drama as noteworthy",
+          "quote": "The Kevin Langue Drama Is Insane - H3 After Dark #102",
+          "sourceUrl": "https://www.youtube.com/watch?v=z2GdFzfPbPk",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-09",
           "topic": "media-personalities",
@@ -243,6 +261,24 @@
           "summary": "Discusses murder case involving domestic abuse allegations",
           "quote": "Sara Gilson: TikToker Murdered After Accusing Husband of CSA - H3 After Dark #88",
           "sourceUrl": "https://www.youtube.com/watch?v=-EallpncCPI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "refugees-humanitarian",
+      "label": "Refugees & Humanitarian",
+      "count": 1,
+      "lastActive": "2026-09-19",
+      "stances": [
+        {
+          "date": "2026-09-19",
+          "topic": "refugees-humanitarian",
+          "stance": "lean",
+          "summary": "Platforms Ukrainian refugee criticism of Hasan Piker",
+          "quote": "Ukrainian Refugee GOES OFF On Hasan Piker - H3 After Dark #103",
+          "sourceUrl": "https://www.youtube.com/watch?v=SJD1olSUijE",
           "platform": "youtube"
         }
       ],

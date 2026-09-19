@@ -1,16 +1,34 @@
 {
   "voiceId": "nate-silver",
   "voiceName": "Nate Silver",
-  "updatedAt": "2026-09-18",
-  "topicCount": 15,
-  "stanceCount": 124,
+  "updatedAt": "2026-09-19",
+  "topicCount": 16,
+  "stanceCount": 130,
   "topics": [
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 57,
-      "lastActive": "2026-09-04",
+      "count": 61,
+      "lastActive": "2026-09-12",
       "stances": [
+        {
+          "date": "2026-09-12",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "September polling favored Democrats significantly",
+          "quote": "September polling has been very good for Democrats. Back at the OG version of FiveThirtyEight.com in 2008, we ran a daily feature called \u201cToday\u2019s Polls\u201d.",
+          "sourceUrl": "https://www.natesilver.net/p/september-polling-has-been-very-good",
+          "platform": "substack"
+        },
+        {
+          "date": "2026-09-10",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Trump facing Democratic electoral wave",
+          "quote": "Trump vs. the Blue Wave",
+          "sourceUrl": "https://www.natesilver.net/p/trump-vs-the-blue-wave",
+          "platform": "substack"
+        },
         {
           "date": "2026-09-04",
           "topic": "elections",
@@ -282,6 +300,15 @@
           "platform": "x"
         },
         {
+          "date": "2020-11-05",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Biden ahead by larger margin than needed in Pennsylvania",
+          "quote": "Biden has won the last 600k ballots counted in Pennsylvania by 40 points, which is much bigger than the 22-point margin he needs the rest of the way out.",
+          "sourceUrl": "https://x.com/NateSilver538/status/1324179308760436736",
+          "platform": "x"
+        },
+        {
           "date": "2020-11-04",
           "topic": "elections",
           "stance": "lean",
@@ -480,6 +507,15 @@
           "platform": "x"
         },
         {
+          "date": "2018-12-06",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Changed race rating to Lean Prison",
+          "quote": "We're changing our rating on this race to Lean Prison.",
+          "sourceUrl": "https://x.com/NateSilver538/status/1070543855924244481",
+          "platform": "x"
+        },
+        {
           "date": "2018-11-18",
           "topic": "elections",
           "stance": "lean",
@@ -530,9 +566,18 @@
     {
       "topic": "ai-technology",
       "label": "AI & Technology",
-      "count": 9,
-      "lastActive": "2026-09-15",
+      "count": 10,
+      "lastActive": "2026-09-17",
       "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "lean",
+          "summary": "Supermajority supports slowing AI development",
+          "quote": "A supermajority wants to slow AI down",
+          "sourceUrl": "https://www.natesilver.net/p/a-supermajority-wants-to-slow-ai",
+          "platform": "substack"
+        },
         {
           "date": "2026-09-15",
           "topic": "ai-technology",
@@ -1165,6 +1210,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "NFL forecast model differs from Vegas odds",
+          "quote": "Inside ELWAY\u2019s 2026 NFL forecast. Our model mostly agrees with Vegas, but the differences are revealing. For instance, why does it feel so conflicted about the Rams?",
+          "sourceUrl": "https://www.natesilver.net/p/inside-elways-2026-nfl-forecast",
+          "platform": "substack"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",

@@ -1,9 +1,9 @@
 {
   "voiceId": "trita-parsi",
   "voiceName": "Trita Parsi",
-  "updatedAt": "2026-09-18",
-  "topicCount": 10,
-  "stanceCount": 136,
+  "updatedAt": "2026-09-19",
+  "topicCount": 11,
+  "stanceCount": 138,
   "topics": [
     {
       "topic": "israel-palestine",
@@ -908,9 +908,18 @@
     {
       "topic": "iran-conflict",
       "label": "Iran Conflict",
-      "count": 20,
-      "lastActive": "2026-09-11",
+      "count": 21,
+      "lastActive": "2026-09-19",
       "stances": [
+        {
+          "date": "2026-09-19",
+          "topic": "iran-conflict",
+          "stance": "strong",
+          "summary": "Questions Trump administration's Iran strategy credibility",
+          "quote": "Told @MarioNawfal that the Trump admin is acting with supreme confidence in their strategy on Iran, but after having spoken to numerous regional officials - including very close allies of the US - none seem to understand what that confidence is based on.\n\nwww.youtube.com/watch?v=",
+          "sourceUrl": "https://bsky.app/profile/tparsi.bsky.social/post/3mvtijem3nk2v",
+          "platform": "bluesky"
+        },
         {
           "date": "2026-09-11",
           "topic": "iran-conflict",
@@ -1210,6 +1219,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 1,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Approves radio station dropping Ed Sheeran",
+          "quote": "Seldom does cowardice get punished as much as it deserves.\n\nBut in Ed Sheeran's case, we're getting close.\n\nAn Irish radio station - apparently big enough to make the news - has dropped Sheeran's music! It did so, it says, due to feedback from its listeners.",
+          "sourceUrl": "https://bsky.app/profile/tparsi.bsky.social/post/3mvpmzighwc24",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "military-defense",

@@ -1,14 +1,14 @@
 {
   "voiceId": "jim-sciutto",
   "voiceName": "Jim Sciutto",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 17,
-  "stanceCount": 120,
+  "stanceCount": 121,
   "topics": [
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 24,
+      "count": 23,
       "lastActive": "2026-08-09",
       "stances": [
         {
@@ -63,15 +63,6 @@
           "summary": "Criticizes Trump's statement on Colin Powell's passing as unsuitable",
           "quote": "Reading - but deliberately not sharing - Trump\u2019s statement on the passing of Colin Powell is another reminder there really is no bottom.",
           "sourceUrl": "https://x.com/jimsciutto/status/1450473538738135061",
-          "platform": "x"
-        },
-        {
-          "date": "2021-02-11",
-          "topic": "trump-administration",
-          "stance": "strong",
-          "summary": "Questions Trump's claim of non-involvement in Capitol incitement",
-          "quote": "Question for Senators: If Trump did not have a role inciting the attack, why did McCarthy, Gallagher and others beg him on Jan 6 to call the insurrectionists off? If they weren\u2019t listening to him to attack, why was his voice so necessary to call them off?",
-          "sourceUrl": "https://x.com/jimsciutto/status/1359853113616850950",
           "platform": "x"
         },
         {
@@ -665,7 +656,7 @@
     {
       "topic": "criminal-justice",
       "label": "Criminal Justice & Policing",
-      "count": 8,
+      "count": 9,
       "lastActive": "2026-07-31",
       "stances": [
         {
@@ -702,6 +693,15 @@
           "summary": "Capitol Police officer testifies rioters violently attacked, attempted assassination",
           "quote": "\u201cIS THIS AMERICA? THEY BEAT POLICE OFFICERS WITH BLUE LIVES MATTER FLAGS. THEY FOUGHT US. THEY HAD CONFEDERATE FLAGS IN THE US CAPITOL. THEY STORMED THE SPEAKER'S OFFICE..THEY WERE TRYING TO ASSASSINATE THE VICE PRESIDENT, IN THE CAPITOL.\u201d Capitol Police Officer Harry Dunn to ABC",
           "sourceUrl": "https://x.com/jimsciutto/status/1363840281750175744",
+          "platform": "x"
+        },
+        {
+          "date": "2021-02-11",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Questions Trump's lack of incitement responsibility",
+          "quote": "Question for Senators: If Trump did not have a role inciting the attack, why did McCarthy, Gallagher and others beg him on Jan 6 to call the insurrectionists off? If they weren\u2019t listening to him to attack, why was his voice so necessary to call them off?",
+          "sourceUrl": "https://x.com/jimsciutto/status/1359853113616850950",
           "platform": "x"
         },
         {
@@ -801,6 +801,69 @@
           "summary": "Contextualizes Suleimani killing with civilian casualty history",
           "quote": "Tonight, there are hundreds of American families watching news of Suleimani\u2019s killing particularly closely. He engineered attacks in Iraq, often with sophisticated IEDs, that killed hundreds of US service-members &amp; wounded thousands more.",
           "sourceUrl": "https://x.com/jimsciutto/status/1212942867490099200",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "military-defense",
+      "label": "Military & Defense",
+      "count": 6,
+      "lastActive": "2026-08-05",
+      "stances": [
+        {
+          "date": "2026-08-05",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "U.S. and Europe insufficiently supplying Ukraine air defense",
+          "quote": "What Ukraine needs is air defense missiles but neither Europe nor the U.S. is willing or able to supply them in sufficient numbers.",
+          "sourceUrl": "https://x.com/jimsciutto/status/2084974777706447175",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-05",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Warns Ukraine crisis deteriorating due to inadequate U.S. military aid",
+          "quote": "Pay attention to the rapidly deteriorating crisis in Ukraine. Yes, it has stabilized the frontline and inflicted enormous damage on Russia energy. But with the US short of air defense missiles and its military aid slashed, \ud83c\uddfa\ud83c\udde6 cities are now virtually undefended",
+          "sourceUrl": "https://x.com/jimsciutto/status/2084960315964260651",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Pentagon munitions stockpile critically depleted amid defense demands",
+          "quote": "New: The US military has exhausted nearly 80% of its interceptors for a key missile defense system as senior US military commanders are warning that the Pentagon\u2019s munitions stockpile is \u201cdangerously low,\u201d according to multiple sources familiar with the matter. W/my colleague @Zc",
+          "sourceUrl": "https://x.com/jimsciutto/status/2084731862329479584",
+          "platform": "x"
+        },
+        {
+          "date": "2026-07-30",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Highlights Russian civilian targeting in Ukraine conflict",
+          "quote": "One more awful story from Ukraine under a Russian siege that quite deliberately targets civilians:  cnn.com/2026/07/30/europe/ru\u2026\n\nLink\n\n\n\nA Russian missile slammed into a house in Ukraine. Four children are among the dead | CNN\n\nMatviy Voronov\u2019s message reeks of desperation. \u201cIs",
+          "sourceUrl": "https://x.com/jimsciutto/status/2082811056766820602",
+          "platform": "x"
+        },
+        {
+          "date": "2023-02-04",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "US successfully countered Chinese balloon surveillance operation",
+          "quote": "Notable: US officials say they were able to block the balloon from gathering intel during its overflight of the US, while the US military was able to turn the tables, so to speak, to gather intel on the balloon itself and its equipment.",
+          "sourceUrl": "https://x.com/jimsciutto/status/1621977978245713920",
+          "platform": "x"
+        },
+        {
+          "date": "2020-01-22",
+          "topic": "military-defense",
+          "stance": "strong",
+          "summary": "Trump dismisses brain injuries as not serious for troops",
+          "quote": "For the thousands of US service-members who suffered traumatic brain injury from IEDs &amp; other attacks, the president saying \u201cI don\u2019t consider it very serious\u201d will be inexplicable.",
+          "sourceUrl": "https://x.com/jimsciutto/status/1219959376938766338",
           "platform": "x"
         }
       ],
@@ -990,60 +1053,6 @@
           "summary": "Undercuts pandemic denial with expert authority",
           "quote": "Conversation on the train:\n\nMan on my left: \u201cCoronavirus is just the flu. It\u2019s all panic.\u201d (Points to man on my right wearing a mask) \u201cSee? Mass hysteria.\u201d \n\nMan on right: \u201cActually I\u2019m a microbiologist.\u201d\n\nMan on left: \u201cWhy a mask?\u201d\n\nMan on right: \u201cI know how pandemics spread.\u201d",
           "sourceUrl": "https://x.com/jimsciutto/status/1235688467935506433",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "military-defense",
-      "label": "Military & Defense",
-      "count": 5,
-      "lastActive": "2026-08-05",
-      "stances": [
-        {
-          "date": "2026-08-05",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "U.S. and Europe insufficiently supplying Ukraine air defense",
-          "quote": "What Ukraine needs is air defense missiles but neither Europe nor the U.S. is willing or able to supply them in sufficient numbers.",
-          "sourceUrl": "https://x.com/jimsciutto/status/2084974777706447175",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-05",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Warns Ukraine crisis deteriorating due to inadequate U.S. military aid",
-          "quote": "Pay attention to the rapidly deteriorating crisis in Ukraine. Yes, it has stabilized the frontline and inflicted enormous damage on Russia energy. But with the US short of air defense missiles and its military aid slashed, \ud83c\uddfa\ud83c\udde6 cities are now virtually undefended",
-          "sourceUrl": "https://x.com/jimsciutto/status/2084960315964260651",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-04",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Pentagon munitions stockpile critically depleted amid defense demands",
-          "quote": "New: The US military has exhausted nearly 80% of its interceptors for a key missile defense system as senior US military commanders are warning that the Pentagon\u2019s munitions stockpile is \u201cdangerously low,\u201d according to multiple sources familiar with the matter. W/my colleague @Zc",
-          "sourceUrl": "https://x.com/jimsciutto/status/2084731862329479584",
-          "platform": "x"
-        },
-        {
-          "date": "2026-07-30",
-          "topic": "military-defense",
-          "stance": "lean",
-          "summary": "Highlights Russian civilian targeting in Ukraine conflict",
-          "quote": "One more awful story from Ukraine under a Russian siege that quite deliberately targets civilians:  cnn.com/2026/07/30/europe/ru\u2026\n\nLink\n\n\n\nA Russian missile slammed into a house in Ukraine. Four children are among the dead | CNN\n\nMatviy Voronov\u2019s message reeks of desperation. \u201cIs",
-          "sourceUrl": "https://x.com/jimsciutto/status/2082811056766820602",
-          "platform": "x"
-        },
-        {
-          "date": "2020-01-22",
-          "topic": "military-defense",
-          "stance": "strong",
-          "summary": "Trump dismisses brain injuries as not serious for troops",
-          "quote": "For the thousands of US service-members who suffered traumatic brain injury from IEDs &amp; other attacks, the president saying \u201cI don\u2019t consider it very serious\u201d will be inexplicable.",
-          "sourceUrl": "https://x.com/jimsciutto/status/1219959376938766338",
           "platform": "x"
         }
       ],

@@ -1,16 +1,25 @@
 {
   "voiceId": "live-action-news",
   "voiceName": "Live Action News",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 4,
-  "stanceCount": 101,
+  "stanceCount": 104,
   "topics": [
     {
       "topic": "abortion-reproductive",
       "label": "Abortion & Reproductive Rights",
-      "count": 97,
-      "lastActive": "2026-09-18",
+      "count": 99,
+      "lastActive": "2026-09-19",
       "stances": [
+        {
+          "date": "2026-09-19",
+          "topic": "abortion-reproductive",
+          "stance": "lean",
+          "summary": "Abortion ballot initiatives determine preborn child protection",
+          "quote": "Four states will see abortion initiatives on the ballot in November (by Cassy Cooke). Ballot initiatives in four states will decide if preborn children are protected from abortion, or if they can legally be killed.",
+          "sourceUrl": "https://www.liveaction.org/news/four-states-abortion-initiatives-ballot-november",
+          "platform": "blog"
+        },
         {
           "date": "2026-09-18",
           "topic": "abortion-reproductive",
@@ -18,6 +27,15 @@
           "summary": "Bishop opposes abortion amendment as unjust, affirms protection of unborn",
           "quote": "Bishop of Arlington denounces \u2018radically unjust\u2019 abortion amendment (by Bernadette Pate). \"The Church boldly proclaims its 'Yes!' to the protection of the unborn and the sanctity of all human life.\u201d ~ Bishop Michael Burbidge, Virginia",
           "sourceUrl": "https://www.liveaction.org/news/bishop-arlington-radically-unjust-abortion-amendment",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-18",
+          "topic": "abortion-reproductive",
+          "stance": "lean",
+          "summary": "Court denies church abortion insurance coverage exemption",
+          "quote": "Ninth Circuit snubs church seeking to opt out of abortion insurance coverage case (by Bridget Sielicki). The Ninth Circuit Court has denied the request of a Washington church seeking an exemption from a state mandate requiring companies to offer abortion coverage.",
+          "sourceUrl": "https://www.liveaction.org/news/ninth-circuit-snubs-church-abortion-insurance-coverage",
           "platform": "blog"
         },
         {
@@ -888,6 +906,33 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Man convicted in pregnant woman's murder case",
+          "quote": "Louisiana man faces life in prison for 2019 murder of pregnant woman (by Bridget Sielicki). \"That little, baby boy that was in his mother's belly, he was perfect. And the jury understood that he was completely innocent. He never got to breathe life.\"",
+          "sourceUrl": "https://www.liveaction.org/news/louisiana-man-life-prison-murder-pregnant-woman",
+          "platform": "blog"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Reports on murder case; victim's family advocates for death penalty",
+          "quote": "Attorneys quit singer D4vd&apos;s murder case, victim&apos;s family calls for death penalty (by Cassy Cooke). After going viral on TikTok, the singer was signed by Interscope Records. His tour was cancelled when Celeste Hernandez was found dead in the trunk of his car.",
+          "sourceUrl": "https://www.liveaction.org/news/attorneys-quit-d4vds-murder-case-death-penalty",
+          "platform": "blog"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "healthcare",
       "label": "Healthcare",
       "count": 2,
@@ -909,24 +954,6 @@
           "summary": "Analysis suggests infertility treatment standards not addressing root causes",
           "quote": "Analysis finds that addressing infertility\u2019s root causes isn\u2019t standard practice (by Anne Marie Williams, RN, BSN). The ASRM & ACOG claim addressing root causes of infertility before trying IVF is already the standard of care, but a new analysis shows this isn't the case.",
           "sourceUrl": "https://www.liveaction.org/news/addressing-infertilitys-root-cause-isnt-standard-practice",
-          "platform": "blog"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 1,
-      "lastActive": "2026-09-17",
-      "stances": [
-        {
-          "date": "2026-09-17",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Reports on murder case; victim's family advocates for death penalty",
-          "quote": "Attorneys quit singer D4vd&apos;s murder case, victim&apos;s family calls for death penalty (by Cassy Cooke). After going viral on TikTok, the singer was signed by Interscope Records. His tour was cancelled when Celeste Hernandez was found dead in the trunk of his car.",
-          "sourceUrl": "https://www.liveaction.org/news/attorneys-quit-d4vds-murder-case-death-penalty",
           "platform": "blog"
         }
       ],

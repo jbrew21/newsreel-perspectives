@@ -1,9 +1,9 @@
 {
   "voiceId": "wes-moore",
   "voiceName": "Wes Moore",
-  "updatedAt": "2026-09-18",
-  "topicCount": 18,
-  "stanceCount": 103,
+  "updatedAt": "2026-09-19",
+  "topicCount": 19,
+  "stanceCount": 104,
   "topics": [
     {
       "topic": "immigration",
@@ -1039,6 +1039,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 1,
+      "lastActive": "2026-09-13",
+      "stances": [
+        {
+          "date": "2026-09-13",
+          "topic": "sports",
+          "stance": "strong",
+          "summary": "Praises rugby event hosted in Baltimore",
+          "quote": "Congrats to the Springboks on their win, and congrats to Baltimore and the Bank for hosting the largest ever crowd to watch a rugby match in the country!\n\nhttps://t.co/Cw7uAkFdLC",
+          "sourceUrl": "https://x.com/GovWesMoore/status/2099175276802379897",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "terrorism",

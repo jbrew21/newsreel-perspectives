@@ -1,9 +1,9 @@
 {
   "voiceId": "andrew-klavan",
   "voiceName": "Andrew Klavan",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 10,
-  "stanceCount": 33,
+  "stanceCount": 34,
   "topics": [
     {
       "topic": "culture-war",
@@ -267,6 +267,33 @@
       "active": true
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 2,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Media coverage lacks intelligence and critical analysis",
+          "quote": "Ep. 1296 - Dumb, Dumber and the Media",
+          "sourceUrl": "https://www.youtube.com/watch?v=qc80_g3r6bw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes Fauci's credibility based on diary evidence",
+          "quote": "Tony Fauci's Diary Entries Prove Your Worst Fears About Him",
+          "sourceUrl": "https://www.youtube.com/watch?v=iaGUnnk8FY4",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 3,
@@ -300,7 +327,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "trump-policy",
@@ -333,24 +360,6 @@
           "summary": "Discusses circumstances surrounding domestic violence incident",
           "quote": "The Uncomfortable Truth About Who Actually Killed Hayden Panettiere",
           "sourceUrl": "https://www.youtube.com/watch?v=ZEfwVwvGs7k",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 1,
-      "lastActive": "2026-08-04",
-      "stances": [
-        {
-          "date": "2026-08-04",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes Fauci's credibility based on diary evidence",
-          "quote": "Tony Fauci's Diary Entries Prove Your Worst Fears About Him",
-          "sourceUrl": "https://www.youtube.com/watch?v=iaGUnnk8FY4",
           "platform": "youtube"
         }
       ],

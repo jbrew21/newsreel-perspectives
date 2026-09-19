@@ -1,9 +1,9 @@
 {
   "voiceId": "john-oliver",
   "voiceName": "John Oliver",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 28,
-  "stanceCount": 92,
+  "stanceCount": 93,
   "topics": [
     {
       "topic": "trump-administration",
@@ -726,6 +726,42 @@
       "active": false
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 3,
+      "lastActive": "2023-08-25",
+      "stances": [
+        {
+          "date": "2023-08-25",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Announcing additional comedy show dates for staff funding",
+          "quote": "I've added some more shows to help keep paying our staff. If you're close to any of the places below, come! If you're not, don't! If you're busy, I fully understand! More dates to come in October if the strike isn't over by then... https://t.co/MnZumfDMOc",
+          "sourceUrl": "https://x.com/iamjohnoliver/status/1695140466872680549",
+          "platform": "x"
+        },
+        {
+          "date": "2018-04-02",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Critiques Sinclair Broadcast Group's media consolidation",
+          "quote": "If you want more information on Sinclair Broadcast Group, here's our piece on them from July last year....https://t.co/3MnsalXFxw",
+          "sourceUrl": "https://x.com/iamjohnoliver/status/980813317257289728",
+          "platform": "x"
+        },
+        {
+          "date": "2017-02-13",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Examines concept of truth in media landscape",
+          "quote": "In case you missed it, here's our piece from last night on the concept of truth...https://t.co/kH2lKlzEJH",
+          "sourceUrl": "https://x.com/iamjohnoliver/status/831148755231571968",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "covid-pandemic",
       "label": "COVID & Pandemic",
       "count": 3,
@@ -891,33 +927,6 @@
           "summary": "Explores Green New Deal and climate policy options",
           "quote": "Here's our piece from last night on the Green New Deal, and where we could go from here...https://t.co/WE4fMdCs2w",
           "sourceUrl": "https://x.com/iamjohnoliver/status/1127944653158928384",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 2,
-      "lastActive": "2018-04-02",
-      "stances": [
-        {
-          "date": "2018-04-02",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Critiques Sinclair Broadcast Group's media consolidation",
-          "quote": "If you want more information on Sinclair Broadcast Group, here's our piece on them from July last year....https://t.co/3MnsalXFxw",
-          "sourceUrl": "https://x.com/iamjohnoliver/status/980813317257289728",
-          "platform": "x"
-        },
-        {
-          "date": "2017-02-13",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Examines concept of truth in media landscape",
-          "quote": "In case you missed it, here's our piece from last night on the concept of truth...https://t.co/kH2lKlzEJH",
-          "sourceUrl": "https://x.com/iamjohnoliver/status/831148755231571968",
           "platform": "x"
         }
       ],

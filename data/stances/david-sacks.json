@@ -1,9 +1,9 @@
 {
   "voiceId": "david-sacks",
   "voiceName": "David Sacks",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 19,
-  "stanceCount": 101,
+  "stanceCount": 103,
   "topics": [
     {
       "topic": "trump-administration",
@@ -879,9 +879,36 @@
       "active": true
     },
     {
+      "topic": "science-space",
+      "label": "Science & Space",
+      "count": 2,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Discusses NASA's space exploration strategy and future",
+          "quote": "Jared Isaacman: A New Era for NASA and American Space Exploration. (0:00) NASA Administrator Jared Isaacman lays out the state and future of NASA (17:59) Moon base, creating new space industries, NASA's next chapter (23:29) How to make Mars realistic (25:30) Recruiting, moonshots",
+          "sourceUrl": "<![CDATA[https://allinchamathjason.libsyn.com/jared-isaacman-a-new-era-for-nasa-and-american-space-exploration]]>",
+          "platform": "podcast"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "science-space",
+          "stance": "lean",
+          "summary": "Critiques stalled American science, supports radical institutional overhaul",
+          "quote": "Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics. (0:00) Eric Weinstein joins the show! (03:09) Has American science stalled? Cowboy science, Fauci, and the scientific precariat (21:31) Weinstein's fix: Blow a hole in the Civil Right",
+          "sourceUrl": "<![CDATA[https://allinchamathjason.libsyn.com/eric-weinstein-the-scientific-precariat-chinas-brain-drain-physics-stagnation-string-theorys-collapse-uaps]]>",
+          "platform": "podcast"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 2,
+      "count": 3,
       "lastActive": "2025-04-09",
       "stances": [
         {
@@ -891,6 +918,15 @@
           "summary": "Praises Trump economy, attacks media pessimism",
           "quote": "They did everything they could to create a panic. They predicted a Black Monday that never came. They became jubilant over an intraday correction on Tuesday. They were rooting for Trump to fail even if it meant the market and economy crashed. Fortunately their hopes have been das",
           "sourceUrl": "https://x.com/DavidSacks/status/1910035952283857213",
+          "platform": "x"
+        },
+        {
+          "date": "2022-08-20",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Questions workforce participation levels",
+          "quote": "Does anyone still work? \n\nhttps://t.co/YtF6hy6x9K",
+          "sourceUrl": "https://x.com/DavidSacks/status/1561096423243800576",
           "platform": "x"
         },
         {
@@ -955,24 +991,6 @@
           "quote": "George Soros has been so uniquely destructive to law & order in American cities that there\u2019s a name for the carnage he\u2019s wrought: \u201cSoros DAs.\u201d His organization described its strategy to Politico in a 2016 article: it would change the law, not by going through legislatures, but ra",
           "sourceUrl": "https://x.com/DavidSacks/status/1658662526480171008",
           "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "science-space",
-      "label": "Science & Space",
-      "count": 1,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "science-space",
-          "stance": "lean",
-          "summary": "Critiques stalled American science, supports radical institutional overhaul",
-          "quote": "Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics. (0:00) Eric Weinstein joins the show! (03:09) Has American science stalled? Cowboy science, Fauci, and the scientific precariat (21:31) Weinstein's fix: Blow a hole in the Civil Right",
-          "sourceUrl": "<![CDATA[https://allinchamathjason.libsyn.com/eric-weinstein-the-scientific-precariat-chinas-brain-drain-physics-stagnation-string-theorys-collapse-uaps]]>",
-          "platform": "podcast"
         }
       ],
       "active": false

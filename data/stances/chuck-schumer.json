@@ -1,16 +1,25 @@
 {
   "voiceId": "chuck-schumer",
   "voiceName": "Chuck Schumer",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 23,
-  "stanceCount": 121,
+  "stanceCount": 124,
   "topics": [
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 17,
-      "lastActive": "2026-09-17",
+      "count": 18,
+      "lastActive": "2026-09-18",
       "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Blames Trump for high gas prices",
+          "quote": "Why isn't Trump protecting us from ridiculous gas prices?",
+          "sourceUrl": "https://x.com/SenSchumer/status/2101018945494876414",
+          "platform": "x"
+        },
         {
           "date": "2026-09-17",
           "topic": "economy-trade",
@@ -1023,6 +1032,42 @@
       "active": true
     },
     {
+      "topic": "education",
+      "label": "Education",
+      "count": 3,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Congratulates new university president, highlights regional achievements",
+          "quote": "Congratulations to J. Michael Haynie on his inauguration as Syracuse University\u2019s 13th Chancellor & President.\u00a0\n\u00a0\nFrom Micron\u2019s historic megafab to educating our next gen of leaders to supporting NY\u2019s veterans, I\u2019m proud of all we have achieved and look forward to building on tha",
+          "sourceUrl": "https://x.com/SenSchumer/status/2100982222803087651",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-03",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Criticizes Trump for defunding and dismantling education",
+          "quote": "Rather than making life affordable for American families, Trump has led a full-fledged assault on American education: defunding it, radicalizing its agenda, and dismantling it\n\nInstead of attacking our schools he should be building them up, creating a better education for our stu",
+          "sourceUrl": "https://x.com/SenSchumer/status/2095598506170081326",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-04",
+          "topic": "education",
+          "stance": "strong",
+          "summary": "Opposes Trump plan to eliminate Head Start requirements and protections",
+          "quote": "Trump is planning to gut Head Start\u2014a devastating blow to our most vulnerable families.\n\nThat means no math or literacy requirements, no health & safety screenings, no guarantee children can access medical services.\n\nHe doesn't give a damn. He thinks the government exists to serv",
+          "sourceUrl": "https://x.com/SenSchumer/status/2084678290510397781",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 4,
@@ -1068,31 +1113,31 @@
       "active": false
     },
     {
-      "topic": "education",
-      "label": "Education",
+      "topic": "media-press",
+      "label": "Media & Press",
       "count": 2,
-      "lastActive": "2026-09-03",
+      "lastActive": "2026-09-18",
       "stances": [
         {
-          "date": "2026-09-03",
-          "topic": "education",
+          "date": "2026-09-18",
+          "topic": "media-press",
           "stance": "strong",
-          "summary": "Criticizes Trump for defunding and dismantling education",
-          "quote": "Rather than making life affordable for American families, Trump has led a full-fledged assault on American education: defunding it, radicalizing its agenda, and dismantling it\n\nInstead of attacking our schools he should be building them up, creating a better education for our stu",
-          "sourceUrl": "https://x.com/SenSchumer/status/2095598506170081326",
+          "summary": "Criticizes Trump for authoritarian behavior, defends democratic principles",
+          "quote": "Donald Trump just did what dictators throughout history have done.\u00a0\n\n@realDonaldTrump - this is a democracy. You will not be able to manipulate the news or hide the truth.",
+          "sourceUrl": "https://x.com/SenSchumer/status/2101038513957355959",
           "platform": "x"
         },
         {
           "date": "2026-08-04",
-          "topic": "education",
-          "stance": "strong",
-          "summary": "Opposes Trump plan to eliminate Head Start requirements and protections",
-          "quote": "Trump is planning to gut Head Start\u2014a devastating blow to our most vulnerable families.\n\nThat means no math or literacy requirements, no health & safety screenings, no guarantee children can access medical services.\n\nHe doesn't give a damn. He thinks the government exists to serv",
-          "sourceUrl": "https://x.com/SenSchumer/status/2084678290510397781",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Implies op-ed contradicted by existing reporting on unspecified topic",
+          "quote": "If only there were extensive reporting contradicting David Ellison\u2019s op-ed.\n\nOh wait\u2026",
+          "sourceUrl": "https://x.com/SenSchumer/status/2084735629795954856",
           "platform": "x"
         }
       ],
-      "active": false
+      "active": true
     },
     {
       "topic": "covid-pandemic",
@@ -1245,7 +1290,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "refugees-humanitarian",
@@ -1278,24 +1323,6 @@
           "summary": "Condemns Trump clemency for insurrectionists and record-wiping",
           "quote": "Todd Blanche\u2019s Department of Justice continues to let criminals off the hook so long as they\u2019re loyal to Donald Trump.\n\nTrump already gave insurrectionists clemency, now he\u2019s wiping their records clean.\n\nIt doesn\u2019t get more un-American than this.",
           "sourceUrl": "https://x.com/SenSchumer/status/2085061299625500991",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 1,
-      "lastActive": "2026-08-04",
-      "stances": [
-        {
-          "date": "2026-08-04",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Implies op-ed contradicted by existing reporting on unspecified topic",
-          "quote": "If only there were extensive reporting contradicting David Ellison\u2019s op-ed.\n\nOh wait\u2026",
-          "sourceUrl": "https://x.com/SenSchumer/status/2084735629795954856",
           "platform": "x"
         }
       ],

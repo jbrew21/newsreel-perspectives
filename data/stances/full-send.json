@@ -1,9 +1,9 @@
 {
   "voiceId": "full-send",
   "voiceName": "Full Send / NELK Boys",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 16,
-  "stanceCount": 45,
+  "stanceCount": 48,
   "topics": [
     {
       "topic": "elections",
@@ -242,9 +242,18 @@
     {
       "topic": "media-personalities",
       "label": "Media Personalities & Feuds",
-      "count": 6,
-      "lastActive": "2025-09-17",
+      "count": 7,
+      "lastActive": "2026-08-25",
       "stances": [
+        {
+          "date": "2026-08-25",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Discusses Brand Risk Boxing and Andrew Tate arrest",
+          "quote": "Nelk Boys React to Brand Risk Boxing and Andrew Tate Arrest!",
+          "sourceUrl": "https://www.youtube.com/watch?v=vb9UdanNr9M",
+          "platform": "youtube"
+        },
         {
           "date": "2025-09-17",
           "topic": "media-personalities",
@@ -305,7 +314,7 @@
     {
       "topic": "sports",
       "label": "Sports",
-      "count": 2,
+      "count": 3,
       "lastActive": "2026-08-18",
       "stances": [
         {
@@ -318,13 +327,49 @@
           "platform": "x"
         },
         {
-          "date": "2026-07-23",
+          "date": "2026-07-10",
           "topic": "sports",
           "stance": "lean",
-          "summary": "Publicizes personal relationship details of professional athlete",
+          "summary": "Covers Conor McGregor UFC return plans discussion",
+          "quote": "Conor McGregor Reveals All About His Return to the UFC! | UFC 329 Preview",
+          "sourceUrl": "https://www.youtube.com/watch?v=JQUyqxxn9Wg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2025-07-23",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Reports Illa Topuria defeated Steiny via knockout",
+          "quote": "Illa Topuria just knocked out Steiny \ud83d\ude02\ud83d\ude02 https://t.co/OIrMvVdcaH",
+          "sourceUrl": "https://x.com/nelkboys/status/1947973916804124960",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 2,
+      "lastActive": "2026-07-23",
+      "stances": [
+        {
+          "date": "2026-07-23",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Discusses Lamine Yamal's girlfriend and LeBron James leak",
           "quote": "Nelk Boys Expose Lamine Yamal\u2019s Girlfriend and Talk LeBron James Leak!",
           "sourceUrl": "https://www.youtube.com/watch?v=Q8ykBAP0ub0",
           "platform": "youtube"
+        },
+        {
+          "date": "2025-09-10",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Expresses grief over death of public figure",
+          "quote": "Absolutely speechless. \n\nRest in peace Charlie. \n\n\ud83d\udd4a\ufe0f \ud83d\ude4f\ud83c\udffb https://t.co/Vx5xWTTOyW",
+          "sourceUrl": "https://x.com/nelkboys/status/1965915178891096099",
+          "platform": "x"
         }
       ],
       "active": false
@@ -373,24 +418,6 @@
         }
       ],
       "active": true
-    },
-    {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
-      "count": 1,
-      "lastActive": "2025-09-10",
-      "stances": [
-        {
-          "date": "2025-09-10",
-          "topic": "celebrity-entertainment",
-          "stance": "strong",
-          "summary": "Expresses grief over death of public figure",
-          "quote": "Absolutely speechless. \n\nRest in peace Charlie. \n\n\ud83d\udd4a\ufe0f \ud83d\ude4f\ud83c\udffb https://t.co/Vx5xWTTOyW",
-          "sourceUrl": "https://x.com/nelkboys/status/1965915178891096099",
-          "platform": "x"
-        }
-      ],
-      "active": false
     },
     {
       "topic": "israel-palestine",

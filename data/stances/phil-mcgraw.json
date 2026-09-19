@@ -1,10 +1,28 @@
 {
   "voiceId": "phil-mcgraw",
   "voiceName": "Phil McGraw (Dr. Phil)",
-  "updatedAt": "2026-09-17",
-  "topicCount": 3,
-  "stanceCount": 3,
+  "updatedAt": "2026-09-19",
+  "topicCount": 4,
+  "stanceCount": 4,
   "topics": [
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 1,
+      "lastActive": "2026-09-14",
+      "stances": [
+        {
+          "date": "2026-09-14",
+          "topic": "celebrity-entertainment",
+          "stance": "lean",
+          "summary": "Reality TV star denies responsibility for affair",
+          "quote": "&quot;Redneck Island\u201d Star On His Affair: \u2018I\u2019m Just an Innocent Bystander\u2019 #drphil #realitytv",
+          "sourceUrl": "https://www.youtube.com/shorts/snAsx7-tpD0",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
     {
       "topic": "terrorism",
       "label": "Terrorism & Security",

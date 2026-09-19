@@ -1,9 +1,9 @@
 {
   "voiceId": "john-kennedy",
   "voiceName": "John Kennedy",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 21,
-  "stanceCount": 57,
+  "stanceCount": 58,
   "topics": [
     {
       "topic": "congress-legislation",
@@ -339,6 +339,42 @@
       "active": false
     },
     {
+      "topic": "ai-technology",
+      "label": "AI & Technology",
+      "count": 3,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Advocates AI kill switches, opposes government oversight committees",
+          "quote": "AI is supposed to be a tool that humans control\u2014not the other way around.\n\nAdvanced AI models need a kill switch in case they go off the rails. We don\u2019t need another government-run committee to tell us that. https://t.co/aXyvc6ex8b",
+          "sourceUrl": "https://x.com/SenJohnKennedy/status/2100984894075658539",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Proposes mandatory kill-switch requirement for AI models",
+          "quote": "If AI models start acting like the Terminator, we need a way to shut them down.\n\nI introduced a bill that requires AI models to have a kill switch.\n \nThe AI guys say they\u2019re worried about what their models could do. They ought to do something about it.",
+          "sourceUrl": "https://x.com/SenJohnKennedy/status/2100588824191537455",
+          "platform": "x"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "ai-technology",
+          "stance": "strong",
+          "summary": "Supports AI but demands data centers reduce water use, fund own energy, end taxpayer subsidies",
+          "quote": "AI can make our lives better\u2014but not if data centers waste our water, increase our electricity bills and take our tax dollars. Use less water. Provide your own energy.\n\nStop demanding taxpayer subsidies.\n\nLevel with the American people about what AI means. https://t.co/0bIDsq4ZuA",
+          "sourceUrl": "https://x.com/SenJohnKennedy/status/2097454481705218534",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 3,
@@ -405,33 +441,6 @@
           "summary": "Honors Skip Bertman's legacy building LSU athletics",
           "quote": "Louisiana lost a legend today.\n\nSkip Bertman didn\u2019t just build championship baseball teams\u2014he built LSU athletics into a powerhouse and made generations of Louisianians proud.\n\nBecky and I are praying for the Bertman family. God bless Coach Skip. https://t.co/vfvFy7zdas",
           "sourceUrl": "https://x.com/SenJohnKennedy/status/2088304281019470148",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
-      "topic": "ai-technology",
-      "label": "AI & Technology",
-      "count": 2,
-      "lastActive": "2026-09-17",
-      "stances": [
-        {
-          "date": "2026-09-17",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Proposes mandatory kill-switch requirement for AI models",
-          "quote": "If AI models start acting like the Terminator, we need a way to shut them down.\n\nI introduced a bill that requires AI models to have a kill switch.\n \nThe AI guys say they\u2019re worried about what their models could do. They ought to do something about it.",
-          "sourceUrl": "https://x.com/SenJohnKennedy/status/2100588824191537455",
-          "platform": "x"
-        },
-        {
-          "date": "2026-09-08",
-          "topic": "ai-technology",
-          "stance": "strong",
-          "summary": "Supports AI but demands data centers reduce water use, fund own energy, end taxpayer subsidies",
-          "quote": "AI can make our lives better\u2014but not if data centers waste our water, increase our electricity bills and take our tax dollars. Use less water. Provide your own energy.\n\nStop demanding taxpayer subsidies.\n\nLevel with the American people about what AI means. https://t.co/0bIDsq4ZuA",
-          "sourceUrl": "https://x.com/SenJohnKennedy/status/2097454481705218534",
           "platform": "x"
         }
       ],

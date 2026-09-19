@@ -1,9 +1,9 @@
 {
   "voiceId": "gavin-newsom",
   "voiceName": "Gavin Newsom",
-  "updatedAt": "2026-09-18",
-  "topicCount": 27,
-  "stanceCount": 139,
+  "updatedAt": "2026-09-19",
+  "topicCount": 28,
+  "stanceCount": 143,
   "topics": [
     {
       "topic": "trump-administration",
@@ -476,7 +476,7 @@
     {
       "topic": "economy-trade",
       "label": "Economy & Trade",
-      "count": 17,
+      "count": 18,
       "lastActive": "2026-09-08",
       "stances": [
         {
@@ -624,6 +624,15 @@
           "platform": "x"
         },
         {
+          "date": "2025-08-20",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Mocks defunct company for prior failures",
+          "quote": "The company that already went bankrupt and closed every store across the country two years ago? Ok.",
+          "sourceUrl": "https://x.com/GavinNewsom/status/1958276563650461707",
+          "platform": "x"
+        },
+        {
           "date": "2025-06-06",
           "topic": "economy-trade",
           "stance": "strong",
@@ -711,6 +720,69 @@
           "summary": "Calls for statewide use-of-force standards protecting peaceful protesters",
           "quote": "Protesters have the right to protest peacefully -- not be harassed. Not be shot at by rubber bullets or tear gas.\n\nToday I am calling for the creation of a new statewide standard for use of force in protests. Acts of violence against peaceful protestors will not be tolerated.",
           "sourceUrl": "https://x.com/GavinNewsom/status/1268992126190157825",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
+      "topic": "state-local-politics",
+      "label": "State & Local Politics",
+      "count": 6,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Celebrates California Latino Heritage Month",
+          "quote": "California Celebrates Latino Heritage Month",
+          "sourceUrl": "https://www.youtube.com/watch?v=k4xyCGO0F8Y",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-23",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Promotes California's CalKIDS savings account program as policy achievement",
+          "quote": "Governor #Newsom &amp; First Partner Celebrate ONE MILLION #CalKIDS Accounts \u00a0#shorts #california #news",
+          "sourceUrl": "https://www.youtube.com/shorts/SbI6zt8IONg",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-21",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Announces partnership initiative for young children and families support",
+          "quote": "Governor Newsom and First Partner Siebel Newsom announce partnership for young children and families",
+          "sourceUrl": "https://www.youtube.com/watch?v=k8b-B-YjYjo",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-07-13",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Promotes mobile driver's license initiative in California",
+          "quote": "Governor Newsom Signs Up for Mobile California Driver's License",
+          "sourceUrl": "https://www.youtube.com/shorts/Pkpuqn4FT8M",
+          "platform": "youtube"
+        },
+        {
+          "date": "2025-08-26",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Dismisses criticism about hands",
+          "quote": "You really want to have the conversation about hands?",
+          "sourceUrl": "https://x.com/GavinNewsom/status/1960436979562373264",
+          "platform": "x"
+        },
+        {
+          "date": "2025-06-09",
+          "topic": "state-local-politics",
+          "stance": "strong",
+          "summary": "Defends California's crime statistics against out-of-state criticism",
+          "quote": "Alabama has 3X the homicide rate of California.\n\nIts murder rate is ranked third in the entire country.\n\nStick to football, bro.",
+          "sourceUrl": "https://x.com/GavinNewsom/status/1932166178790920360",
           "platform": "x"
         }
       ],
@@ -963,51 +1035,6 @@
           "summary": "Trump abandoning California disaster aid for personal spending",
           "quote": "It's been over 9 months since the LA fires.\n\nWe have asked for federal disaster aid for months now.\n\nNot a dollar from Trump.\n\nHe is abandoning Americans while building ballrooms and decorating his office gold.\n\nIt\u2019s disgusting and disqualifying.  https://t.co/4K4ly14p7u",
           "sourceUrl": "https://x.com/GavinNewsom/status/1976080057442693305",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "state-local-politics",
-      "label": "State & Local Politics",
-      "count": 4,
-      "lastActive": "2026-08-23",
-      "stances": [
-        {
-          "date": "2026-08-23",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Promotes California's CalKIDS savings account program as policy achievement",
-          "quote": "Governor #Newsom &amp; First Partner Celebrate ONE MILLION #CalKIDS Accounts \u00a0#shorts #california #news",
-          "sourceUrl": "https://www.youtube.com/shorts/SbI6zt8IONg",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-21",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Announces partnership initiative for young children and families support",
-          "quote": "Governor Newsom and First Partner Siebel Newsom announce partnership for young children and families",
-          "sourceUrl": "https://www.youtube.com/watch?v=k8b-B-YjYjo",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-07-13",
-          "topic": "state-local-politics",
-          "stance": "lean",
-          "summary": "Promotes mobile driver's license initiative in California",
-          "quote": "Governor Newsom Signs Up for Mobile California Driver's License",
-          "sourceUrl": "https://www.youtube.com/shorts/Pkpuqn4FT8M",
-          "platform": "youtube"
-        },
-        {
-          "date": "2025-06-09",
-          "topic": "state-local-politics",
-          "stance": "strong",
-          "summary": "Defends California's crime statistics against out-of-state criticism",
-          "quote": "Alabama has 3X the homicide rate of California.\n\nIts murder rate is ranked third in the entire country.\n\nStick to football, bro.",
-          "sourceUrl": "https://x.com/GavinNewsom/status/1932166178790920360",
           "platform": "x"
         }
       ],
@@ -1494,6 +1521,24 @@
           "summary": "Abortion legal in California; refuses cooperation with prosecuting states",
           "quote": "Abortion is legal in California.\n\nIt will remain that way.\n\nI just signed a bill that makes our state a safe haven for women across the nation.\n\nWe will not cooperate with any states that attempt to prosecute women or doctors for receiving or providing reproductive care.",
           "sourceUrl": "https://x.com/GavinNewsom/status/1540440016605679616",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 1,
+      "lastActive": "2019-08-04",
+      "stances": [
+        {
+          "date": "2019-08-04",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Challenges critic to take action",
+          "quote": "If you\u2019re so \u201chorrified\u201d... do something about it.",
+          "sourceUrl": "https://x.com/GavinNewsom/status/1157806194116841472",
           "platform": "x"
         }
       ],

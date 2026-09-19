@@ -1,9 +1,9 @@
 {
   "voiceId": "jd-vance",
   "voiceName": "JD Vance",
-  "updatedAt": "2026-09-18",
-  "topicCount": 14,
-  "stanceCount": 38,
+  "updatedAt": "2026-09-19",
+  "topicCount": 15,
+  "stanceCount": 39,
   "topics": [
     {
       "topic": "trump-administration",
@@ -291,7 +291,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "gender-lgbtq",
@@ -346,6 +346,24 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "supreme-court-legal",
+      "label": "Supreme Court & Legal",
+      "count": 1,
+      "lastActive": "2026-09-16",
+      "stances": [
+        {
+          "date": "2026-09-16",
+          "topic": "supreme-court-legal",
+          "stance": "strong",
+          "summary": "Expresses happiness about unspecified positive news",
+          "quote": "Usha and I are very happy to hear this news and the answer to our prayers.\n\nThank you Susie for remaining a symbol of strength and leadership throughout this battle. Your indomitable spirit is something we can all learn from and strive to replicate.",
+          "sourceUrl": "https://x.com/JDVance/status/2100321292071162147",
+          "platform": "x"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "religion-faith",
@@ -417,7 +435,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "criminal-justice",

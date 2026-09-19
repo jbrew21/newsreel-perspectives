@@ -1,9 +1,9 @@
 {
   "voiceId": "hasanabi",
   "voiceName": "HasanAbi",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 23,
-  "stanceCount": 103,
+  "stanceCount": 104,
   "topics": [
     {
       "topic": "media-press",
@@ -413,9 +413,18 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 10,
-      "lastActive": "2026-09-09",
+      "count": 11,
+      "lastActive": "2026-09-18",
       "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "trump-administration",
+          "stance": "strong",
+          "summary": "Claims Kash Patel damaged own political career",
+          "quote": "KASH PATEL JUST ENDED HIS OWN CAREER",
+          "sourceUrl": "https://www.youtube.com/watch?v=QAUR7_jqwV4",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-09",
           "topic": "trump-administration",
@@ -984,7 +993,7 @@
           "platform": "youtube"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "economy-trade",

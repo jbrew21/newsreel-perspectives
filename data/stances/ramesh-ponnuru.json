@@ -1,9 +1,9 @@
 {
   "voiceId": "ramesh-ponnuru",
   "voiceName": "Ramesh Ponnuru",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 23,
-  "stanceCount": 120,
+  "stanceCount": 121,
   "topics": [
     {
       "topic": "elections",
@@ -1068,6 +1068,42 @@
       "active": false
     },
     {
+      "topic": "immigration",
+      "label": "Immigration",
+      "count": 3,
+      "lastActive": "2026-07-15",
+      "stances": [
+        {
+          "date": "2026-07-15",
+          "topic": "immigration",
+          "stance": "strong",
+          "summary": "Immigration cannot solve family size preference gaps",
+          "quote": "Birthrates and Immigration. If the problem we\u2019re focusing on is the gap between stated and achieved desires for family size, more immigration can\u2019t possibly be the solution.",
+          "sourceUrl": "https://www.nationalreview.com/corner/birthrates-and-immigration/",
+          "platform": "substack"
+        },
+        {
+          "date": "2020-05-27",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Implies skepticism about border wall completion",
+          "quote": "Right after the wall gets finished",
+          "sourceUrl": "https://x.com/RameshPonnuru/status/1265660226360967169",
+          "platform": "x"
+        },
+        {
+          "date": "2019-01-24",
+          "topic": "immigration",
+          "stance": "lean",
+          "summary": "Questions effectiveness of wall-related messaging strategy",
+          "quote": "The wall rhyme didn\u2019t turn it around?",
+          "sourceUrl": "https://x.com/RameshPonnuru/status/1088544291046281218",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "culture-war",
       "label": "Culture War",
       "count": 2,
@@ -1089,33 +1125,6 @@
           "summary": "Criticizes asymmetric standards for criticism and harassment",
           "quote": "My criticism of you is a necessary call-out, your criticism of me is bullying harassment.",
           "sourceUrl": "https://x.com/RameshPonnuru/status/1533940042565144584",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "immigration",
-      "label": "Immigration",
-      "count": 2,
-      "lastActive": "2026-07-15",
-      "stances": [
-        {
-          "date": "2026-07-15",
-          "topic": "immigration",
-          "stance": "strong",
-          "summary": "Immigration cannot solve family size preference gaps",
-          "quote": "Birthrates and Immigration. If the problem we\u2019re focusing on is the gap between stated and achieved desires for family size, more immigration can\u2019t possibly be the solution.",
-          "sourceUrl": "https://www.nationalreview.com/corner/birthrates-and-immigration/",
-          "platform": "substack"
-        },
-        {
-          "date": "2020-05-27",
-          "topic": "immigration",
-          "stance": "lean",
-          "summary": "Implies skepticism about border wall completion",
-          "quote": "Right after the wall gets finished",
-          "sourceUrl": "https://x.com/RameshPonnuru/status/1265660226360967169",
           "platform": "x"
         }
       ],

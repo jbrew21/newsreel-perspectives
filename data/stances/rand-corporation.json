@@ -1,9 +1,9 @@
 {
   "voiceId": "rand-corporation",
   "voiceName": "RAND Corporation",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 19,
-  "stanceCount": 124,
+  "stanceCount": 126,
   "topics": [
     {
       "topic": "foreign-policy-diplomacy",
@@ -287,7 +287,7 @@
     {
       "topic": "military-defense",
       "label": "Military & Defense",
-      "count": 18,
+      "count": 19,
       "lastActive": "2026-08-17",
       "stances": [
         {
@@ -450,6 +450,15 @@
           "summary": "Russia's military manpower and personnel system exposed as severely deficient",
           "quote": "The death of one Russian general in combat is incredibly rare, but *multiple* generals?\n\nRAND's @mnposard and @PardeeRAND's Khrystyna Holynska on how the war in Ukraine has exposed problems in Russia's military manpower and personnel system. https://t.co/ZFLuhpKjhS",
           "sourceUrl": "https://x.com/RANDCorporation/status/1509615263376982019",
+          "platform": "x"
+        },
+        {
+          "date": "2019-03-26",
+          "topic": "military-defense",
+          "stance": "lean",
+          "summary": "Mourns passing of longtime RAND researcher Andrew Marshall",
+          "quote": "We note with profound regret the passing of Andrew W. Marshall, 97, a RAND researcher who went on to serve for more than four decades as director of the Department of Defense's Office of Net Assessment. https://t.co/WEmWeSskIx",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1110616393106354176",
           "platform": "x"
         }
       ],
@@ -1239,6 +1248,33 @@
       "active": false
     },
     {
+      "topic": "terrorism",
+      "label": "Terrorism & Security",
+      "count": 2,
+      "lastActive": "2019-10-28",
+      "stances": [
+        {
+          "date": "2019-10-28",
+          "topic": "terrorism",
+          "stance": "lean",
+          "summary": "White supremacist terrorism kills more Americans than jihadist attacks",
+          "quote": "\"The threat of white supremacy is now impossible to ignore. Since 9/11, more people have died in the U.S. because of white supremacist terrorism than jihadist terrorism.\" https://t.co/pCRPsZGhQq",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1188624925856354305",
+          "platform": "x"
+        },
+        {
+          "date": "2019-08-09",
+          "topic": "terrorism",
+          "stance": "strong",
+          "summary": "Examines Islamic State's financial capabilities and methods",
+          "quote": "Though its territorial caliphate has crumbled, #ISIS will almost certainly attempt a comeback. And that will require funding.\n\nOur new report examines the Islamic State's finances. Here's what we learned as we followed the money: https://t.co/mFAZNgWXMd [thread]",
+          "sourceUrl": "https://x.com/RANDCorporation/status/1159860676866781184",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 1,
@@ -1251,24 +1287,6 @@
           "summary": "Biden-Harris should increase transparency and elevate experts",
           "quote": "Four ways the Biden-Harris administration could rebuild trust in government and public institutions:\n\n\ud83d\udd38 increase transparency\n\ud83d\udd38 elevate experts\n\ud83d\udd38 build a diverse administration\n\ud83d\udd38 invest in civic education and development\n\nhttps://t.co/erMGJM9XcC via @michaeldrich @jekavanagh",
           "sourceUrl": "https://x.com/RANDCorporation/status/1348368518614556674",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "terrorism",
-      "label": "Terrorism & Security",
-      "count": 1,
-      "lastActive": "2019-10-28",
-      "stances": [
-        {
-          "date": "2019-10-28",
-          "topic": "terrorism",
-          "stance": "lean",
-          "summary": "White supremacist terrorism kills more Americans than jihadist attacks",
-          "quote": "\"The threat of white supremacy is now impossible to ignore. Since 9/11, more people have died in the U.S. because of white supremacist terrorism than jihadist terrorism.\" https://t.co/pCRPsZGhQq",
-          "sourceUrl": "https://x.com/RANDCorporation/status/1188624925856354305",
           "platform": "x"
         }
       ],

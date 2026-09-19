@@ -1,7 +1,7 @@
 {
   "voiceId": "destiny",
   "voiceName": "Destiny",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 25,
   "stanceCount": 135,
   "topics": [
@@ -1140,33 +1140,6 @@
       "active": false
     },
     {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 2,
-      "lastActive": "2026-09-04",
-      "stances": [
-        {
-          "date": "2026-09-04",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Questions verdict outcome in high-profile criminal case",
-          "quote": "\ud83d\udea8LINDSAY CLANCY MISTRIAL?L\ud83d\udea8EU TRUE CRIME STREAMER\ud83d\udea8SENTENCED TO 20YRS OF FIRST RESPONDER TESTIMONY\ud83d\udea8",
-          "sourceUrl": "https://www.youtube.com/watch?v=Y1ZA0Jchob0",
-          "platform": "youtube"
-        },
-        {
-          "date": "2026-08-16",
-          "topic": "criminal-justice",
-          "stance": "strong",
-          "summary": "Celebrates lengthy prison sentence for unnamed individual",
-          "quote": "so happy to see this fucking loser go away for life, all of the people simping for Luigi are literally insane",
-          "sourceUrl": "https://x.com/TheOmniLiberal/status/2088895380750491712",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 3,
@@ -1197,6 +1170,33 @@
           "summary": "Sarcastically frames tax cuts as trickle-down economics",
           "quote": "yes, it's called being rich, you just voted to give me more tax cuts so I figured I'd \"trickle down the wealth\" to your community, isn't this what I'm supposed to be doing?",
           "sourceUrl": "https://x.com/TheOmniLiberal/status/1856453081200046512",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-09-04",
+      "stances": [
+        {
+          "date": "2026-09-04",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Questions verdict outcome in high-profile criminal case",
+          "quote": "\ud83d\udea8LINDSAY CLANCY MISTRIAL?L\ud83d\udea8EU TRUE CRIME STREAMER\ud83d\udea8SENTENCED TO 20YRS OF FIRST RESPONDER TESTIMONY\ud83d\udea8",
+          "sourceUrl": "https://www.youtube.com/watch?v=Y1ZA0Jchob0",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-16",
+          "topic": "criminal-justice",
+          "stance": "strong",
+          "summary": "Celebrates lengthy prison sentence for unnamed individual",
+          "quote": "so happy to see this fucking loser go away for life, all of the people simping for Luigi are literally insane",
+          "sourceUrl": "https://x.com/TheOmniLiberal/status/2088895380750491712",
           "platform": "x"
         }
       ],

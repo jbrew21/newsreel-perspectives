@@ -1,14 +1,14 @@
 {
   "voiceId": "pod-save-america",
   "voiceName": "Pod Save America",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 19,
-  "stanceCount": 145,
+  "stanceCount": 151,
   "topics": [
     {
       "topic": "elections",
       "label": "Elections & Campaigns",
-      "count": 48,
+      "count": 52,
       "lastActive": "2026-09-09",
       "stances": [
         {
@@ -18,6 +18,15 @@
           "summary": "Pastor criticizes single-party rule as un-American",
           "quote": "This pastor believes one party rule in Tennessee is \u201cnot American.\u201d",
           "sourceUrl": "https://www.youtube.com/shorts/5JrVGCqNFr4",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-08",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Explores Democratic strategy in South Carolina",
+          "quote": "Why Are Democrats Betting on South Carolina?",
+          "sourceUrl": "https://www.youtube.com/watch?v=aFgGsfz_W6k",
           "platform": "youtube"
         },
         {
@@ -135,6 +144,24 @@
           "summary": "Highlights aspirational messaging about American identity and repair",
           "quote": "Amanda Gorman, 22 years old: \n\n\"Being American is more than a pride we inherit. It's the past we step into and how we repair it.\" https://t.co/btZaXY55Yl",
           "sourceUrl": "https://x.com/PodSaveAmerica/status/1351944581537939456",
+          "platform": "x"
+        },
+        {
+          "date": "2021-01-20",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Mocks critic concerns about First Lady's demeanor",
+          "quote": "First Lady embraces husband without cringing. Wild times. #InaugurationDay https://t.co/MiMHdNI9Xh",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/1351998375470592000",
+          "platform": "x"
+        },
+        {
+          "date": "2021-01-20",
+          "topic": "elections",
+          "stance": "lean",
+          "summary": "Documents presidential inauguration day moment",
+          "quote": "Presidential Fist Bump. \n#InaugurationDay https://t.co/06FY6xmTqh",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/1351927960509399040",
           "platform": "x"
         },
         {
@@ -261,6 +288,15 @@
           "summary": "Biden frames election around COVID safety and ending Trump's term",
           "quote": "\"I want a safe America, safe from COVID, safe from crime and looting. Safer from racially violence, safe from bad cops. Let me be crystal clear. Safe from four more years of Donald Trump.\" - @JoeBiden https://t.co/1s04MIh4MH",
           "sourceUrl": "https://x.com/PodSaveAmerica/status/1300491851124752384",
+          "platform": "x"
+        },
+        {
+          "date": "2020-08-17",
+          "topic": "elections",
+          "stance": "strong",
+          "summary": "Criticizes opponent's postal service position",
+          "quote": "Look who just discovered that people like getting their mail.",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/1295460414919028736",
           "platform": "x"
         },
         {
@@ -449,7 +485,7 @@
     {
       "topic": "trump-administration",
       "label": "Trump Administration",
-      "count": 22,
+      "count": 23,
       "lastActive": "2026-09-02",
       "stances": [
         {
@@ -570,6 +606,15 @@
           "platform": "x"
         },
         {
+          "date": "2020-11-07",
+          "topic": "trump-administration",
+          "stance": "lean",
+          "summary": "Comments on Second Gentleman's presence",
+          "quote": "Second Gentleman. \nFirst Doug. https://t.co/qXzeKBMr0l",
+          "sourceUrl": "https://x.com/PodSaveAmerica/status/1325170536461164546",
+          "platform": "x"
+        },
+        {
           "date": "2020-10-21",
           "topic": "trump-administration",
           "stance": "strong",
@@ -656,9 +701,18 @@
     {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
-      "count": 13,
-      "lastActive": "2026-09-10",
+      "count": 14,
+      "lastActive": "2026-09-15",
       "stances": [
+        {
+          "date": "2026-09-15",
+          "topic": "state-local-politics",
+          "stance": "lean",
+          "summary": "Examines Tennessee political system functionality",
+          "quote": "Is Tennessee\u2019s Political System Working? | Long Play Single",
+          "sourceUrl": "https://www.youtube.com/watch?v=7j5FeZfXHB4",
+          "platform": "youtube"
+        },
         {
           "date": "2026-09-10",
           "topic": "state-local-politics",
@@ -1146,7 +1200,7 @@
           "platform": "x"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "ai-technology",

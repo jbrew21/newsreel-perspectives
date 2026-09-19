@@ -1,9 +1,9 @@
 {
   "voiceId": "konstantin-kisin",
   "voiceName": "Konstantin Kisin",
-  "updatedAt": "2026-09-18",
-  "topicCount": 13,
-  "stanceCount": 41,
+  "updatedAt": "2026-09-19",
+  "topicCount": 14,
+  "stanceCount": 43,
   "topics": [
     {
       "topic": "uk-world-politics",
@@ -285,6 +285,33 @@
       "active": false
     },
     {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 2,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Discusses Ed Sheeran Gaza, AI concerns, immigration protest",
+          "quote": "Ed Sheeran Gaza Controversy, AI Fears and Piddington Immigration Protest - Off the Fence",
+          "sourceUrl": "https://www.youtube.com/watch?v=T8eQtms1f_Q",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-08-26",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Explores historical roots of Israel-Palestine conflict",
+          "quote": "What Hitler Said to the Grand Mufti in 1941",
+          "sourceUrl": "https://www.youtube.com/shorts/5mxTrDfzQ0c",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "civil-rights-race",
       "label": "Civil Rights & Race",
       "count": 2,
@@ -384,6 +411,24 @@
       "active": true
     },
     {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 1,
+      "lastActive": "2026-09-09",
+      "stances": [
+        {
+          "date": "2026-09-09",
+          "topic": "media-personalities",
+          "stance": "lean",
+          "summary": "Addresses economics and public life departure questions",
+          "quote": "Garys Economics, Why Are You Quitting Public Life?",
+          "sourceUrl": "https://www.youtube.com/shorts/IXYLlOppdaI",
+          "platform": "youtube"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-administration",
       "label": "Trump Administration",
       "count": 1,
@@ -432,24 +477,6 @@
           "summary": "Analyzes Turkish geopolitical ambitions and regional power dynamics",
           "quote": "Why Turkey Wants Its Empire Back",
           "sourceUrl": "https://www.youtube.com/shorts/kmeK0zOGnY0",
-          "platform": "youtube"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 1,
-      "lastActive": "2026-08-26",
-      "stances": [
-        {
-          "date": "2026-08-26",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Explores historical roots of Israel-Palestine conflict",
-          "quote": "What Hitler Said to the Grand Mufti in 1941",
-          "sourceUrl": "https://www.youtube.com/shorts/5mxTrDfzQ0c",
           "platform": "youtube"
         }
       ],

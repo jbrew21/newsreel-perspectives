@@ -1,9 +1,9 @@
 {
   "voiceId": "emily-atkin",
   "voiceName": "Emily Atkin",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 15,
-  "stanceCount": 130,
+  "stanceCount": 131,
   "topics": [
     {
       "topic": "climate-environment",
@@ -1041,6 +1041,42 @@
       "active": false
     },
     {
+      "topic": "covid-pandemic",
+      "label": "COVID & Pandemic",
+      "count": 3,
+      "lastActive": "2021-06-27",
+      "stances": [
+        {
+          "date": "2021-06-27",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Criticizes pandemic terminology, notes COVID-19 still ongoing",
+          "quote": "\u201cWhen the pandemic was happening\u2026\u201d bro it\u2019s still happening. This global nightmare is not over. What\u2019s no longer happening is your *regional lockdown.* So call it what it is: post-lockdown, not post-pandemic.",
+          "sourceUrl": "https://x.com/emorwee/status/1409224176876064772",
+          "platform": "x"
+        },
+        {
+          "date": "2020-10-13",
+          "topic": "covid-pandemic",
+          "stance": "lean",
+          "summary": "Criticizes maskless politician's ironic government role statement",
+          "quote": "Mike Lee, infected with coronavirus, shouting \"the purpose of government is to protect life\" without a mask is a real 2020 mood",
+          "sourceUrl": "https://x.com/emorwee/status/1316044513316671488",
+          "platform": "x"
+        },
+        {
+          "date": "2020-03-18",
+          "topic": "covid-pandemic",
+          "stance": "strong",
+          "summary": "Promotes local distillery hand sanitizer initiative",
+          "quote": "D.C. friends! Our local rum distillery, @cottonandreed, is distilling hand sanitizer.\n\nYou can get a free bottle if you buy a bottle of rum. The distillery will be open from 12-4 tomorrow and Friday. \n\nMy brother, who works there, appreciates your help keeping him employed. https",
+          "sourceUrl": "https://x.com/emorwee/status/1240356066329853956",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "elections",
       "label": "Elections & Campaigns",
       "count": 3,
@@ -1135,33 +1171,6 @@
           "quote": "Long but worthy read. No surprised that this is a MAGA thing at heart, and it's why that, unfair or not, any affiliation with MAGA or MAHA should naturally invite intense skepticism that the reality they describe is on the same plane as ours\n\nheated.world/p/the-influe...",
           "sourceUrl": "https://bsky.app/profile/emorwee.bsky.social/post/3mrvy67zzr22v",
           "platform": "bluesky"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "covid-pandemic",
-      "label": "COVID & Pandemic",
-      "count": 2,
-      "lastActive": "2021-06-27",
-      "stances": [
-        {
-          "date": "2021-06-27",
-          "topic": "covid-pandemic",
-          "stance": "strong",
-          "summary": "Criticizes pandemic terminology, notes COVID-19 still ongoing",
-          "quote": "\u201cWhen the pandemic was happening\u2026\u201d bro it\u2019s still happening. This global nightmare is not over. What\u2019s no longer happening is your *regional lockdown.* So call it what it is: post-lockdown, not post-pandemic.",
-          "sourceUrl": "https://x.com/emorwee/status/1409224176876064772",
-          "platform": "x"
-        },
-        {
-          "date": "2020-10-13",
-          "topic": "covid-pandemic",
-          "stance": "lean",
-          "summary": "Criticizes maskless politician's ironic government role statement",
-          "quote": "Mike Lee, infected with coronavirus, shouting \"the purpose of government is to protect life\" without a mask is a real 2020 mood",
-          "sourceUrl": "https://x.com/emorwee/status/1316044513316671488",
-          "platform": "x"
         }
       ],
       "active": false
@@ -1275,16 +1284,16 @@
       "active": false
     },
     {
-      "topic": "food-agriculture",
-      "label": "Food & Agriculture",
+      "topic": "sports",
+      "label": "Sports",
       "count": 1,
       "lastActive": "2026-06-12",
       "stances": [
         {
           "date": "2026-06-12",
-          "topic": "food-agriculture",
+          "topic": "sports",
           "stance": "lean",
-          "summary": "Highlights environmental facts about World Cup industry",
+          "summary": "Presents negative World Cup facts",
           "quote": "3 facts to ruin your World Cup watch party",
           "sourceUrl": "https://heated.world/p/3-facts-to-ruin-your-world-cup-watch",
           "platform": "substack"

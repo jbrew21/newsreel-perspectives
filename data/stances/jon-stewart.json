@@ -1,9 +1,9 @@
 {
   "voiceId": "jon-stewart",
   "voiceName": "Jon Stewart",
-  "updatedAt": "2026-09-18",
-  "topicCount": 20,
-  "stanceCount": 78,
+  "updatedAt": "2026-09-19",
+  "topicCount": 21,
+  "stanceCount": 81,
   "topics": [
     {
       "topic": "military-defense",
@@ -438,6 +438,51 @@
       "active": true
     },
     {
+      "topic": "economy-trade",
+      "label": "Economy & Trade",
+      "count": 4,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "economy-trade",
+          "stance": "lean",
+          "summary": "Critiques Federal Reserve monetary policy approach",
+          "quote": "The Fed's Blunt Tool | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/kLAQ20d1nPw",
+          "platform": "youtube"
+        },
+        {
+          "date": "2026-09-17",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Criticizes price gouging in technology sector",
+          "quote": "Price Gouging Tech | The Weekly Show with Jon Stewart",
+          "sourceUrl": "https://www.youtube.com/shorts/fEt7rimZtVM",
+          "platform": "youtube"
+        },
+        {
+          "date": "2021-03-06",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Sarcastically opposes minimum wage hike as anti-worker policy",
+          "quote": "Thumbs down on minimum wage hike!!!! Way to stick it to \u201cBig Don\u2019t Make Enough Money\u201d!!!",
+          "sourceUrl": "https://x.com/jonstewart/status/1368012141370949634",
+          "platform": "x"
+        },
+        {
+          "date": "2021-01-28",
+          "topic": "economy-trade",
+          "stance": "strong",
+          "summary": "Defends retail traders against Wall Street insiders; calls for accountability post-2008",
+          "quote": "This is bullshit. The Redditors aren't cheating, they're joining a party Wall Street insiders have been enjoying for years. Don't shut them down...maybe sue them for copyright infringement instead!!\nWe've learned nothing from 2008.\nLove\nStewBeef",
+          "sourceUrl": "https://x.com/jonstewart/status/1354901018564321287",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "congress-legislation",
       "label": "Congress & Legislation",
       "count": 4,
@@ -537,42 +582,6 @@
       "active": false
     },
     {
-      "topic": "economy-trade",
-      "label": "Economy & Trade",
-      "count": 3,
-      "lastActive": "2026-09-17",
-      "stances": [
-        {
-          "date": "2026-09-17",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Criticizes price gouging in technology sector",
-          "quote": "Price Gouging Tech | The Weekly Show with Jon Stewart",
-          "sourceUrl": "https://www.youtube.com/shorts/fEt7rimZtVM",
-          "platform": "youtube"
-        },
-        {
-          "date": "2021-03-06",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Sarcastically opposes minimum wage hike as anti-worker policy",
-          "quote": "Thumbs down on minimum wage hike!!!! Way to stick it to \u201cBig Don\u2019t Make Enough Money\u201d!!!",
-          "sourceUrl": "https://x.com/jonstewart/status/1368012141370949634",
-          "platform": "x"
-        },
-        {
-          "date": "2021-01-28",
-          "topic": "economy-trade",
-          "stance": "strong",
-          "summary": "Defends retail traders against Wall Street insiders; calls for accountability post-2008",
-          "quote": "This is bullshit. The Redditors aren't cheating, they're joining a party Wall Street insiders have been enjoying for years. Don't shut them down...maybe sue them for copyright infringement instead!!\nWe've learned nothing from 2008.\nLove\nStewBeef",
-          "sourceUrl": "https://x.com/jonstewart/status/1354901018564321287",
-          "platform": "x"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "foreign-policy-diplomacy",
       "label": "Foreign Policy & Diplomacy",
       "count": 2,
@@ -598,6 +607,42 @@
         }
       ],
       "active": true
+    },
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 3,
+      "lastActive": "2023-02-18",
+      "stances": [
+        {
+          "date": "2023-02-18",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Praises Jimmy Carter as exemplary human",
+          "quote": "Jimmy Carter is one of the kindest most thoughtful people I\u2019ve ever had the honor of meeting. He\u2019s the best of us.",
+          "sourceUrl": "https://x.com/jonstewart/status/1627095375059509250",
+          "platform": "x"
+        },
+        {
+          "date": "2022-07-31",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Honors Bill Russell as exemplary figure",
+          "quote": "Bill Russell was one of the kindest, most thoughtful people I\u2019ve ever met. Once called out of the blue because he thought I looked sad on TV\u2026best pep talk of my life. RIP",
+          "sourceUrl": "https://x.com/jonstewart/status/1553809647739764736",
+          "platform": "x"
+        },
+        {
+          "date": "2022-04-12",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Pays tribute to deceased comedian Gilbert Gottfried",
+          "quote": "RIP Gilbert. Opening for Gilbert Gottfried at Carolines and Princeton Catch was one of the great thrills of my early stand up life. He could leave you gasping for breath\u2026just indescribably unusually hilarious\u2026Damn.",
+          "sourceUrl": "https://x.com/jonstewart/status/1513970885618806787",
+          "platform": "x"
+        }
+      ],
+      "active": false
     },
     {
       "topic": "media-personalities",
@@ -717,33 +762,6 @@
       "active": false
     },
     {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
-      "count": 2,
-      "lastActive": "2023-02-18",
-      "stances": [
-        {
-          "date": "2023-02-18",
-          "topic": "celebrity-entertainment",
-          "stance": "strong",
-          "summary": "Praises Jimmy Carter as exemplary human",
-          "quote": "Jimmy Carter is one of the kindest most thoughtful people I\u2019ve ever had the honor of meeting. He\u2019s the best of us.",
-          "sourceUrl": "https://x.com/jonstewart/status/1627095375059509250",
-          "platform": "x"
-        },
-        {
-          "date": "2022-07-31",
-          "topic": "celebrity-entertainment",
-          "stance": "strong",
-          "summary": "Honors Bill Russell as exemplary figure",
-          "quote": "Bill Russell was one of the kindest, most thoughtful people I\u2019ve ever met. Once called out of the blue because he thought I looked sad on TV\u2026best pep talk of my life. RIP",
-          "sourceUrl": "https://x.com/jonstewart/status/1553809647739764736",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "state-local-politics",
       "label": "State & Local Politics",
       "count": 1,
@@ -828,6 +846,24 @@
           "summary": "Expresses strong disapproval of recent UK political decision",
           "quote": "This is the dumbest thing The UK has done since electing Boris Johnson\u2026what the actual fuck\u2026",
           "sourceUrl": "https://x.com/jonstewart/status/1795993805411229746",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "sports",
+      "label": "Sports",
+      "count": 1,
+      "lastActive": "2024-05-01",
+      "stances": [
+        {
+          "date": "2024-05-01",
+          "topic": "sports",
+          "stance": "lean",
+          "summary": "Expresses age-related weariness about current events",
+          "quote": "Respect to Maxey\u2026but damn\u2026I\u2019m clearly getting too old for this shit\u2026 https://t.co/XjOkPOfaaQ",
+          "sourceUrl": "https://x.com/jonstewart/status/1785512614430183785",
           "platform": "x"
         }
       ],

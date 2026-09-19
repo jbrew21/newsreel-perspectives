@@ -1,9 +1,9 @@
 {
   "voiceId": "asmongold",
   "voiceName": "Asmongold",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 21,
-  "stanceCount": 66,
+  "stanceCount": 67,
   "topics": [
     {
       "topic": "media-personalities",
@@ -609,6 +609,33 @@
       "active": false
     },
     {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 2,
+      "lastActive": "2025-10-18",
+      "stances": [
+        {
+          "date": "2025-10-18",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Predicts final year for Twitchcon",
+          "quote": "@Awk20000 I think this will be (should be) the last year of Twitchcon",
+          "sourceUrl": "https://x.com/Asmongold/status/1979403142900125968",
+          "platform": "x"
+        },
+        {
+          "date": "2022-06-01",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Expresses support for Johnny Depp in defamation case",
+          "quote": "THERE IT IS BOYS\n\n#JusticeForJohhnyDepp",
+          "sourceUrl": "https://x.com/Asmongold/status/1532083949480050690",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "gender-lgbtq",
       "label": "Gender & LGBTQ+",
       "count": 1,
@@ -747,24 +774,6 @@
           "summary": "Affirms bodily autonomy as fundamental to freedom",
           "quote": "If you don't have autonomy over your own body, what real freedom can you have?",
           "sourceUrl": "https://x.com/Asmongold/status/1540359803712724992",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "celebrity-entertainment",
-      "label": "Celebrity & Entertainment",
-      "count": 1,
-      "lastActive": "2022-06-01",
-      "stances": [
-        {
-          "date": "2022-06-01",
-          "topic": "celebrity-entertainment",
-          "stance": "strong",
-          "summary": "Expresses support for Johnny Depp in defamation case",
-          "quote": "THERE IT IS BOYS\n\n#JusticeForJohhnyDepp",
-          "sourceUrl": "https://x.com/Asmongold/status/1532083949480050690",
           "platform": "x"
         }
       ],

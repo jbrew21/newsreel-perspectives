@@ -1,9 +1,9 @@
 {
   "voiceId": "sarah-longwell",
   "voiceName": "Sarah Longwell",
-  "updatedAt": "2026-09-18",
-  "topicCount": 6,
-  "stanceCount": 18,
+  "updatedAt": "2026-09-19",
+  "topicCount": 7,
+  "stanceCount": 19,
   "topics": [
     {
       "topic": "elections",
@@ -168,6 +168,24 @@
       "active": false
     },
     {
+      "topic": "culture-war",
+      "label": "Culture War",
+      "count": 1,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "culture-war",
+          "stance": "strong",
+          "summary": "Warns against Trump-influenced conservatism, advocates opposing MAGA movement",
+          "quote": "\"The generation of young people coming up on the right are not your father\u2019s conservatives. They are Trump\u2019s heirs, and they are here to stay. And if we want to save America from MAGA authoritarianism\u2026It\u2019s going to mean tackling this entire movement.\"\n\nplus.briantylercohen.com/p/",
+          "sourceUrl": "https://bsky.app/profile/sarahlongwell25.bsky.social/post/3mvshdz236c22",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 1,
@@ -183,7 +201,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "congress-legislation",

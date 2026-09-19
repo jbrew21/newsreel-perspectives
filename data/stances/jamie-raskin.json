@@ -1,9 +1,9 @@
 {
   "voiceId": "jamie-raskin",
   "voiceName": "Jamie Raskin",
-  "updatedAt": "2026-09-18",
-  "topicCount": 20,
-  "stanceCount": 65,
+  "updatedAt": "2026-09-19",
+  "topicCount": 21,
+  "stanceCount": 66,
   "topics": [
     {
       "topic": "trump-administration",
@@ -591,6 +591,24 @@
       "active": false
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 1,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes Trump press restrictions, calls media boycott",
+          "quote": "After illegally bulldozing half of the White House, Trump bans media that won\u2019t lie for him from the other half.\n\nEvery self-respecting media entity in America should boycott what\u2019s left of the White House if he keeps violating press freedom.",
+          "sourceUrl": "https://x.com/RepRaskin/status/2101045835484045789",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "trump-policy",
       "label": "Trump Policy & Agenda",
       "count": 1,
@@ -660,7 +678,7 @@
           "platform": "bluesky"
         }
       ],
-      "active": true
+      "active": false
     },
     {
       "topic": "elections",

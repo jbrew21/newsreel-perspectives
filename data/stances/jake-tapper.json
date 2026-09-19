@@ -1,9 +1,9 @@
 {
   "voiceId": "jake-tapper",
   "voiceName": "Jake Tapper",
-  "updatedAt": "2026-09-18",
-  "topicCount": 21,
-  "stanceCount": 124,
+  "updatedAt": "2026-09-19",
+  "topicCount": 23,
+  "stanceCount": 128,
   "topics": [
     {
       "topic": "trump-administration",
@@ -645,6 +645,78 @@
       "active": false
     },
     {
+      "topic": "media-press",
+      "label": "Media & Press",
+      "count": 7,
+      "lastActive": "2026-09-17",
+      "stances": [
+        {
+          "date": "2026-09-17",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Recommends Derf's book Dissidents",
+          "quote": "The new book DISSIDENTS by Derf is quite resonant \n\nwww.cnn.com/2026/09/16/e...",
+          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mvpo4wf2t22g",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-08-18",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Defends accuracy of reporting, disputes framing of clip",
+          "quote": "Nope, that\u2019s not what I was saying \u2014 listen to what I actually say \u2014 and this clip is from Summer 2025 after @AlexThomp and I wrote our book, almost all of which was reported AFTER the 2024 election. The framing is inaccurate.",
+          "sourceUrl": "https://x.com/jaketapper/status/2089759190155771992",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes using staffers as decoys during security threats",
+          "quote": "The job of government staffers and journalists is not to serve as decoys when there\u2019s a credible threat requiring the primary to surreptitiously be exfiltrated from the vehicle.",
+          "sourceUrl": "https://x.com/jaketapper/status/2087264351870943464",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-11",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Defends journalistic safety practices during presidential travel",
+          "quote": "Flew to Afghan. w/different president on AF1.  An insurgent missile struck Bagram runway before landing. Weather was bad so planned Marine 1 trip to Kabul scrubbed. We were w/president the whole time. Our safety wasn\u2019t treated any differently from his. We were never decoys.",
+          "sourceUrl": "https://x.com/jaketapper/status/2087208181986390137",
+          "platform": "x"
+        },
+        {
+          "date": "2020-11-20",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Praises colleague as advocate for truth and facts",
+          "quote": ".@kaitlancollins is an activist for the truth and for facts. And she will still be in that room after January 20, 2021.",
+          "sourceUrl": "https://x.com/jaketapper/status/1329841515951230977",
+          "platform": "x"
+        },
+        {
+          "date": "2017-06-29",
+          "topic": "media-press",
+          "stance": "strong",
+          "summary": "Criticizes Melania Trump's hypocrisy on cyberbullying",
+          "quote": "This reminds me: how is @FLOTUS's campaign against cyber-bullying going? https://t.co/X4xmyreGLH",
+          "sourceUrl": "https://x.com/jaketapper/status/880416301503655937",
+          "platform": "x"
+        },
+        {
+          "date": "2017-02-19",
+          "topic": "media-press",
+          "stance": "lean",
+          "summary": "Implies importance of clear-eyed observation in journalism",
+          "quote": "\"To see what is in front of one\u2019s nose needs a constant struggle.\"\n\n-- George Orwell",
+          "sourceUrl": "https://x.com/jaketapper/status/833322340264116224",
+          "platform": "x"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "military-defense",
       "label": "Military & Defense",
       "count": 9,
@@ -942,69 +1014,6 @@
       "active": false
     },
     {
-      "topic": "media-press",
-      "label": "Media & Press",
-      "count": 6,
-      "lastActive": "2026-08-18",
-      "stances": [
-        {
-          "date": "2026-08-18",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Defends accuracy of reporting, disputes framing of clip",
-          "quote": "Nope, that\u2019s not what I was saying \u2014 listen to what I actually say \u2014 and this clip is from Summer 2025 after @AlexThomp and I wrote our book, almost all of which was reported AFTER the 2024 election. The framing is inaccurate.",
-          "sourceUrl": "https://x.com/jaketapper/status/2089759190155771992",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes using staffers as decoys during security threats",
-          "quote": "The job of government staffers and journalists is not to serve as decoys when there\u2019s a credible threat requiring the primary to surreptitiously be exfiltrated from the vehicle.",
-          "sourceUrl": "https://x.com/jaketapper/status/2087264351870943464",
-          "platform": "x"
-        },
-        {
-          "date": "2026-08-11",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Defends journalistic safety practices during presidential travel",
-          "quote": "Flew to Afghan. w/different president on AF1.  An insurgent missile struck Bagram runway before landing. Weather was bad so planned Marine 1 trip to Kabul scrubbed. We were w/president the whole time. Our safety wasn\u2019t treated any differently from his. We were never decoys.",
-          "sourceUrl": "https://x.com/jaketapper/status/2087208181986390137",
-          "platform": "x"
-        },
-        {
-          "date": "2020-11-20",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Praises colleague as advocate for truth and facts",
-          "quote": ".@kaitlancollins is an activist for the truth and for facts. And she will still be in that room after January 20, 2021.",
-          "sourceUrl": "https://x.com/jaketapper/status/1329841515951230977",
-          "platform": "x"
-        },
-        {
-          "date": "2017-06-29",
-          "topic": "media-press",
-          "stance": "strong",
-          "summary": "Criticizes Melania Trump's hypocrisy on cyberbullying",
-          "quote": "This reminds me: how is @FLOTUS's campaign against cyber-bullying going? https://t.co/X4xmyreGLH",
-          "sourceUrl": "https://x.com/jaketapper/status/880416301503655937",
-          "platform": "x"
-        },
-        {
-          "date": "2017-02-19",
-          "topic": "media-press",
-          "stance": "lean",
-          "summary": "Implies importance of clear-eyed observation in journalism",
-          "quote": "\"To see what is in front of one\u2019s nose needs a constant struggle.\"\n\n-- George Orwell",
-          "sourceUrl": "https://x.com/jaketapper/status/833322340264116224",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 5,
@@ -1057,6 +1066,33 @@
         }
       ],
       "active": false
+    },
+    {
+      "topic": "israel-palestine",
+      "label": "Israel & Palestine",
+      "count": 2,
+      "lastActive": "2026-09-18",
+      "stances": [
+        {
+          "date": "2026-09-18",
+          "topic": "israel-palestine",
+          "stance": "strong",
+          "summary": "Unable to determine position from fragment",
+          "quote": "\u201cIsrael-aligned puppet masters\u201d",
+          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mvshyyvz7s2z",
+          "platform": "bluesky"
+        },
+        {
+          "date": "2026-09-16",
+          "topic": "israel-palestine",
+          "stance": "lean",
+          "summary": "Highlights Democratic concerns about arms sale compliance with international law",
+          "quote": "Top Democrat on House Foreign Affairs puts hold on $2.8 billion arms sale to Israel \u201cdue to concerns that those munitions would not be used in accordance with U.S. and international law.\u201d\n\n democrats-foreignaffairs.house.gov/2026/9/meeks...\n\ndemocrats-foreignaffairs.house.gov/202",
+          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mvnvwgnwxc25",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
     },
     {
       "topic": "iran-conflict",
@@ -1203,24 +1239,6 @@
       "active": false
     },
     {
-      "topic": "israel-palestine",
-      "label": "Israel & Palestine",
-      "count": 1,
-      "lastActive": "2026-09-16",
-      "stances": [
-        {
-          "date": "2026-09-16",
-          "topic": "israel-palestine",
-          "stance": "lean",
-          "summary": "Highlights Democratic concerns about arms sale compliance with international law",
-          "quote": "Top Democrat on House Foreign Affairs puts hold on $2.8 billion arms sale to Israel \u201cdue to concerns that those munitions would not be used in accordance with U.S. and international law.\u201d\n\n democrats-foreignaffairs.house.gov/2026/9/meeks...\n\ndemocrats-foreignaffairs.house.gov/202",
-          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mvnvwgnwxc25",
-          "platform": "bluesky"
-        }
-      ],
-      "active": true
-    },
-    {
       "topic": "ai-technology",
       "label": "AI & Technology",
       "count": 1,
@@ -1239,6 +1257,24 @@
       "active": true
     },
     {
+      "topic": "media-personalities",
+      "label": "Media Personalities & Feuds",
+      "count": 1,
+      "lastActive": "2026-09-10",
+      "stances": [
+        {
+          "date": "2026-09-10",
+          "topic": "media-personalities",
+          "stance": "strong",
+          "summary": "Pays tribute to Roger Simon",
+          "quote": "RIP Roger Simon. A brilliant writer, an astute observer, a kind soul.\n\nwww.chicagotribune.com/2026/09/10/r...",
+          "sourceUrl": "https://bsky.app/profile/jaketapper.bsky.social/post/3mv73y36ls22j",
+          "platform": "bluesky"
+        }
+      ],
+      "active": true
+    },
+    {
       "topic": "protests-activism",
       "label": "Protests & Activism",
       "count": 1,
@@ -1251,6 +1287,24 @@
           "summary": "Questions selective focus of campus activism on certain causes",
           "quote": "RT @Alyssafarah: Wish there were campus protests for Afghan girls. \ud83d\udc94",
           "sourceUrl": "https://x.com/jaketapper/status/2087978182808940665",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
+      "topic": "celebrity-entertainment",
+      "label": "Celebrity & Entertainment",
+      "count": 1,
+      "lastActive": "2021-01-21",
+      "stances": [
+        {
+          "date": "2021-01-21",
+          "topic": "celebrity-entertainment",
+          "stance": "strong",
+          "summary": "Expresses approval for Tom Hanks",
+          "quote": "\ud83d\udc4f GET \ud83d\udc4f TOM \ud83d\udc4f HANKS \ud83d\udc4f A \ud83d\udc4f COAT \ud83d\udc4f",
+          "sourceUrl": "https://x.com/jaketapper/status/1352078024049647618",
           "platform": "x"
         }
       ],

@@ -1,9 +1,9 @@
 {
   "voiceId": "john-thune",
   "voiceName": "John Thune",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-19",
   "topicCount": 10,
-  "stanceCount": 23,
+  "stanceCount": 24,
   "topics": [
     {
       "topic": "food-agriculture",
@@ -195,6 +195,33 @@
       "active": true
     },
     {
+      "topic": "criminal-justice",
+      "label": "Criminal Justice & Policing",
+      "count": 2,
+      "lastActive": "2026-09-02",
+      "stances": [
+        {
+          "date": "2026-09-02",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Celebrates completion of new detention center",
+          "quote": "Thanks to SWO Chairman Renville for having me out today for the completion of the new detention center. https://t.co/AgAm6PjTT0",
+          "sourceUrl": "https://x.com/LeaderJohnThune/status/2095300081951867034",
+          "platform": "x"
+        },
+        {
+          "date": "2026-08-31",
+          "topic": "criminal-justice",
+          "stance": "lean",
+          "summary": "Appreciates law enforcement work and public safety",
+          "quote": "Glad to have a conversation in Moody County this afternoon with sheriffs from around the area. I appreciate all the work law enforcement does to keep us safe. https://t.co/i5VzEvDrc0",
+          "sourceUrl": "https://x.com/LeaderJohnThune/status/2094540066546704559",
+          "platform": "x"
+        }
+      ],
+      "active": false
+    },
+    {
       "topic": "economy-trade",
       "label": "Economy & Trade",
       "count": 1,
@@ -261,24 +288,6 @@
           "summary": "Supports small business growth and community development",
           "quote": "Honored to receive the Hero of Main Street Award today at Graham Tire in Sioux Falls. Small businesses are the backbone of our communities, and I will continue to do all I can to help them grow and thrive. https://t.co/Etwpt6xtju",
           "sourceUrl": "https://x.com/LeaderJohnThune/status/2094891067808088492",
-          "platform": "x"
-        }
-      ],
-      "active": false
-    },
-    {
-      "topic": "criminal-justice",
-      "label": "Criminal Justice & Policing",
-      "count": 1,
-      "lastActive": "2026-08-31",
-      "stances": [
-        {
-          "date": "2026-08-31",
-          "topic": "criminal-justice",
-          "stance": "lean",
-          "summary": "Appreciates law enforcement work and public safety",
-          "quote": "Glad to have a conversation in Moody County this afternoon with sheriffs from around the area. I appreciate all the work law enforcement does to keep us safe. https://t.co/i5VzEvDrc0",
-          "sourceUrl": "https://x.com/LeaderJohnThune/status/2094540066546704559",
           "platform": "x"
         }
       ],
